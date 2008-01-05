@@ -1,0 +1,112 @@
+<!-- ##### SECTION Title ##### -->
+Version Information
+
+<!-- ##### SECTION Short_Description ##### -->
+Variables and functions to check the Libxfce4ui version.
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+Libxfce4ui provides version information, primarily useful in configure
+checks for builds that have a configure script. Applications will not
+typically use the features described here.
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### FUNCTION libxfce4ui_check_version ##### -->
+<para>
+
+</para>
+
+@required_major: 
+@required_minor: 
+@required_micro: 
+@Returns: 
+
+
+<!-- ##### VARIABLE libxfce4ui_major_version ##### -->
+<para>
+The major version number of the Libxfce4ui library (e.g. in version
+1.2.3 this is 1).
+</para>
+
+<para>
+This variable is in the library, so represents the Libxfce4ui library
+you have linked against. Contrast with the #LIBXFCE4UI_MAJOR_VERSION
+macro, which represents the major version of the Libxfce4ui headers
+you have included.
+</para>
+
+
+<!-- ##### VARIABLE libxfce4ui_minor_version ##### -->
+<para>
+The minor version number of the Libxfce4ui library (e.g. in version
+1.2.3 this is 2).
+</para>
+
+<para>
+This variable is in the library, so represents the Libxfce4ui library
+you have linked against. Contrast with the #LIBXFCE4UI_MINOR_VERSION
+macro, which represents the minor version of the Libxfce4ui headers
+you have included.
+</para>
+
+
+<!-- ##### VARIABLE libxfce4ui_micro_version ##### -->
+<para>
+The micro version number of the Libxfce4ui library (e.g. in version
+1.2.3 this is 3).
+</para>
+
+<para>
+This variable is in the library, so represents the Libxfce4ui library
+you have linked against. Contrast with the #LIBXFCE4UI_MICRO_VERSION
+macro, which represents the micro version of the Libxfce4ui headers
+you have included.
+</para>
+
+
+<!-- ##### MACRO LIBXFCE4UI_MAJOR_VERSION ##### -->
+<para>
+Like #libxfce4ui_major_version, but from the headers used at
+application compile time, rather than from the library linked against
+at application run time.
+</para>
+
+
+
+<!-- ##### MACRO LIBXFCE4UI_MINOR_VERSION ##### -->
+<para>
+Like #libxfce4ui_minor_version, but from the headers used at
+application compile time, rather than from the library linked against
+at application run time.
+</para>
+
+
+
+<!-- ##### MACRO LIBXFCE4UI_MICRO_VERSION ##### -->
+<para>
+Like #libxfce4ui_micro_version, but from the headers used at
+application compile time, rather than from the library linked against
+at application run time.
+</para>
+
+
+
+<!-- ##### MACRO LIBXFCE4UI_CHECK_VERSION ##### -->
+<para>
+Returns %TRUE if the version of the Libxfce4ui header files is the same
+as or newer than the passed-in version.
+</para>
+
+@major: major version (e.g. 1 for version 1.2.3)
+@minor: minor version (e.g. 2 for version 1.2.3)
+@micro: micro version (e.g. 3 for version 1.2.3)
+
+

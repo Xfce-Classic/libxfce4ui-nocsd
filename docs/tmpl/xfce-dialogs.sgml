@@ -1,0 +1,110 @@
+<!-- ##### SECTION Title ##### -->
+Xfce Dialogs
+
+<!-- ##### SECTION Short_Description ##### -->
+Common used dialogs to interact with the user.
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+Useful convientent function to interact with the user using a
+#GtkMessageDialog.
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### FUNCTION xfce_message_dialog_new ##### -->
+<para>
+
+</para>
+
+@parent: 
+@title: 
+@stock_id: 
+@primary_text: 
+@secondary_text: 
+@first_button_text: 
+@Varargs: 
+@Returns: 
+
+
+<!-- ##### FUNCTION xfce_message_dialog_run ##### -->
+<para>
+
+</para>
+
+@parent: 
+@title: 
+@stock_id: 
+@primary_text: 
+@secondary_text: 
+@first_button_text: 
+@Varargs: 
+@Returns: 
+
+
+<!-- ##### FUNCTION xfce_dialog_show_info ##### -->
+<para>
+
+</para>
+
+@parent: 
+@format: 
+@Varargs: 
+
+
+<!-- ##### FUNCTION xfce_dialog_show_warning ##### -->
+<para>
+
+</para>
+
+@parent: 
+@format: 
+@Varargs: 
+
+
+<!-- ##### FUNCTION xfce_dialog_show_error ##### -->
+<para>
+
+</para>
+
+@parent: 
+@error: 
+@format: 
+@Varargs: 
+
+
+<!-- ##### FUNCTION xfce_dialog_confirm ##### -->
+<para>
+
+</para>
+
+@parent: 
+@stock_id: 
+@confirm_label: 
+@format: 
+@Varargs: 
+@Returns: 
+
+
+<!-- ##### MACRO XFCE_BUTTON_TYPE_MIXED ##### -->
+<para>
+Used to define a mixed button in xfce_message_dialog_new() and
+xfce_message_dialog_run().
+</para>
+
+
+
+<!-- ##### MACRO XFCE_BUTTON_TYPE_PIXBUF ##### -->
+<para>
+Used to define a #GdkPixuf button in xfce_message_dialog_new() and
+xfce_message_dialog_run().
+</para>
+
+
+

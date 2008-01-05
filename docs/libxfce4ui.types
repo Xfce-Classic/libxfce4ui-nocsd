@@ -1,0 +1,3 @@
+#include <libxfce4ui/libxfce4ui.h>
+
+xfce_titled_dialog_get_type

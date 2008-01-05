@@ -1,0 +1,11 @@
+#
+# Sources
+#
+libxfce4ui/libxfce4ui-config.c
+libxfce4ui/xfce-dialogs.c
+libxfce4ui/xfce-execute.c
+libxfce4ui/xfce-gdk-extensions.c
+libxfce4ui/xfce-gtk-extensions.c
+libxfce4ui/xfce-pango-extensions.c
+libxfce4ui/xfce-heading.c
+libxfce4ui/xfce-titled-dialog.c

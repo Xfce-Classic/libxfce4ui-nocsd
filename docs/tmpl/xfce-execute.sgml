@@ -1,0 +1,49 @@
+<!-- ##### SECTION Title ##### -->
+Xfce Execute
+
+<!-- ##### SECTION Short_Description ##### -->
+Functions to spawn a command with startup notification support.
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+On a desktop it is important that applications are execute with
+startup notification and they show up on the correct screen and workspace.
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### FUNCTION xfce_execute_argv_on_screen ##### -->
+<para>
+
+</para>
+
+@screen: 
+@working_directory: 
+@argv: 
+@envp: 
+@flags: 
+@startup_notify: 
+@icon_name: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION xfce_execute_on_screen ##### -->
+<para>
+
+</para>
+
+@screen: 
+@command_line: 
+@in_terminal: 
+@startup_notify: 
+@error: 
+@Returns: 
+
+

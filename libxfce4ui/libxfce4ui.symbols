@@ -1,0 +1,105 @@
+/* $Id$ */
+/*-
+ * Copyright (c) 2007 The Xfce Development Team
+ *
+ * This library is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU Library General Public
+ * License as published by the Free Software Foundation; either
+ * version 2 of the License, or (at your option) any later version.
+ *
+ * This library is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * Library General Public License for more details.
+ *
+ * You should have received a copy of the GNU Library General Public
+ * License along with this library; if not, write to the
+ * Free Software Foundation, Inc., 59 Temple Place - Suite 330,
+ * Boston, MA 02111-1307, USA.
+ */
+
+/* This file lists all exported symbols. It is used to generate
+ * the gobject.def file used to control exports on Windows and the
+ * libxfce4ui-alias.h/libxfce4ui-aliasdef.c files used to avoid
+ * PLT entries for internal uses of exported functions (see
+ * make-libxfce4ui-alias.pl).
+ *
+ * Every symbol must be included in the right
+ * #ifdef IN_HEADER(sym) #endif and
+ * #ifdef IN_SOURCE(sym) #endif sections.
+ */
+
+#ifdef ALL_FILES
+#define IN_HEADER(x) 1
+#define IN_SOURCE(x) 1
+#endif
+
+/* libxfce4ui-config variables */
+#if IN_HEADER(__LIBXFCE4UI_CONFIG_H__)
+#if IN_SOURCE(__LIBXFCE4UI_CONFIG_C__)
+#ifdef INCLUDE_VARIABLES
+libxfce4ui_major_version
+libxfce4ui_minor_version
+libxfce4ui_micro_version
+#endif
+libxfce4ui_check_version
+#endif
+#endif
+
+/* xfce-dialogs functions */
+#if IN_HEADER(__XFCE_DIALOGS_H__)
+#if IN_SOURCE(__XFCE_DIALOGS_C__)
+xfce_dialog_show_info G_GNUC_PRINTF (2, 3)
+xfce_dialog_show_warning G_GNUC_PRINTF (2, 3)
+xfce_dialog_show_error G_GNUC_PRINTF (3, 4)
+xfce_dialog_confirm G_GNUC_PRINTF (4, 5)
+xfce_message_dialog_new G_GNUC_NULL_TERMINATED
+xfce_message_dialog_run G_GNUC_NULL_TERMINATED
+#endif
+#endif
+
+/* xfce-execute functions */
+#if IN_HEADER(__XFCE_EXECUTE_H__)
+#if IN_SOURCE(__XFCE_EXECUTE_C__)
+xfce_execute_argv_on_screen
+xfce_execute_on_screen
+#endif
+#endif
+
+/* xfce-gdk-extensions functions */
+#if IN_HEADER(__XFCE_GDK_EXTENSIONS_H__)
+#if IN_SOURCE(__XFCE_GDK_EXTENSIONS_C__)
+xfce_gdk_pixbuf_new_from_inline_at_size G_GNUC_MALLOC
+xfce_gdk_screen_get_active
+#endif
+#endif
+
+/* xfce-gtk-extensions functions */
+#if IN_HEADER(__XFCE_GTK_EXTENSIONS_H__)
+#if IN_SOURCE(__XFCE_GTK_EXTENSIONS_C__)
+xfce_gtk_button_new_mixed G_GNUC_MALLOC
+xfce_gtk_label_new_with_style G_GNUC_MALLOC
+xfce_gtk_frame_box_new G_GNUC_MALLOC
+xfce_gtk_frame_box_new_with_content G_GNUC_MALLOC
+xfce_gtk_dialog_parse_parent
+xfce_gtk_window_center_on_active_screen
+#endif
+#endif
+
+/* xfce-pango-extensions functions */
+#if IN_HEADER(__XFCE_PANGO_EXTENSIONS_H__)
+#if IN_SOURCE(__XFCE_PANGO_EXTENSIONS_C__)
+xfce_pango_attr_list_new G_GNUC_MALLOC
+#endif
+#endif
+
+/* xfce-titled-dialog functions */
+#if IN_HEADER(__XFCE_TITLED_DIALOG_H__)
+#if IN_SOURCE(__XFCE_TITLED_DIALOG_C__)
+xfce_titled_dialog_get_type G_GNUC_CONST
+xfce_titled_dialog_new G_GNUC_MALLOC
+xfce_titled_dialog_new_with_buttons G_GNUC_MALLOC
+xfce_titled_dialog_get_subtitle
+xfce_titled_dialog_set_subtitle
+#endif
+#endif
