@@ -1,0 +1,5 @@
+2008-04-10  Og Maciel <ogmaciel@gnome.org>
+
+	* LINGUAS: Added pt_BR
+	* pt_BR.po: Updated Brazilian Portuguese translation by
+		Fábio Nogueira <deb-user-ba@ubuntu.com>
