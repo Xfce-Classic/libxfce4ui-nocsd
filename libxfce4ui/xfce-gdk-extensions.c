@@ -90,6 +90,7 @@ xfce_gdk_pixbuf_new_from_inline_at_size (const guint8 *data,
 
 /**
  * xfce_gdk_screen_get_active:
+ * @monitor_return : Address to store the monitor number to or %NULL.
  *
  * Returns the currently active #GdkScreen, that is, the screen which
  * currently contains the pointer. If no active screen was found, the
@@ -98,7 +99,7 @@ xfce_gdk_pixbuf_new_from_inline_at_size (const guint8 *data,
  * Return value: the currently active #GdkScreen.
  **/
 GdkScreen *
-xfce_gdk_screen_get_active (void)
+xfce_gdk_screen_get_active (gint *monitor_return)
 {
 #ifdef GDK_WINDOWING_X11
   GdkScreen *screen;
@@ -124,6 +125,10 @@ xfce_gdk_screen_get_active (void)
                              GDK_DRAWABLE_XID (gdk_screen_get_root_window (screen)),
                              &root, &child, &rootx, &rooty, &winx, &winy, &xmask))
             {
+              /* return the monitor number */
+              if (monitor_return)
+                *monitor_return = gdk_screen_get_monitor_at_point (screen, rootx, rooty);
+              
               /* yap, this screen contains the pointer, hence it's the active screen */
               goto out;
             }
@@ -132,6 +137,10 @@ xfce_gdk_screen_get_active (void)
 
   /* fallback to the default screen */
   screen = gdk_screen_get_default ();
+  
+  /* no monitor was found */
+  if (monitor_return)
+    *monitor_return = 0;
 
 out:
   /* release the displays */

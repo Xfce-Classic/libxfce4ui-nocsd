@@ -9,6 +9,13 @@ INCLUDES = 								\
 	-DLIBEXECDIR=\"$(libexecdir)\"					\
 	-DLIBXFCE4UI_VERSION_API=\"$(LIBXFCE4UI_VERSION_API)\"		\
 	-DPACKAGE_LOCALE_DIR=\"$(localedir)\"				\
+	-DG_DISABLE_DEPRECATED						\
+	-DG_DISABLE_SINGLE_INCLUDES					\
+	-DGTK_DISABLE_DEPRECATED					\
+	-DGTK_DISABLE_SINGLE_INCLUDES					\
+	-DGDK_DISABLE_DEPRECATED					\
+	-DGDK_PIXBUF_DISABLE_SINGLE_INCLUDES				\
+	-DPANGO_DISABLE_SINGLE_INCLUDES					\
 	$(PLATFORM_CPPFLAGS)
 
 lib_LTLIBRARIES = libxfce4ui-1.la
@@ -18,7 +25,6 @@ libxfce4ui_headers =							\
 	xfce-dialogs.h							\
 	xfce-gdk-extensions.h						\
 	xfce-gtk-extensions.h						\
-	xfce-pango-extensions.h						\
 	xfce-titled-dialog.h
 
 libxfce4ui_built_sources =						\
@@ -44,7 +50,6 @@ libxfce4ui_1_la_SOURCES =						\
 	xfce-gtk-extensions.c						\
 	xfce-heading.c							\
 	xfce-heading.h							\
-	xfce-pango-extensions.c						\
 	xfce-titled-dialog.c
 
 libxfce4ui_1_la_CFLAGS =						\

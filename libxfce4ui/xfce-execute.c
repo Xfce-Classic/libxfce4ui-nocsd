@@ -236,7 +236,7 @@ xfce_execute_argv_on_screen (GdkScreen    *screen,
 
   /* lookup the screen with the pointer */
   if (screen == NULL)
-    screen = xfce_gdk_screen_get_active ();
+    screen = xfce_gdk_screen_get_active (NULL);
 
   /* use environ when envp is null */
   if (G_LIKELY (envp == NULL))

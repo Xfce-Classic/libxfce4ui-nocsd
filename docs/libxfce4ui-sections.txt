@@ -41,11 +41,6 @@ xfce_gtk_label_new_small_italic
 </SECTION>
 
 <SECTION>
-<FILE>xfce-pango-extensions</FILE>
-xfce_pango_attr_list_new
-</SECTION>
-
-<SECTION>
 <FILE>xfce-dialogs</FILE>
 xfce_message_dialog_new
 xfce_message_dialog_run

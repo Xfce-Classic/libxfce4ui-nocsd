@@ -5,7 +5,6 @@
 <!ENTITY xfce-execute SYSTEM "xml/xfce-execute.xml">
 <!ENTITY xfce-gdk-extensions SYSTEM "xml/xfce-gdk-extensions.xml">
 <!ENTITY xfce-gtk-extensions SYSTEM "xml/xfce-gtk-extensions.xml">
-<!ENTITY xfce-pango-extensions SYSTEM "xml/xfce-pango-extensions.xml">
 <!ENTITY xfce-dialogs SYSTEM "xml/xfce-dialogs.xml">
 <!ENTITY xfce-titled-dialog SYSTEM "xml/xfce-titled-dialog.xml">
 
@@ -64,7 +63,6 @@
     <title>Xfce UI Extensions</title>
     &xfce-gdk-extensions;
     &xfce-gtk-extensions;
-    &xfce-pango-extensions;
   </part>
 
   <part id="libxfce4ui-widgets">

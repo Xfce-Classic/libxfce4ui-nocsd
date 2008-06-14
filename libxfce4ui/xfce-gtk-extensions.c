@@ -23,15 +23,27 @@
 #endif
 
 #include <gtk/gtk.h>
+#include <pango/pango.h>
 
 #include <libxfce4ui/xfce-gtk-extensions.h>
 #include <libxfce4ui/xfce-gdk-extensions.h>
-#include <libxfce4ui/xfce-pango-extensions.h>
 #include <libxfce4ui/libxfce4ui-private.h>
 #include <libxfce4ui/libxfce4ui-alias.h>
 
 /* Xfce frame padding */
 #define PADDING (6)
+
+
+
+static void
+xfce_pango_attr_list_insert (PangoAttrList  *attr_list,
+                             PangoAttribute *attribute)
+{
+  /* set the attribute index and insert it into the list */
+  attribute->start_index = 0;
+  attribute->end_index = -1;
+  pango_attr_list_insert (attr_list, attribute);
+}
 
 
 
@@ -113,8 +125,21 @@ xfce_gtk_label_new_with_style (const gchar    *label,
   /* create the label */
   widget = gtk_label_new (label);
 
-  /* create the attributes list */
-  attr_list = xfce_pango_attr_list_new (scale_factor, style, weight, underline);
+  /* create attribules list */
+  attr_list = pango_attr_list_new ();
+  
+  /* insert the user attributes if they differ from normal */
+  if (scale_factor != PANGO_SCALE_MEDIUM)
+    xfce_pango_attr_list_insert (attr_list, pango_attr_scale_new (scale_factor));
+
+  if (style != PANGO_STYLE_NORMAL)
+    xfce_pango_attr_list_insert (attr_list, pango_attr_style_new (style));
+
+  if (weight != PANGO_WEIGHT_NORMAL)
+    xfce_pango_attr_list_insert (attr_list, pango_attr_weight_new (weight));
+
+  if (underline != PANGO_UNDERLINE_NONE)
+    xfce_pango_attr_list_insert (attr_list, pango_attr_underline_new (underline));
 
   /* set attributes list */
   gtk_label_set_attributes (GTK_LABEL (widget), attr_list);
@@ -262,7 +287,7 @@ xfce_gtk_dialog_parse_parent (gpointer    parent,
 
   /* use the active screen */
   if (screen == NULL)
-    screen = xfce_gdk_screen_get_active ();
+    screen = xfce_gdk_screen_get_active (NULL);
 
   /* return the window */
   if (G_LIKELY (window_return != NULL))
@@ -280,6 +305,9 @@ xfce_gtk_dialog_parse_parent (gpointer    parent,
  * Determines the screen that contains the pointer and centers the
  * @window on it. If it failes to determine the current pointer position,
  * @window is centered on the default screen.
+ * 
+ * This function only works properly if you call it before realizing the
+ * window and you haven't set a fixed window position using gtk_window_move().
  *
  * See also: xfce_gdk_screen_get_active().
  */
@@ -291,11 +319,11 @@ xfce_gtk_window_center_on_active_screen (GtkWindow *window)
   g_return_if_fail (GTK_IS_WINDOW (window));
 
   /* get the screen with the pointer */
-  screen = xfce_gdk_screen_get_active ();
+  screen = xfce_gdk_screen_get_active (NULL);
 
   /* set the window screen */
   gtk_window_set_screen (window, screen);
-
+  
   /* gtk+ handles the centering of the window properly after resize */
   gtk_window_set_position (window, GTK_WIN_POS_CENTER);
 }
