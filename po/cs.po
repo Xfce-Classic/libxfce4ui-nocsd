@@ -1,0 +1,39 @@
+# Czech translations for libxfce4ui package.
+# Copyright (C) 2008 THE libxfce4ui'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the libxfce4ui package.
+# Miro Hrončok <churchyard@gmail.com>, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: libxfce4ui\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-01-05 22:17+0100\n"
+"PO-Revision-Date: 2008-07-07 19:04+0100\n"
+"Last-Translator: Michal Várady <miko.vaji@gmail.com>\n"
+"Language-Team: Czech\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Czech\n"
+"X-Poedit-Country: CZECH REPUBLIC\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#. run dialog
+#: ../libxfce4ui/xfce-dialogs.c:199
+msgid "Information"
+msgstr "Informace"
+
+#. run dialog
+#: ../libxfce4ui/xfce-dialogs.c:234
+msgid "Warning"
+msgstr "Varování"
+
+#. run dialog
+#: ../libxfce4ui/xfce-dialogs.c:272
+msgid "Error"
+msgstr "Chyba"
+
+#. run dialog
+#: ../libxfce4ui/xfce-dialogs.c:323
+msgid "Question"
+msgstr "Dotaz"
+
