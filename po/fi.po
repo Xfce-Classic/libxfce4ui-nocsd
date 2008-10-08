@@ -1,0 +1,37 @@
+# Finnish translations for libxfce4ui package.
+# Copyright (C) 2008 The Xfce Development Team.
+# This file is distributed under the same license as the libxfce4ui package.
+# Jari Rahkonen <jari.rahkonen@pp1.inet.fi>, 2008.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: libxfce4ui\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-10-08 16:45+0100\n"
+"PO-Revision-Date: 2008-10-08 16:51+0300\n"
+"Last-Translator: Jari Rahkonen <jari.rahkonen@pp1.inet.fi>\n"
+"Language-Team: Finnish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. run dialog
+#: ../libxfce4ui/xfce-dialogs.c:199
+msgid "Information"
+msgstr "Tietoa"
+
+#. run dialog
+#: ../libxfce4ui/xfce-dialogs.c:234
+msgid "Warning"
+msgstr "Varoitus"
+
+#. run dialog
+#: ../libxfce4ui/xfce-dialogs.c:272
+msgid "Error"
+msgstr "Virhe"
+
+#. run dialog
+#: ../libxfce4ui/xfce-dialogs.c:323
+msgid "Question"
+msgstr "Kysymys"
