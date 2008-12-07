@@ -35,4 +35,3 @@ msgstr "Errorea"
 #: ../libxfce4ui/xfce-dialogs.c:323
 msgid "Question"
 msgstr "Galdera"
-
