@@ -46,7 +46,6 @@ dnl *** Check for UNIX variants ***
 dnl *******************************
 AC_AIX()
 AC_ISC_POSIX()
-AC_MINIX()
 
 dnl ********************************
 dnl *** Check for basic programs ***
@@ -114,6 +113,20 @@ XDT_CHECK_OPTIONAL_PACKAGE([LIBSTARTUP_NOTIFICATION],
                            [libstartup-notification-1.0],
                            [0.4], [startup-notification],
                            [startup notification library])
+
+dnl *********************************************************
+dnl *** Optional support for the Glade Interface Designer ***
+dnl *********************************************************
+XDT_CHECK_OPTIONAL_PACKAGE([GLADEUI], [gladeui-1.0],
+                           [3.5.0], [gladeui], [glade interface designer])
+if test x"$GLADEUI_FOUND" = x"yes"; then
+  GLADEUI_CATALOGDIR=`$PKG_CONFIG "--variable=catalogdir" "gladeui-1.0"`
+  GLADEUI_MODULEDIR=`$PKG_CONFIG "--variable=moduledir" "gladeui-1.0"`
+  GLADEUI_PIXMAPDIR=`$PKG_CONFIG "--variable=pixmapdir" "gladeui-1.0"`
+fi
+AC_SUBST([GLADEUI_CATALOGDIR])
+AC_SUBST([GLADEUI_MODULEDIR])
+AC_SUBST([GLADEUI_PIXMAPDIR])
 
 dnl *************************
 dnl *** Check for gtk-doc ***
@@ -203,7 +216,7 @@ esac
 dnl ****************************************
 dnl *** Check for ELF visibility support ***
 dnl ****************************************
-AC_ARG_ENABLE([visibility], AC_HELP_STRING([--disable-visibility], [Don't use ELF visibility attributes]), [], [enable_visibility=yes])
+AC_ARG_ENABLE([visibility], AC_HELP_STRING([--disable-visibility], [Do not use ELF visibility attributes]), [], [enable_visibility=yes])
 have_gnuc_visibility=no
 if test x"$enable_visibility" != x"no"; then
   dnl Check whether the compiler supports the visibility attribute
@@ -250,6 +263,10 @@ AC_OUTPUT([
 Makefile
 docs/Makefile
 docs/version.xml
+glade/Makefile
+glade/icons/Makefile
+glade/icons/16x16/Makefile
+glade/icons/22x22/Makefile
 libxfce4ui.spec
 libxfce4ui/libxfce4ui-1.pc
 libxfce4ui/libxfce4ui-config.h
@@ -263,11 +280,21 @@ dnl ***************************
 echo
 echo "Build Configuration:"
 echo
+if test x"$GLADEUI_FOUND" = x"yes"; then
+echo "* Glade Interface Designer:  yes"
+echo "  - Catalog directory:       $GLADEUI_CATALOGDIR"
+echo "  - Module directory:        $GLADEUI_MODULEDIR"
+echo "  - Pixmap directory:        $GLADEUI_PIXMAPDIR"
+else
+echo "* Glade Interface Designer:  no"
+fi
+echo
 if test x"$LIBSTARTUP_NOTIFICATION_FOUND" = x"yes"; then
 echo "* Startup Notification:      yes"
 else
 echo "* Startup Notification:      no"
 fi
+echo
 echo "* Debug Support:             $enable_debug"
 echo "* GNU Visibility:            $have_gnuc_visibility"
 echo

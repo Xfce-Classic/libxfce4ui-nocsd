@@ -35,18 +35,6 @@
 
 
 
-static void
-xfce_pango_attr_list_insert (PangoAttrList  *attr_list,
-                             PangoAttribute *attribute)
-{
-  /* set the attribute index and insert it into the list */
-  attribute->start_index = 0;
-  attribute->end_index = -1;
-  pango_attr_list_insert (attr_list, attribute);
-}
-
-
-
 /**
  * xfce_gtk_button_new_mixed:
  * @stock_id : the name of the stock item.
@@ -95,64 +83,6 @@ xfce_gtk_button_new_mixed (const gchar *stock_id,
 
 
 /**
- * xfce_gtk_label_new_with_style:
- * @label        : the text of the label.
- * @scale_factor : the font size of the label, for example #PANGO_SCALE_LARGE.
- * @style        : the style (ie. italic) of the label.
- * @weight       : the weight of the label.
- * @underline    : whether the label should be underlined.
- *
- * Creates a new label with the given text inside it. The markup of the
- * text will be set to the style attributes passed to the function.
- * Normally you would use the convience macros like xfce_gtk_label_new_small_italic()
- * or xfce_gtk_label_new_bold().
- *
- * For more information see the <link linkend="pango-Text-Attributes">Pango
- * text attributes manual</link>.
- *
- * Return value: the newly created #GtkLabel widget.
- **/
-GtkWidget *
-xfce_gtk_label_new_with_style (const gchar    *label,
-                               gdouble         scale_factor,
-                               PangoStyle      style,
-                               PangoWeight     weight,
-                               PangoUnderline  underline)
-{
-  GtkWidget     *widget;
-  PangoAttrList *attr_list;
-
-  /* create the label */
-  widget = gtk_label_new (label);
-
-  /* create attribules list */
-  attr_list = pango_attr_list_new ();
-  
-  /* insert the user attributes if they differ from normal */
-  if (scale_factor != PANGO_SCALE_MEDIUM)
-    xfce_pango_attr_list_insert (attr_list, pango_attr_scale_new (scale_factor));
-
-  if (style != PANGO_STYLE_NORMAL)
-    xfce_pango_attr_list_insert (attr_list, pango_attr_style_new (style));
-
-  if (weight != PANGO_WEIGHT_NORMAL)
-    xfce_pango_attr_list_insert (attr_list, pango_attr_weight_new (weight));
-
-  if (underline != PANGO_UNDERLINE_NONE)
-    xfce_pango_attr_list_insert (attr_list, pango_attr_underline_new (underline));
-
-  /* set attributes list */
-  gtk_label_set_attributes (GTK_LABEL (widget), attr_list);
-
-  /* decrease our refcount */
-  pango_attr_list_unref (attr_list);
-
-  return widget;
-}
-
-
-
-/**
  * xfce_gtk_frame_box_new:
  * @label            : the text to use as the label of the frame.
  * @container_return : return location for the frame's container.
@@ -174,6 +104,7 @@ xfce_gtk_frame_box_new (const gchar  *label,
   GtkWidget *frame;
   GtkWidget *frame_label;
   GtkWidget *container;
+  gchar     *markup_label;
 
   g_return_val_if_fail (container_return != NULL, NULL);
 
@@ -185,7 +116,9 @@ xfce_gtk_frame_box_new (const gchar  *label,
   if (G_LIKELY (label != NULL))
     {
       /* create bold label */
-      frame_label = xfce_gtk_label_new_bold (label);
+      markup_label = g_strdup_printf ("<b>%s</b>", label);
+      frame_label = gtk_label_new (markup_label);
+      g_free (markup_label);
       gtk_misc_set_alignment (GTK_MISC (frame_label), 0.0, 0.5);
       gtk_frame_set_label_widget (GTK_FRAME (frame), frame_label);
       gtk_widget_show (frame_label);

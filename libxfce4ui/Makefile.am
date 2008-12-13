@@ -1,69 +1,68 @@
 # $Id$
 
-INCLUDES = 								\
-	-I$(top_srcdir)							\
-	-DDATADIR=\"$(datadir)\"					\
-	-DSN_API_NOT_YET_FROZEN						\
-	-DLIBXFCE4UI_COMPILATION					\
-	-DG_LOG_DOMAIN=\"libxfce4ui\"					\
-	-DLIBEXECDIR=\"$(libexecdir)\"					\
-	-DLIBXFCE4UI_VERSION_API=\"$(LIBXFCE4UI_VERSION_API)\"		\
-	-DPACKAGE_LOCALE_DIR=\"$(localedir)\"				\
-	-DG_DISABLE_DEPRECATED						\
-	-DGTK_DISABLE_DEPRECATED					\
-	-DGDK_DISABLE_DEPRECATED					\
+INCLUDES = \
+	-I$(top_srcdir) \
+	-DDATADIR=\"$(datadir)\" \
+	-DSN_API_NOT_YET_FROZEN \
+	-DLIBXFCE4UI_COMPILATION \
+	-DG_LOG_DOMAIN=\"libxfce4ui\" \
+	-DLIBEXECDIR=\"$(libexecdir)\" \
+	-DLIBXFCE4UI_VERSION_API=\"$(LIBXFCE4UI_VERSION_API)\" \
+	-DPACKAGE_LOCALE_DIR=\"$(localedir)\" \
+	-DG_DISABLE_DEPRECATED \
+	-DGTK_DISABLE_DEPRECATED \
+	-DGDK_DISABLE_DEPRECATED \
 	$(PLATFORM_CPPFLAGS)
 
 lib_LTLIBRARIES = libxfce4ui-1.la
 
-libxfce4ui_headers =							\
-	xfce-execute.h							\
-	xfce-dialogs.h							\
-	xfce-gdk-extensions.h						\
-	xfce-gtk-extensions.h						\
+libxfce4ui_headers = \
+	xfce-execute.h \
+	xfce-dialogs.h \
+	xfce-gdk-extensions.h \
+	xfce-gtk-extensions.h \
 	xfce-titled-dialog.h
 
-libxfce4ui_built_sources =						\
-	libxfce4ui-alias.h						\
+libxfce4ui_built_sources = \
+	libxfce4ui-alias.h \
 	libxfce4ui-aliasdef.c
 
-libxfce4ui_includedir =							\
+libxfce4ui_includedir = \
 	$(includedir)/libxfce4ui-1/libxfce4ui
 
-libxfce4ui_include_HEADERS =						\
-	$(libxfce4ui_headers)						\
-	libxfce4ui.h							\
+libxfce4ui_include_HEADERS = \
+	$(libxfce4ui_headers) \
+	libxfce4ui.h \
 	libxfce4ui-config.h
 
-libxfce4ui_1_la_SOURCES =						\
-	$(libxfce4uiinclude_HEADERS)					\
-	$(libxfce4ui_built_sources)					\
-	libxfce4ui-config.c						\
-	libxfce4ui-private.h						\
-	xfce-execute.c							\
-	xfce-dialogs.c							\
-	xfce-gdk-extensions.c						\
-	xfce-gtk-extensions.c						\
-	xfce-heading.c							\
-	xfce-heading.h							\
+libxfce4ui_1_la_SOURCES = \
+	$(libxfce4uiinclude_HEADERS) \
+	$(libxfce4ui_built_sources) \
+	libxfce4ui-config.c \
+	libxfce4ui-private.h \
+	xfce-execute.c \
+	xfce-dialogs.c \
+	xfce-gdk-extensions.c \
+	xfce-gtk-extensions.c \
+	xfce-heading.c \
+	xfce-heading.h \
 	xfce-titled-dialog.c
 
-libxfce4ui_1_la_CFLAGS =						\
-	$(GTK_CFLAGS)							\
-	$(LIBSTARTUP_NOTIFICATION_CFLAGS)				\
-	$(LIBXFCE4UTIL_CFLAGS)						\
+libxfce4ui_1_la_CFLAGS = \
+	$(GTK_CFLAGS) \
+	$(LIBSTARTUP_NOTIFICATION_CFLAGS) \
+	$(LIBXFCE4UTIL_CFLAGS) \
 	$(PLATFORM_CFLAGS)
 
-libxfce4ui_1_la_LDFLAGS =						\
-	-export-dynamic							\
-	-version-info $(LIBXFCE4UI_VERINFO)				\
-	-export-symbols-regex "^[^_].*"					\
-	-no-undefined							\
+libxfce4ui_1_la_LDFLAGS = \
+	-version-info $(LIBXFCE4UI_VERINFO) \
+	-export-symbols-regex "^[^_].*" \
+	-no-undefined \
 	$(PLATFORM_LDFLAGS)
 
-libxfce4ui_1_la_LIBADD =						\
-	$(GTK_LIBS)							\
-	$(LIBSTARTUP_NOTIFICATION_LIBS)					\
+libxfce4ui_1_la_LIBADD = \
+	$(GTK_LIBS) \
+	$(LIBSTARTUP_NOTIFICATION_LIBS) \
 	$(LIBXFCE4UTIL_LIBS)
 
 pkgconfigdir = $(libdir)/pkgconfig
@@ -80,19 +79,19 @@ pkgconfig_DATA = libxfce4ui-1.pc
 ## files as part of the dist tarball.
 ##
 if MAINTAINER_MODE
-CLEANFILES =								\
-	actual-abi							\
+CLEANFILES = \
+	actual-abi \
 	expected-abi
 
-DISTCLEANFILES =							\
-	stamp-libxfce4ui-marshal.h					\
+DISTCLEANFILES = \
+	stamp-libxfce4ui-marshal.h \
 	$(libxfce4ui_built_sources)
 
-BUILT_SOURCES =								\
+BUILT_SOURCES = \
 	$(libxfce4ui_built_sources)
 
 if HAVE_GNUC_VISIBILITY
-TESTS =									\
+TESTS = \
 	abicheck.sh
 endif
 
@@ -106,11 +105,11 @@ endif
 # required for gtk-doc
 dist-hook: all
 
-EXTRA_DIST = 								\
-	abicheck.sh							\
-	libxfce4ui.symbols						\
-	libxfce4ui-alias.h						\
-	libxfce4ui-aliasdef.c						\
+EXTRA_DIST = \
+	abicheck.sh \
+	libxfce4ui.symbols \
+	libxfce4ui-alias.h \
+	libxfce4ui-aliasdef.c \
 	make-libxfce4ui-alias.pl
 
 # vi:set ts=8 sw=8 noet ai nocindent syntax=automake:

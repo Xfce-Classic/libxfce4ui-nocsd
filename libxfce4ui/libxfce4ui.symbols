@@ -78,7 +78,6 @@ xfce_gdk_screen_get_active
 #if IN_HEADER(__XFCE_GTK_EXTENSIONS_H__)
 #if IN_SOURCE(__XFCE_GTK_EXTENSIONS_C__)
 xfce_gtk_button_new_mixed G_GNUC_MALLOC
-xfce_gtk_label_new_with_style G_GNUC_MALLOC
 xfce_gtk_frame_box_new G_GNUC_MALLOC
 xfce_gtk_frame_box_new_with_content G_GNUC_MALLOC
 xfce_gtk_dialog_parse_parent

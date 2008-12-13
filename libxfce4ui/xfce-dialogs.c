@@ -48,7 +48,7 @@ xfce_message_dialog_vnew (gpointer     parent,
                           const gchar *icon_stock_id,
                           const gchar *primary_text,
                           const gchar *secondary_text,
-                          const gchar *first_button_text,
+                          const gchar *first_button_type,
                           va_list      args)
 {
   GtkWidget   *dialog;
@@ -57,7 +57,7 @@ xfce_message_dialog_vnew (gpointer     parent,
   gchar       *markup;
   GtkWidget   *image;
   GtkWidget   *button;
-  const gchar *text = first_button_text;
+  const gchar *text = first_button_type;
   const gchar *label;
   const gchar *stock_id;
   gint         response;
@@ -69,20 +69,29 @@ xfce_message_dialog_vnew (gpointer     parent,
   /* parse the parent pointer */
   screen = xfce_gtk_dialog_parse_parent (parent, &window);
 
-  /* make the primary text large and bold */
-  if (G_LIKELY (primary_text != NULL))
-    markup = g_strdup_printf ("<span weight='bold' size='large'>%s</span>", primary_text);
-  else
-    markup = NULL;
-
   /* create the dialog */
-  dialog = gtk_message_dialog_new_with_markup (window,
-                                               GTK_DIALOG_DESTROY_WITH_PARENT | GTK_DIALOG_MODAL,
-                                               GTK_MESSAGE_OTHER, GTK_BUTTONS_NONE,
-                                               markup ? markup : secondary_text);
-
-  /* cleanup */
-  g_free (markup);
+  if (G_LIKELY (primary_text != NULL))
+    {
+      /* create dialog with large bold text */
+      markup = g_strdup_printf ("<span weight='bold' size='large'>%s</span>", primary_text);
+      dialog = gtk_message_dialog_new_with_markup (window,
+                                                   GTK_DIALOG_DESTROY_WITH_PARENT | GTK_DIALOG_MODAL,
+                                                   GTK_MESSAGE_OTHER, GTK_BUTTONS_NONE,
+                                                   "%s", markup);
+      g_free (markup);
+      
+      /* set secondary text */
+      if (secondary_text != NULL)
+        gtk_message_dialog_format_secondary_text (GTK_MESSAGE_DIALOG (dialog), "%s", secondary_text);
+    }
+  else
+    {
+      /* create dialog with normal seconday text */
+      dialog = gtk_message_dialog_new (window,
+                                       GTK_DIALOG_DESTROY_WITH_PARENT | GTK_DIALOG_MODAL,
+                                       GTK_MESSAGE_OTHER, GTK_BUTTONS_NONE,
+                                       "%s", secondary_text);
+    }
 
   /* move the dialog to the appropriate screen and center it */
   if (G_UNLIKELY (window == NULL && screen != NULL))
@@ -90,10 +99,6 @@ xfce_message_dialog_vnew (gpointer     parent,
       gtk_window_set_screen (GTK_WINDOW (dialog), screen);
       gtk_window_set_position (GTK_WINDOW (dialog), GTK_WIN_POS_CENTER);
     }
-
-  /* set the secondary text */
-  if (primary_text != NULL && secondary_text != NULL)
-    gtk_message_dialog_format_secondary_text (GTK_MESSAGE_DIALOG (dialog), secondary_text);
 
   /* set title */
   if (title != NULL)

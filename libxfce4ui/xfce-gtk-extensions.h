@@ -29,28 +29,8 @@
 
 G_BEGIN_DECLS
 
-/* convienent marcos for xfce_gtk_label_new_with_style */
-#define xfce_gtk_label_new_italic(label)           (xfce_gtk_label_new_with_style ((label),    \
-                                                    PANGO_SCALE_MEDIUM, PANGO_STYLE_ITALIC,    \
-                                                    PANGO_WEIGHT_NORMAL, PANGO_UNDERLINE_NONE))
-#define xfce_gtk_label_new_small_italic(label)     (xfce_gtk_label_new_with_style ((label),    \
-                                                    PANGO_SCALE_SMALL, PANGO_STYLE_ITALIC,     \
-                                                    PANGO_WEIGHT_NORMAL, PANGO_UNDERLINE_NONE))
-#define xfce_gtk_label_new_bold(label)             (xfce_gtk_label_new_with_style ((label),    \
-                                                    PANGO_SCALE_MEDIUM, PANGO_STYLE_NORMAL,    \
-                                                    PANGO_WEIGHT_BOLD, PANGO_UNDERLINE_NONE))
-#define xfce_gtk_label_new_big_bold(label)         (xfce_gtk_label_new_with_style ((label),    \
-                                                    PANGO_SCALE_LARGE, PANGO_STYLE_NORMAL,     \
-                                                    PANGO_WEIGHT_BOLD, PANGO_UNDERLINE_NONE))
-
 GtkWidget *xfce_gtk_button_new_mixed               (const gchar     *stock_id,
                                                     const gchar     *label) G_GNUC_MALLOC;
-
-GtkWidget *xfce_gtk_label_new_with_style           (const gchar     *label,
-                                                    gdouble          scale_factor,
-                                                    PangoStyle       style,
-                                                    PangoWeight      weight,
-                                                    PangoUnderline   underline) G_GNUC_MALLOC;
 
 GtkWidget *xfce_gtk_frame_box_new                  (const gchar     *label,
                                                     GtkWidget      **container_return) G_GNUC_MALLOC;

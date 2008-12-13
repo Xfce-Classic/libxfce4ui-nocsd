@@ -53,21 +53,21 @@ struct _XfceHeading
   XfceHeadingPrivate *priv;
 };
 
-GType      xfce_heading_get_type      (void) G_GNUC_CONST G_GNUC_INTERNAL;
+G_GNUC_INTERNAL GType      xfce_heading_get_type      (void) G_GNUC_CONST;
 
-GtkWidget *xfce_heading_new           (void) G_GNUC_MALLOC G_GNUC_INTERNAL;
+G_GNUC_INTERNAL GtkWidget *xfce_heading_new           (void) G_GNUC_MALLOC;
 
-void       xfce_heading_set_icon      (XfceHeading *heading,
-                                       GdkPixbuf   *icon) G_GNUC_INTERNAL;
+G_GNUC_INTERNAL void       xfce_heading_set_icon      (XfceHeading *heading,
+                                                       GdkPixbuf   *icon);
 
-void       xfce_heading_set_icon_name (XfceHeading *heading,
-                                       const gchar *icon_name) G_GNUC_INTERNAL;
+G_GNUC_INTERNAL void       xfce_heading_set_icon_name (XfceHeading *heading,
+                                                       const gchar *icon_name);
 
-void       xfce_heading_set_subtitle  (XfceHeading *heading,
-                                       const gchar *subtitle) G_GNUC_INTERNAL;
+G_GNUC_INTERNAL void       xfce_heading_set_subtitle  (XfceHeading *heading,
+                                                       const gchar *subtitle);
 
-void       xfce_heading_set_title     (XfceHeading *heading,
-                                                     const gchar *title) G_GNUC_INTERNAL;
+G_GNUC_INTERNAL void       xfce_heading_set_title     (XfceHeading *heading,
+                                                       const gchar *title);
 
 G_END_DECLS
 
