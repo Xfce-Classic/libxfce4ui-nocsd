@@ -26,6 +26,9 @@
 #ifdef HAVE_STRING_H
 #include <string.h>
 #endif
+#ifdef HAVE_UNISTD_H
+#include <unistd.h>
+#endif
 
 #include <gdk/gdk.h>
 
@@ -217,7 +220,6 @@ xfce_execute_argv_on_screen (GdkScreen    *screen,
                              const gchar  *icon_name,
                              GError      **error)
 {
-  extern gchar     **environ;
   gboolean           succeed;
   gchar            **cenvp;
   gint               n;

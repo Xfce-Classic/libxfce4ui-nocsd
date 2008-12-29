@@ -30,13 +30,26 @@
 #include <gladeui/glade.h>
 #include <libxfce4ui/libxfce4ui.h>
 
+
+
+void       glade_xfce_titled_dialog_post_create        (GladeWidgetAdaptor *adaptor,
+                                                        GObject            *object,
+                                                        GladeCreateReason   reason);
+GtkWidget *glade_xfce_titled_dialog_get_internal_child (GladeWidgetAdaptor *adaptor,
+                                                        GtkDialog          *dialog,
+                                                        const gchar        *name);
+GList     *glade_xfce_titled_dialog_get_children       (GladeWidgetAdaptor *adaptor,
+                                                        GtkDialog          *dialog);
+
+
+
 void
 glade_xfce_titled_dialog_post_create (GladeWidgetAdaptor *adaptor,
                                       GObject            *object,
                                       GladeCreateReason   reason)
 {
-  GtkDialog    *dialog = GTK_DIALOG (object);
-  GladeWidget  *widget, *vbox, *action_area;
+  GtkDialog   *dialog = GTK_DIALOG (object);
+  GladeWidget *widget, *vbox, *action_area;
 
   g_return_if_fail (XFCE_IS_TITLED_DIALOG (dialog));
 
@@ -89,7 +102,7 @@ glade_xfce_titled_dialog_get_internal_child (GladeWidgetAdaptor *adaptor,
 
 
 GList *
-glade_xfce_titled_dialog_get_children (GladeWidgetAdaptor *adaptor, 
+glade_xfce_titled_dialog_get_children (GladeWidgetAdaptor *adaptor,
                                        GtkDialog          *dialog)
 {
   g_return_val_if_fail (XFCE_IS_TITLED_DIALOG (dialog), NULL);
