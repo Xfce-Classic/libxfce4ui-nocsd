@@ -1,14 +1,18 @@
+2009-01-18  Maximilian Schleiss <maximilian@xfce.org>
+
+	* ja.po: Japanese translation update (Masato Hashimoto)
+
 2008-12-10  Alexander Toresson <eulex@xfce.org>
 
 	* sv.po, LINGUAS: Swedish translation added (Daniel Nylander)
 
 2008-12-07  Piarres Beobide <pi@beobide.net>
 
-        * eu.po: Basque translation update
+	* eu.po: Basque translation update
 
 2008-11-27 Piarres Beobide <pi@beobide.net>
 
-        * eu.po, LINGUAS: Basque translation update
+	* eu.po, LINGUAS: Basque translation update
 
 2008-11-25  Maximilian Schleiss <maximilian@xfce.org>
 

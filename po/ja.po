@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-01-05 22:17+0100\n"
-"PO-Revision-Date: 2008-06-10 19:53+0900\n"
-"Last-Translator: Nobuhiro Iwamatsu <iwamatsu@nigauri.org>\n"
+"POT-Creation-Date: 2008-12-30 09:50+0900\n"
+"PO-Revision-Date: 2008-12-30 09:55+0900\n"
+"Last-Translator: Masato Hashimoto <cabezon.hashimoto@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -18,22 +18,34 @@ msgstr ""
 "X-Poedit-Country: JAPAN\n"
 
 #. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:199
+#: ../libxfce4ui/xfce-dialogs.c:204
 msgid "Information"
 msgstr "インフォメーション"
 
 #. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:234
+#: ../libxfce4ui/xfce-dialogs.c:239
 msgid "Warning"
 msgstr "警告"
 
 #. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:272
+#: ../libxfce4ui/xfce-dialogs.c:277
 msgid "Error"
 msgstr "エラー"
 
 #. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:323
+#: ../libxfce4ui/xfce-dialogs.c:328
 msgid "Question"
 msgstr "質問"
+
+#: ../glade/libxfce4ui.xml.in.h:1
+msgid "Subtitle"
+msgstr "サブタイトル"
+
+#: ../glade/libxfce4ui.xml.in.h:2
+msgid "Titled Dialog"
+msgstr "タイトル付きダイアログ"
+
+#: ../glade/libxfce4ui.xml.in.h:3
+msgid "Xfce 4 Widgets"
+msgstr "Xfce 4 ウィジェット"
 
