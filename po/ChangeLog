@@ -1,3 +1,7 @@
+2009-01-21  Maximilian Schleiss <maximilian@xfce.org>
+
+	* zh_CN.po, LINGUAS: Simplified Chinese translation added (Chris K. Zhang)
+
 2009-01-18  Maximilian Schleiss <maximilian@xfce.org>
 
 	* ja.po: Japanese translation update (Masato Hashimoto)
