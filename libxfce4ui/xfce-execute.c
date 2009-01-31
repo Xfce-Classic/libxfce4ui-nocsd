@@ -240,15 +240,30 @@ xfce_execute_argv_on_screen (GdkScreen    *screen,
   if (screen == NULL)
     screen = xfce_gdk_screen_get_active (NULL);
 
-  /* use environ when envp is null */
-  if (G_LIKELY (envp == NULL))
-    envp = environ;
-
   /* setup the child environment, without startup id and display */
-  cenvp = g_new0 (gchar *, g_strv_length (envp) + 3);
-  for (n = n_cenvp = 0; envp[n] != NULL; n++)
-    if (strncmp (envp[n], "DESKTOP_STARTUP_ID", 18) != 0 && strncmp (envp[n], "DISPLAY", 7) != 0)
-      cenvp[n_cenvp++] = g_strdup (envp[n]);
+  if (G_LIKELY (envp == NULL))
+    {
+      /* use the portable g_listenv, but note that this function only returns the
+       * variable names, not with values, therefore the call to g_getenv */
+      envp = g_listenv ();
+      cenvp = g_new0 (gchar *, g_strv_length (envp) + 3);
+      for (n = n_cenvp = 0; envp[n] != NULL; n++)
+        if (strcmp (envp[n], "DESKTOP_STARTUP_ID") != 0 
+            && strcmp (envp[n], "DISPLAY") != 0)
+          cenvp[n_cenvp++] = g_strconcat (envp[n], "=", g_getenv (envp[n]), NULL);
+
+      /* cleanup */
+      g_strfreev (envp);
+      envp = NULL;
+    }
+  else
+    {
+      cenvp = g_new0 (gchar *, g_strv_length (envp) + 3);
+      for (n = n_cenvp = 0; envp[n] != NULL; n++)
+        if (strncmp (envp[n], "DESKTOP_STARTUP_ID", 18) != 0 
+            && strncmp (envp[n], "DISPLAY", 7) != 0)
+          cenvp[n_cenvp++] = g_strdup (envp[n]);
+    }
 
   /* add the real display name */
   display_name = gdk_screen_make_display_name (screen);
@@ -284,7 +299,6 @@ xfce_execute_argv_on_screen (GdkScreen    *screen,
             }
         }
     }
-
 #endif
 
   /* try to spawn the new process */
