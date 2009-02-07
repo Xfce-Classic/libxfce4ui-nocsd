@@ -35,6 +35,7 @@ gboolean xfce_execute_argv_on_screen (GdkScreen    *screen,
                                       gchar       **envp,
                                       GSpawnFlags   flags,
                                       gboolean      startup_notify,
+                                      guint32       startup_timestamp,
                                       const gchar  *icon_name,
                                       GError      **error);
 

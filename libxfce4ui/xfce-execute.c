@@ -196,12 +196,21 @@ xfce_execute_get_active_workspace_number (GdkScreen *screen)
 
 /**
  * xfce_execute_argv_on_screen:
- * @screen            : a #GdkScreen or %NULL to use the active screen, see xfce_gdk_screen_get_active().
- * @working_directory : child's current working directory or %NULL to inherit parent's.
+ * @screen            : a #GdkScreen or %NULL to use the active screen,
+ *                      see xfce_gdk_screen_get_active().
+ * @working_directory : child's current working directory or %NULL to
+ *                      inherit parent's.
  * @argv              : child's argument vector.
- * @envp              : child's environment vector or %NULL to inherit parent's.
+ * @envp              : child's environment vector or %NULL to inherit
+ *                      parent's.
  * @flags             : flags from #GSpawnFlags.
  * @startup_notify    : whether to use startup notification.
+ * @startup_timestamp : the timestamp to pass to startup notification, use
+ *                      the event time here if possible to make focus
+ *                      stealing prevention work property. If you don't
+ *                      have direct access to the event time you could use
+ *                      gtk_get_current_event_time() or if nothing is
+ *                      available 0 is valid too.
  * @icon_name         : application icon or %NULL.
  * @error             : return location for errors or %NULL.
  *
@@ -217,6 +226,7 @@ xfce_execute_argv_on_screen (GdkScreen    *screen,
                              gchar       **envp,
                              GSpawnFlags   flags,
                              gboolean      startup_notify,
+                             guint32       startup_timestamp,
                              const gchar  *icon_name,
                              GError      **error)
 {
@@ -289,7 +299,7 @@ xfce_execute_argv_on_screen (GdkScreen    *screen,
               sn_launcher_context_set_binary_name (sn_launcher, argv[0]);
               sn_launcher_context_set_workspace (sn_launcher, sn_workspace);
               sn_launcher_context_set_icon_name (sn_launcher, (icon_name != NULL) ? icon_name : "applications-other");
-              sn_launcher_context_initiate (sn_launcher, g_get_prgname (), argv[0], CurrentTime);
+              sn_launcher_context_initiate (sn_launcher, g_get_prgname (), argv[0], startup_timestamp);
 
               /* add the real startup id to the child environment */
               cenvp[n_cenvp++] = g_strconcat ("DESKTOP_STARTUP_ID=", sn_launcher_context_get_startup_id (sn_launcher), NULL);
@@ -393,7 +403,7 @@ xfce_execute_on_screen (GdkScreen    *screen,
   /* execute the function */
   succeed = xfce_execute_argv_on_screen (screen, NULL, argv, NULL,
                                          G_SPAWN_SEARCH_PATH, startup_notify,
-                                         NULL, error);
+                                         gtk_get_current_event_time (), NULL, error);
 
   /* cleanup */
   g_strfreev (argv);
