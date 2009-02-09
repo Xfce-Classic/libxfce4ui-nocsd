@@ -1,14 +1,14 @@
 # Swedish translation for libxfce4ui.
-# Copyright (C) 2008 Free Software Foundation, Inc.
+# Copyright (C) 2008, 2009 Free Software Foundation, Inc.
 # This file is distributed under the same license as the libxfce4ui package.
-# Daniel Nylander <po@danielnylander.se>, 2008.
+# Daniel Nylander <po@danielnylander.se>, 2008, 2009.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-12-08 20:47+0100\n"
-"PO-Revision-Date: 2008-12-09 01:07+0100\n"
+"POT-Creation-Date: 2009-02-09 00:04+0100\n"
+"PO-Revision-Date: 2009-02-09 00:09+0100\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "MIME-Version: 1.0\n"
@@ -17,22 +17,34 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:199
+#: ../libxfce4ui/xfce-dialogs.c:204
 msgid "Information"
 msgstr "Information"
 
 #. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:234
+#: ../libxfce4ui/xfce-dialogs.c:239
 msgid "Warning"
 msgstr "Varning"
 
 #. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:272
+#: ../libxfce4ui/xfce-dialogs.c:277
 msgid "Error"
 msgstr "Fel"
 
 #. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:323
+#: ../libxfce4ui/xfce-dialogs.c:328
 msgid "Question"
 msgstr "Fråga"
+
+#: ../glade/libxfce4ui.xml.in.h:1
+msgid "Subtitle"
+msgstr "Undertext"
+
+#: ../glade/libxfce4ui.xml.in.h:2
+msgid "Titled Dialog"
+msgstr "Namngiven dialogruta"
+
+#: ../glade/libxfce4ui.xml.in.h:3
+msgid "Xfce 4 Widgets"
+msgstr "Xfce 4-widgetar"
 
