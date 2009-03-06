@@ -54,7 +54,6 @@ xfce_message_dialog_vnew (gpointer     parent,
   GtkWidget   *dialog;
   GtkWindow   *window;
   GdkScreen   *screen;
-  gchar       *markup;
   GtkWidget   *image;
   GtkWidget   *button;
   const gchar *text = first_button_type;
@@ -73,12 +72,11 @@ xfce_message_dialog_vnew (gpointer     parent,
   if (G_LIKELY (primary_text != NULL))
     {
       /* create dialog with large bold text */
-      markup = g_strdup_printf ("<span weight='bold' size='large'>%s</span>", primary_text);
       dialog = gtk_message_dialog_new_with_markup (window,
                                                    GTK_DIALOG_DESTROY_WITH_PARENT | GTK_DIALOG_MODAL,
                                                    GTK_MESSAGE_OTHER, GTK_BUTTONS_NONE,
-                                                   "%s", markup);
-      g_free (markup);
+                                                   "<span weight='bold' size='large'>%s</span>", 
+                                                   primary_text);
       
       /* set secondary text */
       if (secondary_text != NULL)
