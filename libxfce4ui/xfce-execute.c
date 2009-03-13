@@ -312,7 +312,7 @@ xfce_execute_argv_on_screen (GdkScreen    *screen,
 #endif
 
   /* try to spawn the new process */
-  succeed = g_spawn_async (working_directory, argv, envp, flags, NULL, NULL, &pid, error);
+  succeed = g_spawn_async (working_directory, argv, cenvp, flags, NULL, NULL, &pid, error);
 
 #ifdef HAVE_LIBSTARTUP_NOTIFICATION
   if (G_LIKELY (sn_launcher != NULL))
