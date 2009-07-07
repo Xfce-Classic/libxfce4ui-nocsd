@@ -9,7 +9,7 @@ dnl ***************************
 m4_define([libxfce4ui_verinfo], [0:0:0])
 m4_define([libxfce4ui_version_api], [1])
 m4_define([libxfce4ui_version_major], [4])
-m4_define([libxfce4ui_version_minor], [5])
+m4_define([libxfce4ui_version_minor], [7])
 m4_define([libxfce4ui_version_micro], [0])
 m4_define([libxfce4ui_version_build], [r@REVISION@])
 m4_define([libxfce4ui_version_tag], [svn])
@@ -102,9 +102,9 @@ XDT_CHECK_LIBSM()
 dnl ***********************************
 dnl *** Check for required packages ***
 dnl ***********************************
-XDT_CHECK_PACKAGE([GOBJECT], [gobject-2.0], [2.12.0])
-XDT_CHECK_PACKAGE([GTK], [gtk+-2.0], [2.10.0])
-XDT_CHECK_PACKAGE([LIBXFCE4UTIL], [libxfce4util-1.0], [4.4.0])
+XDT_CHECK_PACKAGE([GOBJECT], [gobject-2.0], [2.16.0])
+XDT_CHECK_PACKAGE([GTK], [gtk+-2.0], [2.14.0])
+XDT_CHECK_PACKAGE([LIBXFCE4UTIL], [libxfce4util-1.0], [4.6.0])
 
 dnl *************************************************
 dnl *** Optional support for startup notification ***

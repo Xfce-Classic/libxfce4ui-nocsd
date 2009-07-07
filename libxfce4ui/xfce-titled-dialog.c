@@ -102,7 +102,8 @@ xfce_titled_dialog_class_init (XfceTitledDialogClass *klass)
                                                         "subtitle",
                                                         "subtitle",
                                                         NULL,
-                                                        LIBXFCE4UI_PARAM_READWRITE));
+                                                        G_PARAM_READWRITE
+                                                        | G_PARAM_STATIC_STRINGS));
 
   /* connect additional key bindings to the GtkDialog::close action signal */
   binding_set = gtk_binding_set_by_class (klass);

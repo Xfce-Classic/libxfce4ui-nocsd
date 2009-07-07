@@ -24,10 +24,10 @@
 #define LIBXFCE4UI_INSIDE_LIBXFCE4UI_H
 
 #include <libxfce4ui/libxfce4ui-config.h>
-#include <libxfce4ui/xfce-execute.h>
 #include <libxfce4ui/xfce-dialogs.h>
 #include <libxfce4ui/xfce-gdk-extensions.h>
 #include <libxfce4ui/xfce-gtk-extensions.h>
+#include <libxfce4ui/xfce-spawn.h>
 #include <libxfce4ui/xfce-titled-dialog.h>
 
 #undef LIBXFCE4UI_INSIDE_LIBXFCE4UI_H

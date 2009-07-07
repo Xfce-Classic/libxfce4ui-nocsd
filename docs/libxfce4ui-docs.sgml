@@ -2,7 +2,7 @@
 <!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN"
                "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd"[
 <!ENTITY libxfce4ui-config SYSTEM "xml/libxfce4ui-config.xml">
-<!ENTITY xfce-execute SYSTEM "xml/xfce-execute.xml">
+<!ENTITY xfce-spawn SYSTEM "xml/xfce-spawn.xml">
 <!ENTITY xfce-gdk-extensions SYSTEM "xml/xfce-gdk-extensions.xml">
 <!ENTITY xfce-gtk-extensions SYSTEM "xml/xfce-gtk-extensions.xml">
 <!ENTITY xfce-dialogs SYSTEM "xml/xfce-dialogs.xml">
@@ -19,7 +19,7 @@
     <pubdate>&date;</pubdate>
 
     <copyright>
-      <year>2007</year>
+      <year>2009</year>
       <holder>The Xfce Development Team</holder>
     </copyright>
 
@@ -56,7 +56,7 @@
   <part id="libxfce4ui-fundamentals">
     <title>Xfce Fundamentals</title>
     &libxfce4ui-config;
-    &xfce-execute;
+    &xfce-spawn;
   </part>
 
   <part id="libxfce4ui-extensions">

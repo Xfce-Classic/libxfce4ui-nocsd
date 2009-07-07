@@ -30,11 +30,7 @@
 
 G_BEGIN_DECLS
 
-GdkPixbuf *xfce_gdk_pixbuf_new_from_inline_at_size (const guint8 *data,
-                                                    gint          width,
-                                                    gint          height) G_GNUC_MALLOC;
-
-GdkScreen *xfce_gdk_screen_get_active              (gint         *monitor_return);
+GdkScreen *xfce_gdk_screen_get_active (gint *monitor_return);
 
 G_END_DECLS
 

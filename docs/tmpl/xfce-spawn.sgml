@@ -1,5 +1,5 @@
 <!-- ##### SECTION Title ##### -->
-Xfce Execute
+Xfce Spawn
 
 <!-- ##### SECTION Short_Description ##### -->
 Functions to spawn a command with startup notification support.
@@ -18,7 +18,7 @@ startup notification and they show up on the correct screen and workspace.
 <!-- ##### SECTION Stability_Level ##### -->
 
 
-<!-- ##### FUNCTION xfce_execute_argv_on_screen ##### -->
+<!-- ##### FUNCTION xfce_spawn_on_screen ##### -->
 <para>
 
 </para>
@@ -29,12 +29,13 @@ startup notification and they show up on the correct screen and workspace.
 @envp: 
 @flags: 
 @startup_notify: 
+@startup_timestamp: 
 @icon_name: 
 @error: 
 @Returns: 
 
 
-<!-- ##### FUNCTION xfce_execute_on_screen ##### -->
+<!-- ##### FUNCTION xfce_spawn_command_line_on_screen ##### -->
 <para>
 
 </para>

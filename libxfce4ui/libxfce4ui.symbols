@@ -49,27 +49,18 @@ libxfce4ui_check_version
 /* xfce-dialogs functions */
 #if IN_HEADER(__XFCE_DIALOGS_H__)
 #if IN_SOURCE(__XFCE_DIALOGS_C__)
-xfce_dialog_show_info G_GNUC_PRINTF (2, 3)
-xfce_dialog_show_warning G_GNUC_PRINTF (2, 3)
+xfce_dialog_show_info G_GNUC_PRINTF (3, 4)
+xfce_dialog_show_warning G_GNUC_PRINTF (3, 4)
 xfce_dialog_show_error G_GNUC_PRINTF (3, 4)
-xfce_dialog_confirm G_GNUC_PRINTF (4, 5)
-xfce_message_dialog_new G_GNUC_NULL_TERMINATED
-xfce_message_dialog_run G_GNUC_NULL_TERMINATED
-#endif
-#endif
-
-/* xfce-execute functions */
-#if IN_HEADER(__XFCE_EXECUTE_H__)
-#if IN_SOURCE(__XFCE_EXECUTE_C__)
-xfce_execute_argv_on_screen
-xfce_execute_on_screen
+xfce_dialog_confirm G_GNUC_PRINTF (5, 6)
+xfce_message_dialog_new G_GNUC_NULL_TERMINATED G_GNUC_MALLOC
+xfce_message_dialog G_GNUC_NULL_TERMINATED
 #endif
 #endif
 
 /* xfce-gdk-extensions functions */
 #if IN_HEADER(__XFCE_GDK_EXTENSIONS_H__)
 #if IN_SOURCE(__XFCE_GDK_EXTENSIONS_C__)
-xfce_gdk_pixbuf_new_from_inline_at_size G_GNUC_MALLOC
 xfce_gdk_screen_get_active
 #endif
 #endif
@@ -80,8 +71,15 @@ xfce_gdk_screen_get_active
 xfce_gtk_button_new_mixed G_GNUC_MALLOC
 xfce_gtk_frame_box_new G_GNUC_MALLOC
 xfce_gtk_frame_box_new_with_content G_GNUC_MALLOC
-xfce_gtk_dialog_parse_parent
 xfce_gtk_window_center_on_active_screen
+#endif
+#endif
+
+/* xfce-spawn functions */
+#if IN_HEADER(__XFCE_SPAWN_H__)
+#if IN_SOURCE(__XFCE_SPAWN_C__)
+xfce_spawn_on_screen
+xfce_spawn_command_line_on_screen
 #endif
 #endif
 

@@ -38,9 +38,6 @@ GtkWidget *xfce_gtk_frame_box_new                  (const gchar     *label,
 GtkWidget *xfce_gtk_frame_box_new_with_content     (const gchar     *label,
                                                     GtkWidget       *content) G_GNUC_MALLOC;
 
-GdkScreen *xfce_gtk_dialog_parse_parent            (gpointer         parent,
-                                                    GtkWindow      **window_return);
-
 void       xfce_gtk_window_center_on_active_screen (GtkWindow       *window);
 
 G_END_DECLS

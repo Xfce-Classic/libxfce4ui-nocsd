@@ -43,17 +43,15 @@
 
 
 static GtkWidget *
-xfce_message_dialog_vnew (gpointer     parent,
-                          const gchar *title,
-                          const gchar *icon_stock_id,
-                          const gchar *primary_text,
-                          const gchar *secondary_text,
-                          const gchar *first_button_type,
-                          va_list      args)
+xfce_message_dialog_new_valist (GtkWindow   *parent,
+                                const gchar *title,
+                                const gchar *icon_stock_id,
+                                const gchar *primary_text,
+                                const gchar *secondary_text,
+                                const gchar *first_button_type,
+                                va_list      args)
 {
   GtkWidget   *dialog;
-  GtkWindow   *window;
-  GdkScreen   *screen;
   GtkWidget   *image;
   GtkWidget   *button;
   const gchar *text = first_button_type;
@@ -64,20 +62,18 @@ xfce_message_dialog_vnew (gpointer     parent,
   gint         w, h;
 
   g_return_val_if_fail (primary_text != NULL || secondary_text != NULL, NULL);
-
-  /* parse the parent pointer */
-  screen = xfce_gtk_dialog_parse_parent (parent, &window);
+  g_return_val_if_fail (parent == NULL || GTK_IS_WINDOW (parent), NULL);
 
   /* create the dialog */
   if (G_LIKELY (primary_text != NULL))
     {
       /* create dialog with large bold text */
-      dialog = gtk_message_dialog_new_with_markup (window,
+      dialog = gtk_message_dialog_new_with_markup (parent,
                                                    GTK_DIALOG_DESTROY_WITH_PARENT | GTK_DIALOG_MODAL,
                                                    GTK_MESSAGE_OTHER, GTK_BUTTONS_NONE,
-                                                   "<span weight='bold' size='large'>%s</span>", 
+                                                   "<span weight='bold' size='large'>%s</span>",
                                                    primary_text);
-      
+
       /* set secondary text */
       if (secondary_text != NULL)
         gtk_message_dialog_format_secondary_text (GTK_MESSAGE_DIALOG (dialog), "%s", secondary_text);
@@ -85,17 +81,10 @@ xfce_message_dialog_vnew (gpointer     parent,
   else
     {
       /* create dialog with normal seconday text */
-      dialog = gtk_message_dialog_new (window,
+      dialog = gtk_message_dialog_new (parent,
                                        GTK_DIALOG_DESTROY_WITH_PARENT | GTK_DIALOG_MODAL,
                                        GTK_MESSAGE_OTHER, GTK_BUTTONS_NONE,
                                        "%s", secondary_text);
-    }
-
-  /* move the dialog to the appropriate screen and center it */
-  if (G_UNLIKELY (window == NULL && screen != NULL))
-    {
-      gtk_window_set_screen (GTK_WINDOW (dialog), screen);
-      gtk_window_set_position (GTK_WINDOW (dialog), GTK_WIN_POS_CENTER);
     }
 
   /* set title */
@@ -176,32 +165,33 @@ xfce_message_dialog_vnew (gpointer     parent,
 
 /**
  * xfce_dialog_show_info:
- * @parent : a #GtkWidget, a #GdkScreen or %NULL, see xfce_gtk_dialog_parse_parent() for more information.
- * @format : the printf()-style format for the primary problem description.
- * @...    : argument list for the @format.
+ * @parent         : transient parent of the dialog, or %NULL.
+ * @secondary_text : secondary text of the dialog or %NULL.
+ * @primary_format : the printf()-style format for the primary problem description.
+ * @...            : argument list for the @format.
  *
- * Displays an information dialog on @parent using the @format as message.
- *
- * If @widget is not %NULL and @widget is part of a #GtkWindow, the function makes sure
- * that the toplevel window is visible prior to displaying the information dialog.
+ * Displays an information dialog on @parent using the @primary_format as message.
  */
 void
-xfce_dialog_show_info (gpointer     parent,
-                       const gchar *format,
+xfce_dialog_show_info (GtkWindow   *parent,
+                       const gchar *secondary_text,
+                       const gchar *primary_format,
                        ...)
 {
   va_list  args;
   gchar   *primary_text;
 
+  g_return_if_fail (parent == NULL || GTK_IS_WINDOW (parent));
+
   /* create primary text */
-  va_start (args, format);
-  primary_text = g_strdup_vprintf (format, args);
+  va_start (args, primary_format);
+  primary_text = g_strdup_vprintf (primary_format, args);
   va_end (args);
 
   /* run dialog */
-  xfce_message_dialog_run (parent, _("Information"), GTK_STOCK_DIALOG_INFO,
-                           primary_text, NULL,
-                           GTK_STOCK_CLOSE, GTK_RESPONSE_CLOSE, NULL);
+  xfce_message_dialog (parent, _("Information"), GTK_STOCK_DIALOG_INFO,
+                       primary_text, secondary_text,
+                       GTK_STOCK_CLOSE, GTK_RESPONSE_CLOSE, NULL);
 
   /* cleanup */
   g_free (primary_text);
@@ -211,32 +201,33 @@ xfce_dialog_show_info (gpointer     parent,
 
 /**
  * xfce_dialog_show_warning:
- * @parent : a #GtkWidget, a #GdkScreen or %NULL, see xfce_gtk_dialog_parse_parent() for more information.
- * @format : the printf()-style format for the primary problem description.
- * @...    : argument list for the @format.
+ * @parent         : transient parent of the dialog, or %NULL.
+ * @secondary_text : secondary text of the dialog or %NULL.
+ * @primary_format : the printf()-style format for the primary problem description.
+ * @...            : argument list for the @format.
  *
- * Displays a warning dialog on @parent using the @format as message.
- *
- * If @widget is not %NULL and @widget is part of a #GtkWindow, the function makes sure
- * that the toplevel window is visible prior to displaying the message dialog.
+ * Displays a warning dialog on @parent using the @primary_format as message.
  */
 void
-xfce_dialog_show_warning (gpointer     parent,
-                          const gchar *format,
+xfce_dialog_show_warning (GtkWindow   *parent,
+                          const gchar *secondary_text,
+                          const gchar *primary_format,
                           ...)
 {
   va_list  args;
   gchar   *primary_text;
 
+  g_return_if_fail (parent == NULL || GTK_IS_WINDOW (parent));
+
   /* create primary text */
-  va_start (args, format);
-  primary_text = g_strdup_vprintf (format, args);
+  va_start (args, primary_format);
+  primary_text = g_strdup_vprintf (primary_format, args);
   va_end (args);
 
   /* run dialog */
-  xfce_message_dialog_run (parent, _("Warning"), GTK_STOCK_DIALOG_WARNING,
-                           primary_text, NULL,
-                           GTK_STOCK_CLOSE, GTK_RESPONSE_CLOSE, NULL);
+  xfce_message_dialog (parent, _("Warning"), GTK_STOCK_DIALOG_WARNING,
+                       primary_text, secondary_text,
+                       GTK_STOCK_CLOSE, GTK_RESPONSE_CLOSE, NULL);
 
   /* cleanup */
   g_free (primary_text);
@@ -246,35 +237,34 @@ xfce_dialog_show_warning (gpointer     parent,
 
 /**
  * xfce_dialog_show_error:
- * @parent : a #GtkWidget, a #GdkScreen or %NULL, see xfce_gtk_dialog_parse_parent() for more information.
- * @error  : a #GError, which gives a more precise description of the problem or %NULL.
- * @format : the printf()-style format for the primary problem description.
- * @...    : argument list for the @format.
+ * @parent         : transient parent of the dialog, or %NULL.
+ * @error          : a #GError, which gives a more precise description of the problem or %NULL.
+ * @primary_format : the printf()-style format for the primary problem description.
+ * @...            : argument list for the @primary_format.
  *
- * Displays an error dialog on @parent using the @format as primary message and optionally
+ * Displays an error dialog on @parent using the @primary_format as primary message and optionally
  * displaying @error as secondary error text.
- *
- * If @parent is not %NULL and @parent is part of a #GtkWindow, the function makes sure
- * that the toplevel window is visible prior to displaying the error dialog.
  */
 void
-xfce_dialog_show_error (gpointer      parent,
+xfce_dialog_show_error (GtkWindow    *parent,
                         const GError *error,
-                        const gchar  *format,
+                        const gchar  *primary_format,
                         ...)
 {
   va_list  args;
   gchar   *primary_text;
 
+  g_return_if_fail (parent == NULL || GTK_IS_WINDOW (parent));
+
   /* create primary text */
-  va_start (args, format);
-  primary_text = g_strdup_vprintf (format, args);
+  va_start (args, primary_format);
+  primary_text = g_strdup_vprintf (primary_format, args);
   va_end (args);
 
   /* run dialog */
-  xfce_message_dialog_run (parent, _("Error"), GTK_STOCK_DIALOG_ERROR,
-                           primary_text, error ? error->message : NULL,
-                           GTK_STOCK_CLOSE, GTK_RESPONSE_CLOSE, NULL);
+  xfce_message_dialog (parent, _("Error"), GTK_STOCK_DIALOG_ERROR,
+                       primary_text, error ? error->message : NULL,
+                       GTK_STOCK_CLOSE, GTK_RESPONSE_CLOSE, NULL);
 
   /* cleanup */
   g_free (primary_text);
@@ -284,11 +274,11 @@ xfce_dialog_show_error (gpointer      parent,
 
 /**
  * xfce_dialog_confirm:
- * @parent        : a #GtkWidget, a #GdkScreen or %NULL, see xfce_gtk_dialog_parse_parent() for more information.
- * @stock_id      : the stock name of the confirm button, for example #GTK_STOCK_YES or #GTK_STOCK_CLEAR.
- * @confirm_label : if non-%NULL, this text is used on the confirm button together with the @stock_id icon.
- * @format        : the printf()-style format for the dialog question.
- * @...           : argument list for the @format.
+ * @parent         : transient parent of the dialog, or %NULL.
+ * @stock_id       : the stock name of the confirm button, for example #GTK_STOCK_YES or #GTK_STOCK_CLEAR.
+ * @confirm_label  : if non-%NULL, this text is used on the confirm button together with the @stock_id icon.
+ * @primary_format : the printf()-style format for the dialog question.
+ * @...            : argument list for the @primary_format.
  *
  * Runs a questions dialog, that has a 'Cancel' and a 'Confirm' button. The 'Confirm'
  * button text can be set by @action if given.
@@ -298,10 +288,11 @@ xfce_dialog_show_error (gpointer      parent,
  * Return value: TRUE if the user confirms, else FALSE.
  */
 gboolean
-xfce_dialog_confirm (gpointer     parent,
+xfce_dialog_confirm (GtkWindow   *parent,
                      const gchar *stock_id,
                      const gchar *confirm_label,
-                     const gchar *format,
+                     const gchar *secondary_text,
+                     const gchar *primary_format,
                      ...)
 {
   va_list      args;
@@ -310,10 +301,11 @@ xfce_dialog_confirm (gpointer     parent,
   gint         response_id;
 
   g_return_val_if_fail (stock_id != NULL || confirm_label != NULL, FALSE);
+  g_return_val_if_fail (parent == NULL || GTK_IS_WINDOW (parent), FALSE);
 
   /* create primary text */
-  va_start (args, format);
-  primary_text = g_strdup_vprintf (format, args);
+  va_start (args, primary_format);
+  primary_text = g_strdup_vprintf (primary_format, args);
   va_end (args);
 
   /* whether this will be a yes/no dialog */
@@ -323,10 +315,12 @@ xfce_dialog_confirm (gpointer     parent,
     no_stock_id = GTK_STOCK_CANCEL;
 
   /* run dialog */
-  response_id = xfce_message_dialog_run (parent, _("Question"), GTK_STOCK_DIALOG_QUESTION,
-                                         primary_text, NULL,
-                                         no_stock_id, GTK_RESPONSE_NO,
-                                         XFCE_BUTTON_TYPE_MIXED, stock_id, confirm_label, GTK_RESPONSE_YES, NULL);
+  response_id = xfce_message_dialog (parent, _("Question"),
+                                     GTK_STOCK_DIALOG_QUESTION,
+                                     primary_text, secondary_text,
+                                     no_stock_id, GTK_RESPONSE_NO,
+                                     XFCE_BUTTON_TYPE_MIXED, stock_id,
+                                     confirm_label, GTK_RESPONSE_YES, NULL);
 
   /* cleanup */
   g_free (primary_text);
@@ -338,13 +332,13 @@ xfce_dialog_confirm (gpointer     parent,
 
 /**
  * xfce_message_dialog_new:
- * @parent            : a #GtkWidget, a #GdkScreen or %NULL, see xfce_gtk_dialog_parse_parent() for more information.
+ * @parent            : transient parent of the dialog, or %NULL.
  * @title             : title of the dialog, or %NULL.
  * @stock_id          : gtk stock icon name to show in the dialog.
  * @primary_text      : primary text shown in large bold font.
  * @secondary_text    : secondary text shown in normal font.
  * @first_button_text : text for the first button.
- * @...               : %NULL ended list of parameters.
+ * @...               : %NULL terminated list of parameters.
  *
  * xfce_message_dialog_new() allows you to easily create Gtk+ message dialogs.
  * It accepts GTK+ stock buttons, mixed buttons (using XFCE_BUTTON_TYPE_MIXED)
@@ -411,7 +405,7 @@ xfce_dialog_confirm (gpointer     parent,
  * Return value: A new #GtkMessageDialog.
  **/
 GtkWidget *
-xfce_message_dialog_new (gpointer     parent,
+xfce_message_dialog_new (GtkWindow   *parent,
                          const gchar *title,
                          const gchar *stock_id,
                          const gchar *primary_text,
@@ -422,9 +416,12 @@ xfce_message_dialog_new (gpointer     parent,
   va_list    args;
   GtkWidget *dialog;
 
+  g_return_val_if_fail (parent == NULL || GTK_IS_WINDOW (parent), NULL);
+
   /* create dialog */
   va_start (args, first_button_text);
-  dialog = xfce_message_dialog_vnew (parent, title, stock_id, primary_text, secondary_text, first_button_text, args);
+  dialog = xfce_message_dialog_new_valist (parent, title, stock_id, primary_text,
+                                           secondary_text, first_button_text, args);
   va_end (args);
 
   return dialog;
@@ -433,8 +430,8 @@ xfce_message_dialog_new (gpointer     parent,
 
 
 /**
- * xfce_message_dialog_run:
- * @parent            : a #GtkWidget, a #GdkScreen or %NULL, see xfce_gtk_dialog_parse_parent() for more information.
+ * xfce_message_dialog:
+ * @parent            : transient parent of the dialog, or %NULL.
  * @title             : title of the dialog, or %NULL.
  * @stock_id          : gtk stock icon name to show in the dialog.
  * @primary_text      : primary text shown in large bold font.
@@ -443,28 +440,31 @@ xfce_message_dialog_new (gpointer     parent,
  * @...               : %NULL ended list of parameters.
  *
  * Create a new dialog as in xfce_message_dialog_new(), then runs the
- * dialog and return the response id selected by the user.
+ * dialog using #gtk_dialog_run and return the response id selected by the user.
  *
  * See xfce_message_dialog_new() for more information.
  *
  * Returns: the selected response id.
  **/
 gint
-xfce_message_dialog_run (gpointer     parent,
-                         const gchar *title,
-                         const gchar *stock_id,
-                         const gchar *primary_text,
-                         const gchar *secondary_text,
-                         const gchar *first_button_text,
-                         ...)
+xfce_message_dialog (GtkWindow   *parent,
+                     const gchar *title,
+                     const gchar *stock_id,
+                     const gchar *primary_text,
+                     const gchar *secondary_text,
+                     const gchar *first_button_text,
+                     ...)
 {
   va_list    args;
   GtkWidget *dialog;
   gint       response_id;
 
+  g_return_val_if_fail (parent == NULL || GTK_IS_WINDOW (parent), 0);
+
   /* create dialog */
   va_start (args, first_button_text);
-  dialog = xfce_message_dialog_vnew (parent, title, stock_id, primary_text, secondary_text, first_button_text, args);
+  dialog = xfce_message_dialog_new_valist (parent, title, stock_id, primary_text,
+                                           secondary_text, first_button_text, args);
   va_end (args);
 
   /* run the dialog */

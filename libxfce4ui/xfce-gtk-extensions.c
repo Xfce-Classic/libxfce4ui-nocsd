@@ -168,77 +168,13 @@ xfce_gtk_frame_box_new_with_content (const gchar *label,
 
 
 /**
- * xfce_gtk_dialog_parse_parent:
- * @parent        : a #GtkWidget, a #GdkScreen or %NULL.
- * @window_return : return location for the toplevel #GtkWindow or %NULL.
- *
- * Determines the screen for the @parent and returns that #GdkScreen.
- * If @window_return is not %NULL, the pointer to the #GtkWindow is
- * placed into it, or %NULL if the window could not be determined.
- *
- * If @parent is %NULL, the active #GdkScreen is set, see
- * xfce_gdk_screen_get_active() for more information.
- *
- * Return value: the #GdkScreen for the @parent.
- **/
-GdkScreen *
-xfce_gtk_dialog_parse_parent (gpointer    parent,
-                              GtkWindow **window_return)
-{
-  GdkScreen *screen = NULL;
-  GtkWidget *window = NULL;
-
-  g_return_val_if_fail (parent == NULL || GDK_IS_SCREEN (parent) || GTK_IS_WIDGET (parent), NULL);
-
-  /* determine the proper parent if one was set */
-  if (parent != NULL)
-    {
-      if (GDK_IS_SCREEN (parent))
-        {
-          /* yep, that's a screen */
-          screen = GDK_SCREEN (parent);
-        }
-      else if (GTK_IS_WIDGET (parent))
-        {
-          /* parent is a widget, so let's determine the toplevel window */
-          window = gtk_widget_get_toplevel (GTK_WIDGET (parent));
-          if (GTK_WIDGET_TOPLEVEL (window))
-            {
-              /* make sure the toplevel window is shown */
-              gtk_widget_show_now (window);
-            }
-          else
-            {
-              /* no toplevel, not usable then */
-              window = NULL;
-            }
-
-          /* determine the screen for the widget */
-          screen = gtk_widget_get_screen (GTK_WIDGET (parent));
-        }
-    }
-
-  /* use the active screen */
-  if (screen == NULL)
-    screen = xfce_gdk_screen_get_active (NULL);
-
-  /* return the window */
-  if (G_LIKELY (window_return != NULL))
-    *window_return = GTK_WINDOW (window);
-
-  return screen;
-}
-
-
-
-/**
  * xfce_gtk_window_center_on_active_screen:
  * @window: the #GtkWindow to center.
  *
  * Determines the screen that contains the pointer and centers the
  * @window on it. If it failes to determine the current pointer position,
  * @window is centered on the default screen.
- * 
+ *
  * This function only works properly if you call it before realizing the
  * window and you haven't set a fixed window position using gtk_window_move().
  *
@@ -256,7 +192,7 @@ xfce_gtk_window_center_on_active_screen (GtkWindow *window)
 
   /* set the window screen */
   gtk_window_set_screen (window, screen);
-  
+
   /* gtk+ handles the centering of the window properly after resize */
   gtk_window_set_position (window, GTK_WIN_POS_CENTER);
 }

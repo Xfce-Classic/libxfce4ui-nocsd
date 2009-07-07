@@ -30,19 +30,6 @@ dupplication.
 @Returns: 
 
 
-<!-- ##### FUNCTION xfce_gtk_label_new_with_style ##### -->
-<para>
-
-</para>
-
-@label: 
-@scale_factor: 
-@style: 
-@weight: 
-@underline: 
-@Returns: 
-
-
 <!-- ##### FUNCTION xfce_gtk_frame_box_new ##### -->
 <para>
 
@@ -63,57 +50,11 @@ dupplication.
 @Returns: 
 
 
-<!-- ##### FUNCTION xfce_gtk_dialog_parse_parent ##### -->
-<para>
-
-</para>
-
-@parent: 
-@window_return: 
-@Returns: 
-
-
 <!-- ##### FUNCTION xfce_gtk_window_center_on_active_screen ##### -->
 <para>
 
 </para>
 
 @window: 
-
-
-<!-- ##### MACRO xfce_gtk_label_new_big_bold ##### -->
-<para>
-Convenient macro for xfce_gtk_label_new_with_style(). It returns a
-large bold #GtkLabel.
-</para>
-
-@label: the text of the label.
-
-
-<!-- ##### MACRO xfce_gtk_label_new_bold ##### -->
-<para>
-Convenient macro for xfce_gtk_label_new_with_style(). It returns a
-bold #GtkLabel.
-</para>
-
-@label: the text of the label.
-
-
-<!-- ##### MACRO xfce_gtk_label_new_italic ##### -->
-<para>
-Convenient macro for xfce_gtk_label_new_with_style(). It returns an
-italic #GtkLabel.
-</para>
-
-@label: the text of the label.
-
-
-<!-- ##### MACRO xfce_gtk_label_new_small_italic ##### -->
-<para>
-Convenient macro for xfce_gtk_label_new_with_style(). It returns a
-small italic #GtkLabel.
-</para>
-
-@label: the text of the label.
 
 

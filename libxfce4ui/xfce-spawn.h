@@ -22,29 +22,29 @@
 #error "Only <libxfce4ui/libxfce4ui.h> can be included directly, this file is not part of the public API."
 #endif
 
-#ifndef __XFCE_EXECUTE_H__
-#define __XFCE_EXECUTE_H__
+#ifndef __XFCE_SPAWN_H__
+#define __XFCE_SPAWN_H__
 
 #include <gdk/gdk.h>
 
 G_BEGIN_DECLS
 
-gboolean xfce_execute_argv_on_screen (GdkScreen    *screen,
-                                      const gchar  *working_directory,
-                                      gchar       **argv,
-                                      gchar       **envp,
-                                      GSpawnFlags   flags,
-                                      gboolean      startup_notify,
-                                      guint32       startup_timestamp,
-                                      const gchar  *icon_name,
-                                      GError      **error);
+gboolean xfce_spawn_on_screen              (GdkScreen    *screen,
+                                            const gchar  *working_directory,
+                                            gchar       **argv,
+                                            gchar       **envp,
+                                            GSpawnFlags   flags,
+                                            gboolean      startup_notify,
+                                            guint32       startup_timestamp,
+                                            const gchar  *icon_name,
+                                            GError      **error);
 
-gboolean xfce_execute_on_screen      (GdkScreen    *screen,
-                                      const gchar  *command_line,
-                                      gboolean      in_terminal,
-                                      gboolean      startup_notify,
-                                      GError      **error);
+gboolean xfce_spawn_command_line_on_screen (GdkScreen    *screen,
+                                            const gchar  *command_line,
+                                            gboolean      in_terminal,
+                                            gboolean      startup_notify,
+                                            GError      **error);
 
 G_END_DECLS
 
-#endif /* !__XFCE_EXECUTE_H__ */
+#endif /* !__XFCE_SPAWN_H__ */

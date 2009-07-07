@@ -19,22 +19,12 @@ on the Gdk-pixbuf library.
 <!-- ##### SECTION Stability_Level ##### -->
 
 
-<!-- ##### FUNCTION xfce_gdk_pixbuf_new_from_inline_at_size ##### -->
-<para>
-
-</para>
-
-@data: 
-@width: 
-@height: 
-@Returns: 
-
-
 <!-- ##### FUNCTION xfce_gdk_screen_get_active ##### -->
 <para>
 
 </para>
 
+@monitor_return: 
 @Returns: 
 
 

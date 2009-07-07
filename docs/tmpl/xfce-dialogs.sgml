@@ -33,7 +33,7 @@ Useful convientent function to interact with the user using a
 @Returns: 
 
 
-<!-- ##### FUNCTION xfce_message_dialog_run ##### -->
+<!-- ##### FUNCTION xfce_message_dialog ##### -->
 <para>
 
 </para>
@@ -54,7 +54,8 @@ Useful convientent function to interact with the user using a
 </para>
 
 @parent: 
-@format: 
+@secondary_text: 
+@primary_format: 
 @Varargs: 
 
 
@@ -64,7 +65,8 @@ Useful convientent function to interact with the user using a
 </para>
 
 @parent: 
-@format: 
+@secondary_text: 
+@primary_format: 
 @Varargs: 
 
 
@@ -75,7 +77,7 @@ Useful convientent function to interact with the user using a
 
 @parent: 
 @error: 
-@format: 
+@primary_format: 
 @Varargs: 
 
 
@@ -87,7 +89,8 @@ Useful convientent function to interact with the user using a
 @parent: 
 @stock_id: 
 @confirm_label: 
-@format: 
+@secondary_text: 
+@primary_format: 
 @Varargs: 
 @Returns: 
 

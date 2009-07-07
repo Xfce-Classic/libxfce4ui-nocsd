@@ -14,14 +14,13 @@ LIBXFCE4UI_CHECK_VERSION
 </SECTION>
 
 <SECTION>
-<FILE>xfce-execute</FILE>
-xfce_execute_argv_on_screen
-xfce_execute_on_screen
+<FILE>xfce-spawn</FILE>
+xfce_spawn_on_screen
+xfce_spawn_command_line_on_screen
 </SECTION>
 
 <SECTION>
 <FILE>xfce-gdk-extensions</FILE>
-xfce_gdk_pixbuf_new_from_inline_at_size G_GNUC_MALLOC
 xfce_gdk_screen_get_active
 </SECTION>
 
@@ -31,7 +30,6 @@ xfce_gtk_button_new_mixed
 xfce_gtk_label_new_with_style
 xfce_gtk_frame_box_new
 xfce_gtk_frame_box_new_with_content
-xfce_gtk_dialog_parse_parent
 xfce_gtk_window_center_on_active_screen
 <SUBSECTION>
 xfce_gtk_label_new_big_bold
@@ -43,7 +41,7 @@ xfce_gtk_label_new_small_italic
 <SECTION>
 <FILE>xfce-dialogs</FILE>
 xfce_message_dialog_new
-xfce_message_dialog_run
+xfce_message_dialog
 xfce_dialog_show_info
 xfce_dialog_show_warning
 xfce_dialog_show_error

@@ -38,57 +38,6 @@
 
 
 /**
- * xfce_gdk_pixbuf_new_from_inline_at_size:
- * @data   : byte data containing a serialized #GdkPixdata structure.
- * @width  : the width of the returned pixbuf or -1 to not constrain the width.
- * @height : the height of the returned pixbuf or -1 to not constrain the height.
- *
- * Creates a #GdkPixbuf from a flat representation that is suitable
- * for storing as inline data in a program. The image will be scaled
- * to fit in the requested size, preserving the image's aspect ratio.
- *
- * See also: gdk_pixbuf_new_from_inline(), gdk_pixbuf_scale_simple().
- *
- * Return value: a newly-created pixbuf with a reference count of 1,
- *               or %NULL on failure.  This data must be freed with
- *               g_object_unref() after use.
- **/
-GdkPixbuf *
-xfce_gdk_pixbuf_new_from_inline_at_size (const guint8 *data,
-                                         gint          width,
-                                         gint          height)
-{
-  GdkPixbuf *pixbuf, *scaled;
-
-  /*create a pixbuf from the inline data */
-  pixbuf = gdk_pixbuf_new_from_inline (-1, data, FALSE, NULL);
-
-  if (G_LIKELY (pixbuf != NULL))
-    {
-      /* check pixbuf size */
-      if ((width > 0 && gdk_pixbuf_get_width (pixbuf) != width)
-          || (height > 0 && gdk_pixbuf_get_height (pixbuf) != height))
-        {
-          /* scale pixbuf */
-          scaled = gdk_pixbuf_scale_simple (pixbuf,
-                                            width > 0 ? width : gdk_pixbuf_get_width (pixbuf),
-                                            height > 0 ? height : gdk_pixbuf_get_height (pixbuf),
-                                            GDK_INTERP_BILINEAR);
-
-          /* release the old pixbuf */
-          g_object_unref (G_OBJECT (pixbuf));
-
-          /* set */
-          pixbuf = scaled;
-        }
-    }
-
-  return pixbuf;
-}
-
-
-
-/**
  * xfce_gdk_screen_get_active:
  * @monitor_return : Address to store the monitor number to or %NULL.
  *
@@ -104,12 +53,12 @@ xfce_gdk_screen_get_active (gint *monitor_return)
 #ifdef GDK_WINDOWING_X11
   GdkScreen *screen;
   Window     child;
-	Window     root;
+  Window     root;
   GSList    *displays;
   GSList    *lp;
-	guint      xmask;
-	gint       rootx, rooty;
-	gint       winx, winy;
+  guint      xmask;
+  gint       rootx, rooty;
+  gint       winx, winy;
   gint       n;
 
   /* determine the list of active displays */
@@ -128,7 +77,7 @@ xfce_gdk_screen_get_active (gint *monitor_return)
               /* return the monitor number */
               if (monitor_return)
                 *monitor_return = gdk_screen_get_monitor_at_point (screen, rootx, rooty);
-              
+
               /* yap, this screen contains the pointer, hence it's the active screen */
               goto out;
             }
@@ -137,7 +86,7 @@ xfce_gdk_screen_get_active (gint *monitor_return)
 
   /* fallback to the default screen */
   screen = gdk_screen_get_default ();
-  
+
   /* no monitor was found */
   if (monitor_return)
     *monitor_return = 0;

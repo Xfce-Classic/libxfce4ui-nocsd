@@ -130,7 +130,8 @@ xfce_heading_class_init (XfceHeadingClass *klass)
                                                         "icon",
                                                         "icon",
                                                         GDK_TYPE_PIXBUF,
-                                                        LIBXFCE4UI_PARAM_READWRITE));
+                                                        G_PARAM_READWRITE
+                                                        | G_PARAM_STATIC_STRINGS));
 
   /**
    * XfceHeading:icon-name:
@@ -148,7 +149,8 @@ xfce_heading_class_init (XfceHeadingClass *klass)
                                                         "icon-name",
                                                         "icon-name",
                                                         NULL,
-                                                        LIBXFCE4UI_PARAM_READWRITE));
+                                                        G_PARAM_READWRITE
+                                                        | G_PARAM_STATIC_STRINGS));
 
   /**
    * XfceHeading:subtitle:
@@ -165,7 +167,8 @@ xfce_heading_class_init (XfceHeadingClass *klass)
                                                         "subtitle",
                                                         "subtitle",
                                                         NULL,
-                                                        LIBXFCE4UI_PARAM_READWRITE));
+                                                        G_PARAM_READWRITE
+                                                        | G_PARAM_STATIC_STRINGS));
 
   /**
    * XfceHeading:title:
@@ -180,7 +183,8 @@ xfce_heading_class_init (XfceHeadingClass *klass)
                                                         "title",
                                                         "title",
                                                         NULL,
-                                                        LIBXFCE4UI_PARAM_READWRITE));
+                                                        G_PARAM_READWRITE
+                                                        | G_PARAM_STATIC_STRINGS));
 }
 
 

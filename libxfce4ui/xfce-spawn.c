@@ -41,13 +41,13 @@
 #include <libsn/sn.h>
 #endif
 
-#include <libxfce4ui/xfce-execute.h>
+#include <libxfce4ui/xfce-spawn.h>
 #include <libxfce4ui/xfce-gdk-extensions.h>
 #include <libxfce4ui/libxfce4ui-private.h>
 #include <libxfce4ui/libxfce4ui-alias.h>
 
 /* the maximum time for an application to startup */
-#define XFCE_EXECUTE_STARTUP_TIMEOUT (30 * 1000)
+#define XFCE_SPAWN_STARTUP_TIMEOUT (30 * 1000)
 
 
 
@@ -58,90 +58,90 @@ typedef struct
   guint              timeout_id;
   guint              watch_id;
   GPid               pid;
-} XfceStartupData;
+} XfceSpawnData;
 
 
 
 
 static gboolean
-xfce_execute_startup_timeout (gpointer user_data)
+xfce_spawn_startup_timeout (gpointer user_data)
 {
-  XfceStartupData *startup_data = user_data;
-  GTimeVal         now;
-  gdouble          elapsed;
-  glong            tv_sec;
-  glong            tv_usec;
+  XfceSpawnData *spawn_data = user_data;
+  GTimeVal       now;
+  gdouble        elapsed;
+  glong          tv_sec;
+  glong          tv_usec;
 
   GDK_THREADS_ENTER ();
 
   /* determine the amount of elapsed time */
   g_get_current_time (&now);
-  sn_launcher_context_get_last_active_time (startup_data->sn_launcher, &tv_sec, &tv_usec);
+  sn_launcher_context_get_last_active_time (spawn_data->sn_launcher, &tv_sec, &tv_usec);
   elapsed = (((gdouble) now.tv_sec - tv_sec) * G_USEC_PER_SEC + (now.tv_usec - tv_usec)) / 1000.0;
 
   /* check if the timeout was reached */
-  if (elapsed >= XFCE_EXECUTE_STARTUP_TIMEOUT)
+  if (elapsed >= XFCE_SPAWN_STARTUP_TIMEOUT)
     {
       /* abort the startup notification */
-      sn_launcher_context_complete (startup_data->sn_launcher);
-      sn_launcher_context_unref (startup_data->sn_launcher);
-      startup_data->sn_launcher = NULL;
+      sn_launcher_context_complete (spawn_data->sn_launcher);
+      sn_launcher_context_unref (spawn_data->sn_launcher);
+      spawn_data->sn_launcher = NULL;
     }
 
   GDK_THREADS_LEAVE ();
 
   /* keep the startup timeout if not elapsed */
-  return (elapsed < XFCE_EXECUTE_STARTUP_TIMEOUT);
+  return (elapsed < XFCE_SPAWN_STARTUP_TIMEOUT);
 }
 
 
 
 static void
-xfce_execute_startup_timeout_destroy (gpointer user_data)
+xfce_spawn_startup_timeout_destroy (gpointer user_data)
 {
-  XfceStartupData *startup_data = user_data;
+  XfceSpawnData *spawn_data = user_data;
 
-  g_return_if_fail (startup_data->sn_launcher == NULL);
+  g_return_if_fail (spawn_data->sn_launcher == NULL);
 
   /* cancel the watch (if any) */
-  if (startup_data->watch_id != 0)
-    g_source_remove (startup_data->watch_id);
+  if (spawn_data->watch_id != 0)
+    g_source_remove (spawn_data->watch_id);
 
   /* make sure we don't leave zombies */
-  g_child_watch_add_full (G_PRIORITY_LOW, startup_data->pid,
+  g_child_watch_add_full (G_PRIORITY_LOW, spawn_data->pid,
                           (GChildWatchFunc) g_spawn_close_pid,
                           NULL, NULL);
 
   /* release the startup data */
-  g_slice_free (XfceStartupData, startup_data);
+  g_slice_free (XfceSpawnData, spawn_data);
 }
 
 
 
 static void
-xfce_execute_startup_watch (GPid     pid,
-                            gint     status,
-                            gpointer user_data)
+xfce_spawn_startup_watch (GPid     pid,
+                          gint     status,
+                          gpointer user_data)
 {
-  XfceStartupData *startup_data = user_data;
+  XfceSpawnData *spawn_data = user_data;
 
-  g_return_if_fail (startup_data->sn_launcher != NULL);
-  g_return_if_fail (startup_data->watch_id != 0);
-  g_return_if_fail (startup_data->pid == pid);
+  g_return_if_fail (spawn_data->sn_launcher != NULL);
+  g_return_if_fail (spawn_data->watch_id != 0);
+  g_return_if_fail (spawn_data->pid == pid);
 
   /* abort the startup notification (application exited) */
-  sn_launcher_context_complete (startup_data->sn_launcher);
-  sn_launcher_context_unref (startup_data->sn_launcher);
-  startup_data->sn_launcher = NULL;
+  sn_launcher_context_complete (spawn_data->sn_launcher);
+  sn_launcher_context_unref (spawn_data->sn_launcher);
+  spawn_data->sn_launcher = NULL;
 
   /* cancel the startup notification timeout */
-  g_source_remove (startup_data->timeout_id);
+  g_source_remove (spawn_data->timeout_id);
 }
 
 
 
 static gint
-xfce_execute_get_active_workspace_number (GdkScreen *screen)
+xfce_spawn_get_active_workspace_number (GdkScreen *screen)
 {
   GdkWindow *root;
   gulong     bytes_after_ret = 0;
@@ -195,7 +195,7 @@ xfce_execute_get_active_workspace_number (GdkScreen *screen)
 
 
 /**
- * xfce_execute_argv_on_screen:
+ * xfce_spawn_on_screen:
  * @screen            : a #GdkScreen or %NULL to use the active screen,
  *                      see xfce_gdk_screen_get_active().
  * @working_directory : child's current working directory or %NULL to
@@ -220,15 +220,15 @@ xfce_execute_get_active_workspace_number (GdkScreen *screen)
  * Return value: %TRUE on success, %FALSE if @error is set.
  **/
 gboolean
-xfce_execute_argv_on_screen (GdkScreen    *screen,
-                             const gchar  *working_directory,
-                             gchar       **argv,
-                             gchar       **envp,
-                             GSpawnFlags   flags,
-                             gboolean      startup_notify,
-                             guint32       startup_timestamp,
-                             const gchar  *icon_name,
-                             GError      **error)
+xfce_spawn_on_screen (GdkScreen    *screen,
+                      const gchar  *working_directory,
+                      gchar       **argv,
+                      gchar       **envp,
+                      GSpawnFlags   flags,
+                      gboolean      startup_notify,
+                      guint32       startup_timestamp,
+                      const gchar  *icon_name,
+                      GError      **error)
 {
   gboolean           succeed;
   gchar            **cenvp;
@@ -238,7 +238,7 @@ xfce_execute_argv_on_screen (GdkScreen    *screen,
   GPid               pid;
 #ifdef HAVE_LIBSTARTUP_NOTIFICATION
   SnLauncherContext *sn_launcher = NULL;
-  XfceStartupData   *startup_data;
+  XfceSpawnData     *spawn_data;
   SnDisplay         *sn_display = NULL;
   gint               sn_workspace;
 #endif
@@ -258,7 +258,7 @@ xfce_execute_argv_on_screen (GdkScreen    *screen,
       envp = g_listenv ();
       cenvp = g_new0 (gchar *, g_strv_length (envp) + 3);
       for (n = n_cenvp = 0; envp[n] != NULL; n++)
-        if (strcmp (envp[n], "DESKTOP_STARTUP_ID") != 0 
+        if (strcmp (envp[n], "DESKTOP_STARTUP_ID") != 0
             && strcmp (envp[n], "DISPLAY") != 0)
           cenvp[n_cenvp++] = g_strconcat (envp[n], "=", g_getenv (envp[n]), NULL);
 
@@ -270,7 +270,7 @@ xfce_execute_argv_on_screen (GdkScreen    *screen,
     {
       cenvp = g_new0 (gchar *, g_strv_length (envp) + 3);
       for (n = n_cenvp = 0; envp[n] != NULL; n++)
-        if (strncmp (envp[n], "DESKTOP_STARTUP_ID", 18) != 0 
+        if (strncmp (envp[n], "DESKTOP_STARTUP_ID", 18) != 0
             && strncmp (envp[n], "DISPLAY", 7) != 0)
           cenvp[n_cenvp++] = g_strdup (envp[n]);
     }
@@ -295,7 +295,7 @@ xfce_execute_argv_on_screen (GdkScreen    *screen,
           if (G_LIKELY (sn_launcher != NULL && !sn_launcher_context_get_initiated (sn_launcher)))
             {
               /* initiate the sn launcher context */
-              sn_workspace = xfce_execute_get_active_workspace_number (screen);
+              sn_workspace = xfce_spawn_get_active_workspace_number (screen);
               sn_launcher_context_set_binary_name (sn_launcher, argv[0]);
               sn_launcher_context_set_workspace (sn_launcher, sn_workspace);
               sn_launcher_context_set_icon_name (sn_launcher, (icon_name != NULL) ? icon_name : "applications-other");
@@ -326,12 +326,12 @@ xfce_execute_argv_on_screen (GdkScreen    *screen,
       else
         {
           /* schedule a startup notification timeout */
-          startup_data = g_slice_new0 (XfceStartupData);
-          startup_data->sn_launcher = sn_launcher;
-          startup_data->timeout_id = g_timeout_add_full (G_PRIORITY_LOW, XFCE_EXECUTE_STARTUP_TIMEOUT, xfce_execute_startup_timeout,
-                                                         startup_data, xfce_execute_startup_timeout_destroy);
-          startup_data->watch_id = g_child_watch_add_full (G_PRIORITY_LOW, pid, xfce_execute_startup_watch, startup_data, NULL);
-          startup_data->pid = pid;
+          spawn_data = g_slice_new0 (XfceSpawnData);
+          spawn_data->sn_launcher = sn_launcher;
+          spawn_data->timeout_id = g_timeout_add_full (G_PRIORITY_LOW, XFCE_SPAWN_STARTUP_TIMEOUT, xfce_spawn_startup_timeout,
+                                                         spawn_data, xfce_spawn_startup_timeout_destroy);
+          spawn_data->watch_id = g_child_watch_add_full (G_PRIORITY_LOW, pid, xfce_spawn_startup_watch, spawn_data, NULL);
+          spawn_data->pid = pid;
         }
     }
   else if (G_LIKELY (succeed))
@@ -354,7 +354,7 @@ xfce_execute_argv_on_screen (GdkScreen    *screen,
 
 
 /**
- * xfce_execute_on_screen:
+ * xfce_spawn_command_line_on_screen:
  * @screen            : a #GdkScreen or %NULL to use the active screen, see xfce_gdk_screen_get_active().
  * @command_line      : command line to run.
  * @in_terminal       : whether to run @command_line in a terminal.
@@ -369,11 +369,11 @@ xfce_execute_argv_on_screen (GdkScreen    *screen,
  *          successfully, %FALSE if @error is set.
  */
 gboolean
-xfce_execute_on_screen (GdkScreen    *screen,
-                        const gchar  *command_line,
-                        gboolean      in_terminal,
-                        gboolean      startup_notify,
-                        GError      **error)
+xfce_spawn_command_line_on_screen (GdkScreen    *screen,
+                                   const gchar  *command_line,
+                                   gboolean      in_terminal,
+                                   gboolean      startup_notify,
+                                   GError      **error)
 {
   gchar    **argv;
   gboolean   succeed;
@@ -401,9 +401,9 @@ xfce_execute_on_screen (GdkScreen    *screen,
     }
 
   /* execute the function */
-  succeed = xfce_execute_argv_on_screen (screen, NULL, argv, NULL,
-                                         G_SPAWN_SEARCH_PATH, startup_notify,
-                                         gtk_get_current_event_time (), NULL, error);
+  succeed = xfce_spawn_on_screen (screen, NULL, argv, NULL,
+                                       G_SPAWN_SEARCH_PATH, startup_notify,
+                                       gtk_get_current_event_time (), NULL, error);
 
   /* cleanup */
   g_strfreev (argv);
@@ -413,5 +413,5 @@ xfce_execute_on_screen (GdkScreen    *screen,
 
 
 
-#define __XFCE_EXECUTE_C__
+#define __XFCE_SPAWN_C__
 #include <libxfce4ui/libxfce4ui-aliasdef.c>
