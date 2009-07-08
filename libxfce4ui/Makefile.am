@@ -42,7 +42,7 @@ libxfce4ui_1_la_SOURCES = \
 	xfce-gtk-extensions.c \
 	xfce-heading.c \
 	xfce-heading.h \
-  xfce-spawn.c \
+	xfce-spawn.c \
 	xfce-titled-dialog.c
 
 libxfce4ui_1_la_CFLAGS = \
