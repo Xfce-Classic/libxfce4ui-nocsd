@@ -91,6 +91,10 @@ xfce_message_dialog_new_valist (GtkWindow   *parent,
   if (title != NULL)
     gtk_window_set_title (GTK_WINDOW (dialog), title);
 
+  /* put the dialog on the active screen if no parent is defined */
+  if (parent == NULL)
+    xfce_gtk_window_center_on_active_screen (GTK_WINDOW (dialog));
+
   if (icon_stock_id != NULL)
     {
       /* set dialog and window icon */
