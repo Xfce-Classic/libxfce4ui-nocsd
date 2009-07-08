@@ -17,7 +17,7 @@ libxfce4ui_headers = \
 	xfce-dialogs.h \
 	xfce-gdk-extensions.h \
 	xfce-gtk-extensions.h \
-  xfce-spawn.h \
+	xfce-spawn.h \
 	xfce-titled-dialog.h
 
 libxfce4ui_built_sources = \
