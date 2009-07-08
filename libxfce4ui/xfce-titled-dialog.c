@@ -69,7 +69,7 @@ struct _XfceTitledDialogPrivate
 
 
 
-G_DEFINE_TYPE (XfceTitledDialog, xfce_titled_dialog, GTK_TYPE_DIALOG);
+G_DEFINE_TYPE (XfceTitledDialog, xfce_titled_dialog, GTK_TYPE_DIALOG)
 
 
 

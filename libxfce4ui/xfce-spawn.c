@@ -402,8 +402,8 @@ xfce_spawn_command_line_on_screen (GdkScreen    *screen,
 
   /* execute the function */
   succeed = xfce_spawn_on_screen (screen, NULL, argv, NULL,
-                                       G_SPAWN_SEARCH_PATH, startup_notify,
-                                       gtk_get_current_event_time (), NULL, error);
+                                  G_SPAWN_SEARCH_PATH, startup_notify,
+                                  gtk_get_current_event_time (), NULL, error);
 
   /* cleanup */
   g_strfreev (argv);
