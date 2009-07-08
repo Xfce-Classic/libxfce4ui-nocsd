@@ -1,13 +1,24 @@
 #
-# Sources
+# Libxfce4ui sources
 #
 libxfce4ui/libxfce4ui-config.c
 libxfce4ui/xfce-dialogs.c
-libxfce4ui/xfce-execute.c
 libxfce4ui/xfce-gdk-extensions.c
 libxfce4ui/xfce-gtk-extensions.c
 libxfce4ui/xfce-heading.c
+libxfce4ui/xfce-spawn.c
 libxfce4ui/xfce-titled-dialog.c
 
+#
+# Libxfce4kbd-private sources
+#
+libxfce4kbd-private/xfce-shortcuts.c
+libxfce4kbd-private/xfce-shortcut-dialog.c
+libxfce4kbd-private/xfce-shortcuts-grabber.c
+libxfce4kbd-private/xfce-shortcuts-provider.c
+
+#
+# Support for GtkBuilder
+#
 glade/libxfce4ui-glade.c
 glade/libxfce4ui.xml.in

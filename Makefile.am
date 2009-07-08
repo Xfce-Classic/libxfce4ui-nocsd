@@ -2,6 +2,7 @@
 
 SUBDIRS = \
 	libxfce4ui \
+	libxfce4kbd-private \
 	glade \
 	docs \
 	po
@@ -26,6 +27,7 @@ DISTCLEANFILES = \
 	intltool-update
 
 DISTCHECK_CONFIGURE_FLAGS = \
-	--enable-gtk-doc
+	--enable-gtk-doc \
+	--disable-gladeui
 
 # vi:set ts=8 sw=8 noet ai nocindent syntax=automake:

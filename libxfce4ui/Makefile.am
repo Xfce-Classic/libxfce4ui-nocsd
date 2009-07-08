@@ -14,6 +14,8 @@ INCLUDES = \
 lib_LTLIBRARIES = libxfce4ui-1.la
 
 libxfce4ui_headers = \
+	libxfce4ui.h \
+	libxfce4ui-config.h \
 	xfce-dialogs.h \
 	xfce-gdk-extensions.h \
 	xfce-gtk-extensions.h \
@@ -25,15 +27,13 @@ libxfce4ui_built_sources = \
 	libxfce4ui-aliasdef.c
 
 libxfce4ui_includedir = \
-	$(includedir)/libxfce4ui-1/libxfce4ui
+	$(includedir)/xfce4/libxfce4ui-$(LIBXFCE4UI_VERSION_API)/libxfce4ui
 
 libxfce4ui_include_HEADERS = \
-	$(libxfce4ui_headers) \
-	libxfce4ui.h \
-	libxfce4ui-config.h
+	$(libxfce4ui_headers)
 
 libxfce4ui_1_la_SOURCES = \
-	$(libxfce4uiinclude_HEADERS) \
+	$(libxfce4ui_headers) \
 	$(libxfce4ui_built_sources) \
 	libxfce4ui-config.c \
 	libxfce4ui-private.h \
