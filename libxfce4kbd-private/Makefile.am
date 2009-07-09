@@ -45,11 +45,11 @@ libxfce4kbd_private_2_la_LDFLAGS = \
 	-version-info $(LIBXFCE4KBD_PRIVATE_VERINFO) \
 	-export-symbols-regex "^[^_].*" \
 	-no-undefined \
-	$(LIBX11_LDFLAGS)
+	$(LIBX11_LDFLAGS) \
+	$(PLATFORM_LDFLAGS)
 
 libxfce4kbd_private_2_la_LIBADD = \
 	$(top_builddir)/libxfce4ui/libxfce4ui-$(LIBXFCE4UI_VERSION_API).la \
-	$(PLATFORM_LDFLAGS) \
 	$(GLIB_LIBS) \
 	$(GTK_LIBS) \
 	$(LIBX11_LIBS) \
