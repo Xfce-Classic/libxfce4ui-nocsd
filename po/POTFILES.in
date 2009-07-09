@@ -18,6 +18,12 @@ libxfce4kbd-private/xfce-shortcuts-grabber.c
 libxfce4kbd-private/xfce-shortcuts-provider.c
 
 #
+# Libxfce4smclient-private sources
+#
+libxfce4smclient-private/eggdesktopfile.c
+libxfce4smclient-private/eggsmclient.c
+
+#
 # Support for GtkBuilder
 #
 glade/libxfce4ui-glade.c

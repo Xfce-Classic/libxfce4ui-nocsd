@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-01-05 22:17+0100\n"
+"POT-Creation-Date: 2009-07-09 23:15+0200\n"
 "PO-Revision-Date: 2008-05-18 18:49+0100\n"
 "Last-Translator: Ole Guldberg <olegb@omgwtf.dk>\n"
 "Language-Team: Danish dansk@dansk-gruppen.dk\n"
@@ -17,22 +17,181 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:199
+#: ../libxfce4ui/xfce-dialogs.c:196
 msgid "Information"
 msgstr "Information"
 
 #. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:234
+#: ../libxfce4ui/xfce-dialogs.c:232
 msgid "Warning"
 msgstr "Advarsel"
 
 #. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:272
+#: ../libxfce4ui/xfce-dialogs.c:269
 msgid "Error"
 msgstr "Fejl"
 
 #. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:323
+#: ../libxfce4ui/xfce-dialogs.c:322
 msgid "Question"
 msgstr "Spørgsmål"
 
+#: ../libxfce4kbd-private/xfce-shortcuts.c:52
+msgid ""
+"This shortcut is already being used for another window manager action. Which "
+"action do you want to use?"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:53
+#: ../libxfce4kbd-private/xfce-shortcuts.c:56
+#: ../libxfce4kbd-private/xfce-shortcuts.c:59
+#: ../libxfce4kbd-private/xfce-shortcuts.c:62
+#, c-format
+msgid "Use '%s'"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:53
+msgid "Keep the other one"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:55
+#: ../libxfce4kbd-private/xfce-shortcuts.c:58
+#, c-format
+msgid ""
+"This shortcut is already being used for the command '%s'. Which action do "
+"you want to use?"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:56
+#: ../libxfce4kbd-private/xfce-shortcuts.c:59
+#, c-format
+msgid "Keep '%s'"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:61
+msgid ""
+"This shortcut is already being used by a window manager action. Which action "
+"do you want to use?"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:62
+msgid "Keep the window manager action"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:95
+#, c-format
+msgid "Conflicting actions for %s"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:128
+msgid "This shortcut is already being used for something else."
+msgstr ""
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:207
+msgid "Window Manager Action Shortcut"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:208
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:218
+msgid "Action:"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:212
+msgid "Command Shortcut"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:213
+msgid "Command:"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:217
+msgid "Shortcut"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:258
+msgid "Shortcut:"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:303
+msgid "Could not grab the keyboard."
+msgstr ""
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:324
+#, c-format
+msgid "<span size='large'><b>%s</b></span>"
+msgstr ""
+
+#: ../libxfce4smclient-private/eggdesktopfile.c:165
+#, c-format
+msgid "File is not a valid .desktop file"
+msgstr ""
+
+#: ../libxfce4smclient-private/eggdesktopfile.c:188
+#, c-format
+msgid "Unrecognized desktop file Version '%s'"
+msgstr ""
+
+#: ../libxfce4smclient-private/eggdesktopfile.c:958
+#, c-format
+msgid "Starting %s"
+msgstr ""
+
+#: ../libxfce4smclient-private/eggdesktopfile.c:1100
+#, c-format
+msgid "Application does not accept documents on command line"
+msgstr ""
+
+#: ../libxfce4smclient-private/eggdesktopfile.c:1168
+#, c-format
+msgid "Unrecognized launch option: %d"
+msgstr ""
+
+#: ../libxfce4smclient-private/eggdesktopfile.c:1373
+#, c-format
+msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
+msgstr ""
+
+#: ../libxfce4smclient-private/eggdesktopfile.c:1394
+#, c-format
+msgid "Not a launchable item"
+msgstr ""
+
+#: ../libxfce4smclient-private/eggsmclient.c:227
+msgid "Disable connection to session manager"
+msgstr ""
+
+#: ../libxfce4smclient-private/eggsmclient.c:230
+msgid "Specify file containing saved configuration"
+msgstr ""
+
+#: ../libxfce4smclient-private/eggsmclient.c:230
+msgid "FILE"
+msgstr ""
+
+#: ../libxfce4smclient-private/eggsmclient.c:233
+msgid "Specify session management ID"
+msgstr ""
+
+#: ../libxfce4smclient-private/eggsmclient.c:233
+msgid "ID"
+msgstr ""
+
+#: ../libxfce4smclient-private/eggsmclient.c:254
+msgid "Session management options:"
+msgstr ""
+
+#: ../libxfce4smclient-private/eggsmclient.c:255
+msgid "Show session management options"
+msgstr ""
+
+#: ../glade/libxfce4ui.xml.in.h:1
+msgid "Subtitle"
+msgstr ""
+
+#: ../glade/libxfce4ui.xml.in.h:2
+msgid "Titled Dialog"
+msgstr ""
+
+#: ../glade/libxfce4ui.xml.in.h:3
+msgid "Xfce 4 Widgets"
+msgstr ""
