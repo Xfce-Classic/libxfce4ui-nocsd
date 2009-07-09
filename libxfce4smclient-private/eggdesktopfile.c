@@ -65,7 +65,7 @@ egg_desktop_file_new (const char *desktop_file_path, GError **error)
     }
 
   return egg_desktop_file_new_from_key_file (key_file, desktop_file_path,
-					     error);
+                                             error);
 }
 
 /**
@@ -81,7 +81,7 @@ egg_desktop_file_new (const char *desktop_file_path, GError **error)
  **/
 EggDesktopFile *
 egg_desktop_file_new_from_data_dirs (const char  *desktop_file_path,
-				     GError     **error)
+                                     GError     **error)
 {
   EggDesktopFile *desktop_file;
   GKeyFile *key_file;
@@ -89,15 +89,15 @@ egg_desktop_file_new_from_data_dirs (const char  *desktop_file_path,
 
   key_file = g_key_file_new ();
   if (!g_key_file_load_from_data_dirs (key_file, desktop_file_path,
-				       &full_path, 0, error))
+                                       &full_path, 0, error))
     {
       g_key_file_free (key_file);
       return NULL;
     }
 
   desktop_file = egg_desktop_file_new_from_key_file (key_file,
-						     full_path,
-						     error);
+                                                     full_path,
+                                                     error);
   g_free (full_path);
   return desktop_file;
 }
@@ -116,8 +116,8 @@ egg_desktop_file_new_from_data_dirs (const char  *desktop_file_path,
  **/
 EggDesktopFile *
 egg_desktop_file_new_from_dirs (const char  *desktop_file_path,
-				const char **search_dirs,
-				GError     **error)
+                                const char **search_dirs,
+                                GError     **error)
 {
   EggDesktopFile *desktop_file;
   GKeyFile *key_file;
@@ -125,15 +125,15 @@ egg_desktop_file_new_from_dirs (const char  *desktop_file_path,
 
   key_file = g_key_file_new ();
   if (!g_key_file_load_from_dirs (key_file, desktop_file_path, search_dirs,
-				  &full_path, 0, error))
+                                  &full_path, 0, error))
     {
       g_key_file_free (key_file);
       return NULL;
     }
 
   desktop_file = egg_desktop_file_new_from_key_file (key_file,
-						     full_path,
-						     error);
+                                                     full_path,
+                                                     error);
   g_free (full_path);
   return desktop_file;
 }
@@ -152,8 +152,8 @@ egg_desktop_file_new_from_dirs (const char  *desktop_file_path,
  **/
 EggDesktopFile *
 egg_desktop_file_new_from_key_file (GKeyFile    *key_file,
-				    const char  *source,
-				    GError     **error)
+                                    const char  *source,
+                                    GError     **error)
 {
   EggDesktopFile *desktop_file;
   char *version, *type;
@@ -161,15 +161,15 @@ egg_desktop_file_new_from_key_file (GKeyFile    *key_file,
   if (!g_key_file_has_group (key_file, EGG_DESKTOP_FILE_GROUP))
     {
       g_set_error (error, EGG_DESKTOP_FILE_ERROR,
-		   EGG_DESKTOP_FILE_ERROR_INVALID,
-		   _("File is not a valid .desktop file"));
+                   EGG_DESKTOP_FILE_ERROR_INVALID,
+                   _("File is not a valid .desktop file"));
       g_key_file_free (key_file);
       return NULL;
     }
 
   version = g_key_file_get_value (key_file, EGG_DESKTOP_FILE_GROUP,
-				  EGG_DESKTOP_FILE_KEY_VERSION,
-				  NULL);
+                                  EGG_DESKTOP_FILE_KEY_VERSION,
+                                  NULL);
   if (version)
     {
       double version_num;
@@ -177,19 +177,19 @@ egg_desktop_file_new_from_key_file (GKeyFile    *key_file,
 
       version_num = g_ascii_strtod (version, &end);
       if (*end)
-	{
-	  g_warning ("Invalid Version string '%s' in %s",
-		     version, source ? source : "(unknown)");
-	}
+        {
+          g_warning ("Invalid Version string '%s' in %s",
+                     version, source ? source : "(unknown)");
+        }
       else if (version_num > 1.0)
-	{
-	  g_set_error (error, EGG_DESKTOP_FILE_ERROR,
-		       EGG_DESKTOP_FILE_ERROR_INVALID,
-		       _("Unrecognized desktop file Version '%s'"), version);
-	  g_free (version);
-	  g_key_file_free (key_file);
-	  return NULL;
-	}
+        {
+          g_set_error (error, EGG_DESKTOP_FILE_ERROR,
+                       EGG_DESKTOP_FILE_ERROR_INVALID,
+                       _("Unrecognized desktop file Version '%s'"), version);
+          g_free (version);
+          g_key_file_free (key_file);
+          return NULL;
+        }
       g_free (version);
     }
 
@@ -202,7 +202,7 @@ egg_desktop_file_new_from_key_file (GKeyFile    *key_file,
     desktop_file->source = g_strdup (source);
 
   desktop_file->name = g_key_file_get_string (key_file, EGG_DESKTOP_FILE_GROUP,
-					      EGG_DESKTOP_FILE_KEY_NAME, error);
+                                              EGG_DESKTOP_FILE_KEY_NAME, error);
   if (!desktop_file->name)
     {
       egg_desktop_file_free (desktop_file);
@@ -210,7 +210,7 @@ egg_desktop_file_new_from_key_file (GKeyFile    *key_file,
     }
 
   type = g_key_file_get_string (key_file, EGG_DESKTOP_FILE_GROUP,
-				EGG_DESKTOP_FILE_KEY_TYPE, error);
+                                EGG_DESKTOP_FILE_KEY_TYPE, error);
   if (!type)
     {
       egg_desktop_file_free (desktop_file);
@@ -224,29 +224,29 @@ egg_desktop_file_new_from_key_file (GKeyFile    *key_file,
       desktop_file->type = EGG_DESKTOP_FILE_TYPE_APPLICATION;
 
       exec = g_key_file_get_string (key_file,
-				    EGG_DESKTOP_FILE_GROUP,
-				    EGG_DESKTOP_FILE_KEY_EXEC,
-				    error);
+                                    EGG_DESKTOP_FILE_GROUP,
+                                    EGG_DESKTOP_FILE_KEY_EXEC,
+                                    error);
       if (!exec)
-	{
-	  egg_desktop_file_free (desktop_file);
-	  g_free (type);
-	  return NULL;
-	}
+        {
+          egg_desktop_file_free (desktop_file);
+          g_free (type);
+          return NULL;
+        }
 
       /* See if it takes paths or URIs or neither */
       for (p = exec; *p; p++)
-	{
-	  if (*p == '%')
-	    {
-	      if (p[1] == '\0' || strchr ("FfUu", p[1]))
-		{
-		  desktop_file->document_code = p[1];
-		  break;
-		}
-	      p++;
-	    }
-	}
+        {
+          if (*p == '%')
+            {
+              if (p[1] == '\0' || strchr ("FfUu", p[1]))
+                {
+                  desktop_file->document_code = p[1];
+                  break;
+                }
+              p++;
+            }
+        }
 
       g_free (exec);
     }
@@ -257,15 +257,15 @@ egg_desktop_file_new_from_key_file (GKeyFile    *key_file,
       desktop_file->type = EGG_DESKTOP_FILE_TYPE_LINK;
 
       url = g_key_file_get_string (key_file,
-				   EGG_DESKTOP_FILE_GROUP,
-				   EGG_DESKTOP_FILE_KEY_URL,
-				   error);
+                                   EGG_DESKTOP_FILE_GROUP,
+                                   EGG_DESKTOP_FILE_KEY_URL,
+                                   error);
       if (!url)
-	{
-	  egg_desktop_file_free (desktop_file);
-	  g_free (type);
-	  return NULL;
-	}
+        {
+          egg_desktop_file_free (desktop_file);
+          g_free (type);
+          return NULL;
+        }
       g_free (url);
     }
   else if (!strcmp (type, "Directory"))
@@ -277,9 +277,9 @@ egg_desktop_file_new_from_key_file (GKeyFile    *key_file,
 
   /* Check the Icon key */
   desktop_file->icon = g_key_file_get_string (key_file,
-					      EGG_DESKTOP_FILE_GROUP,
-					      EGG_DESKTOP_FILE_KEY_ICON,
-					      NULL);
+                                              EGG_DESKTOP_FILE_GROUP,
+                                              EGG_DESKTOP_FILE_KEY_ICON,
+                                              NULL);
   if (desktop_file->icon && !g_path_is_absolute (desktop_file->icon))
     {
       char *ext;
@@ -287,15 +287,15 @@ egg_desktop_file_new_from_key_file (GKeyFile    *key_file,
       /* Lots of .desktop files still get this wrong */
       ext = strrchr (desktop_file->icon, '.');
       if (ext && (!strcmp (ext, ".png") ||
-		  !strcmp (ext, ".xpm") ||
-		  !strcmp (ext, ".svg")))
-	{
-	  g_warning ("Desktop file '%s' has malformed Icon key '%s'"
-		     "(should not include extension)",
-		     source ? source : "(unknown)",
-		     desktop_file->icon);
-	  *ext = '\0';
-	}
+                  !strcmp (ext, ".xpm") ||
+                  !strcmp (ext, ".svg")))
+        {
+          g_warning ("Desktop file '%s' has malformed Icon key '%s'"
+                     "(should not include extension)",
+                     source ? source : "(unknown)",
+                     desktop_file->icon);
+          *ext = '\0';
+        }
     }
 
   return desktop_file;
@@ -382,77 +382,77 @@ egg_desktop_file_get_icon (EggDesktopFile *desktop_file)
 
 gboolean
 egg_desktop_file_has_key (EggDesktopFile  *desktop_file,
-			  const char      *key,
-			  GError         **error)
+                          const char      *key,
+                          GError         **error)
 {
   return g_key_file_has_key (desktop_file->key_file,
-			     EGG_DESKTOP_FILE_GROUP, key,
-			     error);
+                             EGG_DESKTOP_FILE_GROUP, key,
+                             error);
 }
 
 char *
 egg_desktop_file_get_string (EggDesktopFile  *desktop_file,
-			     const char      *key,
-			     GError         **error)
+                             const char      *key,
+                             GError         **error)
 {
   return g_key_file_get_string (desktop_file->key_file,
-				EGG_DESKTOP_FILE_GROUP, key,
-				error);
+                                EGG_DESKTOP_FILE_GROUP, key,
+                                error);
 }
 
 char *
 egg_desktop_file_get_locale_string (EggDesktopFile  *desktop_file,
-				    const char      *key,
-				    const char      *locale,
-				    GError         **error)
+                                    const char      *key,
+                                    const char      *locale,
+                                    GError         **error)
 {
   return g_key_file_get_locale_string (desktop_file->key_file,
-				       EGG_DESKTOP_FILE_GROUP, key, locale,
-				       error);
+                                       EGG_DESKTOP_FILE_GROUP, key, locale,
+                                       error);
 }
 
 gboolean
 egg_desktop_file_get_boolean (EggDesktopFile  *desktop_file,
-			      const char      *key,
-			      GError         **error)
+                              const char      *key,
+                              GError         **error)
 {
   return g_key_file_get_boolean (desktop_file->key_file,
-				 EGG_DESKTOP_FILE_GROUP, key,
-				 error);
+                                 EGG_DESKTOP_FILE_GROUP, key,
+                                 error);
 }
 
 double
 egg_desktop_file_get_numeric (EggDesktopFile  *desktop_file,
-			      const char      *key,
-			      GError         **error)
+                              const char      *key,
+                              GError         **error)
 {
   return g_key_file_get_double (desktop_file->key_file,
-				EGG_DESKTOP_FILE_GROUP, key,
-				error);
+                                EGG_DESKTOP_FILE_GROUP, key,
+                                error);
 }
 
 char **
 egg_desktop_file_get_string_list (EggDesktopFile  *desktop_file,
-				  const char      *key,
-				  gsize           *length,
-				  GError         **error)
+                                  const char      *key,
+                                  gsize           *length,
+                                  GError         **error)
 {
   return g_key_file_get_string_list (desktop_file->key_file,
-				     EGG_DESKTOP_FILE_GROUP, key, length,
-				     error);
+                                     EGG_DESKTOP_FILE_GROUP, key, length,
+                                     error);
 }
 
 char **
 egg_desktop_file_get_locale_string_list (EggDesktopFile  *desktop_file,
-					 const char      *key,
-					 const char      *locale,
-					 gsize           *length,
-					 GError         **error)
+                                         const char      *key,
+                                         const char      *locale,
+                                         gsize           *length,
+                                         GError         **error)
 {
   return g_key_file_get_locale_string_list (desktop_file->key_file,
-					    EGG_DESKTOP_FILE_GROUP, key,
-					    locale, length,
-					    error);
+                                            EGG_DESKTOP_FILE_GROUP, key,
+                                            locale, length,
+                                            error);
 }
 
 /**
@@ -477,7 +477,7 @@ egg_desktop_file_get_locale_string_list (EggDesktopFile  *desktop_file,
  **/
 gboolean
 egg_desktop_file_can_launch (EggDesktopFile *desktop_file,
-			     const char     *desktop_environment)
+                             const char     *desktop_environment)
 {
   char *try_exec, *found_program;
   char **only_show_in, **not_show_in;
@@ -491,57 +491,57 @@ egg_desktop_file_can_launch (EggDesktopFile *desktop_file,
   if (desktop_environment)
     {
       only_show_in = g_key_file_get_string_list (desktop_file->key_file,
-						 EGG_DESKTOP_FILE_GROUP,
-						 EGG_DESKTOP_FILE_KEY_ONLY_SHOW_IN,
-						 NULL, NULL);
+                                                 EGG_DESKTOP_FILE_GROUP,
+                                                 EGG_DESKTOP_FILE_KEY_ONLY_SHOW_IN,
+                                                 NULL, NULL);
       if (only_show_in)
-	{
-	  for (i = 0, found = FALSE; only_show_in[i] && !found; i++)
-	    {
-	      if (!strcmp (only_show_in[i], desktop_environment))
-		found = TRUE;
-	    }
+        {
+          for (i = 0, found = FALSE; only_show_in[i] && !found; i++)
+            {
+              if (!strcmp (only_show_in[i], desktop_environment))
+                found = TRUE;
+            }
 
-	  g_strfreev (only_show_in);
+          g_strfreev (only_show_in);
 
-	  if (!found)
-	    return FALSE;
-	}
+          if (!found)
+            return FALSE;
+        }
 
       not_show_in = g_key_file_get_string_list (desktop_file->key_file,
-						EGG_DESKTOP_FILE_GROUP,
-						EGG_DESKTOP_FILE_KEY_NOT_SHOW_IN,
-						NULL, NULL);
+                                                EGG_DESKTOP_FILE_GROUP,
+                                                EGG_DESKTOP_FILE_KEY_NOT_SHOW_IN,
+                                                NULL, NULL);
       if (not_show_in)
-	{
-	  for (i = 0, found = FALSE; not_show_in[i] && !found; i++)
-	    {
-	      if (!strcmp (not_show_in[i], desktop_environment))
-		found = TRUE;
-	    }
+        {
+          for (i = 0, found = FALSE; not_show_in[i] && !found; i++)
+            {
+              if (!strcmp (not_show_in[i], desktop_environment))
+                found = TRUE;
+            }
 
-	  g_strfreev (not_show_in);
+          g_strfreev (not_show_in);
 
-	  if (found)
-	    return FALSE;
-	}
+          if (found)
+            return FALSE;
+        }
     }
 
   if (desktop_file->type == EGG_DESKTOP_FILE_TYPE_APPLICATION)
     {
       try_exec = g_key_file_get_string (desktop_file->key_file,
-					EGG_DESKTOP_FILE_GROUP,
-					EGG_DESKTOP_FILE_KEY_TRY_EXEC,
-					NULL);
+                                        EGG_DESKTOP_FILE_GROUP,
+                                        EGG_DESKTOP_FILE_KEY_TRY_EXEC,
+                                        NULL);
       if (try_exec)
-	{
-	  found_program = g_find_program_in_path (try_exec);
-	  g_free (try_exec);
+        {
+          found_program = g_find_program_in_path (try_exec);
+          g_free (try_exec);
 
-	  if (!found_program)
-	    return FALSE;
-	  g_free (found_program);
-	}
+          if (!found_program)
+            return FALSE;
+          g_free (found_program);
+        }
     }
 
   return TRUE;
@@ -579,7 +579,7 @@ gboolean
 egg_desktop_file_accepts_multiple (EggDesktopFile *desktop_file)
 {
   return (desktop_file->document_code == 'F' ||
-	  desktop_file->document_code == 'U');
+          desktop_file->document_code == 'U');
 }
 
 /**
@@ -595,14 +595,14 @@ gboolean
 egg_desktop_file_accepts_uris (EggDesktopFile *desktop_file)
 {
   return (desktop_file->document_code == 'U' ||
-	  desktop_file->document_code == 'u');
+          desktop_file->document_code == 'u');
 }
 
 static void
 append_quoted_word (GString    *str,
-		    const char *s,
-		    gboolean    in_single_quotes,
-		    gboolean    in_double_quotes)
+                    const char *s,
+                    gboolean    in_single_quotes,
+                    gboolean    in_double_quotes)
 {
   const char *p;
 
@@ -616,12 +616,12 @@ append_quoted_word (GString    *str,
   else
     {
       for (p = s; *p != '\0'; p++)
-	{
-	  if (*p == '\'')
-	    g_string_append (str, "'\\''");
-	  else
-	    g_string_append_c (str, *p);
-	}
+        {
+          if (*p == '\'')
+            g_string_append (str, "'\\''");
+          else
+            g_string_append_c (str, *p);
+        }
     }
 
   if (!in_single_quotes && !in_double_quotes)
@@ -632,11 +632,11 @@ append_quoted_word (GString    *str,
 
 static void
 do_percent_subst (EggDesktopFile *desktop_file,
-		  char            code,
-		  GString        *str,
-		  GSList        **documents,
-		  gboolean        in_single_quotes,
-		  gboolean        in_double_quotes)
+                  char            code,
+                  GString        *str,
+                  GSList        **documents,
+                  gboolean        in_single_quotes,
+                  gboolean        in_double_quotes)
 {
   GSList *d;
   char *doc;
@@ -650,48 +650,48 @@ do_percent_subst (EggDesktopFile *desktop_file,
     case 'F':
     case 'U':
       for (d = *documents; d; d = d->next)
-	{
-	  doc = d->data;
-	  g_string_append (str, " ");
-	  append_quoted_word (str, doc, in_single_quotes, in_double_quotes);
-	}
+        {
+          doc = d->data;
+          g_string_append (str, " ");
+          append_quoted_word (str, doc, in_single_quotes, in_double_quotes);
+        }
       *documents = NULL;
       break;
 
     case 'f':
     case 'u':
       if (*documents)
-	{
-	  doc = (*documents)->data;
-	  g_string_append (str, " ");
-	  append_quoted_word (str, doc, in_single_quotes, in_double_quotes);
-	  *documents = (*documents)->next;
-	}
+        {
+          doc = (*documents)->data;
+          g_string_append (str, " ");
+          append_quoted_word (str, doc, in_single_quotes, in_double_quotes);
+          *documents = (*documents)->next;
+        }
       break;
 
     case 'i':
       if (desktop_file->icon)
-	{
-	  g_string_append (str, "--icon ");
-	  append_quoted_word (str, desktop_file->icon,
-			      in_single_quotes, in_double_quotes);
-	}
+        {
+          g_string_append (str, "--icon ");
+          append_quoted_word (str, desktop_file->icon,
+                              in_single_quotes, in_double_quotes);
+        }
       break;
 
     case 'c':
       if (desktop_file->name)
-	{
-	  append_quoted_word (str, desktop_file->name,
-			      in_single_quotes, in_double_quotes);
-	}
+        {
+          append_quoted_word (str, desktop_file->name,
+                              in_single_quotes, in_double_quotes);
+        }
       break;
 
     case 'k':
       if (desktop_file->source)
-	{
-	  append_quoted_word (str, desktop_file->source,
-			      in_single_quotes, in_double_quotes);
-	}
+        {
+          append_quoted_word (str, desktop_file->source,
+                              in_single_quotes, in_double_quotes);
+        }
       break;
 
     case 'D':
@@ -711,17 +711,17 @@ do_percent_subst (EggDesktopFile *desktop_file,
 
 static char *
 parse_exec (EggDesktopFile  *desktop_file,
-	    GSList         **documents,
-	    GError         **error)
+            GSList         **documents,
+            GError         **error)
 {
   char *exec, *p, *command;
   gboolean escape, single_quot, double_quot;
   GString *gs;
 
   exec = g_key_file_get_string (desktop_file->key_file,
-				EGG_DESKTOP_FILE_GROUP,
-				EGG_DESKTOP_FILE_KEY_EXEC,
-				error);
+                                EGG_DESKTOP_FILE_GROUP,
+                                EGG_DESKTOP_FILE_KEY_EXEC,
+                                error);
   if (!exec)
     return NULL;
 
@@ -732,40 +732,40 @@ parse_exec (EggDesktopFile  *desktop_file,
   for (p = exec; *p != '\0'; p++)
     {
       if (escape)
-	{
-	  escape = FALSE;
-	  g_string_append_c (gs, *p);
-	}
+        {
+          escape = FALSE;
+          g_string_append_c (gs, *p);
+        }
       else if (*p == '\\')
-	{
-	  if (!single_quot)
-	    escape = TRUE;
-	  g_string_append_c (gs, *p);
-	}
+        {
+          if (!single_quot)
+            escape = TRUE;
+          g_string_append_c (gs, *p);
+        }
       else if (*p == '\'')
-	{
-	  g_string_append_c (gs, *p);
-	  if (!single_quot && !double_quot)
-	    single_quot = TRUE;
-	  else if (single_quot)
-	    single_quot = FALSE;
-	}
+        {
+          g_string_append_c (gs, *p);
+          if (!single_quot && !double_quot)
+            single_quot = TRUE;
+          else if (single_quot)
+            single_quot = FALSE;
+        }
       else if (*p == '"')
-	{
-	  g_string_append_c (gs, *p);
-	  if (!single_quot && !double_quot)
-	    double_quot = TRUE;
-	  else if (double_quot)
-	    double_quot = FALSE;
-	}
+        {
+          g_string_append_c (gs, *p);
+          if (!single_quot && !double_quot)
+            double_quot = TRUE;
+          else if (double_quot)
+            double_quot = FALSE;
+        }
       else if (*p == '%' && p[1])
-	{
-	  do_percent_subst (desktop_file, p[1], gs, documents,
-			    single_quot, double_quot);
-	  p++;
-	}
+        {
+          do_percent_subst (desktop_file, p[1], gs, documents,
+                            single_quot, double_quot);
+          p++;
+        }
       else
-	g_string_append_c (gs, *p);
+        g_string_append_c (gs, *p);
     }
 
   g_free (exec);
@@ -773,30 +773,30 @@ parse_exec (EggDesktopFile  *desktop_file,
 
   /* Prepend "xdg-terminal " if needed (FIXME: use gvfs) */
   if (g_key_file_has_key (desktop_file->key_file,
-			  EGG_DESKTOP_FILE_GROUP,
-			  EGG_DESKTOP_FILE_KEY_TERMINAL,
-			  NULL))
+                          EGG_DESKTOP_FILE_GROUP,
+                          EGG_DESKTOP_FILE_KEY_TERMINAL,
+                          NULL))
     {
       GError *terminal_error = NULL;
       gboolean use_terminal =
-	g_key_file_get_boolean (desktop_file->key_file,
-				EGG_DESKTOP_FILE_GROUP,
-				EGG_DESKTOP_FILE_KEY_TERMINAL,
-				&terminal_error);
+        g_key_file_get_boolean (desktop_file->key_file,
+                                EGG_DESKTOP_FILE_GROUP,
+                                EGG_DESKTOP_FILE_KEY_TERMINAL,
+                                &terminal_error);
       if (terminal_error)
-	{
-	  g_free (command);
-	  g_propagate_error (error, terminal_error);
-	  return NULL;
-	}
+        {
+          g_free (command);
+          g_propagate_error (error, terminal_error);
+          return NULL;
+        }
 
       if (use_terminal)
-	{
-	  gs = g_string_new ("xdg-terminal ");
-	  append_quoted_word (gs, command, FALSE, FALSE);
-	  g_free (command);
-	  command = g_string_free (gs, FALSE);
-	}
+        {
+          gs = g_string_new ("xdg-terminal ");
+          append_quoted_word (gs, command, FALSE, FALSE);
+          g_free (command);
+          command = g_string_free (gs, FALSE);
+        }
     }
 
   return command;
@@ -815,22 +815,22 @@ translate_document_list (EggDesktopFile *desktop_file, GSList *documents)
       char *translated;
 
       if (accepts_uris)
-	{
-	  if (is_uri)
-	    translated = g_strdup (document);
-	  else
-	    translated = g_filename_to_uri (document, NULL, NULL);
-	}
+        {
+          if (is_uri)
+            translated = g_strdup (document);
+          else
+            translated = g_filename_to_uri (document, NULL, NULL);
+        }
       else
-	{
-	  if (is_uri)
-	    translated = g_filename_from_uri (document, NULL, NULL);
-	  else
-	    translated = g_strdup (document);
-	}
+        {
+          if (is_uri)
+            translated = g_filename_from_uri (document, NULL, NULL);
+          else
+            translated = g_strdup (document);
+        }
 
       if (translated)
-	ret = g_slist_prepend (ret, translated);
+        ret = g_slist_prepend (ret, translated);
     }
 
   return g_slist_reverse (ret);
@@ -864,8 +864,8 @@ free_document_list (GSList *documents)
  **/
 char *
 egg_desktop_file_parse_exec (EggDesktopFile  *desktop_file,
-			     GSList          *documents,
-			     GError         **error)
+                             GSList          *documents,
+                             GError         **error)
 {
   GSList *translated, *docs;
   char *command;
@@ -879,17 +879,17 @@ egg_desktop_file_parse_exec (EggDesktopFile  *desktop_file,
 
 static gboolean
 parse_link (EggDesktopFile  *desktop_file,
-	    EggDesktopFile **app_desktop_file,
-	    GSList         **documents,
-	    GError         **error)
+            EggDesktopFile **app_desktop_file,
+            GSList         **documents,
+            GError         **error)
 {
   char *url;
   GKeyFile *key_file;
 
   url = g_key_file_get_string (desktop_file->key_file,
-			       EGG_DESKTOP_FILE_GROUP,
-			       EGG_DESKTOP_FILE_KEY_URL,
-			       error);
+                               EGG_DESKTOP_FILE_GROUP,
+                               EGG_DESKTOP_FILE_KEY_URL,
+                               error);
   if (!url)
     return FALSE;
   *documents = g_slist_prepend (NULL, url);
@@ -897,14 +897,14 @@ parse_link (EggDesktopFile  *desktop_file,
   /* FIXME: use gvfs */
   key_file = g_key_file_new ();
   g_key_file_set_string (key_file, EGG_DESKTOP_FILE_GROUP,
-			 EGG_DESKTOP_FILE_KEY_NAME,
-			 "xdg-open");
+                         EGG_DESKTOP_FILE_KEY_NAME,
+                         "xdg-open");
   g_key_file_set_string (key_file, EGG_DESKTOP_FILE_GROUP,
-			 EGG_DESKTOP_FILE_KEY_TYPE,
-			 "Application");
+                         EGG_DESKTOP_FILE_KEY_TYPE,
+                         "Application");
   g_key_file_set_string (key_file, EGG_DESKTOP_FILE_GROUP,
-			 EGG_DESKTOP_FILE_KEY_EXEC,
-			 "xdg-open %u");
+                         EGG_DESKTOP_FILE_KEY_EXEC,
+                         "xdg-open %u");
   *app_desktop_file = egg_desktop_file_new_from_key_file (key_file, NULL, NULL);
   return TRUE;
 }
@@ -912,11 +912,11 @@ parse_link (EggDesktopFile  *desktop_file,
 #if GTK_CHECK_VERSION (2, 12, 0)
 static char *
 start_startup_notification (GdkDisplay     *display,
-			    EggDesktopFile *desktop_file,
-			    const char     *argv0,
-			    int             screen,
-			    int             workspace,
-			    guint32         launch_time)
+                            EggDesktopFile *desktop_file,
+                            const char     *argv0,
+                            int             screen,
+                            int             workspace,
+                            guint32         launch_time)
 {
   static int sequence = 0;
   char *startup_id;
@@ -924,51 +924,51 @@ start_startup_notification (GdkDisplay     *display,
   char *screen_str, *workspace_str;
 
   if (g_key_file_has_key (desktop_file->key_file,
-			  EGG_DESKTOP_FILE_GROUP,
-			  EGG_DESKTOP_FILE_KEY_STARTUP_NOTIFY,
-			  NULL))
+                          EGG_DESKTOP_FILE_GROUP,
+                          EGG_DESKTOP_FILE_KEY_STARTUP_NOTIFY,
+                          NULL))
     {
       if (!g_key_file_get_boolean (desktop_file->key_file,
-				   EGG_DESKTOP_FILE_GROUP,
-				   EGG_DESKTOP_FILE_KEY_STARTUP_NOTIFY,
-				   NULL))
-	return NULL;
+                                   EGG_DESKTOP_FILE_GROUP,
+                                   EGG_DESKTOP_FILE_KEY_STARTUP_NOTIFY,
+                                   NULL))
+        return NULL;
       wmclass = NULL;
     }
   else
     {
       wmclass = g_key_file_get_string (desktop_file->key_file,
-				       EGG_DESKTOP_FILE_GROUP,
-				       EGG_DESKTOP_FILE_KEY_STARTUP_WM_CLASS,
-				       NULL);
+                                       EGG_DESKTOP_FILE_GROUP,
+                                       EGG_DESKTOP_FILE_KEY_STARTUP_WM_CLASS,
+                                       NULL);
       if (!wmclass)
-	return NULL;
+        return NULL;
     }
 
   if (launch_time == (guint32)-1)
     launch_time = gdk_x11_display_get_user_time (display);
   startup_id = g_strdup_printf ("%s-%lu-%s-%s-%d_TIME%lu",
-				g_get_prgname (),
-				(unsigned long)getpid (),
-				g_get_host_name (),
-				argv0,
-				sequence++,
-				(unsigned long)launch_time);
+                                g_get_prgname (),
+                                (unsigned long)getpid (),
+                                g_get_host_name (),
+                                argv0,
+                                sequence++,
+                                (unsigned long)launch_time);
 
   description = g_strdup_printf (_("Starting %s"), desktop_file->name);
   screen_str = g_strdup_printf ("%d", screen);
   workspace_str = workspace == -1 ? NULL : g_strdup_printf ("%d", workspace);
 
   gdk_x11_display_broadcast_startup_message (display, "new",
-					     "ID", startup_id,
-					     "NAME", desktop_file->name,
-					     "SCREEN", screen_str,
-					     "BIN", argv0,
-					     "ICON", desktop_file->icon,
-					     "DESKTOP", workspace_str,
-					     "DESCRIPTION", description,
-					     "WMCLASS", wmclass,
-					     NULL);
+                                             "ID", startup_id,
+                                             "NAME", desktop_file->name,
+                                             "SCREEN", screen_str,
+                                             "BIN", argv0,
+                                             "ICON", desktop_file->icon,
+                                             "DESKTOP", workspace_str,
+                                             "DESCRIPTION", description,
+                                             "WMCLASS", wmclass,
+                                             NULL);
 
   g_free (description);
   g_free (wmclass);
@@ -980,11 +980,11 @@ start_startup_notification (GdkDisplay     *display,
 
 static void
 end_startup_notification (GdkDisplay *display,
-			  const char *startup_id)
+                          const char *startup_id)
 {
   gdk_x11_display_broadcast_startup_message (display, "remove",
-					     "ID", startup_id,
-					     NULL);
+                                             "ID", startup_id,
+                                             NULL);
 }
 
 #define EGG_DESKTOP_FILE_SN_TIMEOUT_LENGTH (30 /* seconds */)
@@ -1009,7 +1009,7 @@ startup_notification_timeout (gpointer data)
 
 static void
 set_startup_notification_timeout (GdkDisplay *display,
-				  const char *startup_id)
+                                  const char *startup_id)
 {
   StartupNotificationData *sn_data;
 
@@ -1018,7 +1018,7 @@ set_startup_notification_timeout (GdkDisplay *display,
   sn_data->startup_id = g_strdup (startup_id);
 
   g_timeout_add_seconds (EGG_DESKTOP_FILE_SN_TIMEOUT_LENGTH,
-			 startup_notification_timeout, sn_data);
+                         startup_notification_timeout, sn_data);
 }
 #endif /* GTK 2.12 */
 
@@ -1053,11 +1053,11 @@ array_putenv (GPtrArray *env, char *variable)
       char *envvar = env->pdata[i];
 
       if (!strncmp (envvar, variable, keylen) && envvar[keylen] == '=')
-	{
-	  g_free (envvar);
-	  g_ptr_array_remove_index_fast (env, i);
-	  break;
-	}
+        {
+          g_free (envvar);
+          g_ptr_array_remove_index_fast (env, i);
+          break;
+        }
     }
 
   /* Add new value */
@@ -1068,8 +1068,8 @@ array_putenv (GPtrArray *env, char *variable)
 
 static gboolean
 egg_desktop_file_launchv (EggDesktopFile *desktop_file,
-			  GSList *documents, va_list args,
-			  GError **error)
+                          GSList *documents, va_list args,
+                          GError **error)
 {
   EggDesktopFileLaunchOption option;
   GSList *translated_documents = NULL, *docs = NULL;
@@ -1096,8 +1096,8 @@ egg_desktop_file_launchv (EggDesktopFile *desktop_file,
   if (documents && desktop_file->document_code == 0)
     {
       g_set_error (error, EGG_DESKTOP_FILE_ERROR,
-		   EGG_DESKTOP_FILE_ERROR_NOT_LAUNCHABLE,
-		   _("Application does not accept documents on command line"));
+                   EGG_DESKTOP_FILE_ERROR_NOT_LAUNCHABLE,
+                   _("Application does not accept documents on command line"));
       return FALSE;
     }
 
@@ -1111,65 +1111,65 @@ egg_desktop_file_launchv (EggDesktopFile *desktop_file,
   while ((option = va_arg (args, EggDesktopFileLaunchOption)))
     {
       switch (option)
-	{
-	case EGG_DESKTOP_FILE_LAUNCH_CLEARENV:
-	  if (env)
-	    g_ptr_array_free (env, TRUE);
-	  env = g_ptr_array_new ();
-	  break;
-	case EGG_DESKTOP_FILE_LAUNCH_PUTENV:
-	  variables = va_arg (args, char **);
-	  for (i = 0; variables[i]; i++)
-	    env = array_putenv (env, variables[i]);
-	  break;
+        {
+        case EGG_DESKTOP_FILE_LAUNCH_CLEARENV:
+          if (env)
+            g_ptr_array_free (env, TRUE);
+          env = g_ptr_array_new ();
+          break;
+        case EGG_DESKTOP_FILE_LAUNCH_PUTENV:
+          variables = va_arg (args, char **);
+          for (i = 0; variables[i]; i++)
+            env = array_putenv (env, variables[i]);
+          break;
 
-	case EGG_DESKTOP_FILE_LAUNCH_SCREEN:
-	  screen = va_arg (args, GdkScreen *);
-	  break;
-	case EGG_DESKTOP_FILE_LAUNCH_WORKSPACE:
-	  workspace = va_arg (args, int);
-	  break;
+        case EGG_DESKTOP_FILE_LAUNCH_SCREEN:
+          screen = va_arg (args, GdkScreen *);
+          break;
+        case EGG_DESKTOP_FILE_LAUNCH_WORKSPACE:
+          workspace = va_arg (args, int);
+          break;
 
-	case EGG_DESKTOP_FILE_LAUNCH_DIRECTORY:
-	  directory = va_arg (args, const char *);
-	  break;
-	case EGG_DESKTOP_FILE_LAUNCH_TIME:
-	  launch_time = va_arg (args, guint32);
-	  break;
-	case EGG_DESKTOP_FILE_LAUNCH_FLAGS:
-	  flags |= va_arg (args, GSpawnFlags);
-	  /* Make sure they didn't set any flags that don't make sense. */
-	  flags &= ~G_SPAWN_FILE_AND_ARGV_ZERO;
-	  break;
-	case EGG_DESKTOP_FILE_LAUNCH_SETUP_FUNC:
-	  setup_func = va_arg (args, GSpawnChildSetupFunc);
-	  setup_data = va_arg (args, gpointer);
-	  break;
+        case EGG_DESKTOP_FILE_LAUNCH_DIRECTORY:
+          directory = va_arg (args, const char *);
+          break;
+        case EGG_DESKTOP_FILE_LAUNCH_TIME:
+          launch_time = va_arg (args, guint32);
+          break;
+        case EGG_DESKTOP_FILE_LAUNCH_FLAGS:
+          flags |= va_arg (args, GSpawnFlags);
+          /* Make sure they didn't set any flags that don't make sense. */
+          flags &= ~G_SPAWN_FILE_AND_ARGV_ZERO;
+          break;
+        case EGG_DESKTOP_FILE_LAUNCH_SETUP_FUNC:
+          setup_func = va_arg (args, GSpawnChildSetupFunc);
+          setup_data = va_arg (args, gpointer);
+          break;
 
-	case EGG_DESKTOP_FILE_LAUNCH_RETURN_PID:
-	  ret_pid = va_arg (args, GPid *);
-	  break;
-	case EGG_DESKTOP_FILE_LAUNCH_RETURN_STDIN_PIPE:
-	  ret_stdin = va_arg (args, int *);
-	  break;
-	case EGG_DESKTOP_FILE_LAUNCH_RETURN_STDOUT_PIPE:
-	  ret_stdout = va_arg (args, int *);
-	  break;
-	case EGG_DESKTOP_FILE_LAUNCH_RETURN_STDERR_PIPE:
-	  ret_stderr = va_arg (args, int *);
-	  break;
-	case EGG_DESKTOP_FILE_LAUNCH_RETURN_STARTUP_ID:
-	  ret_startup_id = va_arg (args, char **);
-	  break;
+        case EGG_DESKTOP_FILE_LAUNCH_RETURN_PID:
+          ret_pid = va_arg (args, GPid *);
+          break;
+        case EGG_DESKTOP_FILE_LAUNCH_RETURN_STDIN_PIPE:
+          ret_stdin = va_arg (args, int *);
+          break;
+        case EGG_DESKTOP_FILE_LAUNCH_RETURN_STDOUT_PIPE:
+          ret_stdout = va_arg (args, int *);
+          break;
+        case EGG_DESKTOP_FILE_LAUNCH_RETURN_STDERR_PIPE:
+          ret_stderr = va_arg (args, int *);
+          break;
+        case EGG_DESKTOP_FILE_LAUNCH_RETURN_STARTUP_ID:
+          ret_startup_id = va_arg (args, char **);
+          break;
 
-	default:
-	  g_set_error (error, EGG_DESKTOP_FILE_ERROR,
-		       EGG_DESKTOP_FILE_ERROR_UNRECOGNIZED_OPTION,
-		       _("Unrecognized launch option: %d"),
-		       GPOINTER_TO_INT (option));
-	  success = FALSE;
-	  goto out;
-	}
+        default:
+          g_set_error (error, EGG_DESKTOP_FILE_ERROR,
+                       EGG_DESKTOP_FILE_ERROR_UNRECOGNIZED_OPTION,
+                       _("Unrecognized launch option: %d"),
+                       GPOINTER_TO_INT (option));
+          success = FALSE;
+          goto out;
+        }
     }
 
   if (screen)
@@ -1198,76 +1198,76 @@ egg_desktop_file_launchv (EggDesktopFile *desktop_file,
     {
       command = parse_exec (desktop_file, &docs, error);
       if (!command)
-	goto out;
+        goto out;
 
       if (!g_shell_parse_argv (command, &argc, &argv, error))
-	{
-	  g_free (command);
-	  goto out;
-	}
+        {
+          g_free (command);
+          goto out;
+        }
       g_free (command);
 
 #if GTK_CHECK_VERSION (2, 12, 0)
       startup_id = start_startup_notification (display, desktop_file,
-					       argv[0], screen_num,
-					       workspace, launch_time);
+                                               argv[0], screen_num,
+                                               workspace, launch_time);
       if (startup_id)
-	{
-	  char *startup_id_env = g_strdup_printf ("DESKTOP_STARTUP_ID=%s",
-						  startup_id);
-	  env = array_putenv (env, startup_id_env);
-	  g_free (startup_id_env);
-	}
+        {
+          char *startup_id_env = g_strdup_printf ("DESKTOP_STARTUP_ID=%s",
+                                                  startup_id);
+          env = array_putenv (env, startup_id_env);
+          g_free (startup_id_env);
+        }
 #else
       startup_id = NULL;
 #endif /* GTK 2.12 */
 
       if (env != NULL)
-	g_ptr_array_add (env, NULL);
+        g_ptr_array_add (env, NULL);
 
       current_success =
-	g_spawn_async_with_pipes (directory,
-				  argv,
-				  env ? (char **)(env->pdata) : NULL,
-				  flags,
-				  setup_func, setup_data,
-				  ret_pid,
-				  ret_stdin, ret_stdout, ret_stderr,
-				  error);
+        g_spawn_async_with_pipes (directory,
+                                  argv,
+                                  env ? (char **)(env->pdata) : NULL,
+                                  flags,
+                                  setup_func, setup_data,
+                                  ret_pid,
+                                  ret_stdin, ret_stdout, ret_stderr,
+                                  error);
       g_strfreev (argv);
 
       if (startup_id)
-	{
+        {
 #if GTK_CHECK_VERSION (2, 12, 0)
-	  if (current_success)
-	    {
-	      set_startup_notification_timeout (display, startup_id);
+          if (current_success)
+            {
+              set_startup_notification_timeout (display, startup_id);
 
-	      if (ret_startup_id)
-		*ret_startup_id = startup_id;
-	      else
-		g_free (startup_id);
-	    }
-	  else
+              if (ret_startup_id)
+                *ret_startup_id = startup_id;
+              else
+                g_free (startup_id);
+            }
+          else
 #endif /* GTK 2.12 */
-	    g_free (startup_id);
-	}
+            g_free (startup_id);
+        }
       else if (ret_startup_id)
-	*ret_startup_id = NULL;
+        *ret_startup_id = NULL;
 
       if (current_success)
-	{
-	  /* If we successfully launch any instances of the app, make
-	   * sure we return TRUE and don't set @error.
-	   */
-	  success = TRUE;
-	  error = NULL;
+        {
+          /* If we successfully launch any instances of the app, make
+           * sure we return TRUE and don't set @error.
+           */
+          success = TRUE;
+          error = NULL;
 
-	  /* Also, only set the output params on the first one */
-	  ret_pid = NULL;
-	  ret_stdin = ret_stdout = ret_stderr = NULL;
-	  ret_startup_id = NULL;
-	}
+          /* Also, only set the output params on the first one */
+          ret_pid = NULL;
+          ret_stdin = ret_stdout = ret_stderr = NULL;
+          ret_startup_id = NULL;
+        }
     }
   while (docs && current_success);
 
@@ -1349,8 +1349,8 @@ egg_desktop_file_launchv (EggDesktopFile *desktop_file,
  **/
 gboolean
 egg_desktop_file_launch (EggDesktopFile *desktop_file,
-			 GSList *documents, GError **error,
-			 ...)
+                         GSList *documents, GError **error,
+                         ...)
 {
   va_list args;
   gboolean success;
@@ -1361,25 +1361,25 @@ egg_desktop_file_launch (EggDesktopFile *desktop_file,
     case EGG_DESKTOP_FILE_TYPE_APPLICATION:
       va_start (args, error);
       success = egg_desktop_file_launchv (desktop_file, documents,
-					  args, error);
+                                          args, error);
       va_end (args);
       break;
 
     case EGG_DESKTOP_FILE_TYPE_LINK:
       if (documents)
-	{
-	  g_set_error (error, EGG_DESKTOP_FILE_ERROR,
-		       EGG_DESKTOP_FILE_ERROR_NOT_LAUNCHABLE,
-		       _("Can't pass document URIs to a 'Type=Link' desktop entry"));
-	  return FALSE;
-	}	  
+        {
+          g_set_error (error, EGG_DESKTOP_FILE_ERROR,
+                       EGG_DESKTOP_FILE_ERROR_NOT_LAUNCHABLE,
+                       _("Can't pass document URIs to a 'Type=Link' desktop entry"));
+          return FALSE;
+        }
 
       if (!parse_link (desktop_file, &app_desktop_file, &documents, error))
-	return FALSE;
+        return FALSE;
 
       va_start (args, error);
       success = egg_desktop_file_launchv (app_desktop_file, documents,
-					  args, error);
+                                          args, error);
       va_end (args);
 
       egg_desktop_file_free (app_desktop_file);
@@ -1390,8 +1390,8 @@ egg_desktop_file_launch (EggDesktopFile *desktop_file,
     case EGG_DESKTOP_FILE_TYPE_DIRECTORY:
     default:
       g_set_error (error, EGG_DESKTOP_FILE_ERROR,
-		   EGG_DESKTOP_FILE_ERROR_NOT_LAUNCHABLE,
-		   _("Not a launchable item"));
+                   EGG_DESKTOP_FILE_ERROR_NOT_LAUNCHABLE,
+                   _("Not a launchable item"));
       success = FALSE;
       break;
     }
@@ -1424,7 +1424,7 @@ egg_set_desktop_file_internal (const char *desktop_file_path,
   if (error)
     {
       g_warning ("Could not load desktop file '%s': %s",
-		 desktop_file_path, error->message);
+                 desktop_file_path, error->message);
       g_error_free (error);
     }
 
@@ -1491,10 +1491,10 @@ egg_set_desktop_file_without_defaults (const char *desktop_file_path)
 
 /**
  * egg_get_desktop_file:
- * 
+ *
  * Gets the application's #EggDesktopFile, as set by
  * egg_set_desktop_file().
- * 
+ *
  * Return value: the #EggDesktopFile, or %NULL if it hasn't been set.
  **/
 EggDesktopFile *

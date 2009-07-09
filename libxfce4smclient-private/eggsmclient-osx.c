@@ -65,12 +65,12 @@ struct _EggSMClientOSXClass
 };
 
 static void     sm_client_osx_startup (EggSMClient *client,
-				       const char  *client_id);
+               const char  *client_id);
 static void     sm_client_osx_will_quit (EggSMClient *client,
-					 gboolean     will_quit);
+           gboolean     will_quit);
 static gboolean sm_client_osx_end_session (EggSMClient         *client,
-					   EggSMClientEndStyle  style,
-					   gboolean  request_confirmation);
+             EggSMClientEndStyle  style,
+             gboolean  request_confirmation);
 
 static pascal OSErr quit_requested (const AppleEvent *, AppleEvent *, long);
 
@@ -100,11 +100,11 @@ egg_sm_client_osx_new (void)
 
 static void
 sm_client_osx_startup (EggSMClient *client,
-		       const char  *client_id)
+           const char  *client_id)
 {
   AEInstallEventHandler (kCoreEventClass, kAEQuitApplication,
-			 NewAEEventHandlerUPP (quit_requested),
-			 (long)GPOINTER_TO_SIZE (client), false);
+       NewAEEventHandlerUPP (quit_requested),
+       (long)GPOINTER_TO_SIZE (client), false);
 }
 
 static gboolean
@@ -121,7 +121,7 @@ quit_requested (const AppleEvent *aevt, AppleEvent *reply, long refcon)
   EggSMClientOSX *osx = GSIZE_TO_POINTER ((gsize)refcon);
 
   g_return_val_if_fail (!osx->quit_requested, userCanceledErr);
-    
+
   /* FIXME AEInteractWithUser? */
 
   osx->quit_requested = TRUE;
@@ -154,8 +154,8 @@ idle_will_quit (gpointer client)
    * the system.
    */
   AEResumeTheCurrentEvent (&osx->quit_event, &osx->quit_reply,
-			   NewAEEventHandlerUPP (quit_requested_resumed),
-			   (long)GPOINTER_TO_SIZE (client));
+         NewAEEventHandlerUPP (quit_requested_resumed),
+         (long)GPOINTER_TO_SIZE (client));
   AEDisposeDesc (&osx->quit_event);
   AEDisposeDesc (&osx->quit_reply);
 
@@ -166,7 +166,7 @@ idle_will_quit (gpointer client)
 
 static void
 sm_client_osx_will_quit (EggSMClient *client,
-			 gboolean     will_quit)
+       gboolean     will_quit)
 {
   EggSMClientOSX *osx = (EggSMClientOSX *)client;
 
@@ -184,8 +184,8 @@ sm_client_osx_will_quit (EggSMClient *client,
 
 static gboolean
 sm_client_osx_end_session (EggSMClient         *client,
-			   EggSMClientEndStyle  style,
-			   gboolean             request_confirmation)
+         EggSMClientEndStyle  style,
+         gboolean             request_confirmation)
 {
   static const ProcessSerialNumber loginwindow_psn = { 0, kSystemProcess };
   AppleEvent event = { typeNull, NULL }, reply = { typeNull, NULL };
@@ -207,8 +207,8 @@ sm_client_osx_end_session (EggSMClient         *client,
       break;
     }
 
-  err = AECreateDesc (typeProcessSerialNumber, &loginwindow_psn, 
-		      sizeof (loginwindow_psn), &target);
+  err = AECreateDesc (typeProcessSerialNumber, &loginwindow_psn,
+          sizeof (loginwindow_psn), &target);
   if (err != noErr)
     {
       g_warning ("Could not create descriptor for loginwindow: %d", err);
@@ -216,8 +216,8 @@ sm_client_osx_end_session (EggSMClient         *client,
     }
 
   err = AECreateAppleEvent (kCoreEventClass, id, &target,
-			    kAutoGenerateReturnID, kAnyTransactionID,
-			    &event);
+          kAutoGenerateReturnID, kAnyTransactionID,
+          &event);
   AEDisposeDesc (&target);
   if (err != noErr)
     {
@@ -226,7 +226,7 @@ sm_client_osx_end_session (EggSMClient         *client,
     }
 
   err = AESend (&event, &reply, kAENoReply, kAENormalPriority,
-		kAEDefaultTimeout, NULL, NULL);
+    kAEDefaultTimeout, NULL, NULL);
   AEDisposeDesc (&event);
   if (err == noErr)
     AEDisposeDesc (&reply);

@@ -8,7 +8,7 @@
  *
  * This library is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.	 See the GNU
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
  * Lesser General Public License for more details.
  *
  * You should have received a copy of the GNU Lesser General Public
@@ -60,23 +60,23 @@ struct _EggSMClientClass
 
   /* signals */
   void (*save_state)       (EggSMClient *client,
-			    GKeyFile    *state_file);
+                            GKeyFile    *state_file);
 
   void (*quit_requested)   (EggSMClient *client);
   void (*quit_cancelled)   (EggSMClient *client);
   void (*quit)             (EggSMClient *client);
 
   /* virtual methods */
-  void	   (*startup)             (EggSMClient          *client,
-				   const char           *client_id);
-  void	   (*set_restart_command) (EggSMClient          *client,
-				   int                   argc,
-				   const char          **argv);
-  void	   (*will_quit)           (EggSMClient          *client,
-				   gboolean              will_quit);
+  void     (*startup)             (EggSMClient          *client,
+                                   const char           *client_id);
+  void     (*set_restart_command) (EggSMClient          *client,
+                                   int                   argc,
+                                   const char          **argv);
+  void     (*will_quit)           (EggSMClient          *client,
+                                   gboolean              will_quit);
   gboolean (*end_session)         (EggSMClient          *client,
-				   EggSMClientEndStyle   style,
-				   gboolean              request_confirmation);
+                                   EggSMClientEndStyle   style,
+                                   gboolean              request_confirmation);
 
   /* Padding for future expansion */
   void (*_egg_reserved1) (void);
@@ -100,16 +100,16 @@ GKeyFile        *egg_sm_client_get_state_file      (EggSMClient *client);
 
 /* Alternate means of saving state */
 void             egg_sm_client_set_restart_command (EggSMClient  *client,
-						    int           argc,
-						    const char  **argv);
+                                                    int           argc,
+                                                    const char  **argv);
 
 /* Handling "quit_requested" signal */
 void             egg_sm_client_will_quit           (EggSMClient *client,
-						    gboolean     will_quit);
+                                                    gboolean     will_quit);
 
 /* Initiate a logout/reboot/shutdown */
 gboolean         egg_sm_client_end_session         (EggSMClientEndStyle  style,
-						    gboolean             request_confirmation);
+                                                    gboolean             request_confirmation);
 
 G_END_DECLS
 

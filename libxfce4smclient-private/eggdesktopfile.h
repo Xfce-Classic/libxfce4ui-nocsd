@@ -27,24 +27,24 @@ G_BEGIN_DECLS
 typedef struct EggDesktopFile EggDesktopFile;
 
 typedef enum {
-	EGG_DESKTOP_FILE_TYPE_UNRECOGNIZED,
+  EGG_DESKTOP_FILE_TYPE_UNRECOGNIZED,
 
-	EGG_DESKTOP_FILE_TYPE_APPLICATION,
-	EGG_DESKTOP_FILE_TYPE_LINK,
-	EGG_DESKTOP_FILE_TYPE_DIRECTORY
+  EGG_DESKTOP_FILE_TYPE_APPLICATION,
+  EGG_DESKTOP_FILE_TYPE_LINK,
+  EGG_DESKTOP_FILE_TYPE_DIRECTORY
 } EggDesktopFileType;
 
 EggDesktopFile     *egg_desktop_file_new                (const char   *desktop_file_path,
-							 GError      **error);
+               GError      **error);
 
 EggDesktopFile     *egg_desktop_file_new_from_data_dirs (const char   *desktop_file_path,
-							 GError      **error);
+               GError      **error);
 EggDesktopFile     *egg_desktop_file_new_from_dirs      (const char   *desktop_file_path,
-							 const char  **search_dirs,
-							 GError      **error);
+               const char  **search_dirs,
+               GError      **error);
 EggDesktopFile     *egg_desktop_file_new_from_key_file  (GKeyFile     *key_file,
-							 const char   *source,
-							 GError      **error);
+               const char   *source,
+               GError      **error);
 
 void                egg_desktop_file_free               (EggDesktopFile  *desktop_file);
 
@@ -56,86 +56,86 @@ const char         *egg_desktop_file_get_name           (EggDesktopFile  *deskto
 const char         *egg_desktop_file_get_icon           (EggDesktopFile  *desktop_file);
 
 gboolean            egg_desktop_file_can_launch         (EggDesktopFile  *desktop_file,
-							 const char      *desktop_environment);
+               const char      *desktop_environment);
 
 gboolean            egg_desktop_file_accepts_documents  (EggDesktopFile  *desktop_file);
 gboolean            egg_desktop_file_accepts_multiple   (EggDesktopFile  *desktop_file);
 gboolean            egg_desktop_file_accepts_uris       (EggDesktopFile  *desktop_file);
 
 char               *egg_desktop_file_parse_exec         (EggDesktopFile  *desktop_file,
-							 GSList          *documents,
-							 GError         **error);
+               GSList          *documents,
+               GError         **error);
 
 gboolean            egg_desktop_file_launch             (EggDesktopFile  *desktop_file,
-							 GSList          *documents,
-							 GError         **error,
-							 ...) G_GNUC_NULL_TERMINATED;
+               GSList          *documents,
+               GError         **error,
+               ...) G_GNUC_NULL_TERMINATED;
 
 typedef enum {
-	EGG_DESKTOP_FILE_LAUNCH_CLEARENV = 1,
-	EGG_DESKTOP_FILE_LAUNCH_PUTENV,
-	EGG_DESKTOP_FILE_LAUNCH_SCREEN,
-	EGG_DESKTOP_FILE_LAUNCH_WORKSPACE,
-	EGG_DESKTOP_FILE_LAUNCH_DIRECTORY,
-	EGG_DESKTOP_FILE_LAUNCH_TIME,
-	EGG_DESKTOP_FILE_LAUNCH_FLAGS,
-	EGG_DESKTOP_FILE_LAUNCH_SETUP_FUNC,
-	EGG_DESKTOP_FILE_LAUNCH_RETURN_PID,
-	EGG_DESKTOP_FILE_LAUNCH_RETURN_STDIN_PIPE,
-	EGG_DESKTOP_FILE_LAUNCH_RETURN_STDOUT_PIPE,
-	EGG_DESKTOP_FILE_LAUNCH_RETURN_STDERR_PIPE,
-	EGG_DESKTOP_FILE_LAUNCH_RETURN_STARTUP_ID
+  EGG_DESKTOP_FILE_LAUNCH_CLEARENV = 1,
+  EGG_DESKTOP_FILE_LAUNCH_PUTENV,
+  EGG_DESKTOP_FILE_LAUNCH_SCREEN,
+  EGG_DESKTOP_FILE_LAUNCH_WORKSPACE,
+  EGG_DESKTOP_FILE_LAUNCH_DIRECTORY,
+  EGG_DESKTOP_FILE_LAUNCH_TIME,
+  EGG_DESKTOP_FILE_LAUNCH_FLAGS,
+  EGG_DESKTOP_FILE_LAUNCH_SETUP_FUNC,
+  EGG_DESKTOP_FILE_LAUNCH_RETURN_PID,
+  EGG_DESKTOP_FILE_LAUNCH_RETURN_STDIN_PIPE,
+  EGG_DESKTOP_FILE_LAUNCH_RETURN_STDOUT_PIPE,
+  EGG_DESKTOP_FILE_LAUNCH_RETURN_STDERR_PIPE,
+  EGG_DESKTOP_FILE_LAUNCH_RETURN_STARTUP_ID
 } EggDesktopFileLaunchOption;
 
 /* Standard Keys */
-#define EGG_DESKTOP_FILE_GROUP			"Desktop Entry"
+#define EGG_DESKTOP_FILE_GROUP      "Desktop Entry"
 
-#define EGG_DESKTOP_FILE_KEY_TYPE		"Type"
-#define EGG_DESKTOP_FILE_KEY_VERSION		"Version"
-#define EGG_DESKTOP_FILE_KEY_NAME		"Name"
-#define EGG_DESKTOP_FILE_KEY_GENERIC_NAME	"GenericName"
-#define EGG_DESKTOP_FILE_KEY_NO_DISPLAY		"NoDisplay"
-#define EGG_DESKTOP_FILE_KEY_COMMENT		"Comment"
-#define EGG_DESKTOP_FILE_KEY_ICON		"Icon"
-#define EGG_DESKTOP_FILE_KEY_HIDDEN		"Hidden"
-#define EGG_DESKTOP_FILE_KEY_ONLY_SHOW_IN	"OnlyShowIn"
-#define EGG_DESKTOP_FILE_KEY_NOT_SHOW_IN	"NotShowIn"
-#define EGG_DESKTOP_FILE_KEY_TRY_EXEC		"TryExec"
-#define EGG_DESKTOP_FILE_KEY_EXEC		"Exec"
-#define EGG_DESKTOP_FILE_KEY_PATH		"Path"
-#define EGG_DESKTOP_FILE_KEY_TERMINAL		"Terminal"
-#define EGG_DESKTOP_FILE_KEY_MIME_TYPE		"MimeType"
-#define EGG_DESKTOP_FILE_KEY_CATEGORIES		"Categories"
-#define EGG_DESKTOP_FILE_KEY_STARTUP_NOTIFY	"StartupNotify"
-#define EGG_DESKTOP_FILE_KEY_STARTUP_WM_CLASS	"StartupWMClass"
-#define EGG_DESKTOP_FILE_KEY_URL		"URL"
+#define EGG_DESKTOP_FILE_KEY_TYPE   "Type"
+#define EGG_DESKTOP_FILE_KEY_VERSION    "Version"
+#define EGG_DESKTOP_FILE_KEY_NAME   "Name"
+#define EGG_DESKTOP_FILE_KEY_GENERIC_NAME "GenericName"
+#define EGG_DESKTOP_FILE_KEY_NO_DISPLAY   "NoDisplay"
+#define EGG_DESKTOP_FILE_KEY_COMMENT    "Comment"
+#define EGG_DESKTOP_FILE_KEY_ICON   "Icon"
+#define EGG_DESKTOP_FILE_KEY_HIDDEN   "Hidden"
+#define EGG_DESKTOP_FILE_KEY_ONLY_SHOW_IN "OnlyShowIn"
+#define EGG_DESKTOP_FILE_KEY_NOT_SHOW_IN  "NotShowIn"
+#define EGG_DESKTOP_FILE_KEY_TRY_EXEC   "TryExec"
+#define EGG_DESKTOP_FILE_KEY_EXEC   "Exec"
+#define EGG_DESKTOP_FILE_KEY_PATH   "Path"
+#define EGG_DESKTOP_FILE_KEY_TERMINAL   "Terminal"
+#define EGG_DESKTOP_FILE_KEY_MIME_TYPE    "MimeType"
+#define EGG_DESKTOP_FILE_KEY_CATEGORIES   "Categories"
+#define EGG_DESKTOP_FILE_KEY_STARTUP_NOTIFY "StartupNotify"
+#define EGG_DESKTOP_FILE_KEY_STARTUP_WM_CLASS "StartupWMClass"
+#define EGG_DESKTOP_FILE_KEY_URL    "URL"
 
 /* Accessors */
 gboolean  egg_desktop_file_has_key                (EggDesktopFile  *desktop_file,
-						   const char      *key,
-						   GError         **error);
+               const char      *key,
+               GError         **error);
 char     *egg_desktop_file_get_string             (EggDesktopFile  *desktop_file,
-						   const char      *key,
-						   GError         **error) G_GNUC_MALLOC;
+               const char      *key,
+               GError         **error) G_GNUC_MALLOC;
 char     *egg_desktop_file_get_locale_string      (EggDesktopFile  *desktop_file,
-						   const char      *key,
-						   const char      *locale,
-						   GError         **error) G_GNUC_MALLOC;
+               const char      *key,
+               const char      *locale,
+               GError         **error) G_GNUC_MALLOC;
 gboolean  egg_desktop_file_get_boolean            (EggDesktopFile  *desktop_file,
-						   const char      *key,
-						   GError         **error);
+               const char      *key,
+               GError         **error);
 double    egg_desktop_file_get_numeric            (EggDesktopFile  *desktop_file,
-						   const char      *key,
-						   GError         **error);
+               const char      *key,
+               GError         **error);
 char    **egg_desktop_file_get_string_list        (EggDesktopFile  *desktop_file,
-						   const char      *key,
-						   gsize           *length,
-						   GError         **error) G_GNUC_MALLOC;
+               const char      *key,
+               gsize           *length,
+               GError         **error) G_GNUC_MALLOC;
 char    **egg_desktop_file_get_locale_string_list (EggDesktopFile  *desktop_file,
-						   const char      *key,
-						   const char      *locale,
-						   gsize           *length,
-						   GError         **error) G_GNUC_MALLOC;
+               const char      *key,
+               const char      *locale,
+               gsize           *length,
+               GError         **error) G_GNUC_MALLOC;
 
 
 /* Errors */
@@ -144,9 +144,9 @@ char    **egg_desktop_file_get_locale_string_list (EggDesktopFile  *desktop_file
 GQuark egg_desktop_file_error_quark (void);
 
 typedef enum {
-	EGG_DESKTOP_FILE_ERROR_INVALID,
-	EGG_DESKTOP_FILE_ERROR_NOT_LAUNCHABLE,
-	EGG_DESKTOP_FILE_ERROR_UNRECOGNIZED_OPTION
+  EGG_DESKTOP_FILE_ERROR_INVALID,
+  EGG_DESKTOP_FILE_ERROR_NOT_LAUNCHABLE,
+  EGG_DESKTOP_FILE_ERROR_UNRECOGNIZED_OPTION
 } EggDesktopFileError;
 
 /* Global application desktop file */
