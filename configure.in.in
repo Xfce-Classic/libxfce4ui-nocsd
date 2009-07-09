@@ -19,6 +19,9 @@ m4_define([libxfce4ui_version], [libxfce4ui_version_major().libxfce4ui_version_m
 m4_define([libxfce4kbd_private_verinfo], [0:0:0])
 m4_define([libxfce4kbd_private_version_api], [2])
 
+m4_define([libxfce4smclient_private_verinfo], [0:0:0])
+m4_define([libxfce4smclient_private_version_api], [1])
+
 dnl # DO NOT MODIFY ANYTHING BELOW THIS LINE, UNLESS YOU KNOW WHAT
 dnl # YOU ARE DOING.
 
@@ -50,6 +53,23 @@ dnl *******************************
 AC_AIX()
 AC_ISC_POSIX()
 
+AC_MSG_CHECKING([platform])
+case "$host" in
+  *-*-mingw*|*-*-cygwin*)
+    platform="win32"
+    NO_UNDEFINED=-no-undefined
+    ;;
+  *-apple-darwin*)
+    platform="os x"
+    ;;
+  *)
+    platform="unix"
+    ;;
+esac
+AM_CONDITIONAL(PLATFORM_WIN32, test "$platform" = "win32")
+AM_CONDITIONAL(PLATFORM_OSX, test "$platform" = "os x")
+AC_SUBST(NO_UNDEFINED)
+
 dnl ********************************
 dnl *** Check for basic programs ***
 dnl ********************************
@@ -76,6 +96,8 @@ LIBXFCE4UI_VERSION_MINOR=libxfce4ui_version_minor()
 LIBXFCE4UI_VERSION_MICRO=libxfce4ui_version_micro()
 LIBXFCE4KBD_PRIVATE_VERINFO=libxfce4kbd_private_verinfo()
 LIBXFCE4KBD_PRIVATE_VERSION_API=libxfce4kbd_private_version_api()
+LIBXFCE4SMCLIENT_PRIVATE_VERINFO=libxfce4smclient_private_verinfo()
+LIBXFCE4SMCLIENT_PRIVATE_VERSION_API=libxfce4smclient_private_version_api()
 AC_SUBST([LIBXFCE4UI_VERINFO])
 AC_SUBST([LIBXFCE4UI_VERSION_API])
 AC_SUBST([LIBXFCE4UI_VERSION_MAJOR])
@@ -83,6 +105,8 @@ AC_SUBST([LIBXFCE4UI_VERSION_MINOR])
 AC_SUBST([LIBXFCE4UI_VERSION_MICRO])
 AC_SUBST([LIBXFCE4KBD_PRIVATE_VERINFO])
 AC_SUBST([LIBXFCE4KBD_PRIVATE_VERSION_API])
+AC_SUBST([LIBXFCE4SMCLIENT_PRIVATE_VERINFO])
+AC_SUBST([LIBXFCE4SMCLIENT_PRIVATE_VERSION_API])
 
 dnl ***************************************
 dnl *** Check for standard header files ***
@@ -100,11 +124,6 @@ dnl *******************************************
 dnl *** Check for X Window System installed ***
 dnl *******************************************
 XDT_CHECK_LIBX11_REQUIRE()
-
-dnl ********************************************
-dnl *** Check for session management support ***
-dnl ********************************************
-XDT_CHECK_LIBSM()
 
 dnl ***********************************
 dnl *** Check for required packages ***
@@ -133,6 +152,17 @@ if test "x$enable_keyboard_library" = "xyes"; then
 fi
 AM_CONDITIONAL([ENABLE_KEYBOARD_LIBRARY], [test "x$enable_keyboard_library" = "xyes"])
 
+dnl **************************************************
+dnl *** Check whether to build the keyboard libary ***
+dnl **************************************************
+AC_ARG_ENABLE([smclient-library],
+              [AC_HELP_STRING([--smclient-keyboard-library],
+                              [Do not compile the sm client library (default=enabled)])],
+              [enable_smclient_library=$enableval], [enable_smclient_library=yes])
+if test "x$enable_smclient_library" = "xyes"; then
+  XDT_CHECK_LIBSM()
+fi
+AM_CONDITIONAL([ENABLE_SMCLIENT_LIBRARY], [test "x$enable_smclient_library" = "xyes"])
 
 dnl *********************************************************
 dnl *** Optional support for the Glade Interface Designer ***
@@ -289,6 +319,8 @@ glade/icons/16x16/Makefile
 glade/icons/22x22/Makefile
 libxfce4kbd-private/libxfce4kbd-private-2.pc
 libxfce4kbd-private/Makefile
+libxfce4smclient-private/libxfce4smclient-private-1.pc
+libxfce4smclient-private/Makefile
 libxfce4ui.spec
 libxfce4ui/libxfce4ui-1.pc
 libxfce4ui/libxfce4ui-config.h
@@ -315,6 +347,11 @@ if test x"$enable_keyboard_library" = x"yes"; then
 echo "* Keyboard library support:  yes"
 else
 echo "* Keyboard library support:  no"
+fi
+if test x"$enable_keyboard_library" = x"yes"; then
+echo "* SM client library support: yes"
+else
+echo "* SM client library support: no"
 fi
 echo
 if test x"$LIBSTARTUP_NOTIFICATION_FOUND" = x"yes"; then

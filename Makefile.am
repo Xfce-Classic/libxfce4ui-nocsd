@@ -3,6 +3,7 @@
 SUBDIRS = \
 	libxfce4ui \
 	libxfce4kbd-private \
+	libxfce4smclient-private \
 	glade \
 	docs \
 	po
@@ -19,7 +20,7 @@ EXTRA_DIST = \
 	intltool-extract.in \
 	intltool-merge.in \
 	intltool-update.in
-	
+
 DISTCLEANFILES = \
 	libxfce4ui.spec \
 	intltool-extract \
