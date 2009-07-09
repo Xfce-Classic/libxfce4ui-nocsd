@@ -34,7 +34,9 @@
  * Cocoa.)
  */
 
-#include "config.h"
+#ifdef HAVE_CONFIG_H
+#include <config.h>
+#endif
 
 #include "eggsmclient-private.h"
 #include <gdk/gdkquartz.h>
