@@ -9,7 +9,7 @@
 <!ENTITY xfce-titled-dialog SYSTEM "xml/xfce-titled-dialog.xml">
 
 <!ENTITY version SYSTEM "version.xml">
-<!ENTITY date "December 2007">
+<!ENTITY date "Juli 2009">
 ]>
 
 <book id="index">
