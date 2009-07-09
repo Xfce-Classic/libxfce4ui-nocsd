@@ -12,15 +12,15 @@ INCLUDES = \
 	$(PLATFORM_CPPFLAGS)
 
 if PLATFORM_OSX
-platform_sources = eggsmclient-osx.c
-platform_defines = -xobjective-c
-platform_ldflags = -framework Carbon
+smclient_sources = eggsmclient-osx.c
+smclient_defines = -xobjective-c
+smclient_ldflags = -framework Carbon
 else
-platform_sources = \
+smclient_sources = \
 	eggsmclient-xsmp.c \
 	eggdesktopfile.c \
 	eggdesktopfile.h
-platform_libs = -lSM -lICE
+smclient_libs = -lSM -lICE
 endif
 
 lib_LTLIBRARIES = libxfce4smclient-private-1.la
@@ -38,13 +38,13 @@ libxfce4smclient_private_1_la_SOURCES = \
 	$(libxfce4kbd_headers) \
 	eggsmclient.c \
 	eggsmclient-private.h \
-	$(platform_sources)
+	$(smclient_sources)
 
 libxfce4smclient_private_1_la_CFLAGS = \
-	$(PLATFORM_CFLAGS) \
 	$(GLIB_CFLAGS)  \
 	$(GTK_CFLAGS) \
-	$(LIBX11_CFLAGS)
+	$(LIBX11_CFLAGS) \
+	$(PLATFORM_CFLAGS)
 
 libxfce4smclient_private_1_la_LDFLAGS = \
 	-export-dynamic \
@@ -52,14 +52,14 @@ libxfce4smclient_private_1_la_LDFLAGS = \
 	-export-symbols-regex "^[^_].*" \
 	-no-undefined \
 	$(LIBX11_LDFLAGS) \
-	$(platform_ldflags)
+	$(smclient_ldflags) \
+	$(PLATFORM_LDFLAGS)
 
 libxfce4smclient_private_1_la_LIBADD = \
-	$(PLATFORM_LDFLAGS) \
 	$(GLIB_LIBS) \
 	$(GTK_LIBS) \
 	$(LIBX11_LIBS) \
-	$(platform_libs)
+	$(smclient_libs)
 
 pkgconfigdir = $(libdir)/pkgconfig
 pkgconfig_DATA = libxfce4smclient-private-1.pc
