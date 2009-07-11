@@ -29,7 +29,7 @@ libxfce4smclient_headers = \
 	eggsmclient.h
 
 libxfce4smclient_private_includedir = \
-	$(includedir)/xfce4/libxfce4smclient-private-$(LIBXFCE4SMCLIENT_PRIVATE_VERSION_API)/libxfce4kbd-private
+	$(includedir)/xfce4/libxfce4smclient-private-$(LIBXFCE4SMCLIENT_PRIVATE_VERSION_API)/libxfce4smclient-private
 
 libxfce4smclient_private_include_HEADERS = \
 	$(libxfce4smclient_headers)
