@@ -194,9 +194,6 @@ egg_sm_client_xsmp_class_init (EggSMClientXSMPClass *klass)
 EggSMClient *
 egg_sm_client_xsmp_new (void)
 {
-  if (!g_getenv ("SESSION_MANAGER"))
-    return NULL;
-
   return g_object_new (EGG_TYPE_SM_CLIENT_XSMP, NULL);
 }
 

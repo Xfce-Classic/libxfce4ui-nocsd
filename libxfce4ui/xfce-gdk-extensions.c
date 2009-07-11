@@ -75,7 +75,7 @@ xfce_gdk_screen_get_active (gint *monitor_return)
                              &root, &child, &rootx, &rooty, &winx, &winy, &xmask))
             {
               /* return the monitor number */
-              if (monitor_return)
+              if (monitor_return != NULL)
                 *monitor_return = gdk_screen_get_monitor_at_point (screen, rootx, rooty);
 
               /* yap, this screen contains the pointer, hence it's the active screen */
