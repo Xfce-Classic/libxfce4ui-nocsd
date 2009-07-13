@@ -164,6 +164,12 @@ if test "x$enable_smclient_library" = "xyes"; then
 fi
 AM_CONDITIONAL([ENABLE_SMCLIENT_LIBRARY], [test "x$enable_smclient_library" = "xyes"])
 
+dnl EggSMClient breaks strict aliasing rules.  Since I don't think it's
+dnl worth fixing it, let's just disable the warning so --enable-debug=full
+dnl doesn't error out.
+XDT_SUPPORTED_FLAGS([NO_STRICT_ALIASING_CFLAGS], [-fno-strict-aliasing])
+AC_SUBST([NO_STRICT_ALIASING_CFLAGS])
+
 dnl *********************************************************
 dnl *** Optional support for the Glade Interface Designer ***
 dnl *********************************************************

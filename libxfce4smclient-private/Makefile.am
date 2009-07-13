@@ -9,6 +9,7 @@ INCLUDES = \
 	-DG_LOG_DOMAIN=\"libxfce4smclient-private\" \
 	-DPACKAGE_LOCALE_DIR=\"$(localedir)\" \
 	-DPREFIX=\"$(prefix)\" \
+	$(NO_STRICT_ALIASING_CFLAGS) \
 	$(PLATFORM_CPPFLAGS)
 
 if PLATFORM_OSX
