@@ -2,19 +2,20 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 #
-# Piarres Beobide <pi@beobide.net>, 2008.
+# Piarres Beobide <pi@beobide.net>, 2008, 2009.
 msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-07-09 23:15+0200\n"
-"PO-Revision-Date: 2008-11-27 00:41+0100\n"
+"PO-Revision-Date: 2009-07-20 01:27+0200\n"
 "Last-Translator: Piarres Beobide <pi@beobide.net>\n"
-"Language-Team: Euskara <debian-l10n-basque@lists.debian.org>\n"
+"Language-Team: eu <kde-i18n-doc@kde.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11.4\n"
+"X-Generator: Lokalize 0.3\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #. run dialog
 #: ../libxfce4ui/xfce-dialogs.c:196
@@ -41,6 +42,9 @@ msgid ""
 "This shortcut is already being used for another window manager action. Which "
 "action do you want to use?"
 msgstr ""
+"Lasterbide hau dagoeneko leiho-kudeatzailearen beste ekintza batek "
+"erabiltzen du. Zein "
+"ekintza erabili nahi duzu?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
@@ -48,11 +52,11 @@ msgstr ""
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 #, c-format
 msgid "Use '%s'"
-msgstr ""
+msgstr "Erabili '%s' "
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 msgid "Keep the other one"
-msgstr ""
+msgstr "Mantendu bestea"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:55
 #: ../libxfce4kbd-private/xfce-shortcuts.c:58
@@ -61,137 +65,144 @@ msgid ""
 "This shortcut is already being used for the command '%s'. Which action do "
 "you want to use?"
 msgstr ""
+"Lasterbide hau dagoeneko '%s' komandoak erabiltzen du. Zein ekintza erabili "
+"nahi duzu?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
 #: ../libxfce4kbd-private/xfce-shortcuts.c:59
 #, c-format
 msgid "Keep '%s'"
-msgstr ""
+msgstr "Mantendu '%s'"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:61
 msgid ""
 "This shortcut is already being used by a window manager action. Which action "
 "do you want to use?"
 msgstr ""
+"Lasterbide hau dagoeneko leiho-kudeatzailearen beste ekintza batek "
+"erabiltzen du. Zein "
+"ekintza erabili nahi duzu?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 msgid "Keep the window manager action"
-msgstr ""
+msgstr "Mantendu leiho-kudeatzaile ekintza"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:95
 #, c-format
 msgid "Conflicting actions for %s"
-msgstr ""
+msgstr "Gatazka sortzen duten ekintzak %s-rentzat"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:128
 msgid "This shortcut is already being used for something else."
-msgstr ""
+msgstr "Lasterbide hau dagoeneko beste zerbaitek erabiltzen du."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:207
 msgid "Window Manager Action Shortcut"
-msgstr ""
+msgstr "Leiho-kudeatzaile ekintza lasterbidea"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:208
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:218
 msgid "Action:"
-msgstr ""
+msgstr "Ekintza:"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:212
 msgid "Command Shortcut"
-msgstr ""
+msgstr "Komando lasterbidea:"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:213
 msgid "Command:"
-msgstr ""
+msgstr "Komandoa:"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:217
 msgid "Shortcut"
-msgstr ""
+msgstr "Lasterbidea"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:258
 msgid "Shortcut:"
-msgstr ""
+msgstr "Lasterbidea:"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:303
 msgid "Could not grab the keyboard."
-msgstr ""
+msgstr "Ezin da teklatua kapturatu."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:324
 #, c-format
 msgid "<span size='large'><b>%s</b></span>"
-msgstr ""
+msgstr "<span size='large'><b>%s</b></span>"
 
 #: ../libxfce4smclient-private/eggdesktopfile.c:165
 #, c-format
 msgid "File is not a valid .desktop file"
-msgstr ""
+msgstr "Fitxategia ez da baliozko .desktop fitxategi bat"
 
 #: ../libxfce4smclient-private/eggdesktopfile.c:188
 #, c-format
 msgid "Unrecognized desktop file Version '%s'"
-msgstr ""
+msgstr "Ezagutzen ez den idazmahai '%s' bertsioa"
 
 #: ../libxfce4smclient-private/eggdesktopfile.c:958
 #, c-format
 msgid "Starting %s"
-msgstr ""
+msgstr "%s hasieratzen"
 
 #: ../libxfce4smclient-private/eggdesktopfile.c:1100
 #, c-format
 msgid "Application does not accept documents on command line"
-msgstr ""
+msgstr "Aplikazioak ez du dokumenturik onartzen komando-lerroan"
 
 #: ../libxfce4smclient-private/eggdesktopfile.c:1168
 #, c-format
 msgid "Unrecognized launch option: %d"
-msgstr ""
+msgstr "Abiarazte aukera ezezaguna: %d"
 
 #: ../libxfce4smclient-private/eggdesktopfile.c:1373
 #, c-format
 msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
 msgstr ""
+"Ezin da dokumentuaren URIak  'Type=Link' moduko idazmahai sarrerara bihurtu"
 
 #: ../libxfce4smclient-private/eggdesktopfile.c:1394
 #, c-format
 msgid "Not a launchable item"
-msgstr ""
+msgstr "Ez da elementu abiarazgarria"
 
 #: ../libxfce4smclient-private/eggsmclient.c:227
 msgid "Disable connection to session manager"
-msgstr ""
+msgstr "Desgaitu saio-kudeatzailearekiko konexioa"
 
 #: ../libxfce4smclient-private/eggsmclient.c:230
 msgid "Specify file containing saved configuration"
-msgstr ""
+msgstr "Zehaztu gordetako konfigurazioaren fitxategia"
 
 #: ../libxfce4smclient-private/eggsmclient.c:230
 msgid "FILE"
-msgstr ""
+msgstr "Fitxategia"
 
 #: ../libxfce4smclient-private/eggsmclient.c:233
 msgid "Specify session management ID"
-msgstr ""
+msgstr "Zehaztu saio-kudeatzailearen IDa"
 
 #: ../libxfce4smclient-private/eggsmclient.c:233
 msgid "ID"
-msgstr ""
+msgstr "IDa"
 
 #: ../libxfce4smclient-private/eggsmclient.c:254
 msgid "Session management options:"
-msgstr ""
+msgstr "Saio-kudeaketa aukerak:"
 
 #: ../libxfce4smclient-private/eggsmclient.c:255
 msgid "Show session management options"
-msgstr ""
+msgstr "Ikusi saio-kudeaketa aukera:"
 
 #: ../glade/libxfce4ui.xml.in.h:1
 msgid "Subtitle"
-msgstr ""
+msgstr "Azpititulua"
 
 #: ../glade/libxfce4ui.xml.in.h:2
 msgid "Titled Dialog"
-msgstr ""
+msgstr "Elkarrizketa-koadroa"
 
 #: ../glade/libxfce4ui.xml.in.h:3
 msgid "Xfce 4 Widgets"
-msgstr ""
+msgstr "Xfce 4 trepetak"
+
