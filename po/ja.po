@@ -5,12 +5,12 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-07-09 23:15+0200\n"
-"PO-Revision-Date: 2008-12-30 09:55+0900\n"
+"POT-Creation-Date: 2009-07-27 01:30+0900\n"
+"PO-Revision-Date: 2009-07-19 00:59+0900\n"
 "Last-Translator: Masato Hashimoto <cabezon.hashimoto@gmail.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language-Team: Japanese <xfce-users-jp@ml.fdiary.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -42,6 +42,8 @@ msgid ""
 "This shortcut is already being used for another window manager action. Which "
 "action do you want to use?"
 msgstr ""
+"このショートカットはすでに他のウィンドウマネージャあるいはユーザアクションで"
+"使用されています。どちらで使いますか?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
@@ -49,11 +51,11 @@ msgstr ""
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 #, c-format
 msgid "Use '%s'"
-msgstr ""
+msgstr "'%s' で使う"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 msgid "Keep the other one"
-msgstr ""
+msgstr "他方で使う"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:55
 #: ../libxfce4kbd-private/xfce-shortcuts.c:58
@@ -62,128 +64,133 @@ msgid ""
 "This shortcut is already being used for the command '%s'. Which action do "
 "you want to use?"
 msgstr ""
+"このショートカットはすでにコマンド '%s' で使用されています。どちらで使います"
+"か?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
 #: ../libxfce4kbd-private/xfce-shortcuts.c:59
 #, c-format
 msgid "Keep '%s'"
-msgstr ""
+msgstr "'%s' で使う"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:61
 msgid ""
 "This shortcut is already being used by a window manager action. Which action "
 "do you want to use?"
 msgstr ""
+"このショートカットはすでに他のウィンドウマネージャアクションで使用されていま"
+"す。どちらで使いますか?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 msgid "Keep the window manager action"
-msgstr ""
+msgstr "ウィンドウマネージャアクションで使う"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:95
 #, c-format
 msgid "Conflicting actions for %s"
-msgstr ""
+msgstr "%s のアクションの衝突"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:128
 msgid "This shortcut is already being used for something else."
-msgstr ""
+msgstr "このショートカットはすでに他で使用されています。"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:207
 msgid "Window Manager Action Shortcut"
-msgstr ""
+msgstr "ウィンドウマネージャアクションのショートカット"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:208
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:218
 msgid "Action:"
-msgstr ""
+msgstr "アクション:"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:212
 msgid "Command Shortcut"
-msgstr ""
+msgstr "コマンドショートカット"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:213
 msgid "Command:"
-msgstr ""
+msgstr "コマンド:"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:217
 msgid "Shortcut"
-msgstr ""
+msgstr "ショートカット"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:258
 msgid "Shortcut:"
-msgstr ""
+msgstr "ショートカット:"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:303
 msgid "Could not grab the keyboard."
-msgstr ""
+msgstr "キーボードを取得できませんでした。"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:324
 #, c-format
 msgid "<span size='large'><b>%s</b></span>"
-msgstr ""
+msgstr "<span size='large'><b>%s</b></span>"
 
 #: ../libxfce4smclient-private/eggdesktopfile.c:165
 #, c-format
 msgid "File is not a valid .desktop file"
-msgstr ""
+msgstr "ファイルは正常な .desktop ファイルではありません"
 
 #: ../libxfce4smclient-private/eggdesktopfile.c:188
 #, c-format
 msgid "Unrecognized desktop file Version '%s'"
-msgstr ""
+msgstr "'%s' は認識できないデスクトップファイルのバージョンです"
 
 #: ../libxfce4smclient-private/eggdesktopfile.c:958
 #, c-format
 msgid "Starting %s"
-msgstr ""
+msgstr "%s を起動しています"
 
 #: ../libxfce4smclient-private/eggdesktopfile.c:1100
 #, c-format
 msgid "Application does not accept documents on command line"
-msgstr ""
+msgstr "アプリケーションはコマンドラインから文書を受け付けません"
 
 #: ../libxfce4smclient-private/eggdesktopfile.c:1168
 #, c-format
 msgid "Unrecognized launch option: %d"
-msgstr ""
+msgstr "認識できない起動オプションです: %d"
 
 #: ../libxfce4smclient-private/eggdesktopfile.c:1373
 #, c-format
 msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
 msgstr ""
+"デスクトップエントリ 'Type=Link' にドキュメント URI を渡すことができません"
 
 #: ../libxfce4smclient-private/eggdesktopfile.c:1394
 #, c-format
 msgid "Not a launchable item"
-msgstr ""
+msgstr "起動可能なアイテムではありません"
 
 #: ../libxfce4smclient-private/eggsmclient.c:227
 msgid "Disable connection to session manager"
-msgstr ""
+msgstr "セッションマネージャへの接続を無効にする"
 
 #: ../libxfce4smclient-private/eggsmclient.c:230
 msgid "Specify file containing saved configuration"
-msgstr ""
+msgstr "保存する設定に含めるファイルを指定する"
 
 #: ../libxfce4smclient-private/eggsmclient.c:230
 msgid "FILE"
-msgstr ""
+msgstr "FILE"
 
 #: ../libxfce4smclient-private/eggsmclient.c:233
 msgid "Specify session management ID"
-msgstr ""
+msgstr "セッション管理 ID を指定する"
 
 #: ../libxfce4smclient-private/eggsmclient.c:233
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #: ../libxfce4smclient-private/eggsmclient.c:254
 msgid "Session management options:"
-msgstr ""
+msgstr "セッション管理オプション:"
 
 #: ../libxfce4smclient-private/eggsmclient.c:255
 msgid "Show session management options"
-msgstr ""
+msgstr "セッション管理オプションを表示する"
 
 #: ../glade/libxfce4ui.xml.in.h:1
 msgid "Subtitle"
