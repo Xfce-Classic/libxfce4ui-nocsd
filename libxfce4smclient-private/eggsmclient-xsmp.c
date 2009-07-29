@@ -214,6 +214,8 @@ sm_client_xsmp_set_initial_properties (gpointer user_data)
 
   if (egg_sm_client_get_mode () == EGG_SM_CLIENT_MODE_NO_RESTART)
     xsmp->restart_style = SmRestartNever;
+  else if (egg_sm_client_get_mode () == EGG_SM_CLIENT_MODE_RESTART_IMMEDIATELY)
+    xsmp->restart_style = SmRestartImmediately;
 
   /* Parse info out of desktop file */
   desktop_file = egg_get_desktop_file ();
