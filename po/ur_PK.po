@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-07-09 23:15+0200\n"
-"PO-Revision-Date: 2009-04-27 22:59+0500\n"
+"PO-Revision-Date: 2009-07-13 10:00+0500\n"
 "Last-Translator: Muhammad Ali Makki <makki.ma@gmail.com>\n"
 "Language-Team: Urdu <makki.ma@gmail.com>\n"
 "MIME-Version: 1.0\n"
@@ -46,6 +46,8 @@ msgid ""
 "This shortcut is already being used for another window manager action. Which "
 "action do you want to use?"
 msgstr ""
+"یہ شارٹ کٹ پہلے ہی دوسری ونڈو منیجر حرکت کے لیے استعمال ہو رہا ہے. آپ کون سی "
+"حرکت استعمال کرنا چاہتے ہیں؟"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
@@ -53,11 +55,11 @@ msgstr ""
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 #, c-format
 msgid "Use '%s'"
-msgstr ""
+msgstr "'%s' استعمال کریں"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 msgid "Keep the other one"
-msgstr ""
+msgstr "سابقہ کو محفوظ رکھیں"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:55
 #: ../libxfce4kbd-private/xfce-shortcuts.c:58
@@ -66,137 +68,141 @@ msgid ""
 "This shortcut is already being used for the command '%s'. Which action do "
 "you want to use?"
 msgstr ""
+"یہ شارٹ کٹ پہلے ہی کمانڈ '%s' کے لیے استعمال ہو رہا ہے. آپ کون سی حرکت "
+"استعمال کرنا چاہتے ہیں؟"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
 #: ../libxfce4kbd-private/xfce-shortcuts.c:59
 #, c-format
 msgid "Keep '%s'"
-msgstr ""
+msgstr "'%s' کو برقرار رکھیں"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:61
 msgid ""
 "This shortcut is already being used by a window manager action. Which action "
 "do you want to use?"
 msgstr ""
+"یہ شارٹ کٹ پہلے ہی ونڈو منیجر کی حرکت کے لیے استعمال ہو رہا ہے. آپ کون سی "
+"حرکت استعمال کرنا چاہتے ہیں؟"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 msgid "Keep the window manager action"
-msgstr ""
+msgstr "ونڈو منیجر کی حرکت کو برقرار رکھیں"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:95
 #, c-format
 msgid "Conflicting actions for %s"
-msgstr ""
+msgstr "تعارضی حرکات برائے %s"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:128
 msgid "This shortcut is already being used for something else."
-msgstr ""
+msgstr "یہ شارٹ کٹ کسی چیز کے لیے پہلے ہی استعمال میں ہے."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:207
 msgid "Window Manager Action Shortcut"
-msgstr ""
+msgstr "ونڈو منیجر حرکت شارٹ کٹ"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:208
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:218
 msgid "Action:"
-msgstr ""
+msgstr "حرکت:"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:212
 msgid "Command Shortcut"
-msgstr ""
+msgstr "کمانڈ شارٹ کٹ"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:213
 msgid "Command:"
-msgstr ""
+msgstr "کمانڈ:"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:217
 msgid "Shortcut"
-msgstr ""
+msgstr "شارٹ کٹ"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:258
 msgid "Shortcut:"
-msgstr ""
+msgstr "شارٹ کٹ:"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:303
 msgid "Could not grab the keyboard."
-msgstr ""
+msgstr "کیبورڈ اٹھایا نہیں جاسکا."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:324
 #, c-format
 msgid "<span size='large'><b>%s</b></span>"
-msgstr ""
+msgstr "<span size='large'><b>%s</b></span>"
 
 #: ../libxfce4smclient-private/eggdesktopfile.c:165
 #, c-format
 msgid "File is not a valid .desktop file"
-msgstr ""
+msgstr "فائل موزوں .desktop فائل نہیں ہے"
 
 #: ../libxfce4smclient-private/eggdesktopfile.c:188
 #, c-format
 msgid "Unrecognized desktop file Version '%s'"
-msgstr ""
+msgstr "غیر پہچان کردہ ڈیسک ٹاپ فائل ورژن '%s'"
 
 #: ../libxfce4smclient-private/eggdesktopfile.c:958
 #, c-format
 msgid "Starting %s"
-msgstr ""
+msgstr "%s شروع کیا جارہا ہے"
 
 #: ../libxfce4smclient-private/eggdesktopfile.c:1100
 #, c-format
 msgid "Application does not accept documents on command line"
-msgstr ""
+msgstr "اطلاقیہ کمانڈ لائن پر دستاویزات قبول نہیں کرتا"
 
 #: ../libxfce4smclient-private/eggdesktopfile.c:1168
 #, c-format
 msgid "Unrecognized launch option: %d"
-msgstr ""
+msgstr "غیر پہچان کردہ چلانے کا اختیار: %d"
 
 #: ../libxfce4smclient-private/eggdesktopfile.c:1373
 #, c-format
 msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
-msgstr ""
+msgstr "دستاویز ربط تا 'Type=Link' ڈیسک ٹاپ انٹری پاس نہیں کیا جاسکتا"
 
 #: ../libxfce4smclient-private/eggdesktopfile.c:1394
 #, c-format
 msgid "Not a launchable item"
-msgstr ""
+msgstr "چلانے کے قابل عنصر نہیں ہے"
 
 #: ../libxfce4smclient-private/eggsmclient.c:227
 msgid "Disable connection to session manager"
-msgstr ""
+msgstr "نشست منیجر سے اتصال معطل کریں"
 
 #: ../libxfce4smclient-private/eggsmclient.c:230
 msgid "Specify file containing saved configuration"
-msgstr ""
+msgstr "محفوظ شدہ وضع کاریوں پر مشتمل فائل متعین کریں"
 
 #: ../libxfce4smclient-private/eggsmclient.c:230
 msgid "FILE"
-msgstr ""
+msgstr "فائل"
 
 #: ../libxfce4smclient-private/eggsmclient.c:233
 msgid "Specify session management ID"
-msgstr ""
+msgstr "نشست منیجر آئی ڈی متعین کریں"
 
 #: ../libxfce4smclient-private/eggsmclient.c:233
 msgid "ID"
-msgstr ""
+msgstr "آئی ڈی"
 
 #: ../libxfce4smclient-private/eggsmclient.c:254
 msgid "Session management options:"
-msgstr ""
+msgstr "نشست منیجر اختیارات:"
 
 #: ../libxfce4smclient-private/eggsmclient.c:255
 msgid "Show session management options"
-msgstr ""
+msgstr "نشست منیجر کے اختیارات ظاہر کریں"
 
 #: ../glade/libxfce4ui.xml.in.h:1
 msgid "Subtitle"
-msgstr ""
+msgstr "ذیلی عنوان"
 
 #: ../glade/libxfce4ui.xml.in.h:2
 msgid "Titled Dialog"
-msgstr ""
+msgstr "عنوان شدہ ڈائیلاگ"
 
 #: ../glade/libxfce4ui.xml.in.h:3
 msgid "Xfce 4 Widgets"
-msgstr ""
+msgstr "ایکسفس 4 وجٹس"

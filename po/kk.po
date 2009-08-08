@@ -1,48 +1,46 @@
-# Galician translation of libxfce4ui
-# Copyright (C) 2008, 2009 Leandro Regueiro
-# This file is distributed under the same license as the xfce package.
-#
-# Leandro Regueiro <leandro.regueiro@gmail.com>, 2008, 2009.
-#
-# Proxecto Trasno - Adaptación do software libre á lingua galega:  Se desexas
-# colaborar connosco, podes atopar máis información en <http://trasno.net>
+# libxce4ui to kazakh.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Baurzhan Muftakhidinov <baurthefirst@gmail.com>, 2009.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: trunk\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-07-09 23:15+0200\n"
-"PO-Revision-Date: 2009-07-13 18:02+0100\n"
-"Last-Translator: Leandro Regueiro <leandro.regueiro@gmail.com>\n"
-"Language-Team: Galician <proxecto@trasno.net>\n"
+"PO-Revision-Date: 2009-07-10 11:49+0600\n"
+"Last-Translator: Baurzhan M. <baurthefirst@gmail.com>\n"
+"Language-Team: Kazakh <kk_KZ@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"Plural-Forms: nplurals=1; plural=0\n"
 
 #. run dialog
 #: ../libxfce4ui/xfce-dialogs.c:196
 msgid "Information"
-msgstr "Información "
+msgstr "Ақпарат"
 
 #. run dialog
 #: ../libxfce4ui/xfce-dialogs.c:232
 msgid "Warning"
-msgstr "Advertencia"
+msgstr "Ескерту"
 
 #. run dialog
 #: ../libxfce4ui/xfce-dialogs.c:269
 msgid "Error"
-msgstr "Erro"
+msgstr "Қате"
 
 #. run dialog
 #: ../libxfce4ui/xfce-dialogs.c:322
 msgid "Question"
-msgstr "Pregunta"
+msgstr "Сұрақ"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:52
-msgid "This shortcut is already being used for another window manager action. Which action do you want to use?"
-msgstr "Este atallo xa está sendo usado por unha acción doutro xestor de ventás. Que acción desexa usar?"
+msgid ""
+"This shortcut is already being used for another window manager action. Which "
+"action do you want to use?"
+msgstr ""
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
@@ -50,147 +48,150 @@ msgstr "Este atallo xa está sendo usado por unha acción doutro xestor de vent�
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 #, c-format
 msgid "Use '%s'"
-msgstr "Usar '%s'"
+msgstr ""
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 msgid "Keep the other one"
-msgstr "Manter o outro"
+msgstr ""
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:55
 #: ../libxfce4kbd-private/xfce-shortcuts.c:58
 #, c-format
-msgid "This shortcut is already being used for the command '%s'. Which action do you want to use?"
-msgstr "Este atallo xa está sendo usado polo comando '%s'. Que acción desexa usar?"
+msgid ""
+"This shortcut is already being used for the command '%s'. Which action do "
+"you want to use?"
+msgstr ""
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
 #: ../libxfce4kbd-private/xfce-shortcuts.c:59
 #, c-format
 msgid "Keep '%s'"
-msgstr "Manter '%s'"
+msgstr ""
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:61
-msgid "This shortcut is already being used by a window manager action. Which action do you want to use?"
-msgstr "Este atallo está sendo usado por unha acción do xestor de ventás. Que acción desexa usar?"
+msgid ""
+"This shortcut is already being used by a window manager action. Which action "
+"do you want to use?"
+msgstr ""
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 msgid "Keep the window manager action"
-msgstr "Manter a acción do xestor de ventás"
+msgstr ""
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:95
 #, c-format
 msgid "Conflicting actions for %s"
-msgstr "Accións en conflito para %s"
+msgstr ""
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:128
 msgid "This shortcut is already being used for something else."
-msgstr "Este atallo xa está sendo usado por algo."
+msgstr ""
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:207
 msgid "Window Manager Action Shortcut"
-msgstr "Atallo de acción do xestor de ventás"
+msgstr ""
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:208
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:218
 msgid "Action:"
-msgstr "Acción:"
+msgstr ""
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:212
 msgid "Command Shortcut"
-msgstr "Atallo de comando"
+msgstr ""
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:213
 msgid "Command:"
-msgstr "Comando:"
+msgstr ""
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:217
 msgid "Shortcut"
-msgstr "Atallo"
+msgstr ""
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:258
 msgid "Shortcut:"
-msgstr "Atallo:"
+msgstr ""
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:303
 msgid "Could not grab the keyboard."
-msgstr "Non se puido obter o teclado."
+msgstr ""
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:324
 #, c-format
 msgid "<span size='large'><b>%s</b></span>"
-msgstr "<span size='large'><b>%s</b></span>"
+msgstr ""
 
 #: ../libxfce4smclient-private/eggdesktopfile.c:165
 #, c-format
 msgid "File is not a valid .desktop file"
-msgstr "O ficheiro non é un ficheiro .desktop válido"
+msgstr ""
 
 #: ../libxfce4smclient-private/eggdesktopfile.c:188
 #, c-format
 msgid "Unrecognized desktop file Version '%s'"
-msgstr "Non se recoñece a versión '%s' do ficheiro .desktop"
+msgstr ""
 
 #: ../libxfce4smclient-private/eggdesktopfile.c:958
 #, c-format
 msgid "Starting %s"
-msgstr "Iniciando %s"
+msgstr ""
 
 #: ../libxfce4smclient-private/eggdesktopfile.c:1100
 #, c-format
 msgid "Application does not accept documents on command line"
-msgstr "A aplicación non acepta documentos na liña de comandos"
+msgstr ""
 
 #: ../libxfce4smclient-private/eggdesktopfile.c:1168
 #, c-format
 msgid "Unrecognized launch option: %d"
-msgstr "Non se recoñece a opción de inicio: %d"
+msgstr ""
 
 #: ../libxfce4smclient-private/eggdesktopfile.c:1373
 #, c-format
 msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
-msgstr "Non se poden pasar URIs de documento a unha entrada de escritorio de 'Type=Link'"
+msgstr ""
 
 #: ../libxfce4smclient-private/eggdesktopfile.c:1394
 #, c-format
 msgid "Not a launchable item"
-msgstr "Non é un elemento executable"
+msgstr ""
 
 #: ../libxfce4smclient-private/eggsmclient.c:227
 msgid "Disable connection to session manager"
-msgstr "Desactivar a conexión ao xestor de sesións"
+msgstr ""
 
 #: ../libxfce4smclient-private/eggsmclient.c:230
 msgid "Specify file containing saved configuration"
-msgstr "Especifique o ficheiro que contén a configuración gardada"
+msgstr ""
 
 #: ../libxfce4smclient-private/eggsmclient.c:230
 msgid "FILE"
-msgstr "FICHEIRO"
+msgstr ""
 
 #: ../libxfce4smclient-private/eggsmclient.c:233
 msgid "Specify session management ID"
-msgstr "Especificar o ID de xestión de sesión"
+msgstr ""
 
 #: ../libxfce4smclient-private/eggsmclient.c:233
 msgid "ID"
-msgstr "ID"
+msgstr ""
 
 #: ../libxfce4smclient-private/eggsmclient.c:254
 msgid "Session management options:"
-msgstr "Opcións de xestión de sesión:"
+msgstr ""
 
 #: ../libxfce4smclient-private/eggsmclient.c:255
 msgid "Show session management options"
-msgstr "Mostrar as opcións de xestión de sesión"
+msgstr ""
 
 #: ../glade/libxfce4ui.xml.in.h:1
 msgid "Subtitle"
-msgstr "Subtítulo"
+msgstr ""
 
 #: ../glade/libxfce4ui.xml.in.h:2
 msgid "Titled Dialog"
-msgstr "Diálogo con título"
+msgstr ""
 
 #: ../glade/libxfce4ui.xml.in.h:3
 msgid "Xfce 4 Widgets"
-msgstr "Xfce 4 Widgets"
-
+msgstr ""
