@@ -42,131 +42,6 @@
 
 
 
-static GtkWidget *
-xfce_message_dialog_new_valist (GtkWindow   *parent,
-                                const gchar *title,
-                                const gchar *icon_stock_id,
-                                const gchar *primary_text,
-                                const gchar *secondary_text,
-                                const gchar *first_button_type,
-                                va_list      args)
-{
-  GtkWidget   *dialog;
-  GtkWidget   *image;
-  GtkWidget   *button;
-  const gchar *text = first_button_type;
-  const gchar *label;
-  const gchar *stock_id;
-  gint         response;
-  GdkPixbuf   *pixbuf, *scaled;
-  gint         w, h;
-
-  g_return_val_if_fail (primary_text != NULL || secondary_text != NULL, NULL);
-  g_return_val_if_fail (parent == NULL || GTK_IS_WINDOW (parent), NULL);
-
-  /* create the dialog */
-  if (G_LIKELY (primary_text != NULL))
-    {
-      /* create dialog with large bold text */
-      dialog = gtk_message_dialog_new_with_markup (parent,
-                                                   GTK_DIALOG_DESTROY_WITH_PARENT | GTK_DIALOG_MODAL,
-                                                   GTK_MESSAGE_OTHER, GTK_BUTTONS_NONE,
-                                                   "<span weight='bold' size='large'>%s</span>",
-                                                   primary_text);
-
-      /* set secondary text */
-      if (secondary_text != NULL)
-        gtk_message_dialog_format_secondary_text (GTK_MESSAGE_DIALOG (dialog), "%s", secondary_text);
-    }
-  else
-    {
-      /* create dialog with normal seconday text */
-      dialog = gtk_message_dialog_new (parent,
-                                       GTK_DIALOG_DESTROY_WITH_PARENT | GTK_DIALOG_MODAL,
-                                       GTK_MESSAGE_OTHER, GTK_BUTTONS_NONE,
-                                       "%s", secondary_text);
-    }
-
-  /* set title */
-  if (title != NULL)
-    gtk_window_set_title (GTK_WINDOW (dialog), title);
-
-  /* put the dialog on the active screen if no parent is defined */
-  if (parent == NULL)
-    xfce_gtk_window_center_on_active_screen (GTK_WINDOW (dialog));
-
-  if (icon_stock_id != NULL)
-    {
-      /* set dialog and window icon */
-      image = gtk_image_new_from_stock (icon_stock_id, GTK_ICON_SIZE_DIALOG);
-      gtk_message_dialog_set_image (GTK_MESSAGE_DIALOG (dialog), image);
-      gtk_widget_show (image);
-      gtk_window_set_icon_name (GTK_WINDOW (dialog), icon_stock_id);
-    }
-
-  /* add buttons */
-  while (text != NULL)
-    {
-      if (strcmp (text, XFCE_BUTTON_TYPE_MIXED) == 0)
-        {
-          /* get arguments */
-          stock_id = va_arg (args, const gchar *);
-          label = va_arg (args, const gchar *);
-          response = va_arg (args, gint);
-
-          /* add a mixed button to the dialog */
-          button = xfce_gtk_button_new_mixed (stock_id, label);
-          gtk_dialog_add_action_widget (GTK_DIALOG (dialog), button, response);
-          gtk_widget_show (button);
-        }
-      else if (strcmp (text, XFCE_BUTTON_TYPE_PIXBUF) == 0)
-        {
-          /* get arguments */
-          pixbuf = va_arg (args, GdkPixbuf *);
-          label = va_arg (args, const gchar *);
-          response = va_arg (args, gint);
-
-          /* lookup real icons size for button icons */
-          gtk_icon_size_lookup (GTK_ICON_SIZE_BUTTON, &w, &h);
-
-          /* scale the pixbuf if needed */
-          if (gdk_pixbuf_get_width (pixbuf) != w || gdk_pixbuf_get_height (pixbuf) != h)
-            scaled = gdk_pixbuf_scale_simple (pixbuf, w, h, GDK_INTERP_BILINEAR);
-          else
-            scaled = NULL;
-
-          /* create image */
-          image = gtk_image_new_from_pixbuf (scaled ? scaled : pixbuf);
-
-          /* release scaled image */
-          if (scaled != NULL)
-            g_object_unref (G_OBJECT (scaled));
-
-          /* create button and add it to the dialog */
-          button = gtk_button_new_with_label (label);
-          gtk_button_set_image (GTK_BUTTON (button), image);
-          gtk_dialog_add_action_widget (GTK_DIALOG (dialog), button, response);
-          gtk_widget_show (button);
-        }
-      else /* stock button */
-        {
-          /* get arguments */
-          stock_id = text;
-          response = va_arg (args, gint);
-
-          /* add a stock button to the dialog */
-          gtk_dialog_add_button (GTK_DIALOG (dialog), stock_id, response);
-        }
-
-      /* get the next argument */
-      text = va_arg (args, const gchar *);
-    }
-
-  return dialog;
-}
-
-
-
 /**
  * xfce_dialog_show_info:
  * @parent         : transient parent of the dialog, or %NULL.
@@ -330,6 +205,146 @@ xfce_dialog_confirm (GtkWindow   *parent,
   g_free (primary_text);
 
   return (response_id == GTK_RESPONSE_YES);
+}
+
+
+
+/**
+ * xfce_message_dialog_new_valist:
+ * @parent            : transient parent of the dialog, or %NULL.
+ * @title             : title of the dialog, or %NULL.
+ * @stock_id          : gtk stock icon name to show in the dialog.
+ * @primary_text      : primary text shown in large bold font.
+ * @secondary_text    : secondary text shown in normal font.
+ * @first_button_text : text for the first button.
+ * @args              : argument list.
+ *
+ * See xfce_message_dialog_new(), this version takes a va_list for
+ * language bindings to use.
+ *
+ * Returns: A new #GtkMessageDialog.
+ **/
+GtkWidget *
+xfce_message_dialog_new_valist (GtkWindow   *parent,
+                                const gchar *title,
+                                const gchar *icon_stock_id,
+                                const gchar *primary_text,
+                                const gchar *secondary_text,
+                                const gchar *first_button_type,
+                                va_list      args)
+{
+  GtkWidget   *dialog;
+  GtkWidget   *image;
+  GtkWidget   *button;
+  const gchar *text = first_button_type;
+  const gchar *label;
+  const gchar *stock_id;
+  gint         response;
+  GdkPixbuf   *pixbuf, *scaled;
+  gint         w, h;
+
+  g_return_val_if_fail (primary_text != NULL || secondary_text != NULL, NULL);
+  g_return_val_if_fail (parent == NULL || GTK_IS_WINDOW (parent), NULL);
+
+  /* create the dialog */
+  if (G_LIKELY (primary_text != NULL))
+    {
+      /* create dialog with large bold text */
+      dialog = gtk_message_dialog_new_with_markup (parent,
+                                                   GTK_DIALOG_DESTROY_WITH_PARENT | GTK_DIALOG_MODAL,
+                                                   GTK_MESSAGE_OTHER, GTK_BUTTONS_NONE,
+                                                   "<span weight='bold' size='large'>%s</span>",
+                                                   primary_text);
+
+      /* set secondary text */
+      if (secondary_text != NULL)
+        gtk_message_dialog_format_secondary_text (GTK_MESSAGE_DIALOG (dialog), "%s", secondary_text);
+    }
+  else
+    {
+      /* create dialog with normal seconday text */
+      dialog = gtk_message_dialog_new (parent,
+                                       GTK_DIALOG_DESTROY_WITH_PARENT | GTK_DIALOG_MODAL,
+                                       GTK_MESSAGE_OTHER, GTK_BUTTONS_NONE,
+                                       "%s", secondary_text);
+    }
+
+  /* set title */
+  if (title != NULL)
+    gtk_window_set_title (GTK_WINDOW (dialog), title);
+
+  /* put the dialog on the active screen if no parent is defined */
+  if (parent == NULL)
+    xfce_gtk_window_center_on_active_screen (GTK_WINDOW (dialog));
+
+  if (icon_stock_id != NULL)
+    {
+      /* set dialog and window icon */
+      image = gtk_image_new_from_stock (icon_stock_id, GTK_ICON_SIZE_DIALOG);
+      gtk_message_dialog_set_image (GTK_MESSAGE_DIALOG (dialog), image);
+      gtk_widget_show (image);
+      gtk_window_set_icon_name (GTK_WINDOW (dialog), icon_stock_id);
+    }
+
+  /* add buttons */
+  while (text != NULL)
+    {
+      if (strcmp (text, XFCE_BUTTON_TYPE_MIXED) == 0)
+        {
+          /* get arguments */
+          stock_id = va_arg (args, const gchar *);
+          label = va_arg (args, const gchar *);
+          response = va_arg (args, gint);
+
+          /* add a mixed button to the dialog */
+          button = xfce_gtk_button_new_mixed (stock_id, label);
+          gtk_dialog_add_action_widget (GTK_DIALOG (dialog), button, response);
+          gtk_widget_show (button);
+        }
+      else if (strcmp (text, XFCE_BUTTON_TYPE_PIXBUF) == 0)
+        {
+          /* get arguments */
+          pixbuf = va_arg (args, GdkPixbuf *);
+          label = va_arg (args, const gchar *);
+          response = va_arg (args, gint);
+
+          /* lookup real icons size for button icons */
+          gtk_icon_size_lookup (GTK_ICON_SIZE_BUTTON, &w, &h);
+
+          /* scale the pixbuf if needed */
+          if (gdk_pixbuf_get_width (pixbuf) != w || gdk_pixbuf_get_height (pixbuf) != h)
+            scaled = gdk_pixbuf_scale_simple (pixbuf, w, h, GDK_INTERP_BILINEAR);
+          else
+            scaled = NULL;
+
+          /* create image */
+          image = gtk_image_new_from_pixbuf (scaled ? scaled : pixbuf);
+
+          /* release scaled image */
+          if (scaled != NULL)
+            g_object_unref (G_OBJECT (scaled));
+
+          /* create button and add it to the dialog */
+          button = gtk_button_new_with_label (label);
+          gtk_button_set_image (GTK_BUTTON (button), image);
+          gtk_dialog_add_action_widget (GTK_DIALOG (dialog), button, response);
+          gtk_widget_show (button);
+        }
+      else /* stock button */
+        {
+          /* get arguments */
+          stock_id = text;
+          response = va_arg (args, gint);
+
+          /* add a stock button to the dialog */
+          gtk_dialog_add_button (GTK_DIALOG (dialog), stock_id, response);
+        }
+
+      /* get the next argument */
+      text = va_arg (args, const gchar *);
+    }
+
+  return dialog;
 }
 
 
