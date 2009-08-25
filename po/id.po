@@ -1,16 +1,16 @@
 # Indonesian translations for libxfce package.
 # Copyright (C) 2008 THE libxfce'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the libxfce package.
-# Andhika Padmawan <andhika.padmawan@gmail.com>, 2008.
+# Andhika Padmawan <andhika.padmawan@gmail.com>, 2009.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: libxfce 4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-07-09 23:15+0200\n"
-"PO-Revision-Date: 2008-04-26 09:55+0700\n"
+"PO-Revision-Date: 2009-08-25 21:25+0700\n"
 "Last-Translator: Andhika Padmawan <andhika.padmawan@gmail.com>\n"
-"Language-Team: Indonesian <id@li.org>\n"
+"Language-Team: Indonesian <translation-team-id@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -40,6 +40,8 @@ msgid ""
 "This shortcut is already being used for another window manager action. Which "
 "action do you want to use?"
 msgstr ""
+"Jalan pintas ini telah digunakan untuk aksi manajer jendela lain. Aksi mana "
+"yang ingin anda gunakan?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
@@ -47,11 +49,11 @@ msgstr ""
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 #, c-format
 msgid "Use '%s'"
-msgstr ""
+msgstr "Gunakan '%s'"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 msgid "Keep the other one"
-msgstr ""
+msgstr "Simpan yang lain"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:55
 #: ../libxfce4kbd-private/xfce-shortcuts.c:58
@@ -60,137 +62,141 @@ msgid ""
 "This shortcut is already being used for the command '%s'. Which action do "
 "you want to use?"
 msgstr ""
+"Jalan pintas ini telah digunakan untuk perintah '%s'. Aksi mana yang ingin "
+"anda gunakan?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
 #: ../libxfce4kbd-private/xfce-shortcuts.c:59
 #, c-format
 msgid "Keep '%s'"
-msgstr ""
+msgstr "Simpan '%s'"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:61
 msgid ""
 "This shortcut is already being used by a window manager action. Which action "
 "do you want to use?"
 msgstr ""
+"Jalan pintas ini telah digunakan oleh sebuah aksi manajer jendela. Aksi mana "
+"yang ingin anda gunakan?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 msgid "Keep the window manager action"
-msgstr ""
+msgstr "Simpan aksi manajer jendela"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:95
 #, c-format
 msgid "Conflicting actions for %s"
-msgstr ""
+msgstr "Aksi konflik untuk %s"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:128
 msgid "This shortcut is already being used for something else."
-msgstr ""
+msgstr "Jalan pintas ini telah digunakan untuk hal yang lain."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:207
 msgid "Window Manager Action Shortcut"
-msgstr ""
+msgstr "Jalan Pintas Aksi Manajer Jendela"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:208
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:218
 msgid "Action:"
-msgstr ""
+msgstr "Aksi:"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:212
 msgid "Command Shortcut"
-msgstr ""
+msgstr "Jalan Pintas Perintah"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:213
 msgid "Command:"
-msgstr ""
+msgstr "Perintah:"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:217
 msgid "Shortcut"
-msgstr ""
+msgstr "Jalan Pintas"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:258
 msgid "Shortcut:"
-msgstr ""
+msgstr "Jalan Pintas:"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:303
 msgid "Could not grab the keyboard."
-msgstr ""
+msgstr "Tak dapat menangkap papan ketik."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:324
 #, c-format
 msgid "<span size='large'><b>%s</b></span>"
-msgstr ""
+msgstr "<span size='large'><b>%s</b></span>"
 
 #: ../libxfce4smclient-private/eggdesktopfile.c:165
 #, c-format
 msgid "File is not a valid .desktop file"
-msgstr ""
+msgstr "Berkas bukan sebuah berkas .desktop yang valid"
 
 #: ../libxfce4smclient-private/eggdesktopfile.c:188
 #, c-format
 msgid "Unrecognized desktop file Version '%s'"
-msgstr ""
+msgstr "Berkas desktop versi '%s' tak dikenal"
 
 #: ../libxfce4smclient-private/eggdesktopfile.c:958
 #, c-format
 msgid "Starting %s"
-msgstr ""
+msgstr "Memulai %s"
 
 #: ../libxfce4smclient-private/eggdesktopfile.c:1100
 #, c-format
 msgid "Application does not accept documents on command line"
-msgstr ""
+msgstr "Aplikasi tidak menerima dokumen di baris perintah"
 
 #: ../libxfce4smclient-private/eggdesktopfile.c:1168
 #, c-format
 msgid "Unrecognized launch option: %d"
-msgstr ""
+msgstr "Opsi jalankan tak dikenal: %d"
 
 #: ../libxfce4smclient-private/eggdesktopfile.c:1373
 #, c-format
 msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
-msgstr ""
+msgstr "Tak dapat meneruskan URI dokumen ke sebuah lema desktop 'Tipe=Tautan'"
 
 #: ../libxfce4smclient-private/eggdesktopfile.c:1394
 #, c-format
 msgid "Not a launchable item"
-msgstr ""
+msgstr "Bukan sebuah item yang dapat dijalankan"
 
 #: ../libxfce4smclient-private/eggsmclient.c:227
 msgid "Disable connection to session manager"
-msgstr ""
+msgstr "Nonaktifkan koneksi ke manajer sesi"
 
 #: ../libxfce4smclient-private/eggsmclient.c:230
 msgid "Specify file containing saved configuration"
-msgstr ""
+msgstr "Tentukan berkas yang berisi konfigurasi tersimpan"
 
 #: ../libxfce4smclient-private/eggsmclient.c:230
 msgid "FILE"
-msgstr ""
+msgstr "BERKAS"
 
 #: ../libxfce4smclient-private/eggsmclient.c:233
 msgid "Specify session management ID"
-msgstr ""
+msgstr "Tentukan ID manajemen sesi"
 
 #: ../libxfce4smclient-private/eggsmclient.c:233
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #: ../libxfce4smclient-private/eggsmclient.c:254
 msgid "Session management options:"
-msgstr ""
+msgstr "Opsi manajemen sesi:"
 
 #: ../libxfce4smclient-private/eggsmclient.c:255
 msgid "Show session management options"
-msgstr ""
+msgstr "Tampilkan opsi manajemen sesi"
 
 #: ../glade/libxfce4ui.xml.in.h:1
 msgid "Subtitle"
-msgstr ""
+msgstr "Subjudul"
 
 #: ../glade/libxfce4ui.xml.in.h:2
 msgid "Titled Dialog"
-msgstr ""
+msgstr "Dialog Berjudul"
 
 #: ../glade/libxfce4ui.xml.in.h:3
 msgid "Xfce 4 Widgets"
-msgstr ""
+msgstr "Widget Xfce 4"
