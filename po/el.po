@@ -1,0 +1,192 @@
+# Greek translation for libxfce4ui package.
+# Copyright (C) 2008 THE libxfce4ui'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the libxfce package.
+# Evaggelos Balaskas <ebalaskas@ebalaskas.gr>, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: libxfce4ui git VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-07-09 23:15+0200\n"
+"PO-Revision-Date: 2009-08-30 20:14+0200\n"
+"Last-Translator: Evaggelos Balaskas <ebalaskas@ebalaskas.gr>\n"
+"Language-Team: Greek <nls@tux.hellug.gr>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. run dialog
+#: ../libxfce4ui/xfce-dialogs.c:196
+msgid "Information"
+msgstr "Πληροφορία"
+
+#. run dialog
+#: ../libxfce4ui/xfce-dialogs.c:232
+msgid "Warning"
+msgstr "Προειδοποίηση"
+
+#. run dialog
+#: ../libxfce4ui/xfce-dialogs.c:269
+msgid "Error"
+msgstr "Σφάλμα"
+
+#. run dialog
+#: ../libxfce4ui/xfce-dialogs.c:322
+msgid "Question"
+msgstr "Ερώτηση"
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:52
+msgid "This shortcut is already being used for another window manager action. Which action do you want to use?"
+msgstr "Αυτή η συντόμευση χρησιμοποιείται ήδη για άλλη δράση του διαχειριστή παραθύρων. Ποια δράση θέλετε να χρησιμοποιήσετε;"
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:53
+#: ../libxfce4kbd-private/xfce-shortcuts.c:56
+#: ../libxfce4kbd-private/xfce-shortcuts.c:59
+#: ../libxfce4kbd-private/xfce-shortcuts.c:62
+#, c-format
+msgid "Use '%s'"
+msgstr "Χρήση '%s'"
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:53
+msgid "Keep the other one"
+msgstr "Διατήρηση της άλλης"
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:55
+#: ../libxfce4kbd-private/xfce-shortcuts.c:58
+#, c-format
+msgid "This shortcut is already being used for the command '%s'. Which action do you want to use?"
+msgstr "Αυτή η συντόμευση χρησιμοποιείται ήδη για την εντολή '%s'. Ποια δράση θέλετε να χρησιμοποιήσετε;"
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:56
+#: ../libxfce4kbd-private/xfce-shortcuts.c:59
+#, c-format
+msgid "Keep '%s'"
+msgstr "Διατήρηση του '%s'"
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:61
+msgid "This shortcut is already being used by a window manager action. Which action do you want to use?"
+msgstr "Αυτή η συντόμευση χρησιμοποιείται ήδη για δράση του διαχειριστή παραθύρων. Ποια δράση θέλετε να χρησιμοποιήσετε;"
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:62
+msgid "Keep the window manager action"
+msgstr "Διατήρηση της δράσης του διαχειριστή παραθύρων"
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:95
+#, c-format
+msgid "Conflicting actions for %s"
+msgstr "Συγκρουόμενες δράσεις για το %s"
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:128
+msgid "This shortcut is already being used for something else."
+msgstr "Αυτή η συντόμευση χρησιμοποιείται ήδη για κάτι άλλο."
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:207
+msgid "Window Manager Action Shortcut"
+msgstr "Συντόμευση δράσης διαχειριστή παραθύρων"
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:208
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:218
+msgid "Action:"
+msgstr "Δράση:"
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:212
+msgid "Command Shortcut"
+msgstr "Συντόμευση εντολής"
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:213
+msgid "Command:"
+msgstr "Εντολή:"
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:217
+msgid "Shortcut"
+msgstr "Συντόμευση"
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:258
+msgid "Shortcut:"
+msgstr "Συντόμευση:"
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:303
+msgid "Could not grab the keyboard."
+msgstr "Δεν είναι δυνατή η δέσμευση του πληκτρολογίου."
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:324
+#, c-format
+msgid "<span size='large'><b>%s</b></span>"
+msgstr "<span size='large'><b>%s</b></span>"
+
+#: ../libxfce4smclient-private/eggdesktopfile.c:165
+#, c-format
+msgid "File is not a valid .desktop file"
+msgstr "Το αρχείο δεν είναι ένα έγκυρο αρχείο .desktop"
+
+#: ../libxfce4smclient-private/eggdesktopfile.c:188
+#, c-format
+msgid "Unrecognized desktop file Version '%s'"
+msgstr "Άγνωστη έκδοση του αρχείου επιφάνειας '%s'"
+
+#: ../libxfce4smclient-private/eggdesktopfile.c:958
+#, c-format
+msgid "Starting %s"
+msgstr "Εκκινείται %s "
+
+#: ../libxfce4smclient-private/eggdesktopfile.c:1100
+#, c-format
+msgid "Application does not accept documents on command line"
+msgstr "Η εφαρμογή δεν δέχεται έγγραφα στην γραμμή εντολών"
+
+#: ../libxfce4smclient-private/eggdesktopfile.c:1168
+#, c-format
+msgid "Unrecognized launch option: %d"
+msgstr "Άγνωστη επιλογή εκτέλεσης: %d"
+
+#: ../libxfce4smclient-private/eggdesktopfile.c:1373
+#, c-format
+msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
+msgstr "Δεν μπορούν να περαστούν σε μία εισαγωγή επιφάνειας εργασίας URI εγγράφων στο 'Τύπος=Σύνδεση'"
+
+#: ../libxfce4smclient-private/eggdesktopfile.c:1394
+#, c-format
+msgid "Not a launchable item"
+msgstr "Το αντικείμενο δεν εκτελείτε"
+
+#: ../libxfce4smclient-private/eggsmclient.c:227
+msgid "Disable connection to session manager"
+msgstr "Διακοπή σύνδεσης με τον διαχειριστή συνεδρίας"
+
+#: ../libxfce4smclient-private/eggsmclient.c:230
+msgid "Specify file containing saved configuration"
+msgstr "Προσδιορίζει το αρχείο που περιέχει τις αποθηκευμένες ρυθμίσεις"
+
+#: ../libxfce4smclient-private/eggsmclient.c:230
+msgid "FILE"
+msgstr "Αρχείο"
+
+#: ../libxfce4smclient-private/eggsmclient.c:233
+msgid "Specify session management ID"
+msgstr "Προσδιορισμός ID του διαχειριστή συνεδρίας"
+
+#: ../libxfce4smclient-private/eggsmclient.c:233
+msgid "ID"
+msgstr "ID"
+
+#: ../libxfce4smclient-private/eggsmclient.c:254
+msgid "Session management options:"
+msgstr "Επιλογές του διαχειριστή συνεδρίας:"
+
+#: ../libxfce4smclient-private/eggsmclient.c:255
+msgid "Show session management options"
+msgstr "Εμφάνιση των επιλογών του διαχειριστή συνεδρίας"
+
+#: ../glade/libxfce4ui.xml.in.h:1
+msgid "Subtitle"
+msgstr "Υπότιτλος"
+
+#: ../glade/libxfce4ui.xml.in.h:2
+msgid "Titled Dialog"
+msgstr "Διάλογος με τίτλο"
+
+#: ../glade/libxfce4ui.xml.in.h:3
+msgid "Xfce 4 Widgets"
+msgstr "Xfce4 Widgets"
+
