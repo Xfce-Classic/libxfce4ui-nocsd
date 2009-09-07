@@ -230,13 +230,13 @@ xfce_message_dialog_new_valist (GtkWindow   *parent,
                                 const gchar *icon_stock_id,
                                 const gchar *primary_text,
                                 const gchar *secondary_text,
-                                const gchar *first_button_type,
+                                const gchar *first_button_text,
                                 va_list      args)
 {
   GtkWidget   *dialog;
   GtkWidget   *image;
   GtkWidget   *button;
-  const gchar *text = first_button_type;
+  const gchar *text = first_button_text;
   const gchar *label;
   const gchar *stock_id;
   gint         response;
