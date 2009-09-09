@@ -49,6 +49,7 @@
       <property name="&lt;Control&gt;&lt;Alt&gt;Right" type="string" value="right_workspace_key"/>
       <property name="&lt;Control&gt;&lt;Alt&gt;d" type="string" value="show_desktop_key"/>
       <property name="&lt;Control&gt;&lt;Alt&gt;Up" type="string" value="up_workspace_key"/>
+      <property name="&lt;Super&gt;Tab" type="string" value="switch_window_key"/>
       <property name="&lt;Control&gt;F1" type="string" value="workspace_1_key"/>
       <property name="&lt;Control&gt;F2" type="string" value="workspace_2_key"/>
       <property name="&lt;Control&gt;F3" type="string" value="workspace_3_key"/>
