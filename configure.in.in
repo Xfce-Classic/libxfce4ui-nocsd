@@ -13,8 +13,8 @@ m4_define([libxfce4ui_version_minor], [7])
 m4_define([libxfce4ui_version_micro], [0])
 m4_define([libxfce4ui_version_nano], []) dnl leave this empty to have no nano version
 m4_define([libxfce4ui_version_build], [r@REVISION@])
-m4_define([libxfce4ui_version_tag], [svn])
-m4_define([libxfce4ui_version], [libxfce4ui_version_major().libxfce4ui_version_minor().libxfce4ui_version_micro()ifelse(libxfce4ui_version_nano(), [], [], [.libxfce4ui_version_nano()])ifelse(libxfce4ui_version_tag(), [svn], [libxfce4ui_version_tag()-libxfce4ui_version_build()], [libxfce4ui_version_tag()])])
+m4_define([libxfce4ui_version_tag], [git])
+m4_define([libxfce4ui_version], [libxfce4ui_version_major().libxfce4ui_version_minor().libxfce4ui_version_micro()ifelse(libxfce4ui_version_nano(), [], [], [.libxfce4ui_version_nano()])ifelse(libxfce4ui_version_tag(), [git], [libxfce4ui_version_tag()-libxfce4ui_version_build()], [libxfce4ui_version_tag()])])
 
 m4_define([libxfce4kbd_private_verinfo], [0:0:0])
 m4_define([libxfce4kbd_private_version_api], [2])
@@ -29,7 +29,7 @@ dnl # YOU ARE DOING.
 dnl ********************************************
 dnl *** Full debug support for SVN snapshots ***
 dnl ********************************************
-m4_define([libxfce4ui_debug_default], [ifelse(libxfce4ui_version_tag(), [svn], [full], [minimum])])
+m4_define([libxfce4ui_debug_default], [ifelse(libxfce4ui_version_tag(), [git], [full], [minimum])])
 
 dnl ***************************
 dnl *** Initialize autoconf ***
