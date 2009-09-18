@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-07-09 23:15+0200\n"
-"PO-Revision-Date: 2009-09-18 17:14+0100\n"
+"PO-Revision-Date: 2009-09-18 18:19+0100\n"
 "Last-Translator: Rihards Prieditis <rprieditis@gmail.com>\n"
 "Language-Team: Latvian <translation-team-lv@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -45,7 +45,7 @@ msgid ""
 "This shortcut is already being used for another window manager action. Which "
 "action do you want to use?"
 msgstr ""
-"Šo īssceļu jau izmanto citai logu pārvaldnieka darbībai. Kuru darbību jūs "
+"Šo īsceļu jau izmanto citai logu pārvaldnieka darbībai. Kuru darbību jūs "
 "vēlaties izmantot?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
@@ -66,8 +66,7 @@ msgstr "Paturēt otru"
 msgid ""
 "This shortcut is already being used for the command '%s'. Which action do "
 "you want to use?"
-msgstr ""
-"Šo īssceļu jau izmanto komandai \"%s\". Kuru darbību vēlaties izmantot?"
+msgstr "Šo īsceļu jau izmanto komandai \"%s\". Kuru darbību vēlaties izmantot?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
 #: ../libxfce4kbd-private/xfce-shortcuts.c:59
@@ -80,7 +79,7 @@ msgid ""
 "This shortcut is already being used by a window manager action. Which action "
 "do you want to use?"
 msgstr ""
-"Šo īssceļu jau izmanto logu pārvaldnieka darbība, Kuru darbību jūs vēlaties "
+"Šo īsceļu jau izmanto logu pārvaldnieka darbība, Kuru darbību jūs vēlaties "
 "izmantot?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
@@ -94,11 +93,11 @@ msgstr "Konfliktējošas darbības priekš %s"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:128
 msgid "This shortcut is already being used for something else."
-msgstr "Šo īssceļu jau izmanto kaut kam citam."
+msgstr "Šo īsceļu jau izmanto kaut kam citam."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:207
 msgid "Window Manager Action Shortcut"
-msgstr "Logu pārvaldnieku darbību īssceļi"
+msgstr "Logu pārvaldnieku darbību īsceļi"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:208
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:218
@@ -107,7 +106,7 @@ msgstr "Darbība:"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:212
 msgid "Command Shortcut"
-msgstr "Komandas īssceļs"
+msgstr "Komandas īsceļs"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:213
 msgid "Command:"
@@ -115,11 +114,11 @@ msgstr "Komanda:"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:217
 msgid "Shortcut"
-msgstr "Īssceļs"
+msgstr "Īsceļs"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:258
 msgid "Shortcut:"
-msgstr "Īssceļš:"
+msgstr "Īsceļš:"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:303
 msgid "Could not grab the keyboard."
@@ -204,4 +203,5 @@ msgstr "Virsraksta dialogs"
 #: ../glade/libxfce4ui.xml.in.h:3
 msgid "Xfce 4 Widgets"
 msgstr "Xfce 4 sīkrīki"
+
 
