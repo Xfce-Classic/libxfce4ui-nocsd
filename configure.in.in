@@ -175,10 +175,34 @@ dnl *** Optional support for the Glade Interface Designer ***
 dnl *********************************************************
 XDT_CHECK_OPTIONAL_PACKAGE([GLADEUI], [gladeui-1.0],
                            [3.5.0], [gladeui], [glade interface designer])
+AC_ARG_WITH([gladeui-catalogdir],
+            [AC_HELP_STRING([--with-gladeui-catalogdir=PATH],
+                            [Specify where to install glade designer catalog files (default=autodetect)])],
+            [gladeui_catalogdir="$withval"])
+AC_ARG_WITH([gladeui-moduledir],
+            [AC_HELP_STRING([--with-gladeui-moduledir=PATH],
+                            [Specify where to install glade designer modules (default=autodetect)])],
+            [gladeui_moduledir="$withval"])
+AC_ARG_WITH([gladeui-pixmapdir],
+            [AC_HELP_STRING([--with-gladeui-pixmapdir=PATH],
+                            [Specify where to install glade designer pixmaps (default=autodetect)])],
+            [gladeui_pixmapdir="$withval"])
 if test x"$GLADEUI_FOUND" = x"yes"; then
-  GLADEUI_CATALOGDIR=`$PKG_CONFIG "--variable=catalogdir" "gladeui-1.0"`
-  GLADEUI_MODULEDIR=`$PKG_CONFIG "--variable=moduledir" "gladeui-1.0"`
-  GLADEUI_PIXMAPDIR=`$PKG_CONFIG "--variable=pixmapdir" "gladeui-1.0"`
+  if test x"$gladeui_catalogdir" = x""; then
+    GLADEUI_CATALOGDIR=`$PKG_CONFIG "--variable=catalogdir" "gladeui-1.0"`
+  else
+    GLADEUI_CATALOGDIR="$gladeui_catalogdir"
+  fi
+  if test x"$gladeui_moduledir" = x""; then
+    GLADEUI_MODULEDIR=`$PKG_CONFIG "--variable=moduledir" "gladeui-1.0"`
+  else
+    GLADEUI_MODULEDIR="$gladeui_moduledir"
+  fi
+  if test x"$gladeui_pixmapdir" = x""; then
+    GLADEUI_PIXMAPDIR=`$PKG_CONFIG "--variable=pixmapdir" "gladeui-1.0"`
+  else
+    GLADEUI_PIXMAPDIR="$gladeui_pixmapdir"
+  fi
 fi
 AC_SUBST([GLADEUI_CATALOGDIR])
 AC_SUBST([GLADEUI_MODULEDIR])
