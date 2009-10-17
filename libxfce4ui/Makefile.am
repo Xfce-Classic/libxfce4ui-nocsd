@@ -13,18 +13,27 @@ INCLUDES = \
 
 lib_LTLIBRARIES = libxfce4ui-1.la
 
+libxfce4ui_enum_headers = \
+	xfce-sm-client.h
+
 libxfce4ui_headers = \
 	libxfce4ui.h \
 	libxfce4ui-config.h \
+	libxfce4ui-enum-types.h \
 	xfce-dialogs.h \
 	xfce-gdk-extensions.h \
 	xfce-gtk-extensions.h \
 	xfce-spawn.h \
-	xfce-titled-dialog.h
+	xfce-titled-dialog.h \
+	$(libxfce4ui_enum_headers)
 
 libxfce4ui_built_sources = \
 	libxfce4ui-alias.h \
-	libxfce4ui-aliasdef.c
+	libxfce4ui-aliasdef.c \
+	libxfce4ui-enum-types.c \
+	libxfce4ui-enum-types.h \
+	libxfce4ui-marshal.c \
+	libxfce4ui-marshal.h
 
 libxfce4ui_includedir = \
 	$(includedir)/xfce4/libxfce4ui-$(LIBXFCE4UI_VERSION_API)/libxfce4ui
@@ -42,6 +51,7 @@ libxfce4ui_1_la_SOURCES = \
 	xfce-gtk-extensions.c \
 	xfce-heading.c \
 	xfce-heading.h \
+	xfce-sm-client.c \
 	xfce-spawn.c \
 	xfce-titled-dialog.c
 
@@ -97,6 +107,43 @@ libxfce4ui-alias.h: make-libxfce4ui-alias.pl libxfce4ui.symbols
 
 libxfce4ui-aliasdef.c: make-libxfce4ui-alias.pl libxfce4ui.symbols
 	$(PERL) $(srcdir)/make-libxfce4ui-alias.pl -def < $(srcdir)/libxfce4ui.symbols > libxfce4ui-aliasdef.c
+
+libxfce4ui-marshal.h: stamp-libxfce4ui-marshal.h
+	@true
+stamp-libxfce4ui-marshal.h: libxfce4ui-marshal.list Makefile
+	glib-genmarshal --prefix=_libxfce4ui_marshal --header $(srcdir)/libxfce4ui-marshal.list >xgen-lmh
+	cmp -s xgen-lmh libxfce4-marshal.h || cp xgen-lmh libxfce4ui-marshal.h
+	rm -f xgen-lmh
+	echo timestamp >$(@F)
+
+libxfce4ui-marshal.c: libxfce4ui-marshal.list Makefile
+	glib-genmarshal --prefix=_libxfce4ui_marshal --body $(srcdir)/libxfce4ui-marshal.list >xgen-lmc
+	cmp -s xgen-lmc libxfce4-marshal.c || cp xgen-lmc libxfce4ui-marshal.c
+	rm -f xgen-lmc
+
+libxfce4ui-enum-types.h: stamp-libxfce4ui-enum-types.h
+	@true
+stamp-libxfce4ui-enum-types.h: $(libxfce4ui_enum_headers) Makefile
+	( cd $(srcdir) && glib-mkenums \
+		--fhead "#ifndef __LIBXFCE4UI_ENUM_TYPES_H__\n#define __LIBXFCE4UI_ENUM_TYPES_H__\n\nG_BEGIN_DECLS\n\n" \
+		--fprod "/* enumerations from \"@filename@\" */\n\n" \
+		--vhead "GType @enum_name@_get_type(void) G_GNUC_CONST;\n#define XFCE_TYPE_@ENUMSHORT@ (@enum_name@_get_type())\n\n" \
+		--ftail "G_END_DECLS\n\n#endif /* !__LIBXFCE4UI_ENUM_TYPES_H__ */" \
+		$(libxfce4ui_enum_headers) ) >xgen-leth
+	cmp -s xgen-leth libxfce4ui-enum-types.h || cp xgen-leth libxfce4ui-enum-types.h
+	rm -f xgen-leth
+	echo timestamp > $(@F)
+libxfce4ui-enum-types.c: $(libxfce4ui_enum_headers) Makefile
+	( cd $(srcdir) && glib-mkenums \
+		--fhead "#include <libxfce4ui/libxfce4ui.h>\n#include <libxfce4ui/libxfce4ui-alias.h>\n\n" \
+		--fprod "/* enumerations from \"@filename@\" */\n\n" \
+		--vhead "GType\n@enum_name@_get_type(void)\n{\n    static GType type = 0;\n\n    if(!type) {\n        static const G@Type@Value values[] = {"\
+		--vprod "            { @VALUENAME@, \"@VALUENAME@\", \"@valuenick@\" }," \
+		--vtail "            { 0, NULL, NULL }\n\t};\n\ttype = g_@type@_register_static(\"@EnumName@\", values);\n    }\n\n    return type;\n}\n\n" \
+		--ftail "\n#define __LIBXFCE4UI_ENUM_TYPES_C__\n#include \"libxfce4ui-aliasdef.c\"\n" \
+		$(libxfce4ui_enum_headers) ) > xgen-letc
+	cp xgen-letc libxfce4ui-enum-types.c
+	rm -f xgen-letc
 endif
 
 # required for gtk-doc

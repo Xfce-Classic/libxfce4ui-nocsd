@@ -46,6 +46,15 @@ libxfce4ui_check_version
 #endif
 #endif
 
+/* libxfce4ui-enum-types functions */
+#if IN_HEADER(__LIBXFCE4UI_ENUM_TYPES_H__)
+#if IN_SOURCE(__LIBXFCE4UI_ENUM_TYPES_C__)
+xfce_sm_client_restart_style_get_type
+xfce_sm_client_priority_get_type
+xfce_sm_client_shutdown_hint_get_type
+#endif
+#endif
+
 /* xfce-dialogs functions */
 #if IN_HEADER(__XFCE_DIALOGS_H__)
 #if IN_SOURCE(__XFCE_DIALOGS_C__)
@@ -80,6 +89,31 @@ xfce_gtk_window_center_on_active_screen
 #if IN_SOURCE(__XFCE_SPAWN_C__)
 xfce_spawn_on_screen
 xfce_spawn_command_line_on_screen
+#endif
+#endif
+
+/* xfce-sm-client functions */
+#if IN_HEADER(__XFCE_SM_CLIENT_H__)
+#if IN_SOURCE(__XFCE_SM_CLIENT_C__)
+xfce_sm_client_get_type
+xfce_sm_client_get_option_group
+xfce_sm_client_get
+xfce_sm_client_get_with_argv
+xfce_sm_client_get_full
+xfce_sm_client_connect
+xfce_sm_client_disconnect
+xfce_sm_client_is_connected
+xfce_sm_client_is_resumed
+xfce_sm_client_set_desktop_file
+xfce_sm_client_request_shutdown
+xfce_sm_client_get_client_id
+xfce_sm_client_get_state_file
+xfce_sm_client_set_restart_style
+xfce_sm_client_get_restart_style
+xfce_sm_client_set_priority
+xfce_sm_client_get_priority
+xfce_sm_client_set_restart_command
+xfce_sm_client_get_restart_command
 #endif
 #endif
 

@@ -28,7 +28,9 @@
 #include <libxfce4ui/xfce-gdk-extensions.h>
 #include <libxfce4ui/xfce-gtk-extensions.h>
 #include <libxfce4ui/xfce-spawn.h>
+#include <libxfce4ui/xfce-sm-client.h>
 #include <libxfce4ui/xfce-titled-dialog.h>
+#include <libxfce4ui/libxfce4ui-enum-types.h>
 
 #undef LIBXFCE4UI_INSIDE_LIBXFCE4UI_H
 

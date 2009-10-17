@@ -7,6 +7,7 @@
 <!ENTITY xfce-gtk-extensions SYSTEM "xml/xfce-gtk-extensions.xml">
 <!ENTITY xfce-dialogs SYSTEM "xml/xfce-dialogs.xml">
 <!ENTITY xfce-titled-dialog SYSTEM "xml/xfce-titled-dialog.xml">
+<!ENTITY xfce-sm-client SYSTEM "xml/xfce-sm-client.xml">
 
 <!ENTITY version SYSTEM "version.xml">
 <!ENTITY date "Juli 2009">
@@ -69,6 +70,11 @@
     <title>Xfce UI Widget</title>
     &xfce-dialogs;
     &xfce-titled-dialog;
+  </part>
+
+  <part id="libxfce4ui-sm">
+    <title>Xfce Session Management Support</title>
+    &xfce-sm-client;
   </part>
 
   <index>

@@ -1,0 +1,325 @@
+<!-- ##### SECTION Title ##### -->
+
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### STRUCT XfceSMClient ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SIGNAL XfceSMClient::quit ##### -->
+<para>
+
+</para>
+
+@xfcesmclient: the object which received the signal.
+
+<!-- ##### SIGNAL XfceSMClient::quit-cancelled ##### -->
+<para>
+
+</para>
+
+@xfcesmclient: the object which received the signal.
+
+<!-- ##### SIGNAL XfceSMClient::quit-requested ##### -->
+<para>
+
+</para>
+
+@xfcesmclient: the object which received the signal.
+@Returns: 
+
+<!-- ##### SIGNAL XfceSMClient::save-state ##### -->
+<para>
+
+</para>
+
+@xfcesmclient: the object which received the signal.
+@arg1: 
+
+<!-- ##### SIGNAL XfceSMClient::save-state-extended ##### -->
+<para>
+
+</para>
+
+@xfcesmclient: the object which received the signal.
+
+<!-- ##### ARG XfceSMClient:argc ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG XfceSMClient:argv ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG XfceSMClient:client-id ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG XfceSMClient:current-directory ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG XfceSMClient:desktop-file ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG XfceSMClient:priority ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG XfceSMClient:restart-command ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG XfceSMClient:restart-style ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG XfceSMClient:resumed ##### -->
+<para>
+
+</para>
+
+<!-- ##### ENUM XfceSMClientPriority ##### -->
+<para>
+
+</para>
+
+@XFCE_SM_CLIENT_PRIORITY_HIGHEST: 
+@XFCE_SM_CLIENT_PRIORITY_WM: 
+@XFCE_SM_CLIENT_PRIORITY_CORE: 
+@XFCE_SM_CLIENT_PRIORITY_DESKTOP: 
+@XFCE_SM_CLIENT_PRIORITY_DEFAULT: 
+@XFCE_SM_CLIENT_PRIORITY_LOWEST: 
+
+<!-- ##### ENUM XfceSMClientRestartStyle ##### -->
+<para>
+
+</para>
+
+@XFCE_SM_CLIENT_RESTART_NORMAL: 
+@XFCE_SM_CLIENT_RESTART_IMMEDIATELY: 
+
+<!-- ##### ENUM XfceSMClientShutdownHint ##### -->
+<para>
+
+</para>
+
+@XFCE_SM_CLIENT_SHUTDOWN_HINT_ASK: 
+@XFCE_SM_CLIENT_SHUTDOWN_HINT_LOGOUT: 
+@XFCE_SM_CLIENT_SHUTDOWN_HINT_HALT: 
+@XFCE_SM_CLIENT_SHUTDOWN_HINT_REBOOT: 
+
+<!-- ##### FUNCTION xfce_sm_client_get_option_group ##### -->
+<para>
+
+</para>
+
+@argc: 
+@argv: 
+@Returns: 
+
+
+<!-- ##### FUNCTION xfce_sm_client_get ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+
+<!-- ##### FUNCTION xfce_sm_client_get_with_argv ##### -->
+<para>
+
+</para>
+
+@argc: 
+@argv: 
+@restart_style: 
+@priority: 
+@Returns: 
+
+
+<!-- ##### FUNCTION xfce_sm_client_get_full ##### -->
+<para>
+
+</para>
+
+@restart_style: 
+@priority: 
+@resumed_client_id: 
+@current_directory: 
+@restart_command: 
+@desktop_file: 
+@Returns: 
+
+
+<!-- ##### FUNCTION xfce_sm_client_connect ##### -->
+<para>
+
+</para>
+
+@sm_client: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION xfce_sm_client_disconnect ##### -->
+<para>
+
+</para>
+
+@sm_client: 
+
+
+<!-- ##### FUNCTION xfce_sm_client_is_connected ##### -->
+<para>
+
+</para>
+
+@sm_client: 
+@Returns: 
+
+
+<!-- ##### FUNCTION xfce_sm_client_is_resumed ##### -->
+<para>
+
+</para>
+
+@sm_client: 
+@Returns: 
+
+
+<!-- ##### FUNCTION xfce_sm_client_set_desktop_file ##### -->
+<para>
+
+</para>
+
+@sm_client: 
+@desktop_file: 
+
+
+<!-- ##### FUNCTION xfce_sm_client_request_shutdown ##### -->
+<para>
+
+</para>
+
+@sm_client: 
+@shutdown_hint: 
+
+
+<!-- ##### FUNCTION xfce_sm_client_get_client_id ##### -->
+<para>
+
+</para>
+
+@sm_client: 
+@Returns: 
+
+
+<!-- ##### FUNCTION xfce_sm_client_get_state_file ##### -->
+<para>
+
+</para>
+
+@sm_client: 
+@Returns: 
+
+
+<!-- ##### FUNCTION xfce_sm_client_get_current_directory ##### -->
+<para>
+
+</para>
+
+@sm_client: 
+@Returns: 
+
+
+<!-- ##### FUNCTION xfce_sm_client_set_current_directory ##### -->
+<para>
+
+</para>
+
+@sm_client: 
+@current_directory: 
+
+
+<!-- ##### FUNCTION xfce_sm_client_get_priority ##### -->
+<para>
+
+</para>
+
+@sm_client: 
+@Returns: 
+
+
+<!-- ##### FUNCTION xfce_sm_client_set_priority ##### -->
+<para>
+
+</para>
+
+@sm_client: 
+@priority: 
+
+
+<!-- ##### FUNCTION xfce_sm_client_get_restart_command ##### -->
+<para>
+
+</para>
+
+@sm_client: 
+@Returns: 
+
+
+<!-- ##### FUNCTION xfce_sm_client_set_restart_command ##### -->
+<para>
+
+</para>
+
+@sm_client: 
+@restart_command: 
+
+
+<!-- ##### FUNCTION xfce_sm_client_get_restart_style ##### -->
+<para>
+
+</para>
+
+@sm_client: 
+@Returns: 
+
+
+<!-- ##### FUNCTION xfce_sm_client_set_restart_style ##### -->
+<para>
+
+</para>
+
+@sm_client: 
+@restart_style: 
+
+
