@@ -60,6 +60,7 @@
 
 #include <libxfce4util/libxfce4util.h>
 
+#include "libxfce4ui-private.h"
 #include "xfce-sm-client.h"
 #include "libxfce4ui-marshal.h"
 #include "libxfce4ui-enum-types.h"
@@ -270,7 +271,7 @@ xfce_sm_client_class_init(XfceSMClientClass *klass)
      * possible, and MUST NOT interact with the user as a part of saving
      * state.
      **/
-    signals[SIG_SAVE_STATE] = g_signal_new("save-state",
+    signals[SIG_SAVE_STATE] = g_signal_new(I_("save-state"),
                                            G_TYPE_FROM_CLASS(klass),
                                            G_SIGNAL_RUN_LAST,
                                            G_STRUCT_OFFSET(XfceSMClientClass,
@@ -290,7 +291,7 @@ xfce_sm_client_class_init(XfceSMClientClass *klass)
      * positions.  Most applications should not need to connect to this
      * signal.
      **/
-    signals[SIG_SAVE_STATE_EXTENDED] = g_signal_new("save-state-extended",
+    signals[SIG_SAVE_STATE_EXTENDED] = g_signal_new(I_("save-state-extended"),
                                                     G_TYPE_FROM_CLASS(klass),
                                                     G_SIGNAL_RUN_LAST,
                                                     G_STRUCT_OFFSET(XfceSMClientClass,
@@ -315,7 +316,7 @@ xfce_sm_client_class_init(XfceSMClientClass *klass)
      * return %TRUE from the handler.  If the application is satisfied
      * with possibly needing to quit soon, the handler should return %FALSE.
      **/
-    signals[SIG_QUIT_REQUESTED] = g_signal_new("quit-requested",
+    signals[SIG_QUIT_REQUESTED] = g_signal_new(I_("quit-requested"),
                                                G_TYPE_FROM_CLASS(klass),
                                                G_SIGNAL_RUN_LAST,
                                                G_STRUCT_OFFSET(XfceSMClientClass,
@@ -337,7 +338,7 @@ xfce_sm_client_class_init(XfceSMClientClass *klass)
      * signal, #XfceSMClient will call <function>exit(3)</function> with
      * an exit code of zero on behalf of the application.
      **/
-    signals[SIG_QUIT] = g_signal_new("quit",
+    signals[SIG_QUIT] = g_signal_new(I_("quit"),
                                      G_TYPE_FROM_CLASS(klass),
                                      G_SIGNAL_RUN_LAST,
                                      G_STRUCT_OFFSET(XfceSMClientClass,
@@ -353,7 +354,7 @@ xfce_sm_client_class_init(XfceSMClientClass *klass)
      * Informs the application that it will not need to quit.  In most cases,
      * quit-cancelled will be emitted a short time after quit-requested.
      **/
-    signals[SIG_QUIT_CANCELLED] = g_signal_new("quit-cancelled",
+    signals[SIG_QUIT_CANCELLED] = g_signal_new(I_("quit-cancelled"),
                                                G_TYPE_FROM_CLASS(klass),
                                                G_SIGNAL_RUN_LAST,
                                                G_STRUCT_OFFSET(XfceSMClientClass,
@@ -367,45 +368,45 @@ xfce_sm_client_class_init(XfceSMClientClass *klass)
                                                          "Resumed",
                                                          "Whether or not the client was resumed with previous state",
                                                          FALSE,
-                                                         G_PARAM_READABLE));
+                                                         G_PARAM_READABLE|G_PARAM_STATIC_STRINGS));
     g_object_class_install_property(gobject_class, PROP_RESTART_STYLE,
                                     g_param_spec_enum("restart-style",
                                                       "Restart style",
                                                       "Specifies how the client should be restarted by the session manager",
                                                       XFCE_TYPE_SM_CLIENT_RESTART_STYLE,
                                                       XFCE_SM_CLIENT_RESTART_NORMAL,
-                                                      G_PARAM_READWRITE|G_PARAM_CONSTRUCT));
+                                                      G_PARAM_READWRITE|G_PARAM_CONSTRUCT|G_PARAM_STATIC_STRINGS));
     g_object_class_install_property(gobject_class, PROP_PRIORITY,
                                     g_param_spec_uchar("priority",
                                                        "Priority",
                                                        "Determines the ordering in which this client is restarted",
                                                        0, G_MAXUINT8,
                                                        XFCE_SM_CLIENT_PRIORITY_DEFAULT,
-                                                       G_PARAM_READWRITE|G_PARAM_CONSTRUCT));
+                                                       G_PARAM_READWRITE|G_PARAM_CONSTRUCT|G_PARAM_STATIC_STRINGS));
     g_object_class_install_property(gobject_class, PROP_CLIENT_ID,
                                     g_param_spec_string("client-id",
                                                         "Client ID",
                                                         "A string uniquely identifying the current instance of this client",
                                                         NULL,
-                                                        G_PARAM_READWRITE|G_PARAM_CONSTRUCT_ONLY));
+                                                        G_PARAM_READWRITE|G_PARAM_CONSTRUCT_ONLY|G_PARAM_STATIC_STRINGS));
     g_object_class_install_property(gobject_class, PROP_CURRENT_DIRECTORY,
                                     g_param_spec_string("current-directory",
                                                         "Current working directory",
                                                         "The directory that should be used as the working directory the next time this client is restarted",
                                                         NULL,
-                                                        G_PARAM_READWRITE));
+                                                        G_PARAM_READWRITE|G_PARAM_STATIC_STRINGS));
     g_object_class_install_property(gobject_class, PROP_RESTART_COMMAND,
                                     g_param_spec_boxed("restart-command",
                                                        "Restart command",
                                                        "A command used to restart this application, preserving the current state",
                                                        G_TYPE_STRV,
-                                                       G_PARAM_READWRITE));
+                                                       G_PARAM_READWRITE|G_PARAM_STATIC_STRINGS));
     g_object_class_install_property(gobject_class, PROP_DESKTOP_FILE,
                                     g_param_spec_string("desktop-file",
                                                         "Desktop file",
                                                         "The application's .desktop file",
                                                         NULL,
-                                                        G_PARAM_READWRITE));
+                                                        G_PARAM_READWRITE|G_PARAM_STATIC_STRINGS));
 
     /* these are "private" properties */
     g_object_class_install_property(gobject_class, PROP_ARGC,
@@ -413,13 +414,13 @@ xfce_sm_client_class_init(XfceSMClientClass *klass)
                                                      "argc",
                                                      "Argument count passed to program",
                                                      G_MININT, G_MAXINT, 0,
-                                                     G_PARAM_WRITABLE|G_PARAM_CONSTRUCT_ONLY));
+                                                     G_PARAM_WRITABLE|G_PARAM_CONSTRUCT_ONLY|G_PARAM_STATIC_STRINGS));
     g_object_class_install_property(gobject_class, PROP_ARGV,
                                     g_param_spec_boxed("argv",
                                                        "argv",
                                                        "Argument vector passed to program",
                                                        G_TYPE_STRV,
-                                                       G_PARAM_WRITABLE|G_PARAM_CONSTRUCT_ONLY));
+                                                       G_PARAM_WRITABLE|G_PARAM_CONSTRUCT_ONLY|G_PARAM_STATIC_STRINGS));
 }
 
 static void
