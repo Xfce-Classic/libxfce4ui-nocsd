@@ -154,7 +154,7 @@ struct _XfceSMClient
             needs_save_state:1,
             shutdown_cancelled:1;
 
-    guint argc;
+    gint  argc;
     gchar **argv;
 
     gchar *state_file;
@@ -179,7 +179,7 @@ typedef struct _XfceSMClientClass
 
 typedef struct
 {
-    guint argc;
+    gint argc;
     gchar **argv;
     gchar *client_id;
     gboolean sm_disable;
@@ -225,10 +225,12 @@ static void xfce_sm_client_finalize(GObject *obj);
 static void xfce_sm_client_set_client_id(XfceSMClient *sm_client,
                                          const gchar *client_id);
 static void xfce_sm_client_parse_argv(XfceSMClient *sm_client);
+#ifdef HAVE_LIBSM
 static void xfce_sm_client_set_property_from_command(XfceSMClient *sm_client,
                                                      const char *property_name,
                                                      gchar **command,
                                                      gint alter_sm_id);
+#endif
 static gchar **copy_command(gchar **command,
                             gchar **value);
 
@@ -407,11 +409,11 @@ xfce_sm_client_class_init(XfceSMClientClass *klass)
 
     /* these are "private" properties */
     g_object_class_install_property(gobject_class, PROP_ARGC,
-                                    g_param_spec_uint("argc",
-                                                      "argc",
-                                                      "Argument count passed to program",
-                                                      0, G_MAXUINT, 0,
-                                                      G_PARAM_WRITABLE|G_PARAM_CONSTRUCT_ONLY));
+                                    g_param_spec_int("argc",
+                                                     "argc",
+                                                     "Argument count passed to program",
+                                                     G_MININT, G_MAXINT, 0,
+                                                     G_PARAM_WRITABLE|G_PARAM_CONSTRUCT_ONLY));
     g_object_class_install_property(gobject_class, PROP_ARGV,
                                     g_param_spec_boxed("argv",
                                                        "argv",
@@ -511,7 +513,7 @@ xfce_sm_client_set_property(GObject *obj,
             if(sm_client->argc)
                 g_critical("XfceSMClient: Received argc twice");
             else {
-                sm_client->argc = g_value_get_uint(value);
+                sm_client->argc = g_value_get_int(value);
                 xfce_sm_client_parse_argv(sm_client);
             }
             break;
@@ -661,10 +663,10 @@ xfce_sm_client_set_clone_command(XfceSMClient *sm_client,
 static void
 xfce_sm_client_parse_argv(XfceSMClient *sm_client)
 {
-    guint argc = 0;
-    gchar **argv = NULL;
+    gint argc;
+    gchar **argv;
     gchar **clone_command = NULL, **restart_command = NULL;
-    guint clone_argc = 0;
+    gint clone_argc = 0;
     const gchar *client_id = NULL;
     int i;
     gboolean got_display = FALSE;
@@ -1383,7 +1385,7 @@ xfce_sm_client_set_clone_restart_commands(XfceSMClient *sm_client)
  * Returns: A new #GOptionGroup
  **/
 GOptionGroup *
-xfce_sm_client_get_option_group(guint argc,
+xfce_sm_client_get_option_group(gint  argc,
                                 gchar **argv)
 {
     const GOptionEntry entries[] = {
@@ -1427,7 +1429,7 @@ xfce_sm_client_get_option_group(guint argc,
  * Returns: A new or existing #XfceSMClient
  **/
 XfceSMClient *
-xfce_sm_client_get()
+xfce_sm_client_get(void)
 {
     return g_object_new(XFCE_TYPE_SM_CLIENT,
                         "argc", startup_options.argc,
@@ -1457,7 +1459,7 @@ xfce_sm_client_get()
  * Returns: A new #XfceSMClient instance
  **/
 XfceSMClient *
-xfce_sm_client_get_with_argv(guint argc,
+xfce_sm_client_get_with_argv(gint argc,
                              gchar **argv,
                              XfceSMClientRestartStyle restart_style,
                              guchar priority)

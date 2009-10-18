@@ -63,12 +63,12 @@ typedef struct _XfceSMClient  XfceSMClient;
 
 GType xfce_sm_client_get_type(void) G_GNUC_CONST;
 
-GOptionGroup *xfce_sm_client_get_option_group(guint argc,
+GOptionGroup *xfce_sm_client_get_option_group(gint argc,
                                               gchar **argv);
 
 XfceSMClient *xfce_sm_client_get(void);
 
-XfceSMClient *xfce_sm_client_get_with_argv(guint argc,
+XfceSMClient *xfce_sm_client_get_with_argv(gint argc,
                                            gchar **argv,
                                            XfceSMClientRestartStyle restart_style,
                                            guchar priority);
