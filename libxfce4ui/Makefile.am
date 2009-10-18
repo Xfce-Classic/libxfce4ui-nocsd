@@ -101,13 +101,13 @@ TESTS = \
 libxfce4ui-marshal.h: stamp-libxfce4ui-marshal.h
 	@true
 stamp-libxfce4ui-marshal.h: libxfce4ui-marshal.list Makefile
-	glib-genmarshal --prefix=_libxfce4ui_marshal --header $(srcdir)/libxfce4ui-marshal.list >xgen-lmh
+	$(AM_V_GEN) glib-genmarshal --prefix=_libxfce4ui_marshal --header $(srcdir)/libxfce4ui-marshal.list >xgen-lmh
 	cmp -s xgen-lmh libxfce4-marshal.h || cp xgen-lmh libxfce4ui-marshal.h
 	rm -f xgen-lmh
 	echo timestamp >$(@F)
 
 libxfce4ui-marshal.c: libxfce4ui-marshal.list Makefile
-	echo "#include <libxfce4ui/libxfce4ui-marshal.h>" > xgen-lmc
+	$(AM_V_GEN) echo "#include <libxfce4ui/libxfce4ui-marshal.h>" > xgen-lmc
 	glib-genmarshal --prefix=_libxfce4ui_marshal --body $(srcdir)/libxfce4ui-marshal.list >>xgen-lmc
 	cmp -s xgen-lmc libxfce4-marshal.c || cp xgen-lmc libxfce4ui-marshal.c
 	rm -f xgen-lmc
@@ -115,7 +115,7 @@ libxfce4ui-marshal.c: libxfce4ui-marshal.list Makefile
 libxfce4ui-enum-types.h: stamp-libxfce4ui-enum-types.h
 	@true
 stamp-libxfce4ui-enum-types.h: $(libxfce4ui_enum_headers) Makefile
-	( cd $(srcdir) && glib-mkenums \
+	$(AM_V_GEN) ( cd $(srcdir) && glib-mkenums \
 		--fhead "#ifndef __LIBXFCE4UI_ENUM_TYPES_H__\n#define __LIBXFCE4UI_ENUM_TYPES_H__\n\nG_BEGIN_DECLS\n\n" \
 		--fprod "/* enumerations from \"@filename@\" */\n\n" \
 		--vhead "GType @enum_name@_get_type(void) G_GNUC_CONST;\n#define XFCE_TYPE_@ENUMSHORT@ (@enum_name@_get_type())\n\n" \
@@ -125,7 +125,7 @@ stamp-libxfce4ui-enum-types.h: $(libxfce4ui_enum_headers) Makefile
 	rm -f xgen-leth
 	echo timestamp > $(@F)
 libxfce4ui-enum-types.c: $(libxfce4ui_enum_headers) Makefile
-	( cd $(srcdir) && glib-mkenums \
+	$(AM_V_GEN) ( cd $(srcdir) && glib-mkenums \
 		--fhead "#include <libxfce4ui/libxfce4ui.h>\n\n" \
 		--fprod "/* enumerations from \"@filename@\" */\n\n" \
 		--vhead "GType\n@enum_name@_get_type(void)\n{\n    static GType type = 0;\n\n    if(!type) {\n        static const G@Type@Value values[] = {"\

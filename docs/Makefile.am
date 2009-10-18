@@ -30,7 +30,6 @@ CFILE_GLOB=$(top_srcdir)/libxfce4ui/*.c
 # Header files to ignore when scanning
 IGNORE_HFILES=								\
 	libxfce4ui.h							\
-	libxfce4ui-alias.h						\
 	libxfce4ui-private.h						\
 	xfce-heading.h
 
