@@ -44,7 +44,6 @@
 #include <libxfce4ui/xfce-spawn.h>
 #include <libxfce4ui/xfce-gdk-extensions.h>
 #include <libxfce4ui/libxfce4ui-private.h>
-#include <libxfce4ui/libxfce4ui-alias.h>
 
 /* the maximum time for an application to startup */
 #define XFCE_SPAWN_STARTUP_TIMEOUT (30 * 1000)
@@ -410,8 +409,3 @@ xfce_spawn_command_line_on_screen (GdkScreen    *screen,
 
   return succeed;
 }
-
-
-
-#define __XFCE_SPAWN_C__
-#include <libxfce4ui/libxfce4ui-aliasdef.c>

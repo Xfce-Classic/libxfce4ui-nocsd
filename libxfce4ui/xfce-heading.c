@@ -31,7 +31,6 @@
 
 #include <libxfce4ui/xfce-heading.h>
 #include <libxfce4ui/libxfce4ui-private.h>
-#include <libxfce4ui/libxfce4ui-alias.h>
 
 
 
@@ -55,29 +54,29 @@ enum
 
 
 
-static void         xfce_heading_finalize       (GObject          *object);
-static void         xfce_heading_get_property   (GObject          *object,
+static void         _xfce_heading_finalize       (GObject          *object);
+static void         _xfce_heading_get_property   (GObject          *object,
                                                  guint             prop_id,
                                                  GValue           *value,
                                                  GParamSpec       *pspec);
-static void         xfce_heading_set_property   (GObject          *object,
+static void         _xfce_heading_set_property   (GObject          *object,
                                                  guint             prop_id,
                                                  const GValue     *value,
                                                  GParamSpec       *pspec);
-static void         xfce_heading_realize        (GtkWidget        *widget);
-static void         xfce_heading_size_request   (GtkWidget        *widget,
+static void         _xfce_heading_realize        (GtkWidget        *widget);
+static void         _xfce_heading_size_request   (GtkWidget        *widget,
                                                  GtkRequisition   *requisition);
-static void         xfce_heading_style_set      (GtkWidget        *widget,
+static void         _xfce_heading_style_set      (GtkWidget        *widget,
                                                  GtkStyle         *previous_style);
-static gboolean     xfce_heading_expose_event   (GtkWidget        *widget,
+static gboolean     _xfce_heading_expose_event   (GtkWidget        *widget,
                                                  GdkEventExpose   *event);
-static AtkObject   *xfce_heading_get_accessible (GtkWidget        *widget);
-static PangoLayout *xfce_heading_make_layout    (XfceHeading      *heading);
-static GdkPixbuf   *xfce_heading_make_pixbuf    (XfceHeading      *heading);
-static GdkPixbuf   *xfce_heading_get_icon       (XfceHeading      *heading);
-static const gchar *xfce_heading_get_icon_name  (XfceHeading      *heading);
-static const gchar *xfce_heading_get_subtitle   (XfceHeading      *heading);
-static const gchar *xfce_heading_get_title      (XfceHeading      *heading);
+static AtkObject   *_xfce_heading_get_accessible (GtkWidget        *widget);
+static PangoLayout *_xfce_heading_make_layout    (XfceHeading      *heading);
+static GdkPixbuf   *_xfce_heading_make_pixbuf    (XfceHeading      *heading);
+static GdkPixbuf   *_xfce_heading_get_icon       (XfceHeading      *heading);
+static const gchar *_xfce_heading_get_icon_name  (XfceHeading      *heading);
+static const gchar *_xfce_heading_get_subtitle   (XfceHeading      *heading);
+static const gchar *_xfce_heading_get_title      (XfceHeading      *heading);
 
 
 
@@ -91,12 +90,12 @@ struct _XfceHeadingPrivate
 
 
 
-G_DEFINE_TYPE (XfceHeading, xfce_heading, GTK_TYPE_WIDGET)
+G_DEFINE_TYPE (XfceHeading, _xfce_heading, GTK_TYPE_WIDGET)
 
 
 
 static void
-xfce_heading_class_init (XfceHeadingClass *klass)
+_xfce_heading_class_init (XfceHeadingClass *klass)
 {
   GtkWidgetClass *gtkwidget_class;
   GObjectClass   *gobject_class;
@@ -105,16 +104,16 @@ xfce_heading_class_init (XfceHeadingClass *klass)
   g_type_class_add_private (klass, sizeof (XfceHeadingPrivate));
 
   gobject_class = G_OBJECT_CLASS (klass);
-  gobject_class->finalize = xfce_heading_finalize;
-  gobject_class->get_property = xfce_heading_get_property;
-  gobject_class->set_property = xfce_heading_set_property;
+  gobject_class->finalize = _xfce_heading_finalize;
+  gobject_class->get_property = _xfce_heading_get_property;
+  gobject_class->set_property = _xfce_heading_set_property;
 
   gtkwidget_class = GTK_WIDGET_CLASS (klass);
-  gtkwidget_class->realize = xfce_heading_realize;
-  gtkwidget_class->size_request = xfce_heading_size_request;
-  gtkwidget_class->style_set = xfce_heading_style_set;
-  gtkwidget_class->expose_event = xfce_heading_expose_event;
-  gtkwidget_class->get_accessible = xfce_heading_get_accessible;
+  gtkwidget_class->realize = _xfce_heading_realize;
+  gtkwidget_class->size_request = _xfce_heading_size_request;
+  gtkwidget_class->style_set = _xfce_heading_style_set;
+  gtkwidget_class->expose_event = _xfce_heading_expose_event;
+  gtkwidget_class->get_accessible = _xfce_heading_get_accessible;
 
   /**
    * XfceHeading:icon:
@@ -190,7 +189,7 @@ xfce_heading_class_init (XfceHeadingClass *klass)
 
 
 static void
-xfce_heading_init (XfceHeading *heading)
+_xfce_heading_init (XfceHeading *heading)
 {
   /* setup the private data */
   heading->priv = XFCE_HEADING_GET_PRIVATE (heading);
@@ -202,7 +201,7 @@ xfce_heading_init (XfceHeading *heading)
 
 
 static void
-xfce_heading_finalize (GObject *object)
+_xfce_heading_finalize (GObject *object)
 {
   XfceHeading *heading = XFCE_HEADING (object);
 
@@ -214,13 +213,13 @@ xfce_heading_finalize (GObject *object)
   g_free (heading->priv->subtitle);
   g_free (heading->priv->title);
 
-  (*G_OBJECT_CLASS (xfce_heading_parent_class)->finalize) (object);
+  (*G_OBJECT_CLASS (_xfce_heading_parent_class)->finalize) (object);
 }
 
 
 
 static void
-xfce_heading_get_property (GObject    *object,
+_xfce_heading_get_property (GObject    *object,
                            guint       prop_id,
                            GValue     *value,
                            GParamSpec *pspec)
@@ -230,19 +229,19 @@ xfce_heading_get_property (GObject    *object,
   switch (prop_id)
     {
     case PROP_ICON:
-      g_value_set_object (value, xfce_heading_get_icon (heading));
+      g_value_set_object (value, _xfce_heading_get_icon (heading));
       break;
 
     case PROP_ICON_NAME:
-      g_value_set_string (value, xfce_heading_get_icon_name (heading));
+      g_value_set_string (value, _xfce_heading_get_icon_name (heading));
       break;
 
     case PROP_SUBTITLE:
-      g_value_set_string (value, xfce_heading_get_subtitle (heading));
+      g_value_set_string (value, _xfce_heading_get_subtitle (heading));
       break;
 
     case PROP_TITLE:
-      g_value_set_string (value, xfce_heading_get_title (heading));
+      g_value_set_string (value, _xfce_heading_get_title (heading));
       break;
 
     default:
@@ -254,7 +253,7 @@ xfce_heading_get_property (GObject    *object,
 
 
 static void
-xfce_heading_set_property (GObject      *object,
+_xfce_heading_set_property (GObject      *object,
                            guint         prop_id,
                            const GValue *value,
                            GParamSpec   *pspec)
@@ -264,19 +263,19 @@ xfce_heading_set_property (GObject      *object,
   switch (prop_id)
     {
     case PROP_ICON:
-      xfce_heading_set_icon (heading, g_value_get_object (value));
+      _xfce_heading_set_icon (heading, g_value_get_object (value));
       break;
 
     case PROP_ICON_NAME:
-      xfce_heading_set_icon_name (heading, g_value_get_string (value));
+      _xfce_heading_set_icon_name (heading, g_value_get_string (value));
       break;
 
     case PROP_SUBTITLE:
-      xfce_heading_set_subtitle (heading, g_value_get_string (value));
+      _xfce_heading_set_subtitle (heading, g_value_get_string (value));
       break;
 
     case PROP_TITLE:
-      xfce_heading_set_title (heading, g_value_get_string (value));
+      _xfce_heading_set_title (heading, g_value_get_string (value));
       break;
 
     default:
@@ -288,7 +287,7 @@ xfce_heading_set_property (GObject      *object,
 
 
 static void
-xfce_heading_realize (GtkWidget *widget)
+_xfce_heading_realize (GtkWidget *widget)
 {
   GdkWindowAttr attributes;
 
@@ -322,7 +321,7 @@ xfce_heading_realize (GtkWidget *widget)
 
 
 static void
-xfce_heading_size_request (GtkWidget      *widget,
+_xfce_heading_size_request (GtkWidget      *widget,
                            GtkRequisition *requisition)
 {
   XfceHeading *heading = XFCE_HEADING (widget);
@@ -334,12 +333,12 @@ xfce_heading_size_request (GtkWidget      *widget,
   gint         pixbuf_height = 0;
 
   /* determine the dimensions of the title text */
-  layout = xfce_heading_make_layout (heading);
+  layout = _xfce_heading_make_layout (heading);
   pango_layout_get_pixel_size (layout, &layout_width, &layout_height);
   g_object_unref (G_OBJECT (layout));
 
   /* determine the dimensions of the pixbuf */
-  pixbuf = xfce_heading_make_pixbuf (heading);
+  pixbuf = _xfce_heading_make_pixbuf (heading);
   if (G_LIKELY (pixbuf != NULL))
     {
       pixbuf_width = gdk_pixbuf_get_width (pixbuf);
@@ -359,7 +358,7 @@ xfce_heading_size_request (GtkWidget      *widget,
 
 
 static void
-xfce_heading_style_set (GtkWidget *widget,
+_xfce_heading_style_set (GtkWidget *widget,
                         GtkStyle  *previous_style)
 {
   /* check if we're already realized */
@@ -373,7 +372,7 @@ xfce_heading_style_set (GtkWidget *widget,
 
 
 static gboolean
-xfce_heading_expose_event (GtkWidget      *widget,
+_xfce_heading_expose_event (GtkWidget      *widget,
                            GdkEventExpose *event)
 {
   XfceHeading *heading = XFCE_HEADING (widget);
@@ -392,7 +391,7 @@ xfce_heading_expose_event (GtkWidget      *widget,
   x = (rtl ? widget->allocation.width - XFCE_HEADING_BORDER : XFCE_HEADING_BORDER);
 
   /* check if we have a pixbuf to render */
-  pixbuf = xfce_heading_make_pixbuf (heading);
+  pixbuf = _xfce_heading_make_pixbuf (heading);
   if (G_LIKELY (pixbuf != NULL))
     {
       /* determine the pixbuf dimensions */
@@ -415,7 +414,7 @@ xfce_heading_expose_event (GtkWidget      *widget,
     }
 
   /* generate the title layout */
-  layout = xfce_heading_make_layout (heading);
+  layout = _xfce_heading_make_layout (heading);
   pango_layout_get_pixel_size (layout, &width, &height);
 
   /* determine the vertical position */
@@ -434,11 +433,11 @@ xfce_heading_expose_event (GtkWidget      *widget,
 
 
 static AtkObject*
-xfce_heading_get_accessible (GtkWidget *widget)
+_xfce_heading_get_accessible (GtkWidget *widget)
 {
   AtkObject *object;
 
-  object = (*GTK_WIDGET_CLASS (xfce_heading_parent_class)->get_accessible) (widget);
+  object = (*GTK_WIDGET_CLASS (_xfce_heading_parent_class)->get_accessible) (widget);
   atk_object_set_role (object, ATK_ROLE_HEADER);
 
   return object;
@@ -447,7 +446,7 @@ xfce_heading_get_accessible (GtkWidget *widget)
 
 
 static PangoLayout*
-xfce_heading_make_layout (XfceHeading *heading)
+_xfce_heading_make_layout (XfceHeading *heading)
 {
   PangoAttribute *attribute;
   PangoAttrList  *attr_list;
@@ -498,7 +497,7 @@ xfce_heading_make_layout (XfceHeading *heading)
 
 
 static GdkPixbuf*
-xfce_heading_make_pixbuf (XfceHeading *heading)
+_xfce_heading_make_pixbuf (XfceHeading *heading)
 {
   GtkIconTheme *icon_theme;
   GdkPixbuf    *pixbuf = NULL;
@@ -527,14 +526,14 @@ xfce_heading_make_pixbuf (XfceHeading *heading)
 
 
 /**
- * xfce_heading_new:
+ * _xfce_heading_new:
  *
  * Allocates a new #XfceHeading instance.
  *
  * Return value: the newly allocated #XfceHeading.
  **/
 GtkWidget*
-xfce_heading_new (void)
+_xfce_heading_new (void)
 {
   return g_object_new (XFCE_TYPE_HEADING, NULL);
 }
@@ -542,7 +541,7 @@ xfce_heading_new (void)
 
 
 /**
- * xfce_heading_get_icon:
+ * _xfce_heading_get_icon:
  * @heading : a #XfceHeading.
  *
  * Returns the #GdkPixbuf that was set as icon for
@@ -552,7 +551,7 @@ xfce_heading_new (void)
  * Return value: the icon for @heading, or %NULL.
  **/
 static GdkPixbuf*
-xfce_heading_get_icon (XfceHeading *heading)
+_xfce_heading_get_icon (XfceHeading *heading)
 {
   g_return_val_if_fail (XFCE_IS_HEADING (heading), NULL);
   return heading->priv->icon;
@@ -561,17 +560,17 @@ xfce_heading_get_icon (XfceHeading *heading)
 
 
 /**
- * xfce_heading_set_icon:
+ * _xfce_heading_set_icon:
  * @heading : a #XfceHeading.
  * @icon    : the new icon or %NULL.
  *
  * If @icon is not %NULL, @heading will display the new @icon
  * aside the title. Else, if @icon is %NULL no icon is displayed
- * unless an icon name was set with xfce_heading_set_icon_name().
+ * unless an icon name was set with _xfce_heading_set_icon_name().
  **/
 void
-xfce_heading_set_icon (XfceHeading *heading,
-                       GdkPixbuf   *icon)
+_xfce_heading_set_icon (XfceHeading *heading,
+                        GdkPixbuf   *icon)
 {
   g_return_if_fail (XFCE_IS_HEADING (heading));
   g_return_if_fail (icon == NULL || GDK_IS_PIXBUF (icon));
@@ -601,17 +600,17 @@ xfce_heading_set_icon (XfceHeading *heading,
 
 
 /**
- * xfce_heading_get_icon_name:
+ * _xfce_heading_get_icon_name:
  * @heading : a #XfceHeading.
  *
  * Returns the icon name previously set by a call to
- * xfce_heading_set_icon_name() or %NULL if no icon name
+ * _xfce_heading_set_icon_name() or %NULL if no icon name
  * is set for @heading.
  *
  * Return value: the icon name for @heading, or %NULL.
  **/
 static const gchar*
-xfce_heading_get_icon_name (XfceHeading *heading)
+_xfce_heading_get_icon_name (XfceHeading *heading)
 {
   g_return_val_if_fail (XFCE_IS_HEADING (heading), NULL);
   return heading->priv->icon_name;
@@ -620,17 +619,17 @@ xfce_heading_get_icon_name (XfceHeading *heading)
 
 
 /**
- * xfce_heading_set_icon_name:
+ * _xfce_heading_set_icon_name:
  * @heading   : a #XfceHeading.
  * @icon_name : the new icon name, or %NULL.
  *
  * If @icon_name is not %NULL and the "icon" property is set to
- * %NULL, see xfce_heading_set_icon(), the @heading will display
+ * %NULL, see _xfce_heading_set_icon(), the @heading will display
  * the name icon identified by the @icon_name.
  **/
 void
-xfce_heading_set_icon_name (XfceHeading *heading,
-                            const gchar *icon_name)
+_xfce_heading_set_icon_name (XfceHeading *heading,
+                             const gchar *icon_name)
 {
   g_return_if_fail (XFCE_IS_HEADING (heading));
 
@@ -650,7 +649,7 @@ xfce_heading_set_icon_name (XfceHeading *heading,
 
 
 /**
- * xfce_heading_get_subtitle:
+ * _xfce_heading_get_subtitle:
  * @heading : a #XfceHeading.
  *
  * Returns the sub title displayed below the
@@ -660,7 +659,7 @@ xfce_heading_set_icon_name (XfceHeading *heading,
  * Return value: the subtitle of @heading, or %NULL.
  **/
 static const gchar*
-xfce_heading_get_subtitle (XfceHeading *heading)
+_xfce_heading_get_subtitle (XfceHeading *heading)
 {
   g_return_val_if_fail (XFCE_IS_HEADING (heading), NULL);
   return heading->priv->subtitle;
@@ -669,7 +668,7 @@ xfce_heading_get_subtitle (XfceHeading *heading)
 
 
 /**
- * xfce_heading_set_subtitle:
+ * _xfce_heading_set_subtitle:
  * @heading  : a #XfceHeading.
  * @subtitle : the new subtitle for @heading, or %NULL.
  *
@@ -677,8 +676,8 @@ xfce_heading_get_subtitle (XfceHeading *heading)
  * will be displayed by @heading below the main title.
  **/
 void
-xfce_heading_set_subtitle (XfceHeading *heading,
-                           const gchar *subtitle)
+_xfce_heading_set_subtitle (XfceHeading *heading,
+                            const gchar *subtitle)
 {
   g_return_if_fail (XFCE_IS_HEADING (heading));
   g_return_if_fail (subtitle == NULL || g_utf8_validate (subtitle, -1, NULL));
@@ -699,7 +698,7 @@ xfce_heading_set_subtitle (XfceHeading *heading,
 
 
 /**
- * xfce_heading_get_title:
+ * _xfce_heading_get_title:
  * @heading : a #XfceHeading.
  *
  * Returns the title displayed by the @heading.
@@ -707,7 +706,7 @@ xfce_heading_set_subtitle (XfceHeading *heading,
  * Return value: the title displayed by the @heading.
  **/
 static const gchar*
-xfce_heading_get_title (XfceHeading *heading)
+_xfce_heading_get_title (XfceHeading *heading)
 {
   g_return_val_if_fail (XFCE_IS_HEADING (heading), NULL);
   return heading->priv->title;
@@ -716,7 +715,7 @@ xfce_heading_get_title (XfceHeading *heading)
 
 
 /**
- * xfce_heading_set_title:
+ * _xfce_heading_set_title:
  * @heading : a #XfceHeading.
  * @title   : the new title for the @heading.
  *
@@ -724,8 +723,8 @@ xfce_heading_get_title (XfceHeading *heading)
  * specified @title.
  **/
 void
-xfce_heading_set_title (XfceHeading *heading,
-                        const gchar *title)
+_xfce_heading_set_title (XfceHeading *heading,
+                         const gchar *title)
 {
   g_return_if_fail (XFCE_IS_HEADING (heading));
   g_return_if_fail (title == NULL || g_utf8_validate (title, -1, NULL));
@@ -742,8 +741,3 @@ xfce_heading_set_title (XfceHeading *heading,
   /* notify listeners */
   g_object_notify (G_OBJECT (heading), "title");
 }
-
-
-
-#define __XFCE_HEADING_C__
-#include <libxfce4ui/libxfce4ui-aliasdef.c>

@@ -38,7 +38,6 @@
 #include <libxfce4ui/xfce-gtk-extensions.h>
 #include <libxfce4ui/xfce-gdk-extensions.h>
 #include <libxfce4ui/libxfce4ui-private.h>
-#include <libxfce4ui/libxfce4ui-alias.h>
 
 
 
@@ -497,8 +496,3 @@ xfce_message_dialog (GtkWindow   *parent,
 
   return response_id;
 }
-
-
-
-#define __XFCE_DIALOGS_C__
-#include <libxfce4ui/libxfce4ui-aliasdef.c>

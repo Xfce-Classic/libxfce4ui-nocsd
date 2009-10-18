@@ -28,8 +28,6 @@ libxfce4ui_headers = \
 	$(libxfce4ui_enum_headers)
 
 libxfce4ui_built_sources = \
-	libxfce4ui-alias.h \
-	libxfce4ui-aliasdef.c \
 	libxfce4ui-enum-types.c \
 	libxfce4ui-enum-types.h \
 	libxfce4ui-marshal.c \
@@ -97,16 +95,8 @@ DISTCLEANFILES = \
 BUILT_SOURCES = \
 	$(libxfce4ui_built_sources)
 
-if HAVE_GNUC_VISIBILITY
 TESTS = \
 	abicheck.sh
-endif
-
-libxfce4ui-alias.h: make-libxfce4ui-alias.pl libxfce4ui.symbols
-	$(PERL) $(srcdir)/make-libxfce4ui-alias.pl < $(srcdir)/libxfce4ui.symbols > libxfce4ui-alias.h
-
-libxfce4ui-aliasdef.c: make-libxfce4ui-alias.pl libxfce4ui.symbols
-	$(PERL) $(srcdir)/make-libxfce4ui-alias.pl -def < $(srcdir)/libxfce4ui.symbols > libxfce4ui-aliasdef.c
 
 libxfce4ui-marshal.h: stamp-libxfce4ui-marshal.h
 	@true
@@ -136,12 +126,11 @@ stamp-libxfce4ui-enum-types.h: $(libxfce4ui_enum_headers) Makefile
 	echo timestamp > $(@F)
 libxfce4ui-enum-types.c: $(libxfce4ui_enum_headers) Makefile
 	( cd $(srcdir) && glib-mkenums \
-		--fhead "#include <libxfce4ui/libxfce4ui.h>\n#include <libxfce4ui/libxfce4ui-alias.h>\n\n" \
+		--fhead "#include <libxfce4ui/libxfce4ui.h>\n\n" \
 		--fprod "/* enumerations from \"@filename@\" */\n\n" \
 		--vhead "GType\n@enum_name@_get_type(void)\n{\n    static GType type = 0;\n\n    if(!type) {\n        static const G@Type@Value values[] = {"\
 		--vprod "            { @VALUENAME@, \"@VALUENAME@\", \"@valuenick@\" }," \
 		--vtail "            { 0, NULL, NULL }\n\t};\n\ttype = g_@type@_register_static(\"@EnumName@\", values);\n    }\n\n    return type;\n}\n\n" \
-		--ftail "\n#define __LIBXFCE4UI_ENUM_TYPES_C__\n#include \"libxfce4ui-aliasdef.c\"\n" \
 		$(libxfce4ui_enum_headers) ) > xgen-letc
 	cp xgen-letc libxfce4ui-enum-types.c
 	rm -f xgen-letc
@@ -152,9 +141,6 @@ dist-hook: all
 
 EXTRA_DIST = \
 	abicheck.sh \
-	libxfce4ui.symbols \
-	libxfce4ui-alias.h \
-	libxfce4ui-aliasdef.c \
-	make-libxfce4ui-alias.pl
+	libxfce4ui.symbols
 
 # vi:set ts=8 sw=8 noet ai nocindent syntax=automake:

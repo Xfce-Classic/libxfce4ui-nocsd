@@ -23,7 +23,6 @@
 #endif
 
 #include <libxfce4ui/libxfce4ui-config.h>
-#include <libxfce4ui/libxfce4ui-alias.h>
 
 
 
@@ -79,8 +78,3 @@ libxfce4ui_check_version (guint required_major,
     return "Libxfce4ui version too old (micro mismatch)";
   return NULL;
 }
-
-
-
-#define __LIBXFCE4UI_CONFIG_C__
-#include <libxfce4ui/libxfce4ui-aliasdef.c>

@@ -31,7 +31,6 @@
 #include <libxfce4ui/xfce-heading.h>
 #include <libxfce4ui/xfce-titled-dialog.h>
 #include <libxfce4ui/libxfce4ui-private.h>
-#include <libxfce4ui/libxfce4ui-alias.h>
 
 
 #define XFCE_TITLED_DIALOG_GET_PRIVATE(obj) (G_TYPE_INSTANCE_GET_PRIVATE ((obj), XFCE_TYPE_TITLED_DIALOG, XfceTitledDialogPrivate))
@@ -132,7 +131,7 @@ xfce_titled_dialog_init (XfceTitledDialog *titled_dialog)
   gtk_widget_show (vbox);
 
   /* add the heading to the window */
-  titled_dialog->priv->heading = xfce_heading_new ();
+  titled_dialog->priv->heading = _xfce_heading_new ();
   gtk_box_pack_start (GTK_BOX (vbox), titled_dialog->priv->heading, FALSE, FALSE, 0);
   gtk_widget_show (titled_dialog->priv->heading);
 
@@ -237,9 +236,9 @@ static void
 xfce_titled_dialog_update_heading (XfceTitledDialog *titled_dialog)
 {
   /* update the heading properties using the window property values */
-  xfce_heading_set_icon (XFCE_HEADING (titled_dialog->priv->heading), gtk_window_get_icon (GTK_WINDOW (titled_dialog)));
-  xfce_heading_set_icon_name (XFCE_HEADING (titled_dialog->priv->heading), gtk_window_get_icon_name (GTK_WINDOW (titled_dialog)));
-  xfce_heading_set_title (XFCE_HEADING (titled_dialog->priv->heading), gtk_window_get_title (GTK_WINDOW (titled_dialog)));
+  _xfce_heading_set_icon (XFCE_HEADING (titled_dialog->priv->heading), gtk_window_get_icon (GTK_WINDOW (titled_dialog)));
+  _xfce_heading_set_icon_name (XFCE_HEADING (titled_dialog->priv->heading), gtk_window_get_icon_name (GTK_WINDOW (titled_dialog)));
+  _xfce_heading_set_title (XFCE_HEADING (titled_dialog->priv->heading), gtk_window_get_title (GTK_WINDOW (titled_dialog)));
 }
 
 
@@ -351,13 +350,8 @@ xfce_titled_dialog_set_subtitle (XfceTitledDialog *titled_dialog,
   titled_dialog->priv->subtitle = g_strdup (subtitle);
 
   /* update the subtitle for the heading */
-  xfce_heading_set_subtitle (XFCE_HEADING (titled_dialog->priv->heading), subtitle);
+  _xfce_heading_set_subtitle (XFCE_HEADING (titled_dialog->priv->heading), subtitle);
 
   /* notify listeners */
   g_object_notify (G_OBJECT (titled_dialog), "subtitle");
 }
-
-
-
-#define __XFCE_TITLED_DIALOG_C__
-#include <libxfce4ui/libxfce4ui-aliasdef.c>

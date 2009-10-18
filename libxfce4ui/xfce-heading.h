@@ -33,7 +33,7 @@ typedef struct _XfceHeadingPrivate XfceHeadingPrivate;
 typedef struct _XfceHeadingClass   XfceHeadingClass;
 typedef struct _XfceHeading        XfceHeading;
 
-#define XFCE_TYPE_HEADING             (xfce_heading_get_type ())
+#define XFCE_TYPE_HEADING             (_xfce_heading_get_type ())
 #define XFCE_HEADING(obj)             (G_TYPE_CHECK_INSTANCE_CAST ((obj), XFCE_TYPE_HEADING, XfceHeading))
 #define XFCE_HEADING_CLASS(klass)     (G_TYPE_CHECK_CLASS_CAST ((klass), XFCE_TYPE_HEADING, XfceHeadingClass))
 #define XFCE_IS_HEADING(obj)          (G_TYPE_CHECK_INSTANCE_TYPE ((obj), XFCE_TYPE_HEADING))
@@ -53,21 +53,21 @@ struct _XfceHeading
   XfceHeadingPrivate *priv;
 };
 
-G_GNUC_INTERNAL GType      xfce_heading_get_type      (void) G_GNUC_CONST;
+GType      _xfce_heading_get_type      (void) G_GNUC_CONST;
 
-G_GNUC_INTERNAL GtkWidget *xfce_heading_new           (void) G_GNUC_MALLOC;
+GtkWidget *_xfce_heading_new           (void) G_GNUC_MALLOC;
 
-G_GNUC_INTERNAL void       xfce_heading_set_icon      (XfceHeading *heading,
-                                                       GdkPixbuf   *icon);
+void       _xfce_heading_set_icon      (XfceHeading *heading,
+                                        GdkPixbuf   *icon);
 
-G_GNUC_INTERNAL void       xfce_heading_set_icon_name (XfceHeading *heading,
-                                                       const gchar *icon_name);
+void       _xfce_heading_set_icon_name (XfceHeading *heading,
+                                        const gchar *icon_name);
 
-G_GNUC_INTERNAL void       xfce_heading_set_subtitle  (XfceHeading *heading,
-                                                       const gchar *subtitle);
+void       _xfce_heading_set_subtitle  (XfceHeading *heading,
+                                        const gchar *subtitle);
 
-G_GNUC_INTERNAL void       xfce_heading_set_title     (XfceHeading *heading,
-                                                       const gchar *title);
+void       _xfce_heading_set_title     (XfceHeading *heading,
+                                        const gchar *title);
 
 G_END_DECLS
 

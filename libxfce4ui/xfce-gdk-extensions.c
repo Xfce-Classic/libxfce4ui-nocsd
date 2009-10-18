@@ -29,7 +29,6 @@
 
 #include <libxfce4ui/xfce-gdk-extensions.h>
 #include <libxfce4ui/libxfce4ui-private.h>
-#include <libxfce4ui/libxfce4ui-alias.h>
 
 #ifdef GDK_WINDOWING_X11
 #include <gdk/gdkx.h>
@@ -101,8 +100,3 @@ out:
   return gdk_screen_get_default ();
 #endif
 }
-
-
-
-#define __XFCE_GDK_EXTENSIONS_C__
-#include <libxfce4ui/libxfce4ui-aliasdef.c>
