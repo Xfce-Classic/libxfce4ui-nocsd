@@ -50,7 +50,8 @@ INCLUDES =	 							\
 	-I$(top_srcdir) 						\
 	-I$(top_builddir) 						\
 	$(LIBXFCE4UTIL_CFLAGS)						\
-	$(GTK_CFLAGS)
+	$(GTK_CFLAGS)	 						\
+	$(GTK_DOC_EXTRA_CFLAGS)
 
 GTKDOC_LIBS =  								\
 	$(LIBXFCE4UTIL_LIBS)						\
