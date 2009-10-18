@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-07-09 23:15+0200\n"
+"POT-Creation-Date: 2009-10-18 15:24+0200\n"
 "PO-Revision-Date: 2009-07-13 10:00+0500\n"
 "Last-Translator: Muhammad Ali Makki <makki.ma@gmail.com>\n"
 "Language-Team: Urdu <makki.ma@gmail.com>\n"
@@ -22,24 +22,57 @@ msgstr ""
 "X-Poedit-SourceCharset: utf-8\n"
 
 #. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:196
+#: ../libxfce4ui/xfce-dialogs.c:70
 msgid "Information"
 msgstr "معلومات"
 
 #. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:232
+#: ../libxfce4ui/xfce-dialogs.c:106
 msgid "Warning"
 msgstr "انتباہ"
 
 #. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:269
+#: ../libxfce4ui/xfce-dialogs.c:143
 msgid "Error"
 msgstr "غلطی"
 
 #. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:322
+#: ../libxfce4ui/xfce-dialogs.c:196
 msgid "Question"
 msgstr "سوال"
+
+#: ../libxfce4ui/xfce-sm-client.c:1393
+#, fuzzy
+msgid "Session management client ID"
+msgstr "نشست منیجر اختیارات:"
+
+#: ../libxfce4ui/xfce-sm-client.c:1393
+msgid "ID"
+msgstr "آئی ڈی"
+
+#: ../libxfce4ui/xfce-sm-client.c:1394
+#, fuzzy
+msgid "Disable session management"
+msgstr "نشست منیجر آئی ڈی متعین کریں"
+
+#: ../libxfce4ui/xfce-sm-client.c:1404
+#, fuzzy
+msgid "Session management options"
+msgstr "نشست منیجر اختیارات:"
+
+#: ../libxfce4ui/xfce-sm-client.c:1405
+msgid "Show session management options"
+msgstr "نشست منیجر کے اختیارات ظاہر کریں"
+
+#: ../libxfce4ui/xfce-sm-client.c:1581
+#, fuzzy, c-format
+msgid "Failed to connect to the session manager: %s"
+msgstr "نشست منیجر سے اتصال معطل کریں"
+
+#: ../libxfce4ui/xfce-sm-client.c:1588
+#, c-format
+msgid "Session manager did not return a valid client id"
+msgstr ""
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:52
 msgid ""
@@ -132,69 +165,6 @@ msgstr "کیبورڈ اٹھایا نہیں جاسکا."
 msgid "<span size='large'><b>%s</b></span>"
 msgstr "<span size='large'><b>%s</b></span>"
 
-#: ../libxfce4smclient-private/eggdesktopfile.c:165
-#, c-format
-msgid "File is not a valid .desktop file"
-msgstr "فائل موزوں .desktop فائل نہیں ہے"
-
-#: ../libxfce4smclient-private/eggdesktopfile.c:188
-#, c-format
-msgid "Unrecognized desktop file Version '%s'"
-msgstr "غیر پہچان کردہ ڈیسک ٹاپ فائل ورژن '%s'"
-
-#: ../libxfce4smclient-private/eggdesktopfile.c:958
-#, c-format
-msgid "Starting %s"
-msgstr "%s شروع کیا جارہا ہے"
-
-#: ../libxfce4smclient-private/eggdesktopfile.c:1100
-#, c-format
-msgid "Application does not accept documents on command line"
-msgstr "اطلاقیہ کمانڈ لائن پر دستاویزات قبول نہیں کرتا"
-
-#: ../libxfce4smclient-private/eggdesktopfile.c:1168
-#, c-format
-msgid "Unrecognized launch option: %d"
-msgstr "غیر پہچان کردہ چلانے کا اختیار: %d"
-
-#: ../libxfce4smclient-private/eggdesktopfile.c:1373
-#, c-format
-msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
-msgstr "دستاویز ربط تا 'Type=Link' ڈیسک ٹاپ انٹری پاس نہیں کیا جاسکتا"
-
-#: ../libxfce4smclient-private/eggdesktopfile.c:1394
-#, c-format
-msgid "Not a launchable item"
-msgstr "چلانے کے قابل عنصر نہیں ہے"
-
-#: ../libxfce4smclient-private/eggsmclient.c:227
-msgid "Disable connection to session manager"
-msgstr "نشست منیجر سے اتصال معطل کریں"
-
-#: ../libxfce4smclient-private/eggsmclient.c:230
-msgid "Specify file containing saved configuration"
-msgstr "محفوظ شدہ وضع کاریوں پر مشتمل فائل متعین کریں"
-
-#: ../libxfce4smclient-private/eggsmclient.c:230
-msgid "FILE"
-msgstr "فائل"
-
-#: ../libxfce4smclient-private/eggsmclient.c:233
-msgid "Specify session management ID"
-msgstr "نشست منیجر آئی ڈی متعین کریں"
-
-#: ../libxfce4smclient-private/eggsmclient.c:233
-msgid "ID"
-msgstr "آئی ڈی"
-
-#: ../libxfce4smclient-private/eggsmclient.c:254
-msgid "Session management options:"
-msgstr "نشست منیجر اختیارات:"
-
-#: ../libxfce4smclient-private/eggsmclient.c:255
-msgid "Show session management options"
-msgstr "نشست منیجر کے اختیارات ظاہر کریں"
-
 #: ../glade/libxfce4ui.xml.in.h:1
 msgid "Subtitle"
 msgstr "ذیلی عنوان"
@@ -206,3 +176,30 @@ msgstr "عنوان شدہ ڈائیلاگ"
 #: ../glade/libxfce4ui.xml.in.h:3
 msgid "Xfce 4 Widgets"
 msgstr "ایکسفس 4 وجٹس"
+
+#~ msgid "File is not a valid .desktop file"
+#~ msgstr "فائل موزوں .desktop فائل نہیں ہے"
+
+#~ msgid "Unrecognized desktop file Version '%s'"
+#~ msgstr "غیر پہچان کردہ ڈیسک ٹاپ فائل ورژن '%s'"
+
+#~ msgid "Starting %s"
+#~ msgstr "%s شروع کیا جارہا ہے"
+
+#~ msgid "Application does not accept documents on command line"
+#~ msgstr "اطلاقیہ کمانڈ لائن پر دستاویزات قبول نہیں کرتا"
+
+#~ msgid "Unrecognized launch option: %d"
+#~ msgstr "غیر پہچان کردہ چلانے کا اختیار: %d"
+
+#~ msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
+#~ msgstr "دستاویز ربط تا 'Type=Link' ڈیسک ٹاپ انٹری پاس نہیں کیا جاسکتا"
+
+#~ msgid "Not a launchable item"
+#~ msgstr "چلانے کے قابل عنصر نہیں ہے"
+
+#~ msgid "Specify file containing saved configuration"
+#~ msgstr "محفوظ شدہ وضع کاریوں پر مشتمل فائل متعین کریں"
+
+#~ msgid "FILE"
+#~ msgstr "فائل"

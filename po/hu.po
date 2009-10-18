@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-07-17 15:00+0200\n"
+"POT-Creation-Date: 2009-10-18 15:24+0200\n"
 "PO-Revision-Date: 2009-07-17 15:02+0200\n"
 "Last-Translator: Gabor Kelemen <kelemeng at gnome dot hu>\n"
 "Language-Team: Hungarian <gnome at gnome dot hu>\n"
@@ -18,30 +18,65 @@ msgstr ""
 "Plural-Forms:  nplurals=2; plural=(n != 1);\n"
 
 #. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:196
+#: ../libxfce4ui/xfce-dialogs.c:70
 msgid "Information"
 msgstr "Információ"
 
 #. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:232
+#: ../libxfce4ui/xfce-dialogs.c:106
 msgid "Warning"
 msgstr "Figyelmeztetés"
 
 #. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:269
+#: ../libxfce4ui/xfce-dialogs.c:143
 msgid "Error"
 msgstr "Hiba"
 
 #. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:322
+#: ../libxfce4ui/xfce-dialogs.c:196
 msgid "Question"
 msgstr "Kérdés"
+
+#: ../libxfce4ui/xfce-sm-client.c:1393
+#, fuzzy
+msgid "Session management client ID"
+msgstr "Munkamenet-kezelés kapcsolói:"
+
+#: ../libxfce4ui/xfce-sm-client.c:1393
+msgid "ID"
+msgstr "Azonosító"
+
+#: ../libxfce4ui/xfce-sm-client.c:1394
+#, fuzzy
+msgid "Disable session management"
+msgstr "A munkamenet-kezelő azonosítójának megadása"
+
+#: ../libxfce4ui/xfce-sm-client.c:1404
+#, fuzzy
+msgid "Session management options"
+msgstr "Munkamenet-kezelés kapcsolói:"
+
+#: ../libxfce4ui/xfce-sm-client.c:1405
+msgid "Show session management options"
+msgstr "Munkamenet-kezelési kapcsolók megjelenítése"
+
+#: ../libxfce4ui/xfce-sm-client.c:1581
+#, fuzzy, c-format
+msgid "Failed to connect to the session manager: %s"
+msgstr "A munkamenet-kezelőhöz való csatlakozás tiltása"
+
+#: ../libxfce4ui/xfce-sm-client.c:1588
+#, c-format
+msgid "Session manager did not return a valid client id"
+msgstr ""
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:52
 msgid ""
 "This shortcut is already being used for another window manager action. Which "
 "action do you want to use?"
-msgstr "Ezt a gyorsbillentyűt már használja egy másik ablakkezelő-művelet. Melyik műveletet akarja használni?"
+msgstr ""
+"Ezt a gyorsbillentyűt már használja egy másik ablakkezelő-művelet. Melyik "
+"műveletet akarja használni?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
@@ -61,7 +96,9 @@ msgstr "A másik megtartása"
 msgid ""
 "This shortcut is already being used for the command '%s'. Which action do "
 "you want to use?"
-msgstr "Ezt a gyorsbillentyűt már használja egy másik parancs („%s”). Melyik műveletet akarja használni?"
+msgstr ""
+"Ezt a gyorsbillentyűt már használja egy másik parancs („%s”). Melyik "
+"műveletet akarja használni?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
 #: ../libxfce4kbd-private/xfce-shortcuts.c:59
@@ -73,7 +110,9 @@ msgstr "„%s” megtartása"
 msgid ""
 "This shortcut is already being used by a window manager action. Which action "
 "do you want to use?"
-msgstr "Ezt a gyorsbillentyűt már használja egy ablakkezelő-művelet. Melyik műveletet akarja használni?"
+msgstr ""
+"Ezt a gyorsbillentyűt már használja egy ablakkezelő-művelet. Melyik "
+"műveletet akarja használni?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 msgid "Keep the window manager action"
@@ -122,69 +161,6 @@ msgstr "A billentyűzet nem ragadható meg."
 msgid "<span size='large'><b>%s</b></span>"
 msgstr "<span size='large'><b>%s</b></span>"
 
-#: ../libxfce4smclient-private/eggdesktopfile.c:165
-#, c-format
-msgid "File is not a valid .desktop file"
-msgstr "A fájl nem egy érvényes .desktop fájl"
-
-#: ../libxfce4smclient-private/eggdesktopfile.c:188
-#, c-format
-msgid "Unrecognized desktop file Version '%s'"
-msgstr "Ismeretlen .desktop fájl verzió: „%s”"
-
-#: ../libxfce4smclient-private/eggdesktopfile.c:958
-#, c-format
-msgid "Starting %s"
-msgstr "%s indítása"
-
-#: ../libxfce4smclient-private/eggdesktopfile.c:1100
-#, c-format
-msgid "Application does not accept documents on command line"
-msgstr "Az alkalmazás nem fogad el dokumentumokat a parancssorban"
-
-#: ../libxfce4smclient-private/eggdesktopfile.c:1168
-#, c-format
-msgid "Unrecognized launch option: %d"
-msgstr "Ismeretlen indítási kapcsoló: %d"
-
-#: ../libxfce4smclient-private/eggdesktopfile.c:1373
-#, c-format
-msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
-msgstr "Nem adhatók dokumentum-URI címek egy „Type=Link” asztali bejegyzésnek"
-
-#: ../libxfce4smclient-private/eggdesktopfile.c:1394
-#, c-format
-msgid "Not a launchable item"
-msgstr "Nem futtatható elem"
-
-#: ../libxfce4smclient-private/eggsmclient.c:227
-msgid "Disable connection to session manager"
-msgstr "A munkamenet-kezelőhöz való csatlakozás tiltása"
-
-#: ../libxfce4smclient-private/eggsmclient.c:230
-msgid "Specify file containing saved configuration"
-msgstr "A mentett beállításokat tartalmazó fájl megadása"
-
-#: ../libxfce4smclient-private/eggsmclient.c:230
-msgid "FILE"
-msgstr "FÁJL"
-
-#: ../libxfce4smclient-private/eggsmclient.c:233
-msgid "Specify session management ID"
-msgstr "A munkamenet-kezelő azonosítójának megadása"
-
-#: ../libxfce4smclient-private/eggsmclient.c:233
-msgid "ID"
-msgstr "Azonosító"
-
-#: ../libxfce4smclient-private/eggsmclient.c:254
-msgid "Session management options:"
-msgstr "Munkamenet-kezelés kapcsolói:"
-
-#: ../libxfce4smclient-private/eggsmclient.c:255
-msgid "Show session management options"
-msgstr "Munkamenet-kezelési kapcsolók megjelenítése"
-
 #: ../glade/libxfce4ui.xml.in.h:1
 msgid "Subtitle"
 msgstr "Felirat"
@@ -197,3 +173,30 @@ msgstr "Címzett ablak"
 msgid "Xfce 4 Widgets"
 msgstr "Xfce 4 felületi elemek"
 
+#~ msgid "File is not a valid .desktop file"
+#~ msgstr "A fájl nem egy érvényes .desktop fájl"
+
+#~ msgid "Unrecognized desktop file Version '%s'"
+#~ msgstr "Ismeretlen .desktop fájl verzió: „%s”"
+
+#~ msgid "Starting %s"
+#~ msgstr "%s indítása"
+
+#~ msgid "Application does not accept documents on command line"
+#~ msgstr "Az alkalmazás nem fogad el dokumentumokat a parancssorban"
+
+#~ msgid "Unrecognized launch option: %d"
+#~ msgstr "Ismeretlen indítási kapcsoló: %d"
+
+#~ msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
+#~ msgstr ""
+#~ "Nem adhatók dokumentum-URI címek egy „Type=Link” asztali bejegyzésnek"
+
+#~ msgid "Not a launchable item"
+#~ msgstr "Nem futtatható elem"
+
+#~ msgid "Specify file containing saved configuration"
+#~ msgstr "A mentett beállításokat tartalmazó fájl megadása"
+
+#~ msgid "FILE"
+#~ msgstr "FÁJL"

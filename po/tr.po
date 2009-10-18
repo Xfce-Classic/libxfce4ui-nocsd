@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SVN\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-07-09 23:15+0200\n"
+"POT-Creation-Date: 2009-10-18 15:24+0200\n"
 "PO-Revision-Date: 2009-09-02 12:40+0200\n"
 "Last-Translator: Server Acim <serveracim@gmail.com>\n"
 "Language-Team: Turkish <turkce@pardus.org.tr>\n"
@@ -16,28 +16,65 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:196
+#: ../libxfce4ui/xfce-dialogs.c:70
 msgid "Information"
 msgstr "Bilgi"
 
 #. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:232
+#: ../libxfce4ui/xfce-dialogs.c:106
 msgid "Warning"
 msgstr "Uyarı"
 
 #. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:269
+#: ../libxfce4ui/xfce-dialogs.c:143
 msgid "Error"
 msgstr "Hata"
 
 #. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:322
+#: ../libxfce4ui/xfce-dialogs.c:196
 msgid "Question"
 msgstr "Soru"
 
+#: ../libxfce4ui/xfce-sm-client.c:1393
+#, fuzzy
+msgid "Session management client ID"
+msgstr "Oturum yönetimi seçenekleri:"
+
+#: ../libxfce4ui/xfce-sm-client.c:1393
+msgid "ID"
+msgstr "Kimlik"
+
+#: ../libxfce4ui/xfce-sm-client.c:1394
+#, fuzzy
+msgid "Disable session management"
+msgstr "Oturum yönetimi kimliğini belirt"
+
+#: ../libxfce4ui/xfce-sm-client.c:1404
+#, fuzzy
+msgid "Session management options"
+msgstr "Oturum yönetimi seçenekleri:"
+
+#: ../libxfce4ui/xfce-sm-client.c:1405
+msgid "Show session management options"
+msgstr "Oturum yönetimi seçeneklerini göster"
+
+#: ../libxfce4ui/xfce-sm-client.c:1581
+#, fuzzy, c-format
+msgid "Failed to connect to the session manager: %s"
+msgstr "Oturum yöneticine bağlantıyı devre dışı bırak"
+
+#: ../libxfce4ui/xfce-sm-client.c:1588
+#, c-format
+msgid "Session manager did not return a valid client id"
+msgstr ""
+
 #: ../libxfce4kbd-private/xfce-shortcuts.c:52
-msgid "This shortcut is already being used for another window manager action. Which action do you want to use?"
-msgstr "Bu kısayol başka bir pencere yönetimi eylemi için kullanılmaktadır. Kullanmak istediğiniz eylem nedir?"
+msgid ""
+"This shortcut is already being used for another window manager action. Which "
+"action do you want to use?"
+msgstr ""
+"Bu kısayol başka bir pencere yönetimi eylemi için kullanılmaktadır. "
+"Kullanmak istediğiniz eylem nedir?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
@@ -54,8 +91,12 @@ msgstr "Diğerini koru"
 #: ../libxfce4kbd-private/xfce-shortcuts.c:55
 #: ../libxfce4kbd-private/xfce-shortcuts.c:58
 #, c-format
-msgid "This shortcut is already being used for the command '%s'. Which action do you want to use?"
-msgstr "Bu kısayol aynı zamanda %s' komutu için de kullanılmaktadır. Ne yapmak istersiniz?"
+msgid ""
+"This shortcut is already being used for the command '%s'. Which action do "
+"you want to use?"
+msgstr ""
+"Bu kısayol aynı zamanda %s' komutu için de kullanılmaktadır. Ne yapmak "
+"istersiniz?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
 #: ../libxfce4kbd-private/xfce-shortcuts.c:59
@@ -64,8 +105,12 @@ msgid "Keep '%s'"
 msgstr "Sakla '%s'"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:61
-msgid "This shortcut is already being used by a window manager action. Which action do you want to use?"
-msgstr "Bu kısayol başka bir pencere yönetimi eylemi için de kullanılmaktadır. Ne yapmak istersiniz?"
+msgid ""
+"This shortcut is already being used by a window manager action. Which action "
+"do you want to use?"
+msgstr ""
+"Bu kısayol başka bir pencere yönetimi eylemi için de kullanılmaktadır. Ne "
+"yapmak istersiniz?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 msgid "Keep the window manager action"
@@ -114,69 +159,6 @@ msgstr "Klavyeyi tanıyamadı."
 msgid "<span size='large'><b>%s</b></span>"
 msgstr "<span size='large'><b>%s</b></span>"
 
-#: ../libxfce4smclient-private/eggdesktopfile.c:165
-#, c-format
-msgid "File is not a valid .desktop file"
-msgstr "Dosya geçerli bir .desktop dosyası değil"
-
-#: ../libxfce4smclient-private/eggdesktopfile.c:188
-#, c-format
-msgid "Unrecognized desktop file Version '%s'"
-msgstr "Algılanamayan bir desktop dosyası Sürüm '%s'"
-
-#: ../libxfce4smclient-private/eggdesktopfile.c:958
-#, c-format
-msgid "Starting %s"
-msgstr "Başlatıyor %s"
-
-#: ../libxfce4smclient-private/eggdesktopfile.c:1100
-#, c-format
-msgid "Application does not accept documents on command line"
-msgstr "Uygulama, dosyaları komut satırından açmayı kabul edemez"
-
-#: ../libxfce4smclient-private/eggdesktopfile.c:1168
-#, c-format
-msgid "Unrecognized launch option: %d"
-msgstr "Tanınmayan başlatma seçeneği: %d"
-
-#: ../libxfce4smclient-private/eggdesktopfile.c:1373
-#, c-format
-msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
-msgstr "Belge URIlerini bir 'Type=Link' masaüstü girişi haline getiremiyor"
-
-#: ../libxfce4smclient-private/eggdesktopfile.c:1394
-#, c-format
-msgid "Not a launchable item"
-msgstr "Başlatılacak öge yok"
-
-#: ../libxfce4smclient-private/eggsmclient.c:227
-msgid "Disable connection to session manager"
-msgstr "Oturum yöneticine bağlantıyı devre dışı bırak"
-
-#: ../libxfce4smclient-private/eggsmclient.c:230
-msgid "Specify file containing saved configuration"
-msgstr "Kaydedilmiş yapılandırmayı içeren dosyayı belirt"
-
-#: ../libxfce4smclient-private/eggsmclient.c:230
-msgid "FILE"
-msgstr "DOSYA"
-
-#: ../libxfce4smclient-private/eggsmclient.c:233
-msgid "Specify session management ID"
-msgstr "Oturum yönetimi kimliğini belirt"
-
-#: ../libxfce4smclient-private/eggsmclient.c:233
-msgid "ID"
-msgstr "Kimlik"
-
-#: ../libxfce4smclient-private/eggsmclient.c:254
-msgid "Session management options:"
-msgstr "Oturum yönetimi seçenekleri:"
-
-#: ../libxfce4smclient-private/eggsmclient.c:255
-msgid "Show session management options"
-msgstr "Oturum yönetimi seçeneklerini göster"
-
 #: ../glade/libxfce4ui.xml.in.h:1
 msgid "Subtitle"
 msgstr "Altyazı"
@@ -189,3 +171,29 @@ msgstr "Başlıklı Pencere"
 msgid "Xfce 4 Widgets"
 msgstr "Xfce 4 Parçacıkları"
 
+#~ msgid "File is not a valid .desktop file"
+#~ msgstr "Dosya geçerli bir .desktop dosyası değil"
+
+#~ msgid "Unrecognized desktop file Version '%s'"
+#~ msgstr "Algılanamayan bir desktop dosyası Sürüm '%s'"
+
+#~ msgid "Starting %s"
+#~ msgstr "Başlatıyor %s"
+
+#~ msgid "Application does not accept documents on command line"
+#~ msgstr "Uygulama, dosyaları komut satırından açmayı kabul edemez"
+
+#~ msgid "Unrecognized launch option: %d"
+#~ msgstr "Tanınmayan başlatma seçeneği: %d"
+
+#~ msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
+#~ msgstr "Belge URIlerini bir 'Type=Link' masaüstü girişi haline getiremiyor"
+
+#~ msgid "Not a launchable item"
+#~ msgstr "Başlatılacak öge yok"
+
+#~ msgid "Specify file containing saved configuration"
+#~ msgstr "Kaydedilmiş yapılandırmayı içeren dosyayı belirt"
+
+#~ msgid "FILE"
+#~ msgstr "DOSYA"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-07-09 23:15+0200\n"
+"POT-Creation-Date: 2009-10-18 15:24+0200\n"
 "PO-Revision-Date: 2009-10-12 15:06+0200\n"
 "Last-Translator: Robert Hartl <hartl.robert@gmail.com>\n"
 "Language-Team: Slovak <sk-i18n@lists.linux.sk>\n"
@@ -16,24 +16,57 @@ msgstr ""
 "Content-Transfer-Encoding: 8-bit\n"
 
 #. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:196
+#: ../libxfce4ui/xfce-dialogs.c:70
 msgid "Information"
 msgstr "Informácia"
 
 #. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:232
+#: ../libxfce4ui/xfce-dialogs.c:106
 msgid "Warning"
 msgstr "Varovanie"
 
 #. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:269
+#: ../libxfce4ui/xfce-dialogs.c:143
 msgid "Error"
 msgstr "Chyba"
 
 #. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:322
+#: ../libxfce4ui/xfce-dialogs.c:196
 msgid "Question"
 msgstr "Otázka"
+
+#: ../libxfce4ui/xfce-sm-client.c:1393
+#, fuzzy
+msgid "Session management client ID"
+msgstr "Možnosti správy sedenia:"
+
+#: ../libxfce4ui/xfce-sm-client.c:1393
+msgid "ID"
+msgstr "ID"
+
+#: ../libxfce4ui/xfce-sm-client.c:1394
+#, fuzzy
+msgid "Disable session management"
+msgstr "Zadajte identifikátor správy sedenia"
+
+#: ../libxfce4ui/xfce-sm-client.c:1404
+#, fuzzy
+msgid "Session management options"
+msgstr "Možnosti správy sedenia:"
+
+#: ../libxfce4ui/xfce-sm-client.c:1405
+msgid "Show session management options"
+msgstr "Zobraziť možnosti správy sedenia"
+
+#: ../libxfce4ui/xfce-sm-client.c:1581
+#, fuzzy, c-format
+msgid "Failed to connect to the session manager: %s"
+msgstr "Zakázať pripojenie k správcovi sedenia"
+
+#: ../libxfce4ui/xfce-sm-client.c:1588
+#, c-format
+msgid "Session manager did not return a valid client id"
+msgstr ""
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:52
 msgid ""
@@ -125,69 +158,6 @@ msgstr "Nemožno zachytiť vstup z klávesnice."
 msgid "<span size='large'><b>%s</b></span>"
 msgstr "<span size='large'><b>%s</b></span>"
 
-#: ../libxfce4smclient-private/eggdesktopfile.c:165
-#, c-format
-msgid "File is not a valid .desktop file"
-msgstr "Súbor nie je platným súborom typu .desktop"
-
-#: ../libxfce4smclient-private/eggdesktopfile.c:188
-#, c-format
-msgid "Unrecognized desktop file Version '%s'"
-msgstr "Nerozpoznaný súbor plochy verzie '%s'"
-
-#: ../libxfce4smclient-private/eggdesktopfile.c:958
-#, c-format
-msgid "Starting %s"
-msgstr "Spúšťam %s"
-
-#: ../libxfce4smclient-private/eggdesktopfile.c:1100
-#, c-format
-msgid "Application does not accept documents on command line"
-msgstr "Aplikácia neprijíma dokumenty na príkazovom riadku"
-
-#: ../libxfce4smclient-private/eggdesktopfile.c:1168
-#, c-format
-msgid "Unrecognized launch option: %d"
-msgstr "Nerozpoznaný parameter spustenia: %d"
-
-#: ../libxfce4smclient-private/eggdesktopfile.c:1373
-#, c-format
-msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
-msgstr ""
-
-#: ../libxfce4smclient-private/eggdesktopfile.c:1394
-#, c-format
-msgid "Not a launchable item"
-msgstr "Nespustiteľná položka"
-
-#: ../libxfce4smclient-private/eggsmclient.c:227
-msgid "Disable connection to session manager"
-msgstr "Zakázať pripojenie k správcovi sedenia"
-
-#: ../libxfce4smclient-private/eggsmclient.c:230
-msgid "Specify file containing saved configuration"
-msgstr "Zadajte súbor obsahujúci konfiguráciu"
-
-#: ../libxfce4smclient-private/eggsmclient.c:230
-msgid "FILE"
-msgstr "SÚBOR"
-
-#: ../libxfce4smclient-private/eggsmclient.c:233
-msgid "Specify session management ID"
-msgstr "Zadajte identifikátor správy sedenia"
-
-#: ../libxfce4smclient-private/eggsmclient.c:233
-msgid "ID"
-msgstr "ID"
-
-#: ../libxfce4smclient-private/eggsmclient.c:254
-msgid "Session management options:"
-msgstr "Možnosti správy sedenia:"
-
-#: ../libxfce4smclient-private/eggsmclient.c:255
-msgid "Show session management options"
-msgstr "Zobraziť možnosti správy sedenia"
-
 #: ../glade/libxfce4ui.xml.in.h:1
 msgid "Subtitle"
 msgstr "Podtitulok"
@@ -199,3 +169,27 @@ msgstr "Dialógové okno s titulkom"
 #: ../glade/libxfce4ui.xml.in.h:3
 msgid "Xfce 4 Widgets"
 msgstr "Widgety Xfce 4"
+
+#~ msgid "File is not a valid .desktop file"
+#~ msgstr "Súbor nie je platným súborom typu .desktop"
+
+#~ msgid "Unrecognized desktop file Version '%s'"
+#~ msgstr "Nerozpoznaný súbor plochy verzie '%s'"
+
+#~ msgid "Starting %s"
+#~ msgstr "Spúšťam %s"
+
+#~ msgid "Application does not accept documents on command line"
+#~ msgstr "Aplikácia neprijíma dokumenty na príkazovom riadku"
+
+#~ msgid "Unrecognized launch option: %d"
+#~ msgstr "Nerozpoznaný parameter spustenia: %d"
+
+#~ msgid "Not a launchable item"
+#~ msgstr "Nespustiteľná položka"
+
+#~ msgid "Specify file containing saved configuration"
+#~ msgstr "Zadajte súbor obsahujúci konfiguráciu"
+
+#~ msgid "FILE"
+#~ msgstr "SÚBOR"

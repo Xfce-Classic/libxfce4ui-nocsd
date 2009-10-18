@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-07-09 23:15+0200\n"
+"POT-Creation-Date: 2009-10-18 15:24+0200\n"
 "PO-Revision-Date: 2009-09-02 13:03+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -17,28 +17,65 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:196
+#: ../libxfce4ui/xfce-dialogs.c:70
 msgid "Information"
 msgstr "Informação"
 
 #. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:232
+#: ../libxfce4ui/xfce-dialogs.c:106
 msgid "Warning"
 msgstr "Aviso"
 
 #. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:269
+#: ../libxfce4ui/xfce-dialogs.c:143
 msgid "Error"
 msgstr "Erro"
 
 #. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:322
+#: ../libxfce4ui/xfce-dialogs.c:196
 msgid "Question"
 msgstr "Questão"
 
+#: ../libxfce4ui/xfce-sm-client.c:1393
+#, fuzzy
+msgid "Session management client ID"
+msgstr "Opções de gestão de sessão:"
+
+#: ../libxfce4ui/xfce-sm-client.c:1393
+msgid "ID"
+msgstr "ID"
+
+#: ../libxfce4ui/xfce-sm-client.c:1394
+#, fuzzy
+msgid "Disable session management"
+msgstr "Especificar ID de gestão de sessão"
+
+#: ../libxfce4ui/xfce-sm-client.c:1404
+#, fuzzy
+msgid "Session management options"
+msgstr "Opções de gestão de sessão:"
+
+#: ../libxfce4ui/xfce-sm-client.c:1405
+msgid "Show session management options"
+msgstr "Apresentar opções de gestão de sessões"
+
+#: ../libxfce4ui/xfce-sm-client.c:1581
+#, fuzzy, c-format
+msgid "Failed to connect to the session manager: %s"
+msgstr "Desactivar ligação ao gestor de sessões"
+
+#: ../libxfce4ui/xfce-sm-client.c:1588
+#, c-format
+msgid "Session manager did not return a valid client id"
+msgstr ""
+
 #: ../libxfce4kbd-private/xfce-shortcuts.c:52
-msgid "This shortcut is already being used for another window manager action. Which action do you want to use?"
-msgstr "Este atalho já está em uso por outra acção do gestor de janelas. Que acção deseja usar?"
+msgid ""
+"This shortcut is already being used for another window manager action. Which "
+"action do you want to use?"
+msgstr ""
+"Este atalho já está em uso por outra acção do gestor de janelas. Que acção "
+"deseja usar?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
@@ -55,8 +92,11 @@ msgstr "Manter o outro"
 #: ../libxfce4kbd-private/xfce-shortcuts.c:55
 #: ../libxfce4kbd-private/xfce-shortcuts.c:58
 #, c-format
-msgid "This shortcut is already being used for the command '%s'. Which action do you want to use?"
-msgstr "Este atalho já está em uso para o comando '%s'. Que acção que deseja usar?"
+msgid ""
+"This shortcut is already being used for the command '%s'. Which action do "
+"you want to use?"
+msgstr ""
+"Este atalho já está em uso para o comando '%s'. Que acção que deseja usar?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
 #: ../libxfce4kbd-private/xfce-shortcuts.c:59
@@ -65,8 +105,12 @@ msgid "Keep '%s'"
 msgstr "Manter '%s'"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:61
-msgid "This shortcut is already being used by a window manager action. Which action do you want to use?"
-msgstr "Este atalho já está em uso por uma acção do gestor de janelas. Que acção deseja usar?"
+msgid ""
+"This shortcut is already being used by a window manager action. Which action "
+"do you want to use?"
+msgstr ""
+"Este atalho já está em uso por uma acção do gestor de janelas. Que acção "
+"deseja usar?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 msgid "Keep the window manager action"
@@ -115,69 +159,6 @@ msgstr "Incapaz de capturar o teclado."
 msgid "<span size='large'><b>%s</b></span>"
 msgstr "<span size='grande'><b>%s</b></span>"
 
-#: ../libxfce4smclient-private/eggdesktopfile.c:165
-#, c-format
-msgid "File is not a valid .desktop file"
-msgstr "O ficheiro não é um ficheiro .desktop válido"
-
-#: ../libxfce4smclient-private/eggdesktopfile.c:188
-#, c-format
-msgid "Unrecognized desktop file Version '%s'"
-msgstr "Versão '%s' de ficheiro desktop desconhecida"
-
-#: ../libxfce4smclient-private/eggdesktopfile.c:958
-#, c-format
-msgid "Starting %s"
-msgstr "Iniciando  %s"
-
-#: ../libxfce4smclient-private/eggdesktopfile.c:1100
-#, c-format
-msgid "Application does not accept documents on command line"
-msgstr "A aplicação não aceita documentos na linha de comandos"
-
-#: ../libxfce4smclient-private/eggdesktopfile.c:1168
-#, c-format
-msgid "Unrecognized launch option: %d"
-msgstr "Opção de lançamento desconhecida: %d"
-
-#: ../libxfce4smclient-private/eggdesktopfile.c:1373
-#, c-format
-msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
-msgstr "Incapaz de passar URIs para uma entrada de desktop 'Type=Link'"
-
-#: ../libxfce4smclient-private/eggdesktopfile.c:1394
-#, c-format
-msgid "Not a launchable item"
-msgstr "Não é um item executável"
-
-#: ../libxfce4smclient-private/eggsmclient.c:227
-msgid "Disable connection to session manager"
-msgstr "Desactivar ligação ao gestor de sessões"
-
-#: ../libxfce4smclient-private/eggsmclient.c:230
-msgid "Specify file containing saved configuration"
-msgstr "Especifique o ficheiro que contém a configuração gravada"
-
-#: ../libxfce4smclient-private/eggsmclient.c:230
-msgid "FILE"
-msgstr "FICHEIRO"
-
-#: ../libxfce4smclient-private/eggsmclient.c:233
-msgid "Specify session management ID"
-msgstr "Especificar ID de gestão de sessão"
-
-#: ../libxfce4smclient-private/eggsmclient.c:233
-msgid "ID"
-msgstr "ID"
-
-#: ../libxfce4smclient-private/eggsmclient.c:254
-msgid "Session management options:"
-msgstr "Opções de gestão de sessão:"
-
-#: ../libxfce4smclient-private/eggsmclient.c:255
-msgid "Show session management options"
-msgstr "Apresentar opções de gestão de sessões"
-
 #: ../glade/libxfce4ui.xml.in.h:1
 msgid "Subtitle"
 msgstr "Legenda"
@@ -190,3 +171,29 @@ msgstr "Diálogo Intitulado"
 msgid "Xfce 4 Widgets"
 msgstr "Widgets Xfce 4"
 
+#~ msgid "File is not a valid .desktop file"
+#~ msgstr "O ficheiro não é um ficheiro .desktop válido"
+
+#~ msgid "Unrecognized desktop file Version '%s'"
+#~ msgstr "Versão '%s' de ficheiro desktop desconhecida"
+
+#~ msgid "Starting %s"
+#~ msgstr "Iniciando  %s"
+
+#~ msgid "Application does not accept documents on command line"
+#~ msgstr "A aplicação não aceita documentos na linha de comandos"
+
+#~ msgid "Unrecognized launch option: %d"
+#~ msgstr "Opção de lançamento desconhecida: %d"
+
+#~ msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
+#~ msgstr "Incapaz de passar URIs para uma entrada de desktop 'Type=Link'"
+
+#~ msgid "Not a launchable item"
+#~ msgstr "Não é um item executável"
+
+#~ msgid "Specify file containing saved configuration"
+#~ msgstr "Especifique o ficheiro que contém a configuração gravada"
+
+#~ msgid "FILE"
+#~ msgstr "FICHEIRO"

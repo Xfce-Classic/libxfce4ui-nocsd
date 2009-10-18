@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui 1.4.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-07-09 23:15+0200\n"
+"POT-Creation-Date: 2009-10-18 15:24+0200\n"
 "PO-Revision-Date: 2009-07-10 14:48+0100\n"
 "Last-Translator: Per Kongstad <p_kongstad@op.pl>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
@@ -19,28 +19,65 @@ msgstr ""
 "X-Poedit-Country: DENMARK\n"
 
 #. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:196
+#: ../libxfce4ui/xfce-dialogs.c:70
 msgid "Information"
 msgstr "Information"
 
 #. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:232
+#: ../libxfce4ui/xfce-dialogs.c:106
 msgid "Warning"
 msgstr "Advarsel"
 
 #. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:269
+#: ../libxfce4ui/xfce-dialogs.c:143
 msgid "Error"
 msgstr "Fejl"
 
 #. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:322
+#: ../libxfce4ui/xfce-dialogs.c:196
 msgid "Question"
 msgstr "Spørgsmål"
 
+#: ../libxfce4ui/xfce-sm-client.c:1393
+#, fuzzy
+msgid "Session management client ID"
+msgstr "Tilvalg for sessionshåndtering:"
+
+#: ../libxfce4ui/xfce-sm-client.c:1393
+msgid "ID"
+msgstr "Id"
+
+#: ../libxfce4ui/xfce-sm-client.c:1394
+#, fuzzy
+msgid "Disable session management"
+msgstr "Angiv sessionshåndterings-id"
+
+#: ../libxfce4ui/xfce-sm-client.c:1404
+#, fuzzy
+msgid "Session management options"
+msgstr "Tilvalg for sessionshåndtering:"
+
+#: ../libxfce4ui/xfce-sm-client.c:1405
+msgid "Show session management options"
+msgstr "Vis tilvalg for sessionshåndtering"
+
+#: ../libxfce4ui/xfce-sm-client.c:1581
+#, fuzzy, c-format
+msgid "Failed to connect to the session manager: %s"
+msgstr "Slå forbindelsen til sessionshåndtering fra"
+
+#: ../libxfce4ui/xfce-sm-client.c:1588
+#, c-format
+msgid "Session manager did not return a valid client id"
+msgstr ""
+
 #: ../libxfce4kbd-private/xfce-shortcuts.c:52
-msgid "This shortcut is already being used for another window manager action. Which action do you want to use?"
-msgstr "Denne genvej bruges allerede til en anden vinduehåndteringshandling. Hvilken handling vil du bruge?"
+msgid ""
+"This shortcut is already being used for another window manager action. Which "
+"action do you want to use?"
+msgstr ""
+"Denne genvej bruges allerede til en anden vinduehåndteringshandling. Hvilken "
+"handling vil du bruge?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
@@ -57,8 +94,12 @@ msgstr "Behold den anden"
 #: ../libxfce4kbd-private/xfce-shortcuts.c:55
 #: ../libxfce4kbd-private/xfce-shortcuts.c:58
 #, c-format
-msgid "This shortcut is already being used for the command '%s'. Which action do you want to use?"
-msgstr "Denne genvej bruges allerede til kommandoen '%s'. Hvilken handling vil du bruge?"
+msgid ""
+"This shortcut is already being used for the command '%s'. Which action do "
+"you want to use?"
+msgstr ""
+"Denne genvej bruges allerede til kommandoen '%s'. Hvilken handling vil du "
+"bruge?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
 #: ../libxfce4kbd-private/xfce-shortcuts.c:59
@@ -67,8 +108,12 @@ msgid "Keep '%s'"
 msgstr "Behold '%s'"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:61
-msgid "This shortcut is already being used by a window manager action. Which action do you want to use?"
-msgstr "Denne genvej bruges allerede til en anden vinduehåndteringshandling. Hvilken handling vil du bruge?"
+msgid ""
+"This shortcut is already being used by a window manager action. Which action "
+"do you want to use?"
+msgstr ""
+"Denne genvej bruges allerede til en anden vinduehåndteringshandling. Hvilken "
+"handling vil du bruge?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 msgid "Keep the window manager action"
@@ -117,69 +162,6 @@ msgstr "Kunne ikke gribe tastaturet"
 msgid "<span size='large'><b>%s</b></span>"
 msgstr "<span size='stor'><b>%s</b></span>"
 
-#: ../libxfce4smclient-private/eggdesktopfile.c:165
-#, c-format
-msgid "File is not a valid .desktop file"
-msgstr "Filen er ikke en gyldig .skrivebordsfil"
-
-#: ../libxfce4smclient-private/eggdesktopfile.c:188
-#, c-format
-msgid "Unrecognized desktop file Version '%s'"
-msgstr "Ukendt skrivebordsfilsversion '%s'"
-
-#: ../libxfce4smclient-private/eggdesktopfile.c:958
-#, c-format
-msgid "Starting %s"
-msgstr "Starter %s"
-
-#: ../libxfce4smclient-private/eggdesktopfile.c:1100
-#, c-format
-msgid "Application does not accept documents on command line"
-msgstr "Programmet anerkender ikke dokumenter på kommandolinje"
-
-#: ../libxfce4smclient-private/eggdesktopfile.c:1168
-#, c-format
-msgid "Unrecognized launch option: %d"
-msgstr "Ukendt opstartstilvalg: %d"
-
-#: ../libxfce4smclient-private/eggdesktopfile.c:1373
-#, c-format
-msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
-msgstr "Kan ikke videregive URI'er for dokumenter til en 'type=henvisning' skrivebordspost"
-
-#: ../libxfce4smclient-private/eggdesktopfile.c:1394
-#, c-format
-msgid "Not a launchable item"
-msgstr "Ikke et opstartselement"
-
-#: ../libxfce4smclient-private/eggsmclient.c:227
-msgid "Disable connection to session manager"
-msgstr "Slå forbindelsen til sessionshåndtering fra"
-
-#: ../libxfce4smclient-private/eggsmclient.c:230
-msgid "Specify file containing saved configuration"
-msgstr "Angiv filen som indeholder gemte indstilling"
-
-#: ../libxfce4smclient-private/eggsmclient.c:230
-msgid "FILE"
-msgstr "FIL"
-
-#: ../libxfce4smclient-private/eggsmclient.c:233
-msgid "Specify session management ID"
-msgstr "Angiv sessionshåndterings-id"
-
-#: ../libxfce4smclient-private/eggsmclient.c:233
-msgid "ID"
-msgstr "Id"
-
-#: ../libxfce4smclient-private/eggsmclient.c:254
-msgid "Session management options:"
-msgstr "Tilvalg for sessionshåndtering:"
-
-#: ../libxfce4smclient-private/eggsmclient.c:255
-msgid "Show session management options"
-msgstr "Vis tilvalg for sessionshåndtering"
-
 #: ../glade/libxfce4ui.xml.in.h:1
 msgid "Subtitle"
 msgstr "Undertitel"
@@ -192,3 +174,31 @@ msgstr "Dialogtitel"
 msgid "Xfce 4 Widgets"
 msgstr "Kontroller til Xfce 4"
 
+#~ msgid "File is not a valid .desktop file"
+#~ msgstr "Filen er ikke en gyldig .skrivebordsfil"
+
+#~ msgid "Unrecognized desktop file Version '%s'"
+#~ msgstr "Ukendt skrivebordsfilsversion '%s'"
+
+#~ msgid "Starting %s"
+#~ msgstr "Starter %s"
+
+#~ msgid "Application does not accept documents on command line"
+#~ msgstr "Programmet anerkender ikke dokumenter på kommandolinje"
+
+#~ msgid "Unrecognized launch option: %d"
+#~ msgstr "Ukendt opstartstilvalg: %d"
+
+#~ msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
+#~ msgstr ""
+#~ "Kan ikke videregive URI'er for dokumenter til en 'type=henvisning' "
+#~ "skrivebordspost"
+
+#~ msgid "Not a launchable item"
+#~ msgstr "Ikke et opstartselement"
+
+#~ msgid "Specify file containing saved configuration"
+#~ msgstr "Angiv filen som indeholder gemte indstilling"
+
+#~ msgid "FILE"
+#~ msgstr "FIL"

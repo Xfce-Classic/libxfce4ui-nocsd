@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-07-09 23:15+0200\n"
+"POT-Creation-Date: 2009-10-18 15:24+0200\n"
 "PO-Revision-Date: 2009-07-18 17:29+0100\n"
 "Last-Translator: Michal Várady <miko.vaji@gmail.com>\n"
 "Language-Team: Czech\n"
@@ -18,28 +18,65 @@ msgstr ""
 "X-Poedit-SourceCharset: utf-8\n"
 
 #. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:196
+#: ../libxfce4ui/xfce-dialogs.c:70
 msgid "Information"
 msgstr "Informace"
 
 #. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:232
+#: ../libxfce4ui/xfce-dialogs.c:106
 msgid "Warning"
 msgstr "Varování"
 
 #. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:269
+#: ../libxfce4ui/xfce-dialogs.c:143
 msgid "Error"
 msgstr "Chyba"
 
 #. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:322
+#: ../libxfce4ui/xfce-dialogs.c:196
 msgid "Question"
 msgstr "Dotaz"
 
+#: ../libxfce4ui/xfce-sm-client.c:1393
+#, fuzzy
+msgid "Session management client ID"
+msgstr "Možnosti správy relace:"
+
+#: ../libxfce4ui/xfce-sm-client.c:1393
+msgid "ID"
+msgstr "ID"
+
+#: ../libxfce4ui/xfce-sm-client.c:1394
+#, fuzzy
+msgid "Disable session management"
+msgstr "Zadejte identifikátor správy relace"
+
+#: ../libxfce4ui/xfce-sm-client.c:1404
+#, fuzzy
+msgid "Session management options"
+msgstr "Možnosti správy relace:"
+
+#: ../libxfce4ui/xfce-sm-client.c:1405
+msgid "Show session management options"
+msgstr "Zobrazit možnosti správy relace"
+
+#: ../libxfce4ui/xfce-sm-client.c:1581
+#, fuzzy, c-format
+msgid "Failed to connect to the session manager: %s"
+msgstr "Zakázat připojení ke správci relace"
+
+#: ../libxfce4ui/xfce-sm-client.c:1588
+#, c-format
+msgid "Session manager did not return a valid client id"
+msgstr ""
+
 #: ../libxfce4kbd-private/xfce-shortcuts.c:52
-msgid "This shortcut is already being used for another window manager action. Which action do you want to use?"
-msgstr "Tuto klávesovou zkratku již používá jiná akce správce oken. Kterou akci chcete použít?"
+msgid ""
+"This shortcut is already being used for another window manager action. Which "
+"action do you want to use?"
+msgstr ""
+"Tuto klávesovou zkratku již používá jiná akce správce oken. Kterou akci "
+"chcete použít?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
@@ -56,8 +93,11 @@ msgstr "Ponechat jinou"
 #: ../libxfce4kbd-private/xfce-shortcuts.c:55
 #: ../libxfce4kbd-private/xfce-shortcuts.c:58
 #, c-format
-msgid "This shortcut is already being used for the command '%s'. Which action do you want to use?"
-msgstr "Tuto klávesovou zkratku již používá příkaz %s. Kterou akci chcete použít?"
+msgid ""
+"This shortcut is already being used for the command '%s'. Which action do "
+"you want to use?"
+msgstr ""
+"Tuto klávesovou zkratku již používá příkaz %s. Kterou akci chcete použít?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
 #: ../libxfce4kbd-private/xfce-shortcuts.c:59
@@ -66,8 +106,12 @@ msgid "Keep '%s'"
 msgstr "Ponechat %s"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:61
-msgid "This shortcut is already being used by a window manager action. Which action do you want to use?"
-msgstr "Tuto klávesovou zkratku již používá akce správce oken. Kterou akci chcete použít?"
+msgid ""
+"This shortcut is already being used by a window manager action. Which action "
+"do you want to use?"
+msgstr ""
+"Tuto klávesovou zkratku již používá akce správce oken. Kterou akci chcete "
+"použít?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 msgid "Keep the window manager action"
@@ -116,69 +160,6 @@ msgstr "Nelze zachytávat vstup z klávesnice."
 msgid "<span size='large'><b>%s</b></span>"
 msgstr "<span size='large'><b>%s</b></span>"
 
-#: ../libxfce4smclient-private/eggdesktopfile.c:165
-#, c-format
-msgid "File is not a valid .desktop file"
-msgstr "Soubor není platným souborem typu .desktop"
-
-#: ../libxfce4smclient-private/eggdesktopfile.c:188
-#, c-format
-msgid "Unrecognized desktop file Version '%s'"
-msgstr "Nerozpoznaný soubor plochy verze %s"
-
-#: ../libxfce4smclient-private/eggdesktopfile.c:958
-#, c-format
-msgid "Starting %s"
-msgstr "Spouštění %s"
-
-#: ../libxfce4smclient-private/eggdesktopfile.c:1100
-#, c-format
-msgid "Application does not accept documents on command line"
-msgstr "Aplikace nepříjímá dokumenty na příkazovém řádku"
-
-#: ../libxfce4smclient-private/eggdesktopfile.c:1168
-#, c-format
-msgid "Unrecognized launch option: %d"
-msgstr "Nerozpoznaný parametr spuštění: %d"
-
-#: ../libxfce4smclient-private/eggdesktopfile.c:1373
-#, c-format
-msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
-msgstr "Identifikátor dokumentu URI nelze předat položce plochy 'Type=Link' "
-
-#: ../libxfce4smclient-private/eggdesktopfile.c:1394
-#, c-format
-msgid "Not a launchable item"
-msgstr "Nespustitelná položka"
-
-#: ../libxfce4smclient-private/eggsmclient.c:227
-msgid "Disable connection to session manager"
-msgstr "Zakázat připojení ke správci relace"
-
-#: ../libxfce4smclient-private/eggsmclient.c:230
-msgid "Specify file containing saved configuration"
-msgstr "Zadejte soubor obsahující uloženou konfiguraci"
-
-#: ../libxfce4smclient-private/eggsmclient.c:230
-msgid "FILE"
-msgstr "SOUBOR"
-
-#: ../libxfce4smclient-private/eggsmclient.c:233
-msgid "Specify session management ID"
-msgstr "Zadejte identifikátor správy relace"
-
-#: ../libxfce4smclient-private/eggsmclient.c:233
-msgid "ID"
-msgstr "ID"
-
-#: ../libxfce4smclient-private/eggsmclient.c:254
-msgid "Session management options:"
-msgstr "Možnosti správy relace:"
-
-#: ../libxfce4smclient-private/eggsmclient.c:255
-msgid "Show session management options"
-msgstr "Zobrazit možnosti správy relace"
-
 #: ../glade/libxfce4ui.xml.in.h:1
 msgid "Subtitle"
 msgstr "Podtitulek"
@@ -191,3 +172,30 @@ msgstr "Dialogové okno s titulkem"
 msgid "Xfce 4 Widgets"
 msgstr "Prvky dialogů pro prostředí Xfce 4"
 
+#~ msgid "File is not a valid .desktop file"
+#~ msgstr "Soubor není platným souborem typu .desktop"
+
+#~ msgid "Unrecognized desktop file Version '%s'"
+#~ msgstr "Nerozpoznaný soubor plochy verze %s"
+
+#~ msgid "Starting %s"
+#~ msgstr "Spouštění %s"
+
+#~ msgid "Application does not accept documents on command line"
+#~ msgstr "Aplikace nepříjímá dokumenty na příkazovém řádku"
+
+#~ msgid "Unrecognized launch option: %d"
+#~ msgstr "Nerozpoznaný parametr spuštění: %d"
+
+#~ msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
+#~ msgstr ""
+#~ "Identifikátor dokumentu URI nelze předat položce plochy 'Type=Link' "
+
+#~ msgid "Not a launchable item"
+#~ msgstr "Nespustitelná položka"
+
+#~ msgid "Specify file containing saved configuration"
+#~ msgstr "Zadejte soubor obsahující uloženou konfiguraci"
+
+#~ msgid "FILE"
+#~ msgstr "SOUBOR"
