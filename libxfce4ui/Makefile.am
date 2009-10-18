@@ -117,7 +117,8 @@ stamp-libxfce4ui-marshal.h: libxfce4ui-marshal.list Makefile
 	echo timestamp >$(@F)
 
 libxfce4ui-marshal.c: libxfce4ui-marshal.list Makefile
-	glib-genmarshal --prefix=_libxfce4ui_marshal --body $(srcdir)/libxfce4ui-marshal.list >xgen-lmc
+	echo "#include <libxfce4ui/libxfce4ui-marshal.h>" > xgen-lmc
+	glib-genmarshal --prefix=_libxfce4ui_marshal --body $(srcdir)/libxfce4ui-marshal.list >>xgen-lmc
 	cmp -s xgen-lmc libxfce4-marshal.c || cp xgen-lmc libxfce4ui-marshal.c
 	rm -f xgen-lmc
 

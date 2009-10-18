@@ -3,7 +3,6 @@
 SUBDIRS = \
 	libxfce4ui \
 	libxfce4kbd-private \
-	libxfce4smclient-private \
 	glade \
 	docs \
 	po
