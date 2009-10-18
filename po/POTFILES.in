@@ -5,6 +5,7 @@ libxfce4ui/libxfce4ui-config.c
 libxfce4ui/xfce-dialogs.c
 libxfce4ui/xfce-gdk-extensions.c
 libxfce4ui/xfce-gtk-extensions.c
+libxfce4ui/xfce-sm-client.c
 libxfce4ui/xfce-heading.c
 libxfce4ui/xfce-spawn.c
 libxfce4ui/xfce-titled-dialog.c
@@ -16,12 +17,6 @@ libxfce4kbd-private/xfce-shortcuts.c
 libxfce4kbd-private/xfce-shortcut-dialog.c
 libxfce4kbd-private/xfce-shortcuts-grabber.c
 libxfce4kbd-private/xfce-shortcuts-provider.c
-
-#
-# Libxfce4smclient-private sources
-#
-libxfce4smclient-private/eggdesktopfile.c
-libxfce4smclient-private/eggsmclient.c
 
 #
 # Support for GtkBuilder
