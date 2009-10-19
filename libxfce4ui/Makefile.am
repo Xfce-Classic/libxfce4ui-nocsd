@@ -54,6 +54,7 @@ libxfce4ui_1_la_SOURCES = \
 	xfce-titled-dialog.c
 
 libxfce4ui_1_la_CFLAGS = \
+	$(LIBSM_CFLAGS) \
 	$(GTK_CFLAGS) \
 	$(LIBSTARTUP_NOTIFICATION_CFLAGS) \
 	$(LIBXFCE4UTIL_CFLAGS) \
@@ -63,9 +64,11 @@ libxfce4ui_1_la_LDFLAGS = \
 	-version-info $(LIBXFCE4UI_VERINFO) \
 	-export-symbols-regex "^[^_].*" \
 	-no-undefined \
+	$(LIBSM_LDFLAGS) \
 	$(PLATFORM_LDFLAGS)
 
 libxfce4ui_1_la_LIBADD = \
+	$(LIBSM_LIBS) \
 	$(GTK_LIBS) \
 	$(LIBSTARTUP_NOTIFICATION_LIBS) \
 	$(LIBXFCE4UTIL_LIBS)

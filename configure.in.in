@@ -253,18 +253,20 @@ echo "  - Pixmap directory:        $GLADEUI_PIXMAPDIR"
 else
 echo "* Glade Interface Designer:  no"
 fi
-echo
 if test x"$enable_keyboard_library" = x"yes"; then
 echo "* Keyboard library support:  yes"
 else
 echo "* Keyboard library support:  no"
 fi
-echo
 if test x"$LIBSTARTUP_NOTIFICATION_FOUND" = x"yes"; then
-echo "* Startup Notification:      yes"
+echo "* Startup notification:      yes"
 else
-echo "* Startup Notification:      no"
+echo "* Startup notification:      no"
 fi
-echo
-echo "* Debug Support:             $enable_debug"
+if test x"$LIBSM_LIBS" = x""; then
+echo "* X11 session management:    no"
+else
+echo "* X11 session management:    yes"
+fi
+echo "* Debug support:             $enable_debug"
 echo
