@@ -1,0 +1,174 @@
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# A S Alam <aalam@users.sf.net>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-10-18 15:24+0200\n"
+"PO-Revision-Date: 2009-10-19 07:54+0530\n"
+"Last-Translator: A S Alam <aalam@users.sf.net>\n"
+"Language-Team: Punjabi/Panjabi <punjabi-users@lists.sf.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.0\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. run dialog
+#: ../libxfce4ui/xfce-dialogs.c:70
+msgid "Information"
+msgstr "ਜਾਣਕਾਰੀ"
+
+#. run dialog
+#: ../libxfce4ui/xfce-dialogs.c:106
+msgid "Warning"
+msgstr "ਚੇਤਾਵਨੀ"
+
+#. run dialog
+#: ../libxfce4ui/xfce-dialogs.c:143
+msgid "Error"
+msgstr "ਗਲਤੀ"
+
+#. run dialog
+#: ../libxfce4ui/xfce-dialogs.c:196
+msgid "Question"
+msgstr "ਸਵਾਲ"
+
+#: ../libxfce4ui/xfce-sm-client.c:1393
+msgid "Session management client ID"
+msgstr "ਸ਼ੈਸ਼ਨ ਪਰਬੰਧ ਕਲਾਇਟ ID"
+
+#: ../libxfce4ui/xfce-sm-client.c:1393
+msgid "ID"
+msgstr "ID"
+
+#: ../libxfce4ui/xfce-sm-client.c:1394
+msgid "Disable session management"
+msgstr "ਸ਼ੈਸ਼ਨ ਪਰਬੰਧ ਆਯੋਗ"
+
+#: ../libxfce4ui/xfce-sm-client.c:1404
+msgid "Session management options"
+msgstr "ਸ਼ੈਸ਼ਨ ਪਰਬੰਧ ਚੋਣਾਂ"
+
+#: ../libxfce4ui/xfce-sm-client.c:1405
+msgid "Show session management options"
+msgstr "ਸ਼ੈਸ਼ਨ ਪਰਬੰਧ ਚੋਣਾਂ ਵੇਖੋ"
+
+#: ../libxfce4ui/xfce-sm-client.c:1581
+#, c-format
+msgid "Failed to connect to the session manager: %s"
+msgstr "ਸ਼ੈਸ਼ਨ ਮੈਨੇਜਰ ਨਾਲ ਕੁਨੈਕਟ ਹੋਣ ਲਈ ਫੇਲ੍ਹ: %s"
+
+#: ../libxfce4ui/xfce-sm-client.c:1588
+#, c-format
+msgid "Session manager did not return a valid client id"
+msgstr "ਸ਼ੈਸ਼ਨ ਮੈਨੇਜਰ ਨੇ ਢੁੱਕਵਾਂ ਕਲਾਇਟ id ਨਹੀਂ ਦਿੱਤਾ"
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:52
+msgid ""
+"This shortcut is already being used for another window manager action. Which "
+"action do you want to use?"
+msgstr ""
+"ਇਹ ਸ਼ਾਰਟਕੱਟ ਵਿੰਡੋ ਮੈਨੇਜਰ ਐਕਸ਼ਨ ਵਿੱਚ ਪਹਿਲਾਂ ਹੀ ਵਰਤਿਆ ਜਾ ਰਿਹਾ ਹੈ। ਕਿਹੜੇ ਐਕਸ਼ਨ "
+"ਲਈ ਤੁਸੀਂ ਵਰਤਣਾ "
+"ਚਾਹੁੰਦੇ ਹੋ?"
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:53
+#: ../libxfce4kbd-private/xfce-shortcuts.c:56
+#: ../libxfce4kbd-private/xfce-shortcuts.c:59
+#: ../libxfce4kbd-private/xfce-shortcuts.c:62
+#, c-format
+msgid "Use '%s'"
+msgstr "'%s' ਵਰਤੋਂ"
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:53
+msgid "Keep the other one"
+msgstr "ਹੋਰ ਲਈ ਰੱਖੋ"
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:55
+#: ../libxfce4kbd-private/xfce-shortcuts.c:58
+#, c-format
+msgid ""
+"This shortcut is already being used for the command '%s'. Which action do "
+"you want to use?"
+msgstr ""
+"ਇਹ ਸ਼ਾਰਟਕੱਟ ਪਹਿਲਾਂ ਹੀ ਕਮਾਂਡ '%s' ਲਈ ਵਰਤਿਆ ਜਾ ਰਿਹਾ ਹੈ। ਕਿਹੜੇ ਐਕਸ਼ਨ ਲਈ ਤੁਸੀਂ "
+"ਵਰਤਣਾ "
+"ਚਾਹੁੰਦੇ ਹੋ?"
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:56
+#: ../libxfce4kbd-private/xfce-shortcuts.c:59
+#, c-format
+msgid "Keep '%s'"
+msgstr "'%s' ਰੱਖੋ"
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:61
+msgid ""
+"This shortcut is already being used by a window manager action. Which action "
+"do you want to use?"
+msgstr ""
+"ਇਹ ਸ਼ਾਰਟਕੱਟ ਵਿੰਡੋ ਮੈਨੇਜਰ ਐਕਸ਼ਨ ਵਿੱਚ ਪਹਿਲਾਂ ਹੀ ਵਰਤਿਆ ਜਾ ਰਿਹਾ ਹੈ। ਕਿਹੜੇ ਐਕਸ਼ਨ "
+"ਲਈ ਤੁਸੀਂ ਵਰਤਣਾ "
+"ਚਾਹੁੰਦੇ ਹੋ?"
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:62
+msgid "Keep the window manager action"
+msgstr "ਵਿੰਡੋ ਮੈਨੇਜਰ ਐਕਸ਼ਨ ਰੱਖੋ"
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:95
+#, c-format
+msgid "Conflicting actions for %s"
+msgstr "%s ਲਈ ਐਕਸ਼ਨ ਅਪਵਾਦ"
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:128
+msgid "This shortcut is already being used for something else."
+msgstr "ਇਹ ਸ਼ਾਰਟਕੱਟ ਪਹਿਲਾਂ ਹੀ ਕਿਸੇ ਹੋਰ ਲਈ ਵਰਤਿਆ ਜਾ ਰਿਹਾ ਹੈ।"
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:207
+msgid "Window Manager Action Shortcut"
+msgstr "ਵਿੰਡੋ ਮੈਨੇਜਰ ਐਕਸ਼ਨ ਸ਼ਾਰਟਕੱਟ"
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:208
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:218
+msgid "Action:"
+msgstr "ਐਕਸ਼ਨ:"
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:212
+msgid "Command Shortcut"
+msgstr "ਕਮਾਂਡ ਸ਼ਾਰਟਕੱਟ"
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:213
+msgid "Command:"
+msgstr "ਕਮਾਂਡ:"
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:217
+msgid "Shortcut"
+msgstr "ਸ਼ਾਰਟਕੱਟ"
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:258
+msgid "Shortcut:"
+msgstr "ਸ਼ਾਰਟਕੱਟ:"
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:303
+msgid "Could not grab the keyboard."
+msgstr "ਕੀਬੋਰਡ ਲਿਆ ਨਹੀਂ ਜਾ ਸਕਿਆ।"
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:324
+#, c-format
+msgid "<span size='large'><b>%s</b></span>"
+msgstr "<span size='large'><b>%s</b></span>"
+
+#: ../glade/libxfce4ui.xml.in.h:1
+msgid "Subtitle"
+msgstr "ਸਬ-ਟਾਈਟਲ"
+
+#: ../glade/libxfce4ui.xml.in.h:2
+msgid "Titled Dialog"
+msgstr "ਟਾਈਲ ਕੀਤਾ ਡਾਈਲਾਗ"
+
+#: ../glade/libxfce4ui.xml.in.h:3
+msgid "Xfce 4 Widgets"
+msgstr "Xfce 4 ਵਿਦਜੈੱਟ"
+
