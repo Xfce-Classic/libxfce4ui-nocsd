@@ -1,4 +1,11 @@
 4.7.0
 =====
+Initial version of the library. The intention of this new library is a
+cleanup of the old libxfcegui4 library to remove the deprecated code
+and get rid of netk (since 4.6 we use libwnck for that).
 
-Initial version of the library.
+Biggest changes compared to libxfcegui4:
+- New session manager client.
+- Improved code for spawing applications.
+- New dialog functions.
+- Support for glade-3's GtkBuilder implementation.
