@@ -8,10 +8,9 @@ msgstr ""
 "Project-Id-Version: libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-10-18 15:24+0200\n"
-"PO-Revision-Date: 2009-03-06 09:02+0100\n"
+"PO-Revision-Date: 2009-10-19 14:55+0100\n"
 "Last-Translator: Cristian Marchi <cri.penta@gmail.com>\n"
-"Language-Team: Italian Translation Team <xfce-it-translators@googlegroups."
-"com>\n"
+"Language-Team: Italian Translation Team <xfce-it-translators@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -24,7 +23,7 @@ msgstr "Informazione"
 #. run dialog
 #: ../libxfce4ui/xfce-dialogs.c:106
 msgid "Warning"
-msgstr "Avvertimento"
+msgstr "Avviso"
 
 #. run dialog
 #: ../libxfce4ui/xfce-dialogs.c:143
@@ -34,43 +33,41 @@ msgstr "Errore"
 #. run dialog
 #: ../libxfce4ui/xfce-dialogs.c:196
 msgid "Question"
-msgstr "Quesito"
+msgstr "Domanda"
 
 #: ../libxfce4ui/xfce-sm-client.c:1393
 msgid "Session management client ID"
-msgstr ""
+msgstr "ID del client di gestione della sessione"
 
 #: ../libxfce4ui/xfce-sm-client.c:1393
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #: ../libxfce4ui/xfce-sm-client.c:1394
 msgid "Disable session management"
-msgstr ""
+msgstr "Disabilita la gestione della sessione"
 
 #: ../libxfce4ui/xfce-sm-client.c:1404
 msgid "Session management options"
-msgstr ""
+msgstr "Opzioni di gestione della sessione"
 
 #: ../libxfce4ui/xfce-sm-client.c:1405
 msgid "Show session management options"
-msgstr ""
+msgstr "Mostra le opzioni di gestione della sessione"
 
 #: ../libxfce4ui/xfce-sm-client.c:1581
 #, c-format
 msgid "Failed to connect to the session manager: %s"
-msgstr ""
+msgstr "Impossibile connettersi al gestore della sessione: %s"
 
 #: ../libxfce4ui/xfce-sm-client.c:1588
 #, c-format
 msgid "Session manager did not return a valid client id"
-msgstr ""
+msgstr "Il gestore della sessione non ha restituito un client ID valido"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:52
-msgid ""
-"This shortcut is already being used for another window manager action. Which "
-"action do you want to use?"
-msgstr ""
+msgid "This shortcut is already being used for another window manager action. Which action do you want to use?"
+msgstr "Questa scorciatoia è già assegnata a un'altra azione del gestore di finestre. Quale azione utilizzare?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
@@ -78,87 +75,105 @@ msgstr ""
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 #, c-format
 msgid "Use '%s'"
-msgstr ""
+msgstr "Usa '%s'"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 msgid "Keep the other one"
-msgstr ""
+msgstr "Mantieni l'altra"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:55
 #: ../libxfce4kbd-private/xfce-shortcuts.c:58
 #, c-format
-msgid ""
-"This shortcut is already being used for the command '%s'. Which action do "
-"you want to use?"
-msgstr ""
+msgid "This shortcut is already being used for the command '%s'. Which action do you want to use?"
+msgstr "Questa scorciatoia è già assegnata al comando \"%s\". Quale azione utilizzare?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
 #: ../libxfce4kbd-private/xfce-shortcuts.c:59
 #, c-format
 msgid "Keep '%s'"
-msgstr ""
+msgstr "Mantieni '%s'"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:61
-msgid ""
-"This shortcut is already being used by a window manager action. Which action "
-"do you want to use?"
-msgstr ""
+msgid "This shortcut is already being used by a window manager action. Which action do you want to use?"
+msgstr "Questa scorciatoia è già assegnata a un'azione del gestore di finestre. Quale azione utilizzare?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 msgid "Keep the window manager action"
-msgstr ""
+msgstr "Mantieni l'azione del gestore di finestre"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:95
 #, c-format
 msgid "Conflicting actions for %s"
-msgstr ""
+msgstr "Azione in conflitto per %s"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:128
 msgid "This shortcut is already being used for something else."
-msgstr ""
+msgstr "Questa scorciatoia è già utilizzata per qualcos'altro"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:207
 msgid "Window Manager Action Shortcut"
-msgstr ""
+msgstr "Scorciatoia per l'azione del gestore di finestre"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:208
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:218
 msgid "Action:"
-msgstr ""
+msgstr "Azione:"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:212
 msgid "Command Shortcut"
-msgstr ""
+msgstr "Scorciatoia del comando"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:213
 msgid "Command:"
-msgstr ""
+msgstr "Comando:"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:217
 msgid "Shortcut"
-msgstr ""
+msgstr "Scorciatoia"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:258
 msgid "Shortcut:"
-msgstr ""
+msgstr "Scorciatoia:"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:303
 msgid "Could not grab the keyboard."
-msgstr ""
+msgstr "Impossibile acquisire la tastiera."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:324
 #, c-format
 msgid "<span size='large'><b>%s</b></span>"
-msgstr ""
+msgstr "<span size='large'><b>%s</b></span>"
 
 #: ../glade/libxfce4ui.xml.in.h:1
 msgid "Subtitle"
-msgstr ""
+msgstr "Sottotitolo"
 
 #: ../glade/libxfce4ui.xml.in.h:2
 msgid "Titled Dialog"
-msgstr ""
+msgstr "Finestra titolata"
 
 #: ../glade/libxfce4ui.xml.in.h:3
 msgid "Xfce 4 Widgets"
-msgstr ""
+msgstr "Xfce 4 Widget"
+
+#~ msgid "File is not a valid .desktop file"
+#~ msgstr "IL file non è un file desktop valido"
+#~ msgid "Unrecognized desktop file Version '%s'"
+#~ msgstr "Versione del file desktop \"%s\" sconosciuta"
+#~ msgid "Starting %s"
+#~ msgstr "Avvio di %s in corso..."
+#~ msgid "Application does not accept documents on command line"
+#~ msgstr "L'applicazione non accetta documenti da linea di comando"
+#~ msgid "Unrecognized launch option: %d"
+#~ msgstr "Opzione di lancio non riconosciuta: %d"
+#~ msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
+#~ msgstr ""
+#~ "Impossibile trasferire l'URI del documento a un elemento desktop "
+#~ "\"Type=Link\""
+#~ msgid "Not a launchable item"
+#~ msgstr "Elemento non lanciabile"
+#~ msgid "Specify file containing saved configuration"
+#~ msgstr "Specifica il file contenente la configurazione salvata"
+#~ msgid "FILE"
+#~ msgstr "FILE"
+
