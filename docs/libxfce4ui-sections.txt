@@ -27,20 +27,15 @@ xfce_gdk_screen_get_active
 <SECTION>
 <FILE>xfce-gtk-extensions</FILE>
 xfce_gtk_button_new_mixed
-xfce_gtk_label_new_with_style
 xfce_gtk_frame_box_new
 xfce_gtk_frame_box_new_with_content
 xfce_gtk_window_center_on_active_screen
-<SUBSECTION>
-xfce_gtk_label_new_big_bold
-xfce_gtk_label_new_bold
-xfce_gtk_label_new_italic
-xfce_gtk_label_new_small_italic
 </SECTION>
 
 <SECTION>
 <FILE>xfce-dialogs</FILE>
 xfce_message_dialog_new
+xfce_message_dialog_new_valist
 xfce_message_dialog
 xfce_dialog_show_info
 xfce_dialog_show_warning
@@ -107,7 +102,6 @@ XFCE_TYPE_SM_CLIENT
 XFCE_TYPE_SM_CLIENT_PRIORITY
 XFCE_TYPE_SM_CLIENT_RESTART_STYLE
 XFCE_TYPE_SM_CLIENT_SHUTDOWN_HINT
-XFCE_TYPE_SM_CLIENT_STATE
 <SUBSECTION Private>
 xfce_sm_client_get_type
 xfce_sm_client_priority_get_type

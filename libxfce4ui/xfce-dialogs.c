@@ -155,6 +155,7 @@ xfce_dialog_show_error (GtkWindow    *parent,
  * @parent         : transient parent of the dialog, or %NULL.
  * @stock_id       : the stock name of the confirm button, for example #GTK_STOCK_YES or #GTK_STOCK_CLEAR.
  * @confirm_label  : if non-%NULL, this text is used on the confirm button together with the @stock_id icon.
+ * @secondary_text : secondary text in the dialog.
  * @primary_format : the printf()-style format for the dialog question.
  * @...            : argument list for the @primary_format.
  *
@@ -212,7 +213,7 @@ xfce_dialog_confirm (GtkWindow   *parent,
  * xfce_message_dialog_new_valist:
  * @parent            : transient parent of the dialog, or %NULL.
  * @title             : title of the dialog, or %NULL.
- * @stock_id          : gtk stock icon name to show in the dialog.
+ * @icon_stock_id     : gtk stock icon name to show in the dialog.
  * @primary_text      : primary text shown in large bold font.
  * @secondary_text    : secondary text shown in normal font.
  * @first_button_text : text for the first button.

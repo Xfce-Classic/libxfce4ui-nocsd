@@ -59,7 +59,7 @@ GtkWidget *xfce_message_dialog_new_valist (GtkWindow   *parent,
                                            const gchar *icon_stock_id,
                                            const gchar *primary_text,
                                            const gchar *secondary_text,
-                                           const gchar *first_button_type,
+                                           const gchar *first_button_text,
                                            va_list      args) G_GNUC_MALLOC;
 
 GtkWidget *xfce_message_dialog_new        (GtkWindow    *parent,
