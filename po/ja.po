@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-18 15:24+0200\n"
-"PO-Revision-Date: 2009-07-19 00:59+0900\n"
+"POT-Creation-Date: 2009-10-21 00:36+0900\n"
+"PO-Revision-Date: 2009-10-21 00:36+0900\n"
 "Last-Translator: Masato Hashimoto <cabezon.hashimoto@gmail.com>\n"
 "Language-Team: Japanese <xfce-users-jp@ml.fdiary.net>\n"
 "MIME-Version: 1.0\n"
@@ -33,42 +33,39 @@ msgid "Error"
 msgstr "エラー"
 
 #. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:196
+#: ../libxfce4ui/xfce-dialogs.c:197
 msgid "Question"
 msgstr "質問"
 
 #: ../libxfce4ui/xfce-sm-client.c:1393
-#, fuzzy
 msgid "Session management client ID"
-msgstr "セッション管理オプション:"
+msgstr "セッション管理クライアント ID"
 
 #: ../libxfce4ui/xfce-sm-client.c:1393
 msgid "ID"
 msgstr "ID"
 
 #: ../libxfce4ui/xfce-sm-client.c:1394
-#, fuzzy
 msgid "Disable session management"
-msgstr "セッション管理 ID を指定する"
+msgstr "セッション管理を無効にする"
 
 #: ../libxfce4ui/xfce-sm-client.c:1404
-#, fuzzy
 msgid "Session management options"
-msgstr "セッション管理オプション:"
+msgstr "セッション管理オプション"
 
 #: ../libxfce4ui/xfce-sm-client.c:1405
 msgid "Show session management options"
 msgstr "セッション管理オプションを表示する"
 
 #: ../libxfce4ui/xfce-sm-client.c:1581
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to connect to the session manager: %s"
-msgstr "セッションマネージャへの接続を無効にする"
+msgstr "セッションマネージャへの接続に失敗しました: %s"
 
 #: ../libxfce4ui/xfce-sm-client.c:1588
 #, c-format
 msgid "Session manager did not return a valid client id"
-msgstr ""
+msgstr "セッションマネージャは正常なクライアント ID を返しませんでした"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:52
 msgid ""
