@@ -1,15 +1,16 @@
 # Simplified Chinese translation for the libxfce4ui package.
 # Copyright (C) 2008 The Xfce development team.
 # This file is distributed under the same license as the libxfce4ui package.
-# Chris K. Zhang <plutino@gmail.com>, 2009
-#
+# Chris K. Zhang <plutino@gmail.com>, 2009.
+# Hunt Xu <mhuntxu@gmail.com>, 2009.
+
 msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-10-18 15:24+0200\n"
-"PO-Revision-Date: 2009-07-19 02:02+0800\n"
-"Last-Translator: Chris K. Zhang <plutino@gmail.com>\n"
+"PO-Revision-Date: 2009-10-20 23:53+0800\n"
+"Last-Translator: Hunt Xu <huntxu@live.cn>\n"
 "Language-Team: Simplied Chinese <i18n-xfce@xfce.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -36,37 +37,34 @@ msgid "Question"
 msgstr "问题"
 
 #: ../libxfce4ui/xfce-sm-client.c:1393
-#, fuzzy
 msgid "Session management client ID"
-msgstr "会话管理选项:"
+msgstr "会话管理客户端 ID"
 
 #: ../libxfce4ui/xfce-sm-client.c:1393
 msgid "ID"
 msgstr "ID"
 
 #: ../libxfce4ui/xfce-sm-client.c:1394
-#, fuzzy
 msgid "Disable session management"
-msgstr "指定会话管理 ID"
+msgstr "禁用会话管理"
 
 #: ../libxfce4ui/xfce-sm-client.c:1404
-#, fuzzy
 msgid "Session management options"
-msgstr "会话管理选项:"
+msgstr "会话管理选项"
 
 #: ../libxfce4ui/xfce-sm-client.c:1405
 msgid "Show session management options"
 msgstr "显示会话管理选项"
 
 #: ../libxfce4ui/xfce-sm-client.c:1581
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to connect to the session manager: %s"
-msgstr "禁用到会话管理器的连接"
+msgstr "连接至会话管理器失败: %s"
 
 #: ../libxfce4ui/xfce-sm-client.c:1588
 #, c-format
 msgid "Session manager did not return a valid client id"
-msgstr ""
+msgstr "会话管理器未返回一个有效的客户端 ID"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:52
 msgid ""
@@ -80,7 +78,7 @@ msgstr "该快捷键已被另一个窗口管理器动作所使用。您想使用
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 #, c-format
 msgid "Use '%s'"
-msgstr "使用 “%s”"
+msgstr "使用 '%s'"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 msgid "Keep the other one"
@@ -158,7 +156,6 @@ msgid "Subtitle"
 msgstr "子菜单"
 
 #: ../glade/libxfce4ui.xml.in.h:2
-#, fuzzy
 msgid "Titled Dialog"
 msgstr "有标题对话框"
 
@@ -178,16 +175,8 @@ msgstr "Xfce 4 控件"
 #~ msgid "Unrecognized launch option: %d"
 #~ msgstr "未知的启动选项: %d"
 
-#, fuzzy
-#~ msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
-#~ msgstr "无法传递文档 URI 至一个 'Type=Link' desktop 项目"
-
 #~ msgid "Not a launchable item"
 #~ msgstr "不是一个可启动项目"
 
 #~ msgid "Specify file containing saved configuration"
 #~ msgstr "指定保存配置的文件"
-
-#, fuzzy
-#~ msgid "FILE"
-#~ msgstr "FILE"
