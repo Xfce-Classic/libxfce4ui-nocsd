@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-10-18 15:24+0200\n"
-"PO-Revision-Date: 2009-09-18 18:19+0100\n"
+"PO-Revision-Date: 2009-10-21 13:10+0100\n"
 "Last-Translator: Rihards Prieditis <rprieditis@gmail.com>\n"
 "Language-Team: Latvian <translation-team-lv@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -41,37 +41,33 @@ msgid "Question"
 msgstr "Jautājums"
 
 #: ../libxfce4ui/xfce-sm-client.c:1393
-#, fuzzy
 msgid "Session management client ID"
-msgstr "Sesijas pārvaldnieka opcijas:"
+msgstr "Sesijas pārvaldības klienta ID"
 
 #: ../libxfce4ui/xfce-sm-client.c:1393
 msgid "ID"
 msgstr "ID"
 
 #: ../libxfce4ui/xfce-sm-client.c:1394
-#, fuzzy
 msgid "Disable session management"
-msgstr "Norādiet sesijas pārvaldnieka ID"
+msgstr "Izslēgt sesijas pārvaldību"
 
 #: ../libxfce4ui/xfce-sm-client.c:1404
-#, fuzzy
 msgid "Session management options"
-msgstr "Sesijas pārvaldnieka opcijas:"
+msgstr "Sesijas pārvaldības opcijas"
 
 #: ../libxfce4ui/xfce-sm-client.c:1405
 msgid "Show session management options"
-msgstr "Rādīt sesijas pārvaldnieka opcijas"
+msgstr "Rādīt sesijas pārvaldības opcijas"
 
-#: ../libxfce4ui/xfce-sm-client.c:1581
-#, fuzzy, c-format
+#: ../libxfce4ui/xfce-sm-client.c:1581, c-format
 msgid "Failed to connect to the session manager: %s"
-msgstr "Izslēgt savienojumus ar sesiju pārvaldnieku"
+msgstr "Neizdevas savienoties ar sesiju pārvaldnieku"
 
 #: ../libxfce4ui/xfce-sm-client.c:1588
 #, c-format
 msgid "Session manager did not return a valid client id"
-msgstr ""
+msgstr "Sesijas pārvaldnieks neatgrieza derīgu clienta id"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:52
 msgid ""
