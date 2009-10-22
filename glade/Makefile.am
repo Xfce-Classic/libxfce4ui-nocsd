@@ -23,16 +23,19 @@ libxfce4uiglade_la_SOURCES  = \
 
 libxfce4uiglade_la_CFLAGS = \
 	$(GLADEUI_CFLAGS) \
+	$(LIBXFCE4UTIL_CFLAGS) \
 	$(PLATFORM_CFLAGS)
 
 libxfce4uiglade_la_LDFLAGS = \
 	-no-undefined \
 	-avoid-version \
-	-module
+	-module \
+	$(PLATFORM_LDFLAGS)
 
 libxfce4uiglade_la_LIBADD = \
 	$(top_builddir)/libxfce4ui/libxfce4ui-1.la \
-	$(GLADEUI_CFLAGS)
+	$(LIBXFCE4UTIL_LIBS) \
+	$(GLADEUI_LIBS)
 
 ##
 ## Glade catalog xml file

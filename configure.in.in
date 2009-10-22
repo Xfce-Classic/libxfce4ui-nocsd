@@ -200,6 +200,45 @@ dnl *** Check for linker optimizations ***
 dnl **************************************
 XDT_FEATURE_LINKER_OPTS()
 
+dnl ****************************************
+dnl *** Check for ELF visibility support ***
+dnl ****************************************
+AC_ARG_ENABLE([visibility],
+              AC_HELP_STRING([--disable-visibility],
+                             [Do not use ELF visibility attributes]),
+              [enable_visibility=$enableval], [enable_visibility=yes])
+have_gnuc_visibility=no
+if test "x$enable_visibility" != "xno"; then
+  XDT_SUPPORTED_FLAGS([xdt_vis_test_cflags], [-Wall -Werror -Wno-unused-parameter])
+  saved_CFLAGS="$CFLAGS"
+  CFLAGS="$CFLAGS $xdt_vis_test_cflags"
+  AC_MSG_CHECKING([whether $CC supports the GNUC visibility attribute])
+  AC_COMPILE_IFELSE(AC_LANG_SOURCE(
+  [
+    void test_default (void);
+    void test_hidden (void);
+    void __attribute__ ((visibility("default"))) test_default (void) {}
+    void __attribute__ ((visibility("hidden"))) test_hidden (void) {}
+    int main (int argc, char **argv) {
+      test_default ();
+      test_hidden ();
+      return 0;
+    }
+  ]),
+  [
+    have_gnuc_visibility=yes
+    AC_MSG_RESULT([yes])
+  ],
+  [
+    AC_MSG_RESULT([no])
+  ])
+  CFLAGS="$saved_CFLAGS"
+fi
+if test "x$have_gnuc_visibility" = "xyes"; then
+  CPPFLAGS="$CPPFLAGS -DHAVE_GNUC_VISIBILITY"
+fi
+AM_CONDITIONAL([HAVE_GNUC_VISIBILITY], [test "x$have_gnuc_visibility" = "xyes"])
+
 dnl *************************************
 dnl *** Compensate for broken gtk-doc ***
 dnl *************************************
@@ -269,4 +308,5 @@ else
 echo "* X11 session management:    yes"
 fi
 echo "* Debug support:             $enable_debug"
+echo "* GNU Visibility:            $have_gnuc_visibility"
 echo

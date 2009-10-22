@@ -28,6 +28,7 @@
 #include <libxfce4ui/xfce-gtk-extensions.h>
 #include <libxfce4ui/xfce-gdk-extensions.h>
 #include <libxfce4ui/libxfce4ui-private.h>
+#include <libxfce4ui/libxfce4ui-alias.h>
 
 /* Xfce frame padding */
 #define PADDING (6)
@@ -195,3 +196,8 @@ xfce_gtk_window_center_on_active_screen (GtkWindow *window)
   /* gtk+ handles the centering of the window properly after resize */
   gtk_window_set_position (window, GTK_WIN_POS_CENTER);
 }
+
+
+
+#define __XFCE_GTK_EXTENSIONS_C__
+#include <libxfce4ui/libxfce4ui-aliasdef.c>

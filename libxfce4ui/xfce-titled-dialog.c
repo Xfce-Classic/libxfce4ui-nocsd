@@ -31,6 +31,7 @@
 #include <libxfce4ui/xfce-heading.h>
 #include <libxfce4ui/xfce-titled-dialog.h>
 #include <libxfce4ui/libxfce4ui-private.h>
+#include <libxfce4ui/libxfce4ui-alias.h>
 
 
 #define XFCE_TITLED_DIALOG_GET_PRIVATE(obj) (G_TYPE_INSTANCE_GET_PRIVATE ((obj), XFCE_TYPE_TITLED_DIALOG, XfceTitledDialogPrivate))
@@ -355,3 +356,8 @@ xfce_titled_dialog_set_subtitle (XfceTitledDialog *titled_dialog,
   /* notify listeners */
   g_object_notify (G_OBJECT (titled_dialog), "subtitle");
 }
+
+
+
+#define __XFCE_TITLED_DIALOG_C__
+#include <libxfce4ui/libxfce4ui-aliasdef.c>

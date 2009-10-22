@@ -31,6 +31,7 @@
 
 #include <libxfce4ui/xfce-heading.h>
 #include <libxfce4ui/libxfce4ui-private.h>
+#include <libxfce4ui/libxfce4ui-alias.h>
 
 
 
@@ -741,3 +742,8 @@ _xfce_heading_set_title (XfceHeading *heading,
   /* notify listeners */
   g_object_notify (G_OBJECT (heading), "title");
 }
+
+
+
+#define __XFCE_HEADING_C__
+#include <libxfce4ui/libxfce4ui-aliasdef.c>

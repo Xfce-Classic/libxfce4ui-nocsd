@@ -53,7 +53,7 @@ gboolean   xfce_dialog_confirm            (GtkWindow    *parent,
                                            const gchar  *secondary_text,
                                            const gchar  *primary_format,
                                            ...) G_GNUC_PRINTF (5, 6);
-                                     
+
 GtkWidget *xfce_message_dialog_new_valist (GtkWindow   *parent,
                                            const gchar *title,
                                            const gchar *icon_stock_id,

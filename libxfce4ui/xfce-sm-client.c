@@ -60,10 +60,11 @@
 
 #include <libxfce4util/libxfce4util.h>
 
-#include "libxfce4ui-private.h"
-#include "xfce-sm-client.h"
-#include "libxfce4ui-marshal.h"
-#include "libxfce4ui-enum-types.h"
+#include <libxfce4ui/libxfce4ui-private.h>
+#include <libxfce4ui/xfce-sm-client.h>
+#include <libxfce4ui/libxfce4ui-marshal.h>
+#include <libxfce4ui/libxfce4ui-enum-types.h>
+#include <libxfce4ui/libxfce4ui-alias.h>
 
 #define GsmPriority     "_GSM_Priority"
 #define GsmDesktopFile  "_GSM_DesktopFile"
@@ -362,7 +363,7 @@ xfce_sm_client_class_init(XfceSMClientClass *klass)
                                                NULL, NULL,
                                                g_cclosure_marshal_VOID__VOID,
                                                G_TYPE_NONE, 0);
-    
+
     g_object_class_install_property(gobject_class, PROP_RESUMED,
                                     g_param_spec_boolean("resumed",
                                                          "Resumed",
@@ -453,7 +454,7 @@ xfce_sm_client_get_property(GObject *obj,
         case PROP_CLIENT_ID:
             g_value_set_string(value, sm_client->client_id);
             break;
-            
+
         case PROP_CURRENT_DIRECTORY:
             g_value_set_string(value, sm_client->current_directory);
             break;
@@ -629,7 +630,7 @@ str_from_state(XfceSMClientState state)
             return "FROZEN";
         default:
             return "(unknown)";
-    }   
+    }
 }
 
 static void
@@ -846,7 +847,7 @@ static void
 xsmp_ice_io_error_handler(IceConn connection)
 {
     g_warning("ICE I/O Error");
-    
+
     if(xsmp_ice_installed_handler)
         xsmp_ice_installed_handler(connection);
 }
@@ -2152,7 +2153,7 @@ xfce_sm_client_get_client_id(XfceSMClient *sm_client)
  * On the next application start, this function can be used to
  * check to see if there is any previous saved state, and, if so,
  * the state can be restored from the file.
- * 
+ *
  * This function will use a standard location and naming scheme
  * and handle state cleanup (setting of the discard command) for you.
  *
@@ -2245,3 +2246,8 @@ xfce_sm_client_get_restart_command(XfceSMClient *sm_client)
     g_return_val_if_fail(XFCE_IS_SM_CLIENT(sm_client), NULL);
     return (const gchar * const *)sm_client->restart_command;
 }
+
+
+
+#define __XFCE_SM_CLIENT_C__
+#include <libxfce4ui/libxfce4ui-aliasdef.c>

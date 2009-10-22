@@ -108,8 +108,8 @@ xfce_shortcut_conflict_dialog (const gchar *owner,
 
         response = xfce_message_dialog (NULL, title, GTK_STOCK_DIALOG_QUESTION,
                                         title, secondary_text,
-                                        XFCE_BUTTON_TYPE_MIXED, NULL, owner_button_text, GTK_RESPONSE_ACCEPT, 
-                                        XFCE_BUTTON_TYPE_MIXED, NULL, other_button_text, GTK_RESPONSE_REJECT, 
+                                        XFCE_BUTTON_TYPE_MIXED, NULL, owner_button_text, GTK_RESPONSE_ACCEPT,
+                                        XFCE_BUTTON_TYPE_MIXED, NULL, other_button_text, GTK_RESPONSE_REJECT,
                                         NULL);
 
         g_free (other_button_text);

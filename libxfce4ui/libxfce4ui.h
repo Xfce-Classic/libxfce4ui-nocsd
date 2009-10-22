@@ -21,6 +21,8 @@
 #ifndef __LIBXFCE4UI_H__
 #define __LIBXFCE4UI_H__
 
+#include <libxfce4util/libxfce4util.h>
+
 #define LIBXFCE4UI_INSIDE_LIBXFCE4UI_H
 
 #include <libxfce4ui/libxfce4ui-config.h>
