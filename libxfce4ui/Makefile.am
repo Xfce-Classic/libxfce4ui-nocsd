@@ -100,10 +100,6 @@ DISTCLEANFILES = \
 BUILT_SOURCES = \
 	$(libxfce4ui_built_sources)
 
-if HAVE_GNUC_VISIBILITY
-TESTS = abicheck.sh
-endif
-
 libxfce4ui-alias.h: make-libxfce4ui-alias.pl libxfce4ui.symbols
 	$(AM_V_GEN) $(PERL) $(srcdir)/make-libxfce4ui-alias.pl < $(srcdir)/libxfce4ui.symbols > libxfce4ui-alias.h
 
@@ -158,5 +154,9 @@ EXTRA_DIST = \
 	libxfce4ui-alias.h \
 	libxfce4ui-aliasdef.c \
 	make-libxfce4ui-alias.pl
+
+if HAVE_GNUC_VISIBILITY
+TESTS = abicheck.sh
+endif
 
 # vi:set ts=8 sw=8 noet ai nocindent syntax=automake:
