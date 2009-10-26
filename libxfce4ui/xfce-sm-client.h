@@ -41,7 +41,7 @@ typedef enum
     XFCE_SM_CLIENT_RESTART_IMMEDIATELY,
 } XfceSMClientRestartStyle;
 
-typedef enum
+typedef enum /*< skip >*/
 {
     XFCE_SM_CLIENT_PRIORITY_HIGHEST = 0,
     XFCE_SM_CLIENT_PRIORITY_WM = 15,

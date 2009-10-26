@@ -50,7 +50,6 @@ libxfce4ui_check_version
 #if IN_HEADER(__LIBXFCE4UI_ENUM_TYPES_H__)
 #if IN_SOURCE(__LIBXFCE4UI_ENUM_TYPES_C__)
 xfce_sm_client_restart_style_get_type
-xfce_sm_client_priority_get_type
 xfce_sm_client_shutdown_hint_get_type
 #endif
 #endif
