@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: 4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-10-18 15:24+0200\n"
-"PO-Revision-Date: 2009-10-12 15:06+0200\n"
+"PO-Revision-Date: 2009-11-05 16:06+0100\n"
 "Last-Translator: Robert Hartl <hartl.robert@gmail.com>\n"
 "Language-Team: Slovak <sk-i18n@lists.linux.sk>\n"
 "MIME-Version: 1.0\n"
@@ -36,37 +36,34 @@ msgid "Question"
 msgstr "Otázka"
 
 #: ../libxfce4ui/xfce-sm-client.c:1393
-#, fuzzy
 msgid "Session management client ID"
-msgstr "Možnosti správy sedenia:"
+msgstr "Identifikátor klienta správy sedenia"
 
 #: ../libxfce4ui/xfce-sm-client.c:1393
 msgid "ID"
 msgstr "ID"
 
 #: ../libxfce4ui/xfce-sm-client.c:1394
-#, fuzzy
 msgid "Disable session management"
-msgstr "Zadajte identifikátor správy sedenia"
+msgstr "Zakázať správu sedenia"
 
 #: ../libxfce4ui/xfce-sm-client.c:1404
-#, fuzzy
 msgid "Session management options"
-msgstr "Možnosti správy sedenia:"
+msgstr "Možnosti správy sedenia"
 
 #: ../libxfce4ui/xfce-sm-client.c:1405
 msgid "Show session management options"
 msgstr "Zobraziť možnosti správy sedenia"
 
 #: ../libxfce4ui/xfce-sm-client.c:1581
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to connect to the session manager: %s"
-msgstr "Zakázať pripojenie k správcovi sedenia"
+msgstr "Nepodarilo sa pripojiť k správcovi sedenia: %s"
 
 #: ../libxfce4ui/xfce-sm-client.c:1588
 #, c-format
 msgid "Session manager did not return a valid client id"
-msgstr ""
+msgstr "Správca sedenia nevrátil platný identifikátor klienta"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:52
 msgid ""
