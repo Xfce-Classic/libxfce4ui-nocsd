@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-10-18 15:24+0200\n"
-"PO-Revision-Date: 2009-08-17 14:19+0100\n"
+"PO-Revision-Date: 2009-11-13 13:58+0100\n"
 "Last-Translator: Leandro Regueiro <leandro.regueiro@gmail.com>\n"
 "Language-Team: Galician <proxecto@trasno.net>\n"
 "MIME-Version: 1.0\n"
@@ -41,45 +41,38 @@ msgid "Question"
 msgstr "Pregunta"
 
 #: ../libxfce4ui/xfce-sm-client.c:1393
-#, fuzzy
 msgid "Session management client ID"
-msgstr "Opcións de xestión de sesión:"
+msgstr "ID de cliente da xestión de sesións"
 
 #: ../libxfce4ui/xfce-sm-client.c:1393
 msgid "ID"
 msgstr "ID"
 
 #: ../libxfce4ui/xfce-sm-client.c:1394
-#, fuzzy
 msgid "Disable session management"
-msgstr "Especificar o ID de xestión de sesión"
+msgstr "Desactivar a xestión de sesións"
 
 #: ../libxfce4ui/xfce-sm-client.c:1404
-#, fuzzy
 msgid "Session management options"
-msgstr "Opcións de xestión de sesión:"
+msgstr "Opcións de xestión de sesións"
 
 #: ../libxfce4ui/xfce-sm-client.c:1405
 msgid "Show session management options"
 msgstr "Mostrar as opcións de xestión de sesión"
 
 #: ../libxfce4ui/xfce-sm-client.c:1581
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to connect to the session manager: %s"
-msgstr "Desactivar a conexión ao xestor de sesións"
+msgstr "Produciuse un erro ao concectar co xestor de sesións: %s"
 
 #: ../libxfce4ui/xfce-sm-client.c:1588
 #, c-format
 msgid "Session manager did not return a valid client id"
-msgstr ""
+msgstr "O xestor de sesións non devolveu un id de cliente válido"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:52
-msgid ""
-"This shortcut is already being used for another window manager action. Which "
-"action do you want to use?"
-msgstr ""
-"Este atallo xa está sendo usado por unha acción doutro xestor de ventás. Que "
-"acción desexa usar?"
+msgid "This shortcut is already being used for another window manager action. Which action do you want to use?"
+msgstr "Este atallo xa está sendo usado por unha acción doutro xestor de ventás. Que acción desexa usar?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
@@ -96,11 +89,8 @@ msgstr "Manter o outro"
 #: ../libxfce4kbd-private/xfce-shortcuts.c:55
 #: ../libxfce4kbd-private/xfce-shortcuts.c:58
 #, c-format
-msgid ""
-"This shortcut is already being used for the command '%s'. Which action do "
-"you want to use?"
-msgstr ""
-"Este atallo xa está sendo usado polo comando '%s'. Que acción desexa usar?"
+msgid "This shortcut is already being used for the command '%s'. Which action do you want to use?"
+msgstr "Este atallo xa está sendo usado polo comando '%s'. Que acción desexa usar?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
 #: ../libxfce4kbd-private/xfce-shortcuts.c:59
@@ -109,12 +99,8 @@ msgid "Keep '%s'"
 msgstr "Manter '%s'"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:61
-msgid ""
-"This shortcut is already being used by a window manager action. Which action "
-"do you want to use?"
-msgstr ""
-"Este atallo está sendo usado por unha acción do xestor de ventás. Que acción "
-"desexa usar?"
+msgid "This shortcut is already being used by a window manager action. Which action do you want to use?"
+msgstr "Este atallo está sendo usado por unha acción do xestor de ventás. Que acción desexa usar?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 msgid "Keep the window manager action"
@@ -177,29 +163,22 @@ msgstr "Xfce 4 Widgets"
 
 #~ msgid "File is not a valid .desktop file"
 #~ msgstr "O ficheiro non é un ficheiro .desktop válido"
-
 #~ msgid "Unrecognized desktop file Version '%s'"
 #~ msgstr "Non se recoñece a versión '%s' do ficheiro .desktop"
-
 #~ msgid "Starting %s"
 #~ msgstr "Iniciando %s"
-
 #~ msgid "Application does not accept documents on command line"
 #~ msgstr "A aplicación non acepta documentos na liña de comandos"
-
 #~ msgid "Unrecognized launch option: %d"
 #~ msgstr "Non se recoñece a opción de inicio: %d"
-
 #~ msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
 #~ msgstr ""
 #~ "Non se poden pasar URIs de documento a unha entrada de escritorio de "
 #~ "'Type=Link'"
-
 #~ msgid "Not a launchable item"
 #~ msgstr "Non é un elemento executable"
-
 #~ msgid "Specify file containing saved configuration"
 #~ msgstr "Especifique o ficheiro que contén a configuración gardada"
-
 #~ msgid "FILE"
 #~ msgstr "FICHEIRO"
+
