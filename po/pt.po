@@ -8,13 +8,15 @@ msgstr ""
 "Project-Id-Version: libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-10-18 15:24+0200\n"
-"PO-Revision-Date: 2009-09-02 13:03+0100\n"
-"Last-Translator: \n"
+"PO-Revision-Date: 2009-12-14 16:54-0000\n"
+"Last-Translator: Sergio Marques <smarquespt@gmail.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-Language: Portuguese\n"
+"X-Poedit-Country: PORTUGAL\n"
 
 #. run dialog
 #: ../libxfce4ui/xfce-dialogs.c:70
@@ -37,45 +39,38 @@ msgid "Question"
 msgstr "Questão"
 
 #: ../libxfce4ui/xfce-sm-client.c:1393
-#, fuzzy
 msgid "Session management client ID"
-msgstr "Opções de gestão de sessão:"
+msgstr "ID do cliente de gestão de sessão"
 
 #: ../libxfce4ui/xfce-sm-client.c:1393
 msgid "ID"
 msgstr "ID"
 
 #: ../libxfce4ui/xfce-sm-client.c:1394
-#, fuzzy
 msgid "Disable session management"
-msgstr "Especificar ID de gestão de sessão"
+msgstr "Desactivar gestão de sessão"
 
 #: ../libxfce4ui/xfce-sm-client.c:1404
-#, fuzzy
 msgid "Session management options"
-msgstr "Opções de gestão de sessão:"
+msgstr "Opções da gestão de sessão"
 
 #: ../libxfce4ui/xfce-sm-client.c:1405
 msgid "Show session management options"
-msgstr "Apresentar opções de gestão de sessões"
+msgstr "Mostrar opções de gestão de sessões"
 
 #: ../libxfce4ui/xfce-sm-client.c:1581
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to connect to the session manager: %s"
-msgstr "Desactivar ligação ao gestor de sessões"
+msgstr "Falha ao ligar ao gestor de sessões: %s"
 
 #: ../libxfce4ui/xfce-sm-client.c:1588
 #, c-format
 msgid "Session manager did not return a valid client id"
-msgstr ""
+msgstr "O gestor de sessão não devolveu uma id de cliente válida"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:52
-msgid ""
-"This shortcut is already being used for another window manager action. Which "
-"action do you want to use?"
-msgstr ""
-"Este atalho já está em uso por outra acção do gestor de janelas. Que acção "
-"deseja usar?"
+msgid "This shortcut is already being used for another window manager action. Which action do you want to use?"
+msgstr "Este atalho já está a ser usado por outra acção do gestor de janelas. Que acção deseja usar?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
@@ -92,11 +87,8 @@ msgstr "Manter o outro"
 #: ../libxfce4kbd-private/xfce-shortcuts.c:55
 #: ../libxfce4kbd-private/xfce-shortcuts.c:58
 #, c-format
-msgid ""
-"This shortcut is already being used for the command '%s'. Which action do "
-"you want to use?"
-msgstr ""
-"Este atalho já está em uso para o comando '%s'. Que acção que deseja usar?"
+msgid "This shortcut is already being used for the command '%s'. Which action do you want to use?"
+msgstr "Este atalho já está a ser usado para o comando '%s'. Que acção que deseja usar?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
 #: ../libxfce4kbd-private/xfce-shortcuts.c:59
@@ -105,12 +97,8 @@ msgid "Keep '%s'"
 msgstr "Manter '%s'"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:61
-msgid ""
-"This shortcut is already being used by a window manager action. Which action "
-"do you want to use?"
-msgstr ""
-"Este atalho já está em uso por uma acção do gestor de janelas. Que acção "
-"deseja usar?"
+msgid "This shortcut is already being used by a window manager action. Which action do you want to use?"
+msgstr "Este atalho já está a ser usado por uma acção do gestor de janelas. Que acção deseja usar?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 msgid "Keep the window manager action"
@@ -123,11 +111,11 @@ msgstr "Acções em conflito para %s"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:128
 msgid "This shortcut is already being used for something else."
-msgstr "Este atalho já está em uso para outra coisa."
+msgstr "Este atalho já está a ser usado para outra coisa."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:207
 msgid "Window Manager Action Shortcut"
-msgstr "Atalho de acção do gestor de janelas"
+msgstr "Atalho de Acção do Gestor de Janelas"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:208
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:218
@@ -157,7 +145,7 @@ msgstr "Incapaz de capturar o teclado."
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:324
 #, c-format
 msgid "<span size='large'><b>%s</b></span>"
-msgstr "<span size='grande'><b>%s</b></span>"
+msgstr "<span size='large'><b>%s</b></span>"
 
 #: ../glade/libxfce4ui.xml.in.h:1
 msgid "Subtitle"
@@ -173,27 +161,20 @@ msgstr "Widgets Xfce 4"
 
 #~ msgid "File is not a valid .desktop file"
 #~ msgstr "O ficheiro não é um ficheiro .desktop válido"
-
 #~ msgid "Unrecognized desktop file Version '%s'"
 #~ msgstr "Versão '%s' de ficheiro desktop desconhecida"
-
 #~ msgid "Starting %s"
 #~ msgstr "Iniciando  %s"
-
 #~ msgid "Application does not accept documents on command line"
 #~ msgstr "A aplicação não aceita documentos na linha de comandos"
-
 #~ msgid "Unrecognized launch option: %d"
 #~ msgstr "Opção de lançamento desconhecida: %d"
-
 #~ msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
 #~ msgstr "Incapaz de passar URIs para uma entrada de desktop 'Type=Link'"
-
 #~ msgid "Not a launchable item"
 #~ msgstr "Não é um item executável"
-
 #~ msgid "Specify file containing saved configuration"
 #~ msgstr "Especifique o ficheiro que contém a configuração gravada"
-
 #~ msgid "FILE"
 #~ msgstr "FICHEIRO"
+
