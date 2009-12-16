@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-10-18 15:24+0200\n"
-"PO-Revision-Date: 2009-02-09 00:09+0100\n"
+"PO-Revision-Date: 2009-12-16 17:17+0100\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "MIME-Version: 1.0\n"
@@ -38,39 +38,37 @@ msgstr "Fråga"
 
 #: ../libxfce4ui/xfce-sm-client.c:1393
 msgid "Session management client ID"
-msgstr ""
+msgstr "Klient-id för sessionshantering"
 
 #: ../libxfce4ui/xfce-sm-client.c:1393
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #: ../libxfce4ui/xfce-sm-client.c:1394
 msgid "Disable session management"
-msgstr ""
+msgstr "Inaktivera sessionshantering"
 
 #: ../libxfce4ui/xfce-sm-client.c:1404
 msgid "Session management options"
-msgstr ""
+msgstr "Flaggor för sessionshantering"
 
 #: ../libxfce4ui/xfce-sm-client.c:1405
 msgid "Show session management options"
-msgstr ""
+msgstr "Visa flaggor för sessionshantering"
 
 #: ../libxfce4ui/xfce-sm-client.c:1581
 #, c-format
 msgid "Failed to connect to the session manager: %s"
-msgstr ""
+msgstr "Misslyckades med att ansluta till sessionshanteraren: %s"
 
 #: ../libxfce4ui/xfce-sm-client.c:1588
 #, c-format
 msgid "Session manager did not return a valid client id"
-msgstr ""
+msgstr "Sessionshanteraren returnerade inte ett giltigt klient-id"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:52
-msgid ""
-"This shortcut is already being used for another window manager action. Which "
-"action do you want to use?"
-msgstr ""
+msgid "This shortcut is already being used for another window manager action. Which action do you want to use?"
+msgstr "Denna genväg används redan för en annan åtgärd i fönsterhanteraren. Vilken åtgärd vill du använda?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
@@ -78,78 +76,74 @@ msgstr ""
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 #, c-format
 msgid "Use '%s'"
-msgstr ""
+msgstr "Använd \"%s\""
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 msgid "Keep the other one"
-msgstr ""
+msgstr "Behåll den andra"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:55
 #: ../libxfce4kbd-private/xfce-shortcuts.c:58
 #, c-format
-msgid ""
-"This shortcut is already being used for the command '%s'. Which action do "
-"you want to use?"
-msgstr ""
+msgid "This shortcut is already being used for the command '%s'. Which action do you want to use?"
+msgstr "Denna genväg används redan för kommandot \"%s\". Vilken åtgärd vill du använda?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
 #: ../libxfce4kbd-private/xfce-shortcuts.c:59
 #, c-format
 msgid "Keep '%s'"
-msgstr ""
+msgstr "Behåll \"%s\""
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:61
-msgid ""
-"This shortcut is already being used by a window manager action. Which action "
-"do you want to use?"
-msgstr ""
+msgid "This shortcut is already being used by a window manager action. Which action do you want to use?"
+msgstr "Denna genväg används redan av en åtgärd i fönsterhanteraren. Vilken åtgärd vill du använda?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 msgid "Keep the window manager action"
-msgstr ""
+msgstr "Behåll åtgärden för fönsterhanteraren"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:95
 #, c-format
 msgid "Conflicting actions for %s"
-msgstr ""
+msgstr "Åtgärder i konflikt för %s"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:128
 msgid "This shortcut is already being used for something else."
-msgstr ""
+msgstr "Denna genväg används redan för någonting annat."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:207
 msgid "Window Manager Action Shortcut"
-msgstr ""
+msgstr "Åtgärdsgenväg för fönsterhanterare"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:208
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:218
 msgid "Action:"
-msgstr ""
+msgstr "Åtgärd:"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:212
 msgid "Command Shortcut"
-msgstr ""
+msgstr "Kommandogenväg"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:213
 msgid "Command:"
-msgstr ""
+msgstr "Kommando:"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:217
 msgid "Shortcut"
-msgstr ""
+msgstr "Genväg"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:258
 msgid "Shortcut:"
-msgstr ""
+msgstr "Genväg:"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:303
 msgid "Could not grab the keyboard."
-msgstr ""
+msgstr "Kunde inte fånga tangentbordet."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:324
 #, c-format
 msgid "<span size='large'><b>%s</b></span>"
-msgstr ""
+msgstr "<span size='large'><b>%s</b></span>"
 
 #: ../glade/libxfce4ui.xml.in.h:1
 msgid "Subtitle"
@@ -162,3 +156,4 @@ msgstr "Namngiven dialogruta"
 #: ../glade/libxfce4ui.xml.in.h:3
 msgid "Xfce 4 Widgets"
 msgstr "Xfce 4-widgetar"
+
