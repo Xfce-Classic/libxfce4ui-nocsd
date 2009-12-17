@@ -15,6 +15,7 @@ LIBXFCE4UI_CHECK_VERSION
 
 <SECTION>
 <FILE>xfce-spawn</FILE>
+xfce_spawn_on_screen_with_child_watch
 xfce_spawn_on_screen
 xfce_spawn_command_line_on_screen
 </SECTION>

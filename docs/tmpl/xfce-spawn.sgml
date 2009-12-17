@@ -17,6 +17,22 @@ startup notification and they show up on the correct screen and workspace.
 
 <!-- ##### SECTION Stability_Level ##### -->
 
+<!-- ##### FUNCTION xfce_spawn_on_screen_with_child_watch ##### -->
+<para>
+
+</para>
+
+@screen: 
+@working_directory: 
+@argv: 
+@envp: 
+@flags: 
+@startup_notify: 
+@startup_timestamp: 
+@startup_icon_name: 
+@child_watch_closure: 
+@error: 
+@Returns: 
 
 <!-- ##### FUNCTION xfce_spawn_on_screen ##### -->
 <para>
@@ -30,7 +46,7 @@ startup notification and they show up on the correct screen and workspace.
 @flags: 
 @startup_notify: 
 @startup_timestamp: 
-@icon_name: 
+@startup_icon_name: 
 @error: 
 @Returns: 
 
