@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui git VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-12-18 11:34+0100\n"
+"POT-Creation-Date: 2009-12-18 15:10+0100\n"
 "PO-Revision-Date: 2009-08-30 20:14+0200\n"
 "Last-Translator: Evaggelos Balaskas <ebalaskas@ebalaskas.gr>\n"
 "Language-Team: Greek <nls@tux.hellug.gr>\n"
@@ -155,11 +155,6 @@ msgstr "Συντόμευση:"
 msgid "Could not grab the keyboard."
 msgstr "Δεν είναι δυνατή η δέσμευση του πληκτρολογίου."
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:324
-#, c-format
-msgid "<span size='large'><b>%s</b></span>"
-msgstr "<span size='large'><b>%s</b></span>"
-
 #: ../glade/libxfce4ui.xml.in.h:1
 msgid "Subtitle"
 msgstr "Υπότιτλος"
@@ -171,6 +166,9 @@ msgstr "Διάλογος με τίτλο"
 #: ../glade/libxfce4ui.xml.in.h:3
 msgid "Xfce 4 Widgets"
 msgstr "Xfce4 Widgets"
+
+#~ msgid "<span size='large'><b>%s</b></span>"
+#~ msgstr "<span size='large'><b>%s</b></span>"
 
 #~ msgid "File is not a valid .desktop file"
 #~ msgstr "Το αρχείο δεν είναι ένα έγκυρο αρχείο .desktop"

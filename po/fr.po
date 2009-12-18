@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-12-18 11:34+0100\n"
+"POT-Creation-Date: 2009-12-18 15:10+0100\n"
 "PO-Revision-Date: 2008-10-12 23:17+0100\n"
 "Last-Translator: Maximilian Schleiss <maximilian@xfce.org>\n"
 "Language-Team: French <i18n-xfce@xfce.org>\n"
@@ -143,11 +143,6 @@ msgstr ""
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:303
 msgid "Could not grab the keyboard."
-msgstr ""
-
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:324
-#, c-format
-msgid "<span size='large'><b>%s</b></span>"
 msgstr ""
 
 #: ../glade/libxfce4ui.xml.in.h:1

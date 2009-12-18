@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-12-18 11:34+0100\n"
+"POT-Creation-Date: 2009-12-18 15:10+0100\n"
 "PO-Revision-Date: 2009-07-13 10:00+0500\n"
 "Last-Translator: Muhammad Ali Makki <makki.ma@gmail.com>\n"
 "Language-Team: Urdu <makki.ma@gmail.com>\n"
@@ -160,11 +160,6 @@ msgstr "شارٹ کٹ:"
 msgid "Could not grab the keyboard."
 msgstr "کیبورڈ اٹھایا نہیں جاسکا."
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:324
-#, c-format
-msgid "<span size='large'><b>%s</b></span>"
-msgstr "<span size='large'><b>%s</b></span>"
-
 #: ../glade/libxfce4ui.xml.in.h:1
 msgid "Subtitle"
 msgstr "ذیلی عنوان"
@@ -176,6 +171,9 @@ msgstr "عنوان شدہ ڈائیلاگ"
 #: ../glade/libxfce4ui.xml.in.h:3
 msgid "Xfce 4 Widgets"
 msgstr "ایکسفس 4 وجٹس"
+
+#~ msgid "<span size='large'><b>%s</b></span>"
+#~ msgstr "<span size='large'><b>%s</b></span>"
 
 #~ msgid "File is not a valid .desktop file"
 #~ msgstr "فائل موزوں .desktop فائل نہیں ہے"

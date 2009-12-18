@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: trunk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-12-18 11:34+0100\n"
+"POT-Creation-Date: 2009-12-18 15:10+0100\n"
 "PO-Revision-Date: 2009-12-05 13:35+0600\n"
 "Last-Translator: Baurzhan Muftakhidinov <baurthefirst@gmail.com>\n"
 "Language-Team: Kazakh <kk_KZ@googlegroups.com>\n"
@@ -152,11 +152,6 @@ msgstr "Жарлық:"
 msgid "Could not grab the keyboard."
 msgstr "Пернетақтаны басқаруды алу мүмкін емес."
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:324
-#, c-format
-msgid "<span size='large'><b>%s</b></span>"
-msgstr "<span size='large'><b>%s</b></span>"
-
 #: ../glade/libxfce4ui.xml.in.h:1
 msgid "Subtitle"
 msgstr "Екіншілік атау"
@@ -168,6 +163,9 @@ msgstr "Атауы бар сұхбат терезесі"
 #: ../glade/libxfce4ui.xml.in.h:3
 msgid "Xfce 4 Widgets"
 msgstr "Xfce 4 виджеттері"
+
+#~ msgid "<span size='large'><b>%s</b></span>"
+#~ msgstr "<span size='large'><b>%s</b></span>"
 
 #~ msgid "File is not a valid .desktop file"
 #~ msgstr "Файл дұрыс .desktop файлы емес"

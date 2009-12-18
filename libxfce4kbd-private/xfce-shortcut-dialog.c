@@ -321,7 +321,7 @@ xfce_shortcut_dialog_key_pressed (XfceShortcutDialog *dialog,
   dialog->shortcut = xfce_shortcut_dialog_shortcut_name (dialog, event->keyval, event->state);
 
   shortcut = g_markup_escape_text (dialog->shortcut, -1);
-  text = g_strdup_printf (_("<span size='large'><b>%s</b></span>"), shortcut);
+  text = g_strdup_printf ("<span size='large'><b>%s</b></span>", shortcut);
 
   gtk_label_set_markup (GTK_LABEL (dialog->shortcut_label), text);
 

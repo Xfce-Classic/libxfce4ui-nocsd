@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-12-18 11:34+0100\n"
+"POT-Creation-Date: 2009-12-18 15:10+0100\n"
 "PO-Revision-Date: 2009-10-19 14:55+0100\n"
 "Last-Translator: Cristian Marchi <cri.penta@gmail.com>\n"
 "Language-Team: Italian Translation Team <xfce-it-translators@googlegroups."
@@ -152,11 +152,6 @@ msgstr "Scorciatoia:"
 msgid "Could not grab the keyboard."
 msgstr "Impossibile acquisire la tastiera."
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:324
-#, c-format
-msgid "<span size='large'><b>%s</b></span>"
-msgstr "<span size='large'><b>%s</b></span>"
-
 #: ../glade/libxfce4ui.xml.in.h:1
 msgid "Subtitle"
 msgstr "Sottotitolo"
@@ -168,6 +163,9 @@ msgstr "Finestra titolata"
 #: ../glade/libxfce4ui.xml.in.h:3
 msgid "Xfce 4 Widgets"
 msgstr "Xfce 4 Widget"
+
+#~ msgid "<span size='large'><b>%s</b></span>"
+#~ msgstr "<span size='large'><b>%s</b></span>"
 
 #~ msgid "File is not a valid .desktop file"
 #~ msgstr "IL file non è un file desktop valido"

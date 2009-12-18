@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce4-session\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-12-18 11:34+0100\n"
+"POT-Creation-Date: 2009-12-18 15:10+0100\n"
 "PO-Revision-Date: 2009-08-31 15:34+0100\n"
 "Last-Translator: astur <malditoastur@gmail.com>\n"
 "Language-Team: Asturian <alministradores@softastur.org>\n"
@@ -147,11 +147,6 @@ msgstr ""
 msgid "Could not grab the keyboard."
 msgstr ""
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:324
-#, fuzzy, c-format
-msgid "<span size='large'><b>%s</b></span>"
-msgstr "<span size='large'><b>Zarrar sesión de %s</b></span>"
-
 #: ../glade/libxfce4ui.xml.in.h:1
 msgid "Subtitle"
 msgstr ""
@@ -163,6 +158,10 @@ msgstr ""
 #: ../glade/libxfce4ui.xml.in.h:3
 msgid "Xfce 4 Widgets"
 msgstr ""
+
+#, fuzzy
+#~ msgid "<span size='large'><b>%s</b></span>"
+#~ msgstr "<span size='large'><b>Zarrar sesión de %s</b></span>"
 
 #~ msgid "No description given"
 #~ msgstr "Nun se dio nenguna descripción"

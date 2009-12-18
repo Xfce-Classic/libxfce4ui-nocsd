@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-12-18 11:34+0100\n"
+"POT-Creation-Date: 2009-12-18 15:10+0100\n"
 "PO-Revision-Date: 2009-10-19 07:54+0530\n"
 "Last-Translator: A S Alam <aalam@users.sf.net>\n"
 "Language-Team: Punjabi/Panjabi <punjabi-users@lists.sf.net>\n"
@@ -152,11 +152,6 @@ msgstr "ਸ਼ਾਰਟਕੱਟ:"
 msgid "Could not grab the keyboard."
 msgstr "ਕੀਬੋਰਡ ਲਿਆ ਨਹੀਂ ਜਾ ਸਕਿਆ।"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:324
-#, c-format
-msgid "<span size='large'><b>%s</b></span>"
-msgstr "<span size='large'><b>%s</b></span>"
-
 #: ../glade/libxfce4ui.xml.in.h:1
 msgid "Subtitle"
 msgstr "ਸਬ-ਟਾਈਟਲ"
@@ -168,3 +163,6 @@ msgstr "ਟਾਈਲ ਕੀਤਾ ਡਾਈਲਾਗ"
 #: ../glade/libxfce4ui.xml.in.h:3
 msgid "Xfce 4 Widgets"
 msgstr "Xfce 4 ਵਿਦਜੈੱਟ"
+
+#~ msgid "<span size='large'><b>%s</b></span>"
+#~ msgstr "<span size='large'><b>%s</b></span>"
