@@ -100,12 +100,10 @@ XFCE_SM_CLIENT
 XFCE_SM_CLIENT_CLASS
 XFCE_SM_CLIENT_GET_CLASS
 XFCE_TYPE_SM_CLIENT
-XFCE_TYPE_SM_CLIENT_PRIORITY
 XFCE_TYPE_SM_CLIENT_RESTART_STYLE
 XFCE_TYPE_SM_CLIENT_SHUTDOWN_HINT
 <SUBSECTION Private>
 xfce_sm_client_get_type
-xfce_sm_client_priority_get_type
 xfce_sm_client_restart_style_get_type
 xfce_sm_client_shutdown_hint_get_type
 </SECTION>
