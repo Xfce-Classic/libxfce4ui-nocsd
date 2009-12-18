@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: libxfce 4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-12-18 11:34+0100\n"
-"PO-Revision-Date: 2008-04-10 22:59-0300\n"
-"Last-Translator: Fábio Nogueira <deb-user-ba@ubuntu.com>\n"
+"PO-Revision-Date: 2009-12-18 08:58-0500\n"
+"Last-Translator: Og Maciel <ogmaciel@gnome.org>\n"
 "Language-Team: Brazilian Portuguese <ldp-br@bazar2.conectiva.com.br>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -38,39 +38,37 @@ msgstr "Pergunta"
 
 #: ../libxfce4ui/xfce-sm-client.c:1394
 msgid "Session management client ID"
-msgstr ""
+msgstr "ID do cliente de gerenciamento de sessão"
 
 #: ../libxfce4ui/xfce-sm-client.c:1394
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #: ../libxfce4ui/xfce-sm-client.c:1395
 msgid "Disable session management"
-msgstr ""
+msgstr "Desabilitar o gerenciamento de sessão"
 
 #: ../libxfce4ui/xfce-sm-client.c:1405
 msgid "Session management options"
-msgstr ""
+msgstr "Opções de gerenciamento de sessão"
 
 #: ../libxfce4ui/xfce-sm-client.c:1406
 msgid "Show session management options"
-msgstr ""
+msgstr "Mostra as opções de gerenciamento de sessão"
 
 #: ../libxfce4ui/xfce-sm-client.c:1582
 #, c-format
 msgid "Failed to connect to the session manager: %s"
-msgstr ""
+msgstr "Falhou ao conectar ao gerenciador de sessão: %s"
 
 #: ../libxfce4ui/xfce-sm-client.c:1589
 #, c-format
 msgid "Session manager did not return a valid client id"
-msgstr ""
+msgstr "O gerenciador de sessão não retornou um ID de cliente válido"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:52
-msgid ""
-"This shortcut is already being used for another window manager action. Which "
-"action do you want to use?"
-msgstr ""
+msgid "This shortcut is already being used for another window manager action. Which action do you want to use?"
+msgstr "Este atalho já está sendo usado para uma outra ação do gerenciador de janelas. Qual ação você deseja usar?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
@@ -78,87 +76,84 @@ msgstr ""
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 #, c-format
 msgid "Use '%s'"
-msgstr ""
+msgstr "Usar \"%s\""
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 msgid "Keep the other one"
-msgstr ""
+msgstr "Manter a outra"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:55
 #: ../libxfce4kbd-private/xfce-shortcuts.c:58
 #, c-format
-msgid ""
-"This shortcut is already being used for the command '%s'. Which action do "
-"you want to use?"
-msgstr ""
+msgid "This shortcut is already being used for the command '%s'. Which action do you want to use?"
+msgstr "Este atalho já está sendo usado para o comando \"%s\". Qual ação você deseja usar?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
 #: ../libxfce4kbd-private/xfce-shortcuts.c:59
 #, c-format
 msgid "Keep '%s'"
-msgstr ""
+msgstr "Manter \"%s\""
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:61
-msgid ""
-"This shortcut is already being used by a window manager action. Which action "
-"do you want to use?"
-msgstr ""
+msgid "This shortcut is already being used by a window manager action. Which action do you want to use?"
+msgstr "Este atalho já está sendo usado por uma ação do gerenciador de janelas. Qual ação você deseja usar?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 msgid "Keep the window manager action"
-msgstr ""
+msgstr "Manter a ação do gerenciador de janelas"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:95
 #, c-format
 msgid "Conflicting actions for %s"
-msgstr ""
+msgstr "Ações em conflito para %s"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:128
 msgid "This shortcut is already being used for something else."
-msgstr ""
+msgstr "Este atalho já está sendo usado para algo."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:207
 msgid "Window Manager Action Shortcut"
-msgstr ""
+msgstr "Atalho de ações do gerenciador de janelas"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:208
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:218
 msgid "Action:"
-msgstr ""
+msgstr "Ação:"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:212
 msgid "Command Shortcut"
-msgstr ""
+msgstr "Atalho do comando"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:213
 msgid "Command:"
-msgstr ""
+msgstr "Comando:"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:217
 msgid "Shortcut"
-msgstr ""
+msgstr "Atalho"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:258
 msgid "Shortcut:"
-msgstr ""
+msgstr "Atalho:"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:303
 msgid "Could not grab the keyboard."
-msgstr ""
+msgstr "Não foi possível capturar o teclado."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:324
 #, c-format
 msgid "<span size='large'><b>%s</b></span>"
-msgstr ""
+msgstr "<span size='large'><b>%s</b></span>"
 
 #: ../glade/libxfce4ui.xml.in.h:1
 msgid "Subtitle"
-msgstr ""
+msgstr "Subtítulo"
 
 #: ../glade/libxfce4ui.xml.in.h:2
 msgid "Titled Dialog"
-msgstr ""
+msgstr "Diálogo com título"
 
 #: ../glade/libxfce4ui.xml.in.h:3
 msgid "Xfce 4 Widgets"
-msgstr ""
+msgstr "Componentes do Xfce 4"
+
