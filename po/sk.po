@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-18 15:24+0200\n"
+"POT-Creation-Date: 2009-12-18 11:34+0100\n"
 "PO-Revision-Date: 2009-11-05 16:06+0100\n"
 "Last-Translator: Robert Hartl <hartl.robert@gmail.com>\n"
 "Language-Team: Slovak <sk-i18n@lists.linux.sk>\n"
@@ -16,51 +16,51 @@ msgstr ""
 "Content-Transfer-Encoding: 8-bit\n"
 
 #. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:70
+#: ../libxfce4ui/xfce-dialogs.c:71
 msgid "Information"
 msgstr "Informácia"
 
 #. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:106
+#: ../libxfce4ui/xfce-dialogs.c:107
 msgid "Warning"
 msgstr "Varovanie"
 
 #. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:143
+#: ../libxfce4ui/xfce-dialogs.c:144
 msgid "Error"
 msgstr "Chyba"
 
 #. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:196
+#: ../libxfce4ui/xfce-dialogs.c:198
 msgid "Question"
 msgstr "Otázka"
 
-#: ../libxfce4ui/xfce-sm-client.c:1393
+#: ../libxfce4ui/xfce-sm-client.c:1394
 msgid "Session management client ID"
 msgstr "Identifikátor klienta správy sedenia"
 
-#: ../libxfce4ui/xfce-sm-client.c:1393
+#: ../libxfce4ui/xfce-sm-client.c:1394
 msgid "ID"
 msgstr "ID"
 
-#: ../libxfce4ui/xfce-sm-client.c:1394
+#: ../libxfce4ui/xfce-sm-client.c:1395
 msgid "Disable session management"
 msgstr "Zakázať správu sedenia"
 
-#: ../libxfce4ui/xfce-sm-client.c:1404
+#: ../libxfce4ui/xfce-sm-client.c:1405
 msgid "Session management options"
 msgstr "Možnosti správy sedenia"
 
-#: ../libxfce4ui/xfce-sm-client.c:1405
+#: ../libxfce4ui/xfce-sm-client.c:1406
 msgid "Show session management options"
 msgstr "Zobraziť možnosti správy sedenia"
 
-#: ../libxfce4ui/xfce-sm-client.c:1581
+#: ../libxfce4ui/xfce-sm-client.c:1582
 #, c-format
 msgid "Failed to connect to the session manager: %s"
 msgstr "Nepodarilo sa pripojiť k správcovi sedenia: %s"
 
-#: ../libxfce4ui/xfce-sm-client.c:1588
+#: ../libxfce4ui/xfce-sm-client.c:1589
 #, c-format
 msgid "Session manager did not return a valid client id"
 msgstr "Správca sedenia nevrátil platný identifikátor klienta"

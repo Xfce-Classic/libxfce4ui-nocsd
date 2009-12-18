@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SVN\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-18 15:24+0200\n"
+"POT-Creation-Date: 2009-12-18 11:34+0100\n"
 "PO-Revision-Date: 2009-09-02 12:40+0200\n"
 "Last-Translator: Server Acim <serveracim@gmail.com>\n"
 "Language-Team: Turkish <turkce@pardus.org.tr>\n"
@@ -16,54 +16,54 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:70
+#: ../libxfce4ui/xfce-dialogs.c:71
 msgid "Information"
 msgstr "Bilgi"
 
 #. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:106
+#: ../libxfce4ui/xfce-dialogs.c:107
 msgid "Warning"
 msgstr "Uyarı"
 
 #. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:143
+#: ../libxfce4ui/xfce-dialogs.c:144
 msgid "Error"
 msgstr "Hata"
 
 #. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:196
+#: ../libxfce4ui/xfce-dialogs.c:198
 msgid "Question"
 msgstr "Soru"
 
-#: ../libxfce4ui/xfce-sm-client.c:1393
+#: ../libxfce4ui/xfce-sm-client.c:1394
 #, fuzzy
 msgid "Session management client ID"
 msgstr "Oturum yönetimi seçenekleri:"
 
-#: ../libxfce4ui/xfce-sm-client.c:1393
+#: ../libxfce4ui/xfce-sm-client.c:1394
 msgid "ID"
 msgstr "Kimlik"
 
-#: ../libxfce4ui/xfce-sm-client.c:1394
+#: ../libxfce4ui/xfce-sm-client.c:1395
 #, fuzzy
 msgid "Disable session management"
 msgstr "Oturum yönetimi kimliğini belirt"
 
-#: ../libxfce4ui/xfce-sm-client.c:1404
+#: ../libxfce4ui/xfce-sm-client.c:1405
 #, fuzzy
 msgid "Session management options"
 msgstr "Oturum yönetimi seçenekleri:"
 
-#: ../libxfce4ui/xfce-sm-client.c:1405
+#: ../libxfce4ui/xfce-sm-client.c:1406
 msgid "Show session management options"
 msgstr "Oturum yönetimi seçeneklerini göster"
 
-#: ../libxfce4ui/xfce-sm-client.c:1581
+#: ../libxfce4ui/xfce-sm-client.c:1582
 #, fuzzy, c-format
 msgid "Failed to connect to the session manager: %s"
 msgstr "Oturum yöneticine bağlantıyı devre dışı bırak"
 
-#: ../libxfce4ui/xfce-sm-client.c:1588
+#: ../libxfce4ui/xfce-sm-client.c:1589
 #, c-format
 msgid "Session manager did not return a valid client id"
 msgstr ""

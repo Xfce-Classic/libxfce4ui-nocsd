@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: trunk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-18 15:24+0200\n"
+"POT-Creation-Date: 2009-12-18 11:34+0100\n"
 "PO-Revision-Date: 2009-12-05 13:35+0600\n"
 "Last-Translator: Baurzhan Muftakhidinov <baurthefirst@gmail.com>\n"
 "Language-Team: Kazakh <kk_KZ@googlegroups.com>\n"
@@ -17,58 +17,62 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0\n"
 
 #. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:70
+#: ../libxfce4ui/xfce-dialogs.c:71
 msgid "Information"
 msgstr "Ақпарат"
 
 #. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:106
+#: ../libxfce4ui/xfce-dialogs.c:107
 msgid "Warning"
 msgstr "Ескерту"
 
 #. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:143
+#: ../libxfce4ui/xfce-dialogs.c:144
 msgid "Error"
 msgstr "Қате"
 
 #. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:196
+#: ../libxfce4ui/xfce-dialogs.c:198
 msgid "Question"
 msgstr "Сұрақ"
 
-#: ../libxfce4ui/xfce-sm-client.c:1393
+#: ../libxfce4ui/xfce-sm-client.c:1394
 msgid "Session management client ID"
 msgstr "Сессияны басқару клиент ID-і"
 
-#: ../libxfce4ui/xfce-sm-client.c:1393
+#: ../libxfce4ui/xfce-sm-client.c:1394
 msgid "ID"
 msgstr "ID"
 
-#: ../libxfce4ui/xfce-sm-client.c:1394
+#: ../libxfce4ui/xfce-sm-client.c:1395
 msgid "Disable session management"
 msgstr "Сессияны басқаруды сөндіру"
 
-#: ../libxfce4ui/xfce-sm-client.c:1404
+#: ../libxfce4ui/xfce-sm-client.c:1405
 msgid "Session management options"
 msgstr "Сессияны басқару опциялары"
 
-#: ../libxfce4ui/xfce-sm-client.c:1405
+#: ../libxfce4ui/xfce-sm-client.c:1406
 msgid "Show session management options"
 msgstr "Сессияны басқару опцияларын көрсету"
 
-#: ../libxfce4ui/xfce-sm-client.c:1581
+#: ../libxfce4ui/xfce-sm-client.c:1582
 #, c-format
 msgid "Failed to connect to the session manager: %s"
 msgstr "Сессияларды басқарушыға байланысты орнату сәтсіз аяқталды: %s"
 
-#: ../libxfce4ui/xfce-sm-client.c:1588
+#: ../libxfce4ui/xfce-sm-client.c:1589
 #, c-format
 msgid "Session manager did not return a valid client id"
 msgstr "Сессияны басқарушысы дұрыс клиент ID-ін қайтармады"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:52
-msgid "This shortcut is already being used for another window manager action. Which action do you want to use?"
-msgstr "Жарлық терезелер басқарушысының басқа әрекетіне орнатылып тұр. Қай әрекетті қолдануды қалайсыз?"
+msgid ""
+"This shortcut is already being used for another window manager action. Which "
+"action do you want to use?"
+msgstr ""
+"Жарлық терезелер басқарушысының басқа әрекетіне орнатылып тұр. Қай әрекетті "
+"қолдануды қалайсыз?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
@@ -85,8 +89,12 @@ msgstr "басқасын қалдыру"
 #: ../libxfce4kbd-private/xfce-shortcuts.c:55
 #: ../libxfce4kbd-private/xfce-shortcuts.c:58
 #, c-format
-msgid "This shortcut is already being used for the command '%s'. Which action do you want to use?"
-msgstr "Жарлық қазір '%s' командасы үшін қолданылуда. Қай әрекетті қолдануды қалайсыз?"
+msgid ""
+"This shortcut is already being used for the command '%s'. Which action do "
+"you want to use?"
+msgstr ""
+"Жарлық қазір '%s' командасы үшін қолданылуда. Қай әрекетті қолдануды "
+"қалайсыз?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
 #: ../libxfce4kbd-private/xfce-shortcuts.c:59
@@ -95,8 +103,12 @@ msgid "Keep '%s'"
 msgstr "'%s' қалдыру"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:61
-msgid "This shortcut is already being used by a window manager action. Which action do you want to use?"
-msgstr "Жарлық терезелер басқарушысының әрекетімен қолданылуда. Қай әрекетті қолдануды қалайсыз?"
+msgid ""
+"This shortcut is already being used by a window manager action. Which action "
+"do you want to use?"
+msgstr ""
+"Жарлық терезелер басқарушысының әрекетімен қолданылуда. Қай әрекетті "
+"қолдануды қалайсыз?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 msgid "Keep the window manager action"
@@ -159,21 +171,28 @@ msgstr "Xfce 4 виджеттері"
 
 #~ msgid "File is not a valid .desktop file"
 #~ msgstr "Файл дұрыс .desktop файлы емес"
+
 #~ msgid "Unrecognized desktop file Version '%s'"
 #~ msgstr "Анықталмаған desktop файлдың Нұсқасы '%s'"
+
 #~ msgid "Starting %s"
 #~ msgstr "Жіберілуде %s"
+
 #~ msgid "Application does not accept documents on command line"
 #~ msgstr "Қолданба командалық жолда құжаттарды қабылдамайды"
+
 #~ msgid "Unrecognized launch option: %d"
 #~ msgstr "Анықталмаған жөнелту опциясы: %d"
+
 #~ msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
 #~ msgstr ""
 #~ "Құжаттардың URI-ларын 'Type=Link' desktop элементіне беру мүмкін емес"
+
 #~ msgid "Not a launchable item"
 #~ msgstr "Жөнелтілетін элемент емес"
+
 #~ msgid "Specify file containing saved configuration"
 #~ msgstr "Сақталған баптаулары бар файлды көрсетіңіз"
+
 #~ msgid "FILE"
 #~ msgstr "ФАЙЛ"
-

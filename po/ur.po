@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-18 15:24+0200\n"
+"POT-Creation-Date: 2009-12-18 11:34+0100\n"
 "PO-Revision-Date: 2009-07-13 10:00+0500\n"
 "Last-Translator: Muhammad Ali Makki <makki.ma@gmail.com>\n"
 "Language-Team: Urdu <makki.ma@gmail.com>\n"
@@ -22,54 +22,54 @@ msgstr ""
 "X-Poedit-SourceCharset: utf-8\n"
 
 #. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:70
+#: ../libxfce4ui/xfce-dialogs.c:71
 msgid "Information"
 msgstr "معلومات"
 
 #. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:106
+#: ../libxfce4ui/xfce-dialogs.c:107
 msgid "Warning"
 msgstr "انتباہ"
 
 #. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:143
+#: ../libxfce4ui/xfce-dialogs.c:144
 msgid "Error"
 msgstr "غلطی"
 
 #. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:196
+#: ../libxfce4ui/xfce-dialogs.c:198
 msgid "Question"
 msgstr "سوال"
 
-#: ../libxfce4ui/xfce-sm-client.c:1393
+#: ../libxfce4ui/xfce-sm-client.c:1394
 #, fuzzy
 msgid "Session management client ID"
 msgstr "نشست منیجر اختیارات:"
 
-#: ../libxfce4ui/xfce-sm-client.c:1393
+#: ../libxfce4ui/xfce-sm-client.c:1394
 msgid "ID"
 msgstr "آئی ڈی"
 
-#: ../libxfce4ui/xfce-sm-client.c:1394
+#: ../libxfce4ui/xfce-sm-client.c:1395
 #, fuzzy
 msgid "Disable session management"
 msgstr "نشست منیجر آئی ڈی متعین کریں"
 
-#: ../libxfce4ui/xfce-sm-client.c:1404
+#: ../libxfce4ui/xfce-sm-client.c:1405
 #, fuzzy
 msgid "Session management options"
 msgstr "نشست منیجر اختیارات:"
 
-#: ../libxfce4ui/xfce-sm-client.c:1405
+#: ../libxfce4ui/xfce-sm-client.c:1406
 msgid "Show session management options"
 msgstr "نشست منیجر کے اختیارات ظاہر کریں"
 
-#: ../libxfce4ui/xfce-sm-client.c:1581
+#: ../libxfce4ui/xfce-sm-client.c:1582
 #, fuzzy, c-format
 msgid "Failed to connect to the session manager: %s"
 msgstr "نشست منیجر سے اتصال معطل کریں"
 
-#: ../libxfce4ui/xfce-sm-client.c:1588
+#: ../libxfce4ui/xfce-sm-client.c:1589
 #, c-format
 msgid "Session manager did not return a valid client id"
 msgstr ""

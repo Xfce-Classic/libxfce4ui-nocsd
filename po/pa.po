@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-18 15:24+0200\n"
+"POT-Creation-Date: 2009-12-18 11:34+0100\n"
 "PO-Revision-Date: 2009-10-19 07:54+0530\n"
 "Last-Translator: A S Alam <aalam@users.sf.net>\n"
 "Language-Team: Punjabi/Panjabi <punjabi-users@lists.sf.net>\n"
@@ -17,51 +17,51 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:70
+#: ../libxfce4ui/xfce-dialogs.c:71
 msgid "Information"
 msgstr "ਜਾਣਕਾਰੀ"
 
 #. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:106
+#: ../libxfce4ui/xfce-dialogs.c:107
 msgid "Warning"
 msgstr "ਚੇਤਾਵਨੀ"
 
 #. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:143
+#: ../libxfce4ui/xfce-dialogs.c:144
 msgid "Error"
 msgstr "ਗਲਤੀ"
 
 #. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:196
+#: ../libxfce4ui/xfce-dialogs.c:198
 msgid "Question"
 msgstr "ਸਵਾਲ"
 
-#: ../libxfce4ui/xfce-sm-client.c:1393
+#: ../libxfce4ui/xfce-sm-client.c:1394
 msgid "Session management client ID"
 msgstr "ਸ਼ੈਸ਼ਨ ਪਰਬੰਧ ਕਲਾਇਟ ID"
 
-#: ../libxfce4ui/xfce-sm-client.c:1393
+#: ../libxfce4ui/xfce-sm-client.c:1394
 msgid "ID"
 msgstr "ID"
 
-#: ../libxfce4ui/xfce-sm-client.c:1394
+#: ../libxfce4ui/xfce-sm-client.c:1395
 msgid "Disable session management"
 msgstr "ਸ਼ੈਸ਼ਨ ਪਰਬੰਧ ਆਯੋਗ"
 
-#: ../libxfce4ui/xfce-sm-client.c:1404
+#: ../libxfce4ui/xfce-sm-client.c:1405
 msgid "Session management options"
 msgstr "ਸ਼ੈਸ਼ਨ ਪਰਬੰਧ ਚੋਣਾਂ"
 
-#: ../libxfce4ui/xfce-sm-client.c:1405
+#: ../libxfce4ui/xfce-sm-client.c:1406
 msgid "Show session management options"
 msgstr "ਸ਼ੈਸ਼ਨ ਪਰਬੰਧ ਚੋਣਾਂ ਵੇਖੋ"
 
-#: ../libxfce4ui/xfce-sm-client.c:1581
+#: ../libxfce4ui/xfce-sm-client.c:1582
 #, c-format
 msgid "Failed to connect to the session manager: %s"
 msgstr "ਸ਼ੈਸ਼ਨ ਮੈਨੇਜਰ ਨਾਲ ਕੁਨੈਕਟ ਹੋਣ ਲਈ ਫੇਲ੍ਹ: %s"
 
-#: ../libxfce4ui/xfce-sm-client.c:1588
+#: ../libxfce4ui/xfce-sm-client.c:1589
 #, c-format
 msgid "Session manager did not return a valid client id"
 msgstr "ਸ਼ੈਸ਼ਨ ਮੈਨੇਜਰ ਨੇ ਢੁੱਕਵਾਂ ਕਲਾਇਟ id ਨਹੀਂ ਦਿੱਤਾ"
@@ -71,8 +71,7 @@ msgid ""
 "This shortcut is already being used for another window manager action. Which "
 "action do you want to use?"
 msgstr ""
-"ਇਹ ਸ਼ਾਰਟਕੱਟ ਵਿੰਡੋ ਮੈਨੇਜਰ ਐਕਸ਼ਨ ਵਿੱਚ ਪਹਿਲਾਂ ਹੀ ਵਰਤਿਆ ਜਾ ਰਿਹਾ ਹੈ। ਕਿਹੜੇ ਐਕਸ਼ਨ "
-"ਲਈ ਤੁਸੀਂ ਵਰਤਣਾ "
+"ਇਹ ਸ਼ਾਰਟਕੱਟ ਵਿੰਡੋ ਮੈਨੇਜਰ ਐਕਸ਼ਨ ਵਿੱਚ ਪਹਿਲਾਂ ਹੀ ਵਰਤਿਆ ਜਾ ਰਿਹਾ ਹੈ। ਕਿਹੜੇ ਐਕਸ਼ਨ ਲਈ ਤੁਸੀਂ ਵਰਤਣਾ "
 "ਚਾਹੁੰਦੇ ਹੋ?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
@@ -94,9 +93,8 @@ msgid ""
 "This shortcut is already being used for the command '%s'. Which action do "
 "you want to use?"
 msgstr ""
-"ਇਹ ਸ਼ਾਰਟਕੱਟ ਪਹਿਲਾਂ ਹੀ ਕਮਾਂਡ '%s' ਲਈ ਵਰਤਿਆ ਜਾ ਰਿਹਾ ਹੈ। ਕਿਹੜੇ ਐਕਸ਼ਨ ਲਈ ਤੁਸੀਂ "
-"ਵਰਤਣਾ "
-"ਚਾਹੁੰਦੇ ਹੋ?"
+"ਇਹ ਸ਼ਾਰਟਕੱਟ ਪਹਿਲਾਂ ਹੀ ਕਮਾਂਡ '%s' ਲਈ ਵਰਤਿਆ ਜਾ ਰਿਹਾ ਹੈ। ਕਿਹੜੇ ਐਕਸ਼ਨ ਲਈ ਤੁਸੀਂ ਵਰਤਣਾ ਚਾਹੁੰਦੇ "
+"ਹੋ?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
 #: ../libxfce4kbd-private/xfce-shortcuts.c:59
@@ -109,8 +107,7 @@ msgid ""
 "This shortcut is already being used by a window manager action. Which action "
 "do you want to use?"
 msgstr ""
-"ਇਹ ਸ਼ਾਰਟਕੱਟ ਵਿੰਡੋ ਮੈਨੇਜਰ ਐਕਸ਼ਨ ਵਿੱਚ ਪਹਿਲਾਂ ਹੀ ਵਰਤਿਆ ਜਾ ਰਿਹਾ ਹੈ। ਕਿਹੜੇ ਐਕਸ਼ਨ "
-"ਲਈ ਤੁਸੀਂ ਵਰਤਣਾ "
+"ਇਹ ਸ਼ਾਰਟਕੱਟ ਵਿੰਡੋ ਮੈਨੇਜਰ ਐਕਸ਼ਨ ਵਿੱਚ ਪਹਿਲਾਂ ਹੀ ਵਰਤਿਆ ਜਾ ਰਿਹਾ ਹੈ। ਕਿਹੜੇ ਐਕਸ਼ਨ ਲਈ ਤੁਸੀਂ ਵਰਤਣਾ "
 "ਚਾਹੁੰਦੇ ਹੋ?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
@@ -171,4 +168,3 @@ msgstr "ਟਾਈਲ ਕੀਤਾ ਡਾਈਲਾਗ"
 #: ../glade/libxfce4ui.xml.in.h:3
 msgid "Xfce 4 Widgets"
 msgstr "Xfce 4 ਵਿਦਜੈੱਟ"
-
