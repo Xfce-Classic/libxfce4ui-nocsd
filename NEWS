@@ -1,3 +1,15 @@
+4.7.1
+=====
+- New function xfce_spawn_on_screen_with_child_watch().
+- Don't generate enums for XfceSMClientPriority.
+- Build ChangeLog during make dist.
+- Add visibility/alias handing code.
+- Rename configure.in.in to configure.ac.in.
+- Some other small fixes.
+- Translation updates (es, pt_BR, sv, pt, kk, ca, gl, sk, cs, lv, eu,
+  zh_CN, ja).
+
+
 4.7.0
 =====
 Initial version of the library. The intention of this new library is a
