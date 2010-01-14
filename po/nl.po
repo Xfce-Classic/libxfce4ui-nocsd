@@ -2,7 +2,7 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui\n"
@@ -20,12 +20,12 @@ msgstr ""
 #. run dialog
 #: ../libxfce4ui/xfce-dialogs.c:71
 msgid "Information"
-msgstr "Information"
+msgstr "Informatie"
 
 #. run dialog
 #: ../libxfce4ui/xfce-dialogs.c:107
 msgid "Warning"
-msgstr "Warning"
+msgstr "Waarschuwing"
 
 #. run dialog
 #: ../libxfce4ui/xfce-dialogs.c:144
@@ -35,43 +35,41 @@ msgstr "Error"
 #. run dialog
 #: ../libxfce4ui/xfce-dialogs.c:198
 msgid "Question"
-msgstr "Question"
+msgstr "Vraag"
 
 #: ../libxfce4ui/xfce-sm-client.c:1394
 msgid "Session management client ID"
-msgstr ""
+msgstr "Session management client-ID"
 
 #: ../libxfce4ui/xfce-sm-client.c:1394
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #: ../libxfce4ui/xfce-sm-client.c:1395
 msgid "Disable session management"
-msgstr ""
+msgstr "Schakel sessie management uit"
 
 #: ../libxfce4ui/xfce-sm-client.c:1405
 msgid "Session management options"
-msgstr ""
+msgstr "Sessie management opties"
 
 #: ../libxfce4ui/xfce-sm-client.c:1406
 msgid "Show session management options"
-msgstr ""
+msgstr "Toon sessie beheer opties"
 
 #: ../libxfce4ui/xfce-sm-client.c:1582
 #, c-format
 msgid "Failed to connect to the session manager: %s"
-msgstr ""
+msgstr "Mislukt om verbinding te maken met de sessie manager:%s"
 
 #: ../libxfce4ui/xfce-sm-client.c:1589
 #, c-format
 msgid "Session manager did not return a valid client id"
-msgstr ""
+msgstr "Session Manager kwam niet van een geldige client id terug "
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:52
-msgid ""
-"This shortcut is already being used for another window manager action. Which "
-"action do you want to use?"
-msgstr ""
+msgid "This shortcut is already being used for another window manager action. Which action do you want to use?"
+msgstr "Deze snelkoppeling wordt al gebruikt voor een andere window manager actie. Welke actie wilt u gebruiken?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
@@ -79,82 +77,79 @@ msgstr ""
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 #, c-format
 msgid "Use '%s'"
-msgstr ""
+msgstr "Gebruik '%s'"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 msgid "Keep the other one"
-msgstr ""
+msgstr "Houd de andere"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:55
 #: ../libxfce4kbd-private/xfce-shortcuts.c:58
 #, c-format
-msgid ""
-"This shortcut is already being used for the command '%s'. Which action do "
-"you want to use?"
-msgstr ""
+msgid "This shortcut is already being used for the command '%s'. Which action do you want to use?"
+msgstr "Deze snelkoppeling wordt al gebruikt voor het commando '%s'. Welke actie wilt u gebruiken?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
 #: ../libxfce4kbd-private/xfce-shortcuts.c:59
 #, c-format
 msgid "Keep '%s'"
-msgstr ""
+msgstr "Houd '%s'"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:61
-msgid ""
-"This shortcut is already being used by a window manager action. Which action "
-"do you want to use?"
-msgstr ""
+msgid "This shortcut is already being used by a window manager action. Which action do you want to use?"
+msgstr "Deze snelkoppeling wordt reeds gebruikt door een window manager actie. Welke actie wilt u gebruiken?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 msgid "Keep the window manager action"
-msgstr ""
+msgstr "Houd de window manager actie"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:95
 #, c-format
 msgid "Conflicting actions for %s"
-msgstr ""
+msgstr "Tegenstrijdige acties voor %s"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:128
 msgid "This shortcut is already being used for something else."
-msgstr ""
+msgstr "Deze snelkoppeling wordt al gebruikt voor iets anders."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:207
 msgid "Window Manager Action Shortcut"
-msgstr ""
+msgstr "Window Manager Actie Snelkoppeling"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:208
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:218
 msgid "Action:"
-msgstr ""
+msgstr "Actie:"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:212
 msgid "Command Shortcut"
-msgstr ""
+msgstr "Commando Snelkoppeling"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:213
 msgid "Command:"
-msgstr ""
+msgstr "Commando:"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:217
 msgid "Shortcut"
-msgstr ""
+msgstr "Snelkoppeling"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:258
 msgid "Shortcut:"
-msgstr ""
+msgstr "Snelkoppeling:"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:303
+#, fuzzy
 msgid "Could not grab the keyboard."
-msgstr ""
+msgstr "Kan het toetsenbord niet vinden"
 
 #: ../glade/libxfce4ui.xml.in.h:1
 msgid "Subtitle"
-msgstr ""
+msgstr "Ondertitel"
 
 #: ../glade/libxfce4ui.xml.in.h:2
 msgid "Titled Dialog"
-msgstr ""
+msgstr "Getitelde Dialoog"
 
 #: ../glade/libxfce4ui.xml.in.h:3
 msgid "Xfce 4 Widgets"
-msgstr ""
+msgstr "Xfce 4 Widgets"
