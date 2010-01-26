@@ -1,14 +1,14 @@
 # Finnish translations for libxfce4ui package.
 # Copyright (C) 2008 The Xfce Development Team.
 # This file is distributed under the same license as the libxfce4ui package.
-# Jari Rahkonen <jari.rahkonen@pp1.inet.fi>, 2008.
+# Jari Rahkonen <jari.rahkonen@pp1.inet.fi>, 2008-2010.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-12-18 15:10+0100\n"
-"PO-Revision-Date: 2008-10-08 16:51+0300\n"
+"POT-Creation-Date: 2010-01-26 18:03+0100\n"
+"PO-Revision-Date: 2010-01-26 19:37+0200\n"
 "Last-Translator: Jari Rahkonen <jari.rahkonen@pp1.inet.fi>\n"
 "Language-Team: Finnish\n"
 "MIME-Version: 1.0\n"
@@ -38,39 +38,41 @@ msgstr "Kysymys"
 
 #: ../libxfce4ui/xfce-sm-client.c:1394
 msgid "Session management client ID"
-msgstr ""
+msgstr "Istunnonhallinta-asiakkaan tunniste"
 
 #: ../libxfce4ui/xfce-sm-client.c:1394
 msgid "ID"
-msgstr ""
+msgstr "Tunniste"
 
 #: ../libxfce4ui/xfce-sm-client.c:1395
 msgid "Disable session management"
-msgstr ""
+msgstr "Älä käytä istunnonhallintaa"
 
 #: ../libxfce4ui/xfce-sm-client.c:1405
 msgid "Session management options"
-msgstr ""
+msgstr "Istunnonhallinnan asetukset"
 
 #: ../libxfce4ui/xfce-sm-client.c:1406
 msgid "Show session management options"
-msgstr ""
+msgstr "Näytä istunnonhallinnan asetukset"
 
 #: ../libxfce4ui/xfce-sm-client.c:1582
 #, c-format
 msgid "Failed to connect to the session manager: %s"
-msgstr ""
+msgstr "Istunnonhallintaan yhdistäminen epäonnistui: %s"
 
 #: ../libxfce4ui/xfce-sm-client.c:1589
 #, c-format
 msgid "Session manager did not return a valid client id"
-msgstr ""
+msgstr "Istunnonhallinta ei palauttanut kelpaavaa asiakastunnistetta"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:52
 msgid ""
 "This shortcut is already being used for another window manager action. Which "
 "action do you want to use?"
 msgstr ""
+"Pikanäppäin on jo liitetty toiseen ikkunamanagerin toimintoon. Kumpaa "
+"käytetään?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
@@ -78,11 +80,11 @@ msgstr ""
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 #, c-format
 msgid "Use '%s'"
-msgstr ""
+msgstr "Valitse \"%s\""
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 msgid "Keep the other one"
-msgstr ""
+msgstr "Säilytä toinen"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:55
 #: ../libxfce4kbd-private/xfce-shortcuts.c:58
@@ -91,69 +93,71 @@ msgid ""
 "This shortcut is already being used for the command '%s'. Which action do "
 "you want to use?"
 msgstr ""
+"Pikanäppäin on jo liitetty komentoon \"%s\". Kumpaa toimintoa käytetään?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
 #: ../libxfce4kbd-private/xfce-shortcuts.c:59
 #, c-format
 msgid "Keep '%s'"
-msgstr ""
+msgstr "Säilytä \"%s\""
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:61
 msgid ""
 "This shortcut is already being used by a window manager action. Which action "
 "do you want to use?"
 msgstr ""
+"Pikanäppäin on jo liitetty ikkunamanagerin toimintoon. Kumpaa käytetään?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 msgid "Keep the window manager action"
-msgstr ""
+msgstr "Säilytä ikkunamanagerin toiminto"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:95
 #, c-format
 msgid "Conflicting actions for %s"
-msgstr ""
+msgstr "Ristiriita pikanäppäimellä %s"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:128
 msgid "This shortcut is already being used for something else."
-msgstr ""
+msgstr "Pikanäppäin on jo liitetty toiseen toimintoon."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:207
 msgid "Window Manager Action Shortcut"
-msgstr ""
+msgstr "Ikkunamanagerin pikanäppäin"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:208
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:218
 msgid "Action:"
-msgstr ""
+msgstr "Toiminto:"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:212
 msgid "Command Shortcut"
-msgstr ""
+msgstr "Komennon pikanäppäin"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:213
 msgid "Command:"
-msgstr ""
+msgstr "Komento:"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:217
 msgid "Shortcut"
-msgstr ""
+msgstr "Pikanäppäin"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:258
 msgid "Shortcut:"
-msgstr ""
+msgstr "Pikanäppäin:"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:303
 msgid "Could not grab the keyboard."
-msgstr ""
+msgstr "Näppäimistön kaappaus epäonnistui."
 
 #: ../glade/libxfce4ui.xml.in.h:1
 msgid "Subtitle"
-msgstr ""
+msgstr "Alaotsake"
 
 #: ../glade/libxfce4ui.xml.in.h:2
 msgid "Titled Dialog"
-msgstr ""
+msgstr "Otsakkeellinen dialogi"
 
 #: ../glade/libxfce4ui.xml.in.h:3
 msgid "Xfce 4 Widgets"
-msgstr ""
+msgstr "Xfce 4:n elementit"
