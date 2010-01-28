@@ -116,8 +116,9 @@ xfce_gtk_frame_box_new (const gchar  *label,
   if (G_LIKELY (label != NULL))
     {
       /* create bold label */
-      markup_label = g_strdup_printf ("<b>%s</b>", label);
+      markup_label = g_markup_printf_escaped ("<b>%s</b>", label);
       frame_label = gtk_label_new (markup_label);
+      gtk_label_set_use_markup (GTK_LABEL (frame_label), TRUE);
       g_free (markup_label);
       gtk_misc_set_alignment (GTK_MISC (frame_label), 0.0, 0.5);
       gtk_frame_set_label_widget (GTK_FRAME (frame), frame_label);
