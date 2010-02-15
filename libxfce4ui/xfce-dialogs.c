@@ -62,17 +62,14 @@ xfce_dialog_show_info (GtkWindow   *parent,
 
   g_return_if_fail (parent == NULL || GTK_IS_WINDOW (parent));
 
-  /* create primary text */
   va_start (args, primary_format);
   primary_text = g_strdup_vprintf (primary_format, args);
   va_end (args);
 
-  /* run dialog */
   xfce_message_dialog (parent, _("Information"), GTK_STOCK_DIALOG_INFO,
                        primary_text, secondary_text,
                        GTK_STOCK_CLOSE, GTK_RESPONSE_CLOSE, NULL);
 
-  /* cleanup */
   g_free (primary_text);
 }
 
@@ -98,17 +95,14 @@ xfce_dialog_show_warning (GtkWindow   *parent,
 
   g_return_if_fail (parent == NULL || GTK_IS_WINDOW (parent));
 
-  /* create primary text */
   va_start (args, primary_format);
   primary_text = g_strdup_vprintf (primary_format, args);
   va_end (args);
 
-  /* run dialog */
   xfce_message_dialog (parent, _("Warning"), GTK_STOCK_DIALOG_WARNING,
                        primary_text, secondary_text,
                        GTK_STOCK_CLOSE, GTK_RESPONSE_CLOSE, NULL);
 
-  /* cleanup */
   g_free (primary_text);
 }
 
@@ -135,17 +129,14 @@ xfce_dialog_show_error (GtkWindow    *parent,
 
   g_return_if_fail (parent == NULL || GTK_IS_WINDOW (parent));
 
-  /* create primary text */
   va_start (args, primary_format);
   primary_text = g_strdup_vprintf (primary_format, args);
   va_end (args);
 
-  /* run dialog */
   xfce_message_dialog (parent, _("Error"), GTK_STOCK_DIALOG_ERROR,
                        primary_text, error ? error->message : NULL,
                        GTK_STOCK_CLOSE, GTK_RESPONSE_CLOSE, NULL);
 
-  /* cleanup */
   g_free (primary_text);
 }
 
@@ -183,7 +174,6 @@ xfce_dialog_confirm (GtkWindow   *parent,
   g_return_val_if_fail (stock_id != NULL || confirm_label != NULL, FALSE);
   g_return_val_if_fail (parent == NULL || GTK_IS_WINDOW (parent), FALSE);
 
-  /* create primary text */
   va_start (args, primary_format);
   primary_text = g_strdup_vprintf (primary_format, args);
   va_end (args);
@@ -194,7 +184,6 @@ xfce_dialog_confirm (GtkWindow   *parent,
   else
     no_stock_id = GTK_STOCK_CANCEL;
 
-  /* run dialog */
   response_id = xfce_message_dialog (parent, _("Question"),
                                      GTK_STOCK_DIALOG_QUESTION,
                                      primary_text, secondary_text,
@@ -202,7 +191,6 @@ xfce_dialog_confirm (GtkWindow   *parent,
                                      XFCE_BUTTON_TYPE_MIXED, stock_id,
                                      confirm_label, GTK_RESPONSE_YES, NULL);
 
-  /* cleanup */
   g_free (primary_text);
 
   return (response_id == GTK_RESPONSE_YES);
@@ -247,7 +235,6 @@ xfce_message_dialog_new_valist (GtkWindow   *parent,
   g_return_val_if_fail (primary_text != NULL || secondary_text != NULL, NULL);
   g_return_val_if_fail (parent == NULL || GTK_IS_WINDOW (parent), NULL);
 
-  /* create the dialog */
   if (G_LIKELY (primary_text != NULL))
     {
       /* create dialog with large bold text */
@@ -257,7 +244,6 @@ xfce_message_dialog_new_valist (GtkWindow   *parent,
                                                    "<span weight='bold' size='large'>%s</span>",
                                                    primary_text);
 
-      /* set secondary text */
       if (secondary_text != NULL)
         gtk_message_dialog_format_secondary_text (GTK_MESSAGE_DIALOG (dialog), "%s", secondary_text);
     }
@@ -270,7 +256,6 @@ xfce_message_dialog_new_valist (GtkWindow   *parent,
                                        "%s", secondary_text);
     }
 
-  /* set title */
   if (title != NULL)
     gtk_window_set_title (GTK_WINDOW (dialog), title);
 
@@ -318,7 +303,6 @@ xfce_message_dialog_new_valist (GtkWindow   *parent,
           else
             scaled = NULL;
 
-          /* create image */
           image = gtk_image_new_from_pixbuf (scaled ? scaled : pixbuf);
 
           /* release scaled image */
@@ -438,7 +422,6 @@ xfce_message_dialog_new (GtkWindow   *parent,
 
   g_return_val_if_fail (parent == NULL || GTK_IS_WINDOW (parent), NULL);
 
-  /* create dialog */
   va_start (args, first_button_text);
   dialog = xfce_message_dialog_new_valist (parent, title, stock_id, primary_text,
                                            secondary_text, first_button_text, args);
@@ -481,19 +464,13 @@ xfce_message_dialog (GtkWindow   *parent,
 
   g_return_val_if_fail (parent == NULL || GTK_IS_WINDOW (parent), 0);
 
-  /* create dialog */
   va_start (args, first_button_text);
   dialog = xfce_message_dialog_new_valist (parent, title, stock_id, primary_text,
                                            secondary_text, first_button_text, args);
   va_end (args);
 
-  /* run the dialog */
   response_id = gtk_dialog_run (GTK_DIALOG (dialog));
 
-  /* hide */
-  gtk_widget_hide (dialog);
-
-  /* destroy */
   gtk_widget_destroy (dialog);
 
   return response_id;

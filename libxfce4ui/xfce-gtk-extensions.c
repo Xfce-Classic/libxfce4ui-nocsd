@@ -61,7 +61,6 @@ xfce_gtk_button_new_mixed (const gchar *stock_id,
 
   if (label != NULL)
     {
-      /* create button */
       button = gtk_button_new_with_mnemonic (label);
 
       if (stock_id != NULL)
@@ -108,7 +107,6 @@ xfce_gtk_frame_box_new (const gchar  *label,
 
   g_return_val_if_fail (container_return != NULL, NULL);
 
-  /* create frame */
   frame = gtk_frame_new (NULL);
   gtk_frame_set_shadow_type (GTK_FRAME (frame), GTK_SHADOW_NONE);
   gtk_frame_set_label_align (GTK_FRAME (frame), 0.0, 1.0);
@@ -125,13 +123,11 @@ xfce_gtk_frame_box_new (const gchar  *label,
       gtk_widget_show (frame_label);
     }
 
-  /* create the container */
   container = gtk_alignment_new (0.0, 0.0, 1.0, 1.0);
   gtk_alignment_set_padding (GTK_ALIGNMENT (container), PADDING, PADDING, PADDING * 3, PADDING);
   gtk_container_add (GTK_CONTAINER (frame), container);
   gtk_widget_show (container);
 
-  /* return container */
   if (G_LIKELY (container_return != NULL))
     *container_return = container;
 
@@ -157,10 +153,7 @@ xfce_gtk_frame_box_new_with_content (const gchar *label,
   GtkWidget *frame;
   GtkWidget *container;
 
-  /* create frame */
   frame = xfce_gtk_frame_box_new (label, &container);
-
-  /* add content */
   gtk_container_add (GTK_CONTAINER (container), content);
 
   return frame;
@@ -191,7 +184,6 @@ xfce_gtk_window_center_on_active_screen (GtkWindow *window)
   /* get the screen with the pointer */
   screen = xfce_gdk_screen_get_active (NULL);
 
-  /* set the window screen */
   gtk_window_set_screen (window, screen);
 
   /* gtk+ handles the centering of the window properly after resize */

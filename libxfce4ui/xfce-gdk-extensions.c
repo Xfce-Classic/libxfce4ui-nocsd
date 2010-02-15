@@ -84,15 +84,12 @@ xfce_gdk_screen_get_active (gint *monitor_return)
         }
     }
 
-  /* fallback to the default screen */
+  /* nothing found, fallback to default screen */
   screen = gdk_screen_get_default ();
-
-  /* no monitor was found */
   if (monitor_return != NULL)
     *monitor_return = 0;
 
 out:
-  /* release the displays */
   g_slist_free (displays);
 
   return screen;
