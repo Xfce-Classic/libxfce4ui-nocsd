@@ -546,6 +546,10 @@ xfce_spawn_command_line_on_screen (GdkScreen    *screen,
       argv[2] = g_strdup ("TerminalEmulator");
       argv[3] = g_strdup (command_line);
       argv[4] = NULL;
+
+      /* FIXME: startup notification does not work when
+       * launching with exo-open */
+      startup_notify = FALSE;
     }
 
   succeed = xfce_spawn_on_screen_with_child_watch (screen, NULL, argv, NULL,
