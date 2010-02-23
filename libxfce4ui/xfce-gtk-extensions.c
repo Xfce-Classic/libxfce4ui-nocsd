@@ -66,7 +66,10 @@ xfce_gtk_button_new_mixed (const gchar *stock_id,
       if (stock_id != NULL)
         {
           /* create image widget */
-          image = gtk_image_new_from_stock (stock_id, GTK_ICON_SIZE_BUTTON);
+          if (g_str_has_prefix (stock_id, "gtk-"))
+            image = gtk_image_new_from_stock (stock_id, GTK_ICON_SIZE_BUTTON);
+          else
+            image = gtk_image_new_from_icon_name (stock_id, GTK_ICON_SIZE_BUTTON);
           gtk_button_set_image (GTK_BUTTON (button), image);
         }
     }
