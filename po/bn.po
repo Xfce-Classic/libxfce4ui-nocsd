@@ -1,0 +1,160 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Israt Jahan <israt@ankur.org.bd>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: bn\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-02-28 18:03+0100\n"
+"PO-Revision-Date: 2010-02-22 12:14+0600\n"
+"Last-Translator: Israt Jahan <israt@ankur.org.bd>\n"
+"Language-Team: Bengali <ankur-bd-l10n@googlegroups.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../libxfce4ui/xfce-dialogs.c:69
+msgid "Information"
+msgstr "তথ্য"
+
+#: ../libxfce4ui/xfce-dialogs.c:102
+msgid "Warning"
+msgstr "সতর্কবানী"
+
+#: ../libxfce4ui/xfce-dialogs.c:136
+msgid "Error"
+msgstr "ত্রুটি"
+
+#: ../libxfce4ui/xfce-dialogs.c:187
+msgid "Question"
+msgstr "প্রশ্ন"
+
+#: ../libxfce4ui/xfce-sm-client.c:1394
+msgid "Session management client ID"
+msgstr "সেশন ব্যবস্থাপনা ক্লায়েন্ট আইডি"
+
+#: ../libxfce4ui/xfce-sm-client.c:1394
+msgid "ID"
+msgstr "আইডি"
+
+#: ../libxfce4ui/xfce-sm-client.c:1395
+msgid "Disable session management"
+msgstr "সেশন ব্যবস্থাপনা নিষ্ক্রিয় করা হবে"
+
+#: ../libxfce4ui/xfce-sm-client.c:1405
+msgid "Session management options"
+msgstr "সেশন ব্যবস্থাপনা অপশন"
+
+#: ../libxfce4ui/xfce-sm-client.c:1406
+msgid "Show session management options"
+msgstr "সেশন ব্যবস্থাপনা অপশন প্রদর্শন"
+
+#: ../libxfce4ui/xfce-sm-client.c:1582
+#, c-format
+msgid "Failed to connect to the session manager: %s"
+msgstr "সেশন ব্যবস্থাপকের সাথে সংযুক্ত হতে ব্যর্থ: %s"
+
+#: ../libxfce4ui/xfce-sm-client.c:1589
+#, c-format
+msgid "Session manager did not return a valid client id"
+msgstr "সেশন ব্যবস্থাপন একটি কার্যকর ক্লায়েন্ট আইডি ফেরত দেয়নি"
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:52
+msgid ""
+"This shortcut is already being used for another window manager action. Which "
+"action do you want to use?"
+msgstr ""
+"এই শর্টকাটটি ইতোমধ্যেই অন্য উইণ্ডো ম্যানেজার অ্যাকশনে ব্যবহার করা হয়েছে। আপনি কোন "
+"অ্যাকশনটি ব্যবহার করতে চান?"
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:53
+#: ../libxfce4kbd-private/xfce-shortcuts.c:56
+#: ../libxfce4kbd-private/xfce-shortcuts.c:59
+#: ../libxfce4kbd-private/xfce-shortcuts.c:62
+#, c-format
+msgid "Use '%s'"
+msgstr "'%s' ব্যবহার করুন"
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:53
+msgid "Keep the other one"
+msgstr "অপরটি রাখুন"
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:55
+#: ../libxfce4kbd-private/xfce-shortcuts.c:58
+#, c-format
+msgid ""
+"This shortcut is already being used for the command '%s'. Which action do "
+"you want to use?"
+msgstr ""
+"এই শর্টকাটটি ইতোমধ্যেই অন্য কমান্ডে \"%s\" ব্যবহার করা হয়েছে। আপনি কোন অ্যাকশনটি "
+"ব্যবহার করতে চান?"
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:56
+#: ../libxfce4kbd-private/xfce-shortcuts.c:59
+#, c-format
+msgid "Keep '%s'"
+msgstr "'%s' রাখুন"
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:61
+msgid ""
+"This shortcut is already being used by a window manager action. Which action "
+"do you want to use?"
+msgstr ""
+"এই শর্টকাটটি ইতোমধ্যেই অন্য উইণ্ডো ম্যানেজার অ্যাকশনে ব্যবহার করা হয়েছে। আপনি কোন "
+"অ্যাকশনটি ব্যবহার করতে চান?"
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:62
+msgid "Keep the window manager action"
+msgstr "উইন্ডো ম্যানেজার অ্যাকশন বজায় রাখুন"
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:95
+#, c-format
+msgid "Conflicting actions for %s"
+msgstr "%s এর জন্য অ্যাকশনের মাঝে দ্বন্দ হচ্ছে"
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:128
+msgid "This shortcut is already being used for something else."
+msgstr "এই শর্টকাটটি ইতোমধ্যেই অন্যকিছুর জন্য ব্যবহার করা হয়েছে।"
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:207
+msgid "Window Manager Action Shortcut"
+msgstr "উইন্ডো ম্যানেজার অ্যাকশন শর্টকাট"
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:208
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:218
+msgid "Action:"
+msgstr "কাজ:"
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:212
+msgid "Command Shortcut"
+msgstr "কমান্ড শর্টকাট"
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:213
+msgid "Command:"
+msgstr "কমান্ড:"
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:217
+msgid "Shortcut"
+msgstr "শর্টকাট"
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:258
+msgid "Shortcut:"
+msgstr "শর্টকাট:"
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:303
+msgid "Could not grab the keyboard."
+msgstr "কীবোর্ড টেনে আনতে পারেনি।"
+
+#: ../glade/libxfce4ui.xml.in.h:1
+msgid "Subtitle"
+msgstr "উপশিরোনাম"
+
+#: ../glade/libxfce4ui.xml.in.h:2
+msgid "Titled Dialog"
+msgstr "শিরোনামকৃত ডায়ালগ"
+
+#: ../glade/libxfce4ui.xml.in.h:3
+msgid "Xfce 4 Widgets"
+msgstr "Xfce ৪ উইজেডটস"
