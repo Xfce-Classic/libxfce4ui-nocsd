@@ -47,6 +47,8 @@
 #include <libsn/sn.h>
 #endif
 
+#include <glib/gstdio.h>
+#include <libxfce4util/libxfce4util.h>
 #include <libxfce4ui/xfce-spawn.h>
 #include <libxfce4ui/xfce-gdk-extensions.h>
 #include <libxfce4ui/libxfce4ui-private.h>
@@ -392,6 +394,20 @@ xfce_spawn_on_screen_with_child_watch (GdkScreen    *screen,
   /* watch the child when the user supplied a closure too */
   if (child_watch_closure != NULL)
     flags |= G_SPAWN_DO_NOT_REAP_CHILD;
+
+  /* test if the working directory exists */
+  if (working_directory == NULL || *working_directory == '\0')
+    {
+      /* not worth a warning */
+      working_directory = NULL;
+    }
+  else if (!g_file_test (working_directory, G_FILE_TEST_IS_DIR))
+    {
+      /* print warning for user */
+      g_printerr (_("Working directory \"%s\" does not exist. It won't be used "
+                    "when spawning \"%s\"."), working_directory, *argv);
+      working_directory = NULL;
+    }
 
   /* try to spawn the new process */
   succeed = g_spawn_async (working_directory, argv, cenvp, flags, NULL,
