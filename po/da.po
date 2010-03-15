@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui 1.4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-12-18 15:10+0100\n"
+"POT-Creation-Date: 2010-03-15 18:03+0100\n"
 "PO-Revision-Date: 2009-10-18 21:21+0100\n"
 "Last-Translator: Per Kongstad <p_kongstad@op.pl>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
@@ -18,63 +18,61 @@ msgstr ""
 "X-Poedit-Language: Danish\n"
 "X-Poedit-Country: DENMARK\n"
 
-#. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:71
+#: ../libxfce4ui/xfce-dialogs.c:69
 msgid "Information"
 msgstr "Information"
 
-#. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:107
+#: ../libxfce4ui/xfce-dialogs.c:102
 msgid "Warning"
 msgstr "Advarsel"
 
-#. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:144
+#: ../libxfce4ui/xfce-dialogs.c:136
 msgid "Error"
 msgstr "Fejl"
 
-#. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:198
+#: ../libxfce4ui/xfce-dialogs.c:187
 msgid "Question"
 msgstr "Spørgsmål"
 
-#: ../libxfce4ui/xfce-sm-client.c:1394
+#: ../libxfce4ui/xfce-sm-client.c:1398
 msgid "Session management client ID"
 msgstr "Klientid fra sessionshåndtering"
 
-#: ../libxfce4ui/xfce-sm-client.c:1394
+#: ../libxfce4ui/xfce-sm-client.c:1398
 msgid "ID"
 msgstr "Id"
 
-#: ../libxfce4ui/xfce-sm-client.c:1395
+#: ../libxfce4ui/xfce-sm-client.c:1399
 msgid "Disable session management"
 msgstr "Slå sessionshåndtering fra"
 
-#: ../libxfce4ui/xfce-sm-client.c:1405
+#: ../libxfce4ui/xfce-sm-client.c:1409
 msgid "Session management options"
 msgstr "Tilvalg for sessionshåndtering:"
 
-#: ../libxfce4ui/xfce-sm-client.c:1406
+#: ../libxfce4ui/xfce-sm-client.c:1410
 msgid "Show session management options"
 msgstr "Vis tilvalg for sessionshåndtering"
 
-#: ../libxfce4ui/xfce-sm-client.c:1582
+#: ../libxfce4ui/xfce-sm-client.c:1586
 #, c-format
 msgid "Failed to connect to the session manager: %s"
 msgstr "Kunne ikke forbinde til sessionshåndteringen: %s"
 
-#: ../libxfce4ui/xfce-sm-client.c:1589
+#: ../libxfce4ui/xfce-sm-client.c:1593
 #, c-format
 msgid "Session manager did not return a valid client id"
 msgstr "Sessionshåndtering returnerede ikke et gyldigt klientid"
 
+#. print warning for user
+#: ../libxfce4ui/xfce-spawn.c:407
+#, c-format
+msgid "Working directory \"%s\" does not exist. It won't be used when spawning \"%s\"."
+msgstr "Arbejdsmappen \"%s\" findes ikke. Den vil ikke blive brugt ved klagørelsen af\"%s\"."
+
 #: ../libxfce4kbd-private/xfce-shortcuts.c:52
-msgid ""
-"This shortcut is already being used for another window manager action. Which "
-"action do you want to use?"
-msgstr ""
-"Denne genvej bruges allerede til en anden vinduehåndteringshandling. Hvilken "
-"handling vil du bruge?"
+msgid "This shortcut is already being used for another window manager action. Which action do you want to use?"
+msgstr "Denne genvej bruges allerede til en anden vinduehåndteringshandling. Hvilken handling vil du bruge?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
@@ -91,12 +89,8 @@ msgstr "Behold den anden"
 #: ../libxfce4kbd-private/xfce-shortcuts.c:55
 #: ../libxfce4kbd-private/xfce-shortcuts.c:58
 #, c-format
-msgid ""
-"This shortcut is already being used for the command '%s'. Which action do "
-"you want to use?"
-msgstr ""
-"Denne genvej bruges allerede til kommandoen '%s'. Hvilken handling vil du "
-"bruge?"
+msgid "This shortcut is already being used for the command '%s'. Which action do you want to use?"
+msgstr "Denne genvej bruges allerede til kommandoen '%s'. Hvilken handling vil du bruge?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
 #: ../libxfce4kbd-private/xfce-shortcuts.c:59
@@ -105,12 +99,8 @@ msgid "Keep '%s'"
 msgstr "Behold '%s'"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:61
-msgid ""
-"This shortcut is already being used by a window manager action. Which action "
-"do you want to use?"
-msgstr ""
-"Denne genvej bruges allerede til en anden vinduehåndteringshandling. Hvilken "
-"handling vil du bruge?"
+msgid "This shortcut is already being used by a window manager action. Which action do you want to use?"
+msgstr "Denne genvej bruges allerede til en anden vinduehåndteringshandling. Hvilken handling vil du bruge?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 msgid "Keep the window manager action"
@@ -185,9 +175,7 @@ msgstr "Kontroller til Xfce 4"
 #~ msgstr "Ukendt opstartstilvalg: %d"
 
 #~ msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
-#~ msgstr ""
-#~ "Kan ikke videregive URI'er for dokumenter til en 'type=henvisning' "
-#~ "skrivebordspost"
+#~ msgstr "Kan ikke videregive URI'er for dokumenter til en 'type=henvisning' skrivebordspost"
 
 #~ msgid "Not a launchable item"
 #~ msgstr "Ikke et opstartselement"
