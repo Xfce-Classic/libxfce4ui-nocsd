@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-03-05 12:03+0100\n"
+"POT-Creation-Date: 2010-03-16 06:03+0100\n"
 "PO-Revision-Date: 2008-06-30 17:35+0300\n"
 "Last-Translator: Dmitry Nikitin <luckas_fb@mail.ru>\n"
 "Language-Team: Ukrainian <xfce4-dev@xfce.org>\n"
@@ -32,35 +32,41 @@ msgstr "Помилка"
 msgid "Question"
 msgstr "Запитання"
 
-#: ../libxfce4ui/xfce-sm-client.c:1394
+#: ../libxfce4ui/xfce-sm-client.c:1398
 msgid "Session management client ID"
 msgstr "Управління сеансом ІН клієнта"
 
-#: ../libxfce4ui/xfce-sm-client.c:1394
+#: ../libxfce4ui/xfce-sm-client.c:1398
 msgid "ID"
 msgstr "ІН"
 
-#: ../libxfce4ui/xfce-sm-client.c:1395
+#: ../libxfce4ui/xfce-sm-client.c:1399
 msgid "Disable session management"
 msgstr "Заборонити управління сеансами"
 
-#: ../libxfce4ui/xfce-sm-client.c:1405
+#: ../libxfce4ui/xfce-sm-client.c:1409
 msgid "Session management options"
 msgstr "Опції управління сеансами"
 
-#: ../libxfce4ui/xfce-sm-client.c:1406
+#: ../libxfce4ui/xfce-sm-client.c:1410
 msgid "Show session management options"
 msgstr "Показати опції управління сеансами"
 
-#: ../libxfce4ui/xfce-sm-client.c:1582
+#: ../libxfce4ui/xfce-sm-client.c:1586
 #, c-format
 msgid "Failed to connect to the session manager: %s"
 msgstr "Не вдалось з'єднатись з менеджером сеансів: %s"
 
-#: ../libxfce4ui/xfce-sm-client.c:1589
+#: ../libxfce4ui/xfce-sm-client.c:1593
 #, c-format
 msgid "Session manager did not return a valid client id"
 msgstr "Менеджер сеансів не повернув правильного ІН клієнта"
+
+#. print warning for user
+#: ../libxfce4ui/xfce-spawn.c:407
+#, c-format
+msgid "Working directory \"%s\" does not exist. It won't be used when spawning \"%s\"."
+msgstr "Робоча тека \"%s\" не існує. Вона не буде використовуватися, поки створюється \"%s\"."
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:52
 msgid "This shortcut is already being used for another window manager action. Which action do you want to use?"
