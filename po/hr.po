@@ -2,7 +2,7 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -33,7 +33,7 @@ msgstr "Pitanje"
 
 #: ../libxfce4ui/xfce-sm-client.c:1398
 msgid "Session management client ID"
-msgstr ""
+msgstr "ID klijenta upravitelja sesijom"
 
 #: ../libxfce4ui/xfce-sm-client.c:1398
 msgid "ID"
@@ -41,35 +41,35 @@ msgstr "ID"
 
 #: ../libxfce4ui/xfce-sm-client.c:1399
 msgid "Disable session management"
-msgstr ""
+msgstr "Onemogući upravljanje sesijom"
 
 #: ../libxfce4ui/xfce-sm-client.c:1409
 msgid "Session management options"
-msgstr ""
+msgstr "Opcije upravitelja sesijom"
 
 #: ../libxfce4ui/xfce-sm-client.c:1410
 msgid "Show session management options"
-msgstr ""
+msgstr "Prikaži opcije upravitelja sesijom"
 
 #: ../libxfce4ui/xfce-sm-client.c:1586
 #, c-format
 msgid "Failed to connect to the session manager: %s"
-msgstr ""
+msgstr "Nije uspjelo spajanje na upravitelja sesijom: % s"
 
 #: ../libxfce4ui/xfce-sm-client.c:1593
 #, c-format
 msgid "Session manager did not return a valid client id"
-msgstr ""
+msgstr "Upravitelj sesijom nije vratio valjan id klijenta."
 
 #. print warning for user
 #: ../libxfce4ui/xfce-spawn.c:407
 #, c-format
 msgid "Working directory \"%s\" does not exist. It won't be used when spawning \"%s\"."
-msgstr ""
+msgstr "Radna mapa \\ \"% s \" ne postoji. Neće se koristiti prilikom gnježđenja \\ \"% s \"."
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:52
 msgid "This shortcut is already being used for another window manager action. Which action do you want to use?"
-msgstr ""
+msgstr "Ova kratica je već u upotrebi. Koju radnju želite koristiti?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
@@ -87,7 +87,7 @@ msgstr "Zadrži onu drugu"
 #: ../libxfce4kbd-private/xfce-shortcuts.c:58
 #, c-format
 msgid "This shortcut is already being used for the command '%s'. Which action do you want to use?"
-msgstr ""
+msgstr "Ova radnja je već u upotrebi kod naredbe '%s'. Koju radnju želite koristiti?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
 #: ../libxfce4kbd-private/xfce-shortcuts.c:59
@@ -97,16 +97,16 @@ msgstr "Zadrži '%s'"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:61
 msgid "This shortcut is already being used by a window manager action. Which action do you want to use?"
-msgstr ""
+msgstr "Ova kratica je već u upotrebi. Koju naredbu želite koristiti?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 msgid "Keep the window manager action"
-msgstr ""
+msgstr "Zadržite naredbu upravitelja prozorom"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:95
 #, c-format
 msgid "Conflicting actions for %s"
-msgstr ""
+msgstr "Radnje u konfliktu za %s"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:128
 msgid "This shortcut is already being used for something else."
@@ -114,12 +114,12 @@ msgstr "Ova kratica je već u upotrebi"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:207
 msgid "Window Manager Action Shortcut"
-msgstr ""
+msgstr "Kratica radnje za upravitelja prozorom"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:208
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:218
 msgid "Action:"
-msgstr ""
+msgstr "Radnja:"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:212
 msgid "Command Shortcut"
@@ -147,9 +147,8 @@ msgstr "Podnapis"
 
 #: ../glade/libxfce4ui.xml.in.h:2
 msgid "Titled Dialog"
-msgstr ""
+msgstr "Dialog sa nazivom"
 
 #: ../glade/libxfce4ui.xml.in.h:3
 msgid "Xfce 4 Widgets"
 msgstr "Xfce 4 Widgeti"
-
