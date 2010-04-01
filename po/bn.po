@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bn\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-02-28 18:03+0100\n"
-"PO-Revision-Date: 2010-02-22 12:14+0600\n"
+"POT-Creation-Date: 2010-03-30 16:03+0000\n"
+"PO-Revision-Date: 2010-03-31 12:14+0600\n"
 "Last-Translator: Israt Jahan <israt@ankur.org.bd>\n"
 "Language-Team: Bengali <ankur-bd-l10n@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
@@ -31,35 +31,43 @@ msgstr "ত্রুটি"
 msgid "Question"
 msgstr "প্রশ্ন"
 
-#: ../libxfce4ui/xfce-sm-client.c:1394
+#: ../libxfce4ui/xfce-sm-client.c:1398
 msgid "Session management client ID"
 msgstr "সেশন ব্যবস্থাপনা ক্লায়েন্ট আইডি"
 
-#: ../libxfce4ui/xfce-sm-client.c:1394
+#: ../libxfce4ui/xfce-sm-client.c:1398
 msgid "ID"
 msgstr "আইডি"
 
-#: ../libxfce4ui/xfce-sm-client.c:1395
+#: ../libxfce4ui/xfce-sm-client.c:1399
 msgid "Disable session management"
 msgstr "সেশন ব্যবস্থাপনা নিষ্ক্রিয় করা হবে"
 
-#: ../libxfce4ui/xfce-sm-client.c:1405
+#: ../libxfce4ui/xfce-sm-client.c:1409
 msgid "Session management options"
 msgstr "সেশন ব্যবস্থাপনা অপশন"
 
-#: ../libxfce4ui/xfce-sm-client.c:1406
+#: ../libxfce4ui/xfce-sm-client.c:1410
 msgid "Show session management options"
 msgstr "সেশন ব্যবস্থাপনা অপশন প্রদর্শন"
 
-#: ../libxfce4ui/xfce-sm-client.c:1582
+#: ../libxfce4ui/xfce-sm-client.c:1586
 #, c-format
 msgid "Failed to connect to the session manager: %s"
 msgstr "সেশন ব্যবস্থাপকের সাথে সংযুক্ত হতে ব্যর্থ: %s"
 
-#: ../libxfce4ui/xfce-sm-client.c:1589
+#: ../libxfce4ui/xfce-sm-client.c:1593
 #, c-format
 msgid "Session manager did not return a valid client id"
 msgstr "সেশন ব্যবস্থাপন একটি কার্যকর ক্লায়েন্ট আইডি ফেরত দেয়নি"
+
+#. print warning for user
+#: ../libxfce4ui/xfce-spawn.c:407
+#, c-format
+msgid ""
+"Working directory \"%s\" does not exist. It won't be used when spawning \"%s"
+"\"."
+msgstr "\"%s\" ডিরেক্টরিটি নেই। \"%s\" স্পনিং এর সময় এটি ব্যবহার করা হবে না।"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:52
 msgid ""
