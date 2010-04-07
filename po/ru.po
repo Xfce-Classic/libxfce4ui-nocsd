@@ -1,8 +1,9 @@
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-02-01 12:03+0100\n"
+"POT-Creation-Date: 2010-04-07 04:03+0000\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Urmas <davian818@gmail.com>\n"
 "Language-Team: none <->\n"
@@ -12,55 +13,57 @@ msgstr ""
 "X-Poedit-Language: Russian\n"
 "X-Poedit-Country: RUSSIAN FEDERATION\n"
 
-#. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:71
+#: ../libxfce4ui/xfce-dialogs.c:69
 msgid "Information"
 msgstr "Сведения"
 
-#. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:107
+#: ../libxfce4ui/xfce-dialogs.c:102
 msgid "Warning"
 msgstr "Внимание"
 
-#. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:144
+#: ../libxfce4ui/xfce-dialogs.c:136
 msgid "Error"
 msgstr "Ошибка"
 
-#. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:198
+#: ../libxfce4ui/xfce-dialogs.c:187
 msgid "Question"
 msgstr "Вопрос"
 
-#: ../libxfce4ui/xfce-sm-client.c:1394
+#: ../libxfce4ui/xfce-sm-client.c:1398
 msgid "Session management client ID"
 msgstr "ID клиента управления сеансом"
 
-#: ../libxfce4ui/xfce-sm-client.c:1394
+#: ../libxfce4ui/xfce-sm-client.c:1398
 msgid "ID"
 msgstr "ID"
 
-#: ../libxfce4ui/xfce-sm-client.c:1395
+#: ../libxfce4ui/xfce-sm-client.c:1399
 msgid "Disable session management"
 msgstr "Отключить управление сеансом"
 
-#: ../libxfce4ui/xfce-sm-client.c:1405
+#: ../libxfce4ui/xfce-sm-client.c:1409
 msgid "Session management options"
 msgstr "Параметры управления сеансом"
 
-#: ../libxfce4ui/xfce-sm-client.c:1406
+#: ../libxfce4ui/xfce-sm-client.c:1410
 msgid "Show session management options"
 msgstr "Показывать возможности управления сеансом"
 
-#: ../libxfce4ui/xfce-sm-client.c:1582
+#: ../libxfce4ui/xfce-sm-client.c:1586
 #, c-format
 msgid "Failed to connect to the session manager: %s"
 msgstr "Не удалось подключиться к менеджеру сеансов: %s"
 
-#: ../libxfce4ui/xfce-sm-client.c:1589
+#: ../libxfce4ui/xfce-sm-client.c:1593
 #, c-format
 msgid "Session manager did not return a valid client id"
 msgstr "Менеджер сеансов не предоставил допустимый идентификатор клиента"
+
+#. print warning for user
+#: ../libxfce4ui/xfce-spawn.c:407
+#, c-format
+msgid "Working directory \"%s\" does not exist. It won't be used when spawning \"%s\"."
+msgstr "Рабочий каталог \"%s\" не существует. Он не будет использоваться для вызова \"%s\"."
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:52
 msgid "This shortcut is already being used for another window manager action. Which action do you want to use?"
@@ -147,4 +150,3 @@ msgstr "Озаглавленный диалог"
 #: ../glade/libxfce4ui.xml.in.h:3
 msgid "Xfce 4 Widgets"
 msgstr "Элементы интерфейса Xfce 4"
-
