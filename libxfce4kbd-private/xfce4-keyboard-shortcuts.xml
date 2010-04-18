@@ -6,6 +6,7 @@
       <property name="&lt;Alt&gt;F2" type="string" value="xfrun4"/>
       <property name="&lt;Control&gt;&lt;Alt&gt;Delete" type="string" value="xflock4"/>
       <property name="XF86Display" type="string" value="xrandr --auto"/>
+      <property name="&lt;Control&gt;Escape" type="string" values="xfdesktop --menu"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
