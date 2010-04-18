@@ -1,3 +1,17 @@
+4.7.2
+=====
+- Add key binding to popup Xfdesktop menu (bug #4994).
+- Print warning before calling exit(0) in the session client.
+- Test if working directory exists before spawning command.
+- Allow icon names in xfce_gtk_button_new_mixed().
+- Unset startup notification when launching in terminal.
+- Make variable a volatile for thread safety.
+- Fix bold labels in xfce_gtk_frame_box_new().
+- Cleanup code comments.
+- Translation updates (gl, de, nl, fi, ru, hu, uk, si, kk, pt, da,
+  es, hr, eu, pr_BR, bn, pa, zh_CN).
+
+
 4.7.1
 =====
 - New function xfce_spawn_on_screen_with_child_watch().
