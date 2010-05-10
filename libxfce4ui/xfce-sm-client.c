@@ -1081,9 +1081,10 @@ xsmp_die(SmcConn smc_conn,
     {
         g_signal_emit(G_OBJECT(sm_client), signals[SIG_QUIT], 0, NULL);
     } else {
-        g_critical ("XfceSMClient will now call exit(0) which will abort your "
-                    "application. It is highly recommended to implement the "
-                    "\"quit\" signal.");
+        DBG("XfceSMClient will now call exit(0) which will abort your "
+            "application. If you want to handle this yourself, you can "
+            "implement the \"quit\"-signal.");
+
         exit(0);
     }
 }
