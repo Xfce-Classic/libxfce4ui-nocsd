@@ -1,0 +1,189 @@
+# Uyghur translations for libxfce4ui package.
+# Copyright (C) 2008 THE libxfce4ui'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the libxfce4ui package.
+# Gheyret T.Kenji <gheyret@gmail.com>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: libxfce4ui\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-12-18 15:10+0100\n"
+"PO-Revision-Date: 2009-10-21 00:36+0900\n"
+"Last-Translator: Gheyret T.Kenji <gheyret@gmail.com>\n"
+"Language-Team:Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. run dialog
+#: ../libxfce4ui/xfce-dialogs.c:71
+msgid "Information"
+msgstr ""
+
+#. run dialog
+#: ../libxfce4ui/xfce-dialogs.c:107
+msgid "Warning"
+msgstr "دىققەت"
+
+#. run dialog
+#: ../libxfce4ui/xfce-dialogs.c:144
+msgid "Error"
+msgstr "خاتالىق"
+
+#. run dialog
+#: ../libxfce4ui/xfce-dialogs.c:198
+msgid "Question"
+msgstr "سوئال"
+
+#: ../libxfce4ui/xfce-sm-client.c:1394
+msgid "Session management client ID"
+msgstr ""
+
+#: ../libxfce4ui/xfce-sm-client.c:1394
+msgid "ID"
+msgstr ""
+
+#: ../libxfce4ui/xfce-sm-client.c:1395
+msgid "Disable session management"
+msgstr ""
+
+#: ../libxfce4ui/xfce-sm-client.c:1405
+msgid "Session management options"
+msgstr ""
+
+#: ../libxfce4ui/xfce-sm-client.c:1406
+msgid "Show session management options"
+msgstr ""
+
+#: ../libxfce4ui/xfce-sm-client.c:1582
+#, c-format
+msgid "Failed to connect to the session manager: %s"
+msgstr ""
+
+#: ../libxfce4ui/xfce-sm-client.c:1589
+#, c-format
+msgid "Session manager did not return a valid client id"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:52
+msgid ""
+"This shortcut is already being used for another window manager action. Which "
+"action do you want to use?"
+msgstr "مەزكۇر تېزلەتمە باشقا كۆزنەك باشقۇرغۇدا ئىشلىتىلىۋاتىدۇ. قايسىنى ئىشلىتىسىز؟"
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:53
+#: ../libxfce4kbd-private/xfce-shortcuts.c:56
+#: ../libxfce4kbd-private/xfce-shortcuts.c:59
+#: ../libxfce4kbd-private/xfce-shortcuts.c:62
+#, c-format
+msgid "Use '%s'"
+msgstr "'%s' نى ئىشلىتىش"
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:53
+msgid "Keep the other one"
+msgstr "باشقىسىنى ئىشلىتىش"
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:55
+#: ../libxfce4kbd-private/xfce-shortcuts.c:58
+#, c-format
+msgid ""
+"This shortcut is already being used for the command '%s'. Which action do "
+"you want to use?"
+msgstr "مەزكۇر تېزلەتمە '%s' بۇيرۇقتا ئىشلىتىلىۋاتىدۇ.قايسىسىنى ئىشلىتىسىز؟"
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:56
+#: ../libxfce4kbd-private/xfce-shortcuts.c:59
+#, c-format
+msgid "Keep '%s'"
+msgstr "'%s' نى ئىشلىتىش"
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:61
+msgid ""
+"This shortcut is already being used by a window manager action. Which action "
+"do you want to use?"
+msgstr "مەزكۇر تېزلەتمە باشقا كۆزنەك باشقۇرغۇدا ئىشلىتىلىۋاتىدۇ. قايسىنى ئىشلىتىسىز؟"
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:62
+msgid "Keep the window manager action"
+msgstr "كۆزنەك باشقۇرغۇدىكىنى ئىشلىتىش"
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:95
+#, c-format
+msgid "Conflicting actions for %s"
+msgstr "%s توقۇنۇشۇپ قالدى"
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:128
+msgid "This shortcut is already being used for something else."
+msgstr "مەزكۇر تېزلەتمە باشقا يەردە ئىشلىتىلىۋاتىدۇ"
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:207
+msgid "Window Manager Action Shortcut"
+msgstr "كۆزنەك باشقۇرغۇ تېزلەتمە بۇيرۇقى"
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:208
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:218
+msgid "Action:"
+msgstr "ھەرىكەت:"
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:212
+msgid "Command Shortcut"
+msgstr "بۇيرۇقنىڭ تېزلەتمىسى"
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:213
+msgid "Command:"
+msgstr "بۇيرۇق:"
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:217
+msgid "Shortcut"
+msgstr "تېزلەتمە"
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:258
+msgid "Shortcut:"
+msgstr "تېزلەتمە:"
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:303
+msgid "Could not grab the keyboard."
+msgstr "باستاختىنى تۇتقىلى بولمىدى"
+
+#: ../glade/libxfce4ui.xml.in.h:1
+msgid "Subtitle"
+msgstr "كىچىك ماۋزۇ"
+
+#: ../glade/libxfce4ui.xml.in.h:2
+msgid "Titled Dialog"
+msgstr "ماۋزۇلۇق كۆزنەك"
+
+#: ../glade/libxfce4ui.xml.in.h:3
+msgid "Xfce 4 Widgets"
+msgstr ""
+
+#~ msgid "<span size='large'><b>%s</b></span>"
+#~ msgstr "<span size='large'><b>%s</b></span>"
+
+#~ msgid "File is not a valid .desktop file"
+#~ msgstr "ファイルは正常な .desktop ファイルではありません"
+
+#~ msgid "Unrecognized desktop file Version '%s'"
+#~ msgstr "'%s' は認識できないデスクトップファイルのバージョンです"
+
+#~ msgid "Starting %s"
+#~ msgstr "%s を起動しています"
+
+#~ msgid "Application does not accept documents on command line"
+#~ msgstr "アプリケーションはコマンドラインから文書を受け付けません"
+
+#~ msgid "Unrecognized launch option: %d"
+#~ msgstr "認識できない起動オプションです: %d"
+
+#~ msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
+#~ msgstr ""
+#~ "デスクトップエントリ 'Type=Link' にドキュメント URI を渡すことができません"
+
+#~ msgid "Not a launchable item"
+#~ msgstr "起動可能なアイテムではありません"
+
+#~ msgid "Specify file containing saved configuration"
+#~ msgstr "保存する設定に含めるファイルを指定する"
+
+#~ msgid "FILE"
+#~ msgstr "FILE"
