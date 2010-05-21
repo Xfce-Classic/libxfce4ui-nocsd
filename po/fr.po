@@ -146,11 +146,9 @@ msgid "Subtitle"
 msgstr "Sous-titre"
 
 #: ../glade/libxfce4ui.xml.in.h:2
-#, fuzzy
 msgid "Titled Dialog"
-msgstr "Intitulé de dialogue"
+msgstr "Dialogue titré"
 
 #: ../glade/libxfce4ui.xml.in.h:3
-#, fuzzy
 msgid "Xfce 4 Widgets"
 msgstr "Widgets Xfce 4"
