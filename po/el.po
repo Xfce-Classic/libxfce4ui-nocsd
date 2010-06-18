@@ -2,12 +2,12 @@
 # Copyright (C) 2008 THE libxfce4ui'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the libxfce package.
 # Evaggelos Balaskas <ebalaskas@ebalaskas.gr>, 2009.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui git VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-12-18 15:10+0100\n"
+"POT-Creation-Date: 2010-06-18 10:05+0000\n"
 "PO-Revision-Date: 2009-08-30 20:14+0200\n"
 "Last-Translator: Evaggelos Balaskas <ebalaskas@ebalaskas.gr>\n"
 "Language-Team: Greek <nls@tux.hellug.gr>\n"
@@ -16,66 +16,61 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:71
+#: ../libxfce4ui/xfce-dialogs.c:69
 msgid "Information"
 msgstr "Πληροφορία"
 
-#. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:107
+#: ../libxfce4ui/xfce-dialogs.c:102
 msgid "Warning"
 msgstr "Προειδοποίηση"
 
-#. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:144
+#: ../libxfce4ui/xfce-dialogs.c:136
 msgid "Error"
 msgstr "Σφάλμα"
 
-#. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:198
+#: ../libxfce4ui/xfce-dialogs.c:187
 msgid "Question"
 msgstr "Ερώτηση"
 
-#: ../libxfce4ui/xfce-sm-client.c:1394
-#, fuzzy
+#: ../libxfce4ui/xfce-sm-client.c:1399
 msgid "Session management client ID"
-msgstr "Επιλογές του διαχειριστή συνεδρίας:"
+msgstr "ID πελάτη του διαχειριστή συνεδρίας"
 
-#: ../libxfce4ui/xfce-sm-client.c:1394
+#: ../libxfce4ui/xfce-sm-client.c:1399
 msgid "ID"
 msgstr "ID"
 
-#: ../libxfce4ui/xfce-sm-client.c:1395
-#, fuzzy
+#: ../libxfce4ui/xfce-sm-client.c:1400
 msgid "Disable session management"
-msgstr "Προσδιορισμός ID του διαχειριστή συνεδρίας"
+msgstr "Απενεργοποίηση του διαχειριστή συνεδρίας"
 
-#: ../libxfce4ui/xfce-sm-client.c:1405
-#, fuzzy
+#: ../libxfce4ui/xfce-sm-client.c:1410
 msgid "Session management options"
-msgstr "Επιλογές του διαχειριστή συνεδρίας:"
+msgstr "Επιλογές του διαχειριστή συνεδρίας"
 
-#: ../libxfce4ui/xfce-sm-client.c:1406
+#: ../libxfce4ui/xfce-sm-client.c:1411
 msgid "Show session management options"
 msgstr "Εμφάνιση των επιλογών του διαχειριστή συνεδρίας"
 
-#: ../libxfce4ui/xfce-sm-client.c:1582
-#, fuzzy, c-format
+#: ../libxfce4ui/xfce-sm-client.c:1587
+#, c-format
 msgid "Failed to connect to the session manager: %s"
-msgstr "Διακοπή σύνδεσης με τον διαχειριστή συνεδρίας"
+msgstr "Αποτυχία σύνδεσης με τον διαχειριστή συνεδρίας: %s"
 
-#: ../libxfce4ui/xfce-sm-client.c:1589
+#: ../libxfce4ui/xfce-sm-client.c:1594
 #, c-format
 msgid "Session manager did not return a valid client id"
-msgstr ""
+msgstr "Ο διαχειριστής συνεδρίας επέστρεψε μη έγκυρο id πελάτη"
+
+#. print warning for user
+#: ../libxfce4ui/xfce-spawn.c:407
+#, c-format
+msgid "Working directory \"%s\" does not exist. It won't be used when spawning \"%s\"."
+msgstr "Ο κατάλογος εργασίας \"%s\" δεν υπάρχει. Δε θα χρησιμοποιηθεί κατά τη δημιουργία του \"%s\"."
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:52
-msgid ""
-"This shortcut is already being used for another window manager action. Which "
-"action do you want to use?"
-msgstr ""
-"Αυτή η συντόμευση χρησιμοποιείται ήδη για άλλη δράση του διαχειριστή "
-"παραθύρων. Ποια δράση θέλετε να χρησιμοποιήσετε;"
+msgid "This shortcut is already being used for another window manager action. Which action do you want to use?"
+msgstr "Αυτή η συντόμευση χρησιμοποιείται ήδη για άλλη δράση του διαχειριστή παραθύρων. Ποια δράση θέλετε να χρησιμοποιήσετε;"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
@@ -92,12 +87,8 @@ msgstr "Διατήρηση της άλλης"
 #: ../libxfce4kbd-private/xfce-shortcuts.c:55
 #: ../libxfce4kbd-private/xfce-shortcuts.c:58
 #, c-format
-msgid ""
-"This shortcut is already being used for the command '%s'. Which action do "
-"you want to use?"
-msgstr ""
-"Αυτή η συντόμευση χρησιμοποιείται ήδη για την εντολή '%s'. Ποια δράση θέλετε "
-"να χρησιμοποιήσετε;"
+msgid "This shortcut is already being used for the command '%s'. Which action do you want to use?"
+msgstr "Αυτή η συντόμευση χρησιμοποιείται ήδη για την εντολή '%s'. Ποια δράση θέλετε να χρησιμοποιήσετε;"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
 #: ../libxfce4kbd-private/xfce-shortcuts.c:59
@@ -106,12 +97,8 @@ msgid "Keep '%s'"
 msgstr "Διατήρηση του '%s'"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:61
-msgid ""
-"This shortcut is already being used by a window manager action. Which action "
-"do you want to use?"
-msgstr ""
-"Αυτή η συντόμευση χρησιμοποιείται ήδη για δράση του διαχειριστή παραθύρων. "
-"Ποια δράση θέλετε να χρησιμοποιήσετε;"
+msgid "This shortcut is already being used by a window manager action. Which action do you want to use?"
+msgstr "Αυτή η συντόμευση χρησιμοποιείται ήδη για δράση του διαχειριστή παραθύρων. Ποια δράση θέλετε να χρησιμοποιήσετε;"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 msgid "Keep the window manager action"
@@ -186,9 +173,7 @@ msgstr "Xfce4 Widgets"
 #~ msgstr "Άγνωστη επιλογή εκτέλεσης: %d"
 
 #~ msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
-#~ msgstr ""
-#~ "Δεν μπορούν να περαστούν σε μία εισαγωγή επιφάνειας εργασίας URI εγγράφων "
-#~ "στο 'Τύπος=Σύνδεση'"
+#~ msgstr "Δεν μπορούν να περαστούν σε μία εισαγωγή επιφάνειας εργασίας URI εγγράφων στο 'Τύπος=Σύνδεση'"
 
 #~ msgid "Not a launchable item"
 #~ msgstr "Το αντικείμενο δεν εκτελείτε"
