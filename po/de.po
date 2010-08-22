@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui 4.5.0svn-r27345\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-01-13 00:03+0100\n"
+"POT-Creation-Date: 2010-08-22 16:05+0000\n"
 "PO-Revision-Date: 2010-01-13 02:07+0100\n"
 "Last-Translator: Christoph Wickert <cwickert@fedoraproject.org>\n"
 "Language-Team: German\n"
@@ -18,55 +18,57 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-Language: German\n"
 
-#. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:71
+#: ../libxfce4ui/xfce-dialogs.c:69
 msgid "Information"
 msgstr "Information"
 
-#. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:107
+#: ../libxfce4ui/xfce-dialogs.c:102
 msgid "Warning"
 msgstr "Warnung"
 
-#. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:144
+#: ../libxfce4ui/xfce-dialogs.c:136
 msgid "Error"
 msgstr "Fehler"
 
-#. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:198
+#: ../libxfce4ui/xfce-dialogs.c:187
 msgid "Question"
 msgstr "Frage"
 
-#: ../libxfce4ui/xfce-sm-client.c:1394
+#: ../libxfce4ui/xfce-sm-client.c:1399
 msgid "Session management client ID"
-msgstr ""
+msgstr "ID für die Sitzungsverwaltung"
 
-#: ../libxfce4ui/xfce-sm-client.c:1394
+#: ../libxfce4ui/xfce-sm-client.c:1399
 msgid "ID"
 msgstr "ID"
 
-#: ../libxfce4ui/xfce-sm-client.c:1395
+#: ../libxfce4ui/xfce-sm-client.c:1400
 msgid "Disable session management"
 msgstr "Sitzungsverwaltung deaktivieren"
 
-#: ../libxfce4ui/xfce-sm-client.c:1405
+#: ../libxfce4ui/xfce-sm-client.c:1410
 msgid "Session management options"
 msgstr "Optionen der Sitzungsverwaltung"
 
-#: ../libxfce4ui/xfce-sm-client.c:1406
+#: ../libxfce4ui/xfce-sm-client.c:1411
 msgid "Show session management options"
 msgstr "Optionen der Sitzungsverwaltung anzeigen"
 
-#: ../libxfce4ui/xfce-sm-client.c:1582
+#: ../libxfce4ui/xfce-sm-client.c:1587
 #, c-format
 msgid "Failed to connect to the session manager: %s"
 msgstr "Verbindung zur Sitzungsverwaltung fehlgeschlagen: %s"
 
-#: ../libxfce4ui/xfce-sm-client.c:1589
+#: ../libxfce4ui/xfce-sm-client.c:1594
 #, c-format
 msgid "Session manager did not return a valid client id"
-msgstr ""
+msgstr "Die Sitzungsverwaltung hat keinen gültige ID geliefert"
+
+#. print warning for user
+#: ../libxfce4ui/xfce-spawn.c:407
+#, c-format
+msgid "Working directory \"%s\" does not exist. It won't be used when spawning \"%s\"."
+msgstr "Das Arbeitsverzeichnis »%s« ist nicht vorhanden: Es wird beim Starten von »%s« nicht verwendet."
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:52
 msgid "This shortcut is already being used for another window manager action. Which action do you want to use?"
@@ -139,7 +141,6 @@ msgid "Shortcut:"
 msgstr "Tastenkürzel:"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:303
-#, fuzzy
 msgid "Could not grab the keyboard."
 msgstr "Tastatur konnte nicht erfasst werden."
 
