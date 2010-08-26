@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: libxfce4ui master\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-05-08 04:03+0000\n"
-"PO-Revision-Date: 2010-05-08 16:08+0800\n"
+"PO-Revision-Date: 2010-08-23 16:40+0800\n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
 "Language-Team: Chinese-l10n <chinese-l10n@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
@@ -65,7 +65,7 @@ msgstr "作業階段管理程式沒有回傳有效的用戶端 id"
 #: ../libxfce4ui/xfce-spawn.c:407
 #, c-format
 msgid "Working directory \"%s\" does not exist. It won't be used when spawning \"%s\"."
-msgstr "工作目錄 \"%s\" 不存在。當建立 \"%s\" 時不會被使用。"
+msgstr "工作目錄「%s」不存在。當建立「%s」時不會被使用。"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:52
 msgid "This shortcut is already being used for another window manager action. Which action do you want to use?"
