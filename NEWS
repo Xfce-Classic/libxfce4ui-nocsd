@@ -1,3 +1,10 @@
+4.7.3
+=====
+- Fix typo preventing shortcuts from working with new users.
+- Make g_critical warning about exit(0) a DBG message.
+- Translation updates (is, zh_TW, tr, hu, fr, sk, el, id, de).
+
+
 4.7.2
 =====
 - Add key binding to popup Xfdesktop menu (bug #4994).
