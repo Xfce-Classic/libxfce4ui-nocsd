@@ -17,23 +17,23 @@ msgstr ""
 
 #: ../libxfce4ui/xfce-dialogs.c:69
 msgid "Information"
-msgstr ""
+msgstr "ئۇچۇر"
 
 #: ../libxfce4ui/xfce-dialogs.c:102
 msgid "Warning"
-msgstr ""
+msgstr "دىققەت"
 
 #: ../libxfce4ui/xfce-dialogs.c:136
 msgid "Error"
-msgstr ""
+msgstr "خاتالىق"
 
 #: ../libxfce4ui/xfce-dialogs.c:187
 msgid "Question"
-msgstr "’"
+msgstr "سوئال"
 
 #: ../libxfce4ui/xfce-sm-client.c:1399
 msgid "Session management client ID"
-msgstr "  client ID"
+msgstr "ئەڭگىمە باشقۇرۇش client ID"
 
 #: ../libxfce4ui/xfce-sm-client.c:1399
 msgid "ID"
@@ -41,25 +41,25 @@ msgstr "ID"
 
 #: ../libxfce4ui/xfce-sm-client.c:1400
 msgid "Disable session management"
-msgstr "   "
+msgstr "ئەڭگىمە باشقۇرۇشنى ئىناۋەتسىز قىل"
 
 #: ../libxfce4ui/xfce-sm-client.c:1410
 msgid "Session management options"
-msgstr "  "
+msgstr "ئەڭگىمە باشقۇرۇش تاللانمىلىرى"
 
 #: ../libxfce4ui/xfce-sm-client.c:1411
 msgid "Show session management options"
-msgstr "   "
+msgstr "ئەڭگىمە باشقۇرۇش تاللانمىلىرىنى كۆرسەت"
 
 #: ../libxfce4ui/xfce-sm-client.c:1587
 #, c-format
 msgid "Failed to connect to the session manager: %s"
-msgstr "     %s"
+msgstr "ئەڭگىمە باشقۇرغۇغا باغلىنىش مەغلۇپ بولدى: %s"
 
 #: ../libxfce4ui/xfce-sm-client.c:1594
 #, c-format
 msgid "Session manager did not return a valid client id"
-msgstr "   client id  "
+msgstr "ئەڭگىمە باشقۇرغۇ ئىناۋەتلىك client id نى قايتۇرمىدى"
 
 #. print warning for user
 #: ../libxfce4ui/xfce-spawn.c:407
@@ -67,14 +67,14 @@ msgstr "  �
 msgid ""
 "Working directory \"%s\" does not exist. It won't be used when spawning \"%s"
 "\"."
-msgstr "  \"%s\"   \"%s\"    "
+msgstr "خىزمەت مۇندەرىجىسى \"%s\" يوقتەك قىلىدۇ. \"%s\" نى ھاسىل قىلغاندا ئىشلىتىلمەيدۇ."
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:52
 msgid ""
 "This shortcut is already being used for another window manager action. Which "
 "action do you want to use?"
 msgstr ""
-"     .  "
+"مەزكۇر تېزلەتمە باشقا كۆزنەك باشقۇرغۇدا ئىشلىتىلىۋاتىدۇ. قايسىنى ئىشلىتىسىز؟"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
@@ -82,11 +82,11 @@ msgstr ""
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 #, c-format
 msgid "Use '%s'"
-msgstr "'%s'  "
+msgstr "'%s' نى ئىشلىتىش"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 msgid "Keep the other one"
-msgstr " "
+msgstr "باشقىسىنى ئىشلىتىش"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:55
 #: ../libxfce4kbd-private/xfce-shortcuts.c:58
@@ -94,71 +94,71 @@ msgstr " "
 msgid ""
 "This shortcut is already being used for the command '%s'. Which action do "
 "you want to use?"
-msgstr "  '%s'  . "
+msgstr "مەزكۇر تېزلەتمە '%s' بۇيرۇقتا ئىشلىتىلىۋاتىدۇ.قايسىسىنى ئىشلىتىسىز؟"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
 #: ../libxfce4kbd-private/xfce-shortcuts.c:59
 #, c-format
 msgid "Keep '%s'"
-msgstr "'%s'  "
+msgstr "'%s' نى ئىشلىتىش"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:61
 msgid ""
 "This shortcut is already being used by a window manager action. Which action "
 "do you want to use?"
 msgstr ""
-"     .  "
+"مەزكۇر تېزلەتمە باشقا كۆزنەك باشقۇرغۇدا ئىشلىتىلىۋاتىدۇ. قايسىنى ئىشلىتىسىز؟"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 msgid "Keep the window manager action"
-msgstr "  "
+msgstr "كۆزنەك باشقۇرغۇدىكىنى ئىشلىتىش"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:95
 #, c-format
 msgid "Conflicting actions for %s"
-msgstr "%s  "
+msgstr "%s توقۇنۇشۇپ قالدى"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:128
 msgid "This shortcut is already being used for something else."
-msgstr "    "
+msgstr "مەزكۇر تېزلەتمە باشقا يەردە ئىشلىتىلىۋاتىدۇ"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:207
 msgid "Window Manager Action Shortcut"
-msgstr "   "
+msgstr "كۆزنەك باشقۇرغۇ تېزلەتمە بۇيرۇقى"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:208
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:218
 msgid "Action:"
-msgstr ":"
+msgstr "ھەرىكەت:"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:212
 msgid "Command Shortcut"
-msgstr " "
+msgstr "بۇيرۇقنىڭ تېزلەتمىسى"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:213
 msgid "Command:"
-msgstr ":"
+msgstr "بۇيرۇق:"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:217
 msgid "Shortcut"
-msgstr ""
+msgstr "تېزلەتمە"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:258
 msgid "Shortcut:"
-msgstr ":"
+msgstr "تېزلەتمە:"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:303
 msgid "Could not grab the keyboard."
-msgstr "  "
+msgstr "ھەرپتاختا تۇتقىلى بولمىدى"
 
 #: ../glade/libxfce4ui.xml.in.h:1
 msgid "Subtitle"
-msgstr " "
+msgstr "كىچىك ماۋزۇ"
 
 #: ../glade/libxfce4ui.xml.in.h:2
 msgid "Titled Dialog"
-msgstr " "
+msgstr "ماۋزۇلۇق كۆزنەك"
 
 #: ../glade/libxfce4ui.xml.in.h:3
 msgid "Xfce 4 Widgets"
-msgstr "Xfce 4  Widget "
+msgstr "Xfce 4 نىڭ Widget لىرى"
