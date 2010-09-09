@@ -1,17 +1,17 @@
 # Galician translation of libxfce4ui
 # Copyright (C) 2008, 2009, 2010 Leandro Regueiro
 # This file is distributed under the same license as the xfce package.
-#
+# 
 # Leandro Regueiro <leandro.regueiro@gmail.com>, 2008, 2009, 2010.
-#
+# 
 # Proxecto Trasno - Adaptación do software libre á lingua galega:  Se desexas
 # colaborar connosco, podes atopar máis información en <http://trasno.net>
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: http://bugzilla.xfce.org\n"
-"POT-Creation-Date: 2010-01-05 17:03+0000\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-09-09 10:05+0000\n"
 "PO-Revision-Date: 2010-01-06 12:28+0100\n"
 "Last-Translator: Leandro Regueiro <leandro.regueiro@gmail.com>\n"
 "Language-Team: Galician <proxecto@trasno.net>\n"
@@ -20,55 +20,57 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 
-#. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:71
+#: ../libxfce4ui/xfce-dialogs.c:69
 msgid "Information"
 msgstr "Información "
 
-#. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:107
+#: ../libxfce4ui/xfce-dialogs.c:102
 msgid "Warning"
 msgstr "Advertencia"
 
-#. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:144
+#: ../libxfce4ui/xfce-dialogs.c:136
 msgid "Error"
 msgstr "Erro"
 
-#. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:198
+#: ../libxfce4ui/xfce-dialogs.c:187
 msgid "Question"
 msgstr "Pregunta"
 
-#: ../libxfce4ui/xfce-sm-client.c:1394
+#: ../libxfce4ui/xfce-sm-client.c:1399
 msgid "Session management client ID"
 msgstr "ID de cliente da xestión de sesións"
 
-#: ../libxfce4ui/xfce-sm-client.c:1394
+#: ../libxfce4ui/xfce-sm-client.c:1399
 msgid "ID"
 msgstr "ID"
 
-#: ../libxfce4ui/xfce-sm-client.c:1395
+#: ../libxfce4ui/xfce-sm-client.c:1400
 msgid "Disable session management"
 msgstr "Desactivar a xestión de sesións"
 
-#: ../libxfce4ui/xfce-sm-client.c:1405
+#: ../libxfce4ui/xfce-sm-client.c:1410
 msgid "Session management options"
 msgstr "Opcións de xestión de sesións"
 
-#: ../libxfce4ui/xfce-sm-client.c:1406
+#: ../libxfce4ui/xfce-sm-client.c:1411
 msgid "Show session management options"
 msgstr "Mostrar as opcións de xestión de sesión"
 
-#: ../libxfce4ui/xfce-sm-client.c:1582
+#: ../libxfce4ui/xfce-sm-client.c:1587
 #, c-format
 msgid "Failed to connect to the session manager: %s"
 msgstr "Produciuse un erro ao concectar co xestor de sesións: %s"
 
-#: ../libxfce4ui/xfce-sm-client.c:1589
+#: ../libxfce4ui/xfce-sm-client.c:1594
 #, c-format
 msgid "Session manager did not return a valid client id"
 msgstr "O xestor de sesións non devolveu un id de cliente válido"
+
+#. print warning for user
+#: ../libxfce4ui/xfce-spawn.c:407
+#, c-format
+msgid "Working directory \"%s\" does not exist. It won't be used when spawning \"%s\"."
+msgstr "O directorio de traballo \"%s\" non existe. Non se usará ao iniciar \"%s\"."
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:52
 msgid "This shortcut is already being used for another window manager action. Which action do you want to use?"
@@ -158,24 +160,30 @@ msgstr "Xfce 4 Widgets"
 
 #~ msgid "<span size='large'><b>%s</b></span>"
 #~ msgstr "<span size='large'><b>%s</b></span>"
+
 #~ msgid "File is not a valid .desktop file"
 #~ msgstr "O ficheiro non é un ficheiro .desktop válido"
+
 #~ msgid "Unrecognized desktop file Version '%s'"
 #~ msgstr "Non se recoñece a versión '%s' do ficheiro .desktop"
+
 #~ msgid "Starting %s"
 #~ msgstr "Iniciando %s"
+
 #~ msgid "Application does not accept documents on command line"
 #~ msgstr "A aplicación non acepta documentos na liña de comandos"
+
 #~ msgid "Unrecognized launch option: %d"
 #~ msgstr "Non se recoñece a opción de inicio: %d"
+
 #~ msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
-#~ msgstr ""
-#~ "Non se poden pasar URIs de documento a unha entrada de escritorio de "
-#~ "'Type=Link'"
+#~ msgstr "Non se poden pasar URIs de documento a unha entrada de escritorio de 'Type=Link'"
+
 #~ msgid "Not a launchable item"
 #~ msgstr "Non é un elemento executable"
+
 #~ msgid "Specify file containing saved configuration"
 #~ msgstr "Especifique o ficheiro que contén a configuración gardada"
+
 #~ msgid "FILE"
 #~ msgstr "FICHEIRO"
-
