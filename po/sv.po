@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-12-18 15:10+0100\n"
-"PO-Revision-Date: 2009-12-16 17:17+0100\n"
+"POT-Creation-Date: 2010-10-16 10:06+0000\n"
+"PO-Revision-Date: 2010-10-16 16:24+0100\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "MIME-Version: 1.0\n"
@@ -16,63 +16,61 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:71
+#: ../libxfce4ui/xfce-dialogs.c:69
 msgid "Information"
 msgstr "Information"
 
-#. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:107
+#: ../libxfce4ui/xfce-dialogs.c:102
 msgid "Warning"
 msgstr "Varning"
 
-#. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:144
+#: ../libxfce4ui/xfce-dialogs.c:136
 msgid "Error"
 msgstr "Fel"
 
-#. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:198
+#: ../libxfce4ui/xfce-dialogs.c:187
 msgid "Question"
 msgstr "Fråga"
 
-#: ../libxfce4ui/xfce-sm-client.c:1394
+#: ../libxfce4ui/xfce-sm-client.c:1399
 msgid "Session management client ID"
 msgstr "Klient-id för sessionshantering"
 
-#: ../libxfce4ui/xfce-sm-client.c:1394
+#: ../libxfce4ui/xfce-sm-client.c:1399
 msgid "ID"
 msgstr "ID"
 
-#: ../libxfce4ui/xfce-sm-client.c:1395
+#: ../libxfce4ui/xfce-sm-client.c:1400
 msgid "Disable session management"
 msgstr "Inaktivera sessionshantering"
 
-#: ../libxfce4ui/xfce-sm-client.c:1405
+#: ../libxfce4ui/xfce-sm-client.c:1410
 msgid "Session management options"
 msgstr "Flaggor för sessionshantering"
 
-#: ../libxfce4ui/xfce-sm-client.c:1406
+#: ../libxfce4ui/xfce-sm-client.c:1411
 msgid "Show session management options"
 msgstr "Visa flaggor för sessionshantering"
 
-#: ../libxfce4ui/xfce-sm-client.c:1582
+#: ../libxfce4ui/xfce-sm-client.c:1587
 #, c-format
 msgid "Failed to connect to the session manager: %s"
 msgstr "Misslyckades med att ansluta till sessionshanteraren: %s"
 
-#: ../libxfce4ui/xfce-sm-client.c:1589
+#: ../libxfce4ui/xfce-sm-client.c:1594
 #, c-format
 msgid "Session manager did not return a valid client id"
 msgstr "Sessionshanteraren returnerade inte ett giltigt klient-id"
 
+#. print warning for user
+#: ../libxfce4ui/xfce-spawn.c:407
+#, c-format
+msgid "Working directory \"%s\" does not exist. It won't be used when spawning \"%s\"."
+msgstr "Arbetskatalogen \"%s\" finns inte. Den kommer inte att användas när \"%s\" startas."
+
 #: ../libxfce4kbd-private/xfce-shortcuts.c:52
-msgid ""
-"This shortcut is already being used for another window manager action. Which "
-"action do you want to use?"
-msgstr ""
-"Denna genväg används redan för en annan åtgärd i fönsterhanteraren. Vilken "
-"åtgärd vill du använda?"
+msgid "This shortcut is already being used for another window manager action. Which action do you want to use?"
+msgstr "Denna genväg används redan för en annan åtgärd i fönsterhanteraren. Vilken åtgärd vill du använda?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
@@ -89,12 +87,8 @@ msgstr "Behåll den andra"
 #: ../libxfce4kbd-private/xfce-shortcuts.c:55
 #: ../libxfce4kbd-private/xfce-shortcuts.c:58
 #, c-format
-msgid ""
-"This shortcut is already being used for the command '%s'. Which action do "
-"you want to use?"
-msgstr ""
-"Denna genväg används redan för kommandot \"%s\". Vilken åtgärd vill du "
-"använda?"
+msgid "This shortcut is already being used for the command '%s'. Which action do you want to use?"
+msgstr "Denna genväg används redan för kommandot \"%s\". Vilken åtgärd vill du använda?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
 #: ../libxfce4kbd-private/xfce-shortcuts.c:59
@@ -103,12 +97,8 @@ msgid "Keep '%s'"
 msgstr "Behåll \"%s\""
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:61
-msgid ""
-"This shortcut is already being used by a window manager action. Which action "
-"do you want to use?"
-msgstr ""
-"Denna genväg används redan av en åtgärd i fönsterhanteraren. Vilken åtgärd "
-"vill du använda?"
+msgid "This shortcut is already being used by a window manager action. Which action do you want to use?"
+msgstr "Denna genväg används redan av en åtgärd i fönsterhanteraren. Vilken åtgärd vill du använda?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 msgid "Keep the window manager action"
@@ -166,3 +156,4 @@ msgstr "Xfce 4-widgetar"
 
 #~ msgid "<span size='large'><b>%s</b></span>"
 #~ msgstr "<span size='large'><b>%s</b></span>"
+
