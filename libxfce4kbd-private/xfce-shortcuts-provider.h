@@ -54,7 +54,8 @@ gboolean                xfce_shortcuts_provider_has_shortcut      (XfceShortcuts
                                                                    const gchar           *shortcut);
 void                    xfce_shortcuts_provider_set_shortcut      (XfceShortcutsProvider *provider,
                                                                    const gchar           *shortcut,
-                                                                   const gchar           *command);
+                                                                   const gchar           *command,
+                                                                   gboolean               snotify);
 void                    xfce_shortcuts_provider_reset_shortcut    (XfceShortcutsProvider *provider,
                                                                    const gchar           *shortcut);
 
@@ -80,6 +81,7 @@ struct _XfceShortcut
   gchar *property_name;
   gchar *shortcut;
   gchar *command;
+  guint  snotify : 1;
 };
 
 G_END_DECLS

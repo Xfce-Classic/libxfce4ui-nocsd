@@ -36,6 +36,7 @@
 #include <libxfce4util/libxfce4util.h>
 
 #include <libxfce4kbd-private/xfce-shortcuts-grabber.h>
+#include <libxfce4kbd-private/xfce-shortcuts-marshal.h>
 
 
 
@@ -151,10 +152,10 @@ xfce_shortcuts_grabber_class_init (XfceShortcutsGrabberClass *klass)
                 0,
                 NULL,
                 NULL,
-                g_cclosure_marshal_VOID__STRING,
+                _xfce_shortcuts_marshal_VOID__STRING_INT,
                 G_TYPE_NONE,
-                1,
-                G_TYPE_STRING);
+                2,
+                G_TYPE_STRING, G_TYPE_INT);
 }
 
 
@@ -591,6 +592,7 @@ xfce_shortcuts_grabber_event_filter (GdkXEvent            *gdk_xevent,
 {
   struct EventKeyFindContext context;
   XEvent                    *xevent;
+  gint                       timestamp;
 
   g_return_val_if_fail (XFCE_IS_SHORTCUTS_GRABBER (grabber), GDK_FILTER_CONTINUE);
 
@@ -602,11 +604,12 @@ xfce_shortcuts_grabber_event_filter (GdkXEvent            *gdk_xevent,
   context.grabber = grabber;
   context.xevent = (XKeyEvent *) xevent;
   context.result = NULL;
+  timestamp = context.xevent->time;
 
   g_hash_table_foreach (grabber->priv->keys, (GHFunc) find_event_key, &context);
 
   if (G_LIKELY (context.result != NULL))
-    g_signal_emit_by_name (grabber, "shortcut-activated", context.result);
+    g_signal_emit_by_name (grabber, "shortcut-activated", context.result, timestamp);
 
   return GDK_FILTER_CONTINUE;
 }

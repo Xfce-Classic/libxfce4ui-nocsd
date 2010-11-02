@@ -85,6 +85,7 @@ struct _XfceShortcutsProviderContext
   XfceShortcutsProvider *provider;
   GList                 *list;
   const gchar           *base_property;
+  GHashTable            *properties;
 };
 
 
@@ -295,6 +296,9 @@ xfce_shortcuts_provider_property_changed (XfconfChannel         *channel,
     }
   g_free (override_property);
 
+  if (g_str_has_suffix (property, "/startup-notify"))
+    return;
+
   shortcut = property + strlen (provider->priv->custom_base_property) + strlen ("/");
 
   if (G_VALUE_TYPE (value) != G_TYPE_INVALID)
@@ -457,6 +461,8 @@ _xfce_shortcuts_provider_get_shortcut (const gchar                  *property,
   XfceShortcut *sc;
   const gchar  *shortcut;
   const gchar  *command;
+  const GValue *snotify;
+  gchar        *snotify_prop;
 
   g_return_val_if_fail (context != NULL, TRUE);
   g_return_val_if_fail (XFCE_IS_SHORTCUTS_PROVIDER (context->provider), TRUE);
@@ -468,15 +474,27 @@ _xfce_shortcuts_provider_get_shortcut (const gchar                  *property,
     return FALSE;
 
   shortcut = property + strlen (context->provider->priv->custom_base_property) + strlen ("/");
+
   command = g_value_get_string (value);
 
-  if (G_LIKELY (shortcut != NULL && command != NULL && g_utf8_strlen (shortcut, -1) > 0 && g_utf8_strlen (command, -1) > 0))
+  if (G_LIKELY (shortcut != NULL
+      && command != NULL
+      && g_utf8_strlen (shortcut, -1) > 0
+      && g_utf8_strlen (command, -1) > 0))
     {
       sc = g_slice_new0 (XfceShortcut);
 
       sc->property_name = g_strdup (property);
       sc->shortcut = g_strdup (shortcut);
       sc->command = g_strdup (command);
+
+      /* Lookup startup notify in the hash table */
+      snotify_prop = g_strconcat (property, "/startup-notify", NULL);
+      snotify = g_hash_table_lookup (context->properties, snotify_prop);
+      if (snotify != NULL)
+        sc->snotify = g_value_get_boolean (snotify);
+      else
+        sc->snotify = FALSE;
 
       context->list = g_list_append (context->list, sc);
     }
@@ -499,6 +517,7 @@ xfce_shortcuts_provider_get_shortcuts (XfceShortcutsProvider *provider)
 
   context.provider = provider;
   context.list = NULL;
+  context.properties = properties;
 
   if (G_LIKELY (properties != NULL))
     g_hash_table_foreach (properties, (GHFunc) _xfce_shortcuts_provider_get_shortcut, &context);
@@ -516,6 +535,8 @@ xfce_shortcuts_provider_get_shortcut (XfceShortcutsProvider *provider,
   gchar        *base_property;
   gchar        *property;
   gchar        *command;
+  gchar        *property2;
+  gboolean      snotify;
 
   g_return_val_if_fail (XFCE_IS_SHORTCUTS_PROVIDER (provider), NULL);
   g_return_val_if_fail (XFCONF_IS_CHANNEL (provider->priv->channel), NULL);
@@ -530,10 +551,14 @@ xfce_shortcuts_provider_get_shortcut (XfceShortcutsProvider *provider,
 
   if (G_LIKELY (command != NULL))
     {
+      property2 = g_strconcat (property, "/startup-notify", NULL);
+      snotify = xfconf_channel_get_bool (provider->priv->channel, property2, FALSE);
+
       sc = g_slice_new0 (XfceShortcut);
       sc->command = command;
       sc->property_name = g_strdup (property);
       sc->shortcut = g_strdup (shortcut);
+      sc->snotify = snotify;
     }
 
   g_free (property);
@@ -571,9 +596,11 @@ xfce_shortcuts_provider_has_shortcut (XfceShortcutsProvider *provider,
 void
 xfce_shortcuts_provider_set_shortcut (XfceShortcutsProvider *provider,
                                       const gchar           *shortcut,
-                                      const gchar           *command)
+                                      const gchar           *command,
+                                      gboolean               snotify)
 {
   gchar *property;
+  gchar *property2;
 
   g_return_if_fail (XFCE_IS_SHORTCUTS_PROVIDER (provider));
   g_return_if_fail (XFCONF_IS_CHANNEL (provider->priv->channel));
@@ -586,11 +613,16 @@ xfce_shortcuts_provider_set_shortcut (XfceShortcutsProvider *provider,
   property = g_strconcat (provider->priv->custom_base_property, "/", shortcut, NULL);
 
   if (xfconf_channel_has_property (provider->priv->channel, property))
-    xfconf_channel_reset_property (provider->priv->channel, property, FALSE);
+    xfconf_channel_reset_property (provider->priv->channel, property, TRUE);
+
+  property2 = g_strconcat (property, "/startup-notify", NULL);
+  xfconf_channel_set_bool (provider->priv->channel, property2, snotify);
+  g_free (property2);
 
   xfconf_channel_set_string (provider->priv->channel, property, command);
 
   g_free (property);
+
 }
 
 
