@@ -1,3 +1,8 @@
+4.7.4
+=====
+- Add startup notification support for shortcuts.
+- Translation updates (gl, sv, ja, it, ug).
+
 4.7.3
 =====
 - Fix typo preventing shortcuts from working with new users.
