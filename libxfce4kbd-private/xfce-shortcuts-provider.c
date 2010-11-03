@@ -615,9 +615,12 @@ xfce_shortcuts_provider_set_shortcut (XfceShortcutsProvider *provider,
   if (xfconf_channel_has_property (provider->priv->channel, property))
     xfconf_channel_reset_property (provider->priv->channel, property, TRUE);
 
-  property2 = g_strconcat (property, "/startup-notify", NULL);
-  xfconf_channel_set_bool (provider->priv->channel, property2, snotify);
-  g_free (property2);
+  if (snotify)
+    {
+      property2 = g_strconcat (property, "/startup-notify", NULL);
+      xfconf_channel_set_bool (provider->priv->channel, property2, snotify);
+      g_free (property2);
+    }
 
   xfconf_channel_set_string (provider->priv->channel, property, command);
 
