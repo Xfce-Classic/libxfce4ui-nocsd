@@ -879,9 +879,12 @@ xfce_sm_client_handle_save_yourself(XfceSMClient *sm_client,
                                     gboolean do_save_state)
 {
     if(do_quit_requested
-       && g_signal_has_handler_pending(G_OBJECT(sm_client),
-                                       signals[SIG_QUIT_REQUESTED],
-                                       0, FALSE))
+       && (g_signal_has_handler_pending(G_OBJECT(sm_client),
+                                        signals[SIG_QUIT_REQUESTED],
+                                        0, FALSE)
+           || g_signal_has_handler_pending(G_OBJECT(sm_client),
+                                           signals[SIG_SAVE_STATE_EXTENDED],
+                                           0, FALSE)))
     {
         Status status;
 
@@ -1223,7 +1226,7 @@ xsmp_interact(SmcConn smc_conn,
                                                0, FALSE))
     {
         Status status;
-
+g_message ("%s requested a phase2", g_get_prgname ());
         status = SmcRequestSaveYourselfPhase2(sm_client->session_connection,
                                               xsmp_save_phase_2,
                                               (SmPointer)sm_client);
