@@ -276,11 +276,10 @@ xfce_sm_client_class_init(XfceSMClientClass *klass)
                                            G_TYPE_FROM_CLASS(klass),
                                            G_SIGNAL_RUN_LAST,
                                            G_STRUCT_OFFSET(XfceSMClientClass,
-                                                           save_state_extended),
+                                                           save_state),
                                            NULL, NULL,
-                                           g_cclosure_marshal_VOID__BOOLEAN,
-                                           G_TYPE_NONE, 1,
-                                           G_TYPE_BOOLEAN);
+                                           g_cclosure_marshal_VOID__VOID,
+                                           G_TYPE_NONE, 0);
 
     /**
      * XfceSMClient::save-state-extended:
