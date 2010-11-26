@@ -2169,7 +2169,8 @@ xfce_sm_client_get_client_id(XfceSMClient *sm_client)
  * valid program identifier set (see xfce_sm_client_set_program())
  * and a valid client ID (see xfce_sm_client_get_client_id()).
  *
- * Returns: a file name string, owned by the object
+ * Returns: a file name string, owned by the object or %NULL if
+ *          the session client is disabled.
  **/
 G_CONST_RETURN gchar *
 xfce_sm_client_get_state_file(XfceSMClient *sm_client)
@@ -2179,10 +2180,11 @@ xfce_sm_client_get_state_file(XfceSMClient *sm_client)
 
     g_return_val_if_fail(XFCE_IS_SM_CLIENT(sm_client), NULL);
 
+    if(!sm_client->client_id)
+        return NULL;
+
     if(sm_client->state_file)
         return sm_client->state_file;
-
-    g_return_val_if_fail(sm_client->client_id, NULL);
 
     prgname = g_get_prgname();
     if(G_UNLIKELY(!prgname))
