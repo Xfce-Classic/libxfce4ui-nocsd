@@ -1226,7 +1226,7 @@ xsmp_interact(SmcConn smc_conn,
                                                0, FALSE))
     {
         Status status;
-g_message ("%s requested a phase2", g_get_prgname ());
+
         status = SmcRequestSaveYourselfPhase2(sm_client->session_connection,
                                               xsmp_save_phase_2,
                                               (SmPointer)sm_client);
