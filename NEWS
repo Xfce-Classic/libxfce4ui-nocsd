@@ -1,3 +1,10 @@
+4.7.5
+=====
+- Also request an interact for save-state-extended.
+- Return a NULL state file is the sm-client is disabled.
+- Fix the save-state signal.
+- Translation updates (pt).
+
 4.7.4
 =====
 - Add startup notification support for shortcuts.
