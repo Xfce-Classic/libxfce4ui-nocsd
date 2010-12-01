@@ -2,21 +2,21 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # Nuno Miguel <nunis@netcabo.pt>, 2008, 2009.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-11-03 17:06+0000\n"
+"POT-Creation-Date: 2010-12-01 11:07+0000\n"
 "PO-Revision-Date: 2010-11-11 16:05+0100\n"
 "Last-Translator: Nuno Miguel <nunis@netcabo.pt>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Country: PORTUGAL\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Poedit-Language: Portuguese\n"
-"X-Poedit-Country: PORTUGAL\n"
 
 #: ../libxfce4ui/xfce-dialogs.c:69
 msgid "Information"
@@ -34,32 +34,32 @@ msgstr "Erro"
 msgid "Question"
 msgstr "Questão"
 
-#: ../libxfce4ui/xfce-sm-client.c:1399
+#: ../libxfce4ui/xfce-sm-client.c:1401
 msgid "Session management client ID"
 msgstr "ID do cliente de gestão de sessão"
 
-#: ../libxfce4ui/xfce-sm-client.c:1399
+#: ../libxfce4ui/xfce-sm-client.c:1401
 msgid "ID"
 msgstr "ID"
 
-#: ../libxfce4ui/xfce-sm-client.c:1400
+#: ../libxfce4ui/xfce-sm-client.c:1402
 msgid "Disable session management"
 msgstr "Desactivar gestão de sessão"
 
-#: ../libxfce4ui/xfce-sm-client.c:1410
+#: ../libxfce4ui/xfce-sm-client.c:1412
 msgid "Session management options"
 msgstr "Opções da gestão de sessão"
 
-#: ../libxfce4ui/xfce-sm-client.c:1411
+#: ../libxfce4ui/xfce-sm-client.c:1413
 msgid "Show session management options"
 msgstr "Mostrar opções de gestão de sessão"
 
-#: ../libxfce4ui/xfce-sm-client.c:1587
+#: ../libxfce4ui/xfce-sm-client.c:1589
 #, c-format
 msgid "Failed to connect to the session manager: %s"
 msgstr "Falha ao ligar ao gestor da sessão: %s"
 
-#: ../libxfce4ui/xfce-sm-client.c:1594
+#: ../libxfce4ui/xfce-sm-client.c:1596
 #, c-format
 msgid "Session manager did not return a valid client id"
 msgstr "O gestor de sessão não devolveu uma id de cliente válida"
@@ -80,7 +80,7 @@ msgstr "Este atalho já está a ser utilizado por outra acção do gestor de jan
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 #, c-format
 msgid "Use '%s'"
-msgstr "Utilizar '%s'"
+msgstr "Utilizar \"%s\""
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 msgid "Keep the other one"
@@ -96,7 +96,7 @@ msgstr "Este atalho já está a ser utilizado pelo comando '%s'. Que acção pre
 #: ../libxfce4kbd-private/xfce-shortcuts.c:59
 #, c-format
 msgid "Keep '%s'"
-msgstr "Manter '%s'"
+msgstr "Manter \"%s\""
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:61
 msgid "This shortcut is already being used by a window manager action. Which action do you want to use?"
@@ -155,4 +155,3 @@ msgstr "Diálogo titulado"
 #: ../glade/libxfce4ui.xml.in.h:3
 msgid "Xfce 4 Widgets"
 msgstr "\"Widgets\" Xfce 4"
-
