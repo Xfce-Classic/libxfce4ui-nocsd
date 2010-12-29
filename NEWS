@@ -1,3 +1,8 @@
+4.7.6
+=====
+- Fix ABI check in ppc (bug #7005).
+- Update default shortcuts for xfce4-display-settings (bug #7036).
+
 4.7.5
 =====
 - Also request an interact for save-state-extended.
