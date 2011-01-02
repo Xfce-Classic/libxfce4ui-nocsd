@@ -2,6 +2,7 @@
 =====
 - Fix ABI check in ppc (bug #7005).
 - Update default shortcuts for xfce4-display-settings (bug #7036).
+- Translation updates (pt, he, cs, en_BG, nb, ar).
 
 4.7.5
 =====
