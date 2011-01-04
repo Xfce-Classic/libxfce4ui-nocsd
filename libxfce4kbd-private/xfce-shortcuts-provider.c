@@ -235,33 +235,36 @@ static void
 xfce_shortcuts_provider_register (XfceShortcutsProvider *provider)
 {
   gchar       **provider_names;
-  const gchar **names;
+  gchar       **names;
   gboolean      already_registered = FALSE;
-  gint          length;
   gint          i;
+  const gchar  *name;
 
   g_return_if_fail (XFCE_IS_SHORTCUTS_PROVIDER (provider));
 
+  name = xfce_shortcuts_provider_get_name (provider);
+  if (G_UNLIKELY (name == NULL))
+    return;
+
   provider_names = xfconf_channel_get_string_list (provider->priv->channel, "/providers");
-
-  for (i = 0; provider_names != NULL && provider_names[i] != NULL; ++i)
-    if (G_UNLIKELY (g_str_equal (provider_names[i], xfce_shortcuts_provider_get_name (provider))))
-      {
-        already_registered = TRUE;
-        break;
-      }
-
-  length = i;
+  if (provider_names != NULL)
+    for (i = 0; !already_registered && provider_names[i] != NULL; i++)
+      already_registered = g_str_equal (provider_names[i], name);
 
   if (G_UNLIKELY (!already_registered))
     {
-      names = g_new0 (const gchar *, length + 1);
-      for (i = 0; provider_names != NULL && provider_names[i] != NULL; ++i)
-        names[i] = provider_names[i];
-      names[i++] = xfce_shortcuts_provider_get_name (provider);
+      names = g_new0 (gchar *, g_strv_length (provider_names) + 2);
+      i = 0;
+
+      if (provider_names != NULL)
+        for (; provider_names[i] != NULL; i++)
+          names[i] = provider_names[i];
+
+      names[i++] = (gchar *) name;
       names[i] = NULL;
 
-      xfconf_channel_set_string_list (provider->priv->channel, "/providers", names);
+      xfconf_channel_set_string_list (provider->priv->channel, "/providers",
+                                      (const gchar * const *) names);
 
       g_free (names);
     }
