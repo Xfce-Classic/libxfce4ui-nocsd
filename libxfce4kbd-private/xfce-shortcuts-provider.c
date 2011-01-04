@@ -253,7 +253,7 @@ xfce_shortcuts_provider_register (XfceShortcutsProvider *provider)
 
   if (G_UNLIKELY (!already_registered))
     {
-      names = g_new0 (gchar *, g_strv_length (provider_names) + 2);
+      names = g_new0 (gchar *, (provider_names != NULL ? g_strv_length (provider_names) : 0) + 2);
       i = 0;
 
       if (provider_names != NULL)
