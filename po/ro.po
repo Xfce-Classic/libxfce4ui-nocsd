@@ -1,78 +1,86 @@
 # Romanian translations for libxfce4ui
 # Traducerea în limba română pentru pachetul libxfce4util.
-# Copyright (C) 2007-2009 THE xfce4ui's COPYRIGHT HOLDER
-# This file is distributed under the same license as the libxfce4util package.
-# Mișu Moldovan <dumol@xfce.org>, 2009.
+# Copyright (C) 2007-2011 THE libxfce4ui's COPYRIGHT HOLDER
+# This file is distributed under the same license as the libxfce4ui package.
+# Mișu Moldovan <dumol@xfce.org>, 2009-2011.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: libxfce4ui 4.6\n"
+"Project-Id-Version: libxfce4ui 4.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-12-18 15:10+0100\n"
-"PO-Revision-Date: 2009-02-02 21:52+0200\n"
+"POT-Creation-Date: 2011-01-06 11:08+0000\n"
+"PO-Revision-Date: 2011-01-11 13:58+0200\n"
 "Last-Translator: Mișu Moldovan <dumol@xfce.org>\n"
-"Language-Team: Romanian\n"
+"Language-Team: Romanian <debian-l10n-romanian@lists.debian.org>\n"
+"Language: ro\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
-"20)) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
+"20)) ? 1 : 2);;\n"
+"X-Generator: Virtaal 0.6.1\n"
 
-#. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:71
+#: ../libxfce4ui/xfce-dialogs.c:69
 msgid "Information"
 msgstr "Detalii"
 
-#. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:107
+#: ../libxfce4ui/xfce-dialogs.c:102
 msgid "Warning"
 msgstr "Avertizare"
 
-#. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:144
+#: ../libxfce4ui/xfce-dialogs.c:136
 msgid "Error"
 msgstr "Eroare"
 
-#. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:198
+#: ../libxfce4ui/xfce-dialogs.c:187
 msgid "Question"
 msgstr "Întrebare"
 
-#: ../libxfce4ui/xfce-sm-client.c:1394
+#: ../libxfce4ui/xfce-sm-client.c:1401
 msgid "Session management client ID"
-msgstr ""
+msgstr "ID-ul clientului managerului de sesiune"
 
-#: ../libxfce4ui/xfce-sm-client.c:1394
+#: ../libxfce4ui/xfce-sm-client.c:1401
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
-#: ../libxfce4ui/xfce-sm-client.c:1395
+#: ../libxfce4ui/xfce-sm-client.c:1402
 msgid "Disable session management"
-msgstr ""
+msgstr "Dezactivare management de sesiune"
 
-#: ../libxfce4ui/xfce-sm-client.c:1405
+#: ../libxfce4ui/xfce-sm-client.c:1412
 msgid "Session management options"
-msgstr ""
+msgstr "Opțiuni pentru managementul de sesiune"
 
-#: ../libxfce4ui/xfce-sm-client.c:1406
+#: ../libxfce4ui/xfce-sm-client.c:1413
 msgid "Show session management options"
-msgstr ""
-
-#: ../libxfce4ui/xfce-sm-client.c:1582
-#, c-format
-msgid "Failed to connect to the session manager: %s"
-msgstr ""
+msgstr "Arată opțiunile managementului de sesiune"
 
 #: ../libxfce4ui/xfce-sm-client.c:1589
 #, c-format
+msgid "Failed to connect to the session manager: %s"
+msgstr "Conectarea la managerul de sesiune a eșuat: %s"
+
+#: ../libxfce4ui/xfce-sm-client.c:1596
+#, c-format
 msgid "Session manager did not return a valid client id"
-msgstr ""
+msgstr "Managerul de sesiune nu a returnat un ID valid de client"
+
+#. print warning for user
+#: ../libxfce4ui/xfce-spawn.c:407
+#, c-format
+msgid ""
+"Working directory \"%s\" does not exist. It won't be used when spawning \"%s"
+"\"."
+msgstr "Directorul curent „%s” nu mai există. Nu va fi folosit la crearea „%s”."
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:52
 msgid ""
 "This shortcut is already being used for another window manager action. Which "
 "action do you want to use?"
 msgstr ""
+"Această combinație de taste este deja utilizată pentru o altă acțiune a "
+"managerului de ferestre. Ce acțiune doriți să îi fie asociată?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
@@ -80,11 +88,11 @@ msgstr ""
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 #, c-format
 msgid "Use '%s'"
-msgstr ""
+msgstr "Utilizează „%s”"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 msgid "Keep the other one"
-msgstr ""
+msgstr "Păstrează-o pe cealaltă"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:55
 #: ../libxfce4kbd-private/xfce-shortcuts.c:58
@@ -93,60 +101,64 @@ msgid ""
 "This shortcut is already being used for the command '%s'. Which action do "
 "you want to use?"
 msgstr ""
+"Această combinație de taste este deja utilizată pentru comanda „%s”. Ce "
+"acțiune doriți să îi fie asociată?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
 #: ../libxfce4kbd-private/xfce-shortcuts.c:59
 #, c-format
 msgid "Keep '%s'"
-msgstr ""
+msgstr "Păstrează „%s”"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:61
 msgid ""
 "This shortcut is already being used by a window manager action. Which action "
 "do you want to use?"
 msgstr ""
+"Această combinație de taste este deja folosită pentru o acțiune a "
+"managerului de ferestre. Ce acțiune doriți să îi fie asociată?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 msgid "Keep the window manager action"
-msgstr ""
+msgstr "Păstrează acțiunea managerului de ferestre"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:95
 #, c-format
 msgid "Conflicting actions for %s"
-msgstr ""
+msgstr "Acțiuni diferite pentru „%s”"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:128
 msgid "This shortcut is already being used for something else."
-msgstr ""
+msgstr "Această combinație de taste este deja folosită pentru altceva."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:207
 msgid "Window Manager Action Shortcut"
-msgstr ""
+msgstr "Combinație de taste asociată unei acțiuni"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:208
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:218
 msgid "Action:"
-msgstr ""
+msgstr "Acțiune:"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:212
 msgid "Command Shortcut"
-msgstr ""
+msgstr "Combinație de taste pentru comandă"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:213
 msgid "Command:"
-msgstr ""
+msgstr "Comandă:"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:217
 msgid "Shortcut"
-msgstr ""
+msgstr "Combinație de taste"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:258
 msgid "Shortcut:"
-msgstr ""
+msgstr "Combinație de taste:"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:303
 msgid "Could not grab the keyboard."
-msgstr ""
+msgstr "Nu s-a putut intercepta tastatura."
 
 #: ../glade/libxfce4ui.xml.in.h:1
 msgid "Subtitle"
@@ -154,7 +166,7 @@ msgstr "Subtitlu"
 
 #: ../glade/libxfce4ui.xml.in.h:2
 msgid "Titled Dialog"
-msgstr "Dialog cu titlu"
+msgstr "Fereastră cu titlu"
 
 #: ../glade/libxfce4ui.xml.in.h:3
 msgid "Xfce 4 Widgets"
