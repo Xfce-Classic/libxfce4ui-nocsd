@@ -154,7 +154,7 @@ xfce_spawn_startup_watch (GPid     pid,
       g_value_init (&instance_and_params[1], G_TYPE_INT);
       g_value_set_int (&instance_and_params[1], status);
 
-      g_closure_set_marshal (spawn_data->closure, g_cclosure_marshal_VOID__INT);
+      /*the caller, not us, needs to do: g_closure_set_marshal (spawn_data->closure, g_cclosure_marshal_VOID__INT);*/
 
       g_closure_invoke (spawn_data->closure, NULL,
                         2, instance_and_params, NULL);
@@ -245,7 +245,7 @@ xfce_spawn_get_active_workspace_number (GdkScreen *screen)
 
 
 /**
- * xfce_spawn_on_screen_with_closure:
+ * xfce_spawn_on_screen_with_child_watch:
  * @screen              : a #GdkScreen or %NULL to use the active screen,
  *                        see xfce_gdk_screen_get_active().
  * @working_directory   : child's current working directory or %NULL to
