@@ -17,6 +17,10 @@ startup notification and they show up on the correct screen and workspace.
 
 <!-- ##### SECTION Stability_Level ##### -->
 
+
+<!-- ##### SECTION Image ##### -->
+
+
 <!-- ##### FUNCTION xfce_spawn_on_screen_with_child_watch ##### -->
 <para>
 
@@ -33,6 +37,7 @@ startup notification and they show up on the correct screen and workspace.
 @child_watch_closure: 
 @error: 
 @Returns: 
+
 
 <!-- ##### FUNCTION xfce_spawn_on_screen ##### -->
 <para>

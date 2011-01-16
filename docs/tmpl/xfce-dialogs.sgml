@@ -18,6 +18,9 @@ Useful convientent function to interact with the user using a
 <!-- ##### SECTION Stability_Level ##### -->
 
 
+<!-- ##### SECTION Image ##### -->
+
+
 <!-- ##### FUNCTION xfce_message_dialog_new ##### -->
 <para>
 
@@ -30,6 +33,21 @@ Useful convientent function to interact with the user using a
 @secondary_text: 
 @first_button_text: 
 @Varargs: 
+@Returns: 
+
+
+<!-- ##### FUNCTION xfce_message_dialog_new_valist ##### -->
+<para>
+
+</para>
+
+@parent: 
+@title: 
+@icon_stock_id: 
+@primary_text: 
+@secondary_text: 
+@first_button_text: 
+@args: 
 @Returns: 
 
 

@@ -24,6 +24,9 @@ an optional subtitle and be set using xfce_titled_dialog_set_subtitle().
 <!-- ##### SECTION Stability_Level ##### -->
 
 
+<!-- ##### SECTION Image ##### -->
+
+
 <!-- ##### STRUCT XfceTitledDialog ##### -->
 <para>
 Structure for the #XfceTitledDialog.
@@ -40,6 +43,7 @@ Structure for the #XfceTitledDialog.
 
 </para>
 
+@void: 
 @Returns: 
 
 

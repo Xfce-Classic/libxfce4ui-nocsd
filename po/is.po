@@ -7,10 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui.master.untitled\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-05-03 10:03+0000\n"
+"POT-Creation-Date: 2011-01-16 16:03+0100\n"
 "PO-Revision-Date: 2010-05-03 12:32+0000\n"
 "Last-Translator: Sveinn í Felli <sveinki@nett.is>\n"
 "Language-Team: Icelandic <rglug@rglug.org>\n"
+"Language: is\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -33,32 +34,32 @@ msgstr "Villa"
 msgid "Question"
 msgstr "Spurning"
 
-#: ../libxfce4ui/xfce-sm-client.c:1398
+#: ../libxfce4ui/xfce-sm-client.c:1401
 msgid "Session management client ID"
 msgstr ""
 
-#: ../libxfce4ui/xfce-sm-client.c:1398
+#: ../libxfce4ui/xfce-sm-client.c:1401
 msgid "ID"
 msgstr "Auðkenni (ID)"
 
-#: ../libxfce4ui/xfce-sm-client.c:1399
+#: ../libxfce4ui/xfce-sm-client.c:1402
 msgid "Disable session management"
 msgstr "Afvirkja setustýringu"
 
-#: ../libxfce4ui/xfce-sm-client.c:1409
+#: ../libxfce4ui/xfce-sm-client.c:1412
 msgid "Session management options"
 msgstr "Valkostir setustýringar"
 
-#: ../libxfce4ui/xfce-sm-client.c:1410
+#: ../libxfce4ui/xfce-sm-client.c:1413
 msgid "Show session management options"
 msgstr "Sýna valkosti setustýringar"
 
-#: ../libxfce4ui/xfce-sm-client.c:1586
+#: ../libxfce4ui/xfce-sm-client.c:1589
 #, c-format
 msgid "Failed to connect to the session manager: %s"
 msgstr ""
 
-#: ../libxfce4ui/xfce-sm-client.c:1593
+#: ../libxfce4ui/xfce-sm-client.c:1596
 #, c-format
 msgid "Session manager did not return a valid client id"
 msgstr ""
@@ -162,4 +163,3 @@ msgstr ""
 #: ../glade/libxfce4ui.xml.in.h:3
 msgid "Xfce 4 Widgets"
 msgstr "XFCE 4 græjur"
-

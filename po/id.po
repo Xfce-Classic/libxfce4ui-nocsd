@@ -2,15 +2,16 @@
 # Copyright (C) 2008 THE libxfce'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the libxfce package.
 # Andhika Padmawan <andhika.padmawan@gmail.com>, 2009.
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: libxfce 4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-06-24 10:05+0000\n"
+"POT-Creation-Date: 2011-01-16 16:03+0100\n"
 "PO-Revision-Date: 2009-08-25 21:25+0700\n"
 "Last-Translator: Andhika Padmawan <andhika.padmawan@gmail.com>\n"
 "Language-Team: Indonesian <translation-team-id@lists.sourceforge.net>\n"
+"Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -31,32 +32,32 @@ msgstr "Galat"
 msgid "Question"
 msgstr "Pertanyaan"
 
-#: ../libxfce4ui/xfce-sm-client.c:1399
+#: ../libxfce4ui/xfce-sm-client.c:1401
 msgid "Session management client ID"
 msgstr "ID Klien manajemen sesi"
 
-#: ../libxfce4ui/xfce-sm-client.c:1399
+#: ../libxfce4ui/xfce-sm-client.c:1401
 msgid "ID"
 msgstr "ID"
 
-#: ../libxfce4ui/xfce-sm-client.c:1400
+#: ../libxfce4ui/xfce-sm-client.c:1402
 msgid "Disable session management"
 msgstr "Nonaktifkan manajemen sesi"
 
-#: ../libxfce4ui/xfce-sm-client.c:1410
+#: ../libxfce4ui/xfce-sm-client.c:1412
 msgid "Session management options"
 msgstr "Opsi manajemen sesi"
 
-#: ../libxfce4ui/xfce-sm-client.c:1411
+#: ../libxfce4ui/xfce-sm-client.c:1413
 msgid "Show session management options"
 msgstr "Tampilkan opsi manajemen sesi"
 
-#: ../libxfce4ui/xfce-sm-client.c:1587
+#: ../libxfce4ui/xfce-sm-client.c:1589
 #, c-format
 msgid "Failed to connect to the session manager: %s"
 msgstr "Gagal menyambung ke manajer sesi: %s"
 
-#: ../libxfce4ui/xfce-sm-client.c:1594
+#: ../libxfce4ui/xfce-sm-client.c:1596
 #, c-format
 msgid "Session manager did not return a valid client id"
 msgstr "Manajer sesi tidak mengembalikan id klien yang sah"
@@ -64,12 +65,20 @@ msgstr "Manajer sesi tidak mengembalikan id klien yang sah"
 #. print warning for user
 #: ../libxfce4ui/xfce-spawn.c:407
 #, c-format
-msgid "Working directory \"%s\" does not exist. It won't be used when spawning \"%s\"."
-msgstr "Direktori kerja \"%s\" tidak ada. Direktori tidak akan digunakan ketika memijahkan \"%s\"."
+msgid ""
+"Working directory \"%s\" does not exist. It won't be used when spawning \"%s"
+"\"."
+msgstr ""
+"Direktori kerja \"%s\" tidak ada. Direktori tidak akan digunakan ketika "
+"memijahkan \"%s\"."
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:52
-msgid "This shortcut is already being used for another window manager action. Which action do you want to use?"
-msgstr "Jalan pintas ini telah digunakan untuk aksi manajer jendela lain. Aksi mana yang ingin anda gunakan?"
+msgid ""
+"This shortcut is already being used for another window manager action. Which "
+"action do you want to use?"
+msgstr ""
+"Jalan pintas ini telah digunakan untuk aksi manajer jendela lain. Aksi mana "
+"yang ingin anda gunakan?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
@@ -86,8 +95,12 @@ msgstr "Simpan yang lain"
 #: ../libxfce4kbd-private/xfce-shortcuts.c:55
 #: ../libxfce4kbd-private/xfce-shortcuts.c:58
 #, c-format
-msgid "This shortcut is already being used for the command '%s'. Which action do you want to use?"
-msgstr "Jalan pintas ini telah digunakan untuk perintah '%s'. Aksi mana yang ingin anda gunakan?"
+msgid ""
+"This shortcut is already being used for the command '%s'. Which action do "
+"you want to use?"
+msgstr ""
+"Jalan pintas ini telah digunakan untuk perintah '%s'. Aksi mana yang ingin "
+"anda gunakan?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
 #: ../libxfce4kbd-private/xfce-shortcuts.c:59
@@ -96,8 +109,12 @@ msgid "Keep '%s'"
 msgstr "Simpan '%s'"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:61
-msgid "This shortcut is already being used by a window manager action. Which action do you want to use?"
-msgstr "Jalan pintas ini telah digunakan oleh sebuah aksi manajer jendela. Aksi mana yang ingin anda gunakan?"
+msgid ""
+"This shortcut is already being used by a window manager action. Which action "
+"do you want to use?"
+msgstr ""
+"Jalan pintas ini telah digunakan oleh sebuah aksi manajer jendela. Aksi mana "
+"yang ingin anda gunakan?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 msgid "Keep the window manager action"
@@ -172,7 +189,8 @@ msgstr "Widget Xfce 4"
 #~ msgstr "Opsi jalankan tak dikenal: %d"
 
 #~ msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
-#~ msgstr "Tak dapat meneruskan URI dokumen ke sebuah lema desktop 'Tipe=Tautan'"
+#~ msgstr ""
+#~ "Tak dapat meneruskan URI dokumen ke sebuah lema desktop 'Tipe=Tautan'"
 
 #~ msgid "Not a launchable item"
 #~ msgstr "Bukan sebuah item yang dapat dijalankan"

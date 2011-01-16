@@ -11,10 +11,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-09-09 10:05+0000\n"
+"POT-Creation-Date: 2011-01-16 16:03+0100\n"
 "PO-Revision-Date: 2010-10-19 18:05+0100\n"
 "Last-Translator: Leandro Regueiro <leandro.regueiro@gmail.com>\n"
 "Language-Team: Galician <proxecto@trasno.net>\n"
+"Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -36,32 +37,32 @@ msgstr "Erro"
 msgid "Question"
 msgstr "Pregunta"
 
-#: ../libxfce4ui/xfce-sm-client.c:1399
+#: ../libxfce4ui/xfce-sm-client.c:1401
 msgid "Session management client ID"
 msgstr "ID de cliente da xestión de sesións"
 
-#: ../libxfce4ui/xfce-sm-client.c:1399
+#: ../libxfce4ui/xfce-sm-client.c:1401
 msgid "ID"
 msgstr "ID"
 
-#: ../libxfce4ui/xfce-sm-client.c:1400
+#: ../libxfce4ui/xfce-sm-client.c:1402
 msgid "Disable session management"
 msgstr "Desactivar a xestión de sesións"
 
-#: ../libxfce4ui/xfce-sm-client.c:1410
+#: ../libxfce4ui/xfce-sm-client.c:1412
 msgid "Session management options"
 msgstr "Opcións de xestión de sesións"
 
-#: ../libxfce4ui/xfce-sm-client.c:1411
+#: ../libxfce4ui/xfce-sm-client.c:1413
 msgid "Show session management options"
 msgstr "Mostrar as opcións de xestión de sesión"
 
-#: ../libxfce4ui/xfce-sm-client.c:1587
+#: ../libxfce4ui/xfce-sm-client.c:1589
 #, c-format
 msgid "Failed to connect to the session manager: %s"
 msgstr "Produciuse un erro ao conectar co xestor de sesións: %s"
 
-#: ../libxfce4ui/xfce-sm-client.c:1594
+#: ../libxfce4ui/xfce-sm-client.c:1596
 #, c-format
 msgid "Session manager did not return a valid client id"
 msgstr "O xestor de sesións non devolveu ningún id de cliente válido"
@@ -69,12 +70,19 @@ msgstr "O xestor de sesións non devolveu ningún id de cliente válido"
 #. print warning for user
 #: ../libxfce4ui/xfce-spawn.c:407
 #, c-format
-msgid "Working directory \"%s\" does not exist. It won't be used when spawning \"%s\"."
-msgstr "O directorio de traballo \"%s\" non existe. Non se usará ao iniciar \"%s\"."
+msgid ""
+"Working directory \"%s\" does not exist. It won't be used when spawning \"%s"
+"\"."
+msgstr ""
+"O directorio de traballo \"%s\" non existe. Non se usará ao iniciar \"%s\"."
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:52
-msgid "This shortcut is already being used for another window manager action. Which action do you want to use?"
-msgstr "Este atallo xa está sendo usado por unha acción doutro xestor de xanelas. Que acción desexa usar?"
+msgid ""
+"This shortcut is already being used for another window manager action. Which "
+"action do you want to use?"
+msgstr ""
+"Este atallo xa está sendo usado por unha acción doutro xestor de xanelas. "
+"Que acción desexa usar?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
@@ -91,8 +99,11 @@ msgstr "Manter o outro"
 #: ../libxfce4kbd-private/xfce-shortcuts.c:55
 #: ../libxfce4kbd-private/xfce-shortcuts.c:58
 #, c-format
-msgid "This shortcut is already being used for the command '%s'. Which action do you want to use?"
-msgstr "Este atallo xa está sendo usado pola orde '%s'. Que acción desexa usar?"
+msgid ""
+"This shortcut is already being used for the command '%s'. Which action do "
+"you want to use?"
+msgstr ""
+"Este atallo xa está sendo usado pola orde '%s'. Que acción desexa usar?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
 #: ../libxfce4kbd-private/xfce-shortcuts.c:59
@@ -101,8 +112,12 @@ msgid "Keep '%s'"
 msgstr "Manter '%s'"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:61
-msgid "This shortcut is already being used by a window manager action. Which action do you want to use?"
-msgstr "Este atallo está sendo usado por unha acción do xestor de xanelas. Que acción desexa usar?"
+msgid ""
+"This shortcut is already being used by a window manager action. Which action "
+"do you want to use?"
+msgstr ""
+"Este atallo está sendo usado por unha acción do xestor de xanelas. Que "
+"acción desexa usar?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 msgid "Keep the window manager action"
@@ -160,22 +175,32 @@ msgstr "Xfce 4 Widgets"
 
 #~ msgid "<span size='large'><b>%s</b></span>"
 #~ msgstr "<span size='large'><b>%s</b></span>"
+
 #~ msgid "File is not a valid .desktop file"
 #~ msgstr "O ficheiro non é un ficheiro .desktop válido"
+
 #~ msgid "Unrecognized desktop file Version '%s'"
 #~ msgstr "Non se recoñece a versión '%s' do ficheiro .desktop"
+
 #~ msgid "Starting %s"
 #~ msgstr "Iniciando %s"
+
 #~ msgid "Application does not accept documents on command line"
 #~ msgstr "A aplicación non acepta documentos na liña de comandos"
+
 #~ msgid "Unrecognized launch option: %d"
 #~ msgstr "Non se recoñece a opción de inicio: %d"
+
 #~ msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
-#~ msgstr "Non se poden pasar URIs de documento a unha entrada de escritorio de 'Type=Link'"
+#~ msgstr ""
+#~ "Non se poden pasar URIs de documento a unha entrada de escritorio de "
+#~ "'Type=Link'"
+
 #~ msgid "Not a launchable item"
 #~ msgstr "Non é un elemento executable"
+
 #~ msgid "Specify file containing saved configuration"
 #~ msgstr "Especifique o ficheiro que contén a configuración gardada"
+
 #~ msgid "FILE"
 #~ msgstr "FICHEIRO"
-

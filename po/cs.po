@@ -7,10 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-12-06 23:06+0000\n"
+"POT-Creation-Date: 2011-01-16 16:03+0100\n"
 "PO-Revision-Date: 2010-12-07 02:13+0100\n"
 "Last-Translator: Michal Várady <miko.vaji@gmail.com>\n"
 "Language-Team: Czech\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -67,12 +68,18 @@ msgstr "Správce relace nevrátil platný identifikátor klienta"
 #. print warning for user
 #: ../libxfce4ui/xfce-spawn.c:407
 #, c-format
-msgid "Working directory \"%s\" does not exist. It won't be used when spawning \"%s\"."
+msgid ""
+"Working directory \"%s\" does not exist. It won't be used when spawning \"%s"
+"\"."
 msgstr "Pracovní adresář \"%s\" neexistuje. Při spuštění \"%s\" nebude použit."
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:52
-msgid "This shortcut is already being used for another window manager action. Which action do you want to use?"
-msgstr "Tuto klávesovou zkratku již používá jiná akce správce oken. Kterou akci chcete použít?"
+msgid ""
+"This shortcut is already being used for another window manager action. Which "
+"action do you want to use?"
+msgstr ""
+"Tuto klávesovou zkratku již používá jiná akce správce oken. Kterou akci "
+"chcete použít?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
@@ -89,8 +96,11 @@ msgstr "Ponechat jinou"
 #: ../libxfce4kbd-private/xfce-shortcuts.c:55
 #: ../libxfce4kbd-private/xfce-shortcuts.c:58
 #, c-format
-msgid "This shortcut is already being used for the command '%s'. Which action do you want to use?"
-msgstr "Tuto klávesovou zkratku již používá příkaz %s. Kterou akci chcete použít?"
+msgid ""
+"This shortcut is already being used for the command '%s'. Which action do "
+"you want to use?"
+msgstr ""
+"Tuto klávesovou zkratku již používá příkaz %s. Kterou akci chcete použít?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
 #: ../libxfce4kbd-private/xfce-shortcuts.c:59
@@ -99,8 +109,12 @@ msgid "Keep '%s'"
 msgstr "Ponechat %s"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:61
-msgid "This shortcut is already being used by a window manager action. Which action do you want to use?"
-msgstr "Tuto klávesovou zkratku již používá akce správce oken. Kterou akci chcete použít?"
+msgid ""
+"This shortcut is already being used by a window manager action. Which action "
+"do you want to use?"
+msgstr ""
+"Tuto klávesovou zkratku již používá akce správce oken. Kterou akci chcete "
+"použít?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 msgid "Keep the window manager action"
@@ -158,23 +172,31 @@ msgstr "Prvky dialogů pro prostředí Xfce 4"
 
 #~ msgid "<span size='large'><b>%s</b></span>"
 #~ msgstr "<span size='large'><b>%s</b></span>"
+
 #~ msgid "File is not a valid .desktop file"
 #~ msgstr "Soubor není platným souborem typu .desktop"
+
 #~ msgid "Unrecognized desktop file Version '%s'"
 #~ msgstr "Nerozpoznaný soubor plochy verze %s"
+
 #~ msgid "Starting %s"
 #~ msgstr "Spouštění %s"
+
 #~ msgid "Application does not accept documents on command line"
 #~ msgstr "Aplikace nepříjímá dokumenty na příkazovém řádku"
+
 #~ msgid "Unrecognized launch option: %d"
 #~ msgstr "Nerozpoznaný parametr spuštění: %d"
+
 #~ msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
 #~ msgstr ""
 #~ "Identifikátor dokumentu URI nelze předat položce plochy 'Type=Link' "
+
 #~ msgid "Not a launchable item"
 #~ msgstr "Nespustitelná položka"
+
 #~ msgid "Specify file containing saved configuration"
 #~ msgstr "Zadejte soubor obsahující uloženou konfiguraci"
+
 #~ msgid "FILE"
 #~ msgstr "SOUBOR"
-

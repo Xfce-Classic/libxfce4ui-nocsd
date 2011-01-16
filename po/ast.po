@@ -2,68 +2,73 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce4-session\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-12-18 15:10+0100\n"
+"POT-Creation-Date: 2011-01-16 16:03+0100\n"
 "PO-Revision-Date: 2009-08-31 15:34+0100\n"
 "Last-Translator: astur <malditoastur@gmail.com>\n"
 "Language-Team: Asturian <alministradores@softastur.org>\n"
+"Language: ast\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:71
+#: ../libxfce4ui/xfce-dialogs.c:69
 #, fuzzy
 msgid "Information"
 msgstr "<b>Información</b>"
 
-#. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:107
+#: ../libxfce4ui/xfce-dialogs.c:102
 msgid "Warning"
 msgstr ""
 
-#. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:144
+#: ../libxfce4ui/xfce-dialogs.c:136
 msgid "Error"
 msgstr ""
 
-#. run dialog
-#: ../libxfce4ui/xfce-dialogs.c:198
+#: ../libxfce4ui/xfce-dialogs.c:187
 #, fuzzy
 msgid "Question"
 msgstr "Sesión"
 
-#: ../libxfce4ui/xfce-sm-client.c:1394
+#: ../libxfce4ui/xfce-sm-client.c:1401
 msgid "Session management client ID"
 msgstr ""
 
-#: ../libxfce4ui/xfce-sm-client.c:1394
+#: ../libxfce4ui/xfce-sm-client.c:1401
 #, fuzzy
 msgid "ID"
 msgstr "PID"
 
-#: ../libxfce4ui/xfce-sm-client.c:1395
+#: ../libxfce4ui/xfce-sm-client.c:1402
 #, fuzzy
 msgid "Disable session management"
 msgstr "Escoyer nome sesión"
 
-#: ../libxfce4ui/xfce-sm-client.c:1405
+#: ../libxfce4ui/xfce-sm-client.c:1412
 #, fuzzy
 msgid "Session management options"
 msgstr "Configuración de sesión"
 
-#: ../libxfce4ui/xfce-sm-client.c:1406
+#: ../libxfce4ui/xfce-sm-client.c:1413
 #, fuzzy
 msgid "Show session management options"
 msgstr "Entamando proxy de xestión de sesiones"
 
-#: ../libxfce4ui/xfce-sm-client.c:1582
+#: ../libxfce4ui/xfce-sm-client.c:1589
 #, fuzzy, c-format
 msgid "Failed to connect to the session manager: %s"
 msgstr "Fallu al recibir rempuesta del xestor de sesión"
 
-#: ../libxfce4ui/xfce-sm-client.c:1589
+#: ../libxfce4ui/xfce-sm-client.c:1596
 #, c-format
 msgid "Session manager did not return a valid client id"
+msgstr ""
+
+#. print warning for user
+#: ../libxfce4ui/xfce-spawn.c:407
+#, c-format
+msgid ""
+"Working directory \"%s\" does not exist. It won't be used when spawning \"%s"
+"\"."
 msgstr ""
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:52
@@ -183,8 +188,8 @@ msgstr ""
 
 #~ msgid "Unable to remove splash theme \"%s\" from directory %s."
 #~ msgstr ""
-#~ "Nun se pue desaniciar el tema de pantalla d'aniciu \"%s\" del direutoriu %"
-#~ "s."
+#~ "Nun se pue desaniciar el tema de pantalla d'aniciu \"%s\" del direutoriu "
+#~ "%s."
 
 #~ msgid "Choose theme filename..."
 #~ msgstr "Escueya'l nome de ficheru de tema..."

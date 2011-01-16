@@ -2,15 +2,16 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # Nuno Miguel <nunis@netcabo.pt>, 2008, 2009.
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-12-01 11:07+0000\n"
+"POT-Creation-Date: 2011-01-16 16:03+0100\n"
 "PO-Revision-Date: 2010-11-11 16:05+0100\n"
 "Last-Translator: Nuno Miguel <nunis@netcabo.pt>\n"
 "Language-Team: \n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -67,12 +68,19 @@ msgstr "O gestor de sessão não devolveu uma id de cliente válida"
 #. print warning for user
 #: ../libxfce4ui/xfce-spawn.c:407
 #, c-format
-msgid "Working directory \"%s\" does not exist. It won't be used when spawning \"%s\"."
-msgstr "O directório de trabalho \"%s\" não existe. Não será usado ao criar \"%s\"."
+msgid ""
+"Working directory \"%s\" does not exist. It won't be used when spawning \"%s"
+"\"."
+msgstr ""
+"O directório de trabalho \"%s\" não existe. Não será usado ao criar \"%s\"."
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:52
-msgid "This shortcut is already being used for another window manager action. Which action do you want to use?"
-msgstr "Este atalho já está a ser utilizado por outra acção do gestor de janelas. Que acção pretende utilizar?"
+msgid ""
+"This shortcut is already being used for another window manager action. Which "
+"action do you want to use?"
+msgstr ""
+"Este atalho já está a ser utilizado por outra acção do gestor de janelas. "
+"Que acção pretende utilizar?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
@@ -89,8 +97,12 @@ msgstr "Manter o outro"
 #: ../libxfce4kbd-private/xfce-shortcuts.c:55
 #: ../libxfce4kbd-private/xfce-shortcuts.c:58
 #, c-format
-msgid "This shortcut is already being used for the command '%s'. Which action do you want to use?"
-msgstr "Este atalho já está a ser utilizado pelo comando '%s'. Que acção pretende utilizar?"
+msgid ""
+"This shortcut is already being used for the command '%s'. Which action do "
+"you want to use?"
+msgstr ""
+"Este atalho já está a ser utilizado pelo comando '%s'. Que acção pretende "
+"utilizar?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
 #: ../libxfce4kbd-private/xfce-shortcuts.c:59
@@ -99,8 +111,12 @@ msgid "Keep '%s'"
 msgstr "Manter \"%s\""
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:61
-msgid "This shortcut is already being used by a window manager action. Which action do you want to use?"
-msgstr "Este atalho já está a ser utilizado por uma acção do gestor de janelas. Que acção pretende utilizar?"
+msgid ""
+"This shortcut is already being used by a window manager action. Which action "
+"do you want to use?"
+msgstr ""
+"Este atalho já está a ser utilizado por uma acção do gestor de janelas. Que "
+"acção pretende utilizar?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 msgid "Keep the window manager action"

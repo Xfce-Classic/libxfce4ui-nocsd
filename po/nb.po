@@ -7,14 +7,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui 1.4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-12-25 17:07+0000\n"
+"POT-Creation-Date: 2011-01-16 16:03+0100\n"
 "PO-Revision-Date: 2009-10-18 21:21+0100\n"
 "Last-Translator: Terje Uriansrud <terje@uriansrud.net>\n"
 "Language-Team: Norwegian Bokmal <i18n-nb@lister.ping.uio.no>\n"
+"Language: nb\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: nb\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../libxfce4ui/xfce-dialogs.c:69
@@ -100,8 +100,8 @@ msgid ""
 "This shortcut is already being used for the command '%s'. Which action do "
 "you want to use?"
 msgstr ""
-"Denne svarveien benyttes allerede for kommandoen '%s'. Hvilken aksjon "
-"ønsker du å bruke?"
+"Denne svarveien benyttes allerede for kommandoen '%s'. Hvilken aksjon ønsker "
+"du å bruke?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
 #: ../libxfce4kbd-private/xfce-shortcuts.c:59
@@ -114,8 +114,8 @@ msgid ""
 "This shortcut is already being used by a window manager action. Which action "
 "do you want to use?"
 msgstr ""
-"Denne snarveien benyttes allerede av en aksjon i vindusbehandleren. "
-"Hvilken aksjon ønsker du å bruke?"
+"Denne snarveien benyttes allerede av en aksjon i vindusbehandleren. Hvilken "
+"aksjon ønsker du å bruke?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 msgid "Keep the window manager action"

@@ -17,6 +17,9 @@
 <!-- ##### SECTION Stability_Level ##### -->
 
 
+<!-- ##### SECTION Image ##### -->
+
+
 <!-- ##### STRUCT XfceSMClient ##### -->
 <para>
 
@@ -51,7 +54,6 @@
 </para>
 
 @xfcesmclient: the object which received the signal.
-@arg1: 
 
 <!-- ##### SIGNAL XfceSMClient::save-state-extended ##### -->
 <para>
@@ -150,6 +152,7 @@
 
 </para>
 
+@void: 
 @Returns: 
 
 

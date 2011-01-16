@@ -1,6 +1,6 @@
 dnl $Id$
 dnl
-dnl Copyright (c) 2007 The Xfce development team
+dnl Copyright (c) 2007-2011 The Xfce development team
 dnl
 
 dnl ***************************
@@ -9,11 +9,11 @@ dnl ***************************
 m4_define([libxfce4ui_verinfo], [0:0:0])
 m4_define([libxfce4ui_version_api], [1])
 m4_define([libxfce4ui_version_major], [4])
-m4_define([libxfce4ui_version_minor], [7])
-m4_define([libxfce4ui_version_micro], [6])
+m4_define([libxfce4ui_version_minor], [8])
+m4_define([libxfce4ui_version_micro], [0])
 m4_define([libxfce4ui_version_nano], []) dnl leave this empty to have no nano version
 m4_define([libxfce4ui_version_build], [@REVISION@])
-m4_define([libxfce4ui_version_tag], [git])
+m4_define([libxfce4ui_version_tag], [])
 m4_define([libxfce4ui_version], [libxfce4ui_version_major().libxfce4ui_version_minor().libxfce4ui_version_micro()ifelse(libxfce4ui_version_nano(), [], [], [.libxfce4ui_version_nano()])ifelse(libxfce4ui_version_tag(), [git], [libxfce4ui_version_tag()-libxfce4ui_version_build()], [libxfce4ui_version_tag()])])
 
 m4_define([libxfce4kbd_private_verinfo], [0:0:0])
@@ -31,7 +31,7 @@ m4_define([libxfce4ui_debug_default], [ifelse(libxfce4ui_version_tag(), [git], [
 dnl ***************************
 dnl *** Initialize autoconf ***
 dnl ***************************
-AC_COPYRIGHT([Copyright (c) 2007 The Xfce development team])
+AC_COPYRIGHT([Copyright (c) 2007-2011 The Xfce development team])
 AC_INIT([libxfce4ui], [libxfce4ui_version], [http://bugzilla.xfce.org/], [libxfce4ui])
 AC_PREREQ([2.50])
 AC_REVISION([libxfce4ui_version_build])
@@ -127,7 +127,7 @@ dnl *** Check for required packages ***
 dnl ***********************************
 XDT_CHECK_PACKAGE([GOBJECT], [gobject-2.0], [2.16.0])
 XDT_CHECK_PACKAGE([GTK], [gtk+-2.0], [2.14.0])
-XDT_CHECK_PACKAGE([LIBXFCE4UTIL], [libxfce4util-1.0], [4.6.0])
+XDT_CHECK_PACKAGE([LIBXFCE4UTIL], [libxfce4util-1.0], [4.8.0])
 
 dnl *************************************************
 dnl *** Optional support for startup notification ***
@@ -145,7 +145,7 @@ AC_ARG_ENABLE([keyboard-library],
                               [Do not compile the keyboard library needed by xfwm4 and xfce4-settings (default=enabled)])],
               [enable_keyboard_library=$enableval], [enable_keyboard_library=yes])
 if test "x$enable_keyboard_library" = "xyes"; then
-  XDT_CHECK_PACKAGE([XFCONF], [libxfconf-0], [4.6.0])
+  XDT_CHECK_PACKAGE([XFCONF], [libxfconf-0], [4.8.0])
 fi
 AM_CONDITIONAL([ENABLE_KEYBOARD_LIBRARY], [test "x$enable_keyboard_library" = "xyes"])
 

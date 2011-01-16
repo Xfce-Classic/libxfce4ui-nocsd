@@ -7,10 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui 1.4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-03-15 18:03+0100\n"
+"POT-Creation-Date: 2011-01-16 16:03+0100\n"
 "PO-Revision-Date: 2009-10-18 21:21+0100\n"
 "Last-Translator: Per Kongstad <p_kongstad@op.pl>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
+"Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -34,32 +35,32 @@ msgstr "Fejl"
 msgid "Question"
 msgstr "Spørgsmål"
 
-#: ../libxfce4ui/xfce-sm-client.c:1398
+#: ../libxfce4ui/xfce-sm-client.c:1401
 msgid "Session management client ID"
 msgstr "Klientid fra sessionshåndtering"
 
-#: ../libxfce4ui/xfce-sm-client.c:1398
+#: ../libxfce4ui/xfce-sm-client.c:1401
 msgid "ID"
 msgstr "Id"
 
-#: ../libxfce4ui/xfce-sm-client.c:1399
+#: ../libxfce4ui/xfce-sm-client.c:1402
 msgid "Disable session management"
 msgstr "Slå sessionshåndtering fra"
 
-#: ../libxfce4ui/xfce-sm-client.c:1409
+#: ../libxfce4ui/xfce-sm-client.c:1412
 msgid "Session management options"
 msgstr "Tilvalg for sessionshåndtering:"
 
-#: ../libxfce4ui/xfce-sm-client.c:1410
+#: ../libxfce4ui/xfce-sm-client.c:1413
 msgid "Show session management options"
 msgstr "Vis tilvalg for sessionshåndtering"
 
-#: ../libxfce4ui/xfce-sm-client.c:1586
+#: ../libxfce4ui/xfce-sm-client.c:1589
 #, c-format
 msgid "Failed to connect to the session manager: %s"
 msgstr "Kunne ikke forbinde til sessionshåndteringen: %s"
 
-#: ../libxfce4ui/xfce-sm-client.c:1593
+#: ../libxfce4ui/xfce-sm-client.c:1596
 #, c-format
 msgid "Session manager did not return a valid client id"
 msgstr "Sessionshåndtering returnerede ikke et gyldigt klientid"
@@ -67,12 +68,20 @@ msgstr "Sessionshåndtering returnerede ikke et gyldigt klientid"
 #. print warning for user
 #: ../libxfce4ui/xfce-spawn.c:407
 #, c-format
-msgid "Working directory \"%s\" does not exist. It won't be used when spawning \"%s\"."
-msgstr "Arbejdsmappen \"%s\" findes ikke. Den vil ikke blive brugt ved klagørelsen af\"%s\"."
+msgid ""
+"Working directory \"%s\" does not exist. It won't be used when spawning \"%s"
+"\"."
+msgstr ""
+"Arbejdsmappen \"%s\" findes ikke. Den vil ikke blive brugt ved klagørelsen af"
+"\"%s\"."
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:52
-msgid "This shortcut is already being used for another window manager action. Which action do you want to use?"
-msgstr "Denne genvej bruges allerede til en anden vinduehåndteringshandling. Hvilken handling vil du bruge?"
+msgid ""
+"This shortcut is already being used for another window manager action. Which "
+"action do you want to use?"
+msgstr ""
+"Denne genvej bruges allerede til en anden vinduehåndteringshandling. Hvilken "
+"handling vil du bruge?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
@@ -89,8 +98,12 @@ msgstr "Behold den anden"
 #: ../libxfce4kbd-private/xfce-shortcuts.c:55
 #: ../libxfce4kbd-private/xfce-shortcuts.c:58
 #, c-format
-msgid "This shortcut is already being used for the command '%s'. Which action do you want to use?"
-msgstr "Denne genvej bruges allerede til kommandoen '%s'. Hvilken handling vil du bruge?"
+msgid ""
+"This shortcut is already being used for the command '%s'. Which action do "
+"you want to use?"
+msgstr ""
+"Denne genvej bruges allerede til kommandoen '%s'. Hvilken handling vil du "
+"bruge?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
 #: ../libxfce4kbd-private/xfce-shortcuts.c:59
@@ -99,8 +112,12 @@ msgid "Keep '%s'"
 msgstr "Behold '%s'"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:61
-msgid "This shortcut is already being used by a window manager action. Which action do you want to use?"
-msgstr "Denne genvej bruges allerede til en anden vinduehåndteringshandling. Hvilken handling vil du bruge?"
+msgid ""
+"This shortcut is already being used by a window manager action. Which action "
+"do you want to use?"
+msgstr ""
+"Denne genvej bruges allerede til en anden vinduehåndteringshandling. Hvilken "
+"handling vil du bruge?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 msgid "Keep the window manager action"
@@ -175,7 +192,9 @@ msgstr "Kontroller til Xfce 4"
 #~ msgstr "Ukendt opstartstilvalg: %d"
 
 #~ msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
-#~ msgstr "Kan ikke videregive URI'er for dokumenter til en 'type=henvisning' skrivebordspost"
+#~ msgstr ""
+#~ "Kan ikke videregive URI'er for dokumenter til en 'type=henvisning' "
+#~ "skrivebordspost"
 
 #~ msgid "Not a launchable item"
 #~ msgstr "Ikke et opstartselement"

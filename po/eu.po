@@ -1,16 +1,17 @@
 # translation of libxfce4ui.po to Euskara
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# 
+#
 # Piarres Beobide <pi@beobide.net>, 2008, 2009.
 msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-03-26 12:04+0100\n"
+"POT-Creation-Date: 2011-01-16 16:03+0100\n"
 "PO-Revision-Date: 2009-10-21 13:56+0200\n"
 "Last-Translator: Piarres Beobide <pi@beobide.net>\n"
 "Language-Team: Basque <debian-l10n-eu@debian.lists.org>\n"
+"Language: eu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -33,32 +34,32 @@ msgstr "Errorea"
 msgid "Question"
 msgstr "Galdera"
 
-#: ../libxfce4ui/xfce-sm-client.c:1398
+#: ../libxfce4ui/xfce-sm-client.c:1401
 msgid "Session management client ID"
 msgstr "Saio kudeaketa bezero IDa"
 
-#: ../libxfce4ui/xfce-sm-client.c:1398
+#: ../libxfce4ui/xfce-sm-client.c:1401
 msgid "ID"
 msgstr "IDa"
 
-#: ../libxfce4ui/xfce-sm-client.c:1399
+#: ../libxfce4ui/xfce-sm-client.c:1402
 msgid "Disable session management"
 msgstr "Desgaitu saio kudeaketa"
 
-#: ../libxfce4ui/xfce-sm-client.c:1409
+#: ../libxfce4ui/xfce-sm-client.c:1412
 msgid "Session management options"
 msgstr "Saio kudeaketa aukerak"
 
-#: ../libxfce4ui/xfce-sm-client.c:1410
+#: ../libxfce4ui/xfce-sm-client.c:1413
 msgid "Show session management options"
 msgstr "Ikusi saio-kudeaketa aukerak"
 
-#: ../libxfce4ui/xfce-sm-client.c:1586
+#: ../libxfce4ui/xfce-sm-client.c:1589
 #, c-format
 msgid "Failed to connect to the session manager: %s"
 msgstr "Huts saio-kudeatzailearekin konektatzerakoan: %s"
 
-#: ../libxfce4ui/xfce-sm-client.c:1593
+#: ../libxfce4ui/xfce-sm-client.c:1596
 #, c-format
 msgid "Session manager did not return a valid client id"
 msgstr "Saio kudeatzaileak ez du ID erabilgarri bat erantzun"
@@ -66,12 +67,18 @@ msgstr "Saio kudeatzaileak ez du ID erabilgarri bat erantzun"
 #. print warning for user
 #: ../libxfce4ui/xfce-spawn.c:407
 #, c-format
-msgid "Working directory \"%s\" does not exist. It won't be used when spawning \"%s\"."
+msgid ""
+"Working directory \"%s\" does not exist. It won't be used when spawning \"%s"
+"\"."
 msgstr "\"%s\" lan direktorioa ez dago. Berau \"%s\" sortzean erabiliko da."
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:52
-msgid "This shortcut is already being used for another window manager action. Which action do you want to use?"
-msgstr "Lasterbide hau dagoeneko leiho-kudeatzailearen beste ekintza batek erabiltzen du. Zein ekintza erabili nahi duzu?"
+msgid ""
+"This shortcut is already being used for another window manager action. Which "
+"action do you want to use?"
+msgstr ""
+"Lasterbide hau dagoeneko leiho-kudeatzailearen beste ekintza batek "
+"erabiltzen du. Zein ekintza erabili nahi duzu?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
@@ -88,8 +95,12 @@ msgstr "Mantendu bestea"
 #: ../libxfce4kbd-private/xfce-shortcuts.c:55
 #: ../libxfce4kbd-private/xfce-shortcuts.c:58
 #, c-format
-msgid "This shortcut is already being used for the command '%s'. Which action do you want to use?"
-msgstr "Lasterbide hau dagoeneko '%s' komandoak erabiltzen du. Zein ekintza erabili nahi duzu?"
+msgid ""
+"This shortcut is already being used for the command '%s'. Which action do "
+"you want to use?"
+msgstr ""
+"Lasterbide hau dagoeneko '%s' komandoak erabiltzen du. Zein ekintza erabili "
+"nahi duzu?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
 #: ../libxfce4kbd-private/xfce-shortcuts.c:59
@@ -98,8 +109,12 @@ msgid "Keep '%s'"
 msgstr "Mantendu '%s'"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:61
-msgid "This shortcut is already being used by a window manager action. Which action do you want to use?"
-msgstr "Lasterbide hau dagoeneko leiho-kudeatzailearen beste ekintza batek erabiltzen du. Zein ekintza erabili nahi duzu?"
+msgid ""
+"This shortcut is already being used by a window manager action. Which action "
+"do you want to use?"
+msgstr ""
+"Lasterbide hau dagoeneko leiho-kudeatzailearen beste ekintza batek "
+"erabiltzen du. Zein ekintza erabili nahi duzu?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 msgid "Keep the window manager action"
@@ -174,7 +189,9 @@ msgstr "Xfce 4 trepetak"
 #~ msgstr "Abiarazte aukera ezezaguna: %d"
 
 #~ msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
-#~ msgstr "Ezin da dokumentuaren URIak  'Type=Link' moduko idazmahai sarrerara bihurtu"
+#~ msgstr ""
+#~ "Ezin da dokumentuaren URIak  'Type=Link' moduko idazmahai sarrerara "
+#~ "bihurtu"
 
 #~ msgid "Not a launchable item"
 #~ msgstr "Ez da elementu abiarazgarria"

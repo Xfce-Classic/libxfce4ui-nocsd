@@ -7,10 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-05-08 04:03+0000\n"
+"POT-Creation-Date: 2011-01-16 16:03+0100\n"
 "PO-Revision-Date: 2010-08-23 16:40+0800\n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
 "Language-Team: Chinese-l10n <chinese-l10n@googlegroups.com>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -31,32 +32,32 @@ msgstr "錯誤"
 msgid "Question"
 msgstr "疑問"
 
-#: ../libxfce4ui/xfce-sm-client.c:1398
+#: ../libxfce4ui/xfce-sm-client.c:1401
 msgid "Session management client ID"
 msgstr "作業階段管理用戶端 ID"
 
-#: ../libxfce4ui/xfce-sm-client.c:1398
+#: ../libxfce4ui/xfce-sm-client.c:1401
 msgid "ID"
 msgstr "ID"
 
-#: ../libxfce4ui/xfce-sm-client.c:1399
+#: ../libxfce4ui/xfce-sm-client.c:1402
 msgid "Disable session management"
 msgstr "停用作業階段管理"
 
-#: ../libxfce4ui/xfce-sm-client.c:1409
+#: ../libxfce4ui/xfce-sm-client.c:1412
 msgid "Session management options"
 msgstr "作業階段管理選項"
 
-#: ../libxfce4ui/xfce-sm-client.c:1410
+#: ../libxfce4ui/xfce-sm-client.c:1413
 msgid "Show session management options"
 msgstr "顯示作業階段管理選項"
 
-#: ../libxfce4ui/xfce-sm-client.c:1586
+#: ../libxfce4ui/xfce-sm-client.c:1589
 #, c-format
 msgid "Failed to connect to the session manager: %s"
 msgstr "連接到作業階段管理程式失敗：%s"
 
-#: ../libxfce4ui/xfce-sm-client.c:1593
+#: ../libxfce4ui/xfce-sm-client.c:1596
 #, c-format
 msgid "Session manager did not return a valid client id"
 msgstr "作業階段管理程式沒有回傳有效的用戶端 id"
@@ -64,11 +65,15 @@ msgstr "作業階段管理程式沒有回傳有效的用戶端 id"
 #. print warning for user
 #: ../libxfce4ui/xfce-spawn.c:407
 #, c-format
-msgid "Working directory \"%s\" does not exist. It won't be used when spawning \"%s\"."
+msgid ""
+"Working directory \"%s\" does not exist. It won't be used when spawning \"%s"
+"\"."
 msgstr "工作目錄「%s」不存在。當建立「%s」時不會被使用。"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:52
-msgid "This shortcut is already being used for another window manager action. Which action do you want to use?"
+msgid ""
+"This shortcut is already being used for another window manager action. Which "
+"action do you want to use?"
 msgstr "此捷徑正被其他視窗管理程式的動作使用。您想要使用何動作"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
@@ -86,7 +91,9 @@ msgstr "保留其它的"
 #: ../libxfce4kbd-private/xfce-shortcuts.c:55
 #: ../libxfce4kbd-private/xfce-shortcuts.c:58
 #, c-format
-msgid "This shortcut is already being used for the command '%s'. Which action do you want to use?"
+msgid ""
+"This shortcut is already being used for the command '%s'. Which action do "
+"you want to use?"
 msgstr "此捷徑正被指令 '%s' 使用。您想要使用何動作？"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
@@ -96,7 +103,9 @@ msgid "Keep '%s'"
 msgstr "保留 '%s'"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:61
-msgid "This shortcut is already being used by a window manager action. Which action do you want to use?"
+msgid ""
+"This shortcut is already being used by a window manager action. Which action "
+"do you want to use?"
 msgstr "此捷徑正被視窗管理程式的某動作使用。您想要使用何動作？"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
@@ -152,4 +161,3 @@ msgstr "有標題的對話窗"
 #: ../glade/libxfce4ui.xml.in.h:3
 msgid "Xfce 4 Widgets"
 msgstr "Xfce 4 小工具"
-

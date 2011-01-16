@@ -19,6 +19,9 @@ on the Gdk-pixbuf library.
 <!-- ##### SECTION Stability_Level ##### -->
 
 
+<!-- ##### SECTION Image ##### -->
+
+
 <!-- ##### FUNCTION xfce_gdk_screen_get_active ##### -->
 <para>
 
