@@ -1,5 +1,5 @@
 /* vi:set expandtab sw=2 sts=2: */
-/*-
+/*
  * Copyright (c) 2008 Jannis Pohlmann <jannis@xfce.org>
  *
  * This library is free software; you can redistribute it and/or

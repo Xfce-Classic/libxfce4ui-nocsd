@@ -1,7 +1,6 @@
-/* $Id$ */
-/*-
- * Copyright (c) 2005-2007 Benedikt Meurer <benny@xfce.org>
- * Copyright (c) 2007      The Xfce Development Team
+/*
+ * Copyright (c) 2009 Brian Tarricone <brian@terricone.org>
+ * Copyright (C) 1999 Olivier Fourdan <fourdan@xfce.org>
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Library General Public
@@ -14,9 +13,9 @@
  * Library General Public License for more details.
  *
  * You should have received a copy of the GNU Library General Public
- * License along with this library; if not, write to the
- * Free Software Foundation, Inc., 59 Temple Place - Suite 330,
- * Boston, MA 02111-1307, USA.
+ * License along with this library; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+ * MA 02110-1301 USA
  */
 
 #ifdef HAVE_CONFIG_H
