@@ -166,6 +166,13 @@ xfce_shortcuts_grabber_init (XfceShortcutsGrabber *grabber)
   grabber->priv = XFCE_SHORTCUTS_GRABBER_GET_PRIVATE (grabber);
   grabber->priv->keys = g_hash_table_new_full (g_str_hash, g_str_equal, g_free, g_free);
 
+  /* Workaround: Make sure modmap is up to date
+   * There is possibly a bug in GTK+ where virtual modifiers are not
+   * mapped because the modmap is not updated. The following function
+   * updates it.
+   */
+  (void) gdk_keymap_have_bidi_layouts (gdk_keymap_get_default ());
+
   xfce_shortcuts_grabber_reload_modifiers (grabber);
 }
 
@@ -419,47 +426,6 @@ xfce_shortcuts_grabber_parse_shortcut (XfceShortcutsGrabber *grabber,
 
 
 
-gchar *
-xfce_shortcuts_grabber_shortcut_name (XfceShortcutsGrabber *grabber,
-                                      guint                 keycode,
-                                      guint                 modifiers)
-{
-  Display *display;
-  KeySym   keysym;
-
-  g_return_val_if_fail (XFCE_IS_SHORTCUTS_GRABBER (grabber), NULL);
-
-  display = GDK_DISPLAY_XDISPLAY (gdk_display_get_default ());
-  keysym = XKeycodeToKeysym (display, keycode, 0);
-
-  modifiers &= MODIFIER_MASK;
-  modifiers &= ~xfce_shortcuts_grabber_get_ignore_mask (grabber);
-
-  if ((modifiers & grabber->priv->modifiers[CACHE_SUPER]) != 0)
-    {
-      modifiers |= GDK_SUPER_MASK;
-      modifiers ^= grabber->priv->modifiers[CACHE_SUPER];
-    }
-
-  if ((modifiers & grabber->priv->modifiers[CACHE_HYPER]) != 0)
-    {
-      modifiers |= GDK_HYPER_MASK;
-      modifiers ^= grabber->priv->modifiers[CACHE_HYPER];
-    }
-
-#if 0
-  if ((modifiers & grabber->priv->modifiers[CACHE_META]) != 0)
-    {
-      modifiers |= GDK_META_MASK;
-      modifiers ^= grabber->priv->modifiers[CACHE_META];
-    }
-#endif
-
-  return gtk_accelerator_name (keysym, modifiers);
-}
-
-
-
 static void
 xfce_shortcuts_grabber_grab (XfceShortcutsGrabber *grabber,
                              XfceKey              *key,
@@ -547,7 +513,7 @@ xfce_shortcuts_grabber_get_ignore_mask (XfceShortcutsGrabber *grabber)
 struct EventKeyFindContext
 {
   XfceShortcutsGrabber *grabber;
-  XKeyEvent            *xevent;
+  gchar                *needle;
   const gchar          *result;
 };
 
@@ -558,27 +524,22 @@ find_event_key (const gchar                *shortcut,
                 XfceKey                    *key,
                 struct EventKeyFindContext *context)
 {
-  gchar   *name;
-  gboolean result = FALSE;
+  gboolean result;
+
+  result = FALSE;
 
   g_return_val_if_fail (context != NULL, TRUE);
-  g_return_val_if_fail (context->xevent != NULL, TRUE);
+  g_return_val_if_fail (context->needle != NULL, TRUE);
 
-  gdk_error_trap_push ();
+  TRACE ("Comparing %s and %s", shortcut, context->needle);
 
-  name = xfce_shortcuts_grabber_shortcut_name (context->grabber, context->xevent->keycode,
-                                               context->xevent->state);
-
-  if (G_UNLIKELY (g_str_equal (shortcut, name)))
+  if (G_UNLIKELY (g_str_equal (shortcut, context->needle)))
     {
       context->result = shortcut;
       result = TRUE;
+
+      TRACE ("Positive match for %s", context->needle);
     }
-
-  g_free (name);
-
-  gdk_flush ();
-  gdk_error_trap_pop ();
 
   return result;
 }
@@ -590,9 +551,12 @@ xfce_shortcuts_grabber_event_filter (GdkXEvent            *gdk_xevent,
                                      GdkEvent             *event,
                                      XfceShortcutsGrabber *grabber)
 {
-  struct EventKeyFindContext context;
-  XEvent                    *xevent;
-  gint                       timestamp;
+  struct EventKeyFindContext  context;
+  GdkKeymap                  *keymap;
+  GdkModifierType             consumed, modifiers;
+  XEvent                     *xevent;
+  guint                       keyval, mod_mask;
+  gint                        timestamp;
 
   g_return_val_if_fail (XFCE_IS_SHORTCUTS_GRABBER (grabber), GDK_FILTER_CONTINUE);
 
@@ -602,14 +566,36 @@ xfce_shortcuts_grabber_event_filter (GdkXEvent            *gdk_xevent,
     return GDK_FILTER_CONTINUE;
 
   context.grabber = grabber;
-  context.xevent = (XKeyEvent *) xevent;
   context.result = NULL;
-  timestamp = context.xevent->time;
+  timestamp = xevent->xkey.time;
+
+  /* Get the keyboard state */
+  gdk_error_trap_push ();
+  keymap = gdk_keymap_get_default ();
+  mod_mask = gtk_accelerator_get_default_mod_mask ();
+  modifiers = xevent->xkey.state;
+
+  /* TODO: group handling? */
+  gdk_keymap_translate_keyboard_state (keymap, xevent->xkey.keycode,
+                                       modifiers, 0,
+                                       &keyval, NULL, NULL, &consumed);
+
+  /* Get the modifiers */
+  modifiers &= ~consumed;
+  gdk_keymap_add_virtual_modifiers (keymap, &modifiers);
+  modifiers &= mod_mask;
+
+  context.needle = gtk_accelerator_name (keyval, modifiers);
 
   g_hash_table_foreach (grabber->priv->keys, (GHFunc) find_event_key, &context);
 
   if (G_LIKELY (context.result != NULL))
     g_signal_emit_by_name (grabber, "shortcut-activated", context.result, timestamp);
+
+  gdk_flush ();
+  gdk_error_trap_pop ();
+
+  g_free (context.needle);
 
   return GDK_FILTER_CONTINUE;
 }
