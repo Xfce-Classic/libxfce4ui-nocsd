@@ -2,19 +2,19 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-01-16 16:03+0100\n"
+"POT-Creation-Date: 2011-05-09 04:31+0000\n"
 "PO-Revision-Date: 2010-01-20 21:44+0100\n"
 "Last-Translator: Vincent Tunru <projects@vinnl.nl>\n"
 "Language-Team: English/GB\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
 "X-Poedit-Language: English\n"
 "X-Poedit-Country: UNITED KINGDOM\n"
 
@@ -67,18 +67,12 @@ msgstr "Geen geldige client-ID van het sessiebeheer ontvangen"
 #. print warning for user
 #: ../libxfce4ui/xfce-spawn.c:407
 #, c-format
-msgid ""
-"Working directory \"%s\" does not exist. It won't be used when spawning \"%s"
-"\"."
-msgstr ""
+msgid "Working directory \"%s\" does not exist. It won't be used when spawning \"%s\"."
+msgstr "Werkende map \"%s\" bestaat niet. Hij zal niet worden gebruikt wanneer \"%s\" wordt uitgezaaid."
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:52
-msgid ""
-"This shortcut is already being used for another window manager action. Which "
-"action do you want to use?"
-msgstr ""
-"Deze sneltoets is al in gebruik door een andere vensterbeheeractie. Welke "
-"actie wilt u gebruiken?"
+msgid "This shortcut is already being used for another window manager action. Which action do you want to use?"
+msgstr "Deze sneltoets is al in gebruik door een andere vensterbeheeractie. Welke actie wilt u gebruiken?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
@@ -95,12 +89,8 @@ msgstr "De andere behouden"
 #: ../libxfce4kbd-private/xfce-shortcuts.c:55
 #: ../libxfce4kbd-private/xfce-shortcuts.c:58
 #, c-format
-msgid ""
-"This shortcut is already being used for the command '%s'. Which action do "
-"you want to use?"
-msgstr ""
-"Deze sneltoets is al in gebruik door het commando '%s'. Welke actie wilt u "
-"gebruiken?"
+msgid "This shortcut is already being used for the command '%s'. Which action do you want to use?"
+msgstr "Deze sneltoets is al in gebruik door het commando '%s'. Welke actie wilt u gebruiken?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
 #: ../libxfce4kbd-private/xfce-shortcuts.c:59
@@ -109,12 +99,8 @@ msgid "Keep '%s'"
 msgstr "'%s' behouden"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:61
-msgid ""
-"This shortcut is already being used by a window manager action. Which action "
-"do you want to use?"
-msgstr ""
-"Deze sneltoets is al in gebruik door een vensterbeheeractie. Welke actie "
-"wilt u gebruiken?"
+msgid "This shortcut is already being used by a window manager action. Which action do you want to use?"
+msgstr "Deze sneltoets is al in gebruik door een vensterbeheeractie. Welke actie wilt u gebruiken?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 msgid "Keep the window manager action"
