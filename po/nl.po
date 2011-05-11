@@ -7,70 +7,72 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-01-16 16:03+0100\n"
+"POT-Creation-Date: 2011-05-11 10:09+0000\n"
 "PO-Revision-Date: 2010-01-20 21:44+0100\n"
-"Last-Translator: Vincent Tunru <projects@vinnl.nl>\n"
+"Last-Translator: Pjotr\n"
 "Language-Team: English/GB\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
 "X-Poedit-Language: English\n"
 "X-Poedit-Country: UNITED KINGDOM\n"
 
-#: ../libxfce4ui/xfce-dialogs.c:69
+#: ../libxfce4ui/xfce-dialogs.c:68
 msgid "Information"
 msgstr "Informatie"
 
-#: ../libxfce4ui/xfce-dialogs.c:102
+#: ../libxfce4ui/xfce-dialogs.c:101
 msgid "Warning"
 msgstr "Waarschuwing"
 
-#: ../libxfce4ui/xfce-dialogs.c:136
+#: ../libxfce4ui/xfce-dialogs.c:135
 msgid "Error"
 msgstr "Fout"
 
-#: ../libxfce4ui/xfce-dialogs.c:187
+#: ../libxfce4ui/xfce-dialogs.c:186
 msgid "Question"
 msgstr "Vraag"
 
-#: ../libxfce4ui/xfce-sm-client.c:1401
+#: ../libxfce4ui/xfce-sm-client.c:1402
 msgid "Session management client ID"
 msgstr "Sessiebeheer client-ID"
 
-#: ../libxfce4ui/xfce-sm-client.c:1401
+#: ../libxfce4ui/xfce-sm-client.c:1402
 msgid "ID"
 msgstr "ID"
 
-#: ../libxfce4ui/xfce-sm-client.c:1402
+#: ../libxfce4ui/xfce-sm-client.c:1403
 msgid "Disable session management"
 msgstr "Sessiebeheer uitschakelen"
 
-#: ../libxfce4ui/xfce-sm-client.c:1412
+#: ../libxfce4ui/xfce-sm-client.c:1413
 msgid "Session management options"
 msgstr "Opties voor sessiebeheer"
 
-#: ../libxfce4ui/xfce-sm-client.c:1413
+#: ../libxfce4ui/xfce-sm-client.c:1414
 msgid "Show session management options"
 msgstr "Opties voor sessiebeheer tonen"
 
-#: ../libxfce4ui/xfce-sm-client.c:1589
+#: ../libxfce4ui/xfce-sm-client.c:1590
 #, c-format
 msgid "Failed to connect to the session manager: %s"
-msgstr "Kon geen verbinding maken met het sessiebeheer: %s"
+msgstr "Kon geen verbinding maken met de sessiebeheerder: %s"
 
-#: ../libxfce4ui/xfce-sm-client.c:1596
+#: ../libxfce4ui/xfce-sm-client.c:1597
 #, c-format
 msgid "Session manager did not return a valid client id"
-msgstr "Geen geldige client-ID van het sessiebeheer ontvangen"
+msgstr "Geen geldige client-ID van de sessiebeheerder ontvangen"
 
 #. print warning for user
-#: ../libxfce4ui/xfce-spawn.c:407
+#: ../libxfce4ui/xfce-spawn.c:406
 #, c-format
 msgid ""
 "Working directory \"%s\" does not exist. It won't be used when spawning \"%s"
 "\"."
 msgstr ""
+"Werkende map \"%s\" bestaat niet. Hij zal niet worden gebruikt wanneer \"%s"
+"\" wordt uitgezaaid."
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:52
 msgid ""
@@ -127,7 +129,7 @@ msgstr "Tegenstrijdige acties voor %s"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:128
 msgid "This shortcut is already being used for something else."
-msgstr "Deze sneltoets is al in gebruik."
+msgstr "Deze sneltoets is al in gebruik voor iets anders."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:207
 msgid "Window Manager Action Shortcut"
@@ -156,7 +158,7 @@ msgstr "Sneltoets:"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:303
 msgid "Could not grab the keyboard."
-msgstr "Kon geen toetsenbordfocus verkrijgen"
+msgstr "Kon het toetsenbord niet opeisen."
 
 #: ../glade/libxfce4ui.xml.in.h:1
 msgid "Subtitle"
