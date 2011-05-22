@@ -394,34 +394,20 @@ xfce_shortcuts_grabber_parse_shortcut (XfceShortcutsGrabber *grabber,
                                        guint                *keycode,
                                        guint                *modifiers)
 {
-  guint keyval;
+  gchar *
+  guint  keyval;
 
   g_return_if_fail (XFCE_IS_SHORTCUTS_GRABBER (grabber));
 
   gtk_accelerator_parse (shortcut, &keyval, modifiers);
 
+  /* Map virtual modifiers to non-virtual modifiers */
+  gdk_keymap_map_virtual_modifiers (gdk_keymap_get_default (),
+                                    modifiers);
+
   *keycode = XKeysymToKeycode (GDK_DISPLAY_XDISPLAY (gdk_display_get_default ()), keyval);
 
-  if ((*modifiers & GDK_SUPER_MASK) == GDK_SUPER_MASK)
-    {
-      *modifiers |= grabber->priv->modifiers[CACHE_SUPER];
-      *modifiers ^= GDK_SUPER_MASK;
-    }
-
-  if ((*modifiers & GDK_HYPER_MASK) == GDK_HYPER_MASK)
-    {
-      *modifiers |= grabber->priv->modifiers[CACHE_HYPER];
-      *modifiers ^= GDK_HYPER_MASK;
-    }
-
-  if ((*modifiers & GDK_META_MASK) == GDK_META_MASK)
-    {
-      *modifiers |= grabber->priv->modifiers[CACHE_META];
-      *modifiers ^= GDK_META_MASK;
-    }
-
-  *modifiers &= MODIFIER_MASK;
-  *modifiers &= ~xfce_shortcuts_grabber_get_ignore_mask (grabber);
+  TRACE ("Parsed %s", gtk_accelerator_name (keyval, *modifiers));
 }
 
 
