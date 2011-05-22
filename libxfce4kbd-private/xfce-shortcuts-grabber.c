@@ -394,7 +394,7 @@ xfce_shortcuts_grabber_parse_shortcut (XfceShortcutsGrabber *grabber,
                                        guint                *keycode,
                                        guint                *modifiers)
 {
-  gchar *
+  gchar *parsed_name;
   guint  keyval;
 
   g_return_if_fail (XFCE_IS_SHORTCUTS_GRABBER (grabber));
@@ -407,7 +407,9 @@ xfce_shortcuts_grabber_parse_shortcut (XfceShortcutsGrabber *grabber,
 
   *keycode = XKeysymToKeycode (GDK_DISPLAY_XDISPLAY (gdk_display_get_default ()), keyval);
 
-  TRACE ("Parsed %s", gtk_accelerator_name (keyval, *modifiers));
+  parsed_name = gtk_accelerator_name (keyval, *modifiers);
+  TRACE ("Parsed %s", parsed_name);
+  g_free (parsed_name);
 }
 
 
@@ -499,7 +501,8 @@ xfce_shortcuts_grabber_get_ignore_mask (XfceShortcutsGrabber *grabber)
 struct EventKeyFindContext
 {
   XfceShortcutsGrabber *grabber;
-  gchar                *needle;
+  GdkModifierType       modifiers;
+  guint                 keyval;
   const gchar          *result;
 };
 
@@ -510,24 +513,44 @@ find_event_key (const gchar                *shortcut,
                 XfceKey                    *key,
                 struct EventKeyFindContext *context)
 {
-  gboolean result;
+  GdkModifierType ignored;
+  guint           keycode;
 
-  result = FALSE;
+  g_return_val_if_fail (context != NULL, FALSE);
 
-  g_return_val_if_fail (context != NULL, TRUE);
-  g_return_val_if_fail (context->needle != NULL, TRUE);
+  TRACE ("Comparing to %s", shortcut);
 
-  TRACE ("Comparing %s and %s", shortcut, context->needle);
+  ignored = 0;
 
-  if (G_UNLIKELY (g_str_equal (shortcut, context->needle)))
+  keycode =
+    XKeysymToKeycode (GDK_DISPLAY_XDISPLAY (gdk_display_get_default ()),
+                      context->keyval);
+
+  /* Accept MOD1 + META as MOD1 */
+  if (key->modifiers & context->modifiers & GDK_MOD1_MASK)
     {
-      context->result = shortcut;
-      result = TRUE;
-
-      TRACE ("Positive match for %s", context->needle);
+      TRACE ("Ignoring Meta Mask");
+      ignored |= GDK_META_MASK;
     }
 
-  return result;
+  /* Accept SUPER + HYPER as SUPER */
+  if (key->modifiers & context->modifiers & GDK_SUPER_MASK)
+    {
+      TRACE ("Ignoring Hyper and Mod4 Masks");
+      ignored |= GDK_HYPER_MASK;
+      ignored |= GDK_MOD4_MASK;
+    }
+
+  if ((key->modifiers & ~ignored) == (context->modifiers & ~ignored)
+      && key->keycode == keycode)
+    {
+      context->result = shortcut;
+
+      TRACE ("Positive match for %s", context->result);
+      return TRUE;
+    }
+
+  return FALSE;
 }
 
 
@@ -542,6 +565,7 @@ xfce_shortcuts_grabber_event_filter (GdkXEvent            *gdk_xevent,
   GdkModifierType             consumed, modifiers;
   XEvent                     *xevent;
   guint                       keyval, mod_mask;
+  gchar                      *raw_shortcut_name;
   gint                        timestamp;
 
   g_return_val_if_fail (XFCE_IS_SHORTCUTS_GRABBER (grabber), GDK_FILTER_CONTINUE);
@@ -571,17 +595,21 @@ xfce_shortcuts_grabber_event_filter (GdkXEvent            *gdk_xevent,
   gdk_keymap_add_virtual_modifiers (keymap, &modifiers);
   modifiers &= mod_mask;
 
-  context.needle = gtk_accelerator_name (keyval, modifiers);
+  context.keyval = keyval;
+  context.modifiers = modifiers;
+
+  raw_shortcut_name = gtk_accelerator_name (keyval, modifiers);
+  TRACE ("Looking for %s", raw_shortcut_name);
+  g_free (raw_shortcut_name);
 
   g_hash_table_foreach (grabber->priv->keys, (GHFunc) find_event_key, &context);
 
   if (G_LIKELY (context.result != NULL))
-    g_signal_emit_by_name (grabber, "shortcut-activated", context.result, timestamp);
+    g_signal_emit_by_name (grabber, "shortcut-activated",
+                           context.result, timestamp);
 
   gdk_flush ();
   gdk_error_trap_pop ();
-
-  g_free (context.needle);
 
   return GDK_FILTER_CONTINUE;
 }
