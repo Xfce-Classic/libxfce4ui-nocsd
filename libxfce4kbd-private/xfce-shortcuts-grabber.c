@@ -312,18 +312,28 @@ xfce_shortcuts_grabber_grab (XfceShortcutsGrabber *grabber,
                     XkbAllClientInfoMask,
                     XkbUseCoreKbd);
 
+  /* Get all keys generating keyval */
   if (!gdk_keymap_get_entries_for_keyval (keymap,key->keyval,
-                                          &keys, &n_keys)
-      || n_keys == 0)
+                                          &keys, &n_keys))
     {
       XkbFreeClientMap (xmap, 0, TRUE);
       TRACE ("Got no keys for keyval");
       return;
     }
 
+  if (n_keys == 0)
+    {
+      XkbFreeClientMap (xmap, 0, TRUE);
+      g_free (keys);
+
+      TRACE ("Got 0 keys for keyval");
+      return;
+    }
+
   for (i = 0; i < n_keys; i ++)
     {
       /* Grab all hardware keys generating keyval */
+
       GdkModifierType add_modifiers;
 
       add_modifiers = FinallyGetModifiersForKeycode (xmap,
@@ -373,7 +383,14 @@ xfce_shortcuts_grabber_grab (XfceShortcutsGrabber *grabber,
             }
 
           gdk_flush ();
-          gdk_error_trap_pop ();
+
+          if (gdk_error_trap_pop ())
+            {
+              if (grab)
+                TRACE ("Failed to grab");
+              else
+                TRACE ("Failed to ungrab");
+            }
         }
     }
 
