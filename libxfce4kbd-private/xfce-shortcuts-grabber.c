@@ -481,9 +481,9 @@ xfce_shortcuts_grabber_event_filter (GdkXEvent            *gdk_xevent,
   mod_mask = gtk_accelerator_get_default_mod_mask ();
   modifiers = xevent->xkey.state;
 
-  /* TODO: group handling? */
   gdk_keymap_translate_keyboard_state (keymap, xevent->xkey.keycode,
-                                       modifiers, 0,
+                                       modifiers,
+                                       XkbGroupForCoreState (xevent->xkey.state),
                                        &keyval, NULL, NULL, &consumed);
 
   /* Get the modifiers */
