@@ -55,7 +55,6 @@ static void xfce_titled_dialog_set_property   (GObject                *object,
                                                guint                   prop_id,
                                                const GValue           *value,
                                                GParamSpec             *pspec);
-static void xfce_titled_dialog_realize        (GtkWidget              *widget);
 static void xfce_titled_dialog_close          (GtkDialog              *dialog);
 static void xfce_titled_dialog_update_heading (XfceTitledDialog       *titled_dialog);
 
@@ -79,7 +78,6 @@ xfce_titled_dialog_class_init (XfceTitledDialogClass *klass)
   GtkDialogClass *gtkdialog_class;
   GtkBindingSet  *binding_set;
   GObjectClass   *gobject_class;
-  GtkWidgetClass *gtkwidget_class;
 
   /* add our private data to the class */
   g_type_class_add_private (klass, sizeof (XfceTitledDialogPrivate));
@@ -88,9 +86,6 @@ xfce_titled_dialog_class_init (XfceTitledDialogClass *klass)
   gobject_class->finalize = xfce_titled_dialog_finalize;
   gobject_class->get_property = xfce_titled_dialog_get_property;
   gobject_class->set_property = xfce_titled_dialog_set_property;
-
-  gtkwidget_class = GTK_WIDGET_CLASS (klass);
-  gtkwidget_class->realize = xfce_titled_dialog_realize;
 
   gtkdialog_class = GTK_DIALOG_CLASS (klass);
   gtkdialog_class->close = xfce_titled_dialog_close;
@@ -148,6 +143,11 @@ xfce_titled_dialog_init (XfceTitledDialog *titled_dialog)
   /* add the main dialog box to the new vbox */
   gtk_box_pack_start (GTK_BOX (vbox), GTK_DIALOG (titled_dialog)->vbox, TRUE, TRUE, 0);
   g_object_unref (G_OBJECT (GTK_DIALOG (titled_dialog)->vbox));
+
+  /* make sure to update the heading whenever one of the relevant window properties changes */
+  g_signal_connect (G_OBJECT (titled_dialog), "notify::icon", G_CALLBACK (xfce_titled_dialog_update_heading), NULL);
+  g_signal_connect (G_OBJECT (titled_dialog), "notify::icon-name", G_CALLBACK (xfce_titled_dialog_update_heading), NULL);
+  g_signal_connect (G_OBJECT (titled_dialog), "notify::title", G_CALLBACK (xfce_titled_dialog_update_heading), NULL);
 }
 
 
@@ -206,24 +206,6 @@ xfce_titled_dialog_set_property (GObject      *object,
       G_OBJECT_WARN_INVALID_PROPERTY_ID (object, prop_id, pspec);
       break;
     }
-}
-
-
-
-static void
-xfce_titled_dialog_realize (GtkWidget *widget)
-{
-  XfceTitledDialog *titled_dialog = XFCE_TITLED_DIALOG (widget);
-
-  /* make sure to update the heading whenever one of the relevant window properties changes */
-  g_signal_connect (G_OBJECT (titled_dialog), "notify::icon", G_CALLBACK (xfce_titled_dialog_update_heading), NULL);
-  g_signal_connect (G_OBJECT (titled_dialog), "notify::icon-name", G_CALLBACK (xfce_titled_dialog_update_heading), NULL);
-  g_signal_connect (G_OBJECT (titled_dialog), "notify::title", G_CALLBACK (xfce_titled_dialog_update_heading), NULL);
-
-  /* initially update the heading properties */
-  xfce_titled_dialog_update_heading (titled_dialog);
-
-  (*GTK_WIDGET_CLASS (xfce_titled_dialog_parent_class)->realize) (widget);
 }
 
 
