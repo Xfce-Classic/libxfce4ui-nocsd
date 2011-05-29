@@ -28,7 +28,6 @@
 
 G_BEGIN_DECLS
 
-typedef struct _XfceHeadingPrivate XfceHeadingPrivate;
 typedef struct _XfceHeadingClass   XfceHeadingClass;
 typedef struct _XfceHeading        XfceHeading;
 
@@ -39,22 +38,7 @@ typedef struct _XfceHeading        XfceHeading;
 #define XFCE_IS_HEADING_CLASS(klass)  (G_TYPE_CHECK_CLASS_TYPE ((klass), XFCE_TYPE_HEADING))
 #define XFCE_HEADING_GET_CLASS(obj)   (G_TYPE_INSTANCE_GET_CLASS ((obj), XFCE_TYPE_HEADING, XfceHeadingClass))
 
-struct _XfceHeadingClass
-{
-  /*< private >*/
-  GtkWidgetClass __parent__;
-};
-
-struct _XfceHeading
-{
-  /*< private >*/
-  GtkWidget           __parent__;
-  XfceHeadingPrivate *priv;
-};
-
 GType      _xfce_heading_get_type      (void) G_GNUC_CONST;
-
-GtkWidget *_xfce_heading_new           (void) G_GNUC_MALLOC;
 
 void       _xfce_heading_set_icon      (XfceHeading *heading,
                                         GdkPixbuf   *icon);

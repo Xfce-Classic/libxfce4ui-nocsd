@@ -31,6 +31,18 @@ G_BEGIN_DECLS
 /* support for canonical representations of strings */
 #define I_(string) (g_intern_static_string ((string)))
 
+#ifndef NDEBUG
+#define _libxfce4ui_assert(expr)                 g_assert (expr)
+#define _libxfce4ui_assert_not_reached()         g_assert_not_reached ()
+#define _libxfce4ui_return_if_fail(expr)         g_return_if_fail (expr)
+#define _libxfce4ui_return_val_if_fail(expr,val) g_return_val_if_fail (expr,val)
+#else
+#define _libxfce4ui_assert(expr)                 G_STMT_START{ (void)0; }G_STMT_END
+#define _libxfce4ui_assert_not_reached()         G_STMT_START{ (void)0; }G_STMT_END
+#define _libxfce4ui_return_if_fail(expr)         G_STMT_START{ (void)0; }G_STMT_END
+#define _libxfce4ui_return_val_if_fail(expr,val) G_STMT_START{ (void)0; }G_STMT_END
+#endif
+
 G_END_DECLS
 
 #endif /* !__LIBXFCE4UI_PRIVATE_H__ */

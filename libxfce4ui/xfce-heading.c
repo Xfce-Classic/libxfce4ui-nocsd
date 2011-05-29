@@ -38,50 +38,32 @@
 #define XFCE_HEADING_SPACING    12
 #define XFCE_HEADING_ICON_SIZE  48
 
-#define XFCE_HEADING_GET_PRIVATE(obj) (G_TYPE_INSTANCE_GET_PRIVATE ((obj), XFCE_TYPE_HEADING, XfceHeadingPrivate))
-
-
-
-/* Property identifiers */
-enum
-{
-  PROP_0,
-  PROP_ICON,
-  PROP_ICON_NAME,
-  PROP_SUBTITLE,
-  PROP_TITLE,
-};
-
-
 
 static void         _xfce_heading_finalize       (GObject          *object);
-static void         _xfce_heading_get_property   (GObject          *object,
-                                                 guint             prop_id,
-                                                 GValue           *value,
-                                                 GParamSpec       *pspec);
-static void         _xfce_heading_set_property   (GObject          *object,
-                                                 guint             prop_id,
-                                                 const GValue     *value,
-                                                 GParamSpec       *pspec);
 static void         _xfce_heading_realize        (GtkWidget        *widget);
 static void         _xfce_heading_size_request   (GtkWidget        *widget,
-                                                 GtkRequisition   *requisition);
+                                                  GtkRequisition   *requisition);
 static void         _xfce_heading_style_set      (GtkWidget        *widget,
-                                                 GtkStyle         *previous_style);
+                                                  GtkStyle         *previous_style);
 static gboolean     _xfce_heading_expose_event   (GtkWidget        *widget,
-                                                 GdkEventExpose   *event);
+                                                  GdkEventExpose   *event);
 static AtkObject   *_xfce_heading_get_accessible (GtkWidget        *widget);
 static PangoLayout *_xfce_heading_make_layout    (XfceHeading      *heading);
 static GdkPixbuf   *_xfce_heading_make_pixbuf    (XfceHeading      *heading);
-static GdkPixbuf   *_xfce_heading_get_icon       (XfceHeading      *heading);
-static const gchar *_xfce_heading_get_icon_name  (XfceHeading      *heading);
-static const gchar *_xfce_heading_get_subtitle   (XfceHeading      *heading);
-static const gchar *_xfce_heading_get_title      (XfceHeading      *heading);
 
 
 
-struct _XfceHeadingPrivate
+struct _XfceHeadingClass
 {
+  /*< private >*/
+  GtkWidgetClass __parent__;
+};
+
+struct _XfceHeading
+{
+  /*< private >*/
+  GtkWidget  __parent__;
+
   GdkPixbuf *icon;
   gchar     *icon_name;
   gchar     *subtitle;
@@ -100,13 +82,8 @@ _xfce_heading_class_init (XfceHeadingClass *klass)
   GtkWidgetClass *gtkwidget_class;
   GObjectClass   *gobject_class;
 
-  /* add our private data to the class */
-  g_type_class_add_private (klass, sizeof (XfceHeadingPrivate));
-
   gobject_class = G_OBJECT_CLASS (klass);
   gobject_class->finalize = _xfce_heading_finalize;
-  gobject_class->get_property = _xfce_heading_get_property;
-  gobject_class->set_property = _xfce_heading_set_property;
 
   gtkwidget_class = GTK_WIDGET_CLASS (klass);
   gtkwidget_class->realize = _xfce_heading_realize;
@@ -114,76 +91,6 @@ _xfce_heading_class_init (XfceHeadingClass *klass)
   gtkwidget_class->style_set = _xfce_heading_style_set;
   gtkwidget_class->expose_event = _xfce_heading_expose_event;
   gtkwidget_class->get_accessible = _xfce_heading_get_accessible;
-
-  /**
-   * XfceHeading:icon:
-   *
-   * The #GdkPixbuf to display as icon, or %NULL to use the
-   * "icon-name" property.
-   *
-   * Since: 4.4.0
-   **/
-  g_object_class_install_property (gobject_class,
-                                   PROP_ICON,
-                                   g_param_spec_object ("icon",
-                                                        "icon",
-                                                        "icon",
-                                                        GDK_TYPE_PIXBUF,
-                                                        G_PARAM_READWRITE
-                                                        | G_PARAM_STATIC_STRINGS));
-
-  /**
-   * XfceHeading:icon-name:
-   *
-   * If the "icon" property value is %NULL this is the name of
-   * the icon to display instead (looked up using the icon theme).
-   * If this property is also %NULL or the specified icon does not
-   * exist in the selected icon theme, no icon will be displayed.
-   *
-   * Since: 4.4.0
-   **/
-  g_object_class_install_property (gobject_class,
-                                   PROP_ICON_NAME,
-                                   g_param_spec_string ("icon-name",
-                                                        "icon-name",
-                                                        "icon-name",
-                                                        NULL,
-                                                        G_PARAM_READWRITE
-                                                        | G_PARAM_STATIC_STRINGS));
-
-  /**
-   * XfceHeading:subtitle:
-   *
-   * The sub title that should be displayed below the
-   * title. May be %NULL or the empty string to display
-   * only the title.
-   *
-   * Since: 4.4.0
-   **/
-  g_object_class_install_property (gobject_class,
-                                   PROP_SUBTITLE,
-                                   g_param_spec_string ("subtitle",
-                                                        "subtitle",
-                                                        "subtitle",
-                                                        NULL,
-                                                        G_PARAM_READWRITE
-                                                        | G_PARAM_STATIC_STRINGS));
-
-  /**
-   * XfceHeading:title:
-   *
-   * The title text to display in the heading.
-   *
-   * Since: 4.4.0
-   **/
-  g_object_class_install_property (gobject_class,
-                                   PROP_TITLE,
-                                   g_param_spec_string ("title",
-                                                        "title",
-                                                        "title",
-                                                        NULL,
-                                                        G_PARAM_READWRITE
-                                                        | G_PARAM_STATIC_STRINGS));
 }
 
 
@@ -191,9 +98,6 @@ _xfce_heading_class_init (XfceHeadingClass *klass)
 static void
 _xfce_heading_init (XfceHeading *heading)
 {
-  /* setup the private data */
-  heading->priv = XFCE_HEADING_GET_PRIVATE (heading);
-
   /* setup the widget parameters */
   GTK_WIDGET_UNSET_FLAGS (heading, GTK_NO_WINDOW);
 }
@@ -206,82 +110,14 @@ _xfce_heading_finalize (GObject *object)
   XfceHeading *heading = XFCE_HEADING (object);
 
   /* release the private data */
-  if (G_UNLIKELY (heading->priv->icon != NULL))
-    g_object_unref (G_OBJECT (heading->priv->icon));
+  if (G_UNLIKELY (heading->icon != NULL))
+    g_object_unref (G_OBJECT (heading->icon));
 
-  g_free (heading->priv->icon_name);
-  g_free (heading->priv->subtitle);
-  g_free (heading->priv->title);
+  g_free (heading->icon_name);
+  g_free (heading->subtitle);
+  g_free (heading->title);
 
   (*G_OBJECT_CLASS (_xfce_heading_parent_class)->finalize) (object);
-}
-
-
-
-static void
-_xfce_heading_get_property (GObject    *object,
-                           guint       prop_id,
-                           GValue     *value,
-                           GParamSpec *pspec)
-{
-  XfceHeading *heading = XFCE_HEADING (object);
-
-  switch (prop_id)
-    {
-    case PROP_ICON:
-      g_value_set_object (value, _xfce_heading_get_icon (heading));
-      break;
-
-    case PROP_ICON_NAME:
-      g_value_set_string (value, _xfce_heading_get_icon_name (heading));
-      break;
-
-    case PROP_SUBTITLE:
-      g_value_set_string (value, _xfce_heading_get_subtitle (heading));
-      break;
-
-    case PROP_TITLE:
-      g_value_set_string (value, _xfce_heading_get_title (heading));
-      break;
-
-    default:
-      G_OBJECT_WARN_INVALID_PROPERTY_ID (object, prop_id, pspec);
-      break;
-    }
-}
-
-
-
-static void
-_xfce_heading_set_property (GObject      *object,
-                           guint         prop_id,
-                           const GValue *value,
-                           GParamSpec   *pspec)
-{
-  XfceHeading *heading = XFCE_HEADING (object);
-
-  switch (prop_id)
-    {
-    case PROP_ICON:
-      _xfce_heading_set_icon (heading, g_value_get_object (value));
-      break;
-
-    case PROP_ICON_NAME:
-      _xfce_heading_set_icon_name (heading, g_value_get_string (value));
-      break;
-
-    case PROP_SUBTITLE:
-      _xfce_heading_set_subtitle (heading, g_value_get_string (value));
-      break;
-
-    case PROP_TITLE:
-      _xfce_heading_set_title (heading, g_value_get_string (value));
-      break;
-
-    default:
-      G_OBJECT_WARN_INVALID_PROPERTY_ID (object, prop_id, pspec);
-      break;
-    }
 }
 
 
@@ -322,7 +158,7 @@ _xfce_heading_realize (GtkWidget *widget)
 
 static void
 _xfce_heading_size_request (GtkWidget      *widget,
-                           GtkRequisition *requisition)
+                            GtkRequisition *requisition)
 {
   XfceHeading *heading = XFCE_HEADING (widget);
   PangoLayout *layout;
@@ -359,7 +195,7 @@ _xfce_heading_size_request (GtkWidget      *widget,
 
 static void
 _xfce_heading_style_set (GtkWidget *widget,
-                        GtkStyle  *previous_style)
+                         GtkStyle  *previous_style)
 {
   /* check if we're already realized */
   if (GTK_WIDGET_REALIZED (widget))
@@ -373,7 +209,7 @@ _xfce_heading_style_set (GtkWidget *widget,
 
 static gboolean
 _xfce_heading_expose_event (GtkWidget      *widget,
-                           GdkEventExpose *event)
+                            GdkEventExpose *event)
 {
   XfceHeading *heading = XFCE_HEADING (widget);
   PangoLayout *layout;
@@ -421,7 +257,8 @@ _xfce_heading_expose_event (GtkWidget      *widget,
   y = (widget->allocation.height - height) / 2;
 
   /* render the title */
-  gtk_paint_layout (widget->style, widget->window, GTK_WIDGET_STATE (widget), TRUE, &event->area,
+  gtk_paint_layout (widget->style, widget->window,
+                    GTK_WIDGET_STATE (widget), TRUE, &event->area,
                     widget, "heading", (rtl ? x - width : x), y, layout);
 
   /* release the layout */
@@ -456,20 +293,20 @@ _xfce_heading_make_layout (XfceHeading *heading)
 
   /* generate the full text */
   text = g_string_sized_new (128);
-  if (G_LIKELY (heading->priv->title != NULL))
+  if (G_LIKELY (heading->title != NULL))
     {
       /* add the main title */
-      title_length = strlen (heading->priv->title);
-      g_string_append (text, heading->priv->title);
+      title_length = strlen (heading->title);
+      g_string_append (text, heading->title);
     }
-  if (heading->priv->subtitle != NULL && *heading->priv->subtitle != '\0')
+  if (heading->subtitle != NULL && *heading->subtitle != '\0')
     {
       /* add an empty line between the title and the subtitle */
-      if (G_LIKELY (heading->priv->title != NULL))
+      if (G_LIKELY (heading->title != NULL))
         g_string_append (text, "\n");
 
       /* add the subtitle */
-      g_string_append (text, heading->priv->subtitle);
+      g_string_append (text, heading->subtitle);
     }
 
   /* allocate and setup a new layout from the widget's context */
@@ -503,58 +340,24 @@ _xfce_heading_make_pixbuf (XfceHeading *heading)
   GdkPixbuf    *pixbuf = NULL;
   GdkScreen    *screen;
 
-  if (G_UNLIKELY (heading->priv->icon != NULL))
+  if (G_UNLIKELY (heading->icon != NULL))
     {
       /* just use the specified icon */
-      pixbuf = g_object_ref (G_OBJECT (heading->priv->icon));
+      pixbuf = g_object_ref (G_OBJECT (heading->icon));
     }
-  else if (G_LIKELY (heading->priv->icon_name != NULL))
+  else if (G_LIKELY (heading->icon_name != NULL))
     {
       /* determine the icon theme for the current screen */
       screen = gtk_widget_get_screen (GTK_WIDGET (heading));
       icon_theme = gtk_icon_theme_get_for_screen (screen);
 
       /* try to load the icon from the icon theme */
-      pixbuf = gtk_icon_theme_load_icon (icon_theme, heading->priv->icon_name,
+      pixbuf = gtk_icon_theme_load_icon (icon_theme, heading->icon_name,
                                          XFCE_HEADING_ICON_SIZE,
                                          GTK_ICON_LOOKUP_USE_BUILTIN, NULL);
     }
 
   return pixbuf;
-}
-
-
-
-/**
- * _xfce_heading_new:
- *
- * Allocates a new #XfceHeading instance.
- *
- * Return value: the newly allocated #XfceHeading.
- **/
-GtkWidget*
-_xfce_heading_new (void)
-{
-  return g_object_new (XFCE_TYPE_HEADING, NULL);
-}
-
-
-
-/**
- * _xfce_heading_get_icon:
- * @heading : a #XfceHeading.
- *
- * Returns the #GdkPixbuf that was set as icon for
- * @heading or %NULL if no icon is set. The returned
- * #GdkPixbuf object is owned by @heading.
- *
- * Return value: the icon for @heading, or %NULL.
- **/
-static GdkPixbuf*
-_xfce_heading_get_icon (XfceHeading *heading)
-{
-  g_return_val_if_fail (XFCE_IS_HEADING (heading), NULL);
-  return heading->priv->icon;
 }
 
 
@@ -572,48 +375,25 @@ void
 _xfce_heading_set_icon (XfceHeading *heading,
                         GdkPixbuf   *icon)
 {
-  g_return_if_fail (XFCE_IS_HEADING (heading));
-  g_return_if_fail (icon == NULL || GDK_IS_PIXBUF (icon));
+  _libxfce4ui_return_if_fail (XFCE_IS_HEADING (heading));
+  _libxfce4ui_return_if_fail (icon == NULL || GDK_IS_PIXBUF (icon));
 
   /* check if we have a new icon */
-  if (G_LIKELY (heading->priv->icon != icon))
+  if (G_LIKELY (heading->icon != icon))
     {
       /* disconnect from the previous icon */
-      if (G_LIKELY (heading->priv->icon != NULL))
-        g_object_unref (G_OBJECT (heading->priv->icon));
+      if (G_LIKELY (heading->icon != NULL))
+        g_object_unref (G_OBJECT (heading->icon));
 
       /* activate the new icon */
-      heading->priv->icon = icon;
+      heading->icon = icon;
 
       /* connect to the new icon */
       if (G_LIKELY (icon != NULL))
         g_object_ref (G_OBJECT (icon));
 
-      /* schedule a resize */
       gtk_widget_queue_resize (GTK_WIDGET (heading));
-
-      /* notify listeners */
-      g_object_notify (G_OBJECT (heading), "icon");
     }
-}
-
-
-
-/**
- * _xfce_heading_get_icon_name:
- * @heading : a #XfceHeading.
- *
- * Returns the icon name previously set by a call to
- * _xfce_heading_set_icon_name() or %NULL if no icon name
- * is set for @heading.
- *
- * Return value: the icon name for @heading, or %NULL.
- **/
-static const gchar*
-_xfce_heading_get_icon_name (XfceHeading *heading)
-{
-  g_return_val_if_fail (XFCE_IS_HEADING (heading), NULL);
-  return heading->priv->icon_name;
 }
 
 
@@ -631,38 +411,13 @@ void
 _xfce_heading_set_icon_name (XfceHeading *heading,
                              const gchar *icon_name)
 {
-  g_return_if_fail (XFCE_IS_HEADING (heading));
-
-  /* release the previous icon name */
-  g_free (heading->priv->icon_name);
+  _libxfce4ui_return_if_fail (XFCE_IS_HEADING (heading));
 
   /* activate the new icon name */
-  heading->priv->icon_name = g_strdup (icon_name);
+  g_free (heading->icon_name);
+  heading->icon_name = g_strdup (icon_name);
 
-  /* schedule a resize */
   gtk_widget_queue_resize (GTK_WIDGET (heading));
-
-  /* notify listeners */
-  g_object_notify (G_OBJECT (heading), "icon-name");
-}
-
-
-
-/**
- * _xfce_heading_get_subtitle:
- * @heading : a #XfceHeading.
- *
- * Returns the sub title displayed below the
- * main title of the @heading, or %NULL if
- * no subtitle is set.
- *
- * Return value: the subtitle of @heading, or %NULL.
- **/
-static const gchar*
-_xfce_heading_get_subtitle (XfceHeading *heading)
-{
-  g_return_val_if_fail (XFCE_IS_HEADING (heading), NULL);
-  return heading->priv->subtitle;
 }
 
 
@@ -679,37 +434,14 @@ void
 _xfce_heading_set_subtitle (XfceHeading *heading,
                             const gchar *subtitle)
 {
-  g_return_if_fail (XFCE_IS_HEADING (heading));
-  g_return_if_fail (subtitle == NULL || g_utf8_validate (subtitle, -1, NULL));
-
-  /* release the previous subtitle */
-  g_free (heading->priv->subtitle);
+  _libxfce4ui_return_if_fail (XFCE_IS_HEADING (heading));
+  _libxfce4ui_return_if_fail (subtitle == NULL || g_utf8_validate (subtitle, -1, NULL));
 
   /* activate the new subtitle */
-  heading->priv->subtitle = g_strdup (subtitle);
+  g_free (heading->subtitle);
+  heading->subtitle = g_strdup (subtitle);
 
-  /* schedule a resize */
   gtk_widget_queue_resize (GTK_WIDGET (heading));
-
-  /* notify listeners */
-  g_object_notify (G_OBJECT (heading), "subtitle");
-}
-
-
-
-/**
- * _xfce_heading_get_title:
- * @heading : a #XfceHeading.
- *
- * Returns the title displayed by the @heading.
- *
- * Return value: the title displayed by the @heading.
- **/
-static const gchar*
-_xfce_heading_get_title (XfceHeading *heading)
-{
-  g_return_val_if_fail (XFCE_IS_HEADING (heading), NULL);
-  return heading->priv->title;
 }
 
 
@@ -726,20 +458,14 @@ void
 _xfce_heading_set_title (XfceHeading *heading,
                          const gchar *title)
 {
-  g_return_if_fail (XFCE_IS_HEADING (heading));
-  g_return_if_fail (title == NULL || g_utf8_validate (title, -1, NULL));
-
-  /* release the previous title */
-  g_free (heading->priv->title);
+  _libxfce4ui_return_if_fail (XFCE_IS_HEADING (heading));
+  _libxfce4ui_return_if_fail (title == NULL || g_utf8_validate (title, -1, NULL));
 
   /* activate the new title */
-  heading->priv->title = g_strdup (title);
+  g_free (heading->title);
+  heading->title = g_strdup (title);
 
-  /* schedule a resize */
   gtk_widget_queue_resize (GTK_WIDGET (heading));
-
-  /* notify listeners */
-  g_object_notify (G_OBJECT (heading), "title");
 }
 
 
