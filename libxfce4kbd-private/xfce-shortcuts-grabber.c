@@ -26,6 +26,7 @@
 #include <glib-object.h>
 
 #include <X11/Xlib.h>
+#include <X11/XKBlib.h>
 
 #include <gdk/gdk.h>
 #include <gdk/gdkx.h>
@@ -41,37 +42,8 @@
 
 
 #define XFCE_SHORTCUTS_GRABBER_GET_PRIVATE(obj) (G_TYPE_INSTANCE_GET_PRIVATE ((obj), XFCE_TYPE_SHORTCUTS_GRABBER, XfceShortcutsGrabberPrivate))
-
-
-
-#define MODIFIER_MASK (GDK_SHIFT_MASK | \
-                       GDK_CONTROL_MASK | \
-                       GDK_MOD1_MASK | \
-                       GDK_MOD2_MASK | \
-                       GDK_MOD3_MASK | \
-                       GDK_MOD4_MASK | \
-                       GDK_MOD5_MASK)
-
-#define IGNORE_MASK   (0x2000 | \
-                       GDK_LOCK_MASK | \
-                       GDK_HYPER_MASK | \
-                       GDK_SUPER_MASK | \
-                       GDK_META_MASK)
-
-
-
-/* Cache indices for modifiers */
-enum
-{
-  CACHE_SUPER,
-  CACHE_HYPER,
-  CACHE_META,
-  CACHE_CAPS_LOCK,
-  CACHE_NUM_LOCK,
-  CACHE_SCROLL_LOCK,
-  CACHE_LAST,
-};
-
+#define MODIFIERS_ERROR ((GdkModifierType)(-1))
+#define MODIFIERS_NONE 0
 
 
 typedef struct _XfceKey XfceKey;
@@ -84,15 +56,9 @@ static void            xfce_shortcuts_grabber_keys_changed     (GdkKeymap       
                                                                 XfceShortcutsGrabber      *grabber);
 static void            xfce_shortcuts_grabber_grab_all         (XfceShortcutsGrabber      *grabber);
 static void            xfce_shortcuts_grabber_ungrab_all       (XfceShortcutsGrabber      *grabber);
-static void            xfce_shortcuts_grabber_reload_modifiers (XfceShortcutsGrabber      *grabber);
-static void            xfce_shortcuts_grabber_parse_shortcut   (XfceShortcutsGrabber      *grabber,
-                                                                const gchar               *shortcut,
-                                                                guint                     *keycode,
-                                                                guint                     *modifiers);
 static void            xfce_shortcuts_grabber_grab             (XfceShortcutsGrabber      *grabber,
                                                                 XfceKey                   *key,
                                                                 gboolean                   grab);
-static guint           xfce_shortcuts_grabber_get_ignore_mask  (XfceShortcutsGrabber      *grabber);
 static GdkFilterReturn xfce_shortcuts_grabber_event_filter     (GdkXEvent                 *gdk_xevent,
                                                                 GdkEvent                  *event,
                                                                 XfceShortcutsGrabber      *grabber);
@@ -102,12 +68,11 @@ static GdkFilterReturn xfce_shortcuts_grabber_event_filter     (GdkXEvent       
 struct _XfceShortcutsGrabberPrivate
 {
   GHashTable *keys;
-  guint       modifiers[CACHE_LAST];
 };
 
 struct _XfceKey
 {
-  guint keycode;
+  guint keyval;
   guint modifiers;
 };
 
@@ -154,8 +119,6 @@ xfce_shortcuts_grabber_init (XfceShortcutsGrabber *grabber)
    * updates it.
    */
   (void) gdk_keymap_have_bidi_layouts (gdk_keymap_get_default ());
-
-  xfce_shortcuts_grabber_reload_modifiers (grabber);
 }
 
 
@@ -203,7 +166,6 @@ xfce_shortcuts_grabber_keys_changed (GdkKeymap            *keymap,
   g_return_if_fail (XFCE_IS_SHORTCUTS_GRABBER (grabber));
 
   xfce_shortcuts_grabber_ungrab_all (grabber);
-  xfce_shortcuts_grabber_reload_modifiers (grabber);
   xfce_shortcuts_grabber_grab_all (grabber);
 }
 
@@ -249,109 +211,66 @@ xfce_shortcuts_grabber_ungrab_all (XfceShortcutsGrabber *grabber)
 
 
 
-static void
-xfce_shortcuts_grabber_reload_modifiers (XfceShortcutsGrabber *grabber)
+/* Return the modifier mask that needs to be pressed to produce key in the
+ * given group (keyboard layout) and level ("shift level").
+ *
+ * Taken from libkeybinder
+ * Copyright (C) 2010 Ulrik Sverdrup <ulrik.sverdrup@gmail.com>
+ */
+static GdkModifierType
+FinallyGetModifiersForKeycode (XkbDescPtr xkb,
+                               KeyCode    key,
+                               uint       group,
+                               uint       level)
 {
-  XModifierKeymap *modmap;
-  const KeySym    *keysyms;
-  Display         *display;
-  KeyCode          keycode;
-  KeySym          *keymap;
-  gint             keysyms_per_keycode = 0;
-  gint             min_keycode = 0;
-  gint             max_keycode = 0;
-  gint             mask;
-  gint             i;
-  gint             j;
+  XkbKeyTypeRec *type;
+  int            nKeyGroups;
+  int            effectiveGroup;
+  int            k;
 
-  g_return_if_fail (XFCE_IS_SHORTCUTS_GRABBER (grabber));
+  nKeyGroups = XkbKeyNumGroups (xkb, key);
 
-  for (i = 0; i < CACHE_LAST; ++i)
-    grabber->priv->modifiers[i] = 0;
+  if ((!XkbKeycodeInRange (xkb, key)) || (nKeyGroups == 0))
+    return MODIFIERS_ERROR;
 
-  display = GDK_DISPLAY_XDISPLAY (gdk_display_get_default ());
+  /* Taken from GDK's MyEnhancedXkbTranslateKeyCode */
+  /* find the offset of the effective group */
+  effectiveGroup = group;
 
-  gdk_error_trap_push ();
-
-  XDisplayKeycodes (display, &min_keycode, &max_keycode);
-
-  keymap = XGetKeyboardMapping (display, min_keycode, max_keycode - min_keycode + 1,
-                                &keysyms_per_keycode);
-
-  if (G_UNLIKELY (keymap == NULL))
-    return;
-
-  modmap = XGetModifierMapping (display);
-
-  if (G_UNLIKELY (modmap == NULL))
+  if (effectiveGroup >= nKeyGroups)
     {
-      XFree (keymap);
-      return;
-    }
+      unsigned groupInfo = XkbKeyGroupInfo (xkb,key);
 
-  for (i = 0; i < 8 * modmap->max_keypermod; ++i)
-    {
-      keycode = modmap->modifiermap[i];
-
-      if (keycode == 0 || keycode < min_keycode || keycode > max_keycode)
-        continue;
-
-      keysyms = keymap + (keycode - min_keycode) * keysyms_per_keycode;
-      mask = 1 << (i / modmap->max_keypermod);
-
-      for (j = 0; j < keysyms_per_keycode; ++j)
+      switch (XkbOutOfRangeGroupAction(groupInfo))
         {
-          if (keysyms[j] == GDK_Super_L || keysyms[j] == GDK_Super_R)
-            grabber->priv->modifiers[CACHE_SUPER] = mask;
-
-          if (keysyms[j] == GDK_Meta_L || keysyms[j] == GDK_Meta_R)
-            grabber->priv->modifiers[CACHE_META] = mask;
-
-          if (keysyms[j] == GDK_Hyper_L || keysyms[j] == GDK_Hyper_R)
-            grabber->priv->modifiers[CACHE_HYPER] = mask;
-
-          if (keysyms[j] == GDK_Scroll_Lock)
-            grabber->priv->modifiers[CACHE_SCROLL_LOCK] = mask;
-
-          if (keysyms[j] == GDK_Num_Lock)
-            grabber->priv->modifiers[CACHE_NUM_LOCK] = mask;
-
-          if (keysyms[j] == GDK_Caps_Lock)
-            grabber->priv->modifiers[CACHE_CAPS_LOCK] = mask;
+          default:
+            effectiveGroup %= nKeyGroups;
+            break;
+          case XkbClampIntoRange:
+            effectiveGroup = nKeyGroups-1;
+            break;
+          case XkbRedirectIntoRange:
+            effectiveGroup = XkbOutOfRangeGroupNumber (groupInfo);
+            if (effectiveGroup >= nKeyGroups)
+              effectiveGroup = 0;
+            break;
         }
     }
 
-  XFreeModifiermap (modmap);
-  XFree (keymap);
+  type = XkbKeyKeyType (xkb, key, effectiveGroup);
 
-  gdk_flush ();
-  gdk_error_trap_pop ();
-}
+  for (k = 0; k < type->map_count; k++)
+    {
+      if (type->map[k].active && type->map[k].level == level)
+        {
+          if (type->preserve)
+            return (type->map[k].mods.mask & ~type->preserve[k].mask);
+          else
+            return type->map[k].mods.mask;
+        }
+    }
 
-
-
-static void
-xfce_shortcuts_grabber_parse_shortcut (XfceShortcutsGrabber *grabber,
-                                       const gchar          *shortcut,
-                                       guint                *keycode,
-                                       guint                *modifiers)
-{
-  gchar *parsed_name;
-  guint  keyval;
-
-  g_return_if_fail (XFCE_IS_SHORTCUTS_GRABBER (grabber));
-
-  gtk_accelerator_parse (shortcut, &keyval, modifiers);
-
-  /* Map virtual modifiers to non-virtual modifiers */
-  gdk_keymap_map_virtual_modifiers (gdk_keymap_get_default (),
-                                    modifiers);
-
-  *keycode = XKeysymToKeycode (GDK_DISPLAY_XDISPLAY (gdk_display_get_default ()), keyval);
-
-  parsed_name = gtk_accelerator_name (keyval, *modifiers);
-  TRACE ("Parsed %s", parsed_name);
-  g_free (parsed_name);
+  return MODIFIERS_NONE;
 }
 
 
@@ -361,81 +280,105 @@ xfce_shortcuts_grabber_grab (XfceShortcutsGrabber *grabber,
                              XfceKey              *key,
                              gboolean              grab)
 {
-  GdkDisplay *display;
-  GdkScreen  *screen;
-  Window      window;
-  guint       bits[32];
-  guint       current_mask;
-  guint       n_bits;
-  guint       screens;
-  guint       modifiers;
-  guint       ignored_modifiers = 0;
-  gint        i;
-  guint       j;
-  guint       k;
+  GdkKeymapKey *keys;
+  XkbDescPtr    xmap;
+  GdkDisplay   *display;
+  GdkKeymap    *keymap;
+  guint         modifiers;
+  guint         k;
+  gint          i, j;
+  gint          n_keys;
+  gint          screens;
 
   g_return_if_fail (XFCE_IS_SHORTCUTS_GRABBER (grabber));
   g_return_if_fail (key != NULL);
 
   display = gdk_display_get_default ();
   screens = gdk_display_get_n_screens (display);
+  keymap = gdk_keymap_get_default ();
 
-  ignored_modifiers = xfce_shortcuts_grabber_get_ignore_mask (grabber);
+  /* Map virtual modifiers to non-virtual modifiers */
+  modifiers = key->modifiers;
+  gdk_keymap_map_virtual_modifiers (keymap, &modifiers);
 
-  modifiers = key->modifiers & MODIFIER_MASK & ~ignored_modifiers;
-
-  /* Store indices of all the set bits of the ignore mask in an array */
-  for (i = 0, n_bits = 0; i < 32; ++i, ignored_modifiers >>= 1)
-    if ((ignored_modifiers & 0x1) == 0x1)
-      bits[n_bits++] = i;
-
-  for (i = 0; i < (1 << n_bits); ++i)
+  if (modifiers == key->modifiers &&
+      (GDK_SUPER_MASK | GDK_HYPER_MASK | GDK_META_MASK) & modifiers)
     {
-      /* Map bits in the counter to those in the mask and thereby retrieve all ignored bit
-       * mask combinations */
-      for (current_mask = 0, j = 0; j < n_bits; ++j)
-        if ((i & (1 << j)) != 0)
-          current_mask |= (1 << bits[j]);
+      TRACE ("Failed to map virtual modifiers");
+      return;
+    }
 
-      /* Grab key on all screens */
-      for (k = 0; k < screens; ++k)
+  xmap = XkbGetMap (GDK_DISPLAY_XDISPLAY (display),
+                    XkbAllClientInfoMask,
+                    XkbUseCoreKbd);
+
+  if (!gdk_keymap_get_entries_for_keyval (keymap,key->keyval,
+                                          &keys, &n_keys)
+      || n_keys == 0)
+    {
+      XkbFreeClientMap (xmap, 0, TRUE);
+      TRACE ("Got no keys for keyval");
+      return;
+    }
+
+  for (i = 0; i < n_keys; i ++)
+    {
+      /* Grab all hardware keys generating keyval */
+      GdkModifierType add_modifiers;
+
+      add_modifiers = FinallyGetModifiersForKeycode (xmap,
+                                                     keys[i].keycode,
+                                                     keys[i].group,
+                                                     keys[i].level);
+
+      if (add_modifiers == MODIFIERS_ERROR)
+        continue;
+
+      for (j = 0; j < screens; j++)
         {
-          /* Get current screen and X root window */
-          screen = gdk_display_get_screen (display, k);
-          window = GDK_WINDOW_XWINDOW (gdk_screen_get_root_window (screen));
+          /* Do the grab on all screens */
+          GdkScreen *screen;
+          Window     root_window;
+
+          /* Ignorable modifiers */
+          guint mod_masks [] = {
+            0,
+            GDK_MOD2_MASK,
+            GDK_LOCK_MASK,
+            GDK_MOD2_MASK | GDK_LOCK_MASK,
+          };
+
+          /* Retrieve the root window of the screen */
+          screen = gdk_display_get_screen (display, j);
+          root_window = GDK_WINDOW_XWINDOW (gdk_screen_get_root_window (screen));
 
           gdk_error_trap_push ();
 
-          if (grab)
+          for (k = 0; k < G_N_ELEMENTS (mod_masks); k++)
             {
-              XGrabKey (GDK_DISPLAY_XDISPLAY (display), key->keycode, current_mask | modifiers,
-                        window, FALSE, GrabModeAsync, GrabModeAsync);
+              /* Take ignorable modifiers into account when grabbing */
+              if (grab)
+                XGrabKey (GDK_DISPLAY_XDISPLAY (display),
+                          keys[i].keycode,
+                          add_modifiers | modifiers | mod_masks [k],
+                          root_window,
+                          False,
+                          GrabModeAsync,
+                          GrabModeAsync);
+              else
+                XUngrabKey (GDK_DISPLAY_XDISPLAY (display),
+                            keys[i].keycode,
+                            add_modifiers | modifiers | mod_masks [k],
+                            root_window);
             }
-          else
-            XUngrabKey (GDK_DISPLAY_XDISPLAY (display), key->keycode, current_mask | modifiers,
-                        window);
 
           gdk_flush ();
           gdk_error_trap_pop ();
         }
     }
-}
 
-
-
-static guint
-xfce_shortcuts_grabber_get_ignore_mask (XfceShortcutsGrabber *grabber)
-{
-  guint mask = 0;
-
-  g_return_val_if_fail (XFCE_IS_SHORTCUTS_GRABBER (grabber), 0);
-
-  mask |= 0x200 | GDK_LOCK_MASK | GDK_HYPER_MASK | GDK_SUPER_MASK | GDK_META_MASK;
-  mask |= grabber->priv->modifiers[CACHE_CAPS_LOCK];
-  mask |= grabber->priv->modifiers[CACHE_NUM_LOCK];
-  mask |= grabber->priv->modifiers[CACHE_SCROLL_LOCK];
-
-  return mask;
+  g_free (keys);
+  XkbFreeClientMap (xmap, 0, TRUE);
 }
 
 
@@ -456,17 +399,12 @@ find_event_key (const gchar                *shortcut,
                 struct EventKeyFindContext *context)
 {
   GdkModifierType ignored;
-  guint           keycode;
 
   g_return_val_if_fail (context != NULL, FALSE);
 
   TRACE ("Comparing to %s", shortcut);
 
   ignored = 0;
-
-  keycode =
-    XKeysymToKeycode (GDK_DISPLAY_XDISPLAY (gdk_display_get_default ()),
-                      context->keyval);
 
   /* Accept MOD1 + META as MOD1 */
   if (key->modifiers & context->modifiers & GDK_MOD1_MASK)
@@ -478,13 +416,12 @@ find_event_key (const gchar                *shortcut,
   /* Accept SUPER + HYPER as SUPER */
   if (key->modifiers & context->modifiers & GDK_SUPER_MASK)
     {
-      TRACE ("Ignoring Hyper and Mod4 Masks");
+      TRACE ("Ignoring Hyper Mask");
       ignored |= GDK_HYPER_MASK;
-      ignored |= GDK_MOD4_MASK;
     }
 
   if ((key->modifiers & ~ignored) == (context->modifiers & ~ignored)
-      && key->keycode == keycode)
+      && key->keyval == context->keyval)
     {
       context->result = shortcut;
 
@@ -577,13 +514,15 @@ xfce_shortcuts_grabber_add (XfceShortcutsGrabber *grabber,
 
   key = g_new0 (XfceKey, 1);
 
-  xfce_shortcuts_grabber_parse_shortcut (grabber, shortcut, &key->keycode, &key->modifiers);
+  gtk_accelerator_parse (shortcut, &key->keyval, &key->modifiers);
 
-  if (G_LIKELY (key->keycode != 0))
+  if (G_LIKELY (key->keyval != 0))
     {
       xfce_shortcuts_grabber_grab (grabber, key, TRUE);
       g_hash_table_insert (grabber->priv->keys, g_strdup (shortcut), key);
     }
+  else
+    g_free (key);
 }
 
 
