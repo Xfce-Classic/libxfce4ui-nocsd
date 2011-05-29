@@ -60,14 +60,6 @@
 
 
 
-/* Property identifiers */
-enum
-{
-  PROP_0,
-};
-
-
-
 /* Cache indices for modifiers */
 enum
 {
@@ -88,14 +80,6 @@ typedef struct _XfceKey XfceKey;
 
 static void            xfce_shortcuts_grabber_constructed      (GObject                   *object);
 static void            xfce_shortcuts_grabber_finalize         (GObject                   *object);
-static void            xfce_shortcuts_grabber_get_property     (GObject                   *object,
-                                                                guint                      prop_id,
-                                                                GValue                    *value,
-                                                                GParamSpec                *pspec);
-static void            xfce_shortcuts_grabber_set_property     (GObject                   *object,
-                                                                guint                      prop_id,
-                                                                const GValue              *value,
-                                                                GParamSpec                *pspec);
 static void            xfce_shortcuts_grabber_keys_changed     (GdkKeymap                 *keymap,
                                                                 XfceShortcutsGrabber      *grabber);
 static void            xfce_shortcuts_grabber_grab_all         (XfceShortcutsGrabber      *grabber);
@@ -143,8 +127,6 @@ xfce_shortcuts_grabber_class_init (XfceShortcutsGrabberClass *klass)
   gobject_class = G_OBJECT_CLASS (klass);
   gobject_class->constructed = xfce_shortcuts_grabber_constructed;
   gobject_class->finalize = xfce_shortcuts_grabber_finalize;
-  gobject_class->get_property = xfce_shortcuts_grabber_get_property;
-  gobject_class->set_property = xfce_shortcuts_grabber_set_property;
 
   g_signal_new ("shortcut-activated",
                 XFCE_TYPE_SHORTCUTS_GRABBER,
@@ -210,46 +192,6 @@ xfce_shortcuts_grabber_finalize (GObject *object)
   g_hash_table_unref (grabber->priv->keys);
 
   (*G_OBJECT_CLASS (xfce_shortcuts_grabber_parent_class)->finalize) (object);
-}
-
-
-
-static void
-xfce_shortcuts_grabber_get_property (GObject    *object,
-                                     guint       prop_id,
-                                     GValue     *value,
-                                     GParamSpec *pspec)
-{
-#if 0
-  XfceShortcutsGrabber *grabber = XFCE_SHORTCUTS_GRABBER (object);
-#endif
-
-  switch (prop_id)
-    {
-    default:
-      G_OBJECT_WARN_INVALID_PROPERTY_ID (object, prop_id, pspec);
-      break;
-    }
-}
-
-
-
-static void
-xfce_shortcuts_grabber_set_property (GObject      *object,
-                                     guint         prop_id,
-                                     const GValue *value,
-                                     GParamSpec   *pspec)
-{
-#if 0
-  XfceShortcutsGrabber *grabber = XFCE_SHORTCUTS_GRABBER (object);
-#endif
-
-  switch (prop_id)
-    {
-    default:
-      G_OBJECT_WARN_INVALID_PROPERTY_ID (object, prop_id, pspec);
-      break;
-    }
 }
 
 
