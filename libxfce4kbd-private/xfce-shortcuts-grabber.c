@@ -165,6 +165,8 @@ xfce_shortcuts_grabber_keys_changed (GdkKeymap            *keymap,
 {
   g_return_if_fail (XFCE_IS_SHORTCUTS_GRABBER (grabber));
 
+  TRACE ("Keys changed, regrabbing");
+
   xfce_shortcuts_grabber_ungrab_all (grabber);
   xfce_shortcuts_grabber_grab_all (grabber);
 }
@@ -284,6 +286,7 @@ xfce_shortcuts_grabber_grab (XfceShortcutsGrabber *grabber,
   XkbDescPtr    xmap;
   GdkDisplay   *display;
   GdkKeymap    *keymap;
+  gchar        *shortcut_name;
   guint         modifiers;
   guint         k;
   gint          i, j;
@@ -300,6 +303,16 @@ xfce_shortcuts_grabber_grab (XfceShortcutsGrabber *grabber,
   /* Map virtual modifiers to non-virtual modifiers */
   modifiers = key->modifiers;
   gdk_keymap_map_virtual_modifiers (keymap, &modifiers);
+
+  /* Debugging information */
+  shortcut_name = gtk_accelerator_name (key->keyval, modifiers);
+  if (grab)
+    TRACE ("Grabbing %s", shortcut_name);
+  else
+    TRACE ("Ungrabbing %s", shortcut_name);
+  TRACE ("Keyval: %d", key->keyval);
+  TRACE ("Modifiers: 0x%x", key->modifiers);
+  g_free (shortcut_name);
 
   if (modifiers == key->modifiers &&
       (GDK_SUPER_MASK | GDK_HYPER_MASK | GDK_META_MASK) & modifiers)
@@ -336,13 +349,18 @@ xfce_shortcuts_grabber_grab (XfceShortcutsGrabber *grabber,
 
       GdkModifierType add_modifiers;
 
+      TRACE ("Keycode: %d", keys[i].keycode);
+
       add_modifiers = FinallyGetModifiersForKeycode (xmap,
                                                      keys[i].keycode,
                                                      keys[i].group,
                                                      keys[i].level);
 
       if (add_modifiers == MODIFIERS_ERROR)
-        continue;
+        {
+          TRACE ("Error when getting modifiers for keycode");
+          continue;
+        }
 
       for (j = 0; j < screens; j++)
         {
