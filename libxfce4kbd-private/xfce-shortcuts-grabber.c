@@ -306,12 +306,15 @@ xfce_shortcuts_grabber_grab (XfceShortcutsGrabber *grabber,
 
   /* Debugging information */
   shortcut_name = gtk_accelerator_name (key->keyval, modifiers);
+
   if (grab)
     TRACE ("Grabbing %s", shortcut_name);
   else
     TRACE ("Ungrabbing %s", shortcut_name);
+
   TRACE ("Keyval: %d", key->keyval);
   TRACE ("Modifiers: 0x%x", key->modifiers);
+
   g_free (shortcut_name);
 
   if (modifiers == key->modifiers &&
