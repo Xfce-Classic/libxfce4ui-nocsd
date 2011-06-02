@@ -373,7 +373,11 @@ xfce_shortcuts_grabber_grab (XfceShortcutsGrabber *grabber,
             0,
             GDK_MOD2_MASK,
             GDK_LOCK_MASK,
+            GDK_MOD5_MASK,
             GDK_MOD2_MASK | GDK_LOCK_MASK,
+            GDK_MOD2_MASK | GDK_MOD5_MASK,
+            GDK_LOCK_MASK | GDK_MOD5_MASK,
+            GDK_MOD2_MASK | GDK_LOCK_MASK | GDK_MOD5_MASK,
           };
 
           /* Retrieve the root window of the screen */
