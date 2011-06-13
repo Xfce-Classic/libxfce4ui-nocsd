@@ -94,9 +94,9 @@ gboolean xfce_sm_client_is_resumed(XfceSMClient *sm_client);
 void xfce_sm_client_set_desktop_file(XfceSMClient *sm_client,
                                      const gchar *desktop_file);
 
-G_CONST_RETURN gchar *xfce_sm_client_get_client_id(XfceSMClient *sm_client);
+const gchar *xfce_sm_client_get_client_id(XfceSMClient *sm_client);
 
-G_CONST_RETURN gchar *xfce_sm_client_get_state_file(XfceSMClient *sm_client);
+const gchar *xfce_sm_client_get_state_file(XfceSMClient *sm_client);
 
 void xfce_sm_client_set_restart_style(XfceSMClient *sm_client,
                                       XfceSMClientRestartStyle restart_style);
@@ -108,11 +108,11 @@ guint8 xfce_sm_client_get_priority(XfceSMClient *sm_client);
 
 void xfce_sm_client_set_current_directory(XfceSMClient *sm_client,
                                           const gchar *current_directory);
-G_CONST_RETURN gchar *xfce_sm_client_get_current_directory(XfceSMClient *sm_client);
+const gchar *xfce_sm_client_get_current_directory(XfceSMClient *sm_client);
 
 void xfce_sm_client_set_restart_command(XfceSMClient *sm_client,
                                         gchar **restart_command);
-G_CONST_RETURN gchar * G_CONST_RETURN *
+const gchar * const *
 xfce_sm_client_get_restart_command(XfceSMClient *sm_client);
 
 G_END_DECLS

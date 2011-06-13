@@ -2139,7 +2139,7 @@ xfce_sm_client_get_priority(XfceSMClient *sm_client)
  *
  * Returns: an opaque object-owned string
  **/
-G_CONST_RETURN gchar *
+const gchar *
 xfce_sm_client_get_client_id(XfceSMClient *sm_client)
 {
     g_return_val_if_fail(XFCE_IS_SM_CLIENT(sm_client), NULL);
@@ -2172,7 +2172,7 @@ xfce_sm_client_get_client_id(XfceSMClient *sm_client)
  * Returns: a file name string, owned by the object or %NULL if
  *          the session client is disabled.
  **/
-G_CONST_RETURN gchar *
+const gchar *
 xfce_sm_client_get_state_file(XfceSMClient *sm_client)
 {
     gchar *resource, *p;
@@ -2234,7 +2234,7 @@ xfce_sm_client_get_state_file(XfceSMClient *sm_client)
  *
  * Returns: an object-owned string
  **/
-G_CONST_RETURN gchar *
+const gchar *
 xfce_sm_client_get_current_directory(XfceSMClient *sm_client)
 {
     g_return_val_if_fail(XFCE_IS_SM_CLIENT(sm_client), NULL);
@@ -2250,7 +2250,7 @@ xfce_sm_client_get_current_directory(XfceSMClient *sm_client)
  *
  * Returns: an object-owned string vector
  **/
-G_CONST_RETURN gchar * G_CONST_RETURN *
+const gchar * const *
 xfce_sm_client_get_restart_command(XfceSMClient *sm_client)
 {
     g_return_val_if_fail(XFCE_IS_SM_CLIENT(sm_client), NULL);

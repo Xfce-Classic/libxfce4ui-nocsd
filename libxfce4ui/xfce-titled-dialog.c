@@ -316,7 +316,7 @@ xfce_titled_dialog_new_with_buttons (const gchar    *title,
  *
  * Return value: the subtitle of @titled_dialog, or %NULL.
  **/
-G_CONST_RETURN gchar*
+const gchar*
 xfce_titled_dialog_get_subtitle (XfceTitledDialog *titled_dialog)
 {
   g_return_val_if_fail (XFCE_IS_TITLED_DIALOG (titled_dialog), NULL);
