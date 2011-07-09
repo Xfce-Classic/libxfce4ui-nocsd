@@ -23,3 +23,11 @@ libxfce4kbd-private/xfce-shortcuts-provider.c
 #
 glade/libxfce4ui-glade.c
 glade/libxfce4ui.xml.in
+
+#
+# Xfce4-about
+#
+xfce4-about/main.c
+xfce4-about/contributors.h
+xfce4-about/xfce4-about.desktop.in
+xfce4-about/xfce4-about-dialog.glade
