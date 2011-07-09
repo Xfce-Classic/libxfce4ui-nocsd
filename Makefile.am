@@ -3,7 +3,9 @@
 SUBDIRS = \
 	libxfce4ui \
 	libxfce4kbd-private \
+	xfce4-about \
 	glade \
+	icons \
 	docs \
 	po
 
