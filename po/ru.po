@@ -1,18 +1,23 @@
+# Russian translations for libxfce4ui package.
+# Copyright (C) 2011 The Xfce development team.
+# This file is distributed under the same license as the libxfce4ui package.
+# Aleksandr Ponomarenko <davian818@gmail.com>, 2010.
+# Denis Koryavov <dkoryavov@yandex.ru>, 2010.
+# Artem Zolochevskiy <artem.zolochevskiy@gmail.com>, 2011.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-01-16 16:03+0100\n"
-"PO-Revision-Date: \n"
-"Last-Translator: Urmas <davian818@gmail.com>\n"
-"Language-Team: none <->\n"
-"Language: \n"
+"POT-Creation-Date: 2011-08-23 10:34+0000\n"
+"PO-Revision-Date: 2011-08-23 14:21+0300\n"
+"Last-Translator: Artem Zolochevskiy <artem.zolochevskiy@gmail.com>\n"
+"Language-Team: Russian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Language: Russian\n"
-"X-Poedit-Country: RUSSIAN FEDERATION\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #: ../libxfce4ui/xfce-dialogs.c:69
 msgid "Information"
@@ -63,20 +68,12 @@ msgstr "Менеджер сеансов не предоставил допуст
 #. print warning for user
 #: ../libxfce4ui/xfce-spawn.c:407
 #, c-format
-msgid ""
-"Working directory \"%s\" does not exist. It won't be used when spawning \"%s"
-"\"."
-msgstr ""
-"Рабочий каталог \"%s\" не существует. Он не будет использоваться для вызова "
-"\"%s\"."
+msgid "Working directory \"%s\" does not exist. It won't be used when spawning \"%s\"."
+msgstr "Рабочий каталог «%s» не существует. Он не будет использоваться для вызова «%s»."
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:52
-msgid ""
-"This shortcut is already being used for another window manager action. Which "
-"action do you want to use?"
-msgstr ""
-"Это сочетание клавиш уже используется для другого действия менеджера окон. "
-"Какое действие требуется использовать?"
+msgid "This shortcut is already being used for another window manager action. Which action do you want to use?"
+msgstr "Эта комбинация клавиш уже используется для другого действия менеджера окон. Какое действие требуется использовать?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
@@ -93,12 +90,8 @@ msgstr "Оставить использующееся"
 #: ../libxfce4kbd-private/xfce-shortcuts.c:55
 #: ../libxfce4kbd-private/xfce-shortcuts.c:58
 #, c-format
-msgid ""
-"This shortcut is already being used for the command '%s'. Which action do "
-"you want to use?"
-msgstr ""
-"Это сочетание клавиш уже назначено команде '%s'. Какое действие требуется "
-"использовать?"
+msgid "This shortcut is already being used for the command '%s'. Which action do you want to use?"
+msgstr "Эта комбинация клавиш уже назначена команде '%s'. Какое действие требуется использовать?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
 #: ../libxfce4kbd-private/xfce-shortcuts.c:59
@@ -107,12 +100,8 @@ msgid "Keep '%s'"
 msgstr "Оставить '%s'"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:61
-msgid ""
-"This shortcut is already being used by a window manager action. Which action "
-"do you want to use?"
-msgstr ""
-"Это сочетание клавиш уже используется для действия менеджера окон. Какое "
-"действие требуется использовать?"
+msgid "This shortcut is already being used by a window manager action. Which action do you want to use?"
+msgstr "Эта комбинация клавиш уже используется для действия менеджера окон. Какое действие требуется использовать?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 msgid "Keep the window manager action"
@@ -125,11 +114,11 @@ msgstr "Конфликт действий для %s"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:128
 msgid "This shortcut is already being used for something else."
-msgstr "Это сочетание клавиш уже задействовано."
+msgstr "Эта комбинация клавиш уже задействована."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:207
 msgid "Window Manager Action Shortcut"
-msgstr "Сочетание клавиш для менеджера окон"
+msgstr "Комбинация клавиш для менеджера окон"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:208
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:218
@@ -138,7 +127,7 @@ msgstr "Действие:"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:212
 msgid "Command Shortcut"
-msgstr "Сочетание клавиш"
+msgstr "Комбинация клавиш для команды"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:213
 msgid "Command:"
@@ -146,11 +135,11 @@ msgstr "Команда:"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:217
 msgid "Shortcut"
-msgstr "Сочетание"
+msgstr "Комбинация"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:258
 msgid "Shortcut:"
-msgstr "Сочетание:"
+msgstr "Комбинация:"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:303
 msgid "Could not grab the keyboard."
