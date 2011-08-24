@@ -7,78 +7,72 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libxcfe4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-01-16 16:03+0100\n"
-"PO-Revision-Date: 2010-12-28 14:57-0000\n"
+"POT-Creation-Date: 2011-08-23 22:10+0000\n"
+"PO-Revision-Date: 2011-08-24 02:20-0000\n"
 "Last-Translator: كريم أولاد الشلحة <herr.linux88@gmail.com>\n"
-"Language-Team: Arabic <herr.linux88@gmail.com>\n"
-"Language: ar\n"
+"Language-Team: Arabic Xfce Translation Team <herr.linux88@gmail.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ar\n"
 "X-Poedit-Language: Arabic\n"
 "X-Poedit-Country: MOROCCO\n"
 
-#: ../libxfce4ui/xfce-dialogs.c:69
+#: ../libxfce4ui/xfce-dialogs.c:68
 msgid "Information"
 msgstr "معلومات"
 
-#: ../libxfce4ui/xfce-dialogs.c:102
+#: ../libxfce4ui/xfce-dialogs.c:101
 msgid "Warning"
 msgstr "تحذير"
 
-#: ../libxfce4ui/xfce-dialogs.c:136
+#: ../libxfce4ui/xfce-dialogs.c:135
 msgid "Error"
 msgstr "خطأ"
 
-#: ../libxfce4ui/xfce-dialogs.c:187
+#: ../libxfce4ui/xfce-dialogs.c:186
 msgid "Question"
 msgstr "سؤال"
 
-#: ../libxfce4ui/xfce-sm-client.c:1401
+#: ../libxfce4ui/xfce-sm-client.c:1402
 msgid "Session management client ID"
 msgstr "حدد رقم معرّف إدارة الجلسة"
 
-#: ../libxfce4ui/xfce-sm-client.c:1401
+#: ../libxfce4ui/xfce-sm-client.c:1402
 msgid "ID"
 msgstr "معرّف"
 
-#: ../libxfce4ui/xfce-sm-client.c:1402
+#: ../libxfce4ui/xfce-sm-client.c:1403
 msgid "Disable session management"
 msgstr "تعطيل إدارة الجلسة"
 
-#: ../libxfce4ui/xfce-sm-client.c:1412
+#: ../libxfce4ui/xfce-sm-client.c:1413
 msgid "Session management options"
 msgstr "خيارات إدارة الجلسة"
 
-#: ../libxfce4ui/xfce-sm-client.c:1413
+#: ../libxfce4ui/xfce-sm-client.c:1414
 msgid "Show session management options"
 msgstr "عرض خيارات إدارة الجلسة"
 
-#: ../libxfce4ui/xfce-sm-client.c:1589
+#: ../libxfce4ui/xfce-sm-client.c:1590
 #, c-format
 msgid "Failed to connect to the session manager: %s"
 msgstr "فشل الإتصال بمدير الجلسة: %s"
 
-#: ../libxfce4ui/xfce-sm-client.c:1596
+#: ../libxfce4ui/xfce-sm-client.c:1597
 #, c-format
 msgid "Session manager did not return a valid client id"
-msgstr ""
+msgstr "مدير الجلسة لم يقم بإرجاع معرف عميل صالح"
 
 #. print warning for user
-#: ../libxfce4ui/xfce-spawn.c:407
+#: ../libxfce4ui/xfce-spawn.c:406
 #, c-format
-msgid ""
-"Working directory \"%s\" does not exist. It won't be used when spawning \"%s"
-"\"."
+msgid "Working directory \"%s\" does not exist. It won't be used when spawning \"%s\"."
 msgstr "مسار العمل \"%s\" غير موجود. ولن يستخدم عنذ توليد \"%s\"."
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:52
-msgid ""
-"This shortcut is already being used for another window manager action. Which "
-"action do you want to use?"
-msgstr ""
-"هذا الإختصار يستخدم حاليا من طرف مدير عمل النوافذ أخر. أي واحد تريد "
-"الإستعمال؟"
+msgid "This shortcut is already being used for another window manager action. Which action do you want to use?"
+msgstr "هذا الإختصار يستخدم حاليا من طرف مدير عمل النوافذ أخر. أي واحد تريد الإستعمال؟"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
@@ -95,9 +89,7 @@ msgstr "الحفاظ على واحد أخر"
 #: ../libxfce4kbd-private/xfce-shortcuts.c:55
 #: ../libxfce4kbd-private/xfce-shortcuts.c:58
 #, c-format
-msgid ""
-"This shortcut is already being used for the command '%s'. Which action do "
-"you want to use?"
+msgid "This shortcut is already being used for the command '%s'. Which action do you want to use?"
 msgstr "هذا الإختصار يستعمل حاليا من طرف الأمر '%s'. أي واحد تريد الإستعمال؟"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
@@ -107,11 +99,8 @@ msgid "Keep '%s'"
 msgstr "الحفاظ على '%s'"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:61
-msgid ""
-"This shortcut is already being used by a window manager action. Which action "
-"do you want to use?"
-msgstr ""
-"هذا الإختصار يستخدم حاليا من طرف مدير عمل النوافذ. أي واحد تريد الإستعمال؟"
+msgid "This shortcut is already being used by a window manager action. Which action do you want to use?"
+msgstr "هذا الإختصار يستخدم حاليا من طرف مدير عمل النوافذ. أي واحد تريد الإستعمال؟"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 msgid "Keep the window manager action"
@@ -126,32 +115,32 @@ msgstr "تعارض الإجراءات لي %s"
 msgid "This shortcut is already being used for something else."
 msgstr "هذا الإختصار يستخدم حاليا لشيئ أخر"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:207
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:204
 msgid "Window Manager Action Shortcut"
 msgstr "إختصار لإجراءات مدير النوافذ"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:208
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:218
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:205
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:215
 msgid "Action:"
-msgstr "الحركة:"
+msgstr "الإجراء:"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:212
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:209
 msgid "Command Shortcut"
 msgstr "إختصار الأمر"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:213
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:210
 msgid "Command:"
 msgstr "الأمر:"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:217
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:214
 msgid "Shortcut"
 msgstr "الإختصار"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:258
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:255
 msgid "Shortcut:"
 msgstr "الإختصار:"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:303
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:300
 msgid "Could not grab the keyboard."
 msgstr "لا يمكن إنتزاع لوحة المفايح"
 
@@ -165,4 +154,5 @@ msgstr "حوار معنون"
 
 #: ../glade/libxfce4ui.xml.in.h:3
 msgid "Xfce 4 Widgets"
-msgstr "قطع Xfce 4"
+msgstr "قطع إكسفس 4"
+
