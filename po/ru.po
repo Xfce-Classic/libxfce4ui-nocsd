@@ -4,12 +4,12 @@
 # Aleksandr Ponomarenko <davian818@gmail.com>, 2010.
 # Denis Koryavov <dkoryavov@yandex.ru>, 2010.
 # Artem Zolochevskiy <artem.zolochevskiy@gmail.com>, 2011.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui 4.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-08-23 10:34+0000\n"
+"POT-Creation-Date: 2011-08-26 10:37+0000\n"
 "PO-Revision-Date: 2011-08-23 14:21+0300\n"
 "Last-Translator: Artem Zolochevskiy <artem.zolochevskiy@gmail.com>\n"
 "Language-Team: Russian\n"
@@ -81,7 +81,7 @@ msgstr "Эта комбинация клавиш уже используется
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 #, c-format
 msgid "Use '%s'"
-msgstr "Использовать '%s'"
+msgstr "Использовать «%s»"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 msgid "Keep the other one"
@@ -91,13 +91,13 @@ msgstr "Оставить использующееся"
 #: ../libxfce4kbd-private/xfce-shortcuts.c:58
 #, c-format
 msgid "This shortcut is already being used for the command '%s'. Which action do you want to use?"
-msgstr "Эта комбинация клавиш уже назначена команде '%s'. Какое действие требуется использовать?"
+msgstr "Эта комбинация клавиш уже назначена команде «%s». Какое действие требуется использовать?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
 #: ../libxfce4kbd-private/xfce-shortcuts.c:59
 #, c-format
 msgid "Keep '%s'"
-msgstr "Оставить '%s'"
+msgstr "Оставить «%s»"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:61
 msgid "This shortcut is already being used by a window manager action. Which action do you want to use?"
