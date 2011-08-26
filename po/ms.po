@@ -1,0 +1,172 @@
+# Malay translations for libxfce4ui package.
+# Copyright (C) 2008 The Xfce development team.
+# This file is distributed under the same license as the libxfce4ui package.
+# Puretech <nadz050@gmail.com>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: libxfce4ui\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-08-26 16:37+0000\n"
+"PO-Revision-Date: 2011-08-27 03:35+0800\n"
+"Last-Translator: Puretech <nadz050@gmail.com>\n"
+"Language-Team: ms <Malay (http://www.transifex.net/projects/p/doudoulinux/"
+"team/ms/)>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#: ../libxfce4ui/xfce-dialogs.c:69
+msgid "Information"
+msgstr "Maklumat"
+
+#: ../libxfce4ui/xfce-dialogs.c:102
+msgid "Warning"
+msgstr "Amaran"
+
+#: ../libxfce4ui/xfce-dialogs.c:136
+msgid "Error"
+msgstr "Ralat"
+
+#: ../libxfce4ui/xfce-dialogs.c:187
+msgid "Question"
+msgstr "Soalan"
+
+#: ../libxfce4ui/xfce-sm-client.c:1401
+msgid "Session management client ID"
+msgstr "ID klien pengurus sesi"
+
+#: ../libxfce4ui/xfce-sm-client.c:1401
+msgid "ID"
+msgstr "ID"
+
+#: ../libxfce4ui/xfce-sm-client.c:1402
+msgid "Disable session management"
+msgstr "Lumpuhkan pengurusan sesi"
+
+#: ../libxfce4ui/xfce-sm-client.c:1412
+msgid "Session management options"
+msgstr "Pilihan pengurusan sesi"
+
+#: ../libxfce4ui/xfce-sm-client.c:1413
+msgid "Show session management options"
+msgstr "Papar pilihan pengurusan sesi"
+
+#: ../libxfce4ui/xfce-sm-client.c:1589
+#, c-format
+msgid "Failed to connect to the session manager: %s"
+msgstr "Gagal untuk bersambung ke pengurus sesi: %s"
+
+#: ../libxfce4ui/xfce-sm-client.c:1596
+#, c-format
+msgid "Session manager did not return a valid client id"
+msgstr "Pengurus sesi tidak memberikan id klien yang sah"
+
+#. print warning for user
+#: ../libxfce4ui/xfce-spawn.c:407
+#, c-format
+msgid ""
+"Working directory \"%s\" does not exist. It won't be used when spawning \"%s"
+"\"."
+msgstr ""
+"Direktori kerja \"%s\" tidak wujud. Ia tidak akan digunakan apabila "
+"mewujudkan \"%s\"."
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:52
+msgid ""
+"This shortcut is already being used for another window manager action. Which "
+"action do you want to use?"
+msgstr ""
+"Pintasan ini telah digunakan oleh pengurus tetingkap yang lain. Tindakan "
+"manakah yang anda mahu gunakan?"
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:53
+#: ../libxfce4kbd-private/xfce-shortcuts.c:56
+#: ../libxfce4kbd-private/xfce-shortcuts.c:59
+#: ../libxfce4kbd-private/xfce-shortcuts.c:62
+#, c-format
+msgid "Use '%s'"
+msgstr "Guna '%s\""
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:53
+msgid "Keep the other one"
+msgstr "Kekalkan yang satu lagi"
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:55
+#: ../libxfce4kbd-private/xfce-shortcuts.c:58
+#, c-format
+msgid ""
+"This shortcut is already being used for the command '%s'. Which action do "
+"you want to use?"
+msgstr ""
+"Pintasan ini telah digunakan oleh arahan '%s'. Tindakan manakah yang anda "
+"mahu gunakan?"
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:56
+#: ../libxfce4kbd-private/xfce-shortcuts.c:59
+#, c-format
+msgid "Keep '%s'"
+msgstr "Kekalkan '%s'"
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:61
+msgid ""
+"This shortcut is already being used by a window manager action. Which action "
+"do you want to use?"
+msgstr ""
+"Pintasan ini telah digunakan oleh tindakan pengurus tetingkap. Tindakan "
+"manakah yang anda mahu gunakan?"
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:62
+msgid "Keep the window manager action"
+msgstr "Kekalkan tindakan pengurus tetingkap"
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:95
+#, c-format
+msgid "Conflicting actions for %s"
+msgstr "Tindakan berkonflik untuk %s"
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:128
+msgid "This shortcut is already being used for something else."
+msgstr "Pintasan ini telah digunakan oleh perkara lain."
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:207
+msgid "Window Manager Action Shortcut"
+msgstr "Tindakan Pintasan Pengurus Tetingkap"
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:208
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:218
+msgid "Action:"
+msgstr "Tindakan:"
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:212
+msgid "Command Shortcut"
+msgstr "Arahan Pintasan"
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:213
+msgid "Command:"
+msgstr "Arahan:"
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:217
+msgid "Shortcut"
+msgstr "Pintasan"
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:258
+msgid "Shortcut:"
+msgstr "Pintasan:"
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:303
+msgid "Could not grab the keyboard."
+msgstr "Tidak dapat menangkap papan kekunci"
+
+#: ../glade/libxfce4ui.xml.in.h:1
+msgid "Subtitle"
+msgstr "Subtajuk"
+
+#: ../glade/libxfce4ui.xml.in.h:2
+msgid "Titled Dialog"
+msgstr "Dialog Bertajuk"
+
+#: ../glade/libxfce4ui.xml.in.h:3
+msgid "Xfce 4 Widgets"
+msgstr "Widget Xfce 4"
