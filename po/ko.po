@@ -1,0 +1,159 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: libxfce4ui.xfce-4-8\n"
+"Report-Msgid-Bugs-To: xfce4-users-kr-i18n <xfce4-users-kr-i18n@lists.sourceforge.net>\n"
+"POT-Creation-Date: 2011-09-12 16:37+0000\n"
+"PO-Revision-Date: 2011-09-13 04:49+0900\n"
+"Last-Translator: Seong-ho, Cho <darkcircle.0426@gmail.com>\n"
+"Language-Team: xfce4-users-kr-i18n <xfce4-users-kr-i18n@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-Language: Korean\n"
+"X-Poedit-Country: KOREA, REPUBLIC OF\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: ../libxfce4ui/xfce-dialogs.c:69
+msgid "Information"
+msgstr "정보"
+
+#: ../libxfce4ui/xfce-dialogs.c:102
+msgid "Warning"
+msgstr "경고"
+
+#: ../libxfce4ui/xfce-dialogs.c:136
+msgid "Error"
+msgstr "오류"
+
+#: ../libxfce4ui/xfce-dialogs.c:187
+msgid "Question"
+msgstr "질문"
+
+#: ../libxfce4ui/xfce-sm-client.c:1401
+msgid "Session management client ID"
+msgstr "세션 관리자 클라이언트 ID"
+
+#: ../libxfce4ui/xfce-sm-client.c:1401
+msgid "ID"
+msgstr "ID"
+
+#: ../libxfce4ui/xfce-sm-client.c:1402
+msgid "Disable session management"
+msgstr "세션 관리자 비활성화"
+
+#: ../libxfce4ui/xfce-sm-client.c:1412
+msgid "Session management options"
+msgstr "세션 관리자 옵션"
+
+#: ../libxfce4ui/xfce-sm-client.c:1413
+msgid "Show session management options"
+msgstr "세션 관리자 옵션 보이기"
+
+#: ../libxfce4ui/xfce-sm-client.c:1589
+#, c-format
+msgid "Failed to connect to the session manager: %s"
+msgstr "세션 관리자로 연결하는데 실패했습니다: %s"
+
+#: ../libxfce4ui/xfce-sm-client.c:1596
+#, c-format
+msgid "Session manager did not return a valid client id"
+msgstr "세션 관리자가 유효한 클라이언트 ID를 반환하지 않았습니다"
+
+#. print warning for user
+#: ../libxfce4ui/xfce-spawn.c:407
+#, c-format
+msgid "Working directory \"%s\" does not exist. It won't be used when spawning \"%s\"."
+msgstr "작업 디렉터리 \"%s\"이(가) 존재하지 않습니다. \"%s\"이(가) 산개되면 이는 사용되지 않을 것입니다."
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:52
+msgid "This shortcut is already being used for another window manager action. Which action do you want to use?"
+msgstr "이 바로 가기는 이미 다른 창 관리자 동작에서 사용되고 있습니다. 어떤 동작을 사용하시렵니까?"
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:53
+#: ../libxfce4kbd-private/xfce-shortcuts.c:56
+#: ../libxfce4kbd-private/xfce-shortcuts.c:59
+#: ../libxfce4kbd-private/xfce-shortcuts.c:62
+#, c-format
+msgid "Use '%s'"
+msgstr "'%s'을(를) 사용합니다"
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:53
+msgid "Keep the other one"
+msgstr "다른 것을 유지"
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:55
+#: ../libxfce4kbd-private/xfce-shortcuts.c:58
+#, c-format
+msgid "This shortcut is already being used for the command '%s'. Which action do you want to use?"
+msgstr "이 바로 가기는 이미 명령 '%s'에서 사용되고 있습니다. 어떤 동작을 사용하시렵니까?"
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:56
+#: ../libxfce4kbd-private/xfce-shortcuts.c:59
+#, c-format
+msgid "Keep '%s'"
+msgstr "'%s'을(를) 유지합니다"
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:61
+msgid "This shortcut is already being used by a window manager action. Which action do you want to use?"
+msgstr "이 바로 가기는 이미 창 관리자 동작에 의해 사용되고 있습니다. 어떤 동작을 사용하시렵니까?"
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:62
+msgid "Keep the window manager action"
+msgstr "창 관리자 동작 유지"
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:95
+#, c-format
+msgid "Conflicting actions for %s"
+msgstr "%s을(를) 위한 동작이 충돌합니다"
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:128
+msgid "This shortcut is already being used for something else."
+msgstr "이 바로 가기는 이미 다른 용도로 사용되고 있습니다."
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:207
+msgid "Window Manager Action Shortcut"
+msgstr "창 관리자 동작 바로 가기"
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:208
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:218
+msgid "Action:"
+msgstr "동작:"
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:212
+msgid "Command Shortcut"
+msgstr "명령 바로 가기"
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:213
+msgid "Command:"
+msgstr "명령:"
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:217
+msgid "Shortcut"
+msgstr "바로 가기"
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:258
+msgid "Shortcut:"
+msgstr "바로 가기:"
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:303
+msgid "Could not grab the keyboard."
+msgstr "키보드 입력을 잡을 수 없습니다."
+
+#: ../glade/libxfce4ui.xml.in.h:1
+msgid "Subtitle"
+msgstr "부제"
+
+#: ../glade/libxfce4ui.xml.in.h:2
+msgid "Titled Dialog"
+msgstr "제목이 붙은 대화상자"
+
+#: ../glade/libxfce4ui.xml.in.h:3
+msgid "Xfce 4 Widgets"
+msgstr "Xfce 4 위젯"
+
