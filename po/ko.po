@@ -1,8 +1,8 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Korean translations for libxfce4ui package.
+# Copyright (C) 2003-2011 The Xfce development team.
+# This file is distributed under the same license as the libxfce4ui package.
+# Seong-ho, Cho <darkcircle.0426@gmail.com>, 2011.
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui.xfce-4-8\n"
