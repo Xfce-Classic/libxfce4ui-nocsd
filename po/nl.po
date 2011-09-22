@@ -370,16 +370,16 @@ msgstr "Auteursrecht"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:5
 msgid "Credits"
-msgstr ""
+msgstr "Dankbetuigingen"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:6
 msgid "GPL"
-msgstr ""
+msgstr "GPL"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:7
 msgid "LGPL"
-msgstr ""
+msgstr "LGPL"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:8
 msgid "License"
-msgstr ""
+msgstr "Licentie"
