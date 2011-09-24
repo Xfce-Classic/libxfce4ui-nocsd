@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: libxfce4ui master\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-09-24 04:11+0000\n"
-"PO-Revision-Date: 2011-09-24 14:46+0800\n"
+"PO-Revision-Date: 2011-09-24 14:48+0800\n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
 "Language-Team: Chinese-l10n <chinese-l10n@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
@@ -34,7 +34,7 @@ msgstr "疑問"
 
 #: ../libxfce4ui/xfce-sm-client.c:1402
 msgid "Session management client ID"
-msgstr "作業階段管理用戶端 ID"
+msgstr "工作階段管理用戶端 ID"
 
 #: ../libxfce4ui/xfce-sm-client.c:1402
 msgid "ID"
@@ -42,25 +42,25 @@ msgstr "ID"
 
 #: ../libxfce4ui/xfce-sm-client.c:1403
 msgid "Disable session management"
-msgstr "停用作業階段管理"
+msgstr "停用工作階段管理"
 
 #: ../libxfce4ui/xfce-sm-client.c:1413
 msgid "Session management options"
-msgstr "作業階段管理選項"
+msgstr "工作階段管理選項"
 
 #: ../libxfce4ui/xfce-sm-client.c:1414
 msgid "Show session management options"
-msgstr "顯示作業階段管理選項"
+msgstr "顯示工作階段管理選項"
 
 #: ../libxfce4ui/xfce-sm-client.c:1590
 #, c-format
 msgid "Failed to connect to the session manager: %s"
-msgstr "連接到作業階段管理程式失敗：%s"
+msgstr "連接到工作階段管理程式失敗：%s"
 
 #: ../libxfce4ui/xfce-sm-client.c:1597
 #, c-format
 msgid "Session manager did not return a valid client id"
-msgstr "作業階段管理程式沒有回傳有效的用戶端 id"
+msgstr "工作階段管理程式沒有回傳有效的用戶端 id"
 
 #. print warning for user
 #: ../libxfce4ui/xfce-spawn.c:406
@@ -192,11 +192,11 @@ msgstr "Unix/Linux 桌面的現代化檔案管理員，旨在易用、快速。"
 
 #: ../xfce4-about/main.c:89
 msgid "Session Manager"
-msgstr "作業階段管理員"
+msgstr "工作階段管理員"
 
 #: ../xfce4-about/main.c:90
 msgid "Restores your session on startup and allows you to shutdown the computer from Xfce."
-msgstr "啟動時還原您的作業階段，並讓您可以從 Xfce 關機。"
+msgstr "啟動時還原您的工作階段，並讓您可以從 Xfce 關機。"
 
 #: ../xfce4-about/main.c:94
 msgid "Setting System"
