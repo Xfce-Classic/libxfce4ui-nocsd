@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-09-22 16:11+0000\n"
+"POT-Creation-Date: 2011-09-23 22:11+0000\n"
 "PO-Revision-Date: 2010-03-26 12:16+0100\n"
 "Last-Translator: Petar Koretić <petar.koretic@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -168,7 +168,7 @@ msgstr ""
 
 #: ../xfce4-about/main.c:74
 msgid "Panel"
-msgstr ""
+msgstr "Ploča"
 
 #: ../xfce4-about/main.c:75
 msgid "Program launchers, window buttons, applications menu, workspace switcher and more."
@@ -176,7 +176,7 @@ msgstr ""
 
 #: ../xfce4-about/main.c:79
 msgid "Desktop Manager"
-msgstr ""
+msgstr "Upravitelj radnom površinom"
 
 #: ../xfce4-about/main.c:80
 msgid "Sets the background color or image with optional application menu or icons for minimized applications or launchers, devices and folders."
@@ -184,7 +184,7 @@ msgstr ""
 
 #: ../xfce4-about/main.c:84
 msgid "File Manager "
-msgstr ""
+msgstr "Upravitelj datotekama"
 
 #: ../xfce4-about/main.c:85
 msgid "A modern file manager for the Unix/Linux desktop, aiming to be easy-to-use and fast."
@@ -200,7 +200,7 @@ msgstr ""
 
 #: ../xfce4-about/main.c:94
 msgid "Setting System"
-msgstr ""
+msgstr "Postavljanje sustava"
 
 #: ../xfce4-about/main.c:95
 msgid "Configuration system to control various aspects of the desktop like appearance, display, keyboard and mouse settings."
@@ -208,7 +208,7 @@ msgstr ""
 
 #: ../xfce4-about/main.c:99
 msgid "Application Finder"
-msgstr ""
+msgstr "Nalaznik programa"
 
 #: ../xfce4-about/main.c:100
 msgid "Shows the applications installed on your system in categories, so you can quickly find and launch them."
@@ -244,11 +244,11 @@ msgstr ""
 
 #: ../xfce4-about/main.c:153
 msgid "Thank you for your interest in Xfce."
-msgstr ""
+msgstr "Hvala na Vašem interesu za Xfce."
 
 #: ../xfce4-about/main.c:157
 msgid "The Xfce Development Team"
-msgstr ""
+msgstr "Xfce razvojni tim"
 
 #: ../xfce4-about/main.c:266
 msgid "If you know of anyone missing from this list; don't hesitate and file a bug on <http://bugzilla.xfce.org> ."
@@ -256,7 +256,7 @@ msgstr ""
 
 #: ../xfce4-about/main.c:270
 msgid "Thanks to all who helped making this software available!"
-msgstr ""
+msgstr "Hvala svima koji su pomogli učiniti ovaj software dostupnim!"
 
 #: ../xfce4-about/main.c:287
 msgid "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different components are copyrighted by their respective authors."
@@ -273,7 +273,7 @@ msgstr ""
 #: ../xfce4-about/main.c:446
 #, c-format
 msgid "Type '%s --help' for usage information."
-msgstr ""
+msgstr "Upišite '%s --help' za informaciju o uporabi."
 
 #: ../xfce4-about/main.c:452
 msgid "Unable to initialize GTK+."
@@ -281,7 +281,7 @@ msgstr ""
 
 #: ../xfce4-about/main.c:461
 msgid "The Xfce development team. All rights reserved."
-msgstr ""
+msgstr "Xfce razvojni tim. Sva prava pridržana."
 
 #: ../xfce4-about/main.c:462
 #, c-format
@@ -296,7 +296,7 @@ msgstr ""
 
 #: ../xfce4-about/main.c:475
 msgid "Failed to load interface"
-msgstr ""
+msgstr "Nije uspjelo učitavanje sučelja"
 
 #. I18N: first %s will be replaced by the version, second by
 #. * the name of the distribution (--with-vendor-info=NAME)
@@ -309,18 +309,18 @@ msgstr ""
 #: ../xfce4-about/main.c:493
 #, c-format
 msgid "Version %s"
-msgstr ""
+msgstr "Verzija %s"
 
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
 #. },
 #: ../xfce4-about/contributors.h:127
 msgid "Core developers"
-msgstr ""
+msgstr "Temeljni razvijatelji"
 
 #: ../xfce4-about/contributors.h:130
 msgid "Active contributors"
-msgstr ""
+msgstr "Aktivni doprinositelji"
 
 #: ../xfce4-about/contributors.h:133
 msgid "Servers maintained by"
@@ -332,19 +332,19 @@ msgstr ""
 
 #: ../xfce4-about/contributors.h:139
 msgid "Translations supervision"
-msgstr ""
+msgstr "Nadzor prijevoda"
 
 #: ../xfce4-about/contributors.h:142
 msgid "Translators"
-msgstr ""
+msgstr "Prevoditelji"
 
 #: ../xfce4-about/contributors.h:145
 msgid "Previous contributors"
-msgstr ""
+msgstr "Prethodni doprinositelji"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:1
 msgid "About Xfce"
-msgstr ""
+msgstr "O Xfce-u"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:2
 msgid "Information about the Xfce Desktop Environment"
@@ -352,19 +352,19 @@ msgstr ""
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:1
 msgid "About"
-msgstr ""
+msgstr "O programu"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:2
 msgid "About the Xfce Desktop Environment"
-msgstr ""
+msgstr "O Xfce radnom okruženju"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:3
 msgid "BSD"
-msgstr ""
+msgstr "BSD"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:4
 msgid "Copyright"
-msgstr ""
+msgstr "Autorska prava"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:5
 msgid "Credits"
@@ -372,12 +372,12 @@ msgstr ""
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:6
 msgid "GPL"
-msgstr ""
+msgstr "GPL"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:7
 msgid "LGPL"
-msgstr ""
+msgstr "LGPL"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:8
 msgid "License"
-msgstr ""
+msgstr "Licenca"
