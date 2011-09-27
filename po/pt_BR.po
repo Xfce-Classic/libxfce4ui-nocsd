@@ -349,7 +349,7 @@ msgstr "Sobre o Xfce"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:2
 msgid "Information about the Xfce Desktop Environment"
-msgstr "Informaão sobre o Ambiente de área de trabalho Xfce"
+msgstr "Informação sobre o Ambiente de área de trabalho Xfce"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:1
 msgid "About"
