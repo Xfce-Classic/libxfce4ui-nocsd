@@ -249,7 +249,7 @@ msgstr "Obrigado pelo seu interesse no Xfce."
 
 #: ../xfce4-about/main.c:157
 msgid "The Xfce Development Team"
-msgstr "O time de desenvolvimento do Xfce."
+msgstr "O time de desenvolvimento do Xfce"
 
 #: ../xfce4-about/main.c:266
 msgid "If you know of anyone missing from this list; don't hesitate and file a bug on <http://bugzilla.xfce.org> ."
