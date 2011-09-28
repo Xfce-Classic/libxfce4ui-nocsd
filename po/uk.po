@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-09-27 16:11+0000\n"
+"POT-Creation-Date: 2011-09-28 10:11+0000\n"
 "PO-Revision-Date: 2008-06-30 17:35+0300\n"
 "Last-Translator: Dmitry Nikitin <luckas_fb@mail.ru>\n"
 "Language-Team: Ukrainian <xfce4-dev@xfce.org>\n"
@@ -274,7 +274,7 @@ msgstr ""
 #: ../xfce4-about/main.c:446
 #, c-format
 msgid "Type '%s --help' for usage information."
-msgstr ""
+msgstr "Запустіть '%s --help' для інформації про використання."
 
 #: ../xfce4-about/main.c:452
 msgid "Unable to initialize GTK+."
@@ -287,24 +287,24 @@ msgstr "Команда розробників Xfce. Всі права засте
 #: ../xfce4-about/main.c:462
 #, c-format
 msgid "Please report bugs to <%s>."
-msgstr ""
+msgstr "Будь-ласка, повідомте про помилку до <%s>."
 
 #. I18N: date/time the translators list was updated
 #: ../xfce4-about/main.c:465
 #, c-format
 msgid "Translators list from %s."
-msgstr ""
+msgstr "Список перекладачів з %s."
 
 #: ../xfce4-about/main.c:475
 msgid "Failed to load interface"
-msgstr ""
+msgstr "Неможливо завантажити інтерфейс"
 
 #. I18N: first %s will be replaced by the version, second by
 #. * the name of the distribution (--with-vendor-info=NAME)
 #: ../xfce4-about/main.c:489
 #, c-format
 msgid "Version %s, distributed by %s"
-msgstr ""
+msgstr "Версія %s, випущена через %s"
 
 #. I18N: %s will be replaced by the Xfce version number
 #: ../xfce4-about/main.c:493
@@ -317,15 +317,15 @@ msgstr "Версія %s"
 #. },
 #: ../xfce4-about/contributors.h:127
 msgid "Core developers"
-msgstr ""
+msgstr "Основні розробники"
 
 #: ../xfce4-about/contributors.h:130
 msgid "Active contributors"
-msgstr ""
+msgstr "Активний внесок через"
 
 #: ../xfce4-about/contributors.h:133
 msgid "Servers maintained by"
-msgstr ""
+msgstr "Сервери під наглядом через"
 
 #: ../xfce4-about/contributors.h:136
 msgid "Goodies supervision"
