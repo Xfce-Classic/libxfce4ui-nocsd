@@ -167,7 +167,7 @@ msgstr "Vindueshåndtering"
 
 #: ../xfce4-about/main.c:71
 msgid "Handles the placement of windows on the screen."
-msgstr ""
+msgstr "Håndterer placeringen af vinduer på skærmen."
 
 #: ../xfce4-about/main.c:74
 msgid "Panel"
@@ -191,7 +191,7 @@ msgstr "Filhåndtering"
 
 #: ../xfce4-about/main.c:85
 msgid "A modern file manager for the Unix/Linux desktop, aiming to be easy-to-use and fast."
-msgstr ""
+msgstr "En moderne filhåndtering til Unix/Linux-skrivebordet, med målet at være nemt at bruge og hurtig."
 
 #: ../xfce4-about/main.c:89
 msgid "Session Manager"
@@ -220,7 +220,7 @@ msgstr ""
 
 #: ../xfce4-about/main.c:104
 msgid "Utilities and Scripts"
-msgstr ""
+msgstr "Værktøjer og skripts."
 
 #: ../xfce4-about/main.c:105
 msgid "Startup scripts, run dialog and about dialog."
@@ -260,11 +260,11 @@ msgstr ""
 
 #: ../xfce4-about/main.c:270
 msgid "Thanks to all who helped making this software available!"
-msgstr ""
+msgstr "Vi takker alle som har hjulpet til med at gøre dette programmel tilgængeligt!"
 
 #: ../xfce4-about/main.c:287
 msgid "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different components are copyrighted by their respective authors."
-msgstr ""
+msgstr "Xfce 4 er copyright Olivier Fourdan (fourdan@xfce.org). De forskellige komponenter er copyright til de enkelte forfattere."
 
 #: ../xfce4-about/main.c:292
 msgid "The libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs and exo packages are distributed under the terms of the GNU Library General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version."
@@ -277,30 +277,30 @@ msgstr ""
 #: ../xfce4-about/main.c:446
 #, c-format
 msgid "Type '%s --help' for usage information."
-msgstr ""
+msgstr "Indtast '%s --help' for information af brugen."
 
 #: ../xfce4-about/main.c:452
 msgid "Unable to initialize GTK+."
-msgstr ""
+msgstr "Kunne ikke klargøre GTK+."
 
 #: ../xfce4-about/main.c:461
 msgid "The Xfce development team. All rights reserved."
-msgstr ""
+msgstr "Udviklingholdet Xfce.. Alle rettigheder forbeholdes."
 
 #: ../xfce4-about/main.c:462
 #, c-format
 msgid "Please report bugs to <%s>."
-msgstr ""
+msgstr "Venligst rapportér fejl til <%s>."
 
 #. I18N: date/time the translators list was updated
 #: ../xfce4-about/main.c:465
 #, c-format
 msgid "Translators list from %s."
-msgstr ""
+msgstr "Liste over oversættere %s."
 
 #: ../xfce4-about/main.c:475
 msgid "Failed to load interface"
-msgstr ""
+msgstr "Kunne ikke indlæse grænseflade"
 
 #. I18N: first %s will be replaced by the version, second by
 #. * the name of the distribution (--with-vendor-info=NAME)
