@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-09-28 10:11+0000\n"
+"POT-Creation-Date: 2011-09-29 16:11+0000\n"
 "PO-Revision-Date: 2008-06-30 17:35+0300\n"
 "Last-Translator: Dmitry Nikitin <luckas_fb@mail.ru>\n"
 "Language-Team: Ukrainian <xfce4-dev@xfce.org>\n"
@@ -165,7 +165,7 @@ msgstr "Мменеджер вікон"
 
 #: ../xfce4-about/main.c:71
 msgid "Handles the placement of windows on the screen."
-msgstr ""
+msgstr "Відповідає за положення вікна на екрані"
 
 #: ../xfce4-about/main.c:74
 msgid "Panel"
@@ -197,7 +197,7 @@ msgstr "Менеджер сеансів"
 
 #: ../xfce4-about/main.c:90
 msgid "Restores your session on startup and allows you to shutdown the computer from Xfce."
-msgstr ""
+msgstr "Відновлює Ваш сеанс при запуску і дозволяє Вам вимикати комп’ютер з Xfce"
 
 #: ../xfce4-about/main.c:94
 msgid "Setting System"
@@ -221,7 +221,7 @@ msgstr "Утиліти і скрипти"
 
 #: ../xfce4-about/main.c:105
 msgid "Startup scripts, run dialog and about dialog."
-msgstr ""
+msgstr "Скрипти завантаження, діалог запуску і про діалог."
 
 #: ../xfce4-about/main.c:108
 msgid "Settings Daemon"
@@ -253,11 +253,11 @@ msgstr "Команда розробників Xfce"
 
 #: ../xfce4-about/main.c:266
 msgid "If you know of anyone missing from this list; don't hesitate and file a bug on <http://bugzilla.xfce.org> ."
-msgstr ""
+msgstr "Якщо Ви помітите, що щось відсутнє у списку, повідомте про це поштою <http://bugzilla.xfce.org> ."
 
 #: ../xfce4-about/main.c:270
 msgid "Thanks to all who helped making this software available!"
-msgstr ""
+msgstr "Дякуємо усім, хто допоміг появитися цій програмі!"
 
 #: ../xfce4-about/main.c:287
 msgid "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different components are copyrighted by their respective authors."
@@ -333,15 +333,15 @@ msgstr ""
 
 #: ../xfce4-about/contributors.h:139
 msgid "Translations supervision"
-msgstr ""
+msgstr "Керівник перекладачів"
 
 #: ../xfce4-about/contributors.h:142
 msgid "Translators"
-msgstr ""
+msgstr "Перекладачі"
 
 #: ../xfce4-about/contributors.h:145
 msgid "Previous contributors"
-msgstr ""
+msgstr "Попередні помічники"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:1
 msgid "About Xfce"
@@ -349,7 +349,7 @@ msgstr "Про Xfce"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:2
 msgid "Information about the Xfce Desktop Environment"
-msgstr ""
+msgstr "Інформація про середовиже робочого столу Xfce"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:1
 msgid "About"
