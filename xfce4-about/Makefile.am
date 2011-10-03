@@ -39,7 +39,7 @@ desktop_DATA = $(desktop_in_files:.desktop.in=.desktop)
 if MAINTAINER_MODE
 
 about-dialog-ui.h: $(srcdir)/xfce4-about-dialog.glade Makefile
-	$(AM_V_GEN) exo-csource --static --strip-comments --strip-content --name=xfce_about_dialog_ui $< >$@
+	$(AM_V_GEN) xdt-csource --static --strip-comments --strip-content --name=xfce_about_dialog_ui $< >$@
 
 DISTCLEANFILES = \
 	$(xfce4_about_built_sources)
