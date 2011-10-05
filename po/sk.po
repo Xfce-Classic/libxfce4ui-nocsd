@@ -3,18 +3,20 @@
 # This file is distributed under the same license as the libxfce4ui package.
 # Robert Hartl <hartl.robert@gmail.com>, 2009.
 # Tomáš Vadina <kyberdev@gmail.com>, 2011.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: 4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-07-15 04:10+0000\n"
-"PO-Revision-Date: 2011-07-15 09:29+0100\n"
+"POT-Creation-Date: 2011-10-05 04:05+0000\n"
+"PO-Revision-Date: 2011-10-05 09:01+0200\n"
 "Last-Translator: Tomáš Vadina <kyberdev@gmail.com>\n"
 "Language-Team: Slovak <sk-i18n@lists.linux.sk>\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
-"Content-Transfer-Encoding: 8bit\n"
 "Language: sk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 1 : (n>=2 && n<=4) ? 2 : 0;\n"
 
 #: ../libxfce4ui/xfce-dialogs.c:68
 msgid "Information"
@@ -65,12 +67,19 @@ msgstr "Správca sedenia nevrátil platný identifikátor klienta"
 #. print warning for user
 #: ../libxfce4ui/xfce-spawn.c:406
 #, c-format
-msgid "Working directory \"%s\" does not exist. It won't be used when spawning \"%s\"."
-msgstr "Pracovný adresár \"%s\" neexistuje.  Pri spustení \"%s\" nebude použitý."
+msgid ""
+"Working directory \"%s\" does not exist. It won't be used when spawning \"%s"
+"\"."
+msgstr ""
+"Pracovný adresár \"%s\" neexistuje.  Pri spustení \"%s\" nebude použitý."
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:52
-msgid "This shortcut is already being used for another window manager action. Which action do you want to use?"
-msgstr "Túto klávesovú skratku už používa iná akcia správcu okien. Ktorú akciu chcete použiť?"
+msgid ""
+"This shortcut is already being used for another window manager action. Which "
+"action do you want to use?"
+msgstr ""
+"Túto klávesovú skratku už používa iná akcia správcu okien. Ktorú akciu "
+"chcete použiť?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
@@ -87,8 +96,11 @@ msgstr "Ponechať inú"
 #: ../libxfce4kbd-private/xfce-shortcuts.c:55
 #: ../libxfce4kbd-private/xfce-shortcuts.c:58
 #, c-format
-msgid "This shortcut is already being used for the command '%s'. Which action do you want to use?"
-msgstr "Túto klávesovú skratku už používa príkaz '%s'. Ktorú akciu chcete použiť?"
+msgid ""
+"This shortcut is already being used for the command '%s'. Which action do "
+"you want to use?"
+msgstr ""
+"Túto klávesovú skratku už používa príkaz '%s'. Ktorú akciu chcete použiť?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
 #: ../libxfce4kbd-private/xfce-shortcuts.c:59
@@ -97,8 +109,12 @@ msgid "Keep '%s'"
 msgstr "Ponechať '%s'"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:61
-msgid "This shortcut is already being used by a window manager action. Which action do you want to use?"
-msgstr "Túto klávesovú skratku už používa akcia správcu okien. Ktorú akciu chcete použiť?"
+msgid ""
+"This shortcut is already being used by a window manager action. Which action "
+"do you want to use?"
+msgstr ""
+"Túto klávesovú skratku už používa akcia správcu okien. Ktorú akciu chcete "
+"použiť?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 msgid "Keep the window manager action"
@@ -154,6 +170,300 @@ msgstr "Dialógové okno s titulkom"
 msgid "Xfce 4 Widgets"
 msgstr "Widgety Xfce 4"
 
+#: ../xfce4-about/main.c:52
+msgid "Version information"
+msgstr "Informácia o verzii"
+
+#: ../xfce4-about/main.c:70
+msgid "Window Manager"
+msgstr "Správca okien"
+
+#: ../xfce4-about/main.c:71
+msgid "Handles the placement of windows on the screen."
+msgstr "Ovláda umiestnenie okien na obrazovke."
+
+#: ../xfce4-about/main.c:74
+msgid "Panel"
+msgstr "Panel"
+
+#: ../xfce4-about/main.c:75
+msgid ""
+"Program launchers, window buttons, applications menu, workspace switcher and "
+"more."
+msgstr ""
+"Spúšťače programov, tlačidlá okien, ponuka aplikácií, prepínač pracovných "
+"plôch a iné."
+
+#: ../xfce4-about/main.c:79
+msgid "Desktop Manager"
+msgstr "Správca pracovnej plochy"
+
+#: ../xfce4-about/main.c:80
+msgid ""
+"Sets the background color or image with optional application menu or icons "
+"for minimized applications or launchers, devices and folders."
+msgstr ""
+"Nastavuje farbu pozadia alebo obrázok s voliteľnou ponukou aplikácií alebo "
+"ikon pre minimalizované aplikácie alebo spúšťače, zariadenia a priečinky."
+
+#: ../xfce4-about/main.c:84
+msgid "File Manager "
+msgstr "Správca súborov"
+
+#: ../xfce4-about/main.c:85
+msgid ""
+"A modern file manager for the Unix/Linux desktop, aiming to be easy-to-use "
+"and fast."
+msgstr ""
+"Moderný správca súborov pre prostredie Unix/Linux, zameraný na jednoduché "
+"používanie a rýchlosť."
+
+#: ../xfce4-about/main.c:89
+msgid "Session Manager"
+msgstr "Správca sedenia"
+
+#: ../xfce4-about/main.c:90
+msgid ""
+"Restores your session on startup and allows you to shutdown the computer "
+"from Xfce."
+msgstr "Obnoví sedenie po spustení a povolí vypnúť počítač z prostredia Xfce."
+
+#: ../xfce4-about/main.c:94
+msgid "Setting System"
+msgstr "Nastavenie systému"
+
+#: ../xfce4-about/main.c:95
+msgid ""
+"Configuration system to control various aspects of the desktop like "
+"appearance, display, keyboard and mouse settings."
+msgstr ""
+"Nastavenie systému na ovládanie rôznych aspektov prostredia ako napríklad "
+"vzhľadu, obrazovky, nastavení klávesnice a myši."
+
+#: ../xfce4-about/main.c:99
+msgid "Application Finder"
+msgstr "Vyhľadávač aplikácií"
+
+#: ../xfce4-about/main.c:100
+msgid ""
+"Shows the applications installed on your system in categories, so you can "
+"quickly find and launch them."
+msgstr ""
+"Zobrazí aplikácie nainštalované vo vašom systéme v kategóriách, tak ich "
+"môžete rýchlo nájsť a spustiť."
+
+#: ../xfce4-about/main.c:104
+msgid "Utilities and Scripts"
+msgstr "Nástroje a skripty"
+
+#: ../xfce4-about/main.c:105
+msgid "Startup scripts, run dialog and about dialog."
+msgstr "Skripty po spustení, spustiť dialóg a dialóg o programe."
+
+#: ../xfce4-about/main.c:108
+msgid "Settings Daemon"
+msgstr "Démon nastavení"
+
+#: ../xfce4-about/main.c:109
+msgid "D-Bus-based configuration storage system."
+msgstr "Úložný systém nastavení založený na D-Bus."
+
+#: ../xfce4-about/main.c:116
+msgid ""
+"Xfce is a collection of programs that together provide a full-featured "
+"desktop environment. The following programs are part of the Xfce core:"
+msgstr ""
+"Xfce je zbierkou aplikácií, ktoré dokopy poskytujú plne vybavené pracovné "
+"prostredie. Súčasťou jadra Xfce sú tieto aplikácie:"
+
+#: ../xfce4-about/main.c:140
+msgid ""
+"Xfce is also a development platform providing several libraries, that help "
+"programmers create applications that fit in well with the desktop "
+"environment."
+msgstr ""
+"Xfce je taktiež vývojovou platformou, poskytujúcou veľa knižníc, ktoré "
+"programátorom pomáhajú vytvárať aplikácie zapadajúce do pracovného "
+"prostredia."
+
+#: ../xfce4-about/main.c:146
+msgid ""
+"Xfce components are licensed under free or open source licences; GPL or BSDL "
+"for applications and LGPL or BSDL for libraries. Look at the documentation, "
+"the source code or the Xfce website (http://www.xfce.org) for more "
+"information."
+msgstr ""
+"Komponenty Xfce sú licencované pod slobodnou licenciou s otvoreným zdrojovým "
+"kódom; GPL alebo BSDL pre aplikácie a LGPL alebo BDSL pre knižnice. Viac "
+"informácií o zdrojových kódoch nájdete na internetovej adrese Xfce  (http://"
+"www.xfce.org)."
+
+#: ../xfce4-about/main.c:153
+msgid "Thank you for your interest in Xfce."
+msgstr "Ďakujeme za Váš záujem o Xfce."
+
+#: ../xfce4-about/main.c:157
+msgid "The Xfce Development Team"
+msgstr "Vývojový tím Xfce"
+
+#: ../xfce4-about/main.c:266
+msgid ""
+"If you know of anyone missing from this list; don't hesitate and file a bug "
+"on <http://bugzilla.xfce.org> ."
+msgstr ""
+"Ak poznáte niekoho, kto chýba na tomto zozname, tak neváhajte a dajte nám "
+"prosím vedieť na <http://bugzilla.xfce.org> ."
+
+#: ../xfce4-about/main.c:270
+msgid "Thanks to all who helped making this software available!"
+msgstr ""
+"Ďakujeme všetkým, ktorí pomohli k tomu, aby bol tento softvér prístupný."
+
+#: ../xfce4-about/main.c:287
+msgid ""
+"Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
+"components are copyrighted by their respective authors."
+msgstr ""
+"Xfce 4 je autorským právom Oliviera Fourdana (fourdan@xfce.org). Rôzne "
+"komponenty sú chránené autorskými právami ich autorov."
+
+#: ../xfce4-about/main.c:292
+msgid ""
+"The libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs and exo packages are "
+"distributed under the terms of the GNU Library General Public License as "
+"published by the Free Software Foundation; either version 2 of the License, "
+"or (at your option) any later version."
+msgstr ""
+"Balíčky libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs a exo sú šírené "
+"pod podmienkami licencie GNU Library General Public License vydanou "
+"nadáciou  Free Software Foundation vo verzii 2 alebo (podľa Vašej vlastnej "
+"voľby) vyššej."
+
+#: ../xfce4-about/main.c:299
+msgid ""
+"The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-"
+"settings, xfce-utils, xfconf, xfdesktop and xfwm4 are distributed under the "
+"terms of the GNU General Public License as published by the Free Software "
+"Foundation; either version 2 of the License, or (at your option) any later "
+"version."
+msgstr ""
+"Balíčky thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, "
+"xfce-utils, xfconf, xfdesktop a xfwm4 sú distribuované pod GNU General "
+"Public License, vydávanej Free Software Foundation; buď verzie 2 tejto "
+"licencie alebo (podľa vášho uváženia) ktorejkoľvek neskoršej verzie."
+
+#: ../xfce4-about/main.c:446
+#, c-format
+msgid "Type '%s --help' for usage information."
+msgstr "Zadajte '%s --help' pre zobrazenie možností použitia."
+
+#: ../xfce4-about/main.c:452
+msgid "Unable to initialize GTK+."
+msgstr "Nie je možné inicializovať GTK+."
+
+#: ../xfce4-about/main.c:461
+msgid "The Xfce development team. All rights reserved."
+msgstr "Vývojový tím Xfce. Všetky práva vyhradené."
+
+#: ../xfce4-about/main.c:462
+#, c-format
+msgid "Please report bugs to <%s>."
+msgstr "Chyby prosím hláste na <%s>."
+
+#. I18N: date/time the translators list was updated
+#: ../xfce4-about/main.c:465
+#, c-format
+msgid "Translators list from %s."
+msgstr "Zoznam prekladateľov z %s."
+
+#: ../xfce4-about/main.c:475
+msgid "Failed to load interface"
+msgstr "Načítanie rozhrania zlyhalo"
+
+#. I18N: first %s will be replaced by the version, second by
+#. * the name of the distribution (--with-vendor-info=NAME)
+#: ../xfce4-about/main.c:489
+#, c-format
+msgid "Version %s, distributed by %s"
+msgstr "Verzia %s, šírené cez %s"
+
+#. I18N: %s will be replaced by the Xfce version number
+#: ../xfce4-about/main.c:493
+#, c-format
+msgid "Version %s"
+msgstr "Verzia %s"
+
+#. { N_("Project Lead"),
+#. xfce_contributors_lead
+#. },
+#: ../xfce4-about/contributors.h:127
+msgid "Core developers"
+msgstr "Vývojári jadra"
+
+#: ../xfce4-about/contributors.h:130
+msgid "Active contributors"
+msgstr "Aktívni prispievateia"
+
+#: ../xfce4-about/contributors.h:133
+msgid "Servers maintained by"
+msgstr "Servery spravujú"
+
+#: ../xfce4-about/contributors.h:136
+msgid "Goodies supervision"
+msgstr "Dohľad nad doplnkami"
+
+#: ../xfce4-about/contributors.h:139
+msgid "Translations supervision"
+msgstr "Dohľad nad prekladmi"
+
+#: ../xfce4-about/contributors.h:142
+msgid "Translators"
+msgstr "Prekladatelia"
+
+#: ../xfce4-about/contributors.h:145
+msgid "Previous contributors"
+msgstr "Predošlí prispievatelia"
+
+#: ../xfce4-about/xfce4-about.desktop.in.h:1
+msgid "About Xfce"
+msgstr "O pracovnom prostredí Xfce"
+
+#: ../xfce4-about/xfce4-about.desktop.in.h:2
+msgid "Information about the Xfce Desktop Environment"
+msgstr "Informácie o pracovnom prostredí Xfce"
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:1
+msgid "About"
+msgstr "O prostredí"
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:2
+msgid "About the Xfce Desktop Environment"
+msgstr "O pracovnom prostredí Xfce"
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:3
+msgid "BSD"
+msgstr "BSD"
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:4
+msgid "Copyright"
+msgstr "Autorské práva"
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:5
+msgid "Credits"
+msgstr "Zásluhy"
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:6
+msgid "GPL"
+msgstr "GPL"
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:7
+msgid "LGPL"
+msgstr "LGPL"
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:8
+msgid "License"
+msgstr "Licencia"
+
 #~ msgid "<span size='large'><b>%s</b></span>"
 #~ msgstr "<span size='large'><b>%s</b></span>"
 
@@ -162,9 +472,6 @@ msgstr "Widgety Xfce 4"
 
 #~ msgid "Unrecognized desktop file Version '%s'"
 #~ msgstr "Nerozpoznaný súbor plochy verzie '%s'"
-
-#~ msgid "Starting %s"
-#~ msgstr "Spúšťam %s"
 
 #~ msgid "Application does not accept documents on command line"
 #~ msgstr "Aplikácia neprijíma dokumenty na príkazovom riadku"
