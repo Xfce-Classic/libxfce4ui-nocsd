@@ -197,7 +197,6 @@ msgid "Desktop Manager"
 msgstr "Gestionnaire de bureau"
 
 #: ../xfce4-about/main.c:80
-#, fuzzy
 msgid ""
 "Sets the background color or image with optional application menu or icons "
 "for minimized applications or launchers, devices and folders."
@@ -234,7 +233,6 @@ msgid ""
 msgstr "Système de configuration contrôlant différents aspects du bureau tels que l'apparence, l'écran ou les paramètres du clavier et de la souris."
 
 #: ../xfce4-about/main.c:99
-#, fuzzy
 msgid "Application Finder"
 msgstr "Chercheur d'application"
 
@@ -249,12 +247,10 @@ msgid "Utilities and Scripts"
 msgstr "Utilitaires et scripts"
 
 #: ../xfce4-about/main.c:105
-#, fuzzy
 msgid "Startup scripts, run dialog and about dialog."
 msgstr "Scripts de démarrage, fenêtre d'information de démarrage et fenêtre d'à propos."
 
 #: ../xfce4-about/main.c:108
-#, fuzzy
 msgid "Settings Daemon"
 msgstr "Démon de paramètrage"
 
@@ -302,11 +298,10 @@ msgid "Thanks to all who helped making this software available!"
 msgstr "Merci à tous ceux qui ont aidé à rendre ce logiciel disponible!"
 
 #: ../xfce4-about/main.c:287
-#, fuzzy
 msgid ""
 "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
-msgstr "Le droit d'auteur de Xfce 4 est à Olivier Fourdan (fourdan@xfce.org). Les différents composants sont protégés par copyright par leurs auteurs respectifs."
+msgstr "Les droits d'auteur de Xfce 4 appartiennent à Olivier Fourdan (fourdan@xfce.org). Les différents composants sont protégés par copyright par leurs auteurs respectifs."
 
 #: ../xfce4-about/main.c:292
 msgid ""
