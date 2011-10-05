@@ -405,32 +405,32 @@ msgstr ""
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:1
 msgid "About"
-msgstr ""
+msgstr "A propos"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:2
 msgid "About the Xfce Desktop Environment"
-msgstr ""
+msgstr "A propos de l'environnement de bureau Xfce"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:3
 msgid "BSD"
-msgstr ""
+msgstr "BSD"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:4
 msgid "Copyright"
-msgstr ""
+msgstr "Copyright"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:5
 msgid "Credits"
-msgstr ""
+msgstr "Crédits"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:6
 msgid "GPL"
-msgstr ""
+msgstr "GPL"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:7
 msgid "LGPL"
-msgstr ""
+msgstr "LGPL"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:8
 msgid "License"
-msgstr ""
+msgstr "Licence"
