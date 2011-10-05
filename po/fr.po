@@ -234,8 +234,9 @@ msgid ""
 msgstr "Système de configuration contrôlant différents aspects du bureau tels que l'apparence, l'écran ou les paramètres du clavier et de la souris."
 
 #: ../xfce4-about/main.c:99
+#, fuzzy
 msgid "Application Finder"
-msgstr ""
+msgstr "Chercheur d'application"
 
 #: ../xfce4-about/main.c:100
 msgid ""
@@ -298,13 +299,14 @@ msgstr "Si vous connaissez quelqu'un manquant dans la liste; n'hésitez pas et r
 
 #: ../xfce4-about/main.c:270
 msgid "Thanks to all who helped making this software available!"
-msgstr ""
+msgstr "Merci à tous ceux qui ont aidé à rendre ce logiciel disponible!"
 
 #: ../xfce4-about/main.c:287
+#, fuzzy
 msgid ""
 "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
-msgstr ""
+msgstr "Le droit d'auteur de Xfce 4 est à Olivier Fourdan (fourdan@xfce.org). Les différents composants sont protégés par copyright par leurs auteurs respectifs."
 
 #: ../xfce4-about/main.c:292
 msgid ""
@@ -312,7 +314,7 @@ msgid ""
 "distributed under the terms of the GNU Library General Public License as "
 "published by the Free Software Foundation; either version 2 of the License, "
 "or (at your option) any later version."
-msgstr ""
+msgstr "Les paquets libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs et exo sont distribués sous les termes de la GNU Library General Public License telle que publiée par la Free Software Foundation; que ce soit en version 2, ou (à votre guise) quelque version postérieure."
 
 #: ../xfce4-about/main.c:299
 msgid ""
@@ -321,87 +323,87 @@ msgid ""
 "terms of the GNU General Public License as published by the Free Software "
 "Foundation; either version 2 of the License, or (at your option) any later "
 "version."
-msgstr ""
+msgstr "Les paquets thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfce-utils, xfconf, xfdesktop and xfwm4 sont distribués sous les termes de la GNU General Public License telle que publiée par la Free Software Foundation; que ce soit en version 2, ou (à votre guise) quelque version postérieure."
 
 #: ../xfce4-about/main.c:446
 #, c-format
 msgid "Type '%s --help' for usage information."
-msgstr ""
+msgstr "Tapez '%s --help' pour l'usage."
 
 #: ../xfce4-about/main.c:452
 msgid "Unable to initialize GTK+."
-msgstr ""
+msgstr "Incapable d'initialiser GTK+."
 
 #: ../xfce4-about/main.c:461
 msgid "The Xfce development team. All rights reserved."
-msgstr ""
+msgstr "L'équipe de développement Xfce. Tous droits réservés."
 
 #: ../xfce4-about/main.c:462
 #, c-format
 msgid "Please report bugs to <%s>."
-msgstr ""
+msgstr "Reporter les bugs à <%s>."
 
 #. I18N: date/time the translators list was updated
 #: ../xfce4-about/main.c:465
 #, c-format
 msgid "Translators list from %s."
-msgstr ""
+msgstr "Liste des traducteurs depuis %s."
 
 #: ../xfce4-about/main.c:475
 msgid "Failed to load interface"
-msgstr ""
+msgstr "Echec du chargement de l'interface"
 
 #. I18N: first %s will be replaced by the version, second by
 #. * the name of the distribution (--with-vendor-info=NAME)
 #: ../xfce4-about/main.c:489
 #, c-format
 msgid "Version %s, distributed by %s"
-msgstr ""
+msgstr "Version %s, distribuée par %s"
 
 #. I18N: %s will be replaced by the Xfce version number
 #: ../xfce4-about/main.c:493
 #, c-format
 msgid "Version %s"
-msgstr ""
+msgstr "Version %s"
 
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
 #. },
 #: ../xfce4-about/contributors.h:127
 msgid "Core developers"
-msgstr ""
+msgstr "Développeurs du coeur"
 
 #: ../xfce4-about/contributors.h:130
 msgid "Active contributors"
-msgstr ""
+msgstr "Contributeurs actifs"
 
 #: ../xfce4-about/contributors.h:133
 msgid "Servers maintained by"
-msgstr ""
+msgstr "Serveurs maintenus par"
 
 #: ../xfce4-about/contributors.h:136
 msgid "Goodies supervision"
-msgstr ""
+msgstr "Supervision des goodies"
 
 #: ../xfce4-about/contributors.h:139
 msgid "Translations supervision"
-msgstr ""
+msgstr "Supervision des traductions"
 
 #: ../xfce4-about/contributors.h:142
 msgid "Translators"
-msgstr ""
+msgstr "Traducteurs"
 
 #: ../xfce4-about/contributors.h:145
 msgid "Previous contributors"
-msgstr ""
+msgstr "Anciens contributeurs"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:1
 msgid "About Xfce"
-msgstr ""
+msgstr "A propos de Xfce"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:2
 msgid "Information about the Xfce Desktop Environment"
-msgstr ""
+msgstr "Information à propos de l'environnement de bureau Xfce"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:1
 msgid "About"
