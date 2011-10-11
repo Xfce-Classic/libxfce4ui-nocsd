@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-10-03 16:05+0000\n"
+"POT-Creation-Date: 2011-10-11 10:05+0000\n"
 "PO-Revision-Date: 2008-06-30 17:35+0300\n"
 "Last-Translator: Dmitry Nikitin <luckas_fb@mail.ru>\n"
 "Language-Team: Ukrainian <xfce4-dev@xfce.org>\n"
@@ -191,7 +191,7 @@ msgstr "Панель"
 msgid ""
 "Program launchers, window buttons, applications menu, workspace switcher and "
 "more."
-msgstr ""
+msgstr "Пускачі програм, кнопки вікон, меню програм, переключатель робочих столів і багато іншого."
 
 #: ../xfce4-about/main.c:79
 msgid "Desktop Manager"
@@ -201,7 +201,7 @@ msgstr "Менеджер робочого столу"
 msgid ""
 "Sets the background color or image with optional application menu or icons "
 "for minimized applications or launchers, devices and folders."
-msgstr ""
+msgstr "Встановити колір тла або малюнок з опціональним меню програм або іконки для мінімізованих програм або пускачів, пристроїв або тек."
 
 #: ../xfce4-about/main.c:84
 msgid "File Manager "
@@ -211,7 +211,7 @@ msgstr "Менеджер файлів"
 msgid ""
 "A modern file manager for the Unix/Linux desktop, aiming to be easy-to-use "
 "and fast."
-msgstr ""
+msgstr "Сучасний менеджер файлів для робочого столу Unix/Linux, легкий для вжитку і швидкий"
 
 #: ../xfce4-about/main.c:89
 msgid "Session Manager"
@@ -232,7 +232,7 @@ msgstr "Налаштування системи"
 msgid ""
 "Configuration system to control various aspects of the desktop like "
 "appearance, display, keyboard and mouse settings."
-msgstr ""
+msgstr "Налаштування системи для контролю різноманітних властивостей робочого столу, таких як вигляду, екрану, клавіатури і налаштування миші."
 
 #: ../xfce4-about/main.c:99
 msgid "Application Finder"
@@ -242,7 +242,7 @@ msgstr "Пошук програм"
 msgid ""
 "Shows the applications installed on your system in categories, so you can "
 "quickly find and launch them."
-msgstr ""
+msgstr "Показує програми, встановлених у Вашій системі в категоріях, так що Ви легко можете знайти їх і запустити."
 
 #: ../xfce4-about/main.c:104
 msgid "Utilities and Scripts"
