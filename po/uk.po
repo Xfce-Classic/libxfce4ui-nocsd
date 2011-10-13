@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-10-11 10:05+0000\n"
+"POT-Creation-Date: 2011-10-13 16:05+0000\n"
 "PO-Revision-Date: 2008-06-30 17:35+0300\n"
 "Last-Translator: Dmitry Nikitin <luckas_fb@mail.ru>\n"
 "Language-Team: Ukrainian <xfce4-dev@xfce.org>\n"
@@ -191,7 +191,9 @@ msgstr "Панель"
 msgid ""
 "Program launchers, window buttons, applications menu, workspace switcher and "
 "more."
-msgstr "Пускачі програм, кнопки вікон, меню програм, переключатель робочих столів і багато іншого."
+msgstr ""
+"Пускачі програм, кнопки вікон, меню програм, переключатель робочих столів і "
+"багато іншого."
 
 #: ../xfce4-about/main.c:79
 msgid "Desktop Manager"
@@ -201,7 +203,9 @@ msgstr "Менеджер робочого столу"
 msgid ""
 "Sets the background color or image with optional application menu or icons "
 "for minimized applications or launchers, devices and folders."
-msgstr "Встановити колір тла або малюнок з опціональним меню програм або іконки для мінімізованих програм або пускачів, пристроїв або тек."
+msgstr ""
+"Встановити колір тла або малюнок з опціональним меню програм або іконки для "
+"мінімізованих програм або пускачів, пристроїв або тек."
 
 #: ../xfce4-about/main.c:84
 msgid "File Manager "
@@ -211,7 +215,9 @@ msgstr "Менеджер файлів"
 msgid ""
 "A modern file manager for the Unix/Linux desktop, aiming to be easy-to-use "
 "and fast."
-msgstr "Сучасний менеджер файлів для робочого столу Unix/Linux, легкий для вжитку і швидкий"
+msgstr ""
+"Сучасний менеджер файлів для робочого столу Unix/Linux, легкий для вжитку і "
+"швидкий"
 
 #: ../xfce4-about/main.c:89
 msgid "Session Manager"
@@ -232,7 +238,9 @@ msgstr "Налаштування системи"
 msgid ""
 "Configuration system to control various aspects of the desktop like "
 "appearance, display, keyboard and mouse settings."
-msgstr "Налаштування системи для контролю різноманітних властивостей робочого столу, таких як вигляду, екрану, клавіатури і налаштування миші."
+msgstr ""
+"Налаштування системи для контролю різноманітних властивостей робочого столу, "
+"таких як вигляду, екрану, клавіатури і налаштування миші."
 
 #: ../xfce4-about/main.c:99
 msgid "Application Finder"
@@ -242,7 +250,9 @@ msgstr "Пошук програм"
 msgid ""
 "Shows the applications installed on your system in categories, so you can "
 "quickly find and launch them."
-msgstr "Показує програми, встановлених у Вашій системі в категоріях, так що Ви легко можете знайти їх і запустити."
+msgstr ""
+"Показує програми, встановлених у Вашій системі в категоріях, так що Ви легко "
+"можете знайти їх і запустити."
 
 #: ../xfce4-about/main.c:104
 msgid "Utilities and Scripts"
@@ -258,20 +268,20 @@ msgstr "Демон налаштувань"
 
 #: ../xfce4-about/main.c:109
 msgid "D-Bus-based configuration storage system."
-msgstr ""
+msgstr "Система зберігання на базі D-Bus конфігурації."
 
 #: ../xfce4-about/main.c:116
 msgid ""
 "Xfce is a collection of programs that together provide a full-featured "
 "desktop environment. The following programs are part of the Xfce core:"
-msgstr ""
+msgstr "Xfce - це колекція програм разом утворюють повноцінне середовище робочого столу. Наступні програми є частиною ядра Xfce:"
 
 #: ../xfce4-about/main.c:140
 msgid ""
 "Xfce is also a development platform providing several libraries, that help "
 "programmers create applications that fit in well with the desktop "
 "environment."
-msgstr ""
+msgstr "Xfce також є платформою для розробки програм, яка містить кілька бібліотек, що допомагають розробникам створювати програми для середовища робочого столу."
 
 #: ../xfce4-about/main.c:146
 msgid ""
@@ -305,7 +315,7 @@ msgstr "Дякуємо усім, хто допоміг появитися цій
 msgid ""
 "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
-msgstr ""
+msgstr "Всі права на Xfce 4 належать до Olivier Fourdan (fourdan@xfce.org). Права на різні компоненти належать до відповідних авторам."
 
 #: ../xfce4-about/main.c:292
 msgid ""
