@@ -203,7 +203,7 @@ msgstr "Skrivebordshåndtering"
 msgid ""
 "Sets the background color or image with optional application menu or icons "
 "for minimized applications or launchers, devices and folders."
-msgstr ""
+msgstr "Indstiller baggrunds-farven eller -billedet med tilvalg af program-menu eller -ikoner for minimerede programmer eller opstartere, enheder og mapper."
 
 #: ../xfce4-about/main.c:84
 msgid "File Manager "
