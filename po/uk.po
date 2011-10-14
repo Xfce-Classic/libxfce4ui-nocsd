@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-10-13 16:05+0000\n"
+"POT-Creation-Date: 2011-10-14 16:05+0000\n"
 "PO-Revision-Date: 2008-06-30 17:35+0300\n"
 "Last-Translator: Dmitry Nikitin <luckas_fb@mail.ru>\n"
 "Language-Team: Ukrainian <xfce4-dev@xfce.org>\n"
@@ -274,14 +274,18 @@ msgstr "Система зберігання на базі D-Bus конфігур
 msgid ""
 "Xfce is a collection of programs that together provide a full-featured "
 "desktop environment. The following programs are part of the Xfce core:"
-msgstr "Xfce - це колекція програм разом утворюють повноцінне середовище робочого столу. Наступні програми є частиною ядра Xfce:"
+msgstr ""
+"Xfce - це колекція програм разом утворюють повноцінне середовище робочого "
+"столу. Наступні програми є частиною ядра Xfce:"
 
 #: ../xfce4-about/main.c:140
 msgid ""
 "Xfce is also a development platform providing several libraries, that help "
 "programmers create applications that fit in well with the desktop "
 "environment."
-msgstr "Xfce також є платформою для розробки програм, яка містить кілька бібліотек, що допомагають розробникам створювати програми для середовища робочого столу."
+msgstr ""
+"Xfce також є платформою для розробки програм, яка містить кілька бібліотек, "
+"що допомагають розробникам створювати програми для середовища робочого столу."
 
 #: ../xfce4-about/main.c:146
 msgid ""
@@ -289,7 +293,7 @@ msgid ""
 "for applications and LGPL or BSDL for libraries. Look at the documentation, "
 "the source code or the Xfce website (http://www.xfce.org) for more "
 "information."
-msgstr ""
+msgstr "Компоненти Xfce розробляються під вільними або відкрито-джерельними ліцензіямі: GPL або BSDL для програм і LGPL або BSDL для бібліотек. Для перевірки перегляньте документацію, джерельний код або веб-сторінку проекту Xfce (http://www.xfce.org)."
 
 #: ../xfce4-about/main.c:153
 msgid "Thank you for your interest in Xfce."
@@ -315,7 +319,9 @@ msgstr "Дякуємо усім, хто допоміг появитися цій
 msgid ""
 "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
-msgstr "Всі права на Xfce 4 належать до Olivier Fourdan (fourdan@xfce.org). Права на різні компоненти належать до відповідних авторам."
+msgstr ""
+"Всі права на Xfce 4 належать до Olivier Fourdan (fourdan@xfce.org). Права на "
+"різні компоненти належать до відповідних авторам."
 
 #: ../xfce4-about/main.c:292
 msgid ""
@@ -323,7 +329,7 @@ msgid ""
 "distributed under the terms of the GNU Library General Public License as "
 "published by the Free Software Foundation; either version 2 of the License, "
 "or (at your option) any later version."
-msgstr ""
+msgstr "Пакунки libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs і exo розповсюджуються згідно умов GNU Library General Public License, виданою Free Software Foundation; або версії 2 цієї ліцензії, або (на Ваш розгляд) будь-якої пізнішої версії."
 
 #: ../xfce4-about/main.c:299
 msgid ""
@@ -332,7 +338,7 @@ msgid ""
 "terms of the GNU General Public License as published by the Free Software "
 "Foundation; either version 2 of the License, or (at your option) any later "
 "version."
-msgstr ""
+msgstr "Пакунки thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfce-utils, xfconf, xfdesktop і xfwm4 розповсюджуються згідно умов GNU Library General Public License, виданою Free Software Foundation; або версії 2 цієї ліцензії, або (на Ваш розгляд) будь-якої пізнішої версії."
 
 #: ../xfce4-about/main.c:446
 #, c-format
