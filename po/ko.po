@@ -14,11 +14,11 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Country: KOREA, REPUBLIC OF\n"
 "Language: Ko\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Poedit-Language: Korean\n"
 "X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-Country: KOREA, REPUBLIC OF\n"
 
 #: ../libxfce4ui/xfce-dialogs.c:68
 msgid "Information"
@@ -208,16 +208,15 @@ msgstr "선택적 프로그램 메뉴의 배경색이나 이미지 혹은 최소
 
 #: ../xfce4-about/main.c:84
 msgid "File Manager "
-msgstr ""
+msgstr "파일 관리자"
 
 #: ../xfce4-about/main.c:85
 msgid ""
 "A modern file manager for the Unix/Linux desktop, aiming to be easy-to-use "
 "and fast."
-msgstr ""
+msgstr "사용하기 쉽고 빠른 유닉스/리눅스 데스크탑의 최신 파일 관리자입니다."
 
 #: ../xfce4-about/main.c:89
-#, fuzzy
 msgid "Session Manager"
 msgstr "세션 관리자 옵션"
 
@@ -225,49 +224,49 @@ msgstr "세션 관리자 옵션"
 msgid ""
 "Restores your session on startup and allows you to shutdown the computer "
 "from Xfce."
-msgstr ""
+msgstr "시작시 세션을 복구하고 Xfce에서 컴퓨터를 끌 수 있도록 합니다."
 
 #: ../xfce4-about/main.c:94
 msgid "Setting System"
-msgstr ""
+msgstr "설정 시스템"
 
 #: ../xfce4-about/main.c:95
 msgid ""
 "Configuration system to control various aspects of the desktop like "
 "appearance, display, keyboard and mouse settings."
-msgstr ""
+msgstr "외형, 디스플레이, 키보드, 마우스의 다양한 모습을 제어하는 설정 시스템입니다."
 
 #: ../xfce4-about/main.c:99
 msgid "Application Finder"
-msgstr ""
+msgstr "프로그램 검색기"
 
 #: ../xfce4-about/main.c:100
 msgid ""
 "Shows the applications installed on your system in categories, so you can "
 "quickly find and launch them."
-msgstr ""
+msgstr "시스템에 설치된 프로그램을 카테고리에 보여주어 빨리 찾고 실행할 수 있도록 해줍니다."
 
 #: ../xfce4-about/main.c:104
 msgid "Utilities and Scripts"
-msgstr ""
+msgstr "유틸리티와 스크립트"
 
 #: ../xfce4-about/main.c:105
 msgid "Startup scripts, run dialog and about dialog."
-msgstr ""
+msgstr "시작 스크립트, 실행 대화상자, 정보 대화상자 입니다."
 
 #: ../xfce4-about/main.c:108
 msgid "Settings Daemon"
-msgstr ""
+msgstr "설정 데몬"
 
 #: ../xfce4-about/main.c:109
 msgid "D-Bus-based configuration storage system."
-msgstr ""
+msgstr "D-Bus 기반 설정 저장소 시스템입니다."
 
 #: ../xfce4-about/main.c:116
 msgid ""
 "Xfce is a collection of programs that together provide a full-featured "
 "desktop environment. The following programs are part of the Xfce core:"
-msgstr ""
+msgstr "Xfce는 완전한 기능을 갖춘 데스크탑 환경을 함께 제공하는 프로그램들의 모음입니다. 다음 프로그램은 Xfce 코어의 일부입니다."
 
 #: ../xfce4-about/main.c:140
 msgid ""
