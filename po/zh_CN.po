@@ -3,6 +3,7 @@
 # This file is distributed under the same license as the libxfce4ui package.
 # Chris K. Zhang <plutino@gmail.com>, 2009.
 # Hunt Xu <mhuntxu@gmail.com>, 2009, 2010.
+# Chipong Luo <chipong_l@yahoo.com, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui\n"
