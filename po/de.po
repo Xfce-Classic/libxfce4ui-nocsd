@@ -186,7 +186,6 @@ msgid "Handles the placement of windows on the screen."
 msgstr "Regelt die Platzierung der Fenster auf dem Bildschirm."
 
 #: ../xfce4-about/main.c:74
-#, fuzzy
 msgid "Panel"
 msgstr "Leiste"
 
@@ -258,7 +257,7 @@ msgstr "Hilfsprogramme und Skripte."
 #: ../xfce4-about/main.c:105
 #, fuzzy
 msgid "Startup scripts, run dialog and about dialog."
-msgstr "Startskripte, Ausführen und Über Dialog"
+msgstr "Startskripte, Ausführen- und Informationsdialog"
 
 #: ../xfce4-about/main.c:108
 msgid "Settings Daemon"
@@ -388,11 +387,11 @@ msgstr "Server gewartet von"
 
 #: ../xfce4-about/contributors.h:136
 msgid "Goodies supervision"
-msgstr ""
+msgstr "Koordination der Goodies"
 
 #: ../xfce4-about/contributors.h:139
 msgid "Translations supervision"
-msgstr ""
+msgstr "Koordination der Übersetzungen"
 
 #: ../xfce4-about/contributors.h:142
 msgid "Translators"
@@ -400,7 +399,7 @@ msgstr "Übersetzer"
 
 #: ../xfce4-about/contributors.h:145
 msgid "Previous contributors"
-msgstr ""
+msgstr "Frühere Mitentwickler"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:1
 msgid "About Xfce"
@@ -408,19 +407,19 @@ msgstr "Über Xfce"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:2
 msgid "Information about the Xfce Desktop Environment"
-msgstr ""
+msgstr "Informationen über die Xfce-Desktopumgebung"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:1
 msgid "About"
-msgstr ""
+msgstr "Über Xfce"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:2
 msgid "About the Xfce Desktop Environment"
-msgstr ""
+msgstr "Informationen über die Xfce-Desktopumgebung"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:3
 msgid "BSD"
-msgstr ""
+msgstr "BSD"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:4
 msgid "Copyright"
@@ -428,7 +427,7 @@ msgstr "Copyright"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:5
 msgid "Credits"
-msgstr ""
+msgstr "Mitwirkende"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:6
 msgid "GPL"
