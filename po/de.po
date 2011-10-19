@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui 4.5.0svn-r27345\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-09-24 04:11+0000\n"
+"POT-Creation-Date: 2011-10-19 16:05+0000\n"
 "PO-Revision-Date: 2010-01-13 02:07+0100\n"
 "Last-Translator: Christoph Wickert <cwickert@fedoraproject.org>\n"
 "Language-Team: German\n"
@@ -68,12 +68,20 @@ msgstr "Die Sitzungsverwaltung hat keinen gültige ID geliefert"
 #. print warning for user
 #: ../libxfce4ui/xfce-spawn.c:406
 #, c-format
-msgid "Working directory \"%s\" does not exist. It won't be used when spawning \"%s\"."
-msgstr "Das Arbeitsverzeichnis »%s« ist nicht vorhanden: Es wird beim Starten von »%s« nicht verwendet."
+msgid ""
+"Working directory \"%s\" does not exist. It won't be used when spawning \"%s"
+"\"."
+msgstr ""
+"Das Arbeitsverzeichnis »%s« ist nicht vorhanden: Es wird beim Starten von "
+"»%s« nicht verwendet."
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:52
-msgid "This shortcut is already being used for another window manager action. Which action do you want to use?"
-msgstr "Dieses Tastenkürzel wird bereits von einer Aktion der Fensterverwaltung verwendet. Welche Aktion möchten Sie verwenden?"
+msgid ""
+"This shortcut is already being used for another window manager action. Which "
+"action do you want to use?"
+msgstr ""
+"Dieses Tastenkürzel wird bereits von einer Aktion der Fensterverwaltung "
+"verwendet. Welche Aktion möchten Sie verwenden?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
@@ -90,8 +98,12 @@ msgstr "Die andere beibehalten"
 #: ../libxfce4kbd-private/xfce-shortcuts.c:55
 #: ../libxfce4kbd-private/xfce-shortcuts.c:58
 #, c-format
-msgid "This shortcut is already being used for the command '%s'. Which action do you want to use?"
-msgstr "Dieses Tastenkürzel wird bereits für den Befehl »%s« verwendet. Welche Aktion möchten Sie verwenden?"
+msgid ""
+"This shortcut is already being used for the command '%s'. Which action do "
+"you want to use?"
+msgstr ""
+"Dieses Tastenkürzel wird bereits für den Befehl »%s« verwendet. Welche "
+"Aktion möchten Sie verwenden?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
 #: ../libxfce4kbd-private/xfce-shortcuts.c:59
@@ -100,8 +112,12 @@ msgid "Keep '%s'"
 msgstr "»%s« beibehalten"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:61
-msgid "This shortcut is already being used by a window manager action. Which action do you want to use?"
-msgstr "Dieses Tastenkürzel wird bereits von einer anderen Aktion der Fensterverwaltung verwendet. Welche Aktion möchten Sie verwenden?"
+msgid ""
+"This shortcut is already being used by a window manager action. Which action "
+"do you want to use?"
+msgstr ""
+"Dieses Tastenkürzel wird bereits von einer anderen Aktion der "
+"Fensterverwaltung verwendet. Welche Aktion möchten Sie verwenden?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 msgid "Keep the window manager action"
@@ -170,11 +186,14 @@ msgid "Handles the placement of windows on the screen."
 msgstr ""
 
 #: ../xfce4-about/main.c:74
+#, fuzzy
 msgid "Panel"
-msgstr ""
+msgstr "Leiste"
 
 #: ../xfce4-about/main.c:75
-msgid "Program launchers, window buttons, applications menu, workspace switcher and more."
+msgid ""
+"Program launchers, window buttons, applications menu, workspace switcher and "
+"more."
 msgstr ""
 
 #: ../xfce4-about/main.c:79
@@ -182,23 +201,30 @@ msgid "Desktop Manager"
 msgstr ""
 
 #: ../xfce4-about/main.c:80
-msgid "Sets the background color or image with optional application menu or icons for minimized applications or launchers, devices and folders."
+msgid ""
+"Sets the background color or image with optional application menu or icons "
+"for minimized applications or launchers, devices and folders."
 msgstr ""
 
 #: ../xfce4-about/main.c:84
+#, fuzzy
 msgid "File Manager "
-msgstr ""
+msgstr "Dateimanager"
 
 #: ../xfce4-about/main.c:85
-msgid "A modern file manager for the Unix/Linux desktop, aiming to be easy-to-use and fast."
-msgstr ""
+msgid ""
+"A modern file manager for the Unix/Linux desktop, aiming to be easy-to-use "
+"and fast."
+msgstr "Ein moderner Dateimanager für die Unix/Linux-Arbeitsumgebung, ausgerichtet auf einfache Bedienung und Geschwindigkeit."
 
 #: ../xfce4-about/main.c:89
 msgid "Session Manager"
 msgstr "Sitzungsverwaltung"
 
 #: ../xfce4-about/main.c:90
-msgid "Restores your session on startup and allows you to shutdown the computer from Xfce."
+msgid ""
+"Restores your session on startup and allows you to shutdown the computer "
+"from Xfce."
 msgstr ""
 
 #: ../xfce4-about/main.c:94
@@ -206,15 +232,20 @@ msgid "Setting System"
 msgstr ""
 
 #: ../xfce4-about/main.c:95
-msgid "Configuration system to control various aspects of the desktop like appearance, display, keyboard and mouse settings."
+msgid ""
+"Configuration system to control various aspects of the desktop like "
+"appearance, display, keyboard and mouse settings."
 msgstr ""
 
 #: ../xfce4-about/main.c:99
+#, fuzzy
 msgid "Application Finder"
-msgstr ""
+msgstr "Anwendungsfinder"
 
 #: ../xfce4-about/main.c:100
-msgid "Shows the applications installed on your system in categories, so you can quickly find and launch them."
+msgid ""
+"Shows the applications installed on your system in categories, so you can "
+"quickly find and launch them."
 msgstr ""
 
 #: ../xfce4-about/main.c:104
@@ -230,49 +261,71 @@ msgid "Settings Daemon"
 msgstr ""
 
 #: ../xfce4-about/main.c:109
+#, fuzzy
 msgid "D-Bus-based configuration storage system."
-msgstr ""
+msgstr "D-Bus basiertes Konfigurationsspeichersystem"
 
 #: ../xfce4-about/main.c:116
-msgid "Xfce is a collection of programs that together provide a full-featured desktop environment. The following programs are part of the Xfce core:"
-msgstr ""
+msgid ""
+"Xfce is a collection of programs that together provide a full-featured "
+"desktop environment. The following programs are part of the Xfce core:"
+msgstr "Xfce ist eine Sammlung von Programmen, die zusammen eine voll funktionsfähige Arbeitsumgebung zur Verfügung stellen. Die folgenden Programme sind Teil des Xfce-Kerns:"
 
 #: ../xfce4-about/main.c:140
-msgid "Xfce is also a development platform providing several libraries, that help programmers create applications that fit in well with the desktop environment."
-msgstr ""
+msgid ""
+"Xfce is also a development platform providing several libraries, that help "
+"programmers create applications that fit in well with the desktop "
+"environment."
+msgstr "Xfce ist auch eine Entwicklungsplattform, die verschiedene Bibliotheken zur Verfügung stellt, die es Programmierern ermöglichen Anwendungen zu erstellen, die gut in die Arbeitsumgebung passen."
 
 #: ../xfce4-about/main.c:146
-msgid "Xfce components are licensed under free or open source licences; GPL or BSDL for applications and LGPL or BSDL for libraries. Look at the documentation, the source code or the Xfce website (http://www.xfce.org) for more information."
-msgstr ""
+msgid ""
+"Xfce components are licensed under free or open source licences; GPL or BSDL "
+"for applications and LGPL or BSDL for libraries. Look at the documentation, "
+"the source code or the Xfce website (http://www.xfce.org) for more "
+"information."
+msgstr "Xfce-Komponenten sind lizenziert unter freien Lizenzen oder Lizenzen für quelloffene Software: GPL oder BSDL für Anwendungen und LGPL oder BSDL für Bibliotheken. Weitere Informationen finden Sie in der Dokumentation, dem Quellcode oder auf der Xfce Webseite (http://www.xfce.org)."
 
 #: ../xfce4-about/main.c:153
 msgid "Thank you for your interest in Xfce."
 msgstr "Danke für Ihr Interesse an Xfce."
 
 #: ../xfce4-about/main.c:157
-#, fuzzy
 msgid "The Xfce Development Team"
 msgstr "Das Xfce Entwicklungsteam"
 
 #: ../xfce4-about/main.c:266
-msgid "If you know of anyone missing from this list; don't hesitate and file a bug on <http://bugzilla.xfce.org> ."
-msgstr ""
+msgid ""
+"If you know of anyone missing from this list; don't hesitate and file a bug "
+"on <http://bugzilla.xfce.org> ."
+msgstr "Xfce ist eine Sammlung von Programmen, die zusammen eine voll funktionsfähige Arbeitsumgebung zur Verfügung stellen. Die folgenden Programme sind Teil des Xfce-Kerns:"
 
 #: ../xfce4-about/main.c:270
 msgid "Thanks to all who helped making this software available!"
-msgstr ""
+msgstr "Danke an alle, die geholfen haben, diese Software verfügbar zu machen."
 
 #: ../xfce4-about/main.c:287
-msgid "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different components are copyrighted by their respective authors."
-msgstr ""
+msgid ""
+"Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
+"components are copyrighted by their respective authors."
+msgstr "Xfce 4 ist kopiergeschützt von Olivier Fourdan (fourdan@xfce.org). Die unterschiedlichen Komponenten sind von ihren jeweiligen Autoren kopiergeschützt."
 
 #: ../xfce4-about/main.c:292
-msgid "The libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs and exo packages are distributed under the terms of the GNU Library General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version."
-msgstr ""
+msgid ""
+"The libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs and exo packages are "
+"distributed under the terms of the GNU Library General Public License as "
+"published by the Free Software Foundation; either version 2 of the License, "
+"or (at your option) any later version."
+msgstr "Die Pakete libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs und exo werden verbreitet unter den Bestimmungen der GNU Library General Public License, veröffentlicht von der Free Software Foundation, in Version 2 der Lizenz oder einer späteren Ihrer Wahl."
 
 #: ../xfce4-about/main.c:299
-msgid "The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfce-utils, xfconf, xfdesktop and xfwm4 are distributed under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version."
-msgstr ""
+msgid ""
+"The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-"
+"settings, xfce-utils, xfconf, xfdesktop and xfwm4 are distributed under the "
+"terms of the GNU General Public License as published by the Free Software "
+"Foundation; either version 2 of the License, or (at your option) any later "
+"version."
+msgstr "Die Pakete thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfce-utils, xfconf, xfdesktop und xfwm4 werden verbreitet unter den Bestimmungen der GNU Library General Public License, veröffentlicht von der Free Software Foundation, in Version 2 der Lizenz oder einer späteren Ihrer Wahl."
 
 #: ../xfce4-about/main.c:446
 #, c-format
@@ -311,7 +364,7 @@ msgstr ""
 
 #. I18N: %s will be replaced by the Xfce version number
 #: ../xfce4-about/main.c:493
-#, c-format, fuzzy
+#, fuzzy, c-format
 msgid "Version %s"
 msgstr "Version %s"
 
