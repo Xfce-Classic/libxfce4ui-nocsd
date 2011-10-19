@@ -183,7 +183,7 @@ msgstr "Fensterverwaltung"
 
 #: ../xfce4-about/main.c:71
 msgid "Handles the placement of windows on the screen."
-msgstr ""
+msgstr "Regelt die Platzierung der Fenster auf dem Bildschirm."
 
 #: ../xfce4-about/main.c:74
 #, fuzzy
@@ -194,17 +194,18 @@ msgstr "Leiste"
 msgid ""
 "Program launchers, window buttons, applications menu, workspace switcher and "
 "more."
-msgstr ""
+msgstr "Programmstarter, Fensterknöpfe, Anwendungsmenü, Arbeitsflächenumschalter und mehr."
 
 #: ../xfce4-about/main.c:79
 msgid "Desktop Manager"
-msgstr ""
+msgstr "Arbeitsflächenmanager"
 
 #: ../xfce4-about/main.c:80
+#, fuzzy
 msgid ""
 "Sets the background color or image with optional application menu or icons "
 "for minimized applications or launchers, devices and folders."
-msgstr ""
+msgstr "Stellt die Hintergrundfarbe oder das Hintergrundbild mit einem optionalen Anwendungsmenü oder Symbolen für minimierte Anwendungen oder Startern, Geräten und Ordnern ein."
 
 #: ../xfce4-about/main.c:84
 #, fuzzy
@@ -225,17 +226,18 @@ msgstr "Sitzungsverwaltung"
 msgid ""
 "Restores your session on startup and allows you to shutdown the computer "
 "from Xfce."
-msgstr ""
+msgstr "Stellt Ihre Sitzung beim Start wieder her und erlaubt es Ihnen den Computer mit Xfce herunter zu fahren."
 
 #: ../xfce4-about/main.c:94
 msgid "Setting System"
-msgstr ""
+msgstr "Systemeinstellungen"
 
 #: ../xfce4-about/main.c:95
+#, fuzzy
 msgid ""
 "Configuration system to control various aspects of the desktop like "
 "appearance, display, keyboard and mouse settings."
-msgstr ""
+msgstr "Einstellungssystem zum Einstellen verschiedener Aspekte der Arbeitsfläche wie das Aussehen, die Anzeige-, Tastatur- und Mauseinstellungen."
 
 #: ../xfce4-about/main.c:99
 #, fuzzy
@@ -243,27 +245,28 @@ msgid "Application Finder"
 msgstr "Anwendungsfinder"
 
 #: ../xfce4-about/main.c:100
+#, fuzzy
 msgid ""
 "Shows the applications installed on your system in categories, so you can "
 "quickly find and launch them."
-msgstr ""
+msgstr "Zeigt die auf ihrem System installierten Anwendungen in Kategorien an, so dass Sie diese schnell finden und starten können."
 
 #: ../xfce4-about/main.c:104
 msgid "Utilities and Scripts"
-msgstr ""
+msgstr "Hilfsprogramme und Skripte."
 
 #: ../xfce4-about/main.c:105
+#, fuzzy
 msgid "Startup scripts, run dialog and about dialog."
-msgstr ""
+msgstr "Startskripte, Ausführen und Über Dialog"
 
 #: ../xfce4-about/main.c:108
 msgid "Settings Daemon"
-msgstr ""
+msgstr "Einstellungsdämon"
 
 #: ../xfce4-about/main.c:109
-#, fuzzy
 msgid "D-Bus-based configuration storage system."
-msgstr "D-Bus basiertes Konfigurationsspeichersystem"
+msgstr "D-Bus-basiertes Einstellungssystem"
 
 #: ../xfce4-about/main.c:116
 msgid ""
@@ -330,41 +333,41 @@ msgstr "Die Pakete thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-se
 #: ../xfce4-about/main.c:446
 #, c-format
 msgid "Type '%s --help' for usage information."
-msgstr ""
+msgstr "Geben Sie »%s --help« ein, um weitere Informationen zu erhalten."
 
 #: ../xfce4-about/main.c:452
 msgid "Unable to initialize GTK+."
-msgstr ""
+msgstr "Konnte GTK+ nicht initialisieren."
 
 #: ../xfce4-about/main.c:461
 msgid "The Xfce development team. All rights reserved."
-msgstr ""
+msgstr "Das Entwicklungsteam von Xfce. Alle Rechte vorbehalten."
 
 #: ../xfce4-about/main.c:462
 #, c-format
 msgid "Please report bugs to <%s>."
-msgstr ""
+msgstr "Bitte melden Sie Fehler an <%s>."
 
 #. I18N: date/time the translators list was updated
 #: ../xfce4-about/main.c:465
 #, c-format
 msgid "Translators list from %s."
-msgstr ""
+msgstr "Übersetzerliste von %s."
 
 #: ../xfce4-about/main.c:475
 msgid "Failed to load interface"
-msgstr ""
+msgstr "Kann Schnittstelle nicht laden"
 
 #. I18N: first %s will be replaced by the version, second by
 #. * the name of the distribution (--with-vendor-info=NAME)
 #: ../xfce4-about/main.c:489
 #, c-format
 msgid "Version %s, distributed by %s"
-msgstr ""
+msgstr "Version %s, verteilt von %s"
 
 #. I18N: %s will be replaced by the Xfce version number
 #: ../xfce4-about/main.c:493
-#, fuzzy, c-format
+#, c-format
 msgid "Version %s"
 msgstr "Version %s"
 
@@ -377,11 +380,11 @@ msgstr "Kernentwickler"
 
 #: ../xfce4-about/contributors.h:130
 msgid "Active contributors"
-msgstr ""
+msgstr "Aktive Mitentwickler"
 
 #: ../xfce4-about/contributors.h:133
 msgid "Servers maintained by"
-msgstr ""
+msgstr "Server gewartet von"
 
 #: ../xfce4-about/contributors.h:136
 msgid "Goodies supervision"
