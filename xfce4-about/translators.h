@@ -24,7 +24,7 @@
 #include <gtk/gtk.h>
 #include <libxfce4util/libxfce4util.h>
 
-#define TRANSLATORS_H_STAMP "2011-10-16 00:00:03"
+#define TRANSLATORS_H_STAMP "2011-10-23 00:00:05"
 #define ATSIGN "@"
 #define DOTSIGN "."
 
@@ -207,11 +207,12 @@ static const TranslatorInfo xfce_translators_fi[] =
 
 static const TranslatorInfo xfce_translators_fr[] =
 {
+  { "Xavier Devlamynck", "magicrhesus" ATSIGN "ouranos" DOTSIGN "be", TRUE },
   { "Mike Massonnet", "mmassonnet" ATSIGN "gmail" DOTSIGN "com", TRUE },
   { "Durand-Favreau Arnaud", "biginoz" ATSIGN "free" DOTSIGN "fr", FALSE },
+  { "Mario Gervais", "gervais" DOTSIGN "mario" ATSIGN "ymail" DOTSIGN "com", FALSE },
   { "Jérôme Guelfucci", "jeromeg" ATSIGN "xfce" DOTSIGN "org", FALSE },
   { "Louis M", "m_louis30" ATSIGN "yahoo" DOTSIGN "com", FALSE },
-  { "Xavier Devlamynck", "magicrhesus" ATSIGN "ouranos" DOTSIGN "be", FALSE },
   { "Maximilian Schleiss", "maximilian" ATSIGN "xfce" DOTSIGN "org", FALSE },
   { "marc doutreloux", "mdoutreloux" ATSIGN "yahoo" DOTSIGN "fr", FALSE },
   { "Pardaigle", "worldmania" ATSIGN "free" DOTSIGN "fr", FALSE },
@@ -569,6 +570,7 @@ static const TranslatorInfo xfce_translators_uk[] =
   { "Maxim Dziumanenko", "dziumanenko" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Oleksandr Natalenko", "pfactum" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Andriy Matkovsky", "sidius" DOTSIGN "ua" ATSIGN "gmail" DOTSIGN "com", FALSE },
+  { "tarabopm", "tarabopm" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { NULL, NULL }
 };
 
