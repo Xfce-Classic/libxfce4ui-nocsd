@@ -100,10 +100,6 @@ xfce_about_about (GtkTextBuffer *buffer)
         N_("Shows the applications installed on your system in categories, "
            "so you can quickly find and launch them.")
       },
-      { "xfce-utils",
-        N_("Utilities and Scripts"),
-        N_("Startup scripts, run dialog and about dialog.")
-      },
       { "xfconf",
         N_("Settings Daemon"),
         N_("D-Bus-based configuration storage system.")
