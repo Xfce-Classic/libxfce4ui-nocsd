@@ -311,26 +311,26 @@ msgstr ""
 
 #: ../xfce4-about/main.c:448
 msgid "Unable to initialize GTK+."
-msgstr ""
+msgstr "无法初始化 GTK+。"
 
 #: ../xfce4-about/main.c:457
 msgid "The Xfce development team. All rights reserved."
-msgstr ""
+msgstr "Xfce 开发团队。版权所有。"
 
 #: ../xfce4-about/main.c:458
 #, c-format
 msgid "Please report bugs to <%s>."
-msgstr ""
+msgstr "请报告 bugs 至 <%s>."
 
 #. I18N: date/time the translators list was updated
 #: ../xfce4-about/main.c:461
 #, c-format
 msgid "Translators list from %s."
-msgstr ""
+msgstr "来自 %s 的翻译列表。"
 
 #: ../xfce4-about/main.c:471
 msgid "Failed to load interface"
-msgstr ""
+msgstr "无法加载界面"
 
 #. I18N: first %s will be replaced by the version, second by
 #. * the name of the distribution (--with-vendor-info=NAME)
@@ -343,78 +343,80 @@ msgstr ""
 #: ../xfce4-about/main.c:489
 #, c-format
 msgid "Version %s"
-msgstr ""
+msgstr "版本 %s"
 
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
 #. },
 #: ../xfce4-about/contributors.h:127
 msgid "Core developers"
-msgstr ""
+msgstr "核心开发"
 
 #: ../xfce4-about/contributors.h:130
 msgid "Active contributors"
-msgstr ""
+msgstr "积极贡献者"
 
 #: ../xfce4-about/contributors.h:133
 msgid "Servers maintained by"
-msgstr ""
+msgstr "服务器维护者"
 
 #: ../xfce4-about/contributors.h:136
 msgid "Goodies supervision"
-msgstr ""
+msgstr "Goodies 管理"
 
 #: ../xfce4-about/contributors.h:139
 msgid "Translations supervision"
-msgstr ""
+msgstr "翻译管理"
 
 #: ../xfce4-about/contributors.h:142
 msgid "Translators"
-msgstr ""
+msgstr "翻译者"
 
 #: ../xfce4-about/contributors.h:145
 msgid "Previous contributors"
-msgstr ""
+msgstr "先前的贡献者"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:1
 msgid "About Xfce"
-msgstr ""
+msgstr "关于 Xfce"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:2
 msgid "Information about the Xfce Desktop Environment"
-msgstr ""
+msgstr "关于 Xfce 桌面环境的相关信息"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:1
 msgid "About"
-msgstr ""
+msgstr "关于"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:2
 msgid "About the Xfce Desktop Environment"
-msgstr ""
+msgstr "关于 Xfce 桌面环境"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:3
 msgid "BSD"
-msgstr ""
+msgstr "BSD"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:4
 msgid "Copyright"
-msgstr ""
+msgstr "版权"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:5
 msgid "Credits"
-msgstr ""
+msgstr "Credits"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:6
+#, fuzzy
 msgid "GPL"
-msgstr ""
+msgstr "GPL"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:7
+#, fuzzy
 msgid "LGPL"
-msgstr ""
+msgstr "LGPL"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:8
 msgid "License"
-msgstr ""
+msgstr "许可"
 
 #~ msgid "<span size='large'><b>%s</b></span>"
 #~ msgstr "<span size='large'><b>%s</b></span>"
