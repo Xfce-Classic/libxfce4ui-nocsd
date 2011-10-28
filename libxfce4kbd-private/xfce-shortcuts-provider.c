@@ -498,7 +498,7 @@ _xfce_shortcuts_provider_get_shortcut (const gchar                  *property,
         sc->snotify = g_value_get_boolean (snotify);
       else
         sc->snotify = FALSE;
-
+      g_free (snotify_prop);
       context->list = g_list_append (context->list, sc);
     }
 
