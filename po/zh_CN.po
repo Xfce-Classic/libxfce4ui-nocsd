@@ -172,7 +172,7 @@ msgstr "窗口管理器"
 
 #: ../xfce4-about/main.c:71
 msgid "Handles the placement of windows on the screen."
-msgstr ""
+msgstr "处理窗口在屏幕上的放置。"
 
 #: ../xfce4-about/main.c:74
 msgid "Panel"
@@ -265,7 +265,7 @@ msgstr ""
 
 #: ../xfce4-about/main.c:149
 msgid "Thank you for your interest in Xfce."
-msgstr ""
+msgstr "感谢你对 Xfce 感兴趣。"
 
 #: ../xfce4-about/main.c:153
 msgid "The Xfce Development Team"
@@ -275,17 +275,17 @@ msgstr "Xfce 开发团队"
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
 "on <http://bugzilla.xfce.org> ."
-msgstr ""
+msgstr "如果你知道本列表上有漏掉的任何信息,请不要犹豫，发送bug至<http://bugzilla.xfce.org> 。"
 
 #: ../xfce4-about/main.c:266
 msgid "Thanks to all who helped making this software available!"
-msgstr ""
+msgstr "感谢所有对这些软件提供帮助的人！"
 
 #: ../xfce4-about/main.c:283
 msgid ""
 "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
-msgstr ""
+msgstr "Xfce 4 版权归 Olivier Fourdan (fourdan@xfce.org) 所有。不同组件的版权归它们各自的作者所有。"
 
 #: ../xfce4-about/main.c:288
 msgid ""
@@ -307,7 +307,7 @@ msgstr ""
 #: ../xfce4-about/main.c:442
 #, c-format
 msgid "Type '%s --help' for usage information."
-msgstr ""
+msgstr "请输入 '%s --help' 以获得使用信息。"
 
 #: ../xfce4-about/main.c:448
 msgid "Unable to initialize GTK+."
@@ -337,7 +337,7 @@ msgstr "无法加载界面"
 #: ../xfce4-about/main.c:485
 #, c-format
 msgid "Version %s, distributed by %s"
-msgstr ""
+msgstr "版本 %s ,通过 %s 分发。"
 
 #. I18N: %s will be replaced by the Xfce version number
 #: ../xfce4-about/main.c:489
@@ -405,12 +405,10 @@ msgid "Credits"
 msgstr "Credits"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:6
-#, fuzzy
 msgid "GPL"
 msgstr "GPL"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:7
-#, fuzzy
 msgid "LGPL"
 msgstr "LGPL"
 
