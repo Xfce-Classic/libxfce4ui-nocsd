@@ -7,63 +7,63 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-01-16 16:03+0100\n"
+"POT-Creation-Date: 2011-10-27 22:06+0000\n"
 "PO-Revision-Date: 2010-04-06 13:14+0800\n"
 "Last-Translator: Hunt Xu <huntxu@live.cn>\n"
 "Language-Team: Simplied Chinese <i18n-xfce@xfce.org>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
 
-#: ../libxfce4ui/xfce-dialogs.c:69
+#: ../libxfce4ui/xfce-dialogs.c:68
 msgid "Information"
 msgstr "信息"
 
-#: ../libxfce4ui/xfce-dialogs.c:102
+#: ../libxfce4ui/xfce-dialogs.c:101
 msgid "Warning"
 msgstr "警告"
 
-#: ../libxfce4ui/xfce-dialogs.c:136
+#: ../libxfce4ui/xfce-dialogs.c:135
 msgid "Error"
 msgstr "错误"
 
-#: ../libxfce4ui/xfce-dialogs.c:187
+#: ../libxfce4ui/xfce-dialogs.c:186
 msgid "Question"
 msgstr "问题"
 
-#: ../libxfce4ui/xfce-sm-client.c:1401
+#: ../libxfce4ui/xfce-sm-client.c:1402
 msgid "Session management client ID"
 msgstr "会话管理客户端 ID"
 
-#: ../libxfce4ui/xfce-sm-client.c:1401
+#: ../libxfce4ui/xfce-sm-client.c:1402
 msgid "ID"
 msgstr "ID"
 
-#: ../libxfce4ui/xfce-sm-client.c:1402
+#: ../libxfce4ui/xfce-sm-client.c:1403
 msgid "Disable session management"
 msgstr "禁用会话管理"
 
-#: ../libxfce4ui/xfce-sm-client.c:1412
+#: ../libxfce4ui/xfce-sm-client.c:1413
 msgid "Session management options"
 msgstr "会话管理选项"
 
-#: ../libxfce4ui/xfce-sm-client.c:1413
+#: ../libxfce4ui/xfce-sm-client.c:1414
 msgid "Show session management options"
 msgstr "显示会话管理选项"
 
-#: ../libxfce4ui/xfce-sm-client.c:1589
+#: ../libxfce4ui/xfce-sm-client.c:1590
 #, c-format
 msgid "Failed to connect to the session manager: %s"
 msgstr "连接至会话管理器失败: %s"
 
-#: ../libxfce4ui/xfce-sm-client.c:1596
+#: ../libxfce4ui/xfce-sm-client.c:1597
 #, c-format
 msgid "Session manager did not return a valid client id"
 msgstr "会话管理器未返回一个有效的客户端 ID"
 
 #. print warning for user
-#: ../libxfce4ui/xfce-spawn.c:407
+#: ../libxfce4ui/xfce-spawn.c:406
 #, c-format
 msgid ""
 "Working directory \"%s\" does not exist. It won't be used when spawning \"%s"
@@ -121,32 +121,32 @@ msgstr "该动作与 %s 发生冲突"
 msgid "This shortcut is already being used for something else."
 msgstr "该快捷键已被占用。"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:207
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:204
 msgid "Window Manager Action Shortcut"
 msgstr "窗口管理器动作快捷键"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:208
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:218
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:205
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:215
 msgid "Action:"
 msgstr "动作:"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:212
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:209
 msgid "Command Shortcut"
 msgstr "命令快捷键"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:213
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:210
 msgid "Command:"
 msgstr "命令:"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:217
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:214
 msgid "Shortcut"
 msgstr "快捷键"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:258
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:255
 msgid "Shortcut:"
 msgstr "快捷键:"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:303
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:300
 msgid "Could not grab the keyboard."
 msgstr "无法获取键盘输入。"
 
@@ -162,6 +162,260 @@ msgstr "有标题对话框"
 msgid "Xfce 4 Widgets"
 msgstr "Xfce 4 控件"
 
+#: ../xfce4-about/main.c:52
+msgid "Version information"
+msgstr "版本信息"
+
+#: ../xfce4-about/main.c:70
+msgid "Window Manager"
+msgstr "窗口管理器"
+
+#: ../xfce4-about/main.c:71
+msgid "Handles the placement of windows on the screen."
+msgstr ""
+
+#: ../xfce4-about/main.c:74
+msgid "Panel"
+msgstr "面板"
+
+#: ../xfce4-about/main.c:75
+msgid ""
+"Program launchers, window buttons, applications menu, workspace switcher and "
+"more."
+msgstr "程序启动器，窗口按钮，应用程序菜单，工作区切换器和更多。"
+
+#: ../xfce4-about/main.c:79
+msgid "Desktop Manager"
+msgstr "桌面管理"
+
+#: ../xfce4-about/main.c:80
+msgid ""
+"Sets the background color or image with optional application menu or icons "
+"for minimized applications or launchers, devices and folders."
+msgstr ""
+
+#: ../xfce4-about/main.c:84
+msgid "File Manager "
+msgstr "文件管理"
+
+#: ../xfce4-about/main.c:85
+msgid ""
+"A modern file manager for the Unix/Linux desktop, aiming to be easy-to-use "
+"and fast."
+msgstr "一个现代的 Unix / Linux 桌面文件管理器，旨在易用和快速。"
+
+#: ../xfce4-about/main.c:89
+msgid "Session Manager"
+msgstr "会话管理器"
+
+#: ../xfce4-about/main.c:90
+msgid ""
+"Restores your session on startup and allows you to shutdown the computer "
+"from Xfce."
+msgstr "在启动时恢复您的会话，并允许您从XFCE关闭计算机。"
+
+#: ../xfce4-about/main.c:94
+msgid "Setting System"
+msgstr "设置系统"
+
+#: ../xfce4-about/main.c:95
+msgid ""
+"Configuration system to control various aspects of the desktop like "
+"appearance, display, keyboard and mouse settings."
+msgstr "配置系统以控制桌面的各个方面，如：外观，显示，键盘和鼠标的设置。"
+
+#: ../xfce4-about/main.c:99
+msgid "Application Finder"
+msgstr "应用查找"
+
+#: ../xfce4-about/main.c:100
+msgid ""
+"Shows the applications installed on your system in categories, so you can "
+"quickly find and launch them."
+msgstr "使用分类显示您系统所安装的应用程序，以便你能快速的查找和启动它们。"
+
+#: ../xfce4-about/main.c:104
+msgid "Settings Daemon"
+msgstr "设置守护进程"
+
+#: ../xfce4-about/main.c:105
+msgid "D-Bus-based configuration storage system."
+msgstr ""
+
+#: ../xfce4-about/main.c:112
+msgid ""
+"Xfce is a collection of programs that together provide a full-featured "
+"desktop environment. The following programs are part of the Xfce core:"
+msgstr ""
+
+#: ../xfce4-about/main.c:136
+msgid ""
+"Xfce is also a development platform providing several libraries, that help "
+"programmers create applications that fit in well with the desktop "
+"environment."
+msgstr ""
+
+#: ../xfce4-about/main.c:142
+msgid ""
+"Xfce components are licensed under free or open source licences; GPL or BSDL "
+"for applications and LGPL or BSDL for libraries. Look at the documentation, "
+"the source code or the Xfce website (http://www.xfce.org) for more "
+"information."
+msgstr ""
+
+#: ../xfce4-about/main.c:149
+msgid "Thank you for your interest in Xfce."
+msgstr ""
+
+#: ../xfce4-about/main.c:153
+msgid "The Xfce Development Team"
+msgstr "Xfce 开发团队"
+
+#: ../xfce4-about/main.c:262
+msgid ""
+"If you know of anyone missing from this list; don't hesitate and file a bug "
+"on <http://bugzilla.xfce.org> ."
+msgstr ""
+
+#: ../xfce4-about/main.c:266
+msgid "Thanks to all who helped making this software available!"
+msgstr ""
+
+#: ../xfce4-about/main.c:283
+msgid ""
+"Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
+"components are copyrighted by their respective authors."
+msgstr ""
+
+#: ../xfce4-about/main.c:288
+msgid ""
+"The libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs and exo packages are "
+"distributed under the terms of the GNU Library General Public License as "
+"published by the Free Software Foundation; either version 2 of the License, "
+"or (at your option) any later version."
+msgstr ""
+
+#: ../xfce4-about/main.c:295
+msgid ""
+"The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-"
+"settings, xfce-utils, xfconf, xfdesktop and xfwm4 are distributed under the "
+"terms of the GNU General Public License as published by the Free Software "
+"Foundation; either version 2 of the License, or (at your option) any later "
+"version."
+msgstr ""
+
+#: ../xfce4-about/main.c:442
+#, c-format
+msgid "Type '%s --help' for usage information."
+msgstr ""
+
+#: ../xfce4-about/main.c:448
+msgid "Unable to initialize GTK+."
+msgstr ""
+
+#: ../xfce4-about/main.c:457
+msgid "The Xfce development team. All rights reserved."
+msgstr ""
+
+#: ../xfce4-about/main.c:458
+#, c-format
+msgid "Please report bugs to <%s>."
+msgstr ""
+
+#. I18N: date/time the translators list was updated
+#: ../xfce4-about/main.c:461
+#, c-format
+msgid "Translators list from %s."
+msgstr ""
+
+#: ../xfce4-about/main.c:471
+msgid "Failed to load interface"
+msgstr ""
+
+#. I18N: first %s will be replaced by the version, second by
+#. * the name of the distribution (--with-vendor-info=NAME)
+#: ../xfce4-about/main.c:485
+#, c-format
+msgid "Version %s, distributed by %s"
+msgstr ""
+
+#. I18N: %s will be replaced by the Xfce version number
+#: ../xfce4-about/main.c:489
+#, c-format
+msgid "Version %s"
+msgstr ""
+
+#. { N_("Project Lead"),
+#. xfce_contributors_lead
+#. },
+#: ../xfce4-about/contributors.h:127
+msgid "Core developers"
+msgstr ""
+
+#: ../xfce4-about/contributors.h:130
+msgid "Active contributors"
+msgstr ""
+
+#: ../xfce4-about/contributors.h:133
+msgid "Servers maintained by"
+msgstr ""
+
+#: ../xfce4-about/contributors.h:136
+msgid "Goodies supervision"
+msgstr ""
+
+#: ../xfce4-about/contributors.h:139
+msgid "Translations supervision"
+msgstr ""
+
+#: ../xfce4-about/contributors.h:142
+msgid "Translators"
+msgstr ""
+
+#: ../xfce4-about/contributors.h:145
+msgid "Previous contributors"
+msgstr ""
+
+#: ../xfce4-about/xfce4-about.desktop.in.h:1
+msgid "About Xfce"
+msgstr ""
+
+#: ../xfce4-about/xfce4-about.desktop.in.h:2
+msgid "Information about the Xfce Desktop Environment"
+msgstr ""
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:1
+msgid "About"
+msgstr ""
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:2
+msgid "About the Xfce Desktop Environment"
+msgstr ""
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:3
+msgid "BSD"
+msgstr ""
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:4
+msgid "Copyright"
+msgstr ""
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:5
+msgid "Credits"
+msgstr ""
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:6
+msgid "GPL"
+msgstr ""
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:7
+msgid "LGPL"
+msgstr ""
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:8
+msgid "License"
+msgstr ""
+
 #~ msgid "<span size='large'><b>%s</b></span>"
 #~ msgstr "<span size='large'><b>%s</b></span>"
 
@@ -170,9 +424,6 @@ msgstr "Xfce 4 控件"
 
 #~ msgid "Unrecognized desktop file Version '%s'"
 #~ msgstr "未知的 desktop 文件版本 “%s”"
-
-#~ msgid "Starting %s"
-#~ msgstr "正在启动 %s"
 
 #~ msgid "Unrecognized launch option: %d"
 #~ msgstr "未知的启动选项: %d"
