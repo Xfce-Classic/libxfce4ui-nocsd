@@ -402,7 +402,7 @@ msgstr "版权"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:5
 msgid "Credits"
-msgstr "Credits"
+msgstr "感谢"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:6
 msgid "GPL"
