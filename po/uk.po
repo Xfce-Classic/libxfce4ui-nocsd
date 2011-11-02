@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-10-14 16:05+0000\n"
+"POT-Creation-Date: 2011-11-02 17:06+0000\n"
 "PO-Revision-Date: 2008-06-30 17:35+0300\n"
 "Last-Translator: Dmitry Nikitin <luckas_fb@mail.ru>\n"
 "Language-Team: Ukrainian <xfce4-dev@xfce.org>\n"
@@ -23,7 +23,7 @@ msgstr "Інформація"
 
 #: ../libxfce4ui/xfce-dialogs.c:101
 msgid "Warning"
-msgstr "Перередження"
+msgstr "Попередження"
 
 #: ../libxfce4ui/xfce-dialogs.c:135
 msgid "Error"
@@ -177,7 +177,7 @@ msgstr "Інформація про версію"
 
 #: ../xfce4-about/main.c:70
 msgid "Window Manager"
-msgstr "Мменеджер вікон"
+msgstr "Менеджер вікон"
 
 #: ../xfce4-about/main.c:71
 msgid "Handles the placement of windows on the screen."
@@ -255,22 +255,14 @@ msgstr ""
 "можете знайти їх і запустити."
 
 #: ../xfce4-about/main.c:104
-msgid "Utilities and Scripts"
-msgstr "Утиліти і скрипти"
-
-#: ../xfce4-about/main.c:105
-msgid "Startup scripts, run dialog and about dialog."
-msgstr "Скрипти завантаження, діалог запуску і про діалог."
-
-#: ../xfce4-about/main.c:108
 msgid "Settings Daemon"
 msgstr "Демон налаштувань"
 
-#: ../xfce4-about/main.c:109
+#: ../xfce4-about/main.c:105
 msgid "D-Bus-based configuration storage system."
 msgstr "Система зберігання на базі D-Bus конфігурації."
 
-#: ../xfce4-about/main.c:116
+#: ../xfce4-about/main.c:112
 msgid ""
 "Xfce is a collection of programs that together provide a full-featured "
 "desktop environment. The following programs are part of the Xfce core:"
@@ -278,7 +270,7 @@ msgstr ""
 "Xfce - це колекція програм разом утворюють повноцінне середовище робочого "
 "столу. Наступні програми є частиною ядра Xfce:"
 
-#: ../xfce4-about/main.c:140
+#: ../xfce4-about/main.c:136
 msgid ""
 "Xfce is also a development platform providing several libraries, that help "
 "programmers create applications that fit in well with the desktop "
@@ -287,23 +279,27 @@ msgstr ""
 "Xfce також є платформою для розробки програм, яка містить кілька бібліотек, "
 "що допомагають розробникам створювати програми для середовища робочого столу."
 
-#: ../xfce4-about/main.c:146
+#: ../xfce4-about/main.c:142
 msgid ""
 "Xfce components are licensed under free or open source licences; GPL or BSDL "
 "for applications and LGPL or BSDL for libraries. Look at the documentation, "
 "the source code or the Xfce website (http://www.xfce.org) for more "
 "information."
-msgstr "Компоненти Xfce розробляються під вільними або відкрито-джерельними ліцензіямі: GPL або BSDL для програм і LGPL або BSDL для бібліотек. Для перевірки перегляньте документацію, джерельний код або веб-сторінку проекту Xfce (http://www.xfce.org)."
+msgstr ""
+"Компоненти Xfce розробляються під вільними або відкрито-джерельними "
+"ліцензіямі: GPL або BSDL для програм і LGPL або BSDL для бібліотек. Для "
+"перевірки перегляньте документацію, джерельний код або веб-сторінку проекту "
+"Xfce (http://www.xfce.org)."
 
-#: ../xfce4-about/main.c:153
+#: ../xfce4-about/main.c:149
 msgid "Thank you for your interest in Xfce."
 msgstr "Дякуємо Вам за зацікавлення проектом Xfce."
 
-#: ../xfce4-about/main.c:157
+#: ../xfce4-about/main.c:153
 msgid "The Xfce Development Team"
 msgstr "Команда розробників Xfce"
 
-#: ../xfce4-about/main.c:266
+#: ../xfce4-about/main.c:262
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
 "on <http://bugzilla.xfce.org> ."
@@ -311,11 +307,11 @@ msgstr ""
 "Якщо Ви помітите, що щось відсутнє у списку, повідомте про це поштою <http://"
 "bugzilla.xfce.org> ."
 
-#: ../xfce4-about/main.c:270
+#: ../xfce4-about/main.c:266
 msgid "Thanks to all who helped making this software available!"
 msgstr "Дякуємо усім, хто допоміг появитися цій програмі!"
 
-#: ../xfce4-about/main.c:287
+#: ../xfce4-about/main.c:283
 msgid ""
 "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
@@ -323,60 +319,68 @@ msgstr ""
 "Всі права на Xfce 4 належать до Olivier Fourdan (fourdan@xfce.org). Права на "
 "різні компоненти належать до відповідних авторам."
 
-#: ../xfce4-about/main.c:292
+#: ../xfce4-about/main.c:288
 msgid ""
 "The libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs and exo packages are "
 "distributed under the terms of the GNU Library General Public License as "
 "published by the Free Software Foundation; either version 2 of the License, "
 "or (at your option) any later version."
-msgstr "Пакунки libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs і exo розповсюджуються згідно умов GNU Library General Public License, виданою Free Software Foundation; або версії 2 цієї ліцензії, або (на Ваш розгляд) будь-якої пізнішої версії."
+msgstr ""
+"Пакунки libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs і exo "
+"розповсюджуються згідно умов GNU Library General Public License, виданою "
+"Free Software Foundation; або версії 2 цієї ліцензії, або (на Ваш розгляд) "
+"будь-якої пізнішої версії."
 
-#: ../xfce4-about/main.c:299
+#: ../xfce4-about/main.c:295
 msgid ""
 "The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-"
 "settings, xfce-utils, xfconf, xfdesktop and xfwm4 are distributed under the "
 "terms of the GNU General Public License as published by the Free Software "
 "Foundation; either version 2 of the License, or (at your option) any later "
 "version."
-msgstr "Пакунки thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfce-utils, xfconf, xfdesktop і xfwm4 розповсюджуються згідно умов GNU Library General Public License, виданою Free Software Foundation; або версії 2 цієї ліцензії, або (на Ваш розгляд) будь-якої пізнішої версії."
+msgstr ""
+"Пакунки thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, "
+"xfce-utils, xfconf, xfdesktop і xfwm4 розповсюджуються згідно умов GNU "
+"Library General Public License, виданою Free Software Foundation; або версії "
+"2 цієї ліцензії, або (на Ваш розгляд) будь-якої пізнішої версії."
 
-#: ../xfce4-about/main.c:446
+#: ../xfce4-about/main.c:442
 #, c-format
 msgid "Type '%s --help' for usage information."
 msgstr "Запустіть '%s --help' для інформації про використання."
 
-#: ../xfce4-about/main.c:452
+#: ../xfce4-about/main.c:448
 msgid "Unable to initialize GTK+."
 msgstr "Не можу ініціалізувати GTK+."
 
-#: ../xfce4-about/main.c:461
+#: ../xfce4-about/main.c:457
 msgid "The Xfce development team. All rights reserved."
 msgstr "Команда розробників Xfce. Всі права застережено."
 
-#: ../xfce4-about/main.c:462
+#: ../xfce4-about/main.c:458
 #, c-format
 msgid "Please report bugs to <%s>."
 msgstr "Будь-ласка, повідомте про помилку до <%s>."
 
 #. I18N: date/time the translators list was updated
-#: ../xfce4-about/main.c:465
+#: ../xfce4-about/main.c:461
 #, c-format
 msgid "Translators list from %s."
 msgstr "Список перекладачів з %s."
 
-#: ../xfce4-about/main.c:475
+#: ../xfce4-about/main.c:471
 msgid "Failed to load interface"
 msgstr "Неможливо завантажити інтерфейс"
 
 #. I18N: first %s will be replaced by the version, second by
 #. * the name of the distribution (--with-vendor-info=NAME)
-#: ../xfce4-about/main.c:489
+#: ../xfce4-about/main.c:485
 #, c-format
 msgid "Version %s, distributed by %s"
 msgstr "Версія %s, випущена через %s"
 
 #. I18N: %s will be replaced by the Xfce version number
-#: ../xfce4-about/main.c:493
+#: ../xfce4-about/main.c:489
 #, c-format
 msgid "Version %s"
 msgstr "Версія %s"
@@ -418,7 +422,7 @@ msgstr "Про Xfce"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:2
 msgid "Information about the Xfce Desktop Environment"
-msgstr "Інформація про середовиже робочого столу Xfce"
+msgstr "Інформація про середовище робочого столу Xfce"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:1
 msgid "About"
@@ -451,3 +455,9 @@ msgstr "LGPL"
 #: ../xfce4-about/xfce4-about-dialog.glade.h:8
 msgid "License"
 msgstr "Ліцензія"
+
+#~ msgid "Utilities and Scripts"
+#~ msgstr "Утиліти і скрипти"
+
+#~ msgid "Startup scripts, run dialog and about dialog."
+#~ msgstr "Скрипти завантаження, діалог запуску і про діалог."
