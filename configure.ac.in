@@ -33,14 +33,14 @@ dnl *** Initialize autoconf ***
 dnl ***************************
 AC_COPYRIGHT([Copyright (c) 2007-2011 The Xfce development team])
 AC_INIT([libxfce4ui], [libxfce4ui_version], [http://bugzilla.xfce.org/], [libxfce4ui])
-AC_PREREQ([2.50])
+AC_PREREQ([2.60])
 AC_REVISION([libxfce4ui_version_build])
 AC_CANONICAL_TARGET()
 
 dnl ***************************
 dnl *** Initialize automake ***
 dnl ***************************
-AM_INIT_AUTOMAKE([1.8 dist-bzip2 tar-ustar])
+AM_INIT_AUTOMAKE([AC_PACKAGE_TARNAME()], [AC_PACKAGE_VERSION()])
 AM_CONFIG_HEADER([config.h])
 AM_MAINTAINER_MODE()
 m4_ifdef([AM_SILENT_RULES], [AM_SILENT_RULES([yes])])
@@ -81,8 +81,8 @@ AC_CHECK_PROGS([PERL], [perl5 perl])
 dnl **************************
 dnl *** Initialize libtool ***
 dnl **************************
-AC_DISABLE_STATIC()
-AC_PROG_LIBTOOL()
+LT_PREREQ([2.2.6])
+LT_INIT([disable-static])
 
 dnl **************************************
 dnl *** Substitute version information ***

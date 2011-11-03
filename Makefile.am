@@ -9,6 +9,11 @@ SUBDIRS = \
 	docs \
 	po
 
+AUTOMAKE_OPTIONS = \
+	1.9 \
+	dist-bzip2 \
+	no-dist-gzip
+
 distclean-local:
 	rm -rf *.spec *.cache *~
 
