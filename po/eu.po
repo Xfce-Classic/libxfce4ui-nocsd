@@ -254,7 +254,7 @@ msgstr "D-Bus-en oinarritutako konfigurazio biltegiratze sistema"
 msgid ""
 "Xfce is a collection of programs that together provide a full-featured "
 "desktop environment. The following programs are part of the Xfce core:"
-msgstr ""
+msgstr "Xfce elkarrekin ezaugarriz osaturiko mahaigain ingurune bat eskaintzen duten programa bilduma bat da. Hurrengo programak dira Xfce muinaren zati:"
 
 #: ../xfce4-about/main.c:136
 msgid ""
@@ -273,21 +273,21 @@ msgstr ""
 
 #: ../xfce4-about/main.c:149
 msgid "Thank you for your interest in Xfce."
-msgstr ""
+msgstr "Milesker Xfce-en interesatzeagatik"
 
 #: ../xfce4-about/main.c:153
 msgid "The Xfce Development Team"
-msgstr ""
+msgstr "Xfce garapen taldea"
 
 #: ../xfce4-about/main.c:262
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
 "on <http://bugzilla.xfce.org> ."
-msgstr ""
+msgstr "Zerrenda honetan faltan den norbaiten berri baduzu, mesedez esaguzu programa errore baten bidez <http://bugzilla.xfce.org> -en."
 
 #: ../xfce4-about/main.c:266
 msgid "Thanks to all who helped making this software available!"
-msgstr ""
+msgstr "Milesker software hau eskuragarri egiten lagundu duten guztiei."
 
 #: ../xfce4-about/main.c:283
 msgid ""
@@ -315,74 +315,74 @@ msgstr ""
 #: ../xfce4-about/main.c:442
 #, c-format
 msgid "Type '%s --help' for usage information."
-msgstr ""
+msgstr "Idatzi '%s --help' erabilpen argibideentzat."
 
 #: ../xfce4-about/main.c:448
 msgid "Unable to initialize GTK+."
-msgstr ""
+msgstr "Ezinda GTK+ abiarazi."
 
 #: ../xfce4-about/main.c:457
 msgid "The Xfce development team. All rights reserved."
-msgstr ""
+msgstr "Xfce garapen taldea. Eskubide guztiak erreserbatuta"
 
 #: ../xfce4-about/main.c:458
 #, c-format
 msgid "Please report bugs to <%s>."
-msgstr ""
+msgstr "Mesedez eman programa-erroreen berri <%s>-n."
 
 #. I18N: date/time the translators list was updated
 #: ../xfce4-about/main.c:461
 #, c-format
 msgid "Translators list from %s."
-msgstr ""
+msgstr "Itzultzaile zerrenda %s-tik."
 
 #: ../xfce4-about/main.c:471
 msgid "Failed to load interface"
-msgstr ""
+msgstr "Huts interfazea kargatzean."
 
 #. I18N: first %s will be replaced by the version, second by
 #. * the name of the distribution (--with-vendor-info=NAME)
 #: ../xfce4-about/main.c:485
 #, c-format
 msgid "Version %s, distributed by %s"
-msgstr ""
+msgstr "%s bertsioa, %s-k banatua"
 
 #. I18N: %s will be replaced by the Xfce version number
 #: ../xfce4-about/main.c:489
 #, c-format
 msgid "Version %s"
-msgstr ""
+msgstr "%s bertsioa"
 
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
 #. },
 #: ../xfce4-about/contributors.h:127
 msgid "Core developers"
-msgstr ""
+msgstr "Muin garatzaileak"
 
 #: ../xfce4-about/contributors.h:130
 msgid "Active contributors"
-msgstr ""
+msgstr "Laguntzaile aktiboak"
 
 #: ../xfce4-about/contributors.h:133
 msgid "Servers maintained by"
-msgstr ""
+msgstr "Zerbitzari mantenua: "
 
 #: ../xfce4-about/contributors.h:136
 msgid "Goodies supervision"
-msgstr ""
+msgstr "Goodie gainbegiratzea"
 
 #: ../xfce4-about/contributors.h:139
 msgid "Translations supervision"
-msgstr ""
+msgstr "Itzulpen gainbegiratzea"
 
 #: ../xfce4-about/contributors.h:142
 msgid "Translators"
-msgstr ""
+msgstr "Itzultzaileak"
 
 #: ../xfce4-about/contributors.h:145
 msgid "Previous contributors"
-msgstr ""
+msgstr "Aurreko laguntzaileak"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:1
 msgid "About Xfce"
