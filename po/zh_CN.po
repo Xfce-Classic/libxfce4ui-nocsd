@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-10-27 22:06+0000\n"
+"POT-Creation-Date: 2011-11-10 23:07+0000\n"
 "PO-Revision-Date: 2010-04-06 13:14+0800\n"
 "Last-Translator: Hunt Xu <huntxu@live.cn>\n"
 "Language-Team: Simplied Chinese <i18n-xfce@xfce.org>\n"
@@ -232,7 +232,7 @@ msgstr "应用查找"
 msgid ""
 "Shows the applications installed on your system in categories, so you can "
 "quickly find and launch them."
-msgstr "使用分类显示您系统所安装的应用程序，以便你能快速的查找和启动它们。"
+msgstr "使用分类显示您系统所安装的应用程序，以便您能快速的查找和启动它们。"
 
 #: ../xfce4-about/main.c:104
 msgid "Settings Daemon"
@@ -265,7 +265,7 @@ msgstr ""
 
 #: ../xfce4-about/main.c:149
 msgid "Thank you for your interest in Xfce."
-msgstr "感谢你对 Xfce 感兴趣。"
+msgstr "感谢您对 Xfce 感兴趣。"
 
 #: ../xfce4-about/main.c:153
 msgid "The Xfce Development Team"
@@ -275,7 +275,9 @@ msgstr "Xfce 开发团队"
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
 "on <http://bugzilla.xfce.org> ."
-msgstr "如果你知道本列表上有漏掉的任何信息,请不要犹豫，发送bug至<http://bugzilla.xfce.org> 。"
+msgstr ""
+"如果你知道本列表上有漏掉的任何信息,请不要犹豫，发送bug至<http://bugzilla."
+"xfce.org> 。"
 
 #: ../xfce4-about/main.c:266
 msgid "Thanks to all who helped making this software available!"
@@ -285,7 +287,9 @@ msgstr "感谢所有对这些软件提供帮助的人！"
 msgid ""
 "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
-msgstr "Xfce 4 版权归 Olivier Fourdan (fourdan@xfce.org) 所有。不同组件的版权归它们各自的作者所有。"
+msgstr ""
+"Xfce 4 版权归 Olivier Fourdan (fourdan@xfce.org) 所有。不同组件的版权归它们各"
+"自的作者所有。"
 
 #: ../xfce4-about/main.c:288
 msgid ""
