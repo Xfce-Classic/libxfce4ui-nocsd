@@ -24,7 +24,7 @@
 #include <gtk/gtk.h>
 #include <libxfce4util/libxfce4util.h>
 
-#define TRANSLATORS_H_STAMP "2011-11-06 00:00:03"
+#define TRANSLATORS_H_STAMP "2011-11-13 00:00:03"
 #define ATSIGN "@"
 #define DOTSIGN "."
 
@@ -223,6 +223,7 @@ static const TranslatorInfo xfce_translators_fr[] =
   { "Durand-Favreau Arnaud", "biginoz" ATSIGN "free" DOTSIGN "fr", FALSE },
   { "Mario Gervais", "gervais" DOTSIGN "mario" ATSIGN "ymail" DOTSIGN "com", FALSE },
   { "Jérôme Guelfucci", "jeromeg" ATSIGN "xfce" DOTSIGN "org", FALSE },
+  { "Jean-Philippe Fleury", "contact" ATSIGN "jpfleury" DOTSIGN "net", FALSE },
   { "Jourdain Cyril", "cyril" DOTSIGN "jd" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Louis M", "m_louis30" ATSIGN "yahoo" DOTSIGN "com", FALSE },
   { "Maximilian Schleiss", "maximilian" ATSIGN "xfce" DOTSIGN "org", FALSE },
@@ -400,10 +401,11 @@ static const TranslatorInfo xfce_translators_pt[] =
 
 static const TranslatorInfo xfce_translators_pt_BR[] =
 {
-  { "Henrique P" DOTSIGN " Machado", "zehrique" ATSIGN "gmail" DOTSIGN "com", TRUE },
+  { "Henrique P" DOTSIGN " Machado", "zehrique" ATSIGN "xfce" DOTSIGN "org", TRUE },
   { "Mateus Rodrigues Costa", "charles" DOTSIGN "costar" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Douglas Sales", "doug" DOTSIGN "sales23" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Frederico Schardong", "frede" DOTSIGN "sch" ATSIGN "gmail" DOTSIGN "com", FALSE },
+  { "Job Borges", "jobdiogenes" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Jonas agx", "jonas" DOTSIGN "agx" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Joelso Andrade", "kosmofilo" ATSIGN "ymail" DOTSIGN "com", FALSE },
   { "Michel Boaventura", "michel" DOTSIGN "boaventura" ATSIGN "gmail" DOTSIGN "com", FALSE },
@@ -498,6 +500,7 @@ static const TranslatorInfo xfce_translators_sq[] =
 static const TranslatorInfo xfce_translators_sr[] =
 {
   { "Milan Stojakov", "koleramilan" ATSIGN "gmail" DOTSIGN "com", FALSE },
+  { "Мирослав Николић", "miroslavnikolic" ATSIGN "rocketmail" DOTSIGN "com", FALSE },
   { "mpopovic", "gpopac" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Nikola Milosavljevic", "minikola" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { NULL, NULL }
