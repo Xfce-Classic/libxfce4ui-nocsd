@@ -15,11 +15,7 @@ AUTOMAKE_OPTIONS = \
 	no-dist-gzip
 
 distclean-local:
-	rm -rf *.spec *.cache *~
-
-rpm: dist
-	rpmbuild -ta $(PACKAGE)-$(VERSION).tar.gz
-	@rm -f $(PACKAGE)-$(VERSION).tar.gz
+	rm -rf *.cache *~
 
 .PHONY: ChangeLog
 
@@ -31,13 +27,11 @@ ChangeLog: Makefile
 dist-hook: ChangeLog
 
 EXTRA_DIST = \
-	libxfce4ui.spec.in \
 	intltool-extract.in \
 	intltool-merge.in \
 	intltool-update.in
 
 DISTCLEANFILES = \
-	libxfce4ui.spec \
 	intltool-extract \
 	intltool-merge \
 	intltool-update

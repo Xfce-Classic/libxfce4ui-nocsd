@@ -275,7 +275,6 @@ icons/Makefile
 icons/48x48/Makefile
 libxfce4kbd-private/libxfce4kbd-private-2.pc
 libxfce4kbd-private/Makefile
-libxfce4ui.spec
 libxfce4ui/libxfce4ui-1.pc
 libxfce4ui/libxfce4ui-config.h
 libxfce4ui/Makefile
