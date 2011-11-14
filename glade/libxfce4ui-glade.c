@@ -59,11 +59,15 @@ glade_xfce_titled_dialog_post_create (GladeWidgetAdaptor *adaptor,
   if (XFCE_IS_TITLED_DIALOG (dialog))
     {
       /* create the dialog vbxo */
-      vbox = glade_widget_adaptor_create_internal (widget, G_OBJECT (dialog->vbox), "vbox", "dialog", FALSE, reason);
+      vbox = glade_widget_adaptor_create_internal (widget,
+          G_OBJECT (gtk_dialog_get_content_area (dialog)),
+          "vbox", "dialog", FALSE, reason);
       glade_widget_remove_property (vbox, "border-width");
 
       /* create the action area */
-      action_area = glade_widget_adaptor_create_internal (vbox, G_OBJECT (dialog->action_area), "action_area", "dialog", FALSE, reason);
+      action_area = glade_widget_adaptor_create_internal (vbox,
+          G_OBJECT (gtk_dialog_get_action_area (dialog)),
+          "action_area", "dialog", FALSE, reason);
       glade_widget_remove_property (action_area, "border-width");
       glade_widget_remove_property (action_area, "spacing");
 
@@ -91,9 +95,9 @@ glade_xfce_titled_dialog_get_internal_child (GladeWidgetAdaptor *adaptor,
   g_return_val_if_fail (XFCE_IS_TITLED_DIALOG (dialog), NULL);
 
   if (strcmp ("vbox", name) == 0)
-    child = dialog->vbox;
+    child = gtk_dialog_get_content_area (dialog);
   else if (strcmp ("action_area", name) == 0)
-    child = dialog->action_area;
+    child = gtk_dialog_get_action_area (dialog);
 
   return child;
 }
@@ -106,5 +110,5 @@ glade_xfce_titled_dialog_get_children (GladeWidgetAdaptor *adaptor,
 {
   g_return_val_if_fail (XFCE_IS_TITLED_DIALOG (dialog), NULL);
 
-  return g_list_prepend (NULL, dialog->vbox);
+  return g_list_prepend (NULL, gtk_dialog_get_content_area (dialog));
 }

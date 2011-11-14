@@ -41,18 +41,16 @@ if MAINTAINER_MODE
 about-dialog-ui.h: $(srcdir)/xfce4-about-dialog.glade Makefile
 	$(AM_V_GEN) xdt-csource --static --strip-comments --strip-content --name=xfce_about_dialog_ui $< >$@
 
-DISTCLEANFILES = \
-	$(xfce4_about_built_sources)
-
 BUILT_SOURCES = \
 	$(xfce4_about_built_sources)
 
 endif
 
-EXTRA_DIST = 								\
-	$(desktop_in_files)						\
+EXTRA_DIST = \
+	$(desktop_in_files) \
 	xfce4-about-dialog.glade
 
-DISTCLEANFILES = 							\
+DISTCLEANFILES = \
+	$(xfce4_about_built_sources) \
 	$(desktop_DATA)
 
