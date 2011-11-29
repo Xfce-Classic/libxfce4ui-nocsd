@@ -35,11 +35,11 @@ msgstr "问题"
 
 #: ../libxfce4ui/xfce-sm-client.c:1401
 msgid "Session management client ID"
-msgstr "会话管理客户端身份证"
+msgstr "会话管理客户端 ID"
 
 #: ../libxfce4ui/xfce-sm-client.c:1401
 msgid "ID"
-msgstr "身份证"
+msgstr "ID"
 
 #: ../libxfce4ui/xfce-sm-client.c:1402
 msgid "Disable session management"
@@ -56,7 +56,7 @@ msgstr "显示会话管理选项"
 #: ../libxfce4ui/xfce-sm-client.c:1589
 #, c-format
 msgid "Failed to connect to the session manager: %s"
-msgstr "无法连接至会话管理器：%s"
+msgstr "无法与会话管理器连接：%s"
 
 #: ../libxfce4ui/xfce-sm-client.c:1596
 #, c-format
@@ -111,16 +111,16 @@ msgstr "该快捷键已被一窗口管理器动作使用。您要使用哪个动
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 msgid "Keep the window manager action"
-msgstr "保留窗口管理器动作"
+msgstr "保留此窗口管理器动作"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:95
 #, c-format
 msgid "Conflicting actions for %s"
-msgstr "%s 动作冲突"
+msgstr "因 %s 冲突的动作"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:128
 msgid "This shortcut is already being used for something else."
-msgstr "该快捷键已被其它动作使用。"
+msgstr "其它动作已使用该快捷键。"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:207
 msgid "Window Manager Action Shortcut"
