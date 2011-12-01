@@ -121,7 +121,7 @@ msgstr ""
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:128
 msgid "This shortcut is already being used for something else."
-msgstr ""
+msgstr "Þessi flýtileið er nú þegar í notkun fyrir eitthvað annað."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:207
 msgid "Window Manager Action Shortcut"
@@ -134,7 +134,7 @@ msgstr "Aðgerð:"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:212
 msgid "Command Shortcut"
-msgstr ""
+msgstr "Flýtileið Skipunar"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:213
 msgid "Command:"
@@ -150,7 +150,7 @@ msgstr "Flýtilykill:"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:303
 msgid "Could not grab the keyboard."
-msgstr ""
+msgstr "Ekki var hægt að ná í lyklaborðið."
 
 #: ../glade/libxfce4ui.xml.in.h:1
 msgid "Subtitle"
@@ -158,7 +158,7 @@ msgstr "Undirtexti"
 
 #: ../glade/libxfce4ui.xml.in.h:2
 msgid "Titled Dialog"
-msgstr ""
+msgstr "Titla Dálkur"
 
 #: ../glade/libxfce4ui.xml.in.h:3
 msgid "Xfce 4 Widgets"
