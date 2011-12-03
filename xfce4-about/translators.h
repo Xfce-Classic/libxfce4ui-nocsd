@@ -24,7 +24,7 @@
 #include <gtk/gtk.h>
 #include <libxfce4util/libxfce4util.h>
 
-#define TRANSLATORS_H_STAMP "2011-11-28 17:24:48"
+#define TRANSLATORS_H_STAMP "2011-12-04 00:00:04"
 #define ATSIGN "@"
 #define DOTSIGN "."
 
@@ -173,8 +173,10 @@ static const TranslatorInfo xfce_translators_es[] =
 {
   { "Andres Sanchez", "afsanchez93" ATSIGN "gmail" DOTSIGN "com", TRUE },
   { "Abel Martín", "abel" DOTSIGN "martin" DOTSIGN "ruiz" ATSIGN "gmail" DOTSIGN "com", TRUE },
+  { "brunella capilongo broussard", "circe28" ATSIGN "libero" DOTSIGN "it", FALSE },
   { "Javier Sánchez Reinosa", "donoban" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Ignacio Velasco", "elega" ATSIGN "elega" DOTSIGN "com" DOTSIGN "ar", FALSE },
+  { "Ernesto Chavez", "ernestoc33" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Esteban Vidal González", "esteban70x7" ATSIGN "yahoo" DOTSIGN "es", FALSE },
   { "Adolfo Jayme Barrientos", "fitoschido" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "José Ángel Alonso", "landseerstreet" ATSIGN "yahoo" DOTSIGN "it", FALSE },
@@ -239,7 +241,14 @@ static const TranslatorInfo xfce_translators_fr[] =
 
 static const TranslatorInfo xfce_translators_gl[] =
 {
+  { "mbouzada", "mbouzada" ATSIGN "gmail" DOTSIGN "com", TRUE },
   { "Leandro Regueiro", "leandro" DOTSIGN "regueiro" ATSIGN "gmail" DOTSIGN "com", TRUE },
+  { NULL, NULL }
+};
+
+static const TranslatorInfo xfce_translators_gu[] =
+{
+  { "ingmoco", "ing" DOTSIGN "moco" ATSIGN "gmail" DOTSIGN "com", TRUE },
   { NULL, NULL }
 };
 
@@ -286,7 +295,9 @@ static const TranslatorInfo xfce_translators_id[] =
 
 static const TranslatorInfo xfce_translators_is[] =
 {
-  { "sveinki", "sveinki" ATSIGN "nett" DOTSIGN "is", TRUE },
+  { "Sveinn í Felli", "sveinki" ATSIGN "nett" DOTSIGN "is", TRUE },
+  { "Kristófer Arnþórsson", "kristoferarnthors" ATSIGN "gmail" DOTSIGN "com", FALSE },
+  { "Theódór S" DOTSIGN " Andrésson", "husgafl" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { NULL, NULL }
 };
 
@@ -664,6 +675,7 @@ static const TranslatorTeam xfce_translators[] =
   { "Finnish", "fi", xfce_translators_fi },
   { "French", "fr", xfce_translators_fr },
   { "Galician", "gl", xfce_translators_gl },
+  { "Gujarati", "gu", xfce_translators_gu },
   { "Hebrew", "he", xfce_translators_he },
   { "Hindi", "hi", xfce_translators_hi },
   { "Croatian", "hr", xfce_translators_hr },
