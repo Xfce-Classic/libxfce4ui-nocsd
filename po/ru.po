@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-11-05 11:07+0000\n"
+"POT-Creation-Date: 2011-12-03 07:18+0000\n"
 "PO-Revision-Date: 2011-08-23 14:21+0300\n"
 "Last-Translator: Artem Zolochevskiy <artem.zolochevskiy@gmail.com>\n"
 "Language-Team: Russian\n"
@@ -183,7 +183,7 @@ msgstr "Менеджер окон"
 
 #: ../xfce4-about/main.c:71
 msgid "Handles the placement of windows on the screen."
-msgstr ""
+msgstr "Управляет размещением окон на экране."
 
 #: ../xfce4-about/main.c:74
 msgid "Panel"
@@ -223,7 +223,7 @@ msgstr "Менеджер сеанса"
 msgid ""
 "Restores your session on startup and allows you to shutdown the computer "
 "from Xfce."
-msgstr ""
+msgstr "Восстанавливает ваш предыдущий сеанс работы и позволяет выключать компьютер из Xfce."
 
 #: ../xfce4-about/main.c:94
 msgid "Setting System"
@@ -276,7 +276,7 @@ msgstr ""
 
 #: ../xfce4-about/main.c:149
 msgid "Thank you for your interest in Xfce."
-msgstr ""
+msgstr "Благодарим вас за проявленный интерес к Xfce."
 
 #: ../xfce4-about/main.c:153
 msgid "The Xfce Development Team"
@@ -326,18 +326,18 @@ msgstr "Не удалось инициализировать GTK+."
 
 #: ../xfce4-about/main.c:457
 msgid "The Xfce development team. All rights reserved."
-msgstr ""
+msgstr "Команда разработчиков Xfce. Все права защищены."
 
 #: ../xfce4-about/main.c:458
 #, c-format
 msgid "Please report bugs to <%s>."
-msgstr ""
+msgstr "Об ошибках сообщайте по адресу <%s>."
 
 #. I18N: date/time the translators list was updated
 #: ../xfce4-about/main.c:461
 #, c-format
 msgid "Translators list from %s."
-msgstr ""
+msgstr "Список переводчиков (на %s)."
 
 #: ../xfce4-about/main.c:471
 msgid "Failed to load interface"
@@ -397,15 +397,15 @@ msgstr "Сведения об окружении Xfce"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:1
 msgid "About"
-msgstr ""
+msgstr "О программе"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:2
 msgid "About the Xfce Desktop Environment"
-msgstr ""
+msgstr "Об окружении Xfce"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:3
 msgid "BSD"
-msgstr ""
+msgstr "BSD"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:4
 msgid "Copyright"
@@ -417,11 +417,11 @@ msgstr "Благодарности"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:6
 msgid "GPL"
-msgstr ""
+msgstr "GPL"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:7
 msgid "LGPL"
-msgstr ""
+msgstr "LGPL"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:8
 msgid "License"
