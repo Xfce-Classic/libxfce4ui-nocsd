@@ -77,7 +77,8 @@ msgid ""
 "This shortcut is already being used for another window manager action. Which "
 "action do you want to use?"
 msgstr ""
-"该快捷键已被另一个窗口管理器动作使用。您要使用哪个动作？"
+"另一个窗口管理器动作已使用此快捷键。您要使用"
+"哪个动作？"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
@@ -98,7 +99,7 @@ msgid ""
 "This shortcut is already being used for the command '%s'. Which action do "
 "you want to use?"
 msgstr ""
-"该快捷键已被命令 “%s” 使用。您要使用哪个动作？"
+"命令 “%s” 已使用此快捷键。您要使用哪个动作？"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
 #: ../libxfce4kbd-private/xfce-shortcuts.c:59
@@ -111,7 +112,7 @@ msgid ""
 "This shortcut is already being used by a window manager action. Which action "
 "do you want to use?"
 msgstr ""
-"该快捷键已被一窗口管理器动作使用。您要使用哪个动作？"
+"一窗口管理器动作已使用此快捷键。您要使用哪个动作？"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 msgid "Keep the window manager action"
@@ -124,7 +125,7 @@ msgstr "因 %s 冲突的动作"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:128
 msgid "This shortcut is already being used for something else."
-msgstr "其它动作已使用该快捷键。"
+msgstr "其它动作已使用此快捷键。"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:204
 msgid "Window Manager Action Shortcut"
@@ -188,7 +189,8 @@ msgid ""
 "Program launchers, window buttons, applications menu, workspace switcher and "
 "more."
 msgstr ""
-"程序启动器、窗口按钮、应用程序菜单、工作区切换器等等。"
+"程序启动器、窗口按钮、应用程序菜单、工作区切换器"
+"等等。"
 
 #: ../xfce4-about/main.c:79
 msgid "Desktop Manager"
@@ -199,8 +201,8 @@ msgid ""
 "Sets the background color or image with optional application menu or icons "
 "for minimized applications or launchers, devices and folders."
 msgstr ""
-"用可选的应用程序菜单或图标设置背景颜色或图片以便最小化"
-"应用程序或启动器、设备和文件夹。"
+"设置带可选应用程序菜单的背景颜色或图片，或最小化的"
+"应用程序或启动器、设备和文件夹的图标。"
 
 #: ../xfce4-about/main.c:84
 msgid "File Manager "
@@ -211,7 +213,8 @@ msgid ""
 "A modern file manager for the Unix/Linux desktop, aiming to be easy-to-use "
 "and fast."
 msgstr ""
-"现代化的 Unix/Linux 桌面的文件管理器，旨在易用和快速。"
+"Unix/Linux 桌面的现代化的文件管理器，旨在"
+"易用和快速。"
 
 #: ../xfce4-about/main.c:89
 msgid "Session Manager"
@@ -222,7 +225,7 @@ msgid ""
 "Restores your session on startup and allows you to shutdown the computer "
 "from Xfce."
 msgstr ""
-"在桌面启动时恢复您的会话和让您从 Xfce 关闭计算机。"
+"在桌面启动时恢复您的会话并让您从 Xfce 关闭计算机。"
 
 #: ../xfce4-about/main.c:94
 msgid "Setting System"
@@ -233,8 +236,8 @@ msgid ""
 "Configuration system to control various aspects of the desktop like "
 "appearance, display, keyboard and mouse settings."
 msgstr ""
-"配置系统以控制桌面的如外观、显示、键盘和鼠标设置的"
-"各个方面。"
+"控制桌面的如外观、显示、键盘和鼠标设置各个方面的"
+"配置系统。"
 
 #: ../xfce4-about/main.c:99
 msgid "Application Finder"
@@ -245,8 +248,8 @@ msgid ""
 "Shows the applications installed on your system in categories, so you can "
 "quickly find and launch them."
 msgstr ""
-"分类显示安装在您系统上的应用程序，以便您能快速地查找"
-"和启动它们。"
+"分类显示在您系统上安装的应用程序，这样您就可以"
+"快速地查找和启动它们。"
 
 #: ../xfce4-about/main.c:104
 msgid "Settings Daemon"
@@ -261,8 +264,8 @@ msgid ""
 "Xfce is a collection of programs that together provide a full-featured "
 "desktop environment. The following programs are part of the Xfce core:"
 msgstr ""
-"Xfce 是一个提供全功能桌面环境的程序集。"
-"以下程序是 Xfce 核心的部分："
+"Xfce 是一个提供全功能桌面环境的程序集。以下程序"
+"是 Xfce 核心的部分："
 
 #: ../xfce4-about/main.c:136
 msgid ""
@@ -270,8 +273,8 @@ msgid ""
 "programmers create applications that fit in well with the desktop "
 "environment."
 msgstr ""
-"Xfce 还是一个提供若干库文件，帮助程序员"
-"创建很适合桌面环境的应用程序的开发平台。"
+"Xfce 还是一个提供若干库文件，帮助程序员创建很适合"
+"桌面环境的应用程序的开发平台。"
 
 #: ../xfce4-about/main.c:142
 msgid ""
@@ -280,9 +283,10 @@ msgid ""
 "the source code or the Xfce website (http://www.xfce.org) for more "
 "information."
 msgstr ""
-"Xfce 组件以自由或开源许可协议授权；应用程序以 GPL "
-"或 BSDL，库文件以 LGPL 或 BSDL。看文档、源代码"
-"或 Xfce 站点 (http://www.xfce.org) 获取详情。"
+"Xfce 组件以自由或开源许可协议授权；应用程序以 "
+"GPL 或 BSDL，库文件以 LGPL 或 BSDL。看文档、"
+"源代码或 Xfce 站点(http://www.xfce.org) "
+"获取详情。"
 
 #: ../xfce4-about/main.c:149
 msgid "Thank you for your interest in Xfce."
@@ -297,7 +301,7 @@ msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
 "on <http://bugzilla.xfce.org> ."
 msgstr ""
-"如果您知道该列表漏掉了任何人，不要犹豫并在 "
+"如果您知道此列表漏掉了任何人，不要犹豫并在 "
 "<http://bugzilla.xfce.org> 上提交缺陷。"
 
 #: ../xfce4-about/main.c:266
@@ -309,7 +313,8 @@ msgid ""
 "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
 msgstr ""
-"Xfce 4 版权归 Olivier Fourdan (fourdan@xfce.org)。"
+"Xfce 4 版权归 "
+"Olivier Fourdan (fourdan@xfce.org)。"
 "不同组件的版权归它们各自的作者。"
 
 #: ../xfce4-about/main.c:288
