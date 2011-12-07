@@ -1,16 +1,16 @@
-# translation of libxfce4ui.master.untitled.po to Icelandic
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# translation of is.po to Icelandic
+# Copyright (C) 2010 Free Software Foundation
 # This file is distributed under the same license as the PACKAGE package.
-# 
-# Sveinn í Felli <sveinki@nett.is>, 2010.
+#
+# Sveinn í Felli <sveinki@nett.is>, 2010, 2011.
 msgid ""
 msgstr ""
-"Project-Id-Version: libxfce4ui.master.untitled\n"
+"Project-Id-Version: is\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-11-29 05:15+0000\n"
-"PO-Revision-Date: 2010-05-03 12:32+0000\n"
+"PO-Revision-Date: 2011-12-07 07:43+0000\n"
 "Last-Translator: Sveinn í Felli <sveinki@nett.is>\n"
-"Language-Team: Icelandic <rglug@rglug.org>\n"
+"Language-Team: Icelandic <translation-team-is@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -134,7 +134,7 @@ msgstr "Aðgerð:"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:209
 msgid "Command Shortcut"
-msgstr ""
+msgstr "Flýtilykill skipunar"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:210
 msgid "Command:"
@@ -158,7 +158,7 @@ msgstr "Undirtexti"
 
 #: ../glade/libxfce4ui.xml.in.h:2
 msgid "Titled Dialog"
-msgstr ""
+msgstr "Viðmótsgluggi með titli"
 
 #: ../glade/libxfce4ui.xml.in.h:3
 msgid "Xfce 4 Widgets"
@@ -170,15 +170,15 @@ msgstr "Útgáfuupplýsingar"
 
 #: ../xfce4-about/main.c:70
 msgid "Window Manager"
-msgstr ""
+msgstr "Gluggastjóri"
 
 #: ../xfce4-about/main.c:71
 msgid "Handles the placement of windows on the screen."
-msgstr ""
+msgstr "Sér um staðsetningu glugga á skjánum."
 
 #: ../xfce4-about/main.c:74
 msgid "Panel"
-msgstr ""
+msgstr "Verkefnaspjald"
 
 #: ../xfce4-about/main.c:75
 msgid ""
@@ -218,7 +218,7 @@ msgstr ""
 
 #: ../xfce4-about/main.c:94
 msgid "Setting System"
-msgstr ""
+msgstr "Stilling kerfis"
 
 #: ../xfce4-about/main.c:95
 msgid ""
@@ -228,7 +228,7 @@ msgstr ""
 
 #: ../xfce4-about/main.c:99
 msgid "Application Finder"
-msgstr ""
+msgstr "Forritaleit"
 
 #: ../xfce4-about/main.c:100
 msgid ""
@@ -267,11 +267,11 @@ msgstr ""
 
 #: ../xfce4-about/main.c:149
 msgid "Thank you for your interest in Xfce."
-msgstr ""
+msgstr "Takk fyrir að sýna Xfce áhuga."
 
 #: ../xfce4-about/main.c:153
 msgid "The Xfce Development Team"
-msgstr ""
+msgstr "Xfce þróunarteymið"
 
 #: ../xfce4-about/main.c:262
 msgid ""
@@ -309,111 +309,112 @@ msgstr ""
 #: ../xfce4-about/main.c:442
 #, c-format
 msgid "Type '%s --help' for usage information."
-msgstr ""
+msgstr "Skrifaðu '%s --help' til að fá upplýsingar um notkun."
 
 #: ../xfce4-about/main.c:448
 msgid "Unable to initialize GTK+."
-msgstr ""
+msgstr "Tókst ekki að frumstilla GTK+."
 
 #: ../xfce4-about/main.c:457
 msgid "The Xfce development team. All rights reserved."
-msgstr ""
+msgstr "Xfce þróunarteymið. Allur réttur áskilinn."
 
 #: ../xfce4-about/main.c:458
 #, c-format
 msgid "Please report bugs to <%s>."
-msgstr ""
+msgstr "Tilkynntu villur til <%s>."
 
 #. I18N: date/time the translators list was updated
 #: ../xfce4-about/main.c:461
 #, c-format
 msgid "Translators list from %s."
-msgstr ""
+msgstr "Listi yfir þýðendur frá %s."
 
 #: ../xfce4-about/main.c:471
 msgid "Failed to load interface"
-msgstr ""
+msgstr "Tókst ekki að hlaða inn viðmóti"
 
 #. I18N: first %s will be replaced by the version, second by
 #. * the name of the distribution (--with-vendor-info=NAME)
 #: ../xfce4-about/main.c:485
 #, c-format
 msgid "Version %s, distributed by %s"
-msgstr ""
+msgstr "Útgáfa %s, dreift af %s"
 
 #. I18N: %s will be replaced by the Xfce version number
 #: ../xfce4-about/main.c:489
 #, c-format
 msgid "Version %s"
-msgstr ""
+msgstr "Útgáfa %s"
 
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
 #. },
 #: ../xfce4-about/contributors.h:127
 msgid "Core developers"
-msgstr ""
+msgstr "Aðalhönnuðir"
 
 #: ../xfce4-about/contributors.h:130
 msgid "Active contributors"
-msgstr ""
+msgstr "Virkir þáttakendur"
 
 #: ../xfce4-about/contributors.h:133
 msgid "Servers maintained by"
-msgstr ""
+msgstr "Umsjón með kerfum"
 
 #: ../xfce4-about/contributors.h:136
 msgid "Goodies supervision"
-msgstr ""
+msgstr "Umsjón með aukadóti"
 
 #: ../xfce4-about/contributors.h:139
 msgid "Translations supervision"
-msgstr ""
+msgstr "Umsjón með þýðingum"
 
 #: ../xfce4-about/contributors.h:142
 msgid "Translators"
-msgstr ""
+msgstr "Þýðendur"
 
 #: ../xfce4-about/contributors.h:145
 msgid "Previous contributors"
-msgstr ""
+msgstr "Eldri framlög"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:1
 msgid "About Xfce"
-msgstr ""
+msgstr "Um Xfce"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:2
 msgid "Information about the Xfce Desktop Environment"
-msgstr ""
+msgstr "Upplýsingar um Xfce skjáborðsumhverfið"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:1
 msgid "About"
-msgstr ""
+msgstr "Um hugbúnað"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:2
 msgid "About the Xfce Desktop Environment"
-msgstr ""
+msgstr "Um Xfce skjáborðsumhverfið"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:3
 msgid "BSD"
-msgstr ""
+msgstr "BSD"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:4
 msgid "Copyright"
-msgstr ""
+msgstr "Höfundarréttur"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:5
 msgid "Credits"
-msgstr ""
+msgstr "Framlög"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:6
 msgid "GPL"
-msgstr ""
+msgstr "GPL"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:7
 msgid "LGPL"
-msgstr ""
+msgstr "LGPL"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:8
 msgid "License"
-msgstr ""
+msgstr "Notkunarskilmálar"
+
