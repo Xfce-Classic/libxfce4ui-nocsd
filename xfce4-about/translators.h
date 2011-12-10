@@ -24,7 +24,7 @@
 #include <gtk/gtk.h>
 #include <libxfce4util/libxfce4util.h>
 
-#define TRANSLATORS_H_STAMP "2011-12-04 00:00:04"
+#define TRANSLATORS_H_STAMP "2011-12-11 00:00:05"
 #define ATSIGN "@"
 #define DOTSIGN "."
 
@@ -97,6 +97,7 @@ static const TranslatorInfo xfce_translators_ca[] =
 {
   { "Carles Muñoz Gorriz", "carlesmu" ATSIGN "internautas" DOTSIGN "org", TRUE },
   { "Paul Garden", "kiari62" ATSIGN "gmail" DOTSIGN "com", FALSE },
+  { "Jordi Deu-Pons", "jordi" ATSIGN "jordeu" DOTSIGN "net", FALSE },
   { "Jordi Clariana", "jordiclariana" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Roger Pueyo Centelles", "xfce" ATSIGN "rogerpueyo" DOTSIGN "com", FALSE },
   { "Harald Servat", "redcrash" ATSIGN "gmail" DOTSIGN "com", FALSE },
@@ -419,7 +420,6 @@ static const TranslatorInfo xfce_translators_pt_BR[] =
   { "Henrique P" DOTSIGN " Machado", "zehrique" ATSIGN "xfce" DOTSIGN "org", TRUE },
   { "André Luiz Dias de Miranda", "andreldm1989" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Mateus Rodrigues Costa", "charles" DOTSIGN "costar" ATSIGN "gmail" DOTSIGN "com", FALSE },
-  { "Douglas Sales", "doug" DOTSIGN "sales23" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Frederico Schardong", "frede" DOTSIGN "sch" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Job Borges", "jobdiogenes" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Jonas agx", "jonas" DOTSIGN "agx" ATSIGN "gmail" DOTSIGN "com", FALSE },
@@ -553,6 +553,7 @@ static const TranslatorInfo xfce_translators_te[] =
 
 static const TranslatorInfo xfce_translators_tl[] =
 {
+  { "Charles Casuga", "charlescasuga" ATSIGN "gmail" DOTSIGN "com", TRUE },
   { "Manuel Oliva", "oliva" DOTSIGN "manuel" ATSIGN "ymail" DOTSIGN "com", TRUE },
   { NULL, NULL }
 };
@@ -646,7 +647,9 @@ static const TranslatorInfo xfce_translators_zh_CN[] =
 static const TranslatorInfo xfce_translators_zh_TW[] =
 {
   { "Cheng-Chia Tseng", "pswo10680" ATSIGN "gmail" DOTSIGN "com", TRUE },
+  { "ethan42411", "jrpropo10282003" ATSIGN "yahoo" DOTSIGN "com" DOTSIGN "tw", FALSE },
   { "fanasin", "pswo10680" ATSIGN "hotmail" DOTSIGN "com", FALSE },
+  { "Ruei-Yuan Lu", "RueiYuan" DOTSIGN "Lu" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Chia-Han Lee", "gloomysaga" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { NULL, NULL }
 };
