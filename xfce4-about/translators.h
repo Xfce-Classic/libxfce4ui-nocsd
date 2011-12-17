@@ -24,7 +24,7 @@
 #include <gtk/gtk.h>
 #include <libxfce4util/libxfce4util.h>
 
-#define TRANSLATORS_H_STAMP "2011-12-11 00:00:05"
+#define TRANSLATORS_H_STAMP "2011-12-18 00:00:05"
 #define ATSIGN "@"
 #define DOTSIGN "."
 
