@@ -1,3 +1,8 @@
+4.8.1
+=====
+- Fix memory leak (bug #8079).
+- Translation updates: ar, is, ko, ms, nl, ru, sk, te, tl, zh_CN.
+
 4.8.0
 =====
 - Fix memory corruption in the register function (bug #5892).
