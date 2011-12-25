@@ -415,7 +415,6 @@ msgid "GPL"
 msgstr "رخصة جنو العمومية"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:7
-#, fuzzy
 msgid "LGPL"
 msgstr "LGPL"
 
