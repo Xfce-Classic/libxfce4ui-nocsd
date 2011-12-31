@@ -4,7 +4,7 @@
 # libxfce4ui package.
 # Vinh <kureikain@gmail.com>, 2012.
 #
-#, fuzzy
+# , fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Language-Team: Vi (Vietnamese)\n"
 "Language: Vi (Vietnamese)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../libxfce4ui/xfce-dialogs.c:68
@@ -57,7 +57,7 @@ msgstr "Hiện các tùy chọn quản lý session"
 #: ../libxfce4ui/xfce-sm-client.c:1590
 #, c-format
 msgid "Failed to connect to the session manager: %s"
-msgstr "Không kết nối được với trình quản lý session"
+msgstr "Không kết nối được với trình quản lý session: %s"
 
 #: ../libxfce4ui/xfce-sm-client.c:1597
 #, c-format
@@ -71,7 +71,7 @@ msgid ""
 "Working directory \"%s\" does not exist. It won't be used when spawning \"%s"
 "\"."
 msgstr ""
-"Thư mục làm việc "\%s\" không tồn tại. Nó sẽ không thể được dùng khi phân tách \"%s"
+"Thư mục làm việc \"%s\" không tồn tại. Nó sẽ không thể được dùng khi phân tách \"%s"
 "\"."
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:52
