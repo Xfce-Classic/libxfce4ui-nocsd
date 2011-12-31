@@ -149,6 +149,20 @@ if test "x$enable_keyboard_library" = "xyes"; then
 fi
 AM_CONDITIONAL([ENABLE_KEYBOARD_LIBRARY], [test "x$enable_keyboard_library" = "xyes"])
 
+dnl *********************************************
+dnl *** Check for vendor specific information ***
+dnl *********************************************
+AC_MSG_CHECKING([for additional vendor name and/or info])
+AC_ARG_WITH([vendor-info],
+AC_HELP_STRING([--with-vendor-info=NAME], [Specify an additional vendor name, optionally with a file in $prefix/share/xfce4/venderinfo]),
+    [with_vendor_info="$withval"], [with_vendor_info=""])
+if test x"$with_vendor_info" != x""; then
+    AC_DEFINE_UNQUOTED([VENDOR_INFO], ["$with_vendor_info"], [Additional vendor name and/or info])
+    AC_MSG_RESULT([$vendorinfo])
+else
+    AC_MSG_RESULT([not set])
+fi
+
 dnl *********************************************************
 dnl *** Optional support for the Glade Interface Designer ***
 dnl *********************************************************
@@ -313,4 +327,12 @@ echo "* X11 session management:    yes"
 fi
 echo "* Debug support:             $enable_debug"
 echo "* GNU Visibility:            $have_gnuc_visibility"
+if test -n "$with_vendor_info"; then
+echo "* Vendor:                    $with_vendor_info"
+echo
+echo "Note you can put additional info about the vendor"
+echo "in this text file: \"${datarootdir}/xfce4/vendorinfo\""
+else
+echo "* Vendor:                    none"
+fi
 echo

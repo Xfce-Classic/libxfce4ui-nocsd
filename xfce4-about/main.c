@@ -314,26 +314,33 @@ xfce_about_vendor (GtkBuilder *builder)
 
   g_return_if_fail (GTK_IS_BUILDER (builder));
 
-  filename = g_build_filename (DATADIR, VENDOR_INFO, NULL);
+  filename = g_build_filename (DATADIR, "vendorinfo", NULL);
   if (g_file_get_contents (filename, &contents, &length, NULL))
     {
-      if (g_utf8_validate(contents, length, NULL))
+      if (length > 0)
         {
-          object = gtk_builder_get_object (builder, "vendor-buffer");
-          gtk_text_buffer_set_text (GTK_TEXT_BUFFER (object), contents, length);
+          if (g_utf8_validate(contents, length, NULL))
+            {
+              object = gtk_builder_get_object (builder, "vendor-buffer");
+              gtk_text_buffer_set_text (GTK_TEXT_BUFFER (object), contents, length);
 
-          object = gtk_builder_get_object (builder, "vendor-label");
-          gtk_label_set_text (GTK_LABEL (object), VENDOR_INFO);
+              object = gtk_builder_get_object (builder, "vendor-label");
+              gtk_label_set_text (GTK_LABEL (object), VENDOR_INFO);
 
-          object = gtk_builder_get_object (builder, "vendor-tab");
-          gtk_widget_show (GTK_WIDGET (object));
-        }
-      else
-        {
-          g_critical ("\"%s\" is not UTF-8 valid", filename);
+              object = gtk_builder_get_object (builder, "vendor-tab");
+              gtk_widget_show (GTK_WIDGET (object));
+            }
+          else
+            {
+              g_critical ("\"%s\" is not UTF-8 valid", filename);
+            }
         }
 
       g_free (contents);
+    }
+  else
+    {
+      g_message ("No vendor information found in \"%s\".", filename);
     }
 
   g_free (filename);
