@@ -49,53 +49,27 @@
 GdkScreen *
 xfce_gdk_screen_get_active (gint *monitor_return)
 {
-#ifdef GDK_WINDOWING_X11
-  GdkScreen *screen;
-  Window     child;
-  Window     root;
-  GSList    *displays;
-  GSList    *lp;
-  guint      xmask;
-  gint       rootx, rooty;
-  gint       winx, winy;
-  gint       n;
+  GdkDisplay *display;
+  gint        rootx, rooty;
+  GdkScreen  *screen;
 
-  /* determine the list of active displays */
-  displays = gdk_display_manager_list_displays (gdk_display_manager_get ());
-  for (lp = displays; lp != NULL; lp = lp->next)
+  display = gdk_display_get_default ();
+  gdk_display_get_pointer (display, &screen, &rootx, &rooty, NULL);
+
+  if (G_UNLIKELY (screen == NULL))
     {
-      /* check all screens on this display */
-      for (n = 0; n < gdk_display_get_n_screens (lp->data); ++n)
-        {
-          /* check if this screen contains the pointer */
-          screen = gdk_display_get_screen (lp->data, n);
-          if (XQueryPointer (GDK_SCREEN_XDISPLAY (screen),
-                             GDK_DRAWABLE_XID (gdk_screen_get_root_window (screen)),
-                             &root, &child, &rootx, &rooty, &winx, &winy, &xmask))
-            {
-              /* return the monitor number */
-              if (monitor_return != NULL)
-                *monitor_return = gdk_screen_get_monitor_at_point (screen, rootx, rooty);
-
-              /* yap, this screen contains the pointer, hence it's the active screen */
-              goto out;
-            }
-        }
+      screen = gdk_screen_get_default ();
+      if (monitor_return != NULL)
+        *monitor_return = 0;
+    }
+  else
+    {
+      /* return the monitor number */
+      if (monitor_return != NULL)
+        *monitor_return = gdk_screen_get_monitor_at_point (screen, rootx, rooty);
     }
 
-  /* nothing found, fallback to default screen */
-  screen = gdk_screen_get_default ();
-  if (monitor_return != NULL)
-    *monitor_return = 0;
-
-out:
-  g_slist_free (displays);
-
   return screen;
-#else
-  /* dunno what to do on non-X11 window systems */
-  return gdk_screen_get_default ();
-#endif
 }
 
 
