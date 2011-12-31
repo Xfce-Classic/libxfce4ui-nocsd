@@ -215,7 +215,7 @@ msgid ""
 "and fast."
 msgstr ""
 "Một chương trình quản lý tập tin hiện đại cho Linux/Unix, hướn đển dễ sử dụng "
-"và tốc độ:
+"và tốc độ"
 
 #: ../xfce4-about/main.c:89
 msgid "Session Manager"
@@ -227,7 +227,7 @@ msgid ""
 "from Xfce."
 msgstr ""
 "Khôi phục phiên làm việc lúc khởi động và cho phép bạn tắt máy tính "
-"trong Xfce.:
+"trong Xfce."
 
 #: ../xfce4-about/main.c:94
 msgid "Setting System"
