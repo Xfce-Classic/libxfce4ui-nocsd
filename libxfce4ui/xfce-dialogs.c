@@ -25,9 +25,11 @@
 #ifdef HAVE_STRING_H
 #include <string.h>
 #endif
-
 #ifdef HAVE_STDARG_H
 #include <stdarg.h>
+#endif
+#ifdef HAVE_LOCALE_H
+#include <locale.h>
 #endif
 
 #include <gtk/gtk.h>
@@ -38,6 +40,199 @@
 #include <libxfce4ui/xfce-gdk-extensions.h>
 #include <libxfce4ui/libxfce4ui-private.h>
 #include <libxfce4ui/libxfce4ui-alias.h>
+
+#define NOTNULL(str) ((str) != NULL ? (str) : "")
+
+
+
+static void
+xfce_dialog_show_help_auto_toggled (GtkWidget *button)
+{
+  XfceRc   *rc;
+  gboolean  active = FALSE;
+
+  if (button != NULL)
+    active = gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (button));
+
+  rc = xfce_rc_config_open (XFCE_RESOURCE_CONFIG, "xfce4/help.rc", FALSE);
+  if (rc != NULL)
+    {
+      xfce_rc_write_bool_entry (rc, "auto-online", active);
+      xfce_rc_close (rc);
+    }
+}
+
+
+
+static void
+xfce_dialog_show_help_uri (GdkScreen *screen,
+                           GtkWindow *parent,
+                           GString   *uri)
+{
+  GError *error = NULL;
+
+  g_return_if_fail (GDK_IS_SCREEN (screen));
+  g_return_if_fail (parent == NULL || GTK_IS_WINDOW (parent));
+
+  if (!gtk_show_uri (screen, uri->str, gtk_get_current_event_time (), &error))
+    {
+      xfce_dialog_show_error (parent, error,
+          _("Failed to open web browser for online documentation"));
+      g_error_free (error);
+    }
+}
+
+
+
+static void
+xfce_dialog_show_help_response (GtkWidget *dialog,
+                                gint       response_id,
+                                GString   *uri)
+{
+  gtk_widget_hide (dialog);
+
+  if (response_id == GTK_RESPONSE_YES)
+    {
+      xfce_dialog_show_help_uri (gtk_widget_get_screen (dialog),
+                                 gtk_window_get_transient_for (GTK_WINDOW (dialog)),
+                                 uri);
+    }
+  else
+    {
+      /* unset auto */
+      xfce_dialog_show_help_auto_toggled (NULL);
+    }
+
+  g_string_free (uri, TRUE);
+  gtk_widget_destroy (dialog);
+}
+
+
+
+/**
+ * xfce_dialog_show_help:
+ * @parent    : transient parent of the dialog, or %NULL.
+ * @component : name of the component opening the help page or %NULL. If the
+ *              value is %NULL the target will be the main page of the
+ *              documentation website.
+ * @page      : subpage of the @component on the website or %NULL.
+ * @offset    : anchor offset in @page or %NULL.
+ *
+ * Asks the user to visit the online documentation. If confirmed, it will open
+ * the webbrowser and redirect the user to the correct location.
+ *
+ * Appart from the @component, @page and @offset the following information
+ * is also send to the server: user language and the xfce_version_string().
+ *
+ * Since 4.10
+ */
+void
+xfce_dialog_show_help (GtkWindow   *parent,
+                       const gchar *component,
+                       const gchar *page,
+                       const gchar *offset)
+{
+  GtkWidget   *dialog;
+  const gchar *name;
+  gchar       *primary;
+  GString     *uri;
+  gchar       *locale;
+  GtkWidget   *message_box;
+  GtkWidget   *button;
+  XfceRc      *rc;
+  gboolean     auto_online;
+  GdkScreen   *screen;
+
+  g_return_if_fail (parent == NULL || GTK_IS_WINDOW (parent));
+
+  /* get the user's locale without encoding */
+  locale = g_strdup (setlocale (LC_MESSAGES, NULL));
+  if (G_LIKELY (locale != NULL))
+    locale = g_strdelimit (locale, ".", '\0');
+  else
+    locale = g_strdup ("C");
+
+  /* build the redirect uri */
+  uri = g_string_new (MANUAL_WEBSITE);
+  g_string_append_printf (uri, "?version=%s&locale=%s", xfce_version_string (), locale);
+  g_free (locale);
+
+  if (component != NULL)
+    g_string_append_printf (uri, "&component=%s", component);
+  if (page != NULL)
+    g_string_append_printf (uri, "&page=%s", page);
+  if (offset != NULL)
+    g_string_append_printf (uri, "&offset=%s", offset);
+
+  /* check if we should automatically go online */
+  rc = xfce_rc_config_open (XFCE_RESOURCE_CONFIG, "xfce4/help.rc", TRUE);
+  if (rc != NULL)
+    {
+      auto_online = xfce_rc_read_bool_entry (rc, "auto-online", FALSE);
+      xfce_rc_close (rc);
+
+      if (auto_online)
+        {
+          if (parent != NULL)
+            screen = gtk_window_get_screen (GTK_WINDOW (parent));
+          else
+            screen = xfce_gdk_screen_get_active (NULL);
+
+          xfce_dialog_show_help_uri (screen, parent, uri);
+          g_string_free (uri, TRUE);
+
+          return;
+        }
+    }
+
+  /* try to get a translated name of the application */
+  name = g_get_application_name ();
+  if (g_strcmp0 (name, g_get_prgname ()) == 0)
+    name = NULL;
+
+  /* try to get a decent primary text */
+  if (name != NULL)
+    primary = g_strdup_printf (_("Do you want to read the %s manual online?"), name);
+  else
+    primary = g_strdup (_("Do you want to read the manual online?"));
+
+  dialog = xfce_message_dialog_new (parent,
+                                    _("Online Documentation"),
+                                    GTK_STOCK_DIALOG_QUESTION,
+                                    primary,
+                                    _("You will be redirected to the documentation website "
+                                      "where the help pages are maintained and translated."),
+                                    GTK_STOCK_CANCEL, GTK_RESPONSE_NO,
+                                    XFCE_BUTTON_TYPE_MIXED,
+                                        GTK_STOCK_HELP, _("_Read Online"),
+                                        GTK_RESPONSE_YES,
+                                    NULL);
+  g_free (primary);
+
+#if GTK_CHECK_VERSION (2, 22, 0)
+  message_box = gtk_message_dialog_get_message_area (GTK_MESSAGE_DIALOG (dialog));
+#else
+  message_box = gtk_widget_get_parent (GTK_MESSAGE_DIALOG (dialog)->label);
+  g_return_if_fail (GTK_IS_VBOX (message_box));
+#endif
+
+  button = gtk_check_button_new_with_mnemonic (_("_Always go directly to the online documentation"));
+  gtk_box_pack_end (GTK_BOX (message_box), button, FALSE, TRUE, 0);
+  g_signal_connect (G_OBJECT (button), "toggled",
+      G_CALLBACK (xfce_dialog_show_help_auto_toggled), NULL);
+  gtk_widget_show (button);
+
+  /* don't focus the checkbutton */
+  gtk_dialog_set_default_response (GTK_DIALOG (dialog), GTK_RESPONSE_YES);
+  button = gtk_dialog_get_widget_for_response (GTK_DIALOG (dialog), GTK_RESPONSE_YES);
+  gtk_widget_grab_focus (button);
+
+  /* show the dialog without locking the mainloop */
+  gtk_window_set_modal (GTK_WINDOW (dialog), parent != NULL);
+  g_signal_connect (G_OBJECT (dialog), "response",
+      G_CALLBACK (xfce_dialog_show_help_response), uri);
+  gtk_window_present (GTK_WINDOW (dialog));
+}
 
 
 
@@ -283,6 +478,7 @@ xfce_message_dialog_new_valist (GtkWindow   *parent,
 
           /* add a mixed button to the dialog */
           button = xfce_gtk_button_new_mixed (stock_id, label);
+          gtk_widget_set_can_default (button, TRUE);
           gtk_dialog_add_action_widget (GTK_DIALOG (dialog), button, response);
           gtk_widget_show (button);
         }
@@ -311,6 +507,7 @@ xfce_message_dialog_new_valist (GtkWindow   *parent,
           /* create button and add it to the dialog */
           button = gtk_button_new_with_label (label);
           gtk_button_set_image (GTK_BUTTON (button), image);
+          gtk_widget_set_can_default (button, TRUE);
           gtk_dialog_add_action_widget (GTK_DIALOG (dialog), button, response);
           gtk_widget_show (button);
         }

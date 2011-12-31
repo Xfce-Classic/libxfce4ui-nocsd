@@ -38,6 +38,7 @@ xfce_gtk_window_center_on_active_screen
 xfce_message_dialog_new
 xfce_message_dialog_new_valist
 xfce_message_dialog
+xfce_dialog_show_help
 xfce_dialog_show_info
 xfce_dialog_show_warning
 xfce_dialog_show_error

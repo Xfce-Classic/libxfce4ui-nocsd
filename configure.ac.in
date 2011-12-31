@@ -163,6 +163,17 @@ else
     AC_MSG_RESULT([not set])
 fi
 
+dnl *********************************************
+dnl *** Check for vendor specific information ***
+dnl *********************************************
+AC_MSG_CHECKING([for a custom manual website location])
+AC_ARG_WITH([manual-website],
+AC_HELP_STRING([--with-manual-website=URI], [Specify an optional manual website, defaults to http://docs.xfce.org.]),
+    [with_manual_website="$withval"],
+    [with_manual_website="http://docs.xfce.org/help.php"])
+AC_DEFINE_UNQUOTED([MANUAL_WEBSITE], ["$with_manual_website"], [Documentation website])
+AC_MSG_RESULT([$with_manual_website])
+
 dnl *********************************************************
 dnl *** Optional support for the Glade Interface Designer ***
 dnl *********************************************************
@@ -335,4 +346,5 @@ echo "in this text file: \"${datarootdir}/xfce4/vendorinfo\""
 else
 echo "* Vendor:                    none"
 fi
+echo "* Manual website:            $with_manual_website"
 echo

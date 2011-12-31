@@ -31,6 +31,11 @@ G_BEGIN_DECLS
 #define XFCE_BUTTON_TYPE_MIXED  "button-mixed"
 #define XFCE_BUTTON_TYPE_PIXBUF "button-pixbuf"
 
+void       xfce_dialog_show_help          (GtkWindow    *parent,
+                                           const gchar  *application,
+                                           const gchar  *page,
+                                           const gchar  *offset);
+
 void       xfce_dialog_show_info          (GtkWindow    *parent,
                                            const gchar  *secondary_text,
                                            const gchar  *primary_format,
