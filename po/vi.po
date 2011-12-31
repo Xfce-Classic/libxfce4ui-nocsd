@@ -137,15 +137,15 @@ msgstr ""
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:205
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:215
 msgid "Action:"
-msgstr ""
+msgstr "Hành động:"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:209
 msgid "Command Shortcut"
-msgstr ""
+msgstr "Lệnh tắt:"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:210
 msgid "Command:"
-msgstr ""
+msgstr "Lệnh:"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:214
 msgid "Shortcut"
@@ -157,15 +157,15 @@ msgstr ""
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:300
 msgid "Could not grab the keyboard."
-msgstr ""
+msgstr "Không thể bắt tín hiệu bàn phím."
 
 #: ../glade/libxfce4ui.xml.in.h:1
 msgid "Subtitle"
-msgstr ""
+msgstr "Tiêu đề"
 
 #: ../glade/libxfce4ui.xml.in.h:2
 msgid "Titled Dialog"
-msgstr ""
+msgstr "Tiêu đề hộp thoại"
 
 #: ../glade/libxfce4ui.xml.in.h:3
 msgid "Xfce 4 Widgets"
@@ -173,11 +173,11 @@ msgstr ""
 
 #: ../xfce4-about/main.c:52
 msgid "Version information"
-msgstr ""
+msgstr "Thông tin phiên bản"
 
 #: ../xfce4-about/main.c:70
 msgid "Window Manager"
-msgstr ""
+msgstr "Trình quản lý cửa sổ"
 
 #: ../xfce4-about/main.c:71
 msgid "Handles the placement of windows on the screen."
@@ -192,10 +192,12 @@ msgid ""
 "Program launchers, window buttons, applications menu, workspace switcher and "
 "more."
 msgstr ""
+"Trình khởi động chương trình, các nútm, trình đơn ứng dụng, thanh chuyển không gian làm việc "
+"và nhiều hơn thế nữa."
 
 #: ../xfce4-about/main.c:79
 msgid "Desktop Manager"
-msgstr ""
+msgstr "Trình quản lý màn hình nền"
 
 #: ../xfce4-about/main.c:80
 msgid ""
@@ -212,20 +214,24 @@ msgid ""
 "A modern file manager for the Unix/Linux desktop, aiming to be easy-to-use "
 "and fast."
 msgstr ""
+"Một chương trình quản lý tập tin hiện đại cho Linux/Unix, hướn đển dễ sử dụng "
+"và tốc độ:
 
 #: ../xfce4-about/main.c:89
 msgid "Session Manager"
-msgstr ""
+msgstr "Trình quản lý phiên làm việc"
 
 #: ../xfce4-about/main.c:90
 msgid ""
 "Restores your session on startup and allows you to shutdown the computer "
 "from Xfce."
 msgstr ""
+"Khôi phục phiên làm việc lúc khởi động và cho phép bạn tắt máy tính "
+"trong Xfce.:
 
 #: ../xfce4-about/main.c:94
 msgid "Setting System"
-msgstr ""
+msgstr "Thiết lập hệ thống"
 
 #: ../xfce4-about/main.c:95
 msgid ""
@@ -235,7 +241,7 @@ msgstr ""
 
 #: ../xfce4-about/main.c:99
 msgid "Application Finder"
-msgstr ""
+msgstr "Trình tìm kiếm ứng dụng"
 
 #: ../xfce4-about/main.c:100
 msgid ""
