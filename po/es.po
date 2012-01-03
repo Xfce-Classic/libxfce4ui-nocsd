@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-10-30 11:06+0000\n"
+"POT-Creation-Date: 2012-01-03 07:51+0000\n"
 "PO-Revision-Date: 2009-12-18 18:54+0100\n"
 "Last-Translator: Abel Martín Ruiz <abel.martin.ruiz@gmail.com>\n"
 "Language-Team: Spanish/ES <xfce-i18n@xfce.org>\n"
@@ -208,7 +208,9 @@ msgstr "Gestor de archivos"
 msgid ""
 "A modern file manager for the Unix/Linux desktop, aiming to be easy-to-use "
 "and fast."
-msgstr "Un moderno gestor de archivos para el escritorio Unix/Linux, con el objetivo de ser fácil de usar y rápido."
+msgstr ""
+"Un moderno gestor de archivos para el escritorio Unix/Linux, con el objetivo "
+"de ser fácil de usar y rápido."
 
 #: ../xfce4-about/main.c:89
 msgid "Session Manager"
@@ -228,7 +230,9 @@ msgstr "Sistema de configuración"
 msgid ""
 "Configuration system to control various aspects of the desktop like "
 "appearance, display, keyboard and mouse settings."
-msgstr "Sistema de configuración para controlar varios aspectos del escritorio, como las preferencias de apariencia, pantalla, teclado y ratón."
+msgstr ""
+"Sistema de configuración para controlar varios aspectos del escritorio, como "
+"las preferencias de apariencia, pantalla, teclado y ratón."
 
 #: ../xfce4-about/main.c:99
 msgid "Application Finder"
@@ -238,7 +242,9 @@ msgstr "Buscador de aplicaciones"
 msgid ""
 "Shows the applications installed on your system in categories, so you can "
 "quickly find and launch them."
-msgstr "Muestra las aplicaciones instaladas en su sistema en categorías, para que pueda encontrarlas y abrirlas rápidamente."
+msgstr ""
+"Muestra las aplicaciones instaladas en su sistema en categorías, para que "
+"pueda encontrarlas y abrirlas rápidamente."
 
 #: ../xfce4-about/main.c:104
 msgid "Settings Daemon"
@@ -285,7 +291,9 @@ msgstr ""
 
 #: ../xfce4-about/main.c:266
 msgid "Thanks to all who helped making this software available!"
-msgstr "Agradecemos a todos aquellos que ayudaron a que este software esté disponible."
+msgstr ""
+"Agradecemos a todos aquellos que ayudaron a que este software esté "
+"disponible."
 
 #: ../xfce4-about/main.c:283
 msgid ""
@@ -310,43 +318,43 @@ msgid ""
 "version."
 msgstr ""
 
-#: ../xfce4-about/main.c:442
+#: ../xfce4-about/main.c:449
 #, c-format
 msgid "Type '%s --help' for usage information."
 msgstr "Escriba «%s --help» para información de uso."
 
-#: ../xfce4-about/main.c:448
+#: ../xfce4-about/main.c:455
 msgid "Unable to initialize GTK+."
 msgstr "No se pudo inicializar GTK+."
 
-#: ../xfce4-about/main.c:457
+#: ../xfce4-about/main.c:464
 msgid "The Xfce development team. All rights reserved."
 msgstr "El equipo de desarrollo de Xfce. Todos los derechos reservados."
 
-#: ../xfce4-about/main.c:458
+#: ../xfce4-about/main.c:465
 #, c-format
 msgid "Please report bugs to <%s>."
-msgstr ""
+msgstr "Por favor reporte errores a <%s>."
 
 #. I18N: date/time the translators list was updated
-#: ../xfce4-about/main.c:461
+#: ../xfce4-about/main.c:468
 #, c-format
 msgid "Translators list from %s."
-msgstr ""
+msgstr "Lista de traductores de %s."
 
-#: ../xfce4-about/main.c:471
+#: ../xfce4-about/main.c:478
 msgid "Failed to load interface"
 msgstr "No se pudo cargar la interfaz"
 
 #. I18N: first %s will be replaced by the version, second by
 #. * the name of the distribution (--with-vendor-info=NAME)
-#: ../xfce4-about/main.c:485
+#: ../xfce4-about/main.c:492
 #, c-format
 msgid "Version %s, distributed by %s"
-msgstr ""
+msgstr "Version %s, distribuida por %s"
 
 #. I18N: %s will be replaced by the Xfce version number
-#: ../xfce4-about/main.c:489
+#: ../xfce4-about/main.c:496
 #, c-format
 msgid "Version %s"
 msgstr "Versión %s"
@@ -368,7 +376,7 @@ msgstr "Servidores mantenidos por"
 
 #: ../xfce4-about/contributors.h:136
 msgid "Goodies supervision"
-msgstr ""
+msgstr "Supervision de Goodies"
 
 #: ../xfce4-about/contributors.h:139
 msgid "Translations supervision"
