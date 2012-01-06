@@ -1,5 +1,3 @@
-# $Id$
-
 SUBDIRS = \
 	libxfce4ui \
 	libxfce4kbd-private \
@@ -13,6 +11,9 @@ AUTOMAKE_OPTIONS = \
 	1.9 \
 	dist-bzip2 \
 	no-dist-gzip
+
+distuninstallcheck_listfiles = \ 
+	find . -type f -print | grep -v ./share/icons/hicolor/icon-theme.cache
 
 distclean-local:
 	rm -rf *.cache *~
