@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-01-01 13:09+0000\n"
-"PO-Revision-Date: 2012-01-02 00:54+0100\n"
+"POT-Creation-Date: 2012-01-08 21:18+0000\n"
+"PO-Revision-Date: 2012-01-09 00:39+0100\n"
 "Last-Translator: Michal Várady <miko.vaji@gmail.com>\n"
 "Language-Team: Czech\n"
 "Language: \n"
@@ -19,19 +19,48 @@ msgstr ""
 "X-Poedit-Country: CZECH REPUBLIC\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: ../libxfce4ui/xfce-dialogs.c:68
+#: ../libxfce4ui/xfce-dialogs.c:80
+msgid "Failed to open web browser for online documentation"
+msgstr "Otevření online dokumentace ve webovém prohlížeči se nezdařilo"
+
+#: ../libxfce4ui/xfce-dialogs.c:195
+#, c-format
+msgid "Do you want to read the %s manual online?"
+msgstr "Chcete si přečíst příručku pro %s online?"
+
+#: ../libxfce4ui/xfce-dialogs.c:197
+msgid "Do you want to read the manual online?"
+msgstr "Chcete si přečíst příručku online?"
+
+#: ../libxfce4ui/xfce-dialogs.c:200
+msgid "Online Documentation"
+msgstr "Dokumentace online"
+
+#: ../libxfce4ui/xfce-dialogs.c:203
+msgid "You will be redirected to the documentation website where the help pages are maintained and translated."
+msgstr "Budete přesměrování na webovou stránku dokumentace, kde se stránky nápovědy udržují a překládají."
+
+#: ../libxfce4ui/xfce-dialogs.c:207
+msgid "_Read Online"
+msgstr "Číst _online"
+
+#: ../libxfce4ui/xfce-dialogs.c:219
+msgid "_Always go directly to the online documentation"
+msgstr "_Vždy automaticky přejít na dokumentaci online"
+
+#: ../libxfce4ui/xfce-dialogs.c:263
 msgid "Information"
 msgstr "Informace"
 
-#: ../libxfce4ui/xfce-dialogs.c:101
+#: ../libxfce4ui/xfce-dialogs.c:296
 msgid "Warning"
 msgstr "Varování"
 
-#: ../libxfce4ui/xfce-dialogs.c:135
+#: ../libxfce4ui/xfce-dialogs.c:330
 msgid "Error"
 msgstr "Chyba"
 
-#: ../libxfce4ui/xfce-dialogs.c:186
+#: ../libxfce4ui/xfce-dialogs.c:381
 msgid "Question"
 msgstr "Dotaz"
 
@@ -265,43 +294,43 @@ msgstr "Balíčky libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs a exo jsou d
 msgid "The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfce-utils, xfconf, xfdesktop and xfwm4 are distributed under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version."
 msgstr "Balíčky thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfce-utils, xfconf, xfdesktop a xfwm4 jsou distribudovány pod podmínkami licence GNU General Public License publikované organizací Free Software Foundation; ve verzi 2 této licence, nebo (dle vašeho výběru) pozdější."
 
-#: ../xfce4-about/main.c:449
+#: ../xfce4-about/main.c:442
 #, c-format
 msgid "Type '%s --help' for usage information."
 msgstr "Informace o použití získáte příkazem '%s --help'"
 
-#: ../xfce4-about/main.c:455
+#: ../xfce4-about/main.c:448
 msgid "Unable to initialize GTK+."
 msgstr "Nelze inicializovat knihovnu GTK+."
 
-#: ../xfce4-about/main.c:464
+#: ../xfce4-about/main.c:457
 msgid "The Xfce development team. All rights reserved."
 msgstr "Tým vývojářů prostředí Xfce. Všechna práva vyhrazena."
 
-#: ../xfce4-about/main.c:465
+#: ../xfce4-about/main.c:458
 #, c-format
 msgid "Please report bugs to <%s>."
 msgstr "Prosíme o nahlášení chyb na adresu <%s>."
 
 #. I18N: date/time the translators list was updated
-#: ../xfce4-about/main.c:468
+#: ../xfce4-about/main.c:461
 #, c-format
 msgid "Translators list from %s."
 msgstr "Seznam překladatelů ze dne %s."
 
-#: ../xfce4-about/main.c:478
+#: ../xfce4-about/main.c:471
 msgid "Failed to load interface"
 msgstr "Načtení rozhraní se nezdařilo."
 
 #. I18N: first %s will be replaced by the version, second by
 #. * the name of the distribution (--with-vendor-info=NAME)
-#: ../xfce4-about/main.c:492
+#: ../xfce4-about/main.c:485
 #, c-format
 msgid "Version %s, distributed by %s"
 msgstr "Verze %s, distributor: %s"
 
 #. I18N: %s will be replaced by the Xfce version number
-#: ../xfce4-about/main.c:496
+#: ../xfce4-about/main.c:489
 #, c-format
 msgid "Version %s"
 msgstr "Verze %s"
