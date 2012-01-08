@@ -48,7 +48,7 @@ msgstr "_læs på nettet"
 
 #: ../libxfce4ui/xfce-dialogs.c:219
 msgid "_Always go directly to the online documentation"
-msgstr ""
+msgstr "_Gå altid direkte til dokumentationen på nettet"
 
 #: ../libxfce4ui/xfce-dialogs.c:263
 msgid "Information"
@@ -324,7 +324,7 @@ msgstr "Udviklingsholdet bag Xfce"
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
 "on <http://bugzilla.xfce.org> ."
-msgstr ""
+msgstr "Hvis du har kendskab til nogle der mangler på denne liste, bedes du rapportere en fejl på <http://bugzilla.xfce.org> ."
 
 #: ../xfce4-about/main.c:266
 msgid "Thanks to all who helped making this software available!"
