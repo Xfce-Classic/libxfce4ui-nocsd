@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libxcfe4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-12-25 16:27+0000\n"
+"POT-Creation-Date: 2012-01-08 15:33+0000\n"
 "PO-Revision-Date: 2011-08-24 02:20-0000\n"
 "Last-Translator: كريم أولاد الشلحة <herr.linux88@gmail.com>\n"
 "Language-Team: Arabic Xfce Translation Team <herr.linux88@gmail.com>\n"
@@ -18,19 +18,50 @@ msgstr ""
 "X-Poedit-Language: Arabic\n"
 "X-Poedit-Country: MOROCCO\n"
 
-#: ../libxfce4ui/xfce-dialogs.c:68
+#: ../libxfce4ui/xfce-dialogs.c:80
+msgid "Failed to open web browser for online documentation"
+msgstr ""
+
+#: ../libxfce4ui/xfce-dialogs.c:195
+#, c-format
+msgid "Do you want to read the %s manual online?"
+msgstr ""
+
+#: ../libxfce4ui/xfce-dialogs.c:197
+msgid "Do you want to read the manual online?"
+msgstr ""
+
+#: ../libxfce4ui/xfce-dialogs.c:200
+msgid "Online Documentation"
+msgstr ""
+
+#: ../libxfce4ui/xfce-dialogs.c:203
+msgid ""
+"You will be redirected to the documentation website where the help pages are "
+"maintained and translated."
+msgstr ""
+
+#: ../libxfce4ui/xfce-dialogs.c:207
+msgid "_Read Online"
+msgstr ""
+
+#: ../libxfce4ui/xfce-dialogs.c:219
+msgid "_Always go directly to the online documentation"
+msgstr ""
+
+#: ../libxfce4ui/xfce-dialogs.c:263
 msgid "Information"
 msgstr "معلومات"
 
-#: ../libxfce4ui/xfce-dialogs.c:101
+#: ../libxfce4ui/xfce-dialogs.c:296
 msgid "Warning"
 msgstr "تحذير"
 
-#: ../libxfce4ui/xfce-dialogs.c:135
+#: ../libxfce4ui/xfce-dialogs.c:330
 msgid "Error"
 msgstr "خطأ"
 
-#: ../libxfce4ui/xfce-dialogs.c:186
+#: ../libxfce4ui/xfce-dialogs.c:381
 msgid "Question"
 msgstr "سؤال"
 
@@ -231,7 +262,7 @@ msgstr ""
 
 #: ../xfce4-about/main.c:99
 msgid "Application Finder"
-msgstr ""
+msgstr "مكتشف التطبيقات"
 
 #: ../xfce4-about/main.c:100
 msgid ""
@@ -244,9 +275,8 @@ msgid "Settings Daemon"
 msgstr "إعدادات خفية"
 
 #: ../xfce4-about/main.c:105
-#, fuzzy
 msgid "D-Bus-based configuration storage system."
-msgstr "D-Bus-based configuration storage system."
+msgstr ""
 
 #: ../xfce4-about/main.c:112
 msgid ""
@@ -267,7 +297,7 @@ msgid ""
 "for applications and LGPL or BSDL for libraries. Look at the documentation, "
 "the source code or the Xfce website (http://www.xfce.org) for more "
 "information."
-msgstr ""
+msgstr "متويات الإكسفسي تحت رخص مجانية أو حرة; رخصة جنو العمومية أو BSDL لتطبيقات و LGPL أو BSDL للمكتبات. أنظر في الثوتيق, شيفرة المصدر أو موقع إكسفسي (http://www.xfce.org) للمزيد من المعلومات."
 
 #: ../xfce4-about/main.c:149
 msgid "Thank you for your interest in Xfce."
@@ -281,7 +311,7 @@ msgstr "فريق تطوير إكسفسي."
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
 "on <http://bugzilla.xfce.org> ."
-msgstr ""
+msgstr "إذا كنت تعرف أي شيء مفقود في القائمة; لا تتردد و قم بالإبلاغ عنه في <http://bugzilla.xfce.org> ."
 
 #: ../xfce4-about/main.c:266
 msgid "Thanks to all who helped making this software available!"
@@ -291,7 +321,7 @@ msgstr "شكرا لكل من ساهم في جعل هذا البرنامج متو
 msgid ""
 "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
-msgstr ""
+msgstr "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). حقوق النشر وتاليف مختلف مكونات محفوظة لمؤلفيها."
 
 #: ../xfce4-about/main.c:288
 msgid ""
@@ -299,7 +329,7 @@ msgid ""
 "distributed under the terms of the GNU Library General Public License as "
 "published by the Free Software Foundation; either version 2 of the License, "
 "or (at your option) any later version."
-msgstr ""
+msgstr "حزم libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs و exo تم توزيعها تحت رخصة جنو العمومية للمكتبات كما نشرت من قبل منظمة البرمجيات الحرة; إما الإصدار 2 للرخصة, أو (حسب إختياركم) أي إصدار أحدث."
 
 #: ../xfce4-about/main.c:295
 msgid ""
@@ -308,20 +338,20 @@ msgid ""
 "terms of the GNU General Public License as published by the Free Software "
 "Foundation; either version 2 of the License, or (at your option) any later "
 "version."
-msgstr ""
+msgstr "الحزم تونار, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfce-utils, xfconf, xfdesktop and xfwm4 تم توزيعها تحت رخصة جنو العمومية كما نشرت من قبل منظمة البرمجيات الحرة; إما الإصدار 2 من الرخصة, او (حسب إختياركم) أي إصدار أحدث."
 
 #: ../xfce4-about/main.c:442
 #, c-format
 msgid "Type '%s --help' for usage information."
-msgstr ""
+msgstr "أكتب '%s --help' لمعلومات الإستعمال."
 
 #: ../xfce4-about/main.c:448
 msgid "Unable to initialize GTK+."
-msgstr ""
+msgstr "غير قادر على بدء جتك+."
 
 #: ../xfce4-about/main.c:457
 msgid "The Xfce development team. All rights reserved."
-msgstr ""
+msgstr "فريق تطوير إكسفسي. جميع الحقوق محفوظة."
 
 #: ../xfce4-about/main.c:458
 #, c-format
@@ -356,23 +386,23 @@ msgstr "إصدار %s"
 #. },
 #: ../xfce4-about/contributors.h:127
 msgid "Core developers"
-msgstr ""
+msgstr "مطورو اللب"
 
 #: ../xfce4-about/contributors.h:130
 msgid "Active contributors"
-msgstr ""
+msgstr "المساهمون النشطون"
 
 #: ../xfce4-about/contributors.h:133
 msgid "Servers maintained by"
-msgstr ""
+msgstr "صيانة الخوادم من طرف"
 
 #: ../xfce4-about/contributors.h:136
 msgid "Goodies supervision"
-msgstr ""
+msgstr "إشراف على الأشياء الجيدة"
 
 #: ../xfce4-about/contributors.h:139
 msgid "Translations supervision"
-msgstr ""
+msgstr "إشراف على الترجمات"
 
 #: ../xfce4-about/contributors.h:142
 msgid "Translators"
