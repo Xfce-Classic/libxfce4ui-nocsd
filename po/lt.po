@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-01-09 08:48+0000\n"
-"PO-Revision-Date: 2012-01-09 13:18+0200\n"
+"PO-Revision-Date: 2012-01-09 14:55+0200\n"
 "Last-Translator: Algimantas Margevičius <margevicius.algimantas@gmail.com>\n"
 "Language-Team: Lietuvių <>\n"
 "Language: \n"
@@ -30,7 +30,7 @@ msgstr "Ar norite skaityti %s naudotojo vadovą internete?"
 
 #: ../libxfce4ui/xfce-dialogs.c:197
 msgid "Do you want to read the manual online?"
-msgstr "Ar norite skaityti %s naudotojo vadovą internete?"
+msgstr "Ar norite skaityti naudotojo vadovą internete?"
 
 #: ../libxfce4ui/xfce-dialogs.c:200
 msgid "Online Documentation"
