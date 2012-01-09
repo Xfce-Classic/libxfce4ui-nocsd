@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libxcfe4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-01-08 21:18+0000\n"
+"POT-Creation-Date: 2012-01-09 20:18+0000\n"
 "PO-Revision-Date: 2011-08-24 02:20-0000\n"
 "Last-Translator: كريم أولاد الشلحة <herr.linux88@gmail.com>\n"
 "Language-Team: Arabic Xfce Translation Team <herr.linux88@gmail.com>\n"
@@ -39,7 +39,8 @@ msgstr "وثائق من النت"
 msgid ""
 "You will be redirected to the documentation website where the help pages are "
 "maintained and translated."
-msgstr "سيتم توجيهك إلى موقع الوثائق حيث يتم الحفاظ على صفحات المساعدة وترجمتها."
+msgstr ""
+"سيتم توجيهك إلى موقع الوثائق حيث يتم الحفاظ على صفحات المساعدة وترجمتها."
 
 #: ../libxfce4ui/xfce-dialogs.c:207
 msgid "_Read Online"
@@ -71,7 +72,7 @@ msgstr "حدد رقم معرّف إدارة الجلسة"
 
 #: ../libxfce4ui/xfce-sm-client.c:1402
 msgid "ID"
-msgstr "معرّف"
+msgstr "معرف"
 
 #: ../libxfce4ui/xfce-sm-client.c:1403
 msgid "Disable session management"
@@ -196,7 +197,7 @@ msgstr "حوار معنون"
 
 #: ../glade/libxfce4ui.xml.in.h:3
 msgid "Xfce 4 Widgets"
-msgstr "قطع إكسفس 4"
+msgstr "قطع إكسفسي 4"
 
 #: ../xfce4-about/main.c:52
 msgid "Version information"
@@ -228,7 +229,9 @@ msgstr "مدير سطح المكتب"
 msgid ""
 "Sets the background color or image with optional application menu or icons "
 "for minimized applications or launchers, devices and folders."
-msgstr "حدد لون الخلفية او صورة مع قائمة تطبيقات إختيارية او أيقونات لتطبيقات و مطلقات المصغرة, أخهزة ومجلدات."
+msgstr ""
+"حدد لون الخلفية او صورة مع قائمة تطبيقات إختيارية او أيقونات لتطبيقات و "
+"مطلقات المصغرة, أخهزة ومجلدات."
 
 #: ../xfce4-about/main.c:84
 msgid "File Manager "
@@ -238,7 +241,8 @@ msgstr "مدير الملفات"
 msgid ""
 "A modern file manager for the Unix/Linux desktop, aiming to be easy-to-use "
 "and fast."
-msgstr "مدير ملفات حديث لـسطج مكتب  إينكس/لينكس, يهدف ليكون سهل الإستعمال وسريع."
+msgstr ""
+"مدير ملفات حديث لـسطج مكتب  إينكس/لينكس, يهدف ليكون سهل الإستعمال وسريع."
 
 #: ../xfce4-about/main.c:89
 msgid "Session Manager"
@@ -258,7 +262,9 @@ msgstr "إعدادات النظام"
 msgid ""
 "Configuration system to control various aspects of the desktop like "
 "appearance, display, keyboard and mouse settings."
-msgstr "تكوين النظام للسيطرة على جوانب مختلفة من سطح المكتب مثل إعدادات المظهر ، والعرض ، لوحة المفاتيح والفأرة."
+msgstr ""
+"تكوين النظام للسيطرة على جوانب مختلفة من سطح المكتب مثل إعدادات المظهر ، "
+"والعرض ، لوحة المفاتيح والفأرة."
 
 #: ../xfce4-about/main.c:99
 msgid "Application Finder"
@@ -282,14 +288,18 @@ msgstr "D-Bus-based إعداد نظام التخزين."
 msgid ""
 "Xfce is a collection of programs that together provide a full-featured "
 "desktop environment. The following programs are part of the Xfce core:"
-msgstr "إكسفسي هو مجموعة من البرامج التي توفر معا كامل مميزات بيئة سطح المكتب. البرامج التالية هي جزء من لب الغكسفسي:"
+msgstr ""
+"إكسفسي هو مجموعة من البرامج التي توفر معا كامل مميزات بيئة سطح المكتب. "
+"البرامج التالية هي جزء من لب الغكسفسي:"
 
 #: ../xfce4-about/main.c:136
 msgid ""
 "Xfce is also a development platform providing several libraries, that help "
 "programmers create applications that fit in well with the desktop "
 "environment."
-msgstr "إكسفسي هي أيضا توفير منصة تطوير العديد من المكتبات، التي تساعد المبرمجين على إنشاء التطبيقات التي تتناسب بشكل جيد مع بيئة سطح المكتب."
+msgstr ""
+"إكسفسي هي أيضا توفير منصة تطوير العديد من المكتبات، التي تساعد المبرمجين على "
+"إنشاء التطبيقات التي تتناسب بشكل جيد مع بيئة سطح المكتب."
 
 #: ../xfce4-about/main.c:142
 msgid ""
@@ -460,7 +470,7 @@ msgstr "رخصة جنو العمومية"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:7
 msgid "LGPL"
-msgstr "LGPL"
+msgstr "رخصة جنو العمومية للمكتبات"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:8
 msgid "License"
