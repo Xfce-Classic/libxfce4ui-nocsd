@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-11-02 17:06+0000\n"
+"POT-Creation-Date: 2012-01-10 19:18+0000\n"
 "PO-Revision-Date: 2008-06-30 17:35+0300\n"
 "Last-Translator: Dmitry Nikitin <luckas_fb@mail.ru>\n"
 "Language-Team: Ukrainian <xfce4-dev@xfce.org>\n"
@@ -17,19 +17,50 @@ msgstr ""
 "Language: uk\n"
 "X-Generator: KBabel 1.11.4\n"
 
-#: ../libxfce4ui/xfce-dialogs.c:68
+#: ../libxfce4ui/xfce-dialogs.c:80
+msgid "Failed to open web browser for online documentation"
+msgstr "Не можу відкрити переглядач для документації онлайн"
+
+#: ../libxfce4ui/xfce-dialogs.c:195
+#, c-format
+msgid "Do you want to read the %s manual online?"
+msgstr "Ви бажаєте переглянути документацію по %s онлайн?"
+
+#: ../libxfce4ui/xfce-dialogs.c:197
+msgid "Do you want to read the manual online?"
+msgstr "Ви бажаєте переглянути документацію онлайн?"
+
+#: ../libxfce4ui/xfce-dialogs.c:200
+msgid "Online Documentation"
+msgstr "Документація онлайн"
+
+#: ../libxfce4ui/xfce-dialogs.c:203
+msgid ""
+"You will be redirected to the documentation website where the help pages are "
+"maintained and translated."
+msgstr "Вас буде скеровано до веб-сторінки з документацією, що містить допомогу і її переклади."
+
+#: ../libxfce4ui/xfce-dialogs.c:207
+msgid "_Read Online"
+msgstr "_Переглянути онлайн"
+
+#: ../libxfce4ui/xfce-dialogs.c:219
+msgid "_Always go directly to the online documentation"
+msgstr "_Завжди переходити безпосередньо до документації онлайн"
+
+#: ../libxfce4ui/xfce-dialogs.c:263
 msgid "Information"
 msgstr "Інформація"
 
-#: ../libxfce4ui/xfce-dialogs.c:101
+#: ../libxfce4ui/xfce-dialogs.c:296
 msgid "Warning"
 msgstr "Попередження"
 
-#: ../libxfce4ui/xfce-dialogs.c:135
+#: ../libxfce4ui/xfce-dialogs.c:330
 msgid "Error"
 msgstr "Помилка"
 
-#: ../libxfce4ui/xfce-dialogs.c:186
+#: ../libxfce4ui/xfce-dialogs.c:381
 msgid "Question"
 msgstr "Запитання"
 
