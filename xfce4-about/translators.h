@@ -24,7 +24,7 @@
 #include <gtk/gtk.h>
 #include <libxfce4util/libxfce4util.h>
 
-#define TRANSLATORS_H_STAMP "2012-01-15 00:00:04"
+#define TRANSLATORS_H_STAMP "2012-01-22 00:21:06"
 #define ATSIGN "@"
 #define DOTSIGN "."
 
@@ -236,6 +236,7 @@ static const TranslatorInfo xfce_translators_fr[] =
   { "Xavier Devlamynck", "magicrhesus" ATSIGN "ouranos" DOTSIGN "be", TRUE },
   { "Mike Massonnet", "mmassonnet" ATSIGN "gmail" DOTSIGN "com", TRUE },
   { "Durand-Favreau Arnaud", "biginoz" ATSIGN "free" DOTSIGN "fr", FALSE },
+  { "Benoit THIBAUD", "frombenny" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Mario Gervais", "gervais" DOTSIGN "mario" ATSIGN "ymail" DOTSIGN "com", FALSE },
   { "Jérôme Guelfucci", "jeromeg" ATSIGN "xfce" DOTSIGN "org", FALSE },
   { "Jean-Philippe Fleury", "contact" ATSIGN "jpfleury" DOTSIGN "net", FALSE },
@@ -601,7 +602,6 @@ static const TranslatorInfo xfce_translators_tr[] =
   { "Ozan Türkyılmaz", "ozan" DOTSIGN "turkyilmaz" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Özgür Kuru", "ozgur" ATSIGN "ozgurkuru" DOTSIGN "net", FALSE },
   { "Murat PINAR", "wargasm" ATSIGN "archlinux" DOTSIGN "us", FALSE },
-  { "Samed Beyribey", "beyribey" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Senol Korkmaz", "mail" ATSIGN "senolkorkmaz" DOTSIGN "info", FALSE },
   { "Server Acim", "serveracim" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "skocadogan", "skocadogan" ATSIGN "gmail" DOTSIGN "com", FALSE },
