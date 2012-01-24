@@ -18,7 +18,7 @@ msgstr ""
 
 #: ../libxfce4ui/xfce-dialogs.c:80
 msgid "Failed to open web browser for online documentation"
-msgstr ""
+msgstr "Falló al abrir el navegador web para la documentación online"
 
 #: ../libxfce4ui/xfce-dialogs.c:195
 #, c-format
@@ -37,7 +37,7 @@ msgstr "Documentación Online"
 msgid ""
 "You will be redirected to the documentation website where the help pages are "
 "maintained and translated."
-msgstr ""
+msgstr "Será redireccionado al sitio web de la documentación donde las páginas de ayuda son mantenidas y traducidas."
 
 #: ../libxfce4ui/xfce-dialogs.c:207
 msgid "_Read Online"
@@ -216,10 +216,11 @@ msgid "Panel"
 msgstr "Panel"
 
 #: ../xfce4-about/main.c:75
+#, fuzzy
 msgid ""
 "Program launchers, window buttons, applications menu, workspace switcher and "
 "more."
-msgstr ""
+msgstr "Lanzadores de programas, botones de ventanas, menu de aplicaciones, cambiador de "
 
 #: ../xfce4-about/main.c:79
 msgid "Desktop Manager"
