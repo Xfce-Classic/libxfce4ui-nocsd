@@ -24,7 +24,7 @@
 #include <gtk/gtk.h>
 #include <libxfce4util/libxfce4util.h>
 
-#define TRANSLATORS_H_STAMP "2012-01-22 00:21:06"
+#define TRANSLATORS_H_STAMP "2012-01-29 00:21:07"
 #define ATSIGN "@"
 #define DOTSIGN "."
 
@@ -141,6 +141,7 @@ static const TranslatorInfo xfce_translators_de[] =
   { "Thomas Schütz", "xfce" ATSIGN "thschuetz" DOTSIGN "de", FALSE },
   { "Niklas Reinmuth", "Niklas" DOTSIGN "Reinmuth" ATSIGN "googlemail" DOTSIGN "com", FALSE },
   { "Paul Seyfert", "pseyfert" ATSIGN "mathphys" DOTSIGN "fsk" DOTSIGN "uni-heidelberg" DOTSIGN "de", FALSE },
+  { "Roland Kübert", "roland" ATSIGN "upic" DOTSIGN "de", FALSE },
   { "Knuth Gurkasch", "knuth" ATSIGN "sinn3r" DOTSIGN "org", FALSE },
   { "Fabian Nowak", "timystery" ATSIGN "arcor" DOTSIGN "de", FALSE },
   { "Detlef Riekenberg", "wine" DOTSIGN "dev" ATSIGN "web" DOTSIGN "de", FALSE },
