@@ -214,7 +214,6 @@ msgid "Handles the placement of windows on the screen."
 msgstr "Menangani penempatan jendela di layar."
 
 #: ../xfce4-about/main.c:74
-#, fuzzy
 msgid "Panel"
 msgstr "Panel"
 
