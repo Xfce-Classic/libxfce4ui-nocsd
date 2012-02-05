@@ -339,6 +339,7 @@ _xfce_heading_make_pixbuf (XfceHeading *heading)
   GtkIconTheme *icon_theme;
   GdkPixbuf    *pixbuf = NULL;
   GdkScreen    *screen;
+  GdkPixbuf    *scaled;
 
   if (G_UNLIKELY (heading->icon != NULL))
     {
@@ -355,6 +356,27 @@ _xfce_heading_make_pixbuf (XfceHeading *heading)
       pixbuf = gtk_icon_theme_load_icon (icon_theme, heading->icon_name,
                                          XFCE_HEADING_ICON_SIZE,
                                          GTK_ICON_LOOKUP_USE_BUILTIN, NULL);
+
+      if (pixbuf != NULL
+          && (gdk_pixbuf_get_height (pixbuf) > XFCE_HEADING_ICON_SIZE
+              || gdk_pixbuf_get_width (pixbuf) > XFCE_HEADING_ICON_SIZE))
+        {
+          /* this doesn't happen often, so be stupid
+           * and assume icons are always squared */
+          scaled = gdk_pixbuf_scale_simple (pixbuf,
+                                            XFCE_HEADING_ICON_SIZE,
+                                            XFCE_HEADING_ICON_SIZE,
+                                            GDK_INTERP_BILINEAR);
+          g_object_unref (pixbuf);
+          pixbuf = scaled;
+        }
+
+      /* cache the icon, this does not take theme changes in account,
+       * but because of the only use in the titled dialog, this works
+       * fine, since the window properties are emitted on icon changes */
+      if (heading->icon == NULL
+          && pixbuf != NULL)
+        heading->icon = g_object_ref (pixbuf);
     }
 
   return pixbuf;
@@ -385,12 +407,27 @@ _xfce_heading_set_icon (XfceHeading *heading,
       if (G_LIKELY (heading->icon != NULL))
         g_object_unref (G_OBJECT (heading->icon));
 
-      /* activate the new icon */
-      heading->icon = icon;
-
-      /* connect to the new icon */
-      if (G_LIKELY (icon != NULL))
-        g_object_ref (G_OBJECT (icon));
+      if (icon != NULL)
+        {
+          if (gdk_pixbuf_get_height (icon) > XFCE_HEADING_ICON_SIZE
+              || gdk_pixbuf_get_width (icon) > XFCE_HEADING_ICON_SIZE)
+            {
+              /* this doesn't happen often, so be stupid
+               * and assume icons are always squared */
+              heading->icon = gdk_pixbuf_scale_simple (icon,
+                                                       XFCE_HEADING_ICON_SIZE,
+                                                       XFCE_HEADING_ICON_SIZE,
+                                                       GDK_INTERP_BILINEAR);
+            }
+          else
+            {
+              heading->icon = g_object_ref (icon);
+            }
+        }
+      else
+        {
+          heading->icon = NULL;
+        }
 
       gtk_widget_queue_resize (GTK_WIDGET (heading));
     }
