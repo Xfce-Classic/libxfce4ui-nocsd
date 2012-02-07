@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-01-08 21:18+0000\n"
+"POT-Creation-Date: 2012-01-30 04:57+0000\n"
 "PO-Revision-Date: 2010-04-06 13:14+0800\n"
 "Last-Translator: Chipong Luo <chipong_l@yahoo.com>\n"
 "Language-Team: Chinese (Simplified) <xfce-i18n@xfce.org>\n"
@@ -40,8 +40,7 @@ msgstr "在线文档"
 msgid ""
 "You will be redirected to the documentation website where the help pages are "
 "maintained and translated."
-msgstr ""
-"会将您重定向至帮助页面维护和翻译的文档网站。"
+msgstr "会将您重定向至帮助页面维护和翻译的文档网站。"
 
 #: ../libxfce4ui/xfce-dialogs.c:207
 msgid "_Read Online"
@@ -95,8 +94,7 @@ msgstr "无法与会话管理器连接：%s"
 #: ../libxfce4ui/xfce-sm-client.c:1597
 #, c-format
 msgid "Session manager did not return a valid client id"
-msgstr ""
-"会话管理器未返回一个有效的客户端 ID"
+msgstr "会话管理器未返回一个有效的客户端 ID"
 
 #. print warning for user
 #: ../libxfce4ui/xfce-spawn.c:406
@@ -105,16 +103,16 @@ msgid ""
 "Working directory \"%s\" does not exist. It won't be used when spawning \"%s"
 "\"."
 msgstr ""
-"工作目录 “%s” 不存在。启动 “%s” 时"
-"将不会使用它。"
+"工作目录 “%s” 不存在。启动 “%s” 时将不会"
+"使用它。"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:52
 msgid ""
 "This shortcut is already being used for another window manager action. Which "
 "action do you want to use?"
 msgstr ""
-"另一个窗口管理器动作已使用此快捷键。"
-"您要使用哪个动作？"
+"另一个窗口管理器动作已使用此快捷键。您要"
+"使用哪个动作？"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
@@ -135,8 +133,8 @@ msgid ""
 "This shortcut is already being used for the command '%s'. Which action do "
 "you want to use?"
 msgstr ""
-"命令 “%s” 已使用此快捷键。您要使用"
-"哪个动作？"
+"命令 “%s” 已使用此快捷键。您要使用哪个"
+"动作？"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
 #: ../libxfce4kbd-private/xfce-shortcuts.c:59
@@ -192,7 +190,7 @@ msgstr "快捷键："
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:300
 msgid "Could not grab the keyboard."
-msgstr "无法获取键盘输入。"
+msgstr "未能获取键盘输入。"
 
 #: ../glade/libxfce4ui.xml.in.h:1
 msgid "Subtitle"
@@ -252,8 +250,8 @@ msgid ""
 "A modern file manager for the Unix/Linux desktop, aiming to be easy-to-use "
 "and fast."
 msgstr ""
-"Unix/Linux 桌面的现代文件管理器，"
-"旨在易用和快速。"
+"Unix/Linux 桌面的现代文件管理器，旨在"
+"易用和快速。"
 
 #: ../xfce4-about/main.c:89
 msgid "Session Manager"
@@ -276,8 +274,8 @@ msgid ""
 "Configuration system to control various aspects of the desktop like "
 "appearance, display, keyboard and mouse settings."
 msgstr ""
-"控制桌面的如外观、显示、键盘和鼠标设置"
-"各个方面的配置系统。"
+"控制桌面的如外观、显示、键盘和鼠标设置各个"
+"方面的配置系统。"
 
 #: ../xfce4-about/main.c:99
 msgid "Application Finder"
@@ -323,11 +321,10 @@ msgid ""
 "the source code or the Xfce website (http://www.xfce.org) for more "
 "information."
 msgstr ""
-"Xfce 组件以自由或开源许可协议授权；"
-"应用程序以 GPL 或 BSDL，库文件以 "
-"LGPL 或 BSDL。看文档、源代码或 "
-"Xfce 站点(http://www.xfce.org) "
-"获取详情。"
+"Xfce 组件以自由或开源许可协议授权；应用"
+"程序以 GPL 或 BSDL，库文件以 LGPL 或"
+"BSDL 授权。看文档、源代码或 Xfce 站点"
+"(http://www.xfce.org) 获取详情。"
 
 #: ../xfce4-about/main.c:149
 msgid "Thank you for your interest in Xfce."
@@ -342,9 +339,9 @@ msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
 "on <http://bugzilla.xfce.org> ."
 msgstr ""
-"如果您知道此列表漏掉了任何人，不要犹豫"
-"并在 <http://bugzilla.xfce.org> "
-"上提交缺陷。"
+"如果您知道此列表漏掉了任何人，不要犹豫并"
+"在 <http://bugzilla.xfce.org> 上"
+"提交缺陷。"
 
 #: ../xfce4-about/main.c:266
 msgid "Thanks to all who helped making this software available!"
@@ -355,8 +352,8 @@ msgid ""
 "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
 msgstr ""
-"Xfce 4 版权归 "
-"Olivier Fourdan(fourdan@xfce.org)。"
+"Xfce 4 版权归 Olivier Fourdan"
+"(fourdan@xfce.org)。"
 "不同组件的版权归它们各自的作者。"
 
 #: ../xfce4-about/main.c:288
@@ -368,10 +365,9 @@ msgid ""
 msgstr ""
 "libxfce4ui、libxfcegui4、"
 "libxfce4util、thunar-vfs "
-"和 exo 软件包以自由软件基金会"
-"发布的 GNU 宽通用公共许可协议"
-"第二版或(您可以选择)更高版的"
-"方式发布。"
+"和 exo 软件包以自由软件基金会发布的 GNU "
+"宽通用公共许可协议第二版或(您可以选择)更高"
+"版的方式发布。"
 
 #: ../xfce4-about/main.c:295
 msgid ""
@@ -385,9 +381,9 @@ msgstr ""
 "xfce4-panel、xfce4-session、"
 "xfce4-settings、xfce-utils、"
 "xfconf、xfdesktop 和 xfwm4 "
-"软件包以自由软件基金会发布的 "
-"GNU 通用公共许可协议的第二版"
-"或(您可以选择)更高版的方式发布。"
+"软件包以自由软件基金会发布的 GNU 通用公共"
+"许可协议的第二版或(您可以选择)更高版的方式"
+"发布。"
 
 #: ../xfce4-about/main.c:442
 #, c-format
