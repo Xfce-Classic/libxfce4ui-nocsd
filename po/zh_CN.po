@@ -4,13 +4,13 @@
 # the libxfce4ui package.
 # Chris K. Zhang <plutino@gmail.com>, 2009.
 # Hunt Xu <mhuntxu@gmail.com>, 2009, 2010.
-# Chipong Luo <chipong_l@yahoo.com>, 2011, 2012.
+# Chipong Luo <chipong.luo@yahoo.com>, 2011, 2012.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-01-30 04:57+0000\n"
+"POT-Creation-Date: 2012-02-08 03:33+0000\n"
 "PO-Revision-Date: 2010-04-06 13:14+0800\n"
 "Last-Translator: Chipong Luo <chipong_l@yahoo.com>\n"
 "Language-Team: Chinese (Simplified) <xfce-i18n@xfce.org>\n"
@@ -102,17 +102,13 @@ msgstr "会话管理器未返回一个有效的客户端 ID"
 msgid ""
 "Working directory \"%s\" does not exist. It won't be used when spawning \"%s"
 "\"."
-msgstr ""
-"工作目录 “%s” 不存在。启动 “%s” 时将不会"
-"使用它。"
+msgstr "工作目录 “%s” 不存在。启动 “%s” 时将不会使用它。"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:52
 msgid ""
 "This shortcut is already being used for another window manager action. Which "
 "action do you want to use?"
-msgstr ""
-"另一个窗口管理器动作已使用此快捷键。您要"
-"使用哪个动作？"
+msgstr "另一个窗口管理器动作已使用此快捷键。您要使用哪个动作？"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
@@ -132,9 +128,7 @@ msgstr "保留另外一个"
 msgid ""
 "This shortcut is already being used for the command '%s'. Which action do "
 "you want to use?"
-msgstr ""
-"命令 “%s” 已使用此快捷键。您要使用哪个"
-"动作？"
+msgstr "命令 “%s” 已使用此快捷键。您要使用哪个动作？"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
 #: ../libxfce4kbd-private/xfce-shortcuts.c:59
@@ -146,9 +140,7 @@ msgstr "保留 ‘%s’"
 msgid ""
 "This shortcut is already being used by a window manager action. Which action "
 "do you want to use?"
-msgstr ""
-"一窗口管理器动作已使用此快捷键。您要使用"
-"哪个动作？"
+msgstr "一窗口管理器动作已使用此快捷键。您要使用哪个动作？"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 msgid "Keep the window manager action"
@@ -224,9 +216,7 @@ msgstr "面板"
 msgid ""
 "Program launchers, window buttons, applications menu, workspace switcher and "
 "more."
-msgstr ""
-"程序启动器、窗口按钮、应用程序菜单、工作区"
-"切换器等等。"
+msgstr "程序启动器、窗口按钮、应用程序菜单、工作区切换器等等。"
 
 #: ../xfce4-about/main.c:79
 msgid "Desktop Manager"
@@ -237,9 +227,8 @@ msgid ""
 "Sets the background color or image with optional application menu or icons "
 "for minimized applications or launchers, devices and folders."
 msgstr ""
-"设置带可选应用程序菜单的背景颜色或图片，"
-"或最小化的应用程序或启动器、设备和文件夹"
-"的图标。"
+"设置带可选应用程序菜单的背景颜色或图片，或最小化的应用程序或启动器、设备和文"
+"件夹的图标。"
 
 #: ../xfce4-about/main.c:84
 msgid "File Manager "
@@ -249,9 +238,7 @@ msgstr "文件管理器 "
 msgid ""
 "A modern file manager for the Unix/Linux desktop, aiming to be easy-to-use "
 "and fast."
-msgstr ""
-"Unix/Linux 桌面的现代文件管理器，旨在"
-"易用和快速。"
+msgstr "Unix/Linux 桌面的现代文件管理器，旨在易用和快速。"
 
 #: ../xfce4-about/main.c:89
 msgid "Session Manager"
@@ -261,9 +248,7 @@ msgstr "会话管理器"
 msgid ""
 "Restores your session on startup and allows you to shutdown the computer "
 "from Xfce."
-msgstr ""
-"在桌面启动时恢复您的会话并让您从 Xfce "
-"关闭计算机。"
+msgstr "在桌面启动时恢复您的会话并让您从 Xfce 关闭计算机。"
 
 #: ../xfce4-about/main.c:94
 msgid "Setting System"
@@ -273,9 +258,7 @@ msgstr "设置系统"
 msgid ""
 "Configuration system to control various aspects of the desktop like "
 "appearance, display, keyboard and mouse settings."
-msgstr ""
-"控制桌面的如外观、显示、键盘和鼠标设置各个"
-"方面的配置系统。"
+msgstr "控制桌面的如外观、显示、键盘和鼠标设置各个方面的配置系统。"
 
 #: ../xfce4-about/main.c:99
 msgid "Application Finder"
@@ -285,9 +268,7 @@ msgstr "应用程序查找器"
 msgid ""
 "Shows the applications installed on your system in categories, so you can "
 "quickly find and launch them."
-msgstr ""
-"分类显示在您系统上安装的应用程序，这样您"
-"就可以快速地查找和启动它们。"
+msgstr "分类显示在您系统上安装的应用程序，这样您就可以快速地查找和启动它们。"
 
 #: ../xfce4-about/main.c:104
 msgid "Settings Daemon"
@@ -301,9 +282,7 @@ msgstr "基于 D-Bus 的配置存储系统。"
 msgid ""
 "Xfce is a collection of programs that together provide a full-featured "
 "desktop environment. The following programs are part of the Xfce core:"
-msgstr ""
-"Xfce 是一个提供全功能桌面环境的程序集。"
-"以下程序是 Xfce 核心的部分："
+msgstr "Xfce 是一个提供全功能桌面环境的程序集。以下程序是 Xfce 核心的部分："
 
 #: ../xfce4-about/main.c:136
 msgid ""
@@ -311,8 +290,8 @@ msgid ""
 "programmers create applications that fit in well with the desktop "
 "environment."
 msgstr ""
-"Xfce 还是一个提供若干库文件，帮助程序员"
-"创建很适合桌面环境的应用程序的开发平台。"
+"Xfce 还是一个提供若干库文件，帮助程序员创建很适合桌面环境的应用程序的开发平"
+"台。"
 
 #: ../xfce4-about/main.c:142
 msgid ""
@@ -321,10 +300,8 @@ msgid ""
 "the source code or the Xfce website (http://www.xfce.org) for more "
 "information."
 msgstr ""
-"Xfce 组件以自由或开源许可协议授权；应用"
-"程序以 GPL 或 BSDL，库文件以 LGPL 或"
-"BSDL 授权。看文档、源代码或 Xfce 站点"
-"(http://www.xfce.org) 获取详情。"
+"Xfce 组件以自由或开源许可协议授权；应用程序以 GPL 或 BSDL，库文件以 LGPL 或"
+"BSDL 授权。看文档、源代码或 Xfce 站点(http://www.xfce.org) 获取详情。"
 
 #: ../xfce4-about/main.c:149
 msgid "Thank you for your interest in Xfce."
@@ -339,9 +316,8 @@ msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
 "on <http://bugzilla.xfce.org> ."
 msgstr ""
-"如果您知道此列表漏掉了任何人，不要犹豫并"
-"在 <http://bugzilla.xfce.org> 上"
-"提交缺陷。"
+"如果您知道此列表漏掉了任何人，不要犹豫并在 <http://bugzilla.xfce.org> 上提交"
+"缺陷。"
 
 #: ../xfce4-about/main.c:266
 msgid "Thanks to all who helped making this software available!"
@@ -352,9 +328,8 @@ msgid ""
 "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
 msgstr ""
-"Xfce 4 版权归 Olivier Fourdan"
-"(fourdan@xfce.org)。"
-"不同组件的版权归它们各自的作者。"
+"Xfce 4 版权归 Olivier Fourdan(fourdan@xfce.org)。不同组件的版权归它们各自的作"
+"者。"
 
 #: ../xfce4-about/main.c:288
 msgid ""
@@ -363,11 +338,8 @@ msgid ""
 "published by the Free Software Foundation; either version 2 of the License, "
 "or (at your option) any later version."
 msgstr ""
-"libxfce4ui、libxfcegui4、"
-"libxfce4util、thunar-vfs "
-"和 exo 软件包以自由软件基金会发布的 GNU "
-"宽通用公共许可协议第二版或(您可以选择)更高"
-"版的方式发布。"
+"libxfce4ui、libxfcegui4、libxfce4util、thunar-vfs 和 exo 软件包以自由软件基金"
+"会发布的 GNU 宽通用公共许可协议第二版或(您可以选择)更高版的方式发布。"
 
 #: ../xfce4-about/main.c:295
 msgid ""
@@ -377,13 +349,9 @@ msgid ""
 "Foundation; either version 2 of the License, or (at your option) any later "
 "version."
 msgstr ""
-"thunar、xfce4-appfinder、"
-"xfce4-panel、xfce4-session、"
-"xfce4-settings、xfce-utils、"
-"xfconf、xfdesktop 和 xfwm4 "
-"软件包以自由软件基金会发布的 GNU 通用公共"
-"许可协议的第二版或(您可以选择)更高版的方式"
-"发布。"
+"thunar、xfce4-appfinder、xfce4-panel、xfce4-session、xfce4-settings、xfce-"
+"utils、xfconf、xfdesktop 和 xfwm4 软件包以自由软件基金会发布的 GNU 通用公共许"
+"可协议的第二版或(您可以选择)更高版的方式发布。"
 
 #: ../xfce4-about/main.c:442
 #, c-format
