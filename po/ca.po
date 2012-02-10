@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libxfce 4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-02-09 08:33+0000\n"
+"POT-Creation-Date: 2012-02-10 07:45+0000\n"
 "PO-Revision-Date: 2011-12-18 15:15+0100\n"
 "Last-Translator: Carles Muñoz Gorriz <carlesmu@internautas.org>\n"
 "Language-Team: Catalan\n"
@@ -21,7 +21,8 @@ msgstr ""
 
 #: ../libxfce4ui/xfce-dialogs.c:80
 msgid "Failed to open web browser for online documentation"
-msgstr "No s'ha pogut obrir el navegador web per veure la documentació en línia"
+msgstr ""
+"No s'ha pogut obrir el navegador web per veure la documentació en línia"
 
 #: ../libxfce4ui/xfce-dialogs.c:195
 #, c-format
@@ -40,15 +41,15 @@ msgstr "Documentació en línia"
 msgid ""
 "You will be redirected to the documentation website where the help pages are "
 "maintained and translated."
-msgstr ""
+msgstr "Sereu redirigit a la lloc web de documentació on es mantenen i tradueixen les pàgines d'ajuda."
 
 #: ../libxfce4ui/xfce-dialogs.c:207
 msgid "_Read Online"
-msgstr ""
+msgstr "_Llegir en línia"
 
 #: ../libxfce4ui/xfce-dialogs.c:219
 msgid "_Always go directly to the online documentation"
-msgstr ""
+msgstr "_Anar sempre a la documentació en línia directament"
 
 #: ../libxfce4ui/xfce-dialogs.c:263
 msgid "Information"
