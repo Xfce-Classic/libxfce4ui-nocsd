@@ -24,7 +24,7 @@
 #include <gtk/gtk.h>
 #include <libxfce4util/libxfce4util.h>
 
-#define TRANSLATORS_H_STAMP "2012-02-05 00:21:07"
+#define TRANSLATORS_H_STAMP "2012-02-12 00:21:09"
 #define ATSIGN "@"
 #define DOTSIGN "."
 
@@ -182,7 +182,6 @@ static const TranslatorInfo xfce_translators_eo[] =
 static const TranslatorInfo xfce_translators_es[] =
 {
   { "Andres Sanchez", "afsanchez93" ATSIGN "gmail" DOTSIGN "com", TRUE },
-  { "Daniel Durante", "danieldurante" ATSIGN "ymail" DOTSIGN "com", FALSE },
   { NULL, NULL }
 };
 
@@ -416,7 +415,7 @@ static const TranslatorInfo xfce_translators_pl[] =
 
 static const TranslatorInfo xfce_translators_pt[] =
 {
-  { "Nuno Miguel", "nunis" ATSIGN "netcabo" DOTSIGN "pt", TRUE },
+  { "Nuno Miguel", "nunomgue" ATSIGN "gmail" DOTSIGN "com", TRUE },
   { "Bruno Ramos", "brunoramos" DOTSIGN "lu" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Joel Patrão", "joel" DOTSIGN "patrao" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Sergio Marques", "smarquespt" ATSIGN "gmail" DOTSIGN "com", FALSE },
@@ -649,7 +648,7 @@ static const TranslatorInfo xfce_translators_vi[] =
 
 static const TranslatorInfo xfce_translators_zh_CN[] =
 {
-  { "Chipong Luo", "chipong_l" ATSIGN "yahoo" DOTSIGN "com", TRUE },
+  { "Chipong Luo", "chipong" DOTSIGN "luo" ATSIGN "yahoo" DOTSIGN "com", TRUE },
   { "Hunt Xu", "mhuntxu" ATSIGN "gmail" DOTSIGN "com", TRUE },
   { "玉堂 白鹤", "yjwork" DOTSIGN "xfce" ATSIGN "gmail" DOTSIGN "com", TRUE },
   { "Hao Cui", "cuihao" DOTSIGN "leo" ATSIGN "gmail" DOTSIGN "com", FALSE },
