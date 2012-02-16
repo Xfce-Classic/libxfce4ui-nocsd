@@ -411,7 +411,7 @@ msgstr "服务器维护者"
 
 #: ../xfce4-about/contributors.h:136
 msgid "Goodies supervision"
-msgstr "好东西管理"
+msgstr "Goodies 管理"
 
 #: ../xfce4-about/contributors.h:139
 msgid "Translations supervision"
