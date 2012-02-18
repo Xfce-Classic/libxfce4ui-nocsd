@@ -24,7 +24,7 @@
 #include <gtk/gtk.h>
 #include <libxfce4util/libxfce4util.h>
 
-#define TRANSLATORS_H_STAMP "2012-02-12 00:21:09"
+#define TRANSLATORS_H_STAMP "2012-02-19 00:21:08"
 #define ATSIGN "@"
 #define DOTSIGN "."
 
@@ -131,12 +131,15 @@ static const TranslatorInfo xfce_translators_de[] =
   { "Andreas Kamzol", "andreas" DOTSIGN "kamzol" ATSIGN "googlemail" DOTSIGN "com", FALSE },
   { "Christoph Mende", "angelos" ATSIGN "gentoo" DOTSIGN "org", FALSE },
   { "Michael Spahn", "any0n3" ATSIGN "fedoraproject" DOTSIGN "org", FALSE },
+  { "Josef Radinger", "cheese" ATSIGN "nosuchhost" DOTSIGN "net", FALSE },
   { "Chris Leick", "c" DOTSIGN "leick" ATSIGN "vollbio" DOTSIGN "de", FALSE },
   { "Christian Weiske", "cweiske" ATSIGN "cweiske" DOTSIGN "de", FALSE },
   { "Uwe Krause", "derhorst" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Jakob Kramer", "jakob" DOTSIGN "kramer" ATSIGN "gmx" DOTSIGN "de", FALSE },
   { "Johannes Lips", "johannes" DOTSIGN "lips" ATSIGN "googlemail" DOTSIGN "com", FALSE },
+  { "Harald Judt", "h" DOTSIGN "judt" ATSIGN "gmx" DOTSIGN "at", FALSE },
   { "Hubert Hesse", "hub" ATSIGN "hubertscorner" DOTSIGN "de", FALSE },
+  { "Mario Blättermann", "mario" DOTSIGN "blaettermann" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Mark Trompell", "mark" ATSIGN "foresightlinux" DOTSIGN "org", FALSE },
   { "Matthias Mailänder", "matthias" ATSIGN "mailaender" DOTSIGN "name", FALSE },
   { "Michael Schmitt", "user" DOTSIGN "of" DOTSIGN "xfce" ATSIGN "googlemail" DOTSIGN "com", FALSE },
@@ -157,8 +160,9 @@ static const TranslatorInfo xfce_translators_el[] =
   { "Ioannis Daliakopoulos", "yannis" ATSIGN "farm" DOTSIGN "gr", FALSE },
   { "forfolias", "forfolias" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "gapan", "vlahavas" ATSIGN "gmail" DOTSIGN "com", FALSE },
-  { "jemadux", "kleagkou" ATSIGN "gmail" DOTSIGN "com", FALSE },
+  { "jemadux", "", FALSE },
   { "Mario Andonoudiou", "supermodmusic" ATSIGN "gmail" DOTSIGN "com", FALSE },
+  { "Georgios Stefanakis", "nonviotale" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Spiros Georgaras", "sng" ATSIGN "hellug" DOTSIGN "gr", FALSE },
   { "Basilis Thomopoulos", "kolxoz83" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { NULL, NULL }
@@ -324,6 +328,12 @@ static const TranslatorInfo xfce_translators_ja[] =
   { NULL, NULL }
 };
 
+static const TranslatorInfo xfce_translators_ka[] =
+{
+  { "Beqa Arabuli", "arabulibeqa" ATSIGN "yahoo" DOTSIGN "com", TRUE },
+  { NULL, NULL }
+};
+
 static const TranslatorInfo xfce_translators_kk[] =
 {
   { "Bauzhan Muftakhidinov", "baurthefirst" ATSIGN "gmail" DOTSIGN "com", TRUE },
@@ -445,6 +455,8 @@ static const TranslatorInfo xfce_translators_ro[] =
 {
   { "Mișu Moldovan", "dumol" ATSIGN "xfce" DOTSIGN "org", TRUE },
   { "Andrei Popescu", "andreimpopescu" ATSIGN "gmail" DOTSIGN "com", FALSE },
+  { "Igor Stirbu", "igor" DOTSIGN "stirbu" ATSIGN "gmail" DOTSIGN "com", FALSE },
+  { "Ionut Ovejanu", "ovejanu" ATSIGN "yahoo" DOTSIGN "com", FALSE },
   { "Sergiu Mihai", "sergiu" DOTSIGN "mihai" ATSIGN "devlibre" DOTSIGN "net", FALSE },
   { "razvan86", "florinrazvan1986" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Mihai Coman", "mihai" ATSIGN "m1x" DOTSIGN "ro", FALSE },
@@ -603,6 +615,7 @@ static const TranslatorInfo xfce_translators_tr[] =
   { "Senol Korkmaz", "mail" ATSIGN "senolkorkmaz" DOTSIGN "info", FALSE },
   { "Server Acim", "serveracim" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "skocadogan", "skocadogan" ATSIGN "gmail" DOTSIGN "com", FALSE },
+  { "Utku Berberoğlu", "utku" DOTSIGN "berber" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Utku Aydın", "utkuaydin" ATSIGN "archlinux" DOTSIGN "org" DOTSIGN "tr", FALSE },
   { "vlyalcin", "naklovnak" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { NULL, NULL }
@@ -701,6 +714,7 @@ static const TranslatorTeam xfce_translators[] =
   { "Icelandic", "is", xfce_translators_is },
   { "Italian", "it", xfce_translators_it },
   { "Japanese", "ja", xfce_translators_ja },
+  { "Georgian", "ka", xfce_translators_ka },
   { "Kazakh", "kk", xfce_translators_kk },
   { "Kannada", "kn", xfce_translators_kn },
   { "Korean", "ko", xfce_translators_ko },
