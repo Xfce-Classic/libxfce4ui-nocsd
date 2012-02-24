@@ -197,7 +197,7 @@ msgstr "حوار معنون"
 
 #: ../glade/libxfce4ui.xml.in.h:3
 msgid "Xfce 4 Widgets"
-msgstr "قطع إكسفسي 4"
+msgstr "قطع إكسفس 4"
 
 #: ../xfce4-about/main.c:52
 msgid "Version information"
@@ -252,7 +252,7 @@ msgstr "مدير الجلسة"
 msgid ""
 "Restores your session on startup and allows you to shutdown the computer "
 "from Xfce."
-msgstr "يستعيد جلستك عند بدء التشغيل ويسمح لك بإيقاف الكمبيوتر من إكسفسي."
+msgstr "يستعيد جلستك عند بدء التشغيل ويسمح لك بإيقاف الكمبيوتر من إكسفس."
 
 #: ../xfce4-about/main.c:94
 msgid "Setting System"
@@ -289,8 +289,8 @@ msgid ""
 "Xfce is a collection of programs that together provide a full-featured "
 "desktop environment. The following programs are part of the Xfce core:"
 msgstr ""
-"إكسفسي هو مجموعة من البرامج التي توفر معا كامل مميزات بيئة سطح المكتب. "
-"البرامج التالية هي جزء من لب الغكسفسي:"
+"إكسفس هو مجموعة من البرامج التي توفر معا كامل مميزات بيئة سطح المكتب. "
+"البرامج التالية هي جزء من لب الإكسفس:"
 
 #: ../xfce4-about/main.c:136
 msgid ""
@@ -298,7 +298,7 @@ msgid ""
 "programmers create applications that fit in well with the desktop "
 "environment."
 msgstr ""
-"إكسفسي هي أيضا توفير منصة تطوير العديد من المكتبات، التي تساعد المبرمجين على "
+"إكسفس هي أيضا توفير منصة تطوير العديد من المكتبات، التي تساعد المبرمجين على "
 "إنشاء التطبيقات التي تتناسب بشكل جيد مع بيئة سطح المكتب."
 
 #: ../xfce4-about/main.c:142
@@ -308,17 +308,17 @@ msgid ""
 "the source code or the Xfce website (http://www.xfce.org) for more "
 "information."
 msgstr ""
-"متويات الإكسفسي تحت رخص مجانية أو حرة; رخصة جنو العمومية أو BSDL لتطبيقات و "
-"LGPL أو BSDL للمكتبات. أنظر في الثوتيق, شيفرة المصدر أو موقع إكسفسي (http://"
+"متويات الإكسفس تحت رخص مجانية أو حرة; رخصة جنو العمومية أو BSDL لتطبيقات و "
+"LGPL أو BSDL للمكتبات. أنظر في الثوتيق, شيفرة المصدر أو موقع إكسفس (http://"
 "www.xfce.org) للمزيد من المعلومات."
 
 #: ../xfce4-about/main.c:149
 msgid "Thank you for your interest in Xfce."
-msgstr "شكرا لك لإهتمامك بإكسفسي"
+msgstr "شكرا لك لإهتمامك بإكسفس"
 
 #: ../xfce4-about/main.c:153
 msgid "The Xfce Development Team"
-msgstr "فريق تطوير إكسفسي."
+msgstr "فريق تطوير إكسفس."
 
 #: ../xfce4-about/main.c:262
 msgid ""
@@ -375,7 +375,7 @@ msgstr "غير قادر على بدء جتك+."
 
 #: ../xfce4-about/main.c:457
 msgid "The Xfce development team. All rights reserved."
-msgstr "فريق تطوير إكسفسي. جميع الحقوق محفوظة."
+msgstr "فريق تطوير إكسفس. جميع الحقوق محفوظة."
 
 #: ../xfce4-about/main.c:458
 #, c-format
@@ -438,11 +438,11 @@ msgstr "مساهمون سابقون"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:1
 msgid "About Xfce"
-msgstr "حول إكسفسي"
+msgstr "حول إكسفس"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:2
 msgid "Information about the Xfce Desktop Environment"
-msgstr "معلومات حول فريق تطوير سطح مكتب إكسفسي"
+msgstr "معلومات حول فريق تطوير سطح مكتب إكسفس"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:1
 msgid "About"
@@ -450,7 +450,7 @@ msgstr "حول"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:2
 msgid "About the Xfce Desktop Environment"
-msgstr "فريق تطوير سطح مكتب إكسفسي"
+msgstr "فريق تطوير سطح مكتب إكسفس"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:3
 msgid "BSD"
