@@ -237,7 +237,7 @@ msgstr "설정 시스템"
 
 #: ../xfce4-about/main.c:95
 msgid "Configuration system to control various aspects of the desktop like appearance, display, keyboard and mouse settings."
-msgstr "외형, 디스플레이, 키보드, 마우스의 다양한 모습을 제어하는 설정 시스템입니다."
+msgstr "모양새, 디스플레이, 키보드, 마우스의 다양한 모습을 제어하는 설정 시스템입니다."
 
 #: ../xfce4-about/main.c:99
 msgid "Application Finder"
