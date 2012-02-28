@@ -3,19 +3,21 @@
 # This file is distributed under the same license as the libxfce package.
 # Ole Guldberg <olegb@omgwtf.dk>, 2008.
 # Per Kongstad <p_kongstad@op.pl>, 2009.
+# Erik Schmidt <erischmi@gmail.com>, 2012.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui 1.4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-01-11 18:18+0000\n"
-"PO-Revision-Date: 2009-10-18 21:21+0100\n"
-"Last-Translator: Per Kongstad <p_kongstad@op.pl>\n"
-"Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
+"POT-Creation-Date: 2012-02-28 13:21+0000\n"
+"PO-Revision-Date: 2012-02-28 18:37+0100\n"
+"Last-Translator: Erik Schmidt <erischmi@gmail.com>\n"
+"Language-Team: Dansk <dansk@dansk-gruppen.dk>\n"
+"Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Language: da\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Content-Transfer-Encoding: 8bits\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
 "X-Poedit-Language: Danish\n"
 "X-Poedit-Country: DENMARK\n"
 
@@ -285,7 +287,9 @@ msgstr "Programfinder"
 msgid ""
 "Shows the applications installed on your system in categories, so you can "
 "quickly find and launch them."
-msgstr "Viser programmerne som er installeret i kategorier, så du hurtigt kan finde og starte dem."
+msgstr ""
+"Viser programmerne som er installeret i kategorier, så du hurtigt kan finde "
+"og starte dem."
 
 #: ../xfce4-about/main.c:104
 msgid "Settings Daemon"
@@ -299,7 +303,9 @@ msgstr "D-Bus baseret konfiguration af lagersystem."
 msgid ""
 "Xfce is a collection of programs that together provide a full-featured "
 "desktop environment. The following programs are part of the Xfce core:"
-msgstr "Xfce er en samling af programmer der sammen tilbyder et fuldt udstyret skrivebordsmiljø. De følgende programmer er en del af kærnen i Xfce:"
+msgstr ""
+"Xfce er en samling af programmer der sammen tilbyder et fuldt udstyret "
+"skrivebordsmiljø. De følgende programmer er en del af kærnen i Xfce:"
 
 #: ../xfce4-about/main.c:136
 msgid ""
@@ -307,6 +313,9 @@ msgid ""
 "programmers create applications that fit in well with the desktop "
 "environment."
 msgstr ""
+"Xfce er også en udviklingsplatform som tilbyder adskillige biblioteker, der "
+"hjælper programmører med at skabe programmer som passer perfekt ind i "
+"desktop-miljøet."
 
 #: ../xfce4-about/main.c:142
 msgid ""
@@ -315,6 +324,10 @@ msgid ""
 "the source code or the Xfce website (http://www.xfce.org) for more "
 "information."
 msgstr ""
+"Komponenterne i Xfce er licenseret under frie eller åbne kilde licenser; GPL "
+"eller BSDL for programmer og LGPL eller BSDL for biblioteker. Se i "
+"dokumentationen, kildekoden eller på Xfce hjemmeside (http://www.xfce.org) "
+"for mere information."
 
 #: ../xfce4-about/main.c:149
 msgid "Thank you for your interest in Xfce."
@@ -352,6 +365,10 @@ msgid ""
 "published by the Free Software Foundation; either version 2 of the License, "
 "or (at your option) any later version."
 msgstr ""
+"libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs og exo pakkerne er "
+"distribueret under betingelserne i GNU Library General Public License som "
+"publiceres af Free Software Foundation; enten version 2 af licensen eller "
+"(efter dit valg) enhver senere version."
 
 #: ../xfce4-about/main.c:295
 msgid ""
@@ -361,6 +378,11 @@ msgid ""
 "Foundation; either version 2 of the License, or (at your option) any later "
 "version."
 msgstr ""
+"Pakkerne thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-"
+"settings, xfce-utils, xfconf, xfdesktop og xfwm4 er distribueret under "
+"betingelserne i GNU Library General Public License som publiceres af Free "
+"Software Foundation; enten version 2 af licensen eller (efter dit valg) "
+"enhver senere version."
 
 #: ../xfce4-about/main.c:442
 #, c-format
