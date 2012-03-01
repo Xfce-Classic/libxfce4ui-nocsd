@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui.xfce-4-8\n"
-"Report-Msgid-Bugs-To: xfce4-users-kr-i18n <xfce4-users-kr-i18n@lists.sourceforge.net>\n"
+"Report-Msgid-Bugs-To: xfce-i18n <xfce-i18n@xfce.org>\n"
 "POT-Creation-Date: 2012-02-26 02:51+0000\n"
 "PO-Revision-Date: 2012-02-26 20:16+0900\n"
 "Last-Translator: Seong-ho, Cho <darkcircle.0426@gmail.com>\n"
@@ -277,7 +277,7 @@ msgstr "Xfce 개발 팀"
 
 #: ../xfce4-about/main.c:262
 msgid "If you know of anyone missing from this list; don't hesitate and file a bug on <http://bugzilla.xfce.org> ."
-msgstr "이 목록에 빠진 내용이 있따면 망설이지 말고 다음으로 버그를 알려주시기 바랍니다 <http://bugzilla.xfce.org>."
+msgstr "이 목록에 빠진 내용이 있다면 망설이지 말고 다음으로 버그를 알려주시기 바랍니다 <http://bugzilla.xfce.org>."
 
 #: ../xfce4-about/main.c:266
 msgid "Thanks to all who helped making this software available!"
