@@ -4,22 +4,22 @@
 # Ole Guldberg <olegb@omgwtf.dk>, 2008.
 # Per Kongstad <p_kongstad@op.pl>, 2009.
 # Erik Schmidt <erischmi@gmail.com>, 2012.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui 1.4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-02-28 13:21+0000\n"
+"POT-Creation-Date: 2012-03-01 18:00+0000\n"
 "PO-Revision-Date: 2012-02-28 18:54+0100\n"
 "Last-Translator: Erik Schmidt <erischmi@gmail.com>\n"
 "Language-Team: Dansk <dansk@dansk-gruppen.dk>\n"
-"Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bits\n"
+"X-Poedit-Country: DENMARK\n"
+"Language: da\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 "X-Poedit-Language: Danish\n"
-"X-Poedit-Country: DENMARK\n"
 
 #: ../libxfce4ui/xfce-dialogs.c:80
 msgid "Failed to open web browser for online documentation"
@@ -48,7 +48,7 @@ msgstr ""
 
 #: ../libxfce4ui/xfce-dialogs.c:207
 msgid "_Read Online"
-msgstr "_læs på nettet"
+msgstr "_Læs på nettet"
 
 #: ../libxfce4ui/xfce-dialogs.c:219
 msgid "_Always go directly to the online documentation"
@@ -102,7 +102,7 @@ msgstr "Sessionshåndtering returnerede ikke et gyldigt klientid"
 
 #. print warning for user
 #: ../libxfce4ui/xfce-spawn.c:406
-#, c-format
+#, c-format, fuzzy
 msgid ""
 "Working directory \"%s\" does not exist. It won't be used when spawning \"%s"
 "\"."
@@ -122,9 +122,9 @@ msgstr ""
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
 #: ../libxfce4kbd-private/xfce-shortcuts.c:59
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
-#, c-format
+#, c-format, fuzzy
 msgid "Use '%s'"
-msgstr "Brug '%s\""
+msgstr "Brug '%s'"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 msgid "Keep the other one"
@@ -248,6 +248,7 @@ msgid "File Manager "
 msgstr "Filhåndtering"
 
 #: ../xfce4-about/main.c:85
+#, fuzzy
 msgid ""
 "A modern file manager for the Unix/Linux desktop, aiming to be easy-to-use "
 "and fast."
@@ -272,6 +273,7 @@ msgid "Setting System"
 msgstr "Systemindstilling"
 
 #: ../xfce4-about/main.c:95
+#, fuzzy
 msgid ""
 "Configuration system to control various aspects of the desktop like "
 "appearance, display, keyboard and mouse settings."
@@ -394,8 +396,9 @@ msgid "Unable to initialize GTK+."
 msgstr "Kunne ikke klargøre GTK+."
 
 #: ../xfce4-about/main.c:457
+#, fuzzy
 msgid "The Xfce development team. All rights reserved."
-msgstr "Udviklingholdet Xfce.. Alle rettigheder forbeholdes."
+msgstr "Udviklingholdet Xfce. Alle rettigheder forbeholdes."
 
 #: ../xfce4-about/main.c:458
 #, c-format
