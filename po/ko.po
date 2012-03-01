@@ -311,7 +311,7 @@ msgstr "Xfce 개발 팀. All rights reserved."
 #: ../xfce4-about/main.c:458
 #, c-format
 msgid "Please report bugs to <%s>."
-msgstr "<%s>(으)로 버그를 보고하여 주시기 바랍니다."
+msgstr "<%s>(으)로 버그를 알려주시기 바랍니다."
 
 #. I18N: date/time the translators list was updated
 #: ../xfce4-about/main.c:461
