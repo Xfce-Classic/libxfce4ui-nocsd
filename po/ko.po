@@ -99,11 +99,11 @@ msgstr "세션 관리자가 유효한 클라이언트 ID를 반환하지 않았�
 #: ../libxfce4ui/xfce-spawn.c:406
 #, c-format
 msgid "Working directory \"%s\" does not exist. It won't be used when spawning \"%s\"."
-msgstr "작업 디렉터리 \"%s\"이(가) 존재하지 않습니다. \"%s\"이(가) 산개되면 이는 사용되지 않을 것입니다."
+msgstr "작업 디렉터리 \"%s\"이(가) 존재하지 않습니다. \"%s\"이(가) 퍼지면 이를 사용하지 않을 것입니다."
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:52
 msgid "This shortcut is already being used for another window manager action. Which action do you want to use?"
-msgstr "이 바로 가기는 이미 다른 창 관리자 동작에서 사용되고 있습니다. 어떤 동작을 사용하시렵니까?"
+msgstr "이 바로 가기는 이미 다른 창 관리자 동작에서 사용하고 있습니다. 어떤 동작을 사용하시렵니까?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
@@ -121,7 +121,7 @@ msgstr "다른 것을 유지"
 #: ../libxfce4kbd-private/xfce-shortcuts.c:58
 #, c-format
 msgid "This shortcut is already being used for the command '%s'. Which action do you want to use?"
-msgstr "이 바로 가기는 이미 명령 '%s'에서 사용되고 있습니다. 어떤 동작을 사용하시렵니까?"
+msgstr "이 바로 가기는 이미 명령 '%s'에서 사용하고 있습니다. 어떤 동작을 사용하시렵니까?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
 #: ../libxfce4kbd-private/xfce-shortcuts.c:59
@@ -131,7 +131,7 @@ msgstr "'%s'을(를) 유지합니다"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:61
 msgid "This shortcut is already being used by a window manager action. Which action do you want to use?"
-msgstr "이 바로 가기는 이미 창 관리자 동작에 의해 사용되고 있습니다. 어떤 동작을 사용하시렵니까?"
+msgstr "이 바로 가기는 이미 창 관리자 동작에 의해 사용하고 있습니다. 어떤 동작을 사용하시렵니까?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 msgid "Keep the window manager action"
@@ -144,7 +144,7 @@ msgstr "%s을(를) 위한 동작이 충돌합니다"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:128
 msgid "This shortcut is already being used for something else."
-msgstr "이 바로 가기는 이미 다른 용도로 사용되고 있습니다."
+msgstr "이 바로 가기는 이미 다른 용도로 사용하고 있습니다."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:204
 msgid "Window Manager Action Shortcut"
@@ -213,7 +213,7 @@ msgstr "데스크톱 관리자"
 
 #: ../xfce4-about/main.c:80
 msgid "Sets the background color or image with optional application menu or icons for minimized applications or launchers, devices and folders."
-msgstr "선택적 프로그램 메뉴의 배경색이나 이미지 혹은 최소화한 프로그램이나 실행기, 장치, 폴더에 대한 아이콘을 설정합니다."
+msgstr "선택적 프로그램 메뉴의 배경색이나 그림 또는 최소화한 프로그램이나 실행기, 장치, 폴더에 대한 아이콘을 설정합니다."
 
 #: ../xfce4-about/main.c:84
 msgid "File Manager "
@@ -289,11 +289,11 @@ msgstr "Xfce 4는 Oliver Foundan (fourdan@xfce.org)의 지적소유물입니다.
 
 #: ../xfce4-about/main.c:288
 msgid "The libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs and exo packages are distributed under the terms of the GNU Library General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version."
-msgstr "libxfce4ui, libxfce4gui, libxfce4util, thunar-vfs 그리고 exo 패키지들은 자유 소프트웨어 재단이 발표한 버전 2 혹은 (여러분의 선택에 따라) 그 이후의 GNU Library General Public License의 조항에 의해 배포됩니다."
+msgstr "libxfce4ui, libxfce4gui, libxfce4util, thunar-vfs 그리고 exo 패키지들은 자유 소프트웨어 재단이 발표한 버전 2 또는 (여러분의 선택에 따라) 그 이후의 GNU Library General Public License의 조항에 의해 배포됩니다."
 
 #: ../xfce4-about/main.c:295
 msgid "The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfce-utils, xfconf, xfdesktop and xfwm4 are distributed under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version."
-msgstr "thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfce-utils, xfconf, xfdesktop 그리고 xfwm4 패키지들은 자유 소프트웨어 재단이 발표한 버전 2 혹은(여러분의 선택에 따라)  그 이후의 GNU Library General Public License의 조항에 의해 배포됩니다."
+msgstr "thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfce-utils, xfconf, xfdesktop 그리고 xfwm4 패키지들은 자유 소프트웨어 재단이 발표한 버전 2 또는(여러분의 선택에 따라)  그 이후의 GNU Library General Public License의 조항에 의해 배포됩니다."
 
 #: ../xfce4-about/main.c:442
 #, c-format
