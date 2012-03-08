@@ -241,7 +241,7 @@ msgstr "모양새, 디스플레이, 키보드, 마우스의 다양한 모습을 
 
 #: ../xfce4-about/main.c:99
 msgid "Application Finder"
-msgstr "프로그램 검색기"
+msgstr "프로그램 찾기"
 
 #: ../xfce4-about/main.c:100
 msgid "Shows the applications installed on your system in categories, so you can quickly find and launch them."
