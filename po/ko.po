@@ -205,7 +205,7 @@ msgstr "패널"
 
 #: ../xfce4-about/main.c:75
 msgid "Program launchers, window buttons, applications menu, workspace switcher and more."
-msgstr "프로그램 실행기, 윈도우 단추, 프로그램 메뉴, 작업공간 전환기 등."
+msgstr "프로그램 실행 아이콘, 윈도우 단추, 프로그램 메뉴, 작업공간 전환기 등."
 
 #: ../xfce4-about/main.c:79
 msgid "Desktop Manager"
@@ -213,7 +213,7 @@ msgstr "데스크톱 관리자"
 
 #: ../xfce4-about/main.c:80
 msgid "Sets the background color or image with optional application menu or icons for minimized applications or launchers, devices and folders."
-msgstr "선택적 프로그램 메뉴의 배경색이나 그림 또는 최소화한 프로그램이나 실행기, 장치, 폴더에 대한 아이콘을 설정합니다."
+msgstr "선택적 프로그램 메뉴의 배경색이나 그림 또는 최소화한 프로그램이나 실행 아이콘, 장치, 폴더에 대한 아이콘을 설정합니다."
 
 #: ../xfce4-about/main.c:84
 msgid "File Manager "
