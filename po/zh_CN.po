@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-02-08 03:33+0000\n"
+"POT-Creation-Date: 2012-03-08 01:24+0000\n"
 "PO-Revision-Date: 2010-04-06 13:14+0800\n"
 "Last-Translator: Chipong Luo <chipong.luo@yahoo.com>\n"
 "Language-Team: Chinese (Simplified) <xfce-i18n@xfce.org>\n"
@@ -18,6 +18,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../libxfce4ui/xfce-dialogs.c:80
 msgid "Failed to open web browser for online documentation"
@@ -411,7 +412,7 @@ msgstr "服务器维护者"
 
 #: ../xfce4-about/contributors.h:136
 msgid "Goodies supervision"
-msgstr "Goodies 管理"
+msgstr "珍品管理"
 
 #: ../xfce4-about/contributors.h:139
 msgid "Translations supervision"
