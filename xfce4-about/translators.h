@@ -24,7 +24,7 @@
 #include <gtk/gtk.h>
 #include <libxfce4util/libxfce4util.h>
 
-#define TRANSLATORS_H_STAMP "2012-03-04 00:21:05"
+#define TRANSLATORS_H_STAMP "2012-03-11 00:21:07"
 #define ATSIGN "@"
 #define DOTSIGN "."
 
@@ -60,6 +60,7 @@ static const TranslatorInfo xfce_translators_ar[] =
   { "محمد الحرقان", "malham1" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Yassine Bouhadi", "yassine" DOTSIGN "skiloo" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "ybanafa", "ybanafa" ATSIGN "alasersystems" DOTSIGN "com", FALSE },
+  { "yusuf", "ys9889" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { NULL, NULL }
 };
 
@@ -187,6 +188,8 @@ static const TranslatorInfo xfce_translators_es[] =
 {
   { "Andres Sanchez", "afsanchez93" ATSIGN "gmail" DOTSIGN "com", TRUE },
   { "Daniel Durante", "danieldurante" ATSIGN "ymail" DOTSIGN "com", TRUE },
+  { "Octavio Bernal Quiroz", "octavio" DOTSIGN "bernal" DOTSIGN "q" ATSIGN "gmail" DOTSIGN "com", FALSE },
+  { "Sergio García", "oigres200" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { NULL, NULL }
 };
 
@@ -359,6 +362,12 @@ static const TranslatorInfo xfce_translators_ko[] =
   { NULL, NULL }
 };
 
+static const TranslatorInfo xfce_translators_ky[] =
+{
+  { "Chingis Jumaliev", "chingis091" ATSIGN "gmail" DOTSIGN "com", TRUE },
+  { NULL, NULL }
+};
+
 static const TranslatorInfo xfce_translators_lt[] =
 {
   { "Ričardas Vasiulis", "ricardas" DOTSIGN "v" ATSIGN "inbox" DOTSIGN "lt", TRUE },
@@ -383,7 +392,7 @@ static const TranslatorInfo xfce_translators_nb[] =
 {
   { "takoi", "thomas" DOTSIGN "amland" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Terje Uriansrud", "terje" ATSIGN "uriansrud" DOTSIGN "net", FALSE },
-  { "Kevin Brubeck Unhammer", "p" DOTSIGN "ixiemotion" ATSIGN "gmail" DOTSIGN "com", FALSE },
+  { "Kevin Brubeck Unhammer", "javkalas" ATSIGN "mm" DOTSIGN "st", FALSE },
   { NULL, NULL }
 };
 
@@ -401,7 +410,7 @@ static const TranslatorInfo xfce_translators_nl[] =
 static const TranslatorInfo xfce_translators_nn[] =
 {
   { "Eivind Ødegård", "gingermig" ATSIGN "yahoo" DOTSIGN "no", FALSE },
-  { "Kevin Brubeck Unhammer", "p" DOTSIGN "ixiemotion" ATSIGN "gmail" DOTSIGN "com", FALSE },
+  { "Kevin Brubeck Unhammer", "javkalas" ATSIGN "mm" DOTSIGN "st", FALSE },
   { "Eskild Hustvedt", "user" ATSIGN "zerodogg" DOTSIGN "org", FALSE },
   { NULL, NULL }
 };
@@ -722,6 +731,7 @@ static const TranslatorTeam xfce_translators[] =
   { "Kazakh", "kk", xfce_translators_kk },
   { "Kannada", "kn", xfce_translators_kn },
   { "Korean", "ko", xfce_translators_ko },
+  { "Kirgyz", "ky", xfce_translators_ky },
   { "Lithuanian", "lt", xfce_translators_lt },
   { "Latvian", "lv", xfce_translators_lv },
   { "Malay", "ms", xfce_translators_ms },
