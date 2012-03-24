@@ -24,7 +24,7 @@
 #include <gtk/gtk.h>
 #include <libxfce4util/libxfce4util.h>
 
-#define TRANSLATORS_H_STAMP "2012-03-18 00:21:07"
+#define TRANSLATORS_H_STAMP "2012-03-25 00:21:08"
 #define ATSIGN "@"
 #define DOTSIGN "."
 
@@ -58,6 +58,7 @@ static const TranslatorInfo xfce_translators_ar[] =
   { "Amine", "amine" ATSIGN "ardebian" DOTSIGN "org", FALSE },
   { "Hasen il Judy", "hasan" DOTSIGN "aljudy" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "محمد الحرقان", "malham1" ATSIGN "gmail" DOTSIGN "com", FALSE },
+  { "os_", "syriatalks" ATSIGN "hotmail" DOTSIGN "com", FALSE },
   { "Yassine Bouhadi", "yassine" DOTSIGN "skiloo" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "ybanafa", "ybanafa" ATSIGN "alasersystems" DOTSIGN "com", FALSE },
   { "yusuf", "ys9889" ATSIGN "gmail" DOTSIGN "com", FALSE },
@@ -140,6 +141,7 @@ static const TranslatorInfo xfce_translators_de[] =
   { "Johannes Lips", "johannes" DOTSIGN "lips" ATSIGN "googlemail" DOTSIGN "com", FALSE },
   { "Harald Judt", "h" DOTSIGN "judt" ATSIGN "gmx" DOTSIGN "at", FALSE },
   { "Hubert Hesse", "hub" ATSIGN "hubertscorner" DOTSIGN "de", FALSE },
+  { "Raphael Groner", "raphgro" ATSIGN "web" DOTSIGN "de", FALSE },
   { "Mario Blättermann", "mario" DOTSIGN "blaettermann" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Mark Trompell", "mark" ATSIGN "foresightlinux" DOTSIGN "org", FALSE },
   { "Matthias Mailänder", "matthias" ATSIGN "mailaender" DOTSIGN "name", FALSE },
@@ -441,6 +443,7 @@ static const TranslatorInfo xfce_translators_pt[] =
   { "Nuno Miguel", "nunomgue" ATSIGN "gmail" DOTSIGN "com", TRUE },
   { "Bruno Ramos", "brunoramos" DOTSIGN "lu" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Joel Patrão", "joel" DOTSIGN "patrao" ATSIGN "gmail" DOTSIGN "com", FALSE },
+  { "Bruno Martins", "bruno" ATSIGN "member" DOTSIGN "fsf" DOTSIGN "org", FALSE },
   { "Sergio Marques", "smarquespt" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { NULL, NULL }
 };
@@ -487,7 +490,7 @@ static const TranslatorInfo xfce_translators_ru[] =
   { "Alexander Yashkin", "alex" DOTSIGN "aspirine" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Artem Zolochevskiy", "artem" DOTSIGN "zolochevskiy" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "brdassign", "dmitriy" DOTSIGN "borodiy" ATSIGN "gmail" DOTSIGN "com", FALSE },
-  { "Claque", "cpt-alatriste" ATSIGN "ya" DOTSIGN "ru", FALSE },
+  { "Sergey Shlyapugin", "shlyapugin" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "dkorzhevin", "dkorzhevin" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Evgeniy Kosov", "eugene" ATSIGN "kosov" DOTSIGN "net", FALSE },
   { "gnulinux", "nazarov-1990" ATSIGN "bk" DOTSIGN "ru", FALSE },
