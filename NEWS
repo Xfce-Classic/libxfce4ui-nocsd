@@ -1,3 +1,12 @@
+4.9.1
+=====
+- Open docs.xfce.org when Help in xfce4-about is clicked.
+- Cache header icons and avoid large icons in XfceTitledDialog.
+- Restore glade directory information in .pc file.
+- Update translator credits.
+- Translation updates (ar, ca, cs, da, de, es, eu, fi, fr, hu, id,
+  it, kk, ko, lt, nl, nn, pt, pt_BR, ru, sk, te, tr, uk, zh_CN, zh_TW).
+
 4.9.0
 =====
 - A lot of improvements in the shortcuts code.
