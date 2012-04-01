@@ -31,12 +31,10 @@ msgid "Do you want to read the %s manual online?"
 msgstr "Möchten Sie das Handbuch zu %s online lesen?"
 
 #: ../libxfce4ui/xfce-dialogs.c:197
-#, fuzzy
 msgid "Do you want to read the manual online?"
 msgstr "Möchten Sie das Handbuch online lesen?"
 
 #: ../libxfce4ui/xfce-dialogs.c:200
-#, fuzzy
 msgid "Online Documentation"
 msgstr "Online-Dokumentation"
 
@@ -167,7 +165,7 @@ msgstr "Konflikt bei Aktionen für »%s«"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:128
 msgid "This shortcut is already being used for something else."
-msgstr "Das Tastenkürzel wird bereits für etwas anderes verwendet."
+msgstr "Dieses Tastenkürzel wird bereits für etwas anderes verwendet."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:204
 msgid "Window Manager Action Shortcut"
@@ -203,12 +201,13 @@ msgid "Subtitle"
 msgstr "Untertitel"
 
 #: ../glade/libxfce4ui.xml.in.h:2
+#, fuzzy
 msgid "Titled Dialog"
 msgstr "Dialog mit Titel"
 
 #: ../glade/libxfce4ui.xml.in.h:3
 msgid "Xfce 4 Widgets"
-msgstr "Xfce 4 Widgets"
+msgstr "Xfce 4 Elemente"
 
 #: ../xfce4-about/main.c:52
 msgid "Version information"
@@ -356,7 +355,6 @@ msgid "Thanks to all who helped making this software available!"
 msgstr "Danke an alle, die geholfen haben, diese Software verfügbar zu machen."
 
 #: ../xfce4-about/main.c:283
-#, fuzzy
 msgid ""
 "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
@@ -441,9 +439,8 @@ msgid "Core developers"
 msgstr "Kernentwickler"
 
 #: ../xfce4-about/contributors.h:130
-#, fuzzy
 msgid "Active contributors"
-msgstr "Aktiv Beitragende"
+msgstr "Aktive Beitragende"
 
 #: ../xfce4-about/contributors.h:133
 msgid "Servers maintained by"
@@ -462,12 +459,10 @@ msgid "Translators"
 msgstr "Übersetzer"
 
 #: ../xfce4-about/contributors.h:145
-#, fuzzy
 msgid "Previous contributors"
-msgstr "Früher Beitragende"
+msgstr "Frühere Beitragende"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:1
-#, fuzzy
 msgid "About Xfce"
 msgstr "Über Xfce"
 
@@ -476,7 +471,6 @@ msgid "Information about the Xfce Desktop Environment"
 msgstr "Informationen über die Xfce-Desktopumgebung"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:1
-#, fuzzy
 msgid "About"
 msgstr "Über"
 
