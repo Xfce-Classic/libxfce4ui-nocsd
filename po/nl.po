@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-01-07 09:27+0000\n"
+"POT-Creation-Date: 2012-04-01 17:00+0000\n"
 "PO-Revision-Date: 2011-06-15 11:34+0200\n"
 "Last-Translator: Pjotr\n"
 "Language-Team: Dutch (Flemish)\n"
@@ -39,7 +39,9 @@ msgstr "Internetdocumentatie"
 msgid ""
 "You will be redirected to the documentation website where the help pages are "
 "maintained and translated."
-msgstr "U zult worden omgeleid naar de documentatiewebstek, waar de hulppagina's worden onderhouden en vertaald."
+msgstr ""
+"U zult worden omgeleid naar de documentatiewebstek, waar de hulppagina's "
+"worden onderhouden en vertaald."
 
 #: ../libxfce4ui/xfce-dialogs.c:207
 msgid "_Read Online"
@@ -382,43 +384,43 @@ msgstr ""
 "gepubliceerd door de Free Software Foundation; hetzij versie 2 van de "
 "License, hetzij (naar uw eigen keuze) enige latere versie."
 
-#: ../xfce4-about/main.c:449
+#: ../xfce4-about/main.c:442
 #, c-format
 msgid "Type '%s --help' for usage information."
 msgstr "Tik '%s --help' voor gebruiksinformatie."
 
-#: ../xfce4-about/main.c:455
+#: ../xfce4-about/main.c:448
 msgid "Unable to initialize GTK+."
 msgstr "Kon GTK+ niet initialiseren."
 
-#: ../xfce4-about/main.c:464
+#: ../xfce4-about/main.c:457
 msgid "The Xfce development team. All rights reserved."
 msgstr "De Xfce-ontwikkelploeg. Alle rechten voorbehouden."
 
-#: ../xfce4-about/main.c:465
+#: ../xfce4-about/main.c:458
 #, c-format
 msgid "Please report bugs to <%s>."
 msgstr "Meld fouten a.u.b. aan <%s>."
 
 #. I18N: date/time the translators list was updated
-#: ../xfce4-about/main.c:468
+#: ../xfce4-about/main.c:461
 #, c-format
 msgid "Translators list from %s."
 msgstr "Vertalerslijst vanuit %s."
 
-#: ../xfce4-about/main.c:478
+#: ../xfce4-about/main.c:471
 msgid "Failed to load interface"
 msgstr "Kon gebruikersschil niet laden"
 
 #. I18N: first %s will be replaced by the version, second by
 #. * the name of the distribution (--with-vendor-info=NAME)
-#: ../xfce4-about/main.c:492
+#: ../xfce4-about/main.c:485
 #, c-format
 msgid "Version %s, distributed by %s"
 msgstr "Versie %s, gedistribueerd door %s"
 
 #. I18N: %s will be replaced by the Xfce version number
-#: ../xfce4-about/main.c:496
+#: ../xfce4-about/main.c:489
 #, c-format
 msgid "Version %s"
 msgstr "Versie %s"
