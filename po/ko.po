@@ -83,7 +83,7 @@ msgstr "세션 관리자 옵션"
 
 #: ../libxfce4ui/xfce-sm-client.c:1414
 msgid "Show session management options"
-msgstr "세션 관리자 옵션 보이기"
+msgstr "세션 관리자 옵션 보기"
 
 #: ../libxfce4ui/xfce-sm-client.c:1590
 #, c-format
