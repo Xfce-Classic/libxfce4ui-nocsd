@@ -342,6 +342,7 @@ msgid "The Xfce Development Team"
 msgstr "Das Xfce Entwicklungsteam"
 
 #: ../xfce4-about/main.c:262
+#, fuzzy
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
 "on <http://bugzilla.xfce.org> ."
