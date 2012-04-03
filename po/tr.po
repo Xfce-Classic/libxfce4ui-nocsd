@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SVN\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-01-30 16:33+0000\n"
+"POT-Creation-Date: 2012-04-03 09:36+0000\n"
 "PO-Revision-Date: 2010-05-09 21:08+0200\n"
 "Last-Translator: Gökmen Görgen <gkmngrgn@gmail.com>\n"
 "Language-Team: Turkish <kde-i18n-doc@kde.org>\n"
@@ -40,14 +40,15 @@ msgstr "Çevrimiçi Belgelendirme"
 msgid ""
 "You will be redirected to the documentation website where the help pages are "
 "maintained and translated."
-msgstr "Yardım sayfalarının güncellendiği ve çevrildiği dökümantasyon sayfasına yönlendirileceksiniz."
+msgstr ""
+"Yardım sayfalarının güncellendiği ve çevrildiği dökümantasyon sayfasına "
+"yönlendirileceksiniz."
 
 #: ../libxfce4ui/xfce-dialogs.c:207
 msgid "_Read Online"
 msgstr "_Çevrimiçi Oku"
 
 #: ../libxfce4ui/xfce-dialogs.c:219
-#, fuzzy
 msgid "_Always go directly to the online documentation"
 msgstr "_Her zaman doğrudan çevrimiçi belgelendirmeye git"
 
