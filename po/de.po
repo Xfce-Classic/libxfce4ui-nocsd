@@ -206,7 +206,7 @@ msgstr "Dialog mit Titel"
 
 #: ../glade/libxfce4ui.xml.in.h:3
 msgid "Xfce 4 Widgets"
-msgstr "Xfce 4 Elemente"
+msgstr "Xfce-4-Elemente"
 
 #: ../xfce4-about/main.c:52
 msgid "Version information"
