@@ -4,14 +4,15 @@
 # This file is distributed under the same license as the libxfce4ui package.
 # Fabian Nowak <timystery@arcor.de>, 2008.
 # Mario Blättermann <mario.blaettermann@gmail.com>, 2012.
+# Jakob Kramer <jakob.kramer@gmx.de>, 2012.
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui master\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-04-03 15:24+0000\n"
-"PO-Revision-Date: 2012-03-29 12:17+0100\n"
-"Last-Translator: Mario Blättermann <mario.blaettermann@gmail.com>\n"
+"PO-Revision-Date: 2012-04-03 20:58+0200\n"
+"Last-Translator: Jakob Kramer <jakob.kramer@gmx.de>\n"
 "Language-Team: German\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -383,10 +384,10 @@ msgid ""
 "version."
 msgstr ""
 "Die Pakete thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-"
-"settings, xfce-utils, xfconf, xfdesktop und xfwm4 werden verbreitet unter "
-"den Bestimmungen der GNU Library General Public License, veröffentlicht von "
-"der Free Software Foundation, in Version 2 der Lizenz oder einer späteren "
-"Ihrer Wahl."
+"settings, xfce-utils, xfconf, xfdesktop und xfwm4 werden unter "
+"den Bestimmungen der GNU General Public License verbreitet, wie sie von der "
+"Free Software Foundation, in Version 2 der Lizenz oder einer späteren Ihrer "
+"Wahl veröffentlicht wurde."
 
 #: ../xfce4-about/main.c:442
 #, c-format
