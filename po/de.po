@@ -202,7 +202,6 @@ msgid "Subtitle"
 msgstr "Untertitel"
 
 #: ../glade/libxfce4ui.xml.in.h:2
-#, fuzzy
 msgid "Titled Dialog"
 msgstr "Dialog mit Titel"
 
