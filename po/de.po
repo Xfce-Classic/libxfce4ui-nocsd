@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-04-03 15:24+0000\n"
+"POT-Creation-Date: 2012-04-03 21:12+0000\n"
 "PO-Revision-Date: 2012-04-03 20:58+0200\n"
 "Last-Translator: Jakob Kramer <jakob.kramer@gmx.de>\n"
 "Language-Team: German\n"
@@ -202,12 +202,13 @@ msgid "Subtitle"
 msgstr "Untertitel"
 
 #: ../glade/libxfce4ui.xml.in.h:2
+#, fuzzy
 msgid "Titled Dialog"
 msgstr "Dialog mit Titel"
 
 #: ../glade/libxfce4ui.xml.in.h:3
 msgid "Xfce 4 Widgets"
-msgstr "Xfce-4-Elemente"
+msgstr "Xfce 4-Elemente"
 
 #: ../xfce4-about/main.c:52
 msgid "Version information"
@@ -342,7 +343,6 @@ msgid "The Xfce Development Team"
 msgstr "Das Xfce Entwicklungsteam"
 
 #: ../xfce4-about/main.c:262
-#, fuzzy
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
 "on <http://bugzilla.xfce.org> ."
@@ -353,7 +353,7 @@ msgstr ""
 
 #: ../xfce4-about/main.c:266
 msgid "Thanks to all who helped making this software available!"
-msgstr "Danke an alle, die geholfen haben, diese Software verfügbar zu machen."
+msgstr "Danke an alle, die geholfen haben, diese Software verfügbar zu machen!"
 
 #: ../xfce4-about/main.c:283
 msgid ""
@@ -385,10 +385,10 @@ msgid ""
 "version."
 msgstr ""
 "Die Pakete thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-"
-"settings, xfce-utils, xfconf, xfdesktop und xfwm4 werden unter "
-"den Bestimmungen der GNU General Public License verbreitet, wie sie von der "
-"Free Software Foundation, in Version 2 der Lizenz oder einer späteren Ihrer "
-"Wahl veröffentlicht wurde."
+"settings, xfce-utils, xfconf, xfdesktop und xfwm4 werden unter den "
+"Bestimmungen der GNU General Public License verbreitet, wie sie von der Free "
+"Software Foundation, in Version 2 der Lizenz oder einer späteren Ihrer Wahl "
+"veröffentlicht wurde."
 
 #: ../xfce4-about/main.c:442
 #, c-format
