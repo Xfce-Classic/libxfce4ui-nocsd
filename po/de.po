@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-04-01 17:00+0000\n"
+"POT-Creation-Date: 2012-04-03 15:24+0000\n"
 "PO-Revision-Date: 2012-03-29 12:17+0100\n"
 "Last-Translator: Mario Blättermann <mario.blaettermann@gmail.com>\n"
 "Language-Team: German\n"
@@ -201,7 +201,6 @@ msgid "Subtitle"
 msgstr "Untertitel"
 
 #: ../glade/libxfce4ui.xml.in.h:2
-#, fuzzy
 msgid "Titled Dialog"
 msgstr "Dialog mit Titel"
 
@@ -376,7 +375,6 @@ msgstr ""
 "oder einer späteren Ihrer Wahl."
 
 #: ../xfce4-about/main.c:295
-#, fuzzy
 msgid ""
 "The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-"
 "settings, xfce-utils, xfconf, xfdesktop and xfwm4 are distributed under the "
