@@ -375,7 +375,6 @@ msgstr ""
 "oder einer späteren Ihrer Wahl."
 
 #: ../xfce4-about/main.c:295
-#, fuzzy
 msgid ""
 "The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-"
 "settings, xfce-utils, xfconf, xfdesktop and xfwm4 are distributed under the "
