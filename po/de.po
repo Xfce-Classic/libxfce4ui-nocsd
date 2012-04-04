@@ -372,8 +372,8 @@ msgid ""
 msgstr ""
 "Die Pakete libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs und exo werden "
 "verbreitet unter den Bestimmungen der GNU Library General Public License, "
-"veröffentlicht von der Free Software Foundation, in Version 2 der Lizenz "
-"oder einer späteren Ihrer Wahl."
+"wie sie von der Free Software Foundation veröffentlicht wurde; entweder in "
+"Version 2 der Lizenz oder einer späteren Ihrer Wahl."
 
 #: ../xfce4-about/main.c:295
 msgid ""
@@ -384,10 +384,10 @@ msgid ""
 "version."
 msgstr ""
 "Die Pakete thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-"
-"settings, xfce-utils, xfconf, xfdesktop und xfwm4 werden unter den "
-"Bestimmungen der GNU General Public License verbreitet, wie sie von der Free "
-"Software Foundation, in Version 2 der Lizenz oder einer späteren Ihrer Wahl "
-"veröffentlicht wurde."
+"settings, xfce-utils, xfconf, xfdesktop und xfwm4 werden verbreitet unter "
+"den Bestimmungen der GNU General Public License, wie sie von der Free "
+"Software Foundation veröffentlicht wurde; entweder in Version 2 der Lizenz "
+"oder einer späteren Ihrer Wahl."
 
 #: ../xfce4-about/main.c:442
 #, c-format
