@@ -289,11 +289,11 @@ msgstr "Xfce 4는 Oliver Foundan (fourdan@xfce.org)의 지적소유물입니다.
 
 #: ../xfce4-about/main.c:288
 msgid "The libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs and exo packages are distributed under the terms of the GNU Library General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version."
-msgstr "libxfce4ui, libxfce4gui, libxfce4util, thunar-vfs 그리고 exo 패키지는 자유 소프트웨어 재단이 발표한 버전 2 또는 (여러분의 선택에 따라) 그 이후의 GNU Library General Public License의 조항에 의해 배포됩니다."
+msgstr "libxfce4ui, libxfce4gui, libxfce4util, thunar-vfs 그리고 exo 패키지는 자유 소프트웨어 재단이 발표한 버전 2 또는 (여러분의 선택에 따라) 그 이후의 GNU Library General Public License의 조항에 따라 배포합니다."
 
 #: ../xfce4-about/main.c:295
 msgid "The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfce-utils, xfconf, xfdesktop and xfwm4 are distributed under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version."
-msgstr "thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfce-utils, xfconf, xfdesktop 그리고 xfwm4 패키지는 자유 소프트웨어 재단이 발표한 버전 2 또는(여러분의 선택에 따라)  그 이후의 GNU Library General Public License의 조항에 의해 배포됩니다."
+msgstr "thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfce-utils, xfconf, xfdesktop 그리고 xfwm4 패키지는 자유 소프트웨어 재단이 발표한 버전 2 또는(여러분의 선택에 따라)  그 이후의 GNU Library General Public License의 조항에 따라 배포합니다."
 
 #: ../xfce4-about/main.c:442
 #, c-format
