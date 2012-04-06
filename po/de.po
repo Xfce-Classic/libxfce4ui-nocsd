@@ -346,9 +346,8 @@ msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
 "on <http://bugzilla.xfce.org> ."
 msgstr ""
-"Xfce ist eine Sammlung von Programmen, die zusammen eine voll "
-"funktionsfähige Arbeitsumgebung zur Verfügung stellen. Die folgenden "
-"Programme sind Teil des Xfce-Kerns:"
+"Sollten Sie jemanden auf dieser Liste vermissen, zögern Sie nicht, unter 
+"<http://bugzilla.xfce.org> einen Fehlerbericht zu erstellen."
 
 #: ../xfce4-about/main.c:266
 msgid "Thanks to all who helped making this software available!"
