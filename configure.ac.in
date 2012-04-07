@@ -125,8 +125,8 @@ XDT_CHECK_LIBSM()
 dnl ***********************************
 dnl *** Check for required packages ***
 dnl ***********************************
-XDT_CHECK_PACKAGE([GOBJECT], [gobject-2.0], [2.16.0])
-XDT_CHECK_PACKAGE([GTK], [gtk+-2.0], [2.14.0])
+XDT_CHECK_PACKAGE([GOBJECT], [gobject-2.0], [2.24.0])
+XDT_CHECK_PACKAGE([GTK], [gtk+-2.0], [2.20.0])
 XDT_CHECK_PACKAGE([LIBXFCE4UTIL], [libxfce4util-1.0], [4.8.0])
 
 dnl *************************************************
