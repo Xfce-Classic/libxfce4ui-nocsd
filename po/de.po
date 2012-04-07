@@ -346,7 +346,7 @@ msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
 "on <http://bugzilla.xfce.org> ."
 msgstr ""
-"Sollten Sie jemanden auf dieser Liste vermissen, zögern Sie nicht, unter 
+"Sollten Sie jemanden auf dieser Liste vermissen, zögern Sie nicht, unter "
 "<http://bugzilla.xfce.org> einen Fehlerbericht zu erstellen."
 
 #: ../xfce4-about/main.c:266
