@@ -245,7 +245,7 @@ msgstr "프로그램 찾기"
 
 #: ../xfce4-about/main.c:100
 msgid "Shows the applications installed on your system in categories, so you can quickly find and launch them."
-msgstr "시스템에 설치된 프로그램을 카테고리에 보여주어 빨리 찾고 실행할 수 있도록 해줍니다."
+msgstr "시스템에 설치한 프로그램을 카테고리에 보여주어 빨리 찾고 실행할 수 있도록 해줍니다."
 
 #: ../xfce4-about/main.c:104
 msgid "Settings Daemon"
