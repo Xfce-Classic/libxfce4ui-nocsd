@@ -354,7 +354,6 @@ msgid "Thanks to all who helped making this software available!"
 msgstr "Danke an alle, die geholfen haben, diese Software verfügbar zu machen!"
 
 #: ../xfce4-about/main.c:283
-#, fuzzy
 msgid ""
 "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
