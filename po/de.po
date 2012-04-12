@@ -339,7 +339,7 @@ msgstr "Danke für Ihr Interesse an Xfce."
 
 #: ../xfce4-about/main.c:153
 msgid "The Xfce Development Team"
-msgstr "Das Xfce Entwicklungsteam"
+msgstr "Das Xfce-Entwicklerteam"
 
 #: ../xfce4-about/main.c:262
 msgid ""
