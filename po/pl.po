@@ -1,39 +1,39 @@
 # Polish translations for libxfce4ui package.
 # Copyright (C) 2011 The Xfce development team.
 # This file is distributed under the same license as the libxfce4ui package.
-# Piotr Sokół <psokol@jabster.pl>, 2011.
-# 
+# Piotr Sokół <psokol@jabster.pl>, 2011, 2012.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-04-07 11:45+0000\n"
-"PO-Revision-Date: 2007-01-20 23:10+0200\n"
-"Last-Translator: Piotr Maliński <riklaunim@gmail.com>\n"
-"Language-Team: Polish <>\n"
+"POT-Creation-Date: 2012-04-12 06:45+0000\n"
+"PO-Revision-Date: 2012-04-12 10:40+0200\n"
+"Last-Translator: Piotr Sokół <psokol@jabster.pl>\n"
+"Language-Team: polski <>\n"
+"Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Language: pl\n"
-"Plural-Forms: nplurals=3; plural=((n==1) ? 0 : ((n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20)) ? 1 : 2));\n"
+"Content-Transfer-Encoding: 8bits\n"
+"Plural-Forms: nplurals=3; plural=((n==1) ? 0 : ((n%10>=2 && n%10<=4 && (n"
+"%100<10 || n%100>=20)) ? 1 : 2));\n"
 
 #: ../libxfce4ui/xfce-dialogs.c:80
-#, fuzzy
 msgid "Failed to open web browser for online documentation"
-msgstr "Nie udało się uruchomić przeglądarki internetowej w celu wyświetlenia zdalnej dokumentacji"
+msgstr ""
+"Nie udało się uruchomić przeglądarki internetowej w celu wyświetlenia "
+"zdalnej dokumentacji"
 
 #: ../libxfce4ui/xfce-dialogs.c:195
-#, c-format, fuzzy
+#, c-format
 msgid "Do you want to read the %s manual online?"
 msgstr "Wyświetlić zdalny podręcznik programu %s?"
 
 #: ../libxfce4ui/xfce-dialogs.c:197
-#, fuzzy
 msgid "Do you want to read the manual online?"
 msgstr "Wyświetlić zdalny podręcznik?"
 
 #: ../libxfce4ui/xfce-dialogs.c:200
-#, fuzzy
 msgid "Online Documentation"
 msgstr "Zdalna dokumentacja"
 
@@ -42,14 +42,16 @@ msgid ""
 "You will be redirected to the documentation website where the help pages are "
 "maintained and translated."
 msgstr ""
+"Przeglądarka otworzy stronę dokumentacji, na której tworzone są podręczniki "
+"użytkownika i gdzie następuje ich tłumaczenie."
 
 #: ../libxfce4ui/xfce-dialogs.c:207
 msgid "_Read Online"
-msgstr ""
+msgstr "_Wyświetl podręcznik"
 
 #: ../libxfce4ui/xfce-dialogs.c:219
 msgid "_Always go directly to the online documentation"
-msgstr ""
+msgstr "_Pomijanie tego pytania w przyszłości"
 
 #: ../libxfce4ui/xfce-dialogs.c:263
 msgid "Information"
@@ -69,7 +71,7 @@ msgstr "Pytanie"
 
 #: ../libxfce4ui/xfce-sm-client.c:1402
 msgid "Session management client ID"
-msgstr "ID klienta menadżera sesji"
+msgstr "Określa identyfikator klienta menedżera sesji"
 
 #: ../libxfce4ui/xfce-sm-client.c:1402
 msgid "ID"
@@ -77,7 +79,7 @@ msgstr "ID"
 
 #: ../libxfce4ui/xfce-sm-client.c:1403
 msgid "Disable session management"
-msgstr "Wyłącz zarządzanie sesją"
+msgstr "Wyłącza zarządzanie sesją"
 
 #: ../libxfce4ui/xfce-sm-client.c:1413
 msgid "Session management options"
@@ -85,7 +87,7 @@ msgstr "Opcje zarządzania sesją"
 
 #: ../libxfce4ui/xfce-sm-client.c:1414
 msgid "Show session management options"
-msgstr "Pokaż opcje zarządzania sesją"
+msgstr "Wypisuje opcje zarządzania sesją"
 
 #: ../libxfce4ui/xfce-sm-client.c:1590
 #, c-format
@@ -93,9 +95,9 @@ msgid "Failed to connect to the session manager: %s"
 msgstr "Nie udało się połączyć z menadżerem sesji: %s"
 
 #: ../libxfce4ui/xfce-sm-client.c:1597
-#, fuzzy, c-format
+#, c-format
 msgid "Session manager did not return a valid client id"
-msgstr "Menadżer sesji nie zwrócił poprawnego identifikatora klienta"
+msgstr "Menadżer sesji nie zwrócił poprawnego identyfikatora klienta"
 
 #. print warning for user
 #: ../libxfce4ui/xfce-spawn.c:406
@@ -104,6 +106,8 @@ msgid ""
 "Working directory \"%s\" does not exist. It won't be used when spawning \"%s"
 "\"."
 msgstr ""
+"Katalog roboczy „%s” nie istnieje. Nie zostanie on użyty podczas wywoływania "
+"„%s”."
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:52
 msgid ""
@@ -192,7 +196,6 @@ msgid "Could not grab the keyboard."
 msgstr "Nie można przechwycić klawiatury."
 
 #: ../glade/libxfce4ui.xml.in.h:1
-#, fuzzy
 msgid "Subtitle"
 msgstr "Podtytuł"
 
@@ -288,7 +291,8 @@ msgstr "Demon ustawień"
 
 #: ../xfce4-about/main.c:105
 msgid "D-Bus-based configuration storage system."
-msgstr "Przechowuje konfiguracje programów w oparciu o system D-Bus."
+msgstr ""
+"Przechowuje konfiguracje programów w oparciu o system komunikacji D-Bus."
 
 #: ../xfce4-about/main.c:112
 msgid ""
@@ -410,7 +414,7 @@ msgstr "Nie udało się wczytać interfejsu"
 #: ../xfce4-about/main.c:485
 #, c-format
 msgid "Version %s, distributed by %s"
-msgstr "Wersja %s, rozprowadzana przez %s"
+msgstr "Wersja %s, dostarczona przez %s"
 
 #. I18N: %s will be replaced by the Xfce version number
 #: ../xfce4-about/main.c:489
