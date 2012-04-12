@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-04-06 12:45+0000\n"
+"POT-Creation-Date: 2012-04-12 18:15+0000\n"
 "PO-Revision-Date: 2012-04-03 20:58+0200\n"
 "Last-Translator: Jakob Kramer <jakob.kramer@gmx.de>\n"
 "Language-Team: German\n"
@@ -207,7 +207,7 @@ msgstr "Dialog mit Titel"
 
 #: ../glade/libxfce4ui.xml.in.h:3
 msgid "Xfce 4 Widgets"
-msgstr "Xfce 4-Elemente"
+msgstr "Xfce-4-Elemente"
 
 #: ../xfce4-about/main.c:52
 msgid "Version information"
@@ -354,6 +354,7 @@ msgid "Thanks to all who helped making this software available!"
 msgstr "Danke an alle, die geholfen haben, diese Software verfügbar zu machen!"
 
 #: ../xfce4-about/main.c:283
+#, fuzzy
 msgid ""
 "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
