@@ -39,9 +39,6 @@ typedef struct _XfceShortcutsGrabber        XfceShortcutsGrabber;
 GType                 xfce_shortcuts_grabber_get_type      (void) G_GNUC_CONST;
 
 XfceShortcutsGrabber *xfce_shortcuts_grabber_new           (void) G_GNUC_MALLOC;
-gchar                *xfce_shortcuts_grabber_shortcut_name (XfceShortcutsGrabber *grabber,
-                                                            guint                 keycode,
-                                                            guint                 modifiers);
 void                  xfce_shortcuts_grabber_add           (XfceShortcutsGrabber *grabber,
                                                             const gchar          *shortcut);
 void                  xfce_shortcuts_grabber_remove        (XfceShortcutsGrabber *grabber,
