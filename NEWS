@@ -1,3 +1,12 @@
+4.9.2
+=====
+- Update translators, week 13 and 14.
+- Increase gtk and glib versions.
+- Bump 4util dependency.
+- Remove unused function prototype.
+- Translation updates: German, Greek, Galician, Japanese, Korean,
+  Dutch (Flemish), Polish, Portuguese, Russian, Turkish.
+
 4.9.1
 =====
 - Open docs.xfce.org when Help in xfce4-about is clicked.
