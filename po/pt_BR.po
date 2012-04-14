@@ -2,19 +2,19 @@
 # Copyright (C) 2008 THE libxfce'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the libxfce package.
 # Fábio Nogueira <deb-user-ba@ubuntu.com>, 2008.
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: libxfce 4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-01-08 15:33+0000\n"
-"PO-Revision-Date: 2009-12-18 08:58-0500\n"
+"POT-Creation-Date: 2012-04-14 16:15+0000\n"
+"PO-Revision-Date: 2012-04-14 17:15-0300\n"
 "Last-Translator: Og Maciel <ogmaciel@gnome.org>\n"
 "Language-Team: Brazilian Portuguese <ldp-br@bazar2.conectiva.com.br>\n"
+"Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: pt_BR\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: ../libxfce4ui/xfce-dialogs.c:80
@@ -38,7 +38,9 @@ msgstr "Documentação online"
 msgid ""
 "You will be redirected to the documentation website where the help pages are "
 "maintained and translated."
-msgstr "Você será redirecionado ao site de documentação, onde as páginas de ajuda são mantidas e traduzidas."
+msgstr ""
+"Você será redirecionado ao site de documentação, onde as páginas de ajuda "
+"são mantidas e traduzidas."
 
 #: ../libxfce4ui/xfce-dialogs.c:207
 msgid "_Read Online"
@@ -276,7 +278,7 @@ msgstr ""
 
 #: ../xfce4-about/main.c:99
 msgid "Application Finder"
-msgstr "Perquisador de aplicativos"
+msgstr "Pesquisador de aplicativos"
 
 #: ../xfce4-about/main.c:100
 msgid ""
@@ -321,7 +323,7 @@ msgid ""
 "information."
 msgstr ""
 "Os componentes do Xfce são licenciados sob licenças livres ou de código "
-"aberto. GPL oui BSDL para aplicativos e LGPL ou BSDL para bibliotecas. Veja "
+"aberto. GPL ou BSDL para aplicativos e LGPL ou BSDL para bibliotecas. Veja "
 "a documentação, o código fonte ou o site do Xfce (http://www.xfce.org) para "
 "mais informações."
 
