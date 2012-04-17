@@ -317,7 +317,7 @@ msgstr "<%s>(으)로 버그를 알려주시기 바랍니다."
 #: ../xfce4-about/main.c:461
 #, c-format
 msgid "Translators list from %s."
-msgstr "%s(으)로부터의 번역자 목록입니다."
+msgstr "%s의 번역자 목록입니다."
 
 #: ../xfce4-about/main.c:471
 msgid "Failed to load interface"
