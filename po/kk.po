@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: trunk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-01-27 01:33+0000\n"
+"POT-Creation-Date: 2012-04-20 04:30+0000\n"
 "PO-Revision-Date: 2011-12-17 22:34+0600\n"
 "Last-Translator: Baurzhan Muftakhidinov <baurthefirst@gmail.com>\n"
 "Language-Team: Kazakh <kk_KZ@googlegroups.com>\n"
@@ -161,7 +161,7 @@ msgstr "Жарлық қазір басқа бір әрекет үшін орна
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:204
 msgid "Window Manager Action Shortcut"
-msgstr "Терезелерді басқарушы әрекеттерінің жарлықтары"
+msgstr "Терезелерді басқарушысы әрекеттерінің жарлықтары"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:205
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:215
