@@ -39,7 +39,7 @@ msgstr "온라인 문서"
 
 #: ../libxfce4ui/xfce-dialogs.c:203
 msgid "You will be redirected to the documentation website where the help pages are maintained and translated."
-msgstr "관리, 번역된 도움멜 페이지가 있는 문서 웹사이트로 안내받을 것입니다."
+msgstr "관리, 번역된 도움말 페이지가 있는 문서 웹사이트로 안내받을 것입니다."
 
 #: ../libxfce4ui/xfce-dialogs.c:207
 msgid "_Read Online"
