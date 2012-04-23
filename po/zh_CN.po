@@ -9,8 +9,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui\n"
-"Report-Msgid-Bugs-To: <xfce-i18n@xfce.org>\n"
-"POT-Creation-Date: 2012-04-20 10:15+0000\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-04-23 01:30+0000\n"
 "PO-Revision-Date: 2010-04-06 13:14+0800\n"
 "Last-Translator: Chipong Luo <chipong.luo@yahoo.com>\n"
 "Language-Team: Chinese (Simplified) <xfce-i18n-cn@xfce.org>\n"
@@ -41,7 +41,7 @@ msgstr "在线文档"
 msgid ""
 "You will be redirected to the documentation website where the help pages are "
 "maintained and translated."
-msgstr "会将您重定向至帮助页面维护和翻译的文档网站。"
+msgstr "会将您重定向至维护和翻译帮助文档的网站。"
 
 #: ../libxfce4ui/xfce-dialogs.c:207
 msgid "_Read Online"
@@ -103,13 +103,13 @@ msgstr "会话管理器未返回一个有效的客户端 ID"
 msgid ""
 "Working directory \"%s\" does not exist. It won't be used when spawning \"%s"
 "\"."
-msgstr "工作目录 “%s” 不存在。启动 “%s” 时将不会使用它。"
+msgstr "工作目录 “%s” 不存在。启动 “%s” 时不会使用它。"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:52
 msgid ""
 "This shortcut is already being used for another window manager action. Which "
 "action do you want to use?"
-msgstr "另一个窗口管理器动作已使用此快捷键。您要使用哪个动作？"
+msgstr "另一个窗口管理器动作在使用此快捷键。您要使用哪个动作？"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
@@ -129,7 +129,7 @@ msgstr "保留另外一个"
 msgid ""
 "This shortcut is already being used for the command '%s'. Which action do "
 "you want to use?"
-msgstr "命令 “%s” 已使用此快捷键。您要使用哪个动作？"
+msgstr "命令 “%s” 在使用此快捷键。您要使用哪个动作？"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
 #: ../libxfce4kbd-private/xfce-shortcuts.c:59
@@ -141,7 +141,7 @@ msgstr "保留 ‘%s’"
 msgid ""
 "This shortcut is already being used by a window manager action. Which action "
 "do you want to use?"
-msgstr "一窗口管理器动作已使用此快捷键。您要使用哪个动作？"
+msgstr "一窗口管理器动作在使用此快捷键。您要使用哪个动作？"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 msgid "Keep the window manager action"
@@ -154,7 +154,7 @@ msgstr "因 %s 冲突的动作"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:128
 msgid "This shortcut is already being used for something else."
-msgstr "其它动作已使用此快捷键。"
+msgstr "其它动作在使用此快捷键。"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:204
 msgid "Window Manager Action Shortcut"
@@ -228,8 +228,8 @@ msgid ""
 "Sets the background color or image with optional application menu or icons "
 "for minimized applications or launchers, devices and folders."
 msgstr ""
-"设置带可选应用程序菜单的背景颜色或图片，或最小化的应用程序或启动器、设备和文"
-"件夹的图标。"
+"设置背景的颜色或图片，可选应用程序菜单或最小化应用程序、启动器、设备"
+"文件夹的图标。"
 
 #: ../xfce4-about/main.c:84
 msgid "File Manager "
@@ -291,7 +291,7 @@ msgid ""
 "programmers create applications that fit in well with the desktop "
 "environment."
 msgstr ""
-"Xfce 还是一个提供若干库文件，帮助程序员创建很适合桌面环境的应用程序的开发平"
+"Xfce 还是一个提供若干库文件，帮助程序员创建适合桌面环境的应用程序的开发平"
 "台。"
 
 #: ../xfce4-about/main.c:142
@@ -317,7 +317,7 @@ msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
 "on <http://bugzilla.xfce.org> ."
 msgstr ""
-"如果您知道此列表漏掉了任何人，不要犹豫并在 <http://bugzilla.xfce.org> 上提交"
+"如果您知道此列表漏掉了某个人，不要犹豫并在 <http://bugzilla.xfce.org> 上提交"
 "缺陷。"
 
 #: ../xfce4-about/main.c:266
