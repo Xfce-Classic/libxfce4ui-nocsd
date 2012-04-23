@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-04-09 19:32+0900\n"
-"PO-Revision-Date: 2012-04-09 20:37+0900\n"
+"PO-Revision-Date: 2012-04-23 21:07+0900\n"
 "Last-Translator: Masato Hashimoto <cabezon.hashimoto@gmail.com>\n"
 "Language-Team: Japanese <xfce-users-jp@ml.fdiary.net>\n"
 "Language: ja\n"
@@ -233,7 +233,7 @@ msgstr "デスクトップマネージャー"
 msgid ""
 "Sets the background color or image with optional application menu or icons "
 "for minimized applications or launchers, devices and folders."
-msgstr "背景の色や画像を設定し、オプションでアプリケーションメニューの表示や、アプリケーションやランチャを最小化したアイコン、デバイス、およびフォルダの配置を行います。"
+msgstr "背景の色や画像を設定し、オプションでアプリケーションメニューの表示や、アプリケーションやランチャーを最小化したアイコン、デバイス、およびフォルダーの配置を行います。"
 
 #: ../xfce4-about/main.c:84
 msgid "File Manager "
@@ -253,7 +253,7 @@ msgstr "セッションマネージャー"
 msgid ""
 "Restores your session on startup and allows you to shutdown the computer "
 "from Xfce."
-msgstr "起動時にセッションを復元し、Xfce からコンピュータのシャットダウンを行えるようにします。"
+msgstr "起動時にセッションを復元し、Xfce からコンピューターのシャットダウンを行えるようにします。"
 
 #: ../xfce4-about/main.c:94
 msgid "Setting System"
@@ -399,7 +399,7 @@ msgstr "現在の協力者"
 
 #: ../xfce4-about/contributors.h:133
 msgid "Servers maintained by"
-msgstr "サーバの管理"
+msgstr "サーバーの管理"
 
 #: ../xfce4-about/contributors.h:136
 msgid "Goodies supervision"
