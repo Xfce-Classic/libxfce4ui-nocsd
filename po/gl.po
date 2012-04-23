@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-04-10 08:45+0000\n"
+"POT-Creation-Date: 2012-04-23 07:15+0000\n"
 "PO-Revision-Date: 2010-10-19 18:05+0100\n"
 "Last-Translator: Leandro Regueiro <leandro.regueiro@gmail.com>\n"
 "Language-Team: Galician <proxecto@trasno.net>\n"
@@ -23,20 +23,20 @@ msgstr ""
 
 #: ../libxfce4ui/xfce-dialogs.c:80
 msgid "Failed to open web browser for online documentation"
-msgstr ""
+msgstr "Produciuse un erro ao abrir o navegador web para consultar a documentación en Internet"
 
 #: ../libxfce4ui/xfce-dialogs.c:195
 #, c-format
 msgid "Do you want to read the %s manual online?"
-msgstr ""
+msgstr "Desexa ler o manual de %s en Internet?"
 
 #: ../libxfce4ui/xfce-dialogs.c:197
 msgid "Do you want to read the manual online?"
-msgstr ""
+msgstr "Desexa ler o manual en Internet?"
 
 #: ../libxfce4ui/xfce-dialogs.c:200
 msgid "Online Documentation"
-msgstr ""
+msgstr "Documentación en Internet"
 
 #: ../libxfce4ui/xfce-dialogs.c:203
 msgid ""
@@ -46,11 +46,11 @@ msgstr ""
 
 #: ../libxfce4ui/xfce-dialogs.c:207
 msgid "_Read Online"
-msgstr ""
+msgstr "Le_r en Internet"
 
 #: ../libxfce4ui/xfce-dialogs.c:219
 msgid "_Always go directly to the online documentation"
-msgstr ""
+msgstr "Ir _sempre directamente á documentación en Internet"
 
 #: ../libxfce4ui/xfce-dialogs.c:263
 msgid "Information"
@@ -214,7 +214,7 @@ msgstr "Xestor de xanelas"
 
 #: ../xfce4-about/main.c:71
 msgid "Handles the placement of windows on the screen."
-msgstr ""
+msgstr "Manexa a situación das xanelas na pantalla."
 
 #: ../xfce4-about/main.c:74
 msgid "Panel"
@@ -244,7 +244,7 @@ msgstr "Xestor de ficheiros"
 msgid ""
 "A modern file manager for the Unix/Linux desktop, aiming to be easy-to-use "
 "and fast."
-msgstr ""
+msgstr "Un xestor de ficheiros moderno para escritorios Unix/Linux, que intenta ser fácil de usar e rápido."
 
 #: ../xfce4-about/main.c:89
 msgid "Session Manager"
@@ -257,9 +257,8 @@ msgid ""
 msgstr ""
 
 #: ../xfce4-about/main.c:94
-#, fuzzy
 msgid "Setting System"
-msgstr "Iniciando %s"
+msgstr "Configuración do sistema"
 
 #: ../xfce4-about/main.c:95
 msgid ""
@@ -275,28 +274,28 @@ msgstr "Buscador de aplicativos"
 msgid ""
 "Shows the applications installed on your system in categories, so you can "
 "quickly find and launch them."
-msgstr ""
+msgstr "Mostra os aplicativos instalados no sistema mediante categorías de xeito que se fáciles de atopar e de iniciar."
 
 #: ../xfce4-about/main.c:104
 msgid "Settings Daemon"
-msgstr ""
+msgstr "Daemon de configuración"
 
 #: ../xfce4-about/main.c:105
 msgid "D-Bus-based configuration storage system."
-msgstr ""
+msgstr "Sistema de almacenamento da configuración baseado en D-Bus."
 
 #: ../xfce4-about/main.c:112
 msgid ""
 "Xfce is a collection of programs that together provide a full-featured "
 "desktop environment. The following programs are part of the Xfce core:"
-msgstr ""
+msgstr "Xfce é unha colección de programas que xuntos fornecen un ambiente de escritorio con moitas características. Os seguintes programas forman parte do núcleo de Xfce:"
 
 #: ../xfce4-about/main.c:136
 msgid ""
 "Xfce is also a development platform providing several libraries, that help "
 "programmers create applications that fit in well with the desktop "
 "environment."
-msgstr ""
+msgstr "Xfce tamén é unha plataforma de desenvolvemento que fornece varias bibliotecas que lle axudan aos programadores a crear aplicativos que se integren ben co ambiente de escritorio."
 
 #: ../xfce4-about/main.c:142
 msgid ""
@@ -322,13 +321,14 @@ msgstr ""
 
 #: ../xfce4-about/main.c:266
 msgid "Thanks to all who helped making this software available!"
-msgstr "Grazas a todos os que axudaron a facer que este software estea dispoñíbel!"
+msgstr ""
+"Grazas a todos os que axudaron a facer que este software estea dispoñíbel!"
 
 #: ../xfce4-about/main.c:283
 msgid ""
 "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
-msgstr ""
+msgstr "Xfce 4 ten copyright de Olivier Fourdan (fourdan@xfce.org). Os diferentes compoñentes de teñen copyright dos seus respectivos autores."
 
 #: ../xfce4-about/main.c:288
 msgid ""
@@ -350,7 +350,7 @@ msgstr ""
 #: ../xfce4-about/main.c:442
 #, c-format
 msgid "Type '%s --help' for usage information."
-msgstr ""
+msgstr "Escriba '%s --help' para obter información sobre o modo de uso."
 
 #: ../xfce4-about/main.c:448
 msgid "Unable to initialize GTK+."
@@ -363,13 +363,13 @@ msgstr "O equipo de desenvolvemento de Xfce. Todos os dereitos reservados."
 #: ../xfce4-about/main.c:458
 #, c-format
 msgid "Please report bugs to <%s>."
-msgstr ""
+msgstr "Por favor, comunique os fallos a <%s>."
 
 #. I18N: date/time the translators list was updated
 #: ../xfce4-about/main.c:461
 #, c-format
 msgid "Translators list from %s."
-msgstr ""
+msgstr "Lista de tradutores de %s."
 
 #: ../xfce4-about/main.c:471
 msgid "Failed to load interface"
@@ -380,7 +380,7 @@ msgstr "Produciuse un erro ao cargar a interface"
 #: ../xfce4-about/main.c:485
 #, c-format
 msgid "Version %s, distributed by %s"
-msgstr ""
+msgstr "Versión %s, distribuída por %s"
 
 #. I18N: %s will be replaced by the Xfce version number
 #: ../xfce4-about/main.c:489
