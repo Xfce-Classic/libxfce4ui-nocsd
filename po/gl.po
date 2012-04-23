@@ -42,7 +42,7 @@ msgstr "Documentación en Internet"
 msgid ""
 "You will be redirected to the documentation website where the help pages are "
 "maintained and translated."
-msgstr ""
+msgstr "Redirixiráselle ao sitio web de documentación no que se manteñen e traducen as páxinas de axuda."
 
 #: ../libxfce4ui/xfce-dialogs.c:207
 msgid "_Read Online"
@@ -254,7 +254,7 @@ msgstr "Xestor de sesións"
 msgid ""
 "Restores your session on startup and allows you to shutdown the computer "
 "from Xfce."
-msgstr ""
+msgstr "Restaura a sesión durante o inicio e permítelle apagar o computador desde Xfce."
 
 #: ../xfce4-about/main.c:94
 msgid "Setting System"
@@ -264,7 +264,7 @@ msgstr "Configuración do sistema"
 msgid ""
 "Configuration system to control various aspects of the desktop like "
 "appearance, display, keyboard and mouse settings."
-msgstr ""
+msgstr "Sistema de configuración para controlar diversos aspectos do escritorio como a configuración da aparencia, da visualización, do teclado e do rato."
 
 #: ../xfce4-about/main.c:99
 msgid "Application Finder"
@@ -336,7 +336,7 @@ msgid ""
 "distributed under the terms of the GNU Library General Public License as "
 "published by the Free Software Foundation; either version 2 of the License, "
 "or (at your option) any later version."
-msgstr ""
+msgstr "Os paquetes libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs e exo distribúense baixo os termos da GNU Library General Public License tal como a publica a Free Software Foundation; xa sexa a versión 2 da Licenza, ou (se o desexa) calquera versión posterior."
 
 #: ../xfce4-about/main.c:295
 msgid ""
@@ -345,7 +345,7 @@ msgid ""
 "terms of the GNU General Public License as published by the Free Software "
 "Foundation; either version 2 of the License, or (at your option) any later "
 "version."
-msgstr ""
+msgstr "Os paquetes thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfce-utils, xfconf, xfdesktop e xfwm4 distribúense baixo os termos da GNU General Public License tal como a publica a Free Software Foundation; xa sexa a versión 2 da Licenza, ou (se o desexa) calquera versión posterior."
 
 #: ../xfce4-about/main.c:442
 #, c-format
