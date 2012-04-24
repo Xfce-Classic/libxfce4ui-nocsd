@@ -56,6 +56,7 @@ static const ContributorInfo xfce_contributors_active[] =
   { "Lionel Le Folgoc", "mrpouit@gmail.com" },
   { "Mike Massonnet", "mmassonnet@gmail.com" },
   { "Simon Steinbeiß", "simon@xfce.org" },
+  { "Peter de Ridder", "peter@xfce.org" },
   { "Yves-Alexis Perez", "corsac@debian.org" },
   { NULL, NULL }
 };
