@@ -39,7 +39,6 @@ static const ContributorInfo xfce_contributors_core[] =
   { "Jérôme Guelfucci", "jeromeg@xfce.org" },
   { "Nick Schermer", "nick@xfce.org" },
   { "Olivier Fourdan", "fourdan@xfce.org" },
-  { "Stephan Arts", "stephan@xfce.org" },
   { NULL, NULL }
 };
 
@@ -56,6 +55,7 @@ static const ContributorInfo xfce_contributors_active[] =
   { "Lionel Le Folgoc", "mrpouit@gmail.com" },
   { "Mike Massonnet", "mmassonnet@gmail.com" },
   { "Simon Steinbeiß", "simon@xfce.org" },
+  { "Stephan Arts", "stephan@xfce.org" },
   { "Peter de Ridder", "peter@xfce.org" },
   { "Yves-Alexis Perez", "corsac@debian.org" },
   { NULL, NULL }
