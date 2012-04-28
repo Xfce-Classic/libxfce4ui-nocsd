@@ -1,3 +1,13 @@
+4.10.0
+======
+- Update contributor credits.
+- Update translators, week 15 and 16.
+- Enable startup notification in xfce4-appfinder shortcuts.
+- Check abicheck.sh to be more portable (bug #8702).
+- Translation updates: English (United Kingdom), Spanish (Castilian),
+  Galician, Japanese, Kazakh, Korean, Dutch (Flemish), Portuguese,
+  Portuguese (Brazilian), Chinese (China).
+
 4.9.2
 =====
 - Update translators, week 13 and 14.
