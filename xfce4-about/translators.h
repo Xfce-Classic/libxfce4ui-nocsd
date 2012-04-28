@@ -24,7 +24,7 @@
 #include <gtk/gtk.h>
 #include <libxfce4util/libxfce4util.h>
 
-#define TRANSLATORS_H_STAMP "2012-04-22 00:21:09"
+#define TRANSLATORS_H_STAMP "2012-04-29 00:21:02"
 #define ATSIGN "@"
 #define DOTSIGN "."
 
@@ -294,6 +294,7 @@ static const TranslatorInfo xfce_translators_hr[] =
 static const TranslatorInfo xfce_translators_hu[] =
 {
   { "Gabor Kelemen", "kelemeng" ATSIGN "gnome" DOTSIGN "hu", TRUE },
+  { "László Horváth", "leslie" DOTSIGN "translate" ATSIGN "yahoo" DOTSIGN "co" DOTSIGN "uk", FALSE },
   { "Zelenak Sandor", "nem11nator" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { NULL, NULL }
 };
@@ -438,7 +439,6 @@ static const TranslatorInfo xfce_translators_pl[] =
   { "Piotr Sokół", "psokol" ATSIGN "jabster" DOTSIGN "pl", TRUE },
   { "Ewelina Drożańska", "blinqa" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Paweł Drożański", "pawdro" ATSIGN "gmail" DOTSIGN "com", FALSE },
-  { "Kamil Polczak", "elderlinx" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Ireneusz Gierlach", "irek" DOTSIGN "gierlach" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "jacek2v", "jacek2v" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Jakub Waśko", "javazlaz" ATSIGN "gmail" DOTSIGN "com", FALSE },
@@ -633,7 +633,7 @@ static const TranslatorInfo xfce_translators_tr[] =
   { "marici", "cadthecoder" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "martinamca", "martinamca" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Murat DOGANCAY", "mdogancay" ATSIGN "gmx" DOTSIGN "net", FALSE },
-  { "mesutcank", "mesutcank" ATSIGN "gmail" DOTSIGN "com", FALSE },
+  { "mesutcank", "", FALSE },
   { "mrtcvk", "muratcevikgs" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Osman Karagöz", "osmank3" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Ozan Türkyılmaz", "ozan" DOTSIGN "turkyilmaz" ATSIGN "gmail" DOTSIGN "com", FALSE },
