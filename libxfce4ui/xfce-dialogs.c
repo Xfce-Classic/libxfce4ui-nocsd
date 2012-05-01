@@ -38,10 +38,9 @@
 #include <libxfce4ui/xfce-dialogs.h>
 #include <libxfce4ui/xfce-gtk-extensions.h>
 #include <libxfce4ui/xfce-gdk-extensions.h>
+#include <libxfce4ui/xfce-spawn.h>
 #include <libxfce4ui/libxfce4ui-private.h>
 #include <libxfce4ui/libxfce4ui-alias.h>
-
-#define NOTNULL(str) ((str) != NULL ? (str) : "")
 
 
 
@@ -69,12 +68,31 @@ xfce_dialog_show_help_uri (GdkScreen *screen,
                            GtkWindow *parent,
                            GString   *uri)
 {
-  GError *error = NULL;
+  GError   *error = NULL;
+  gchar    *path;
+  gchar    *cmd;
+  gboolean  result;
 
   g_return_if_fail (GDK_IS_SCREEN (screen));
   g_return_if_fail (parent == NULL || GTK_IS_WINDOW (parent));
 
-  if (!gtk_show_uri (screen, uri->str, gtk_get_current_event_time (), &error))
+  path = g_find_program_in_path ("exo-open");
+  if (G_LIKELY (path != NULL))
+    {
+      cmd = g_strdup_printf ("%s --launch WebBrowser '%s'", path, uri->str);
+
+      result = xfce_spawn_command_line_on_screen (screen, cmd, FALSE, TRUE, &error);
+
+      g_free (path);
+      g_free (cmd);
+    }
+  else
+    {
+      /* not very likely to happen, but it is possible exo is not installed */
+      result = gtk_show_uri (screen, uri->str, gtk_get_current_event_time (), &error);
+    }
+
+  if (!result)
     {
       xfce_dialog_show_error (parent, error,
           _("Failed to open web browser for online documentation"));
