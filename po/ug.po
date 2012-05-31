@@ -2,7 +2,7 @@
 # Copyright (C) 2008 THE libxfce4ui'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the libxfce4ui package.
 # Gheyret T.Kenji <gheyret@gmail.com>, 2010.
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui\n"
@@ -68,16 +68,13 @@ msgstr "ئەڭگىمە باشقۇرغۇ ئىناۋەتلىك client id نى قا
 msgid ""
 "Working directory \"%s\" does not exist. It won't be used when spawning \"%s"
 "\"."
-msgstr ""
-"خىزمەت مۇندەرىجىسى \"%s\" يوقتەك قىلىدۇ. \"%s\" نى ھاسىل قىلغاندا "
-"ئىشلىتىلمەيدۇ."
+msgstr "خىزمەت مۇندەرىجىسى \"%s\" يوقتەك قىلىدۇ. \"%s\" نى ھاسىل قىلغاندا ئىشلىتىلمەيدۇ."
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:52
 msgid ""
 "This shortcut is already being used for another window manager action. Which "
 "action do you want to use?"
-msgstr ""
-"مەزكۇر تېزلەتمە باشقا كۆزنەك باشقۇرغۇدا ئىشلىتىلىۋاتىدۇ. قايسىنى ئىشلىتىسىز؟"
+msgstr "مەزكۇر تېزلەتمە باشقا كۆزنەك باشقۇرغۇدا ئىشلىتىلىۋاتىدۇ. قايسىنى ئىشلىتىسىز؟"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
@@ -109,8 +106,7 @@ msgstr "'%s' نى ئىشلىتىش"
 msgid ""
 "This shortcut is already being used by a window manager action. Which action "
 "do you want to use?"
-msgstr ""
-"مەزكۇر تېزلەتمە باشقا كۆزنەك باشقۇرغۇدا ئىشلىتىلىۋاتىدۇ. قايسىنى ئىشلىتىسىز؟"
+msgstr "مەزكۇر تېزلەتمە باشقا كۆزنەك باشقۇرغۇدا ئىشلىتىلىۋاتىدۇ. قايسىنى ئىشلىتىسىز؟"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 msgid "Keep the window manager action"
