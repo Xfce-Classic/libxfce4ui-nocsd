@@ -1,13 +1,13 @@
 # translation of is.po to Icelandic
 # Copyright (C) 2010 Free Software Foundation
 # This file is distributed under the same license as the PACKAGE package.
-#
+# 
 # Sveinn í Felli <sveinki@nett.is>, 2010, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: is\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-11-29 05:15+0000\n"
+"POT-Creation-Date: 2012-06-29 16:06+0000\n"
 "PO-Revision-Date: 2011-12-07 07:43+0000\n"
 "Last-Translator: Sveinn í Felli <sveinki@nett.is>\n"
 "Language-Team: Icelandic <translation-team-is@lists.sourceforge.net>\n"
@@ -15,22 +15,53 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: is\n"
-"Plural-Forms: Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: ../libxfce4ui/xfce-dialogs.c:68
+#: ../libxfce4ui/xfce-dialogs.c:98
+msgid "Failed to open web browser for online documentation"
+msgstr ""
+
+#: ../libxfce4ui/xfce-dialogs.c:213
+#, c-format
+msgid "Do you want to read the %s manual online?"
+msgstr ""
+
+#: ../libxfce4ui/xfce-dialogs.c:215
+msgid "Do you want to read the manual online?"
+msgstr ""
+
+#: ../libxfce4ui/xfce-dialogs.c:218
+msgid "Online Documentation"
+msgstr ""
+
+#: ../libxfce4ui/xfce-dialogs.c:221
+msgid ""
+"You will be redirected to the documentation website where the help pages are "
+"maintained and translated."
+msgstr ""
+
+#: ../libxfce4ui/xfce-dialogs.c:225
+msgid "_Read Online"
+msgstr "Lesa á _netinu"
+
+#: ../libxfce4ui/xfce-dialogs.c:237
+msgid "_Always go directly to the online documentation"
+msgstr ""
+
+#: ../libxfce4ui/xfce-dialogs.c:281
 msgid "Information"
 msgstr "Upplýsingar"
 
-#: ../libxfce4ui/xfce-dialogs.c:101
+#: ../libxfce4ui/xfce-dialogs.c:314
 msgid "Warning"
 msgstr "Aðvörun"
 
-#: ../libxfce4ui/xfce-dialogs.c:135
+#: ../libxfce4ui/xfce-dialogs.c:348
 msgid "Error"
 msgstr "Villa"
 
-#: ../libxfce4ui/xfce-dialogs.c:186
+#: ../libxfce4ui/xfce-dialogs.c:399
 msgid "Question"
 msgstr "Spurning"
 
@@ -295,7 +326,7 @@ msgid ""
 "distributed under the terms of the GNU Library General Public License as "
 "published by the Free Software Foundation; either version 2 of the License, "
 "or (at your option) any later version."
-msgstr ""
+msgstr "libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs og exo pökkunum er dreift samkvæmt skilmálum í almenna GNU GPL notkunarleyfisins eins og það er gefið út af Frjálsu hugbúnaðarstofnuninni; annaðhvort útgáfu 2 af GPL-leyfinu, eða (ef þér sýnist svo) einhverja nýrri útgáfu leyfisins."
 
 #: ../xfce4-about/main.c:295
 msgid ""
@@ -304,7 +335,7 @@ msgid ""
 "terms of the GNU General Public License as published by the Free Software "
 "Foundation; either version 2 of the License, or (at your option) any later "
 "version."
-msgstr ""
+msgstr "Hugbúnaðarpökkunum thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfce-utils, xfconf, xfdesktop og xfwm4 er dreift samkvæmt skilmálum í almenna GNU GPL notkunarleyfisins eins og það er gefið út af Frjálsu hugbúnaðarstofnuninni; annaðhvort útgáfu 2 af GPL-leyfinu, eða (ef þér sýnist svo) einhverja nýrri útgáfu leyfisins."
 
 #: ../xfce4-about/main.c:442
 #, c-format
@@ -350,31 +381,31 @@ msgstr "Útgáfa %s"
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
 #. },
-#: ../xfce4-about/contributors.h:127
+#: ../xfce4-about/contributors.h:121
 msgid "Core developers"
 msgstr "Aðalhönnuðir"
 
-#: ../xfce4-about/contributors.h:130
+#: ../xfce4-about/contributors.h:124
 msgid "Active contributors"
 msgstr "Virkir þáttakendur"
 
-#: ../xfce4-about/contributors.h:133
+#: ../xfce4-about/contributors.h:127
 msgid "Servers maintained by"
 msgstr "Umsjón með kerfum"
 
-#: ../xfce4-about/contributors.h:136
+#: ../xfce4-about/contributors.h:130
 msgid "Goodies supervision"
 msgstr "Umsjón með aukadóti"
 
-#: ../xfce4-about/contributors.h:139
+#: ../xfce4-about/contributors.h:133
 msgid "Translations supervision"
 msgstr "Umsjón með þýðingum"
 
-#: ../xfce4-about/contributors.h:142
+#: ../xfce4-about/contributors.h:136
 msgid "Translators"
 msgstr "Þýðendur"
 
-#: ../xfce4-about/contributors.h:145
+#: ../xfce4-about/contributors.h:139
 msgid "Previous contributors"
 msgstr "Eldri framlög"
 
@@ -417,4 +448,3 @@ msgstr "LGPL"
 #: ../xfce4-about/xfce4-about-dialog.glade.h:8
 msgid "License"
 msgstr "Notkunarskilmálar"
-
