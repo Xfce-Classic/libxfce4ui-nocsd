@@ -1,14 +1,14 @@
 # translation of is.po to Icelandic
 # Copyright (C) 2010 Free Software Foundation
 # This file is distributed under the same license as the PACKAGE package.
-# 
-# Sveinn í Felli <sveinki@nett.is>, 2010, 2011.
+#
+# Sveinn í Felli <sveinki@nett.is>, 2010, 2011, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: is\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-06-29 16:06+0000\n"
-"PO-Revision-Date: 2011-12-07 07:43+0000\n"
+"PO-Revision-Date: 2012-07-02 15:20+0000\n"
 "Last-Translator: Sveinn í Felli <sveinki@nett.is>\n"
 "Language-Team: Icelandic <translation-team-is@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -25,15 +25,15 @@ msgstr ""
 #: ../libxfce4ui/xfce-dialogs.c:213
 #, c-format
 msgid "Do you want to read the %s manual online?"
-msgstr ""
+msgstr "Viltu lesa %s handbókina á netinu?"
 
 #: ../libxfce4ui/xfce-dialogs.c:215
 msgid "Do you want to read the manual online?"
-msgstr ""
+msgstr "Viltu lesa handbókina á netinu?"
 
 #: ../libxfce4ui/xfce-dialogs.c:218
 msgid "Online Documentation"
-msgstr ""
+msgstr "Handbækur á netinu"
 
 #: ../libxfce4ui/xfce-dialogs.c:221
 msgid ""
@@ -67,7 +67,7 @@ msgstr "Spurning"
 
 #: ../libxfce4ui/xfce-sm-client.c:1402
 msgid "Session management client ID"
-msgstr ""
+msgstr "Biðlaraauðkenni í setustýringu"
 
 #: ../libxfce4ui/xfce-sm-client.c:1402
 msgid "ID"
@@ -88,12 +88,12 @@ msgstr "Sýna valkosti setustýringar"
 #: ../libxfce4ui/xfce-sm-client.c:1590
 #, c-format
 msgid "Failed to connect to the session manager: %s"
-msgstr ""
+msgstr "Mistókst að tengjast setustýringu: %s"
 
 #: ../libxfce4ui/xfce-sm-client.c:1597
 #, c-format
 msgid "Session manager did not return a valid client id"
-msgstr ""
+msgstr "Setustýringin gaf ekki gilt biðlaraauðkenni"
 
 #. print warning for user
 #: ../libxfce4ui/xfce-spawn.c:406
@@ -101,13 +101,13 @@ msgstr ""
 msgid ""
 "Working directory \"%s\" does not exist. It won't be used when spawning \"%s"
 "\"."
-msgstr ""
+msgstr "Vinnumappan \"%s\" er ekki til. Hún verður ekki notuð við gerð \"%s\"."
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:52
 msgid ""
 "This shortcut is already being used for another window manager action. Which "
 "action do you want to use?"
-msgstr ""
+msgstr "Þessi flýtilykill er þegar í notkun fyrir aðra gluggastjóraaðgerð. Hvora aðgerðina viltu nota?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
@@ -128,6 +128,8 @@ msgid ""
 "This shortcut is already being used for the command '%s'. Which action do "
 "you want to use?"
 msgstr ""
+"Þessi flýtileið er þegar í notkun fyrir '%s' skipunina. Hvaða aðgerð viltu "
+"nota?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
 #: ../libxfce4kbd-private/xfce-shortcuts.c:59
@@ -139,24 +141,24 @@ msgstr "Halda '%s'"
 msgid ""
 "This shortcut is already being used by a window manager action. Which action "
 "do you want to use?"
-msgstr ""
+msgstr "Þessi flýtilykill er þegar í notkun fyrir gluggastjóraaðgerð. Hvora aðgerðina viltu nota?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 msgid "Keep the window manager action"
-msgstr ""
+msgstr "Halda gluggastjóraaðgerð"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:95
 #, c-format
 msgid "Conflicting actions for %s"
-msgstr ""
+msgstr "Árekstrar milli aðgerða fyrir %s"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:128
 msgid "This shortcut is already being used for something else."
-msgstr ""
+msgstr "Þessi flýtileið er nú þegar í notkun fyrir eitthvað annað."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:204
 msgid "Window Manager Action Shortcut"
-msgstr ""
+msgstr "Flýtilykill fyrir gluggastjóraaðgerð"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:205
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:215
@@ -181,7 +183,7 @@ msgstr "Flýtilykill:"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:300
 msgid "Could not grab the keyboard."
-msgstr ""
+msgstr "Ekki var hægt að ná í lyklaborðið."
 
 #: ../glade/libxfce4ui.xml.in.h:1
 msgid "Subtitle"
@@ -265,11 +267,11 @@ msgstr "Forritaleit"
 msgid ""
 "Shows the applications installed on your system in categories, so you can "
 "quickly find and launch them."
-msgstr ""
+msgstr "Sýna uppsett forrit í kerfinu þínu í flokkum, þannig að þú getur fundið þau og ræst hraðar."
 
 #: ../xfce4-about/main.c:104
 msgid "Settings Daemon"
-msgstr ""
+msgstr "Stillingamiðlari"
 
 #: ../xfce4-about/main.c:105
 msgid "D-Bus-based configuration storage system."
@@ -309,10 +311,12 @@ msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
 "on <http://bugzilla.xfce.org> ."
 msgstr ""
+"Ef þú veist um einhvern sem vantar á þennan lista; ekki hika við að senda "
+"það sem villu á <http://bugzilla.xfce.org> ."
 
 #: ../xfce4-about/main.c:266
 msgid "Thanks to all who helped making this software available!"
-msgstr ""
+msgstr "Þakkir til allra sem hjálpuðu með að gera þennan hugbúnað aðgengilegan!"
 
 #: ../xfce4-about/main.c:283
 msgid ""
@@ -448,3 +452,4 @@ msgstr "LGPL"
 #: ../xfce4-about/xfce4-about-dialog.glade.h:8
 msgid "License"
 msgstr "Notkunarskilmálar"
+
