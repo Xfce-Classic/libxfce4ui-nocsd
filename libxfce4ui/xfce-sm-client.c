@@ -56,7 +56,8 @@
 #include <X11/SM/SMlib.h>
 #endif
 
-#include <gdk/gdkwindow.h>
+#include <gdk/gdk.h>
+#include <gdk/gdkx.h>
 #include <gtk/gtk.h>
 
 #include <libxfce4util/libxfce4util.h>
@@ -643,7 +644,7 @@ xfce_sm_client_set_client_id(XfceSMClient *sm_client,
     g_free(sm_client->client_id);
     sm_client->client_id = g_strdup(client_id);
 
-    gdk_set_sm_client_id(sm_client->client_id);
+    gdk_x11_set_sm_client_id(sm_client->client_id);
 
     g_object_notify(G_OBJECT(sm_client), "client-id");
 }
@@ -1719,7 +1720,7 @@ xfce_sm_client_disconnect(XfceSMClient *sm_client)
 
     SmcCloseConnection(sm_client->session_connection, 0, NULL);
     sm_client->session_connection = NULL;
-    gdk_set_sm_client_id(NULL);
+    gdk_x11_set_sm_client_id(NULL);
 
     xfce_sm_client_set_state(sm_client, XFCE_SM_CLIENT_STATE_DISCONNECTED);
 #endif

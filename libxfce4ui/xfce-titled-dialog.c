@@ -106,8 +106,8 @@ xfce_titled_dialog_class_init (XfceTitledDialogClass *klass)
 
   /* connect additional key bindings to the GtkDialog::close action signal */
   binding_set = gtk_binding_set_by_class (klass);
-  gtk_binding_entry_add_signal (binding_set, GDK_w, GDK_CONTROL_MASK, "close", 0);
-  gtk_binding_entry_add_signal (binding_set, GDK_W, GDK_CONTROL_MASK, "close", 0);
+  gtk_binding_entry_add_signal (binding_set, GDK_KEY_w, GDK_CONTROL_MASK, "close", 0);
+  gtk_binding_entry_add_signal (binding_set, GDK_KEY_W, GDK_CONTROL_MASK, "close", 0);
 }
 
 
@@ -117,16 +117,22 @@ xfce_titled_dialog_init (XfceTitledDialog *titled_dialog)
 {
   GtkWidget *line;
   GtkWidget *vbox;
+  GtkWidget *content_area;
 
   /* connect the private data */
   titled_dialog->priv = XFCE_TITLED_DIALOG_GET_PRIVATE (titled_dialog);
 
   /* remove the main dialog box from the window */
-  g_object_ref (G_OBJECT (GTK_DIALOG (titled_dialog)->vbox));
-  gtk_container_remove (GTK_CONTAINER (titled_dialog), GTK_DIALOG (titled_dialog)->vbox);
+  content_area = gtk_dialog_get_content_area (GTK_DIALOG (titled_dialog));
+  g_object_ref (G_OBJECT (content_area));
+  gtk_container_remove (GTK_CONTAINER (titled_dialog), content_area);
 
   /* add a new vbox w/o border to the main window */
+#if GTK_CHECK_VERSION (3, 0, 0)
+  vbox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
+#else
   vbox = gtk_vbox_new (FALSE, 0);
+#endif
   gtk_container_add (GTK_CONTAINER (titled_dialog), vbox);
   gtk_widget_show (vbox);
 
@@ -136,13 +142,17 @@ xfce_titled_dialog_init (XfceTitledDialog *titled_dialog)
   gtk_widget_show (titled_dialog->priv->heading);
 
   /* add the separator between header and content */
+#if GTK_CHECK_VERSION (3, 0, 0)
+  line = gtk_separator_new (GTK_ORIENTATION_HORIZONTAL);
+#else
   line = gtk_hseparator_new ();
+#endif
   gtk_box_pack_start (GTK_BOX (vbox), line, FALSE, FALSE, 0);
   gtk_widget_show (line);
 
   /* add the main dialog box to the new vbox */
-  gtk_box_pack_start (GTK_BOX (vbox), GTK_DIALOG (titled_dialog)->vbox, TRUE, TRUE, 0);
-  g_object_unref (G_OBJECT (GTK_DIALOG (titled_dialog)->vbox));
+  gtk_box_pack_start (GTK_BOX (vbox), content_area, TRUE, TRUE, 0);
+  g_object_unref (G_OBJECT(content_area));
 
   /* make sure to update the heading whenever one of the relevant window properties changes */
   g_signal_connect (G_OBJECT (titled_dialog), "notify::icon", G_CALLBACK (xfce_titled_dialog_update_heading), NULL);
@@ -216,11 +226,11 @@ xfce_titled_dialog_close (GtkDialog *dialog)
   GdkEvent *event;
 
   /* verify that the dialog is realized */
-  if (G_LIKELY (GTK_WIDGET_REALIZED (dialog)))
+  if (G_LIKELY (gtk_widget_get_realized (GTK_WIDGET (dialog))))
     {
       /* send a delete event to the dialog */
       event = gdk_event_new (GDK_DELETE);
-      event->any.window = g_object_ref (GTK_WIDGET (dialog)->window);
+      event->any.window = g_object_ref (gtk_widget_get_window(GTK_WIDGET (dialog)));
       event->any.send_event = TRUE;
       gtk_main_do_event (event);
       gdk_event_free (event);
@@ -283,7 +293,6 @@ xfce_titled_dialog_new_with_buttons (const gchar    *title,
   /* allocate the dialog */
   dialog = g_object_new (XFCE_TYPE_TITLED_DIALOG,
                          "destroy-with-parent", ((flags & GTK_DIALOG_DESTROY_WITH_PARENT) != 0),
-                         "has-separator", ((flags & GTK_DIALOG_NO_SEPARATOR) == 0),
                          "modal", ((flags & GTK_DIALOG_MODAL) != 0),
                          "title", title,
                          NULL);

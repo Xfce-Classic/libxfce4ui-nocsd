@@ -40,7 +40,7 @@ libxfce4kbd_private_2_la_SOURCES = \
 libxfce4kbd_private_2_la_CFLAGS = \
 	$(PLATFORM_CFLAGS) \
 	$(GLIB_CFLAGS)  \
-	$(GTK_CFLAGS) \
+	$(GTK2_CFLAGS) \
 	$(LIBX11_CFLAGS) \
 	$(LIBXFCE4UTIL_CFLAGS) \
 	$(XFCONF_CFLAGS)
@@ -56,7 +56,7 @@ libxfce4kbd_private_2_la_LDFLAGS = \
 libxfce4kbd_private_2_la_LIBADD = \
 	$(top_builddir)/libxfce4ui/libxfce4ui-$(LIBXFCE4UI_VERSION_API).la \
 	$(GLIB_LIBS) \
-	$(GTK_LIBS) \
+	$(GTK2_LIBS) \
 	$(LIBX11_LIBS) \
 	$(LIBXFCE4UTIL_LIBS) \
 	$(XFCONF_LIBS)

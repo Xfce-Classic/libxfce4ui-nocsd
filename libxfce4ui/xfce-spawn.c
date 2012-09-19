@@ -210,12 +210,14 @@ xfce_spawn_get_active_workspace_number (GdkScreen *screen)
   _NET_CURRENT_DESKTOP = XInternAtom (GDK_WINDOW_XDISPLAY (root), "_NET_CURRENT_DESKTOP", False);
   _WIN_WORKSPACE = XInternAtom (GDK_WINDOW_XDISPLAY (root), "_WIN_WORKSPACE", False);
 
-  if (XGetWindowProperty (GDK_WINDOW_XDISPLAY (root), GDK_WINDOW_XWINDOW (root),
+  if (XGetWindowProperty (GDK_WINDOW_XDISPLAY (root),
+                          gdk_x11_get_default_root_xwindow(),
                           _NET_CURRENT_DESKTOP, 0, 32, False, XA_CARDINAL,
                           &type_ret, &format_ret, &nitems_ret, &bytes_after_ret,
                           (gpointer) &prop_ret) != Success)
     {
-      if (XGetWindowProperty (GDK_WINDOW_XDISPLAY (root), GDK_WINDOW_XWINDOW (root),
+      if (XGetWindowProperty (GDK_WINDOW_XDISPLAY (root),
+                              gdk_x11_get_default_root_xwindow(),
                               _WIN_WORKSPACE, 0, 32, False, XA_CARDINAL,
                               &type_ret, &format_ret, &nitems_ret, &bytes_after_ret,
                               (gpointer) &prop_ret) != Success)
@@ -235,7 +237,12 @@ xfce_spawn_get_active_workspace_number (GdkScreen *screen)
       XFree (prop_ret);
     }
 
-  gdk_error_trap_pop ();
+#if GTK_CHECK_VERSION (3, 0, 0)
+  gdk_error_trap_pop_ignored ();
+#else
+  if (gdk_error_trap_pop () != 0)
+    return 0;
+#endif
 
   return ws_num;
 }

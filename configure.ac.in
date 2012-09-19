@@ -126,8 +126,16 @@ dnl ***********************************
 dnl *** Check for required packages ***
 dnl ***********************************
 XDT_CHECK_PACKAGE([GOBJECT], [gobject-2.0], [2.24.0])
-XDT_CHECK_PACKAGE([GTK], [gtk+-2.0], [2.20.0])
+XDT_CHECK_PACKAGE([GTK2], [gtk+-2.0], [2.20.0])
 XDT_CHECK_PACKAGE([LIBXFCE4UTIL], [libxfce4util-1.0], [4.9.0])
+
+dnl ***********************************************************
+dnl *** Optional support for a GTK+3 version of the library ***
+dnl ***********************************************************
+XDT_CHECK_OPTIONAL_PACKAGE([GTK3],
+                           [gtk+-3.0], [3.2.0], [gtk3],
+                           [GTK+ 3 support])
+AM_CONDITIONAL([ENABLE_GTK3_LIBRARY], [test "x$GTK3_FOUND" = "xyes"])
 
 dnl *************************************************
 dnl *** Optional support for startup notification ***
@@ -301,6 +309,7 @@ icons/48x48/Makefile
 libxfce4kbd-private/libxfce4kbd-private-2.pc
 libxfce4kbd-private/Makefile
 libxfce4ui/libxfce4ui-1.pc
+libxfce4ui/libxfce4ui-2.pc
 libxfce4ui/libxfce4ui-config.h
 libxfce4ui/Makefile
 xfce4-about/Makefile
