@@ -156,18 +156,36 @@ _xfce_heading_realize (GtkWidget *widget)
   attributes.y = allocation.y;
   attributes.width = allocation.width;
   attributes.height = allocation.height;
+#if !GTK_CHECK_VERSION (3, 0, 0)
+  attributes.colormap = gtk_widget_get_colormap (widget);
+#endif
   attributes.wclass = GDK_INPUT_OUTPUT;
   attributes.window_type = GDK_WINDOW_CHILD;
   attributes.visual = gtk_widget_get_visual (widget);
   attributes.event_mask = gtk_widget_get_events (widget)
                         | GDK_EXPOSURE_MASK;
 
+#if GTK_CHECK_VERSION (3, 0, 0)
   /* allocate the widget window */
   window = gdk_window_new (gtk_widget_get_parent_window (widget), &attributes,
                            GDK_WA_X | GDK_WA_Y | GDK_WA_VISUAL);
   gtk_widget_set_window (widget, window);
   gdk_window_set_user_data (window, widget);
+#else
+  /* allocate the widget window */
+  window = gdk_window_new (gtk_widget_get_parent_window (widget), &attributes,
+                           GDK_WA_X | GDK_WA_Y | GDK_WA_VISUAL | GDK_WA_COLORMAP);
+  gtk_widget_set_window (widget, window);
+  gdk_window_set_user_data (window, widget);
+
+  /* connect the style to the window */
+  widget->style = gtk_style_attach (widget->style, widget->window);
+
+  /* set background color (using the base color) */
+  gdk_window_set_background (widget->window, &widget->style->base[GTK_STATE_NORMAL]);
+#endif
 }
+
 
 
 #if GTK_CHECK_VERSION (3, 0, 0)
