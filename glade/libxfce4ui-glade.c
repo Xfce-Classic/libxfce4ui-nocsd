@@ -25,6 +25,11 @@
 #include <string.h>
 #endif
 
+/* else glade is not working */
+#ifdef SEAL_ENABLE
+typedef struct gpointer GtkCombo;
+#endif
+
 #include <gtk/gtk.h>
 #include <gladeui/glade.h>
 #include <libxfce4ui/libxfce4ui.h>

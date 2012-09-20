@@ -219,9 +219,6 @@ xfce_shortcut_dialog_create_contents (XfceShortcutDialog *dialog,
   gtk_window_set_title (GTK_WINDOW (dialog), title);
   gtk_window_set_icon_name (GTK_WINDOW (dialog), "input-keyboard");
 
-  /* Configure dialog */
-  gtk_dialog_set_has_separator (GTK_DIALOG (dialog), FALSE);
-
   /* Create clear button for xfwm4 */
   if (g_utf8_collate (provider, "xfwm4") == 0)
     {
@@ -239,7 +236,7 @@ xfce_shortcut_dialog_create_contents (XfceShortcutDialog *dialog,
   gtk_table_set_row_spacings (GTK_TABLE (table), 6);
   gtk_table_set_col_spacings (GTK_TABLE (table), 12);
   gtk_container_set_border_width (GTK_CONTAINER (table), 12);
-  gtk_container_add (GTK_CONTAINER (GTK_DIALOG (dialog)->vbox), table);
+  gtk_container_add (GTK_CONTAINER (gtk_dialog_get_content_area (GTK_DIALOG (dialog))), table);
   gtk_widget_show (table);
 
   label = gtk_label_new (action_label);
