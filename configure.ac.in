@@ -307,6 +307,7 @@ glade/icons/22x22/Makefile
 icons/Makefile
 icons/48x48/Makefile
 libxfce4kbd-private/libxfce4kbd-private-2.pc
+libxfce4kbd-private/libxfce4kbd-private-3.pc
 libxfce4kbd-private/Makefile
 libxfce4ui/libxfce4ui-1.pc
 libxfce4ui/libxfce4ui-2.pc

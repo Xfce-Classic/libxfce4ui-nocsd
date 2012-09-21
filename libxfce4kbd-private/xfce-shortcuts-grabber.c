@@ -368,7 +368,6 @@ xfce_shortcuts_grabber_grab (XfceShortcutsGrabber *grabber,
       for (j = 0; j < screens; j++)
         {
           /* Do the grab on all screens */
-          GdkScreen *screen;
           Window     root_window;
 
           /* Ignorable modifiers */
@@ -383,9 +382,13 @@ xfce_shortcuts_grabber_grab (XfceShortcutsGrabber *grabber,
             GDK_MOD2_MASK | GDK_LOCK_MASK | GDK_MOD5_MASK,
           };
 
+#if GTK_CHECK_VERSION (3, 0, 0)
           /* Retrieve the root window of the screen */
-          screen = gdk_display_get_screen (display, j);
-          root_window = GDK_WINDOW_XWINDOW (gdk_screen_get_root_window (screen));
+          root_window = gdk_x11_get_default_root_xwindow ();
+#else
+          /* Retrieve the root window of the screen */
+          root_window = GDK_WINDOW_XWINDOW (gdk_screen_get_root_window (gdk_display_get_screen (display, j)));
+#endif
 
           gdk_error_trap_push ();
 
@@ -530,7 +533,12 @@ xfce_shortcuts_grabber_event_filter (GdkXEvent            *gdk_xevent,
                            context.result, timestamp);
 
   gdk_flush ();
+
+#if GTK_CHECK_VERSION (3, 0, 0)
+  gdk_error_trap_pop_ignored ();
+#else
   gdk_error_trap_pop ();
+#endif
 
   return GDK_FILTER_CONTINUE;
 }
