@@ -24,7 +24,7 @@
 #include <gtk/gtk.h>
 #include <libxfce4util/libxfce4util.h>
 
-#define TRANSLATORS_H_STAMP "2012-10-14 00:21:11"
+#define TRANSLATORS_H_STAMP "2012-10-21 00:21:03"
 #define ATSIGN "@"
 #define DOTSIGN "."
 
@@ -88,7 +88,9 @@ static const TranslatorInfo xfce_translators_bg[] =
   { "Valentin Tunev", "hdbuster" ATSIGN "gmail" DOTSIGN "com", TRUE },
   { "Kiril Kirilov", "cybercop_montana" ATSIGN "abv" DOTSIGN "bg", FALSE },
   { "Milen Milev", "fanfolet" ATSIGN "gmail" DOTSIGN "com", FALSE },
+  { "Ognyan Kulev", "ogi" ATSIGN "tower" DOTSIGN "3" DOTSIGN "bg", FALSE },
   { "sahwar", "ve4ernik" ATSIGN "gmail" DOTSIGN "com", FALSE },
+  { "Dimitar Dimitrov", "insidepower" ATSIGN "abv" DOTSIGN "bg", FALSE },
   { NULL, NULL }
 };
 
@@ -115,6 +117,7 @@ static const TranslatorInfo xfce_translators_ca[] =
   { "Jordi Clariana", "jordiclariana" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Roger Pueyo Centelles", "xfce" ATSIGN "rogerpueyo" DOTSIGN "com", FALSE },
   { "Harald Servat", "redcrash" ATSIGN "gmail" DOTSIGN "com", FALSE },
+  { "Marc Pastor Sanz", "sandandmercury" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { NULL, NULL }
 };
 
@@ -209,7 +212,6 @@ static const TranslatorInfo xfce_translators_es[] =
   { "Octavio Bernal Quiroz", "octavio" DOTSIGN "bernal" DOTSIGN "q" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Sergio García", "oigres200" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "prflr88", "prflr88" ATSIGN "gmail" DOTSIGN "com", FALSE },
-  { "Santiago Gil", "santix91" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "sebikul", "", FALSE },
   { NULL, NULL }
 };
@@ -244,6 +246,8 @@ static const TranslatorInfo xfce_translators_fa[] =
   { "Ehsan Akhlaghi", "esnka" ATSIGN "yahoo" DOTSIGN "com", FALSE },
   { "mahmood mahm0ud", "mahmud" DOTSIGN "tehrani" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "numb", "amir007ag" ATSIGN "gmail" DOTSIGN "com", FALSE },
+  { "omead", "mehdioa" ATSIGN "gmail" DOTSIGN "com", FALSE },
+  { "vahid", "vahidfardi2011" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { NULL, NULL }
 };
 
