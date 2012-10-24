@@ -154,7 +154,7 @@ msgstr "مەزكۇر تېزلەتمە باشقا يەردە ئىشلىتىلىۋ
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:204
 msgid "Window Manager Action Shortcut"
-msgstr "كۆزنەك باشقۇرغۇ تېزلەتمە بۇيرۇقى"
+msgstr "كۆزنەك باشقۇرغۇ مەشغۇلات تېزلەتمىسى"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:205
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:215
@@ -187,7 +187,7 @@ msgstr "كىچىك ماۋزۇ"
 
 #: ../glade/libxfce4ui.xml.in.h:2
 msgid "Titled Dialog"
-msgstr "ماۋزۇلۇق كۆزنەك"
+msgstr "ماۋزۇلۇق سۆزلەشكۈ"
 
 #: ../glade/libxfce4ui.xml.in.h:3
 msgid "Xfce 4 Widgets"
@@ -267,7 +267,7 @@ msgstr "سىستېمىغا ئورنىتىلغان پروگراممىلارنى �
 
 #: ../xfce4-about/main.c:104
 msgid "Settings Daemon"
-msgstr "تەڭشەك قاراۋۇلى"
+msgstr "تەڭشەك مۇئەككىلى"
 
 #: ../xfce4-about/main.c:105
 msgid "D-Bus-based configuration storage system."
@@ -306,7 +306,7 @@ msgstr "Xfce ئىجادىيەت ئەترىتى"
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
 "on <http://bugzilla.xfce.org> ."
-msgstr "تىزىملىكىدىن كەم قالغان بىرەر نەرسىنى بايقىسىڭىز تارتىنماستىن <http://bugzilla.xfce.org> گە كەمتۈك يوللىشىڭىزنى ئۈمىد قىلىمىز."
+msgstr "تىزىمدىن كەم قالغان بىرەر نەرسىنى بايقىسىڭىز تارتىنماستىن <http://bugzilla.xfce.org> گە كەمتۈك يوللىشىڭىزنى ئۈمىد قىلىمىز."
 
 #: ../xfce4-about/main.c:266
 msgid "Thanks to all who helped making this software available!"
