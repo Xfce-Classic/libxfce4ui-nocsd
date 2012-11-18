@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui.master\n"
-"Report-Msgid-Bugs-To: xfce-i18n <xfce-i18n@xfce.org>\n"
+"Report-Msgid-Bugs-To: https://bugzilla.xfce.org/enter_bug.cgi?product=Libxfce4ui\n"
 "POT-Creation-Date: 2012-02-26 02:51+0000\n"
 "PO-Revision-Date: 2012-02-26 20:16+0900\n"
 "Last-Translator: Seong-ho Cho <darkcircle.0426@gmail.com>\n"
