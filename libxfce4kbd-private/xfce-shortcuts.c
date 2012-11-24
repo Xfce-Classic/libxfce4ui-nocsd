@@ -90,7 +90,15 @@ xfce_shortcut_conflict_dialog (const gchar *owner,
     return GTK_RESPONSE_ACCEPT;
 
   if (g_utf8_collate (owner, other) == 0 && g_utf8_collate (owner_action, other_action) == 0)
-    return GTK_RESPONSE_ACCEPT;
+    {
+      /* This shortcut already exists in the provider, we don't want it twice */
+
+      /* Warn the user */
+      xfce_dialog_show_warning (NULL, _("Please use another key combination."),
+                                _("%s already triggers this action."), shortcut);
+
+      return GTK_RESPONSE_REJECT;
+    }
 
   title = g_strdup_printf (_("Conflicting actions for %s"), shortcut);
 
