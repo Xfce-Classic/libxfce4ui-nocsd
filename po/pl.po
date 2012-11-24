@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-04-12 06:45+0000\n"
-"PO-Revision-Date: 2012-04-12 10:40+0200\n"
+"POT-Creation-Date: 2012-11-09 07:21+0000\n"
+"PO-Revision-Date: 2012-11-09 14:53+0100\n"
 "Last-Translator: Piotr Sokół <psokol@jabster.pl>\n"
 "Language-Team: polski <>\n"
 "Language: pl\n"
@@ -17,27 +17,28 @@ msgstr ""
 "Content-Transfer-Encoding: 8bits\n"
 "Plural-Forms: nplurals=3; plural=((n==1) ? 0 : ((n%10>=2 && n%10<=4 && (n"
 "%100<10 || n%100>=20)) ? 1 : 2));\n"
+"X-Generator: Gtranslator 2.91.5\n"
 
-#: ../libxfce4ui/xfce-dialogs.c:80
+#: ../libxfce4ui/xfce-dialogs.c:98
 msgid "Failed to open web browser for online documentation"
 msgstr ""
-"Nie udało się uruchomić przeglądarki internetowej w celu wyświetlenia "
-"zdalnej dokumentacji"
+"Nie udało się uruchomić przeglądarki internetowej, w celu wyświetlenia "
+"dokumentacji sieciowej"
 
-#: ../libxfce4ui/xfce-dialogs.c:195
+#: ../libxfce4ui/xfce-dialogs.c:213
 #, c-format
 msgid "Do you want to read the %s manual online?"
-msgstr "Wyświetlić zdalny podręcznik programu %s?"
+msgstr "Wyświetlić podręcznik sieciowy programu %s?"
 
-#: ../libxfce4ui/xfce-dialogs.c:197
+#: ../libxfce4ui/xfce-dialogs.c:215
 msgid "Do you want to read the manual online?"
-msgstr "Wyświetlić zdalny podręcznik?"
+msgstr "Wyświetlić podręcznik sieciowy?"
 
-#: ../libxfce4ui/xfce-dialogs.c:200
+#: ../libxfce4ui/xfce-dialogs.c:218
 msgid "Online Documentation"
-msgstr "Zdalna dokumentacja"
+msgstr "Dokumentacja sieciowa"
 
-#: ../libxfce4ui/xfce-dialogs.c:203
+#: ../libxfce4ui/xfce-dialogs.c:221
 msgid ""
 "You will be redirected to the documentation website where the help pages are "
 "maintained and translated."
@@ -45,62 +46,62 @@ msgstr ""
 "Przeglądarka otworzy stronę dokumentacji, na której tworzone są podręczniki "
 "użytkownika i gdzie następuje ich tłumaczenie."
 
-#: ../libxfce4ui/xfce-dialogs.c:207
+#: ../libxfce4ui/xfce-dialogs.c:225
 msgid "_Read Online"
 msgstr "_Wyświetl podręcznik"
 
-#: ../libxfce4ui/xfce-dialogs.c:219
+#: ../libxfce4ui/xfce-dialogs.c:237
 msgid "_Always go directly to the online documentation"
 msgstr "_Pomijanie tego pytania w przyszłości"
 
-#: ../libxfce4ui/xfce-dialogs.c:263
+#: ../libxfce4ui/xfce-dialogs.c:281
 msgid "Information"
 msgstr "Informacja"
 
-#: ../libxfce4ui/xfce-dialogs.c:296
+#: ../libxfce4ui/xfce-dialogs.c:314
 msgid "Warning"
 msgstr "Ostrzeżenie"
 
-#: ../libxfce4ui/xfce-dialogs.c:330
+#: ../libxfce4ui/xfce-dialogs.c:348
 msgid "Error"
 msgstr "Błąd"
 
-#: ../libxfce4ui/xfce-dialogs.c:381
+#: ../libxfce4ui/xfce-dialogs.c:399
 msgid "Question"
 msgstr "Pytanie"
 
-#: ../libxfce4ui/xfce-sm-client.c:1402
+#: ../libxfce4ui/xfce-sm-client.c:1403
 msgid "Session management client ID"
 msgstr "Określa identyfikator klienta menedżera sesji"
 
-#: ../libxfce4ui/xfce-sm-client.c:1402
+#: ../libxfce4ui/xfce-sm-client.c:1403
 msgid "ID"
 msgstr "ID"
 
-#: ../libxfce4ui/xfce-sm-client.c:1403
+#: ../libxfce4ui/xfce-sm-client.c:1404
 msgid "Disable session management"
 msgstr "Wyłącza zarządzanie sesją"
 
-#: ../libxfce4ui/xfce-sm-client.c:1413
+#: ../libxfce4ui/xfce-sm-client.c:1414
 msgid "Session management options"
 msgstr "Opcje zarządzania sesją"
 
-#: ../libxfce4ui/xfce-sm-client.c:1414
+#: ../libxfce4ui/xfce-sm-client.c:1415
 msgid "Show session management options"
 msgstr "Wypisuje opcje zarządzania sesją"
 
-#: ../libxfce4ui/xfce-sm-client.c:1590
+#: ../libxfce4ui/xfce-sm-client.c:1591
 #, c-format
 msgid "Failed to connect to the session manager: %s"
 msgstr "Nie udało się połączyć z menadżerem sesji: %s"
 
-#: ../libxfce4ui/xfce-sm-client.c:1597
+#: ../libxfce4ui/xfce-sm-client.c:1598
 #, c-format
 msgid "Session manager did not return a valid client id"
 msgstr "Menadżer sesji nie zwrócił poprawnego identyfikatora klienta"
 
 #. print warning for user
-#: ../libxfce4ui/xfce-spawn.c:406
+#: ../libxfce4ui/xfce-spawn.c:413
 #, c-format
 msgid ""
 "Working directory \"%s\" does not exist. It won't be used when spawning \"%s"
@@ -136,8 +137,8 @@ msgid ""
 "This shortcut is already being used for the command '%s'. Which action do "
 "you want to use?"
 msgstr ""
-"Skrót klawiszowy jest aktualnie przypisany do polecenia „%s”. Do którego "
-"polecenia przypisać skrót?"
+"Skrót klawiszowy jest już przypisany do polecenia „%s”. Do którego polecenia "
+"przypisać skrót?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
 #: ../libxfce4kbd-private/xfce-shortcuts.c:59
@@ -187,11 +188,11 @@ msgstr "Polecenie:"
 msgid "Shortcut"
 msgstr "Skrót klawiszowy"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:255
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:252
 msgid "Shortcut:"
 msgstr "Skrót klawiszowy:"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:300
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:339
 msgid "Could not grab the keyboard."
 msgstr "Nie można przechwycić klawiatury."
 
@@ -239,7 +240,9 @@ msgstr "Menedżer pulpitu"
 msgid ""
 "Sets the background color or image with optional application menu or icons "
 "for minimized applications or launchers, devices and folders."
-msgstr "Konfiguruje tło pulpitu oraz jego zawartość."
+msgstr ""
+"Konfiguruje tło pulpitu oraz udostępnia jego zawartość taką jak ikony, menu "
+"okna głównego czy lista okien."
 
 #: ../xfce4-about/main.c:84
 msgid "File Manager "
@@ -249,7 +252,9 @@ msgstr "Menedżer plików"
 msgid ""
 "A modern file manager for the Unix/Linux desktop, aiming to be easy-to-use "
 "and fast."
-msgstr "Zarządza plikami w prosty i efektywny sposób."
+msgstr ""
+"Zarządza zawartością sytemu plików, wyróżniając się szybkością i prostotą "
+"obsługi."
 
 #: ../xfce4-about/main.c:89
 msgid "Session Manager"
@@ -403,7 +408,7 @@ msgstr "Proszę zgłaszać błędy na adres <%s>."
 #: ../xfce4-about/main.c:461
 #, c-format
 msgid "Translators list from %s."
-msgstr "Lista tłumaczy z %s."
+msgstr "Listę tłumaczy wygenerowano w dn. %s."
 
 #: ../xfce4-about/main.c:471
 msgid "Failed to load interface"
@@ -414,42 +419,42 @@ msgstr "Nie udało się wczytać interfejsu"
 #: ../xfce4-about/main.c:485
 #, c-format
 msgid "Version %s, distributed by %s"
-msgstr "Wersja %s, dostarczona przez %s"
+msgstr "Wydanie %s, dostarczone przez %s"
 
 #. I18N: %s will be replaced by the Xfce version number
 #: ../xfce4-about/main.c:489
 #, c-format
 msgid "Version %s"
-msgstr "Wersja %s"
+msgstr "Wydanie %s"
 
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
 #. },
-#: ../xfce4-about/contributors.h:127
+#: ../xfce4-about/contributors.h:121
 msgid "Core developers"
 msgstr "Główni programiści"
 
-#: ../xfce4-about/contributors.h:130
+#: ../xfce4-about/contributors.h:124
 msgid "Active contributors"
-msgstr "Aktywni współpracownicy"
+msgstr "Bieżący współpracownicy"
 
-#: ../xfce4-about/contributors.h:133
+#: ../xfce4-about/contributors.h:127
 msgid "Servers maintained by"
 msgstr "Opiekunowie serwerów"
 
-#: ../xfce4-about/contributors.h:136
+#: ../xfce4-about/contributors.h:130
 msgid "Goodies supervision"
-msgstr "Zarządzanie Xfce Goodies"
+msgstr "Nadzorcy dodatków"
 
-#: ../xfce4-about/contributors.h:139
+#: ../xfce4-about/contributors.h:133
 msgid "Translations supervision"
-msgstr "Zarządzanie tłumaczeniami"
+msgstr "Nadzorcy tłumaczeń"
 
-#: ../xfce4-about/contributors.h:142
+#: ../xfce4-about/contributors.h:136
 msgid "Translators"
 msgstr "Tłumacze"
 
-#: ../xfce4-about/contributors.h:145
+#: ../xfce4-about/contributors.h:139
 msgid "Previous contributors"
 msgstr "Byli współpracownicy"
 

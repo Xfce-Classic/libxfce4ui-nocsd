@@ -24,7 +24,7 @@
 #include <gtk/gtk.h>
 #include <libxfce4util/libxfce4util.h>
 
-#define TRANSLATORS_H_STAMP "2012-10-28 00:21:07"
+#define TRANSLATORS_H_STAMP "2012-11-18 00:21:03"
 #define ATSIGN "@"
 #define DOTSIGN "."
 
@@ -316,6 +316,7 @@ static const TranslatorInfo xfce_translators_hr[] =
 {
   { "Petar Koretić", "petar" DOTSIGN "koretic" ATSIGN "gmail" DOTSIGN "com", TRUE },
   { "Ivica Kolić", "ikoli" ATSIGN "yahoo" DOTSIGN "com", TRUE },
+  { "Luka Kelava", "luka" DOTSIGN "kelava2009" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { NULL, NULL }
 };
 
@@ -324,6 +325,7 @@ static const TranslatorInfo xfce_translators_hu[] =
   { "Gabor Kelemen", "kelemeng" ATSIGN "gnome" DOTSIGN "hu", TRUE },
   { "László Horváth", "leslie" DOTSIGN "translate" ATSIGN "yahoo" DOTSIGN "co" DOTSIGN "uk", FALSE },
   { "Zelenak Sandor", "nem11nator" ATSIGN "gmail" DOTSIGN "com", FALSE },
+  { "Imre Benedek", "nucleo" ATSIGN "indamail" DOTSIGN "hu", FALSE },
   { NULL, NULL }
 };
 
@@ -663,7 +665,7 @@ static const TranslatorInfo xfce_translators_tr[] =
 {
   { "Alper Tekinalp", "alper" DOTSIGN "tekinalp" ATSIGN "gmail" DOTSIGN "com", TRUE },
   { "gokmen", "gokmen" ATSIGN "alageek" DOTSIGN "com", TRUE },
-  { "necdetyucel", "necdetyucel" ATSIGN "gmail" DOTSIGN "com", TRUE },
+  { "Necdet Yücel", "necdetyucel" ATSIGN "gmail" DOTSIGN "com", TRUE },
   { "Adnan Kenar", "akenar06" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Akın Ömeroğlu", "akin" ATSIGN "pardus" DOTSIGN "org" DOTSIGN "tr", FALSE },
   { "Ramazan Gürbüz", "ramazangurbuz" ATSIGN "gmail" DOTSIGN "com", FALSE },
@@ -717,6 +719,7 @@ static const TranslatorInfo xfce_translators_uk[] =
   { "Yarema aka Knedlyk", "yupadmin" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Maxim Dziumanenko", "dziumanenko" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Olexandr Nesterenko", "olexn" ATSIGN "ukr" DOTSIGN "net", FALSE },
+  { "Pavlo Bilyak", "jpavlo11" ATSIGN "ukr" DOTSIGN "net", FALSE },
   { "Oleksandr Natalenko", "pfactum" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Andriy Matkovsky", "sidius" DOTSIGN "ua" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "tarabopm", "tarabopm" ATSIGN "gmail" DOTSIGN "com", FALSE },
@@ -747,6 +750,7 @@ static const TranslatorInfo xfce_translators_zh_CN[] =
   { "haobug", "qinghao1" ATSIGN "foxmail" DOTSIGN "com", FALSE },
   { "Ganghua Leng", "hiweed" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Michael Lin", "linmx0130" ATSIGN "163" DOTSIGN "com", FALSE },
+  { "Howard Chan", "smartboyhw" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "tuhaihe", "1132321739qq" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { NULL, NULL }
 };
@@ -757,9 +761,10 @@ static const TranslatorInfo xfce_translators_zh_TW[] =
   { "Pei Yi Chen", "cpyimail" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "ethan42411", "jrpropo10282003" ATSIGN "yahoo" DOTSIGN "com" DOTSIGN "tw", FALSE },
   { "fanasin", "pswo10680" ATSIGN "hotmail" DOTSIGN "com", FALSE },
+  { "Yu-Fu Wu", "wennynnewenny" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Ruei-Yuan Lu", "RueiYuan" DOTSIGN "Lu" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Howard Chan", "smartboyhw" ATSIGN "gmail" DOTSIGN "com", FALSE },
-  { "Chia-Han Lee", "gloomysaga" ATSIGN "gmail" DOTSIGN "com", FALSE },
+  { "Chia-Han Lee", "sonronlee" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Walter cheuk", "wwycheuk" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { NULL, NULL }
 };
