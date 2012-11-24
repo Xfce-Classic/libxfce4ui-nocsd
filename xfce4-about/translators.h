@@ -24,7 +24,7 @@
 #include <gtk/gtk.h>
 #include <libxfce4util/libxfce4util.h>
 
-#define TRANSLATORS_H_STAMP "2012-11-18 00:21:03"
+#define TRANSLATORS_H_STAMP "2012-11-25 00:21:09"
 #define ATSIGN "@"
 #define DOTSIGN "."
 
@@ -186,6 +186,8 @@ static const TranslatorInfo xfce_translators_el[] =
 
 static const TranslatorInfo xfce_translators_en_GB[] =
 {
+  { "Kevin Beynon", "kevin" ATSIGN "kevinbeynon" DOTSIGN "com", FALSE },
+  { "Howard Chan", "smartboyhw" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Jeff Bailes", "thepizzaking" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { NULL, NULL }
 };
@@ -323,7 +325,6 @@ static const TranslatorInfo xfce_translators_hr[] =
 static const TranslatorInfo xfce_translators_hu[] =
 {
   { "Gabor Kelemen", "kelemeng" ATSIGN "gnome" DOTSIGN "hu", TRUE },
-  { "László Horváth", "leslie" DOTSIGN "translate" ATSIGN "yahoo" DOTSIGN "co" DOTSIGN "uk", FALSE },
   { "Zelenak Sandor", "nem11nator" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Imre Benedek", "nucleo" ATSIGN "indamail" DOTSIGN "hu", FALSE },
   { NULL, NULL }
@@ -398,6 +399,7 @@ static const TranslatorInfo xfce_translators_kn[] =
 {
   { "shankar", "prasad" DOTSIGN "mvs" ATSIGN "gmail" DOTSIGN "com", TRUE },
   { "Vasudev Kamath", "kamathvasudev" ATSIGN "gmail" DOTSIGN "com", TRUE },
+  { "Kiran Basavaraj", "kiranprl" ATSIGN "aol" DOTSIGN "in", FALSE },
   { NULL, NULL }
 };
 
@@ -525,8 +527,10 @@ static const TranslatorInfo xfce_translators_pt_BR[] =
 static const TranslatorInfo xfce_translators_ro[] =
 {
   { "Mișu Moldovan", "dumol" ATSIGN "xfce" DOTSIGN "org", TRUE },
+  { "George Pîrlea", "pirlea" DOTSIGN "george" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Igor Stirbu", "igor" DOTSIGN "stirbu" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Ionut Ovejanu", "ovejanu" ATSIGN "yahoo" DOTSIGN "com", FALSE },
+  { "strainu", "xfce" ATSIGN "strainu" DOTSIGN "ro", FALSE },
   { "Horia Dutescu", "vladi" DOTSIGN "linux" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Daiana Heinrich", "xdaiana" ATSIGN "yahoo" DOTSIGN "com", FALSE },
   { NULL, NULL }
