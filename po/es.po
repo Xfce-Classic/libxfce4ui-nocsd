@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-10 15:27+0000\n"
+"POT-Creation-Date: 2012-11-25 03:12+0000\n"
 "PO-Revision-Date: 2012-04-27 22:58-0600\n"
 "Last-Translator: Sergio García <oigres200@gmail.com>\n"
 "Language-Team: Spanish/ES <xfce-i18n@xfce.org>\n"
@@ -153,12 +153,23 @@ msgstr ""
 msgid "Keep the window manager action"
 msgstr "Mantener la acción del gestor de ventanas"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:95
+#. This shortcut already exists in the provider, we don't want it twice
+#. Warn the user
+#: ../libxfce4kbd-private/xfce-shortcuts.c:97
+msgid "Please use another key combination."
+msgstr "Porfavor utilice otra combinación de teclas."
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:98
+#, c-format
+msgid "%s already triggers this action."
+msgstr "% ya ha inicializado esta accion"
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:103
 #, c-format
 msgid "Conflicting actions for %s"
 msgstr "Acciones en conflicto para %s"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:128
+#: ../libxfce4kbd-private/xfce-shortcuts.c:136
 msgid "This shortcut is already being used for something else."
 msgstr "Este atajo ya está siendo usado para otra cosa."
 
