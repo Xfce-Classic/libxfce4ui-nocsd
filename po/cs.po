@@ -162,7 +162,7 @@ msgstr "Použijte jinou kombinaci kláves."
 #: ../libxfce4kbd-private/xfce-shortcuts.c:98
 #, c-format
 msgid "%s already triggers this action."
-msgstr "%s také spouští tuto akci."
+msgstr "%s už tuto akci spouští."
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:103
 #, c-format
