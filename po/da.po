@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui 1.4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-03-01 18:00+0000\n"
+"POT-Creation-Date: 2012-11-25 08:33+0000\n"
 "PO-Revision-Date: 2012-02-28 18:54+0100\n"
 "Last-Translator: Erik Schmidt <erischmi@gmail.com>\n"
 "Language-Team: Dansk <dansk@dansk-gruppen.dk>\n"
@@ -21,24 +21,24 @@ msgstr ""
 "X-Poedit-Language: Danish\n"
 "X-Poedit-Country: DENMARK\n"
 
-#: ../libxfce4ui/xfce-dialogs.c:80
+#: ../libxfce4ui/xfce-dialogs.c:98
 msgid "Failed to open web browser for online documentation"
 msgstr "Kunne ikke åbne netlæser for dokumentation på nettet"
 
-#: ../libxfce4ui/xfce-dialogs.c:195
+#: ../libxfce4ui/xfce-dialogs.c:213
 #, c-format
 msgid "Do you want to read the %s manual online?"
 msgstr "Vil du læse %smanual på nettet?"
 
-#: ../libxfce4ui/xfce-dialogs.c:197
+#: ../libxfce4ui/xfce-dialogs.c:215
 msgid "Do you want to read the manual online?"
 msgstr "Vil du læse manualen på nettet?"
 
-#: ../libxfce4ui/xfce-dialogs.c:200
+#: ../libxfce4ui/xfce-dialogs.c:218
 msgid "Online Documentation"
 msgstr "Dokumentation på nettet"
 
-#: ../libxfce4ui/xfce-dialogs.c:203
+#: ../libxfce4ui/xfce-dialogs.c:221
 msgid ""
 "You will be redirected to the documentation website where the help pages are "
 "maintained and translated."
@@ -46,62 +46,62 @@ msgstr ""
 "Du vil blive omstillet til dokumentationssiden på nettet, hvor hjælpesiderne "
 "bliver vedligeholdt og oversat."
 
-#: ../libxfce4ui/xfce-dialogs.c:207
+#: ../libxfce4ui/xfce-dialogs.c:225
 msgid "_Read Online"
 msgstr "_Læs på nettet"
 
-#: ../libxfce4ui/xfce-dialogs.c:219
+#: ../libxfce4ui/xfce-dialogs.c:237
 msgid "_Always go directly to the online documentation"
 msgstr "_Gå altid direkte til dokumentationen på nettet"
 
-#: ../libxfce4ui/xfce-dialogs.c:263
+#: ../libxfce4ui/xfce-dialogs.c:281
 msgid "Information"
 msgstr "Information"
 
-#: ../libxfce4ui/xfce-dialogs.c:296
+#: ../libxfce4ui/xfce-dialogs.c:314
 msgid "Warning"
 msgstr "Advarsel"
 
-#: ../libxfce4ui/xfce-dialogs.c:330
+#: ../libxfce4ui/xfce-dialogs.c:348
 msgid "Error"
 msgstr "Fejl"
 
-#: ../libxfce4ui/xfce-dialogs.c:381
+#: ../libxfce4ui/xfce-dialogs.c:399
 msgid "Question"
 msgstr "Spørgsmål"
 
-#: ../libxfce4ui/xfce-sm-client.c:1402
+#: ../libxfce4ui/xfce-sm-client.c:1403
 msgid "Session management client ID"
 msgstr "Klientid fra sessionshåndtering"
 
-#: ../libxfce4ui/xfce-sm-client.c:1402
+#: ../libxfce4ui/xfce-sm-client.c:1403
 msgid "ID"
 msgstr "Id"
 
-#: ../libxfce4ui/xfce-sm-client.c:1403
+#: ../libxfce4ui/xfce-sm-client.c:1404
 msgid "Disable session management"
 msgstr "Slå sessionshåndtering fra"
 
-#: ../libxfce4ui/xfce-sm-client.c:1413
+#: ../libxfce4ui/xfce-sm-client.c:1414
 msgid "Session management options"
 msgstr "Tilvalg for sessionshåndtering:"
 
-#: ../libxfce4ui/xfce-sm-client.c:1414
+#: ../libxfce4ui/xfce-sm-client.c:1415
 msgid "Show session management options"
 msgstr "Vis tilvalg for sessionshåndtering"
 
-#: ../libxfce4ui/xfce-sm-client.c:1590
+#: ../libxfce4ui/xfce-sm-client.c:1591
 #, c-format
 msgid "Failed to connect to the session manager: %s"
 msgstr "Kunne ikke forbinde til sessionshåndteringen: %s"
 
-#: ../libxfce4ui/xfce-sm-client.c:1597
+#: ../libxfce4ui/xfce-sm-client.c:1598
 #, c-format
 msgid "Session manager did not return a valid client id"
 msgstr "Sessionshåndtering returnerede ikke et gyldigt klientid"
 
 #. print warning for user
-#: ../libxfce4ui/xfce-spawn.c:406
+#: ../libxfce4ui/xfce-spawn.c:413
 #, c-format
 msgid ""
 "Working directory \"%s\" does not exist. It won't be used when spawning \"%s"
@@ -158,12 +158,23 @@ msgstr ""
 msgid "Keep the window manager action"
 msgstr "Behold vindueshåndteringshandlingen"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:95
+#. This shortcut already exists in the provider, we don't want it twice
+#. Warn the user
+#: ../libxfce4kbd-private/xfce-shortcuts.c:97
+msgid "Please use another key combination."
+msgstr "Brug en anden tastekombination."
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:98
+#, c-format
+msgid "%s already triggers this action."
+msgstr "%s bruges allerede til denne handling."
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:103
 #, c-format
 msgid "Conflicting actions for %s"
 msgstr "Modstridende handlinger til %s"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:128
+#: ../libxfce4kbd-private/xfce-shortcuts.c:136
 msgid "This shortcut is already being used for something else."
 msgstr "Denne genvej bruges allerede til noget andet."
 
@@ -188,11 +199,11 @@ msgstr "Kommando:"
 msgid "Shortcut"
 msgstr "Genvej"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:255
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:252
 msgid "Shortcut:"
 msgstr "Genvej:"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:300
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:339
 msgid "Could not grab the keyboard."
 msgstr "Kunne ikke gribe tastaturet"
 
@@ -428,31 +439,31 @@ msgstr "Version %s"
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
 #. },
-#: ../xfce4-about/contributors.h:127
+#: ../xfce4-about/contributors.h:121
 msgid "Core developers"
 msgstr "Kerneudviklere"
 
-#: ../xfce4-about/contributors.h:130
+#: ../xfce4-about/contributors.h:124
 msgid "Active contributors"
 msgstr "Aktive udviklere"
 
-#: ../xfce4-about/contributors.h:133
+#: ../xfce4-about/contributors.h:127
 msgid "Servers maintained by"
 msgstr "Servers vedligeholdt af"
 
-#: ../xfce4-about/contributors.h:136
+#: ../xfce4-about/contributors.h:130
 msgid "Goodies supervision"
 msgstr "Goodies vedledning"
 
-#: ../xfce4-about/contributors.h:139
+#: ../xfce4-about/contributors.h:133
 msgid "Translations supervision"
 msgstr "Oversættelse vejledning"
 
-#: ../xfce4-about/contributors.h:142
+#: ../xfce4-about/contributors.h:136
 msgid "Translators"
 msgstr "Oversættere"
 
-#: ../xfce4-about/contributors.h:145
+#: ../xfce4-about/contributors.h:139
 msgid "Previous contributors"
 msgstr "Tidligere udviklere"
 
