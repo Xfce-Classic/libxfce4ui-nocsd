@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-01-16 07:33+0000\n"
+"POT-Creation-Date: 2012-12-03 19:51+0000\n"
 "PO-Revision-Date: 2009-10-21 13:56+0200\n"
 "Last-Translator: Piarres Beobide <pi@beobide.net>\n"
 "Language-Team: Basque <debian-l10n-eu@debian.lists.org>\n"
@@ -18,85 +18,87 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Lokalize 1.0\n"
 
-#: ../libxfce4ui/xfce-dialogs.c:80
+#: ../libxfce4ui/xfce-dialogs.c:98
 msgid "Failed to open web browser for online documentation"
 msgstr "Huts sareko dokumentaziorako nabigatzailea irekitzean"
 
-#: ../libxfce4ui/xfce-dialogs.c:195
+#: ../libxfce4ui/xfce-dialogs.c:213
 #, c-format
 msgid "Do you want to read the %s manual online?"
 msgstr "%s manuala saretik irakurri nahi duzu?"
 
-#: ../libxfce4ui/xfce-dialogs.c:197
+#: ../libxfce4ui/xfce-dialogs.c:215
 msgid "Do you want to read the manual online?"
 msgstr "Manuala saretik irakurri nahi duzu?"
 
-#: ../libxfce4ui/xfce-dialogs.c:200
+#: ../libxfce4ui/xfce-dialogs.c:218
 msgid "Online Documentation"
 msgstr "Sareko dokumentazioa"
 
-#: ../libxfce4ui/xfce-dialogs.c:203
+#: ../libxfce4ui/xfce-dialogs.c:221
 msgid ""
 "You will be redirected to the documentation website where the help pages are "
 "maintained and translated."
-msgstr "Laguntza orrialdeak itzultzen eta mantentzen diren dokumentazio webgunera birbidaliko zaizu."
+msgstr ""
+"Laguntza orrialdeak itzultzen eta mantentzen diren dokumentazio webgunera "
+"birbidaliko zaizu."
 
-#: ../libxfce4ui/xfce-dialogs.c:207
+#: ../libxfce4ui/xfce-dialogs.c:225
 msgid "_Read Online"
 msgstr "I_rakurri sarean"
 
-#: ../libxfce4ui/xfce-dialogs.c:219
+#: ../libxfce4ui/xfce-dialogs.c:237
 msgid "_Always go directly to the online documentation"
 msgstr "Beti jo_an zuzenean sareko dokumentaziora"
 
-#: ../libxfce4ui/xfce-dialogs.c:263
+#: ../libxfce4ui/xfce-dialogs.c:281
 msgid "Information"
 msgstr "Argibideak"
 
-#: ../libxfce4ui/xfce-dialogs.c:296
+#: ../libxfce4ui/xfce-dialogs.c:314
 msgid "Warning"
 msgstr "Abisua"
 
-#: ../libxfce4ui/xfce-dialogs.c:330
+#: ../libxfce4ui/xfce-dialogs.c:348
 msgid "Error"
 msgstr "Errorea"
 
-#: ../libxfce4ui/xfce-dialogs.c:381
+#: ../libxfce4ui/xfce-dialogs.c:399
 msgid "Question"
 msgstr "Galdera"
 
-#: ../libxfce4ui/xfce-sm-client.c:1402
+#: ../libxfce4ui/xfce-sm-client.c:1403
 msgid "Session management client ID"
 msgstr "Saio kudeaketa bezero IDa"
 
-#: ../libxfce4ui/xfce-sm-client.c:1402
+#: ../libxfce4ui/xfce-sm-client.c:1403
 msgid "ID"
 msgstr "IDa"
 
-#: ../libxfce4ui/xfce-sm-client.c:1403
+#: ../libxfce4ui/xfce-sm-client.c:1404
 msgid "Disable session management"
 msgstr "Desgaitu saio kudeaketa"
 
-#: ../libxfce4ui/xfce-sm-client.c:1413
+#: ../libxfce4ui/xfce-sm-client.c:1414
 msgid "Session management options"
 msgstr "Saio kudeaketa aukerak"
 
-#: ../libxfce4ui/xfce-sm-client.c:1414
+#: ../libxfce4ui/xfce-sm-client.c:1415
 msgid "Show session management options"
 msgstr "Ikusi saio-kudeaketa aukerak"
 
-#: ../libxfce4ui/xfce-sm-client.c:1590
+#: ../libxfce4ui/xfce-sm-client.c:1591
 #, c-format
 msgid "Failed to connect to the session manager: %s"
 msgstr "Huts saio-kudeatzailearekin konektatzerakoan: %s"
 
-#: ../libxfce4ui/xfce-sm-client.c:1597
+#: ../libxfce4ui/xfce-sm-client.c:1598
 #, c-format
 msgid "Session manager did not return a valid client id"
 msgstr "Saio kudeatzaileak ez du ID erabilgarri bat erantzun"
 
 #. print warning for user
-#: ../libxfce4ui/xfce-spawn.c:406
+#: ../libxfce4ui/xfce-spawn.c:413
 #, c-format
 msgid ""
 "Working directory \"%s\" does not exist. It won't be used when spawning \"%s"
@@ -151,12 +153,23 @@ msgstr ""
 msgid "Keep the window manager action"
 msgstr "Mantendu leiho-kudeatzaile ekintza"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:95
+#. This shortcut already exists in the provider, we don't want it twice
+#. Warn the user
+#: ../libxfce4kbd-private/xfce-shortcuts.c:97
+msgid "Please use another key combination."
+msgstr "Mesedez erabili beste tekla konbinazio bat"
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:98
+#, c-format
+msgid "%s already triggers this action."
+msgstr "%s-ek dagoeneko ekintza hau abiarazten du."
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:103
 #, c-format
 msgid "Conflicting actions for %s"
 msgstr "Gatazka sortzen duten ekintzak %s-rentzat"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:128
+#: ../libxfce4kbd-private/xfce-shortcuts.c:136
 msgid "This shortcut is already being used for something else."
 msgstr "Lasterbide hau dagoeneko beste zerbaitek erabiltzen du."
 
@@ -181,11 +194,11 @@ msgstr "Komandoa:"
 msgid "Shortcut"
 msgstr "Lasterbidea"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:255
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:252
 msgid "Shortcut:"
 msgstr "Lasterbidea:"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:300
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:339
 msgid "Could not grab the keyboard."
 msgstr "Ezin da teklatua kapturatu."
 
@@ -420,31 +433,31 @@ msgstr "%s bertsioa"
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
 #. },
-#: ../xfce4-about/contributors.h:127
+#: ../xfce4-about/contributors.h:121
 msgid "Core developers"
 msgstr "Muin garatzaileak"
 
-#: ../xfce4-about/contributors.h:130
+#: ../xfce4-about/contributors.h:124
 msgid "Active contributors"
 msgstr "Laguntzaile aktiboak"
 
-#: ../xfce4-about/contributors.h:133
+#: ../xfce4-about/contributors.h:127
 msgid "Servers maintained by"
 msgstr "Zerbitzari mantenua: "
 
-#: ../xfce4-about/contributors.h:136
+#: ../xfce4-about/contributors.h:130
 msgid "Goodies supervision"
 msgstr "Goodie gainbegiratzea"
 
-#: ../xfce4-about/contributors.h:139
+#: ../xfce4-about/contributors.h:133
 msgid "Translations supervision"
 msgstr "Itzulpen gainbegiratzea"
 
-#: ../xfce4-about/contributors.h:142
+#: ../xfce4-about/contributors.h:136
 msgid "Translators"
 msgstr "Itzultzaileak"
 
-#: ../xfce4-about/contributors.h:145
+#: ../xfce4-about/contributors.h:139
 msgid "Previous contributors"
 msgstr "Aurreko laguntzaileak"
 
