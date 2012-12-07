@@ -2,114 +2,104 @@
 # Copyright (C) 2008 The Xfce development team.
 # This file is distributed under the same license as the libxfce4ui package.
 # Maximilian Schleiss <maximilian@xfce.org>, 2008.
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-02-03 13:21+0000\n"
-"PO-Revision-Date: 2008-10-12 23:17+0100\n"
-"Last-Translator: Maximilian Schleiss <maximilian@xfce.org>\n"
+"POT-Creation-Date: 2012-12-07 09:27+0000\n"
+"PO-Revision-Date: 2012-12-07 13:41+0100\n"
+"Last-Translator: \n"
 "Language-Team: French <i18n-xfce@xfce.org>\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: fr\n"
 
-#: ../libxfce4ui/xfce-dialogs.c:80
+#: ../libxfce4ui/xfce-dialogs.c:98
 msgid "Failed to open web browser for online documentation"
 msgstr "Échec de l'ouverture du navigateur web pour la documentation en ligne"
 
-#: ../libxfce4ui/xfce-dialogs.c:195
+#: ../libxfce4ui/xfce-dialogs.c:213
 #, c-format
 msgid "Do you want to read the %s manual online?"
 msgstr "Souhaitez-vous consulter le manuel %s en ligne ?"
 
-#: ../libxfce4ui/xfce-dialogs.c:197
+#: ../libxfce4ui/xfce-dialogs.c:215
 msgid "Do you want to read the manual online?"
 msgstr "Souhaitez-vous consulter le manuel en ligne ?"
 
-#: ../libxfce4ui/xfce-dialogs.c:200
+#: ../libxfce4ui/xfce-dialogs.c:218
 msgid "Online Documentation"
 msgstr "Documentation en ligne"
 
-#: ../libxfce4ui/xfce-dialogs.c:203
-msgid ""
-"You will be redirected to the documentation website where the help pages are "
-"maintained and translated."
+#: ../libxfce4ui/xfce-dialogs.c:221
+msgid "You will be redirected to the documentation website where the help pages are maintained and translated."
 msgstr "Vous allez être redirigé vers le site de documentation en ligne où les pages d'aide sont maintenues et traduites."
 
-#: ../libxfce4ui/xfce-dialogs.c:207
+#: ../libxfce4ui/xfce-dialogs.c:225
 msgid "_Read Online"
 msgstr "_Lire en ligne"
 
-#: ../libxfce4ui/xfce-dialogs.c:219
+#: ../libxfce4ui/xfce-dialogs.c:237
 msgid "_Always go directly to the online documentation"
 msgstr "_Toujours aller directement sur la documentation en ligne"
 
-#: ../libxfce4ui/xfce-dialogs.c:263
+#: ../libxfce4ui/xfce-dialogs.c:281
 msgid "Information"
 msgstr "Information"
 
-#: ../libxfce4ui/xfce-dialogs.c:296
+#: ../libxfce4ui/xfce-dialogs.c:314
 msgid "Warning"
 msgstr "Avertissement"
 
-#: ../libxfce4ui/xfce-dialogs.c:330
+#: ../libxfce4ui/xfce-dialogs.c:348
 msgid "Error"
 msgstr "Erreur"
 
-#: ../libxfce4ui/xfce-dialogs.c:381
+#: ../libxfce4ui/xfce-dialogs.c:399
 msgid "Question"
 msgstr "Question"
 
-#: ../libxfce4ui/xfce-sm-client.c:1402
+#: ../libxfce4ui/xfce-sm-client.c:1403
 msgid "Session management client ID"
 msgstr "ID client du gestionnaire de session"
 
-#: ../libxfce4ui/xfce-sm-client.c:1402
+#: ../libxfce4ui/xfce-sm-client.c:1403
 msgid "ID"
 msgstr "ID"
 
-#: ../libxfce4ui/xfce-sm-client.c:1403
+#: ../libxfce4ui/xfce-sm-client.c:1404
 msgid "Disable session management"
 msgstr "Désactiver la gestion de session"
 
-#: ../libxfce4ui/xfce-sm-client.c:1413
+#: ../libxfce4ui/xfce-sm-client.c:1414
 msgid "Session management options"
 msgstr "Options du gestionnaire de session"
 
-#: ../libxfce4ui/xfce-sm-client.c:1414
+#: ../libxfce4ui/xfce-sm-client.c:1415
 msgid "Show session management options"
 msgstr "Afficher les options du gestionnaires de session"
 
-#: ../libxfce4ui/xfce-sm-client.c:1590
+#: ../libxfce4ui/xfce-sm-client.c:1591
 #, c-format
 msgid "Failed to connect to the session manager: %s"
 msgstr "Échec de connexion au gestionnaire de session : %s"
 
-#: ../libxfce4ui/xfce-sm-client.c:1597
+#: ../libxfce4ui/xfce-sm-client.c:1598
 #, c-format
 msgid "Session manager did not return a valid client id"
 msgstr "Le gestionnaire de session n'a pas retourné un id client valable"
 
 #. print warning for user
-#: ../libxfce4ui/xfce-spawn.c:406
+#: ../libxfce4ui/xfce-spawn.c:413
 #, c-format
-msgid ""
-"Working directory \"%s\" does not exist. It won't be used when spawning \"%s"
-"\"."
-msgstr ""
-"Le dossier de travail \"%s\" n'existe pas. Il ne sera pas utilisé à la "
-"réouverture de \"%s\"."
+msgid "Working directory \"%s\" does not exist. It won't be used when spawning \"%s\"."
+msgstr "Le dossier de travail « %s » n'existe pas. Il ne sera pas utilisé à la réouverture de « %s »."
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:52
-msgid ""
-"This shortcut is already being used for another window manager action. Which "
-"action do you want to use?"
-msgstr ""
-"Ce raccourci est déjà attribué à une autre action du gestionnaire de "
-"fenêtres. Quelle action voulez-vous garder ?"
+msgid "This shortcut is already being used for another window manager action. Which action do you want to use?"
+msgstr "Ce raccourci est déjà attribué à une autre action du gestionnaire de fenêtres. Quelle action voulez-vous garder ?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
@@ -126,12 +116,8 @@ msgstr "Garder l'autre"
 #: ../libxfce4kbd-private/xfce-shortcuts.c:55
 #: ../libxfce4kbd-private/xfce-shortcuts.c:58
 #, c-format
-msgid ""
-"This shortcut is already being used for the command '%s'. Which action do "
-"you want to use?"
-msgstr ""
-"Ce raccourci est déjà attribué à la commande '%s'. Quelle action voulez-vous "
-"garder ?"
+msgid "This shortcut is already being used for the command '%s'. Which action do you want to use?"
+msgstr "Ce raccourci est déjà attribué à la commande '%s'. Quelle action voulez-vous garder ?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
 #: ../libxfce4kbd-private/xfce-shortcuts.c:59
@@ -140,23 +126,30 @@ msgid "Keep '%s'"
 msgstr "Garder '%s'"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:61
-msgid ""
-"This shortcut is already being used by a window manager action. Which action "
-"do you want to use?"
-msgstr ""
-"Ce raccourci est déjà attribué à une action du gestionnaire de fenêtres. "
-"Quelle action voulez-vous garder ?"
+msgid "This shortcut is already being used by a window manager action. Which action do you want to use?"
+msgstr "Ce raccourci est déjà attribué à une action du gestionnaire de fenêtres. Quelle action voulez-vous garder ?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 msgid "Keep the window manager action"
 msgstr "Garder l'action du gestionnaire de fenêtres"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:95
+#. This shortcut already exists in the provider, we don't want it twice
+#. Warn the user
+#: ../libxfce4kbd-private/xfce-shortcuts.c:97
+msgid "Please use another key combination."
+msgstr "S'il vous plaît utiliser une autre combinaison de touches."
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:98
+#, c-format
+msgid "%s already triggers this action."
+msgstr "%s provoque déjà cette action."
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:103
 #, c-format
 msgid "Conflicting actions for %s"
 msgstr "Actions en conflit pour %s"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:128
+#: ../libxfce4kbd-private/xfce-shortcuts.c:136
 msgid "This shortcut is already being used for something else."
 msgstr "Ce raccourci est déjà attribué à autre chose."
 
@@ -181,11 +174,11 @@ msgstr "Commande :"
 msgid "Shortcut"
 msgstr "Raccourci"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:255
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:252
 msgid "Shortcut:"
 msgstr "Raccourci :"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:300
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:339
 msgid "Could not grab the keyboard."
 msgstr "Le clavier n'a pas été saisi."
 
@@ -218,73 +211,48 @@ msgid "Panel"
 msgstr "Panneau"
 
 #: ../xfce4-about/main.c:75
-msgid ""
-"Program launchers, window buttons, applications menu, workspace switcher and "
-"more."
-msgstr ""
-"Chargeurs de programmes, boutons des fenêtres, menus, sélecteur d'espace de "
-"travail et bien plus."
+msgid "Program launchers, window buttons, applications menu, workspace switcher and more."
+msgstr "Chargeurs de programmes, boutons des fenêtres, menus, sélecteur d'espace de travail et bien plus."
 
 #: ../xfce4-about/main.c:79
 msgid "Desktop Manager"
 msgstr "Gestionnaire de bureau"
 
 #: ../xfce4-about/main.c:80
-msgid ""
-"Sets the background color or image with optional application menu or icons "
-"for minimized applications or launchers, devices and folders."
-msgstr ""
-"Définit la couleur ou l'image d'arrière-plan avec des menus ou des icônes "
-"optionnelles pour les applications minimisées ou les chargeurs, "
-"périphériques et dossiers."
+msgid "Sets the background color or image with optional application menu or icons for minimized applications or launchers, devices and folders."
+msgstr "Définit la couleur ou l'image d'arrière-plan avec des menus ou des icônes optionnelles pour les applications minimisées ou les chargeurs, périphériques et dossiers."
 
 #: ../xfce4-about/main.c:84
 msgid "File Manager "
 msgstr "Gestionnaire de fichier"
 
 #: ../xfce4-about/main.c:85
-msgid ""
-"A modern file manager for the Unix/Linux desktop, aiming to be easy-to-use "
-"and fast."
-msgstr ""
-"Un gestionnaire de fichier moderne pour les bureaux Unix/Linux se voulant "
-"faciles d'utilisation et rapides."
+msgid "A modern file manager for the Unix/Linux desktop, aiming to be easy-to-use and fast."
+msgstr "Un gestionnaire de fichier moderne pour les bureaux Unix/Linux se voulant faciles d'utilisation et rapides."
 
 #: ../xfce4-about/main.c:89
 msgid "Session Manager"
 msgstr "Gestionnaire de session"
 
 #: ../xfce4-about/main.c:90
-msgid ""
-"Restores your session on startup and allows you to shutdown the computer "
-"from Xfce."
-msgstr ""
-"Restaure votre session au démarrage et vous permet d'éteindre l'ordinateur "
-"depuis Xfce."
+msgid "Restores your session on startup and allows you to shutdown the computer from Xfce."
+msgstr "Restaure votre session au démarrage et vous permet d'éteindre l'ordinateur depuis Xfce."
 
 #: ../xfce4-about/main.c:94
 msgid "Setting System"
 msgstr "Paramètres système"
 
 #: ../xfce4-about/main.c:95
-msgid ""
-"Configuration system to control various aspects of the desktop like "
-"appearance, display, keyboard and mouse settings."
-msgstr ""
-"Système de configuration contrôlant différents aspects du bureau tels que "
-"l'apparence, l'écran ou les paramètres du clavier et de la souris."
+msgid "Configuration system to control various aspects of the desktop like appearance, display, keyboard and mouse settings."
+msgstr "Système de configuration contrôlant différents aspects du bureau tels que l'apparence, l'écran ou les paramètres du clavier et de la souris."
 
 #: ../xfce4-about/main.c:99
 msgid "Application Finder"
 msgstr "Chercheur d'application"
 
 #: ../xfce4-about/main.c:100
-msgid ""
-"Shows the applications installed on your system in categories, so you can "
-"quickly find and launch them."
-msgstr ""
-"Affiche les applications installées sur votre système en catégories, afin de "
-"pouvoir les trouver et les charger rapidement."
+msgid "Shows the applications installed on your system in categories, so you can quickly find and launch them."
+msgstr "Affiche les applications installées sur votre système en catégories, afin de pouvoir les trouver et les charger rapidement."
 
 #: ../xfce4-about/main.c:104
 msgid "Settings Daemon"
@@ -295,34 +263,16 @@ msgid "D-Bus-based configuration storage system."
 msgstr "System de stockage de configuration basé sur D-Bus"
 
 #: ../xfce4-about/main.c:112
-msgid ""
-"Xfce is a collection of programs that together provide a full-featured "
-"desktop environment. The following programs are part of the Xfce core:"
-msgstr ""
-"Xfce est un ensemble de programmes qui, ensemble, fournissent un bureau "
-"complet. Les programmes suivants font partie du coeur de Xfce:"
+msgid "Xfce is a collection of programs that together provide a full-featured desktop environment. The following programs are part of the Xfce core:"
+msgstr "Xfce est un ensemble de programmes qui, ensemble, fournissent un bureau complet. Les programmes suivants font partie du coeur de Xfce:"
 
 #: ../xfce4-about/main.c:136
-msgid ""
-"Xfce is also a development platform providing several libraries, that help "
-"programmers create applications that fit in well with the desktop "
-"environment."
-msgstr ""
-"Xfce est également une plateforme de développement fournissant plusieurs "
-"bibliothèques qui aident les programmeurs à créer des applications qui "
-"s'intégreront bien au bureau."
+msgid "Xfce is also a development platform providing several libraries, that help programmers create applications that fit in well with the desktop environment."
+msgstr "Xfce est également une plateforme de développement fournissant plusieurs bibliothèques qui aident les programmeurs à créer des applications qui s'intégreront bien au bureau."
 
 #: ../xfce4-about/main.c:142
-msgid ""
-"Xfce components are licensed under free or open source licences; GPL or BSDL "
-"for applications and LGPL or BSDL for libraries. Look at the documentation, "
-"the source code or the Xfce website (http://www.xfce.org) for more "
-"information."
-msgstr ""
-"Les composants Xfce sont licenciés sous licences gratuites ou open source; "
-"GPL ou BSDL pour les applications et LGPL ou BSDL pour les bibliothèques. "
-"Regarger la documentation, le code source ou le site web de Xfce (http://www."
-"xfce.org) pour plus d'informations."
+msgid "Xfce components are licensed under free or open source licences; GPL or BSDL for applications and LGPL or BSDL for libraries. Look at the documentation, the source code or the Xfce website (http://www.xfce.org) for more information."
+msgstr "Les composants Xfce sont licenciés sous licences gratuites ou open source; GPL ou BSDL pour les applications et LGPL ou BSDL pour les bibliothèques. Regarger la documentation, le code source ou le site web de Xfce (http://www.xfce.org) pour plus d'informations."
 
 #: ../xfce4-about/main.c:149
 msgid "Thank you for your interest in Xfce."
@@ -333,51 +283,24 @@ msgid "The Xfce Development Team"
 msgstr "L'équipe de développement Xfce"
 
 #: ../xfce4-about/main.c:262
-msgid ""
-"If you know of anyone missing from this list; don't hesitate and file a bug "
-"on <http://bugzilla.xfce.org> ."
-msgstr ""
-"Si vous connaissez quelqu'un manquant dans la liste; n'hésitez pas et "
-"remplissez un bug sur <http://buzilla.xfce.org>."
+msgid "If you know of anyone missing from this list; don't hesitate and file a bug on <http://bugzilla.xfce.org> ."
+msgstr "Si vous connaissez quelqu'un manquant dans la liste; n'hésitez pas et remplissez un bug sur <http://buzilla.xfce.org>."
 
 #: ../xfce4-about/main.c:266
 msgid "Thanks to all who helped making this software available!"
 msgstr "Merci à tous ceux qui ont aidé à rendre ce logiciel disponible!"
 
 #: ../xfce4-about/main.c:283
-msgid ""
-"Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
-"components are copyrighted by their respective authors."
-msgstr ""
-"Les droits d'auteur de Xfce 4 appartiennent à Olivier Fourdan (fourdan@xfce."
-"org). Les différents composants sont protégés par copyright par leurs "
-"auteurs respectifs."
+msgid "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different components are copyrighted by their respective authors."
+msgstr "Les droits d'auteur de Xfce 4 appartiennent à Olivier Fourdan (fourdan@xfce.org). Les différents composants sont protégés par copyright par leurs auteurs respectifs."
 
 #: ../xfce4-about/main.c:288
-msgid ""
-"The libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs and exo packages are "
-"distributed under the terms of the GNU Library General Public License as "
-"published by the Free Software Foundation; either version 2 of the License, "
-"or (at your option) any later version."
-msgstr ""
-"Les paquets libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs et exo sont "
-"distribués sous les termes de la GNU Library General Public License telle "
-"que publiée par la Free Software Foundation; que ce soit en version 2, ou (à "
-"votre guise) quelque version postérieure."
+msgid "The libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs and exo packages are distributed under the terms of the GNU Library General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version."
+msgstr "Les paquets libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs et exo sont distribués sous les termes de la GNU Library General Public License telle que publiée par la Free Software Foundation; que ce soit en version 2, ou (à votre guise) quelque version postérieure."
 
 #: ../xfce4-about/main.c:295
-msgid ""
-"The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-"
-"settings, xfce-utils, xfconf, xfdesktop and xfwm4 are distributed under the "
-"terms of the GNU General Public License as published by the Free Software "
-"Foundation; either version 2 of the License, or (at your option) any later "
-"version."
-msgstr ""
-"Les paquets thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-"
-"settings, xfce-utils, xfconf, xfdesktop and xfwm4 sont distribués sous les "
-"termes de la GNU General Public License telle que publiée par la Free "
-"Software Foundation; que ce soit en version 2, ou (à votre guise) quelque "
-"version postérieure."
+msgid "The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfce-utils, xfconf, xfdesktop and xfwm4 are distributed under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version."
+msgstr "Les paquets thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfce-utils, xfconf, xfdesktop and xfwm4 sont distribués sous les termes de la GNU General Public License telle que publiée par la Free Software Foundation; que ce soit en version 2, ou (à votre guise) quelque version postérieure."
 
 #: ../xfce4-about/main.c:442
 #, c-format
@@ -423,31 +346,31 @@ msgstr "Version %s"
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
 #. },
-#: ../xfce4-about/contributors.h:127
+#: ../xfce4-about/contributors.h:121
 msgid "Core developers"
 msgstr "Développeurs du coeur"
 
-#: ../xfce4-about/contributors.h:130
+#: ../xfce4-about/contributors.h:124
 msgid "Active contributors"
 msgstr "Contributeurs actifs"
 
-#: ../xfce4-about/contributors.h:133
+#: ../xfce4-about/contributors.h:127
 msgid "Servers maintained by"
 msgstr "Serveurs maintenus par"
 
-#: ../xfce4-about/contributors.h:136
+#: ../xfce4-about/contributors.h:130
 msgid "Goodies supervision"
 msgstr "Supervision des goodies"
 
-#: ../xfce4-about/contributors.h:139
+#: ../xfce4-about/contributors.h:133
 msgid "Translations supervision"
 msgstr "Supervision des traductions"
 
-#: ../xfce4-about/contributors.h:142
+#: ../xfce4-about/contributors.h:136
 msgid "Translators"
 msgstr "Traducteurs"
 
-#: ../xfce4-about/contributors.h:145
+#: ../xfce4-about/contributors.h:139
 msgid "Previous contributors"
 msgstr "Anciens contributeurs"
 
