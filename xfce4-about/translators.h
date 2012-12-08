@@ -24,7 +24,7 @@
 #include <gtk/gtk.h>
 #include <libxfce4util/libxfce4util.h>
 
-#define TRANSLATORS_H_STAMP "2012-12-02 00:21:08"
+#define TRANSLATORS_H_STAMP "2012-12-09 00:21:14"
 #define ATSIGN "@"
 #define DOTSIGN "."
 
@@ -211,6 +211,7 @@ static const TranslatorInfo xfce_translators_es[] =
   { "lbazan", "bazanluis20" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "ma7as", "colonizare" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Matias De lellis", "mati86dl" ATSIGN "gmail" DOTSIGN "com", FALSE },
+  { "Eduardo Mayorga Téllez", "mayorgalinux" ATSIGN "fedoraproject" DOTSIGN "org", FALSE },
   { "Octavio Bernal Quiroz", "octavio" DOTSIGN "bernal" DOTSIGN "q" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Sergio García", "oigres200" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "prflr88", "prflr88" ATSIGN "gmail" DOTSIGN "com", FALSE },
@@ -277,7 +278,7 @@ static const TranslatorInfo xfce_translators_fr[] =
   { "Louis Moureaux", "m_louis30" ATSIGN "yahoo" DOTSIGN "com", FALSE },
   { "Maximilian Schleiss", "maximilian" ATSIGN "xfce" DOTSIGN "org", FALSE },
   { "marc doutreloux", "mdoutreloux" ATSIGN "yahoo" DOTSIGN "fr", FALSE },
-  { "douart patrick", "patrick" DOTSIGN "2" ATSIGN "laposte" DOTSIGN "net", FALSE },
+  { "patricktwo", "", FALSE },
   { "Anthony Jorion", "pingax" ATSIGN "frugalware" DOTSIGN "fr", FALSE },
   { "Saïd Bouras", "said" DOTSIGN "bouras" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Steve Dodier", "sidnioulz" ATSIGN "gmail" DOTSIGN "com", FALSE },
