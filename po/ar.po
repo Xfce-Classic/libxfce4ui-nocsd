@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libxcfe4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-18 00:00+0000\n"
-"PO-Revision-Date: 2012-11-18 06:46+0300\n"
+"POT-Creation-Date: 2012-12-09 09:36+0000\n"
+"PO-Revision-Date: 2012-12-09 13:18+0300\n"
 "Last-Translator: محمد الحرقان <malham1@gmail.com>\n"
 "Language-Team: http://www.vertaal.com.ar/files/factory/ar/list/\n"
 "Language: ar\n"
@@ -150,12 +150,23 @@ msgstr ""
 msgid "Keep the window manager action"
 msgstr "إبقاء مدير النوافذ نشط"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:95
+#. This shortcut already exists in the provider, we don't want it twice
+#. Warn the user
+#: ../libxfce4kbd-private/xfce-shortcuts.c:97
+msgid "Please use another key combination."
+msgstr "الرجاء استخدام تركيبة مفاتيح آخر."
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:98
+#, c-format
+msgid "%s already triggers this action."
+msgstr "%s يؤدي هذا الإجراء فعلاً."
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:103
 #, c-format
 msgid "Conflicting actions for %s"
 msgstr "تعارض إجراءات %s"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:128
+#: ../libxfce4kbd-private/xfce-shortcuts.c:136
 msgid "This shortcut is already being used for something else."
 msgstr "هذا الإختصار يستخدم حاليا لشيئ أخر."
 
@@ -309,8 +320,8 @@ msgid ""
 "information."
 msgstr ""
 "محتويات الإكسفس تحت رخص مجانية أو حرة; رخصة جنو العمومية أو BSDL لتطبيقات و "
-"LGPL أو BSDL للمكتبات. أنظر في الثوتيق, شيفرة المصدر أو موقع إكسفس "
-"(http://www.xfce.org) للمزيد من المعلومات."
+"LGPL أو BSDL للمكتبات. أنظر في الثوتيق, شيفرة المصدر أو موقع إكسفس (http://"
+"www.xfce.org) للمزيد من المعلومات."
 
 #: ../xfce4-about/main.c:149
 msgid "Thank you for your interest in Xfce."
@@ -325,8 +336,8 @@ msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
 "on <http://bugzilla.xfce.org> ."
 msgstr ""
-"إذا كنت تعرف أي شيء مفقود في القائمة; لا تتردد و قم بالإبلاغ عنه في "
-"<http://bugzilla.xfce.org> ."
+"إذا كنت تعرف أي شيء مفقود في القائمة; لا تتردد و قم بالإبلاغ عنه في <http://"
+"bugzilla.xfce.org> ."
 
 #: ../xfce4-about/main.c:266
 msgid "Thanks to all who helped making this software available!"
