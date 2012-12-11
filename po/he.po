@@ -204,9 +204,8 @@ msgid "Xfce 4 Widgets"
 msgstr "וידג׳טים של Xfce 4"
 
 #: ../xfce4-about/main.c:52
-#, fuzzy
 msgid "Version information"
-msgstr "מידע"
+msgstr "פרטי הגרסה"
 
 #: ../xfce4-about/main.c:70
 msgid "Window Manager"
