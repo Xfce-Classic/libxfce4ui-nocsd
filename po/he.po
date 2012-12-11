@@ -17,16 +17,16 @@ msgstr ""
 
 #: ../libxfce4ui/xfce-dialogs.c:98
 msgid "Failed to open web browser for online documentation"
-msgstr ""
+msgstr "פתיחת דפדפן האינטרנט להצגת תיעוד מקוון נכשלה"
 
 #: ../libxfce4ui/xfce-dialogs.c:213
 #, c-format
 msgid "Do you want to read the %s manual online?"
-msgstr ""
+msgstr "האם ברצונך לקרוא את המדריך המקוון של %s?"
 
 #: ../libxfce4ui/xfce-dialogs.c:215
 msgid "Do you want to read the manual online?"
-msgstr ""
+msgstr "האם ברצונך לקרוא את המדריך המקוון?"
 
 #: ../libxfce4ui/xfce-dialogs.c:218
 msgid "Online Documentation"
@@ -201,7 +201,7 @@ msgstr "דיאלוג עם כותרת"
 
 #: ../glade/libxfce4ui.xml.in.h:3
 msgid "Xfce 4 Widgets"
-msgstr ""
+msgstr "וידג׳טים של Xfce 4"
 
 #: ../xfce4-about/main.c:52
 #, fuzzy
