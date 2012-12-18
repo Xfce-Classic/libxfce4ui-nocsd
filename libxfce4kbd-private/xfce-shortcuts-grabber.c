@@ -313,7 +313,7 @@ xfce_shortcuts_grabber_grab (XfceShortcutsGrabber *grabber,
     TRACE ("Ungrabbing %s", shortcut_name);
 
   TRACE ("Keyval: %d", key->keyval);
-  TRACE ("Modifiers: 0x%x", key->modifiers);
+  TRACE ("Modifiers: 0x%x", modifiers);
 
   g_free (shortcut_name);
 
@@ -498,6 +498,15 @@ xfce_shortcuts_grabber_event_filter (GdkXEvent            *gdk_xevent,
                                        XkbGroupForCoreState (xevent->xkey.state),
                                        &keyval, NULL, NULL, &consumed);
 
+  /* Get the modifiers */
+
+  /* If Shift was used when translating the keyboard state, we remove it
+   * from the consumed bit because gtk_accelerator_{name,parse} fail to
+   * handle this correctly. This allows us to have shortcuts with Shift
+   * as a modifier key (see bug #8744). */
+  if ((modifiers & GDK_SHIFT_MASK) && (consumed & GDK_SHIFT_MASK))
+    consumed &= ~GDK_SHIFT_MASK;
+
   modifiers &= ~consumed;
   modifiers &= mod_mask;
 
@@ -506,6 +515,7 @@ xfce_shortcuts_grabber_event_filter (GdkXEvent            *gdk_xevent,
   context.consumed = consumed;
 
   raw_shortcut_name = gtk_accelerator_name (keyval, modifiers);
+  gtk_accelerator_parse (raw_shortcut_name, &context.keyval, &context.modifiers);
   TRACE ("Looking for %s", raw_shortcut_name);
   g_free (raw_shortcut_name);
 

@@ -371,6 +371,14 @@ xfce_shortcut_dialog_key_pressed (XfceShortcutDialog *dialog,
                                        &keyval, NULL, NULL, &consumed);
 
   /* Get the modifiers */
+
+  /* If Shift was used when translating the keyboard state, we remove it
+   * from the consumed bit because gtk_accelerator_{name,parse} fail to
+   * handle this correctly. This allows us to have shortcuts with Shift
+   * as a modifier key (see bug #8744). */
+  if ((modifiers & GDK_SHIFT_MASK) && (consumed & GDK_SHIFT_MASK))
+    consumed &= ~GDK_SHIFT_MASK;
+
   modifiers &= ~consumed;
   modifiers &= mod_mask;
 
