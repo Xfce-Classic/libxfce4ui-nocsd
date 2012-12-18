@@ -370,6 +370,13 @@ xfce_shortcut_dialog_key_pressed (XfceShortcutDialog *dialog,
                                        modifiers, event->group,
                                        &keyval, NULL, NULL, &consumed);
 
+  /* We want Alt + Print to be Alt + Print not SysReq. See bug #7897 */
+  if (keyval == GDK_KEY_Sys_Req && (modifiers & GDK_MOD1_MASK) != 0)
+    {
+      consumed = 0;
+      keyval = GDK_KEY_Print;
+    }
+
   /* Get the modifiers */
 
   /* If Shift was used when translating the keyboard state, we remove it
