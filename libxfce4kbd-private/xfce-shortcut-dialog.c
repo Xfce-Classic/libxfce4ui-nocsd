@@ -367,7 +367,7 @@ xfce_shortcut_dialog_key_pressed (XfceShortcutDialog *dialog,
   modifiers = event->state;
 
   gdk_keymap_translate_keyboard_state (keymap, event->hardware_keycode,
-                                       modifiers, 0,
+                                       modifiers, event->group,
                                        &keyval, NULL, NULL, &consumed);
 
   /* Get the modifiers */
