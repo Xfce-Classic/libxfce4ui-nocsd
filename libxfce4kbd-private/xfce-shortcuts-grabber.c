@@ -432,7 +432,6 @@ struct EventKeyFindContext
 {
   XfceShortcutsGrabber *grabber;
   GdkModifierType       modifiers;
-  GdkModifierType       consumed;
   guint                 keyval;
   const gchar          *result;
 };
@@ -448,7 +447,7 @@ find_event_key (const gchar                *shortcut,
 
   TRACE ("Comparing to %s", shortcut);
 
-  if ((key->modifiers & ~context->consumed & (GDK_CONTROL_MASK | GDK_SHIFT_MASK | GDK_MOD1_MASK))
+  if ((key->modifiers & (GDK_CONTROL_MASK | GDK_SHIFT_MASK | GDK_MOD1_MASK))
       == (context->modifiers)
       && (key->keyval == context->keyval))
     {
@@ -512,7 +511,6 @@ xfce_shortcuts_grabber_event_filter (GdkXEvent            *gdk_xevent,
 
   context.keyval = keyval;
   context.modifiers = modifiers;
-  context.consumed = consumed;
 
   raw_shortcut_name = gtk_accelerator_name (keyval, modifiers);
   gtk_accelerator_parse (raw_shortcut_name, &context.keyval, &context.modifiers);
