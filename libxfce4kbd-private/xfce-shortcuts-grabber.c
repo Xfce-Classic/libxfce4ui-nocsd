@@ -368,7 +368,7 @@ xfce_shortcuts_grabber_grab (XfceShortcutsGrabber *grabber,
       for (j = 0; j < screens; j++)
         {
           /* Do the grab on all screens */
-          Window     root_window;
+          Window root_window;
 
           /* Ignorable modifiers */
           guint mod_masks [] = {
