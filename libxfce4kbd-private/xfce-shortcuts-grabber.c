@@ -432,6 +432,7 @@ struct EventKeyFindContext
 {
   XfceShortcutsGrabber *grabber;
   GdkModifierType       modifiers;
+  GdkModifierType       consumed;
   guint                 keyval;
   const gchar          *result;
 };
@@ -443,30 +444,13 @@ find_event_key (const gchar                *shortcut,
                 XfceKey                    *key,
                 struct EventKeyFindContext *context)
 {
-  GdkModifierType ignored;
-
   g_return_val_if_fail (context != NULL, FALSE);
 
   TRACE ("Comparing to %s", shortcut);
 
-  ignored = 0;
-
-  /* Accept MOD1 + META as MOD1 */
-  if (key->modifiers & context->modifiers & GDK_MOD1_MASK)
-    {
-      TRACE ("Ignoring Meta Mask");
-      ignored |= GDK_META_MASK;
-    }
-
-  /* Accept SUPER + HYPER as SUPER */
-  if (key->modifiers & context->modifiers & GDK_SUPER_MASK)
-    {
-      TRACE ("Ignoring Hyper Mask");
-      ignored |= GDK_HYPER_MASK;
-    }
-
-  if ((key->modifiers & ~ignored) == (context->modifiers & ~ignored)
-      && key->keyval == context->keyval)
+  if ((key->modifiers & ~context->consumed & (GDK_CONTROL_MASK | GDK_SHIFT_MASK | GDK_MOD1_MASK))
+      == (context->modifiers)
+      && (key->keyval == context->keyval))
     {
       context->result = shortcut;
 
@@ -514,13 +498,12 @@ xfce_shortcuts_grabber_event_filter (GdkXEvent            *gdk_xevent,
                                        XkbGroupForCoreState (xevent->xkey.state),
                                        &keyval, NULL, NULL, &consumed);
 
-  /* Get the modifiers */
   modifiers &= ~consumed;
-  gdk_keymap_add_virtual_modifiers (keymap, &modifiers);
   modifiers &= mod_mask;
 
   context.keyval = keyval;
   context.modifiers = modifiers;
+  context.consumed = consumed;
 
   raw_shortcut_name = gtk_accelerator_name (keyval, modifiers);
   TRACE ("Looking for %s", raw_shortcut_name);
