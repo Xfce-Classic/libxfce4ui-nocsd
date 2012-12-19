@@ -33,6 +33,7 @@
 #include <xfconf/xfconf.h>
 
 #include <libxfce4kbd-private/xfce-shortcuts.h>
+#include <libxfce4kbd-private/xfwm4-shortcut-values.h>
 
 
 
@@ -49,8 +50,8 @@ typedef struct
 
 static XfceShortcutConflictMessage conflict_messages[] = {
   { "xfwm4", "xfwm4",
-    N_("This shortcut is already being used for another window manager action. Which action do you want to use?"),
-    N_("Use '%s'"), N_("Keep the other one") },
+    N_("This shortcut is already being used for the action '%s'. Which action do you want to use?"),
+    N_("Use '%s'"), N_("Keep '%s'") },
   { "xfwm4", "commands",
     N_("This shortcut is already being used for the command '%s'. Which action do you want to use?"),
     N_("Use '%s'"), N_("Keep '%s'") },
@@ -58,8 +59,8 @@ static XfceShortcutConflictMessage conflict_messages[] = {
     N_("This shortcut is already being used for the command '%s'. Which action do you want to use?"),
     N_("Use '%s'"), N_("Keep '%s'") },
   { "commands", "xfwm4",
-    N_("This shortcut is already being used by a window manager action. Which action do you want to use?"),
-    N_("Use '%s'"), N_("Keep the window manager action") },
+    N_("This shortcut is already being used by the action '%s'. Which action do you want to use?"),
+    N_("Use '%s'"), N_("Keep '%s'") },
   { 0, 0, NULL, NULL, NULL },
 };
 
@@ -106,8 +107,43 @@ xfce_shortcut_conflict_dialog (const gchar *owner,
     if (g_utf8_collate (conflict_messages[i].owner_name, owner) == 0 &&
         g_utf8_collate (conflict_messages[i].other_name, other) == 0)
       {
-        owner_action_name = owner_action == NULL ? NULL : g_markup_escape_text (owner_action, -1);
-        other_action_name = other_action == NULL ? NULL : g_markup_escape_text (other_action, -1);
+        if (owner_action == NULL)
+          owner_action_name = NULL;
+        else if (g_utf8_collate (owner, "xfwm4") == 0)
+          {
+            gint j;
+
+            /* We need to get the human readable string of the action name */
+            for (j = 0; xfwm4_shortcut_values[j].name != NULL; ++j)
+            if (G_UNLIKELY (g_str_equal (xfwm4_shortcut_values[j].feature,
+                                         owner_action)))
+              {
+                owner_action_name =
+                  g_markup_escape_text (xfwm4_shortcut_values[j].name, -1);
+                break;
+              }
+          }
+        else
+          owner_action_name = g_markup_escape_text (owner_action, -1);
+
+        if (other_action == NULL)
+          other_action_name = NULL;
+        else if (g_utf8_collate (other, "xfwm4") == 0)
+          {
+            gint j;
+
+            /* We need to get the human readable string of the action name */
+            for (j = 0; xfwm4_shortcut_values[j].name != NULL; ++j)
+            if (G_UNLIKELY (g_str_equal (xfwm4_shortcut_values[j].feature,
+                                         other_action)))
+              {
+                other_action_name =
+                  g_markup_escape_text (xfwm4_shortcut_values[j].name, -1);
+                break;
+              }
+          }
+        else
+          other_action_name = g_markup_escape_text (other_action, -1);
 
         secondary_text = g_strdup_printf (_(conflict_messages[i].message), other_action_name);
 
