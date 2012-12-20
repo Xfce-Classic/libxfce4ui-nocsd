@@ -67,7 +67,8 @@ static XfceShortcutConflictMessage conflict_messages[] = {
 
 
 gint
-xfce_shortcut_conflict_dialog (const gchar *owner,
+xfce_shortcut_conflict_dialog (GtkWindow   *parent,
+                               const gchar *owner,
                                const gchar *other,
                                const gchar *shortcut,
                                const gchar *owner_action,
@@ -150,7 +151,7 @@ xfce_shortcut_conflict_dialog (const gchar *owner,
         owner_button_text = g_markup_printf_escaped (_(conflict_messages[i].owner_button_text), owner_action_name);
         other_button_text = g_markup_printf_escaped (_(conflict_messages[i].other_button_text), other_action_name);
 
-        response = xfce_message_dialog (NULL, title, GTK_STOCK_DIALOG_QUESTION,
+        response = xfce_message_dialog (parent, title, GTK_STOCK_DIALOG_QUESTION,
                                         title, secondary_text,
                                         XFCE_BUTTON_TYPE_MIXED, NULL, owner_button_text, GTK_RESPONSE_ACCEPT,
                                         XFCE_BUTTON_TYPE_MIXED, NULL, other_button_text, GTK_RESPONSE_REJECT,
@@ -168,7 +169,7 @@ xfce_shortcut_conflict_dialog (const gchar *owner,
 
   if (G_UNLIKELY (!handled))
     {
-      xfce_message_dialog (NULL, title, GTK_STOCK_DIALOG_ERROR,
+      xfce_message_dialog (parent, title, GTK_STOCK_DIALOG_ERROR,
                            title, _("This shortcut is already being used for something else."),
                            GTK_STOCK_CLOSE, GTK_RESPONSE_CLOSE, NULL);
       response = GTK_RESPONSE_REJECT;
