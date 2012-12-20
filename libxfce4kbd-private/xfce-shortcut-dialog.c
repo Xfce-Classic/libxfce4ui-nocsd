@@ -357,7 +357,8 @@ xfce_shortcut_dialog_key_pressed (XfceShortcutDialog *dialog,
   GdkModifierType  consumed, modifiers;
   guint            keyval, mod_mask;
   gchar           *text;
-  gchar           *shortcut;
+  gchar           *escaped_label;
+  gchar           *label;
 
   g_free (dialog->shortcut);
 
@@ -392,13 +393,16 @@ xfce_shortcut_dialog_key_pressed (XfceShortcutDialog *dialog,
   /* Get and store the pressed shortcut */
   dialog->shortcut = gtk_accelerator_name (keyval, modifiers);
 
-  shortcut = g_markup_escape_text (dialog->shortcut, -1);
-  text = g_strdup_printf ("<span size='large'><b>%s</b></span>", shortcut);
+  label = gtk_accelerator_get_label (keyval, modifiers);
+  escaped_label = g_markup_escape_text (label, -1);
+  text = g_strdup_printf ("<span size='large'><b>%s</b></span>",
+                          escaped_label);
 
   gtk_label_set_markup (GTK_LABEL (dialog->shortcut_label), text);
 
+  g_free (label);
+  g_free (escaped_label);
   g_free (text);
-  g_free (shortcut);
 
   return FALSE;
 }
