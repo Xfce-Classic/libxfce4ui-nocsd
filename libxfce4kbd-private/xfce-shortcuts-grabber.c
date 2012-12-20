@@ -276,6 +276,10 @@ xfce_shortcuts_grabber_grab (XfceShortcutsGrabber *grabber,
       return;
     }
 
+  numlock_modifier =
+    XkbKeysymToModifiers (GDK_DISPLAY_XDISPLAY (gdk_display_get_default ()),
+                         GDK_KEY_Num_Lock);
+
   for (i = 0; i < n_keys; i ++)
     {
       /* Grab all hardware keys generating keyval */
@@ -291,12 +295,19 @@ xfce_shortcuts_grabber_grab (XfceShortcutsGrabber *grabber,
           guint mod_masks [] = {
             0,
             GDK_MOD2_MASK,
+            numlock_modifier | GDK_MOD2_MASK,
             GDK_LOCK_MASK,
+            numlock_modifier | GDK_LOCK_MASK,
             GDK_MOD5_MASK,
+            numlock_modifier | GDK_MOD5_MASK,
             GDK_MOD2_MASK | GDK_LOCK_MASK,
+            numlock_modifier | GDK_MOD2_MASK | GDK_LOCK_MASK,
             GDK_MOD2_MASK | GDK_MOD5_MASK,
+            numlock_modifier | GDK_MOD2_MASK | GDK_MOD5_MASK,
             GDK_LOCK_MASK | GDK_MOD5_MASK,
+            numlock_modifier | GDK_LOCK_MASK | GDK_MOD5_MASK,
             GDK_MOD2_MASK | GDK_LOCK_MASK | GDK_MOD5_MASK,
+            numlock_modifier | GDK_MOD2_MASK | GDK_LOCK_MASK | GDK_MOD5_MASK,
           };
 
 #if GTK_CHECK_VERSION (3, 0, 0)
