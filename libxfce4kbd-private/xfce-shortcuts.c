@@ -114,6 +114,8 @@ xfce_shortcut_conflict_dialog (GtkWindow   *parent,
           {
             gint j;
 
+            DBG ("Owner action %s is an xfwm4 action, get the string", owner_action);
+
             /* We need to get the human readable string of the action name */
             for (j = 0; xfwm4_shortcut_values[j].name != NULL; ++j)
             if (G_UNLIKELY (g_str_equal (xfwm4_shortcut_values[j].feature,
@@ -126,6 +128,8 @@ xfce_shortcut_conflict_dialog (GtkWindow   *parent,
           }
         else
           owner_action_name = g_markup_escape_text (owner_action, -1);
+
+        DBG ("Owner action name: %s", owner_action_name);
 
         if (other_action == NULL)
           other_action_name = NULL;
