@@ -200,7 +200,9 @@ xfce_shortcut_dialog_create_contents (XfceShortcutDialog *dialog,
   GtkWidget   *label;
   const gchar *action_type;
   const gchar *title;
-  gchar       *explanation_label;
+  const gchar *explanation_label;
+  gchar       *explanation_label_escaped;
+  gchar       *explanation_label_markup;
 
   if (g_utf8_collate (provider, "xfwm4") == 0)
     {
@@ -264,13 +266,17 @@ xfce_shortcut_dialog_create_contents (XfceShortcutDialog *dialog,
   explanation_label =
     g_strdup_printf (_("Press now the keyboard keys you want to use to trigger the %s '%s'."),
                      action_type, action_name);
+  explanation_label_escaped = g_markup_escape_text (explanation_label, -1);
+  explanation_label_markup = g_strdup_printf ("<i>%s</i>", explanation_label_escaped);
 
-  label = gtk_label_new (explanation_label);
+  label = gtk_label_new (NULL);
+  gtk_label_set_markup (GTK_LABEL (label), explanation_label_markup);
   gtk_misc_set_alignment (GTK_MISC (label), 0.0, 0.5);
   gtk_label_set_line_wrap (GTK_LABEL (label), TRUE);
   gtk_container_add (GTK_CONTAINER (content_box), label);
   gtk_widget_show (label);
-  g_free (explanation_label);
+  g_free (explanation_label_escaped);
+  g_free (explanation_label_markup);
 
   /* Box and labels to display the shortcut currently being grabbed.
    * It will be updated to key-press events. */
