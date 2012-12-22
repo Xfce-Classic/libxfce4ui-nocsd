@@ -75,15 +75,22 @@ xfce_shortcut_conflict_dialog (GtkWindow   *parent,
                                const gchar *other_action,
                                gboolean     ignore_same_provider)
 {
-  gchar   *title;
-  gchar   *secondary_text;
-  gchar   *owner_action_name;
-  gchar   *other_action_name;
-  gchar   *owner_button_text;
-  gchar   *other_button_text;
-  gboolean handled = FALSE;
-  gint     response = GTK_RESPONSE_ACCEPT;
-  gint     i;
+  GdkModifierType  modifiers;
+  gboolean         handled;
+  gchar           *other_action_name;
+  gchar           *other_button_text;
+  gchar           *owner_action_name;
+  gchar           *owner_button_text;
+  gchar           *secondary_text;
+  gchar           *shortcut_label;
+  gchar           *title;
+  guint            keyval;
+  gint             response;
+  gint             i;
+
+  /* Default values */
+  response = GTK_RESPONSE_ACCEPT;
+  handled = FALSE;
 
   /* Make sure to use the translations from libxfce4ui */
   xfce_textdomain (GETTEXT_PACKAGE, PACKAGE_LOCALE_DIR, "UTF-8");
@@ -91,18 +98,22 @@ xfce_shortcut_conflict_dialog (GtkWindow   *parent,
   if (g_utf8_collate (owner, other) == 0 && ignore_same_provider)
     return GTK_RESPONSE_ACCEPT;
 
+  /* Get the shortcut label */
+  gtk_accelerator_parse (shortcut, &keyval, &modifiers);
+  shortcut_label = gtk_accelerator_get_label (keyval, modifiers);
+
   if (g_utf8_collate (owner, other) == 0 && g_utf8_collate (owner_action, other_action) == 0)
     {
       /* This shortcut already exists in the provider, we don't want it twice */
 
       /* Warn the user */
       xfce_dialog_show_warning (parent, _("Please use another key combination."),
-                                _("%s already triggers this action."), shortcut);
+                                _("%s already triggers this action."), shortcut_label);
 
       return GTK_RESPONSE_REJECT;
     }
 
-  title = g_strdup_printf (_("Conflicting actions for %s"), shortcut);
+  title = g_strdup_printf (_("Conflicting actions for %s"), shortcut_label);
 
   for (i = 0; conflict_messages[i].message != NULL; ++i)
     if (g_utf8_collate (conflict_messages[i].owner_name, owner) == 0 &&
@@ -166,6 +177,7 @@ xfce_shortcut_conflict_dialog (GtkWindow   *parent,
         g_free (secondary_text);
         g_free (other_action_name);
         g_free (owner_action_name);
+        g_free (shortcut_label);
 
         handled = TRUE;
         break;
