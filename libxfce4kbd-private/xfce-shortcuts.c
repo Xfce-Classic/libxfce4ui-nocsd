@@ -96,7 +96,7 @@ xfce_shortcut_conflict_dialog (GtkWindow   *parent,
       /* This shortcut already exists in the provider, we don't want it twice */
 
       /* Warn the user */
-      xfce_dialog_show_warning (NULL, _("Please use another key combination."),
+      xfce_dialog_show_warning (parent, _("Please use another key combination."),
                                 _("%s already triggers this action."), shortcut);
 
       return GTK_RESPONSE_REJECT;
