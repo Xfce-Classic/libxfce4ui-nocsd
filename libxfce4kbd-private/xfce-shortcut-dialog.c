@@ -471,7 +471,8 @@ xfce_shortcut_dialog_key_released (XfceShortcutDialog *dialog,
   else
     {
       /* Clear label */
-      gtk_label_set_markup (GTK_LABEL (dialog->shortcut_label), "");
+      gtk_label_set_markup (GTK_LABEL (dialog->shortcut_label),
+                            _("No keys pressed yet, proceed."));
     }
 
   return FALSE;
