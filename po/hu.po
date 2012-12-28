@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-26 22:00+0000\n"
+"POT-Creation-Date: 2012-12-28 09:06+0100\n"
 "PO-Revision-Date: 2012-11-26 23:29+0100\n"
 "Last-Translator: Imre Benedek <nucleo@indamail.hu>\n"
 "Language-Team: Magyar <gnome-hu-list at gnome dot org>\n"
@@ -37,8 +37,12 @@ msgid "Online Documentation"
 msgstr "Online dokumentáció"
 
 #: ../libxfce4ui/xfce-dialogs.c:221
-msgid "You will be redirected to the documentation website where the help pages are maintained and translated."
-msgstr "Átirányításra kerül a dokumentációs weboldalra, ahol a súgóoldalak karbantartása és fordítása történik."
+msgid ""
+"You will be redirected to the documentation website where the help pages are "
+"maintained and translated."
+msgstr ""
+"Átirányításra kerül a dokumentációs weboldalra, ahol a súgóoldalak "
+"karbantartása és fordítása történik."
 
 #: ../libxfce4ui/xfce-dialogs.c:225
 msgid "_Read Online"
@@ -97,101 +101,418 @@ msgstr "A munkamenet-kezelő nem adott vissza érvényes kliensazonosítót"
 #. print warning for user
 #: ../libxfce4ui/xfce-spawn.c:413
 #, c-format
-msgid "Working directory \"%s\" does not exist. It won't be used when spawning \"%s\"."
-msgstr "A munkakönyvtár („%s”) nem létezik. Nem kerül felhasználásra „%s” indításakor."
-
-#: ../libxfce4kbd-private/xfce-shortcuts.c:52
-msgid "This shortcut is already being used for another window manager action. Which action do you want to use?"
-msgstr "Ezt a gyorsbillentyűt már használja egy másik ablakkezelő-művelet. Melyik műveletet akarja használni?"
+msgid ""
+"Working directory \"%s\" does not exist. It won't be used when spawning \"%s"
+"\"."
+msgstr ""
+"A munkakönyvtár („%s”) nem létezik. Nem kerül felhasználásra „%s” "
+"indításakor."
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
-#: ../libxfce4kbd-private/xfce-shortcuts.c:56
-#: ../libxfce4kbd-private/xfce-shortcuts.c:59
-#: ../libxfce4kbd-private/xfce-shortcuts.c:62
+#, fuzzy, c-format
+msgid ""
+"This shortcut is already being used for the action '%s'. Which action do you "
+"want to use?"
+msgstr ""
+"Ezt a gyorsbillentyűt már használja egy másik parancs („%s”). Melyik "
+"műveletet akarja használni?"
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:54
+#: ../libxfce4kbd-private/xfce-shortcuts.c:57
+#: ../libxfce4kbd-private/xfce-shortcuts.c:60
+#: ../libxfce4kbd-private/xfce-shortcuts.c:63
 #, c-format
 msgid "Use '%s'"
 msgstr "„%s” használata"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:53
-msgid "Keep the other one"
-msgstr "A másik megtartása"
-
-#: ../libxfce4kbd-private/xfce-shortcuts.c:55
-#: ../libxfce4kbd-private/xfce-shortcuts.c:58
-#, c-format
-msgid "This shortcut is already being used for the command '%s'. Which action do you want to use?"
-msgstr "Ezt a gyorsbillentyűt már használja egy másik parancs („%s”). Melyik műveletet akarja használni?"
-
-#: ../libxfce4kbd-private/xfce-shortcuts.c:56
-#: ../libxfce4kbd-private/xfce-shortcuts.c:59
+#: ../libxfce4kbd-private/xfce-shortcuts.c:54
+#: ../libxfce4kbd-private/xfce-shortcuts.c:57
+#: ../libxfce4kbd-private/xfce-shortcuts.c:60
+#: ../libxfce4kbd-private/xfce-shortcuts.c:63
 #, c-format
 msgid "Keep '%s'"
 msgstr "„%s” megtartása"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:61
-msgid "This shortcut is already being used by a window manager action. Which action do you want to use?"
-msgstr "Ezt a gyorsbillentyűt már használja egy ablakkezelő-művelet. Melyik műveletet akarja használni?"
+#: ../libxfce4kbd-private/xfce-shortcuts.c:56
+#: ../libxfce4kbd-private/xfce-shortcuts.c:59
+#, c-format
+msgid ""
+"This shortcut is already being used for the command '%s'. Which action do "
+"you want to use?"
+msgstr ""
+"Ezt a gyorsbillentyűt már használja egy másik parancs („%s”). Melyik "
+"műveletet akarja használni?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
-msgid "Keep the window manager action"
-msgstr "Az ablakkezelő-művelet megtartása"
+#, fuzzy, c-format
+msgid ""
+"This shortcut is already being used by the action '%s'. Which action do you "
+"want to use?"
+msgstr ""
+"Ezt a gyorsbillentyűt már használja egy másik parancs („%s”). Melyik "
+"műveletet akarja használni?"
 
 #. This shortcut already exists in the provider, we don't want it twice
 #. Warn the user
-#: ../libxfce4kbd-private/xfce-shortcuts.c:97
+#: ../libxfce4kbd-private/xfce-shortcuts.c:110
 msgid "Please use another key combination."
 msgstr "Kérem használjon más billentyűkombinációt!"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:98
+#: ../libxfce4kbd-private/xfce-shortcuts.c:111
 #, c-format
 msgid "%s already triggers this action."
 msgstr "%s már előidézi ezt a műveletet."
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:103
+#: ../libxfce4kbd-private/xfce-shortcuts.c:116
 #, c-format
 msgid "Conflicting actions for %s"
 msgstr "Ütköző műveletek ehhez: %s"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:136
+#: ../libxfce4kbd-private/xfce-shortcuts.c:189
 msgid "This shortcut is already being used for something else."
 msgstr "Ez a gyorsbillentyű már használatban van valami másra."
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:204
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:209
 msgid "Window Manager Action Shortcut"
 msgstr "Ablakkezelő-művelet gyorsbillentyűje"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:205
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:215
-msgid "Action:"
+#. TRANSLATORS: this string will be used to create an explanation for
+#. * the user in a following string
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:212
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:226
+#, fuzzy
+msgid "action"
 msgstr "Művelet:"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:209
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:216
 msgid "Command Shortcut"
 msgstr "Parancs gyorsbillentyűje"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:210
-msgid "Command:"
+#. TRANSLATORS: this string will be used to create an explanation for
+#. * the user in a following string
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:219
+#, fuzzy
+msgid "command"
 msgstr "Parancs:"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:214
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:223
 msgid "Shortcut"
 msgstr "Gyorsbillentyű"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:252
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:267
+#, c-format
+msgid "Press now the keyboard keys you want to use to trigger the %s '%s'."
+msgstr ""
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:291
 msgid "Shortcut:"
 msgstr "Gyorsbillentyű:"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:339
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:296
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:475
+msgid "No keys pressed yet, proceed."
+msgstr ""
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:378
 msgid "Could not grab the keyboard."
 msgstr "A billentyűzet nem ragadható meg."
 
-#: ../glade/libxfce4ui.xml.in.h:1
-msgid "Subtitle"
-msgstr "Felirat"
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:33
+msgid "Window operations menu"
+msgstr ""
 
-#: ../glade/libxfce4ui.xml.in.h:2
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:34
+msgid "Up"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:35
+msgid "Down"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:36
+msgid "Left"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:37
+msgid "Right"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:38
+msgid "Cancel"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:39
+msgid "Cycle windows"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:40
+msgid "Cycle windows (Reverse)"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:41
+msgid "Switch window for same application"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:42
+msgid "Switch application"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:43
+msgid "Close window"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:44
+msgid "Maximize window horizontally"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:45
+msgid "Maximize window vertically"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:46
+msgid "Maximize window"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:47
+msgid "Hide window"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:48
+msgid "Move window"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:49
+msgid "Resize window"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:50
+msgid "Shade window"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:51
+msgid "Stick window"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:52
+msgid "Raise window"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:53
+msgid "Lower window"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:54
+msgid "Raise or lower window"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:55
+msgid "Fill window"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:56
+msgid "Fill window horizontally"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:57
+msgid "Fill window vertically"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:58
+msgid "Toggle above"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:59
+msgid "Toggle fullscreen"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:60
+msgid "Move window to upper workspace"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:61
+msgid "Move window to bottom workspace"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:62
+msgid "Move window to left workspace"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:63
+msgid "Move window to right workspace"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:64
+msgid "Move window to previous workspace"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:65
+msgid "Move window to next workspace"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:66
+msgid "Move window to workspace 1"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:67
+msgid "Move window to workspace 2"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:68
+msgid "Move window to workspace 3"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:69
+msgid "Move window to workspace 4"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:70
+msgid "Move window to workspace 5"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:71
+msgid "Move window to workspace 6"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:72
+msgid "Move window to workspace 7"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:73
+msgid "Move window to workspace 8"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:74
+msgid "Move window to workspace 9"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:75
+msgid "Move window to workspace 10"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:76
+msgid "Move window to workspace 11"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:77
+msgid "Move window to workspace 12"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:78
+msgid "Tile window to the top"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:79
+msgid "Tile window to the bottom"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:80
+msgid "Tile window to the left"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:81
+msgid "Tile window to the right"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:82
+msgid "Show desktop"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:83
+msgid "Upper workspace"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:84
+msgid "Bottom workspace"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:85
+msgid "Left workspace"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:86
+msgid "Right workspace"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:87
+#, fuzzy
+msgid "Previous workspace"
+msgstr "Korábbi közreműködők"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:88
+msgid "Next workspace"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:89
+msgid "Workspace 1"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:90
+msgid "Workspace 2"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:91
+msgid "Workspace 3"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:92
+msgid "Workspace 4"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:93
+msgid "Workspace 5"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:94
+msgid "Workspace 6"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:95
+msgid "Workspace 7"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:96
+msgid "Workspace 8"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:97
+msgid "Workspace 9"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:98
+msgid "Workspace 10"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:99
+msgid "Workspace 11"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:100
+msgid "Workspace 12"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:101
+msgid "Add workspace"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:102
+msgid "Add adjacent workspace"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:103
+msgid "Delete last workspace"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:104
+msgid "Delete active workspace"
+msgstr ""
+
+#: ../glade/libxfce4ui.xml.in.h:1
 msgid "Titled Dialog"
 msgstr "Címzett ablak"
+
+#: ../glade/libxfce4ui.xml.in.h:2
+msgid "Subtitle"
+msgstr "Felirat"
 
 #: ../glade/libxfce4ui.xml.in.h:3
 msgid "Xfce 4 Widgets"
@@ -214,7 +535,9 @@ msgid "Panel"
 msgstr "Panel"
 
 #: ../xfce4-about/main.c:75
-msgid "Program launchers, window buttons, applications menu, workspace switcher and more."
+msgid ""
+"Program launchers, window buttons, applications menu, workspace switcher and "
+"more."
 msgstr "Parancsikonok, ablakgombok, alkalmazások menü, munkaterület-váltó stb."
 
 #: ../xfce4-about/main.c:79
@@ -222,40 +545,60 @@ msgid "Desktop Manager"
 msgstr "Asztalkezelő"
 
 #: ../xfce4-about/main.c:80
-msgid "Sets the background color or image with optional application menu or icons for minimized applications or launchers, devices and folders."
-msgstr "Beállítja a háttérszínt vagy -képet egy elhagyható alkalmazásmenüvel vagy minimalizált alkalmazások, parancsikonok, eszközök és mappák ikonjaival."
+msgid ""
+"Sets the background color or image with optional application menu or icons "
+"for minimized applications or launchers, devices and folders."
+msgstr ""
+"Beállítja a háttérszínt vagy -képet egy elhagyható alkalmazásmenüvel vagy "
+"minimalizált alkalmazások, parancsikonok, eszközök és mappák ikonjaival."
 
 #: ../xfce4-about/main.c:84
 msgid "File Manager "
 msgstr "Fájlkezelő"
 
 #: ../xfce4-about/main.c:85
-msgid "A modern file manager for the Unix/Linux desktop, aiming to be easy-to-use and fast."
-msgstr "Modern, egyszerűen használható és gyors fájlkezelő Unix/Linux asztali környezethez."
+msgid ""
+"A modern file manager for the Unix/Linux desktop, aiming to be easy-to-use "
+"and fast."
+msgstr ""
+"Modern, egyszerűen használható és gyors fájlkezelő Unix/Linux asztali "
+"környezethez."
 
 #: ../xfce4-about/main.c:89
 msgid "Session Manager"
 msgstr "Munkamenet-kezelő"
 
 #: ../xfce4-about/main.c:90
-msgid "Restores your session on startup and allows you to shutdown the computer from Xfce."
-msgstr "Munkamenet visszaállítása induláskor és a számítógép kikapcsolásának lehetősége Xfce környezetből."
+msgid ""
+"Restores your session on startup and allows you to shutdown the computer "
+"from Xfce."
+msgstr ""
+"Munkamenet visszaállítása induláskor és a számítógép kikapcsolásának "
+"lehetősége Xfce környezetből."
 
 #: ../xfce4-about/main.c:94
 msgid "Setting System"
 msgstr "Rendszer beállítása"
 
 #: ../xfce4-about/main.c:95
-msgid "Configuration system to control various aspects of the desktop like appearance, display, keyboard and mouse settings."
-msgstr "Beállítórendszer az asztali környezet tulajdonságainak kezelésére, többek között: megjelenési, kijelző-, billentyűzet- és egérbeállítások."
+msgid ""
+"Configuration system to control various aspects of the desktop like "
+"appearance, display, keyboard and mouse settings."
+msgstr ""
+"Beállítórendszer az asztali környezet tulajdonságainak kezelésére, többek "
+"között: megjelenési, kijelző-, billentyűzet- és egérbeállítások."
 
 #: ../xfce4-about/main.c:99
 msgid "Application Finder"
 msgstr "Alkalmazáskereső"
 
 #: ../xfce4-about/main.c:100
-msgid "Shows the applications installed on your system in categories, so you can quickly find and launch them."
-msgstr "Telepített alkalmazások kategóriák szerinti megjelenítése a gyors keresés és futtatás érdekében."
+msgid ""
+"Shows the applications installed on your system in categories, so you can "
+"quickly find and launch them."
+msgstr ""
+"Telepített alkalmazások kategóriák szerinti megjelenítése a gyors keresés és "
+"futtatás érdekében."
 
 #: ../xfce4-about/main.c:104
 msgid "Settings Daemon"
@@ -266,16 +609,34 @@ msgid "D-Bus-based configuration storage system."
 msgstr "D-Bus alapú konfigurációtároló rendszer."
 
 #: ../xfce4-about/main.c:112
-msgid "Xfce is a collection of programs that together provide a full-featured desktop environment. The following programs are part of the Xfce core:"
-msgstr "Az Xfce teljes felszereltségű asztali környezetet biztosító alkalmazások gyűjteménye. Az Xfce alaprendszert a következő programok alkotják:"
+msgid ""
+"Xfce is a collection of programs that together provide a full-featured "
+"desktop environment. The following programs are part of the Xfce core:"
+msgstr ""
+"Az Xfce teljes felszereltségű asztali környezetet biztosító alkalmazások "
+"gyűjteménye. Az Xfce alaprendszert a következő programok alkotják:"
 
 #: ../xfce4-about/main.c:136
-msgid "Xfce is also a development platform providing several libraries, that help programmers create applications that fit in well with the desktop environment."
-msgstr "Az Xfce egyben fejlesztői platform is, amely számos programkönyvtárat bocsát a programozók rendelkezésére, ezekkel segítve őket az asztali környezetbe illeszkedő alkalmazások írásában."
+msgid ""
+"Xfce is also a development platform providing several libraries, that help "
+"programmers create applications that fit in well with the desktop "
+"environment."
+msgstr ""
+"Az Xfce egyben fejlesztői platform is, amely számos programkönyvtárat bocsát "
+"a programozók rendelkezésére, ezekkel segítve őket az asztali környezetbe "
+"illeszkedő alkalmazások írásában."
 
 #: ../xfce4-about/main.c:142
-msgid "Xfce components are licensed under free or open source licences; GPL or BSDL for applications and LGPL or BSDL for libraries. Look at the documentation, the source code or the Xfce website (http://www.xfce.org) for more information."
-msgstr "Az Xfce összetevői szabad és nyílt forrású licencek alatt érhetők el; ezek a GPL vagy BSDL az alkalmazások és az LGPL vagy BSDL a programkönyvtárak esetén. További információkért lásd a dokumentációt, a forráskódot vagy az Xfce weboldalát (http://www.xfce.org)."
+msgid ""
+"Xfce components are licensed under free or open source licences; GPL or BSDL "
+"for applications and LGPL or BSDL for libraries. Look at the documentation, "
+"the source code or the Xfce website (http://www.xfce.org) for more "
+"information."
+msgstr ""
+"Az Xfce összetevői szabad és nyílt forrású licencek alatt érhetők el; ezek a "
+"GPL vagy BSDL az alkalmazások és az LGPL vagy BSDL a programkönyvtárak "
+"esetén. További információkért lásd a dokumentációt, a forráskódot vagy az "
+"Xfce weboldalát (http://www.xfce.org)."
 
 #: ../xfce4-about/main.c:149
 msgid "Thank you for your interest in Xfce."
@@ -286,24 +647,49 @@ msgid "The Xfce Development Team"
 msgstr "Az Xfce fejlesztői csapata"
 
 #: ../xfce4-about/main.c:262
-msgid "If you know of anyone missing from this list; don't hesitate and file a bug on <http://bugzilla.xfce.org> ."
-msgstr "Ha ismer valakit, aki nincs felsorolva, ne habozzon, küldjön be egy hibajelentést a <http://bugzilla.xfce.org> címen."
+msgid ""
+"If you know of anyone missing from this list; don't hesitate and file a bug "
+"on <http://bugzilla.xfce.org> ."
+msgstr ""
+"Ha ismer valakit, aki nincs felsorolva, ne habozzon, küldjön be egy "
+"hibajelentést a <http://bugzilla.xfce.org> címen."
 
 #: ../xfce4-about/main.c:266
 msgid "Thanks to all who helped making this software available!"
-msgstr "Köszönet mindazoknak, akik segítségével ez az alkalmazás elérhetővé vált."
+msgstr ""
+"Köszönet mindazoknak, akik segítségével ez az alkalmazás elérhetővé vált."
 
 #: ../xfce4-about/main.c:283
-msgid "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different components are copyrighted by their respective authors."
-msgstr "Az Xfce szerzői joga Olivier Fourdant (fourdan@xfce.org) illeti. A további összetevők szerzői joga azok szerzőit illeti."
+msgid ""
+"Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
+"components are copyrighted by their respective authors."
+msgstr ""
+"Az Xfce szerzői joga Olivier Fourdant (fourdan@xfce.org) illeti. A további "
+"összetevők szerzői joga azok szerzőit illeti."
 
 #: ../xfce4-about/main.c:288
-msgid "The libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs and exo packages are distributed under the terms of the GNU Library General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version."
-msgstr "A libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs és exo csomagok a Free Software Foundation által kiadott GNU Library General Public License második (vagy bármely későbbi) változatában foglaltak alapján kerülnek terjesztésre."
+msgid ""
+"The libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs and exo packages are "
+"distributed under the terms of the GNU Library General Public License as "
+"published by the Free Software Foundation; either version 2 of the License, "
+"or (at your option) any later version."
+msgstr ""
+"A libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs és exo csomagok a Free "
+"Software Foundation által kiadott GNU Library General Public License második "
+"(vagy bármely későbbi) változatában foglaltak alapján kerülnek terjesztésre."
 
 #: ../xfce4-about/main.c:295
-msgid "The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfce-utils, xfconf, xfdesktop and xfwm4 are distributed under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version."
-msgstr "A thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfce-utils, xfconf, xfdesktop és xfwm4 csomagok a Free Software Foundation által kiadott GNU General Public License második (vagy bármely későbbi) változatában foglaltak alapján kerülnek terjesztésre."
+msgid ""
+"The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-"
+"settings, xfce-utils, xfconf, xfdesktop and xfwm4 are distributed under the "
+"terms of the GNU General Public License as published by the Free Software "
+"Foundation; either version 2 of the License, or (at your option) any later "
+"version."
+msgstr ""
+"A thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfce-"
+"utils, xfconf, xfdesktop és xfwm4 csomagok a Free Software Foundation által "
+"kiadott GNU General Public License második (vagy bármely későbbi) "
+"változatában foglaltak alapján kerülnek terjesztésre."
 
 #: ../xfce4-about/main.c:442
 #, c-format
@@ -386,36 +772,56 @@ msgid "Information about the Xfce Desktop Environment"
 msgstr "Információk az Xfce asztali környezetről"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:1
-msgid "About"
-msgstr "Névjegy"
-
-#: ../xfce4-about/xfce4-about-dialog.glade.h:2
 msgid "About the Xfce Desktop Environment"
 msgstr "Az Xfce asztali környezet névjegye"
 
+#: ../xfce4-about/xfce4-about-dialog.glade.h:2
+msgid "About"
+msgstr "Névjegy"
+
 #: ../xfce4-about/xfce4-about-dialog.glade.h:3
-msgid "BSD"
-msgstr "BSD"
-
-#: ../xfce4-about/xfce4-about-dialog.glade.h:4
-msgid "Copyright"
-msgstr "Copyright"
-
-#: ../xfce4-about/xfce4-about-dialog.glade.h:5
 msgid "Credits"
 msgstr "Köszönet"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:6
+#: ../xfce4-about/xfce4-about-dialog.glade.h:4
 msgid "GPL"
 msgstr "GPL"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:7
+#: ../xfce4-about/xfce4-about-dialog.glade.h:5
 msgid "LGPL"
 msgstr "LGPL"
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:6
+msgid "BSD"
+msgstr "BSD"
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:7
+msgid "Copyright"
+msgstr "Copyright"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:8
 msgid "License"
 msgstr "Licenc"
+
+#~ msgid ""
+#~ "This shortcut is already being used for another window manager action. "
+#~ "Which action do you want to use?"
+#~ msgstr ""
+#~ "Ezt a gyorsbillentyűt már használja egy másik ablakkezelő-művelet. Melyik "
+#~ "műveletet akarja használni?"
+
+#~ msgid "Keep the other one"
+#~ msgstr "A másik megtartása"
+
+#~ msgid ""
+#~ "This shortcut is already being used by a window manager action. Which "
+#~ "action do you want to use?"
+#~ msgstr ""
+#~ "Ezt a gyorsbillentyűt már használja egy ablakkezelő-művelet. Melyik "
+#~ "műveletet akarja használni?"
+
+#~ msgid "Keep the window manager action"
+#~ msgstr "Az ablakkezelő-művelet megtartása"
 
 #~ msgid "<span size='large'><b>%s</b></span>"
 #~ msgstr "<span size='large'><b>%s</b></span>"
