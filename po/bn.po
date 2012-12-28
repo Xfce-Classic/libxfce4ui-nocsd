@@ -1,6 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
+# Sadia Afroz <sadia@ankur.org.bd>, 2010.
 # Israt Jahan <israt@ankur.org.bd>, 2010.
 #
 msgid ""
@@ -8,12 +9,12 @@ msgstr ""
 "Project-Id-Version: bn\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-12-28 09:06+0100\n"
-"PO-Revision-Date: 2010-03-31 12:14+0600\n"
+"PO-Revision-Date: 2010-03-31 18:45+0600\n"
 "Last-Translator: Israt Jahan <israt@ankur.org.bd>\n"
 "Language-Team: Bengali <ankur-bd-l10n@googlegroups.com>\n"
 "Language: bn\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../libxfce4ui/xfce-dialogs.c:98
@@ -48,12 +49,13 @@ msgid "_Always go directly to the online documentation"
 msgstr ""
 
 #: ../libxfce4ui/xfce-dialogs.c:281
+#, fuzzy
 msgid "Information"
-msgstr "তথ্য"
+msgstr "সংস্করণ তথ্যাবলী"
 
 #: ../libxfce4ui/xfce-dialogs.c:314
 msgid "Warning"
-msgstr "সতর্কবানী"
+msgstr "সতর্কীকরণ"
 
 #: ../libxfce4ui/xfce-dialogs.c:348
 msgid "Error"
@@ -64,24 +66,28 @@ msgid "Question"
 msgstr "প্রশ্ন"
 
 #: ../libxfce4ui/xfce-sm-client.c:1403
+#, fuzzy
 msgid "Session management client ID"
-msgstr "সেশন ব্যবস্থাপনা ক্লায়েন্ট আইডি"
+msgstr "সেশন ব্যবস্থাপক সকেট"
 
 #: ../libxfce4ui/xfce-sm-client.c:1403
 msgid "ID"
 msgstr "আইডি"
 
 #: ../libxfce4ui/xfce-sm-client.c:1404
+#, fuzzy
 msgid "Disable session management"
-msgstr "সেশন ব্যবস্থাপনা নিষ্ক্রিয় করা হবে"
+msgstr "সেশন ব্যবস্থাপক সকেট"
 
 #: ../libxfce4ui/xfce-sm-client.c:1414
+#, fuzzy
 msgid "Session management options"
-msgstr "সেশন ব্যবস্থাপনা অপশন"
+msgstr "সেশন ব্যবস্থাপক সকেট"
 
 #: ../libxfce4ui/xfce-sm-client.c:1415
+#, fuzzy
 msgid "Show session management options"
-msgstr "সেশন ব্যবস্থাপনা অপশন প্রদর্শন"
+msgstr "সেশন ব্যবস্থাপক সকেট"
 
 #: ../libxfce4ui/xfce-sm-client.c:1591
 #, c-format
@@ -166,8 +172,9 @@ msgid "This shortcut is already being used for something else."
 msgstr "এই শর্টকাটটি ইতোমধ্যেই অন্যকিছুর জন্য ব্যবহার করা হয়েছে।"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:209
+#, fuzzy
 msgid "Window Manager Action Shortcut"
-msgstr "উইন্ডো ম্যানেজার অ্যাকশন শর্টকাট"
+msgstr "উইন্ডো ব্যবস্থাপক"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
@@ -175,11 +182,12 @@ msgstr "উইন্ডো ম্যানেজার অ্যাকশন শ
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:226
 #, fuzzy
 msgid "action"
-msgstr "কাজ:"
+msgstr "কাজ"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:216
+#, fuzzy
 msgid "Command Shortcut"
-msgstr "কমান্ড শর্টকাট"
+msgstr "শর্টকাট"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
@@ -198,8 +206,9 @@ msgid "Press now the keyboard keys you want to use to trigger the %s '%s'."
 msgstr ""
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:291
+#, fuzzy
 msgid "Shortcut:"
-msgstr "শর্টকাট:"
+msgstr "শর্টকাট"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:296
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:475
@@ -207,322 +216,328 @@ msgid "No keys pressed yet, proceed."
 msgstr ""
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:378
+#, fuzzy
 msgid "Could not grab the keyboard."
-msgstr "কীবোর্ড টেনে আনতে পারেনি।"
+msgstr "সেটিংস ডায়ালগ তৈরি করা যায়নি।"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:33
 msgid "Window operations menu"
-msgstr ""
+msgstr "উইন্ডো অপারেশন মেনু"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:34
 msgid "Up"
-msgstr ""
+msgstr "উপরে"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:35
 msgid "Down"
-msgstr ""
+msgstr "নিম্নে"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:36
 msgid "Left"
-msgstr ""
+msgstr "বাম"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:37
 msgid "Right"
-msgstr ""
+msgstr "ডান"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:38
 msgid "Cancel"
-msgstr ""
+msgstr "বাতিল"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:39
 msgid "Cycle windows"
-msgstr ""
+msgstr "উইন্ডোসমূহ বৃত্তাকার করা হবে"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:40
 msgid "Cycle windows (Reverse)"
-msgstr ""
+msgstr "উইন্ডোসমূহ বৃত্তাকার করা হবে (বিপরীত দিকে)"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:41
 msgid "Switch window for same application"
-msgstr ""
+msgstr "অনুরূপ অ্যাপ্লিকেশনের জন্য উইন্ডো পরিবর্তন"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:42
 msgid "Switch application"
-msgstr ""
+msgstr "অ্যাপ্লিকেশন পরিবর্তন"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:43
 msgid "Close window"
-msgstr ""
+msgstr "উইন্ডো বন্ধ"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:44
 msgid "Maximize window horizontally"
-msgstr ""
+msgstr "অনুভূমিকভাবে উইন্ডোর পূর্ণবিস্তার"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:45
 msgid "Maximize window vertically"
-msgstr ""
+msgstr "উল্লম্বভাবে উইন্ডোর পূর্ণবিস্তার"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:46
 msgid "Maximize window"
-msgstr ""
+msgstr "উইন্ডো পূর্ণবিস্তার"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:47
 msgid "Hide window"
-msgstr ""
+msgstr "উইন্ডো আড়াল"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:48
 msgid "Move window"
-msgstr ""
+msgstr "উইন্ডো সরানো"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:49
 msgid "Resize window"
-msgstr ""
+msgstr "উইন্ডোর আকার পরিবর্তন"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:50
 msgid "Shade window"
-msgstr ""
+msgstr "আবছা উইন্ডো"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:51
 msgid "Stick window"
-msgstr ""
+msgstr "স্টিক উইন্ডো"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:52
 msgid "Raise window"
-msgstr ""
+msgstr "উইন্ডো উঠানো"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:53
 msgid "Lower window"
-msgstr ""
+msgstr "নিম্নতর উইন্ডো"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:54
+#, fuzzy
 msgid "Raise or lower window"
-msgstr ""
+msgstr "উইন্ডো উঠানো"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:55
 msgid "Fill window"
-msgstr ""
+msgstr "উইন্ডো ভরাট"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:56
 msgid "Fill window horizontally"
-msgstr ""
+msgstr "অনুভূমিকভাবে উইন্ডো ভরাট"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:57
 msgid "Fill window vertically"
-msgstr ""
+msgstr "উল্লম্বভাবে উইন্ডো ভরাট"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:58
 msgid "Toggle above"
-msgstr ""
+msgstr "উপরে টগল"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:59
 msgid "Toggle fullscreen"
-msgstr ""
+msgstr "পূর্ণপর্দা টগল"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:60
 msgid "Move window to upper workspace"
-msgstr ""
+msgstr "উপরের কর্মপরিসরে উইন্ডো সরানো হবে"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:61
 msgid "Move window to bottom workspace"
-msgstr ""
+msgstr "নিচের কর্মপরিসরে উইন্ডো সরানো হবে"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:62
 msgid "Move window to left workspace"
-msgstr ""
+msgstr "বাম কর্মপরিসরে উইন্ডো সরানো হবে"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:63
 msgid "Move window to right workspace"
-msgstr ""
+msgstr "ডান কর্মপরিসরে উইন্ডো সরানো হবে"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:64
 msgid "Move window to previous workspace"
-msgstr ""
+msgstr "পূর্ববর্তী কর্মপরিসরে উইন্ডো সরানো হবে"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:65
 msgid "Move window to next workspace"
-msgstr ""
+msgstr "পরবর্তী কর্মপরিসরে উইন্ডো সরানো হবে"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:66
 msgid "Move window to workspace 1"
-msgstr ""
+msgstr "কর্মপরিসর ১-এ উইন্ডো সরানো হবে"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:67
 msgid "Move window to workspace 2"
-msgstr ""
+msgstr "কর্মপরিসর ২-এ উইন্ডো সরানো হবে"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:68
 msgid "Move window to workspace 3"
-msgstr ""
+msgstr "কর্মপরিসর ৩-এ উইন্ডো সরানো হবে"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:69
 msgid "Move window to workspace 4"
-msgstr ""
+msgstr "কর্মপরিসর ৪-এ উইন্ডো সরানো হবে"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:70
 msgid "Move window to workspace 5"
-msgstr ""
+msgstr "কর্মপরিসর ৫-এ উইন্ডো সরানো হবে"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:71
 msgid "Move window to workspace 6"
-msgstr ""
+msgstr "কর্মপরিসর ৬-এ উইন্ডো সরানো হবে"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:72
 msgid "Move window to workspace 7"
-msgstr ""
+msgstr "কর্মপরিসর ৭-এ উইন্ডো সরানো হবে"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:73
 msgid "Move window to workspace 8"
-msgstr ""
+msgstr "কর্মপরিসর ৮-এ উইন্ডো সরানো হবে"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:74
 msgid "Move window to workspace 9"
-msgstr ""
+msgstr "কর্মপরিসর ৯-এ উইন্ডো সরানো হবে"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:75
 msgid "Move window to workspace 10"
-msgstr ""
+msgstr "কর্মপরিসর ১০-এ উইন্ডো সরানো হবে"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:76
 msgid "Move window to workspace 11"
-msgstr ""
+msgstr "কর্মপরিসর ১১-তে উইন্ডো সরানো হবে"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:77
 msgid "Move window to workspace 12"
-msgstr ""
+msgstr "কর্মপরিসর ১২-তে উইন্ডো সরানো হবে"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:78
+#, fuzzy
 msgid "Tile window to the top"
-msgstr ""
+msgstr "বাম কর্মপরিসরে উইন্ডো সরানো হবে"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:79
+#, fuzzy
 msgid "Tile window to the bottom"
-msgstr ""
+msgstr "নিচের কর্মপরিসরে উইন্ডো সরানো হবে"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:80
+#, fuzzy
 msgid "Tile window to the left"
-msgstr ""
+msgstr "বাম কর্মপরিসরে উইন্ডো সরানো হবে"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:81
+#, fuzzy
 msgid "Tile window to the right"
-msgstr ""
+msgstr "ডান কর্মপরিসরে উইন্ডো সরানো হবে"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:82
 msgid "Show desktop"
-msgstr ""
+msgstr "ডেস্কটপ প্রদর্শন"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:83
 msgid "Upper workspace"
-msgstr ""
+msgstr "উপরের কর্মপরিসর"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:84
 msgid "Bottom workspace"
-msgstr ""
+msgstr "নিচের কর্মপরিসর"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:85
 msgid "Left workspace"
-msgstr ""
+msgstr "বাম কর্মপরিসর"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:86
 msgid "Right workspace"
-msgstr ""
+msgstr "ডান কর্মপরিসর"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:87
 msgid "Previous workspace"
-msgstr ""
+msgstr "পূর্ববর্তী কর্মপরিসর"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:88
 msgid "Next workspace"
-msgstr ""
+msgstr "পরবর্তী কর্মপরিসর"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:89
 msgid "Workspace 1"
-msgstr ""
+msgstr "কর্মপরিসর ১"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:90
 msgid "Workspace 2"
-msgstr ""
+msgstr "কর্মপরিসর ২"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:91
 msgid "Workspace 3"
-msgstr ""
+msgstr "কর্মপরিসর ৩"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:92
 msgid "Workspace 4"
-msgstr ""
+msgstr "কর্মপরিসর ৪"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:93
 msgid "Workspace 5"
-msgstr ""
+msgstr "কর্মপরিসর ৫"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:94
 msgid "Workspace 6"
-msgstr ""
+msgstr "কর্মপরিসর ৬"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:95
 msgid "Workspace 7"
-msgstr ""
+msgstr "কর্মপরিসর ৭"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:96
 msgid "Workspace 8"
-msgstr ""
+msgstr "কর্মপরিসর ৮"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:97
 msgid "Workspace 9"
-msgstr ""
+msgstr "কর্মপরিসর ৯"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:98
 msgid "Workspace 10"
-msgstr ""
+msgstr "কর্মপরিসর ১০"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:99
 msgid "Workspace 11"
-msgstr ""
+msgstr "কর্মপরিসর ১১"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:100
 msgid "Workspace 12"
-msgstr ""
+msgstr "কর্মপরিসর ১২"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:101
 msgid "Add workspace"
-msgstr ""
+msgstr "কর্মপরিসর যোগ"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:102
 msgid "Add adjacent workspace"
-msgstr ""
+msgstr "সংলগ্ন কর্মপরিসর যোগ"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:103
 msgid "Delete last workspace"
-msgstr ""
+msgstr "সর্বশেষ কর্মপরিসর মুছে ফেলুন"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:104
 msgid "Delete active workspace"
-msgstr ""
+msgstr "সক্রিয় কর্মপরিসর মুছে ফেলুন"
 
 #: ../glade/libxfce4ui.xml.in.h:1
 msgid "Titled Dialog"
 msgstr "শিরোনামকৃত ডায়ালগ"
 
 #: ../glade/libxfce4ui.xml.in.h:2
+#, fuzzy
 msgid "Subtitle"
-msgstr "উপশিরোনাম"
+msgstr "শিরোনাম"
 
 #: ../glade/libxfce4ui.xml.in.h:3
 msgid "Xfce 4 Widgets"
 msgstr "Xfce ৪ উইজেডটস"
 
 #: ../xfce4-about/main.c:52
-#, fuzzy
 msgid "Version information"
-msgstr "তথ্য"
+msgstr "সংস্করণ তথ্যাবলী"
 
 #: ../xfce4-about/main.c:70
-#, fuzzy
 msgid "Window Manager"
-msgstr "উইন্ডো ম্যানেজার অ্যাকশন শর্টকাট"
+msgstr "উইন্ডো ব্যবস্থাপক"
 
 #: ../xfce4-about/main.c:71
+#, fuzzy
 msgid "Handles the placement of windows on the screen."
-msgstr ""
+msgstr "পর্দার কেন্দ্রে (_c)"
 
 #: ../xfce4-about/main.c:74
 msgid "Panel"
@@ -535,8 +550,9 @@ msgid ""
 msgstr ""
 
 #: ../xfce4-about/main.c:79
+#, fuzzy
 msgid "Desktop Manager"
-msgstr ""
+msgstr "উইন্ডো ব্যবস্থাপক"
 
 #: ../xfce4-about/main.c:80
 msgid ""
@@ -545,8 +561,9 @@ msgid ""
 msgstr ""
 
 #: ../xfce4-about/main.c:84
+#, fuzzy
 msgid "File Manager "
-msgstr ""
+msgstr "উইন্ডো ব্যবস্থাপক"
 
 #: ../xfce4-about/main.c:85
 msgid ""
@@ -557,7 +574,7 @@ msgstr ""
 #: ../xfce4-about/main.c:89
 #, fuzzy
 msgid "Session Manager"
-msgstr "সেশন ব্যবস্থাপনা অপশন"
+msgstr "সেশন ব্যবস্থাপক সকেট"
 
 #: ../xfce4-about/main.c:90
 msgid ""
@@ -586,8 +603,9 @@ msgid ""
 msgstr ""
 
 #: ../xfce4-about/main.c:104
+#, fuzzy
 msgid "Settings Daemon"
-msgstr ""
+msgstr "সেটিংস ব্যবস্থাপক সকেট"
 
 #: ../xfce4-about/main.c:105
 msgid "D-Bus-based configuration storage system."
@@ -692,9 +710,9 @@ msgstr ""
 
 #. I18N: %s will be replaced by the Xfce version number
 #: ../xfce4-about/main.c:489
-#, c-format
+#, fuzzy, c-format
 msgid "Version %s"
-msgstr ""
+msgstr "%s (%s-তে)"
 
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
@@ -724,8 +742,9 @@ msgid "Translators"
 msgstr ""
 
 #: ../xfce4-about/contributors.h:139
+#, fuzzy
 msgid "Previous contributors"
-msgstr ""
+msgstr "পূর্ববর্তী কর্মপরিসর"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:1
 msgid "About Xfce"
@@ -767,22 +786,22 @@ msgstr ""
 msgid "License"
 msgstr ""
 
-#~ msgid ""
-#~ "This shortcut is already being used for another window manager action. "
-#~ "Which action do you want to use?"
-#~ msgstr ""
-#~ "এই শর্টকাটটি ইতোমধ্যেই অন্য উইণ্ডো ম্যানেজার অ্যাকশনে ব্যবহার করা হয়েছে। আপনি "
-#~ "কোন অ্যাকশনটি ব্যবহার করতে চান?"
+msgid ""
+"This shortcut is already being used for another window manager action. Which "
+"action do you want to use?"
+msgstr ""
+"এই শর্টকাটটি ইতোমধ্যেই অন্য উইণ্ডো ম্যানেজার অ্যাকশনে ব্যবহার করা হয়েছে। আপনি কোন "
+"অ্যাকশনটি ব্যবহার করতে চান?"
 
-#~ msgid "Keep the other one"
-#~ msgstr "অপরটি রাখুন"
+msgid "Keep the other one"
+msgstr "অপরটি রাখুন"
 
-#~ msgid ""
-#~ "This shortcut is already being used by a window manager action. Which "
-#~ "action do you want to use?"
-#~ msgstr ""
-#~ "এই শর্টকাটটি ইতোমধ্যেই অন্য উইণ্ডো ম্যানেজার অ্যাকশনে ব্যবহার করা হয়েছে। আপনি "
-#~ "কোন অ্যাকশনটি ব্যবহার করতে চান?"
+msgid ""
+"This shortcut is already being used by a window manager action. Which action "
+"do you want to use?"
+msgstr ""
+"এই শর্টকাটটি ইতোমধ্যেই অন্য উইণ্ডো ম্যানেজার অ্যাকশনে ব্যবহার করা হয়েছে। আপনি কোন "
+"অ্যাকশনটি ব্যবহার করতে চান?"
 
-#~ msgid "Keep the window manager action"
-#~ msgstr "উইন্ডো ম্যানেজার অ্যাকশন বজায় রাখুন"
+msgid "Keep the window manager action"
+msgstr "উইন্ডো ম্যানেজার অ্যাকশন বজায় রাখুন"

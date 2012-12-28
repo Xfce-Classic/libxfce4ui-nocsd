@@ -52,8 +52,9 @@ msgid "_Always go directly to the online documentation"
 msgstr "_Vždy automaticky prejsť na online dokumentáciu"
 
 #: ../libxfce4ui/xfce-dialogs.c:281
+#, fuzzy
 msgid "Information"
-msgstr "Informácia"
+msgstr "Informácia o verzií"
 
 #: ../libxfce4ui/xfce-dialogs.c:314
 msgid "Warning"
@@ -68,24 +69,28 @@ msgid "Question"
 msgstr "Otázka"
 
 #: ../libxfce4ui/xfce-sm-client.c:1403
+#, fuzzy
 msgid "Session management client ID"
-msgstr "Identifikátor klienta správy sedenia"
+msgstr "Soket správcu sedenia"
 
 #: ../libxfce4ui/xfce-sm-client.c:1403
 msgid "ID"
 msgstr "ID"
 
 #: ../libxfce4ui/xfce-sm-client.c:1404
+#, fuzzy
 msgid "Disable session management"
-msgstr "Zakázať správu sedenia"
+msgstr "Soket správcu sedenia"
 
 #: ../libxfce4ui/xfce-sm-client.c:1414
+#, fuzzy
 msgid "Session management options"
-msgstr "Možnosti správy sedenia"
+msgstr "Soket správcu sedenia"
 
 #: ../libxfce4ui/xfce-sm-client.c:1415
+#, fuzzy
 msgid "Show session management options"
-msgstr "Zobraziť možnosti správy sedenia"
+msgstr "Soket správcu sedenia"
 
 #: ../libxfce4ui/xfce-sm-client.c:1591
 #, c-format
@@ -112,7 +117,8 @@ msgid ""
 "This shortcut is already being used for the action '%s'. Which action do you "
 "want to use?"
 msgstr ""
-"Túto klávesovú skratku už používa príkaz '%s'. Ktorú akciu chcete použiť?"
+"Skratka sa už používa!\n"
+"Ste si istý, že ju chcete použiť?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:54
 #: ../libxfce4kbd-private/xfce-shortcuts.c:57
@@ -132,12 +138,13 @@ msgstr "Ponechať '%s'"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
 #: ../libxfce4kbd-private/xfce-shortcuts.c:59
-#, c-format
+#, fuzzy, c-format
 msgid ""
 "This shortcut is already being used for the command '%s'. Which action do "
 "you want to use?"
 msgstr ""
-"Túto klávesovú skratku už používa príkaz '%s'. Ktorú akciu chcete použiť?"
+"Skratka sa už používa!\n"
+"Ste si istý, že ju chcete použiť?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 #, fuzzy, c-format
@@ -145,7 +152,8 @@ msgid ""
 "This shortcut is already being used by the action '%s'. Which action do you "
 "want to use?"
 msgstr ""
-"Túto klávesovú skratku už používa príkaz '%s'. Ktorú akciu chcete použiť?"
+"Skratka sa už používa!\n"
+"Ste si istý, že ju chcete použiť?"
 
 #. This shortcut already exists in the provider, we don't want it twice
 #. Warn the user
@@ -164,12 +172,16 @@ msgid "Conflicting actions for %s"
 msgstr "Konflikt medzi akciami pre %s"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:189
+#, fuzzy
 msgid "This shortcut is already being used for something else."
-msgstr "Táto klávesová skratka sa už používa inde."
+msgstr ""
+"Skratka sa už používa!\n"
+"Ste si istý, že ju chcete použiť?"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:209
+#, fuzzy
 msgid "Window Manager Action Shortcut"
-msgstr "Klávesová skratka akcie správcu okien"
+msgstr "Nastavenia správcu okien prostredia Xfce 4"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
@@ -177,18 +189,19 @@ msgstr "Klávesová skratka akcie správcu okien"
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:226
 #, fuzzy
 msgid "action"
-msgstr "Akcia:"
+msgstr "Akcia"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:216
+#, fuzzy
 msgid "Command Shortcut"
-msgstr "Skratka príkazu"
+msgstr "Vložiť skratkovú klávesu"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:219
 #, fuzzy
 msgid "command"
-msgstr "Príkaz:"
+msgstr "Príkaz"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:223
 msgid "Shortcut"
@@ -201,7 +214,7 @@ msgstr ""
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:291
 msgid "Shortcut:"
-msgstr "Klávesová skratka:"
+msgstr "Žiadna klávesová skratka"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:296
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:475
@@ -209,321 +222,325 @@ msgid "No keys pressed yet, proceed."
 msgstr ""
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:378
+#, fuzzy
 msgid "Could not grab the keyboard."
-msgstr "Nemožno zachytiť vstup z klávesnice."
+msgstr "Nedá sa vytvoriť dialógové okno nastavení."
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:33
 msgid "Window operations menu"
-msgstr ""
+msgstr "Ponuka možností okna"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:34
 msgid "Up"
-msgstr ""
+msgstr "Hore"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:35
 msgid "Down"
-msgstr ""
+msgstr "Dole"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:36
 msgid "Left"
-msgstr ""
+msgstr "Vľavo"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:37
 msgid "Right"
-msgstr ""
+msgstr "Vpravo"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:38
 msgid "Cancel"
-msgstr ""
+msgstr "Zrušiť"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:39
 msgid "Cycle windows"
-msgstr ""
+msgstr "Prechádzať okná"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:40
 msgid "Cycle windows (Reverse)"
-msgstr ""
+msgstr "Prechádzať okná (obrátene)"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:41
 msgid "Switch window for same application"
-msgstr ""
+msgstr "Prepnúť okno rovnakej aplikácie"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:42
 msgid "Switch application"
-msgstr ""
+msgstr "Prepnúť aplikáciu"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:43
 msgid "Close window"
-msgstr ""
+msgstr "Zatvoriť okno"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:44
 msgid "Maximize window horizontally"
-msgstr ""
+msgstr "Maximalizovať okno vodorovne"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:45
 msgid "Maximize window vertically"
-msgstr ""
+msgstr "Maximalizovať okno zvislo"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:46
 msgid "Maximize window"
-msgstr ""
+msgstr "Maximalizovať okno"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:47
 msgid "Hide window"
-msgstr ""
+msgstr "Skryť okno"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:48
 msgid "Move window"
-msgstr ""
+msgstr "Presunúť okno"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:49
 msgid "Resize window"
-msgstr ""
+msgstr "Zmeniť veľkosť okna"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:50
 msgid "Shade window"
-msgstr ""
+msgstr "Zabaliť okno"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:51
 msgid "Stick window"
-msgstr ""
+msgstr "Prilepiť okno"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:52
 msgid "Raise window"
-msgstr ""
+msgstr "Zdvihnúť okno"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:53
 msgid "Lower window"
-msgstr ""
+msgstr "Znížiť okno"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:54
 msgid "Raise or lower window"
-msgstr ""
+msgstr "Zdvihnúť alebo znížiť okno"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:55
 msgid "Fill window"
-msgstr ""
+msgstr "Vyplniť okno"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:56
 msgid "Fill window horizontally"
-msgstr ""
+msgstr "Vyplniť okno vo vodorovnom smere"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:57
 msgid "Fill window vertically"
-msgstr ""
+msgstr "Vyplniť okno vo zvislom smere"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:58
 msgid "Toggle above"
-msgstr ""
+msgstr "Prepnúť hore"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:59
 msgid "Toggle fullscreen"
-msgstr ""
+msgstr "Prepnúť na celú obrazovku"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:60
 msgid "Move window to upper workspace"
-msgstr ""
+msgstr "Presunúť okno na vrchnú pracovnú plochu"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:61
 msgid "Move window to bottom workspace"
-msgstr ""
+msgstr "Presunúť okno na spodnú pracovnú plochu"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:62
 msgid "Move window to left workspace"
-msgstr ""
+msgstr "Presunúť okno na ľavú pracovnú plochu"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:63
 msgid "Move window to right workspace"
-msgstr ""
+msgstr "Presunúť okno na pravú pracovnú plochu"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:64
 msgid "Move window to previous workspace"
-msgstr ""
+msgstr "Presunúť okno na predchádzajúcu plochu"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:65
 msgid "Move window to next workspace"
-msgstr ""
+msgstr "Presunúť okno na nasledujúcu plochu"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:66
 msgid "Move window to workspace 1"
-msgstr ""
+msgstr "Presunúť okno na pracovnú plochu 1"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:67
 msgid "Move window to workspace 2"
-msgstr ""
+msgstr "Presunúť okno na pracovnú plochu 2"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:68
 msgid "Move window to workspace 3"
-msgstr ""
+msgstr "Presunúť okno na pracovnú plochu 3"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:69
 msgid "Move window to workspace 4"
-msgstr ""
+msgstr "Presunúť okno na pracovnú plochu 4"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:70
 msgid "Move window to workspace 5"
-msgstr ""
+msgstr "Presunúť okno na pracovnú plochu 5"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:71
 msgid "Move window to workspace 6"
-msgstr ""
+msgstr "Presunúť okno na pracovnú plochu 6"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:72
 msgid "Move window to workspace 7"
-msgstr ""
+msgstr "Presunúť okno na pracovnú plochu 7"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:73
 msgid "Move window to workspace 8"
-msgstr ""
+msgstr "Presunúť okno na pracovnú plochu 8"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:74
 msgid "Move window to workspace 9"
-msgstr ""
+msgstr "Presunúť okno na pracovnú plochu 9"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:75
 msgid "Move window to workspace 10"
-msgstr ""
+msgstr "Presunúť okno na pracovnú plochu 10"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:76
 msgid "Move window to workspace 11"
-msgstr ""
+msgstr "Presunúť okno na pracovnú plochu 11"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:77
 msgid "Move window to workspace 12"
-msgstr ""
+msgstr "Presunúť okno na pracovnú plochu 12"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:78
 msgid "Tile window to the top"
-msgstr ""
+msgstr "Umiestniť okno nahor"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:79
 msgid "Tile window to the bottom"
-msgstr ""
+msgstr "Umiestniť okno nadol"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:80
 msgid "Tile window to the left"
-msgstr ""
+msgstr "Umiestniť okno naľavo"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:81
 msgid "Tile window to the right"
-msgstr ""
+msgstr "Umiestniť okno napravo"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:82
 msgid "Show desktop"
-msgstr ""
+msgstr "Zobraziť pracovnú plochu"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:83
 msgid "Upper workspace"
-msgstr ""
+msgstr "Vrchná pracovná plocha"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:84
 msgid "Bottom workspace"
-msgstr ""
+msgstr "Spodná pracovná plocha"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:85
 msgid "Left workspace"
-msgstr ""
+msgstr "Ľavá pracovná plocha"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:86
 msgid "Right workspace"
-msgstr ""
+msgstr "Pravá pracovná plocha"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:87
-#, fuzzy
 msgid "Previous workspace"
-msgstr "Predošlí prispievatelia"
+msgstr "Predchádzajúca pracovná plocha"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:88
 msgid "Next workspace"
-msgstr ""
+msgstr "Nasledujúca pracovná plocha"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:89
 msgid "Workspace 1"
-msgstr ""
+msgstr "Pracovná plocha 1"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:90
 msgid "Workspace 2"
-msgstr ""
+msgstr "Pracovná plocha 2"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:91
 msgid "Workspace 3"
-msgstr ""
+msgstr "Pracovná plocha 3"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:92
 msgid "Workspace 4"
-msgstr ""
+msgstr "Pracovná plocha 4"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:93
 msgid "Workspace 5"
-msgstr ""
+msgstr "Pracovná plocha 5"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:94
 msgid "Workspace 6"
-msgstr ""
+msgstr "Pracovná plocha 6"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:95
 msgid "Workspace 7"
-msgstr ""
+msgstr "Pracovná plocha 7"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:96
 msgid "Workspace 8"
-msgstr ""
+msgstr "Pracovná plocha 8"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:97
 msgid "Workspace 9"
-msgstr ""
+msgstr "Pracovná plocha 9"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:98
 msgid "Workspace 10"
-msgstr ""
+msgstr "Pracovná plocha 10"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:99
 msgid "Workspace 11"
-msgstr ""
+msgstr "Pracovná plocha 11"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:100
 msgid "Workspace 12"
-msgstr ""
+msgstr "Pracovná plocha 12"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:101
 msgid "Add workspace"
-msgstr ""
+msgstr "Pridať pracovnú plochu"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:102
 msgid "Add adjacent workspace"
-msgstr ""
+msgstr "Pridať priľahlú pracovnú plochu"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:103
 msgid "Delete last workspace"
-msgstr ""
+msgstr "Odstrániť poslednú pracovnú plochu"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:104
 msgid "Delete active workspace"
-msgstr ""
+msgstr "Odstrániť pracovnú plochu"
 
 #: ../glade/libxfce4ui.xml.in.h:1
+#, fuzzy
 msgid "Titled Dialog"
-msgstr "Dialógové okno s titulkom"
+msgstr "Font titulku"
 
 #: ../glade/libxfce4ui.xml.in.h:2
+#, fuzzy
 msgid "Subtitle"
-msgstr "Podtitulok"
+msgstr "Titulok"
 
 #: ../glade/libxfce4ui.xml.in.h:3
+#, fuzzy
 msgid "Xfce 4 Widgets"
-msgstr "Widgety Xfce 4"
+msgstr "Nastavenia správcu okien prostredia Xfce 4"
 
 #: ../xfce4-about/main.c:52
 msgid "Version information"
-msgstr "Informácia o verzii"
+msgstr "Informácia o verzií"
 
 #: ../xfce4-about/main.c:70
 msgid "Window Manager"
 msgstr "Správca okien"
 
 #: ../xfce4-about/main.c:71
+#, fuzzy
 msgid "Handles the placement of windows on the screen."
-msgstr "Ovláda umiestnenie okien na obrazovke."
+msgstr "V _strede obrazovky"
 
 #: ../xfce4-about/main.c:74
 msgid "Panel"
@@ -538,8 +555,9 @@ msgstr ""
 "plôch a iné."
 
 #: ../xfce4-about/main.c:79
+#, fuzzy
 msgid "Desktop Manager"
-msgstr "Správca pracovnej plochy"
+msgstr "Správca okien"
 
 #: ../xfce4-about/main.c:80
 msgid ""
@@ -550,8 +568,9 @@ msgstr ""
 "ikon pre minimalizované aplikácie alebo spúšťače, zariadenia a priečinky."
 
 #: ../xfce4-about/main.c:84
+#, fuzzy
 msgid "File Manager "
-msgstr "Správca súborov"
+msgstr "Správca okien"
 
 #: ../xfce4-about/main.c:85
 msgid ""
@@ -562,8 +581,9 @@ msgstr ""
 "používanie a rýchlosť."
 
 #: ../xfce4-about/main.c:89
+#, fuzzy
 msgid "Session Manager"
-msgstr "Správca sedenia"
+msgstr "Soket správcu sedenia"
 
 #: ../xfce4-about/main.c:90
 msgid ""
@@ -596,8 +616,9 @@ msgstr ""
 "môžete rýchlo nájsť a spustiť."
 
 #: ../xfce4-about/main.c:104
+#, fuzzy
 msgid "Settings Daemon"
-msgstr "Démon nastavení"
+msgstr "Nastavenia správcu soketu"
 
 #: ../xfce4-about/main.c:105
 msgid "D-Bus-based configuration storage system."
@@ -688,9 +709,9 @@ msgstr ""
 "licencie alebo (podľa vášho uváženia) ktorejkoľvek neskoršej verzie."
 
 #: ../xfce4-about/main.c:442
-#, c-format
+#, fuzzy, c-format
 msgid "Type '%s --help' for usage information."
-msgstr "Zadajte '%s --help' pre zobrazenie možností použitia."
+msgstr "Informácie o použití získate príkazom \"%s --help\" ."
 
 #: ../xfce4-about/main.c:448
 msgid "Unable to initialize GTK+."
@@ -724,9 +745,9 @@ msgstr "Verzia %s, šírené cez %s"
 
 #. I18N: %s will be replaced by the Xfce version number
 #: ../xfce4-about/main.c:489
-#, c-format
+#, fuzzy, c-format
 msgid "Version %s"
-msgstr "Verzia %s"
+msgstr "%s (na %s)"
 
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
@@ -752,12 +773,14 @@ msgid "Translations supervision"
 msgstr "Dohľad nad prekladmi"
 
 #: ../xfce4-about/contributors.h:136
+#, fuzzy
 msgid "Translators"
-msgstr "Prekladatelia"
+msgstr "Priehľadné"
 
 #: ../xfce4-about/contributors.h:139
+#, fuzzy
 msgid "Previous contributors"
-msgstr "Predošlí prispievatelia"
+msgstr "Predchádzajúca pracovná plocha"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:1
 msgid "About Xfce"
@@ -799,52 +822,35 @@ msgstr "Autorské práva"
 msgid "License"
 msgstr "Licencia"
 
-#~ msgid ""
-#~ "This shortcut is already being used for another window manager action. "
-#~ "Which action do you want to use?"
-#~ msgstr ""
-#~ "Túto klávesovú skratku už používa iná akcia správcu okien. Ktorú akciu "
-#~ "chcete použiť?"
+msgid "Keep the other one"
+msgstr "Ponechať inú"
 
-#~ msgid "Keep the other one"
-#~ msgstr "Ponechať inú"
+msgid "Utilities and Scripts"
+msgstr "Nástroje a skripty"
 
-#~ msgid ""
-#~ "This shortcut is already being used by a window manager action. Which "
-#~ "action do you want to use?"
-#~ msgstr ""
-#~ "Túto klávesovú skratku už používa akcia správcu okien. Ktorú akciu chcete "
-#~ "použiť?"
+msgid "Startup scripts, run dialog and about dialog."
+msgstr "Skripty po spustení, spustiť dialóg a dialóg o programe."
 
-#~ msgid "Keep the window manager action"
-#~ msgstr "Ponechať akciu správcu okien"
+msgid "<span size='large'><b>%s</b></span>"
+msgstr "<span size='large'><b>%s</b></span>"
 
-#~ msgid "Utilities and Scripts"
-#~ msgstr "Nástroje a skripty"
+msgid "File is not a valid .desktop file"
+msgstr "Súbor nie je platným súborom typu .desktop"
 
-#~ msgid "Startup scripts, run dialog and about dialog."
-#~ msgstr "Skripty po spustení, spustiť dialóg a dialóg o programe."
+msgid "Unrecognized desktop file Version '%s'"
+msgstr "Nerozpoznaný súbor plochy verzie '%s'"
 
-#~ msgid "<span size='large'><b>%s</b></span>"
-#~ msgstr "<span size='large'><b>%s</b></span>"
+msgid "Application does not accept documents on command line"
+msgstr "Aplikácia neprijíma dokumenty na príkazovom riadku"
 
-#~ msgid "File is not a valid .desktop file"
-#~ msgstr "Súbor nie je platným súborom typu .desktop"
+msgid "Unrecognized launch option: %d"
+msgstr "Nerozpoznaný parameter spustenia: %d"
 
-#~ msgid "Unrecognized desktop file Version '%s'"
-#~ msgstr "Nerozpoznaný súbor plochy verzie '%s'"
+msgid "Not a launchable item"
+msgstr "Nespustiteľná položka"
 
-#~ msgid "Application does not accept documents on command line"
-#~ msgstr "Aplikácia neprijíma dokumenty na príkazovom riadku"
+msgid "Specify file containing saved configuration"
+msgstr "Zadajte súbor obsahujúci konfiguráciu"
 
-#~ msgid "Unrecognized launch option: %d"
-#~ msgstr "Nerozpoznaný parameter spustenia: %d"
-
-#~ msgid "Not a launchable item"
-#~ msgstr "Nespustiteľná položka"
-
-#~ msgid "Specify file containing saved configuration"
-#~ msgstr "Zadajte súbor obsahujúci konfiguráciu"
-
-#~ msgid "FILE"
-#~ msgstr "SÚBOR"
+msgid "FILE"
+msgstr "SÚBOR"

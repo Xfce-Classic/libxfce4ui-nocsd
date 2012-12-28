@@ -51,8 +51,9 @@ msgid "_Always go directly to the online documentation"
 msgstr "_Avaa aina ohjesivut verkosta"
 
 #: ../libxfce4ui/xfce-dialogs.c:281
+#, fuzzy
 msgid "Information"
-msgstr "Tietoa"
+msgstr "Versiotiedot"
 
 #: ../libxfce4ui/xfce-dialogs.c:314
 msgid "Warning"
@@ -67,24 +68,28 @@ msgid "Question"
 msgstr "Kysymys"
 
 #: ../libxfce4ui/xfce-sm-client.c:1403
+#, fuzzy
 msgid "Session management client ID"
-msgstr "Istunnonhallinta-asiakkaan tunniste"
+msgstr "Istunnonhallinnan pistoke"
 
 #: ../libxfce4ui/xfce-sm-client.c:1403
 msgid "ID"
 msgstr "Tunniste"
 
 #: ../libxfce4ui/xfce-sm-client.c:1404
+#, fuzzy
 msgid "Disable session management"
-msgstr "Älä käytä istunnonhallintaa"
+msgstr "Istunnonhallinnan pistoke"
 
 #: ../libxfce4ui/xfce-sm-client.c:1414
+#, fuzzy
 msgid "Session management options"
-msgstr "Istunnonhallinnan asetukset"
+msgstr "Istunnonhallinnan pistoke"
 
 #: ../libxfce4ui/xfce-sm-client.c:1415
+#, fuzzy
 msgid "Show session management options"
-msgstr "Näytä istunnonhallinnan asetukset"
+msgstr "Istunnonhallinnan pistoke"
 
 #: ../libxfce4ui/xfce-sm-client.c:1591
 #, c-format
@@ -168,8 +173,9 @@ msgid "This shortcut is already being used for something else."
 msgstr "Pikanäppäin on jo liitetty toiseen toimintoon."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:209
+#, fuzzy
 msgid "Window Manager Action Shortcut"
-msgstr "Ikkunamanagerin pikanäppäin"
+msgstr "Ikkunamanageri"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
@@ -177,11 +183,12 @@ msgstr "Ikkunamanagerin pikanäppäin"
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:226
 #, fuzzy
 msgid "action"
-msgstr "Toiminto:"
+msgstr "Toiminto"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:216
+#, fuzzy
 msgid "Command Shortcut"
-msgstr "Komennon pikanäppäin"
+msgstr "Pikanäppäin"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
@@ -200,8 +207,9 @@ msgid "Press now the keyboard keys you want to use to trigger the %s '%s'."
 msgstr ""
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:291
+#, fuzzy
 msgid "Shortcut:"
-msgstr "Pikanäppäin:"
+msgstr "Pikanäppäin"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:296
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:475
@@ -209,305 +217,306 @@ msgid "No keys pressed yet, proceed."
 msgstr ""
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:378
+#, fuzzy
 msgid "Could not grab the keyboard."
-msgstr "Näppäimistön kaappaus epäonnistui."
+msgstr "Asetusdialogin luominen epäonnistui."
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:33
 msgid "Window operations menu"
-msgstr ""
+msgstr "Ikkunan toimintovalikko"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:34
 msgid "Up"
-msgstr ""
+msgstr "Ylös"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:35
 msgid "Down"
-msgstr ""
+msgstr "Alas"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:36
 msgid "Left"
-msgstr ""
+msgstr "Vasemmalle"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:37
 msgid "Right"
-msgstr ""
+msgstr "Oikealle"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:38
 msgid "Cancel"
-msgstr ""
+msgstr "Peru"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:39
 msgid "Cycle windows"
-msgstr ""
+msgstr "Selaa ikkunoita"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:40
 msgid "Cycle windows (Reverse)"
-msgstr ""
+msgstr "Selaa ikkunoita (takaperin)"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:41
 msgid "Switch window for same application"
-msgstr ""
+msgstr "Vaihda saman sovelluksen ikkunaa"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:42
 msgid "Switch application"
-msgstr ""
+msgstr "Siirry toiseen sovellukseen"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:43
 msgid "Close window"
-msgstr ""
+msgstr "Sulje"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:44
 msgid "Maximize window horizontally"
-msgstr ""
+msgstr "Suurenna vaakasuunnassa"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:45
 msgid "Maximize window vertically"
-msgstr ""
+msgstr "Suurenna pystysuunnassa"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:46
 msgid "Maximize window"
-msgstr ""
+msgstr "Suurenna ikkuna"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:47
 msgid "Hide window"
-msgstr ""
+msgstr "Piilota ikkuna"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:48
 msgid "Move window"
-msgstr ""
+msgstr "Siirrä ikkunaa"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:49
 msgid "Resize window"
-msgstr ""
+msgstr "Muuta kokoa"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:50
 msgid "Shade window"
-msgstr ""
+msgstr "Varjosta ikkuna"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:51
 msgid "Stick window"
-msgstr ""
+msgstr "Kiinnitä"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:52
 msgid "Raise window"
-msgstr ""
+msgstr "Nosta"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:53
 msgid "Lower window"
-msgstr ""
+msgstr "Laske"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:54
 msgid "Raise or lower window"
-msgstr ""
+msgstr "Nosta tai laske"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:55
 msgid "Fill window"
-msgstr ""
+msgstr "Sovita ikkuna"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:56
 msgid "Fill window horizontally"
-msgstr ""
+msgstr "Täytä vaakasuunnassa"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:57
 msgid "Fill window vertically"
-msgstr ""
+msgstr "Täytä pystysuunnassa"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:58
 msgid "Toggle above"
-msgstr ""
+msgstr "Aina päällimmäisenä"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:59
 msgid "Toggle fullscreen"
-msgstr ""
+msgstr "Kokoruututila"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:60
 msgid "Move window to upper workspace"
-msgstr ""
+msgstr "Siirrä ikkuna ylempään työtilaan"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:61
 msgid "Move window to bottom workspace"
-msgstr ""
+msgstr "Siirrä ikkuna alempaan työtilaan"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:62
 msgid "Move window to left workspace"
-msgstr ""
+msgstr "Siirrä ikkuna vasempaan työtilaan"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:63
 msgid "Move window to right workspace"
-msgstr ""
+msgstr "Siirrä ikkuna oikeaan työtilaan"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:64
 msgid "Move window to previous workspace"
-msgstr ""
+msgstr "Siirrä ikkuna edelliseen työtilaan"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:65
 msgid "Move window to next workspace"
-msgstr ""
+msgstr "Siirrä ikkuna seuraavaan työtilaan"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:66
 msgid "Move window to workspace 1"
-msgstr ""
+msgstr "Siirrä ikkuna työtilaan 1"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:67
 msgid "Move window to workspace 2"
-msgstr ""
+msgstr "Siirrä ikkuna työtilaan 2"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:68
 msgid "Move window to workspace 3"
-msgstr ""
+msgstr "Siirrä ikkuna työtilaan 3"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:69
 msgid "Move window to workspace 4"
-msgstr ""
+msgstr "Siirrä ikkuna työtilaan 4"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:70
 msgid "Move window to workspace 5"
-msgstr ""
+msgstr "Siirrä ikkuna työtilaan 5"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:71
 msgid "Move window to workspace 6"
-msgstr ""
+msgstr "Siirrä ikkuna työtilaan 6"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:72
 msgid "Move window to workspace 7"
-msgstr ""
+msgstr "Siirrä ikkuna työtilaan 7"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:73
 msgid "Move window to workspace 8"
-msgstr ""
+msgstr "Siirrä ikkuna työtilaan 8"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:74
 msgid "Move window to workspace 9"
-msgstr ""
+msgstr "Siirrä ikkuna työtilaan 9"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:75
 msgid "Move window to workspace 10"
-msgstr ""
+msgstr "Siirrä ikkuna työtilaan 10"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:76
 msgid "Move window to workspace 11"
-msgstr ""
+msgstr "Siirrä ikkuna työtilaan 11"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:77
 msgid "Move window to workspace 12"
-msgstr ""
+msgstr "Siirrä ikkuna työtilaan 12"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:78
 msgid "Tile window to the top"
-msgstr ""
+msgstr "Järjestä yläreunaan"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:79
 msgid "Tile window to the bottom"
-msgstr ""
+msgstr "Järjestä alareunaan"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:80
 msgid "Tile window to the left"
-msgstr ""
+msgstr "Järjestä vasempaan reunaan"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:81
 msgid "Tile window to the right"
-msgstr ""
+msgstr "Järjestä oikeaan reunaan"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:82
 msgid "Show desktop"
-msgstr ""
+msgstr "Näytä työpöytä"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:83
 msgid "Upper workspace"
-msgstr ""
+msgstr "Ylempi työtila"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:84
 msgid "Bottom workspace"
-msgstr ""
+msgstr "Alempi työtila"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:85
 msgid "Left workspace"
-msgstr ""
+msgstr "Vasen työtila"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:86
 msgid "Right workspace"
-msgstr ""
+msgstr "Oikea työtila"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:87
-#, fuzzy
 msgid "Previous workspace"
-msgstr "Aikaisemmat kehittäjät"
+msgstr "Edellinen työtila"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:88
 msgid "Next workspace"
-msgstr ""
+msgstr "Seuraava työtila"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:89
 msgid "Workspace 1"
-msgstr ""
+msgstr "Työtila 1"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:90
 msgid "Workspace 2"
-msgstr ""
+msgstr "Työtila 2"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:91
 msgid "Workspace 3"
-msgstr ""
+msgstr "Työtila 3"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:92
 msgid "Workspace 4"
-msgstr ""
+msgstr "Työtila 4"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:93
 msgid "Workspace 5"
-msgstr ""
+msgstr "Työtila 5"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:94
 msgid "Workspace 6"
-msgstr ""
+msgstr "Työtila 6"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:95
 msgid "Workspace 7"
-msgstr ""
+msgstr "Työtila 7"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:96
 msgid "Workspace 8"
-msgstr ""
+msgstr "Työtila 8"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:97
 msgid "Workspace 9"
-msgstr ""
+msgstr "Työtila 9"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:98
 msgid "Workspace 10"
-msgstr ""
+msgstr "Työtila 10"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:99
 msgid "Workspace 11"
-msgstr ""
+msgstr "Työtila 11"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:100
 msgid "Workspace 12"
-msgstr ""
+msgstr "Työtila 12"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:101
 msgid "Add workspace"
-msgstr ""
+msgstr "Lisää työtila"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:102
 msgid "Add adjacent workspace"
-msgstr ""
+msgstr "Lisää työtila vierelle"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:103
 msgid "Delete last workspace"
-msgstr ""
+msgstr "Poista viimeinen työtila"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:104
 msgid "Delete active workspace"
-msgstr ""
+msgstr "Poista nykyinen työtila"
 
 #: ../glade/libxfce4ui.xml.in.h:1
 msgid "Titled Dialog"
 msgstr "Otsakkeellinen dialogi"
 
 #: ../glade/libxfce4ui.xml.in.h:2
+#, fuzzy
 msgid "Subtitle"
-msgstr "Alaotsake"
+msgstr "Otsake"
 
 #: ../glade/libxfce4ui.xml.in.h:3
 msgid "Xfce 4 Widgets"
@@ -522,8 +531,9 @@ msgid "Window Manager"
 msgstr "Ikkunamanageri"
 
 #: ../xfce4-about/main.c:71
+#, fuzzy
 msgid "Handles the placement of windows on the screen."
-msgstr "Hallitsee ikkunoiden sijaintia ruudulla."
+msgstr "Ruudun _keskelle"
 
 #: ../xfce4-about/main.c:74
 msgid "Panel"
@@ -538,8 +548,9 @@ msgstr ""
 "sekä paljon muuta."
 
 #: ../xfce4-about/main.c:79
+#, fuzzy
 msgid "Desktop Manager"
-msgstr "Työpöydänhallinta"
+msgstr "Ikkunamanageri"
 
 #: ../xfce4-about/main.c:80
 msgid ""
@@ -551,8 +562,9 @@ msgstr ""
 "käynnistimet."
 
 #: ../xfce4-about/main.c:84
+#, fuzzy
 msgid "File Manager "
-msgstr "Tiedostonhallinta"
+msgstr "Ikkunamanageri"
 
 #: ../xfce4-about/main.c:85
 msgid ""
@@ -563,8 +575,9 @@ msgstr ""
 "tavoitteenaan helppokäyttöisyys ja nopeus."
 
 #: ../xfce4-about/main.c:89
+#, fuzzy
 msgid "Session Manager"
-msgstr "Istunnonhallinta"
+msgstr "Istunnonhallinnan pistoke"
 
 #: ../xfce4-about/main.c:90
 msgid ""
@@ -599,8 +612,9 @@ msgstr ""
 "käynnistäminen on nopeaa."
 
 #: ../xfce4-about/main.c:104
+#, fuzzy
 msgid "Settings Daemon"
-msgstr "Asetustaustaohjelma"
+msgstr "Asetustenhallinnan pistoke"
 
 #: ../xfce4-about/main.c:105
 msgid "D-Bus-based configuration storage system."
@@ -688,7 +702,7 @@ msgstr ""
 "halutessasi uudemman ehdoilla."
 
 #: ../xfce4-about/main.c:442
-#, c-format
+#, fuzzy, c-format
 msgid "Type '%s --help' for usage information."
 msgstr "Saat käyttöohjeita komennolla \"%s --help\"."
 
@@ -724,9 +738,9 @@ msgstr "Versio %s, jakelu %s"
 
 #. I18N: %s will be replaced by the Xfce version number
 #: ../xfce4-about/main.c:489
-#, c-format
+#, fuzzy, c-format
 msgid "Version %s"
-msgstr "Versio %s"
+msgstr "%s (isäntäkoneella %s)"
 
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
@@ -756,8 +770,9 @@ msgid "Translators"
 msgstr "Kääntäjät"
 
 #: ../xfce4-about/contributors.h:139
+#, fuzzy
 msgid "Previous contributors"
-msgstr "Aikaisemmat kehittäjät"
+msgstr "Edellinen työtila"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:1
 msgid "About Xfce"
@@ -799,21 +814,18 @@ msgstr "Tekijänoikeus"
 msgid "License"
 msgstr "Lisenssi"
 
-#~ msgid ""
-#~ "This shortcut is already being used for another window manager action. "
-#~ "Which action do you want to use?"
-#~ msgstr ""
-#~ "Pikanäppäin on jo liitetty toiseen ikkunamanagerin toimintoon. Kumpaa "
-#~ "käytetään?"
+msgid ""
+"This shortcut is already being used for another window manager action. Which "
+"action do you want to use?"
+msgstr ""
+"Pikanäppäin on jo liitetty toiseen ikkunamanagerin toimintoon. Kumpaa "
+"käytetään?"
 
-#~ msgid "Keep the other one"
-#~ msgstr "Säilytä toinen"
+msgid "Keep the other one"
+msgstr "Säilytä toinen"
 
-#~ msgid ""
-#~ "This shortcut is already being used by a window manager action. Which "
-#~ "action do you want to use?"
-#~ msgstr ""
-#~ "Pikanäppäin on jo liitetty ikkunamanagerin toimintoon. Kumpaa käytetään?"
-
-#~ msgid "Keep the window manager action"
-#~ msgstr "Säilytä ikkunamanagerin toiminto"
+msgid ""
+"This shortcut is already being used by a window manager action. Which action "
+"do you want to use?"
+msgstr ""
+"Pikanäppäin on jo liitetty ikkunamanagerin toimintoon. Kumpaa käytetään?"

@@ -55,8 +55,9 @@ msgid "_Always go directly to the online documentation"
 msgstr "Deschide întotdeauna documentația _online"
 
 #: ../libxfce4ui/xfce-dialogs.c:281
+#, fuzzy
 msgid "Information"
-msgstr "Detalii"
+msgstr "Detalii despre versiune"
 
 #: ../libxfce4ui/xfce-dialogs.c:314
 msgid "Warning"
@@ -71,24 +72,28 @@ msgid "Question"
 msgstr "Întrebare"
 
 #: ../libxfce4ui/xfce-sm-client.c:1403
+#, fuzzy
 msgid "Session management client ID"
-msgstr "ID-ul clientului managerului de sesiune"
+msgstr "Socket al managerului de sesiune"
 
 #: ../libxfce4ui/xfce-sm-client.c:1403
 msgid "ID"
 msgstr "ID"
 
 #: ../libxfce4ui/xfce-sm-client.c:1404
+#, fuzzy
 msgid "Disable session management"
-msgstr "Dezactivare a managementului de sesiune"
+msgstr "Socket al managerului de sesiune"
 
 #: ../libxfce4ui/xfce-sm-client.c:1414
+#, fuzzy
 msgid "Session management options"
-msgstr "Opțiuni pentru managementul de sesiune"
+msgstr "Socket al managerului de sesiune"
 
 #: ../libxfce4ui/xfce-sm-client.c:1415
+#, fuzzy
 msgid "Show session management options"
-msgstr "Arată opțiunile pentru managementul de sesiune"
+msgstr "Socket al managerului de sesiune"
 
 #: ../libxfce4ui/xfce-sm-client.c:1591
 #, c-format
@@ -174,8 +179,9 @@ msgid "This shortcut is already being used for something else."
 msgstr "Această combinație de taste este deja folosită pentru altceva."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:209
+#, fuzzy
 msgid "Window Manager Action Shortcut"
-msgstr "Combinație de taste asociată unei acțiuni"
+msgstr "Manager de ferestre"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
@@ -183,11 +189,12 @@ msgstr "Combinație de taste asociată unei acțiuni"
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:226
 #, fuzzy
 msgid "action"
-msgstr "Acțiune:"
+msgstr "Acțiune"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:216
+#, fuzzy
 msgid "Command Shortcut"
-msgstr "Combinație de taste pentru comandă"
+msgstr "Combinație de taste"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
@@ -206,8 +213,9 @@ msgid "Press now the keyboard keys you want to use to trigger the %s '%s'."
 msgstr ""
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:291
+#, fuzzy
 msgid "Shortcut:"
-msgstr "Combinație de taste:"
+msgstr "Combinație de taste"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:296
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:475
@@ -215,305 +223,306 @@ msgid "No keys pressed yet, proceed."
 msgstr ""
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:378
+#, fuzzy
 msgid "Could not grab the keyboard."
-msgstr "Nu s-a putut intercepta tastatura."
+msgstr "Nu s-a putut crea fereastra cu opțiuni."
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:33
 msgid "Window operations menu"
-msgstr ""
+msgstr "Meniul de acțiuni asupra ferestrei"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:34
 msgid "Up"
-msgstr ""
+msgstr "Sus"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:35
 msgid "Down"
-msgstr ""
+msgstr "Jos"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:36
 msgid "Left"
-msgstr ""
+msgstr "Stânga"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:37
 msgid "Right"
-msgstr ""
+msgstr "Dreapta"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:38
 msgid "Cancel"
-msgstr ""
+msgstr "Renunță"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:39
 msgid "Cycle windows"
-msgstr ""
+msgstr "Ciclează ferestrele"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:40
 msgid "Cycle windows (Reverse)"
-msgstr ""
+msgstr "Ciclează ferestrele (în sens invers)"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:41
 msgid "Switch window for same application"
-msgstr ""
+msgstr "Ciclează ferestrele unui program"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:42
 msgid "Switch application"
-msgstr ""
+msgstr "Ciclează programele"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:43
 msgid "Close window"
-msgstr ""
+msgstr "Închide fereastra"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:44
 msgid "Maximize window horizontally"
-msgstr ""
+msgstr "Maximizează pe orizontală fereastra"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:45
 msgid "Maximize window vertically"
-msgstr ""
+msgstr "Maximizează pe verticală fereastra"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:46
 msgid "Maximize window"
-msgstr ""
+msgstr "Maximizează fereastra"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:47
 msgid "Hide window"
-msgstr ""
+msgstr "Ascunde fereastra"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:48
 msgid "Move window"
-msgstr ""
+msgstr "Mută fereastra"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:49
 msgid "Resize window"
-msgstr ""
+msgstr "Redimensionează fereastra"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:50
 msgid "Shade window"
-msgstr ""
+msgstr "Strânge fereastra"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:51
 msgid "Stick window"
-msgstr ""
+msgstr "Lipește fereastra"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:52
 msgid "Raise window"
-msgstr ""
+msgstr "Ridică fereastra deasupra"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:53
 msgid "Lower window"
-msgstr ""
+msgstr "Coboară fereastra dedesubt"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:54
 msgid "Raise or lower window"
-msgstr ""
+msgstr "Ridică sau coboară fereastra"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:55
 msgid "Fill window"
-msgstr ""
+msgstr "Umple fereastra"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:56
 msgid "Fill window horizontally"
-msgstr ""
+msgstr "Umple orizontal fereastra"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:57
 msgid "Fill window vertically"
-msgstr ""
+msgstr "Umple vertical fereastra"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:58
 msgid "Toggle above"
-msgstr ""
+msgstr "Comută starea „deasupra”"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:59
 msgid "Toggle fullscreen"
-msgstr ""
+msgstr "Comută starea „pe tot ecranul”"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:60
 msgid "Move window to upper workspace"
-msgstr ""
+msgstr "Mută în spațiul de deasupra"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:61
 msgid "Move window to bottom workspace"
-msgstr ""
+msgstr "Mută în spațiul de dedesubt"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:62
 msgid "Move window to left workspace"
-msgstr ""
+msgstr "Mută în spațiul din stânga"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:63
 msgid "Move window to right workspace"
-msgstr ""
+msgstr "Mută în spațiul din dreapta"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:64
 msgid "Move window to previous workspace"
-msgstr ""
+msgstr "Mută în spațiul anterior"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:65
 msgid "Move window to next workspace"
-msgstr ""
+msgstr "Mută în spațiul următor"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:66
 msgid "Move window to workspace 1"
-msgstr ""
+msgstr "Mută în spațiul de lucru 1"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:67
 msgid "Move window to workspace 2"
-msgstr ""
+msgstr "Mută în spațiul de lucru 2"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:68
 msgid "Move window to workspace 3"
-msgstr ""
+msgstr "Mută în spațiul de lucru 3"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:69
 msgid "Move window to workspace 4"
-msgstr ""
+msgstr "Mută în spațiul de lucru 4"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:70
 msgid "Move window to workspace 5"
-msgstr ""
+msgstr "Mută în spațiul de lucru 5"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:71
 msgid "Move window to workspace 6"
-msgstr ""
+msgstr "Mută în spațiul de lucru 6"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:72
 msgid "Move window to workspace 7"
-msgstr ""
+msgstr "Mută în spațiul de lucru 7"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:73
 msgid "Move window to workspace 8"
-msgstr ""
+msgstr "Mută în spațiul de lucru 8"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:74
 msgid "Move window to workspace 9"
-msgstr ""
+msgstr "Mută în spațiul de lucru 9"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:75
 msgid "Move window to workspace 10"
-msgstr ""
+msgstr "Mută în spațiul de lucru 10"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:76
 msgid "Move window to workspace 11"
-msgstr ""
+msgstr "Mută în spațiul de lucru 11"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:77
 msgid "Move window to workspace 12"
-msgstr ""
+msgstr "Mută în spațiul de lucru 12"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:78
 msgid "Tile window to the top"
-msgstr ""
+msgstr "Pune în partea de sus a ecranului"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:79
 msgid "Tile window to the bottom"
-msgstr ""
+msgstr "Pune în partea de jos a ecranului"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:80
 msgid "Tile window to the left"
-msgstr ""
+msgstr "Pune în partea stângă a ecranului"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:81
 msgid "Tile window to the right"
-msgstr ""
+msgstr "Pune în partea dreaptă a ecranului"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:82
 msgid "Show desktop"
-msgstr ""
+msgstr "Arată desktopul"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:83
 msgid "Upper workspace"
-msgstr ""
+msgstr "Spațiul de lucru de deasupra"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:84
 msgid "Bottom workspace"
-msgstr ""
+msgstr "Spațiul de lucru de dedesubt"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:85
 msgid "Left workspace"
-msgstr ""
+msgstr "Spațiul de lucru din stânga"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:86
 msgid "Right workspace"
-msgstr ""
+msgstr "Spațiul de lucru din dreapta"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:87
-#, fuzzy
 msgid "Previous workspace"
-msgstr "Contribuitori inactivi"
+msgstr "Spațiul de lucru anterior"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:88
 msgid "Next workspace"
-msgstr ""
+msgstr "Spațiul de lucru următor"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:89
 msgid "Workspace 1"
-msgstr ""
+msgstr "Spațiul de lucru 1"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:90
 msgid "Workspace 2"
-msgstr ""
+msgstr "Spațiul de lucru 2"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:91
 msgid "Workspace 3"
-msgstr ""
+msgstr "Spațiul de lucru 3"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:92
 msgid "Workspace 4"
-msgstr ""
+msgstr "Spațiul de lucru 4"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:93
 msgid "Workspace 5"
-msgstr ""
+msgstr "Spațiul de lucru 5"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:94
 msgid "Workspace 6"
-msgstr ""
+msgstr "Spațiul de lucru 6"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:95
 msgid "Workspace 7"
-msgstr ""
+msgstr "Spațiul de lucru 7"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:96
 msgid "Workspace 8"
-msgstr ""
+msgstr "Spațiul de lucru 8"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:97
 msgid "Workspace 9"
-msgstr ""
+msgstr "Spațiul de lucru 9"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:98
 msgid "Workspace 10"
-msgstr ""
+msgstr "Spațiul de lucru 10"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:99
 msgid "Workspace 11"
-msgstr ""
+msgstr "Spațiul de lucru 11"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:100
 msgid "Workspace 12"
-msgstr ""
+msgstr "Spațiul de lucru 12"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:101
 msgid "Add workspace"
-msgstr ""
+msgstr "Adaugă un spațiu de lucru"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:102
 msgid "Add adjacent workspace"
-msgstr ""
+msgstr "Adaugă un spațiu de lucru adiacent"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:103
 msgid "Delete last workspace"
-msgstr ""
+msgstr "Șterge ultimul spațiu de lucru"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:104
 msgid "Delete active workspace"
-msgstr ""
+msgstr "Șterge spațiul de lucru activ"
 
 #: ../glade/libxfce4ui.xml.in.h:1
 msgid "Titled Dialog"
 msgstr "Fereastră cu titlu"
 
 #: ../glade/libxfce4ui.xml.in.h:2
+#, fuzzy
 msgid "Subtitle"
-msgstr "Subtitlu"
+msgstr "Titlu"
 
 #: ../glade/libxfce4ui.xml.in.h:3
 msgid "Xfce 4 Widgets"
@@ -525,11 +534,12 @@ msgstr "Detalii despre versiune"
 
 #: ../xfce4-about/main.c:70
 msgid "Window Manager"
-msgstr "Managerul de ferestre"
+msgstr "Manager de ferestre"
 
 #: ../xfce4-about/main.c:71
+#, fuzzy
 msgid "Handles the placement of windows on the screen."
-msgstr "Gestionează plasarea ferestrelor pe ecran."
+msgstr "În mijlocul _ecranului"
 
 #: ../xfce4-about/main.c:74
 msgid "Panel"
@@ -544,8 +554,9 @@ msgstr ""
 "programe, comutatorul spațiilor de lucru și altele."
 
 #: ../xfce4-about/main.c:79
+#, fuzzy
 msgid "Desktop Manager"
-msgstr "Managerul desktopului"
+msgstr "Manager de ferestre"
 
 #: ../xfce4-about/main.c:80
 msgid ""
@@ -557,8 +568,9 @@ msgstr ""
 "dispozitive de sistem."
 
 #: ../xfce4-about/main.c:84
+#, fuzzy
 msgid "File Manager "
-msgstr "Managerul de fișiere"
+msgstr "Manager de ferestre"
 
 #: ../xfce4-about/main.c:85
 msgid ""
@@ -569,8 +581,9 @@ msgstr ""
 "fie rapid și ușor de utilizat."
 
 #: ../xfce4-about/main.c:89
+#, fuzzy
 msgid "Session Manager"
-msgstr "Managerul de sesiune"
+msgstr "Socket al managerului de sesiune"
 
 #: ../xfce4-about/main.c:90
 msgid ""
@@ -606,8 +619,9 @@ msgstr ""
 "cu ușurință pentru a le porni."
 
 #: ../xfce4-about/main.c:104
+#, fuzzy
 msgid "Settings Daemon"
-msgstr "Demonul opțiunilor"
+msgstr "Socket al managerului opțiunilor"
 
 #: ../xfce4-about/main.c:105
 msgid "D-Bus-based configuration storage system."
@@ -698,7 +712,7 @@ msgstr ""
 "Foundation, versiunea 2 sau (la alegere) orice versiune mai nouă."
 
 #: ../xfce4-about/main.c:442
-#, c-format
+#, fuzzy, c-format
 msgid "Type '%s --help' for usage information."
 msgstr "Încercați „%s --help” pentru detalii de utilizare."
 
@@ -734,9 +748,9 @@ msgstr "Versiunea %s, distribuită de %s"
 
 #. I18N: %s will be replaced by the Xfce version number
 #: ../xfce4-about/main.c:489
-#, c-format
+#, fuzzy, c-format
 msgid "Version %s"
-msgstr "Versiunea %s"
+msgstr "%s (pe %s)"
 
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
@@ -766,8 +780,9 @@ msgid "Translators"
 msgstr "Traducători"
 
 #: ../xfce4-about/contributors.h:139
+#, fuzzy
 msgid "Previous contributors"
-msgstr "Contribuitori inactivi"
+msgstr "Spațiul de lucru anterior"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:1
 msgid "About Xfce"
@@ -809,22 +824,19 @@ msgstr "Drepturi de autor"
 msgid "License"
 msgstr "Licență"
 
-#~ msgid ""
-#~ "This shortcut is already being used for another window manager action. "
-#~ "Which action do you want to use?"
-#~ msgstr ""
-#~ "Această combinație de taste este deja folosită pentru o altă acțiune a "
-#~ "managerului de ferestre. Ce acțiune doriți să îi fie asociată?"
+msgid ""
+"This shortcut is already being used for another window manager action. Which "
+"action do you want to use?"
+msgstr ""
+"Această combinație de taste este deja folosită pentru o altă acțiune a "
+"managerului de ferestre. Ce acțiune doriți să îi fie asociată?"
 
-#~ msgid "Keep the other one"
-#~ msgstr "Păstrează-o pe cealaltă"
+msgid "Keep the other one"
+msgstr "Păstrează-o pe cealaltă"
 
-#~ msgid ""
-#~ "This shortcut is already being used by a window manager action. Which "
-#~ "action do you want to use?"
-#~ msgstr ""
-#~ "Această combinație de taste este deja folosită pentru o acțiune a "
-#~ "managerului de ferestre. Ce acțiune doriți să îi fie asociată?"
-
-#~ msgid "Keep the window manager action"
-#~ msgstr "Păstrează acțiunea managerului de ferestre"
+msgid ""
+"This shortcut is already being used by a window manager action. Which action "
+"do you want to use?"
+msgstr ""
+"Această combinație de taste este deja folosită pentru o acțiune a "
+"managerului de ferestre. Ce acțiune doriți să îi fie asociată?"

@@ -49,8 +49,9 @@ msgid "_Always go directly to the online documentation"
 msgstr "Әрқ_ашан желідегі онлайн құжаттамаға өту"
 
 #: ../libxfce4ui/xfce-dialogs.c:281
+#, fuzzy
 msgid "Information"
-msgstr "Ақпарат"
+msgstr "Нұсқа ақпараты"
 
 #: ../libxfce4ui/xfce-dialogs.c:314
 msgid "Warning"
@@ -65,24 +66,28 @@ msgid "Question"
 msgstr "Сұрақ"
 
 #: ../libxfce4ui/xfce-sm-client.c:1403
+#, fuzzy
 msgid "Session management client ID"
-msgstr "Сессияны басқару клиент ID-і"
+msgstr "Сессиялар басқарушысының сокеті"
 
 #: ../libxfce4ui/xfce-sm-client.c:1403
 msgid "ID"
 msgstr "ID"
 
 #: ../libxfce4ui/xfce-sm-client.c:1404
+#, fuzzy
 msgid "Disable session management"
-msgstr "Сессияны басқаруды сөндіру"
+msgstr "Сессиялар басқарушысының сокеті"
 
 #: ../libxfce4ui/xfce-sm-client.c:1414
+#, fuzzy
 msgid "Session management options"
-msgstr "Сессияны басқару опциялары"
+msgstr "Сессиялар басқарушысының сокеті"
 
 #: ../libxfce4ui/xfce-sm-client.c:1415
+#, fuzzy
 msgid "Show session management options"
-msgstr "Сессияны басқару опцияларын көрсету"
+msgstr "Сессиялар басқарушысының сокеті"
 
 #: ../libxfce4ui/xfce-sm-client.c:1591
 #, c-format
@@ -167,8 +172,9 @@ msgid "This shortcut is already being used for something else."
 msgstr "Жарлық қазір басқа бір әрекет үшін орнатылып тұр."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:209
+#, fuzzy
 msgid "Window Manager Action Shortcut"
-msgstr "Терезелерді басқарушысы әрекеттерінің жарлықтары"
+msgstr "Терезелер басқарушысы"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
@@ -176,11 +182,12 @@ msgstr "Терезелерді басқарушысы әрекеттерінің
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:226
 #, fuzzy
 msgid "action"
-msgstr "Әрекет:"
+msgstr "Әрекет"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:216
+#, fuzzy
 msgid "Command Shortcut"
-msgstr "Командалық жарлық"
+msgstr "Жарлық"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
@@ -199,8 +206,9 @@ msgid "Press now the keyboard keys you want to use to trigger the %s '%s'."
 msgstr ""
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:291
+#, fuzzy
 msgid "Shortcut:"
-msgstr "Жарлық:"
+msgstr "Жарлық"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:296
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:475
@@ -208,305 +216,306 @@ msgid "No keys pressed yet, proceed."
 msgstr ""
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:378
+#, fuzzy
 msgid "Could not grab the keyboard."
-msgstr "Пернетақтаны басқаруды алу мүмкін емес."
+msgstr "Баптаулар сұхбат терезесін жасау мүмкін емес."
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:33
 msgid "Window operations menu"
-msgstr ""
+msgstr "Терезе әрекеттер мәзірі"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:34
 msgid "Up"
-msgstr ""
+msgstr "Жоғары"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:35
 msgid "Down"
-msgstr ""
+msgstr "Төмен"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:36
 msgid "Left"
-msgstr ""
+msgstr "Сол жақ"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:37
 msgid "Right"
-msgstr ""
+msgstr "Оң жақ"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:38
 msgid "Cancel"
-msgstr ""
+msgstr "Бас тарту"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:39
 msgid "Cycle windows"
-msgstr ""
+msgstr "Терезелерді ауыстыру"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:40
 msgid "Cycle windows (Reverse)"
-msgstr ""
+msgstr "Терезелерді (керісінше) ауыстыру"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:41
 msgid "Switch window for same application"
-msgstr ""
+msgstr "Бір қолданба терезелерін ауыстыру"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:42
 msgid "Switch application"
-msgstr ""
+msgstr "Қолданбаны ауыстыру"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:43
 msgid "Close window"
-msgstr ""
+msgstr "Терезені жабу"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:44
 msgid "Maximize window horizontally"
-msgstr ""
+msgstr "Терезені енінен максималды қылу"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:45
 msgid "Maximize window vertically"
-msgstr ""
+msgstr "Терезені биіктігінен максималды қылу"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:46
 msgid "Maximize window"
-msgstr ""
+msgstr "Терезені максималды қылу"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:47
 msgid "Hide window"
-msgstr ""
+msgstr "Терезені жасыру"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:48
 msgid "Move window"
-msgstr ""
+msgstr "Терезені жылжыту"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:49
 msgid "Resize window"
-msgstr ""
+msgstr "Терезе өлшемдерін өзгерту"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:50
 msgid "Shade window"
-msgstr ""
+msgstr "Терезені атау жолағына жинау"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:51
 msgid "Stick window"
-msgstr ""
+msgstr "Терезені жабыстыру"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:52
 msgid "Raise window"
-msgstr ""
+msgstr "Терезені көтеру"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:53
 msgid "Lower window"
-msgstr ""
+msgstr "Терезені артқа апару"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:54
 msgid "Raise or lower window"
-msgstr ""
+msgstr "Терезені көтеру не төмендету"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:55
 msgid "Fill window"
-msgstr ""
+msgstr "Терезені жазық қылу"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:56
 msgid "Fill window horizontally"
-msgstr ""
+msgstr "Терезені енінен жазу"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:57
 msgid "Fill window vertically"
-msgstr ""
+msgstr "Терезені биіктігінен жазу"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:58
 msgid "Toggle above"
-msgstr ""
+msgstr "Басқа терезелердің үстінде болуды қосу/сөндіру"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:59
 msgid "Toggle fullscreen"
-msgstr ""
+msgstr "Толық экранға болуды қосу/сөндіру"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:60
 msgid "Move window to upper workspace"
-msgstr ""
+msgstr "Терезені жоғарғы жұмыс орнына апару"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:61
 msgid "Move window to bottom workspace"
-msgstr ""
+msgstr "Терезені төмендегі жұмыс орнына апару"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:62
 msgid "Move window to left workspace"
-msgstr ""
+msgstr "Терезені сол жақтағы жұмыс орнына апару"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:63
 msgid "Move window to right workspace"
-msgstr ""
+msgstr "Терезені оң жақтағы жұмыс орнына апару"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:64
 msgid "Move window to previous workspace"
-msgstr ""
+msgstr "Терезені алдыңғы жұмыс орнына апару"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:65
 msgid "Move window to next workspace"
-msgstr ""
+msgstr "Терезені келесі жұмыс орнына апару"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:66
 msgid "Move window to workspace 1"
-msgstr ""
+msgstr "Терезені 1-ші жұмыс орнына апару"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:67
 msgid "Move window to workspace 2"
-msgstr ""
+msgstr "Терезені 2-ші жұмыс орнына апару"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:68
 msgid "Move window to workspace 3"
-msgstr ""
+msgstr "Терезені 3-ші жұмыс орнына апару"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:69
 msgid "Move window to workspace 4"
-msgstr ""
+msgstr "Терезені 4-ші жұмыс орнына апару"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:70
 msgid "Move window to workspace 5"
-msgstr ""
+msgstr "Терезені 5-ші жұмыс орнына апару"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:71
 msgid "Move window to workspace 6"
-msgstr ""
+msgstr "Терезені 6-шы жұмыс орнына апару"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:72
 msgid "Move window to workspace 7"
-msgstr ""
+msgstr "Терезені 7-ші жұмыс орнына апару"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:73
 msgid "Move window to workspace 8"
-msgstr ""
+msgstr "Терезені 8-ші жұмыс орнына апару"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:74
 msgid "Move window to workspace 9"
-msgstr ""
+msgstr "Терезені 9-шы жұмыс орнына апару"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:75
 msgid "Move window to workspace 10"
-msgstr ""
+msgstr "Терезені 10-шы жұмыс орнына апару"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:76
 msgid "Move window to workspace 11"
-msgstr ""
+msgstr "Терезені 11-ші жұмыс орнына апару"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:77
 msgid "Move window to workspace 12"
-msgstr ""
+msgstr "Терезені 12-ші жұмыс орнына апару"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:78
 msgid "Tile window to the top"
-msgstr ""
+msgstr "Терезені үстіге толтыру"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:79
 msgid "Tile window to the bottom"
-msgstr ""
+msgstr "Терезені астыға толтыру"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:80
 msgid "Tile window to the left"
-msgstr ""
+msgstr "Терезені сол жаққа толтыру"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:81
 msgid "Tile window to the right"
-msgstr ""
+msgstr "Терезені оң жаққа толтыру"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:82
 msgid "Show desktop"
-msgstr ""
+msgstr "Жұмыс үстелін көрсету"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:83
 msgid "Upper workspace"
-msgstr ""
+msgstr "Жоғарғы жұмыс орны"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:84
 msgid "Bottom workspace"
-msgstr ""
+msgstr "Төменгі жұмыс орны"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:85
 msgid "Left workspace"
-msgstr ""
+msgstr "Сол жақтағы жұмыс орны"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:86
 msgid "Right workspace"
-msgstr ""
+msgstr "Оң жақтағы жұмыс орны"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:87
-#, fuzzy
 msgid "Previous workspace"
-msgstr "Бұрындағы қатысушылар"
+msgstr "Алдыңғы жұмыс орны"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:88
 msgid "Next workspace"
-msgstr ""
+msgstr "Келесі жұмыс орны"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:89
 msgid "Workspace 1"
-msgstr ""
+msgstr "1-ші жұмыс орны"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:90
 msgid "Workspace 2"
-msgstr ""
+msgstr "2-ші жұмыс орны"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:91
 msgid "Workspace 3"
-msgstr ""
+msgstr "3-ші жұмыс орны"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:92
 msgid "Workspace 4"
-msgstr ""
+msgstr "4-ші жұмыс орны"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:93
 msgid "Workspace 5"
-msgstr ""
+msgstr "5-ші жұмыс орны"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:94
 msgid "Workspace 6"
-msgstr ""
+msgstr "6-шы жұмыс орны"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:95
 msgid "Workspace 7"
-msgstr ""
+msgstr "7-ші жұмыс орны"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:96
 msgid "Workspace 8"
-msgstr ""
+msgstr "8-ші жұмыс орны"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:97
 msgid "Workspace 9"
-msgstr ""
+msgstr "9-шы жұмыс орны"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:98
 msgid "Workspace 10"
-msgstr ""
+msgstr "10-шы жұмыс орны"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:99
 msgid "Workspace 11"
-msgstr ""
+msgstr "11-ші жұмыс орны"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:100
 msgid "Workspace 12"
-msgstr ""
+msgstr "12-ші жұмыс орны"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:101
 msgid "Add workspace"
-msgstr ""
+msgstr "Жұмыс орнын қосу"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:102
 msgid "Add adjacent workspace"
-msgstr ""
+msgstr "Сыбайлас жұмыс орнын қосу"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:103
 msgid "Delete last workspace"
-msgstr ""
+msgstr "Соңғы жұмыс орнын өшіру"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:104
 msgid "Delete active workspace"
-msgstr ""
+msgstr "Белсенді тұрған жұмыс орнын жою"
 
 #: ../glade/libxfce4ui.xml.in.h:1
 msgid "Titled Dialog"
 msgstr "Атауы бар сұхбат терезесі"
 
 #: ../glade/libxfce4ui.xml.in.h:2
+#, fuzzy
 msgid "Subtitle"
-msgstr "Екіншілік атау"
+msgstr "Атауы"
 
 #: ../glade/libxfce4ui.xml.in.h:3
 msgid "Xfce 4 Widgets"
@@ -521,8 +530,9 @@ msgid "Window Manager"
 msgstr "Терезелер басқарушысы"
 
 #: ../xfce4-about/main.c:71
+#, fuzzy
 msgid "Handles the placement of windows on the screen."
-msgstr "Терезелердің экранда орналасуын басқарады."
+msgstr "Экран ор_тасында"
 
 #: ../xfce4-about/main.c:74
 msgid "Panel"
@@ -537,8 +547,9 @@ msgstr ""
 "орындар ауыстырғышы мен т.б."
 
 #: ../xfce4-about/main.c:79
+#, fuzzy
 msgid "Desktop Manager"
-msgstr "Жұмыс үстел басқарушысы"
+msgstr "Терезелер басқарушысы"
 
 #: ../xfce4-about/main.c:80
 msgid ""
@@ -550,8 +561,9 @@ msgstr ""
 "таңбашаларды көрсетеді."
 
 #: ../xfce4-about/main.c:84
+#, fuzzy
 msgid "File Manager "
-msgstr "Файлдар басқарушысы"
+msgstr "Терезелер басқарушысы"
 
 #: ../xfce4-about/main.c:85
 msgid ""
@@ -562,8 +574,9 @@ msgstr ""
 "әрі жылдам болуға тырысады."
 
 #: ../xfce4-about/main.c:89
+#, fuzzy
 msgid "Session Manager"
-msgstr "Сессиялар басқарушысы"
+msgstr "Сессиялар басқарушысының сокеті"
 
 #: ../xfce4-about/main.c:90
 msgid ""
@@ -598,8 +611,9 @@ msgstr ""
 "жылдам тауып, жөнелте аласыз."
 
 #: ../xfce4-about/main.c:104
+#, fuzzy
 msgid "Settings Daemon"
-msgstr "Баптаулар қызметі"
+msgstr "Баптаулар басқарушысының сокеті"
 
 #: ../xfce4-about/main.c:105
 msgid "D-Bus-based configuration storage system."
@@ -689,9 +703,9 @@ msgstr ""
 "(таңдауыңызша) одан кейін шыққан кез-келгені."
 
 #: ../xfce4-about/main.c:442
-#, c-format
+#, fuzzy, c-format
 msgid "Type '%s --help' for usage information."
-msgstr "Қолдану ақпаратын көру үшін '%s --help' енгізіңіз."
+msgstr "Қолдану ақпаратын қарау үшін \"%s --help\" енгізіңіз."
 
 #: ../xfce4-about/main.c:448
 msgid "Unable to initialize GTK+."
@@ -725,9 +739,9 @@ msgstr "Нұсқасы %s, таратушы %s"
 
 #. I18N: %s will be replaced by the Xfce version number
 #: ../xfce4-about/main.c:489
-#, c-format
+#, fuzzy, c-format
 msgid "Version %s"
-msgstr "Нұсқасы %s"
+msgstr "%s (%s орналасады)"
 
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
@@ -757,8 +771,9 @@ msgid "Translators"
 msgstr "Аудармашылар"
 
 #: ../xfce4-about/contributors.h:139
+#, fuzzy
 msgid "Previous contributors"
-msgstr "Бұрындағы қатысушылар"
+msgstr "Алдыңғы жұмыс орны"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:1
 msgid "About Xfce"
@@ -800,56 +815,52 @@ msgstr "Copyright"
 msgid "License"
 msgstr "Лицензиясы"
 
-#~ msgid ""
-#~ "This shortcut is already being used for another window manager action. "
-#~ "Which action do you want to use?"
-#~ msgstr ""
-#~ "Жарлық терезелер басқарушысының басқа әрекетіне орнатылып тұр. Қай "
-#~ "әрекетті қолдануды қалайсыз?"
+msgid ""
+"This shortcut is already being used for another window manager action. Which "
+"action do you want to use?"
+msgstr ""
+"Жарлық терезелер басқарушысының басқа әрекетіне орнатылып тұр. Қай әрекетті "
+"қолдануды қалайсыз?"
 
-#~ msgid "Keep the other one"
-#~ msgstr "басқасын қалдыру"
+msgid "Keep the other one"
+msgstr "басқасын қалдыру"
 
-#~ msgid ""
-#~ "This shortcut is already being used by a window manager action. Which "
-#~ "action do you want to use?"
-#~ msgstr ""
-#~ "Жарлық терезелер басқарушысының әрекетімен қолданылуда. Қай әрекетті "
-#~ "қолдануды қалайсыз?"
+msgid ""
+"This shortcut is already being used by a window manager action. Which action "
+"do you want to use?"
+msgstr ""
+"Жарлық терезелер басқарушысының әрекетімен қолданылуда. Қай әрекетті "
+"қолдануды қалайсыз?"
 
-#~ msgid "Keep the window manager action"
-#~ msgstr "Терезелер басқарушысының әрекетін қалдыру"
+msgid "Utilities and Scripts"
+msgstr "Утилиталар мен скрипттер"
 
-#~ msgid "Utilities and Scripts"
-#~ msgstr "Утилиталар мен скрипттер"
+msgid "Startup scripts, run dialog and about dialog."
+msgstr "Іске қосылу скриптері, жөнелту мен жүйе туралы сұхбаты."
 
-#~ msgid "Startup scripts, run dialog and about dialog."
-#~ msgstr "Іске қосылу скриптері, жөнелту мен жүйе туралы сұхбаты."
+msgid "<span size='large'><b>%s</b></span>"
+msgstr "<span size='large'><b>%s</b></span>"
 
-#~ msgid "<span size='large'><b>%s</b></span>"
-#~ msgstr "<span size='large'><b>%s</b></span>"
+msgid "File is not a valid .desktop file"
+msgstr "Файл дұрыс .desktop файлы емес"
 
-#~ msgid "File is not a valid .desktop file"
-#~ msgstr "Файл дұрыс .desktop файлы емес"
+msgid "Unrecognized desktop file Version '%s'"
+msgstr "Анықталмаған desktop файлдың Нұсқасы '%s'"
 
-#~ msgid "Unrecognized desktop file Version '%s'"
-#~ msgstr "Анықталмаған desktop файлдың Нұсқасы '%s'"
+msgid "Application does not accept documents on command line"
+msgstr "Қолданба командалық жолда құжаттарды қабылдамайды"
 
-#~ msgid "Application does not accept documents on command line"
-#~ msgstr "Қолданба командалық жолда құжаттарды қабылдамайды"
+msgid "Unrecognized launch option: %d"
+msgstr "Анықталмаған жөнелту опциясы: %d"
 
-#~ msgid "Unrecognized launch option: %d"
-#~ msgstr "Анықталмаған жөнелту опциясы: %d"
+msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
+msgstr "Құжаттардың URI-ларын 'Type=Link' desktop элементіне беру мүмкін емес"
 
-#~ msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
-#~ msgstr ""
-#~ "Құжаттардың URI-ларын 'Type=Link' desktop элементіне беру мүмкін емес"
+msgid "Not a launchable item"
+msgstr "Жөнелтілетін элемент емес"
 
-#~ msgid "Not a launchable item"
-#~ msgstr "Жөнелтілетін элемент емес"
+msgid "Specify file containing saved configuration"
+msgstr "Сақталған баптаулары бар файлды көрсетіңіз"
 
-#~ msgid "Specify file containing saved configuration"
-#~ msgstr "Сақталған баптаулары бар файлды көрсетіңіз"
-
-#~ msgid "FILE"
-#~ msgstr "ФАЙЛ"
+msgid "FILE"
+msgstr "ФАЙЛ"

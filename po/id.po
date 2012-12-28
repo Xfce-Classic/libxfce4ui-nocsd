@@ -50,8 +50,9 @@ msgid "_Always go directly to the online documentation"
 msgstr "_Selalu pergi ke dokumentasi daring"
 
 #: ../libxfce4ui/xfce-dialogs.c:281
+#, fuzzy
 msgid "Information"
-msgstr "Informasi"
+msgstr "Informasi versi"
 
 #: ../libxfce4ui/xfce-dialogs.c:314
 msgid "Warning"
@@ -66,24 +67,28 @@ msgid "Question"
 msgstr "Pertanyaan"
 
 #: ../libxfce4ui/xfce-sm-client.c:1403
+#, fuzzy
 msgid "Session management client ID"
-msgstr "ID Klien manajemen sesi"
+msgstr "Soket manajer sesi"
 
 #: ../libxfce4ui/xfce-sm-client.c:1403
 msgid "ID"
 msgstr "ID"
 
 #: ../libxfce4ui/xfce-sm-client.c:1404
+#, fuzzy
 msgid "Disable session management"
-msgstr "Nonaktifkan manajemen sesi"
+msgstr "Soket manajer sesi"
 
 #: ../libxfce4ui/xfce-sm-client.c:1414
+#, fuzzy
 msgid "Session management options"
-msgstr "Opsi manajemen sesi"
+msgstr "Soket manajer sesi"
 
 #: ../libxfce4ui/xfce-sm-client.c:1415
+#, fuzzy
 msgid "Show session management options"
-msgstr "Tampilkan opsi manajemen sesi"
+msgstr "Soket manajer sesi"
 
 #: ../libxfce4ui/xfce-sm-client.c:1591
 #, c-format
@@ -111,34 +116,34 @@ msgid ""
 "This shortcut is already being used for the action '%s'. Which action do you "
 "want to use?"
 msgstr ""
-"Jalan pintas ini telah digunakan untuk perintah '%s'. Aksi mana yang ingin "
-"anda gunakan?"
+"Jalan pintas ini telah digunakan oleh <b>aksi manajer jendela lain</b>. Aksi "
+"mana yang ingin anda gunakan?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:54
 #: ../libxfce4kbd-private/xfce-shortcuts.c:57
 #: ../libxfce4kbd-private/xfce-shortcuts.c:60
 #: ../libxfce4kbd-private/xfce-shortcuts.c:63
-#, c-format
+#, fuzzy, c-format
 msgid "Use '%s'"
-msgstr "Gunakan '%s'"
+msgstr "Gunakan %s"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:54
 #: ../libxfce4kbd-private/xfce-shortcuts.c:57
 #: ../libxfce4kbd-private/xfce-shortcuts.c:60
 #: ../libxfce4kbd-private/xfce-shortcuts.c:63
-#, c-format
+#, fuzzy, c-format
 msgid "Keep '%s'"
-msgstr "Simpan '%s'"
+msgstr "Jaga %s"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
 #: ../libxfce4kbd-private/xfce-shortcuts.c:59
-#, c-format
+#, fuzzy, c-format
 msgid ""
 "This shortcut is already being used for the command '%s'. Which action do "
 "you want to use?"
 msgstr ""
-"Jalan pintas ini telah digunakan untuk perintah '%s'. Aksi mana yang ingin "
-"anda gunakan?"
+"Jalan pintas ini telah digunakan oleh <b>aksi manajer jendela lain</b>. Aksi "
+"mana yang ingin anda gunakan?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 #, fuzzy, c-format
@@ -146,8 +151,8 @@ msgid ""
 "This shortcut is already being used by the action '%s'. Which action do you "
 "want to use?"
 msgstr ""
-"Jalan pintas ini telah digunakan untuk perintah '%s'. Aksi mana yang ingin "
-"anda gunakan?"
+"Jalan pintas ini telah digunakan oleh <b>aksi manajer jendela lain</b>. Aksi "
+"mana yang ingin anda gunakan?"
 
 #. This shortcut already exists in the provider, we don't want it twice
 #. Warn the user
@@ -166,12 +171,14 @@ msgid "Conflicting actions for %s"
 msgstr "Aksi konflik untuk %s"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:189
+#, fuzzy
 msgid "This shortcut is already being used for something else."
-msgstr "Jalan pintas ini telah digunakan untuk hal yang lain."
+msgstr "Jalan pintas telah digunakan untuk yang lain."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:209
+#, fuzzy
 msgid "Window Manager Action Shortcut"
-msgstr "Jalan Pintas Aksi Manajer Jendela"
+msgstr "Masukkan jalan pintas aksi manajer jendela"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
@@ -179,22 +186,23 @@ msgstr "Jalan Pintas Aksi Manajer Jendela"
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:226
 #, fuzzy
 msgid "action"
-msgstr "Aksi:"
+msgstr "Aksi"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:216
+#, fuzzy
 msgid "Command Shortcut"
-msgstr "Jalan Pintas Perintah"
+msgstr "Masukkan perintah jalan pintas"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:219
 #, fuzzy
 msgid "command"
-msgstr "Perintah:"
+msgstr "Perintah"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:223
 msgid "Shortcut"
-msgstr "Jalan Pintas"
+msgstr "Jalan pintas"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:267
 #, c-format
@@ -203,7 +211,7 @@ msgstr ""
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:291
 msgid "Shortcut:"
-msgstr "Jalan Pintas:"
+msgstr "Jalan pintas:"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:296
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:475
@@ -212,308 +220,310 @@ msgstr ""
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:378
 msgid "Could not grab the keyboard."
-msgstr "Tak dapat menangkap papan ketik."
+msgstr "Tak dapat meraih papan ketik."
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:33
 msgid "Window operations menu"
-msgstr ""
+msgstr "Menu operasi jendela"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:34
 msgid "Up"
-msgstr ""
+msgstr "Atas"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:35
 msgid "Down"
-msgstr ""
+msgstr "Bawah"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:36
 msgid "Left"
-msgstr ""
+msgstr "Kiri"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:37
 msgid "Right"
-msgstr ""
+msgstr "Kanan"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:38
 msgid "Cancel"
-msgstr ""
+msgstr "Batal"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:39
 msgid "Cycle windows"
-msgstr ""
+msgstr "Daur jendela"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:40
 msgid "Cycle windows (Reverse)"
-msgstr ""
+msgstr "Daur jendela (Mundur)"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:41
 msgid "Switch window for same application"
-msgstr ""
+msgstr "Pindah jendela untuk aplikasi yang sama"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:42
 msgid "Switch application"
-msgstr ""
+msgstr "Pindah aplikasi"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:43
 msgid "Close window"
-msgstr ""
+msgstr "Tutup jendela"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:44
 msgid "Maximize window horizontally"
-msgstr ""
+msgstr "Maksimalkan jendela secara horisontal"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:45
 msgid "Maximize window vertically"
-msgstr ""
+msgstr "Maksimalkan jendela secara vertikal"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:46
 msgid "Maximize window"
-msgstr ""
+msgstr "Maksimalkan Jendela"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:47
 msgid "Hide window"
-msgstr ""
+msgstr "Sembunyikan jendela"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:48
 msgid "Move window"
-msgstr ""
+msgstr "Pindahkan jendela"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:49
 msgid "Resize window"
-msgstr ""
+msgstr "Ubah ukuran jendela"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:50
 msgid "Shade window"
-msgstr ""
+msgstr "Bayang jendela"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:51
 msgid "Stick window"
-msgstr ""
+msgstr "Lekatkan jendela"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:52
 msgid "Raise window"
-msgstr ""
+msgstr "Naikkan jendela"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:53
 msgid "Lower window"
-msgstr ""
+msgstr "Turunkan jendela"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:54
 msgid "Raise or lower window"
-msgstr ""
+msgstr "Naikkan atau turunkan jendela"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:55
 msgid "Fill window"
-msgstr ""
+msgstr "Isi jendela"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:56
 msgid "Fill window horizontally"
-msgstr ""
+msgstr "Isi jendela secara horisontal"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:57
 msgid "Fill window vertically"
-msgstr ""
+msgstr "Isi jendela secara vertikal"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:58
 msgid "Toggle above"
-msgstr ""
+msgstr "Ubah atas"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:59
 msgid "Toggle fullscreen"
-msgstr ""
+msgstr "Ubah layar penuh"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:60
 msgid "Move window to upper workspace"
-msgstr ""
+msgstr "Pindah jendela ke bagian atas ruang kerja"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:61
 msgid "Move window to bottom workspace"
-msgstr ""
+msgstr "Pindah jendela ke bagian bawah ruang kerja"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:62
 msgid "Move window to left workspace"
-msgstr ""
+msgstr "Pindah jendela ke bagian kiri ruang kerja"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:63
 msgid "Move window to right workspace"
-msgstr ""
+msgstr "Pindah jendela ke bagian kanan ruang kerja"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:64
 msgid "Move window to previous workspace"
-msgstr ""
+msgstr "Pindah jendela ke ruang kerja sebelumnya"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:65
 msgid "Move window to next workspace"
-msgstr ""
+msgstr "Pindah jendela ke ruang kerja selanjutnya"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:66
 msgid "Move window to workspace 1"
-msgstr ""
+msgstr "Pindah jendela ke ruang kerja 1"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:67
 msgid "Move window to workspace 2"
-msgstr ""
+msgstr "Pindah jendela ke ruang kerja 2"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:68
 msgid "Move window to workspace 3"
-msgstr ""
+msgstr "Pindah jendela ke ruang kerja 3"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:69
 msgid "Move window to workspace 4"
-msgstr ""
+msgstr "Pindah jendela ke ruang kerja 4"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:70
 msgid "Move window to workspace 5"
-msgstr ""
+msgstr "Pindah jendela ke ruang kerja 5"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:71
 msgid "Move window to workspace 6"
-msgstr ""
+msgstr "Pindah jendela ke ruang kerja 6"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:72
 msgid "Move window to workspace 7"
-msgstr ""
+msgstr "Pindah jendela ke ruang kerja 7"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:73
 msgid "Move window to workspace 8"
-msgstr ""
+msgstr "Pindah jendela ke ruang kerja 8"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:74
 msgid "Move window to workspace 9"
-msgstr ""
+msgstr "Pindah jendela ke ruang kerja 9"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:75
 msgid "Move window to workspace 10"
-msgstr ""
+msgstr "Pindah jendela ke ruang kerja 10"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:76
 msgid "Move window to workspace 11"
-msgstr ""
+msgstr "Pindah jendela ke ruang kerja 11"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:77
 msgid "Move window to workspace 12"
-msgstr ""
+msgstr "Pindah jendela ke ruang kerja 12"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:78
 msgid "Tile window to the top"
-msgstr ""
+msgstr "Tempatkan jendela di atas"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:79
 msgid "Tile window to the bottom"
-msgstr ""
+msgstr "Tempatkan jendela ke bawah"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:80
 msgid "Tile window to the left"
-msgstr ""
+msgstr "Tempatkan jendela di kiri"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:81
 msgid "Tile window to the right"
-msgstr ""
+msgstr "Tempatkan jendela ke kanan"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:82
 msgid "Show desktop"
-msgstr ""
+msgstr "Tampilkan destop"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:83
 msgid "Upper workspace"
-msgstr ""
+msgstr "Bagian atas ruang kerja"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:84
 msgid "Bottom workspace"
-msgstr ""
+msgstr "Bagian dasar ruang kerja"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:85
 msgid "Left workspace"
-msgstr ""
+msgstr "Bagian kiri ruang kerja"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:86
 msgid "Right workspace"
-msgstr ""
+msgstr "Bagian kanan ruang kerja"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:87
-#, fuzzy
 msgid "Previous workspace"
-msgstr "Kontributor sebelumnya"
+msgstr "Ruang kerja sebelumnya"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:88
 msgid "Next workspace"
-msgstr ""
+msgstr "Ruang kerja selanjutnya"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:89
 msgid "Workspace 1"
-msgstr ""
+msgstr "Ruang kerja 1"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:90
 msgid "Workspace 2"
-msgstr ""
+msgstr "Ruang kerja 2"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:91
 msgid "Workspace 3"
-msgstr ""
+msgstr "Ruang kerja 3"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:92
 msgid "Workspace 4"
-msgstr ""
+msgstr "Ruang kerja 4"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:93
 msgid "Workspace 5"
-msgstr ""
+msgstr "Ruang kerja 5"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:94
 msgid "Workspace 6"
-msgstr ""
+msgstr "Ruang kerja 6"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:95
 msgid "Workspace 7"
-msgstr ""
+msgstr "Ruang kerja 7"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:96
 msgid "Workspace 8"
-msgstr ""
+msgstr "Ruang kerja 8"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:97
 msgid "Workspace 9"
-msgstr ""
+msgstr "Ruang kerja 9"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:98
 msgid "Workspace 10"
-msgstr ""
+msgstr "Ruang kerja 10"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:99
 msgid "Workspace 11"
-msgstr ""
+msgstr "Ruang kerja 11"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:100
 msgid "Workspace 12"
-msgstr ""
+msgstr "Ruang kerja 12"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:101
 msgid "Add workspace"
-msgstr ""
+msgstr "Tambah ruang kerja"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:102
 msgid "Add adjacent workspace"
-msgstr ""
+msgstr "Tambah ruang kerja berdampingan"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:103
 msgid "Delete last workspace"
-msgstr ""
+msgstr "Hapus ruang kerja terakhir"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:104
 msgid "Delete active workspace"
-msgstr ""
+msgstr "Hapus ruang kerja aktif"
 
 #: ../glade/libxfce4ui.xml.in.h:1
+#, fuzzy
 msgid "Titled Dialog"
-msgstr "Dialog Berjudul"
+msgstr "Fonta judul"
 
 #: ../glade/libxfce4ui.xml.in.h:2
+#, fuzzy
 msgid "Subtitle"
-msgstr "Subjudul"
+msgstr "Judul"
 
 #: ../glade/libxfce4ui.xml.in.h:3
+#, fuzzy
 msgid "Xfce 4 Widgets"
-msgstr "Widget Xfce 4"
+msgstr "Pengaturan Manajer Jendela Xfce 4"
 
 #: ../xfce4-about/main.c:52
 msgid "Version information"
@@ -524,8 +534,9 @@ msgid "Window Manager"
 msgstr "Manajer Jendela"
 
 #: ../xfce4-about/main.c:71
+#, fuzzy
 msgid "Handles the placement of windows on the screen."
-msgstr "Menangani penempatan jendela di layar."
+msgstr "Di _tengah layar"
 
 #: ../xfce4-about/main.c:74
 msgid "Panel"
@@ -540,8 +551,9 @@ msgstr ""
 "lainnya."
 
 #: ../xfce4-about/main.c:79
+#, fuzzy
 msgid "Desktop Manager"
-msgstr "Manajer Desktop"
+msgstr "Manajer Jendela"
 
 #: ../xfce4-about/main.c:80
 msgid ""
@@ -552,8 +564,9 @@ msgstr ""
 "tambahan untuk aplikasi atau peluncur, divais dan folder yang diminimalkan."
 
 #: ../xfce4-about/main.c:84
+#, fuzzy
 msgid "File Manager "
-msgstr "Manajer Berkas"
+msgstr "Manajer Jendela"
 
 #: ../xfce4-about/main.c:85
 msgid ""
@@ -564,8 +577,9 @@ msgstr ""
 "digunakan dan cepat."
 
 #: ../xfce4-about/main.c:89
+#, fuzzy
 msgid "Session Manager"
-msgstr "Manajer Sesi"
+msgstr "Soket manajer sesi"
 
 #: ../xfce4-about/main.c:90
 msgid ""
@@ -600,8 +614,9 @@ msgstr ""
 "anda dapat mencarinya dan menjalankannya dengan cepat."
 
 #: ../xfce4-about/main.c:104
+#, fuzzy
 msgid "Settings Daemon"
-msgstr "Jurik Pengaturan"
+msgstr "Pengaturan soket manajer"
 
 #: ../xfce4-about/main.c:105
 msgid "D-Bus-based configuration storage system."
@@ -693,9 +708,9 @@ msgstr ""
 "setelahnya."
 
 #: ../xfce4-about/main.c:442
-#, c-format
+#, fuzzy, c-format
 msgid "Type '%s --help' for usage information."
-msgstr "Ketik '%s --help' untuk informasi penggunaan."
+msgstr "Ketik \"%s --help\" untuk penggunaan."
 
 #: ../xfce4-about/main.c:448
 msgid "Unable to initialize GTK+."
@@ -729,9 +744,9 @@ msgstr "Versi %s, didistribusikan oleh %s"
 
 #. I18N: %s will be replaced by the Xfce version number
 #: ../xfce4-about/main.c:489
-#, c-format
+#, fuzzy, c-format
 msgid "Version %s"
-msgstr "Versi %s"
+msgstr "%s (di %s)"
 
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
@@ -757,12 +772,14 @@ msgid "Translations supervision"
 msgstr "Pengawas terjemahan"
 
 #: ../xfce4-about/contributors.h:136
+#, fuzzy
 msgid "Translators"
-msgstr "Penerjemah"
+msgstr "Transparan"
 
 #: ../xfce4-about/contributors.h:139
+#, fuzzy
 msgid "Previous contributors"
-msgstr "Kontributor sebelumnya"
+msgstr "Ruang kerja sebelumnya"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:1
 msgid "About Xfce"
@@ -804,50 +821,26 @@ msgstr "Hak Cipta"
 msgid "License"
 msgstr "Lisensi"
 
-#~ msgid ""
-#~ "This shortcut is already being used for another window manager action. "
-#~ "Which action do you want to use?"
-#~ msgstr ""
-#~ "Jalan pintas ini telah digunakan untuk aksi manajer jendela lain. Aksi "
-#~ "mana yang ingin anda gunakan?"
+msgid "File is not a valid .desktop file"
+msgstr "Berkas bukan sebuah berkas .desktop yang valid"
 
-#~ msgid "Keep the other one"
-#~ msgstr "Simpan yang lain"
+msgid "Unrecognized desktop file Version '%s'"
+msgstr "Berkas desktop versi '%s' tak dikenal"
 
-#~ msgid ""
-#~ "This shortcut is already being used by a window manager action. Which "
-#~ "action do you want to use?"
-#~ msgstr ""
-#~ "Jalan pintas ini telah digunakan oleh sebuah aksi manajer jendela. Aksi "
-#~ "mana yang ingin anda gunakan?"
+msgid "Application does not accept documents on command line"
+msgstr "Aplikasi tidak menerima dokumen di baris perintah"
 
-#~ msgid "Keep the window manager action"
-#~ msgstr "Simpan aksi manajer jendela"
+msgid "Unrecognized launch option: %d"
+msgstr "Opsi jalankan tak dikenal: %d"
 
-#~ msgid "<span size='large'><b>%s</b></span>"
-#~ msgstr "<span size='large'><b>%s</b></span>"
+msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
+msgstr "Tak dapat meneruskan URI dokumen ke sebuah lema desktop 'Tipe=Tautan'"
 
-#~ msgid "File is not a valid .desktop file"
-#~ msgstr "Berkas bukan sebuah berkas .desktop yang valid"
+msgid "Not a launchable item"
+msgstr "Bukan sebuah item yang dapat dijalankan"
 
-#~ msgid "Unrecognized desktop file Version '%s'"
-#~ msgstr "Berkas desktop versi '%s' tak dikenal"
+msgid "Specify file containing saved configuration"
+msgstr "Tentukan berkas yang berisi konfigurasi tersimpan"
 
-#~ msgid "Application does not accept documents on command line"
-#~ msgstr "Aplikasi tidak menerima dokumen di baris perintah"
-
-#~ msgid "Unrecognized launch option: %d"
-#~ msgstr "Opsi jalankan tak dikenal: %d"
-
-#~ msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
-#~ msgstr ""
-#~ "Tak dapat meneruskan URI dokumen ke sebuah lema desktop 'Tipe=Tautan'"
-
-#~ msgid "Not a launchable item"
-#~ msgstr "Bukan sebuah item yang dapat dijalankan"
-
-#~ msgid "Specify file containing saved configuration"
-#~ msgstr "Tentukan berkas yang berisi konfigurasi tersimpan"
-
-#~ msgid "FILE"
-#~ msgstr "BERKAS"
+msgid "FILE"
+msgstr "BERKAS"

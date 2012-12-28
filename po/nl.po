@@ -52,8 +52,9 @@ msgid "_Always go directly to the online documentation"
 msgstr "Ga altijd meteen naar de internetdocumentatie"
 
 #: ../libxfce4ui/xfce-dialogs.c:281
+#, fuzzy
 msgid "Information"
-msgstr "Informatie"
+msgstr "Versie-informatie"
 
 #: ../libxfce4ui/xfce-dialogs.c:314
 msgid "Warning"
@@ -68,24 +69,28 @@ msgid "Question"
 msgstr "Vraag"
 
 #: ../libxfce4ui/xfce-sm-client.c:1403
+#, fuzzy
 msgid "Session management client ID"
-msgstr "Sessiebeheer client-ID"
+msgstr "Contactpunt voor sessiebeheerder"
 
 #: ../libxfce4ui/xfce-sm-client.c:1403
 msgid "ID"
 msgstr "ID"
 
 #: ../libxfce4ui/xfce-sm-client.c:1404
+#, fuzzy
 msgid "Disable session management"
-msgstr "Sessiebeheer uitschakelen"
+msgstr "Contactpunt voor sessiebeheerder"
 
 #: ../libxfce4ui/xfce-sm-client.c:1414
+#, fuzzy
 msgid "Session management options"
-msgstr "Opties voor sessiebeheer"
+msgstr "Contactpunt voor sessiebeheerder"
 
 #: ../libxfce4ui/xfce-sm-client.c:1415
+#, fuzzy
 msgid "Show session management options"
-msgstr "Opties voor sessiebeheer tonen"
+msgstr "Contactpunt voor sessiebeheerder"
 
 #: ../libxfce4ui/xfce-sm-client.c:1591
 #, c-format
@@ -113,8 +118,8 @@ msgid ""
 "This shortcut is already being used for the action '%s'. Which action do you "
 "want to use?"
 msgstr ""
-"Deze sneltoets is al in gebruik door de opdracht '%s'. Welke actie wilt u "
-"gebruiken?"
+"Deze sneltoets is reeds in gebruik bij <b>een andere vensterbeheerderactie</"
+"b>. Welke actie wilt u gebruiken?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:54
 #: ../libxfce4kbd-private/xfce-shortcuts.c:57
@@ -134,13 +139,13 @@ msgstr "'%s' behouden"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
 #: ../libxfce4kbd-private/xfce-shortcuts.c:59
-#, c-format
+#, fuzzy, c-format
 msgid ""
 "This shortcut is already being used for the command '%s'. Which action do "
 "you want to use?"
 msgstr ""
-"Deze sneltoets is al in gebruik door de opdracht '%s'. Welke actie wilt u "
-"gebruiken?"
+"Deze sneltoets is reeds in gebruik bij <b>een andere vensterbeheerderactie</"
+"b>. Welke actie wilt u gebruiken?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 #, fuzzy, c-format
@@ -148,8 +153,8 @@ msgid ""
 "This shortcut is already being used by the action '%s'. Which action do you "
 "want to use?"
 msgstr ""
-"Deze sneltoets is al in gebruik door de opdracht '%s'. Welke actie wilt u "
-"gebruiken?"
+"Deze sneltoets is reeds in gebruik bij <b>een andere vensterbeheerderactie</"
+"b>. Welke actie wilt u gebruiken?"
 
 #. This shortcut already exists in the provider, we don't want it twice
 #. Warn the user
@@ -168,12 +173,14 @@ msgid "Conflicting actions for %s"
 msgstr "Tegenstrijdige acties voor %s"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:189
+#, fuzzy
 msgid "This shortcut is already being used for something else."
-msgstr "Deze sneltoets wordt al gebruikt voor iets anders."
+msgstr "De sneltoets wordt al gebruikt voor iets anders."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:209
+#, fuzzy
 msgid "Window Manager Action Shortcut"
-msgstr "Sneltoets voor vensterbeheerder-actie"
+msgstr "Voer de sneltoets in voor de vensterbeheerderactie"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
@@ -181,18 +188,19 @@ msgstr "Sneltoets voor vensterbeheerder-actie"
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:226
 #, fuzzy
 msgid "action"
-msgstr "Actie:"
+msgstr "Actie"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:216
+#, fuzzy
 msgid "Command Shortcut"
-msgstr "Sneltoets voor opdracht"
+msgstr "Sneltoets samenstellen"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:219
 #, fuzzy
 msgid "command"
-msgstr "Opdracht:"
+msgstr "Opdracht"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:223
 msgid "Shortcut"
@@ -213,309 +221,312 @@ msgid "No keys pressed yet, proceed."
 msgstr ""
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:378
+#, fuzzy
 msgid "Could not grab the keyboard."
-msgstr "Kon het toetsenbord niet opeisen."
+msgstr "Kon de instellingendialoog niet maken."
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:33
 msgid "Window operations menu"
-msgstr ""
+msgstr "Vensteracties-menu"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:34
 msgid "Up"
-msgstr ""
+msgstr "Naar boven"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:35
 msgid "Down"
-msgstr ""
+msgstr "Naar beneden"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:36
 msgid "Left"
-msgstr ""
+msgstr "Links"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:37
 msgid "Right"
-msgstr ""
+msgstr "Rechts"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:38
 msgid "Cancel"
-msgstr ""
+msgstr "Annuleren"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:39
 msgid "Cycle windows"
-msgstr ""
+msgstr "Vensters afwisselen"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:40
 msgid "Cycle windows (Reverse)"
-msgstr ""
+msgstr "Vensters afwisselen (achterwaarts)"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:41
 msgid "Switch window for same application"
-msgstr ""
+msgstr "Wissel venster voor dezelfde toepassing"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:42
 msgid "Switch application"
-msgstr ""
+msgstr "Wissel toepassing"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:43
 msgid "Close window"
-msgstr ""
+msgstr "Venster sluiten"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:44
 msgid "Maximize window horizontally"
-msgstr ""
+msgstr "Venster horizontaal maximaliseren"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:45
 msgid "Maximize window vertically"
-msgstr ""
+msgstr "Venster verticaal maximaliseren"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:46
 msgid "Maximize window"
-msgstr ""
+msgstr "Venster maximaliseren"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:47
 msgid "Hide window"
-msgstr ""
+msgstr "Venster verbergen"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:48
 msgid "Move window"
-msgstr ""
+msgstr "Venster verplaatsen"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:49
 msgid "Resize window"
-msgstr ""
+msgstr "Venstergrootte aanpassen"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:50
 msgid "Shade window"
-msgstr ""
+msgstr "Venster oprollen"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:51
 msgid "Stick window"
-msgstr ""
+msgstr "Venster vastplakken"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:52
 msgid "Raise window"
-msgstr ""
+msgstr "Venster naar de voorgrond halen"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:53
 msgid "Lower window"
-msgstr ""
+msgstr "Venster naar de achtergrond verplaatsen"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:54
 msgid "Raise or lower window"
-msgstr ""
+msgstr "Venster voluit tonen of minimaliseren"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:55
 msgid "Fill window"
-msgstr ""
+msgstr "Venster vullen"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:56
 msgid "Fill window horizontally"
-msgstr ""
+msgstr "Venster horizontaal vullen"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:57
 msgid "Fill window vertically"
-msgstr ""
+msgstr "Venster verticaal vullen"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:58
 msgid "Toggle above"
-msgstr ""
+msgstr "Schakel het bovenstaande om"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:59
 msgid "Toggle fullscreen"
-msgstr ""
+msgstr "Schakel schermvullend om"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:60
 msgid "Move window to upper workspace"
-msgstr ""
+msgstr "Venster naar bovenliggend werkblad verplaatsen"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:61
 msgid "Move window to bottom workspace"
-msgstr ""
+msgstr "Venster naar onderliggend werkblad verplaatsen"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:62
 msgid "Move window to left workspace"
-msgstr ""
+msgstr "Venster naar linkerwerkblad verplaatsen"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:63
 msgid "Move window to right workspace"
-msgstr ""
+msgstr "Venster naar rechterwerkblad verplaatsen"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:64
 msgid "Move window to previous workspace"
-msgstr ""
+msgstr "Venster naar vorig werkblad verplaatsen"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:65
 msgid "Move window to next workspace"
-msgstr ""
+msgstr "Venster naar volgend werkblad verplaatsen"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:66
 msgid "Move window to workspace 1"
-msgstr ""
+msgstr "Venster naar werkblad 1 verplaatsen"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:67
 msgid "Move window to workspace 2"
-msgstr ""
+msgstr "Venster naar werkblad 2 verplaatsen"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:68
 msgid "Move window to workspace 3"
-msgstr ""
+msgstr "Venster naar werkblad 3 verplaatsen"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:69
 msgid "Move window to workspace 4"
-msgstr ""
+msgstr "Venster naar werkblad 4 verplaatsen"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:70
 msgid "Move window to workspace 5"
-msgstr ""
+msgstr "Venster naar werkblad 5 verplaatsen"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:71
 msgid "Move window to workspace 6"
-msgstr ""
+msgstr "Venster naar werkblad 6 verplaatsen"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:72
 msgid "Move window to workspace 7"
-msgstr ""
+msgstr "Venster naar werkblad 7 verplaatsen"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:73
 msgid "Move window to workspace 8"
-msgstr ""
+msgstr "Venster naar werkblad 8 verplaatsen"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:74
 msgid "Move window to workspace 9"
-msgstr ""
+msgstr "Venster naar werkblad 9 verplaatsen"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:75
 msgid "Move window to workspace 10"
-msgstr ""
+msgstr "Venster naar werkblad 10 verplaatsen"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:76
 msgid "Move window to workspace 11"
-msgstr ""
+msgstr "Venster naar werkblad 11 verplaatsen"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:77
 msgid "Move window to workspace 12"
-msgstr ""
+msgstr "Venster naar werkblad 12 verplaatsen"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:78
 msgid "Tile window to the top"
-msgstr ""
+msgstr "Plaats venstertegels naar boven"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:79
 msgid "Tile window to the bottom"
-msgstr ""
+msgstr "Plaats venstertegels naar beneden"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:80
 msgid "Tile window to the left"
-msgstr ""
+msgstr "Plaats venstertegels naar links"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:81
 msgid "Tile window to the right"
-msgstr ""
+msgstr "Plaats venstertegels naar rechts"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:82
 msgid "Show desktop"
-msgstr ""
+msgstr "Bureaublad tonen"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:83
 msgid "Upper workspace"
-msgstr ""
+msgstr "Bovenste werkblad"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:84
 msgid "Bottom workspace"
-msgstr ""
+msgstr "Onderste werkblad"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:85
 msgid "Left workspace"
-msgstr ""
+msgstr "Linkerwerkblad"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:86
 msgid "Right workspace"
-msgstr ""
+msgstr "Rechterwerkblad"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:87
-#, fuzzy
 msgid "Previous workspace"
-msgstr "Vroegere bijdragers"
+msgstr "Vorig werkblad"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:88
 msgid "Next workspace"
-msgstr ""
+msgstr "Volgend werkblad"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:89
 msgid "Workspace 1"
-msgstr ""
+msgstr "Werkblad 1"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:90
 msgid "Workspace 2"
-msgstr ""
+msgstr "Werkblad 2"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:91
 msgid "Workspace 3"
-msgstr ""
+msgstr "Werkblad 3"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:92
 msgid "Workspace 4"
-msgstr ""
+msgstr "Werkblad 4"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:93
 msgid "Workspace 5"
-msgstr ""
+msgstr "Werkblad 5"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:94
 msgid "Workspace 6"
-msgstr ""
+msgstr "Werkblad 6"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:95
 msgid "Workspace 7"
-msgstr ""
+msgstr "Werkblad 7"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:96
 msgid "Workspace 8"
-msgstr ""
+msgstr "Werkblad 8"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:97
 msgid "Workspace 9"
-msgstr ""
+msgstr "Werkblad 9"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:98
 msgid "Workspace 10"
-msgstr ""
+msgstr "Werkblad 10"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:99
 msgid "Workspace 11"
-msgstr ""
+msgstr "Werkblad 11"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:100
 msgid "Workspace 12"
-msgstr ""
+msgstr "Werkblad 12"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:101
 msgid "Add workspace"
-msgstr ""
+msgstr "Werkblad toevoegen"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:102
 msgid "Add adjacent workspace"
-msgstr ""
+msgstr "Aangrenzend werkblad toevoegen"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:103
 msgid "Delete last workspace"
-msgstr ""
+msgstr "Laatste werkblad verwijderen"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:104
 msgid "Delete active workspace"
-msgstr ""
+msgstr "Actief werkblad verwijderen"
 
 #: ../glade/libxfce4ui.xml.in.h:1
+#, fuzzy
 msgid "Titled Dialog"
-msgstr "Getitelde dialoog"
+msgstr "Lettertype titel"
 
 #: ../glade/libxfce4ui.xml.in.h:2
+#, fuzzy
 msgid "Subtitle"
-msgstr "Ondertitel"
+msgstr "Titel"
 
 #: ../glade/libxfce4ui.xml.in.h:3
+#, fuzzy
 msgid "Xfce 4 Widgets"
-msgstr "Xfce 4 Widgets"
+msgstr "Xfce-Vensterbeheerder instellingen "
 
 #: ../xfce4-about/main.c:52
 msgid "Version information"
@@ -526,8 +537,9 @@ msgid "Window Manager"
 msgstr "Vensterbeheerder"
 
 #: ../xfce4-about/main.c:71
+#, fuzzy
 msgid "Handles the placement of windows on the screen."
-msgstr "Verzorgt de plaatsing van vensters op het scherm."
+msgstr "In het _midden van het scherm"
 
 #: ../xfce4-about/main.c:74
 msgid "Panel"
@@ -542,8 +554,9 @@ msgstr ""
 "meer."
 
 #: ../xfce4-about/main.c:79
+#, fuzzy
 msgid "Desktop Manager"
-msgstr "Bureaubladbeheerder"
+msgstr "Vensterbeheerder"
 
 #: ../xfce4-about/main.c:80
 msgid ""
@@ -555,8 +568,9 @@ msgstr ""
 "starters, apparaten en mappen."
 
 #: ../xfce4-about/main.c:84
+#, fuzzy
 msgid "File Manager "
-msgstr "Bestandbeheerder"
+msgstr "Vensterbeheerder"
 
 #: ../xfce4-about/main.c:85
 msgid ""
@@ -567,8 +581,9 @@ msgstr ""
 "om snel te zijn en gemakkelijk te gebruiken."
 
 #: ../xfce4-about/main.c:89
+#, fuzzy
 msgid "Session Manager"
-msgstr "Sessiebeheerder"
+msgstr "Contactpunt voor sessiebeheerder"
 
 #: ../xfce4-about/main.c:90
 msgid ""
@@ -603,8 +618,9 @@ msgstr ""
 "categorieën, zodat u ze snel kunt vinden en starten."
 
 #: ../xfce4-about/main.c:104
+#, fuzzy
 msgid "Settings Daemon"
-msgstr "Achtergronddienst voor instellingen"
+msgstr "Contactpunt voor instellingenbeheerder"
 
 #: ../xfce4-about/main.c:105
 msgid "D-Bus-based configuration storage system."
@@ -697,9 +713,9 @@ msgstr ""
 "License, hetzij (naar uw eigen keuze) enige latere versie."
 
 #: ../xfce4-about/main.c:442
-#, c-format
+#, fuzzy, c-format
 msgid "Type '%s --help' for usage information."
-msgstr "Tik '%s --help' voor gebruiksaanwijzingen."
+msgstr "Tik '%s --help' voor een gebruiksaanwijzing."
 
 #: ../xfce4-about/main.c:448
 msgid "Unable to initialize GTK+."
@@ -733,9 +749,9 @@ msgstr "Versie %s, gedistribueerd door %s"
 
 #. I18N: %s will be replaced by the Xfce version number
 #: ../xfce4-about/main.c:489
-#, c-format
+#, fuzzy, c-format
 msgid "Version %s"
-msgstr "Versie %s"
+msgstr "%s (op %s)"
 
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
@@ -761,12 +777,14 @@ msgid "Translations supervision"
 msgstr "Leiding van de vertalingen"
 
 #: ../xfce4-about/contributors.h:136
+#, fuzzy
 msgid "Translators"
-msgstr "Vertalers"
+msgstr "Transparant"
 
 #: ../xfce4-about/contributors.h:139
+#, fuzzy
 msgid "Previous contributors"
-msgstr "Vroegere bijdragers"
+msgstr "Vorig werkblad"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:1
 msgid "About Xfce"
@@ -808,28 +826,11 @@ msgstr "Auteursrecht"
 msgid "License"
 msgstr "Licentie"
 
-#~ msgid ""
-#~ "This shortcut is already being used for another window manager action. "
-#~ "Which action do you want to use?"
-#~ msgstr ""
-#~ "Deze sneltoets is al in gebruik door een andere vensterbeheeractie. Welke "
-#~ "actie wilt u gebruiken?"
+msgid "Keep the other one"
+msgstr "De andere behouden"
 
-#~ msgid "Keep the other one"
-#~ msgstr "De andere behouden"
+msgid "Utilities and Scripts"
+msgstr "Hulpmiddelen en scripts"
 
-#~ msgid ""
-#~ "This shortcut is already being used by a window manager action. Which "
-#~ "action do you want to use?"
-#~ msgstr ""
-#~ "Deze sneltoets is al in gebruik door een vensterbeheerderactie. Welke "
-#~ "actie wilt u gebruiken?"
-
-#~ msgid "Keep the window manager action"
-#~ msgstr "De vensterbeheerderactie behouden"
-
-#~ msgid "Utilities and Scripts"
-#~ msgstr "Hulpmiddelen en scripts"
-
-#~ msgid "Startup scripts, run dialog and about dialog."
-#~ msgstr "Opstartscripts, draaidialoog en \"over\"-dialoog."
+msgid "Startup scripts, run dialog and about dialog."
+msgstr "Opstartscripts, draaidialoog en \"over\"-dialoog."

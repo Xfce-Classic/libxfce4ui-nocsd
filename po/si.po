@@ -49,12 +49,13 @@ msgid "_Always go directly to the online documentation"
 msgstr ""
 
 #: ../libxfce4ui/xfce-dialogs.c:281
+#, fuzzy
 msgid "Information"
-msgstr ""
+msgstr "අනුවාද තොරතුරු"
 
 #: ../libxfce4ui/xfce-dialogs.c:314
 msgid "Warning"
-msgstr ""
+msgstr "අවවාදයයි"
 
 #: ../libxfce4ui/xfce-dialogs.c:348
 msgid "Error"
@@ -65,24 +66,28 @@ msgid "Question"
 msgstr ""
 
 #: ../libxfce4ui/xfce-sm-client.c:1403
+#, fuzzy
 msgid "Session management client ID"
-msgstr ""
+msgstr "සැසි කළමනාකරන සොකට්ටුව"
 
 #: ../libxfce4ui/xfce-sm-client.c:1403
 msgid "ID"
 msgstr "ID"
 
 #: ../libxfce4ui/xfce-sm-client.c:1404
+#, fuzzy
 msgid "Disable session management"
-msgstr ""
+msgstr "සැසි කළමනාකරන සොකට්ටුව"
 
 #: ../libxfce4ui/xfce-sm-client.c:1414
+#, fuzzy
 msgid "Session management options"
-msgstr ""
+msgstr "සැසි කළමනාකරන සොකට්ටුව"
 
 #: ../libxfce4ui/xfce-sm-client.c:1415
+#, fuzzy
 msgid "Show session management options"
-msgstr ""
+msgstr "සැසි කළමනාකරන සොකට්ටුව"
 
 #: ../libxfce4ui/xfce-sm-client.c:1591
 #, c-format
@@ -161,19 +166,22 @@ msgid "This shortcut is already being used for something else."
 msgstr ""
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:209
+#, fuzzy
 msgid "Window Manager Action Shortcut"
-msgstr ""
+msgstr "කවුළු කළමනාකරු"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:212
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:226
+#, fuzzy
 msgid "action"
-msgstr ""
+msgstr "ක්‍රියාව"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:216
+#, fuzzy
 msgid "Command Shortcut"
-msgstr ""
+msgstr "කෙටිමඟ "
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
@@ -183,7 +191,7 @@ msgstr ""
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:223
 msgid "Shortcut"
-msgstr ""
+msgstr "කෙටිමඟ "
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:267
 #, c-format
@@ -191,8 +199,9 @@ msgid "Press now the keyboard keys you want to use to trigger the %s '%s'."
 msgstr ""
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:291
+#, fuzzy
 msgid "Shortcut:"
-msgstr ""
+msgstr "කෙටිමඟ "
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:296
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:475
@@ -200,112 +209,129 @@ msgid "No keys pressed yet, proceed."
 msgstr ""
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:378
+#, fuzzy
 msgid "Could not grab the keyboard."
-msgstr ""
+msgstr "සැකසුම් සංවාද කොටුව තැනීමට නොහැකි විය."
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:33
 msgid "Window operations menu"
-msgstr ""
+msgstr "කවුළු කාර්යකරණ මෙනුව"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:34
 msgid "Up"
-msgstr ""
+msgstr "ඉහළ"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:35
 msgid "Down"
-msgstr ""
+msgstr "පහළ"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:36
 msgid "Left"
-msgstr ""
+msgstr "වම"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:37
 msgid "Right"
-msgstr ""
+msgstr "දකුණ"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:38
+#, fuzzy
 msgid "Cancel"
-msgstr ""
+msgstr "අවලංගුකරන්න"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:39
+#, fuzzy
 msgid "Cycle windows"
-msgstr ""
+msgstr "කවුළු අතර චක්‍රීය ලෙස යන්න"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:40
+#, fuzzy
 msgid "Cycle windows (Reverse)"
-msgstr ""
+msgstr "කවුළු අතර (අනෙක් අතට) චක්‍රීය ලෙස යන්න"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:41
+#, fuzzy
 msgid "Switch window for same application"
-msgstr ""
+msgstr "එකම යෙදුම සඳහා කවුළුව අතර මාරු වන්න"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:42
 msgid "Switch application"
-msgstr ""
+msgstr "යෙදුම මාරු කරන්න"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:43
 msgid "Close window"
-msgstr ""
+msgstr "කවුළුව වසන්න"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:44
 msgid "Maximize window horizontally"
-msgstr ""
+msgstr "කවුළුව තිරස්ව විහිදන්න"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:45
 msgid "Maximize window vertically"
-msgstr ""
+msgstr "කවුළුව සිරස්ව විහිදන්න"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:46
 msgid "Maximize window"
-msgstr ""
+msgstr "කවුළුව විහිදන්න"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:47
 msgid "Hide window"
-msgstr ""
+msgstr "කවුළුව සඟවන්න"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:48
 msgid "Move window"
-msgstr ""
+msgstr "කවුළුව එහා මෙහා කරන්න"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:49
+#, fuzzy
 msgid "Resize window"
-msgstr ""
+msgstr "කවුළු ප්‍රමාණය වෙනස් කරන්න"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:50
+#, fuzzy
 msgid "Shade window"
-msgstr ""
+msgstr "කවුළුව අඳුරු කරන්න."
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:51
+#, fuzzy
 msgid "Stick window"
-msgstr ""
+msgstr "කවුළුව අලවන්න"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:52
+#, fuzzy
 msgid "Raise window"
-msgstr ""
+msgstr "කවුළුව නගන්න"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:53
+#, fuzzy
 msgid "Lower window"
-msgstr ""
+msgstr "කවුළුව හෙලන්න"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:54
+#, fuzzy
 msgid "Raise or lower window"
-msgstr ""
+msgstr "කවුළුව නගන්න"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:55
+#, fuzzy
 msgid "Fill window"
-msgstr ""
+msgstr "කවුළුව පුරවන්න"
 
+# පුරවන්න
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:56
+#, fuzzy
 msgid "Fill window horizontally"
-msgstr ""
+msgstr "කවුළු තිරස්ව පිහිටුවන්න"
 
+# පුරවන්න
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:57
+#, fuzzy
 msgid "Fill window vertically"
-msgstr ""
+msgstr "කවුළු සිරස්ව පිහිටුවන්න"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:58
+#, fuzzy
 msgid "Toggle above"
-msgstr ""
+msgstr "ඉහළ සමඟ මාරු වන්න"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:59
 msgid "Toggle fullscreen"
@@ -313,191 +339,199 @@ msgstr ""
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:60
 msgid "Move window to upper workspace"
-msgstr ""
+msgstr "කවුළුව  ඉහළ වැඩ අවකාශයට ගෙනයනන්න"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:61
 msgid "Move window to bottom workspace"
-msgstr ""
+msgstr "කවුළුව  පහළ වැඩ අවකාශයට ගෙනයනන්න"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:62
 msgid "Move window to left workspace"
-msgstr ""
+msgstr "කවුළුව වම් වැඩ අවකාශයට ගෙනයනන්න"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:63
 msgid "Move window to right workspace"
-msgstr ""
+msgstr "කවුළුව දකුණු වැඩ අවකාශයට ගෙනයනන්න"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:64
 msgid "Move window to previous workspace"
-msgstr ""
+msgstr "කවුළුව කලින් වැඩ අවකාශයට ගෙනයනන්න"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:65
 msgid "Move window to next workspace"
-msgstr ""
+msgstr "කවුළුව ඊලඟ වැඩ අවකාශයට ගෙනයනන්න"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:66
 msgid "Move window to workspace 1"
-msgstr ""
+msgstr "කවුළුව වැඩ අවකාශ 1 ට ගෙනයනන්න"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:67
 msgid "Move window to workspace 2"
-msgstr ""
+msgstr "කවුළුව වැඩ අවකාශ 2 ට ගෙනයනන්න"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:68
 msgid "Move window to workspace 3"
-msgstr ""
+msgstr "කවුළුව වැඩ අවකාශ 3 ට ගෙනයනන්න"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:69
 msgid "Move window to workspace 4"
-msgstr ""
+msgstr "කවුළුව වැඩ අවකාශ 4 ට ගෙනයනන්න"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:70
 msgid "Move window to workspace 5"
-msgstr ""
+msgstr "කවුළුව වැඩ අවකාශ 5 ට ගෙනයනන්න"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:71
 msgid "Move window to workspace 6"
-msgstr ""
+msgstr "කවුළුව වැඩ අවකාශ 6 ට ගෙනයනන්න"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:72
 msgid "Move window to workspace 7"
-msgstr ""
+msgstr "කවුළුව වැඩ අවකාශ 7 ට ගෙනයනන්න"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:73
 msgid "Move window to workspace 8"
-msgstr ""
+msgstr "කවුළුව වැඩ අවකාශ 8 ට ගෙනයනන්න"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:74
 msgid "Move window to workspace 9"
-msgstr ""
+msgstr "කවුළුව වැඩ අවකාශ 9 ට ගෙනයනන්න"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:75
 msgid "Move window to workspace 10"
-msgstr ""
+msgstr "කවුළුව වැඩ අවකාශ 10 ට ගෙනයනන්න"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:76
 msgid "Move window to workspace 11"
-msgstr ""
+msgstr "කවුළුව වැඩ අවකාශ 11 ට ගෙනයනන්න"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:77
 msgid "Move window to workspace 12"
-msgstr ""
+msgstr "කවුළුව වැඩ අවකාශ 12 ට ගෙනයනන්න"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:78
+#, fuzzy
 msgid "Tile window to the top"
-msgstr ""
+msgstr "කවුළුව වම් වැඩ අවකාශයට ගෙනයනන්න"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:79
+#, fuzzy
 msgid "Tile window to the bottom"
-msgstr ""
+msgstr "කවුළුව  පහළ වැඩ අවකාශයට ගෙනයනන්න"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:80
+#, fuzzy
 msgid "Tile window to the left"
-msgstr ""
+msgstr "කවුළුව වම් වැඩ අවකාශයට ගෙනයනන්න"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:81
+#, fuzzy
 msgid "Tile window to the right"
-msgstr ""
+msgstr "කවුළුව දකුණු වැඩ අවකාශයට ගෙනයනන්න"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:82
 msgid "Show desktop"
-msgstr ""
+msgstr "වැඩතලය පෙන්වන්න"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:83
 msgid "Upper workspace"
-msgstr ""
+msgstr "ඉහළ වැඩ අවකාශය"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:84
 msgid "Bottom workspace"
-msgstr ""
+msgstr "පහළ වැඩ අවකාශය"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:85
 msgid "Left workspace"
-msgstr ""
+msgstr "වම් වැඩ අවකාශය"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:86
 msgid "Right workspace"
-msgstr ""
+msgstr "දකුණු වැඩ අවකාශය"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:87
 msgid "Previous workspace"
-msgstr ""
+msgstr "කලින් වැඩ අවකාශය"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:88
 msgid "Next workspace"
-msgstr ""
+msgstr "ඊලඟ වැඩ අවකාශය"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:89
 msgid "Workspace 1"
-msgstr ""
+msgstr "වැඩ අවකාශය 1"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:90
 msgid "Workspace 2"
-msgstr ""
+msgstr "වැඩ අවකාශය 2"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:91
 msgid "Workspace 3"
-msgstr ""
+msgstr "වැඩ අවකාශය 3"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:92
 msgid "Workspace 4"
-msgstr ""
+msgstr "වැඩ අවකාශය 4"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:93
 msgid "Workspace 5"
-msgstr ""
+msgstr "වැඩ අවකාශය 5"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:94
 msgid "Workspace 6"
-msgstr ""
+msgstr "වැඩ අවකාශය 6"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:95
 msgid "Workspace 7"
-msgstr ""
+msgstr "වැඩ අවකාශය 7"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:96
 msgid "Workspace 8"
-msgstr ""
+msgstr "වැඩ අවකාශය 8"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:97
 msgid "Workspace 9"
-msgstr ""
+msgstr "වැඩ අවකාශය 9"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:98
 msgid "Workspace 10"
-msgstr ""
+msgstr "වැඩ අවකාශය 10"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:99
 msgid "Workspace 11"
-msgstr ""
+msgstr "වැඩ අවකාශය 11"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:100
 msgid "Workspace 12"
-msgstr ""
+msgstr "වැඩ අවකාශය 12"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:101
 msgid "Add workspace"
-msgstr ""
+msgstr "වැඩ අවකාශයක් එක් කරන්න "
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:102
 msgid "Add adjacent workspace"
-msgstr ""
+msgstr "යාබද වැඩ අවකාශයක් එක් කරන්න"
 
+# last = final or last = previous
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:103
+#, fuzzy
 msgid "Delete last workspace"
-msgstr ""
+msgstr "අවසන් වැඩ අවකාශය මකා දමන්න"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:104
+#, fuzzy
 msgid "Delete active workspace"
-msgstr ""
+msgstr "සක්‍රීය වැඩ අවකාශය මකා දමන්න"
 
 #: ../glade/libxfce4ui.xml.in.h:1
 msgid "Titled Dialog"
 msgstr ""
 
 #: ../glade/libxfce4ui.xml.in.h:2
+#, fuzzy
 msgid "Subtitle"
-msgstr ""
+msgstr "සිරැසිය"
 
 #: ../glade/libxfce4ui.xml.in.h:3
 msgid "Xfce 4 Widgets"
@@ -505,15 +539,17 @@ msgstr ""
 
 #: ../xfce4-about/main.c:52
 msgid "Version information"
-msgstr ""
+msgstr "අනුවාද තොරතුරු"
 
 #: ../xfce4-about/main.c:70
 msgid "Window Manager"
-msgstr ""
+msgstr "කවුළු කළමනාකරු"
 
+# තිරයේ මැදදී (_c)
 #: ../xfce4-about/main.c:71
+#, fuzzy
 msgid "Handles the placement of windows on the screen."
-msgstr ""
+msgstr "තිරයේ මැද (_c)"
 
 #: ../xfce4-about/main.c:74
 msgid "Panel"
@@ -526,8 +562,9 @@ msgid ""
 msgstr ""
 
 #: ../xfce4-about/main.c:79
+#, fuzzy
 msgid "Desktop Manager"
-msgstr ""
+msgstr "කවුළු කළමනාකරු"
 
 #: ../xfce4-about/main.c:80
 msgid ""
@@ -536,8 +573,9 @@ msgid ""
 msgstr ""
 
 #: ../xfce4-about/main.c:84
+#, fuzzy
 msgid "File Manager "
-msgstr ""
+msgstr "කවුළු කළමනාකරු"
 
 #: ../xfce4-about/main.c:85
 msgid ""
@@ -546,8 +584,9 @@ msgid ""
 msgstr ""
 
 #: ../xfce4-about/main.c:89
+#, fuzzy
 msgid "Session Manager"
-msgstr ""
+msgstr "සැසි කළමනාකරන සොකට්ටුව"
 
 #: ../xfce4-about/main.c:90
 msgid ""
@@ -576,8 +615,9 @@ msgid ""
 msgstr ""
 
 #: ../xfce4-about/main.c:104
+#, fuzzy
 msgid "Settings Daemon"
-msgstr ""
+msgstr "සැකසුම් කළමනාකරන සොකට්ටුව"
 
 #: ../xfce4-about/main.c:105
 msgid "D-Bus-based configuration storage system."
@@ -682,9 +722,9 @@ msgstr ""
 
 #. I18N: %s will be replaced by the Xfce version number
 #: ../xfce4-about/main.c:489
-#, c-format
+#, fuzzy, c-format
 msgid "Version %s"
-msgstr ""
+msgstr "%s (මත %s)"
 
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
@@ -714,8 +754,9 @@ msgid "Translators"
 msgstr ""
 
 #: ../xfce4-about/contributors.h:139
+#, fuzzy
 msgid "Previous contributors"
-msgstr ""
+msgstr "කලින් වැඩ අවකාශය"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:1
 msgid "About Xfce"

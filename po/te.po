@@ -50,8 +50,9 @@ msgid "_Always go directly to the online documentation"
 msgstr ""
 
 #: ../libxfce4ui/xfce-dialogs.c:281
+#, fuzzy
 msgid "Information"
-msgstr "సమాచారం"
+msgstr "రూపాంతర సమాచారం"
 
 #: ../libxfce4ui/xfce-dialogs.c:314
 msgid "Warning"
@@ -66,24 +67,28 @@ msgid "Question"
 msgstr "ప్రశ్న"
 
 #: ../libxfce4ui/xfce-sm-client.c:1403
+#, fuzzy
 msgid "Session management client ID"
-msgstr "సెషన్ నిర్వహణ క్లయింటు ఐడి"
+msgstr "సెషన్ నిర్వాహకము సాకెట్"
 
 #: ../libxfce4ui/xfce-sm-client.c:1403
 msgid "ID"
 msgstr "ఐడి"
 
 #: ../libxfce4ui/xfce-sm-client.c:1404
+#, fuzzy
 msgid "Disable session management"
-msgstr "సెషన్ నిర్వహణని అచేతనపరుచు"
+msgstr "సెషన్ నిర్వాహకము సాకెట్"
 
 #: ../libxfce4ui/xfce-sm-client.c:1414
+#, fuzzy
 msgid "Session management options"
-msgstr "సెషన్ నిర్వహణ ఐచ్ఛికాలు"
+msgstr "సెషన్ నిర్వాహకము సాకెట్"
 
 #: ../libxfce4ui/xfce-sm-client.c:1415
+#, fuzzy
 msgid "Show session management options"
-msgstr "సెషన్ నిర్వహణ ఐచ్ఛికాలను చూపించు"
+msgstr "సెషన్ నిర్వాహకము సాకెట్"
 
 #: ../libxfce4ui/xfce-sm-client.c:1591
 #, c-format
@@ -162,8 +167,9 @@ msgid "This shortcut is already being used for something else."
 msgstr "ఈ షార్ట్‍కట్ ఇదివరకే వేరేదానికి వాడబడుతున్నది."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:209
+#, fuzzy
 msgid "Window Manager Action Shortcut"
-msgstr "విండో నిర్వాహకము చర్య షార్ట్‍కట్"
+msgstr "విండో నిర్వాహకం"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
@@ -171,7 +177,7 @@ msgstr "విండో నిర్వాహకము చర్య షార్
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:226
 #, fuzzy
 msgid "action"
-msgstr "చర్య:"
+msgstr "చర్య"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:216
 msgid "Command Shortcut"
@@ -186,7 +192,7 @@ msgstr "ఆదేశం:"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:223
 msgid "Shortcut"
-msgstr "షార్ట్‍కట్"
+msgstr ""
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:267
 #, c-format
@@ -212,23 +218,23 @@ msgstr ""
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:34
 msgid "Up"
-msgstr ""
+msgstr "పైన"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:35
 msgid "Down"
-msgstr ""
+msgstr "కింద"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:36
 msgid "Left"
-msgstr ""
+msgstr "ఎడమ"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:37
 msgid "Right"
-msgstr ""
+msgstr "కుడి"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:38
 msgid "Cancel"
-msgstr ""
+msgstr "రద్దుచేయి"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:39
 msgid "Cycle windows"
@@ -248,31 +254,31 @@ msgstr ""
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:43
 msgid "Close window"
-msgstr ""
+msgstr "విండోను మూసివేయి"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:44
 msgid "Maximize window horizontally"
-msgstr ""
+msgstr "విండోని అడ్డముగా గరిష్ఠీకరించు"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:45
 msgid "Maximize window vertically"
-msgstr ""
+msgstr "విండోని నిలువుగా గరిష్ఠీకరించు"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:46
 msgid "Maximize window"
-msgstr ""
+msgstr "విండోని గరిష్ఠీకరించు"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:47
 msgid "Hide window"
-msgstr ""
+msgstr "విండోని దాయి"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:48
 msgid "Move window"
-msgstr ""
+msgstr "విండోని కదుపు"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:49
 msgid "Resize window"
-msgstr ""
+msgstr "విండో పరిమాణం మార్చు"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:50
 msgid "Shade window"
@@ -291,20 +297,21 @@ msgid "Lower window"
 msgstr ""
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:54
+#, fuzzy
 msgid "Raise or lower window"
-msgstr ""
+msgstr "విండోను మూసివేయి"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:55
 msgid "Fill window"
-msgstr ""
+msgstr "విండోని నింపు"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:56
 msgid "Fill window horizontally"
-msgstr ""
+msgstr "విండోని అడ్డముగా నింపు"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:57
 msgid "Fill window vertically"
-msgstr ""
+msgstr "విండోని నిలువుగా నింపు"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:58
 msgid "Toggle above"
@@ -316,172 +323,175 @@ msgstr ""
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:60
 msgid "Move window to upper workspace"
-msgstr ""
+msgstr "విండోని ఎగువ కార్యక్షేత్రానికి తరలించు"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:61
 msgid "Move window to bottom workspace"
-msgstr ""
+msgstr "విండోని దిగువ కార్యక్షేత్రానికి తరలించు"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:62
 msgid "Move window to left workspace"
-msgstr ""
+msgstr "విండోని ఎడమవైపు కార్యక్షేత్రానికి తరలించు"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:63
 msgid "Move window to right workspace"
-msgstr ""
+msgstr "విండోని కుడివైపు కార్యక్షేత్రానికి తరలించు"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:64
 msgid "Move window to previous workspace"
-msgstr ""
+msgstr "విండోని మునుపటి కార్యక్షేత్రానికి తరలించు"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:65
 msgid "Move window to next workspace"
-msgstr ""
+msgstr "విండోని తదుపరి కార్యక్షేత్రానికి తరలించు"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:66
 msgid "Move window to workspace 1"
-msgstr ""
+msgstr "విండోని కార్యక్షేత్రం 1కి తరలించు"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:67
 msgid "Move window to workspace 2"
-msgstr ""
+msgstr "విండోని కార్యక్షేత్రం 2కి తరలించు"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:68
 msgid "Move window to workspace 3"
-msgstr ""
+msgstr "విండోని కార్యక్షేత్రం 3కి తరలించు"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:69
 msgid "Move window to workspace 4"
-msgstr ""
+msgstr "విండోని కార్యక్షేత్రం 4కి తరలించు"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:70
 msgid "Move window to workspace 5"
-msgstr ""
+msgstr "విండోని కార్యక్షేత్రం 5కి తరలించు"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:71
 msgid "Move window to workspace 6"
-msgstr ""
+msgstr "విండోని కార్యక్షేత్రం 6కి తరలించు"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:72
 msgid "Move window to workspace 7"
-msgstr ""
+msgstr "విండోని కార్యక్షేత్రం 7కి తరలించు"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:73
 msgid "Move window to workspace 8"
-msgstr ""
+msgstr "విండోని కార్యక్షేత్రం 8కి తరలించు"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:74
 msgid "Move window to workspace 9"
-msgstr ""
+msgstr "విండోని కార్యక్షేత్రం 9కి తరలించు"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:75
 msgid "Move window to workspace 10"
-msgstr ""
+msgstr "విండోని కార్యక్షేత్రం 10కి తరలించు"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:76
 msgid "Move window to workspace 11"
-msgstr ""
+msgstr "విండోని కార్యక్షేత్రం 11కి తరలించు"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:77
 msgid "Move window to workspace 12"
-msgstr ""
+msgstr "విండోని కార్యక్షేత్రం 12కి తరలించు"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:78
+#, fuzzy
 msgid "Tile window to the top"
-msgstr ""
+msgstr "విండోని ఎడమవైపు కార్యక్షేత్రానికి తరలించు"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:79
+#, fuzzy
 msgid "Tile window to the bottom"
-msgstr ""
+msgstr "విండోని దిగువ కార్యక్షేత్రానికి తరలించు"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:80
+#, fuzzy
 msgid "Tile window to the left"
-msgstr ""
+msgstr "విండోని ఎడమవైపు కార్యక్షేత్రానికి తరలించు"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:81
+#, fuzzy
 msgid "Tile window to the right"
-msgstr ""
+msgstr "విండోని కుడివైపు కార్యక్షేత్రానికి తరలించు"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:82
 msgid "Show desktop"
-msgstr ""
+msgstr "డెస్క్‍టాప్ చూపించు"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:83
 msgid "Upper workspace"
-msgstr ""
+msgstr "ఎగువ కార్యక్షేత్రం"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:84
 msgid "Bottom workspace"
-msgstr ""
+msgstr "దిగువ కార్యక్షేత్రం"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:85
 msgid "Left workspace"
-msgstr ""
+msgstr "ఎడమవైపు కార్యక్షేత్రం"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:86
 msgid "Right workspace"
-msgstr ""
+msgstr "కుడివైపు కార్యక్షేత్రం"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:87
-#, fuzzy
 msgid "Previous workspace"
-msgstr "మునుపటి సహాయకులు"
+msgstr "మునుపటి కార్యక్షేత్రం"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:88
 msgid "Next workspace"
-msgstr ""
+msgstr "తదుపరి కార్యక్షేత్రం"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:89
 msgid "Workspace 1"
-msgstr ""
+msgstr "కార్యక్షేత్రం 1"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:90
 msgid "Workspace 2"
-msgstr ""
+msgstr "కార్యక్షేత్రం 2"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:91
 msgid "Workspace 3"
-msgstr ""
+msgstr "కార్యక్షేత్రం 3"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:92
 msgid "Workspace 4"
-msgstr ""
+msgstr "కార్యక్షేత్రం 4"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:93
 msgid "Workspace 5"
-msgstr ""
+msgstr "కార్యక్షేత్రం 5"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:94
 msgid "Workspace 6"
-msgstr ""
+msgstr "కార్యక్షేత్రం 6"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:95
 msgid "Workspace 7"
-msgstr ""
+msgstr "కార్యక్షేత్రం 7"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:96
 msgid "Workspace 8"
-msgstr ""
+msgstr "కార్యక్షేత్రం 8"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:97
 msgid "Workspace 9"
-msgstr ""
+msgstr "కార్యక్షేత్రం 9"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:98
 msgid "Workspace 10"
-msgstr ""
+msgstr "కార్యక్షేత్రం 10"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:99
 msgid "Workspace 11"
-msgstr ""
+msgstr "కార్యక్షేత్రం 11"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:100
 msgid "Workspace 12"
-msgstr ""
+msgstr "కార్యక్షేత్రం 12"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:101
 msgid "Add workspace"
-msgstr ""
+msgstr "కార్యక్షేత్రాన్ని జతచేయి"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:102
 msgid "Add adjacent workspace"
@@ -489,19 +499,20 @@ msgstr ""
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:103
 msgid "Delete last workspace"
-msgstr ""
+msgstr "చివరి కార్యక్షేత్రాన్ని తొలగించు"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:104
 msgid "Delete active workspace"
-msgstr ""
+msgstr "క్రియాశీల కార్యక్షేత్రాన్ని తొలగించు"
 
 #: ../glade/libxfce4ui.xml.in.h:1
 msgid "Titled Dialog"
 msgstr "శీర్షికగల డైలాగ్"
 
 #: ../glade/libxfce4ui.xml.in.h:2
+#, fuzzy
 msgid "Subtitle"
-msgstr "ఉపశీర్షిక"
+msgstr "శీర్షిక"
 
 #: ../glade/libxfce4ui.xml.in.h:3
 msgid "Xfce 4 Widgets"
@@ -513,7 +524,7 @@ msgstr "రూపాంతర సమాచారం"
 
 #: ../xfce4-about/main.c:70
 msgid "Window Manager"
-msgstr "కిటికీ నిర్వాహకము"
+msgstr "విండో నిర్వాహకం"
 
 #: ../xfce4-about/main.c:71
 msgid "Handles the placement of windows on the screen."
@@ -530,8 +541,9 @@ msgid ""
 msgstr ""
 
 #: ../xfce4-about/main.c:79
+#, fuzzy
 msgid "Desktop Manager"
-msgstr "డెస్క్‍టాప్ నిర్వాహకం"
+msgstr "విండో నిర్వాహకం"
 
 #: ../xfce4-about/main.c:80
 msgid ""
@@ -540,8 +552,9 @@ msgid ""
 msgstr ""
 
 #: ../xfce4-about/main.c:84
+#, fuzzy
 msgid "File Manager "
-msgstr "ఫైల్ నిర్వాహకం"
+msgstr "విండో నిర్వాహకం"
 
 #: ../xfce4-about/main.c:85
 msgid ""
@@ -550,8 +563,9 @@ msgid ""
 msgstr ""
 
 #: ../xfce4-about/main.c:89
+#, fuzzy
 msgid "Session Manager"
-msgstr "చర్యాకాల నిర్వహకం"
+msgstr "సెషన్ నిర్వాహకము సాకెట్"
 
 #: ../xfce4-about/main.c:90
 msgid ""
@@ -580,8 +594,9 @@ msgid ""
 msgstr ""
 
 #: ../xfce4-about/main.c:104
+#, fuzzy
 msgid "Settings Daemon"
-msgstr "అమరికల సూత్రధారి"
+msgstr "అమరికల నిర్వాహకము సాకెట్"
 
 #: ../xfce4-about/main.c:105
 msgid "D-Bus-based configuration storage system."
@@ -650,9 +665,9 @@ msgid ""
 msgstr ""
 
 #: ../xfce4-about/main.c:442
-#, c-format
+#, fuzzy, c-format
 msgid "Type '%s --help' for usage information."
-msgstr ""
+msgstr "వాడుకకు '%s --help' టైపు చేయండి."
 
 #: ../xfce4-about/main.c:448
 msgid "Unable to initialize GTK+."
@@ -718,8 +733,9 @@ msgid "Translators"
 msgstr "అనువాదకలు"
 
 #: ../xfce4-about/contributors.h:139
+#, fuzzy
 msgid "Previous contributors"
-msgstr "మునుపటి సహాయకులు"
+msgstr "మునుపటి కార్యక్షేత్రం"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:1
 msgid "About Xfce"
@@ -761,20 +777,19 @@ msgstr "నకలుహక్కు"
 msgid "License"
 msgstr "లైసెన్స్"
 
-#~ msgid ""
-#~ "This shortcut is already being used for another window manager action. "
-#~ "Which action do you want to use?"
-#~ msgstr ""
-#~ "ఈ షార్ట్‍కట్ ఇదివరకే వేరొక విండో నిర్వాహకము చర్యకు వాడబడింది. మీరు ఏ చర్యను వాడాలనుకుంటున్నారు?"
+msgid ""
+"This shortcut is already being used for another window manager action. Which "
+"action do you want to use?"
+msgstr ""
+"ఈ షార్ట్‍కట్ ఇదివరకే వేరొక విండో నిర్వాహకము చర్యకు వాడబడింది. మీరు ఏ చర్యను వాడాలనుకుంటున్నారు?"
 
-#~ msgid "Keep the other one"
-#~ msgstr "మరొకదానిని ఉంచు"
+msgid "Keep the other one"
+msgstr "మరొకదానిని ఉంచు"
 
-#~ msgid ""
-#~ "This shortcut is already being used by a window manager action. Which "
-#~ "action do you want to use?"
-#~ msgstr ""
-#~ "ఈ షార్ట్‍కట్ ఇదివరకే ఒక విండో నిర్వాహకము చర్యకు వాడబడింది. మీరు ఏ చర్యను వాడాలనుకుంటున్నారు?"
+msgid ""
+"This shortcut is already being used by a window manager action. Which action "
+"do you want to use?"
+msgstr "ఈ షార్ట్‍కట్ ఇదివరకే ఒక విండో నిర్వాహకము చర్యకు వాడబడింది. మీరు ఏ చర్యను వాడాలనుకుంటున్నారు?"
 
-#~ msgid "Keep the window manager action"
-#~ msgstr "విండో నిర్వాహకము చర్యను ఉంచు"
+msgid "Keep the window manager action"
+msgstr "విండో నిర్వాహకము చర్యను ఉంచు"

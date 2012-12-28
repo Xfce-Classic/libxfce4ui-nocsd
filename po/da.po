@@ -16,9 +16,10 @@ msgstr ""
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bits\n"
-"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-Language: Danish\n"
+"X-Poedit-SourceCharset: utf-8\n"
 "X-Poedit-Country: DENMARK\n"
 
 #: ../libxfce4ui/xfce-dialogs.c:98
@@ -55,8 +56,9 @@ msgid "_Always go directly to the online documentation"
 msgstr "_Gå altid direkte til dokumentationen på nettet"
 
 #: ../libxfce4ui/xfce-dialogs.c:281
+#, fuzzy
 msgid "Information"
-msgstr "Information"
+msgstr "Versionsinformation"
 
 #: ../libxfce4ui/xfce-dialogs.c:314
 msgid "Warning"
@@ -71,24 +73,28 @@ msgid "Question"
 msgstr "Spørgsmål"
 
 #: ../libxfce4ui/xfce-sm-client.c:1403
+#, fuzzy
 msgid "Session management client ID"
-msgstr "Klientid fra sessionshåndtering"
+msgstr "Indstillingshåndtering for sokkel"
 
 #: ../libxfce4ui/xfce-sm-client.c:1403
 msgid "ID"
 msgstr "Id"
 
 #: ../libxfce4ui/xfce-sm-client.c:1404
+#, fuzzy
 msgid "Disable session management"
-msgstr "Slå sessionshåndtering fra"
+msgstr "Indstillingshåndtering for sokkel"
 
 #: ../libxfce4ui/xfce-sm-client.c:1414
+#, fuzzy
 msgid "Session management options"
-msgstr "Tilvalg for sessionshåndtering:"
+msgstr "Indstillingshåndtering for sokkel"
 
 #: ../libxfce4ui/xfce-sm-client.c:1415
+#, fuzzy
 msgid "Show session management options"
-msgstr "Vis tilvalg for sessionshåndtering"
+msgstr "Indstillingshåndtering for sokkel"
 
 #: ../libxfce4ui/xfce-sm-client.c:1591
 #, c-format
@@ -175,8 +181,9 @@ msgid "This shortcut is already being used for something else."
 msgstr "Denne genvej bruges allerede til noget andet."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:209
+#, fuzzy
 msgid "Window Manager Action Shortcut"
-msgstr "Genvej til vindueshåndteringshandling"
+msgstr "Vindueshåndtering"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
@@ -184,11 +191,12 @@ msgstr "Genvej til vindueshåndteringshandling"
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:226
 #, fuzzy
 msgid "action"
-msgstr "Handling:"
+msgstr "Handling"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:216
+#, fuzzy
 msgid "Command Shortcut"
-msgstr "Kommandogenvej"
+msgstr "Genvej"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
@@ -207,8 +215,9 @@ msgid "Press now the keyboard keys you want to use to trigger the %s '%s'."
 msgstr ""
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:291
+#, fuzzy
 msgid "Shortcut:"
-msgstr "Genvej:"
+msgstr "Genvej"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:296
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:475
@@ -216,305 +225,306 @@ msgid "No keys pressed yet, proceed."
 msgstr ""
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:378
+#, fuzzy
 msgid "Could not grab the keyboard."
-msgstr "Kunne ikke gribe tastaturet"
+msgstr "Kunne ikke oprette indstillingsdialogen."
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:33
 msgid "Window operations menu"
-msgstr ""
+msgstr "Vindue funktionsmenu"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:34
 msgid "Up"
-msgstr ""
+msgstr "Op"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:35
 msgid "Down"
-msgstr ""
+msgstr "Ned"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:36
 msgid "Left"
-msgstr ""
+msgstr "Venstre"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:37
 msgid "Right"
-msgstr ""
+msgstr "Højre"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:38
 msgid "Cancel"
-msgstr ""
+msgstr "Annuller"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:39
 msgid "Cycle windows"
-msgstr ""
+msgstr "Gennemløb vinduer"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:40
 msgid "Cycle windows (Reverse)"
-msgstr ""
+msgstr "Gennemløb vinduer (omvendt)"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:41
 msgid "Switch window for same application"
-msgstr ""
+msgstr "Skift vindue til samme program"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:42
 msgid "Switch application"
-msgstr ""
+msgstr "Skift program"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:43
 msgid "Close window"
-msgstr ""
+msgstr "Luk vindue"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:44
 msgid "Maximize window horizontally"
-msgstr ""
+msgstr "Maksimer vindue horisontalt"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:45
 msgid "Maximize window vertically"
-msgstr ""
+msgstr "Maksimer vindue vertikalt"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:46
 msgid "Maximize window"
-msgstr ""
+msgstr "Maksimer vindue"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:47
 msgid "Hide window"
-msgstr ""
+msgstr "Skjul vindue"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:48
 msgid "Move window"
-msgstr ""
+msgstr "Flyt vindue"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:49
 msgid "Resize window"
-msgstr ""
+msgstr "Ændr vinduets størrelse"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:50
 msgid "Shade window"
-msgstr ""
+msgstr "Skygge vindue"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:51
 msgid "Stick window"
-msgstr ""
+msgstr "Klæb vindue"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:52
 msgid "Raise window"
-msgstr ""
+msgstr "Flyt vindue frem"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:53
 msgid "Lower window"
-msgstr ""
+msgstr "Flyt vindue tilbage"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:54
 msgid "Raise or lower window"
-msgstr ""
+msgstr "Rul vindue ud eller sammen"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:55
 msgid "Fill window"
-msgstr ""
+msgstr "Udfyld vindue"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:56
 msgid "Fill window horizontally"
-msgstr ""
+msgstr "Udfyld vinduet horisontalt"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:57
 msgid "Fill window vertically"
-msgstr ""
+msgstr "Fyld vinduet vertikalt"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:58
 msgid "Toggle above"
-msgstr ""
+msgstr "Aktiver over"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:59
 msgid "Toggle fullscreen"
-msgstr ""
+msgstr "Aktiver fuldskærm"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:60
 msgid "Move window to upper workspace"
-msgstr ""
+msgstr "Flyt vindue til øvre arbejdsområde"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:61
 msgid "Move window to bottom workspace"
-msgstr ""
+msgstr "Fylt vindue til nedre arbejdsområde"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:62
 msgid "Move window to left workspace"
-msgstr ""
+msgstr "Flyt vindue til venstre arbejdsområde"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:63
 msgid "Move window to right workspace"
-msgstr ""
+msgstr "Flyt vindue til højre arbejdsområde"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:64
 msgid "Move window to previous workspace"
-msgstr ""
+msgstr "Flyt vindue til foregående arbejdsområde"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:65
 msgid "Move window to next workspace"
-msgstr ""
+msgstr "Flyt vindue til næste arbejdsområde"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:66
 msgid "Move window to workspace 1"
-msgstr ""
+msgstr "Flyt vindue til arbejdsområde 1"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:67
 msgid "Move window to workspace 2"
-msgstr ""
+msgstr "Flyt vindue til arbejdsområde 2"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:68
 msgid "Move window to workspace 3"
-msgstr ""
+msgstr "Flyt vindue til arbejdsområde 3"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:69
 msgid "Move window to workspace 4"
-msgstr ""
+msgstr "Flyt vindue til arbejdsområde 4"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:70
 msgid "Move window to workspace 5"
-msgstr ""
+msgstr "Flyt vindue til arbejdsområde 5"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:71
 msgid "Move window to workspace 6"
-msgstr ""
+msgstr "Flyt vindue til arbejdsområde 6"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:72
 msgid "Move window to workspace 7"
-msgstr ""
+msgstr "Flyt vindue til arbejdsområde 7"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:73
 msgid "Move window to workspace 8"
-msgstr ""
+msgstr "Flyt vindue til arbejdsområde 8"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:74
 msgid "Move window to workspace 9"
-msgstr ""
+msgstr "Flyt vindue til arbejdsområde 9"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:75
 msgid "Move window to workspace 10"
-msgstr ""
+msgstr "Flyt vindue til arbejdsområde 10"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:76
 msgid "Move window to workspace 11"
-msgstr ""
+msgstr "Flyt vindue til arbejdsområde 11"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:77
 msgid "Move window to workspace 12"
-msgstr ""
+msgstr "Flyt vindue til arbejdsområde 12"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:78
 msgid "Tile window to the top"
-msgstr ""
+msgstr "Flyt vindue til toppen som flise"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:79
 msgid "Tile window to the bottom"
-msgstr ""
+msgstr "Flyt vindue til bunden som flise"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:80
 msgid "Tile window to the left"
-msgstr ""
+msgstr "Flyt vindue til venstre som flise"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:81
 msgid "Tile window to the right"
-msgstr ""
+msgstr "Flyt vindue til højre som flise"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:82
 msgid "Show desktop"
-msgstr ""
+msgstr "Vis skrivebord"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:83
 msgid "Upper workspace"
-msgstr ""
+msgstr "Øvre arbejdsområde"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:84
 msgid "Bottom workspace"
-msgstr ""
+msgstr "Nedre arbejdområde"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:85
 msgid "Left workspace"
-msgstr ""
+msgstr "Venstre arbejdsområde"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:86
 msgid "Right workspace"
-msgstr ""
+msgstr "Højre arbejdsområde"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:87
-#, fuzzy
 msgid "Previous workspace"
-msgstr "Tidligere udviklere"
+msgstr "Foregående arbejdsområde"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:88
 msgid "Next workspace"
-msgstr ""
+msgstr "Næste arbejdsområde"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:89
 msgid "Workspace 1"
-msgstr ""
+msgstr "Arbejdsområde 1"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:90
 msgid "Workspace 2"
-msgstr ""
+msgstr "Arbejdsområde 2"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:91
 msgid "Workspace 3"
-msgstr ""
+msgstr "Arbejdsområde 3"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:92
 msgid "Workspace 4"
-msgstr ""
+msgstr "Arbejdsområde 4"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:93
 msgid "Workspace 5"
-msgstr ""
+msgstr "Arbejdsområde 5"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:94
 msgid "Workspace 6"
-msgstr ""
+msgstr "Arbejdsområde 6"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:95
 msgid "Workspace 7"
-msgstr ""
+msgstr "Arbejdsområde 7"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:96
 msgid "Workspace 8"
-msgstr ""
+msgstr "Arbejdsområde 8"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:97
 msgid "Workspace 9"
-msgstr ""
+msgstr "Arbejdsområde 9"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:98
 msgid "Workspace 10"
-msgstr ""
+msgstr "Arbejdsområde 10"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:99
 msgid "Workspace 11"
-msgstr ""
+msgstr "Arbejdsområde 11"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:100
 msgid "Workspace 12"
-msgstr ""
+msgstr "Arbejdsområde 12"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:101
 msgid "Add workspace"
-msgstr ""
+msgstr "Tilføj arbejdsområde"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:102
 msgid "Add adjacent workspace"
-msgstr ""
+msgstr "Tilføj tilstødende arbejdsområde"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:103
 msgid "Delete last workspace"
-msgstr ""
+msgstr "Slet sidste arbejdområde"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:104
 msgid "Delete active workspace"
-msgstr ""
+msgstr "Slet aktivt arbejdsområde"
 
 #: ../glade/libxfce4ui.xml.in.h:1
 msgid "Titled Dialog"
 msgstr "Dialogtitel"
 
 #: ../glade/libxfce4ui.xml.in.h:2
+#, fuzzy
 msgid "Subtitle"
-msgstr "Undertitel"
+msgstr "Titel"
 
 #: ../glade/libxfce4ui.xml.in.h:3
 msgid "Xfce 4 Widgets"
@@ -529,8 +539,9 @@ msgid "Window Manager"
 msgstr "Vindueshåndtering"
 
 #: ../xfce4-about/main.c:71
+#, fuzzy
 msgid "Handles the placement of windows on the screen."
-msgstr "Håndterer placeringen af vinduer på skærmen."
+msgstr "I _centrum af skærmen"
 
 #: ../xfce4-about/main.c:74
 msgid "Panel"
@@ -544,8 +555,9 @@ msgstr ""
 "Programstartere, vinduesknapper, programmenuer, arbejdspladsskiftere og mere."
 
 #: ../xfce4-about/main.c:79
+#, fuzzy
 msgid "Desktop Manager"
-msgstr "Skrivebordshåndtering"
+msgstr "Vindueshåndtering"
 
 #: ../xfce4-about/main.c:80
 msgid ""
@@ -556,8 +568,9 @@ msgstr ""
 "eller -ikoner for minimerede programmer eller opstartere, enheder og mapper."
 
 #: ../xfce4-about/main.c:84
+#, fuzzy
 msgid "File Manager "
-msgstr "Filhåndtering"
+msgstr "Vindueshåndtering"
 
 #: ../xfce4-about/main.c:85
 msgid ""
@@ -568,8 +581,9 @@ msgstr ""
 "at bruge og hurtig."
 
 #: ../xfce4-about/main.c:89
+#, fuzzy
 msgid "Session Manager"
-msgstr "Sessionshåndtering"
+msgstr "Indstillingshåndtering for sokkel"
 
 #: ../xfce4-about/main.c:90
 msgid ""
@@ -604,8 +618,9 @@ msgstr ""
 "og starte dem."
 
 #: ../xfce4-about/main.c:104
+#, fuzzy
 msgid "Settings Daemon"
-msgstr "Indstillingstjeneste"
+msgstr "Indstillingshåndtering for sokkel"
 
 #: ../xfce4-about/main.c:105
 msgid "D-Bus-based configuration storage system."
@@ -697,9 +712,9 @@ msgstr ""
 "enhver senere version."
 
 #: ../xfce4-about/main.c:442
-#, c-format
+#, fuzzy, c-format
 msgid "Type '%s --help' for usage information."
-msgstr "Indtast '%s --help' for information af brugen."
+msgstr "Indtast \"%s --help\" for brugsvejledning."
 
 #: ../xfce4-about/main.c:448
 msgid "Unable to initialize GTK+."
@@ -733,9 +748,9 @@ msgstr "Version %s, distribueret af %s"
 
 #. I18N: %s will be replaced by the Xfce version number
 #: ../xfce4-about/main.c:489
-#, c-format
+#, fuzzy, c-format
 msgid "Version %s"
-msgstr "Version %s"
+msgstr "%s (på %s)"
 
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
@@ -765,8 +780,9 @@ msgid "Translators"
 msgstr "Oversættere"
 
 #: ../xfce4-about/contributors.h:139
+#, fuzzy
 msgid "Previous contributors"
-msgstr "Tidligere udviklere"
+msgstr "Foregående arbejdsområde"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:1
 msgid "About Xfce"
@@ -808,57 +824,54 @@ msgstr "Copyright"
 msgid "License"
 msgstr "Licens"
 
-#~ msgid ""
-#~ "This shortcut is already being used for another window manager action. "
-#~ "Which action do you want to use?"
-#~ msgstr ""
-#~ "Denne genvej bruges allerede til en anden vinduehåndteringshandling. "
-#~ "Hvilken handling vil du bruge?"
+msgid ""
+"This shortcut is already being used for another window manager action. Which "
+"action do you want to use?"
+msgstr ""
+"Denne genvej bruges allerede til en anden vinduehåndteringshandling. Hvilken "
+"handling vil du bruge?"
 
-#~ msgid "Keep the other one"
-#~ msgstr "Behold den anden"
+msgid "Keep the other one"
+msgstr "Behold den anden"
 
-#~ msgid ""
-#~ "This shortcut is already being used by a window manager action. Which "
-#~ "action do you want to use?"
-#~ msgstr ""
-#~ "Denne genvej bruges allerede til en anden vinduehåndteringshandling. "
-#~ "Hvilken handling vil du bruge?"
+msgid ""
+"This shortcut is already being used by a window manager action. Which action "
+"do you want to use?"
+msgstr ""
+"Denne genvej bruges allerede til en anden vinduehåndteringshandling. Hvilken "
+"handling vil du bruge?"
 
-#~ msgid "Keep the window manager action"
-#~ msgstr "Behold vindueshåndteringshandlingen"
+msgid "Utilities and Scripts"
+msgstr "Værktøjer og skripts."
 
-#~ msgid "Utilities and Scripts"
-#~ msgstr "Værktøjer og skripts."
+msgid "Startup scripts, run dialog and about dialog."
+msgstr "Startopskripts, kørselsdialog og omdialog."
 
-#~ msgid "Startup scripts, run dialog and about dialog."
-#~ msgstr "Startopskripts, kørselsdialog og omdialog."
+msgid "<span size='large'><b>%s</b></span>"
+msgstr "<span size='stor'><b>%s</b></span>"
 
-#~ msgid "<span size='large'><b>%s</b></span>"
-#~ msgstr "<span size='stor'><b>%s</b></span>"
+msgid "File is not a valid .desktop file"
+msgstr "Filen er ikke en gyldig .skrivebordsfil"
 
-#~ msgid "File is not a valid .desktop file"
-#~ msgstr "Filen er ikke en gyldig .skrivebordsfil"
+msgid "Unrecognized desktop file Version '%s'"
+msgstr "Ukendt skrivebordsfilsversion '%s'"
 
-#~ msgid "Unrecognized desktop file Version '%s'"
-#~ msgstr "Ukendt skrivebordsfilsversion '%s'"
+msgid "Application does not accept documents on command line"
+msgstr "Programmet anerkender ikke dokumenter på kommandolinje"
 
-#~ msgid "Application does not accept documents on command line"
-#~ msgstr "Programmet anerkender ikke dokumenter på kommandolinje"
+msgid "Unrecognized launch option: %d"
+msgstr "Ukendt opstartstilvalg: %d"
 
-#~ msgid "Unrecognized launch option: %d"
-#~ msgstr "Ukendt opstartstilvalg: %d"
+msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
+msgstr ""
+"Kan ikke videregive URI'er for dokumenter til en 'type=henvisning' "
+"skrivebordspost"
 
-#~ msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
-#~ msgstr ""
-#~ "Kan ikke videregive URI'er for dokumenter til en 'type=henvisning' "
-#~ "skrivebordspost"
+msgid "Not a launchable item"
+msgstr "Ikke et opstartselement"
 
-#~ msgid "Not a launchable item"
-#~ msgstr "Ikke et opstartselement"
+msgid "Specify file containing saved configuration"
+msgstr "Angiv filen som indeholder gemte indstilling"
 
-#~ msgid "Specify file containing saved configuration"
-#~ msgstr "Angiv filen som indeholder gemte indstilling"
-
-#~ msgid "FILE"
-#~ msgstr "FIL"
+msgid "FILE"
+msgstr "FIL"

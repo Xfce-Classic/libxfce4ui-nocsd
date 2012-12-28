@@ -46,11 +46,11 @@ msgstr ""
 #: ../libxfce4ui/xfce-dialogs.c:281
 #, fuzzy
 msgid "Information"
-msgstr "<b>Información</b>"
+msgstr "Información de versión"
 
 #: ../libxfce4ui/xfce-dialogs.c:314
 msgid "Warning"
-msgstr ""
+msgstr "Atención"
 
 #: ../libxfce4ui/xfce-dialogs.c:348
 msgid "Error"
@@ -62,8 +62,9 @@ msgid "Question"
 msgstr "Sesión"
 
 #: ../libxfce4ui/xfce-sm-client.c:1403
+#, fuzzy
 msgid "Session management client ID"
-msgstr ""
+msgstr "Socket del xestor de sesión"
 
 #: ../libxfce4ui/xfce-sm-client.c:1403
 #, fuzzy
@@ -73,17 +74,17 @@ msgstr "PID"
 #: ../libxfce4ui/xfce-sm-client.c:1404
 #, fuzzy
 msgid "Disable session management"
-msgstr "Escoyer nome sesión"
+msgstr "Socket del xestor de sesión"
 
 #: ../libxfce4ui/xfce-sm-client.c:1414
 #, fuzzy
 msgid "Session management options"
-msgstr "Configuración de sesión"
+msgstr "Socket del xestor de sesión"
 
 #: ../libxfce4ui/xfce-sm-client.c:1415
 #, fuzzy
 msgid "Show session management options"
-msgstr "Entamando proxy de xestión de sesiones"
+msgstr "Socket del xestor de sesión"
 
 #: ../libxfce4ui/xfce-sm-client.c:1591
 #, fuzzy, c-format
@@ -162,8 +163,9 @@ msgid "This shortcut is already being used for something else."
 msgstr ""
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:209
+#, fuzzy
 msgid "Window Manager Action Shortcut"
-msgstr ""
+msgstr "Xestor de ventanes"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
@@ -171,11 +173,12 @@ msgstr ""
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:226
 #, fuzzy
 msgid "action"
-msgstr "Descripción:"
+msgstr "Aición"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:216
+#, fuzzy
 msgid "Command Shortcut"
-msgstr ""
+msgstr "Atayu"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
@@ -186,7 +189,7 @@ msgstr "Comandu:"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:223
 msgid "Shortcut"
-msgstr ""
+msgstr "Atayu"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:267
 #, c-format
@@ -194,8 +197,9 @@ msgid "Press now the keyboard keys you want to use to trigger the %s '%s'."
 msgstr ""
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:291
+#, fuzzy
 msgid "Shortcut:"
-msgstr ""
+msgstr "Atayu"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:296
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:475
@@ -203,307 +207,312 @@ msgid "No keys pressed yet, proceed."
 msgstr ""
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:378
+#, fuzzy
 msgid "Could not grab the keyboard."
-msgstr ""
+msgstr "Nun pudo criase'l diálogu de configuración."
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:33
 msgid "Window operations menu"
-msgstr ""
+msgstr "Menú d'operaciones de ventana"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:34
 msgid "Up"
-msgstr ""
+msgstr "Arriba"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:35
-#, fuzzy
 msgid "Down"
-msgstr "Apagar"
+msgstr "Abaxo"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:36
 msgid "Left"
-msgstr ""
+msgstr "Esquierda"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:37
 msgid "Right"
-msgstr ""
+msgstr "Drecha"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:38
 msgid "Cancel"
-msgstr ""
+msgstr "Encaboxar"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:39
 msgid "Cycle windows"
-msgstr ""
+msgstr "Seleicionar ventanes cíclicamente"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:40
 msgid "Cycle windows (Reverse)"
-msgstr ""
+msgstr "Seleicionar ventanes cíclicamente (al revés)"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:41
+#, fuzzy
 msgid "Switch window for same application"
-msgstr ""
+msgstr "Camudar la estaya de trabayu del _ventana"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:42
-#, fuzzy
 msgid "Switch application"
-msgstr "Amestar aplicación"
+msgstr ""
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:43
-#, fuzzy
 msgid "Close window"
-msgstr "Zarrar sesión"
+msgstr "Zarrar ventana"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:44
 msgid "Maximize window horizontally"
-msgstr ""
+msgstr "Maximizar ventana horizontalmente"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:45
 msgid "Maximize window vertically"
-msgstr ""
+msgstr "Maximizar ventana verticalmente"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:46
 msgid "Maximize window"
-msgstr ""
+msgstr "Maximizar ventana"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:47
 msgid "Hide window"
-msgstr ""
+msgstr "Anubrir ventana"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:48
 msgid "Move window"
-msgstr ""
+msgstr "Mover ventana"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:49
 msgid "Resize window"
-msgstr ""
+msgstr "Redimensionar ventana"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:50
 msgid "Shade window"
-msgstr ""
+msgstr "Endolcar ventana"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:51
 msgid "Stick window"
-msgstr ""
+msgstr "Apegar ventana a tolos escritorios"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:52
 msgid "Raise window"
-msgstr ""
+msgstr "Elevar ventana"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:53
 msgid "Lower window"
-msgstr ""
+msgstr "Baxar ventana"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:54
+#, fuzzy
 msgid "Raise or lower window"
-msgstr ""
+msgstr "Elevar ventana"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:55
 msgid "Fill window"
-msgstr ""
+msgstr "Ocupar tola ventana"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:56
 msgid "Fill window horizontally"
-msgstr ""
+msgstr "Ocupar la ventana horizontalmente"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:57
 msgid "Fill window vertically"
-msgstr ""
+msgstr "Ocupar la ventana verticalmente"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:58
 msgid "Toggle above"
-msgstr ""
+msgstr "Amosar enriba"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:59
 msgid "Toggle fullscreen"
-msgstr ""
+msgstr "Pantalla completa"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:60
 msgid "Move window to upper workspace"
-msgstr ""
+msgstr "Mover ventana a la estaya de trabayu superior"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:61
 msgid "Move window to bottom workspace"
-msgstr ""
+msgstr "Mover ventana a la estaya de trabayu inferior"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:62
 msgid "Move window to left workspace"
-msgstr ""
+msgstr "Mover ventana a la estaya de trabayu esquierda"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:63
 msgid "Move window to right workspace"
-msgstr ""
+msgstr "Mover ventana a la estaya de trabayu drecha"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:64
 msgid "Move window to previous workspace"
-msgstr ""
+msgstr "Mover ventana a la estaya de trabayu anterior"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:65
 msgid "Move window to next workspace"
-msgstr ""
+msgstr "Mover ventana a la estaya de trabayu siguiente"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:66
 msgid "Move window to workspace 1"
-msgstr ""
+msgstr "Mover ventana a la estaya de trabayu 1"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:67
 msgid "Move window to workspace 2"
-msgstr ""
+msgstr "Mover ventana a la estaya de trabayu 2"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:68
 msgid "Move window to workspace 3"
-msgstr ""
+msgstr "Mover ventana a la estaya de trabayu 3"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:69
 msgid "Move window to workspace 4"
-msgstr ""
+msgstr "Mover ventana a la estaya de trabayu 4"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:70
 msgid "Move window to workspace 5"
-msgstr ""
+msgstr "Mover ventana a la estaya de trabayu 5"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:71
 msgid "Move window to workspace 6"
-msgstr ""
+msgstr "Mover ventana a la estaya de trabayu 6"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:72
 msgid "Move window to workspace 7"
-msgstr ""
+msgstr "Mover ventana a la estaya de trabayu 7"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:73
 msgid "Move window to workspace 8"
-msgstr ""
+msgstr "Mover ventana a la estaya de trabayu 8"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:74
 msgid "Move window to workspace 9"
-msgstr ""
+msgstr "Mover ventana a la estaya de trabayu 9"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:75
 msgid "Move window to workspace 10"
-msgstr ""
+msgstr "Mover ventana a la estaya de trabayu 10"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:76
 msgid "Move window to workspace 11"
-msgstr ""
+msgstr "Mover ventana a la estaya de trabayu 11"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:77
 msgid "Move window to workspace 12"
-msgstr ""
+msgstr "Mover ventana a la estaya de trabayu 12"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:78
+#, fuzzy
 msgid "Tile window to the top"
-msgstr ""
+msgstr "Mover ventana a la estaya de trabayu esquierda"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:79
+#, fuzzy
 msgid "Tile window to the bottom"
-msgstr ""
+msgstr "Mover ventana a la estaya de trabayu inferior"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:80
+#, fuzzy
 msgid "Tile window to the left"
-msgstr ""
+msgstr "Mover ventana a la estaya de trabayu esquierda"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:81
+#, fuzzy
 msgid "Tile window to the right"
-msgstr ""
+msgstr "Mover ventana a la estaya de trabayu drecha"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:82
 msgid "Show desktop"
-msgstr ""
+msgstr "Amosar escritoriu"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:83
 msgid "Upper workspace"
-msgstr ""
+msgstr "Estaya de trabayu superior"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:84
 msgid "Bottom workspace"
-msgstr ""
+msgstr "Estaya de trabayu inferior"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:85
 msgid "Left workspace"
-msgstr ""
+msgstr "Estaya de trabayu esquierda"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:86
 msgid "Right workspace"
-msgstr ""
+msgstr "Estaya de trabayu drecha"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:87
 msgid "Previous workspace"
-msgstr ""
+msgstr "Estaya de trabayu anterior"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:88
 msgid "Next workspace"
-msgstr ""
+msgstr "Estaya de trabayu siguiente"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:89
 msgid "Workspace 1"
-msgstr ""
+msgstr "Estaya de trabayu 1"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:90
 msgid "Workspace 2"
-msgstr ""
+msgstr "Estaya de trabayu 2"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:91
 msgid "Workspace 3"
-msgstr ""
+msgstr "Estaya de trabayu 3"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:92
 msgid "Workspace 4"
-msgstr ""
+msgstr "Estaya de trabayu 4"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:93
 msgid "Workspace 5"
-msgstr ""
+msgstr "Estaya de trabayu 5"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:94
 msgid "Workspace 6"
-msgstr ""
+msgstr "Estaya de trabayu 6"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:95
 msgid "Workspace 7"
-msgstr ""
+msgstr "Estaya de trabayu 7"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:96
 msgid "Workspace 8"
-msgstr ""
+msgstr "Estaya de trabayu 8"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:97
 msgid "Workspace 9"
-msgstr ""
+msgstr "Estaya de trabayu 9"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:98
 msgid "Workspace 10"
-msgstr ""
+msgstr "Estaya de trabayu 10"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:99
 msgid "Workspace 11"
-msgstr ""
+msgstr "Estaya de trabayu 11"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:100
 msgid "Workspace 12"
-msgstr ""
+msgstr "Estaya de trabayu 12"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:101
 msgid "Add workspace"
-msgstr ""
+msgstr "Amestar estaya de trabayu"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:102
 msgid "Add adjacent workspace"
-msgstr ""
+msgstr "Amestar estaya de trabayu cercana"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:103
 msgid "Delete last workspace"
-msgstr ""
+msgstr "Desaniciar cabera estaya de trabayu"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:104
 msgid "Delete active workspace"
-msgstr ""
+msgstr "Desaniciar estaya de trabayu activa"
 
 #: ../glade/libxfce4ui.xml.in.h:1
 msgid "Titled Dialog"
 msgstr ""
 
 #: ../glade/libxfce4ui.xml.in.h:2
+#, fuzzy
 msgid "Subtitle"
-msgstr ""
+msgstr "Títulu"
 
 #: ../glade/libxfce4ui.xml.in.h:3
 msgid "Xfce 4 Widgets"
@@ -511,16 +520,16 @@ msgstr ""
 
 #: ../xfce4-about/main.c:52
 msgid "Version information"
-msgstr "Información de version"
+msgstr "Información de versión"
 
 #: ../xfce4-about/main.c:70
-#, fuzzy
 msgid "Window Manager"
-msgstr "Entamando xestor de ventanes"
+msgstr "Xestor de ventanes"
 
 #: ../xfce4-about/main.c:71
+#, fuzzy
 msgid "Handles the placement of windows on the screen."
-msgstr ""
+msgstr "Nel _centru de la pantalla"
 
 #: ../xfce4-about/main.c:74
 msgid "Panel"
@@ -535,7 +544,7 @@ msgstr ""
 #: ../xfce4-about/main.c:79
 #, fuzzy
 msgid "Desktop Manager"
-msgstr "Entamando xestor d'escritoriu"
+msgstr "Xestor de ventanes"
 
 #: ../xfce4-about/main.c:80
 msgid ""
@@ -544,8 +553,9 @@ msgid ""
 msgstr ""
 
 #: ../xfce4-about/main.c:84
+#, fuzzy
 msgid "File Manager "
-msgstr ""
+msgstr "Xestor de ventanes"
 
 #: ../xfce4-about/main.c:85
 msgid ""
@@ -556,7 +566,7 @@ msgstr ""
 #: ../xfce4-about/main.c:89
 #, fuzzy
 msgid "Session Manager"
-msgstr "Xestor de sesión de Xfce"
+msgstr "Socket del xestor de sesión"
 
 #: ../xfce4-about/main.c:90
 msgid ""
@@ -696,9 +706,9 @@ msgstr ""
 
 #. I18N: %s will be replaced by the Xfce version number
 #: ../xfce4-about/main.c:489
-#, c-format
+#, fuzzy, c-format
 msgid "Version %s"
-msgstr ""
+msgstr "%s (en %s)"
 
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
@@ -729,8 +739,9 @@ msgid "Translators"
 msgstr ""
 
 #: ../xfce4-about/contributors.h:139
+#, fuzzy
 msgid "Previous contributors"
-msgstr ""
+msgstr "Estaya de trabayu anterior"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:1
 msgid "About Xfce"
@@ -773,708 +784,647 @@ msgid "License"
 msgstr ""
 
 #, fuzzy
-#~ msgid "<span size='large'><b>%s</b></span>"
-#~ msgstr "<span size='large'><b>Zarrar sesión de %s</b></span>"
+msgid "<span size='large'><b>%s</b></span>"
+msgstr "<span size='large'><b>Zarrar sesión de %s</b></span>"
 
-#~ msgid "No description given"
-#~ msgstr "Nun se dio nenguna descripción"
+msgid "No description given"
+msgstr "Nun se dio nenguna descripción"
 
-#~ msgid "Choose theme file to install..."
-#~ msgstr "Escueya'l ficheru de tema a instalar..."
+msgid "Choose theme file to install..."
+msgstr "Escueya'l ficheru de tema a instalar..."
 
-#~ msgid "Unable to install splash theme from file \"%s\""
-#~ msgstr ""
-#~ "Imposible instalar el tema de pantalla d'aniciu dende'l ficheru \"%s\"."
+msgid "Unable to install splash theme from file \"%s\""
+msgstr ""
+"Imposible instalar el tema de pantalla d'aniciu dende'l ficheru \"%s\"."
 
-#~ msgid "Theme File Error"
-#~ msgstr "Error nel ficheru tema"
+msgid "Theme File Error"
+msgstr "Error nel ficheru tema"
 
-#~ msgid "Please check that the file is a valid splash theme archive."
-#~ msgstr ""
-#~ "Por favor, compruebe que'l ficheru ye un ficheru de tema de pantalla "
-#~ "d'aniciu válidu."
+msgid "Please check that the file is a valid splash theme archive."
+msgstr ""
+"Por favor, compruebe que'l ficheru ye un ficheru de tema de pantalla "
+"d'aniciu válidu."
 
-#~ msgid "Unable to remove splash theme \"%s\" from directory %s."
-#~ msgstr ""
-#~ "Nun se pue desaniciar el tema de pantalla d'aniciu \"%s\" del direutoriu "
-#~ "%s."
+msgid "Unable to remove splash theme \"%s\" from directory %s."
+msgstr ""
+"Nun se pue desaniciar el tema de pantalla d'aniciu \"%s\" del direutoriu %s."
 
-#~ msgid "Choose theme filename..."
-#~ msgstr "Escueya'l nome de ficheru de tema..."
+msgid "Choose theme filename..."
+msgstr "Escueya'l nome de ficheru de tema..."
 
-#~ msgid "_Install new theme"
-#~ msgstr "_Instalar tema nuevu"
+msgid "_Install new theme"
+msgstr "_Instalar tema nuevu"
 
-#~ msgid "_Remove theme"
-#~ msgstr "Desanicia_r tema"
+msgid "_Remove theme"
+msgstr "Desanicia_r tema"
 
-#~ msgid "_Export theme"
-#~ msgstr "_Esportar tema"
+msgid "_Export theme"
+msgstr "_Esportar tema"
 
-#~ msgid "Balou theme"
-#~ msgstr "Tema Balou"
+msgid "Balou theme"
+msgstr "Tema Balou"
 
-#~ msgid "Configure Balou..."
-#~ msgstr "Configurar Balou..."
+msgid "Configure Balou..."
+msgstr "Configurar Balou..."
 
-#~ msgid "Balou"
-#~ msgstr "Balou"
+msgid "Balou"
+msgstr "Balou"
 
-#~ msgid "Balou Splash Engine"
-#~ msgstr "Motor de pantalla d'aniciu Balou"
+msgid "Balou Splash Engine"
+msgstr "Motor de pantalla d'aniciu Balou"
 
-#~ msgid "Mice"
-#~ msgstr "Mice"
+msgid "Mice"
+msgstr "Mice"
 
-#~ msgid "Mice Splash Engine"
-#~ msgstr "Motor de pantalla d'aniciu Mice"
+msgid "Mice Splash Engine"
+msgstr "Motor de pantalla d'aniciu Mice"
 
-#~ msgid "Configure Simple..."
-#~ msgstr "Configurar Simple..."
+msgid "Configure Simple..."
+msgstr "Configurar Simple..."
 
-#~ msgid "Font"
-#~ msgstr "Fonte"
+msgid "Font"
+msgstr "Fonte"
 
-#~ msgid "Colors"
-#~ msgstr "Colores"
+msgid "Colors"
+msgstr "Colores"
 
-#~ msgid "Background color:"
-#~ msgstr "Color de fondu:"
+msgid "Background color:"
+msgstr "Color de fondu:"
 
-#~ msgid "Text color:"
-#~ msgstr "Color de testu:"
+msgid "Text color:"
+msgstr "Color de testu:"
 
-#~ msgid "Image"
-#~ msgstr "Imaxen"
+msgid "Image"
+msgstr "Imaxen"
 
-#~ msgid "Use custom image"
-#~ msgstr "Usar una imaxen personalizada"
+msgid "Use custom image"
+msgstr "Usar una imaxen personalizada"
 
-#~ msgid "Choose image..."
-#~ msgstr "Escoyer imaxen..."
+msgid "Choose image..."
+msgstr "Escoyer imaxen..."
 
-#~ msgid "Images"
-#~ msgstr "Imáxenes"
+msgid "Images"
+msgstr "Imáxenes"
 
-#~ msgid "All files"
-#~ msgstr "Tolos ficheros"
+msgid "All files"
+msgstr "Tolos ficheros"
 
-#~ msgid "Simple"
-#~ msgstr "Simple"
+msgid "Simple"
+msgstr "Simple"
 
-#~ msgid "Simple Splash Engine"
-#~ msgstr "Motor de pantalla d'aniciu Simple"
+msgid "Simple Splash Engine"
+msgstr "Motor de pantalla d'aniciu Simple"
 
-#~ msgid "Loc_k screen"
-#~ msgstr "B_loquiar pantalla"
+msgid "_Suspend"
+msgstr "_Suspender"
 
-#~ msgid "_Suspend"
-#~ msgstr "_Suspender"
+msgid "_Hibernate"
+msgstr "_Iverrnar"
 
-#~ msgid "_Hibernate"
-#~ msgstr "_Iverrnar"
+msgid "_Reboot"
+msgstr "_Reaniciar"
 
-#~ msgid "_Reboot"
-#~ msgstr "_Reaniciar"
+msgid "Shut _down"
+msgstr "Ap_agar"
 
-#~ msgid "Shut _down"
-#~ msgstr "Ap_agar"
+msgid "_Log out"
+msgstr "Zarrar s_esión"
 
-#~ msgid "_Log out"
-#~ msgstr "Zarrar s_esión"
+msgid "Are you sure you want to log out?"
+msgstr "¿Daveres que quies desconeutate?"
 
-#~ msgid "Are you sure you want to log out?"
-#~ msgstr "¿Daveres que quies desconeutate?"
+msgid "You will be logged out in %u seconds."
+msgstr "Desconeutarásete en %u segundos."
 
-#~ msgid "You will be logged out in %u seconds."
-#~ msgstr "Desconeutarásete en %u segundos."
+msgid "Failed to log out."
+msgstr "Fallu al desconeutar."
 
-#~ msgid "Failed to log out."
-#~ msgstr "Fallu al desconeutar."
+msgid "Are you sure you want to shut down?"
+msgstr "¿Daveres que quies apagar?"
 
-#~ msgid "Are you sure you want to shut down?"
-#~ msgstr "¿Daveres que quies apagar?"
+msgid "Your system will shut down in %u seconds."
+msgstr "El to sistema apagaráse en %u segundos."
 
-#~ msgid "Your system will shut down in %u seconds."
-#~ msgstr "El to sistema apagaráse en %u segundos."
+msgid "Failed to shut down."
+msgstr "Fallu al apagar."
 
-#~ msgid "Failed to shut down."
-#~ msgstr "Fallu al apagar."
+msgid "Are you sure you want to reboot?"
+msgstr "¿Daveres que quies reaniciar?"
 
-#~ msgid "Are you sure you want to reboot?"
-#~ msgstr "¿Daveres que quies reaniciar?"
+msgid "Your system will reboot in %u seconds."
+msgstr "El to sistema reaniciaráse en %u segundos."
 
-#~ msgid "Your system will reboot in %u seconds."
-#~ msgstr "El to sistema reaniciaráse en %u segundos."
+msgid "Failed to reboot."
+msgstr "Falló al reaniciar."
 
-#~ msgid "Failed to reboot."
-#~ msgstr "Falló al reaniciar."
+msgid "Failed to suspend"
+msgstr "Fallu al suspender"
 
-#~ msgid "Failed to suspend"
-#~ msgstr "Fallu al suspender"
+msgid "Session Error"
+msgstr "Error de sesión"
 
-#~ msgid "Session Error"
-#~ msgstr "Error de sesión"
+msgid "Unable to contact settings server"
+msgstr "Imposible contautar col sirvidor de configuración"
 
-#~ msgid "SOCKET ID"
-#~ msgstr "ID de SOCKET"
+msgid "Internal Error"
+msgstr "Error internu"
 
-#~ msgid "Unable to contact settings server"
-#~ msgstr "Imposible contautar col sirvidor de configuración"
+msgid "Unable to create user interface from embedded definition data"
+msgstr ""
+"Imposible crear interfaz d'usuariu a partir de los datos de definición "
+"incluyíos"
 
-#~ msgid "Internal Error"
-#~ msgstr "Error internu"
+msgid "This is likely a problem with your Xfce installation"
+msgstr "Quiciabes esto ye un problema cola so instalación de Xfce"
 
-#~ msgid "Unable to create user interface from embedded definition data"
-#~ msgstr ""
-#~ "Imposible crear interfaz d'usuariu a partir de los datos de definición "
-#~ "incluyíos"
+msgid "_Application Autostart"
+msgstr "_Autoarranque d'aplicaciones"
 
-#~ msgid "This is likely a problem with your Xfce installation"
-#~ msgstr "Quiciabes esto ye un problema cola so instalación de Xfce"
+msgid "If running"
+msgstr "Si ta n'execución"
 
-#~ msgid "_Application Autostart"
-#~ msgstr "_Autoarranque d'aplicaciones"
+msgid "Immediately"
+msgstr "Darréu"
 
-#~ msgid "If running"
-#~ msgstr "Si ta n'execución"
+msgid "Never"
+msgstr "Enxamás"
 
-#~ msgid "Always"
-#~ msgstr "Siempres"
+msgid "Unable to save the session"
+msgstr "Imposible guardar la sesión"
 
-#~ msgid "Immediately"
-#~ msgstr "Darréu"
+msgid "Are you sure you want to terminate \"%s\"?"
+msgstr "¿Daveres que quies acabar \"%s\"?"
 
-#~ msgid "Never"
-#~ msgstr "Enxamás"
+msgid "Terminate \"%s\""
+msgstr "Acabar \"%s\""
 
-#~ msgid "Session Save Error"
-#~ msgstr "Error al guardar sesión"
+msgid "Terminate Program"
+msgstr "Acabar programa"
 
-#~ msgid "Unable to save the session"
-#~ msgstr "Imposible guardar la sesión"
+msgid ""
+"The application will lose any unsaved state and will not be restarted in "
+"your next session."
+msgstr ""
+"L'aplicación perderá cualesquier estáu nun guardáu y nun se reaniciará na so "
+"siguiente sesión."
 
-#~ msgid "Are you sure you want to terminate \"%s\"?"
-#~ msgstr "¿Daveres que quies acabar \"%s\"?"
+msgid "Unable to terminate program."
+msgstr "Imposible acabar programa."
 
-#~ msgid "Terminate \"%s\""
-#~ msgstr "Acabar \"%s\""
+msgid "(Unknown program)"
+msgstr "(Programa desconocíu)"
 
-#~ msgid "Terminate Program"
-#~ msgstr "Acabar programa"
+msgid "Priority"
+msgstr "Prioridá"
 
-#~ msgid ""
-#~ "The application will lose any unsaved state and will not be restarted in "
-#~ "your next session."
-#~ msgstr ""
-#~ "L'aplicación perderá cualesquier estáu nun guardáu y nun se reaniciará na "
-#~ "so siguiente sesión."
+msgid "Program"
+msgstr "Programa"
 
-#~ msgid "Unable to terminate program."
-#~ msgstr "Imposible acabar programa."
+msgid "Select a command"
+msgstr "Seleicione un comandu"
 
-#~ msgid "(Unknown program)"
-#~ msgstr "(Programa desconocíu)"
+msgid "Failed to create file %s"
+msgstr "Nun pudo crease'l ficheru %s"
 
-#~ msgid "Priority"
-#~ msgstr "Prioridá"
+msgid ""
+"Below is the list of applications that will be started automatically when "
+"you login to your Xfce desktop, in addition to the applications that were "
+"saved when you logged out last time:"
+msgstr ""
+"La siguiente ye una llista d'aplicaciones qu'aniciarán automáticamente "
+"cuando entame sesión nel escritoriu Xfce, arriendes de les aplicaciones que "
+"se guardaron la postrer vegada que zarró sesión:"
 
-#~ msgid "Program"
-#~ msgstr "Programa"
+msgid "Loading desktop settings"
+msgstr "Cargando configuración d'escritoriu"
 
-#~ msgid "Restart Style"
-#~ msgstr "Estilu de reaniciu"
+msgid "Verifying DNS settings"
+msgstr "Verificando configuración de DNS"
 
-#~ msgid "None"
-#~ msgstr "Dengún"
+msgid "Loading session data"
+msgstr "Cargando información de sesión"
 
-#~ msgid "Name:"
-#~ msgstr "Nome:"
+msgid "Log Out"
+msgstr "Colar"
 
-#~ msgid "Select a command"
-#~ msgstr "Seleicione un comandu"
+msgid "Suspend"
+msgstr "Suspender"
 
-#~ msgid "Failed to unlink %s: %s"
-#~ msgstr "Nun pudo desenllazase %s: %s"
+msgid "Hibernate"
+msgstr "Hibernar"
 
-#~ msgid "Failed to create file %s"
-#~ msgstr "Nun pudo crease'l ficheru %s"
+msgid "_Save session for future logins"
+msgstr "_Guardar sesión pa futuros entamos de sesión"
 
-#~ msgid "Failed to write file %s"
-#~ msgstr "Nun pudo escribise nel ficheru %s"
+msgid "Please enter your password:"
+msgstr "Por favor meta la so contraseña:"
 
-#~ msgid ""
-#~ "Below is the list of applications that will be started automatically when "
-#~ "you login to your Xfce desktop, in addition to the applications that were "
-#~ "saved when you logged out last time:"
-#~ msgstr ""
-#~ "La siguiente ye una llista d'aplicaciones qu'aniciarán automáticamente "
-#~ "cuando entame sesión nel escritoriu Xfce, arriendes de les aplicaciones "
-#~ "que se guardaron la postrer vegada que zarró sesión:"
+msgid "<b>An error occurred</b>"
+msgstr "<b>Hebo un error</b>"
 
-#~ msgid "Loading desktop settings"
-#~ msgstr "Cargando configuración d'escritoriu"
+msgid ""
+"Either the password you entered is invalid, or the system administrator "
+"disallows shutting down this computer with your user account."
+msgstr ""
+"La clave metida ye inválida o l'alministrador del sistema deshabilitó la "
+"capacidá d'apagar l'equipu cola so cuenta usuariu."
 
-#~ msgid "Verifying DNS settings"
-#~ msgstr "Verificando configuración de DNS"
+msgid "Shutdown Failed"
+msgstr "Fallu al apagar"
 
-#~ msgid "Loading session data"
-#~ msgstr "Cargando información de sesión"
+msgid "Unable to perform shutdown"
+msgstr "Imposible apagar"
 
-#~ msgid "Log Out"
-#~ msgstr "Colar"
+msgid "Last accessed: %s"
+msgstr "Caberu accesu: %s"
 
-#~ msgid "Restart"
-#~ msgstr "Reaniciar"
+msgid ""
+"Choose the session you want to restore. You can simply double-click the "
+"session name to restore it."
+msgstr ""
+"Escueya la sesión a restaurar. Simplemente faga doble clic sobre'l nome de "
+"sesión pa restaurala."
 
-#~ msgid "Suspend"
-#~ msgstr "Suspender"
+msgid "Log out"
+msgstr "Zarrar sesión"
 
-#~ msgid "Hibernate"
-#~ msgstr "Hibernar"
+msgid "Cancel the login attempt and return to the login screen."
+msgstr ""
+"Encaboxar l'intentu d'accesu al entamu y tornar a la pantalla d'accesu."
 
-#~ msgid "_Save session for future logins"
-#~ msgstr "_Guardar sesión pa futuros entamos de sesión"
+msgid "New session"
+msgstr "Nueva sesión"
 
-#~ msgid "Please enter your password:"
-#~ msgstr "Por favor meta la so contraseña:"
+msgid "Create a new session."
+msgstr "Crear una nueva sesión"
 
-#~ msgid "<b>An error occurred</b>"
-#~ msgstr "<b>Hebo un error</b>"
+msgid "The client doesn't have any properties set yet"
+msgstr "El veceru entá nun tien denguna propiedá"
 
-#~ msgid ""
-#~ "Either the password you entered is invalid, or the system administrator "
-#~ "disallows shutting down this computer with your user account."
-#~ msgstr ""
-#~ "La clave metida ye inválida o l'alministrador del sistema deshabilitó la "
-#~ "capacidá d'apagar l'equipu cola so cuenta usuariu."
+msgid "Starting The Gnome Keyring Daemon"
+msgstr "Entamando GNOME Keyring Daemon"
 
-#~ msgid "Shutdown Failed"
-#~ msgstr "Fallu al apagar"
+msgid "Starting Gnome Assistive Technologies"
+msgstr "Entamando teunoloxíes d'accesibilidá de GNOME"
 
-#~ msgid "Unable to perform shutdown"
-#~ msgstr "Imposible apagar"
+msgid "Starting KDE services"
+msgstr "Entamando servicios de KDE"
 
-#~ msgid "Last accessed: %s"
-#~ msgstr "Caberu accesu: %s"
+msgid "(Unknown)"
+msgstr "(Desconocíu)"
 
-#~ msgid ""
-#~ "Choose the session you want to restore. You can simply double-click the "
-#~ "session name to restore it."
-#~ msgstr ""
-#~ "Escueya la sesión a restaurar. Simplemente faga doble clic sobre'l nome "
-#~ "de sesión pa restaurala."
+msgid ""
+"Could not look up internet address for %s.\n"
+"This will prevent Xfce from operating correctly.\n"
+"It may be possible to correct the problem by adding\n"
+"%s to the file /etc/hosts on your system."
+msgstr ""
+"Nun pue atopase la direición IP pa %s.\n"
+"Esto puede impedir el correutu funcionamiento de Xfce.\n"
+"Puede igualo amestado %s al conteníu del \n"
+"ficheru /etc/hosts nel so sistema."
 
-#~ msgid "Log out"
-#~ msgstr "Zarrar sesión"
+msgid "Continue anyway"
+msgstr "Continuar de toes formes"
 
-#~ msgid "Cancel the login attempt and return to the login screen."
-#~ msgstr ""
-#~ "Encaboxar l'intentu d'accesu al entamu y tornar a la pantalla d'accesu."
+msgid "Try again"
+msgstr "Intentar otra vuelta"
 
-#~ msgid "New session"
-#~ msgstr "Nueva sesión"
+msgid ""
+"Unable to determine failsafe session name.  Possible causes: xfconfd isn't "
+"running (D-Bus setup problem); environment variable $XDG_CONFIG_DIRS is set "
+"incorrectly (must include \"%s\"), or xfce4-session is installed incorrectly."
+msgstr ""
+"Imposible determinar el nome de sesión a preba de fallos. Posibles causes: "
+"xfconf nun ta executándose (problema de configuración de D-Bus); la variable "
+"d'entornu $XDG_CONFIG_DIRS ta configurada incorreutamente (tien d'incluyir "
+"\"%s\"), o xfce4-session atópase instaláu incorreutamente."
 
-#~ msgid "Create a new session."
-#~ msgstr "Crear una nueva sesión"
+msgid ""
+"The specified failsafe session (\"%s\") is not marked as a failsafe session."
+msgstr ""
+"La sesión a preba de fallos (\"%s\") nun ta conseñada como una sesión a "
+"preba de fallos."
 
-#~ msgid "The client doesn't have any properties set yet"
-#~ msgstr "El veceru entá nun tien denguna propiedá"
+msgid "The list of applications in the failsafe session is empty."
+msgstr "La llista d'aplicaciones na sesión a preba de fallos ta erma."
 
-#~ msgid "Starting The Gnome Keyring Daemon"
-#~ msgstr "Entamando GNOME Keyring Daemon"
+msgid "Unable to load a failsafe session"
+msgstr "Imposible cargar una sesión a preba fallos"
 
-#~ msgid "Starting Gnome Assistive Technologies"
-#~ msgstr "Entamando teunoloxíes d'accesibilidá de GNOME"
+msgid "Failed to suspend session"
+msgstr "Fallu al suspender la sesión"
 
-#~ msgid "Starting KDE services"
-#~ msgstr "Entamando servicios de KDE"
+msgid "Failed to hibernate session"
+msgstr "Fallu al hibernar la sesión"
 
-#~ msgid "(Unknown)"
-#~ msgstr "(Desconocíu)"
+msgid "Can only terminate clients when in the idle state"
+msgstr "Namái pueden terminase veceros cuando tan n'estáu inactivu"
 
-#~ msgid ""
-#~ "Could not look up internet address for %s.\n"
-#~ "This will prevent Xfce from operating correctly.\n"
-#~ "It may be possible to correct the problem by adding\n"
-#~ "%s to the file /etc/hosts on your system."
-#~ msgstr ""
-#~ "Nun pue atopase la direición IP pa %s.\n"
-#~ "Esto puede impedir el correutu funcionamiento de Xfce.\n"
-#~ "Puede igualo amestado %s al conteníu del \n"
-#~ "ficheru /etc/hosts nel so sistema."
+msgid "Session manager must be in idle state when requesting a checkpoint"
+msgstr ""
+"El xestor de sesión tien de tar n'estáu inactivu al solicitar un puntu de "
+"comprobación"
 
-#~ msgid "Continue anyway"
-#~ msgstr "Continuar de toes formes"
+msgid "Session manager must be in idle state when requesting a shutdown"
+msgstr "El xestor de sesión tien de tar n'estáu inactivu al solicitar l'apagáu"
 
-#~ msgid "Try again"
-#~ msgstr "Intentar otra vuelta"
+msgid "Invalid shutdown type \"%u\""
+msgstr "Tipu d'apagáu \"%u\" nun válidu"
 
-#~ msgid ""
-#~ "Unable to determine failsafe session name.  Possible causes: xfconfd "
-#~ "isn't running (D-Bus setup problem); environment variable "
-#~ "$XDG_CONFIG_DIRS is set incorrectly (must include \"%s\"), or xfce4-"
-#~ "session is installed incorrectly."
-#~ msgstr ""
-#~ "Imposible determinar el nome de sesión a preba de fallos. Posibles "
-#~ "causes: xfconf nun ta executándose (problema de configuración de D-Bus); "
-#~ "la variable d'entornu $XDG_CONFIG_DIRS ta configurada incorreutamente "
-#~ "(tien d'incluyir \"%s\"), o xfce4-session atópase instaláu "
-#~ "incorreutamente."
+msgid "Invalid shutdown type"
+msgstr "Tipu d'apagáu non válidu"
 
-#~ msgid ""
-#~ "The specified failsafe session (\"%s\") is not marked as a failsafe "
-#~ "session."
-#~ msgstr ""
-#~ "La sesión a preba de fallos (\"%s\") nun ta conseñada como una sesión a "
-#~ "preba de fallos."
+msgid "No HAL method for command %d"
+msgstr "Ensin métodu HAL pal comandu %d"
 
-#~ msgid "The list of applications in the failsafe session is empty."
-#~ msgstr "La llista d'aplicaciones na sesión a preba de fallos ta erma."
+msgid ""
+"Program \"sudo\" was not found.  You will not be able to shutdown your "
+"system from within Xfce."
+msgstr ""
+"Nun s'atopó'l programa \"sudo\". Nun va ser dable apagar el sistema dende "
+"Xfce."
 
-#~ msgid "Session Manager Error"
-#~ msgstr "Error de Xestor de sesión"
+msgid "Unable to create parent pipe: %s"
+msgstr "Nun pudo crease tubería pá: %s"
 
-#~ msgid "Unable to load a failsafe session"
-#~ msgstr "Imposible cargar una sesión a preba fallos"
+msgid "Unable to create child pipe: %s"
+msgstr "Nun pudo crease la tubería fíu: %s"
 
-#~ msgid "Failed to suspend session"
-#~ msgstr "Fallu al suspender la sesión"
+msgid "Unable to fork sudo helper: %s"
+msgstr "Imposible entamar l'aplicación auxiliar pa sudo: %s"
 
-#~ msgid "Failed to hibernate session"
-#~ msgstr "Fallu al hibernar la sesión"
+msgid "Unable to read response from sudo helper: %s"
+msgstr "Imposible lleer rempuesta de l'aplicación auxiliar pa sudo: %s"
 
-#~ msgid "Can only terminate clients when in the idle state"
-#~ msgstr "Namái pueden terminase veceros cuando tan n'estáu inactivu"
+msgid "Unknown error"
+msgstr "Error desconocíu"
 
-#~ msgid "Session manager must be in idle state when requesting a checkpoint"
-#~ msgstr ""
-#~ "El xestor de sesión tien de tar n'estáu inactivu al solicitar un puntu de "
-#~ "comprobación"
+msgid "Unable to open parent pipe: %s"
+msgstr "Nun pudo abrise la tubería pá: %s"
 
-#~ msgid "Session manager must be in idle state when requesting a shutdown"
-#~ msgstr ""
-#~ "El xestor de sesión tien de tar n'estáu inactivu al solicitar l'apagáu"
+msgid "Unable to open child pipe: %s"
+msgstr "Nun pudo abrise la tubería fíu: %s"
 
-#~ msgid "Invalid shutdown type \"%u\""
-#~ msgstr "Tipu d'apagáu \"%u\" nun válidu"
+msgid "Got unexpected reply from sudo shutdown helper"
+msgstr ""
+"Recibióse una rempuesta inesperada de l'aplicación auxiliar d'apagáu per "
+"aciu de sudo"
 
-#~ msgid "Invalid shutdown type"
-#~ msgstr "Tipu d'apagáu non válidu"
+msgid ""
+"Suspend and Hibernate are only supported through HAL, which is unavailable"
+msgstr ""
+"Namái se soporten suspender ya hibernar a traviés d'HAL, que nun ta "
+"disponible"
 
-#~ msgid "No HAL method for command %d"
-#~ msgstr "Ensin métodu HAL pal comandu %d"
+msgid "Error sending command to shutdown helper: %s"
+msgstr "Fallu al unviar el comandu a l'aplicación auxiliar d'apagáu: %s"
 
-#~ msgid ""
-#~ "Program \"sudo\" was not found.  You will not be able to shutdown your "
-#~ "system from within Xfce."
-#~ msgstr ""
-#~ "Nun s'atopó'l programa \"sudo\". Nun va ser dable apagar el sistema dende "
-#~ "Xfce."
+msgid "Error receiving response from shutdown helper: %s"
+msgstr "Fallu al recibir la rempuesta de l'aplicación auxiliar d'apagáu: %s"
 
-#~ msgid "Unable to create parent pipe: %s"
-#~ msgstr "Nun pudo crease tubería pá: %s"
+msgid "Shutdown command failed"
+msgstr "Falló'l comandu d'apagáu"
 
-#~ msgid "Unable to create child pipe: %s"
-#~ msgstr "Nun pudo crease la tubería fíu: %s"
+msgid "Choose a name for the new session:"
+msgstr "Escoyer un nome pa la sesión"
 
-#~ msgid "Unable to fork sudo helper: %s"
-#~ msgstr "Imposible entamar l'aplicación auxiliar pa sudo: %s"
+msgid "Starting the Volume Controller"
+msgstr "Entamando controlador de volume"
 
-#~ msgid "Unable to read response from sudo helper: %s"
-#~ msgstr "Imposible lleer rempuesta de l'aplicación auxiliar pa sudo: %s"
+msgid "Starting the Panel"
+msgstr "Entamando panel"
 
-#~ msgid "Unknown error"
-#~ msgstr "Error desconocíu"
+msgid "Starting the Taskbar"
+msgstr "Entamando barra Xeres"
 
-#~ msgid "Unable to open parent pipe: %s"
-#~ msgstr "Nun pudo abrise la tubería pá: %s"
+msgid "Starting the Gnome Terminal Emulator"
+msgstr "Entamando emulador de terminal de GNOME"
 
-#~ msgid "Unable to open child pipe: %s"
-#~ msgstr "Nun pudo abrise la tubería fíu: %s"
+msgid "Starting the KDE Advanced Text Editor"
+msgstr "Entamando editor avanzáu de testu de KDE"
 
-#~ msgid "Got unexpected reply from sudo shutdown helper"
-#~ msgstr ""
-#~ "Recibióse una rempuesta inesperada de l'aplicación auxiliar d'apagáu per "
-#~ "aciu de sudo"
+msgid "Starting the KDE Clipboard Manager"
+msgstr "Entamando xestor de cartafueyu de KDE"
 
-#~ msgid ""
-#~ "Suspend and Hibernate are only supported through HAL, which is unavailable"
-#~ msgstr ""
-#~ "Namái se soporten suspender ya hibernar a traviés d'HAL, que nun ta "
-#~ "disponible"
+msgid "Starting the KDE Mail Reader"
+msgstr "Entamando llector de correos de KDE"
 
-#~ msgid "Error sending command to shutdown helper: %s"
-#~ msgstr "Fallu al unviar el comandu a l'aplicación auxiliar d'apagáu: %s"
+msgid "Starting the KDE News Reader"
+msgstr "Entamando llector de noticies de KDE"
 
-#~ msgid "Error receiving response from shutdown helper: %s"
-#~ msgstr "Fallu al recibir la rempuesta de l'aplicación auxiliar d'apagáu: %s"
+msgid "Starting the Konqueror"
+msgstr "Entamando Konqueror"
 
-#~ msgid "Shutdown command failed"
-#~ msgstr "Falló'l comandu d'apagáu"
+msgid "Starting the KDE Terminal Emulator"
+msgstr "Entamando emulador de terminal de KDE"
 
-#~ msgid "Choose a name for the new session:"
-#~ msgstr "Escoyer un nome pa la sesión"
+msgid "Starting the Beep Media Player"
+msgstr "Entamando Beep Media Player"
 
-#~ msgid "Starting the Volume Controller"
-#~ msgstr "Entamando controlador de volume"
+msgid "Starting The Gimp"
+msgstr "Entamando Gimp"
 
-#~ msgid "Starting the Panel"
-#~ msgstr "Entamando panel"
+msgid "Starting the VI Improved Editor"
+msgstr "Entamando VI Improved Editor"
 
-#~ msgid "Starting the Taskbar"
-#~ msgstr "Entamando barra Xeres"
+msgid "Starting the X-Chat IRC Client"
+msgstr "Entamando veceru d'IRC X-Chat"
 
-#~ msgid "Starting the Gnome Terminal Emulator"
-#~ msgstr "Entamando emulador de terminal de GNOME"
+msgid "Starting the X Multimedia System"
+msgstr "Entamando sistema multimedia de X"
 
-#~ msgid "Starting the KDE Advanced Text Editor"
-#~ msgstr "Entamando editor avanzáu de testu de KDE"
+msgid "Starting the X Terminal Emulator"
+msgstr "Entamando emulador de terminal de X"
 
-#~ msgid "Starting the KDE Clipboard Manager"
-#~ msgstr "Entamando xestor de cartafueyu de KDE"
+msgid ""
+"The location and the format of the autostart directory has changed.\n"
+"The new location is\n"
+"\n"
+"  %s\n"
+"\n"
+"where you can place .desktop files to, that describe the applications\n"
+"to start when you login to your Xfce desktop. The files in your old\n"
+"autostart directory have been successfully migrated to the new\n"
+"location.\n"
+"You should delete this directory now.\n"
+msgstr ""
+"Camudóse l'asitiamientu y el formatu del direutoriu d'autoarranque.\n"
+"El nuevu asitiamientu ye\n"
+"\n"
+"  %s\n"
+"\n"
+"na que pue collocar los ficheros .desktop que describen les\n"
+"aplicaciones a entamar cuando escomencipie la so sesión de Xfce. Migrose\n"
+"con éxitu los ficheros del direutoriu d'autoarranque antiguu al nuevu "
+"asitiamientu.\n"
+"Agora tien de desaniciar esti direutoriu.\n"
 
-#~ msgid "Starting the KDE Mail Reader"
-#~ msgstr "Entamando llector de correos de KDE"
+msgid "Performing Autostart..."
+msgstr "Faciendo autoarranque..."
 
-#~ msgid "Starting the KDE News Reader"
-#~ msgstr "Entamando llector de noticies de KDE"
+msgid "Tips and Tricks"
+msgstr "Conseyos y trucos"
 
-#~ msgid "Starting the Konqueror"
-#~ msgstr "Entamando Konqueror"
+msgid "Fortunes"
+msgstr "Fortunes"
 
-#~ msgid "Starting the KDE Terminal Emulator"
-#~ msgstr "Entamando emulador de terminal de KDE"
+msgid "Could not load tips database (%s)."
+msgstr "Nun pudo cargase la base de datos de tips (%s)."
 
-#~ msgid "Starting the Beep Media Player"
-#~ msgstr "Entamando Beep Media Player"
+msgid "Invalid output of fortune."
+msgstr "La salida de «fortune» nun ye válida."
 
-#~ msgid "Starting The Gimp"
-#~ msgstr "Entamando Gimp"
+msgid "Executing fortune failed (%s)"
+msgstr "Error al executar «fortune»: «%s»"
 
-#~ msgid "Starting the VI Improved Editor"
-#~ msgstr "Entamando VI Improved Editor"
+msgid "Error while loading tips."
+msgstr "Fallu cargando tips."
 
-#~ msgid "Starting the X-Chat IRC Client"
-#~ msgstr "Entamando veceru d'IRC X-Chat"
+msgid "Display tips on _startup"
+msgstr "Amosar con_seyos al entamu"
 
-#~ msgid "Starting the X Multimedia System"
-#~ msgstr "Entamando sistema multimedia de X"
+msgid "Next"
+msgstr "Siguiente"
 
-#~ msgid "Starting the X Terminal Emulator"
-#~ msgstr "Entamando emulador de terminal de X"
+msgid "Logout Error"
+msgstr "Fallu de zarru de sesión"
 
-#~ msgid ""
-#~ "The location and the format of the autostart directory has changed.\n"
-#~ "The new location is\n"
-#~ "\n"
-#~ "  %s\n"
-#~ "\n"
-#~ "where you can place .desktop files to, that describe the applications\n"
-#~ "to start when you login to your Xfce desktop. The files in your old\n"
-#~ "autostart directory have been successfully migrated to the new\n"
-#~ "location.\n"
-#~ "You should delete this directory now.\n"
-#~ msgstr ""
-#~ "Camudóse l'asitiamientu y el formatu del direutoriu d'autoarranque.\n"
-#~ "El nuevu asitiamientu ye\n"
-#~ "\n"
-#~ "  %s\n"
-#~ "\n"
-#~ "na que pue collocar los ficheros .desktop que describen les\n"
-#~ "aplicaciones a entamar cuando escomencipie la so sesión de Xfce. Migrose\n"
-#~ "con éxitu los ficheros del direutoriu d'autoarranque antiguu al nuevu "
-#~ "asitiamientu.\n"
-#~ "Agora tien de desaniciar esti direutoriu.\n"
+msgid "Unable to contact D-Bus session bus."
+msgstr "Imposible contautar col bus de sesión D-Bus."
 
-#~ msgid "Performing Autostart..."
-#~ msgstr "Faciendo autoarranque..."
+msgid "Failed to create new D-Bus message"
+msgstr "Fallu al crear un nuevu mensaxe de D-Bus"
 
-#~ msgid "Tips and Tricks"
-#~ msgstr "Conseyos y trucos"
+msgid "Received error while trying to log out"
+msgstr "Recibióse un error al intentar zarrar la sesión"
 
-#~ msgid "Fortunes"
-#~ msgstr "Fortunes"
+msgid "Session Menu"
+msgstr "Menú de sesión"
 
-#~ msgid "Could not load tips database (%s)."
-#~ msgstr "Nun pudo cargase la base de datos de tips (%s)."
+msgid ""
+"Shows a menu with options to lock the screen, suspend, shutdown, or log out"
+msgstr ""
+"Amuesa un menú con opciones pa bloquiar pantalla, suspender, ivernar o "
+"desconeutar."
 
-#~ msgid "Invalid output of fortune."
-#~ msgstr "La salida de «fortune» nun ye válida."
+msgid "Customize desktop startup and splash screen"
+msgstr "Personalice la pantalla d'entamu de sesión del escritoriu"
 
-#~ msgid "Executing fortune failed (%s)"
-#~ msgstr "Error al executar «fortune»: «%s»"
+msgid "<b>Author:</b>"
+msgstr "<b>Autor:</b>"
 
-#~ msgid "Error while loading tips."
-#~ msgstr "Fallu cargando tips."
+msgid "<b>Compatibility</b>"
+msgstr "<b>Compatibilidá</b>"
 
-#~ msgid "Display tips on _startup"
-#~ msgstr "Amosar con_seyos al entamu"
+msgid "<b>Logout Settings</b>"
+msgstr "<b>Configuración d'acabu sesión</b>"
 
-#~ msgid "Next"
-#~ msgstr "Siguiente"
+msgid "<b>Security</b>"
+msgstr "<b>Seguridá</b>"
 
-#~ msgid "Logout Error"
-#~ msgstr "Fallu de zarru de sesión"
+msgid "Always save the session when logging out"
+msgstr "Guardar siempres la sesión automáticamente al colar"
 
-#~ msgid "Unable to contact D-Bus session bus."
-#~ msgstr "Imposible contautar col bus de sesión D-Bus."
+msgid "Automatically save session on _logout"
+msgstr "Guardar sesión automáticamente al _colar"
 
-#~ msgid "Failed to create new D-Bus message"
-#~ msgstr "Fallu al crear un nuevu mensaxe de D-Bus"
+msgid "Con_figure"
+msgstr "Con_figurar"
 
-#~ msgid "Received error while trying to log out"
-#~ msgstr "Recibióse un error al intentar zarrar la sesión"
+msgid "Demonstrates the selected splash screen"
+msgstr "Facer una amuesa de la pantalla d'entamu sesión seleicionada"
 
-#~ msgid "Session Menu"
-#~ msgstr "Menú de sesión"
+msgid "Display the session chooser every time Xfce starts"
+msgstr "Amosar el seleutor de sesión ca vegada que s'anicia Xfce"
 
-#~ msgid ""
-#~ "Shows a menu with options to lock the screen, suspend, shutdown, or log "
-#~ "out"
-#~ msgstr ""
-#~ "Amuesa un menú con opciones pa bloquiar pantalla, suspender, ivernar o "
-#~ "desconeutar."
+msgid "Launch GN_OME services on startup"
+msgstr "Arrancar servicios de GN_OME al entamu"
 
-#~ msgid "Customize desktop startup and splash screen"
-#~ msgstr "Personalice la pantalla d'entamu de sesión del escritoriu"
+msgid "Launch _KDE services on startup"
+msgstr "Arrancar servicios de _KDE al entamu"
 
-#~ msgid "Session and Startup"
-#~ msgstr "Sesión y entamu"
+msgid "Manage _remote applications"
+msgstr "Xestionar aplicaciones _remotes"
 
-#~ msgid "<b>Author:</b>"
-#~ msgstr "<b>Autor:</b>"
+msgid ""
+"Manage remote applications over the network (this may be a security risk)"
+msgstr ""
+"Xestionar aplicaciones remotes a traviés de la rede (esto pue representar un "
+"riesgu de seguridá)"
 
-#~ msgid "<b>Compatibility</b>"
-#~ msgstr "<b>Compatibilidá</b>"
+msgid "Opens the configuration panel for the selected splash screen"
+msgstr "Abre'l panel de configuración pa la pantalla d'entamu seleicionada"
 
-#~ msgid "<b>Description:</b>"
-#~ msgstr "<b>Descripción:</b>"
+msgid "Prompt for confirmation when logging out"
+msgstr "Entrugar al zarrar sesión"
 
-#~ msgid "<b>Homepage:</b>"
-#~ msgstr "<b>Sitiu web:</b>"
+msgid "Quit the program, and remove it from the session"
+msgstr "Colar del programa y desanicialu de la sesión"
 
-#~ msgid "<b>Logout Settings</b>"
-#~ msgstr "<b>Configuración d'acabu sesión</b>"
+msgid "S_plash"
+msgstr "_Pantalla d'entamu"
 
-#~ msgid "<b>Security</b>"
-#~ msgstr "<b>Seguridá</b>"
+msgid "Save Sessio_n"
+msgstr "Guardar sesió_n"
 
-#~ msgid "<b>Session Chooser</b>"
-#~ msgstr "<b>Seleutor de sesión</b>"
+msgid "Saving Session"
+msgstr "Guardando sesión"
 
-#~ msgid "<b>Version:</b>"
-#~ msgstr "<b>Versión:</b>"
+msgid ""
+"Start GNOME services, such as gnome-keyring and the GNOME accessibility "
+"framework"
+msgstr ""
+"Entamar los servicios de GNOME, como gnome-keyring y l'entornu "
+"d'accesibilidá de GNOME"
 
-#~ msgid "Ad_vanced"
-#~ msgstr "A_vanzáu"
+msgid "Start KDE services, such as \"kdeinit,\" DCOP, and ARTS"
+msgstr "Entamar los servicios de KDE, como \"kdeinit,\" DCOP y ARTS"
 
-#~ msgid "Always save the session when logging out"
-#~ msgstr "Guardar siempres la sesión automáticamente al colar"
+msgid ""
+"These applications are a part of the currently-running session, and can be "
+"saved when you log out.  Changes below will only take effect when the "
+"session is saved."
+msgstr ""
+"Estes aplicaciones son parte la sesión anguaño n'execución y pueden guardase "
+"cuando vusté se desconeute. Los cambeos d'abaxo namái tendrán efeutu cuando "
+"guarde la sesión."
 
-#~ msgid "Automatically save session on _logout"
-#~ msgstr "Guardar sesión automáticamente al _colar"
+msgid ""
+"Your session is being saved.  If you do not wish to wait, you may close this "
+"window."
+msgstr ""
+"Ta guardándose la so sesión. Si nun quier esperar, puede zarrar esta ventana."
 
-#~ msgid "Con_figure"
-#~ msgstr "Con_figurar"
+msgid "_Display chooser on login"
+msgstr "_Amosar seleutor de sesión al entamu"
 
-#~ msgid "Demonstrates the selected splash screen"
-#~ msgstr "Facer una amuesa de la pantalla d'entamu sesión seleicionada"
+msgid "_Prompt on logout"
+msgstr "_Entrugar al colar"
 
-#~ msgid "Display the session chooser every time Xfce starts"
-#~ msgstr "Amosar el seleutor de sesión ca vegada que s'anicia Xfce"
+msgid "_Quit Program"
+msgstr "_Zarrar programa"
 
-#~ msgid "Launch GN_OME services on startup"
-#~ msgstr "Arrancar servicios de GN_OME al entamu"
+msgid "_Session"
+msgstr "_Sesión"
 
-#~ msgid "Launch _KDE services on startup"
-#~ msgstr "Arrancar servicios de _KDE al entamu"
+msgid "_Test"
+msgstr "_Preba"
 
-#~ msgid "Manage _remote applications"
-#~ msgstr "Xestionar aplicaciones _remotes"
+msgid "label"
+msgstr "etiqueta"
 
-#~ msgid ""
-#~ "Manage remote applications over the network (this may be a security risk)"
-#~ msgstr ""
-#~ "Xestionar aplicaciones remotes a traviés de la rede (esto pue representar "
-#~ "un riesgu de seguridá)"
+msgid "Tips and tricks"
+msgstr "Conseyos y trucos"
 
-#~ msgid "Opens the configuration panel for the selected splash screen"
-#~ msgstr "Abre'l panel de configuración pa la pantalla d'entamu seleicionada"
+msgid "xfce4-tips"
+msgstr "conseyos de xfce4"
 
-#~ msgid "Prompt for confirmation when logging out"
-#~ msgstr "Entrugar al zarrar sesión"
+msgid "Unexpected error from HAL"
+msgstr "Error inesperáu d'HAL"
 
-#~ msgid "Quit the program, and remove it from the session"
-#~ msgstr "Colar del programa y desanicialu de la sesión"
+msgid "gtk-close"
+msgstr "gtk-close"
 
-#~ msgid "S_plash"
-#~ msgstr "_Pantalla d'entamu"
-
-#~ msgid "Save Sessio_n"
-#~ msgstr "Guardar sesió_n"
-
-#~ msgid "Saving Session"
-#~ msgstr "Guardando sesión"
-
-#~ msgid ""
-#~ "Start GNOME services, such as gnome-keyring and the GNOME accessibility "
-#~ "framework"
-#~ msgstr ""
-#~ "Entamar los servicios de GNOME, como gnome-keyring y l'entornu "
-#~ "d'accesibilidá de GNOME"
-
-#~ msgid "Start KDE services, such as \"kdeinit,\" DCOP, and ARTS"
-#~ msgstr "Entamar los servicios de KDE, como \"kdeinit,\" DCOP y ARTS"
-
-#~ msgid ""
-#~ "These applications are a part of the currently-running session, and can "
-#~ "be saved when you log out.  Changes below will only take effect when the "
-#~ "session is saved."
-#~ msgstr ""
-#~ "Estes aplicaciones son parte la sesión anguaño n'execución y pueden "
-#~ "guardase cuando vusté se desconeute. Los cambeos d'abaxo namái tendrán "
-#~ "efeutu cuando guarde la sesión."
-
-#~ msgid ""
-#~ "Your session is being saved.  If you do not wish to wait, you may close "
-#~ "this window."
-#~ msgstr ""
-#~ "Ta guardándose la so sesión. Si nun quier esperar, puede zarrar esta "
-#~ "ventana."
-
-#~ msgid "_Display chooser on login"
-#~ msgstr "_Amosar seleutor de sesión al entamu"
-
-#~ msgid "_General"
-#~ msgstr "_Xeneral"
-
-#~ msgid "_Prompt on logout"
-#~ msgstr "_Entrugar al colar"
-
-#~ msgid "_Quit Program"
-#~ msgstr "_Zarrar programa"
-
-#~ msgid "_Session"
-#~ msgstr "_Sesión"
-
-#~ msgid "_Test"
-#~ msgstr "_Preba"
-
-#~ msgid "label"
-#~ msgstr "etiqueta"
-
-#~ msgid "Tips and tricks"
-#~ msgstr "Conseyos y trucos"
-
-#~ msgid "xfce4-tips"
-#~ msgstr "conseyos de xfce4"
-
-#~ msgid "Unexpected error from HAL"
-#~ msgstr "Error inesperáu d'HAL"
-
-#~ msgid "gtk-close"
-#~ msgstr "gtk-close"
-
-#~ msgid "gtk-help"
-#~ msgstr "gtk-help"
+msgid "gtk-help"
+msgstr "gtk-help"

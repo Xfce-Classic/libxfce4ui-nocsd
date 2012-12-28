@@ -1,7 +1,10 @@
-# Catalan translations for libxfce package.
-# Copyright (C) 2008 THE libxfce'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the libxfce package.
-# Carles Muñoz Gorriz <carlesmu@internautas.org>, 2008-2011.
+# translation of ca.po to Catalan
+# Window manager for Xfce desktop environment.
+# Copyright (C) 2002-2006 The Xfce development team.
+# This file is distributed under the same license as the xfwm4 package.
+#
+# Carles Muñoz Gorriz <carlesmu@internautas.org> 2003-2004, 2006, 2008-2011.
+# Pau Ruŀlan Ferragut <paurullan@bulma.net> 2005-2007.
 #
 msgid ""
 msgstr ""
@@ -10,8 +13,8 @@ msgstr ""
 "POT-Creation-Date: 2012-12-28 09:06+0100\n"
 "PO-Revision-Date: 2011-12-18 15:15+0100\n"
 "Last-Translator: Carles Muñoz Gorriz <carlesmu@internautas.org>\n"
-"Language-Team: Catalan\n"
-"Language: \n"
+"Language-Team: Catalan <xfce-i18n@xfce.org>\n"
+"Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -54,8 +57,9 @@ msgid "_Always go directly to the online documentation"
 msgstr "_Anar sempre a la documentació en línia directament"
 
 #: ../libxfce4ui/xfce-dialogs.c:281
+#, fuzzy
 msgid "Information"
-msgstr "Informació"
+msgstr "Informació de la versió"
 
 #: ../libxfce4ui/xfce-dialogs.c:314
 msgid "Warning"
@@ -70,24 +74,28 @@ msgid "Question"
 msgstr "Pregunta"
 
 #: ../libxfce4ui/xfce-sm-client.c:1403
+#, fuzzy
 msgid "Session management client ID"
-msgstr "ID del client de gestió de sessions"
+msgstr "Sòcol del gestor de sessió"
 
 #: ../libxfce4ui/xfce-sm-client.c:1403
 msgid "ID"
 msgstr "ID"
 
 #: ../libxfce4ui/xfce-sm-client.c:1404
+#, fuzzy
 msgid "Disable session management"
-msgstr "Deshabilita la gestió de sessions"
+msgstr "Sòcol del gestor de sessió"
 
 #: ../libxfce4ui/xfce-sm-client.c:1414
+#, fuzzy
 msgid "Session management options"
-msgstr "Opcions de gestió de sessions"
+msgstr "Sòcol del gestor de sessió"
 
 #: ../libxfce4ui/xfce-sm-client.c:1415
+#, fuzzy
 msgid "Show session management options"
-msgstr "Mostra les opcions de gestió de sessions"
+msgstr "Sòcol del gestor de sessió"
 
 #: ../libxfce4ui/xfce-sm-client.c:1591
 #, c-format
@@ -114,13 +122,14 @@ msgid ""
 "This shortcut is already being used for the action '%s'. Which action do you "
 "want to use?"
 msgstr ""
-"Ja s'està emprant aquesta drecera per l'ordre «%s». Quina acció voleu emprar?"
+"Aquesta drecera ja s'està emprant per <b>una altre acció del gestor de "
+"finestres</b>. Quina acció veleu emprar?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:54
 #: ../libxfce4kbd-private/xfce-shortcuts.c:57
 #: ../libxfce4kbd-private/xfce-shortcuts.c:60
 #: ../libxfce4kbd-private/xfce-shortcuts.c:63
-#, c-format
+#, fuzzy, c-format
 msgid "Use '%s'"
 msgstr "Empra «%s»"
 
@@ -128,18 +137,19 @@ msgstr "Empra «%s»"
 #: ../libxfce4kbd-private/xfce-shortcuts.c:57
 #: ../libxfce4kbd-private/xfce-shortcuts.c:60
 #: ../libxfce4kbd-private/xfce-shortcuts.c:63
-#, c-format
+#, fuzzy, c-format
 msgid "Keep '%s'"
 msgstr "Manté «%s»"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
 #: ../libxfce4kbd-private/xfce-shortcuts.c:59
-#, c-format
+#, fuzzy, c-format
 msgid ""
 "This shortcut is already being used for the command '%s'. Which action do "
 "you want to use?"
 msgstr ""
-"Ja s'està emprant aquesta drecera per l'ordre «%s». Quina acció voleu emprar?"
+"Aquesta drecera ja s'està emprant per <b>una altre acció del gestor de "
+"finestres</b>. Quina acció veleu emprar?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 #, fuzzy, c-format
@@ -147,7 +157,8 @@ msgid ""
 "This shortcut is already being used by the action '%s'. Which action do you "
 "want to use?"
 msgstr ""
-"Ja s'està emprant aquesta drecera per l'ordre «%s». Quina acció voleu emprar?"
+"Aquesta drecera ja s'està emprant per <b>una altre acció del gestor de "
+"finestres</b>. Quina acció veleu emprar?"
 
 #. This shortcut already exists in the provider, we don't want it twice
 #. Warn the user
@@ -163,15 +174,17 @@ msgstr ""
 #: ../libxfce4kbd-private/xfce-shortcuts.c:116
 #, c-format
 msgid "Conflicting actions for %s"
-msgstr "Conflicte d'accions per a «%s»"
+msgstr "Conflicte d'accions per %s"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:189
+#, fuzzy
 msgid "This shortcut is already being used for something else."
-msgstr "Ja s'està emprant aquesta acció per alguna altre cosa."
+msgstr "La drecera ja s'està emprant per alguna altre cosa."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:209
+#, fuzzy
 msgid "Window Manager Action Shortcut"
-msgstr "Drecera d'acció del gestor de finestres"
+msgstr "Introduïu la drecera de l'acció del gestor de finestres"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
@@ -179,18 +192,19 @@ msgstr "Drecera d'acció del gestor de finestres"
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:226
 #, fuzzy
 msgid "action"
-msgstr "Acció:"
+msgstr "Acció"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:216
+#, fuzzy
 msgid "Command Shortcut"
-msgstr "Drecera d'ordre"
+msgstr "Introduïu la drecera de l'ordre"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:219
 #, fuzzy
 msgid "command"
-msgstr "Ordre:"
+msgstr "Ordre"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:223
 msgid "Shortcut"
@@ -212,308 +226,310 @@ msgstr ""
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:378
 msgid "Could not grab the keyboard."
-msgstr "No s'ha pogut capturar el teclat."
+msgstr "No s'ha pogut obtenir el teclat."
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:33
 msgid "Window operations menu"
-msgstr ""
+msgstr "Menú d’operacions de finestra"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:34
 msgid "Up"
-msgstr ""
+msgstr "Amunt"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:35
 msgid "Down"
-msgstr ""
+msgstr "Avall"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:36
 msgid "Left"
-msgstr ""
+msgstr "Esquerra"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:37
 msgid "Right"
-msgstr ""
+msgstr "Dreta"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:38
 msgid "Cancel"
-msgstr ""
+msgstr "Canceŀla"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:39
 msgid "Cycle windows"
-msgstr ""
+msgstr "Cicla les finestra"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:40
 msgid "Cycle windows (Reverse)"
-msgstr ""
+msgstr "Cicla les finestra"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:41
 msgid "Switch window for same application"
-msgstr ""
+msgstr "Canvia la finestra de la mateixa aplicació"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:42
 msgid "Switch application"
-msgstr ""
+msgstr "Canvia d'aplicació"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:43
 msgid "Close window"
-msgstr ""
+msgstr "Tanca la finestra"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:44
 msgid "Maximize window horizontally"
-msgstr ""
+msgstr "Maximitza la finestra horitzontalment"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:45
 msgid "Maximize window vertically"
-msgstr ""
+msgstr "Maximitza la finestra verticalment"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:46
 msgid "Maximize window"
-msgstr ""
+msgstr "Maximitza la finestra"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:47
 msgid "Hide window"
-msgstr ""
+msgstr "Amaga la finestra"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:48
 msgid "Move window"
-msgstr ""
+msgstr "Mou la finestra"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:49
 msgid "Resize window"
-msgstr ""
+msgstr "Redimensiona la finestra"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:50
 msgid "Shade window"
-msgstr ""
+msgstr "Enrotlla la finestra"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:51
 msgid "Stick window"
-msgstr ""
+msgstr "Finestra omnipresent"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:52
 msgid "Raise window"
-msgstr ""
+msgstr "Eleva la finestra"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:53
 msgid "Lower window"
-msgstr ""
+msgstr "Abaixa la finestra"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:54
 msgid "Raise or lower window"
-msgstr ""
+msgstr "Eleva o abaixa la finestra única"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:55
 msgid "Fill window"
-msgstr ""
+msgstr "Emplena la finestra"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:56
 msgid "Fill window horizontally"
-msgstr ""
+msgstr "Emplena la finestra horitzontalment"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:57
 msgid "Fill window vertically"
-msgstr ""
+msgstr "Emplena la finestra verticalment"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:58
 msgid "Toggle above"
-msgstr ""
+msgstr "Commuta amunt"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:59
 msgid "Toggle fullscreen"
-msgstr ""
+msgstr "Commuta a pantalla sencera"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:60
 msgid "Move window to upper workspace"
-msgstr ""
+msgstr "Mou la finestra a l'espai de treball superior"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:61
 msgid "Move window to bottom workspace"
-msgstr ""
+msgstr "Mou la finestra a l'espai de treball esquerra inferior"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:62
 msgid "Move window to left workspace"
-msgstr ""
+msgstr "Mou la finestra a l'espai de treball esquerra"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:63
 msgid "Move window to right workspace"
-msgstr ""
+msgstr "Mou la finestra a l'espai de treball dret"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:64
 msgid "Move window to previous workspace"
-msgstr ""
+msgstr "Mou la finestra a l'espai de treball anterior"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:65
 msgid "Move window to next workspace"
-msgstr ""
+msgstr "Mou la finestra a l'espai de treball següent"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:66
 msgid "Move window to workspace 1"
-msgstr ""
+msgstr "Mou la finestra a l'espai de treball 1"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:67
 msgid "Move window to workspace 2"
-msgstr ""
+msgstr "Mou la finestra a l'espai de treball 2"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:68
 msgid "Move window to workspace 3"
-msgstr ""
+msgstr "Mou la finestra a l'espai de treball 3"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:69
 msgid "Move window to workspace 4"
-msgstr ""
+msgstr "Mou la finestra a l'espai de treball 4"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:70
 msgid "Move window to workspace 5"
-msgstr ""
+msgstr "Mou la finestra a l'espai de treball 5"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:71
 msgid "Move window to workspace 6"
-msgstr ""
+msgstr "Mou la finestra a l'espai de treball 6"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:72
 msgid "Move window to workspace 7"
-msgstr ""
+msgstr "Mou la finestra a l'espai de treball 7"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:73
 msgid "Move window to workspace 8"
-msgstr ""
+msgstr "Mou la finestra a l'espai de treball 8"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:74
 msgid "Move window to workspace 9"
-msgstr ""
+msgstr "Mou la finestra a l'espai de treball 9"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:75
 msgid "Move window to workspace 10"
-msgstr ""
+msgstr "Mou la finestra a l'espai de treball 10"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:76
 msgid "Move window to workspace 11"
-msgstr ""
+msgstr "Mou la finestra a l'espai de treball 11"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:77
 msgid "Move window to workspace 12"
-msgstr ""
+msgstr "Mou la finestra a l'espai de treball 12"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:78
 msgid "Tile window to the top"
-msgstr ""
+msgstr "Situa la finestra al centre"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:79
 msgid "Tile window to the bottom"
-msgstr ""
+msgstr "Ajusta la finestra a baix"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:80
 msgid "Tile window to the left"
-msgstr ""
+msgstr "Ajusta la finestra a l'esquerra"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:81
 msgid "Tile window to the right"
-msgstr ""
+msgstr "Ajusta la finestra a la dreta"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:82
 msgid "Show desktop"
-msgstr ""
+msgstr "Mostrar l'escriptori"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:83
 msgid "Upper workspace"
-msgstr ""
+msgstr "Espai de treball superior"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:84
 msgid "Bottom workspace"
-msgstr ""
+msgstr "Espai de treball inferior"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:85
 msgid "Left workspace"
-msgstr ""
+msgstr "Espai de treball esquerra"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:86
 msgid "Right workspace"
-msgstr ""
+msgstr "Espai de treball dret"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:87
-#, fuzzy
 msgid "Previous workspace"
-msgstr "Antics coŀlaboradors"
+msgstr "Espai de treball anterior"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:88
 msgid "Next workspace"
-msgstr ""
+msgstr "Espai de treball següent"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:89
 msgid "Workspace 1"
-msgstr ""
+msgstr "Espai de treball 1"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:90
 msgid "Workspace 2"
-msgstr ""
+msgstr "Espai de treball 2"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:91
 msgid "Workspace 3"
-msgstr ""
+msgstr "Espai de treball 3"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:92
 msgid "Workspace 4"
-msgstr ""
+msgstr "Espai de treball 4"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:93
 msgid "Workspace 5"
-msgstr ""
+msgstr "Espai de treball 5"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:94
 msgid "Workspace 6"
-msgstr ""
+msgstr "Espai de treball 6"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:95
 msgid "Workspace 7"
-msgstr ""
+msgstr "Espai de treball 7"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:96
 msgid "Workspace 8"
-msgstr ""
+msgstr "Espai de treball 8"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:97
 msgid "Workspace 9"
-msgstr ""
+msgstr "Espai de treball 9"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:98
 msgid "Workspace 10"
-msgstr ""
+msgstr "Espai de treball 10"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:99
 msgid "Workspace 11"
-msgstr ""
+msgstr "Espai de treball 11"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:100
 msgid "Workspace 12"
-msgstr ""
+msgstr "Espai de treball 12"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:101
 msgid "Add workspace"
-msgstr ""
+msgstr "Afegeix espai de treball"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:102
 msgid "Add adjacent workspace"
-msgstr ""
+msgstr "Afegeix espai de treball adjacent"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:103
 msgid "Delete last workspace"
-msgstr ""
+msgstr "Esborra el darrer espai de treball"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:104
 msgid "Delete active workspace"
-msgstr ""
+msgstr "Esborra l'espai de treball actiu"
 
 #: ../glade/libxfce4ui.xml.in.h:1
+#, fuzzy
 msgid "Titled Dialog"
-msgstr "Diàleg amb títol"
+msgstr "Font del títol"
 
 #: ../glade/libxfce4ui.xml.in.h:2
+#, fuzzy
 msgid "Subtitle"
-msgstr "Subtítol"
+msgstr "Títol"
 
 #: ../glade/libxfce4ui.xml.in.h:3
+#, fuzzy
 msgid "Xfce 4 Widgets"
-msgstr "Giny Xfce 4"
+msgstr "Paràmetres del gestor de finestres d'Xfce 4"
 
 #: ../xfce4-about/main.c:52
 msgid "Version information"
@@ -524,8 +540,9 @@ msgid "Window Manager"
 msgstr "Gestor de finestres"
 
 #: ../xfce4-about/main.c:71
+#, fuzzy
 msgid "Handles the placement of windows on the screen."
-msgstr "Gestiona la coŀlocació de les finestres en la pantalla."
+msgstr "Al _centre de la pantalla"
 
 #: ../xfce4-about/main.c:74
 msgid "Panel"
@@ -540,8 +557,9 @@ msgstr ""
 "d'espai de treball i molt més."
 
 #: ../xfce4-about/main.c:79
+#, fuzzy
 msgid "Desktop Manager"
-msgstr "Gestor d'escriptori"
+msgstr "Gestor de finestres"
 
 #: ../xfce4-about/main.c:80
 msgid ""
@@ -552,8 +570,9 @@ msgstr ""
 "icones per aplicacions minimitzades o llançadors, dispositius i carpetes."
 
 #: ../xfce4-about/main.c:84
+#, fuzzy
 msgid "File Manager "
-msgstr "Gestor de fitxers"
+msgstr "Gestor de finestres"
 
 #: ../xfce4-about/main.c:85
 msgid ""
@@ -564,8 +583,9 @@ msgstr ""
 "facilitat d'ús i en la velocitat."
 
 #: ../xfce4-about/main.c:89
+#, fuzzy
 msgid "Session Manager"
-msgstr "Gestor de sessió"
+msgstr "Sòcol del gestor de sessió"
 
 #: ../xfce4-about/main.c:90
 msgid ""
@@ -599,8 +619,9 @@ msgstr ""
 "categories, així podeu trobar-les i llançar-les ràpidament."
 
 #: ../xfce4-about/main.c:104
+#, fuzzy
 msgid "Settings Daemon"
-msgstr "Dimoni d'ajustaments"
+msgstr "Sòcol del gestor d'ajustaments"
 
 #: ../xfce4-about/main.c:105
 msgid "D-Bus-based configuration storage system."
@@ -692,9 +713,9 @@ msgstr ""
 "vostre criteri, qualsevol versió posterior."
 
 #: ../xfce4-about/main.c:442
-#, c-format
+#, fuzzy, c-format
 msgid "Type '%s --help' for usage information."
-msgstr "Feu «%s --help» per veure l'ús."
+msgstr "Escriviu «%s --help» per a obtenir ajuda"
 
 #: ../xfce4-about/main.c:448
 msgid "Unable to initialize GTK+."
@@ -728,9 +749,9 @@ msgstr "Versió %s, distribuïda per %s"
 
 #. I18N: %s will be replaced by the Xfce version number
 #: ../xfce4-about/main.c:489
-#, c-format
+#, fuzzy, c-format
 msgid "Version %s"
-msgstr "Versió %s"
+msgstr "%s (a %s)"
 
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
@@ -756,12 +777,14 @@ msgid "Translations supervision"
 msgstr "Supervisors de traduccions"
 
 #: ../xfce4-about/contributors.h:136
+#, fuzzy
 msgid "Translators"
-msgstr "Traductors"
+msgstr "Transparent"
 
 #: ../xfce4-about/contributors.h:139
+#, fuzzy
 msgid "Previous contributors"
-msgstr "Antics coŀlaboradors"
+msgstr "Espai de treball anterior"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:1
 msgid "About Xfce"
@@ -803,51 +826,27 @@ msgstr "Copyright"
 msgid "License"
 msgstr "Llicència"
 
-#~ msgid ""
-#~ "This shortcut is already being used for another window manager action. "
-#~ "Which action do you want to use?"
-#~ msgstr ""
-#~ "Ja s'està emprant aquesta drecera per una altre acció del gestor de "
-#~ "finestres. Quina acció voleu emprar?"
+msgid "File is not a valid .desktop file"
+msgstr "El fitxer no és un fitxer «.desktop» vàlid"
 
-#~ msgid "Keep the other one"
-#~ msgstr "Manté l'altre"
+msgid "Unrecognized desktop file Version '%s'"
+msgstr "Versió «%s» del fitxer d'escriptori (desktop) no reconeguda"
 
-#~ msgid ""
-#~ "This shortcut is already being used by a window manager action. Which "
-#~ "action do you want to use?"
-#~ msgstr ""
-#~ "Ja s'està emprant aquesta drecera per una acció del gestor de finestres. "
-#~ "Quina acció voleu emprar?"
+msgid "Application does not accept documents on command line"
+msgstr "L'aplicació no accepta documents a la línia d'ordres"
 
-#~ msgid "Keep the window manager action"
-#~ msgstr "Manté l'acció del gestor de finestres"
+msgid "Unrecognized launch option: %d"
+msgstr "Opció d'execució %d no reconeguda"
 
-#~ msgid "<span size='large'><b>%s</b></span>"
-#~ msgstr "<span size='large'><b>%s</b></span>"
+msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
+msgstr ""
+"No es pot passar les URIs de documents a una entrada d'escriptori «Type=Link»"
 
-#~ msgid "File is not a valid .desktop file"
-#~ msgstr "El fitxer no és un fitxer «.desktop» vàlid"
+msgid "Not a launchable item"
+msgstr "L'element no és executable"
 
-#~ msgid "Unrecognized desktop file Version '%s'"
-#~ msgstr "Versió «%s» del fitxer d'escriptori (desktop) no reconeguda"
+msgid "Specify file containing saved configuration"
+msgstr "Indiqueu el fitxer amb la configuració desada"
 
-#~ msgid "Application does not accept documents on command line"
-#~ msgstr "L'aplicació no accepta documents a la línia d'ordres"
-
-#~ msgid "Unrecognized launch option: %d"
-#~ msgstr "Opció d'execució %d no reconeguda"
-
-#~ msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
-#~ msgstr ""
-#~ "No es pot passar les URIs de documents a una entrada d'escriptori "
-#~ "«Type=Link»"
-
-#~ msgid "Not a launchable item"
-#~ msgstr "L'element no és executable"
-
-#~ msgid "Specify file containing saved configuration"
-#~ msgstr "Indiqueu el fitxer amb la configuració desada"
-
-#~ msgid "FILE"
-#~ msgstr "FITXER"
+msgid "FILE"
+msgstr "FITXER"

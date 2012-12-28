@@ -54,8 +54,9 @@ msgid "_Always go directly to the online documentation"
 msgstr ""
 
 #: ../libxfce4ui/xfce-dialogs.c:281
+#, fuzzy
 msgid "Information"
-msgstr "معلومات"
+msgstr "ورژن معلومات"
 
 #: ../libxfce4ui/xfce-dialogs.c:314
 msgid "Warning"
@@ -72,7 +73,7 @@ msgstr "سوال"
 #: ../libxfce4ui/xfce-sm-client.c:1403
 #, fuzzy
 msgid "Session management client ID"
-msgstr "نشست منیجر اختیارات:"
+msgstr "ترتیبات منیجر ساکٹ"
 
 #: ../libxfce4ui/xfce-sm-client.c:1403
 msgid "ID"
@@ -81,16 +82,17 @@ msgstr "آئی ڈی"
 #: ../libxfce4ui/xfce-sm-client.c:1404
 #, fuzzy
 msgid "Disable session management"
-msgstr "نشست منیجر آئی ڈی متعین کریں"
+msgstr "ترتیبات منیجر ساکٹ"
 
 #: ../libxfce4ui/xfce-sm-client.c:1414
 #, fuzzy
 msgid "Session management options"
-msgstr "نشست منیجر اختیارات:"
+msgstr "ترتیبات منیجر ساکٹ"
 
 #: ../libxfce4ui/xfce-sm-client.c:1415
+#, fuzzy
 msgid "Show session management options"
-msgstr "نشست منیجر کے اختیارات ظاہر کریں"
+msgstr "ترتیبات منیجر ساکٹ"
 
 #: ../libxfce4ui/xfce-sm-client.c:1591
 #, fuzzy, c-format
@@ -116,8 +118,8 @@ msgid ""
 "This shortcut is already being used for the action '%s'. Which action do you "
 "want to use?"
 msgstr ""
-"یہ شارٹ کٹ پہلے ہی کمانڈ '%s' کے لیے استعمال ہو رہا ہے. آپ کون سی حرکت "
-"استعمال کرنا چاہتے ہیں؟"
+"شارٹ کٹ پہلے ہی استعمال میں ہے !\n"
+"کیا آپ واقعی اسے استعمال کرنا چاہتے ہیں؟"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:54
 #: ../libxfce4kbd-private/xfce-shortcuts.c:57
@@ -137,13 +139,13 @@ msgstr "'%s' کو برقرار رکھیں"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
 #: ../libxfce4kbd-private/xfce-shortcuts.c:59
-#, c-format
+#, fuzzy, c-format
 msgid ""
 "This shortcut is already being used for the command '%s'. Which action do "
 "you want to use?"
 msgstr ""
-"یہ شارٹ کٹ پہلے ہی کمانڈ '%s' کے لیے استعمال ہو رہا ہے. آپ کون سی حرکت "
-"استعمال کرنا چاہتے ہیں؟"
+"شارٹ کٹ پہلے ہی استعمال میں ہے !\n"
+"کیا آپ واقعی اسے استعمال کرنا چاہتے ہیں؟"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 #, fuzzy, c-format
@@ -151,8 +153,8 @@ msgid ""
 "This shortcut is already being used by the action '%s'. Which action do you "
 "want to use?"
 msgstr ""
-"یہ شارٹ کٹ پہلے ہی کمانڈ '%s' کے لیے استعمال ہو رہا ہے. آپ کون سی حرکت "
-"استعمال کرنا چاہتے ہیں؟"
+"شارٹ کٹ پہلے ہی استعمال میں ہے !\n"
+"کیا آپ واقعی اسے استعمال کرنا چاہتے ہیں؟"
 
 #. This shortcut already exists in the provider, we don't want it twice
 #. Warn the user
@@ -175,8 +177,9 @@ msgid "This shortcut is already being used for something else."
 msgstr "یہ شارٹ کٹ کسی چیز کے لیے پہلے ہی استعمال میں ہے."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:209
+#, fuzzy
 msgid "Window Manager Action Shortcut"
-msgstr "ونڈو منیجر حرکت شارٹ کٹ"
+msgstr "ونڈو منیجر ترتیبات"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
@@ -184,18 +187,19 @@ msgstr "ونڈو منیجر حرکت شارٹ کٹ"
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:226
 #, fuzzy
 msgid "action"
-msgstr "حرکت:"
+msgstr "حرکت"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:216
+#, fuzzy
 msgid "Command Shortcut"
-msgstr "کمانڈ شارٹ کٹ"
+msgstr "شارٹ کٹ بنائیں"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:219
 #, fuzzy
 msgid "command"
-msgstr "کمانڈ:"
+msgstr "کمانڈ"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:223
 msgid "Shortcut"
@@ -207,8 +211,9 @@ msgid "Press now the keyboard keys you want to use to trigger the %s '%s'."
 msgstr ""
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:291
+#, fuzzy
 msgid "Shortcut:"
-msgstr "شارٹ کٹ:"
+msgstr "شارٹ کٹ"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:296
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:475
@@ -216,44 +221,46 @@ msgid "No keys pressed yet, proceed."
 msgstr ""
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:378
+#, fuzzy
 msgid "Could not grab the keyboard."
-msgstr "کیبورڈ اٹھایا نہیں جاسکا."
+msgstr "ترتیبات ڈائیلاگ نہیں بنایا جاسکتا."
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:33
 msgid "Window operations menu"
-msgstr ""
+msgstr "ونڈو آپریشن مینیو"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:34
 msgid "Up"
-msgstr ""
+msgstr "اوپر"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:35
 msgid "Down"
-msgstr ""
+msgstr "نیچے"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:36
 msgid "Left"
-msgstr ""
+msgstr "بائیں"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:37
 msgid "Right"
-msgstr ""
+msgstr "دائیں"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:38
 msgid "Cancel"
-msgstr ""
+msgstr "مسترد"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:39
 msgid "Cycle windows"
-msgstr ""
+msgstr "ونڈوز سائکل"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:40
 msgid "Cycle windows (Reverse)"
-msgstr ""
+msgstr "ونڈوز چکر (عکسی)"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:41
+#, fuzzy
 msgid "Switch window for same application"
-msgstr ""
+msgstr "ونڈو_ز مقام کار پر منتقل ہوں"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:42
 msgid "Switch application"
@@ -261,277 +268,283 @@ msgstr ""
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:43
 msgid "Close window"
-msgstr ""
+msgstr "ونڈو بند کریں"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:44
 msgid "Maximize window horizontally"
-msgstr ""
+msgstr "ونڈو افقی طور پر بڑی کریں"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:45
 msgid "Maximize window vertically"
-msgstr ""
+msgstr "ونڈو عمودی طور پر بڑی کریں"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:46
 msgid "Maximize window"
-msgstr ""
+msgstr "ونڈو بڑی کریں"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:47
 msgid "Hide window"
-msgstr ""
+msgstr "ونڈو چھپائیں"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:48
 msgid "Move window"
-msgstr ""
+msgstr "ونڈو منتقل کریں"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:49
 msgid "Resize window"
-msgstr ""
+msgstr "ونڈو ری سائز کریں"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:50
 msgid "Shade window"
-msgstr ""
+msgstr "ونڈو شیڈ"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:51
 msgid "Stick window"
-msgstr ""
+msgstr "ونڈو چسپاں کریں"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:52
 msgid "Raise window"
-msgstr ""
+msgstr "بڑی ونڈو"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:53
 msgid "Lower window"
-msgstr ""
+msgstr "چھوٹی ونڈو"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:54
+#, fuzzy
 msgid "Raise or lower window"
-msgstr ""
+msgstr "بڑی ونڈو"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:55
 msgid "Fill window"
-msgstr ""
+msgstr "ونڈو بھریں"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:56
 msgid "Fill window horizontally"
-msgstr ""
+msgstr "ونڈو افقی طور پر بھریں"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:57
 msgid "Fill window vertically"
-msgstr ""
+msgstr "ونڈو عمودی طور پر بھریں"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:58
 msgid "Toggle above"
-msgstr ""
+msgstr "اوپر منعکس کریں"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:59
 msgid "Toggle fullscreen"
-msgstr ""
+msgstr "فل سکرین منعکس کریں"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:60
 msgid "Move window to upper workspace"
-msgstr ""
+msgstr "ونڈو اوپری مقام کار میں منتقل کریں"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:61
 msgid "Move window to bottom workspace"
-msgstr ""
+msgstr "ونڈو نچلے مقام کار میں منتقل کریں"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:62
 msgid "Move window to left workspace"
-msgstr ""
+msgstr "ونڈو بائیں مقام کار میں منتقل کریں"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:63
 msgid "Move window to right workspace"
-msgstr ""
+msgstr "ونڈو دائیں مقام کار میں منتقل کریں"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:64
 msgid "Move window to previous workspace"
-msgstr ""
+msgstr "ونڈو سابقہ مقام کار میں منتقل کریں"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:65
 msgid "Move window to next workspace"
-msgstr ""
+msgstr "ونڈو اگلے مقام کار میں منتقل کریں"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:66
 msgid "Move window to workspace 1"
-msgstr ""
+msgstr "ونڈو مقام کار 1 پرمنتقل کریں"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:67
 msgid "Move window to workspace 2"
-msgstr ""
+msgstr "ونڈو مقام کار 2 پرمنتقل کریں"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:68
 msgid "Move window to workspace 3"
-msgstr ""
+msgstr "ونڈو مقام کار 3 پرمنتقل کریں"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:69
 msgid "Move window to workspace 4"
-msgstr ""
+msgstr "ونڈو مقام کار 4 پرمنتقل کریں"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:70
 msgid "Move window to workspace 5"
-msgstr ""
+msgstr "ونڈو مقام کار 5 پرمنتقل کریں"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:71
 msgid "Move window to workspace 6"
-msgstr ""
+msgstr "ونڈو مقام کار 6 پرمنتقل کریں"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:72
 msgid "Move window to workspace 7"
-msgstr ""
+msgstr "ونڈو مقام کار 7 پرمنتقل کریں"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:73
 msgid "Move window to workspace 8"
-msgstr ""
+msgstr "ونڈو مقام کار 8 پرمنتقل کریں"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:74
 msgid "Move window to workspace 9"
-msgstr ""
+msgstr "ونڈو مقام کار 9 پرمنتقل کریں"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:75
 msgid "Move window to workspace 10"
-msgstr ""
+msgstr "ونڈو مقام کار 10 پرمنتقل کریں"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:76
 msgid "Move window to workspace 11"
-msgstr ""
+msgstr "ونڈو مقام کار 11 پرمنتقل کریں"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:77
 msgid "Move window to workspace 12"
-msgstr ""
+msgstr "ونڈو مقام کار 12 پرمنتقل کریں"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:78
+#, fuzzy
 msgid "Tile window to the top"
-msgstr ""
+msgstr "ونڈو درمیان میں رکھیں"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:79
+#, fuzzy
 msgid "Tile window to the bottom"
-msgstr ""
+msgstr "ونڈو نچلے مقام کار میں منتقل کریں"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:80
+#, fuzzy
 msgid "Tile window to the left"
-msgstr ""
+msgstr "ونڈو درمیان میں رکھیں"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:81
+#, fuzzy
 msgid "Tile window to the right"
-msgstr ""
+msgstr "ونڈو دائیں ری سائز کریں"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:82
 msgid "Show desktop"
-msgstr ""
+msgstr "ڈیسک ٹاپ ظاہر کریں"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:83
 msgid "Upper workspace"
-msgstr ""
+msgstr "اوپری مقام کار"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:84
 msgid "Bottom workspace"
-msgstr ""
+msgstr "نچلا مقام کار"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:85
 msgid "Left workspace"
-msgstr ""
+msgstr "بائیں مقام کار"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:86
 msgid "Right workspace"
-msgstr ""
+msgstr "دائیں مقام کار"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:87
 msgid "Previous workspace"
-msgstr ""
+msgstr "سابقہ مقام کار"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:88
 msgid "Next workspace"
-msgstr ""
+msgstr "اگلا مقام کار"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:89
 msgid "Workspace 1"
-msgstr ""
+msgstr "مقام کار 1"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:90
 msgid "Workspace 2"
-msgstr ""
+msgstr "مقام کار 2"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:91
 msgid "Workspace 3"
-msgstr ""
+msgstr "مقام کار 3"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:92
 msgid "Workspace 4"
-msgstr ""
+msgstr "مقام کار 4"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:93
 msgid "Workspace 5"
-msgstr ""
+msgstr "مقام کار 5"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:94
 msgid "Workspace 6"
-msgstr ""
+msgstr "مقام کار 6"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:95
 msgid "Workspace 7"
-msgstr ""
+msgstr "مقام کار 7"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:96
 msgid "Workspace 8"
-msgstr ""
+msgstr "مقام کار 8"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:97
 msgid "Workspace 9"
-msgstr ""
+msgstr "مقام کار 9"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:98
 msgid "Workspace 10"
-msgstr ""
+msgstr "مقام کار 10"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:99
 msgid "Workspace 11"
-msgstr ""
+msgstr "مقام کار 11"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:100
 msgid "Workspace 12"
-msgstr ""
+msgstr "مقام کار 12"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:101
 msgid "Add workspace"
-msgstr ""
+msgstr "مقام کار شامل کریں"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:102
 msgid "Add adjacent workspace"
-msgstr ""
+msgstr "نزدیکی مقام کار شامل کریں"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:103
 msgid "Delete last workspace"
-msgstr ""
+msgstr "آخری مقام کار حذف کریں"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:104
 msgid "Delete active workspace"
-msgstr ""
+msgstr "فعال مقام کار حذف کریں"
 
 #: ../glade/libxfce4ui.xml.in.h:1
 msgid "Titled Dialog"
 msgstr "عنوان شدہ ڈائیلاگ"
 
 #: ../glade/libxfce4ui.xml.in.h:2
+#, fuzzy
 msgid "Subtitle"
-msgstr "ذیلی عنوان"
+msgstr "عنوان"
 
 #: ../glade/libxfce4ui.xml.in.h:3
+#, fuzzy
 msgid "Xfce 4 Widgets"
-msgstr "ایکسفس 4 وجٹس"
+msgstr "ایکسفس 4 ونڈو منیجر ترتیبات"
 
 #: ../xfce4-about/main.c:52
-#, fuzzy
 msgid "Version information"
-msgstr "معلومات"
+msgstr "ورژن معلومات"
 
 #: ../xfce4-about/main.c:70
-#, fuzzy
 msgid "Window Manager"
-msgstr "ونڈو منیجر حرکت شارٹ کٹ"
+msgstr "ونڈو منیجر"
 
 #: ../xfce4-about/main.c:71
+#, fuzzy
 msgid "Handles the placement of windows on the screen."
-msgstr ""
+msgstr "سکرین کے _وسط میں"
 
 #: ../xfce4-about/main.c:74
 msgid "Panel"
@@ -544,8 +557,9 @@ msgid ""
 msgstr ""
 
 #: ../xfce4-about/main.c:79
+#, fuzzy
 msgid "Desktop Manager"
-msgstr ""
+msgstr "ونڈو منیجر"
 
 #: ../xfce4-about/main.c:80
 msgid ""
@@ -554,8 +568,9 @@ msgid ""
 msgstr ""
 
 #: ../xfce4-about/main.c:84
+#, fuzzy
 msgid "File Manager "
-msgstr ""
+msgstr "ونڈو منیجر"
 
 #: ../xfce4-about/main.c:85
 msgid ""
@@ -566,7 +581,7 @@ msgstr ""
 #: ../xfce4-about/main.c:89
 #, fuzzy
 msgid "Session Manager"
-msgstr "نشست منیجر اختیارات:"
+msgstr "ترتیبات منیجر ساکٹ"
 
 #: ../xfce4-about/main.c:90
 msgid ""
@@ -596,8 +611,9 @@ msgid ""
 msgstr ""
 
 #: ../xfce4-about/main.c:104
+#, fuzzy
 msgid "Settings Daemon"
-msgstr ""
+msgstr "ترتیبات منیجر ساکٹ"
 
 #: ../xfce4-about/main.c:105
 msgid "D-Bus-based configuration storage system."
@@ -702,9 +718,9 @@ msgstr ""
 
 #. I18N: %s will be replaced by the Xfce version number
 #: ../xfce4-about/main.c:489
-#, c-format
+#, fuzzy, c-format
 msgid "Version %s"
-msgstr ""
+msgstr "%s (پر %s)"
 
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
@@ -734,8 +750,9 @@ msgid "Translators"
 msgstr ""
 
 #: ../xfce4-about/contributors.h:139
+#, fuzzy
 msgid "Previous contributors"
-msgstr ""
+msgstr "سابقہ مقام کار"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:1
 msgid "About Xfce"
@@ -777,49 +794,46 @@ msgstr ""
 msgid "License"
 msgstr ""
 
-#~ msgid ""
-#~ "This shortcut is already being used for another window manager action. "
-#~ "Which action do you want to use?"
-#~ msgstr ""
-#~ "یہ شارٹ کٹ پہلے ہی دوسری ونڈو منیجر حرکت کے لیے استعمال ہو رہا ہے. آپ کون "
-#~ "سی حرکت استعمال کرنا چاہتے ہیں؟"
+msgid ""
+"This shortcut is already being used for another window manager action. Which "
+"action do you want to use?"
+msgstr ""
+"یہ شارٹ کٹ پہلے ہی دوسری ونڈو منیجر حرکت کے لیے استعمال ہو رہا ہے. آپ کون سی "
+"حرکت استعمال کرنا چاہتے ہیں؟"
 
-#~ msgid "Keep the other one"
-#~ msgstr "سابقہ کو محفوظ رکھیں"
+msgid "Keep the other one"
+msgstr "سابقہ کو محفوظ رکھیں"
 
-#~ msgid ""
-#~ "This shortcut is already being used by a window manager action. Which "
-#~ "action do you want to use?"
-#~ msgstr ""
-#~ "یہ شارٹ کٹ پہلے ہی ونڈو منیجر کی حرکت کے لیے استعمال ہو رہا ہے. آپ کون سی "
-#~ "حرکت استعمال کرنا چاہتے ہیں؟"
+msgid ""
+"This shortcut is already being used by a window manager action. Which action "
+"do you want to use?"
+msgstr ""
+"یہ شارٹ کٹ پہلے ہی ونڈو منیجر کی حرکت کے لیے استعمال ہو رہا ہے. آپ کون سی "
+"حرکت استعمال کرنا چاہتے ہیں؟"
 
-#~ msgid "Keep the window manager action"
-#~ msgstr "ونڈو منیجر کی حرکت کو برقرار رکھیں"
+msgid "<span size='large'><b>%s</b></span>"
+msgstr "<span size='large'><b>%s</b></span>"
 
-#~ msgid "<span size='large'><b>%s</b></span>"
-#~ msgstr "<span size='large'><b>%s</b></span>"
+msgid "File is not a valid .desktop file"
+msgstr "فائل موزوں .desktop فائل نہیں ہے"
 
-#~ msgid "File is not a valid .desktop file"
-#~ msgstr "فائل موزوں .desktop فائل نہیں ہے"
+msgid "Unrecognized desktop file Version '%s'"
+msgstr "غیر پہچان کردہ ڈیسک ٹاپ فائل ورژن '%s'"
 
-#~ msgid "Unrecognized desktop file Version '%s'"
-#~ msgstr "غیر پہچان کردہ ڈیسک ٹاپ فائل ورژن '%s'"
+msgid "Application does not accept documents on command line"
+msgstr "اطلاقیہ کمانڈ لائن پر دستاویزات قبول نہیں کرتا"
 
-#~ msgid "Application does not accept documents on command line"
-#~ msgstr "اطلاقیہ کمانڈ لائن پر دستاویزات قبول نہیں کرتا"
+msgid "Unrecognized launch option: %d"
+msgstr "غیر پہچان کردہ چلانے کا اختیار: %d"
 
-#~ msgid "Unrecognized launch option: %d"
-#~ msgstr "غیر پہچان کردہ چلانے کا اختیار: %d"
+msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
+msgstr "دستاویز ربط تا 'Type=Link' ڈیسک ٹاپ انٹری پاس نہیں کیا جاسکتا"
 
-#~ msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
-#~ msgstr "دستاویز ربط تا 'Type=Link' ڈیسک ٹاپ انٹری پاس نہیں کیا جاسکتا"
+msgid "Not a launchable item"
+msgstr "چلانے کے قابل عنصر نہیں ہے"
 
-#~ msgid "Not a launchable item"
-#~ msgstr "چلانے کے قابل عنصر نہیں ہے"
+msgid "Specify file containing saved configuration"
+msgstr "محفوظ شدہ وضع کاریوں پر مشتمل فائل متعین کریں"
 
-#~ msgid "Specify file containing saved configuration"
-#~ msgstr "محفوظ شدہ وضع کاریوں پر مشتمل فائل متعین کریں"
-
-#~ msgid "FILE"
-#~ msgstr "فائل"
+msgid "FILE"
+msgstr "فائل"
