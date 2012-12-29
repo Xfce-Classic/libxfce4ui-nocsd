@@ -443,17 +443,20 @@ xfce_shortcuts_grabber_event_filter (GdkXEvent            *gdk_xevent,
   modifiers &= ~consumed;
   modifiers &= mod_mask;
 
-  context.keyval = keyval;
-  context.modifiers = modifiers;
-
+  /* Use the keyval and modifiers values of gtk_accelerator_parse. We
+   * will compare them with values we also get from this function and as
+   * it has its own logic, it's easier and safer to do so.
+   * See bug #8744 for a "live" example. */
   raw_shortcut_name = gtk_accelerator_name (keyval, modifiers);
   gtk_accelerator_parse (raw_shortcut_name, &context.keyval, &context.modifiers);
+
   TRACE ("Looking for %s", raw_shortcut_name);
   g_free (raw_shortcut_name);
 
   g_hash_table_foreach (grabber->priv->keys, (GHFunc) find_event_key, &context);
 
   if (G_LIKELY (context.result != NULL))
+    /* We had a positive match */
     g_signal_emit_by_name (grabber, "shortcut-activated",
                            context.result, timestamp);
 
