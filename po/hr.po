@@ -162,7 +162,7 @@ msgstr "Radnje u konfliktu za %s"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:176
 msgid "This shortcut is already being used for something else."
-msgstr "Ova kratica je već u upotrebi"
+msgstr "Ovaj prečac je već u upotrebi za nešto drugo."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:209
 msgid "Window Manager Action Shortcut"
@@ -664,7 +664,7 @@ msgstr ""
 #: ../xfce4-about/main.c:442
 #, c-format
 msgid "Type '%s --help' for usage information."
-msgstr "Upiši \"%s --help\" za informaciju o uporabi."
+msgstr "Upiši '%s --help za informaciju o uporabi."
 
 #: ../xfce4-about/main.c:448
 msgid "Unable to initialize GTK+."
