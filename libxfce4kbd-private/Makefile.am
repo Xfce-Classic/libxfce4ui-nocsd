@@ -16,7 +16,7 @@ libxfce4kbd_headers = \
 	xfce-shortcuts-grabber.h \
 	xfce-shortcut-dialog.h \
 	xfce-shortcuts.h \
-	xfwm4-shortcut-values.h
+	xfce-shortcuts-xfwm4.h
 
 libxfce4kbd_built_sources = \
 	xfce-shortcuts-marshal.c \
@@ -28,7 +28,8 @@ libxfce4kbd_sources = \
 	xfce-shortcuts-provider.c \
 	xfce-shortcuts-grabber.c \
 	xfce-shortcut-dialog.c \
-	xfce-shortcuts.c
+	xfce-shortcuts.c \
+	xfce-shortcuts-xfwm4.c
 
 lib_LTLIBRARIES = libxfce4kbd-private-2.la
 

@@ -33,7 +33,7 @@
 #include <xfconf/xfconf.h>
 
 #include <libxfce4kbd-private/xfce-shortcuts.h>
-#include <libxfce4kbd-private/xfwm4-shortcut-values.h>
+#include <libxfce4kbd-private/xfce-shortcuts-xfwm4.h>
 
 
 
@@ -123,19 +123,12 @@ xfce_shortcut_conflict_dialog (GtkWindow   *parent,
           owner_action_name = NULL;
         else if (g_utf8_collate (owner, "xfwm4") == 0)
           {
-            gint j;
-
             DBG ("Owner action %s is an xfwm4 action, get the string", owner_action);
 
             /* We need to get the human readable string of the action name */
-            for (j = 0; xfwm4_shortcut_values[j].name != NULL; ++j)
-            if (G_UNLIKELY (g_str_equal (xfwm4_shortcut_values[j].feature,
-                                         owner_action)))
-              {
-                owner_action_name =
-                  g_markup_escape_text (xfwm4_shortcut_values[j].name, -1);
-                break;
-              }
+            owner_action_name =
+              g_markup_escape_text (xfce_shortcuts_xfwm4_get_feature_name (owner_action), -1);
+
           }
         else
           owner_action_name = g_markup_escape_text (owner_action, -1);
@@ -146,17 +139,11 @@ xfce_shortcut_conflict_dialog (GtkWindow   *parent,
           other_action_name = NULL;
         else if (g_utf8_collate (other, "xfwm4") == 0)
           {
-            gint j;
-
             /* We need to get the human readable string of the action name */
-            for (j = 0; xfwm4_shortcut_values[j].name != NULL; ++j)
-            if (G_UNLIKELY (g_str_equal (xfwm4_shortcut_values[j].feature,
-                                         other_action)))
-              {
-                other_action_name =
-                  g_markup_escape_text (xfwm4_shortcut_values[j].name, -1);
-                break;
-              }
+
+            other_action_name =
+              g_markup_escape_text (xfce_shortcuts_xfwm4_get_feature_name (other_action), -1);
+
           }
         else
           other_action_name = g_markup_escape_text (other_action, -1);
