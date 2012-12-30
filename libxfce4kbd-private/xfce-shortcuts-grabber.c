@@ -277,8 +277,7 @@ xfce_shortcuts_grabber_grab (XfceShortcutsGrabber *grabber,
     }
 
   numlock_modifier =
-    XkbKeysymToModifiers (GDK_DISPLAY_XDISPLAY (gdk_display_get_default ()),
-                         GDK_KEY_Num_Lock);
+    XkbKeysymToModifiers (GDK_DISPLAY_XDISPLAY (display), GDK_KEY_Num_Lock);
 
   for (i = 0; i < n_keys; i ++)
     {
