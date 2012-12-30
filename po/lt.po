@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-01-27 01:33+0000\n"
+"POT-Creation-Date: 2012-12-28 09:06+0100\n"
 "PO-Revision-Date: 2012-01-27 09:14+0200\n"
 "Last-Translator: Algimantas Margevičius <margevicius.algimantas@gmail.com>\n"
 "Language-Team: Lietuvių <>\n"
@@ -19,24 +19,24 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n"
 "%100<10 || n%100>=20) ? 1 : 2)\n"
 
-#: ../libxfce4ui/xfce-dialogs.c:80
+#: ../libxfce4ui/xfce-dialogs.c:98
 msgid "Failed to open web browser for online documentation"
 msgstr "Nepavyko atverti naršyklės tinklo dokumentacijai"
 
-#: ../libxfce4ui/xfce-dialogs.c:195
+#: ../libxfce4ui/xfce-dialogs.c:213
 #, c-format
 msgid "Do you want to read the %s manual online?"
 msgstr "Ar norite skaityti %s naudotojo vadovą internete?"
 
-#: ../libxfce4ui/xfce-dialogs.c:197
+#: ../libxfce4ui/xfce-dialogs.c:215
 msgid "Do you want to read the manual online?"
 msgstr "Ar norite skaityti naudotojo vadovą internete?"
 
-#: ../libxfce4ui/xfce-dialogs.c:200
+#: ../libxfce4ui/xfce-dialogs.c:218
 msgid "Online Documentation"
 msgstr "Dokumentacija tinkle"
 
-#: ../libxfce4ui/xfce-dialogs.c:203
+#: ../libxfce4ui/xfce-dialogs.c:221
 msgid ""
 "You will be redirected to the documentation website where the help pages are "
 "maintained and translated."
@@ -44,62 +44,67 @@ msgstr ""
 "Jūs būsite nukreipti į dokumentacijos svetainę kurioje yra verčiami ir "
 "prižiūrimi žinyno puslapiai."
 
-#: ../libxfce4ui/xfce-dialogs.c:207
+#: ../libxfce4ui/xfce-dialogs.c:225
 msgid "_Read Online"
 msgstr "_Skaityti internete"
 
-#: ../libxfce4ui/xfce-dialogs.c:219
+#: ../libxfce4ui/xfce-dialogs.c:237
 msgid "_Always go directly to the online documentation"
 msgstr "_Visada eiti tiesiai į dokumentaciją internete"
 
-#: ../libxfce4ui/xfce-dialogs.c:263
+#: ../libxfce4ui/xfce-dialogs.c:281
+#, fuzzy
 msgid "Information"
-msgstr "Informacija"
+msgstr "Versija"
 
-#: ../libxfce4ui/xfce-dialogs.c:296
+#: ../libxfce4ui/xfce-dialogs.c:314
 msgid "Warning"
 msgstr "Įspėjimas"
 
-#: ../libxfce4ui/xfce-dialogs.c:330
+#: ../libxfce4ui/xfce-dialogs.c:348
 msgid "Error"
 msgstr "Klaida"
 
-#: ../libxfce4ui/xfce-dialogs.c:381
+#: ../libxfce4ui/xfce-dialogs.c:399
 msgid "Question"
 msgstr "Klausimas"
 
-#: ../libxfce4ui/xfce-sm-client.c:1402
+#: ../libxfce4ui/xfce-sm-client.c:1403
+#, fuzzy
 msgid "Session management client ID"
-msgstr "Seanso tvarkyklės kliento ID"
+msgstr "Seanso tvarkyklės lizdas"
 
-#: ../libxfce4ui/xfce-sm-client.c:1402
+#: ../libxfce4ui/xfce-sm-client.c:1403
 msgid "ID"
 msgstr "ID"
 
-#: ../libxfce4ui/xfce-sm-client.c:1403
+#: ../libxfce4ui/xfce-sm-client.c:1404
+#, fuzzy
 msgid "Disable session management"
-msgstr "Išjungti seanso tvarkymą"
-
-#: ../libxfce4ui/xfce-sm-client.c:1413
-msgid "Session management options"
-msgstr "Seanso tvarkymo parinktys"
+msgstr "Seanso tvarkyklės lizdas"
 
 #: ../libxfce4ui/xfce-sm-client.c:1414
-msgid "Show session management options"
-msgstr "Rodyti seanso tvarkymo parinktis"
+#, fuzzy
+msgid "Session management options"
+msgstr "Seanso tvarkyklės lizdas"
 
-#: ../libxfce4ui/xfce-sm-client.c:1590
+#: ../libxfce4ui/xfce-sm-client.c:1415
+#, fuzzy
+msgid "Show session management options"
+msgstr "Seanso tvarkyklės lizdas"
+
+#: ../libxfce4ui/xfce-sm-client.c:1591
 #, c-format
 msgid "Failed to connect to the session manager: %s"
 msgstr "Nepavyko prisijungti prie seanso tvarkyklės: %s"
 
-#: ../libxfce4ui/xfce-sm-client.c:1597
+#: ../libxfce4ui/xfce-sm-client.c:1598
 #, c-format
 msgid "Session manager did not return a valid client id"
 msgstr "Seanso tvarkyklė negrąžino tinkamo kliento id"
 
 #. print warning for user
-#: ../libxfce4ui/xfce-spawn.c:406
+#: ../libxfce4ui/xfce-spawn.c:413
 #, c-format
 msgid ""
 "Working directory \"%s\" does not exist. It won't be used when spawning \"%s"
@@ -107,28 +112,32 @@ msgid ""
 msgstr ""
 "Darbinis aplankas „%s“ neegzistuoja. Jis nebus naudojamas atvaizduojant „%s“."
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:52
-msgid ""
-"This shortcut is already being used for another window manager action. Which "
-"action do you want to use?"
-msgstr ""
-"Šis trumpinys jau naudojamas kitam langų tvarkyklės veiksmui. Kurį veiksmą "
-"norėsite naudoti?"
-
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
-#: ../libxfce4kbd-private/xfce-shortcuts.c:56
-#: ../libxfce4kbd-private/xfce-shortcuts.c:59
-#: ../libxfce4kbd-private/xfce-shortcuts.c:62
+#, fuzzy, c-format
+msgid ""
+"This shortcut is already being used for the action '%s'. Which action do you "
+"want to use?"
+msgstr ""
+"Šis trumpinys jau naudojamas komandai „%s“. Kurį veiksmą norėsite naudoti?"
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:54
+#: ../libxfce4kbd-private/xfce-shortcuts.c:57
+#: ../libxfce4kbd-private/xfce-shortcuts.c:60
+#: ../libxfce4kbd-private/xfce-shortcuts.c:63
 #, c-format
 msgid "Use '%s'"
 msgstr "Naudoti „%s“"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:53
-msgid "Keep the other one"
-msgstr "Palikti aną"
+#: ../libxfce4kbd-private/xfce-shortcuts.c:54
+#: ../libxfce4kbd-private/xfce-shortcuts.c:57
+#: ../libxfce4kbd-private/xfce-shortcuts.c:60
+#: ../libxfce4kbd-private/xfce-shortcuts.c:63
+#, c-format
+msgid "Keep '%s'"
+msgstr "Palikti „%s“"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:55
-#: ../libxfce4kbd-private/xfce-shortcuts.c:58
+#: ../libxfce4kbd-private/xfce-shortcuts.c:56
+#: ../libxfce4kbd-private/xfce-shortcuts.c:59
 #, c-format
 msgid ""
 "This shortcut is already being used for the command '%s'. Which action do "
@@ -136,69 +145,379 @@ msgid ""
 msgstr ""
 "Šis trumpinys jau naudojamas komandai „%s“. Kurį veiksmą norėsite naudoti?"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:56
-#: ../libxfce4kbd-private/xfce-shortcuts.c:59
-#, c-format
-msgid "Keep '%s'"
-msgstr "Palikti „%s“"
-
-#: ../libxfce4kbd-private/xfce-shortcuts.c:61
-msgid ""
-"This shortcut is already being used by a window manager action. Which action "
-"do you want to use?"
-msgstr ""
-"Šis trumpinys jau naudojamas kitam langų tvarkyklės veiksmui. Kurį veiksmą "
-"norėsite naudoti?"
-
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
-msgid "Keep the window manager action"
-msgstr "Palikti langų tvarkyklės veiksmą"
+#, fuzzy, c-format
+msgid ""
+"This shortcut is already being used by the action '%s'. Which action do you "
+"want to use?"
+msgstr ""
+"Šis trumpinys jau naudojamas komandai „%s“. Kurį veiksmą norėsite naudoti?"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:95
+#. This shortcut already exists in the provider, we don't want it twice
+#. Warn the user
+#: ../libxfce4kbd-private/xfce-shortcuts.c:110
+msgid "Please use another key combination."
+msgstr ""
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:111
+#, c-format
+msgid "%s already triggers this action."
+msgstr ""
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:116
 #, c-format
 msgid "Conflicting actions for %s"
 msgstr "Nesuderinami veiksmai skirti %s"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:128
+#: ../libxfce4kbd-private/xfce-shortcuts.c:189
 msgid "This shortcut is already being used for something else."
 msgstr "Šis trumpinys jau naudojamas kažkam kitam."
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:204
-msgid "Window Manager Action Shortcut"
-msgstr "Langų tvarkyklės veiksmų susiejimas"
-
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:205
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:215
-msgid "Action:"
-msgstr "Veiksmas:"
-
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:209
-msgid "Command Shortcut"
-msgstr "Komandos susiejimas"
+#, fuzzy
+msgid "Window Manager Action Shortcut"
+msgstr "Langų tvarkyklė"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:210
-msgid "Command:"
+#. TRANSLATORS: this string will be used to create an explanation for
+#. * the user in a following string
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:212
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:226
+#, fuzzy
+msgid "action"
+msgstr "Veiksmas"
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:216
+#, fuzzy
+msgid "Command Shortcut"
+msgstr "Susiejimas"
+
+#. TRANSLATORS: this string will be used to create an explanation for
+#. * the user in a following string
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:219
+#, fuzzy
+msgid "command"
 msgstr "Komanda:"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:214
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:223
 msgid "Shortcut"
 msgstr "Susiejimas"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:255
-msgid "Shortcut:"
-msgstr "Susiejimas:"
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:267
+#, c-format
+msgid "Press now the keyboard keys you want to use to trigger the %s '%s'."
+msgstr ""
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:300
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:291
+#, fuzzy
+msgid "Shortcut:"
+msgstr "Susiejimas"
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:296
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:475
+msgid "No keys pressed yet, proceed."
+msgstr ""
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:378
+#, fuzzy
 msgid "Could not grab the keyboard."
-msgstr "Nepavyko paimti klaviatūros."
+msgstr "Nepavyko sukurti nustatymų dialogo."
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:33
+msgid "Window operations menu"
+msgstr "Lango operacijų meniu"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:34
+msgid "Up"
+msgstr "Aukštyn"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:35
+msgid "Down"
+msgstr "Žemyn"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:36
+msgid "Left"
+msgstr "Kairė"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:37
+msgid "Right"
+msgstr "Dešinė"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:38
+msgid "Cancel"
+msgstr "Atsisakyti"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:39
+msgid "Cycle windows"
+msgstr "Perjungti langus"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:40
+msgid "Cycle windows (Reverse)"
+msgstr "Perjungti langus (atvirkščiai)"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:41
+msgid "Switch window for same application"
+msgstr "Perjungti langą tai pačiai programai"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:42
+msgid "Switch application"
+msgstr "Perjungti programą"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:43
+msgid "Close window"
+msgstr "Užverti langą"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:44
+msgid "Maximize window horizontally"
+msgstr "Išskleisti langą horizontaliai"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:45
+msgid "Maximize window vertically"
+msgstr "Išskleisti langą vertikaliai"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:46
+msgid "Maximize window"
+msgstr "Išskleisti langą"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:47
+msgid "Hide window"
+msgstr "Paslėpti langą"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:48
+msgid "Move window"
+msgstr "Perkelti langą"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:49
+msgid "Resize window"
+msgstr "Keisti lango dydį"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:50
+msgid "Shade window"
+msgstr "Uždengti langą"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:51
+msgid "Stick window"
+msgstr "Priklijuoti langą"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:52
+msgid "Raise window"
+msgstr "Iškelti langą"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:53
+msgid "Lower window"
+msgstr "Nuleisti langą"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:54
+msgid "Raise or lower window"
+msgstr "Iškelti ar nuleisti langą"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:55
+msgid "Fill window"
+msgstr "Užpildyti langą"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:56
+msgid "Fill window horizontally"
+msgstr "Užpildyti langą horizontaliai"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:57
+msgid "Fill window vertically"
+msgstr "Užpildyti langą vertikaliai"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:58
+msgid "Toggle above"
+msgstr "Perjungti aukščiau"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:59
+msgid "Toggle fullscreen"
+msgstr "Perjungti viso ekrano veikseną"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:60
+msgid "Move window to upper workspace"
+msgstr "Perkelti langą į aukštesnį darbo lauką"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:61
+msgid "Move window to bottom workspace"
+msgstr "Perkelti langą į žemesnį darbo lauką"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:62
+msgid "Move window to left workspace"
+msgstr "Perkelti langą į kairį darbo lauką"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:63
+msgid "Move window to right workspace"
+msgstr "Perkelti langą į dešinį darbo lauką"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:64
+msgid "Move window to previous workspace"
+msgstr "Perkelti langą į buvusį darbo lauką"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:65
+msgid "Move window to next workspace"
+msgstr "Perkelti langą į sekantį darbo lauką"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:66
+msgid "Move window to workspace 1"
+msgstr "Perkelti langą į darbo lauką 1"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:67
+msgid "Move window to workspace 2"
+msgstr "Perkelti langą į darbo lauką 2"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:68
+msgid "Move window to workspace 3"
+msgstr "Perkelti langą į darbo lauką 3"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:69
+msgid "Move window to workspace 4"
+msgstr "Perkelti langą į darbo lauką 4"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:70
+msgid "Move window to workspace 5"
+msgstr "Perkelti langą į darbo lauką 5"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:71
+msgid "Move window to workspace 6"
+msgstr "Perkelti langą į darbo lauką 6"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:72
+msgid "Move window to workspace 7"
+msgstr "Perkelti langą į darbo lauką 7"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:73
+msgid "Move window to workspace 8"
+msgstr "Perkelti langą į darbo lauką 8"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:74
+msgid "Move window to workspace 9"
+msgstr "Perkelti langą į darbo lauką 9"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:75
+msgid "Move window to workspace 10"
+msgstr "Perkelti langą į darbo lauką 10"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:76
+msgid "Move window to workspace 11"
+msgstr "Perkelti langą į darbo lauką 11"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:77
+msgid "Move window to workspace 12"
+msgstr "Perkelti langą į darbo lauką 12"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:78
+msgid "Tile window to the top"
+msgstr "Perkelti langą į kairį darbo lauką"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:79
+msgid "Tile window to the bottom"
+msgstr "Perkelti langą į žemesnį darbo lauką"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:80
+msgid "Tile window to the left"
+msgstr "Perkelti langą į kairį darbo lauką"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:81
+msgid "Tile window to the right"
+msgstr "Perkelti langą į dešinį darbo lauką"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:82
+msgid "Show desktop"
+msgstr "Rodyti darbastalį"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:83
+msgid "Upper workspace"
+msgstr "Viršutinis darbo laukas"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:84
+msgid "Bottom workspace"
+msgstr "Žemutinis darbo laukas"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:85
+msgid "Left workspace"
+msgstr "Kairysis darbo laukas"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:86
+msgid "Right workspace"
+msgstr "Dešinysis darbo laukas"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:87
+msgid "Previous workspace"
+msgstr "Ankstesnis darbo laukas"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:88
+msgid "Next workspace"
+msgstr "Sekantis darbo laukas"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:89
+msgid "Workspace 1"
+msgstr "Darbo laukas 1"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:90
+msgid "Workspace 2"
+msgstr "Darbo laukas 2"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:91
+msgid "Workspace 3"
+msgstr "Darbo laukas 3"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:92
+msgid "Workspace 4"
+msgstr "Darbo laukas 4"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:93
+msgid "Workspace 5"
+msgstr "Darbo laukas 5"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:94
+msgid "Workspace 6"
+msgstr "Darbo laukas 6"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:95
+msgid "Workspace 7"
+msgstr "Darbo laukas 7"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:96
+msgid "Workspace 8"
+msgstr "Darbo laukas 8"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:97
+msgid "Workspace 9"
+msgstr "Darbo laukas 9"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:98
+msgid "Workspace 10"
+msgstr "Darbo laukas 10"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:99
+msgid "Workspace 11"
+msgstr "Darbo laukas 11"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:100
+msgid "Workspace 12"
+msgstr "Darbo laukas 12"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:101
+msgid "Add workspace"
+msgstr "Pridėti darbo lauką"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:102
+msgid "Add adjacent workspace"
+msgstr "Pridėti darbo lauką šalia"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:103
+msgid "Delete last workspace"
+msgstr "Pašalinti paskutinį darbo lauką"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:104
+msgid "Delete active workspace"
+msgstr "Pašalinti aktyvų darbo lauką"
 
 #: ../glade/libxfce4ui.xml.in.h:1
-msgid "Subtitle"
-msgstr "Subtitrai"
-
-#: ../glade/libxfce4ui.xml.in.h:2
 msgid "Titled Dialog"
 msgstr "Langas su antrašte"
+
+#: ../glade/libxfce4ui.xml.in.h:2
+#, fuzzy
+msgid "Subtitle"
+msgstr "Pavadinimas"
 
 #: ../glade/libxfce4ui.xml.in.h:3
 msgid "Xfce 4 Widgets"
@@ -206,15 +525,16 @@ msgstr "Xfce 4 valdikliai"
 
 #: ../xfce4-about/main.c:52
 msgid "Version information"
-msgstr "Versijos informacija"
+msgstr "Versija"
 
 #: ../xfce4-about/main.c:70
 msgid "Window Manager"
 msgstr "Langų tvarkyklė"
 
 #: ../xfce4-about/main.c:71
+#, fuzzy
 msgid "Handles the placement of windows on the screen."
-msgstr "Tvarkosi su langų išdėstymu ekrane."
+msgstr "Ekrano _centre"
 
 #: ../xfce4-about/main.c:74
 msgid "Panel"
@@ -229,8 +549,9 @@ msgstr ""
 "dar daugiau."
 
 #: ../xfce4-about/main.c:79
+#, fuzzy
 msgid "Desktop Manager"
-msgstr "Darbastalio tvarkyklė"
+msgstr "Langų tvarkyklė"
 
 #: ../xfce4-about/main.c:80
 msgid ""
@@ -241,8 +562,9 @@ msgstr ""
 "piktogramas sumažintoms programoms ar leistukams, įrenginius ir aplankus."
 
 #: ../xfce4-about/main.c:84
+#, fuzzy
 msgid "File Manager "
-msgstr "Failų tvarkyklė"
+msgstr "Langų tvarkyklė"
 
 #: ../xfce4-about/main.c:85
 msgid ""
@@ -253,8 +575,9 @@ msgstr ""
 "lengvai naudojama ir greita."
 
 #: ../xfce4-about/main.c:89
+#, fuzzy
 msgid "Session Manager"
-msgstr "Seansų tvarkyklė"
+msgstr "Seanso tvarkyklės lizdas"
 
 #: ../xfce4-about/main.c:90
 msgid ""
@@ -288,8 +611,9 @@ msgstr ""
 "paleisti reikalingą programą."
 
 #: ../xfce4-about/main.c:104
+#, fuzzy
 msgid "Settings Daemon"
-msgstr "Nustatymų demonas"
+msgstr "Nustatymų tvarkyklės lizdas"
 
 #: ../xfce4-about/main.c:105
 msgid "D-Bus-based configuration storage system."
@@ -380,9 +704,9 @@ msgstr ""
 "versiją 2, ar (jūsų pasirinkimas) bet kurią vėlesnę versiją."
 
 #: ../xfce4-about/main.c:442
-#, c-format
+#, fuzzy, c-format
 msgid "Type '%s --help' for usage information."
-msgstr "Pabandykite „%s --help“, jei norite gauti daugiau informacijos."
+msgstr "Naudojimui įrašykite „%s --help“."
 
 #: ../xfce4-about/main.c:448
 msgid "Unable to initialize GTK+."
@@ -416,40 +740,41 @@ msgstr "Versija %s, sukūrė %s"
 
 #. I18N: %s will be replaced by the Xfce version number
 #: ../xfce4-about/main.c:489
-#, c-format
+#, fuzzy, c-format
 msgid "Version %s"
-msgstr "Versija %s"
+msgstr "%s (ant %s)"
 
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
 #. },
-#: ../xfce4-about/contributors.h:127
+#: ../xfce4-about/contributors.h:121
 msgid "Core developers"
 msgstr "Autoriai"
 
-#: ../xfce4-about/contributors.h:130
+#: ../xfce4-about/contributors.h:124
 msgid "Active contributors"
 msgstr "Dabartiniai pagalbininkai"
 
-#: ../xfce4-about/contributors.h:133
+#: ../xfce4-about/contributors.h:127
 msgid "Servers maintained by"
 msgstr "Serverius prižiūri"
 
-#: ../xfce4-about/contributors.h:136
+#: ../xfce4-about/contributors.h:130
 msgid "Goodies supervision"
 msgstr "Goodies priežiūra"
 
-#: ../xfce4-about/contributors.h:139
+#: ../xfce4-about/contributors.h:133
 msgid "Translations supervision"
 msgstr "Vertimų priežiūra"
 
-#: ../xfce4-about/contributors.h:142
+#: ../xfce4-about/contributors.h:136
 msgid "Translators"
 msgstr "Vertėjai"
 
-#: ../xfce4-about/contributors.h:145
+#: ../xfce4-about/contributors.h:139
+#, fuzzy
 msgid "Previous contributors"
-msgstr "Ankstesni pagalbininkai"
+msgstr "Ankstesnis darbo laukas"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:1
 msgid "About Xfce"
@@ -460,33 +785,50 @@ msgid "Information about the Xfce Desktop Environment"
 msgstr "Informacija apie Xfce darbastalio aplinką"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:1
-msgid "About"
-msgstr "Apie"
-
-#: ../xfce4-about/xfce4-about-dialog.glade.h:2
 msgid "About the Xfce Desktop Environment"
 msgstr "Apie Xfce darbastalio aplinką"
 
+#: ../xfce4-about/xfce4-about-dialog.glade.h:2
+msgid "About"
+msgstr "Apie"
+
 #: ../xfce4-about/xfce4-about-dialog.glade.h:3
-msgid "BSD"
-msgstr "BSD"
-
-#: ../xfce4-about/xfce4-about-dialog.glade.h:4
-msgid "Copyright"
-msgstr "Autorinės teisės"
-
-#: ../xfce4-about/xfce4-about-dialog.glade.h:5
 msgid "Credits"
 msgstr "Padėkos"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:6
+#: ../xfce4-about/xfce4-about-dialog.glade.h:4
 msgid "GPL"
 msgstr "GPL"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:7
+#: ../xfce4-about/xfce4-about-dialog.glade.h:5
 msgid "LGPL"
 msgstr "LGPL"
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:6
+msgid "BSD"
+msgstr "BSD"
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:7
+msgid "Copyright"
+msgstr "Autorinės teisės"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:8
 msgid "License"
 msgstr "Licencija"
+
+msgid ""
+"This shortcut is already being used for another window manager action. Which "
+"action do you want to use?"
+msgstr ""
+"Šis trumpinys jau naudojamas kitam langų tvarkyklės veiksmui. Kurį veiksmą "
+"norėsite naudoti?"
+
+msgid "Keep the other one"
+msgstr "Palikti aną"
+
+msgid ""
+"This shortcut is already being used by a window manager action. Which action "
+"do you want to use?"
+msgstr ""
+"Šis trumpinys jau naudojamas kitam langų tvarkyklės veiksmui. Kurį veiksmą "
+"norėsite naudoti?"

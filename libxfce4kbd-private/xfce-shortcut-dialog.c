@@ -193,26 +193,37 @@ xfce_shortcut_dialog_create_contents (XfceShortcutDialog *dialog,
                                       const gchar        *action_name,
                                       const gchar        *action)
 {
+  GtkWidget   *content_box;
+  GtkWidget   *alignment;
+  GtkWidget   *box;
   GtkWidget   *button;
-  GtkWidget   *table;
   GtkWidget   *label;
+  const gchar *action_type;
   const gchar *title;
-  const gchar *action_label;
+  const gchar *explanation_label;
+  gchar       *explanation_label_escaped;
+  gchar       *explanation_label_markup;
 
   if (g_utf8_collate (provider, "xfwm4") == 0)
     {
       title = _("Window Manager Action Shortcut");
-      action_label = _("Action:");
+      /* TRANSLATORS: this string will be used to create an explanation for
+       * the user in a following string */
+      action_type = _("action");
     }
   else if (g_utf8_collate (provider, "commands") == 0)
     {
       title = _("Command Shortcut");
-      action_label = _("Command:");
+      /* TRANSLATORS: this string will be used to create an explanation for
+       * the user in a following string */
+      action_type = _("command");
     }
   else
     {
       title = _("Shortcut");
-      action_label = _("Action:");
+      /* TRANSLATORS: this string will be used to create an explanation for
+       * the user in a following string */
+      action_type = _("action");
     }
 
   /* Set dialog title */
@@ -232,31 +243,59 @@ xfce_shortcut_dialog_create_contents (XfceShortcutDialog *dialog,
   gtk_dialog_add_action_widget (GTK_DIALOG (dialog), button, GTK_RESPONSE_CANCEL);
   gtk_widget_show (button);
 
-  table = gtk_table_new (2, 2, FALSE);
-  gtk_table_set_row_spacings (GTK_TABLE (table), 6);
-  gtk_table_set_col_spacings (GTK_TABLE (table), 12);
-  gtk_container_set_border_width (GTK_CONTAINER (table), 12);
-  gtk_container_add (GTK_CONTAINER (gtk_dialog_get_content_area (GTK_DIALOG (dialog))), table);
-  gtk_widget_show (table);
+  /* Main content container */
+  alignment = gtk_alignment_new (0, 0, 1, 1);
+  gtk_alignment_set_padding (GTK_ALIGNMENT (alignment), 0, 6, 12, 0);
+  gtk_container_add (GTK_CONTAINER (gtk_dialog_get_content_area (GTK_DIALOG (dialog))),
+                     alignment);
+  gtk_widget_show (alignment);
 
-  label = gtk_label_new (action_label);
-  gtk_misc_set_alignment (GTK_MISC (label), 0.0, 0.5);
-  gtk_table_attach (GTK_TABLE (table), label, 0, 1, 0, 1, GTK_FILL, GTK_FILL, 0, 0);
-  gtk_widget_show (label);
+  #if GTK_CHECK_VERSION (3, 0, 0)
+  content_box = gtk_box_new (GTK_ORIENTATION_VERTICAL, 6);
+  #else
+  content_box = gtk_vbox_new (FALSE, 6);
+  #endif
+  gtk_container_set_border_width (GTK_CONTAINER (content_box), 6);
+  gtk_container_add (GTK_CONTAINER (alignment), content_box);
+  gtk_widget_show (content_box);
 
-  label = gtk_label_new (action_name);
+  /* TRANSLATORS: this creates the explanation for the user. The first %s is replaced
+   * by the action type which you translated earlier, the second %s is replaced by the
+   * action name which comes from somewhere else.
+   * THE ORDER MUSTN'T BE REVERSED! */
+  explanation_label =
+    g_strdup_printf (_("Press now the keyboard keys you want to use to trigger the %s '%s'."),
+                     action_type, action_name);
+  explanation_label_escaped = g_markup_escape_text (explanation_label, -1);
+  explanation_label_markup = g_strdup_printf ("<i>%s</i>", explanation_label_escaped);
+
+  label = gtk_label_new (NULL);
+  gtk_label_set_markup (GTK_LABEL (label), explanation_label_markup);
   gtk_misc_set_alignment (GTK_MISC (label), 0.0, 0.5);
-  gtk_table_attach_defaults (GTK_TABLE (table), label, 1, 2, 0, 1);
+  gtk_label_set_line_wrap (GTK_LABEL (label), TRUE);
+  gtk_container_add (GTK_CONTAINER (content_box), label);
   gtk_widget_show (label);
+  g_free (explanation_label_escaped);
+  g_free (explanation_label_markup);
+
+  /* Box and labels to display the shortcut currently being grabbed.
+   * It will be updated to key-press events. */
+  #if GTK_CHECK_VERSION (3, 0, 0)
+  box = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 12);
+  #else
+  box = gtk_hbox_new (FALSE, 12);
+  #endif
+  gtk_container_add (GTK_CONTAINER (content_box), box);
+  gtk_widget_show (box);
 
   label = gtk_label_new (_("Shortcut:"));
   gtk_misc_set_alignment (GTK_MISC (label), 0.0, 0.5);
-  gtk_table_attach (GTK_TABLE (table), label, 0, 1, 1, 2, GTK_FILL, GTK_FILL, 0, 0);
+  gtk_container_add (GTK_CONTAINER (box), label);
   gtk_widget_show (label);
 
-  dialog->shortcut_label = gtk_label_new (NULL);
+  dialog->shortcut_label = gtk_label_new (_("No keys pressed yet, proceed."));
   gtk_misc_set_alignment (GTK_MISC (dialog->shortcut_label), 0.0, 0.5);
-  gtk_table_attach_defaults (GTK_TABLE (table), dialog->shortcut_label, 1, 2, 1, 2);
+  gtk_container_add (GTK_CONTAINER (box), dialog->shortcut_label);
   gtk_widget_show (dialog->shortcut_label);
 
   /* Connect to key release signal for determining the new shortcut */
@@ -357,7 +396,8 @@ xfce_shortcut_dialog_key_pressed (XfceShortcutDialog *dialog,
   GdkModifierType  consumed, modifiers;
   guint            keyval, mod_mask;
   gchar           *text;
-  gchar           *shortcut;
+  gchar           *escaped_label;
+  gchar           *label;
 
   g_free (dialog->shortcut);
 
@@ -367,23 +407,41 @@ xfce_shortcut_dialog_key_pressed (XfceShortcutDialog *dialog,
   modifiers = event->state;
 
   gdk_keymap_translate_keyboard_state (keymap, event->hardware_keycode,
-                                       modifiers, 0,
+                                       modifiers, event->group,
                                        &keyval, NULL, NULL, &consumed);
 
+  /* We want Alt + Print to be Alt + Print not SysReq. See bug #7897 */
+  if (keyval == GDK_KEY_Sys_Req && (modifiers & GDK_MOD1_MASK) != 0)
+    {
+      consumed = 0;
+      keyval = GDK_KEY_Print;
+    }
+
   /* Get the modifiers */
+
+  /* If Shift was used when translating the keyboard state, we remove it
+   * from the consumed bit because gtk_accelerator_{name,parse} fail to
+   * handle this correctly. This allows us to have shortcuts with Shift
+   * as a modifier key (see bug #8744). */
+  if ((modifiers & GDK_SHIFT_MASK) && (consumed & GDK_SHIFT_MASK))
+    consumed &= ~GDK_SHIFT_MASK;
+
   modifiers &= ~consumed;
   modifiers &= mod_mask;
 
   /* Get and store the pressed shortcut */
   dialog->shortcut = gtk_accelerator_name (keyval, modifiers);
 
-  shortcut = g_markup_escape_text (dialog->shortcut, -1);
-  text = g_strdup_printf ("<span size='large'><b>%s</b></span>", shortcut);
+  label = gtk_accelerator_get_label (keyval, modifiers);
+  escaped_label = g_markup_escape_text (label, -1);
+  text = g_strdup_printf ("<span size='large'><b>%s</b></span>",
+                          escaped_label);
 
   gtk_label_set_markup (GTK_LABEL (dialog->shortcut_label), text);
 
+  g_free (label);
+  g_free (escaped_label);
   g_free (text);
-  g_free (shortcut);
 
   return FALSE;
 }
@@ -413,7 +471,8 @@ xfce_shortcut_dialog_key_released (XfceShortcutDialog *dialog,
   else
     {
       /* Clear label */
-      gtk_label_set_markup (GTK_LABEL (dialog->shortcut_label), "");
+      gtk_label_set_markup (GTK_LABEL (dialog->shortcut_label),
+                            _("No keys pressed yet, proceed."));
     }
 
   return FALSE;

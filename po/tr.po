@@ -1,42 +1,42 @@
 # Turkish translation of libxfce4ui
 # Copyright (C) 2008 Gökmen Görgen
 # This file is distributed under the same license as the xfce package.
-# 
+#
 # Gökmen Görgen <gkmngrgn@gmail.com>, 2008.
 # Ayhan YALÇINSOY <ayhanyalcinsoy@gmail.com>, 2010.
 msgid ""
 msgstr ""
 "Project-Id-Version: SVN\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-04-03 09:36+0000\n"
+"POT-Creation-Date: 2012-12-28 09:06+0100\n"
 "PO-Revision-Date: 2010-05-09 21:08+0200\n"
 "Last-Translator: Gökmen Görgen <gkmngrgn@gmail.com>\n"
 "Language-Team: Turkish <kde-i18n-doc@kde.org>\n"
+"Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: tr\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Lokalize 1.0\n"
 
-#: ../libxfce4ui/xfce-dialogs.c:80
+#: ../libxfce4ui/xfce-dialogs.c:98
 msgid "Failed to open web browser for online documentation"
 msgstr "Çevrimiçi belgelendirme için tarayıcı açılamadı"
 
-#: ../libxfce4ui/xfce-dialogs.c:195
+#: ../libxfce4ui/xfce-dialogs.c:213
 #, c-format
 msgid "Do you want to read the %s manual online?"
 msgstr "%s kılavuzunu çevrimiçi okumak ister misiniz?"
 
-#: ../libxfce4ui/xfce-dialogs.c:197
+#: ../libxfce4ui/xfce-dialogs.c:215
 msgid "Do you want to read the manual online?"
 msgstr "Kılavuzu çevrimiçi okumak ister misiniz?"
 
-#: ../libxfce4ui/xfce-dialogs.c:200
+#: ../libxfce4ui/xfce-dialogs.c:218
 msgid "Online Documentation"
 msgstr "Çevrimiçi Belgelendirme"
 
-#: ../libxfce4ui/xfce-dialogs.c:203
+#: ../libxfce4ui/xfce-dialogs.c:221
 msgid ""
 "You will be redirected to the documentation website where the help pages are "
 "maintained and translated."
@@ -44,177 +44,503 @@ msgstr ""
 "Yardım sayfalarının güncellendiği ve çevrildiği dökümantasyon sayfasına "
 "yönlendirileceksiniz."
 
-#: ../libxfce4ui/xfce-dialogs.c:207
+#: ../libxfce4ui/xfce-dialogs.c:225
 msgid "_Read Online"
 msgstr "_Çevrimiçi Oku"
 
-#: ../libxfce4ui/xfce-dialogs.c:219
+#: ../libxfce4ui/xfce-dialogs.c:237
 msgid "_Always go directly to the online documentation"
 msgstr "_Her zaman doğrudan çevrimiçi belgelendirmeye git"
 
-#: ../libxfce4ui/xfce-dialogs.c:263
+#: ../libxfce4ui/xfce-dialogs.c:281
+#, fuzzy
 msgid "Information"
-msgstr "Bilgi"
+msgstr "Sürüm bilgisi"
 
-#: ../libxfce4ui/xfce-dialogs.c:296
+#: ../libxfce4ui/xfce-dialogs.c:314
 msgid "Warning"
 msgstr "Uyarı"
 
-#: ../libxfce4ui/xfce-dialogs.c:330
+#: ../libxfce4ui/xfce-dialogs.c:348
 msgid "Error"
 msgstr "Hata"
 
-#: ../libxfce4ui/xfce-dialogs.c:381
+#: ../libxfce4ui/xfce-dialogs.c:399
 msgid "Question"
 msgstr "Soru"
 
-#: ../libxfce4ui/xfce-sm-client.c:1402
+#: ../libxfce4ui/xfce-sm-client.c:1403
+#, fuzzy
 msgid "Session management client ID"
-msgstr "Oturum yönetimi istemci kimliği"
+msgstr "Oturum yöneticisi yuvası"
 
-#: ../libxfce4ui/xfce-sm-client.c:1402
+#: ../libxfce4ui/xfce-sm-client.c:1403
 msgid "ID"
 msgstr "Kimlik"
 
-#: ../libxfce4ui/xfce-sm-client.c:1403
+#: ../libxfce4ui/xfce-sm-client.c:1404
+#, fuzzy
 msgid "Disable session management"
-msgstr "Oturum yönetimi kapalı"
-
-#: ../libxfce4ui/xfce-sm-client.c:1413
-msgid "Session management options"
-msgstr "Oturum yönetimi seçenekleri"
+msgstr "Oturum yöneticisi yuvası"
 
 #: ../libxfce4ui/xfce-sm-client.c:1414
-msgid "Show session management options"
-msgstr "Oturum yönetimi seçeneklerini göster"
+#, fuzzy
+msgid "Session management options"
+msgstr "Oturum yöneticisi yuvası"
 
-#: ../libxfce4ui/xfce-sm-client.c:1590
+#: ../libxfce4ui/xfce-sm-client.c:1415
+#, fuzzy
+msgid "Show session management options"
+msgstr "Oturum yöneticisi yuvası"
+
+#: ../libxfce4ui/xfce-sm-client.c:1591
 #, c-format
 msgid "Failed to connect to the session manager: %s"
 msgstr "Oturum yöneticisine bağlanırken hata oluştu: %s"
 
-#: ../libxfce4ui/xfce-sm-client.c:1597
+#: ../libxfce4ui/xfce-sm-client.c:1598
 #, c-format
 msgid "Session manager did not return a valid client id"
 msgstr "Oturum yöneticisi geçerli bir istemci kimliği getirmedi"
 
 #. print warning for user
-#: ../libxfce4ui/xfce-spawn.c:406
+#: ../libxfce4ui/xfce-spawn.c:413
 #, c-format
 msgid ""
 "Working directory \"%s\" does not exist. It won't be used when spawning \"%s"
 "\"."
 msgstr "\"%s\" çalışma dizini yok. \"%s\" oluşturulurken kullanılamayacak."
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:52
-msgid ""
-"This shortcut is already being used for another window manager action. Which "
-"action do you want to use?"
-msgstr ""
-"Bu kısayol başka bir pencere yönetimi eylemi için kullanılmaktadır. Hangi "
-"eylemi kullanmak istersiniz?"
-
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
-#: ../libxfce4kbd-private/xfce-shortcuts.c:56
-#: ../libxfce4kbd-private/xfce-shortcuts.c:59
-#: ../libxfce4kbd-private/xfce-shortcuts.c:62
+#, fuzzy, c-format
+msgid ""
+"This shortcut is already being used for the action '%s'. Which action do you "
+"want to use?"
+msgstr ""
+"Kısayol zaten kullanımda !\n"
+"Kullanmak istediğinizden emin misiniz ?"
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:54
+#: ../libxfce4kbd-private/xfce-shortcuts.c:57
+#: ../libxfce4kbd-private/xfce-shortcuts.c:60
+#: ../libxfce4kbd-private/xfce-shortcuts.c:63
 #, c-format
 msgid "Use '%s'"
 msgstr "Kullan: '%s'"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:53
-msgid "Keep the other one"
-msgstr "Diğerini koru"
-
-#: ../libxfce4kbd-private/xfce-shortcuts.c:55
-#: ../libxfce4kbd-private/xfce-shortcuts.c:58
-#, c-format
-msgid ""
-"This shortcut is already being used for the command '%s'. Which action do "
-"you want to use?"
-msgstr ""
-"Bu kısayol aynı zamanda '%s' komutu için de kullanılmaktadır. Hangisini "
-"eylemi kullanmak istersiniz?"
-
-#: ../libxfce4kbd-private/xfce-shortcuts.c:56
-#: ../libxfce4kbd-private/xfce-shortcuts.c:59
+#: ../libxfce4kbd-private/xfce-shortcuts.c:54
+#: ../libxfce4kbd-private/xfce-shortcuts.c:57
+#: ../libxfce4kbd-private/xfce-shortcuts.c:60
+#: ../libxfce4kbd-private/xfce-shortcuts.c:63
 #, c-format
 msgid "Keep '%s'"
 msgstr "Koru: '%s'"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:61
+#: ../libxfce4kbd-private/xfce-shortcuts.c:56
+#: ../libxfce4kbd-private/xfce-shortcuts.c:59
+#, fuzzy, c-format
 msgid ""
-"This shortcut is already being used by a window manager action. Which action "
-"do you want to use?"
+"This shortcut is already being used for the command '%s'. Which action do "
+"you want to use?"
 msgstr ""
-"Bu kısayol başka bir pencere yönetimi eylemi için de kullanılmaktadır. Hangi "
-"eylemi kullanmak istersiniz?"
+"Kısayol zaten kullanımda !\n"
+"Kullanmak istediğinizden emin misiniz ?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
-msgid "Keep the window manager action"
-msgstr "Pencere yönetimi eylemini koru"
+#, fuzzy, c-format
+msgid ""
+"This shortcut is already being used by the action '%s'. Which action do you "
+"want to use?"
+msgstr ""
+"Kısayol zaten kullanımda !\n"
+"Kullanmak istediğinizden emin misiniz ?"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:95
+#. This shortcut already exists in the provider, we don't want it twice
+#. Warn the user
+#: ../libxfce4kbd-private/xfce-shortcuts.c:110
+msgid "Please use another key combination."
+msgstr ""
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:111
+#, c-format
+msgid "%s already triggers this action."
+msgstr ""
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:116
 #, c-format
 msgid "Conflicting actions for %s"
 msgstr "%s için çelişen eylemler"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:128
+#: ../libxfce4kbd-private/xfce-shortcuts.c:189
+#, fuzzy
 msgid "This shortcut is already being used for something else."
-msgstr "Bu kısayol başka bir şey için de kullanılmış durumda."
-
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:204
-msgid "Window Manager Action Shortcut"
-msgstr "Pencere Yönetimi Eylemi Kısayolu"
-
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:205
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:215
-msgid "Action:"
-msgstr "Eylem:"
+msgstr ""
+"Kısayol zaten kullanımda !\n"
+"Kullanmak istediğinizden emin misiniz ?"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:209
+#, fuzzy
+msgid "Window Manager Action Shortcut"
+msgstr "Xfce 4 Pencere Yöneticisi Ayarları"
+
+#. TRANSLATORS: this string will be used to create an explanation for
+#. * the user in a following string
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:212
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:226
+#, fuzzy
+msgid "action"
+msgstr "Eylem"
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:216
+#, fuzzy
 msgid "Command Shortcut"
-msgstr "Komut Kısayolu"
+msgstr "Kısayol düzenle"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:210
-msgid "Command:"
-msgstr "Komut:"
+#. TRANSLATORS: this string will be used to create an explanation for
+#. * the user in a following string
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:219
+#, fuzzy
+msgid "command"
+msgstr "Komut"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:214
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:223
 msgid "Shortcut"
 msgstr "Kısayol"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:255
-msgid "Shortcut:"
-msgstr "Kısayol:"
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:267
+#, c-format
+msgid "Press now the keyboard keys you want to use to trigger the %s '%s'."
+msgstr ""
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:300
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:291
+msgid "Shortcut:"
+msgstr "Kısayol yok"
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:296
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:475
+msgid "No keys pressed yet, proceed."
+msgstr ""
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:378
+#, fuzzy
 msgid "Could not grab the keyboard."
-msgstr "Klavyeyi tanıyamadı."
+msgstr "Ayarlar menüsü oluşturulamadı."
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:33
+msgid "Window operations menu"
+msgstr "Pencere işlem menüsü"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:34
+msgid "Up"
+msgstr "Yukarı"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:35
+msgid "Down"
+msgstr "Aşağı"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:36
+msgid "Left"
+msgstr "Sol"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:37
+msgid "Right"
+msgstr "Sağ"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:38
+msgid "Cancel"
+msgstr "İptal"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:39
+msgid "Cycle windows"
+msgstr "Pencereleri çevir"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:40
+msgid "Cycle windows (Reverse)"
+msgstr "Pencereleri çevir"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:41
+msgid "Switch window for same application"
+msgstr "Aynı uygulama için pencereyi değiştir."
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:42
+msgid "Switch application"
+msgstr "Uygulamayı değiştir"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:43
+msgid "Close window"
+msgstr "Pencereyi kapat"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:44
+msgid "Maximize window horizontally"
+msgstr "Pencereyi yatay olarak büyült"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:45
+msgid "Maximize window vertically"
+msgstr "Pencereyi dikey olarak büyült"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:46
+msgid "Maximize window"
+msgstr "Pencereyi büyüt"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:47
+msgid "Hide window"
+msgstr "Pencereyi sakla"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:48
+msgid "Move window"
+msgstr "Pencereyi taşı"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:49
+msgid "Resize window"
+msgstr "Pencereyi yeniden boyutlandır"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:50
+msgid "Shade window"
+msgstr "Pencereyi gölgele"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:51
+msgid "Stick window"
+msgstr "Pencereyi yapıştır"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:52
+msgid "Raise window"
+msgstr "Pencereyi yükselt"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:53
+msgid "Lower window"
+msgstr "Alçak pencere"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:54
+msgid "Raise or lower window"
+msgstr "Pencereyi yükselt veya alçalt"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:55
+msgid "Fill window"
+msgstr "Pencereyi büyült"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:56
+msgid "Fill window horizontally"
+msgstr "Pencereyi yatay olarak büyült"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:57
+msgid "Fill window vertically"
+msgstr "Pencereyi dikey olarak büyült"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:58
+msgid "Toggle above"
+msgstr "Yukarıdakine geçiş"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:59
+msgid "Toggle fullscreen"
+msgstr "Tam ekrana geçiş"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:60
+msgid "Move window to upper workspace"
+msgstr "Pencereyi üst çalışma alanına taşı"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:61
+msgid "Move window to bottom workspace"
+msgstr "Pencereyi alt çalışma alanına taşı"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:62
+msgid "Move window to left workspace"
+msgstr "Pencereyi sol çalışma alanına taşı"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:63
+msgid "Move window to right workspace"
+msgstr "Pencereyi sağ çalışma alanına taşı"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:64
+msgid "Move window to previous workspace"
+msgstr "Pencereyi önceki çalışma alanına taşı"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:65
+msgid "Move window to next workspace"
+msgstr "Pencereyi sonraki çalışma alanına taşı"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:66
+msgid "Move window to workspace 1"
+msgstr "Pencereyi 1. çalışma alanına taşı"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:67
+msgid "Move window to workspace 2"
+msgstr "Pencereyi 2. çalışma alanına taşı"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:68
+msgid "Move window to workspace 3"
+msgstr "Pencereyi 3. çalışma alanına taşı"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:69
+msgid "Move window to workspace 4"
+msgstr "Pencereyi 4. çalışma alanına taşı"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:70
+msgid "Move window to workspace 5"
+msgstr "Pencereyi 5. çalışma alanına taşı"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:71
+msgid "Move window to workspace 6"
+msgstr "Pencereyi 6. çalışma alanına taşı"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:72
+msgid "Move window to workspace 7"
+msgstr "Pencereyi 7. çalışma alanına taşı"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:73
+msgid "Move window to workspace 8"
+msgstr "Pencereyi 8. çalışma alanına taşı"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:74
+msgid "Move window to workspace 9"
+msgstr "Pencereyi 9. çalışma alanına taşı"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:75
+msgid "Move window to workspace 10"
+msgstr "Pencereyi 10. çalışma alanına taşı"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:76
+msgid "Move window to workspace 11"
+msgstr "Pencereyi 11. çalışma alanına taşı"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:77
+msgid "Move window to workspace 12"
+msgstr "Pencereyi 12. çalışma alanına taşı"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:78
+msgid "Tile window to the top"
+msgstr "Pencere yukarıyı kaplasın"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:79
+msgid "Tile window to the bottom"
+msgstr "Pencere aşağıyı kaplasın"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:80
+msgid "Tile window to the left"
+msgstr "Pencere solu kaplasın"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:81
+msgid "Tile window to the right"
+msgstr "Pencere sağı kaplasın"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:82
+msgid "Show desktop"
+msgstr "Masaüstünü göster"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:83
+msgid "Upper workspace"
+msgstr "Üst çalışma alanı"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:84
+msgid "Bottom workspace"
+msgstr "Alt çalışma alanı"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:85
+msgid "Left workspace"
+msgstr "Sol çalışma alanı"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:86
+msgid "Right workspace"
+msgstr "Sağ çalışma alanı"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:87
+msgid "Previous workspace"
+msgstr "Önceki çalışma alanı"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:88
+msgid "Next workspace"
+msgstr "Sonraki çalışma alanı"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:89
+msgid "Workspace 1"
+msgstr "1. çalışma alanı"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:90
+msgid "Workspace 2"
+msgstr "2. çalışma alanı"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:91
+msgid "Workspace 3"
+msgstr "3. çalışma alanı"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:92
+msgid "Workspace 4"
+msgstr "4. çalışma alanı"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:93
+msgid "Workspace 5"
+msgstr "5. çalışma alanı"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:94
+msgid "Workspace 6"
+msgstr "6. çalışma alanı"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:95
+msgid "Workspace 7"
+msgstr "7. çalışma alanı"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:96
+msgid "Workspace 8"
+msgstr "8. çalışma alanı"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:97
+msgid "Workspace 9"
+msgstr "9. çalışma alanı"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:98
+msgid "Workspace 10"
+msgstr "10. çalışma alanı"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:99
+msgid "Workspace 11"
+msgstr "11. çalışma alanı"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:100
+msgid "Workspace 12"
+msgstr "12. çalışma alanı"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:101
+msgid "Add workspace"
+msgstr "Çalışma alanı ekle"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:102
+msgid "Add adjacent workspace"
+msgstr "Bitişik çalışma alanı ekle"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:103
+msgid "Delete last workspace"
+msgstr "Son çalışma alanını sil"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:104
+msgid "Delete active workspace"
+msgstr "Etkin çalışma alanını sil"
 
 #: ../glade/libxfce4ui.xml.in.h:1
-msgid "Subtitle"
-msgstr "Altyazı"
+#, fuzzy
+msgid "Titled Dialog"
+msgstr "Başlık yazıtipi"
 
 #: ../glade/libxfce4ui.xml.in.h:2
-msgid "Titled Dialog"
-msgstr "Başlıklı Pencere"
+#, fuzzy
+msgid "Subtitle"
+msgstr "Başlık"
 
 #: ../glade/libxfce4ui.xml.in.h:3
+#, fuzzy
 msgid "Xfce 4 Widgets"
-msgstr "Xfce 4 Parçacıkları"
+msgstr "Xfce 4 Pencere Yöneticisi Ayarları"
 
 #: ../xfce4-about/main.c:52
 msgid "Version information"
-msgstr "Sürüm Bilgisi"
+msgstr "Sürüm bilgisi"
 
 #: ../xfce4-about/main.c:70
 msgid "Window Manager"
 msgstr "Pencere Yöneticisi"
 
 #: ../xfce4-about/main.c:71
+#, fuzzy
 msgid "Handles the placement of windows on the screen."
-msgstr "Pencerelerin ekran üzerinde yerleştirilmesyle ilgilenir"
+msgstr "Ekranın merkezin_de"
 
 #: ../xfce4-about/main.c:74
 msgid "Panel"
@@ -229,8 +555,9 @@ msgstr ""
 "değiştirici ve daha fazlası."
 
 #: ../xfce4-about/main.c:79
+#, fuzzy
 msgid "Desktop Manager"
-msgstr "Masaüstü Yöneticisi"
+msgstr "Pencere Yöneticisi"
 
 #: ../xfce4-about/main.c:80
 msgid ""
@@ -242,8 +569,9 @@ msgstr ""
 "ikonları değiştirir."
 
 #: ../xfce4-about/main.c:84
+#, fuzzy
 msgid "File Manager "
-msgstr "Dosya Yöneticisi"
+msgstr "Pencere Yöneticisi"
 
 #: ../xfce4-about/main.c:85
 msgid ""
@@ -254,8 +582,9 @@ msgstr ""
 "çağdaş bir dosya yöneticisi."
 
 #: ../xfce4-about/main.c:89
+#, fuzzy
 msgid "Session Manager"
-msgstr "Oturum Yöneticisi"
+msgstr "Oturum yöneticisi yuvası"
 
 #: ../xfce4-about/main.c:90
 msgid ""
@@ -290,8 +619,9 @@ msgstr ""
 "onları hızlıca bulabilir ve başlatabilirsiniz."
 
 #: ../xfce4-about/main.c:104
+#, fuzzy
 msgid "Settings Daemon"
-msgstr "Ayarlar Sunucusu"
+msgstr "Ayarlar yöneticisi yuvası"
 
 #: ../xfce4-about/main.c:105
 msgid "D-Bus-based configuration storage system."
@@ -381,9 +711,9 @@ msgstr ""
 "versiyonu geçerlidir."
 
 #: ../xfce4-about/main.c:442
-#, c-format
+#, fuzzy, c-format
 msgid "Type '%s --help' for usage information."
-msgstr "Kullanım bilgisi için '%s --help' yazın."
+msgstr "Kullanım bilgisi için \"%s --help\" yazın"
 
 #: ../xfce4-about/main.c:448
 msgid "Unable to initialize GTK+."
@@ -417,40 +747,42 @@ msgstr "Sürüm %s, %s tarafından dağıtılıyor."
 
 #. I18N: %s will be replaced by the Xfce version number
 #: ../xfce4-about/main.c:489
-#, c-format
+#, fuzzy, c-format
 msgid "Version %s"
-msgstr "Sürüm %s"
+msgstr "%s (%s üzerinde)"
 
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
 #. },
-#: ../xfce4-about/contributors.h:127
+#: ../xfce4-about/contributors.h:121
 msgid "Core developers"
 msgstr "Ana geliştiriciler"
 
-#: ../xfce4-about/contributors.h:130
+#: ../xfce4-about/contributors.h:124
 msgid "Active contributors"
 msgstr "Aktif katkıcılar"
 
-#: ../xfce4-about/contributors.h:133
+#: ../xfce4-about/contributors.h:127
 msgid "Servers maintained by"
 msgstr "Sunucuların bakımını yapanlar"
 
-#: ../xfce4-about/contributors.h:136
+#: ../xfce4-about/contributors.h:130
 msgid "Goodies supervision"
 msgstr "Goodies sorumlusu"
 
-#: ../xfce4-about/contributors.h:139
+#: ../xfce4-about/contributors.h:133
 msgid "Translations supervision"
 msgstr "Çeviri sorumlusu"
 
-#: ../xfce4-about/contributors.h:142
+#: ../xfce4-about/contributors.h:136
+#, fuzzy
 msgid "Translators"
-msgstr "Çevirmenler"
+msgstr "Şeffaf"
 
-#: ../xfce4-about/contributors.h:145
+#: ../xfce4-about/contributors.h:139
+#, fuzzy
 msgid "Previous contributors"
-msgstr "Önceki katkıcılar"
+msgstr "Önceki çalışma alanı"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:1
 msgid "About Xfce"
@@ -461,60 +793,63 @@ msgid "Information about the Xfce Desktop Environment"
 msgstr "Xfce Masaüstü Ortamı hakkında bilgi"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:1
-msgid "About"
-msgstr "Hakkında"
-
-#: ../xfce4-about/xfce4-about-dialog.glade.h:2
 msgid "About the Xfce Desktop Environment"
 msgstr "Xfce Masaüstü Ortamı Hakkında"
 
+#: ../xfce4-about/xfce4-about-dialog.glade.h:2
+msgid "About"
+msgstr "Hakkında"
+
 #: ../xfce4-about/xfce4-about-dialog.glade.h:3
-msgid "BSD"
-msgstr "BSD"
-
-#: ../xfce4-about/xfce4-about-dialog.glade.h:4
-msgid "Copyright"
-msgstr "Telif Hakkı"
-
-#: ../xfce4-about/xfce4-about-dialog.glade.h:5
 msgid "Credits"
 msgstr "Geliştiriciler"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:6
+#: ../xfce4-about/xfce4-about-dialog.glade.h:4
 msgid "GPL"
 msgstr "GPL"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:7
+#: ../xfce4-about/xfce4-about-dialog.glade.h:5
 msgid "LGPL"
 msgstr "LGPL"
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:6
+msgid "BSD"
+msgstr "BSD"
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:7
+msgid "Copyright"
+msgstr "Telif Hakkı"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:8
 msgid "License"
 msgstr "Lisans"
 
-#~ msgid "<span size='large'><b>%s</b></span>"
-#~ msgstr "<span size='large'><b>%s</b></span>"
+msgid "Keep the other one"
+msgstr "Diğerini koru"
 
-#~ msgid "File is not a valid .desktop file"
-#~ msgstr "Dosya geçerli bir .desktop dosyası değil"
+msgid "<span size='large'><b>%s</b></span>"
+msgstr "<span size='large'><b>%s</b></span>"
 
-#~ msgid "Unrecognized desktop file Version '%s'"
-#~ msgstr "Algılanamayan bir desktop dosyası Sürüm '%s'"
+msgid "File is not a valid .desktop file"
+msgstr "Dosya geçerli bir .desktop dosyası değil"
 
-#~ msgid "Application does not accept documents on command line"
-#~ msgstr "Uygulama, dosyaları komut satırından açmayı kabul edemez"
+msgid "Unrecognized desktop file Version '%s'"
+msgstr "Algılanamayan bir desktop dosyası Sürüm '%s'"
 
-#~ msgid "Unrecognized launch option: %d"
-#~ msgstr "Tanınmayan başlatma seçeneği: %d"
+msgid "Application does not accept documents on command line"
+msgstr "Uygulama, dosyaları komut satırından açmayı kabul edemez"
 
-#~ msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
-#~ msgstr "Belge URIlerini bir 'Type=Link' masaüstü girişi haline getiremiyor"
+msgid "Unrecognized launch option: %d"
+msgstr "Tanınmayan başlatma seçeneği: %d"
 
-#~ msgid "Not a launchable item"
-#~ msgstr "Başlatılacak öge yok"
+msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
+msgstr "Belge URIlerini bir 'Type=Link' masaüstü girişi haline getiremiyor"
 
-#~ msgid "Specify file containing saved configuration"
-#~ msgstr "Kaydedilmiş yapılandırmayı içeren dosyayı belirt"
+msgid "Not a launchable item"
+msgstr "Başlatılacak öge yok"
 
-#~ msgid "FILE"
-#~ msgstr "DOSYA"
+msgid "Specify file containing saved configuration"
+msgstr "Kaydedilmiş yapılandırmayı içeren dosyayı belirt"
+
+msgid "FILE"
+msgstr "DOSYA"

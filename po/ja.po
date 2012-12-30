@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-04-09 19:32+0900\n"
+"POT-Creation-Date: 2012-12-28 09:06+0100\n"
 "PO-Revision-Date: 2012-04-23 21:07+0900\n"
 "Last-Translator: Masato Hashimoto <cabezon.hashimoto@gmail.com>\n"
 "Language-Team: Japanese <xfce-users-jp@ml.fdiary.net>\n"
@@ -19,85 +19,92 @@ msgstr ""
 "X-Poedit-Language: Japanese\n"
 "X-Poedit-Country: JAPAN\n"
 
-#: ../libxfce4ui/xfce-dialogs.c:80
+#: ../libxfce4ui/xfce-dialogs.c:98
 msgid "Failed to open web browser for online documentation"
 msgstr "ウェブブラウザーでオンラインドキュメントを開くことに失敗しました"
 
-#: ../libxfce4ui/xfce-dialogs.c:195
+#: ../libxfce4ui/xfce-dialogs.c:213
 #, c-format
 msgid "Do you want to read the %s manual online?"
 msgstr "%s のマニュアルをオンラインで参照しますか?"
 
-#: ../libxfce4ui/xfce-dialogs.c:197
+#: ../libxfce4ui/xfce-dialogs.c:215
 msgid "Do you want to read the manual online?"
 msgstr "マニュアルをオンラインで参照しますか?"
 
-#: ../libxfce4ui/xfce-dialogs.c:200
+#: ../libxfce4ui/xfce-dialogs.c:218
 msgid "Online Documentation"
 msgstr "オンラインドキュメント"
 
-#: ../libxfce4ui/xfce-dialogs.c:203
+#: ../libxfce4ui/xfce-dialogs.c:221
 msgid ""
 "You will be redirected to the documentation website where the help pages are "
 "maintained and translated."
-msgstr "ドキュメントウェブサイトでヘルプページがメンテナンスおよび翻訳されている場合はリダイレクトされます。"
+msgstr ""
+"ドキュメントウェブサイトでヘルプページがメンテナンスおよび翻訳されている場合"
+"はリダイレクトされます。"
 
-#: ../libxfce4ui/xfce-dialogs.c:207
+#: ../libxfce4ui/xfce-dialogs.c:225
 msgid "_Read Online"
 msgstr "オンラインで読む(_R)"
 
-#: ../libxfce4ui/xfce-dialogs.c:219
+#: ../libxfce4ui/xfce-dialogs.c:237
 msgid "_Always go directly to the online documentation"
 msgstr "常にオンラインドキュメントを開く(_A)"
 
-#: ../libxfce4ui/xfce-dialogs.c:263
+#: ../libxfce4ui/xfce-dialogs.c:281
+#, fuzzy
 msgid "Information"
-msgstr "インフォメーション"
+msgstr "バージョン情報"
 
-#: ../libxfce4ui/xfce-dialogs.c:296
+#: ../libxfce4ui/xfce-dialogs.c:314
 msgid "Warning"
 msgstr "警告"
 
-#: ../libxfce4ui/xfce-dialogs.c:330
+#: ../libxfce4ui/xfce-dialogs.c:348
 msgid "Error"
 msgstr "エラー"
 
-#: ../libxfce4ui/xfce-dialogs.c:381
+#: ../libxfce4ui/xfce-dialogs.c:399
 msgid "Question"
 msgstr "確認"
 
-#: ../libxfce4ui/xfce-sm-client.c:1402
+#: ../libxfce4ui/xfce-sm-client.c:1403
+#, fuzzy
 msgid "Session management client ID"
-msgstr "セッション管理クライアント ID"
+msgstr "セッションマネージャーソケット"
 
-#: ../libxfce4ui/xfce-sm-client.c:1402
+#: ../libxfce4ui/xfce-sm-client.c:1403
 msgid "ID"
 msgstr "ID"
 
-#: ../libxfce4ui/xfce-sm-client.c:1403
+#: ../libxfce4ui/xfce-sm-client.c:1404
+#, fuzzy
 msgid "Disable session management"
-msgstr "セッション管理を無効にする"
-
-#: ../libxfce4ui/xfce-sm-client.c:1413
-msgid "Session management options"
-msgstr "セッション管理オプション"
+msgstr "セッションマネージャーソケット"
 
 #: ../libxfce4ui/xfce-sm-client.c:1414
-msgid "Show session management options"
-msgstr "セッション管理オプションを表示する"
+#, fuzzy
+msgid "Session management options"
+msgstr "セッションマネージャーソケット"
 
-#: ../libxfce4ui/xfce-sm-client.c:1590
+#: ../libxfce4ui/xfce-sm-client.c:1415
+#, fuzzy
+msgid "Show session management options"
+msgstr "セッションマネージャーソケット"
+
+#: ../libxfce4ui/xfce-sm-client.c:1591
 #, c-format
 msgid "Failed to connect to the session manager: %s"
 msgstr "セッションマネージャーへの接続に失敗しました: %s"
 
-#: ../libxfce4ui/xfce-sm-client.c:1597
+#: ../libxfce4ui/xfce-sm-client.c:1598
 #, c-format
 msgid "Session manager did not return a valid client id"
 msgstr "セッションマネージャーは正常なクライアント ID を返しませんでした"
 
 #. print warning for user
-#: ../libxfce4ui/xfce-spawn.c:406
+#: ../libxfce4ui/xfce-spawn.c:413
 #, c-format
 msgid ""
 "Working directory \"%s\" does not exist. It won't be used when spawning \"%s"
@@ -105,28 +112,33 @@ msgid ""
 msgstr ""
 "作業ディレクトリ \"%s\" が存在しません。\"%s\" 起動時にこれは使用されません。"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:52
-msgid ""
-"This shortcut is already being used for another window manager action. Which "
-"action do you want to use?"
-msgstr ""
-"このショートカットはすでに他のウィンドウマネージャーあるいはユーザーアクショ"
-"ンで使用されています。どちらで使いますか?"
-
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
-#: ../libxfce4kbd-private/xfce-shortcuts.c:56
-#: ../libxfce4kbd-private/xfce-shortcuts.c:59
-#: ../libxfce4kbd-private/xfce-shortcuts.c:62
+#, fuzzy, c-format
+msgid ""
+"This shortcut is already being used for the action '%s'. Which action do you "
+"want to use?"
+msgstr ""
+"このショートカットはすでにコマンド '%s' で使用されています。どちらで使います"
+"か?"
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:54
+#: ../libxfce4kbd-private/xfce-shortcuts.c:57
+#: ../libxfce4kbd-private/xfce-shortcuts.c:60
+#: ../libxfce4kbd-private/xfce-shortcuts.c:63
 #, c-format
 msgid "Use '%s'"
 msgstr "'%s' で使う"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:53
-msgid "Keep the other one"
-msgstr "他方で使う"
+#: ../libxfce4kbd-private/xfce-shortcuts.c:54
+#: ../libxfce4kbd-private/xfce-shortcuts.c:57
+#: ../libxfce4kbd-private/xfce-shortcuts.c:60
+#: ../libxfce4kbd-private/xfce-shortcuts.c:63
+#, c-format
+msgid "Keep '%s'"
+msgstr "'%s' で使う"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:55
-#: ../libxfce4kbd-private/xfce-shortcuts.c:58
+#: ../libxfce4kbd-private/xfce-shortcuts.c:56
+#: ../libxfce4kbd-private/xfce-shortcuts.c:59
 #, c-format
 msgid ""
 "This shortcut is already being used for the command '%s'. Which action do "
@@ -135,69 +147,380 @@ msgstr ""
 "このショートカットはすでにコマンド '%s' で使用されています。どちらで使います"
 "か?"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:56
-#: ../libxfce4kbd-private/xfce-shortcuts.c:59
-#, c-format
-msgid "Keep '%s'"
-msgstr "'%s' で使う"
-
-#: ../libxfce4kbd-private/xfce-shortcuts.c:61
-msgid ""
-"This shortcut is already being used by a window manager action. Which action "
-"do you want to use?"
-msgstr ""
-"このショートカットはすでに他のウィンドウマネージャーアクションで使用されてい"
-"ます。どちらで使いますか?"
-
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
-msgid "Keep the window manager action"
-msgstr "ウィンドウマネージャーアクションで使う"
+#, fuzzy, c-format
+msgid ""
+"This shortcut is already being used by the action '%s'. Which action do you "
+"want to use?"
+msgstr ""
+"このショートカットはすでにコマンド '%s' で使用されています。どちらで使います"
+"か?"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:95
+#. This shortcut already exists in the provider, we don't want it twice
+#. Warn the user
+#: ../libxfce4kbd-private/xfce-shortcuts.c:110
+msgid "Please use another key combination."
+msgstr ""
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:111
+#, c-format
+msgid "%s already triggers this action."
+msgstr ""
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:116
 #, c-format
 msgid "Conflicting actions for %s"
 msgstr "%s のアクションの衝突"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:128
+#: ../libxfce4kbd-private/xfce-shortcuts.c:189
 msgid "This shortcut is already being used for something else."
 msgstr "このショートカットはすでに他で使用されています。"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:204
-msgid "Window Manager Action Shortcut"
-msgstr "ウィンドウマネージャーアクションのショートカット"
-
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:205
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:215
-msgid "Action:"
-msgstr "アクション:"
-
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:209
-msgid "Command Shortcut"
-msgstr "コマンドショートカット"
+#, fuzzy
+msgid "Window Manager Action Shortcut"
+msgstr "ウィンドウマネージャー"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:210
-msgid "Command:"
+#. TRANSLATORS: this string will be used to create an explanation for
+#. * the user in a following string
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:212
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:226
+#, fuzzy
+msgid "action"
+msgstr "動作"
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:216
+#, fuzzy
+msgid "Command Shortcut"
+msgstr "ショートカットキー"
+
+#. TRANSLATORS: this string will be used to create an explanation for
+#. * the user in a following string
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:219
+#, fuzzy
+msgid "command"
 msgstr "コマンド:"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:214
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:223
 msgid "Shortcut"
-msgstr "ショートカット"
+msgstr "ショートカットキー"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:255
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:267
+#, c-format
+msgid "Press now the keyboard keys you want to use to trigger the %s '%s'."
+msgstr ""
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:291
+#, fuzzy
 msgid "Shortcut:"
-msgstr "ショートカット:"
+msgstr "ショートカットキー"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:300
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:296
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:475
+msgid "No keys pressed yet, proceed."
+msgstr ""
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:378
+#, fuzzy
 msgid "Could not grab the keyboard."
-msgstr "キーボードを取得できませんでした。"
+msgstr "設定ダイアログボックスの生成ができませんでした。"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:33
+msgid "Window operations menu"
+msgstr "ウィンドウ操作メニュー"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:34
+msgid "Up"
+msgstr "上"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:35
+msgid "Down"
+msgstr "下"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:36
+msgid "Left"
+msgstr "左"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:37
+msgid "Right"
+msgstr "右"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:38
+msgid "Cancel"
+msgstr "キャンセル"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:39
+msgid "Cycle windows"
+msgstr "ウィンドウの切り替え"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:40
+msgid "Cycle windows (Reverse)"
+msgstr "ウィンドウの切り替え (逆方向)"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:41
+msgid "Switch window for same application"
+msgstr "同じアプリケーションのウィンドウの切り替え"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:42
+msgid "Switch application"
+msgstr "アプリケーションの切り替え"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:43
+msgid "Close window"
+msgstr "ウィンドウを閉じる"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:44
+msgid "Maximize window horizontally"
+msgstr "ウィンドウを横に最大化"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:45
+msgid "Maximize window vertically"
+msgstr "ウィンドウを縦に最大化"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:46
+msgid "Maximize window"
+msgstr "ウィンドウを最大化"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:47
+msgid "Hide window"
+msgstr "ウィンドウを隠す"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:48
+msgid "Move window"
+msgstr "ウィンドウの移動"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:49
+msgid "Resize window"
+msgstr "ウィンドウのサイズ変更"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:50
+msgid "Shade window"
+msgstr "ウィンドウを折り畳む"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:51
+msgid "Stick window"
+msgstr "常に表示中のワークスペースに置く"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:52
+msgid "Raise window"
+msgstr "ウィンドウを前面に出す"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:53
+msgid "Lower window"
+msgstr "ウィンドウを後ろへ送る"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:54
+msgid "Raise or lower window"
+msgstr "ウィンドウを前面に出す/後ろへ送る"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:55
+msgid "Fill window"
+msgstr "ウィンドウをいっぱいに拡げる"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:56
+msgid "Fill window horizontally"
+msgstr "ウィンドウを横いっぱいに拡げる"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:57
+msgid "Fill window vertically"
+msgstr "ウィンドウを縦いっぱいに拡げる"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:58
+msgid "Toggle above"
+msgstr "常に最前面化/解除の切り替え"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:59
+msgid "Toggle fullscreen"
+msgstr "全画面化/解除の切り替え"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:60
+msgid "Move window to upper workspace"
+msgstr "ウィンドウを上のワークスペースに移す"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:61
+msgid "Move window to bottom workspace"
+msgstr "ウィンドウを下のワークスペースに移す"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:62
+msgid "Move window to left workspace"
+msgstr "ウィンドウを左のワークスペースに移す"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:63
+msgid "Move window to right workspace"
+msgstr "ウィンドウを右のワークスペースに移す"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:64
+msgid "Move window to previous workspace"
+msgstr "ウィンドウを前のワークスペースに移す"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:65
+msgid "Move window to next workspace"
+msgstr "ウィンドウを次のワークスペースに移す"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:66
+msgid "Move window to workspace 1"
+msgstr "ウィンドウをワークスペース 1 へ移す"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:67
+msgid "Move window to workspace 2"
+msgstr "ウィンドウをワークスペース 2 へ移す"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:68
+msgid "Move window to workspace 3"
+msgstr "ウィンドウをワークスペース 3 へ移す"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:69
+msgid "Move window to workspace 4"
+msgstr "ウィンドウをワークスペース 4 へ移す"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:70
+msgid "Move window to workspace 5"
+msgstr "ウィンドウをワークスペース 5 へ移す"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:71
+msgid "Move window to workspace 6"
+msgstr "ウィンドウをワークスペース 6 へ移す"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:72
+msgid "Move window to workspace 7"
+msgstr "ウィンドウをワークスペース 7 へ移す"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:73
+msgid "Move window to workspace 8"
+msgstr "ウィンドウをワークスペース 8 へ移す"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:74
+msgid "Move window to workspace 9"
+msgstr "ウィンドウをワークスペース 9 へ移す"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:75
+msgid "Move window to workspace 10"
+msgstr "ウィンドウをワークスペース 10 へ移す"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:76
+msgid "Move window to workspace 11"
+msgstr "ウィンドウをワークスペース 11 へ移す"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:77
+msgid "Move window to workspace 12"
+msgstr "ウィンドウをワークスペース 12 へ移す"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:78
+msgid "Tile window to the top"
+msgstr "ウィンドウを画面上にタイル表示"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:79
+msgid "Tile window to the bottom"
+msgstr "ウィンドウを画面下のタイル表示"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:80
+msgid "Tile window to the left"
+msgstr "ウィンドウを画面左にタイル表示"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:81
+msgid "Tile window to the right"
+msgstr "ウィンドウを画面右にタイル表示"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:82
+msgid "Show desktop"
+msgstr "デスクトップを表示"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:83
+msgid "Upper workspace"
+msgstr "上のワークスペースへ移る"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:84
+msgid "Bottom workspace"
+msgstr "下のワークスペースへ移る"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:85
+msgid "Left workspace"
+msgstr "左のワークスペースへ移る"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:86
+msgid "Right workspace"
+msgstr "右のワークスペースへ移る"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:87
+msgid "Previous workspace"
+msgstr "前のワークスペースへ移る"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:88
+msgid "Next workspace"
+msgstr "次のワークスペースへ移る"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:89
+msgid "Workspace 1"
+msgstr "ワークスペース 1 へ移る"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:90
+msgid "Workspace 2"
+msgstr "ワークスペース 2 へ移る"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:91
+msgid "Workspace 3"
+msgstr "ワークスペース 3 へ移る"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:92
+msgid "Workspace 4"
+msgstr "ワークスペース 4 へ移る"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:93
+msgid "Workspace 5"
+msgstr "ワークスペース 5 へ移る"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:94
+msgid "Workspace 6"
+msgstr "ワークスペース 6 へ移る"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:95
+msgid "Workspace 7"
+msgstr "ワークスペース 7 へ移る"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:96
+msgid "Workspace 8"
+msgstr "ワークスペース 8 へ移る"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:97
+msgid "Workspace 9"
+msgstr "ワークスペース 9 へ移る"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:98
+msgid "Workspace 10"
+msgstr "ワークスペース 10 へ移る"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:99
+msgid "Workspace 11"
+msgstr "ワークスペース 11 へ移る"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:100
+msgid "Workspace 12"
+msgstr "ワークスペース 12 へ移る"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:101
+msgid "Add workspace"
+msgstr "ワークスペースの追加"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:102
+msgid "Add adjacent workspace"
+msgstr "隣にワークスペースを追加"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:103
+msgid "Delete last workspace"
+msgstr "最後のワークスペースを削除"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:104
+msgid "Delete active workspace"
+msgstr "現在のワークスペースを削除"
 
 #: ../glade/libxfce4ui.xml.in.h:1
 msgid "Titled Dialog"
 msgstr "タイトル付きダイアログ"
 
 #: ../glade/libxfce4ui.xml.in.h:2
+#, fuzzy
 msgid "Subtitle"
-msgstr "サブタイトル"
+msgstr "タイトル"
 
 #: ../glade/libxfce4ui.xml.in.h:3
 msgid "Xfce 4 Widgets"
@@ -212,8 +535,9 @@ msgid "Window Manager"
 msgstr "ウィンドウマネージャー"
 
 #: ../xfce4-about/main.c:71
+#, fuzzy
 msgid "Handles the placement of windows on the screen."
-msgstr "画面上でのウィンドウの配置を管理します。"
+msgstr "画面の中央(_C)"
 
 #: ../xfce4-about/main.c:74
 msgid "Panel"
@@ -223,37 +547,49 @@ msgstr "パネル"
 msgid ""
 "Program launchers, window buttons, applications menu, workspace switcher and "
 "more."
-msgstr "プログラムランチャー、ウィンドウボタン、アプリケーションメニュー、ワークスペーススイッチャーなどがあります。"
+msgstr ""
+"プログラムランチャー、ウィンドウボタン、アプリケーションメニュー、ワークス"
+"ペーススイッチャーなどがあります。"
 
 #: ../xfce4-about/main.c:79
+#, fuzzy
 msgid "Desktop Manager"
-msgstr "デスクトップマネージャー"
+msgstr "ウィンドウマネージャー"
 
 #: ../xfce4-about/main.c:80
 msgid ""
 "Sets the background color or image with optional application menu or icons "
 "for minimized applications or launchers, devices and folders."
-msgstr "背景の色や画像を設定し、オプションでアプリケーションメニューの表示や、アプリケーションやランチャーを最小化したアイコン、デバイス、およびフォルダーの配置を行います。"
+msgstr ""
+"背景の色や画像を設定し、オプションでアプリケーションメニューの表示や、アプリ"
+"ケーションやランチャーを最小化したアイコン、デバイス、およびフォルダーの配置"
+"を行います。"
 
 #: ../xfce4-about/main.c:84
+#, fuzzy
 msgid "File Manager "
-msgstr "ファイルマネージャー"
+msgstr "ウィンドウマネージャー"
 
 #: ../xfce4-about/main.c:85
 msgid ""
 "A modern file manager for the Unix/Linux desktop, aiming to be easy-to-use "
 "and fast."
-msgstr "Unix/Linux デスクトップ向けのモダンなファイルマネージャーです。使いやすく、軽快に動作することを目指しています。"
+msgstr ""
+"Unix/Linux デスクトップ向けのモダンなファイルマネージャーです。使いやすく、軽"
+"快に動作することを目指しています。"
 
 #: ../xfce4-about/main.c:89
+#, fuzzy
 msgid "Session Manager"
-msgstr "セッションマネージャー"
+msgstr "セッションマネージャーソケット"
 
 #: ../xfce4-about/main.c:90
 msgid ""
 "Restores your session on startup and allows you to shutdown the computer "
 "from Xfce."
-msgstr "起動時にセッションを復元し、Xfce からコンピューターのシャットダウンを行えるようにします。"
+msgstr ""
+"起動時にセッションを復元し、Xfce からコンピューターのシャットダウンを行えるよ"
+"うにします。"
 
 #: ../xfce4-about/main.c:94
 msgid "Setting System"
@@ -263,7 +599,9 @@ msgstr "システム設定"
 msgid ""
 "Configuration system to control various aspects of the desktop like "
 "appearance, display, keyboard and mouse settings."
-msgstr "デスクトップの外観、ディスプレイ、キーボード、あるいはマウスなど、様々なシステム設定を行います。"
+msgstr ""
+"デスクトップの外観、ディスプレイ、キーボード、あるいはマウスなど、様々なシス"
+"テム設定を行います。"
 
 #: ../xfce4-about/main.c:99
 msgid "Application Finder"
@@ -273,11 +611,14 @@ msgstr "アプリケーションファインダー"
 msgid ""
 "Shows the applications installed on your system in categories, so you can "
 "quickly find and launch them."
-msgstr "システムにインストールされているアプリケーションをカテゴリ別に表示し、それらを素早く見つけて起動できます。"
+msgstr ""
+"システムにインストールされているアプリケーションをカテゴリ別に表示し、それら"
+"を素早く見つけて起動できます。"
 
 #: ../xfce4-about/main.c:104
+#, fuzzy
 msgid "Settings Daemon"
-msgstr "設定デーモン"
+msgstr "マネージャーソケットの設定"
 
 #: ../xfce4-about/main.c:105
 msgid "D-Bus-based configuration storage system."
@@ -287,14 +628,19 @@ msgstr "D-Bus ベースの設定格納システムです。"
 msgid ""
 "Xfce is a collection of programs that together provide a full-featured "
 "desktop environment. The following programs are part of the Xfce core:"
-msgstr "Xfce はデスクトップ環境に必要なすべての機能をひとまとめに提供するプログラムコレクションです。以下は Xfce のコアとなるプログラムです:"
+msgstr ""
+"Xfce はデスクトップ環境に必要なすべての機能をひとまとめに提供するプログラムコ"
+"レクションです。以下は Xfce のコアとなるプログラムです:"
 
 #: ../xfce4-about/main.c:136
 msgid ""
 "Xfce is also a development platform providing several libraries, that help "
 "programmers create applications that fit in well with the desktop "
 "environment."
-msgstr "Xfce はいくつかのライブラリを提供する開発プラットフォームでもあります。これらライブラリは、このデスクトップ環境とよく調和するアプリケーションを製作するプログラマーの役に立つでしょう。"
+msgstr ""
+"Xfce はいくつかのライブラリを提供する開発プラットフォームでもあります。これら"
+"ライブラリは、このデスクトップ環境とよく調和するアプリケーションを製作するプ"
+"ログラマーの役に立つでしょう。"
 
 #: ../xfce4-about/main.c:142
 msgid ""
@@ -302,7 +648,11 @@ msgid ""
 "for applications and LGPL or BSDL for libraries. Look at the documentation, "
 "the source code or the Xfce website (http://www.xfce.org) for more "
 "information."
-msgstr "Xfce を構成するプログラムはフリーまたはオープンソースライセンスの条項下での利用が認められています。各アプリケーションには GPL または BSDL が、各ライブラリには LGPL または BSDL が適用されます。詳しい情報はソースコードか Xfce ウェブサイト (http://www.xfce.org) にある文書をご覧ください。"
+msgstr ""
+"Xfce を構成するプログラムはフリーまたはオープンソースライセンスの条項下での利"
+"用が認められています。各アプリケーションには GPL または BSDL が、各ライブラリ"
+"には LGPL または BSDL が適用されます。詳しい情報はソースコードか Xfce ウェブ"
+"サイト (http://www.xfce.org) にある文書をご覧ください。"
 
 #: ../xfce4-about/main.c:149
 msgid "Thank you for your interest in Xfce."
@@ -316,17 +666,22 @@ msgstr "Xfce 開発チーム"
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
 "on <http://bugzilla.xfce.org> ."
-msgstr "このリストに記載ミスがある場合は、<http://bugzilla.xfce.org> までバグとしてお知らせください。"
+msgstr ""
+"このリストに記載ミスがある場合は、<http://bugzilla.xfce.org> までバグとしてお"
+"知らせください。"
 
 #: ../xfce4-about/main.c:266
 msgid "Thanks to all who helped making this software available!"
-msgstr "このソフトウェアを利用できるよう協力して下さったすべての方々に感謝します。"
+msgstr ""
+"このソフトウェアを利用できるよう協力して下さったすべての方々に感謝します。"
 
 #: ../xfce4-about/main.c:283
 msgid ""
 "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
-msgstr "Xfce の著作権は Olivier Fourdan (fourdan@xfce.org) が保有しています。各コンポーネントの著作権はそれぞれの製作者が保有しています。"
+msgstr ""
+"Xfce の著作権は Olivier Fourdan (fourdan@xfce.org) が保有しています。各コン"
+"ポーネントの著作権はそれぞれの製作者が保有しています。"
 
 #: ../xfce4-about/main.c:288
 msgid ""
@@ -334,7 +689,11 @@ msgid ""
 "distributed under the terms of the GNU Library General Public License as "
 "published by the Free Software Foundation; either version 2 of the License, "
 "or (at your option) any later version."
-msgstr "libxfce4ui、libxfcegui4、libxfce4util、thunar-vfs、および exo の各パッケージは、フリーソフトウェア財団によって発行された GNU ライブラリ一般公衆使用許諾契約書 (バージョン2か、希望によってはそれ以降のバージョンのうちどれか) の定める条件下で配布されています。"
+msgstr ""
+"libxfce4ui、libxfcegui4、libxfce4util、thunar-vfs、および exo の各パッケージ"
+"は、フリーソフトウェア財団によって発行された GNU ライブラリ一般公衆使用許諾契"
+"約書 (バージョン2か、希望によってはそれ以降のバージョンのうちどれか) の定める"
+"条件下で配布されています。"
 
 #: ../xfce4-about/main.c:295
 msgid ""
@@ -343,12 +702,16 @@ msgid ""
 "terms of the GNU General Public License as published by the Free Software "
 "Foundation; either version 2 of the License, or (at your option) any later "
 "version."
-msgstr "thunar、xfce4-appfinder、xfce4-panel、xfce4-session、xfce4-settings、xfce-utils、xfconf、xfdesktop、および xfwm4 の各パッケージは、フリーソフトウェア財団によって発行された GNU 一般公衆利用許諾契約書 (バージョン2か、希望によってはそれ以降のバージョンのうちどれか) の定める条件の下で配布されています。"
+msgstr ""
+"thunar、xfce4-appfinder、xfce4-panel、xfce4-session、xfce4-settings、xfce-"
+"utils、xfconf、xfdesktop、および xfwm4 の各パッケージは、フリーソフトウェア財"
+"団によって発行された GNU 一般公衆利用許諾契約書 (バージョン2か、希望によって"
+"はそれ以降のバージョンのうちどれか) の定める条件の下で配布されています。"
 
 #: ../xfce4-about/main.c:442
-#, c-format
+#, fuzzy, c-format
 msgid "Type '%s --help' for usage information."
-msgstr "%s --help' と指定すると使用法が表示されます。"
+msgstr "\"%s --help\" と入力すると使用法が表示されます。"
 
 #: ../xfce4-about/main.c:448
 msgid "Unable to initialize GTK+."
@@ -382,40 +745,41 @@ msgstr "バージョン %s (配布: %s)"
 
 #. I18N: %s will be replaced by the Xfce version number
 #: ../xfce4-about/main.c:489
-#, c-format
+#, fuzzy, c-format
 msgid "Version %s"
-msgstr "バージョン %s"
+msgstr "%s (ホスト %s)"
 
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
 #. },
-#: ../xfce4-about/contributors.h:127
+#: ../xfce4-about/contributors.h:121
 msgid "Core developers"
 msgstr "中心開発者"
 
-#: ../xfce4-about/contributors.h:130
+#: ../xfce4-about/contributors.h:124
 msgid "Active contributors"
 msgstr "現在の協力者"
 
-#: ../xfce4-about/contributors.h:133
+#: ../xfce4-about/contributors.h:127
 msgid "Servers maintained by"
 msgstr "サーバーの管理"
 
-#: ../xfce4-about/contributors.h:136
+#: ../xfce4-about/contributors.h:130
 msgid "Goodies supervision"
 msgstr "Goodies の監修"
 
-#: ../xfce4-about/contributors.h:139
+#: ../xfce4-about/contributors.h:133
 msgid "Translations supervision"
 msgstr "翻訳の監修"
 
-#: ../xfce4-about/contributors.h:142
+#: ../xfce4-about/contributors.h:136
 msgid "Translators"
 msgstr "翻訳者"
 
-#: ../xfce4-about/contributors.h:145
+#: ../xfce4-about/contributors.h:139
+#, fuzzy
 msgid "Previous contributors"
-msgstr "以前の協力者"
+msgstr "前のワークスペースへ移る"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:1
 msgid "About Xfce"
@@ -457,30 +821,47 @@ msgstr "著作権"
 msgid "License"
 msgstr "ライセンス"
 
-#~ msgid "<span size='large'><b>%s</b></span>"
-#~ msgstr "<span size='large'><b>%s</b></span>"
+msgid ""
+"This shortcut is already being used for another window manager action. Which "
+"action do you want to use?"
+msgstr ""
+"このショートカットはすでに他のウィンドウマネージャーあるいはユーザーアクショ"
+"ンで使用されています。どちらで使いますか?"
 
-#~ msgid "File is not a valid .desktop file"
-#~ msgstr "ファイルは正常な .desktop ファイルではありません"
+msgid "Keep the other one"
+msgstr "他方で使う"
 
-#~ msgid "Unrecognized desktop file Version '%s'"
-#~ msgstr "'%s' は認識できないデスクトップファイルのバージョンです"
+msgid ""
+"This shortcut is already being used by a window manager action. Which action "
+"do you want to use?"
+msgstr ""
+"このショートカットはすでに他のウィンドウマネージャーアクションで使用されてい"
+"ます。どちらで使いますか?"
 
-#~ msgid "Application does not accept documents on command line"
-#~ msgstr "アプリケーションはコマンドラインから文書を受け付けません"
+msgid "<span size='large'><b>%s</b></span>"
+msgstr "<span size='large'><b>%s</b></span>"
 
-#~ msgid "Unrecognized launch option: %d"
-#~ msgstr "認識できない起動オプションです: %d"
+msgid "File is not a valid .desktop file"
+msgstr "ファイルは正常な .desktop ファイルではありません"
 
-#~ msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
-#~ msgstr ""
-#~ "デスクトップエントリ 'Type=Link' にドキュメント URI を渡すことができません"
+msgid "Unrecognized desktop file Version '%s'"
+msgstr "'%s' は認識できないデスクトップファイルのバージョンです"
 
-#~ msgid "Not a launchable item"
-#~ msgstr "起動可能なアイテムではありません"
+msgid "Application does not accept documents on command line"
+msgstr "アプリケーションはコマンドラインから文書を受け付けません"
 
-#~ msgid "Specify file containing saved configuration"
-#~ msgstr "保存する設定に含めるファイルを指定する"
+msgid "Unrecognized launch option: %d"
+msgstr "認識できない起動オプションです: %d"
 
-#~ msgid "FILE"
-#~ msgstr "FILE"
+msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
+msgstr ""
+"デスクトップエントリ 'Type=Link' にドキュメント URI を渡すことができません"
+
+msgid "Not a launchable item"
+msgstr "起動可能なアイテムではありません"
+
+msgid "Specify file containing saved configuration"
+msgstr "保存する設定に含めるファイルを指定する"
+
+msgid "FILE"
+msgstr "FILE"

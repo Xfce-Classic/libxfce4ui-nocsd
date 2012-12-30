@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui git VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-04-08 16:30+0000\n"
+"POT-Creation-Date: 2012-12-28 09:06+0100\n"
 "PO-Revision-Date: 2012-04-11 21:01+0300\n"
 "Last-Translator: Efstathios Iosifidis <iosifidis@opensuse.org>\n"
 "Language-Team: Ελληνικά, Σύγχρονα <opensuse-translation-el@opensuse.org>\n"
@@ -17,25 +17,29 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"X-Poedit-Language: Greek\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-Country: GREECE\n"
+"X-Generator: Lokalize 0.2\n"
 
-#: ../libxfce4ui/xfce-dialogs.c:80
+#: ../libxfce4ui/xfce-dialogs.c:98
 msgid "Failed to open web browser for online documentation"
 msgstr "Αποτυχία ανοίγματος περιηγητή για προβολή τεκμηρίωσης στο διαδίκτυο"
 
-#: ../libxfce4ui/xfce-dialogs.c:195
+#: ../libxfce4ui/xfce-dialogs.c:213
 #, c-format
 msgid "Do you want to read the %s manual online?"
 msgstr "Θέλετε να διαβάσετε το εγχειρίδιο %s στο διαδίκτυο;"
 
-#: ../libxfce4ui/xfce-dialogs.c:197
+#: ../libxfce4ui/xfce-dialogs.c:215
 msgid "Do you want to read the manual online?"
 msgstr "Θέλετε να διαβάσετε το εγχειρίδιο στο διαδίκτυο;"
 
-#: ../libxfce4ui/xfce-dialogs.c:200
+#: ../libxfce4ui/xfce-dialogs.c:218
 msgid "Online Documentation"
 msgstr "Τεκμηρίωση στο Διαδίκτυο"
 
-#: ../libxfce4ui/xfce-dialogs.c:203
+#: ../libxfce4ui/xfce-dialogs.c:221
 msgid ""
 "You will be redirected to the documentation website where the help pages are "
 "maintained and translated."
@@ -43,62 +47,67 @@ msgstr ""
 "Θα μετακινηθείτε στην ιστοσελίδα τεκμηρίωσης όπου οι σελίδες βοήθειας "
 "συντηρούνται και μεταφράζονται."
 
-#: ../libxfce4ui/xfce-dialogs.c:207
+#: ../libxfce4ui/xfce-dialogs.c:225
 msgid "_Read Online"
 msgstr "_Ανάγνωση στο διαδίκτυο"
 
-#: ../libxfce4ui/xfce-dialogs.c:219
+#: ../libxfce4ui/xfce-dialogs.c:237
 msgid "_Always go directly to the online documentation"
 msgstr "_Πάντα μετακίνηση στην τεκμηρίωση στο διαδίκτυο"
 
-#: ../libxfce4ui/xfce-dialogs.c:263
+#: ../libxfce4ui/xfce-dialogs.c:281
+#, fuzzy
 msgid "Information"
-msgstr "Πληροφορία"
+msgstr "Πληροφορίες έκδοσης"
 
-#: ../libxfce4ui/xfce-dialogs.c:296
+#: ../libxfce4ui/xfce-dialogs.c:314
 msgid "Warning"
 msgstr "Προειδοποίηση"
 
-#: ../libxfce4ui/xfce-dialogs.c:330
+#: ../libxfce4ui/xfce-dialogs.c:348
 msgid "Error"
 msgstr "Σφάλμα"
 
-#: ../libxfce4ui/xfce-dialogs.c:381
+#: ../libxfce4ui/xfce-dialogs.c:399
 msgid "Question"
 msgstr "Ερώτηση"
 
-#: ../libxfce4ui/xfce-sm-client.c:1402
+#: ../libxfce4ui/xfce-sm-client.c:1403
+#, fuzzy
 msgid "Session management client ID"
-msgstr "ID πελάτη του διαχειριστή συνεδρίας"
+msgstr "Υποδοχή διαχειριστή συνδέσεων"
 
-#: ../libxfce4ui/xfce-sm-client.c:1402
+#: ../libxfce4ui/xfce-sm-client.c:1403
 msgid "ID"
 msgstr "ID"
 
-#: ../libxfce4ui/xfce-sm-client.c:1403
+#: ../libxfce4ui/xfce-sm-client.c:1404
+#, fuzzy
 msgid "Disable session management"
-msgstr "Απενεργοποίηση του διαχειριστή συνεδρίας"
-
-#: ../libxfce4ui/xfce-sm-client.c:1413
-msgid "Session management options"
-msgstr "Επιλογές του διαχειριστή συνεδρίας"
+msgstr "Υποδοχή διαχειριστή συνδέσεων"
 
 #: ../libxfce4ui/xfce-sm-client.c:1414
-msgid "Show session management options"
-msgstr "Εμφάνιση των επιλογών του διαχειριστή συνεδρίας"
+#, fuzzy
+msgid "Session management options"
+msgstr "Υποδοχή διαχειριστή συνδέσεων"
 
-#: ../libxfce4ui/xfce-sm-client.c:1590
+#: ../libxfce4ui/xfce-sm-client.c:1415
+#, fuzzy
+msgid "Show session management options"
+msgstr "Υποδοχή διαχειριστή συνδέσεων"
+
+#: ../libxfce4ui/xfce-sm-client.c:1591
 #, c-format
 msgid "Failed to connect to the session manager: %s"
 msgstr "Αποτυχία σύνδεσης με τον διαχειριστή συνεδρίας: %s"
 
-#: ../libxfce4ui/xfce-sm-client.c:1597
+#: ../libxfce4ui/xfce-sm-client.c:1598
 #, c-format
 msgid "Session manager did not return a valid client id"
 msgstr "Ο διαχειριστής συνεδρίας επέστρεψε μη έγκυρο id πελάτη"
 
 #. print warning for user
-#: ../libxfce4ui/xfce-spawn.c:406
+#: ../libxfce4ui/xfce-spawn.c:413
 #, c-format
 msgid ""
 "Working directory \"%s\" does not exist. It won't be used when spawning \"%s"
@@ -107,28 +116,33 @@ msgstr ""
 "Ο κατάλογος εργασίας \"%s\" δεν υπάρχει. Δε θα χρησιμοποιηθεί κατά τη "
 "δημιουργία του \"%s\"."
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:52
-msgid ""
-"This shortcut is already being used for another window manager action. Which "
-"action do you want to use?"
-msgstr ""
-"Αυτή η συντόμευση χρησιμοποιείται ήδη για άλλη δράση του διαχειριστή "
-"παραθύρων. Ποια δράση θέλετε να χρησιμοποιήσετε;"
-
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
-#: ../libxfce4kbd-private/xfce-shortcuts.c:56
-#: ../libxfce4kbd-private/xfce-shortcuts.c:59
-#: ../libxfce4kbd-private/xfce-shortcuts.c:62
+#, fuzzy, c-format
+msgid ""
+"This shortcut is already being used for the action '%s'. Which action do you "
+"want to use?"
+msgstr ""
+"Αυτή η συντόμευση χρησιμοποιείται ήδη για την εντολή '%s'. Ποια δράση θέλετε "
+"να χρησιμοποιήσετε;"
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:54
+#: ../libxfce4kbd-private/xfce-shortcuts.c:57
+#: ../libxfce4kbd-private/xfce-shortcuts.c:60
+#: ../libxfce4kbd-private/xfce-shortcuts.c:63
 #, c-format
 msgid "Use '%s'"
 msgstr "Χρήση '%s'"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:53
-msgid "Keep the other one"
-msgstr "Διατήρηση της άλλης"
+#: ../libxfce4kbd-private/xfce-shortcuts.c:54
+#: ../libxfce4kbd-private/xfce-shortcuts.c:57
+#: ../libxfce4kbd-private/xfce-shortcuts.c:60
+#: ../libxfce4kbd-private/xfce-shortcuts.c:63
+#, c-format
+msgid "Keep '%s'"
+msgstr "Διατήρηση του '%s'"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:55
-#: ../libxfce4kbd-private/xfce-shortcuts.c:58
+#: ../libxfce4kbd-private/xfce-shortcuts.c:56
+#: ../libxfce4kbd-private/xfce-shortcuts.c:59
 #, c-format
 msgid ""
 "This shortcut is already being used for the command '%s'. Which action do "
@@ -137,69 +151,380 @@ msgstr ""
 "Αυτή η συντόμευση χρησιμοποιείται ήδη για την εντολή '%s'. Ποια δράση θέλετε "
 "να χρησιμοποιήσετε;"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:56
-#: ../libxfce4kbd-private/xfce-shortcuts.c:59
-#, c-format
-msgid "Keep '%s'"
-msgstr "Διατήρηση του '%s'"
-
-#: ../libxfce4kbd-private/xfce-shortcuts.c:61
-msgid ""
-"This shortcut is already being used by a window manager action. Which action "
-"do you want to use?"
-msgstr ""
-"Αυτή η συντόμευση χρησιμοποιείται ήδη για δράση του διαχειριστή παραθύρων. "
-"Ποια δράση θέλετε να χρησιμοποιήσετε;"
-
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
-msgid "Keep the window manager action"
-msgstr "Διατήρηση της δράσης του διαχειριστή παραθύρων"
+#, fuzzy, c-format
+msgid ""
+"This shortcut is already being used by the action '%s'. Which action do you "
+"want to use?"
+msgstr ""
+"Αυτή η συντόμευση χρησιμοποιείται ήδη για την εντολή '%s'. Ποια δράση θέλετε "
+"να χρησιμοποιήσετε;"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:95
+#. This shortcut already exists in the provider, we don't want it twice
+#. Warn the user
+#: ../libxfce4kbd-private/xfce-shortcuts.c:110
+msgid "Please use another key combination."
+msgstr ""
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:111
+#, c-format
+msgid "%s already triggers this action."
+msgstr ""
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:116
 #, c-format
 msgid "Conflicting actions for %s"
 msgstr "Συγκρουόμενες δράσεις για το %s"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:128
+#: ../libxfce4kbd-private/xfce-shortcuts.c:189
 msgid "This shortcut is already being used for something else."
 msgstr "Αυτή η συντόμευση χρησιμοποιείται ήδη για κάτι άλλο."
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:204
-msgid "Window Manager Action Shortcut"
-msgstr "Συντόμευση δράσης διαχειριστή παραθύρων"
-
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:205
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:215
-msgid "Action:"
-msgstr "Δράση:"
-
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:209
-msgid "Command Shortcut"
-msgstr "Συντόμευση εντολής"
+#, fuzzy
+msgid "Window Manager Action Shortcut"
+msgstr "Διαχειριστής παραθύρων"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:210
-msgid "Command:"
+#. TRANSLATORS: this string will be used to create an explanation for
+#. * the user in a following string
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:212
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:226
+#, fuzzy
+msgid "action"
+msgstr "Ενέργεια"
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:216
+#, fuzzy
+msgid "Command Shortcut"
+msgstr "Συντόμευση"
+
+#. TRANSLATORS: this string will be used to create an explanation for
+#. * the user in a following string
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:219
+#, fuzzy
+msgid "command"
 msgstr "Εντολή:"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:214
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:223
 msgid "Shortcut"
 msgstr "Συντόμευση"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:255
-msgid "Shortcut:"
-msgstr "Συντόμευση:"
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:267
+#, c-format
+msgid "Press now the keyboard keys you want to use to trigger the %s '%s'."
+msgstr ""
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:300
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:291
+#, fuzzy
+msgid "Shortcut:"
+msgstr "Συντόμευση"
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:296
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:475
+msgid "No keys pressed yet, proceed."
+msgstr ""
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:378
+#, fuzzy
 msgid "Could not grab the keyboard."
-msgstr "Δεν είναι δυνατή η δέσμευση του πληκτρολογίου."
+msgstr "Δεν ήταν δυνατή η δημιουργία του διαλόγου ρυθμίσεων."
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:33
+msgid "Window operations menu"
+msgstr "Λειτουργίες παραθύρων"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:34
+msgid "Up"
+msgstr "Πάνω"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:35
+msgid "Down"
+msgstr "Κάτω"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:36
+msgid "Left"
+msgstr "Αριστερά"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:37
+msgid "Right"
+msgstr "Δεξιά"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:38
+msgid "Cancel"
+msgstr "Άκυρο"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:39
+msgid "Cycle windows"
+msgstr "Εναλλαγή παραθύρων"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:40
+msgid "Cycle windows (Reverse)"
+msgstr "Εναλλαγή παραθύρων (Αντίστροφα)"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:41
+msgid "Switch window for same application"
+msgstr "Εναλλαγή παραθύρου για την ίδια εφαρμογή"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:42
+msgid "Switch application"
+msgstr "Εναλλαγή εφαρμογής"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:43
+msgid "Close window"
+msgstr "Κλείσιμο παραθύρου"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:44
+msgid "Maximize window horizontally"
+msgstr "Μεγιστοποίηση ενός παραθύρου οριζόντια"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:45
+msgid "Maximize window vertically"
+msgstr "Μεγιστοποίηση ενός παραθύρου κάθετα"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:46
+msgid "Maximize window"
+msgstr "Μεγιστοποίηση παραθύρου"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:47
+msgid "Hide window"
+msgstr "Απόκρυψη παραθύρου"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:48
+msgid "Move window"
+msgstr "Μετακίνηση παραθύρου"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:49
+msgid "Resize window"
+msgstr "Αλλαγή μεγέθους παραθύρου"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:50
+msgid "Shade window"
+msgstr "Σκίαση παραθύρου"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:51
+msgid "Stick window"
+msgstr "Επικόλληση παραθύρου"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:52
+msgid "Raise window"
+msgstr "Ανύψωση παραθύρου "
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:53
+msgid "Lower window"
+msgstr "Χαμήλωση παραθύρου"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:54
+msgid "Raise or lower window"
+msgstr "Ανύψωση ή κατέβασμα παραθύρου "
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:55
+msgid "Fill window"
+msgstr "Μεγιστοποίηση παραθύρου"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:56
+msgid "Fill window horizontally"
+msgstr "Οριζόντια μεγιστοποίηση παραθύρου"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:57
+msgid "Fill window vertically"
+msgstr "Κάθετη μεγιστοποίηση παραθύρου"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:58
+msgid "Toggle above"
+msgstr "Εναλλαγή με το παραπάνω"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:59
+msgid "Toggle fullscreen"
+msgstr "Σε πλήρη οθόνη"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:60
+msgid "Move window to upper workspace"
+msgstr "Μετακίνηση παραθύρου στον πάνω χώρο εργασίας"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:61
+msgid "Move window to bottom workspace"
+msgstr "Μετακίνηση παραθύρου στον κάτω χώρο εργασίας"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:62
+msgid "Move window to left workspace"
+msgstr "Μετακίνηση παραθύρου στο χώρο εργασίας αριστερά"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:63
+msgid "Move window to right workspace"
+msgstr "Μετακίνηση παραθύρου στο χώρο εργασίας δεξιά"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:64
+msgid "Move window to previous workspace"
+msgstr "Μετακίνηση παραθύρου στον προηγούμενο χώρο εργασίας"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:65
+msgid "Move window to next workspace"
+msgstr "Μετακίνηση παραθύρου στον επόμενο χώρο εργασίας"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:66
+msgid "Move window to workspace 1"
+msgstr "Μετακίνηση παραθύρου στο χώρο εργασίας 1"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:67
+msgid "Move window to workspace 2"
+msgstr "Μετακίνηση παραθύρου στο χώρο εργασίας 2"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:68
+msgid "Move window to workspace 3"
+msgstr "Μετακίνηση παραθύρου στο χώρο εργασίας 3"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:69
+msgid "Move window to workspace 4"
+msgstr "Μετακίνηση παραθύρου στο χώρο εργασίας 4"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:70
+msgid "Move window to workspace 5"
+msgstr "Μετακίνηση παραθύρου στο χώρο εργασίας 5"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:71
+msgid "Move window to workspace 6"
+msgstr "Μετακίνηση παραθύρου στο χώρο εργασίας 6"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:72
+msgid "Move window to workspace 7"
+msgstr "Μετακίνηση παραθύρου στο χώρο εργασίας 7"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:73
+msgid "Move window to workspace 8"
+msgstr "Μετακίνηση παραθύρου στο χώρο εργασίας 8"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:74
+msgid "Move window to workspace 9"
+msgstr "Μετακίνηση παραθύρου στο χώρο εργασίας 9"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:75
+msgid "Move window to workspace 10"
+msgstr "Μετακίνηση παραθύρου στο χώρο εργασίας 10"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:76
+msgid "Move window to workspace 11"
+msgstr "Μετακίνηση παραθύρου στο χώρο εργασίας 11"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:77
+msgid "Move window to workspace 12"
+msgstr "Μετακίνηση παραθύρου στο χώρο εργασίας 12"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:78
+msgid "Tile window to the top"
+msgstr "Μετακίνηση παραθύρου στο χώρο εργασίας στην κορυφή"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:79
+msgid "Tile window to the bottom"
+msgstr "Μετακίνηση παραθύρου στον κάτω χώρο εργασίας"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:80
+msgid "Tile window to the left"
+msgstr "Μετακίνηση παραθύρου στο χώρο εργασίας αριστερά"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:81
+msgid "Tile window to the right"
+msgstr "Μετακίνηση παραθύρου στο χώρο εργασίας δεξιά"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:82
+msgid "Show desktop"
+msgstr "Εμφάνιση επιφάνειας εργασίας"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:83
+msgid "Upper workspace"
+msgstr "Πάνω χώρος εργασίας"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:84
+msgid "Bottom workspace"
+msgstr "Κάτω χώρος εργασίας"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:85
+msgid "Left workspace"
+msgstr "Χώρος εργασίας αριστερά"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:86
+msgid "Right workspace"
+msgstr "Χώρος εργασίας δεξιά"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:87
+msgid "Previous workspace"
+msgstr "Προηγούμενος χώρος εργασίας"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:88
+msgid "Next workspace"
+msgstr "Επόμενος χώρος εργασίας"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:89
+msgid "Workspace 1"
+msgstr "Χώρος εργασίας 1"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:90
+msgid "Workspace 2"
+msgstr "Χώρος εργασίας 2"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:91
+msgid "Workspace 3"
+msgstr "Χώρος εργασίας 3"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:92
+msgid "Workspace 4"
+msgstr "Χώρος εργασίας 4"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:93
+msgid "Workspace 5"
+msgstr "Χώρος εργασίας 5"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:94
+msgid "Workspace 6"
+msgstr "Χώρος εργασίας 6"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:95
+msgid "Workspace 7"
+msgstr "Χώρος εργασίας 7"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:96
+msgid "Workspace 8"
+msgstr "Χώρος εργασίας 8"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:97
+msgid "Workspace 9"
+msgstr "Χώρος εργασίας 9"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:98
+msgid "Workspace 10"
+msgstr "Χώρος εργασίας 10"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:99
+msgid "Workspace 11"
+msgstr "Χώρος εργασίας 11"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:100
+msgid "Workspace 12"
+msgstr "Χώρος εργασίας 12"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:101
+msgid "Add workspace"
+msgstr "Προσθήκη χώρου εργασίας"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:102
+msgid "Add adjacent workspace"
+msgstr "Προσθήκη γειτονικού χώρου εργασίας"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:103
+msgid "Delete last workspace"
+msgstr "Διαγραφή του τελευταίου χώρου εργασίας"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:104
+msgid "Delete active workspace"
+msgstr "Διαγραφή ενεργού χώρου εργασίας"
 
 #: ../glade/libxfce4ui.xml.in.h:1
-msgid "Subtitle"
-msgstr "Υπότιτλος"
-
-#: ../glade/libxfce4ui.xml.in.h:2
 msgid "Titled Dialog"
 msgstr "Διάλογος με τίτλο"
+
+#: ../glade/libxfce4ui.xml.in.h:2
+#, fuzzy
+msgid "Subtitle"
+msgstr "Τίτλος"
 
 #: ../glade/libxfce4ui.xml.in.h:3
 msgid "Xfce 4 Widgets"
@@ -207,15 +532,16 @@ msgstr "Xfce4 Widgets"
 
 #: ../xfce4-about/main.c:52
 msgid "Version information"
-msgstr "Πληροφορίες Έκδοσης"
+msgstr "Πληροφορίες έκδοσης"
 
 #: ../xfce4-about/main.c:70
 msgid "Window Manager"
-msgstr "Διαχειριστή Παραθύρων"
+msgstr "Διαχειριστής παραθύρων"
 
 #: ../xfce4-about/main.c:71
+#, fuzzy
 msgid "Handles the placement of windows on the screen."
-msgstr "Χειρισμός μετακίνησης παραθύρων στην οθόνη."
+msgstr "Στο κ_έντρο της οθόνης"
 
 #: ../xfce4-about/main.c:74
 msgid "Panel"
@@ -230,8 +556,9 @@ msgstr ""
 "εργασίας και άλλα."
 
 #: ../xfce4-about/main.c:79
+#, fuzzy
 msgid "Desktop Manager"
-msgstr "Διαχειριστής Επιφάνειας Εεργασίας"
+msgstr "Διαχειριστής παραθύρων"
 
 #: ../xfce4-about/main.c:80
 msgid ""
@@ -243,8 +570,9 @@ msgstr ""
 "φακέλους."
 
 #: ../xfce4-about/main.c:84
+#, fuzzy
 msgid "File Manager "
-msgstr "Διαχειριστής Αρχείων"
+msgstr "Διαχειριστής παραθύρων"
 
 #: ../xfce4-about/main.c:85
 msgid ""
@@ -255,8 +583,9 @@ msgstr ""
 "ευκολία χρήσης και στην ταχύτητα."
 
 #: ../xfce4-about/main.c:89
+#, fuzzy
 msgid "Session Manager"
-msgstr "Διαχειριστής Συνεδρίας"
+msgstr "Υποδοχή διαχειριστή συνδέσεων"
 
 #: ../xfce4-about/main.c:90
 msgid ""
@@ -291,8 +620,9 @@ msgstr ""
 "μπορείτε να τις βρείτε και να τις εκκινήσετε ταχύτατα."
 
 #: ../xfce4-about/main.c:104
+#, fuzzy
 msgid "Settings Daemon"
-msgstr "Υπηρεσία Ρυθμίσεων"
+msgstr "Υποδοχή διαχειριστή ρυθμίσεων"
 
 #: ../xfce4-about/main.c:105
 msgid "D-Bus-based configuration storage system."
@@ -386,9 +716,9 @@ msgstr ""
 "τελευταία έκδοση."
 
 #: ../xfce4-about/main.c:442
-#, c-format
+#, fuzzy, c-format
 msgid "Type '%s --help' for usage information."
-msgstr "Για πληροφορίες χρήσης πληκτρολογήστε '%s --help'."
+msgstr "Πληκτρολογήστε \"% s - help \" για χρήση."
 
 #: ../xfce4-about/main.c:448
 msgid "Unable to initialize GTK+."
@@ -422,40 +752,41 @@ msgstr "Έκδοση %s, διανομή από %s"
 
 #. I18N: %s will be replaced by the Xfce version number
 #: ../xfce4-about/main.c:489
-#, c-format
+#, fuzzy, c-format
 msgid "Version %s"
-msgstr "Έκδοση %s"
+msgstr "%s (στο %s)"
 
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
 #. },
-#: ../xfce4-about/contributors.h:127
+#: ../xfce4-about/contributors.h:121
 msgid "Core developers"
 msgstr "Βασικοί προγραμματιστές"
 
-#: ../xfce4-about/contributors.h:130
+#: ../xfce4-about/contributors.h:124
 msgid "Active contributors"
 msgstr "Ενεργοί συνεισφέροντες"
 
-#: ../xfce4-about/contributors.h:133
+#: ../xfce4-about/contributors.h:127
 msgid "Servers maintained by"
 msgstr "Οι εξυπηρετητές συντηρούνται από"
 
-#: ../xfce4-about/contributors.h:136
+#: ../xfce4-about/contributors.h:130
 msgid "Goodies supervision"
 msgstr "Συντονισμός Goodies"
 
-#: ../xfce4-about/contributors.h:139
+#: ../xfce4-about/contributors.h:133
 msgid "Translations supervision"
 msgstr "Συντονισμός μεταφράσεων"
 
-#: ../xfce4-about/contributors.h:142
+#: ../xfce4-about/contributors.h:136
 msgid "Translators"
 msgstr "Μεταφραστές"
 
-#: ../xfce4-about/contributors.h:145
+#: ../xfce4-about/contributors.h:139
+#, fuzzy
 msgid "Previous contributors"
-msgstr "Προηγούμενοι συνεισφέροντες"
+msgstr "Προηγούμενος χώρος εργασίας"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:1
 msgid "About Xfce"
@@ -466,62 +797,79 @@ msgid "Information about the Xfce Desktop Environment"
 msgstr "Πληροφορίες σχετικά με το περιβάλλον εργασίας Xfce"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:1
-msgid "About"
-msgstr "Περί"
-
-#: ../xfce4-about/xfce4-about-dialog.glade.h:2
 msgid "About the Xfce Desktop Environment"
 msgstr "Περί του περιβάλλοντος εργασίας Xfce"
 
+#: ../xfce4-about/xfce4-about-dialog.glade.h:2
+msgid "About"
+msgstr "Περί"
+
 #: ../xfce4-about/xfce4-about-dialog.glade.h:3
-msgid "BSD"
-msgstr "BSD"
-
-#: ../xfce4-about/xfce4-about-dialog.glade.h:4
-msgid "Copyright"
-msgstr "Πνευματικά δικαιώματα"
-
-#: ../xfce4-about/xfce4-about-dialog.glade.h:5
 msgid "Credits"
 msgstr "Συντελεστές"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:6
+#: ../xfce4-about/xfce4-about-dialog.glade.h:4
 msgid "GPL"
 msgstr "GPL"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:7
+#: ../xfce4-about/xfce4-about-dialog.glade.h:5
 msgid "LGPL"
 msgstr "LGPL"
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:6
+msgid "BSD"
+msgstr "BSD"
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:7
+msgid "Copyright"
+msgstr "Πνευματικά δικαιώματα"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:8
 msgid "License"
 msgstr "Άδεια"
 
-#~ msgid "<span size='large'><b>%s</b></span>"
-#~ msgstr "<span size='large'><b>%s</b></span>"
+msgid ""
+"This shortcut is already being used for another window manager action. Which "
+"action do you want to use?"
+msgstr ""
+"Αυτή η συντόμευση χρησιμοποιείται ήδη για άλλη δράση του διαχειριστή "
+"παραθύρων. Ποια δράση θέλετε να χρησιμοποιήσετε;"
 
-#~ msgid "File is not a valid .desktop file"
-#~ msgstr "Το αρχείο δεν είναι ένα έγκυρο αρχείο .desktop"
+msgid "Keep the other one"
+msgstr "Διατήρηση της άλλης"
 
-#~ msgid "Unrecognized desktop file Version '%s'"
-#~ msgstr "Άγνωστη έκδοση του αρχείου επιφάνειας '%s'"
+msgid ""
+"This shortcut is already being used by a window manager action. Which action "
+"do you want to use?"
+msgstr ""
+"Αυτή η συντόμευση χρησιμοποιείται ήδη για δράση του διαχειριστή παραθύρων. "
+"Ποια δράση θέλετε να χρησιμοποιήσετε;"
 
-#~ msgid "Application does not accept documents on command line"
-#~ msgstr "Η εφαρμογή δεν δέχεται έγγραφα στην γραμμή εντολών"
+msgid "<span size='large'><b>%s</b></span>"
+msgstr "<span size='large'><b>%s</b></span>"
 
-#~ msgid "Unrecognized launch option: %d"
-#~ msgstr "Άγνωστη επιλογή εκτέλεσης: %d"
+msgid "File is not a valid .desktop file"
+msgstr "Το αρχείο δεν είναι ένα έγκυρο αρχείο .desktop"
 
-#~ msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
-#~ msgstr ""
-#~ "Δεν μπορούν να περαστούν σε μία εισαγωγή επιφάνειας εργασίας URI εγγράφων "
-#~ "στο 'Τύπος=Σύνδεση'"
+msgid "Unrecognized desktop file Version '%s'"
+msgstr "Άγνωστη έκδοση του αρχείου επιφάνειας '%s'"
 
-#~ msgid "Not a launchable item"
-#~ msgstr "Το αντικείμενο δεν εκτελείτε"
+msgid "Application does not accept documents on command line"
+msgstr "Η εφαρμογή δεν δέχεται έγγραφα στην γραμμή εντολών"
 
-#~ msgid "Specify file containing saved configuration"
-#~ msgstr "Προσδιορίζει το αρχείο που περιέχει τις αποθηκευμένες ρυθμίσεις"
+msgid "Unrecognized launch option: %d"
+msgstr "Άγνωστη επιλογή εκτέλεσης: %d"
 
-#~ msgid "FILE"
-#~ msgstr "Αρχείο"
+msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
+msgstr ""
+"Δεν μπορούν να περαστούν σε μία εισαγωγή επιφάνειας εργασίας URI εγγράφων "
+"στο 'Τύπος=Σύνδεση'"
+
+msgid "Not a launchable item"
+msgstr "Το αντικείμενο δεν εκτελείτε"
+
+msgid "Specify file containing saved configuration"
+msgstr "Προσδιορίζει το αρχείο που περιέχει τις αποθηκευμένες ρυθμίσεις"
+
+msgid "FILE"
+msgstr "Αρχείο"

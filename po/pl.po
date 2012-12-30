@@ -2,20 +2,21 @@
 # Copyright (C) 2011 The Xfce development team.
 # This file is distributed under the same license as the libxfce4ui package.
 # Piotr Sokół <psokol@jabster.pl>, 2011, 2012.
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-12-02 11:45+0000\n"
+"POT-Creation-Date: 2012-12-28 09:06+0100\n"
 "PO-Revision-Date: 2012-11-09 14:53+0100\n"
 "Last-Translator: Piotr Sokół <psokol@jabster.pl>\n"
 "Language-Team: polski <>\n"
+"Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bits\n"
-"Language: pl\n"
-"Plural-Forms: nplurals=3; plural=((n==1) ? 0 : ((n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20)) ? 1 : 2));\n"
+"Plural-Forms: nplurals=3; plural=((n==1) ? 0 : ((n%10>=2 && n%10<=4 && (n"
+"%100<10 || n%100>=20)) ? 1 : 2));\n"
 "X-Generator: Gtranslator 2.91.5\n"
 
 #: ../libxfce4ui/xfce-dialogs.c:98
@@ -54,8 +55,9 @@ msgid "_Always go directly to the online documentation"
 msgstr "_Pomijanie tego pytania w przyszłości"
 
 #: ../libxfce4ui/xfce-dialogs.c:281
+#, fuzzy
 msgid "Information"
-msgstr "Informacja"
+msgstr "Wypisuje informacje o wersji i kończy"
 
 #: ../libxfce4ui/xfce-dialogs.c:314
 msgid "Warning"
@@ -70,24 +72,28 @@ msgid "Question"
 msgstr "Pytanie"
 
 #: ../libxfce4ui/xfce-sm-client.c:1403
+#, fuzzy
 msgid "Session management client ID"
-msgstr "Określa identyfikator klienta menedżera sesji"
+msgstr "Gniazdo menedżera sesji"
 
 #: ../libxfce4ui/xfce-sm-client.c:1403
 msgid "ID"
 msgstr "ID"
 
 #: ../libxfce4ui/xfce-sm-client.c:1404
+#, fuzzy
 msgid "Disable session management"
-msgstr "Wyłącza zarządzanie sesją"
+msgstr "Gniazdo menedżera sesji"
 
 #: ../libxfce4ui/xfce-sm-client.c:1414
+#, fuzzy
 msgid "Session management options"
-msgstr "Opcje zarządzania sesją"
+msgstr "Gniazdo menedżera sesji"
 
 #: ../libxfce4ui/xfce-sm-client.c:1415
+#, fuzzy
 msgid "Show session management options"
-msgstr "Wypisuje opcje zarządzania sesją"
+msgstr "Gniazdo menedżera sesji"
 
 #: ../libxfce4ui/xfce-sm-client.c:1591
 #, c-format
@@ -109,126 +115,436 @@ msgstr ""
 "Katalog roboczy „%s” nie istnieje. Nie zostanie on użyty podczas wywoływania "
 "„%s”."
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:52
-msgid ""
-"This shortcut is already being used for another window manager action. Which "
-"action do you want to use?"
-msgstr ""
-"Skrót klawiszowy jest aktualnie przypisany do innej czynności menedżera "
-"okien. Do której czynności menedżera okien przypisać skrót?"
-
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
-#: ../libxfce4kbd-private/xfce-shortcuts.c:56
-#: ../libxfce4kbd-private/xfce-shortcuts.c:59
-#: ../libxfce4kbd-private/xfce-shortcuts.c:62
+#, fuzzy, c-format
+msgid ""
+"This shortcut is already being used for the action '%s'. Which action do you "
+"want to use?"
+msgstr ""
+"Aktywator jest już w użyciu!\n"
+"Czy jesteś pewny/a, że chcesz go użyć ?"
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:54
+#: ../libxfce4kbd-private/xfce-shortcuts.c:57
+#: ../libxfce4kbd-private/xfce-shortcuts.c:60
+#: ../libxfce4kbd-private/xfce-shortcuts.c:63
 #, c-format
 msgid "Use '%s'"
 msgstr "Użyj „%s”"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:53
-msgid "Keep the other one"
-msgstr "Zachowaj dotychczasową"
-
-#: ../libxfce4kbd-private/xfce-shortcuts.c:55
-#: ../libxfce4kbd-private/xfce-shortcuts.c:58
-#, c-format
-msgid ""
-"This shortcut is already being used for the command '%s'. Which action do "
-"you want to use?"
-msgstr ""
-"Skrót klawiszowy jest już przypisany do polecenia „%s”. Do którego polecenia "
-"przypisać skrót?"
-
-#: ../libxfce4kbd-private/xfce-shortcuts.c:56
-#: ../libxfce4kbd-private/xfce-shortcuts.c:59
+#: ../libxfce4kbd-private/xfce-shortcuts.c:54
+#: ../libxfce4kbd-private/xfce-shortcuts.c:57
+#: ../libxfce4kbd-private/xfce-shortcuts.c:60
+#: ../libxfce4kbd-private/xfce-shortcuts.c:63
 #, c-format
 msgid "Keep '%s'"
 msgstr "Zachowaj „%s”"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:61
+#: ../libxfce4kbd-private/xfce-shortcuts.c:56
+#: ../libxfce4kbd-private/xfce-shortcuts.c:59
+#, fuzzy, c-format
 msgid ""
-"This shortcut is already being used by a window manager action. Which action "
-"do you want to use?"
+"This shortcut is already being used for the command '%s'. Which action do "
+"you want to use?"
 msgstr ""
-"Skrót klawiszowy jest aktualnie przypisany do czynności menedżera okien. Do "
-"której czynności przypisać skrót?"
+"Aktywator jest już w użyciu!\n"
+"Czy jesteś pewny/a, że chcesz go użyć ?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
-msgid "Keep the window manager action"
-msgstr "Zachowaj czynność menedżera okien"
+#, fuzzy, c-format
+msgid ""
+"This shortcut is already being used by the action '%s'. Which action do you "
+"want to use?"
+msgstr ""
+"Aktywator jest już w użyciu!\n"
+"Czy jesteś pewny/a, że chcesz go użyć ?"
 
 #. This shortcut already exists in the provider, we don't want it twice
 #. Warn the user
-#: ../libxfce4kbd-private/xfce-shortcuts.c:97
+#: ../libxfce4kbd-private/xfce-shortcuts.c:110
 msgid "Please use another key combination."
 msgstr "Proszę wprowadzić inną kombinację klawiszy."
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:98
+#: ../libxfce4kbd-private/xfce-shortcuts.c:111
 #, c-format
 msgid "%s already triggers this action."
 msgstr "Wykonanie tej czynności zostało już przypisane do skrótu %s."
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:103
+#: ../libxfce4kbd-private/xfce-shortcuts.c:116
 #, c-format
 msgid "Conflicting actions for %s"
 msgstr "Konflikt działania skrótu klawiszowego %s"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:136
+#: ../libxfce4kbd-private/xfce-shortcuts.c:189
+#, fuzzy
 msgid "This shortcut is already being used for something else."
-msgstr "Skrót jest już używany."
-
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:204
-msgid "Window Manager Action Shortcut"
-msgstr "Skrót klawiszowy czynności menadżera okien"
-
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:205
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:215
-msgid "Action:"
-msgstr "Czynność:"
+msgstr ""
+"Aktywator jest już w użyciu!\n"
+"Czy jesteś pewny/a, że chcesz go użyć ?"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:209
+#, fuzzy
+msgid "Window Manager Action Shortcut"
+msgstr "Ustawienia Menadżera Okien Xfce 4"
+
+#. TRANSLATORS: this string will be used to create an explanation for
+#. * the user in a following string
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:212
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:226
+#, fuzzy
+msgid "action"
+msgstr "Czynność"
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:216
+#, fuzzy
 msgid "Command Shortcut"
-msgstr "Skrót klawiszowy polecenia:"
+msgstr "Stwórz aktywator"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:210
-msgid "Command:"
-msgstr "Polecenie:"
+#. TRANSLATORS: this string will be used to create an explanation for
+#. * the user in a following string
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:219
+#, fuzzy
+msgid "command"
+msgstr "Polecenie"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:214
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:223
 msgid "Shortcut"
-msgstr "Skrót klawiszowy"
+msgstr "Skrót"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:252
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:267
+#, c-format
+msgid "Press now the keyboard keys you want to use to trigger the %s '%s'."
+msgstr ""
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:291
 msgid "Shortcut:"
-msgstr "Skrót klawiszowy:"
+msgstr "Brak aktywatora"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:339
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:296
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:475
+msgid "No keys pressed yet, proceed."
+msgstr ""
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:378
+#, fuzzy
 msgid "Could not grab the keyboard."
-msgstr "Nie można przechwycić klawiatury."
+msgstr "Nie można utworzyć okna ustawień."
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:33
+msgid "Window operations menu"
+msgstr "Wyświetlenie menu poleceń"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:34
+msgid "Up"
+msgstr "Góra"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:35
+msgid "Down"
+msgstr "Dół"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:36
+msgid "Left"
+msgstr "Lewo"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:37
+msgid "Right"
+msgstr "Prawo"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:38
+msgid "Cancel"
+msgstr "Anulowanie"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:39
+msgid "Cycle windows"
+msgstr "Przełączenie pomiędzy oknami"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:40
+msgid "Cycle windows (Reverse)"
+msgstr "Przełączenie pomiędzy oknami w odwrotnej kolejności"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:41
+msgid "Switch window for same application"
+msgstr "Przełączenie okna bieącego programu"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:42
+msgid "Switch application"
+msgstr "Przełączenie okna"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:43
+msgid "Close window"
+msgstr "Zamknięcie"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:44
+msgid "Maximize window horizontally"
+msgstr "Zmaksymalizowanie w poziomie"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:45
+msgid "Maximize window vertically"
+msgstr "Zmaksymalizowanie w pionie"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:46
+msgid "Maximize window"
+msgstr "Zmaksymalizowanie"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:47
+msgid "Hide window"
+msgstr "Zminimalizowanie"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:48
+msgid "Move window"
+msgstr "Przemieszczenie"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:49
+msgid "Resize window"
+msgstr "Zmienienie rozmiaru"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:50
+msgid "Shade window"
+msgstr "Zwinięcie lub rozwinięcie"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:51
+msgid "Stick window"
+msgstr "Przełączenie wyświetlania na wszystkich obszarach roboczych"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:52
+msgid "Raise window"
+msgstr "Przemieszczenie na wierzch"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:53
+msgid "Lower window"
+msgstr "Przemieszczenie na spód"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:54
+msgid "Raise or lower window"
+msgstr "Przemieszczenie na wierzch lub spód"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:55
+msgid "Fill window"
+msgstr "Wypełnienie"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:56
+msgid "Fill window horizontally"
+msgstr "Wypełnienie w poziomie"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:57
+msgid "Fill window vertically"
+msgstr "Wypełnienie w pionie"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:58
+msgid "Toggle above"
+msgstr "Przełączenie zawsze na wierzchu"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:59
+msgid "Toggle fullscreen"
+msgstr "Przełączenie pełnego ekranu"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:60
+msgid "Move window to upper workspace"
+msgstr "Przemieszczenie na górny obszar roboczy"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:61
+msgid "Move window to bottom workspace"
+msgstr "Przemieszczenie na dolny obszar roboczy"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:62
+msgid "Move window to left workspace"
+msgstr "Przemieszczenie na lewy obszar roboczy"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:63
+msgid "Move window to right workspace"
+msgstr "Przemieszczenie na prawy obszar roboczy"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:64
+msgid "Move window to previous workspace"
+msgstr "Przemieszczenie na poprzedni obszar roboczy"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:65
+msgid "Move window to next workspace"
+msgstr "Przemieszczenie na następny obszar roboczy"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:66
+msgid "Move window to workspace 1"
+msgstr "Przemieszczenie na obszar roboczy 1"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:67
+msgid "Move window to workspace 2"
+msgstr "Przemieszczenie na obszar roboczy 2"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:68
+msgid "Move window to workspace 3"
+msgstr "Przemieszczenie na obszar roboczy 3"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:69
+msgid "Move window to workspace 4"
+msgstr "Przemieszczenie na obszar roboczy 4"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:70
+msgid "Move window to workspace 5"
+msgstr "Przemieszczenie na obszar roboczy 5"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:71
+msgid "Move window to workspace 6"
+msgstr "Przemieszczenie na obszar roboczy 6"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:72
+msgid "Move window to workspace 7"
+msgstr "Przemieszczenie na obszar roboczy 7"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:73
+msgid "Move window to workspace 8"
+msgstr "Przemieszczenie na obszar roboczy 8"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:74
+msgid "Move window to workspace 9"
+msgstr "Przemieszczenie na obszar roboczy 9"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:75
+msgid "Move window to workspace 10"
+msgstr "Przemieszczenie na obszar roboczy 10"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:76
+msgid "Move window to workspace 11"
+msgstr "Przemieszczenie na obszar roboczy 11"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:77
+msgid "Move window to workspace 12"
+msgstr "Przemieszczenie na obszar roboczy 12"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:78
+msgid "Tile window to the top"
+msgstr "Dopasowanie do górnej krawędzi ekranu"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:79
+msgid "Tile window to the bottom"
+msgstr "Dopasowanie do dolnej krawędzi ekranu"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:80
+msgid "Tile window to the left"
+msgstr "Dopasowanie do lewej krawędzi ekranu"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:81
+msgid "Tile window to the right"
+msgstr "Dopasowanie do prawej krawędzi ekranu"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:82
+msgid "Show desktop"
+msgstr "Wyświetlenie pulpitu"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:83
+msgid "Upper workspace"
+msgstr "Przełączenie na górny obszar roboczy"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:84
+msgid "Bottom workspace"
+msgstr "Przełączenie na dolny obszar roboczy"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:85
+msgid "Left workspace"
+msgstr "Przełączenie na lewy obszar roboczy"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:86
+msgid "Right workspace"
+msgstr "Przełączenie na prawy obszar roboczy"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:87
+msgid "Previous workspace"
+msgstr "Przełączenie na poprzedni obszar roboczy"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:88
+msgid "Next workspace"
+msgstr "Przełączenie na następny obszar roboczy"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:89
+msgid "Workspace 1"
+msgstr "Przełączenie na obszar roboczy 1"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:90
+msgid "Workspace 2"
+msgstr "Przełączenie na obszar roboczy 2"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:91
+msgid "Workspace 3"
+msgstr "Przełączenie na obszar roboczy 3"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:92
+msgid "Workspace 4"
+msgstr "Przełączenie na obszar roboczy 4"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:93
+msgid "Workspace 5"
+msgstr "Przełączenie na obszar roboczy 5"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:94
+msgid "Workspace 6"
+msgstr "Przełączenie na obszar roboczy 6"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:95
+msgid "Workspace 7"
+msgstr "Przełączenie na obszar roboczy 7"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:96
+msgid "Workspace 8"
+msgstr "Przełączenie na obszar roboczy 8"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:97
+msgid "Workspace 9"
+msgstr "Przełączenie na obszar roboczy 9"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:98
+msgid "Workspace 10"
+msgstr "Przełączenie na obszar roboczy 10"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:99
+msgid "Workspace 11"
+msgstr "Przełączenie na obszar roboczy 11"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:100
+msgid "Workspace 12"
+msgstr "Przełączenie na obszar roboczy 12"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:101
+msgid "Add workspace"
+msgstr "Dodanie obszaru roboczego"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:102
+msgid "Add adjacent workspace"
+msgstr "Dodanie przyległego obszaru roboczego"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:103
+msgid "Delete last workspace"
+msgstr "Usunięcie ostatniego obszaru roboczego"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:104
+msgid "Delete active workspace"
+msgstr "Usunięcie bieżącego obszaru roboczego"
 
 #: ../glade/libxfce4ui.xml.in.h:1
-msgid "Subtitle"
-msgstr "Podtytuł"
+#, fuzzy
+msgid "Titled Dialog"
+msgstr "Czcionka tytułowa"
 
 #: ../glade/libxfce4ui.xml.in.h:2
-msgid "Titled Dialog"
-msgstr "Tytuł dialogu"
+#, fuzzy
+msgid "Subtitle"
+msgstr "Tytuł"
 
 #: ../glade/libxfce4ui.xml.in.h:3
+#, fuzzy
 msgid "Xfce 4 Widgets"
-msgstr "Widżety Xfce 4"
+msgstr "Ustawienia Menadżera Okien Xfce 4"
 
 #: ../xfce4-about/main.c:52
 msgid "Version information"
-msgstr "Wypisuje informacje o wersji"
+msgstr "Wypisuje informacje o wersji i kończy"
 
 #: ../xfce4-about/main.c:70
 msgid "Window Manager"
-msgstr "Menedżer okien"
+msgstr "Okna"
 
 #: ../xfce4-about/main.c:71
+#, fuzzy
 msgid "Handles the placement of windows on the screen."
-msgstr "Zarządza położeniem okien na ekranie."
+msgstr "Na ś_rodku ekranu"
 
 #: ../xfce4-about/main.c:74
 msgid "Panel"
@@ -243,8 +559,9 @@ msgstr ""
 "okien, podgląd obszarów roboczych i inne."
 
 #: ../xfce4-about/main.c:79
+#, fuzzy
 msgid "Desktop Manager"
-msgstr "Menedżer pulpitu"
+msgstr "Okna"
 
 #: ../xfce4-about/main.c:80
 msgid ""
@@ -255,8 +572,9 @@ msgstr ""
 "okna głównego czy lista okien."
 
 #: ../xfce4-about/main.c:84
+#, fuzzy
 msgid "File Manager "
-msgstr "Menedżer plików"
+msgstr "Okna"
 
 #: ../xfce4-about/main.c:85
 msgid ""
@@ -267,8 +585,9 @@ msgstr ""
 "obsługi."
 
 #: ../xfce4-about/main.c:89
+#, fuzzy
 msgid "Session Manager"
-msgstr "Menedżer sesji"
+msgstr "Gniazdo menedżera sesji"
 
 #: ../xfce4-about/main.c:90
 msgid ""
@@ -301,8 +620,9 @@ msgstr ""
 "celu ich szybkiego odnalezienia i uruchomienia."
 
 #: ../xfce4-about/main.c:104
+#, fuzzy
 msgid "Settings Daemon"
-msgstr "Demon ustawień"
+msgstr "Określa gniazdo menedżera ustawień"
 
 #: ../xfce4-about/main.c:105
 msgid "D-Bus-based configuration storage system."
@@ -397,9 +717,9 @@ msgstr ""
 "- według wersji drugiej tej licencji lub którejś z późniejszych wersji."
 
 #: ../xfce4-about/main.c:442
-#, c-format
+#, fuzzy, c-format
 msgid "Type '%s --help' for usage information."
-msgstr "Proszę wprowadzić „%s --help”, aby wypisać komunikat pomocy."
+msgstr "Proszę wprowadzić „%s --help”, aby wypisać komunikat pomocy."
 
 #: ../xfce4-about/main.c:448
 msgid "Unable to initialize GTK+."
@@ -433,9 +753,9 @@ msgstr "Wydanie %s, dostarczone przez %s"
 
 #. I18N: %s will be replaced by the Xfce version number
 #: ../xfce4-about/main.c:489
-#, c-format
+#, fuzzy, c-format
 msgid "Version %s"
-msgstr "Wydanie %s"
+msgstr "%s (na %s)"
 
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
@@ -461,12 +781,14 @@ msgid "Translations supervision"
 msgstr "Nadzorcy tłumaczeń"
 
 #: ../xfce4-about/contributors.h:136
+#, fuzzy
 msgid "Translators"
-msgstr "Tłumacze"
+msgstr "Przeźroczysty"
 
 #: ../xfce4-about/contributors.h:139
+#, fuzzy
 msgid "Previous contributors"
-msgstr "Byli współpracownicy"
+msgstr "Przełączenie na poprzedni obszar roboczy"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:1
 msgid "About Xfce"
@@ -477,33 +799,36 @@ msgid "Information about the Xfce Desktop Environment"
 msgstr "Wyświetla informacje o środowisku graficznym Xfce"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:1
-msgid "About"
-msgstr "Informacje"
-
-#: ../xfce4-about/xfce4-about-dialog.glade.h:2
 msgid "About the Xfce Desktop Environment"
 msgstr "Informacje o środowisku graficznym Xfce"
 
+#: ../xfce4-about/xfce4-about-dialog.glade.h:2
+msgid "About"
+msgstr "Informacje"
+
 #: ../xfce4-about/xfce4-about-dialog.glade.h:3
-msgid "BSD"
-msgstr "BSD"
-
-#: ../xfce4-about/xfce4-about-dialog.glade.h:4
-msgid "Copyright"
-msgstr "Prawa autorskie"
-
-#: ../xfce4-about/xfce4-about-dialog.glade.h:5
 msgid "Credits"
 msgstr "Zasługi"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:6
+#: ../xfce4-about/xfce4-about-dialog.glade.h:4
 msgid "GPL"
 msgstr "GPL"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:7
+#: ../xfce4-about/xfce4-about-dialog.glade.h:5
 msgid "LGPL"
 msgstr "LGPL"
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:6
+msgid "BSD"
+msgstr "BSD"
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:7
+msgid "Copyright"
+msgstr "Prawa autorskie"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:8
 msgid "License"
 msgstr "Licencja"
+
+msgid "Keep the other one"
+msgstr "Zachowaj dotychczasową"

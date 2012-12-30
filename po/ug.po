@@ -2,12 +2,12 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # Gheyret Kenji <gheyret@gmail.com>, 2012.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-12-03 03:48+0000\n"
+"POT-Creation-Date: 2012-12-28 09:06+0100\n"
 "PO-Revision-Date: 2011-11-09 16:10+0900\n"
 "Last-Translator: Gheyret Kenji <gheyret@gmail.com>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
@@ -48,8 +48,9 @@ msgid "_Always go directly to the online documentation"
 msgstr "ھەمىشە توردىكى پۈتۈككە بىۋاسىتە يۆتكەل(_A)"
 
 #: ../libxfce4ui/xfce-dialogs.c:281
+#, fuzzy
 msgid "Information"
-msgstr "ئۇچۇر"
+msgstr "نەشر ئۇچۇرى"
 
 #: ../libxfce4ui/xfce-dialogs.c:314
 msgid "Warning"
@@ -64,24 +65,28 @@ msgid "Question"
 msgstr "سوئال"
 
 #: ../libxfce4ui/xfce-sm-client.c:1403
+#, fuzzy
 msgid "Session management client ID"
-msgstr "ئەڭگىمە باشقۇرۇش خېرىدار كىملىكى(ID)"
+msgstr "ئەڭگىمە باشقۇرغۇ سوكېت"
 
 #: ../libxfce4ui/xfce-sm-client.c:1403
 msgid "ID"
 msgstr "ID"
 
 #: ../libxfce4ui/xfce-sm-client.c:1404
+#, fuzzy
 msgid "Disable session management"
-msgstr "ئەڭگىمە باشقۇرۇشنى ئىناۋەتسىز قىل"
+msgstr "ئەڭگىمە باشقۇرغۇ سوكېت"
 
 #: ../libxfce4ui/xfce-sm-client.c:1414
+#, fuzzy
 msgid "Session management options"
-msgstr "ئەڭگىمە باشقۇرۇش تاللانمىلىرى"
+msgstr "ئەڭگىمە باشقۇرغۇ سوكېت"
 
 #: ../libxfce4ui/xfce-sm-client.c:1415
+#, fuzzy
 msgid "Show session management options"
-msgstr "ئەڭگىمە باشقۇرۇش تاللانمىلىرىنى كۆرسەت"
+msgstr "ئەڭگىمە باشقۇرغۇ سوكېت"
 
 #: ../libxfce4ui/xfce-sm-client.c:1591
 #, c-format
@@ -101,104 +106,409 @@ msgid ""
 "\"."
 msgstr "خىزمەت مۇندەرىجىسى «%s» يوق. «%s» نى ھاسىل قىلغاندا ئىشلىتىلمەيدۇ."
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:52
-msgid ""
-"This shortcut is already being used for another window manager action. Which "
-"action do you want to use?"
-msgstr "مەزكۇر تېزلەتمە باشقا كۆزنەك باشقۇرغۇدا ئىشلىتىلىۋاتىدۇ. قايسىنى ئىشلىتىسىز؟"
-
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
-#: ../libxfce4kbd-private/xfce-shortcuts.c:56
-#: ../libxfce4kbd-private/xfce-shortcuts.c:59
-#: ../libxfce4kbd-private/xfce-shortcuts.c:62
+#, fuzzy, c-format
+msgid ""
+"This shortcut is already being used for the action '%s'. Which action do you "
+"want to use?"
+msgstr "مەزكۇر تېزلەتمە ‹%s› بۇيرۇقتا ئىشلىتىلىۋاتىدۇ. قايسىسىنى ئىشلىتىسىز؟"
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:54
+#: ../libxfce4kbd-private/xfce-shortcuts.c:57
+#: ../libxfce4kbd-private/xfce-shortcuts.c:60
+#: ../libxfce4kbd-private/xfce-shortcuts.c:63
 #, c-format
 msgid "Use '%s'"
 msgstr "‹%s› نى ئىشلەت"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:53
-msgid "Keep the other one"
-msgstr "باشقىسىنى ئىشلىتىش"
+#: ../libxfce4kbd-private/xfce-shortcuts.c:54
+#: ../libxfce4kbd-private/xfce-shortcuts.c:57
+#: ../libxfce4kbd-private/xfce-shortcuts.c:60
+#: ../libxfce4kbd-private/xfce-shortcuts.c:63
+#, c-format
+msgid "Keep '%s'"
+msgstr "‹%s› نى ئىشلەت"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:55
-#: ../libxfce4kbd-private/xfce-shortcuts.c:58
+#: ../libxfce4kbd-private/xfce-shortcuts.c:56
+#: ../libxfce4kbd-private/xfce-shortcuts.c:59
 #, c-format
 msgid ""
 "This shortcut is already being used for the command '%s'. Which action do "
 "you want to use?"
 msgstr "مەزكۇر تېزلەتمە ‹%s› بۇيرۇقتا ئىشلىتىلىۋاتىدۇ. قايسىسىنى ئىشلىتىسىز؟"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:56
-#: ../libxfce4kbd-private/xfce-shortcuts.c:59
-#, c-format
-msgid "Keep '%s'"
-msgstr "‹%s› نى ئىشلەت"
-
-#: ../libxfce4kbd-private/xfce-shortcuts.c:61
-msgid ""
-"This shortcut is already being used by a window manager action. Which action "
-"do you want to use?"
-msgstr "مەزكۇر تېزلەتمە باشقا كۆزنەك باشقۇرغۇدا ئىشلىتىلىۋاتىدۇ. قايسىنى ئىشلىتىسىز؟"
-
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
-msgid "Keep the window manager action"
-msgstr "كۆزنەك باشقۇرغۇدىكىنى ئىشلىتىش"
+#, fuzzy, c-format
+msgid ""
+"This shortcut is already being used by the action '%s'. Which action do you "
+"want to use?"
+msgstr "مەزكۇر تېزلەتمە ‹%s› بۇيرۇقتا ئىشلىتىلىۋاتىدۇ. قايسىسىنى ئىشلىتىسىز؟"
 
 #. This shortcut already exists in the provider, we don't want it twice
 #. Warn the user
-#: ../libxfce4kbd-private/xfce-shortcuts.c:97
+#: ../libxfce4kbd-private/xfce-shortcuts.c:110
 msgid "Please use another key combination."
 msgstr "باشقا بىرىكمە كۇنۇپكا ئىشلىتىڭ."
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:98
+#: ../libxfce4kbd-private/xfce-shortcuts.c:111
 #, c-format
 msgid "%s already triggers this action."
 msgstr "بۇ %s بولسا ئاللىقاچان مەزكۇر مەشغۇلاتنى پايلاۋاتىدۇ."
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:103
+#: ../libxfce4kbd-private/xfce-shortcuts.c:116
 #, c-format
 msgid "Conflicting actions for %s"
 msgstr "%s توقۇنۇشۇپ قالدى"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:136
+#: ../libxfce4kbd-private/xfce-shortcuts.c:189
 msgid "This shortcut is already being used for something else."
 msgstr "مەزكۇر تېزلەتمە باشقا يەردە ئىشلىتىلىۋاتىدۇ"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:204
-msgid "Window Manager Action Shortcut"
-msgstr "كۆزنەك باشقۇرغۇ مەشغۇلات تېزلەتمىسى"
-
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:205
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:215
-msgid "Action:"
-msgstr "مەشغۇلات:"
-
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:209
-msgid "Command Shortcut"
-msgstr "بۇيرۇقنىڭ تېزلەتمىسى"
+#, fuzzy
+msgid "Window Manager Action Shortcut"
+msgstr "كۆزنەك باشقۇرغۇ"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:210
-msgid "Command:"
+#. TRANSLATORS: this string will be used to create an explanation for
+#. * the user in a following string
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:212
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:226
+#, fuzzy
+msgid "action"
+msgstr "مەشغۇلات"
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:216
+#, fuzzy
+msgid "Command Shortcut"
+msgstr "تېزلەتمە"
+
+#. TRANSLATORS: this string will be used to create an explanation for
+#. * the user in a following string
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:219
+#, fuzzy
+msgid "command"
 msgstr "بۇيرۇق:"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:214
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:223
 msgid "Shortcut"
 msgstr "تېزلەتمە"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:252
-msgid "Shortcut:"
-msgstr "تېزلەتمە:"
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:267
+#, c-format
+msgid "Press now the keyboard keys you want to use to trigger the %s '%s'."
+msgstr ""
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:339
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:291
+#, fuzzy
+msgid "Shortcut:"
+msgstr "تېزلەتمە"
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:296
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:475
+msgid "No keys pressed yet, proceed."
+msgstr ""
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:378
+#, fuzzy
 msgid "Could not grab the keyboard."
-msgstr "ھەرپتاختىنى تۇتقىلى بولمىدى."
+msgstr "تەڭشەك سۆزلەشكۈسىنى قۇرغىلى بولمىدى."
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:33
+msgid "Window operations menu"
+msgstr "كۆزنەك مەشغۇلاتلىرى تىزىملىكى"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:34
+msgid "Up"
+msgstr "ئۈستى"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:35
+msgid "Down"
+msgstr "ئاستى"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:36
+msgid "Left"
+msgstr "سول"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:37
+msgid "Right"
+msgstr "ئوڭ"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:38
+msgid "Cancel"
+msgstr "ۋاز كەچ"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:39
+msgid "Cycle windows"
+msgstr "كۆزنەكنى ئالماشتۇر"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:40
+msgid "Cycle windows (Reverse)"
+msgstr "كۆزنەكنى ئالماشتۇر(تەتۈر يۆنىلىشتە)"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:41
+msgid "Switch window for same application"
+msgstr "ئوخشاش پروگراممىنىڭ كۆزنىكىنى ئالماشتۇر"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:42
+msgid "Switch application"
+msgstr "پروگرامما ئالماشتۇر"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:43
+msgid "Close window"
+msgstr "كۆزنەك تاقا"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:44
+msgid "Maximize window horizontally"
+msgstr "گورىزونتال يۆنىلىشتە ئەڭ چوڭ قىل"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:45
+msgid "Maximize window vertically"
+msgstr "ۋېرتىكال يۆنىلىشتە ئەڭ چوڭ قىل"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:46
+msgid "Maximize window"
+msgstr "كۆزنەكنى ئەڭ چوڭ قىلىدۇ"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:47
+msgid "Hide window"
+msgstr "كۆزنەكنى يوشۇرۇش"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:48
+msgid "Move window"
+msgstr "كۆزنەك يۆتكە"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:49
+msgid "Resize window"
+msgstr "كۆزنەك چوڭلۇقنى ئۆزگەرت"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:50
+msgid "Shade window"
+msgstr "كۆزنەكنى سايىلەش"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:51
+msgid "Stick window"
+msgstr "كۆزنەكنى قاداپ قوي"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:52
+msgid "Raise window"
+msgstr "كۆزنەكنى كۆتۈر"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:53
+msgid "Lower window"
+msgstr "كۆزنەكنى باس"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:54
+msgid "Raise or lower window"
+msgstr "كۆزنەكنى ئۆرلەت ياكى تۆۋەنلەت"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:55
+msgid "Fill window"
+msgstr "كۆزنەكنى تولدۇر"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:56
+msgid "Fill window horizontally"
+msgstr "كۆزنەكنى گورىزونتال يۆنىلىشتە تولدۇر"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:57
+msgid "Fill window vertically"
+msgstr "كۆزنەكنى ۋېرتىكال يۆنىلىشتە تولدۇر"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:58
+msgid "Toggle above"
+msgstr "ئۈستىدىكىسىگە ئالماشتۇر"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:59
+msgid "Toggle fullscreen"
+msgstr "پۈتۈن ئېكران شەكلىگە ئالماشتۇر"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:60
+msgid "Move window to upper workspace"
+msgstr "كۆزنەكنى ئۈستىدىكى خىزمەت رايونىغا يۆتكە"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:61
+msgid "Move window to bottom workspace"
+msgstr "كۆزنەكنى تۆۋەندىكى خىزمەت رايونىغا يۆتكە"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:62
+msgid "Move window to left workspace"
+msgstr "كۆزنەكنى سولدىكى خىزمەت رايونىغا يۆتكە"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:63
+msgid "Move window to right workspace"
+msgstr "كۆزنەكنى ئوڭدىكى خىزمەت رايونىغا يۆتكە"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:64
+msgid "Move window to previous workspace"
+msgstr "كۆزنەكنى ئالدىنقى خىزمەت رايونىغا يۆتكە"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:65
+msgid "Move window to next workspace"
+msgstr "كۆزنەكنى كېيىنكى خىزمەت رايونىغا يۆتكە"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:66
+msgid "Move window to workspace 1"
+msgstr "كۆزنەكنى خىزمەت رايونى 1 گە يۆتكە"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:67
+msgid "Move window to workspace 2"
+msgstr "كۆزنەكنى خىزمەت رايونى 2 گە يۆتكە"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:68
+msgid "Move window to workspace 3"
+msgstr "كۆزنەكنى خىزمەت رايونى 3 كە يۆتكە"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:69
+msgid "Move window to workspace 4"
+msgstr "كۆزنەكنى خىزمەت رايونى 4 كە يۆتكە"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:70
+msgid "Move window to workspace 5"
+msgstr "كۆزنەكنى خىزمەت رايونى 5 گە يۆتكە"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:71
+msgid "Move window to workspace 6"
+msgstr "كۆزنەكنى خىزمەت رايونى 6 گە يۆتكە"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:72
+msgid "Move window to workspace 7"
+msgstr "كۆزنەكنى خىزمەت رايونى 7 گە يۆتكە"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:73
+msgid "Move window to workspace 8"
+msgstr "كۆزنەكنى خىزمەت رايونى 8 گە يۆتكە"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:74
+msgid "Move window to workspace 9"
+msgstr "كۆزنەكنى خىزمەت رايونى 1 غا يۆتكە"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:75
+msgid "Move window to workspace 10"
+msgstr "كۆزنەكنى خىزمەت رايونى 10 غا يۆتكە"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:76
+msgid "Move window to workspace 11"
+msgstr "كۆزنەكنى خىزمەت رايونى 11 گە يۆتكە"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:77
+msgid "Move window to workspace 12"
+msgstr "كۆزنەكنى خىزمەت رايونى 12 گە يۆتكە"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:78
+msgid "Tile window to the top"
+msgstr "ئۈستى تەرەپكە كۆزنەكنى كاھىش شەكىلدە تىز"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:79
+msgid "Tile window to the bottom"
+msgstr "ئاستى تەرەپكە كۆزنەكنى كاھىش شەكىلدە تىز"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:80
+msgid "Tile window to the left"
+msgstr "سول تەرەپكە كۆزنەكنى كاھىش شەكىلدە تىز"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:81
+msgid "Tile window to the right"
+msgstr "ئوڭ تەرەپكە كۆزنەكنى كاھىش شەكىلدە تىز"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:82
+msgid "Show desktop"
+msgstr "ئۈستەلئۈستىنى كۆرسەت"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:83
+msgid "Upper workspace"
+msgstr "ئۈستىدىكى خىزمەت رايونى"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:84
+msgid "Bottom workspace"
+msgstr "ئاستىدىكى خىزمەت رايونى"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:85
+msgid "Left workspace"
+msgstr "سولدىكى خىزمەت رايونى"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:86
+msgid "Right workspace"
+msgstr "ئوڭدىكى خىزمەت رايونى"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:87
+msgid "Previous workspace"
+msgstr "ئالدىنقى خىزمەت رايونى"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:88
+msgid "Next workspace"
+msgstr "كېيىنكى خىزمەت رايونى"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:89
+msgid "Workspace 1"
+msgstr "خىزمەت رايونى 1"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:90
+msgid "Workspace 2"
+msgstr "خىزمەت رايونى 2"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:91
+msgid "Workspace 3"
+msgstr "خىزمەت رايونى 3"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:92
+msgid "Workspace 4"
+msgstr "خىزمەت رايونى 4"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:93
+msgid "Workspace 5"
+msgstr "خىزمەت رايونى 5"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:94
+msgid "Workspace 6"
+msgstr "خىزمەت رايونى 6"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:95
+msgid "Workspace 7"
+msgstr "خىزمەت رايونى 7"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:96
+msgid "Workspace 8"
+msgstr "خىزمەت رايونى 8"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:97
+msgid "Workspace 9"
+msgstr "خىزمەت رايونى 9"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:98
+msgid "Workspace 10"
+msgstr "خىزمەت رايونى 10"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:99
+msgid "Workspace 11"
+msgstr "خىزمەت رايونى 11"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:100
+msgid "Workspace 12"
+msgstr "خىزمەت رايونى 12"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:101
+msgid "Add workspace"
+msgstr "خىزمەت رايونى قوش"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:102
+msgid "Add adjacent workspace"
+msgstr "تۇتاش خىزمەت رايونى قوش"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:103
+msgid "Delete last workspace"
+msgstr "ئەڭ ئاخىرقى خىزمەت رايونىنى ئۆچۈر"
+
+#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:104
+msgid "Delete active workspace"
+msgstr "ئاكتىپ خىزمەت رايونىنى ئۆچۈر"
 
 #: ../glade/libxfce4ui.xml.in.h:1
-msgid "Subtitle"
-msgstr "كىچىك ماۋزۇ"
-
-#: ../glade/libxfce4ui.xml.in.h:2
 msgid "Titled Dialog"
 msgstr "ماۋزۇلۇق سۆزلەشكۈ"
+
+#: ../glade/libxfce4ui.xml.in.h:2
+#, fuzzy
+msgid "Subtitle"
+msgstr "ماۋزۇ"
 
 #: ../glade/libxfce4ui.xml.in.h:3
 msgid "Xfce 4 Widgets"
@@ -213,8 +523,9 @@ msgid "Window Manager"
 msgstr "كۆزنەك باشقۇرغۇ"
 
 #: ../xfce4-about/main.c:71
+#, fuzzy
 msgid "Handles the placement of windows on the screen."
-msgstr "كۆزنەكلەرنىڭ ئېكراندىكى ئورنىنى باشقۇرىدۇ."
+msgstr "ئېكراننىڭ مەركىزىدە(_E)"
 
 #: ../xfce4-about/main.c:74
 msgid "Panel"
@@ -224,37 +535,48 @@ msgstr "كۆزنەك"
 msgid ""
 "Program launchers, window buttons, applications menu, workspace switcher and "
 "more."
-msgstr "ئىجراچىلار، كۆزنەك توپچىلىرى، پروگرامما تىزىملىكى، خىزمەت رايونى ئالماشتۇرغۇ ۋە باشقىلار."
+msgstr ""
+"ئىجراچىلار، كۆزنەك توپچىلىرى، پروگرامما تىزىملىكى، خىزمەت رايونى ئالماشتۇرغۇ "
+"ۋە باشقىلار."
 
 #: ../xfce4-about/main.c:79
+#, fuzzy
 msgid "Desktop Manager"
-msgstr "ئۈستەلئۈستى باشقۇرغۇ"
+msgstr "كۆزنەك باشقۇرغۇ"
 
 #: ../xfce4-about/main.c:80
 msgid ""
 "Sets the background color or image with optional application menu or icons "
 "for minimized applications or launchers, devices and folders."
-msgstr "كىچىكلىتىلگەن پروگرامما ياكى ئىجراچى،ئۈسكۈنە ۋە قىسقۇچلارنىڭ تەگلىك رەڭگى ياكى تەگلىك سۈرەتلىرىنى، پروگرامما تىزىملىكى ۋە سىنبەلگىلىرىنى بەلگىلەيدۇ."
+msgstr ""
+"كىچىكلىتىلگەن پروگرامما ياكى ئىجراچى،ئۈسكۈنە ۋە قىسقۇچلارنىڭ تەگلىك رەڭگى "
+"ياكى تەگلىك سۈرەتلىرىنى، پروگرامما تىزىملىكى ۋە سىنبەلگىلىرىنى بەلگىلەيدۇ."
 
 #: ../xfce4-about/main.c:84
+#, fuzzy
 msgid "File Manager "
-msgstr "ھۆججەت باشقۇرغۇ "
+msgstr "كۆزنەك باشقۇرغۇ"
 
 #: ../xfce4-about/main.c:85
 msgid ""
 "A modern file manager for the Unix/Linux desktop, aiming to be easy-to-use "
 "and fast."
-msgstr "زامانىۋى ، ئىشلىتىشكە ئەپلىك ۋە تېز بولغان يۇنىكىس/لىنۇكىس سىستېمىسىنىڭ ھۆججەت باشقۇرغۇسى."
+msgstr ""
+"زامانىۋى ، ئىشلىتىشكە ئەپلىك ۋە تېز بولغان يۇنىكىس/لىنۇكىس سىستېمىسىنىڭ "
+"ھۆججەت باشقۇرغۇسى."
 
 #: ../xfce4-about/main.c:89
+#, fuzzy
 msgid "Session Manager"
-msgstr "ئەڭگىمە باشقۇرغۇ"
+msgstr "ئەڭگىمە باشقۇرغۇ سوكېت"
 
 #: ../xfce4-about/main.c:90
 msgid ""
 "Restores your session on startup and allows you to shutdown the computer "
 "from Xfce."
-msgstr "باشلانغاندا سىزنىڭ ئەڭگىمىڭىزنى ئەسلىگە كەلتۈرىدۇ ۋە Xfce ئارقىلىق سىستېمىنى تاقاشقا بولىدۇ."
+msgstr ""
+"باشلانغاندا سىزنىڭ ئەڭگىمىڭىزنى ئەسلىگە كەلتۈرىدۇ ۋە Xfce ئارقىلىق سىستېمىنى "
+"تاقاشقا بولىدۇ."
 
 #: ../xfce4-about/main.c:94
 msgid "Setting System"
@@ -264,7 +586,9 @@ msgstr "سىستېما تەڭشەش"
 msgid ""
 "Configuration system to control various aspects of the desktop like "
 "appearance, display, keyboard and mouse settings."
-msgstr "ئۈستەلئۈستىنىڭ كۆرۈنۈشى، كۆرسەتكۈچ، ھەرپتاختا ۋە چاشقىنەك ۋە باشقا ھەر خىل تەڭشەش مەشغۇلاتلىرىنى ئېلىپ بېرىشقا بولىدۇ."
+msgstr ""
+"ئۈستەلئۈستىنىڭ كۆرۈنۈشى، كۆرسەتكۈچ، ھەرپتاختا ۋە چاشقىنەك ۋە باشقا ھەر خىل "
+"تەڭشەش مەشغۇلاتلىرىنى ئېلىپ بېرىشقا بولىدۇ."
 
 #: ../xfce4-about/main.c:99
 msgid "Application Finder"
@@ -274,11 +598,14 @@ msgstr "پروگرامما ئىزدىگۈ"
 msgid ""
 "Shows the applications installed on your system in categories, so you can "
 "quickly find and launch them."
-msgstr "سىستېمىغا ئورنىتىلغان پروگراممىلارنى كاتېگورىيەسى بويىچە كۆرسىتىپ بېرىدۇ. شۇڭا سىز پروگراممىلارنى ئاسانلا تاپالايسىز."
+msgstr ""
+"سىستېمىغا ئورنىتىلغان پروگراممىلارنى كاتېگورىيەسى بويىچە كۆرسىتىپ بېرىدۇ. "
+"شۇڭا سىز پروگراممىلارنى ئاسانلا تاپالايسىز."
 
 #: ../xfce4-about/main.c:104
+#, fuzzy
 msgid "Settings Daemon"
-msgstr "تەڭشەك مۇئەككىلى"
+msgstr "باشقۇرغۇچى سوكېتنىڭ تەڭشەكلىرى"
 
 #: ../xfce4-about/main.c:105
 msgid "D-Bus-based configuration storage system."
@@ -288,14 +615,20 @@ msgstr "سەپلىمىلەرنى D-Bus ئاساسىدىكى ساقلىغۇچتا
 msgid ""
 "Xfce is a collection of programs that together provide a full-featured "
 "desktop environment. The following programs are part of the Xfce core:"
-msgstr "مەزكۇر ئۈستەلئۈستى سىستېمىسى(Xfce) نۇرغۇن پروگراممىلاردىن تەركىب تاپقان بولۇپ، ئۇلار بىرلىشىش ئارقىلىق مۇكەممەل بولغان ئۈستەلئۈستى مۇھىتىنى بارلىققا كەلتۈرگەن. تۆۋەندىكىلەر مەزكۇر ئۈستەلئۈستىنىڭ يادرولۇق بۆلەكچىلىرىدۇر:"
+msgstr ""
+"مەزكۇر ئۈستەلئۈستى سىستېمىسى(Xfce) نۇرغۇن پروگراممىلاردىن تەركىب تاپقان "
+"بولۇپ، ئۇلار بىرلىشىش ئارقىلىق مۇكەممەل بولغان ئۈستەلئۈستى مۇھىتىنى بارلىققا "
+"كەلتۈرگەن. تۆۋەندىكىلەر مەزكۇر ئۈستەلئۈستىنىڭ يادرولۇق بۆلەكچىلىرىدۇر:"
 
 #: ../xfce4-about/main.c:136
 msgid ""
 "Xfce is also a development platform providing several libraries, that help "
 "programmers create applications that fit in well with the desktop "
 "environment."
-msgstr "مەزكۇر سىستېما ئۈستەلئۈستى سىستېمىسى بولۇپلا قالماستىن يەنە بىر قىسىم ئامبارلاردىن تەركىب تاپقان ئىجادىيەت سىستېمىسىدۇر. شۇڭا ئىجادىيەتچىلەر مەزكۇر مۇھىتقا ماس كېلىدىغان ئەپلەرنى ياسىيالايدۇ."
+msgstr ""
+"مەزكۇر سىستېما ئۈستەلئۈستى سىستېمىسى بولۇپلا قالماستىن يەنە بىر قىسىم "
+"ئامبارلاردىن تەركىب تاپقان ئىجادىيەت سىستېمىسىدۇر. شۇڭا ئىجادىيەتچىلەر "
+"مەزكۇر مۇھىتقا ماس كېلىدىغان ئەپلەرنى ياسىيالايدۇ."
 
 #: ../xfce4-about/main.c:142
 msgid ""
@@ -303,7 +636,11 @@ msgid ""
 "for applications and LGPL or BSDL for libraries. Look at the documentation, "
 "the source code or the Xfce website (http://www.xfce.org) for more "
 "information."
-msgstr "مەزكۇر سىستېمىنىڭ بارلىق بۆلەكلىرى ئەركىن ياكى ئوچۇق مەنبە ئىجازەتنامىلىرى بىلەن تارقىتىلغان بولۇپ، پروگراممىلار GPL ياكى BSDL ئىجازەتنامىسى بويىچە، ئامبارلار بولسا LGPL ياكى BSDL ئىجازەتنامىسى بويىچە تارقىتىلغان. تەپسىلىي ئۇچۇرلارنى ۋە قوللانمىلارنى Xfce تورتۇراسى (http://www.xfce.org) دىن كۆرۈڭ."
+msgstr ""
+"مەزكۇر سىستېمىنىڭ بارلىق بۆلەكلىرى ئەركىن ياكى ئوچۇق مەنبە ئىجازەتنامىلىرى "
+"بىلەن تارقىتىلغان بولۇپ، پروگراممىلار GPL ياكى BSDL ئىجازەتنامىسى بويىچە، "
+"ئامبارلار بولسا LGPL ياكى BSDL ئىجازەتنامىسى بويىچە تارقىتىلغان. تەپسىلىي "
+"ئۇچۇرلارنى ۋە قوللانمىلارنى Xfce تورتۇراسى (http://www.xfce.org) دىن كۆرۈڭ."
 
 #: ../xfce4-about/main.c:149
 msgid "Thank you for your interest in Xfce."
@@ -317,17 +654,22 @@ msgstr "Xfce ئىجادىيەت ئەترىتى"
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
 "on <http://bugzilla.xfce.org> ."
-msgstr "تىزىمدىن كەم قالغان بىرەر نەرسىنى بايقىسىڭىز تارتىنماستىن <http://bugzilla.xfce.org> گە كەمتۈك يوللىشىڭىزنى ئۈمىد قىلىمىز."
+msgstr ""
+"تىزىمدىن كەم قالغان بىرەر نەرسىنى بايقىسىڭىز تارتىنماستىن <http://bugzilla."
+"xfce.org> گە كەمتۈك يوللىشىڭىزنى ئۈمىد قىلىمىز."
 
 #: ../xfce4-about/main.c:266
 msgid "Thanks to all who helped making this software available!"
-msgstr "مەزكۇر يۇمشاق دېتالغا تۆھپە قوشقان بارلىق كىشىلەرگە تەشەككۈرلەر بولسۇن!"
+msgstr ""
+"مەزكۇر يۇمشاق دېتالغا تۆھپە قوشقان بارلىق كىشىلەرگە تەشەككۈرلەر بولسۇن!"
 
 #: ../xfce4-about/main.c:283
 msgid ""
 "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
-msgstr "نەشر ھوقۇقى Olivier Fourdan (fourdan@xfce.org) غا تەۋە. ئوخشىمىغان بۆلەكلەرنىڭ نەشر ھوقۇقى ئۇلارنىڭ ئاپتورلىرىغا تەۋە."
+msgstr ""
+"نەشر ھوقۇقى Olivier Fourdan (fourdan@xfce.org) غا تەۋە. ئوخشىمىغان "
+"بۆلەكلەرنىڭ نەشر ھوقۇقى ئۇلارنىڭ ئاپتورلىرىغا تەۋە."
 
 #: ../xfce4-about/main.c:288
 msgid ""
@@ -335,7 +677,11 @@ msgid ""
 "distributed under the terms of the GNU Library General Public License as "
 "published by the Free Software Foundation; either version 2 of the License, "
 "or (at your option) any later version."
-msgstr "بۇ بوغچىلار(ibxfce4ui، libxfcegui4، libxfce4util، thunar-vfs ۋە exo) ئەركىن يۇمشاق دېتال فوندىنىڭ GNU Library General Public License دېگەن ئىجازەتنامىسىنىڭ ئىككىنچى نەشرىنىڭ ياكى كېيىنكى نەشرلىرىنىڭ ماددىلىرى  بويىچە تارقىتىلدى."
+msgstr ""
+"بۇ بوغچىلار(ibxfce4ui، libxfcegui4، libxfce4util، thunar-vfs ۋە exo) ئەركىن "
+"يۇمشاق دېتال فوندىنىڭ GNU Library General Public License دېگەن "
+"ئىجازەتنامىسىنىڭ ئىككىنچى نەشرىنىڭ ياكى كېيىنكى نەشرلىرىنىڭ ماددىلىرى  "
+"بويىچە تارقىتىلدى."
 
 #: ../xfce4-about/main.c:295
 msgid ""
@@ -344,12 +690,16 @@ msgid ""
 "terms of the GNU General Public License as published by the Free Software "
 "Foundation; either version 2 of the License, or (at your option) any later "
 "version."
-msgstr "بۇ بوغچىلار(thunar، xfce4-appfinder، xfce4-panel، xfce4-session، xfce4-settings، xfce-utils، xfconf، xfdesktop ۋە xfwm4) ئەركىن يۇمشاق دېتال فوندىنىڭ GNU General Public License دېگەن ئىجازەتنامىسىنىڭ ئىككىنچى نەشرىنىڭ ياكى كېيىنكى نەشرلىرىنىڭ ماددىلىرى  بويىچە تارقىتىلدى."
+msgstr ""
+"بۇ بوغچىلار(thunar، xfce4-appfinder، xfce4-panel، xfce4-session، xfce4-"
+"settings، xfce-utils، xfconf، xfdesktop ۋە xfwm4) ئەركىن يۇمشاق دېتال "
+"فوندىنىڭ GNU General Public License دېگەن ئىجازەتنامىسىنىڭ ئىككىنچى نەشرىنىڭ "
+"ياكى كېيىنكى نەشرلىرىنىڭ ماددىلىرى  بويىچە تارقىتىلدى."
 
 #: ../xfce4-about/main.c:442
-#, c-format
+#, fuzzy, c-format
 msgid "Type '%s --help' for usage information."
-msgstr "'%s --help' نى كىرگۈزسىڭىز ئىشلىتىش ئۇسۇلىنى كۆرسىتىپ بېرىدۇ."
+msgstr "«%s --help» نى كىرگۈزسىڭىز ئىشلىتىش ئۇسۇلى كۆرۈنىدۇ"
 
 #: ../xfce4-about/main.c:448
 msgid "Unable to initialize GTK+."
@@ -383,9 +733,9 @@ msgstr "نەشر %s، تارقاتقۇچى %s"
 
 #. I18N: %s will be replaced by the Xfce version number
 #: ../xfce4-about/main.c:489
-#, c-format
+#, fuzzy, c-format
 msgid "Version %s"
-msgstr "نەشرى %s"
+msgstr "%s ( %s نىڭدا)"
 
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
@@ -415,8 +765,9 @@ msgid "Translators"
 msgstr "تەرجىمانلار"
 
 #: ../xfce4-about/contributors.h:139
+#, fuzzy
 msgid "Previous contributors"
-msgstr "بۇرۇنقى تۆھپىكارلار"
+msgstr "ئالدىنقى خىزمەت رايونى"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:1
 msgid "About Xfce"
@@ -427,33 +778,48 @@ msgid "Information about the Xfce Desktop Environment"
 msgstr "مەزكۇر Xfce ئۈستەلئۈستى مۇھىتى ھەققىدە ئۇچۇر"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:1
-msgid "About"
-msgstr "ھەققىدە"
-
-#: ../xfce4-about/xfce4-about-dialog.glade.h:2
 msgid "About the Xfce Desktop Environment"
 msgstr "مەزكۇر ئۈستەلئۈستى مۇھىتى(Xfce) ھەققىدە"
 
+#: ../xfce4-about/xfce4-about-dialog.glade.h:2
+msgid "About"
+msgstr "ھەققىدە"
+
 #: ../xfce4-about/xfce4-about-dialog.glade.h:3
-msgid "BSD"
-msgstr "BSD"
-
-#: ../xfce4-about/xfce4-about-dialog.glade.h:4
-msgid "Copyright"
-msgstr "نەشر ھوقۇقى"
-
-#: ../xfce4-about/xfce4-about-dialog.glade.h:5
 msgid "Credits"
 msgstr "تەشەككۈر"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:6
+#: ../xfce4-about/xfce4-about-dialog.glade.h:4
 msgid "GPL"
 msgstr "GPL"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:7
+#: ../xfce4-about/xfce4-about-dialog.glade.h:5
 msgid "LGPL"
 msgstr "LGPL"
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:6
+msgid "BSD"
+msgstr "BSD"
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:7
+msgid "Copyright"
+msgstr "نەشر ھوقۇقى"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:8
 msgid "License"
 msgstr "ئىجازەتنامە"
+
+msgid ""
+"This shortcut is already being used for another window manager action. Which "
+"action do you want to use?"
+msgstr ""
+"مەزكۇر تېزلەتمە باشقا كۆزنەك باشقۇرغۇدا ئىشلىتىلىۋاتىدۇ. قايسىنى ئىشلىتىسىز؟"
+
+msgid "Keep the other one"
+msgstr "باشقىسىنى ئىشلىتىش"
+
+msgid ""
+"This shortcut is already being used by a window manager action. Which action "
+"do you want to use?"
+msgstr ""
+"مەزكۇر تېزلەتمە باشقا كۆزنەك باشقۇرغۇدا ئىشلىتىلىۋاتىدۇ. قايسىنى ئىشلىتىسىز؟"
