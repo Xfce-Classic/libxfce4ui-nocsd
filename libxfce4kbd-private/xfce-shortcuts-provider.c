@@ -575,9 +575,9 @@ gboolean
 xfce_shortcuts_provider_has_shortcut (XfceShortcutsProvider *provider,
                                       const gchar           *shortcut)
 {
+  gboolean has_property;
   gchar   *base_property;
   gchar   *property;
-  gboolean has_property;
 
   g_return_val_if_fail (XFCE_IS_SHORTCUTS_PROVIDER (provider), FALSE);
   g_return_val_if_fail (XFCONF_IS_CHANNEL (provider->priv->channel), FALSE);
@@ -590,6 +590,56 @@ xfce_shortcuts_provider_has_shortcut (XfceShortcutsProvider *provider,
   property = g_strconcat (base_property, "/", shortcut, NULL);
   has_property = xfconf_channel_has_property (provider->priv->channel, property);
   g_free (property);
+
+  if (!has_property && g_strrstr (shortcut, "<Primary>"))
+    {
+      /* We want to match a shortcut with <Primary>. Older versions of
+       * GTK+ used <Control> and this might be stored in Xfconf. We need
+       * to check for this too. */
+
+      const gchar *primary;
+      const gchar *p, *s;
+      GString     *replaced;
+      gchar       *with_control_shortcut;
+
+      replaced = g_string_sized_new (strlen (shortcut));
+      primary = "Primary";
+
+      /* Replace Primary in the string by Control using the same logic
+       * as exo_str_replace. */
+
+      while (*shortcut != '\0')
+        {
+          if (G_UNLIKELY (*shortcut == *primary))
+            {
+              /* compare the pattern to the current string */
+              for (p = primary + 1, s = shortcut + 1; *p == *s; ++s, ++p)
+                if (*p == '\0' || *s == '\0')
+                  break;
+
+              /* check if the pattern fully matched */
+              if (G_LIKELY (*p == '\0'))
+                {
+                  g_string_append (replaced, "Control");
+                  shortcut = s;
+                  continue;
+                }
+            }
+
+          g_string_append_c (replaced, *shortcut++);
+        }
+
+      with_control_shortcut = g_string_free (replaced, FALSE);
+
+      DBG ("Looking for old GTK+ shortcut %s", with_control_shortcut);
+
+      property =
+        g_strconcat (base_property, "/", with_control_shortcut, NULL);
+      has_property = xfconf_channel_has_property (provider->priv->channel, property);
+      g_free (property);
+
+      g_free (with_control_shortcut);
+    }
 
   return has_property;
 }
