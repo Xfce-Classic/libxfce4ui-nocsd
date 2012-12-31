@@ -211,12 +211,11 @@ msgstr "Raccourci :"
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:296
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:475
 msgid "No keys pressed yet, proceed."
-msgstr ""
+msgstr "Pas de touches enfoncées encore, continuez."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:378
-#, fuzzy
 msgid "Could not grab the keyboard."
-msgstr "Impossible de créer la boîte de dialogue des paramètres."
+msgstr "Impossible de récupérer le clavier."
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:36
 msgid "Window operations menu"
@@ -507,9 +506,8 @@ msgid "Delete active workspace"
 msgstr "Supprimer l'espace de travail actif"
 
 #: ../glade/libxfce4ui.xml.in.h:1
-#, fuzzy
 msgid "Subtitle"
-msgstr "Titre"
+msgstr "Sous-titre"
 
 #: ../glade/libxfce4ui.xml.in.h:2
 msgid "Titled Dialog"
@@ -605,9 +603,8 @@ msgstr ""
 "pouvoir les trouver et les charger rapidement."
 
 #: ../xfce4-about/main.c:104
-#, fuzzy
 msgid "Settings Daemon"
-msgstr "Socket du gestionnaire de paramètres"
+msgstr "Réglages démon"
 
 #: ../xfce4-about/main.c:105
 msgid "D-Bus-based configuration storage system."
@@ -699,9 +696,9 @@ msgstr ""
 "version postérieure."
 
 #: ../xfce4-about/main.c:442
-#, fuzzy, c-format
+#, c-format
 msgid "Type '%s --help' for usage information."
-msgstr "Saisissez \"%s --help\" pour l'usage."
+msgstr "Saisissez \"%s --help\" pour les informations d'utilisation."
 
 #: ../xfce4-about/main.c:448
 msgid "Unable to initialize GTK+."
@@ -735,9 +732,9 @@ msgstr "Version %s, distribuée par %s"
 
 #. I18N: %s will be replaced by the Xfce version number
 #: ../xfce4-about/main.c:489
-#, fuzzy, c-format
+#, c-format
 msgid "Version %s"
-msgstr "%s (sur %s)"
+msgstr "Version %s"
 
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
@@ -767,9 +764,8 @@ msgid "Translators"
 msgstr "Traducteurs"
 
 #: ../xfce4-about/contributors.h:139
-#, fuzzy
 msgid "Previous contributors"
-msgstr "Espace de travail précédent"
+msgstr "Précédents contributeurs"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:1
 msgid "About Xfce"
