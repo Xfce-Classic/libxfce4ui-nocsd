@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-12-31 00:33+0000\n"
+"POT-Creation-Date: 2012-12-31 05:54+0000\n"
 "PO-Revision-Date: 2012-12-07 13:41+0100\n"
 "Last-Translator: \n"
 "Language-Team: French <i18n-xfce@xfce.org>\n"
@@ -66,7 +66,6 @@ msgid "Question"
 msgstr "Question"
 
 #: ../libxfce4ui/xfce-sm-client.c:1403
-#, fuzzy
 msgid "Session management client ID"
 msgstr "Gestion des ID de session client"
 
@@ -171,7 +170,6 @@ msgid "This shortcut is already being used for something else."
 msgstr "Ce raccourci est déjà attribué à autre chose."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:209
-#, fuzzy
 msgid "Window Manager Action Shortcut"
 msgstr "Raccourci action du gestionnaire de fenêtres"
 
@@ -199,7 +197,9 @@ msgstr "Raccourci"
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:267
 #, c-format
 msgid "Press now the keyboard keys you want to use to trigger the %s '%s'."
-msgstr "Appuyez maintenant sur les touches du clavier que vous souhaitez utiliser pour déclencher %s « %s »."
+msgstr ""
+"Appuyez maintenant sur les touches du clavier que vous souhaitez utiliser "
+"pour déclencher %s « %s »."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:291
 msgid "Shortcut:"
