@@ -68,7 +68,7 @@ msgstr "Question"
 #: ../libxfce4ui/xfce-sm-client.c:1403
 #, fuzzy
 msgid "Session management client ID"
-msgstr "Socket du gestionnaire de sessions"
+msgstr "Gestion des ID de session client"
 
 #: ../libxfce4ui/xfce-sm-client.c:1403
 msgid "ID"
@@ -107,7 +107,7 @@ msgstr ""
 "réouverture de « %s »."
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "This shortcut is already being used for the action '%s'. Which action do you "
 "want to use?"
@@ -142,7 +142,7 @@ msgstr ""
 "garder ?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "This shortcut is already being used by the action '%s'. Which action do you "
 "want to use?"
