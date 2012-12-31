@@ -182,21 +182,18 @@ msgstr "Gestionnaire de fenêtres"
 #. * the user in a following string
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:212
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:226
-#, fuzzy
 msgid "action"
-msgstr "Action"
+msgstr "action"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:216
-#, fuzzy
 msgid "Command Shortcut"
-msgstr "Raccourci"
+msgstr "Raccourci commande"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:219
-#, fuzzy
 msgid "command"
-msgstr "Commande :"
+msgstr "commande"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:223
 msgid "Shortcut"
@@ -208,9 +205,8 @@ msgid "Press now the keyboard keys you want to use to trigger the %s '%s'."
 msgstr ""
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:291
-#, fuzzy
 msgid "Shortcut:"
-msgstr "Raccourci"
+msgstr "Raccourci :"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:296
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:475
