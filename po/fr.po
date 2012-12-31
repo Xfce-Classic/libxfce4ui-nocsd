@@ -75,19 +75,16 @@ msgid "ID"
 msgstr "ID"
 
 #: ../libxfce4ui/xfce-sm-client.c:1404
-#, fuzzy
 msgid "Disable session management"
-msgstr "Socket du gestionnaire de sessions"
+msgstr "Désactiver la gestion des sessions"
 
 #: ../libxfce4ui/xfce-sm-client.c:1414
-#, fuzzy
 msgid "Session management options"
-msgstr "Socket du gestionnaire de sessions"
+msgstr "Options de gestion des sessions"
 
 #: ../libxfce4ui/xfce-sm-client.c:1415
-#, fuzzy
 msgid "Show session management options"
-msgstr "Socket du gestionnaire de sessions"
+msgstr "Voir les options de gestion des sessions"
 
 #: ../libxfce4ui/xfce-sm-client.c:1591
 #, c-format
@@ -176,7 +173,7 @@ msgstr "Ce raccourci est déjà attribué à autre chose."
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:209
 #, fuzzy
 msgid "Window Manager Action Shortcut"
-msgstr "Gestionnaire de fenêtres"
+msgstr "Raccourci action du gestionnaire de fenêtres"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
@@ -202,7 +199,7 @@ msgstr "Raccourci"
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:267
 #, c-format
 msgid "Press now the keyboard keys you want to use to trigger the %s '%s'."
-msgstr ""
+msgstr "Appuyez maintenant sur les touches du clavier que vous souhaitez utiliser pour déclencher %s « %s »."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:291
 msgid "Shortcut:"
