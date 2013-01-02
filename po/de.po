@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-01 14:00+0000\n"
+"POT-Creation-Date: 2013-01-02 11:24+0000\n"
 "PO-Revision-Date: 2012-03-29 11:37+0100\n"
 "Last-Translator: Mario Blättermann <mario.blaettermann@gmail.com>\n"
 "Language-Team: German <xfce-i18n-de@xfce.org>\n"
@@ -187,7 +187,7 @@ msgstr "Tastenkürzel für Aktion der Fensterverwaltung"
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:212
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:226
 msgid "action"
-msgstr "Aktion"
+msgstr "die Aktion"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:216
 msgid "Command Shortcut"
@@ -197,16 +197,17 @@ msgstr "Tastenkürzel für Befehl"
 #. * the user in a following string
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:219
 msgid "command"
-msgstr "Befehl"
+msgstr "den Befehl"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:223
 msgid "Shortcut"
 msgstr "Tastenkürzel"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:267
-#, c-format, fuzzy
+#, c-format
 msgid "Press now the keyboard keys you want to use to trigger the %s '%s'."
-msgstr "Drücken sie nun die Tasten, die die Aktion/den Befehl »%s« auslösen sollen."
+msgstr ""
+"Drücken sie nun die Tasten, die die Aktion/den Befehl »%s« auslösen sollen."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:291
 msgid "Shortcut:"
