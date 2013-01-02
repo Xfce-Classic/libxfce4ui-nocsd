@@ -217,7 +217,7 @@ msgstr "Tastenkürzel:"
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:475
 #, fuzzy
 msgid "No keys pressed yet, proceed."
-msgstr "Es wurden noch keine Tasten gerückt, fortfahren."
+msgstr "Es wurden noch keine Tasten gedrückt, fortfahren."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:378
 msgid "Could not grab the keyboard."
@@ -535,7 +535,6 @@ msgid "Window Manager"
 msgstr "Fensterverwaltung"
 
 #: ../xfce4-about/main.c:71
-#, fuzzy
 msgid "Handles the placement of windows on the screen."
 msgstr "Handhabt die Anordnung der Fenster auf dem Bildschirm"
 
