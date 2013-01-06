@@ -1,6 +1,6 @@
 # $Id$
 
-INCLUDES = \
+AM_CPPFLAGS = \
 	-I$(top_srcdir) \
 	-DDATADIR=\"$(datadir)\" \
 	-DSN_API_NOT_YET_FROZEN \
