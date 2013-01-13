@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-01-07 14:27+0000\n"
-"PO-Revision-Date: 2013-01-07 20:25+0100\n"
+"PO-Revision-Date: 2013-01-13 18:55+0100\n"
 "Last-Translator: Piotr Sokół <psokol@jabster.pl>\n"
 "Language-Team: polski <>\n"
 "Language: pl\n"
@@ -73,7 +73,7 @@ msgstr "Pytanie"
 #: ../libxfce4ui/xfce-sm-client.c:1403
 #, fuzzy
 msgid "Session management client ID"
-msgstr "Gniazdo menedżera sesji"
+msgstr "Identyfikator klienta zarządzania sesją"
 
 #: ../libxfce4ui/xfce-sm-client.c:1403
 msgid "ID"
@@ -82,17 +82,16 @@ msgstr "ID"
 #: ../libxfce4ui/xfce-sm-client.c:1404
 #, fuzzy
 msgid "Disable session management"
-msgstr "Gniazdo menedżera sesji"
+msgstr "Wyłącza zarządzanie sesją"
 
 #: ../libxfce4ui/xfce-sm-client.c:1414
-#, fuzzy
 msgid "Session management options"
-msgstr "Gniazdo menedżera sesji"
+msgstr "Opcje zarządzania sesją"
 
 #: ../libxfce4ui/xfce-sm-client.c:1415
 #, fuzzy
 msgid "Show session management options"
-msgstr "Gniazdo menedżera sesji"
+msgstr "Wypisuje opcje zarządzania sesją"
 
 #: ../libxfce4ui/xfce-sm-client.c:1591
 #, c-format
@@ -115,7 +114,7 @@ msgstr ""
 "„%s”."
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "This shortcut is already being used for the action '%s'. Which action do you "
 "want to use?"
@@ -139,22 +138,18 @@ msgstr "Zachowaj „%s”"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
 #: ../libxfce4kbd-private/xfce-shortcuts.c:59
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "This shortcut is already being used for the command '%s'. Which action do "
 "you want to use?"
-msgstr ""
-"Aktywator jest już w użyciu!\n"
-"Czy jesteś pewny/a, że chcesz go użyć ?"
+msgstr "Ten skrót jest już przypisany do polecenia „%s”. Co zrobić?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "This shortcut is already being used by the action '%s'. Which action do you "
 "want to use?"
-msgstr ""
-"Aktywator jest już w użyciu!\n"
-"Czy jesteś pewny/a, że chcesz go użyć ?"
+msgstr "Ten skrót jest już przypisany do czynności „%s”. Co zrobić?"
 
 #. This shortcut already exists in the provider, we don't want it twice
 #. Warn the user
@@ -177,7 +172,6 @@ msgid "This shortcut is already being used for something else."
 msgstr "Ten skrót klawiszowy jest już używany."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:209
-#, fuzzy
 msgid "Window Manager Action Shortcut"
 msgstr "Skrót klawiszowy czynności menedżera okien"
 
@@ -186,7 +180,7 @@ msgstr "Skrót klawiszowy czynności menedżera okien"
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:212
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:226
 msgid "action"
-msgstr "Czynność"
+msgstr "czynności"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:216
 msgid "Command Shortcut"
@@ -196,7 +190,7 @@ msgstr "Skrót klawiszowy"
 #. * the user in a following string
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:219
 msgid "command"
-msgstr "Polecenie"
+msgstr "polecenia"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:223
 msgid "Shortcut"
@@ -205,19 +199,18 @@ msgstr "Skrót"
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:267
 #, c-format
 msgid "Press now the keyboard keys you want to use to trigger the %s '%s'."
-msgstr ""
+msgstr "Proszę wcisnąć kombinację klawiszy służącą do wywołania %s „%s”."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:291
 msgid "Shortcut:"
-msgstr "Brak aktywatora"
+msgstr "Skrót:"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:296
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:475
 msgid "No keys pressed yet, proceed."
-msgstr ""
+msgstr "Nie wciśnięto żadnego klawisza."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:378
-#, fuzzy
 msgid "Could not grab the keyboard."
 msgstr "Nie można przechwycić klawiatury."
 
@@ -529,7 +522,7 @@ msgstr "Wypisuje informacje o wersji i kończy"
 
 #: ../xfce4-about/main.c:70
 msgid "Window Manager"
-msgstr "Okna"
+msgstr "Menedżer okien"
 
 #: ../xfce4-about/main.c:71
 msgid "Handles the placement of windows on the screen."
@@ -595,7 +588,7 @@ msgstr ""
 
 #: ../xfce4-about/main.c:99
 msgid "Application Finder"
-msgstr "Wyszukiwanie programów"
+msgstr "Wyszukiwarka programów"
 
 #: ../xfce4-about/main.c:100
 msgid ""
@@ -740,7 +733,7 @@ msgstr "Wydanie %s, dostarczone przez %s"
 #: ../xfce4-about/main.c:489
 #, c-format
 msgid "Version %s"
-msgstr "Wersja %s"
+msgstr "Dotyczy wersji %s"
 
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
