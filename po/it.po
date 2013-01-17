@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-10 17:21+0000\n"
+"POT-Creation-Date: 2013-01-17 20:33+0000\n"
 "PO-Revision-Date: 2011-09-23 14:35+0100\n"
 "Last-Translator: Cristian Marchi <cri.penta@gmail.com>\n"
 "Language-Team: Italian Translation Team <xfce-it-translators@googlegroups.com>\n"
@@ -66,9 +66,8 @@ msgid "Question"
 msgstr "Domanda"
 
 #: ../libxfce4ui/xfce-sm-client.c:1403
-#, fuzzy
 msgid "Session management client ID"
-msgstr "Socket del gestore della sessione"
+msgstr "Client ID del gestore di sessione"
 
 #: ../libxfce4ui/xfce-sm-client.c:1403
 msgid "ID"
@@ -197,7 +196,7 @@ msgstr "Scorciatoia"
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:267
 #, c-format
 msgid "Press now the keyboard keys you want to use to trigger the %s '%s'."
-msgstr ""
+msgstr "Premere i tasti della tastiera da utilizzare per abilitare il %s \"%s\""
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:291
 msgid "Shortcut:"
