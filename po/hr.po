@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-12-30 23:21+0000\n"
+"POT-Creation-Date: 2013-01-18 17:57+0000\n"
 "PO-Revision-Date: 2010-03-26 12:16+0100\n"
 "Last-Translator: Petar Koretić <petar.koretic@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,34 +18,34 @@ msgstr ""
 
 #: ../libxfce4ui/xfce-dialogs.c:98
 msgid "Failed to open web browser for online documentation"
-msgstr ""
+msgstr "Neuspjelo otvaranje web preglednika za dokumentaciju na mreži"
 
 #: ../libxfce4ui/xfce-dialogs.c:213
 #, c-format
 msgid "Do you want to read the %s manual online?"
-msgstr ""
+msgstr "Želite li čitati %s priručnik na mreži?"
 
 #: ../libxfce4ui/xfce-dialogs.c:215
 msgid "Do you want to read the manual online?"
-msgstr ""
+msgstr "Želite li čitati priručnik na mreži?"
 
 #: ../libxfce4ui/xfce-dialogs.c:218
 msgid "Online Documentation"
-msgstr ""
+msgstr "Dokumentaqcija na mreži"
 
 #: ../libxfce4ui/xfce-dialogs.c:221
 msgid ""
 "You will be redirected to the documentation website where the help pages are "
 "maintained and translated."
-msgstr ""
+msgstr "Biti ćete preusmjereni na web stranicu dokumantacije gdje se stranice pomoći održavaju i prevode."
 
 #: ../libxfce4ui/xfce-dialogs.c:225
 msgid "_Read Online"
-msgstr ""
+msgstr "_Čitaj na mreži"
 
 #: ../libxfce4ui/xfce-dialogs.c:237
 msgid "_Always go directly to the online documentation"
-msgstr ""
+msgstr "_Uvijek idi direktno na dokumentaciju na mreži"
 
 #: ../libxfce4ui/xfce-dialogs.c:281
 msgid "Information"
@@ -77,7 +77,7 @@ msgstr "Onemogućite upravljanje sesijom"
 
 #: ../libxfce4ui/xfce-sm-client.c:1414
 msgid "Session management options"
-msgstr ""
+msgstr "Opcije upravljanja sesijom"
 
 #: ../libxfce4ui/xfce-sm-client.c:1415
 msgid "Show session management options"
@@ -148,7 +148,7 @@ msgstr ""
 #. Warn the user
 #: ../libxfce4kbd-private/xfce-shortcuts.c:110
 msgid "Please use another key combination."
-msgstr ""
+msgstr "Molim koristite drugu kmbinaciju tipki."
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:111
 #, c-format
@@ -642,7 +642,7 @@ msgstr "Hvala svima koji su pomogli učiniti ovaj software dostupnim!"
 msgid ""
 "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
-msgstr ""
+msgstr "Xfce 4 autorsko pravo Olivier Fourdan (fourdan@xfce.org). Različiti dijelovi su autorska prava njihovih poštovanih autora."
 
 #: ../xfce4-about/main.c:288
 msgid ""
