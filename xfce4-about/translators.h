@@ -24,7 +24,7 @@
 #include <gtk/gtk.h>
 #include <libxfce4util/libxfce4util.h>
 
-#define TRANSLATORS_H_STAMP "2013-01-13 00:21:12"
+#define TRANSLATORS_H_STAMP "2013-01-20 00:21:07"
 #define ATSIGN "@"
 #define DOTSIGN "."
 
@@ -121,6 +121,7 @@ static const TranslatorInfo xfce_translators_ca[] =
   { "Roger Pueyo Centelles", "xfce" ATSIGN "rogerpueyo" DOTSIGN "com", FALSE },
   { "Harald Servat", "redcrash" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Marc Pastor Sanz", "sandandmercury" ATSIGN "gmail" DOTSIGN "com", FALSE },
+  { "Xan", "xancorreu" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { NULL, NULL }
 };
 
@@ -221,6 +222,7 @@ static const TranslatorInfo xfce_translators_es[] =
   { "Octavio Bernal Quiroz", "octavio" DOTSIGN "bernal" DOTSIGN "q" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Sergio García", "oigres200" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "prflr88", "prflr88" ATSIGN "gmail" DOTSIGN "com", FALSE },
+  { "David Segura Monroy", "davidseg" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "sebikul", "", FALSE },
   { NULL, NULL }
 };
@@ -481,6 +483,7 @@ static const TranslatorInfo xfce_translators_pa[] =
 static const TranslatorInfo xfce_translators_pl[] =
 {
   { "Piotr Sokół", "psokol" ATSIGN "jabster" DOTSIGN "pl", TRUE },
+  { "Emanuel Borówko", "trzynastak" ATSIGN "o2" DOTSIGN "pl", FALSE },
   { "Marcin Romańczuk", "abjsyn" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Ewelina Drożańska", "blinqa" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Paweł Drożański", "pawdro" ATSIGN "gmail" DOTSIGN "com", FALSE },
@@ -753,6 +756,7 @@ static const TranslatorInfo xfce_translators_zh_CN[] =
   { "Chipong Luo", "chipong" DOTSIGN "luo" ATSIGN "yahoo" DOTSIGN "com", TRUE },
   { "Hunt Xu", "mhuntxu" ATSIGN "gmail" DOTSIGN "com", TRUE },
   { "玉堂 白鹤", "yjwork" DOTSIGN "xfce" ATSIGN "gmail" DOTSIGN "com", TRUE },
+  { "cicku", "cickumqt" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Hao Cui", "cuihao" DOTSIGN "leo" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Qianqian Fang", "fangqq" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "haobug", "qinghao1" ATSIGN "foxmail" DOTSIGN "com", FALSE },
