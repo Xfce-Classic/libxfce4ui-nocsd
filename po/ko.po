@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: libxfce4ui.master\n"
 "Report-Msgid-Bugs-To: https://bugzilla.xfce.org/enter_bug.cgi?product=Libxfce4ui\n"
 "POT-Creation-Date: 2013-01-23 15:39+0000\n"
-"PO-Revision-Date: 2013-01-24 04:11+0900\n"
+"PO-Revision-Date: 2013-01-24 04:16+0900\n"
 "Last-Translator: Seong-ho Cho <darkcircle.0426@gmail.com>\n"
 "Language-Team: xfce-i18n <xfce-i18n@xfce.org>\n"
 "Language: ko\n"
@@ -230,7 +230,7 @@ msgstr "창 순환(역순)"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:44
 msgid "Switch window for same application"
-msgstr "동일한 프로그램 창 전환"
+msgstr "동일 프로그램 창 전환"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:45
 msgid "Switch application"
@@ -262,7 +262,7 @@ msgstr "창 이동"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:52
 msgid "Resize window"
-msgstr "창 크기 조정"
+msgstr "창 크기 조절"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:53
 msgid "Shade window"
