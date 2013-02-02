@@ -24,7 +24,7 @@
 #include <gtk/gtk.h>
 #include <libxfce4util/libxfce4util.h>
 
-#define TRANSLATORS_H_STAMP "2013-01-27 00:21:09"
+#define TRANSLATORS_H_STAMP "2013-02-03 00:21:09"
 #define ATSIGN "@"
 #define DOTSIGN "."
 
@@ -489,7 +489,6 @@ static const TranslatorInfo xfce_translators_pa[] =
 static const TranslatorInfo xfce_translators_pl[] =
 {
   { "Piotr Sokół", "psokol" ATSIGN "jabster" DOTSIGN "pl", TRUE },
-  { "Emanuel Borówko", "trzynastak" ATSIGN "o2" DOTSIGN "pl", FALSE },
   { "Marcin Romańczuk", "abjsyn" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Ewelina Drożańska", "blinqa" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Paweł Drożański", "pawdro" ATSIGN "gmail" DOTSIGN "com", FALSE },
@@ -511,7 +510,7 @@ static const TranslatorInfo xfce_translators_pt[] =
 {
   { "Nuno Miguel", "nunomgue" ATSIGN "gmail" DOTSIGN "com", TRUE },
   { "Joel Patrão", "joel" DOTSIGN "patrao" ATSIGN "gmail" DOTSIGN "com", FALSE },
-  { "Bruno Martins", "bmomartins" ATSIGN "gmail" DOTSIGN "com", FALSE },
+  { "Bruno Martins", "bmartins712" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Sergio Marques", "smarquespt" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { NULL, NULL }
 };
@@ -588,7 +587,7 @@ static const TranslatorInfo xfce_translators_ru[] =
   { "ton", "tonawuda" ATSIGN "inbox" DOTSIGN "ru", FALSE },
   { "Urmas D", "davian818" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Ivan Nikolaev", "voidexp" ATSIGN "gmail" DOTSIGN "com", FALSE },
-  { "Victor Homyakov", "homyakov" ATSIGN "isida" DOTSIGN "by", FALSE },
+  { "Victor Homyakov", "vkhomyackov" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { NULL, NULL }
 };
 
