@@ -511,7 +511,6 @@ msgid "Titled Dialog"
 msgstr "حوار معنون"
 
 #: ../glade/libxfce4ui.xml.in.h:3
-#, fuzzy
 msgid "Xfce 4 Widgets"
 msgstr "أدوات إكسفس 4"
 
