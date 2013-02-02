@@ -716,9 +716,9 @@ msgstr "إصدار %s, موزع منطرف %s"
 
 #. I18N: %s will be replaced by the Xfce version number
 #: ../xfce4-about/main.c:489
-#, fuzzy, c-format
+#, c-format
 msgid "Version %s"
-msgstr "%s (على %s)"
+msgstr "إصدار %s"
 
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
@@ -744,14 +744,12 @@ msgid "Translations supervision"
 msgstr "إشراف على الترجمات"
 
 #: ../xfce4-about/contributors.h:136
-#, fuzzy
 msgid "Translators"
-msgstr "شفّاف"
+msgstr "المترجمون"
 
 #: ../xfce4-about/contributors.h:139
-#, fuzzy
 msgid "Previous contributors"
-msgstr "مساحة العمل السابقة"
+msgstr "المساعمون السابقون"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:1
 msgid "About Xfce"
