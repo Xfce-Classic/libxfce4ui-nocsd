@@ -127,11 +127,11 @@ xfce_shortcut_conflict_dialog (GtkWindow   *parent,
 
             /* We need to get the human readable string of the action name */
             owner_action_name =
-              g_markup_escape_text (xfce_shortcuts_xfwm4_get_feature_name (owner_action), -1);
+              g_strdup (xfce_shortcuts_xfwm4_get_feature_name (owner_action));
 
           }
         else
-          owner_action_name = g_markup_escape_text (owner_action, -1);
+          owner_action_name = g_strdup(owner_action);
 
         DBG ("Owner action name: %s", owner_action_name);
 
@@ -142,16 +142,16 @@ xfce_shortcut_conflict_dialog (GtkWindow   *parent,
             /* We need to get the human readable string of the action name */
 
             other_action_name =
-              g_markup_escape_text (xfce_shortcuts_xfwm4_get_feature_name (other_action), -1);
+              g_strdup (xfce_shortcuts_xfwm4_get_feature_name (other_action));
 
           }
         else
-          other_action_name = g_markup_escape_text (other_action, -1);
+          other_action_name = g_strdup (other_action);
 
         secondary_text = g_strdup_printf (_(conflict_messages[i].message), other_action_name);
 
-        owner_button_text = g_markup_printf_escaped (_(conflict_messages[i].owner_button_text), owner_action_name);
-        other_button_text = g_markup_printf_escaped (_(conflict_messages[i].other_button_text), other_action_name);
+        owner_button_text = g_strdup_printf (_(conflict_messages[i].owner_button_text), owner_action_name);
+        other_button_text = g_strdup_printf (_(conflict_messages[i].other_button_text), other_action_name);
 
         response = xfce_message_dialog (parent, title, GTK_STOCK_DIALOG_QUESTION,
                                         title, secondary_text,
