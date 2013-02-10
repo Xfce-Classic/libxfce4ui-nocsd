@@ -7,16 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-14 17:39+0000\n"
+"POT-Creation-Date: 2013-02-10 17:00+0000\n"
 "PO-Revision-Date: 2012-04-27 22:58-0600\n"
 "Last-Translator: Sergio García <oigres200@gmail.com>\n"
 "Language-Team: Spanish/ES <xfce-i18n@xfce.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Country: SPAIN\n"
 "Language: \n"
 "X-Poedit-Language: Spanish\n"
-"X-Poedit-Country: SPAIN\n"
 
 #: ../libxfce4ui/xfce-dialogs.c:98
 msgid "Failed to open web browser for online documentation"
@@ -68,28 +68,24 @@ msgid "Question"
 msgstr "Pregunta"
 
 #: ../libxfce4ui/xfce-sm-client.c:1403
-#, fuzzy
 msgid "Session management client ID"
-msgstr "Socket del gestor de sesión"
+msgstr "Mantenimiento de gestión de ID de cliente"
 
 #: ../libxfce4ui/xfce-sm-client.c:1403
 msgid "ID"
 msgstr "ID"
 
 #: ../libxfce4ui/xfce-sm-client.c:1404
-#, fuzzy
 msgid "Disable session management"
-msgstr "Socket del gestor de sesión"
+msgstr "Desactivar gestión de sesión"
 
 #: ../libxfce4ui/xfce-sm-client.c:1414
-#, fuzzy
 msgid "Session management options"
-msgstr "Socket del gestor de sesión"
+msgstr "Opciones de gestor de sesión"
 
 #: ../libxfce4ui/xfce-sm-client.c:1415
-#, fuzzy
 msgid "Show session management options"
-msgstr "Socket del gestor de sesión"
+msgstr "Mostrar opciones de gestión de sesión"
 
 #: ../libxfce4ui/xfce-sm-client.c:1591
 #, c-format
@@ -111,7 +107,7 @@ msgstr ""
 "El directorio de trabajo \"%s\" no existe. No se usará al expandir \"%s\"."
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "This shortcut is already being used for the action '%s'. Which action do you "
 "want to use?"
@@ -123,21 +119,21 @@ msgstr ""
 #: ../libxfce4kbd-private/xfce-shortcuts.c:57
 #: ../libxfce4kbd-private/xfce-shortcuts.c:60
 #: ../libxfce4kbd-private/xfce-shortcuts.c:63
-#, fuzzy, c-format
+#, c-format
 msgid "Use '%s'"
-msgstr "Usar %s"
+msgstr "Utilizar «%s»"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:54
 #: ../libxfce4kbd-private/xfce-shortcuts.c:57
 #: ../libxfce4kbd-private/xfce-shortcuts.c:60
 #: ../libxfce4kbd-private/xfce-shortcuts.c:63
-#, fuzzy, c-format
+#, c-format
 msgid "Keep '%s'"
-msgstr "Mantener %s"
+msgstr "Mantener «%s»"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
 #: ../libxfce4kbd-private/xfce-shortcuts.c:59
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "This shortcut is already being used for the command '%s'. Which action do "
 "you want to use?"
@@ -146,7 +142,7 @@ msgstr ""
 "<b>otra acción del gestor de ventanas</b>. ¿Qué acción desea usar?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "This shortcut is already being used by the action '%s'. Which action do you "
 "want to use?"
@@ -163,7 +159,7 @@ msgstr "Porfavor utilice otra combinación de teclas."
 #: ../libxfce4kbd-private/xfce-shortcuts.c:111
 #, c-format
 msgid "%s already triggers this action."
-msgstr "% ya ha inicializado esta accion"
+msgstr "% ya ha desencadenado esta acción."
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:116
 #, c-format
@@ -171,51 +167,47 @@ msgid "Conflicting actions for %s"
 msgstr "Acciones en conflicto para %s"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:176
-#, fuzzy
 msgid "This shortcut is already being used for something else."
-msgstr "El atajo ya está siendo usado por algo."
+msgstr "Este enlace ya se está utilizando por otra."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:209
-#, fuzzy
 msgid "Window Manager Action Shortcut"
-msgstr "Introduzca el atajo para la acción del gestor de ventanas"
+msgstr "Enlace de Acción del Gestor de Ventanas"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:212
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:226
-#, fuzzy
 msgid "action"
-msgstr "Acción"
+msgstr "acción"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:216
-#, fuzzy
 msgid "Command Shortcut"
-msgstr "Introduzca atajo para comando"
+msgstr "Enlace de Comando"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:219
 msgid "command"
-msgstr "Comando"
+msgstr "comando"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:223
 msgid "Shortcut"
-msgstr "Atajo"
+msgstr "Enlace"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:267
 #, c-format
 msgid "Press now the keyboard keys you want to use to trigger the %s '%s'."
-msgstr ""
+msgstr "Pulsa ahora las teclas del teclado que quiere utilizar para desencadenar %s  en «%s»."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:291
 msgid "Shortcut:"
-msgstr "Atajo:"
+msgstr "Enlace:"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:296
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:475
 msgid "No keys pressed yet, proceed."
-msgstr ""
+msgstr "Aún no hay ninguna tecla pulsada, púlsela."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:378
 msgid "Could not grab the keyboard."
@@ -299,7 +291,7 @@ msgstr "Pegar ventana a todos los escritorios"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:55
 msgid "Raise window"
-msgstr "Elevar ventana"
+msgstr "Subir ventana"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:56
 msgid "Lower window"
@@ -514,14 +506,12 @@ msgid "Subtitle"
 msgstr "Subtítulo"
 
 #: ../glade/libxfce4ui.xml.in.h:2
-#, fuzzy
 msgid "Titled Dialog"
-msgstr "Fuente del título"
+msgstr "Diálogo de Título"
 
 #: ../glade/libxfce4ui.xml.in.h:3
-#, fuzzy
 msgid "Xfce 4 Widgets"
-msgstr "Configuración del gestor de ventanas de Xfce 4"
+msgstr "Widgets de Xfce 4"
 
 #: ../xfce4-about/main.c:52
 msgid "Version information"
@@ -532,9 +522,8 @@ msgid "Window Manager"
 msgstr "Gestor de ventanas"
 
 #: ../xfce4-about/main.c:71
-#, fuzzy
 msgid "Handles the placement of windows on the screen."
-msgstr "En el _centro de la pantalla"
+msgstr "Gestiona el lugar de las ventanas en la pantalla."
 
 #: ../xfce4-about/main.c:74
 msgid "Panel"
@@ -549,9 +538,8 @@ msgstr ""
 "cambiador de espacios de trabajo y más."
 
 #: ../xfce4-about/main.c:79
-#, fuzzy
 msgid "Desktop Manager"
-msgstr "Gestor de ventanas"
+msgstr "Gestor de Escritorio"
 
 #: ../xfce4-about/main.c:80
 msgid ""
@@ -562,9 +550,8 @@ msgstr ""
 "iconos para aplicaciones minimizadas o lanzadores, dispositivos y carpetas."
 
 #: ../xfce4-about/main.c:84
-#, fuzzy
 msgid "File Manager "
-msgstr "Gestor de ventanas"
+msgstr "Gestor de Ficheros"
 
 #: ../xfce4-about/main.c:85
 msgid ""
@@ -575,9 +562,8 @@ msgstr ""
 "de ser fácil de usar y rápido."
 
 #: ../xfce4-about/main.c:89
-#, fuzzy
 msgid "Session Manager"
-msgstr "Socket del gestor de sesión"
+msgstr "Gestión de Sesión"
 
 #: ../xfce4-about/main.c:90
 msgid ""
@@ -611,9 +597,8 @@ msgstr ""
 "pueda encontrarlas y abrirlas rápidamente."
 
 #: ../xfce4-about/main.c:104
-#, fuzzy
 msgid "Settings Daemon"
-msgstr "Socket del administrador de configuración"
+msgstr "Ajuste de Demonio"
 
 #: ../xfce4-about/main.c:105
 msgid "D-Bus-based configuration storage system."
@@ -706,9 +691,9 @@ msgstr ""
 "decisión) cualquier versión posterior."
 
 #: ../xfce4-about/main.c:442
-#, fuzzy, c-format
+#, c-format
 msgid "Type '%s --help' for usage information."
-msgstr "Pruebe \"%s --help\" para más información"
+msgstr "Escriba '%s --help' para más información."
 
 #: ../xfce4-about/main.c:448
 msgid "Unable to initialize GTK+."
@@ -742,9 +727,9 @@ msgstr "Version %s, distribuida por %s"
 
 #. I18N: %s will be replaced by the Xfce version number
 #: ../xfce4-about/main.c:489
-#, fuzzy, c-format
+#, c-format
 msgid "Version %s"
-msgstr "%s (en %s)"
+msgstr "Versión %s"
 
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
@@ -770,14 +755,12 @@ msgid "Translations supervision"
 msgstr "Supervisión de traducciones"
 
 #: ../xfce4-about/contributors.h:136
-#, fuzzy
 msgid "Translators"
-msgstr "Transparente"
+msgstr "Traductores"
 
 #: ../xfce4-about/contributors.h:139
-#, fuzzy
 msgid "Previous contributors"
-msgstr "Área de trabajo anterior"
+msgstr "Contribuciones anteriores"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:1
 msgid "About Xfce"
