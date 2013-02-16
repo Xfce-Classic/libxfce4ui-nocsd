@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-02 16:45+0000\n"
+"POT-Creation-Date: 2013-02-16 12:06+0000\n"
 "PO-Revision-Date: 2008-06-30 17:35+0300\n"
 "Last-Translator: Dmitry Nikitin <luckas_fb@mail.ru>\n"
 "Language-Team: Ukrainian <xfce4-dev@xfce.org>\n"
@@ -198,7 +198,9 @@ msgstr "Комбінація клавіш"
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:267
 #, c-format
 msgid "Press now the keyboard keys you want to use to trigger the %s '%s'."
-msgstr "Натисніть тепер ті кнопки на клавіатурі, які Ви бажаєте використати для %s '%s'."
+msgstr ""
+"Натисніть тепер ті кнопки на клавіатурі, які Ви бажаєте використати для %s "
+"'%s'."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:291
 msgid "Shortcut:"
@@ -407,7 +409,7 @@ msgstr "Перемістити вікно ліворуч"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:84
 msgid "Tile window to the right"
-msgstr "Перемістити вікно на праворуч"
+msgstr "Перемістити вікно праворуч"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:85
 msgid "Show desktop"
