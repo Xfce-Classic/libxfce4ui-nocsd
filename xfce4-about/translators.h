@@ -24,7 +24,7 @@
 #include <gtk/gtk.h>
 #include <libxfce4util/libxfce4util.h>
 
-#define TRANSLATORS_H_STAMP "2013-02-17 00:21:08"
+#define TRANSLATORS_H_STAMP "2013-02-24 00:21:03"
 #define ATSIGN "@"
 #define DOTSIGN "."
 
@@ -82,7 +82,7 @@ static const TranslatorInfo xfce_translators_be[] =
   { "Arthur Schebetau", "archisoft6" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "belarus", "useq" ATSIGN "list" DOTSIGN "ru", FALSE },
   { "Mikalai Udodau", "crom-a" ATSIGN "tut" DOTSIGN "by", FALSE },
-  { "Mike Gelfand", "mike" DOTSIGN "dld" ATSIGN "gmail" DOTSIGN "com", FALSE },
+  { "Mike Gelfand", "mikedld" ATSIGN "mikedld" DOTSIGN "com", FALSE },
   { NULL, NULL }
 };
 
@@ -509,6 +509,7 @@ static const TranslatorInfo xfce_translators_pl[] =
 static const TranslatorInfo xfce_translators_pt[] =
 {
   { "Nuno Miguel", "nunomgue" ATSIGN "gmail" DOTSIGN "com", TRUE },
+  { "Diogo Alves", "empty" DOTSIGN "block" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Joel Patrão", "joel" DOTSIGN "patrao" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Bruno Martins", "bmartins712" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Sergio Marques", "smarquespt" ATSIGN "gmail" DOTSIGN "com", FALSE },
@@ -547,7 +548,7 @@ static const TranslatorInfo xfce_translators_ro[] =
   { "Mișu Moldovan", "dumol" ATSIGN "xfce" DOTSIGN "org", TRUE },
   { "George Pîrlea", "pirlea" DOTSIGN "george" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Igor Stirbu", "igor" DOTSIGN "stirbu" ATSIGN "gmail" DOTSIGN "com", FALSE },
-  { "Tanya Pascal", "josephinex21" ATSIGN "gmail" DOTSIGN "com", FALSE },
+  { "josephine", "", FALSE },
   { "Ionut Ovejanu", "ovejanu" ATSIGN "yahoo" DOTSIGN "com", FALSE },
   { "strainu", "xfce" ATSIGN "strainu" DOTSIGN "ro", FALSE },
   { "Horia Dutescu", "vladi" DOTSIGN "linux" ATSIGN "gmail" DOTSIGN "com", FALSE },
@@ -769,6 +770,7 @@ static const TranslatorInfo xfce_translators_zh_CN[] =
   { "Qianqian Fang", "fangqq" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "haobug", "qinghao1" ATSIGN "foxmail" DOTSIGN "com", FALSE },
   { "Ganghua Leng", "hiweed" ATSIGN "gmail" DOTSIGN "com", FALSE },
+  { "Frank Lee", "lifei" ATSIGN "schaeffler" DOTSIGN "com", FALSE },
   { "Michael Lin", "linmx0130" ATSIGN "163" DOTSIGN "com", FALSE },
   { "Howard Chan", "smartboyhw" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "tuhaihe", "1132321739qq" ATSIGN "gmail" DOTSIGN "com", FALSE },
