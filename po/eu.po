@@ -724,9 +724,9 @@ msgstr "%s bertsioa, %s-k banatua"
 
 #. I18N: %s will be replaced by the Xfce version number
 #: ../xfce4-about/main.c:489
-#, fuzzy, c-format
+#, c-format
 msgid "Version %s"
-msgstr "%s (%s-(e)n)"
+msgstr "%s bertsioa"
 
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
@@ -752,12 +752,10 @@ msgid "Translations supervision"
 msgstr "Itzulpen gainbegiratzea"
 
 #: ../xfce4-about/contributors.h:136
-#, fuzzy
 msgid "Translators"
-msgstr "Gardena"
+msgstr "Piarres Beobide <pi@beobide.net>"
 
 #: ../xfce4-about/contributors.h:139
-#, fuzzy
 msgid "Previous contributors"
 msgstr "Aurreko idazmahaia"
 
