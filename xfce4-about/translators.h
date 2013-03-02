@@ -24,7 +24,7 @@
 #include <gtk/gtk.h>
 #include <libxfce4util/libxfce4util.h>
 
-#define TRANSLATORS_H_STAMP "2013-02-24 00:21:03"
+#define TRANSLATORS_H_STAMP "2013-03-03 00:21:07"
 #define ATSIGN "@"
 #define DOTSIGN "."
 
@@ -162,6 +162,7 @@ static const TranslatorInfo xfce_translators_de[] =
   { "Mark Trompell", "mark" ATSIGN "foresightlinux" DOTSIGN "org", FALSE },
   { "Matthias Mailänder", "matthias" ATSIGN "mailaender" DOTSIGN "name", FALSE },
   { "Michael Schmitt", "user" DOTSIGN "of" DOTSIGN "xfce" ATSIGN "googlemail" DOTSIGN "com", FALSE },
+  { "Simon Steinbeiss", "ochosi" ATSIGN "xfce" DOTSIGN "org", FALSE },
   { "Niklas Reinmuth", "Niklas" DOTSIGN "Reinmuth" ATSIGN "googlemail" DOTSIGN "com", FALSE },
   { "Paul Seyfert", "pseyfert" ATSIGN "mathphys" DOTSIGN "fsk" DOTSIGN "uni-heidelberg" DOTSIGN "de", FALSE },
   { "Roland Kübert", "roland" ATSIGN "upic" DOTSIGN "de", FALSE },
@@ -272,6 +273,7 @@ static const TranslatorInfo xfce_translators_fi[] =
 
 static const TranslatorInfo xfce_translators_fr[] =
 {
+  { "jc jc1", "jc1" DOTSIGN "quebecos" ATSIGN "gmail" DOTSIGN "com", TRUE },
   { "Xavier Devlamynck", "magicrhesus" ATSIGN "ouranos" DOTSIGN "be", TRUE },
   { "Mike Massonnet", "mmassonnet" ATSIGN "gmail" DOTSIGN "com", TRUE },
   { "Durand-Favreau Arnaud", "biginoz" ATSIGN "free" DOTSIGN "fr", FALSE },
@@ -279,7 +281,6 @@ static const TranslatorInfo xfce_translators_fr[] =
   { "Iliyas Jorio", "inv" DOTSIGN "jorio" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Benoit THIBAUD", "frombenny" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Mario Gervais", "gervais" DOTSIGN "mario" ATSIGN "ymail" DOTSIGN "com", FALSE },
-  { "jc jc1", "jc1" DOTSIGN "quebecos" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Jérôme Guelfucci", "jeromeg" ATSIGN "xfce" DOTSIGN "org", FALSE },
   { "Jean-Philippe Fleury", "contact" ATSIGN "jpfleury" DOTSIGN "net", FALSE },
   { "Yanice lei00", "cherrak" ATSIGN "lavabit" DOTSIGN "com", FALSE },
@@ -288,7 +289,6 @@ static const TranslatorInfo xfce_translators_fr[] =
   { "Maximilian Schleiss", "maximilian" ATSIGN "xfce" DOTSIGN "org", FALSE },
   { "marc doutreloux", "mdoutreloux" ATSIGN "yahoo" DOTSIGN "fr", FALSE },
   { "Nicolas Bidault", "nico_bidault" ATSIGN "yahoo" DOTSIGN "fr", FALSE },
-  { "Pat0n75", "", FALSE },
   { "Anthony Jorion", "pingax" ATSIGN "frugalware" DOTSIGN "org", FALSE },
   { "Saïd Bouras", "said" DOTSIGN "bouras" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Steve Dodier", "sidnioulz" ATSIGN "gmail" DOTSIGN "com", FALSE },
