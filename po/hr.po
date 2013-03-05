@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-18 17:57+0000\n"
+"POT-Creation-Date: 2013-03-05 05:21+0000\n"
 "PO-Revision-Date: 2010-03-26 12:16+0100\n"
 "Last-Translator: Petar Koretić <petar.koretic@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,7 +37,9 @@ msgstr "Dokumentaqcija na mreži"
 msgid ""
 "You will be redirected to the documentation website where the help pages are "
 "maintained and translated."
-msgstr "Biti ćete preusmjereni na web stranicu dokumantacije gdje se stranice pomoći održavaju i prevode."
+msgstr ""
+"Biti ćete preusmjereni na web stranicu dokumantacije gdje se stranice pomoći "
+"održavaju i prevode."
 
 #: ../libxfce4ui/xfce-dialogs.c:225
 msgid "_Read Online"
@@ -173,7 +175,7 @@ msgstr ""
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:212
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:226
 msgid "action"
-msgstr "akcija"
+msgstr "radnja"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:216
 msgid "Command Shortcut"
@@ -642,7 +644,9 @@ msgstr "Hvala svima koji su pomogli učiniti ovaj software dostupnim!"
 msgid ""
 "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
-msgstr "Xfce 4 autorsko pravo Olivier Fourdan (fourdan@xfce.org). Različiti dijelovi su autorska prava njihovih poštovanih autora."
+msgstr ""
+"Xfce 4 autorsko pravo Olivier Fourdan (fourdan@xfce.org). Različiti dijelovi "
+"su autorska prava njihovih poštovanih autora."
 
 #: ../xfce4-about/main.c:288
 msgid ""
