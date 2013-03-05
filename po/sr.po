@@ -3,7 +3,7 @@
 # This file is distributed under the same license as the libxfce4ui package.
 # salepetronije <salepetronije@gmail.com>, 2012.
 # Саша Петровић <salepetronije@gmail.com>, 2013.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui\n"
@@ -508,7 +508,7 @@ msgstr "Управља смештајем прозора на екрану."
 
 #: ../xfce4-about/main.c:74
 msgid "Panel"
-msgstr "Плоча"
+msgstr "Полица"
 
 #: ../xfce4-about/main.c:75
 msgid "Program launchers, window buttons, applications menu, workspace switcher and more."
