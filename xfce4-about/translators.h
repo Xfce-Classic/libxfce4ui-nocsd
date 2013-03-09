@@ -24,7 +24,7 @@
 #include <gtk/gtk.h>
 #include <libxfce4util/libxfce4util.h>
 
-#define TRANSLATORS_H_STAMP "2013-03-03 00:21:07"
+#define TRANSLATORS_H_STAMP "2013-03-10 00:21:08"
 #define ATSIGN "@"
 #define DOTSIGN "."
 
@@ -79,8 +79,10 @@ static const TranslatorInfo xfce_translators_ast[] =
 static const TranslatorInfo xfce_translators_be[] =
 {
   { "Andrej Zakharevich", "andrej" ATSIGN "zahar" DOTSIGN "ws", TRUE },
+  { "Anton Barycheuski", "antofa1" ATSIGN "mail" DOTSIGN "ru", FALSE },
   { "Arthur Schebetau", "archisoft6" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "belarus", "useq" ATSIGN "list" DOTSIGN "ru", FALSE },
+  { "Юрый Кашчэеў", "zowenko" ATSIGN "open" DOTSIGN "by", FALSE },
   { "Mikalai Udodau", "crom-a" ATSIGN "tut" DOTSIGN "by", FALSE },
   { "Mike Gelfand", "mikedld" ATSIGN "mikedld" DOTSIGN "com", FALSE },
   { NULL, NULL }
@@ -137,6 +139,7 @@ static const TranslatorInfo xfce_translators_cs[] =
 static const TranslatorInfo xfce_translators_da[] =
 {
   { "Per Kongstad", "p_kongstad" ATSIGN "op" DOTSIGN "pl", TRUE },
+  { "Aputsiaq Janussen", "aj" ATSIGN "isit" DOTSIGN "gl", FALSE },
   { "Kris Thomsen", "mail" ATSIGN "kristhomsen" DOTSIGN "dk", FALSE },
   { "Morten Juhl-Johansen Zölde-Fejér", "mjjzf" ATSIGN "syntaktisk" DOTSIGN "dk", FALSE },
   { NULL, NULL }
@@ -449,6 +452,7 @@ static const TranslatorInfo xfce_translators_ms[] =
 
 static const TranslatorInfo xfce_translators_nb[] =
 {
+  { "Johan Skorild", "x" DOTSIGN "bluebanana" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "takoi", "thomas" DOTSIGN "amland" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Terje Uriansrud", "terje" ATSIGN "uriansrud" DOTSIGN "net", FALSE },
   { "Kevin Brubeck Unhammer", "javkalas" ATSIGN "mm" DOTSIGN "st", FALSE },
@@ -774,6 +778,7 @@ static const TranslatorInfo xfce_translators_zh_CN[] =
   { "Michael Lin", "linmx0130" ATSIGN "163" DOTSIGN "com", FALSE },
   { "Howard Chan", "smartboyhw" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "tuhaihe", "1132321739qq" ATSIGN "gmail" DOTSIGN "com", FALSE },
+  { "winjeg kong", "winjeg" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { NULL, NULL }
 };
 
