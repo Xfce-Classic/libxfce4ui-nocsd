@@ -1,21 +1,21 @@
 # Hungarian translation of libxfce4ui
 # Copyright 2009. Free Software Foundation, Inc.
 # This file is distributed under the same license as the libxfce4ui package.
-#
+# 
 # Gabor Kelemen <kelemeng at gnome dot hu>, 2009, 2011, 2012.
 # Sándor Zelenák <nem11nator at gmail dot com>, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-12-28 09:06+0100\n"
+"POT-Creation-Date: 2013-03-13 00:36+0000\n"
 "PO-Revision-Date: 2012-11-26 23:29+0100\n"
 "Last-Translator: Imre Benedek <nucleo@indamail.hu>\n"
 "Language-Team: Magyar <gnome-hu-list at gnome dot org>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Lokalize 1.0\n"
 
@@ -53,9 +53,8 @@ msgid "_Always go directly to the online documentation"
 msgstr "Közvetlenül az online _dokumentáció megnyitása mindig"
 
 #: ../libxfce4ui/xfce-dialogs.c:281
-#, fuzzy
 msgid "Information"
-msgstr "Verzióinformációk"
+msgstr "Információ"
 
 #: ../libxfce4ui/xfce-dialogs.c:314
 msgid "Warning"
@@ -70,28 +69,24 @@ msgid "Question"
 msgstr "Kérdés"
 
 #: ../libxfce4ui/xfce-sm-client.c:1403
-#, fuzzy
 msgid "Session management client ID"
-msgstr "Munkamenet-kezelő foglalat"
+msgstr "Munkamenet-kezelés kliens ID"
 
 #: ../libxfce4ui/xfce-sm-client.c:1403
 msgid "ID"
 msgstr "Azonosító"
 
 #: ../libxfce4ui/xfce-sm-client.c:1404
-#, fuzzy
 msgid "Disable session management"
-msgstr "Munkamenet-kezelő foglalat"
+msgstr "Munkamenet-kezelés letiltása"
 
 #: ../libxfce4ui/xfce-sm-client.c:1414
-#, fuzzy
 msgid "Session management options"
-msgstr "Munkamenet-kezelő foglalat"
+msgstr "Munkamenet-kezelés lehetőségei"
 
 #: ../libxfce4ui/xfce-sm-client.c:1415
-#, fuzzy
 msgid "Show session management options"
-msgstr "Munkamenet-kezelő foglalat"
+msgstr "Munkamenet-kezelés lehetőségeinek megjelenítése"
 
 #: ../libxfce4ui/xfce-sm-client.c:1591
 #, c-format
@@ -114,7 +109,7 @@ msgstr ""
 "indításakor."
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "This shortcut is already being used for the action '%s'. Which action do you "
 "want to use?"
@@ -149,7 +144,7 @@ msgstr ""
 "műveletet akarja használni?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "This shortcut is already being used by the action '%s'. Which action do you "
 "want to use?"
@@ -173,34 +168,30 @@ msgstr "%s már előidézi ezt a műveletet."
 msgid "Conflicting actions for %s"
 msgstr "Ütköző műveletek ehhez: %s"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:189
+#: ../libxfce4kbd-private/xfce-shortcuts.c:176
 msgid "This shortcut is already being used for something else."
 msgstr "Ez a gyorsbillentyű már használatban van valami másra."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:209
-#, fuzzy
 msgid "Window Manager Action Shortcut"
-msgstr "Ablakkezelő"
+msgstr "Ablakkezelő-művelet gyorsbillentyű"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:212
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:226
-#, fuzzy
 msgid "action"
-msgstr "Művelet"
+msgstr "művelet"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:216
-#, fuzzy
 msgid "Command Shortcut"
-msgstr "Gyorsbillentyű"
+msgstr "Parancs gyorsbillentyű"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:219
-#, fuzzy
 msgid "command"
-msgstr "Parancs:"
+msgstr "parancs"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:223
 msgid "Shortcut"
@@ -212,316 +203,313 @@ msgid "Press now the keyboard keys you want to use to trigger the %s '%s'."
 msgstr ""
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:291
-#, fuzzy
 msgid "Shortcut:"
-msgstr "Gyorsbillentyű"
+msgstr "Gyorsbillentyű:"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:296
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:475
 msgid "No keys pressed yet, proceed."
-msgstr ""
+msgstr "Még nem történt billentyűlenyomás."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:378
-#, fuzzy
 msgid "Could not grab the keyboard."
-msgstr "A beállítások ablak nem hozható létre."
+msgstr ""
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:33
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:36
 msgid "Window operations menu"
 msgstr "Ablakműveletek menü"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:34
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:37
 msgid "Up"
 msgstr "Fel"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:35
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:38
 msgid "Down"
 msgstr "Le"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:36
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:39
 msgid "Left"
 msgstr "Balra"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:37
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:40
 msgid "Right"
 msgstr "Jobbra"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:38
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:41
 msgid "Cancel"
 msgstr "Mégse"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:39
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:42
 msgid "Cycle windows"
 msgstr "Ablakok közti lépkedés"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:40
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:43
 msgid "Cycle windows (Reverse)"
 msgstr "Ablakok közti lépkedés (fordítva)"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:41
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:44
 msgid "Switch window for same application"
 msgstr "Ugyanazon alkalmazás ablakára váltás "
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:42
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:45
 msgid "Switch application"
 msgstr "Alkalmazásváltás"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:43
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:46
 msgid "Close window"
 msgstr "Ablak bezárása"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:44
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:47
 msgid "Maximize window horizontally"
 msgstr "Ablak vízszintes maximalizálása"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:45
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:48
 msgid "Maximize window vertically"
 msgstr "Ablak függőleges maximalizálása"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:46
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:49
 msgid "Maximize window"
 msgstr "Ablak maximalizálása"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:47
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:50
 msgid "Hide window"
 msgstr "Ablak elrejtése"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:48
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:51
 msgid "Move window"
 msgstr "Ablak áthelyezése"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:49
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:52
 msgid "Resize window"
 msgstr "Ablak átméretezése"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:50
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:53
 msgid "Shade window"
 msgstr "Ablak felgördítése"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:51
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:54
 msgid "Stick window"
 msgstr "Ablak mindig látható"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:52
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:55
 msgid "Raise window"
 msgstr "Ablak előtérbe hozása"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:53
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:56
 msgid "Lower window"
 msgstr "Ablak háttérbe küldése"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:54
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:57
 msgid "Raise or lower window"
 msgstr "Ablak előtérbe vagy háttérbe"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:55
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:58
 msgid "Fill window"
 msgstr "Ablak kitöltése"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:56
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:59
 msgid "Fill window horizontally"
 msgstr "Ablak kitöltése vízszintesen"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:57
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:60
 msgid "Fill window vertically"
 msgstr "Ablak kitöltése függőlegesen"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:58
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:61
 msgid "Toggle above"
 msgstr "Más ablakok elé átváltása"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:59
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:62
 msgid "Toggle fullscreen"
 msgstr "Teljes képernyő átváltása"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:60
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:63
 msgid "Move window to upper workspace"
 msgstr "Ablak áthelyezése a felső munkaterületre"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:61
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:64
 msgid "Move window to bottom workspace"
 msgstr "Ablak áthelyezése az alsó munkaterületre"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:62
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:65
 msgid "Move window to left workspace"
 msgstr "Ablak áthelyezése a bal munkaterületre"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:63
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:66
 msgid "Move window to right workspace"
 msgstr "Ablak áthelyezése a jobb munkaterületre"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:64
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:67
 msgid "Move window to previous workspace"
 msgstr "Ablak áthelyezése az előző munkaterületre"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:65
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:68
 msgid "Move window to next workspace"
 msgstr "Ablak áthelyezése a következő munkaterületre"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:66
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:69
 msgid "Move window to workspace 1"
 msgstr "Ablak áthelyezése az 1. munkaterületre"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:67
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:70
 msgid "Move window to workspace 2"
 msgstr "Ablak áthelyezése a 2. munkaterületre"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:68
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:71
 msgid "Move window to workspace 3"
 msgstr "Ablak áthelyezése a 3. munkaterületre"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:69
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:72
 msgid "Move window to workspace 4"
 msgstr "Ablak áthelyezése a 4. munkaterületre"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:70
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:73
 msgid "Move window to workspace 5"
 msgstr "Ablak áthelyezése az 5. munkaterületre"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:71
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:74
 msgid "Move window to workspace 6"
 msgstr "Ablak áthelyezése a 6. munkaterületre"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:72
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:75
 msgid "Move window to workspace 7"
 msgstr "Ablak áthelyezése a 7. munkaterületre"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:73
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:76
 msgid "Move window to workspace 8"
 msgstr "Ablak áthelyezése a 8. munkaterületre"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:74
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:77
 msgid "Move window to workspace 9"
 msgstr "Ablak áthelyezése a 9. munkaterületre"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:75
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:78
 msgid "Move window to workspace 10"
 msgstr "Ablak áthelyezése a 10. munkaterületre"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:76
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:79
 msgid "Move window to workspace 11"
 msgstr "Ablak áthelyezése a 11. munkaterületre"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:77
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:80
 msgid "Move window to workspace 12"
 msgstr "Ablak áthelyezése a 12. munkaterületre"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:78
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:81
 msgid "Tile window to the top"
 msgstr "Ablak igazítása felülre"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:79
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:82
 msgid "Tile window to the bottom"
 msgstr "Ablak igazítása alulra"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:80
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:83
 msgid "Tile window to the left"
 msgstr "Ablak igazítása balra"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:81
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:84
 msgid "Tile window to the right"
 msgstr "Ablak igazítása jobbra"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:82
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:85
 msgid "Show desktop"
 msgstr "Asztal megjelenítése"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:83
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:86
 msgid "Upper workspace"
 msgstr "Felső munkaterület"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:84
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:87
 msgid "Bottom workspace"
 msgstr "Alsó munkaterület"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:85
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:88
 msgid "Left workspace"
 msgstr "Bal munkaterület"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:86
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:89
 msgid "Right workspace"
 msgstr "Jobb munkaterület"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:87
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:90
 msgid "Previous workspace"
 msgstr "Előző munkaterület"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:88
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:91
 msgid "Next workspace"
 msgstr "Következő munkaterület"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:89
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:92
 msgid "Workspace 1"
 msgstr "1. munkaterület"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:90
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:93
 msgid "Workspace 2"
 msgstr "2. munkaterület"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:91
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:94
 msgid "Workspace 3"
 msgstr "3. munkaterület"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:92
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:95
 msgid "Workspace 4"
 msgstr "4. munkaterület"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:93
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:96
 msgid "Workspace 5"
 msgstr "5. munkaterület"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:94
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:97
 msgid "Workspace 6"
 msgstr "6. munkaterület"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:95
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:98
 msgid "Workspace 7"
 msgstr "7. munkaterület"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:96
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:99
 msgid "Workspace 8"
 msgstr "8. munkaterület"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:97
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:100
 msgid "Workspace 9"
 msgstr "9. munkaterület"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:98
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:101
 msgid "Workspace 10"
 msgstr "10. munkaterület"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:99
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:102
 msgid "Workspace 11"
 msgstr "11. munkaterület"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:100
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:103
 msgid "Workspace 12"
 msgstr "12. munkaterület"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:101
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:104
 msgid "Add workspace"
 msgstr "Munkaterület hozzáadása"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:102
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:105
 msgid "Add adjacent workspace"
 msgstr "Szomszédos munkaterület hozzáadása"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:103
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:106
 msgid "Delete last workspace"
 msgstr "Utolsó munkaterület törlése"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:104
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:107
 msgid "Delete active workspace"
 msgstr "Aktív munkaterület törlése"
 
 #: ../glade/libxfce4ui.xml.in.h:1
-msgid "Titled Dialog"
-msgstr "Címzett ablak"
+msgid "Subtitle"
+msgstr "Felirat"
 
 #: ../glade/libxfce4ui.xml.in.h:2
-#, fuzzy
-msgid "Subtitle"
-msgstr "Cím"
+msgid "Titled Dialog"
+msgstr "Címzett ablak"
 
 #: ../glade/libxfce4ui.xml.in.h:3
 msgid "Xfce 4 Widgets"
@@ -536,9 +524,8 @@ msgid "Window Manager"
 msgstr "Ablakkezelő"
 
 #: ../xfce4-about/main.c:71
-#, fuzzy
 msgid "Handles the placement of windows on the screen."
-msgstr "A képernyő kö_zepére"
+msgstr "Az ablakok elhelyezésének kezelése a képernyőn."
 
 #: ../xfce4-about/main.c:74
 msgid "Panel"
@@ -551,9 +538,8 @@ msgid ""
 msgstr "Parancsikonok, ablakgombok, alkalmazások menü, munkaterület-váltó stb."
 
 #: ../xfce4-about/main.c:79
-#, fuzzy
 msgid "Desktop Manager"
-msgstr "Ablakkezelő"
+msgstr "Asztalkezelő"
 
 #: ../xfce4-about/main.c:80
 msgid ""
@@ -564,9 +550,8 @@ msgstr ""
 "minimalizált alkalmazások, parancsikonok, eszközök és mappák ikonjaival."
 
 #: ../xfce4-about/main.c:84
-#, fuzzy
 msgid "File Manager "
-msgstr "Ablakkezelő"
+msgstr "Fájlkezelő"
 
 #: ../xfce4-about/main.c:85
 msgid ""
@@ -577,9 +562,8 @@ msgstr ""
 "környezethez."
 
 #: ../xfce4-about/main.c:89
-#, fuzzy
 msgid "Session Manager"
-msgstr "Munkamenet-kezelő foglalat"
+msgstr "Munkamenet-kezelő"
 
 #: ../xfce4-about/main.c:90
 msgid ""
@@ -614,9 +598,8 @@ msgstr ""
 "futtatás érdekében."
 
 #: ../xfce4-about/main.c:104
-#, fuzzy
 msgid "Settings Daemon"
-msgstr "Beállításkezelő foglalat"
+msgstr "Beállításkezelő"
 
 #: ../xfce4-about/main.c:105
 msgid "D-Bus-based configuration storage system."
@@ -706,7 +689,7 @@ msgstr ""
 "változatában foglaltak alapján kerülnek terjesztésre."
 
 #: ../xfce4-about/main.c:442
-#, fuzzy, c-format
+#, c-format
 msgid "Type '%s --help' for usage information."
 msgstr "Segítségért adja ki a „%s --help” parancsot."
 
@@ -742,9 +725,9 @@ msgstr "%s verzió, terjesztő: %s"
 
 #. I18N: %s will be replaced by the Xfce version number
 #: ../xfce4-about/main.c:489
-#, fuzzy, c-format
+#, c-format
 msgid "Version %s"
-msgstr "%s (ezen: %s)"
+msgstr "Verzió %s"
 
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
@@ -774,9 +757,8 @@ msgid "Translators"
 msgstr "Fordítók"
 
 #: ../xfce4-about/contributors.h:139
-#, fuzzy
 msgid "Previous contributors"
-msgstr "Előző munkaterület"
+msgstr "Előző munkatársak"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:1
 msgid "About Xfce"
@@ -787,77 +769,78 @@ msgid "Information about the Xfce Desktop Environment"
 msgstr "Információk az Xfce asztali környezetről"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:1
-msgid "About the Xfce Desktop Environment"
-msgstr "Az Xfce asztali környezet névjegye"
-
-#: ../xfce4-about/xfce4-about-dialog.glade.h:2
 msgid "About"
 msgstr "Névjegy"
 
+#: ../xfce4-about/xfce4-about-dialog.glade.h:2
+msgid "About the Xfce Desktop Environment"
+msgstr "Az Xfce asztali környezet névjegye"
+
 #: ../xfce4-about/xfce4-about-dialog.glade.h:3
-msgid "Credits"
-msgstr "Köszönet"
-
-#: ../xfce4-about/xfce4-about-dialog.glade.h:4
-msgid "GPL"
-msgstr "GPL"
-
-#: ../xfce4-about/xfce4-about-dialog.glade.h:5
-msgid "LGPL"
-msgstr "LGPL"
-
-#: ../xfce4-about/xfce4-about-dialog.glade.h:6
 msgid "BSD"
 msgstr "BSD"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:7
+#: ../xfce4-about/xfce4-about-dialog.glade.h:4
 msgid "Copyright"
 msgstr "Copyright"
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:5
+msgid "Credits"
+msgstr "Köszönet"
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:6
+msgid "GPL"
+msgstr "GPL"
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:7
+msgid "LGPL"
+msgstr "LGPL"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:8
 msgid "License"
 msgstr "Licenc"
 
-msgid ""
-"This shortcut is already being used for another window manager action. Which "
-"action do you want to use?"
-msgstr ""
-"Ezt a gyorsbillentyűt már használja egy másik ablakkezelő-művelet. Melyik "
-"műveletet akarja használni?"
+#~ msgid ""
+#~ "This shortcut is already being used for another window manager action. "
+#~ "Which action do you want to use?"
+#~ msgstr ""
+#~ "Ezt a gyorsbillentyűt már használja egy másik ablakkezelő-művelet. Melyik "
+#~ "műveletet akarja használni?"
 
-msgid "Keep the other one"
-msgstr "A másik megtartása"
+#~ msgid "Keep the other one"
+#~ msgstr "A másik megtartása"
 
-msgid ""
-"This shortcut is already being used by a window manager action. Which action "
-"do you want to use?"
-msgstr ""
-"Ezt a gyorsbillentyűt már használja egy ablakkezelő-művelet. Melyik "
-"műveletet akarja használni?"
+#~ msgid ""
+#~ "This shortcut is already being used by a window manager action. Which "
+#~ "action do you want to use?"
+#~ msgstr ""
+#~ "Ezt a gyorsbillentyűt már használja egy ablakkezelő-művelet. Melyik "
+#~ "műveletet akarja használni?"
 
-msgid "<span size='large'><b>%s</b></span>"
-msgstr "<span size='large'><b>%s</b></span>"
+#~ msgid "<span size='large'><b>%s</b></span>"
+#~ msgstr "<span size='large'><b>%s</b></span>"
 
-msgid "File is not a valid .desktop file"
-msgstr "A fájl nem egy érvényes .desktop fájl"
+#~ msgid "File is not a valid .desktop file"
+#~ msgstr "A fájl nem egy érvényes .desktop fájl"
 
-msgid "Unrecognized desktop file Version '%s'"
-msgstr "Ismeretlen .desktop fájl verzió: „%s”"
+#~ msgid "Unrecognized desktop file Version '%s'"
+#~ msgstr "Ismeretlen .desktop fájl verzió: „%s”"
 
-msgid "Application does not accept documents on command line"
-msgstr "Az alkalmazás nem fogad el dokumentumokat a parancssorban"
+#~ msgid "Application does not accept documents on command line"
+#~ msgstr "Az alkalmazás nem fogad el dokumentumokat a parancssorban"
 
-msgid "Unrecognized launch option: %d"
-msgstr "Ismeretlen indítási kapcsoló: %d"
+#~ msgid "Unrecognized launch option: %d"
+#~ msgstr "Ismeretlen indítási kapcsoló: %d"
 
-msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
-msgstr "Nem adhatók dokumentum-URI címek egy „Type=Link” asztali bejegyzésnek"
+#~ msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
+#~ msgstr ""
+#~ "Nem adhatók dokumentum-URI címek egy „Type=Link” asztali bejegyzésnek"
 
-msgid "Not a launchable item"
-msgstr "Nem futtatható elem"
+#~ msgid "Not a launchable item"
+#~ msgstr "Nem futtatható elem"
 
-msgid "Specify file containing saved configuration"
-msgstr "A mentett beállításokat tartalmazó fájl megadása"
+#~ msgid "Specify file containing saved configuration"
+#~ msgstr "A mentett beállításokat tartalmazó fájl megadása"
 
-msgid "FILE"
-msgstr "FÁJL"
+#~ msgid "FILE"
+#~ msgstr "FÁJL"
