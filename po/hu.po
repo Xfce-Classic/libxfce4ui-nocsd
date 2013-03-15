@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-03-13 00:36+0000\n"
+"POT-Creation-Date: 2013-03-15 00:45+0000\n"
 "PO-Revision-Date: 2012-11-26 23:29+0100\n"
 "Last-Translator: Imre Benedek <nucleo@indamail.hu>\n"
 "Language-Team: Magyar <gnome-hu-list at gnome dot org>\n"
@@ -82,11 +82,11 @@ msgstr "Munkamenet-kezelés letiltása"
 
 #: ../libxfce4ui/xfce-sm-client.c:1414
 msgid "Session management options"
-msgstr "Munkamenet-kezelés lehetőségei"
+msgstr "Munkamenet-kezelés beállítások"
 
 #: ../libxfce4ui/xfce-sm-client.c:1415
 msgid "Show session management options"
-msgstr "Munkamenet-kezelés lehetőségeinek megjelenítése"
+msgstr "Munkamenet-kezelés beállításainak megjelenítése"
 
 #: ../libxfce4ui/xfce-sm-client.c:1591
 #, c-format
