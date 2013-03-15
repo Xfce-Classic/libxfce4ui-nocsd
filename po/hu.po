@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-03-15 00:45+0000\n"
+"POT-Creation-Date: 2013-03-15 22:09+0000\n"
 "PO-Revision-Date: 2012-11-26 23:29+0100\n"
 "Last-Translator: Imre Benedek <nucleo@indamail.hu>\n"
 "Language-Team: Magyar <gnome-hu-list at gnome dot org>\n"
@@ -200,7 +200,7 @@ msgstr "Gyorsbillentyű"
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:267
 #, c-format
 msgid "Press now the keyboard keys you want to use to trigger the %s '%s'."
-msgstr ""
+msgstr "Most nyomja meg azt a billentyűt, amellyel el kívánja indítani a(z) \"%s\" parancsot."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:291
 msgid "Shortcut:"
