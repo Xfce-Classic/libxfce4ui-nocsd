@@ -213,7 +213,7 @@ msgstr "Még nem történt billentyűlenyomás."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:378
 msgid "Could not grab the keyboard."
-msgstr ""
+msgstr "A billentyűzet használata sikertelen."
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:36
 msgid "Window operations menu"
