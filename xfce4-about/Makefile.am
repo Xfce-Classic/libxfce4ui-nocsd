@@ -44,13 +44,13 @@ about-dialog-ui.h: $(srcdir)/xfce4-about-dialog.glade Makefile
 BUILT_SOURCES = \
 	$(xfce4_about_built_sources)
 
+DISTCLEANFILES = \
+	$(xfce4_about_built_sources) \
+	$(desktop_DATA)
+
 endif
 
 EXTRA_DIST = \
 	$(desktop_in_files) \
 	xfce4-about-dialog.glade
-
-DISTCLEANFILES = \
-	$(xfce4_about_built_sources) \
-	$(desktop_DATA)
 
