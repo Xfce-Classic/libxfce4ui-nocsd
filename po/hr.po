@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-03-05 05:21+0000\n"
+"POT-Creation-Date: 2013-04-04 02:15+0000\n"
 "PO-Revision-Date: 2010-03-26 12:16+0100\n"
 "Last-Translator: Petar Koretić <petar.koretic@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -168,7 +168,7 @@ msgstr "Ovaj prečac je već u upotrebi za nešto drugo."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:209
 msgid "Window Manager Action Shortcut"
-msgstr ""
+msgstr "Prečac radnje upravitelja prozora"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
@@ -698,7 +698,7 @@ msgstr "Nije uspjelo učitavanje sučelja"
 #: ../xfce4-about/main.c:485
 #, c-format
 msgid "Version %s, distributed by %s"
-msgstr ""
+msgstr "Verzija %s, distribuira %s"
 
 #. I18N: %s will be replaced by the Xfce version number
 #: ../xfce4-about/main.c:489
@@ -743,7 +743,7 @@ msgstr "O Xfce-u"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:2
 msgid "Information about the Xfce Desktop Environment"
-msgstr ""
+msgstr "Informacije o Xfce radnom okruženju"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:1
 msgid "About"
