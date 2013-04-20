@@ -24,7 +24,7 @@
 #include <gtk/gtk.h>
 #include <libxfce4util/libxfce4util.h>
 
-#define TRANSLATORS_H_STAMP "2013-04-14 00:21:03"
+#define TRANSLATORS_H_STAMP "2013-04-21 00:21:03"
 #define ATSIGN "@"
 #define DOTSIGN "."
 
@@ -54,6 +54,7 @@ static const TranslatorInfo xfce_translators_am[] =
 
 static const TranslatorInfo xfce_translators_ar[] =
 {
+  { "M" DOTSIGN "hanny sabbagh", "hannysabbagh" ATSIGN "hotmail" DOTSIGN "com", TRUE },
   { "كريم أولاد الشلحة", "herr" DOTSIGN "linux88" ATSIGN "gmail" DOTSIGN "com", TRUE },
   { "محمد الحرقان", "malham1" ATSIGN "gmail" DOTSIGN "com", TRUE },
   { "abdilra7eem", "abdilra7eem" ATSIGN "yahoo" DOTSIGN "com", FALSE },
@@ -65,7 +66,6 @@ static const TranslatorInfo xfce_translators_ar[] =
   { "os_", "syriatalks" ATSIGN "hotmail" DOTSIGN "com", FALSE },
   { "sanad", "0sanad0" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Yassine Bouhadi", "yassine" DOTSIGN "skiloo" ATSIGN "gmail" DOTSIGN "com", FALSE },
-  { "suhaib", "suhaibothman" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "ybanafa", "ybanafa" ATSIGN "alasersystems" DOTSIGN "com", FALSE },
   { "yusuf", "ys9889" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { NULL, NULL }
@@ -510,7 +510,6 @@ static const TranslatorInfo xfce_translators_pl[] =
   { "Ireneusz Gierlach", "irek" DOTSIGN "gierlach" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "jacek2v", "jacek2v" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Jakub Waśko", "javazlaz" ATSIGN "gmail" DOTSIGN "com", FALSE },
-  { "Michał Jeż", "michal" DOTSIGN "je2u" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Kamil Konieczka", "klkkzm" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "kolofaza", "kolofaza" ATSIGN "o2" DOTSIGN "pl", FALSE },
   { "Michał Olber", "michal" DOTSIGN "olber" ATSIGN "osworld" DOTSIGN "pl", FALSE },
@@ -669,9 +668,9 @@ static const TranslatorInfo xfce_translators_sr_latin[] =
 
 static const TranslatorInfo xfce_translators_sv[] =
 {
-  { "Andreas Rönnquist", "gusnan" ATSIGN "gusnan" DOTSIGN "se", TRUE },
-  { "Alexander Nordlund", "deep" DOTSIGN "alexander" ATSIGN "gmail" DOTSIGN "com", FALSE },
+  { "Alexander Nordlund", "deep" DOTSIGN "alexander" ATSIGN "gmail" DOTSIGN "com", TRUE },
   { "Emil Karlsson", "Emil_1989" ATSIGN "hotmail" DOTSIGN "com", FALSE },
+  { "Andreas Rönnquist", "gusnan" ATSIGN "gusnan" DOTSIGN "se", FALSE },
   { "Aksel Bergfeldt", "aksel" DOTSIGN "bergfeldt" ATSIGN "gmail" DOTSIGN "com", FALSE },
   { "Rickard Larsson", "larsson" ATSIGN "odus" DOTSIGN "se", FALSE },
   { "kim Svensson", "ks" ATSIGN "linux" DOTSIGN "com", FALSE },
