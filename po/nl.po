@@ -2,7 +2,7 @@
 # Copyright (C) The Xfce development team.
 # This file is distributed under the same license as the
 # libxfce4ui package.
-# Pjotr, 2011.
+# Pjotr pjotrvertaalt@gmail.com , 2011, 2013.
 # 
 msgid ""
 msgstr ""
@@ -10,7 +10,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-12-31 11:15+0000\n"
 "PO-Revision-Date: 2011-06-15 11:34+0200\n"
-"Last-Translator: Pjotr\n"
+"Last-Translator: Pjotr pjotrvertaalt@gmail.com\n"
 "Language-Team: Dutch (Flemish)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -104,7 +104,7 @@ msgid ""
 "Working directory \"%s\" does not exist. It won't be used when spawning \"%s"
 "\"."
 msgstr ""
-"Werkmap \"%s\" bestaat niet. Hij zal niet worden gebruikt wanneer \"%s\" "
+"Werkmap '%s' bestaat niet. Hij zal niet worden gebruikt wanneer '%s'"
 "wordt uitgezaaid."
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
@@ -113,8 +113,8 @@ msgid ""
 "This shortcut is already being used for the action '%s'. Which action do you "
 "want to use?"
 msgstr ""
-"Deze sneltoets is reeds in gebruik bij <b>een andere vensterbeheerderactie</"
-"b>. Welke actie wilt u gebruiken?"
+"Deze sneltoets wordt reeds gebruikt voor de actie '%s'. Welke actie wilt u "
+"gebruiken?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:54
 #: ../libxfce4kbd-private/xfce-shortcuts.c:57
@@ -139,8 +139,8 @@ msgid ""
 "This shortcut is already being used for the command '%s'. Which action do "
 "you want to use?"
 msgstr ""
-"Deze sneltoets is reeds in gebruik bij <b>een andere vensterbeheerderactie</"
-"b>. Welke actie wilt u gebruiken?"
+"Deze sneltoets wordt reeds gebruikt voor de opdracht '%s'. Welke actie "
+"wilt u gebruiken?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 #, c-format
@@ -148,8 +148,8 @@ msgid ""
 "This shortcut is already being used by the action '%s'. Which action do you "
 "want to use?"
 msgstr ""
-"Deze sneltoets is reeds in gebruik bij <b>een andere vensterbeheerderactie</"
-"b>. Welke actie wilt u gebruiken?"
+"Deze sneltoets wordt reeds gebruikt door de actie '%s'. Welke actie wilt u "
+"gebruiken?"
 
 #. This shortcut already exists in the provider, we don't want it twice
 #. Warn the user
@@ -256,47 +256,47 @@ msgstr "Wissel toepassing"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:46
 msgid "Close window"
-msgstr "Venster sluiten"
+msgstr "Sluit venster"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:47
 msgid "Maximize window horizontally"
-msgstr "Venster horizontaal maximaliseren"
+msgstr "Maximaliseer venster horizontaal"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:48
 msgid "Maximize window vertically"
-msgstr "Venster verticaal maximaliseren"
+msgstr "Maximaliseer venster verticaal"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:49
 msgid "Maximize window"
-msgstr "Venster maximaliseren"
+msgstr "Maximaliseer venster"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:50
 msgid "Hide window"
-msgstr "Venster verbergen"
+msgstr "Verberg venster"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:51
 msgid "Move window"
-msgstr "Venster verplaatsen"
+msgstr "Verplaats venster"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:52
 msgid "Resize window"
-msgstr "Venstergrootte aanpassen"
+msgstr "Pas venstergrootte aan"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:53
 msgid "Shade window"
-msgstr "Venster oprollen"
+msgstr "Rol venster op"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:54
 msgid "Stick window"
-msgstr "Venster vastplakken"
+msgstr "Plak venster vast"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:55
 msgid "Raise window"
-msgstr "Venster naar de voorgrond halen"
+msgstr "Haal venster naar de voorgrond"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:56
 msgid "Lower window"
-msgstr "Venster naar de achtergrond verplaatsen"
+msgstr "Verplaats venster naar de achtergrond"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:57
 msgid "Raise or lower window"
@@ -304,15 +304,15 @@ msgstr "Venster voluit tonen of minimaliseren"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:58
 msgid "Fill window"
-msgstr "Venster vullen"
+msgstr "Vul venster"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:59
 msgid "Fill window horizontally"
-msgstr "Venster horizontaal vullen"
+msgstr "Vul venster horizontaal"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:60
 msgid "Fill window vertically"
-msgstr "Venster verticaal vullen"
+msgstr "Vul venster verticaal"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:61
 msgid "Toggle above"
@@ -324,95 +324,95 @@ msgstr "Schakel schermvullend om"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:63
 msgid "Move window to upper workspace"
-msgstr "Venster naar bovenliggend werkblad verplaatsen"
+msgstr "Verplaats venster naar bovenliggend werkblad"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:64
 msgid "Move window to bottom workspace"
-msgstr "Venster naar onderliggend werkblad verplaatsen"
+msgstr "Verplaats venster naar onderliggend werkblad"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:65
 msgid "Move window to left workspace"
-msgstr "Venster naar linkerwerkblad verplaatsen"
+msgstr "Verplaats venster naar linkerwerkblad"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:66
 msgid "Move window to right workspace"
-msgstr "Venster naar rechterwerkblad verplaatsen"
+msgstr "Verplaats venster naar rechterwerkblad"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:67
 msgid "Move window to previous workspace"
-msgstr "Venster naar vorig werkblad verplaatsen"
+msgstr "Verplaats venster naar vorig werkblad"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:68
 msgid "Move window to next workspace"
-msgstr "Venster naar volgend werkblad verplaatsen"
+msgstr "Verplaats venster naar volgend werkblad"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:69
 msgid "Move window to workspace 1"
-msgstr "Venster naar werkblad 1 verplaatsen"
+msgstr "Verplaats venster naar werkblad 1"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:70
 msgid "Move window to workspace 2"
-msgstr "Venster naar werkblad 2 verplaatsen"
+msgstr "Verplaats venster naar werkblad 2"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:71
 msgid "Move window to workspace 3"
-msgstr "Venster naar werkblad 3 verplaatsen"
+msgstr "Verplaats venster naar werkblad 3"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:72
 msgid "Move window to workspace 4"
-msgstr "Venster naar werkblad 4 verplaatsen"
+msgstr "Verplaats venster naar werkblad 4"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:73
 msgid "Move window to workspace 5"
-msgstr "Venster naar werkblad 5 verplaatsen"
+msgstr "Verplaats venster naar werkblad 5"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:74
 msgid "Move window to workspace 6"
-msgstr "Venster naar werkblad 6 verplaatsen"
+msgstr "Verplaats venster naar werkblad 6"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:75
 msgid "Move window to workspace 7"
-msgstr "Venster naar werkblad 7 verplaatsen"
+msgstr "Verplaats venster naar werkblad 7"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:76
 msgid "Move window to workspace 8"
-msgstr "Venster naar werkblad 8 verplaatsen"
+msgstr "Verplaats venster naar werkblad 8"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:77
 msgid "Move window to workspace 9"
-msgstr "Venster naar werkblad 9 verplaatsen"
+msgstr "Verplaats venster naar werkblad 9"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:78
 msgid "Move window to workspace 10"
-msgstr "Venster naar werkblad 10 verplaatsen"
+msgstr "Verplaats venster naar werkblad 10"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:79
 msgid "Move window to workspace 11"
-msgstr "Venster naar werkblad 11 verplaatsen"
+msgstr "Verplaats venster naar werkblad 11"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:80
 msgid "Move window to workspace 12"
-msgstr "Venster naar werkblad 12 verplaatsen"
+msgstr "Verplaats venster naar werkblad 12"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:81
 msgid "Tile window to the top"
-msgstr "Plaats venstertegels naar boven"
+msgstr "Plaats venstertegel naar boven"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:82
 msgid "Tile window to the bottom"
-msgstr "Plaats venstertegels naar beneden"
+msgstr "Plaats venstertegel naar beneden"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:83
 msgid "Tile window to the left"
-msgstr "Plaats venstertegels naar links"
+msgstr "Plaats venstertegel naar links"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:84
 msgid "Tile window to the right"
-msgstr "Plaats venstertegels naar rechts"
+msgstr "Plaats venstertegel naar rechts"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:85
 msgid "Show desktop"
-msgstr "Bureaublad tonen"
+msgstr "Toon bureaublad"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:86
 msgid "Upper workspace"
@@ -488,19 +488,19 @@ msgstr "Werkblad 12"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:104
 msgid "Add workspace"
-msgstr "Werkblad toevoegen"
+msgstr "Voeg werkblad toe"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:105
 msgid "Add adjacent workspace"
-msgstr "Aangrenzend werkblad toevoegen"
+msgstr "Voeg aangrenzend werkblad toe"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:106
 msgid "Delete last workspace"
-msgstr "Laatste werkblad verwijderen"
+msgstr "Verwijder laatste werkblad"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:107
 msgid "Delete active workspace"
-msgstr "Actief werkblad verwijderen"
+msgstr "Verwijder actief werkblad"
 
 #: ../glade/libxfce4ui.xml.in.h:1
 msgid "Subtitle"
@@ -508,11 +508,11 @@ msgstr "Ondertitel"
 
 #: ../glade/libxfce4ui.xml.in.h:2
 msgid "Titled Dialog"
-msgstr "Getitelde dialoog"
+msgstr "Getiteld dialoogvenster"
 
 #: ../glade/libxfce4ui.xml.in.h:3
 msgid "Xfce 4 Widgets"
-msgstr "Xfce 4 programmaatjes"
+msgstr "Xfce 4-programmaatjes"
 
 #: ../xfce4-about/main.c:52
 msgid "Version information"
@@ -613,7 +613,7 @@ msgid ""
 "desktop environment. The following programs are part of the Xfce core:"
 msgstr ""
 "Xfce is een verzameling programma's die gezamenlijk een volledig functionele "
-"werkomgeving biedt. De volgende programma's behoren tot de kern van Xfce:"
+"werkomgeving bieden. De volgende programma's behoren tot de kern van Xfce:"
 
 #: ../xfce4-about/main.c:136
 msgid ""
@@ -812,4 +812,4 @@ msgstr "Licentie"
 #~ msgstr "Hulpmiddelen en scripts"
 
 #~ msgid "Startup scripts, run dialog and about dialog."
-#~ msgstr "Opstartscripts, draaidialoog en \"over\"-dialoog."
+#~ msgstr "Opstartscripts, draaidialoog en 'over'-dialoog."
