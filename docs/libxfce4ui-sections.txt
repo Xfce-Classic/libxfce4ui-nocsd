@@ -94,6 +94,8 @@ xfce_sm_client_get_restart_command
 xfce_sm_client_set_restart_command
 xfce_sm_client_get_restart_style
 xfce_sm_client_set_restart_style
+XFCE_SM_CLIENT_ERROR
+XfceSmCLientErrorEnum
 <SUBSECTION Standard>
 XFCE_IS_SM_CLIENT
 XFCE_IS_SM_CLIENT_CLASS
@@ -107,4 +109,5 @@ XFCE_TYPE_SM_CLIENT_SHUTDOWN_HINT
 xfce_sm_client_get_type
 xfce_sm_client_restart_style_get_type
 xfce_sm_client_shutdown_hint_get_type
+xfce_sm_client_error_quark
 </SECTION>

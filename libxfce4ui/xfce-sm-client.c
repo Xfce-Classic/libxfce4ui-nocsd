@@ -1367,6 +1367,27 @@ xfce_sm_client_set_clone_restart_commands(XfceSMClient *sm_client)
 #endif
 
 
+
+/**
+ * xfce_sm_client_error_quark:
+ *
+ * Gets the XfceSmClient Error Quark.
+ *
+ * Return value: a #GQuark.
+ **/
+GQuark
+xfce_sm_client_error_quark (void)
+{
+  static GQuark q;
+
+  if G_UNLIKELY (q == 0)
+    q = g_quark_from_static_string ("xfce-sm-client-error-quark");
+
+  return q;
+}
+
+
+
 /**
  * xfce_sm_client_get_option_group:
  * @argc: The application's argument count
@@ -1586,15 +1607,13 @@ xfce_sm_client_connect(XfceSMClient *sm_client,
 
     if(!sm_client->session_connection) {
         if(error) {
-            /* FIXME: error domain/code */
-            g_set_error(error, 0, 1,
+            g_set_error(error, XFCE_SM_CLIENT_ERROR, XFCE_SM_CLIENT_ERROR_FAILED,
                         _("Failed to connect to the session manager: %s"), buf);
         }
         return FALSE;
     } else if(!given_client_id) {
         if(error) {
-            /* FIXME: error domain/code */
-            g_set_error(error, 0, 1,
+            g_set_error(error, XFCE_SM_CLIENT_ERROR, XFCE_SM_CLIENT_ERROR_INVALID_CLIENT,
                         _("Session manager did not return a valid client id"));
         }
         return FALSE;
