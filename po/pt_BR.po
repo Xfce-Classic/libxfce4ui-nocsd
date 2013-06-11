@@ -2,19 +2,19 @@
 # Copyright (C) 2008 THE libxfce'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the libxfce package.
 # Fábio Nogueira <deb-user-ba@ubuntu.com>, 2008.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: libxfce 4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-12-30 23:21+0000\n"
+"POT-Creation-Date: 2013-06-10 23:45+0000\n"
 "PO-Revision-Date: 2012-12-30 22:06-0300\n"
 "Last-Translator: Rafael Ferreira <rafael.f.f1@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <ldp-br@bazar2.conectiva.com.br>\n"
-"Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: pt_BR\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: ../libxfce4ui/xfce-dialogs.c:98
@@ -66,32 +66,32 @@ msgstr "Erro"
 msgid "Question"
 msgstr "Pergunta"
 
-#: ../libxfce4ui/xfce-sm-client.c:1403
+#: ../libxfce4ui/xfce-sm-client.c:1424
 msgid "Session management client ID"
 msgstr "ID do cliente de gerenciamento de sessão"
 
-#: ../libxfce4ui/xfce-sm-client.c:1403
+#: ../libxfce4ui/xfce-sm-client.c:1424
 msgid "ID"
 msgstr "ID"
 
-#: ../libxfce4ui/xfce-sm-client.c:1404
+#: ../libxfce4ui/xfce-sm-client.c:1425
 msgid "Disable session management"
 msgstr "Desabilitar gerenciamento de sessão"
 
-#: ../libxfce4ui/xfce-sm-client.c:1414
+#: ../libxfce4ui/xfce-sm-client.c:1435
 msgid "Session management options"
 msgstr "Opções de gerenciamento de sessão"
 
-#: ../libxfce4ui/xfce-sm-client.c:1415
+#: ../libxfce4ui/xfce-sm-client.c:1436
 msgid "Show session management options"
 msgstr "Mostra as opções de gerenciamento de sessão"
 
-#: ../libxfce4ui/xfce-sm-client.c:1591
+#: ../libxfce4ui/xfce-sm-client.c:1611
 #, c-format
 msgid "Failed to connect to the session manager: %s"
 msgstr "Falhou ao conectar ao gerenciador de sessão: %s"
 
-#: ../libxfce4ui/xfce-sm-client.c:1598
+#: ../libxfce4ui/xfce-sm-client.c:1617
 #, c-format
 msgid "Session manager did not return a valid client id"
 msgstr "O gerenciador de sessão não retornou um ID de cliente válido"
@@ -641,7 +641,7 @@ msgstr "Obrigado pelo seu interesse no Xfce."
 
 #: ../xfce4-about/main.c:153
 msgid "The Xfce Development Team"
-msgstr "O time de desenvolvimento do Xfce"
+msgstr "Time de desenvovimento do Xfce"
 
 #: ../xfce4-about/main.c:262
 msgid ""
@@ -700,7 +700,7 @@ msgstr "Impossível inicializar GTK+."
 
 #: ../xfce4-about/main.c:457
 msgid "The Xfce development team. All rights reserved."
-msgstr "O time de desenvolvimento do Xfce. Todos os direitos reservados."
+msgstr "Time de desenvolvimento do Xfce. Todos os direitos reservados."
 
 #: ../xfce4-about/main.c:458
 #, c-format
@@ -735,11 +735,11 @@ msgstr "Versão %s"
 #. },
 #: ../xfce4-about/contributors.h:121
 msgid "Core developers"
-msgstr "Desenvolvedores do núcleo"
+msgstr "Desenvolvedores principais"
 
 #: ../xfce4-about/contributors.h:124
 msgid "Active contributors"
-msgstr "Contribuintes ativos"
+msgstr "Contribuidores ativos"
 
 #: ../xfce4-about/contributors.h:127
 msgid "Servers maintained by"
