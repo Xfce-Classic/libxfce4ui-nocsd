@@ -2,21 +2,20 @@
 # Copyright (C) 2011 The Xfce development team.
 # This file is distributed under the same license as the libxfce4ui package.
 # Piotr Sokół <psokol@jabster.pl>, 2011, 2012, 2013.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-07 14:27+0000\n"
+"POT-Creation-Date: 2013-06-11 10:33+0000\n"
 "PO-Revision-Date: 2013-01-13 18:55+0100\n"
 "Last-Translator: Piotr Sokół <psokol@jabster.pl>\n"
 "Language-Team: polski <>\n"
-"Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bits\n"
-"Plural-Forms: nplurals=3; plural=((n==1) ? 0 : ((n%10>=2 && n%10<=4 && (n"
-"%100<10 || n%100>=20)) ? 1 : 2));\n"
+"Language: pl\n"
+"Plural-Forms: nplurals=3; plural=((n==1) ? 0 : ((n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20)) ? 1 : 2));\n"
 "X-Generator: Gtranslator 2.91.5\n"
 
 #: ../libxfce4ui/xfce-dialogs.c:98
@@ -70,35 +69,32 @@ msgstr "Błąd"
 msgid "Question"
 msgstr "Pytanie"
 
-#: ../libxfce4ui/xfce-sm-client.c:1403
-#, fuzzy
+#: ../libxfce4ui/xfce-sm-client.c:1424
 msgid "Session management client ID"
 msgstr "Identyfikator klienta zarządzania sesją"
 
-#: ../libxfce4ui/xfce-sm-client.c:1403
+#: ../libxfce4ui/xfce-sm-client.c:1424
 msgid "ID"
 msgstr "ID"
 
-#: ../libxfce4ui/xfce-sm-client.c:1404
-#, fuzzy
+#: ../libxfce4ui/xfce-sm-client.c:1425
 msgid "Disable session management"
-msgstr "Wyłącza zarządzanie sesją"
+msgstr "Wyłącz zarządzanie sesją"
 
-#: ../libxfce4ui/xfce-sm-client.c:1414
+#: ../libxfce4ui/xfce-sm-client.c:1435
 msgid "Session management options"
 msgstr "Opcje zarządzania sesją"
 
-#: ../libxfce4ui/xfce-sm-client.c:1415
-#, fuzzy
+#: ../libxfce4ui/xfce-sm-client.c:1436
 msgid "Show session management options"
-msgstr "Wypisuje opcje zarządzania sesją"
+msgstr "Pokaż opcje zarządzania sesją"
 
-#: ../libxfce4ui/xfce-sm-client.c:1591
+#: ../libxfce4ui/xfce-sm-client.c:1611
 #, c-format
 msgid "Failed to connect to the session manager: %s"
 msgstr "Nie udało się połączyć z menadżerem sesji: %s"
 
-#: ../libxfce4ui/xfce-sm-client.c:1598
+#: ../libxfce4ui/xfce-sm-client.c:1617
 #, c-format
 msgid "Session manager did not return a valid client id"
 msgstr "Menadżer sesji nie zwrócił poprawnego identyfikatora klienta"
@@ -503,14 +499,12 @@ msgid "Delete active workspace"
 msgstr "Usunięcie bieżącego obszaru roboczego"
 
 #: ../glade/libxfce4ui.xml.in.h:1
-#, fuzzy
 msgid "Subtitle"
-msgstr "Tytuł"
+msgstr "Podtytuł"
 
 #: ../glade/libxfce4ui.xml.in.h:2
-#, fuzzy
 msgid "Titled Dialog"
-msgstr "Czcionka tytułowa"
+msgstr "Treść tytułowa"
 
 #: ../glade/libxfce4ui.xml.in.h:3
 msgid "Xfce 4 Widgets"
