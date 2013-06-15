@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libxfce 4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-06-06 00:57+0000\n"
+"POT-Creation-Date: 2013-06-15 00:57+0000\n"
 "PO-Revision-Date: 2009-08-25 21:25+0700\n"
 "Last-Translator: Andhika Padmawan <andhika.padmawan@gmail.com>\n"
 "Language-Team: Indonesian <translation-team-id@lists.sourceforge.net>\n"
@@ -65,32 +65,32 @@ msgstr "Galat"
 msgid "Question"
 msgstr "Pertanyaan"
 
-#: ../libxfce4ui/xfce-sm-client.c:1403
+#: ../libxfce4ui/xfce-sm-client.c:1424
 msgid "Session management client ID"
 msgstr "Identitas pengguna manajemen sesi"
 
-#: ../libxfce4ui/xfce-sm-client.c:1403
+#: ../libxfce4ui/xfce-sm-client.c:1424
 msgid "ID"
 msgstr "ID"
 
-#: ../libxfce4ui/xfce-sm-client.c:1404
+#: ../libxfce4ui/xfce-sm-client.c:1425
 msgid "Disable session management"
 msgstr "Nom-aktifkan manajemen sesi"
 
-#: ../libxfce4ui/xfce-sm-client.c:1414
+#: ../libxfce4ui/xfce-sm-client.c:1435
 msgid "Session management options"
 msgstr "Opsi manajemen sesi"
 
-#: ../libxfce4ui/xfce-sm-client.c:1415
+#: ../libxfce4ui/xfce-sm-client.c:1436
 msgid "Show session management options"
 msgstr "Tampilkan opsi manajemen sesi"
 
-#: ../libxfce4ui/xfce-sm-client.c:1591
+#: ../libxfce4ui/xfce-sm-client.c:1611
 #, c-format
 msgid "Failed to connect to the session manager: %s"
 msgstr "Gagal menyambung ke manajer sesi: %s"
 
-#: ../libxfce4ui/xfce-sm-client.c:1598
+#: ../libxfce4ui/xfce-sm-client.c:1617
 #, c-format
 msgid "Session manager did not return a valid client id"
 msgstr "Manajer sesi tidak mengembalikan id klien yang sah"
@@ -158,7 +158,7 @@ msgstr "Mohon gunakan kombinasi tombol lain."
 #: ../libxfce4kbd-private/xfce-shortcuts.c:111
 #, c-format
 msgid "%s already triggers this action."
-msgstr ""
+msgstr "%s telah menjalankan aksi ini."
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:116
 #, c-format
@@ -166,34 +166,29 @@ msgid "Conflicting actions for %s"
 msgstr "Aksi konflik untuk %s"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:176
-#, fuzzy
 msgid "This shortcut is already being used for something else."
-msgstr "Jalan pintas telah digunakan untuk yang lain."
+msgstr "Tombol pintasan telah digunakan untuk yang lain."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:209
-#, fuzzy
 msgid "Window Manager Action Shortcut"
-msgstr "Masukkan jalan pintas aksi manajer jendela"
+msgstr "Tombol Pintasan Manajer Jendela"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:212
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:226
-#, fuzzy
 msgid "action"
-msgstr "Aksi"
+msgstr "aksi"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:216
-#, fuzzy
 msgid "Command Shortcut"
-msgstr "Masukkan perintah jalan pintas"
+msgstr "Perintah Tombol Pintasan"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:219
-#, fuzzy
 msgid "command"
-msgstr "Perintah"
+msgstr "perintah"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:223
 msgid "Shortcut"
@@ -202,7 +197,7 @@ msgstr "Jalan pintas"
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:267
 #, c-format
 msgid "Press now the keyboard keys you want to use to trigger the %s '%s'."
-msgstr ""
+msgstr "Tekanlah tombol papan kunci yang diinginkan untuk %s '%s'."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:291
 msgid "Shortcut:"
@@ -211,7 +206,7 @@ msgstr "Jalan pintas:"
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:296
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:475
 msgid "No keys pressed yet, proceed."
-msgstr ""
+msgstr "Belum ada tombol yang ditekan."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:378
 msgid "Could not grab the keyboard."
@@ -506,19 +501,16 @@ msgid "Delete active workspace"
 msgstr "Hapus ruang kerja aktif"
 
 #: ../glade/libxfce4ui.xml.in.h:1
-#, fuzzy
 msgid "Subtitle"
-msgstr "Judul"
+msgstr "Subjudul"
 
 #: ../glade/libxfce4ui.xml.in.h:2
-#, fuzzy
 msgid "Titled Dialog"
-msgstr "Fonta judul"
+msgstr "Dialog Berjudul"
 
 #: ../glade/libxfce4ui.xml.in.h:3
-#, fuzzy
 msgid "Xfce 4 Widgets"
-msgstr "Pengaturan Manajer Jendela Xfce 4"
+msgstr "Peralatan Xfce 4"
 
 #: ../xfce4-about/main.c:52
 msgid "Version information"
@@ -529,9 +521,8 @@ msgid "Window Manager"
 msgstr "Manajer Jendela"
 
 #: ../xfce4-about/main.c:71
-#, fuzzy
 msgid "Handles the placement of windows on the screen."
-msgstr "Di _tengah layar"
+msgstr "Menangani penempatan jendela di layar."
 
 #: ../xfce4-about/main.c:74
 msgid "Panel"
@@ -546,9 +537,8 @@ msgstr ""
 "lainnya."
 
 #: ../xfce4-about/main.c:79
-#, fuzzy
 msgid "Desktop Manager"
-msgstr "Manajer Jendela"
+msgstr "Manajer Destop"
 
 #: ../xfce4-about/main.c:80
 msgid ""
@@ -559,9 +549,8 @@ msgstr ""
 "tambahan untuk aplikasi atau peluncur, divais dan folder yang diminimalkan."
 
 #: ../xfce4-about/main.c:84
-#, fuzzy
 msgid "File Manager "
-msgstr "Manajer Jendela"
+msgstr "Manajer Berkas"
 
 #: ../xfce4-about/main.c:85
 msgid ""
@@ -572,9 +561,8 @@ msgstr ""
 "digunakan dan cepat."
 
 #: ../xfce4-about/main.c:89
-#, fuzzy
 msgid "Session Manager"
-msgstr "Soket manajer sesi"
+msgstr "Manajer Sesi"
 
 #: ../xfce4-about/main.c:90
 msgid ""
@@ -609,9 +597,8 @@ msgstr ""
 "anda dapat mencarinya dan menjalankannya dengan cepat."
 
 #: ../xfce4-about/main.c:104
-#, fuzzy
 msgid "Settings Daemon"
-msgstr "Pengaturan soket manajer"
+msgstr "Pengaturan Daemon"
 
 #: ../xfce4-about/main.c:105
 msgid "D-Bus-based configuration storage system."
@@ -703,9 +690,9 @@ msgstr ""
 "setelahnya."
 
 #: ../xfce4-about/main.c:442
-#, fuzzy, c-format
+#, c-format
 msgid "Type '%s --help' for usage information."
-msgstr "Ketik \"%s --help\" untuk penggunaan."
+msgstr "Ketik '%s --help' untuk informasi penggunaan."
 
 #: ../xfce4-about/main.c:448
 msgid "Unable to initialize GTK+."
@@ -739,9 +726,9 @@ msgstr "Versi %s, didistribusikan oleh %s"
 
 #. I18N: %s will be replaced by the Xfce version number
 #: ../xfce4-about/main.c:489
-#, fuzzy, c-format
+#, c-format
 msgid "Version %s"
-msgstr "%s (di %s)"
+msgstr "Versi %s"
 
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
@@ -767,14 +754,12 @@ msgid "Translations supervision"
 msgstr "Pengawas terjemahan"
 
 #: ../xfce4-about/contributors.h:136
-#, fuzzy
 msgid "Translators"
-msgstr "Transparan"
+msgstr "Penerjemah"
 
 #: ../xfce4-about/contributors.h:139
-#, fuzzy
 msgid "Previous contributors"
-msgstr "Ruang kerja sebelumnya"
+msgstr "Kontributor terdahulu"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:1
 msgid "About Xfce"
