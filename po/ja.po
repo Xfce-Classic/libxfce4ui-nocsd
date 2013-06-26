@@ -3,19 +3,19 @@
 # This file is distributed under the same license as the libxfce4ui package.
 # Nobuhiro Iwamatsu <iwamatsu@nigauri.org>, 2008.
 # Masato Hashimoto <cabezon.hashimoto@gmail.com>, 2011-2013.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-05-04 20:38+0900\n"
+"POT-Creation-Date: 2013-06-26 08:12+0000\n"
 "PO-Revision-Date: 2013-05-04 23:04+0900\n"
 "Last-Translator: Masato Hashimoto <cabezon.hashimoto@gmail.com>\n"
 "Language-Team: Japanese <xfce-users-jp@googlegroups.com>\n"
-"Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
 "X-Poedit-Language: Japanese\n"
 "X-Poedit-Country: JAPAN\n"
 
@@ -37,8 +37,12 @@ msgid "Online Documentation"
 msgstr "オンラインドキュメント"
 
 #: ../libxfce4ui/xfce-dialogs.c:221
-msgid "You will be redirected to the documentation website where the help pages are maintained and translated."
-msgstr "ドキュメントウェブサイトでヘルプページがメンテナンスおよび翻訳されている場合はリダイレクトされます。"
+msgid ""
+"You will be redirected to the documentation website where the help pages are "
+"maintained and translated."
+msgstr ""
+"ドキュメントウェブサイトでヘルプページがメンテナンスおよび翻訳されている場合"
+"はリダイレクトされます。"
 
 #: ../libxfce4ui/xfce-dialogs.c:225
 msgid "_Read Online"
@@ -64,32 +68,32 @@ msgstr "エラー"
 msgid "Question"
 msgstr "確認"
 
-#: ../libxfce4ui/xfce-sm-client.c:1403
+#: ../libxfce4ui/xfce-sm-client.c:1424
 msgid "Session management client ID"
 msgstr "セッション管理クライアント ID"
 
-#: ../libxfce4ui/xfce-sm-client.c:1403
+#: ../libxfce4ui/xfce-sm-client.c:1424
 msgid "ID"
 msgstr "ID"
 
-#: ../libxfce4ui/xfce-sm-client.c:1404
+#: ../libxfce4ui/xfce-sm-client.c:1425
 msgid "Disable session management"
 msgstr "セッション管理を無効にする"
 
-#: ../libxfce4ui/xfce-sm-client.c:1414
+#: ../libxfce4ui/xfce-sm-client.c:1435
 msgid "Session management options"
 msgstr "セッション管理オプション"
 
-#: ../libxfce4ui/xfce-sm-client.c:1415
+#: ../libxfce4ui/xfce-sm-client.c:1436
 msgid "Show session management options"
 msgstr "セッション管理オプションを表示します"
 
-#: ../libxfce4ui/xfce-sm-client.c:1591
+#: ../libxfce4ui/xfce-sm-client.c:1611
 #, c-format
 msgid "Failed to connect to the session manager: %s"
 msgstr "セッションマネージャーへの接続に失敗しました: %s"
 
-#: ../libxfce4ui/xfce-sm-client.c:1598
+#: ../libxfce4ui/xfce-sm-client.c:1617
 #, c-format
 msgid "Session manager did not return a valid client id"
 msgstr "セッションマネージャーは正常なクライアント ID を返しませんでした"
@@ -97,13 +101,20 @@ msgstr "セッションマネージャーは正常なクライアント ID を�
 #. print warning for user
 #: ../libxfce4ui/xfce-spawn.c:413
 #, c-format
-msgid "Working directory \"%s\" does not exist. It won't be used when spawning \"%s\"."
-msgstr "作業ディレクトリ \"%s\" が存在しません。\"%s\" 起動時にこれは使用されません。"
+msgid ""
+"Working directory \"%s\" does not exist. It won't be used when spawning \"%s"
+"\"."
+msgstr ""
+"作業ディレクトリ \"%s\" が存在しません。\"%s\" 起動時にこれは使用されません。"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 #, c-format
-msgid "This shortcut is already being used for the action '%s'. Which action do you want to use?"
-msgstr "このショートカットはすでにアクション '%s' で使用されています。どちらで使いますか?"
+msgid ""
+"This shortcut is already being used for the action '%s'. Which action do you "
+"want to use?"
+msgstr ""
+"このショートカットはすでにアクション '%s' で使用されています。どちらで使いま"
+"すか?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:54
 #: ../libxfce4kbd-private/xfce-shortcuts.c:57
@@ -124,13 +135,21 @@ msgstr "'%s' で使う"
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
 #: ../libxfce4kbd-private/xfce-shortcuts.c:59
 #, c-format
-msgid "This shortcut is already being used for the command '%s'. Which action do you want to use?"
-msgstr "このショートカットはすでにコマンド '%s' で使用されています。どちらで使いますか?"
+msgid ""
+"This shortcut is already being used for the command '%s'. Which action do "
+"you want to use?"
+msgstr ""
+"このショートカットはすでにコマンド '%s' で使用されています。どちらで使います"
+"か?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 #, c-format
-msgid "This shortcut is already being used by the action '%s'. Which action do you want to use?"
-msgstr "このショートカットはすでにアクション '%s' で使用されています。どちらで使いますか?"
+msgid ""
+"This shortcut is already being used by the action '%s'. Which action do you "
+"want to use?"
+msgstr ""
+"このショートカットはすでにアクション '%s' で使用されています。どちらで使いま"
+"すか?"
 
 #. This shortcut already exists in the provider, we don't want it twice
 #. Warn the user
@@ -184,7 +203,7 @@ msgstr "%s '%s' の起動に使用するキーボードキーを押してくだ�
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:291
 msgid "Shortcut:"
-msgstr "ショートカット:キー"
+msgstr "ショートカット:"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:296
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:475
@@ -484,12 +503,12 @@ msgid "Delete active workspace"
 msgstr "現在のワークスペースを削除"
 
 #: ../glade/libxfce4ui.xml.in.h:1
-msgid "Titled Dialog"
-msgstr "タイトル付きダイアログ"
-
-#: ../glade/libxfce4ui.xml.in.h:2
 msgid "Subtitle"
 msgstr "副題"
+
+#: ../glade/libxfce4ui.xml.in.h:2
+msgid "Titled Dialog"
+msgstr "タイトル付きダイアログ"
 
 #: ../glade/libxfce4ui.xml.in.h:3
 msgid "Xfce 4 Widgets"
@@ -512,48 +531,73 @@ msgid "Panel"
 msgstr "パネル"
 
 #: ../xfce4-about/main.c:75
-msgid "Program launchers, window buttons, applications menu, workspace switcher and more."
-msgstr "プログラムランチャー、ウィンドウボタン、アプリケーションメニュー、ワークスペーススイッチャーなどがあります。"
+msgid ""
+"Program launchers, window buttons, applications menu, workspace switcher and "
+"more."
+msgstr ""
+"プログラムランチャー、ウィンドウボタン、アプリケーションメニュー、ワークス"
+"ペーススイッチャーなどがあります。"
 
 #: ../xfce4-about/main.c:79
 msgid "Desktop Manager"
 msgstr "デスクトップマネージャー"
 
 #: ../xfce4-about/main.c:80
-msgid "Sets the background color or image with optional application menu or icons for minimized applications or launchers, devices and folders."
-msgstr "背景の色や画像を設定し、オプションでアプリケーションメニューの表示や、アプリケーションやランチャーを最小化したアイコン、デバイス、およびフォルダーの配置を行います。"
+msgid ""
+"Sets the background color or image with optional application menu or icons "
+"for minimized applications or launchers, devices and folders."
+msgstr ""
+"背景の色や画像を設定し、オプションでアプリケーションメニューの表示や、アプリ"
+"ケーションやランチャーを最小化したアイコン、デバイス、およびフォルダーの配置"
+"を行います。"
 
 #: ../xfce4-about/main.c:84
 msgid "File Manager "
 msgstr "ファイルマネージャー"
 
 #: ../xfce4-about/main.c:85
-msgid "A modern file manager for the Unix/Linux desktop, aiming to be easy-to-use and fast."
-msgstr "Unix/Linux デスクトップ向けのモダンなファイルマネージャーです。使いやすく、軽快に動作することを目指しています。"
+msgid ""
+"A modern file manager for the Unix/Linux desktop, aiming to be easy-to-use "
+"and fast."
+msgstr ""
+"Unix/Linux デスクトップ向けのモダンなファイルマネージャーです。使いやすく、軽"
+"快に動作することを目指しています。"
 
 #: ../xfce4-about/main.c:89
 msgid "Session Manager"
 msgstr "セッションマネージャー"
 
 #: ../xfce4-about/main.c:90
-msgid "Restores your session on startup and allows you to shutdown the computer from Xfce."
-msgstr "起動時にセッションを復元し、Xfce からコンピューターのシャットダウンを行えるようにします。"
+msgid ""
+"Restores your session on startup and allows you to shutdown the computer "
+"from Xfce."
+msgstr ""
+"起動時にセッションを復元し、Xfce からコンピューターのシャットダウンを行えるよ"
+"うにします。"
 
 #: ../xfce4-about/main.c:94
 msgid "Setting System"
 msgstr "システム設定"
 
 #: ../xfce4-about/main.c:95
-msgid "Configuration system to control various aspects of the desktop like appearance, display, keyboard and mouse settings."
-msgstr "デスクトップの外観、ディスプレイ、キーボード、あるいはマウスなど、様々なシステム設定を行います。"
+msgid ""
+"Configuration system to control various aspects of the desktop like "
+"appearance, display, keyboard and mouse settings."
+msgstr ""
+"デスクトップの外観、ディスプレイ、キーボード、あるいはマウスなど、様々なシス"
+"テム設定を行います。"
 
 #: ../xfce4-about/main.c:99
 msgid "Application Finder"
 msgstr "アプリケーションファインダー"
 
 #: ../xfce4-about/main.c:100
-msgid "Shows the applications installed on your system in categories, so you can quickly find and launch them."
-msgstr "システムにインストールされているアプリケーションをカテゴリ別に表示し、それらを素早く見つけて起動できます。"
+msgid ""
+"Shows the applications installed on your system in categories, so you can "
+"quickly find and launch them."
+msgstr ""
+"システムにインストールされているアプリケーションをカテゴリ別に表示し、それら"
+"を素早く見つけて起動できます。"
 
 #: ../xfce4-about/main.c:104
 msgid "Settings Daemon"
@@ -564,16 +608,34 @@ msgid "D-Bus-based configuration storage system."
 msgstr "D-Bus ベースの設定格納システムです。"
 
 #: ../xfce4-about/main.c:112
-msgid "Xfce is a collection of programs that together provide a full-featured desktop environment. The following programs are part of the Xfce core:"
-msgstr "Xfce はデスクトップ環境に必要なすべての機能をひとまとめに提供するプログラムコレクションです。以下は Xfce のコアとなるプログラムです:"
+msgid ""
+"Xfce is a collection of programs that together provide a full-featured "
+"desktop environment. The following programs are part of the Xfce core:"
+msgstr ""
+"Xfce はデスクトップ環境に必要なすべての機能をひとまとめに提供するプログラムコ"
+"レクションです。以下は Xfce のコアとなるプログラムです:"
 
 #: ../xfce4-about/main.c:136
-msgid "Xfce is also a development platform providing several libraries, that help programmers create applications that fit in well with the desktop environment."
-msgstr "Xfce はいくつかのライブラリを提供する開発プラットフォームでもあります。これらライブラリは、このデスクトップ環境とよく調和するアプリケーションを製作するプログラマーの役に立つでしょう。"
+msgid ""
+"Xfce is also a development platform providing several libraries, that help "
+"programmers create applications that fit in well with the desktop "
+"environment."
+msgstr ""
+"Xfce はいくつかのライブラリを提供する開発プラットフォームでもあります。これら"
+"ライブラリは、このデスクトップ環境とよく調和するアプリケーションを製作するプ"
+"ログラマーの役に立つでしょう。"
 
 #: ../xfce4-about/main.c:142
-msgid "Xfce components are licensed under free or open source licences; GPL or BSDL for applications and LGPL or BSDL for libraries. Look at the documentation, the source code or the Xfce website (http://www.xfce.org) for more information."
-msgstr "Xfce を構成するプログラムはフリーまたはオープンソースライセンスの条項下での利用が認められています。各アプリケーションには GPL または BSDL が、各ライブラリには LGPL または BSDL が適用されます。詳しい情報はソースコードか Xfce ウェブサイト (http://www.xfce.org) にある文書をご覧ください。"
+msgid ""
+"Xfce components are licensed under free or open source licences; GPL or BSDL "
+"for applications and LGPL or BSDL for libraries. Look at the documentation, "
+"the source code or the Xfce website (http://www.xfce.org) for more "
+"information."
+msgstr ""
+"Xfce を構成するプログラムはフリーまたはオープンソースライセンスの条項下での利"
+"用が認められています。各アプリケーションには GPL または BSDL が、各ライブラリ"
+"には LGPL または BSDL が適用されます。詳しい情報はソースコードか Xfce ウェブ"
+"サイト (http://www.xfce.org) にある文書をご覧ください。"
 
 #: ../xfce4-about/main.c:149
 msgid "Thank you for your interest in Xfce."
@@ -584,24 +646,50 @@ msgid "The Xfce Development Team"
 msgstr "Xfce 開発チーム"
 
 #: ../xfce4-about/main.c:262
-msgid "If you know of anyone missing from this list; don't hesitate and file a bug on <http://bugzilla.xfce.org> ."
-msgstr "このリストに記載ミスがある場合は、<http://bugzilla.xfce.org> までバグとしてお知らせください。"
+msgid ""
+"If you know of anyone missing from this list; don't hesitate and file a bug "
+"on <http://bugzilla.xfce.org> ."
+msgstr ""
+"このリストに記載ミスがある場合は、<http://bugzilla.xfce.org> までバグとしてお"
+"知らせください。"
 
 #: ../xfce4-about/main.c:266
 msgid "Thanks to all who helped making this software available!"
-msgstr "このソフトウェアを利用できるよう協力して下さったすべての方々に感謝します。"
+msgstr ""
+"このソフトウェアを利用できるよう協力して下さったすべての方々に感謝します。"
 
 #: ../xfce4-about/main.c:283
-msgid "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different components are copyrighted by their respective authors."
-msgstr "Xfce の著作権は Olivier Fourdan (fourdan@xfce.org) が保有しています。各コンポーネントの著作権はそれぞれの製作者が保有しています。"
+msgid ""
+"Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
+"components are copyrighted by their respective authors."
+msgstr ""
+"Xfce の著作権は Olivier Fourdan (fourdan@xfce.org) が保有しています。各コン"
+"ポーネントの著作権はそれぞれの製作者が保有しています。"
 
 #: ../xfce4-about/main.c:288
-msgid "The libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs and exo packages are distributed under the terms of the GNU Library General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version."
-msgstr "libxfce4ui、libxfcegui4、libxfce4util、thunar-vfs、および exo の各パッケージは、フリーソフトウェア財団によって発行された GNU ライブラリ一般公衆使用許諾契約書 (バージョン2か、希望によってはそれ以降のバージョンのうちどれか) の定める条件下で配布されています。"
+msgid ""
+"The libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs and exo packages are "
+"distributed under the terms of the GNU Library General Public License as "
+"published by the Free Software Foundation; either version 2 of the License, "
+"or (at your option) any later version."
+msgstr ""
+"libxfce4ui、libxfcegui4、libxfce4util、thunar-vfs、および exo の各パッケージ"
+"は、フリーソフトウェア財団によって発行された GNU ライブラリ一般公衆使用許諾契"
+"約書 (バージョン2か、希望によってはそれ以降のバージョンのうちどれか) の定める"
+"条件下で配布されています。"
 
 #: ../xfce4-about/main.c:295
-msgid "The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfce-utils, xfconf, xfdesktop and xfwm4 are distributed under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version."
-msgstr "thunar、xfce4-appfinder、xfce4-panel、xfce4-session、xfce4-settings、xfce-utils、xfconf、xfdesktop、および xfwm4 の各パッケージは、フリーソフトウェア財団によって発行された GNU 一般公衆利用許諾契約書 (バージョン2か、希望によってはそれ以降のバージョンのうちどれか) の定める条件の下で配布されています。"
+msgid ""
+"The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-"
+"settings, xfce-utils, xfconf, xfdesktop and xfwm4 are distributed under the "
+"terms of the GNU General Public License as published by the Free Software "
+"Foundation; either version 2 of the License, or (at your option) any later "
+"version."
+msgstr ""
+"thunar、xfce4-appfinder、xfce4-panel、xfce4-session、xfce4-settings、xfce-"
+"utils、xfconf、xfdesktop、および xfwm4 の各パッケージは、フリーソフトウェア財"
+"団によって発行された GNU 一般公衆利用許諾契約書 (バージョン2か、希望によって"
+"はそれ以降のバージョンのうちどれか) の定める条件の下で配布されています。"
 
 #: ../xfce4-about/main.c:442
 #, c-format
@@ -684,45 +772,53 @@ msgid "Information about the Xfce Desktop Environment"
 msgstr "Xfce デスクトップ環境に関する情報です"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:1
-msgid "About the Xfce Desktop Environment"
-msgstr "Xfce デスクトップ環境について"
-
-#: ../xfce4-about/xfce4-about-dialog.glade.h:2
 msgid "About"
 msgstr "Xfce について"
 
+#: ../xfce4-about/xfce4-about-dialog.glade.h:2
+msgid "About the Xfce Desktop Environment"
+msgstr "Xfce デスクトップ環境について"
+
 #: ../xfce4-about/xfce4-about-dialog.glade.h:3
-msgid "Credits"
-msgstr "クレジット"
-
-#: ../xfce4-about/xfce4-about-dialog.glade.h:4
-msgid "GPL"
-msgstr "GPL"
-
-#: ../xfce4-about/xfce4-about-dialog.glade.h:5
-msgid "LGPL"
-msgstr "LGPL"
-
-#: ../xfce4-about/xfce4-about-dialog.glade.h:6
 msgid "BSD"
 msgstr "BSD"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:7
+#: ../xfce4-about/xfce4-about-dialog.glade.h:4
 msgid "Copyright"
 msgstr "著作権"
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:5
+msgid "Credits"
+msgstr "クレジット"
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:6
+msgid "GPL"
+msgstr "GPL"
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:7
+msgid "LGPL"
+msgstr "LGPL"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:8
 msgid "License"
 msgstr "ライセンス"
 
-#~ msgid "This shortcut is already being used for another window manager action. Which action do you want to use?"
-#~ msgstr "このショートカットはすでに他のウィンドウマネージャーあるいはユーザーアクションで使用されています。どちらで使いますか?"
+#~ msgid ""
+#~ "This shortcut is already being used for another window manager action. "
+#~ "Which action do you want to use?"
+#~ msgstr ""
+#~ "このショートカットはすでに他のウィンドウマネージャーあるいはユーザーアク"
+#~ "ションで使用されています。どちらで使いますか?"
 
 #~ msgid "Keep the other one"
 #~ msgstr "他方で使う"
 
-#~ msgid "This shortcut is already being used by a window manager action. Which action do you want to use?"
-#~ msgstr "このショートカットはすでに他のウィンドウマネージャーアクションで使用されています。どちらで使いますか?"
+#~ msgid ""
+#~ "This shortcut is already being used by a window manager action. Which "
+#~ "action do you want to use?"
+#~ msgstr ""
+#~ "このショートカットはすでに他のウィンドウマネージャーアクションで使用されて"
+#~ "います。どちらで使いますか?"
 
 #~ msgid "<span size='large'><b>%s</b></span>"
 #~ msgstr "<span size='large'><b>%s</b></span>"
@@ -740,7 +836,8 @@ msgstr "ライセンス"
 #~ msgstr "認識できない起動オプションです: %d"
 
 #~ msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
-#~ msgstr "デスクトップエントリ 'Type=Link' にドキュメント URI を渡すことができません"
+#~ msgstr ""
+#~ "デスクトップエントリ 'Type=Link' にドキュメント URI を渡すことができません"
 
 #~ msgid "Not a launchable item"
 #~ msgstr "起動可能なアイテムではありません"
