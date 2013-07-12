@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-07-02 22:33+0200\n"
-"PO-Revision-Date: 2013-07-11 18:04+0000\n"
+"PO-Revision-Date: 2013-07-12 11:23+0000\n"
 "Last-Translator: MC <correomc2000-ing@yahoo.es>\n"
 "Language-Team: Spanish (http://www.transifex.com/projects/p/xfce/language/es/)\n"
 "MIME-Version: 1.0\n"
@@ -108,7 +108,7 @@ msgstr "El directorio de trabajo \"%s\" no existe. No se usará al expandir \"%s
 msgid ""
 "This shortcut is already being used for the action '%s'. Which action do you"
 " want to use?"
-msgstr ""
+msgstr "Este atajo ya está siendo usado para la acción. '%s'. ¿Qué acción desea usar?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:54
 #: ../libxfce4kbd-private/xfce-shortcuts.c:57
@@ -132,14 +132,14 @@ msgstr "Mantener '%s'"
 msgid ""
 "This shortcut is already being used for the command '%s'. Which action do "
 "you want to use?"
-msgstr ""
+msgstr "Este atajo ya está siendo usado para el comando '%s'. ¿Qué acción desea usar?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 #, c-format
 msgid ""
 "This shortcut is already being used by the action '%s'. Which action do you "
 "want to use?"
-msgstr ""
+msgstr "Este atajo ya está siendo usado para la acción '%s'. ¿Qué acción desea usar?"
 
 #. This shortcut already exists in the provider, we don't want it twice
 #. Warn the user
@@ -150,7 +150,7 @@ msgstr "Por favor, utilize otra combinación de teclas."
 #: ../libxfce4kbd-private/xfce-shortcuts.c:111
 #, c-format
 msgid "%s already triggers this action."
-msgstr ""
+msgstr "%s ya ejecuta esta acción."
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:116
 #, c-format
@@ -159,7 +159,7 @@ msgstr "Acciones en conflicto para %s"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:176
 msgid "This shortcut is already being used for something else."
-msgstr ""
+msgstr "Este atajo ya está siendo usado para otra opción."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:209
 msgid "Window Manager Action Shortcut"
@@ -189,7 +189,7 @@ msgstr "Atajo"
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:267
 #, c-format
 msgid "Press now the keyboard keys you want to use to trigger the %s '%s'."
-msgstr ""
+msgstr "Presione la/s lecla/s que desea assignar para ejecutar %s '%s'."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:291
 msgid "Shortcut:"
@@ -514,7 +514,7 @@ msgstr "Gestor de ventanas"
 
 #: ../xfce4-about/main.c:71
 msgid "Handles the placement of windows on the screen."
-msgstr ""
+msgstr "Gestiona la posición de las ventanas en la pantalla."
 
 #: ../xfce4-about/main.c:74
 msgid "Panel"
@@ -524,7 +524,7 @@ msgstr "Panel"
 msgid ""
 "Program launchers, window buttons, applications menu, workspace switcher and"
 " more."
-msgstr ""
+msgstr "Lanzadores de programas, botones de ventanas, menu de aplicaciones, cambiador de espacios de trabajo y más."
 
 #: ../xfce4-about/main.c:79
 msgid "Desktop Manager"
@@ -534,7 +534,7 @@ msgstr "Gestor de escritorio"
 msgid ""
 "Sets the background color or image with optional application menu or icons "
 "for minimized applications or launchers, devices and folders."
-msgstr ""
+msgstr "Establece el color de fondo o imagen con menu de aplicacion opcional o iconos para aplicaciones minimizadas o lanzadores, dispositivos y carpetas."
 
 #: ../xfce4-about/main.c:84
 msgid "File Manager "
@@ -564,7 +564,7 @@ msgstr "Sistema de configuración"
 msgid ""
 "Configuration system to control various aspects of the desktop like "
 "appearance, display, keyboard and mouse settings."
-msgstr ""
+msgstr "Sistema de configuración para controlar varios aspectos del escritorio, como la apariencia, pantalla, teclado y ratón."
 
 #: ../xfce4-about/main.c:99
 msgid "Application Finder"
@@ -574,7 +574,7 @@ msgstr "Buscador de aplicaciones"
 msgid ""
 "Shows the applications installed on your system in categories, so you can "
 "quickly find and launch them."
-msgstr ""
+msgstr "Muestra las aplicaciones instaladas en su sistema en categorías, para que pueda encontrarlas y abrirlas rápidamente."
 
 #: ../xfce4-about/main.c:104
 msgid "Settings Daemon"
@@ -588,14 +588,14 @@ msgstr "Sistema de almacenamiento de configuración basado en D-Bus."
 msgid ""
 "Xfce is a collection of programs that together provide a full-featured "
 "desktop environment. The following programs are part of the Xfce core:"
-msgstr ""
+msgstr "Xfce es una colección de programas que juntos proporcionan un completo entorno de escritorio. Los siguientes programas son parte del núcleo de Xfce:"
 
 #: ../xfce4-about/main.c:136
 msgid ""
 "Xfce is also a development platform providing several libraries, that help "
 "programmers create applications that fit in well with the desktop "
 "environment."
-msgstr ""
+msgstr "Xfce también es una plataforma de desarrollo proporcionando varias librerías, que ayudan a los programadores a crear aplicaciones que encajen bien con el entorno de escritorio."
 
 #: ../xfce4-about/main.c:142
 msgid ""
