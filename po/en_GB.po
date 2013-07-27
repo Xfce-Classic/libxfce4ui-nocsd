@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-07-02 22:33+0200\n"
-"PO-Revision-Date: 2013-07-26 21:39+0000\n"
+"PO-Revision-Date: 2013-07-27 05:37+0000\n"
 "Last-Translator: Noskcaj <noskcaj@ubuntu.com>\n"
 "Language-Team: English (United Kingdom) (http://www.transifex.com/projects/p/xfce/language/en_GB/)\n"
 "MIME-Version: 1.0\n"
@@ -189,7 +189,7 @@ msgstr "Shortcut"
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:267
 #, c-format
 msgid "Press now the keyboard keys you want to use to trigger the %s '%s'."
-msgstr ""
+msgstr "Press now the keyboard keys you want to use to trigger the %s '%s'."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:291
 msgid "Shortcut:"
@@ -198,11 +198,11 @@ msgstr "No shortcut"
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:296
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:475
 msgid "No keys pressed yet, proceed."
-msgstr ""
+msgstr "No keys pressed yet, proceed."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:378
 msgid "Could not grab the keyboard."
-msgstr ""
+msgstr "Could not grab the keyboard."
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:36
 msgid "Window operations menu"
@@ -494,15 +494,15 @@ msgstr "Delete active workspace"
 
 #: ../glade/libxfce4ui.xml.in.h:1
 msgid "Titled Dialog"
-msgstr ""
+msgstr "Titled Dialog"
 
 #: ../glade/libxfce4ui.xml.in.h:2
 msgid "Subtitle"
-msgstr ""
+msgstr "Subtitle"
 
 #: ../glade/libxfce4ui.xml.in.h:3
 msgid "Xfce 4 Widgets"
-msgstr ""
+msgstr "Xfce 4 Widgets"
 
 #: ../xfce4-about/main.c:52
 msgid "Version information"
@@ -514,7 +514,7 @@ msgstr "Window Manager"
 
 #: ../xfce4-about/main.c:71
 msgid "Handles the placement of windows on the screen."
-msgstr ""
+msgstr "Handles the placement of windows on the screen."
 
 #: ../xfce4-about/main.c:74
 msgid "Panel"
@@ -528,7 +528,7 @@ msgstr "Program launchers, window buttons, applications menu, workspace switcher
 
 #: ../xfce4-about/main.c:79
 msgid "Desktop Manager"
-msgstr ""
+msgstr "Desktop Manager"
 
 #: ../xfce4-about/main.c:80
 msgid ""
@@ -538,7 +538,7 @@ msgstr "Sets the background colour or image with optional application menu or ic
 
 #: ../xfce4-about/main.c:84
 msgid "File Manager "
-msgstr ""
+msgstr "File Manager "
 
 #: ../xfce4-about/main.c:85
 msgid ""
@@ -548,7 +548,7 @@ msgstr "A modern file manager for the Unix/Linux desktop, aiming to be easy-to-u
 
 #: ../xfce4-about/main.c:89
 msgid "Session Manager"
-msgstr ""
+msgstr "Session Manager"
 
 #: ../xfce4-about/main.c:90
 msgid ""
@@ -578,7 +578,7 @@ msgstr "Shows the applications installed on your system in categories, so you ca
 
 #: ../xfce4-about/main.c:104
 msgid "Settings Daemon"
-msgstr ""
+msgstr "Settings Daemon"
 
 #: ../xfce4-about/main.c:105
 msgid "D-Bus-based configuration storage system."
@@ -649,7 +649,7 @@ msgstr "The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-
 #: ../xfce4-about/main.c:442
 #, c-format
 msgid "Type '%s --help' for usage information."
-msgstr ""
+msgstr "Type '%s --help' for usage information."
 
 #: ../xfce4-about/main.c:448
 msgid "Unable to initialize GTK+."
@@ -685,7 +685,7 @@ msgstr "Version %s, distributed by %s"
 #: ../xfce4-about/main.c:489
 #, c-format
 msgid "Version %s"
-msgstr ""
+msgstr "Version %s"
 
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
@@ -712,11 +712,11 @@ msgstr "Translations supervision"
 
 #: ../xfce4-about/contributors.h:136
 msgid "Translators"
-msgstr ""
+msgstr "Translators"
 
 #: ../xfce4-about/contributors.h:139
 msgid "Previous contributors"
-msgstr ""
+msgstr "Previous contributors"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:1
 msgid "About Xfce"
