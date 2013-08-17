@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# Abduqadir Abliz <sahran.ug@gmail.com>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-07-02 22:33+0200\n"
-"PO-Revision-Date: 2013-07-17 06:54+0000\n"
-"Last-Translator: kawichi\n"
+"PO-Revision-Date: 2013-08-17 02:17+0000\n"
+"Last-Translator: Abduqadir Abliz <sahran.ug@gmail.com>\n"
 "Language-Team: Uighur (http://www.transifex.com/projects/p/xfce/language/ug/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -50,7 +51,7 @@ msgstr "ھەمىشە توردىكى پۈتۈككە بىۋاسىتە يۆتكەل
 
 #: ../libxfce4ui/xfce-dialogs.c:281
 msgid "Information"
-msgstr ""
+msgstr "ئۇچۇر"
 
 #: ../libxfce4ui/xfce-dialogs.c:314
 msgid "Warning"
@@ -66,7 +67,7 @@ msgstr "سوئال"
 
 #: ../libxfce4ui/xfce-sm-client.c:1424
 msgid "Session management client ID"
-msgstr ""
+msgstr "سۆزلىشىش باشقۇرۇش خېرىدار ID سى"
 
 #: ../libxfce4ui/xfce-sm-client.c:1424
 msgid "ID"
@@ -74,15 +75,15 @@ msgstr "ID"
 
 #: ../libxfce4ui/xfce-sm-client.c:1425
 msgid "Disable session management"
-msgstr ""
+msgstr "سۆزلىشىش باشقۇرۇشنى چەكلە"
 
 #: ../libxfce4ui/xfce-sm-client.c:1435
 msgid "Session management options"
-msgstr ""
+msgstr "سۆزلىشىش باشقۇرۇش تاللانمىلىرى"
 
 #: ../libxfce4ui/xfce-sm-client.c:1436
 msgid "Show session management options"
-msgstr ""
+msgstr "سۆزلىشىش باشقۇرۇش تاللانمىلىرىنى كۆرسەت"
 
 #: ../libxfce4ui/xfce-sm-client.c:1611
 #, c-format
@@ -107,7 +108,7 @@ msgstr "خىزمەت مۇندەرىجىسى «%s» يوق. «%s» نى ھاسى�
 msgid ""
 "This shortcut is already being used for the action '%s'. Which action do you"
 " want to use?"
-msgstr ""
+msgstr "بۇ قىسقا يول '%s' مەشغۇلات ئۈچۈن ئىشلىتىلگەن. سىز قايسى مەشغۇلاتنى ئىشلىتىسىز؟"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:54
 #: ../libxfce4kbd-private/xfce-shortcuts.c:57
@@ -138,7 +139,7 @@ msgstr "مەزكۇر تېزلەتمە ‹%s› بۇيرۇقتا ئىشلىتىل
 msgid ""
 "This shortcut is already being used by the action '%s'. Which action do you "
 "want to use?"
-msgstr ""
+msgstr "بۇ قىسقا يول'%s' مەشغۇلات ئۈچۈن ئىشلىتىلگەن. سىز قايسى مەشغۇلاتنى ئىشلىتىسىز؟"
 
 #. This shortcut already exists in the provider, we don't want it twice
 #. Warn the user
@@ -162,24 +163,24 @@ msgstr "مەزكۇر تېزلەتمە باشقا يەردە ئىشلىتىلىۋ
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:209
 msgid "Window Manager Action Shortcut"
-msgstr ""
+msgstr "كۆزنەك باشقۇرغۇچ مەشغۇلات قىسقا يولى"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:212
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:226
 msgid "action"
-msgstr ""
+msgstr "مەشغۇلات"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:216
 msgid "Command Shortcut"
-msgstr ""
+msgstr "بۇيرۇق قىسقا يولى"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:219
 msgid "command"
-msgstr ""
+msgstr "بۇيرۇق"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:223
 msgid "Shortcut"
@@ -188,20 +189,20 @@ msgstr "تېزلەتمە"
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:267
 #, c-format
 msgid "Press now the keyboard keys you want to use to trigger the %s '%s'."
-msgstr ""
+msgstr "ھازىر  %s '%s' نى قوزغىتىدىغان ھەرپتاختا كۇنۇپكىسىنى بېسىڭ."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:291
 msgid "Shortcut:"
-msgstr ""
+msgstr "قىسقا يول:"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:296
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:475
 msgid "No keys pressed yet, proceed."
-msgstr ""
+msgstr "تېخى ھېچقانداق كۇنۇپكا بېسىلمىدى، داۋاملاشتۇرۇڭ."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:378
 msgid "Could not grab the keyboard."
-msgstr ""
+msgstr "ھەرپتاختا كىرگۈزۈشىگە ئېرىشەلمىدى."
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:36
 msgid "Window operations menu"
@@ -497,7 +498,7 @@ msgstr "ماۋزۇلۇق سۆزلەشكۈ"
 
 #: ../glade/libxfce4ui.xml.in.h:2
 msgid "Subtitle"
-msgstr ""
+msgstr "تارماق ماۋزۇ"
 
 #: ../glade/libxfce4ui.xml.in.h:3
 msgid "Xfce 4 Widgets"
@@ -513,7 +514,7 @@ msgstr "كۆزنەك باشقۇرغۇ"
 
 #: ../xfce4-about/main.c:71
 msgid "Handles the placement of windows on the screen."
-msgstr ""
+msgstr "كۆزنەكنىڭ ئېكراندىكى جايلاشتۇرۇلۇشىنى بىر تەرەپ قىلىدۇ."
 
 #: ../xfce4-about/main.c:74
 msgid "Panel"
@@ -527,7 +528,7 @@ msgstr "ئىجراچىلار، كۆزنەك توپچىلىرى، پروگرام�
 
 #: ../xfce4-about/main.c:79
 msgid "Desktop Manager"
-msgstr ""
+msgstr "ئۈستەلئۈستى باشقۇرغۇچ"
 
 #: ../xfce4-about/main.c:80
 msgid ""
@@ -537,7 +538,7 @@ msgstr "كىچىكلىتىلگەن پروگرامما ياكى ئىجراچى،�
 
 #: ../xfce4-about/main.c:84
 msgid "File Manager "
-msgstr ""
+msgstr "ھۆججەت باشقۇرغۇچ"
 
 #: ../xfce4-about/main.c:85
 msgid ""
@@ -547,7 +548,7 @@ msgstr "زامانىۋى ، ئىشلىتىشكە ئەپلىك ۋە تېز بول
 
 #: ../xfce4-about/main.c:89
 msgid "Session Manager"
-msgstr ""
+msgstr "سۆزلىشىش باشقۇرغۇچ"
 
 #: ../xfce4-about/main.c:90
 msgid ""
@@ -577,7 +578,7 @@ msgstr "سىستېمىغا ئورنىتىلغان پروگراممىلارنى �
 
 #: ../xfce4-about/main.c:104
 msgid "Settings Daemon"
-msgstr ""
+msgstr "تەڭشەك كۆزەتكۈچى"
 
 #: ../xfce4-about/main.c:105
 msgid "D-Bus-based configuration storage system."
@@ -648,7 +649,7 @@ msgstr "بۇ بوغچىلار(thunar، xfce4-appfinder، xfce4-panel، xfce4-ses
 #: ../xfce4-about/main.c:442
 #, c-format
 msgid "Type '%s --help' for usage information."
-msgstr ""
+msgstr "ئىشلىتىش ئۇسۇلى ئۈچۈن  '%s --help' نى كىرگۈزۈڭ"
 
 #: ../xfce4-about/main.c:448
 msgid "Unable to initialize GTK+."
@@ -684,7 +685,7 @@ msgstr "نەشر %s، تارقاتقۇچى %s"
 #: ../xfce4-about/main.c:489
 #, c-format
 msgid "Version %s"
-msgstr ""
+msgstr "نەشرى %s"
 
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
@@ -715,7 +716,7 @@ msgstr "تەرجىمانلار"
 
 #: ../xfce4-about/contributors.h:139
 msgid "Previous contributors"
-msgstr ""
+msgstr "ئىلگىرىكى تۆھپىكارلار"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:1
 msgid "About Xfce"
