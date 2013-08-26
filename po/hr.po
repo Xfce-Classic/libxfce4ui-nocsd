@@ -1,20 +1,22 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# Ivica  Kolić <ikoli@yahoo.com>, 2013
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-04-04 02:15+0000\n"
-"PO-Revision-Date: 2010-03-26 12:16+0100\n"
-"Last-Translator: Petar Koretić <petar.koretic@gmail.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2013-07-02 22:33+0200\n"
+"PO-Revision-Date: 2013-08-26 17:29+0000\n"
+"Last-Translator: Ivica  Kolić <ikoli@yahoo.com>\n"
+"Language-Team: Croatian (http://www.transifex.com/projects/p/xfce/language/hr/)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: \n"
+"Language: hr\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 
 #: ../libxfce4ui/xfce-dialogs.c:98
 msgid "Failed to open web browser for online documentation"
@@ -31,15 +33,13 @@ msgstr "Želite li čitati priručnik na mreži?"
 
 #: ../libxfce4ui/xfce-dialogs.c:218
 msgid "Online Documentation"
-msgstr "Dokumentaqcija na mreži"
+msgstr "Dokumentacija na mreži"
 
 #: ../libxfce4ui/xfce-dialogs.c:221
 msgid ""
-"You will be redirected to the documentation website where the help pages are "
-"maintained and translated."
-msgstr ""
-"Biti ćete preusmjereni na web stranicu dokumantacije gdje se stranice pomoći "
-"održavaju i prevode."
+"You will be redirected to the documentation website where the help pages are"
+" maintained and translated."
+msgstr "Biti ćete preusmjereni na web stranicu dokumentacije gdje se stranice pomoći održavaju i prevode."
 
 #: ../libxfce4ui/xfce-dialogs.c:225
 msgid "_Read Online"
@@ -59,59 +59,56 @@ msgstr "Upozorenje"
 
 #: ../libxfce4ui/xfce-dialogs.c:348
 msgid "Error"
-msgstr "Grešla"
+msgstr "Greška"
 
 #: ../libxfce4ui/xfce-dialogs.c:399
 msgid "Question"
 msgstr "Pitanje"
 
-#: ../libxfce4ui/xfce-sm-client.c:1403
+#: ../libxfce4ui/xfce-sm-client.c:1424
 msgid "Session management client ID"
 msgstr ""
 
-#: ../libxfce4ui/xfce-sm-client.c:1403
+#: ../libxfce4ui/xfce-sm-client.c:1424
 msgid "ID"
 msgstr "ID"
 
-#: ../libxfce4ui/xfce-sm-client.c:1404
+#: ../libxfce4ui/xfce-sm-client.c:1425
 msgid "Disable session management"
 msgstr "Onemogućite upravljanje sesijom"
 
-#: ../libxfce4ui/xfce-sm-client.c:1414
+#: ../libxfce4ui/xfce-sm-client.c:1435
 msgid "Session management options"
 msgstr "Opcije upravljanja sesijom"
 
-#: ../libxfce4ui/xfce-sm-client.c:1415
+#: ../libxfce4ui/xfce-sm-client.c:1436
 msgid "Show session management options"
 msgstr "Pokaži opcije upravljanja sesijam"
 
-#: ../libxfce4ui/xfce-sm-client.c:1591
+#: ../libxfce4ui/xfce-sm-client.c:1611
 #, c-format
 msgid "Failed to connect to the session manager: %s"
-msgstr "Nije uspjelo spajanje na upravitelja sesijom: % s"
+msgstr "Nije uspjelo spajanje na upravitelja sesijom: %s"
 
-#: ../libxfce4ui/xfce-sm-client.c:1598
+#: ../libxfce4ui/xfce-sm-client.c:1617
 #, c-format
 msgid "Session manager did not return a valid client id"
-msgstr "Upravitelj sesijom nije vratio valjan id klijenta."
+msgstr "Upravitelj sesijom nije vratio valjan id klijenta"
 
 #. print warning for user
 #: ../libxfce4ui/xfce-spawn.c:413
 #, c-format
 msgid ""
-"Working directory \"%s\" does not exist. It won't be used when spawning \"%s"
-"\"."
-msgstr ""
-"Radna mapa \\ \"% s \" ne postoji. Neće se koristiti prilikom gnježđenja \\ "
-"\"% s \"."
+"Working directory \"%s\" does not exist. It won't be used when spawning "
+"\"%s\"."
+msgstr "Radna mapa \"%s\" ne postoji. Neće se koristiti prilikom gnježđenja \"%s\"."
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 #, c-format
 msgid ""
-"This shortcut is already being used for the action '%s'. Which action do you "
-"want to use?"
-msgstr ""
-"Ova radnja je već u upotrebi kod naredbe '%s'. Koju radnju želite koristiti?"
+"This shortcut is already being used for the action '%s'. Which action do you"
+" want to use?"
+msgstr "Ova radnja je već u upotrebi kod naredbe '%s'. Koju radnju želite koristiti?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:54
 #: ../libxfce4kbd-private/xfce-shortcuts.c:57
@@ -135,16 +132,14 @@ msgstr "Zadrži '%s'"
 msgid ""
 "This shortcut is already being used for the command '%s'. Which action do "
 "you want to use?"
-msgstr ""
-"Ova radnja je već u upotrebi kod naredbe '%s'. Koju radnju želite koristiti?"
+msgstr "Ova radnja je već u upotrebi kod naredbe '%s'. Koju radnju želite koristiti?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 #, c-format
 msgid ""
 "This shortcut is already being used by the action '%s'. Which action do you "
 "want to use?"
-msgstr ""
-"Ova radnja je već u upotrebi kod naredbe '%s'. Koju radnju želite koristiti?"
+msgstr "Ova radnja je već u upotrebi kod naredbe '%s'. Koju radnju želite koristiti?"
 
 #. This shortcut already exists in the provider, we don't want it twice
 #. Warn the user
@@ -231,7 +226,7 @@ msgstr "Desno"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:41
 msgid "Cancel"
-msgstr "Odustani"
+msgstr "Otkaži"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:42
 msgid "Cycle windows"
@@ -498,12 +493,12 @@ msgid "Delete active workspace"
 msgstr "Obriši aktivni radni prostor"
 
 #: ../glade/libxfce4ui.xml.in.h:1
-msgid "Subtitle"
-msgstr "Podnapis"
-
-#: ../glade/libxfce4ui.xml.in.h:2
 msgid "Titled Dialog"
 msgstr "Dialog sa nazivom"
+
+#: ../glade/libxfce4ui.xml.in.h:2
+msgid "Subtitle"
+msgstr "Podnapis"
 
 #: ../glade/libxfce4ui.xml.in.h:3
 msgid "Xfce 4 Widgets"
@@ -527,8 +522,8 @@ msgstr "Ploča"
 
 #: ../xfce4-about/main.c:75
 msgid ""
-"Program launchers, window buttons, applications menu, workspace switcher and "
-"more."
+"Program launchers, window buttons, applications menu, workspace switcher and"
+" more."
 msgstr ""
 
 #: ../xfce4-about/main.c:79
@@ -579,9 +574,7 @@ msgstr "Nalaznik programa"
 msgid ""
 "Shows the applications installed on your system in categories, so you can "
 "quickly find and launch them."
-msgstr ""
-"Prikazuje programe  koje su instalirani na vašem sustavu u kategorijama, "
-"tako da ih možete brzo pronaći i pokrenuti."
+msgstr "Prikazuje programe  koje su instalirani na vašem sustavu u kategorijama, tako da ih možete brzo pronaći i pokrenuti."
 
 #: ../xfce4-about/main.c:104
 msgid "Settings Daemon"
@@ -595,30 +588,22 @@ msgstr ""
 msgid ""
 "Xfce is a collection of programs that together provide a full-featured "
 "desktop environment. The following programs are part of the Xfce core:"
-msgstr ""
-"Xfce je skup programa koji zajedno pružaju potpuno opremljeno radno "
-"okruženje. Sljedeći programi su dio Xfce jezgre:"
+msgstr "Xfce je skup programa koji zajedno pružaju potpuno opremljeno radno okruženje. Sljedeći programi su dio Xfce jezgre:"
 
 #: ../xfce4-about/main.c:136
 msgid ""
 "Xfce is also a development platform providing several libraries, that help "
 "programmers create applications that fit in well with the desktop "
 "environment."
-msgstr ""
-"Xfce je također razvojna platforma pruža nekoliko knjižnica, koje pomažu "
-"programerima da stvaraju prgrame koje se dobro uklapaju u  radno okruženje."
+msgstr "Xfce je također razvojna platforma koja pruža nekoliko knjižnica, koje pomažu programerima da stvaraju prgrame koje se dobro uklapaju u  radno okruženje."
 
 #: ../xfce4-about/main.c:142
 msgid ""
-"Xfce components are licensed under free or open source licences; GPL or BSDL "
-"for applications and LGPL or BSDL for libraries. Look at the documentation, "
-"the source code or the Xfce website (http://www.xfce.org) for more "
+"Xfce components are licensed under free or open source licences; GPL or BSDL"
+" for applications and LGPL or BSDL for libraries. Look at the documentation,"
+" the source code or the Xfce website (http://www.xfce.org) for more "
 "information."
-msgstr ""
-"Xfce komponente su licencirani pod slobodnim ili licencama otvorenoga koda; "
-"GPL ili BSDL za programe i LGPL ili BSDL za knjižnice. Pogledajte "
-"dokumentaciju, izvorni kod ili Xfce web (http://www.xfce.org) za više "
-"informacija."
+msgstr "Xfce komponente su licencirane pod slobodnim ili licencama otvorenoga koda; GPL ili BSDL za programe i LGPL ili BSDL za knjižnice. Pogledajte dokumentaciju, izvorni kod ili Xfce web (http://www.xfce.org) za više informacija."
 
 #: ../xfce4-about/main.c:149
 msgid "Thank you for your interest in Xfce."
@@ -632,9 +617,7 @@ msgstr "Xfce razvojni tim"
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
 "on <http://bugzilla.xfce.org> ."
-msgstr ""
-"Ako znate tko nedostaje sa ovoga popisa, ne oklijevajte i prijavite bug na "
-"<http://bugzilla.xfce.org> ."
+msgstr "Ako znate tko nedostaje sa ovoga popisa, ne oklijevajte i prijavite bug na <http://bugzilla.xfce.org> ."
 
 #: ../xfce4-about/main.c:266
 msgid "Thanks to all who helped making this software available!"
@@ -644,9 +627,7 @@ msgstr "Hvala svima koji su pomogli učiniti ovaj software dostupnim!"
 msgid ""
 "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
-msgstr ""
-"Xfce 4 autorsko pravo Olivier Fourdan (fourdan@xfce.org). Različiti dijelovi "
-"su autorska prava njihovih poštovanih autora."
+msgstr "Xfce 4 autorsko pravo Olivier Fourdan (fourdan@xfce.org). Različiti dijelovi su autorska prava njihovih poštovanih autora."
 
 #: ../xfce4-about/main.c:288
 msgid ""
@@ -658,11 +639,11 @@ msgstr ""
 
 #: ../xfce4-about/main.c:295
 msgid ""
-"The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-"
-"settings, xfce-utils, xfconf, xfdesktop and xfwm4 are distributed under the "
-"terms of the GNU General Public License as published by the Free Software "
-"Foundation; either version 2 of the License, or (at your option) any later "
-"version."
+"The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, "
+"xfce4-settings, xfce-utils, xfconf, xfdesktop and xfwm4 are distributed "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version."
 msgstr ""
 
 #: ../xfce4-about/main.c:442
@@ -746,46 +727,33 @@ msgid "Information about the Xfce Desktop Environment"
 msgstr "Informacije o Xfce radnom okruženju"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:1
-msgid "About"
-msgstr "O programu"
-
-#: ../xfce4-about/xfce4-about-dialog.glade.h:2
 msgid "About the Xfce Desktop Environment"
 msgstr "O Xfce radnom okruženju"
 
+#: ../xfce4-about/xfce4-about-dialog.glade.h:2
+msgid "About"
+msgstr "O programu"
+
 #: ../xfce4-about/xfce4-about-dialog.glade.h:3
-msgid "BSD"
-msgstr "BSD"
-
-#: ../xfce4-about/xfce4-about-dialog.glade.h:4
-msgid "Copyright"
-msgstr "Autorska prava"
-
-#: ../xfce4-about/xfce4-about-dialog.glade.h:5
 msgid "Credits"
 msgstr ""
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:6
+#: ../xfce4-about/xfce4-about-dialog.glade.h:4
 msgid "GPL"
 msgstr "GPL"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:7
+#: ../xfce4-about/xfce4-about-dialog.glade.h:5
 msgid "LGPL"
 msgstr "LGPL"
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:6
+msgid "BSD"
+msgstr "BSD"
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:7
+msgid "Copyright"
+msgstr "Autorska prava"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:8
 msgid "License"
 msgstr "Licenca"
-
-#~ msgid ""
-#~ "This shortcut is already being used for another window manager action. "
-#~ "Which action do you want to use?"
-#~ msgstr "Ova kratica je već u upotrebi. Koju radnju želite koristiti?"
-
-#~ msgid "Keep the other one"
-#~ msgstr "Zadrži onu drugu"
-
-#~ msgid ""
-#~ "This shortcut is already being used by a window manager action. Which "
-#~ "action do you want to use?"
-#~ msgstr "Ova kratica je već u upotrebi. Koju naredbu želite koristiti?"
