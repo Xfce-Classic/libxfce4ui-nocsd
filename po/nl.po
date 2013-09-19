@@ -1,21 +1,21 @@
-# Dutch translation of the libxfce4ui package.
-# Copyright (C) The Xfce development team.
-# This file is distributed under the same license as the
-# libxfce4ui package.
-# Pjotr pjotrvertaalt@gmail.com , 2011, 2013.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
 # 
+# Translators:
+# Pjotr pjotrvertaalt@gmail.com , 2011,2013
 msgid ""
 msgstr ""
-"Project-Id-Version: libxfce4ui\n"
+"Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-12-31 11:15+0000\n"
-"PO-Revision-Date: 2011-06-15 11:34+0200\n"
-"Last-Translator: Pjotr pjotrvertaalt@gmail.com\n"
-"Language-Team: Dutch (Flemish)\n"
+"POT-Creation-Date: 2013-07-02 22:33+0200\n"
+"PO-Revision-Date: 2013-09-19 14:11+0000\n"
+"Last-Translator: Pjotr123 <pjotrvertaalt@gmail.com>\n"
+"Language-Team: Dutch (http://www.transifex.com/projects/p/xfce/language/nl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: nl (Dutch)\n"
+"Language: nl\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../libxfce4ui/xfce-dialogs.c:98
@@ -37,11 +37,9 @@ msgstr "Internetdocumentatie"
 
 #: ../libxfce4ui/xfce-dialogs.c:221
 msgid ""
-"You will be redirected to the documentation website where the help pages are "
-"maintained and translated."
-msgstr ""
-"U zult worden omgeleid naar de documentatiewebstek, waar de hulppagina's "
-"worden onderhouden en vertaald."
+"You will be redirected to the documentation website where the help pages are"
+" maintained and translated."
+msgstr "U zult worden omgeleid naar de documentatiewebstek, waar de hulppagina's worden onderhouden en vertaald."
 
 #: ../libxfce4ui/xfce-dialogs.c:225
 msgid "_Read Online"
@@ -67,32 +65,32 @@ msgstr "Fout"
 msgid "Question"
 msgstr "Vraag"
 
-#: ../libxfce4ui/xfce-sm-client.c:1403
+#: ../libxfce4ui/xfce-sm-client.c:1424
 msgid "Session management client ID"
 msgstr "Client-ID voor sessiebeheer"
 
-#: ../libxfce4ui/xfce-sm-client.c:1403
+#: ../libxfce4ui/xfce-sm-client.c:1424
 msgid "ID"
 msgstr "ID"
 
-#: ../libxfce4ui/xfce-sm-client.c:1404
+#: ../libxfce4ui/xfce-sm-client.c:1425
 msgid "Disable session management"
 msgstr "Sessiebeheer uitschakelen"
 
-#: ../libxfce4ui/xfce-sm-client.c:1414
+#: ../libxfce4ui/xfce-sm-client.c:1435
 msgid "Session management options"
 msgstr "Opties voor sessiebeheer"
 
-#: ../libxfce4ui/xfce-sm-client.c:1415
+#: ../libxfce4ui/xfce-sm-client.c:1436
 msgid "Show session management options"
 msgstr "Toon opties voor sessiebeheer"
 
-#: ../libxfce4ui/xfce-sm-client.c:1591
+#: ../libxfce4ui/xfce-sm-client.c:1611
 #, c-format
 msgid "Failed to connect to the session manager: %s"
 msgstr "Kon geen verbinding maken met de sessiebeheerder: %s"
 
-#: ../libxfce4ui/xfce-sm-client.c:1598
+#: ../libxfce4ui/xfce-sm-client.c:1617
 #, c-format
 msgid "Session manager did not return a valid client id"
 msgstr "Geen geldige client-ID van de sessiebeheerder ontvangen"
@@ -101,20 +99,16 @@ msgstr "Geen geldige client-ID van de sessiebeheerder ontvangen"
 #: ../libxfce4ui/xfce-spawn.c:413
 #, c-format
 msgid ""
-"Working directory \"%s\" does not exist. It won't be used when spawning \"%s"
-"\"."
-msgstr ""
-"Werkmap '%s' bestaat niet. Hij zal niet worden gebruikt wanneer '%s'"
-"wordt uitgezaaid."
+"Working directory \"%s\" does not exist. It won't be used when spawning "
+"\"%s\"."
+msgstr "Werkmap '%s' bestaat niet. Hij zal niet worden gebruikt wanneer '%s' wordt uitgezaaid."
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 #, c-format
 msgid ""
-"This shortcut is already being used for the action '%s'. Which action do you "
-"want to use?"
-msgstr ""
-"Deze sneltoets wordt reeds gebruikt voor de actie '%s'. Welke actie wilt u "
-"gebruiken?"
+"This shortcut is already being used for the action '%s'. Which action do you"
+" want to use?"
+msgstr "Deze sneltoets wordt reeds gebruikt voor de actie '%s'. Welke actie wilt u gebruiken?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:54
 #: ../libxfce4kbd-private/xfce-shortcuts.c:57
@@ -138,18 +132,14 @@ msgstr "'%s' behouden"
 msgid ""
 "This shortcut is already being used for the command '%s'. Which action do "
 "you want to use?"
-msgstr ""
-"Deze sneltoets wordt reeds gebruikt voor de opdracht '%s'. Welke actie "
-"wilt u gebruiken?"
+msgstr "Deze sneltoets wordt reeds gebruikt voor de opdracht '%s'. Welke actie wilt u gebruiken?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 #, c-format
 msgid ""
 "This shortcut is already being used by the action '%s'. Which action do you "
 "want to use?"
-msgstr ""
-"Deze sneltoets wordt reeds gebruikt door de actie '%s'. Welke actie wilt u "
-"gebruiken?"
+msgstr "Deze sneltoets wordt reeds gebruikt door de actie '%s'. Welke actie wilt u gebruiken?"
 
 #. This shortcut already exists in the provider, we don't want it twice
 #. Warn the user
@@ -503,12 +493,12 @@ msgid "Delete active workspace"
 msgstr "Verwijder actief werkblad"
 
 #: ../glade/libxfce4ui.xml.in.h:1
-msgid "Subtitle"
-msgstr "Ondertitel"
-
-#: ../glade/libxfce4ui.xml.in.h:2
 msgid "Titled Dialog"
 msgstr "Getiteld dialoogvenster"
+
+#: ../glade/libxfce4ui.xml.in.h:2
+msgid "Subtitle"
+msgstr "Ondertitel"
 
 #: ../glade/libxfce4ui.xml.in.h:3
 msgid "Xfce 4 Widgets"
@@ -532,11 +522,9 @@ msgstr "Werkbalk"
 
 #: ../xfce4-about/main.c:75
 msgid ""
-"Program launchers, window buttons, applications menu, workspace switcher and "
-"more."
-msgstr ""
-"Programmastarters, vensterknoppen, toepassingenmenu, werkbladwisselaar en "
-"meer."
+"Program launchers, window buttons, applications menu, workspace switcher and"
+" more."
+msgstr "Programmastarters, vensterknoppen, toepassingenmenu, werkbladwisselaar en meer."
 
 #: ../xfce4-about/main.c:79
 msgid "Desktop Manager"
@@ -546,10 +534,7 @@ msgstr "Bureaubladbeheerder"
 msgid ""
 "Sets the background color or image with optional application menu or icons "
 "for minimized applications or launchers, devices and folders."
-msgstr ""
-"Stelt de achtergrondkleur in of de afbeelding, met optioneel "
-"toepassingenmenu of pictogrammen voor geminimaliseerde toepassingen of "
-"starters, apparaten en mappen."
+msgstr "Stelt de achtergrondkleur in of de afbeelding, met optioneel toepassingenmenu of pictogrammen voor geminimaliseerde toepassingen of starters, apparaten en mappen."
 
 #: ../xfce4-about/main.c:84
 msgid "File Manager "
@@ -559,9 +544,7 @@ msgstr "Bestandbeheerder"
 msgid ""
 "A modern file manager for the Unix/Linux desktop, aiming to be easy-to-use "
 "and fast."
-msgstr ""
-"Een moderne bestandbeheerder voor de Unix/Linux-werkomgeving, met als doel "
-"om snel te zijn en gemakkelijk te gebruiken."
+msgstr "Een moderne bestandbeheerder voor de Unix/Linux-werkomgeving, met als doel om snel te zijn en gemakkelijk te gebruiken."
 
 #: ../xfce4-about/main.c:89
 msgid "Session Manager"
@@ -571,9 +554,7 @@ msgstr "Sessiebeheerder"
 msgid ""
 "Restores your session on startup and allows you to shutdown the computer "
 "from Xfce."
-msgstr ""
-"Herstelt uw sessie bij het opstarten en staat u toe om de computer af te "
-"sluiten vanuit Xfce."
+msgstr "Herstelt uw sessie bij het opstarten en staat u toe om de computer af te sluiten vanuit Xfce."
 
 #: ../xfce4-about/main.c:94
 msgid "Setting System"
@@ -583,9 +564,7 @@ msgstr "Instellingensysteem"
 msgid ""
 "Configuration system to control various aspects of the desktop like "
 "appearance, display, keyboard and mouse settings."
-msgstr ""
-"Configuratiesysteem om verschillende aspecten van de werkomgeving te "
-"beheersen, zoals de instellingen voor uiterlijk, scherm, toetsenbord en muis."
+msgstr "Configuratiesysteem om verschillende aspecten van de werkomgeving te beheersen, zoals de instellingen voor uiterlijk, scherm, toetsenbord en muis."
 
 #: ../xfce4-about/main.c:99
 msgid "Application Finder"
@@ -595,9 +574,7 @@ msgstr "Toepassingenzoeker"
 msgid ""
 "Shows the applications installed on your system in categories, so you can "
 "quickly find and launch them."
-msgstr ""
-"Toont de toepassingen die in uw systeem zijn geïnstalleerd, verdeeld in "
-"categorieën, zodat u ze snel kunt vinden en starten."
+msgstr "Toont de toepassingen die in uw systeem zijn geïnstalleerd, verdeeld in categorieën, zodat u ze snel kunt vinden en starten."
 
 #: ../xfce4-about/main.c:104
 msgid "Settings Daemon"
@@ -611,31 +588,22 @@ msgstr "D-Bus-gebaseerd systeem voor opslag van configuraties."
 msgid ""
 "Xfce is a collection of programs that together provide a full-featured "
 "desktop environment. The following programs are part of the Xfce core:"
-msgstr ""
-"Xfce is een verzameling programma's die gezamenlijk een volledig functionele "
-"werkomgeving bieden. De volgende programma's behoren tot de kern van Xfce:"
+msgstr "Xfce is een verzameling programma's die gezamenlijk een volledig functionele werkomgeving bieden. De volgende programma's behoren tot de kern van Xfce:"
 
 #: ../xfce4-about/main.c:136
 msgid ""
 "Xfce is also a development platform providing several libraries, that help "
 "programmers create applications that fit in well with the desktop "
 "environment."
-msgstr ""
-"Xfce is ook een ontwikkelingsplatform dat verschillende bibliotheken biedt, "
-"die programmeurs helpen om toepassingen te maken die goed passen in de "
-"werkomgeving."
+msgstr "Xfce is ook een ontwikkelingsplatform dat verschillende bibliotheken biedt, die programmeurs helpen om toepassingen te maken die goed passen in de werkomgeving."
 
 #: ../xfce4-about/main.c:142
 msgid ""
-"Xfce components are licensed under free or open source licences; GPL or BSDL "
-"for applications and LGPL or BSDL for libraries. Look at the documentation, "
-"the source code or the Xfce website (http://www.xfce.org) for more "
+"Xfce components are licensed under free or open source licences; GPL or BSDL"
+" for applications and LGPL or BSDL for libraries. Look at the documentation,"
+" the source code or the Xfce website (http://www.xfce.org) for more "
 "information."
-msgstr ""
-"Xfce-onderdelen worden gelicentieerd onder vrije of open-bron-licenties; GPL "
-"of BSDL voor toepassingen en LGPL of BSDL voor bibliotheekbestanden. Lees de "
-"documentatie, de broncode of de Xfce-webstek (http://www.xfce.org) voor meer "
-"inlichtingen."
+msgstr "Xfce-onderdelen worden gelicentieerd onder vrije of open-bron-licenties; GPL of BSDL voor toepassingen en LGPL of BSDL voor bibliotheekbestanden. Lees de documentatie, de broncode of de Xfce-webstek (http://www.xfce.org) voor meer inlichtingen."
 
 #: ../xfce4-about/main.c:149
 msgid "Thank you for your interest in Xfce."
@@ -649,23 +617,17 @@ msgstr "De Xfce-ontwikkelploeg"
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
 "on <http://bugzilla.xfce.org> ."
-msgstr ""
-"Indien u iemand weet die ontbreekt op deze lijst, aarzel dan niet en doe een "
-"foutmelding op <http://bugzilla.xfce.org> ."
+msgstr "Indien u iemand weet die ontbreekt op deze lijst, aarzel dan niet en doe een foutmelding op <http://bugzilla.xfce.org> ."
 
 #: ../xfce4-about/main.c:266
 msgid "Thanks to all who helped making this software available!"
-msgstr ""
-"Dank aan allen die geholpen hebben om deze software beschikbaar te stellen!"
+msgstr "Dank aan allen die geholpen hebben om deze programmatuur beschikbaar te stellen!"
 
 #: ../xfce4-about/main.c:283
 msgid ""
 "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
-msgstr ""
-"Xfce 4 behoort auteursrechtelijk aan Olivier Fourdan (fourdan@xfce.org). De "
-"verschillende onderdelen behoren auteursrechtelijk aan hun respectievelijke "
-"makers."
+msgstr "Xfce 4 behoort auteursrechtelijk aan Olivier Fourdan (fourdan@xfce.org). De verschillende onderdelen behoren auteursrechtelijk aan hun respectievelijke makers."
 
 #: ../xfce4-about/main.c:288
 msgid ""
@@ -673,25 +635,16 @@ msgid ""
 "distributed under the terms of the GNU Library General Public License as "
 "published by the Free Software Foundation; either version 2 of the License, "
 "or (at your option) any later version."
-msgstr ""
-"De libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs and exo pakketten "
-"worden beschikbaar gesteld onder de voorwaarden van de GNU Library General "
-"Public License zoals gepubliceerd door de Free Software Foundation; hetzij "
-"versie 2 van de License, hetzij (naar uw eigen keuze) enige latere versie."
+msgstr "De pakketten libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs en exo worden beschikbaar gesteld onder de voorwaarden van de GNU Library General Public License zoals gepubliceerd door de Free Software Foundation; hetzij versie 2 van de License, hetzij (naar uw eigen keuze) enige nieuwere versie."
 
 #: ../xfce4-about/main.c:295
 msgid ""
-"The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-"
-"settings, xfce-utils, xfconf, xfdesktop and xfwm4 are distributed under the "
-"terms of the GNU General Public License as published by the Free Software "
-"Foundation; either version 2 of the License, or (at your option) any later "
-"version."
-msgstr ""
-"De pakketten thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-"
-"settings, xfce-utils, xfconf, xfdesktop and xfwm4 worden beschikbaar gesteld "
-"onder de voorwaarden van de GNU Library General Public License zoals "
-"gepubliceerd door de Free Software Foundation; hetzij versie 2 van de "
-"License, hetzij (naar uw eigen keuze) enige latere versie."
+"The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, "
+"xfce4-settings, xfce-utils, xfconf, xfdesktop and xfwm4 are distributed "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version."
+msgstr "De pakketten thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfce-utils, xfconf, xfdesktop en xfwm4 worden beschikbaar gesteld onder de voorwaarden van de GNU Library General Public License zoals gepubliceerd door de Free Software Foundation; hetzij versie 2 van de License, hetzij (naar uw eigen keuze) enige nieuwere versie."
 
 #: ../xfce4-about/main.c:442
 #, c-format
@@ -774,42 +727,33 @@ msgid "Information about the Xfce Desktop Environment"
 msgstr "Inlichtingen over de Xfce-werkomgeving"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:1
-msgid "About"
-msgstr "Over"
-
-#: ../xfce4-about/xfce4-about-dialog.glade.h:2
 msgid "About the Xfce Desktop Environment"
 msgstr "Over de Xfce-werkomgeving"
 
+#: ../xfce4-about/xfce4-about-dialog.glade.h:2
+msgid "About"
+msgstr "Over"
+
 #: ../xfce4-about/xfce4-about-dialog.glade.h:3
-msgid "BSD"
-msgstr "BSD"
-
-#: ../xfce4-about/xfce4-about-dialog.glade.h:4
-msgid "Copyright"
-msgstr "Auteursrecht"
-
-#: ../xfce4-about/xfce4-about-dialog.glade.h:5
 msgid "Credits"
 msgstr "Dankbetuigingen"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:6
+#: ../xfce4-about/xfce4-about-dialog.glade.h:4
 msgid "GPL"
 msgstr "GPL"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:7
+#: ../xfce4-about/xfce4-about-dialog.glade.h:5
 msgid "LGPL"
 msgstr "LGPL"
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:6
+msgid "BSD"
+msgstr "BSD"
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:7
+msgid "Copyright"
+msgstr "Auteursrecht"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:8
 msgid "License"
 msgstr "Licentie"
-
-#~ msgid "Keep the other one"
-#~ msgstr "De andere behouden"
-
-#~ msgid "Utilities and Scripts"
-#~ msgstr "Hulpmiddelen en scripts"
-
-#~ msgid "Startup scripts, run dialog and about dialog."
-#~ msgstr "Opstartscripts, draaidialoog en 'over'-dialoog."
