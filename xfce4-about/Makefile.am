@@ -36,6 +36,9 @@ desktop_in_files = xfce4-about.desktop.in
 desktop_DATA = $(desktop_in_files:.desktop.in=.desktop)
 @INTLTOOL_DESKTOP_RULE@
 
+DISTCLEANFILES = \
+	$(desktop_DATA)
+
 if MAINTAINER_MODE
 
 about-dialog-ui.h: $(srcdir)/xfce4-about-dialog.glade Makefile
@@ -44,9 +47,8 @@ about-dialog-ui.h: $(srcdir)/xfce4-about-dialog.glade Makefile
 BUILT_SOURCES = \
 	$(xfce4_about_built_sources)
 
-DISTCLEANFILES = \
-	$(xfce4_about_built_sources) \
-	$(desktop_DATA)
+DISTCLEANFILES += \
+	$(xfce4_about_built_sources)
 
 endif
 

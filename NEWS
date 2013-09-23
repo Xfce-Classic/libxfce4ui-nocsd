@@ -1,3 +1,27 @@
+4.11.0
+======
+- Compile GTK+-3 version of libxfce4ui when possible.
+- Depend on GTK 2.24 and Glib 2.28.
+- Only define distclean files in maintainer mode (bug #8974).
+- Don't remove keyboard shortcut when entered twice (bug #8749).
+- Fix keyboard shortcuts with Shift modifier (bug #8744).
+- Fix alt + print being detected as SysReq (bug #7897).
+- Use <Primary> instead of <Control> (bug #8200).
+- Fix keyboard shortcuts with keypad (bug #4178).
+- Autotools updates.
+- Prefer exo-open for opening the manual pages.
+- Add error domain for XfceSmClient.
+- Translation updates: Amharic, Arabic, Asturian, Bulgarian, Bengali,
+  Catalan (Valencian), Czech, Danish, German, Greek, English (United
+  Kingdom), Spanish (Castilian), Basque, Finnish, French, Galician,
+  Hebrew, Croatian, Hungarian, Indonesian, Icelandic, Italian,
+  Japanese, Kazakh, Korean, Kurdish, Lithuanian, Latvian, Norwegian
+  Bokmal, Dutch (Flemish), Norwegian Nynorsk, Panjabi (Punjabi),
+  Polish, Portuguese, Portuguese (Brazilian), Romanian, Russian,
+  Sinhala, Slovak, Serbian, Swedish, Telugu, Thai, Tagalog, Tagalog
+  (Philippines), Turkish, Uyghur, Ukrainian, Urdu, Urdu (Pakistan),
+  Vietnamese, Chinese (China), Chinese (Taiwan).
+
 4.10.0
 ======
 - Update contributor credits.
