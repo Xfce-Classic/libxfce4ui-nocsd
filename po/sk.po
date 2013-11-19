@@ -1,22 +1,23 @@
-# Slovak translation of libxfce4ui
-# Copyright (C) 2008 the libxfce4ui's copyright holder.
-# This file is distributed under the same license as the libxfce4ui package.
-# Robert Hartl <hartl.robert@gmail.com>, 2009.
-# Tomáš Vadina <kyberdev@gmail.com>, 2011, 2012.
-#
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Robert Hartl <hartl.robert@gmail.com>, 2009
+# Tomáš Vadina <tomasvadina+transifex@myopera.com>, 2011-2012
 msgid ""
 msgstr ""
-"Project-Id-Version: 4.7.0\n"
+"Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-12-28 09:06+0100\n"
-"PO-Revision-Date: 2012-01-09 11:08+0100\n"
-"Last-Translator: Tomáš Vadina <kyberdev@gmail.com>\n"
-"Language-Team: slovenčina <slovenska-lokalizacia-xfce@googlegroups.com>\n"
-"Language: sk\n"
+"POT-Creation-Date: 2013-07-02 22:33+0200\n"
+"PO-Revision-Date: 2013-11-19 11:04+0000\n"
+"Last-Translator: Nick <nick@xfce.org>\n"
+"Language-Team: Slovak (http://www.transifex.com/projects/p/xfce/language/sk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1) ? 1 : (n>=2 && n<=4) ? 2 : 0;\n"
+"Language: sk\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 
 #: ../libxfce4ui/xfce-dialogs.c:98
 msgid "Failed to open web browser for online documentation"
@@ -37,11 +38,9 @@ msgstr "Online dokumentácia"
 
 #: ../libxfce4ui/xfce-dialogs.c:221
 msgid ""
-"You will be redirected to the documentation website where the help pages are "
-"maintained and translated."
-msgstr ""
-"Budete presmerovaní na webovú stránku dokumentácie, kde sa stránky pomocníka "
-"udržujú a prekladajú."
+"You will be redirected to the documentation website where the help pages are"
+" maintained and translated."
+msgstr "Budete presmerovaní na webovú stránku dokumentácie, kde sa stránky pomocníka udržujú a prekladajú."
 
 #: ../libxfce4ui/xfce-dialogs.c:225
 msgid "_Read Online"
@@ -52,9 +51,8 @@ msgid "_Always go directly to the online documentation"
 msgstr "_Vždy automaticky prejsť na online dokumentáciu"
 
 #: ../libxfce4ui/xfce-dialogs.c:281
-#, fuzzy
 msgid "Information"
-msgstr "Informácia o verzií"
+msgstr ""
 
 #: ../libxfce4ui/xfce-dialogs.c:314
 msgid "Warning"
@@ -68,36 +66,32 @@ msgstr "Chyba"
 msgid "Question"
 msgstr "Otázka"
 
-#: ../libxfce4ui/xfce-sm-client.c:1403
-#, fuzzy
+#: ../libxfce4ui/xfce-sm-client.c:1424
 msgid "Session management client ID"
-msgstr "Soket správcu sedenia"
+msgstr ""
 
-#: ../libxfce4ui/xfce-sm-client.c:1403
+#: ../libxfce4ui/xfce-sm-client.c:1424
 msgid "ID"
 msgstr "ID"
 
-#: ../libxfce4ui/xfce-sm-client.c:1404
-#, fuzzy
+#: ../libxfce4ui/xfce-sm-client.c:1425
 msgid "Disable session management"
-msgstr "Soket správcu sedenia"
+msgstr ""
 
-#: ../libxfce4ui/xfce-sm-client.c:1414
-#, fuzzy
+#: ../libxfce4ui/xfce-sm-client.c:1435
 msgid "Session management options"
-msgstr "Soket správcu sedenia"
+msgstr ""
 
-#: ../libxfce4ui/xfce-sm-client.c:1415
-#, fuzzy
+#: ../libxfce4ui/xfce-sm-client.c:1436
 msgid "Show session management options"
-msgstr "Soket správcu sedenia"
+msgstr ""
 
-#: ../libxfce4ui/xfce-sm-client.c:1591
+#: ../libxfce4ui/xfce-sm-client.c:1611
 #, c-format
 msgid "Failed to connect to the session manager: %s"
 msgstr "Nepodarilo sa pripojiť k správcovi sedenia: %s"
 
-#: ../libxfce4ui/xfce-sm-client.c:1598
+#: ../libxfce4ui/xfce-sm-client.c:1617
 #, c-format
 msgid "Session manager did not return a valid client id"
 msgstr "Správca sedenia nevrátil platný identifikátor klienta"
@@ -106,19 +100,16 @@ msgstr "Správca sedenia nevrátil platný identifikátor klienta"
 #: ../libxfce4ui/xfce-spawn.c:413
 #, c-format
 msgid ""
-"Working directory \"%s\" does not exist. It won't be used when spawning \"%s"
-"\"."
-msgstr ""
-"Pracovný adresár \"%s\" neexistuje.  Pri spustení \"%s\" nebude použitý."
+"Working directory \"%s\" does not exist. It won't be used when spawning "
+"\"%s\"."
+msgstr "Pracovný adresár \"%s\" neexistuje.  Pri spustení \"%s\" nebude použitý."
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
-#, fuzzy, c-format
+#, c-format
 msgid ""
-"This shortcut is already being used for the action '%s'. Which action do you "
-"want to use?"
+"This shortcut is already being used for the action '%s'. Which action do you"
+" want to use?"
 msgstr ""
-"Skratka sa už používa!\n"
-"Ste si istý, že ju chcete použiť?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:54
 #: ../libxfce4kbd-private/xfce-shortcuts.c:57
@@ -138,22 +129,18 @@ msgstr "Ponechať '%s'"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
 #: ../libxfce4kbd-private/xfce-shortcuts.c:59
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "This shortcut is already being used for the command '%s'. Which action do "
 "you want to use?"
 msgstr ""
-"Skratka sa už používa!\n"
-"Ste si istý, že ju chcete použiť?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "This shortcut is already being used by the action '%s'. Which action do you "
 "want to use?"
 msgstr ""
-"Skratka sa už používa!\n"
-"Ste si istý, že ju chcete použiť?"
 
 #. This shortcut already exists in the provider, we don't want it twice
 #. Warn the user
@@ -171,37 +158,30 @@ msgstr ""
 msgid "Conflicting actions for %s"
 msgstr "Konflikt medzi akciami pre %s"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:189
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcuts.c:176
 msgid "This shortcut is already being used for something else."
 msgstr ""
-"Skratka sa už používa!\n"
-"Ste si istý, že ju chcete použiť?"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:209
-#, fuzzy
 msgid "Window Manager Action Shortcut"
-msgstr "Nastavenia správcu okien prostredia Xfce 4"
+msgstr ""
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:212
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:226
-#, fuzzy
 msgid "action"
-msgstr "Akcia"
+msgstr ""
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:216
-#, fuzzy
 msgid "Command Shortcut"
-msgstr "Vložiť skratkovú klávesu"
+msgstr ""
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:219
-#, fuzzy
 msgid "command"
-msgstr "Príkaz"
+msgstr ""
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:223
 msgid "Shortcut"
@@ -222,312 +202,308 @@ msgid "No keys pressed yet, proceed."
 msgstr ""
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:378
-#, fuzzy
 msgid "Could not grab the keyboard."
-msgstr "Nedá sa vytvoriť dialógové okno nastavení."
+msgstr ""
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:33
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:36
 msgid "Window operations menu"
 msgstr "Ponuka možností okna"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:34
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:37
 msgid "Up"
 msgstr "Hore"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:35
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:38
 msgid "Down"
 msgstr "Dole"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:36
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:39
 msgid "Left"
 msgstr "Vľavo"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:37
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:40
 msgid "Right"
 msgstr "Vpravo"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:38
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:41
 msgid "Cancel"
 msgstr "Zrušiť"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:39
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:42
 msgid "Cycle windows"
 msgstr "Prechádzať okná"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:40
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:43
 msgid "Cycle windows (Reverse)"
 msgstr "Prechádzať okná (obrátene)"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:41
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:44
 msgid "Switch window for same application"
 msgstr "Prepnúť okno rovnakej aplikácie"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:42
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:45
 msgid "Switch application"
 msgstr "Prepnúť aplikáciu"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:43
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:46
 msgid "Close window"
 msgstr "Zatvoriť okno"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:44
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:47
 msgid "Maximize window horizontally"
 msgstr "Maximalizovať okno vodorovne"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:45
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:48
 msgid "Maximize window vertically"
 msgstr "Maximalizovať okno zvislo"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:46
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:49
 msgid "Maximize window"
 msgstr "Maximalizovať okno"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:47
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:50
 msgid "Hide window"
 msgstr "Skryť okno"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:48
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:51
 msgid "Move window"
 msgstr "Presunúť okno"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:49
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:52
 msgid "Resize window"
 msgstr "Zmeniť veľkosť okna"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:50
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:53
 msgid "Shade window"
 msgstr "Zabaliť okno"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:51
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:54
 msgid "Stick window"
 msgstr "Prilepiť okno"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:52
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:55
 msgid "Raise window"
 msgstr "Zdvihnúť okno"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:53
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:56
 msgid "Lower window"
 msgstr "Znížiť okno"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:54
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:57
 msgid "Raise or lower window"
 msgstr "Zdvihnúť alebo znížiť okno"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:55
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:58
 msgid "Fill window"
 msgstr "Vyplniť okno"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:56
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:59
 msgid "Fill window horizontally"
 msgstr "Vyplniť okno vo vodorovnom smere"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:57
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:60
 msgid "Fill window vertically"
 msgstr "Vyplniť okno vo zvislom smere"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:58
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:61
 msgid "Toggle above"
 msgstr "Prepnúť hore"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:59
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:62
 msgid "Toggle fullscreen"
 msgstr "Prepnúť na celú obrazovku"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:60
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:63
 msgid "Move window to upper workspace"
 msgstr "Presunúť okno na vrchnú pracovnú plochu"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:61
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:64
 msgid "Move window to bottom workspace"
 msgstr "Presunúť okno na spodnú pracovnú plochu"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:62
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:65
 msgid "Move window to left workspace"
 msgstr "Presunúť okno na ľavú pracovnú plochu"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:63
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:66
 msgid "Move window to right workspace"
 msgstr "Presunúť okno na pravú pracovnú plochu"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:64
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:67
 msgid "Move window to previous workspace"
 msgstr "Presunúť okno na predchádzajúcu plochu"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:65
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:68
 msgid "Move window to next workspace"
 msgstr "Presunúť okno na nasledujúcu plochu"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:66
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:69
 msgid "Move window to workspace 1"
 msgstr "Presunúť okno na pracovnú plochu 1"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:67
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:70
 msgid "Move window to workspace 2"
 msgstr "Presunúť okno na pracovnú plochu 2"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:68
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:71
 msgid "Move window to workspace 3"
 msgstr "Presunúť okno na pracovnú plochu 3"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:69
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:72
 msgid "Move window to workspace 4"
 msgstr "Presunúť okno na pracovnú plochu 4"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:70
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:73
 msgid "Move window to workspace 5"
 msgstr "Presunúť okno na pracovnú plochu 5"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:71
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:74
 msgid "Move window to workspace 6"
 msgstr "Presunúť okno na pracovnú plochu 6"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:72
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:75
 msgid "Move window to workspace 7"
 msgstr "Presunúť okno na pracovnú plochu 7"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:73
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:76
 msgid "Move window to workspace 8"
 msgstr "Presunúť okno na pracovnú plochu 8"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:74
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:77
 msgid "Move window to workspace 9"
 msgstr "Presunúť okno na pracovnú plochu 9"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:75
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:78
 msgid "Move window to workspace 10"
 msgstr "Presunúť okno na pracovnú plochu 10"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:76
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:79
 msgid "Move window to workspace 11"
 msgstr "Presunúť okno na pracovnú plochu 11"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:77
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:80
 msgid "Move window to workspace 12"
 msgstr "Presunúť okno na pracovnú plochu 12"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:78
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:81
 msgid "Tile window to the top"
 msgstr "Umiestniť okno nahor"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:79
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:82
 msgid "Tile window to the bottom"
 msgstr "Umiestniť okno nadol"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:80
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:83
 msgid "Tile window to the left"
 msgstr "Umiestniť okno naľavo"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:81
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:84
 msgid "Tile window to the right"
 msgstr "Umiestniť okno napravo"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:82
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:85
 msgid "Show desktop"
 msgstr "Zobraziť pracovnú plochu"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:83
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:86
 msgid "Upper workspace"
 msgstr "Vrchná pracovná plocha"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:84
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:87
 msgid "Bottom workspace"
 msgstr "Spodná pracovná plocha"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:85
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:88
 msgid "Left workspace"
 msgstr "Ľavá pracovná plocha"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:86
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:89
 msgid "Right workspace"
 msgstr "Pravá pracovná plocha"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:87
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:90
 msgid "Previous workspace"
 msgstr "Predchádzajúca pracovná plocha"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:88
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:91
 msgid "Next workspace"
 msgstr "Nasledujúca pracovná plocha"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:89
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:92
 msgid "Workspace 1"
 msgstr "Pracovná plocha 1"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:90
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:93
 msgid "Workspace 2"
 msgstr "Pracovná plocha 2"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:91
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:94
 msgid "Workspace 3"
 msgstr "Pracovná plocha 3"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:92
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:95
 msgid "Workspace 4"
 msgstr "Pracovná plocha 4"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:93
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:96
 msgid "Workspace 5"
 msgstr "Pracovná plocha 5"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:94
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:97
 msgid "Workspace 6"
 msgstr "Pracovná plocha 6"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:95
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:98
 msgid "Workspace 7"
 msgstr "Pracovná plocha 7"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:96
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:99
 msgid "Workspace 8"
 msgstr "Pracovná plocha 8"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:97
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:100
 msgid "Workspace 9"
 msgstr "Pracovná plocha 9"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:98
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:101
 msgid "Workspace 10"
 msgstr "Pracovná plocha 10"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:99
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:102
 msgid "Workspace 11"
 msgstr "Pracovná plocha 11"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:100
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:103
 msgid "Workspace 12"
 msgstr "Pracovná plocha 12"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:101
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:104
 msgid "Add workspace"
 msgstr "Pridať pracovnú plochu"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:102
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:105
 msgid "Add adjacent workspace"
 msgstr "Pridať priľahlú pracovnú plochu"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:103
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:106
 msgid "Delete last workspace"
 msgstr "Odstrániť poslednú pracovnú plochu"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:104
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:107
 msgid "Delete active workspace"
 msgstr "Odstrániť pracovnú plochu"
 
 #: ../glade/libxfce4ui.xml.in.h:1
-#, fuzzy
 msgid "Titled Dialog"
-msgstr "Font titulku"
+msgstr ""
 
 #: ../glade/libxfce4ui.xml.in.h:2
-#, fuzzy
 msgid "Subtitle"
-msgstr "Titulok"
+msgstr ""
 
 #: ../glade/libxfce4ui.xml.in.h:3
-#, fuzzy
 msgid "Xfce 4 Widgets"
-msgstr "Nastavenia správcu okien prostredia Xfce 4"
+msgstr ""
 
 #: ../xfce4-about/main.c:52
 msgid "Version information"
@@ -538,9 +514,8 @@ msgid "Window Manager"
 msgstr "Správca okien"
 
 #: ../xfce4-about/main.c:71
-#, fuzzy
 msgid "Handles the placement of windows on the screen."
-msgstr "V _strede obrazovky"
+msgstr ""
 
 #: ../xfce4-about/main.c:74
 msgid "Panel"
@@ -548,42 +523,33 @@ msgstr "Panel"
 
 #: ../xfce4-about/main.c:75
 msgid ""
-"Program launchers, window buttons, applications menu, workspace switcher and "
-"more."
-msgstr ""
-"Spúšťače programov, tlačidlá okien, ponuka aplikácií, prepínač pracovných "
-"plôch a iné."
+"Program launchers, window buttons, applications menu, workspace switcher and"
+" more."
+msgstr "Spúšťače programov, tlačidlá okien, ponuka aplikácií, prepínač pracovných plôch a iné."
 
 #: ../xfce4-about/main.c:79
-#, fuzzy
 msgid "Desktop Manager"
-msgstr "Správca okien"
+msgstr ""
 
 #: ../xfce4-about/main.c:80
 msgid ""
 "Sets the background color or image with optional application menu or icons "
 "for minimized applications or launchers, devices and folders."
-msgstr ""
-"Nastavuje farbu pozadia alebo obrázok s voliteľnou ponukou aplikácií alebo "
-"ikon pre minimalizované aplikácie alebo spúšťače, zariadenia a priečinky."
+msgstr "Nastavuje farbu pozadia alebo obrázok s voliteľnou ponukou aplikácií alebo ikon pre minimalizované aplikácie alebo spúšťače, zariadenia a priečinky."
 
 #: ../xfce4-about/main.c:84
-#, fuzzy
 msgid "File Manager "
-msgstr "Správca okien"
+msgstr ""
 
 #: ../xfce4-about/main.c:85
 msgid ""
 "A modern file manager for the Unix/Linux desktop, aiming to be easy-to-use "
 "and fast."
-msgstr ""
-"Moderný správca súborov pre prostredie Unix/Linux, zameraný na jednoduché "
-"používanie a rýchlosť."
+msgstr "Moderný správca súborov pre prostredie Unix/Linux, zameraný na jednoduché používanie a rýchlosť."
 
 #: ../xfce4-about/main.c:89
-#, fuzzy
 msgid "Session Manager"
-msgstr "Soket správcu sedenia"
+msgstr ""
 
 #: ../xfce4-about/main.c:90
 msgid ""
@@ -599,9 +565,7 @@ msgstr "Nastavenie systému"
 msgid ""
 "Configuration system to control various aspects of the desktop like "
 "appearance, display, keyboard and mouse settings."
-msgstr ""
-"Nastavenie systému na ovládanie rôznych aspektov prostredia ako napríklad "
-"vzhľadu, obrazovky, nastavení klávesnice a myši."
+msgstr "Nastavenie systému na ovládanie rôznych aspektov prostredia ako napríklad vzhľadu, obrazovky, nastavení klávesnice a myši."
 
 #: ../xfce4-about/main.c:99
 msgid "Application Finder"
@@ -611,14 +575,11 @@ msgstr "Vyhľadávač aplikácií"
 msgid ""
 "Shows the applications installed on your system in categories, so you can "
 "quickly find and launch them."
-msgstr ""
-"Zobrazí aplikácie nainštalované vo vašom systéme v kategóriách, tak ich "
-"môžete rýchlo nájsť a spustiť."
+msgstr "Zobrazí aplikácie nainštalované vo vašom systéme v kategóriách, tak ich môžete rýchlo nájsť a spustiť."
 
 #: ../xfce4-about/main.c:104
-#, fuzzy
 msgid "Settings Daemon"
-msgstr "Nastavenia správcu soketu"
+msgstr ""
 
 #: ../xfce4-about/main.c:105
 msgid "D-Bus-based configuration storage system."
@@ -628,31 +589,22 @@ msgstr "Úložný systém nastavení založený na D-Bus."
 msgid ""
 "Xfce is a collection of programs that together provide a full-featured "
 "desktop environment. The following programs are part of the Xfce core:"
-msgstr ""
-"Xfce je zbierkou aplikácií, ktoré dokopy poskytujú plne vybavené pracovné "
-"prostredie. Súčasťou jadra Xfce sú tieto aplikácie:"
+msgstr "Xfce je zbierkou aplikácií, ktoré dokopy poskytujú plne vybavené pracovné prostredie. Súčasťou jadra Xfce sú tieto aplikácie:"
 
 #: ../xfce4-about/main.c:136
 msgid ""
 "Xfce is also a development platform providing several libraries, that help "
 "programmers create applications that fit in well with the desktop "
 "environment."
-msgstr ""
-"Xfce je taktiež vývojovou platformou, poskytujúcou veľa knižníc, ktoré "
-"programátorom pomáhajú vytvárať aplikácie zapadajúce do pracovného "
-"prostredia."
+msgstr "Xfce je taktiež vývojovou platformou, poskytujúcou veľa knižníc, ktoré programátorom pomáhajú vytvárať aplikácie zapadajúce do pracovného prostredia."
 
 #: ../xfce4-about/main.c:142
 msgid ""
-"Xfce components are licensed under free or open source licences; GPL or BSDL "
-"for applications and LGPL or BSDL for libraries. Look at the documentation, "
-"the source code or the Xfce website (http://www.xfce.org) for more "
+"Xfce components are licensed under free or open source licences; GPL or BSDL"
+" for applications and LGPL or BSDL for libraries. Look at the documentation,"
+" the source code or the Xfce website (http://www.xfce.org) for more "
 "information."
-msgstr ""
-"Komponenty Xfce sú licencované pod slobodnou licenciou s otvoreným zdrojovým "
-"kódom; GPL alebo BSDL pre aplikácie a LGPL alebo BDSL pre knižnice. Viac "
-"informácií o zdrojových kódoch nájdete na internetovej adrese Xfce  (http://"
-"www.xfce.org)."
+msgstr "Komponenty Xfce sú licencované pod slobodnou licenciou s otvoreným zdrojovým kódom; GPL alebo BSDL pre aplikácie a LGPL alebo BDSL pre knižnice. Viac informácií o zdrojových kódoch nájdete na internetovej adrese Xfce  (http://www.xfce.org)."
 
 #: ../xfce4-about/main.c:149
 msgid "Thank you for your interest in Xfce."
@@ -666,22 +618,17 @@ msgstr "Vývojový tím Xfce"
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
 "on <http://bugzilla.xfce.org> ."
-msgstr ""
-"Ak poznáte niekoho, kto chýba na tomto zozname, tak neváhajte a dajte nám "
-"prosím vedieť na <http://bugzilla.xfce.org> ."
+msgstr "Ak poznáte niekoho, kto chýba na tomto zozname, tak neváhajte a dajte nám prosím vedieť na <http://bugzilla.xfce.org> ."
 
 #: ../xfce4-about/main.c:266
 msgid "Thanks to all who helped making this software available!"
-msgstr ""
-"Ďakujeme všetkým, ktorí pomohli k tomu, aby bol tento softvér prístupný."
+msgstr "Ďakujeme všetkým, ktorí pomohli k tomu, aby bol tento softvér prístupný."
 
 #: ../xfce4-about/main.c:283
 msgid ""
 "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
-msgstr ""
-"Xfce 4 je autorským právom Oliviera Fourdana (fourdan@xfce.org). Rôzne "
-"komponenty sú chránené autorskými právami ich autorov."
+msgstr "Xfce 4 je autorským právom Oliviera Fourdana (fourdan@xfce.org). Rôzne komponenty sú chránené autorskými právami ich autorov."
 
 #: ../xfce4-about/main.c:288
 msgid ""
@@ -689,29 +636,21 @@ msgid ""
 "distributed under the terms of the GNU Library General Public License as "
 "published by the Free Software Foundation; either version 2 of the License, "
 "or (at your option) any later version."
-msgstr ""
-"Balíčky libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs a exo sú šírené "
-"pod podmienkami licencie GNU Library General Public License vydanou "
-"nadáciou  Free Software Foundation vo verzii 2 alebo (podľa Vašej vlastnej "
-"voľby) vyššej."
+msgstr "Balíčky libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs a exo sú šírené pod podmienkami licencie GNU Library General Public License vydanou nadáciou  Free Software Foundation vo verzii 2 alebo (podľa Vašej vlastnej voľby) vyššej."
 
 #: ../xfce4-about/main.c:295
 msgid ""
-"The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-"
-"settings, xfce-utils, xfconf, xfdesktop and xfwm4 are distributed under the "
-"terms of the GNU General Public License as published by the Free Software "
-"Foundation; either version 2 of the License, or (at your option) any later "
-"version."
-msgstr ""
-"Balíčky thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, "
-"xfce-utils, xfconf, xfdesktop a xfwm4 sú distribuované pod GNU General "
-"Public License, vydávanej Free Software Foundation; buď verzie 2 tejto "
-"licencie alebo (podľa vášho uváženia) ktorejkoľvek neskoršej verzie."
+"The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, "
+"xfce4-settings, xfce-utils, xfconf, xfdesktop and xfwm4 are distributed "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version."
+msgstr "Balíčky thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfce-utils, xfconf, xfdesktop a xfwm4 sú distribuované pod GNU General Public License, vydávanej Free Software Foundation; buď verzie 2 tejto licencie alebo (podľa vášho uváženia) ktorejkoľvek neskoršej verzie."
 
 #: ../xfce4-about/main.c:442
-#, fuzzy, c-format
+#, c-format
 msgid "Type '%s --help' for usage information."
-msgstr "Informácie o použití získate príkazom \"%s --help\" ."
+msgstr ""
 
 #: ../xfce4-about/main.c:448
 msgid "Unable to initialize GTK+."
@@ -745,9 +684,9 @@ msgstr "Verzia %s, šírené cez %s"
 
 #. I18N: %s will be replaced by the Xfce version number
 #: ../xfce4-about/main.c:489
-#, fuzzy, c-format
+#, c-format
 msgid "Version %s"
-msgstr "%s (na %s)"
+msgstr ""
 
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
@@ -773,14 +712,12 @@ msgid "Translations supervision"
 msgstr "Dohľad nad prekladmi"
 
 #: ../xfce4-about/contributors.h:136
-#, fuzzy
 msgid "Translators"
-msgstr "Priehľadné"
+msgstr ""
 
 #: ../xfce4-about/contributors.h:139
-#, fuzzy
 msgid "Previous contributors"
-msgstr "Predchádzajúca pracovná plocha"
+msgstr ""
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:1
 msgid "About Xfce"
@@ -821,36 +758,3 @@ msgstr "Autorské práva"
 #: ../xfce4-about/xfce4-about-dialog.glade.h:8
 msgid "License"
 msgstr "Licencia"
-
-msgid "Keep the other one"
-msgstr "Ponechať inú"
-
-msgid "Utilities and Scripts"
-msgstr "Nástroje a skripty"
-
-msgid "Startup scripts, run dialog and about dialog."
-msgstr "Skripty po spustení, spustiť dialóg a dialóg o programe."
-
-msgid "<span size='large'><b>%s</b></span>"
-msgstr "<span size='large'><b>%s</b></span>"
-
-msgid "File is not a valid .desktop file"
-msgstr "Súbor nie je platným súborom typu .desktop"
-
-msgid "Unrecognized desktop file Version '%s'"
-msgstr "Nerozpoznaný súbor plochy verzie '%s'"
-
-msgid "Application does not accept documents on command line"
-msgstr "Aplikácia neprijíma dokumenty na príkazovom riadku"
-
-msgid "Unrecognized launch option: %d"
-msgstr "Nerozpoznaný parameter spustenia: %d"
-
-msgid "Not a launchable item"
-msgstr "Nespustiteľná položka"
-
-msgid "Specify file containing saved configuration"
-msgstr "Zadajte súbor obsahujúci konfiguráciu"
-
-msgid "FILE"
-msgstr "SÚBOR"
