@@ -1,24 +1,24 @@
-# Russian translations for libxfce4ui package.
-# Copyright (C) 2011 The Xfce development team.
-# This file is distributed under the same license as the libxfce4ui package.
-# Aleksandr Ponomarenko <davian818@gmail.com>, 2010.
-# Denis Koryavov <dkoryavov@yandex.ru>, 2010.
-# Artem Zolochevskiy <artem.zolochevskiy@gmail.com>, 2011.
-#
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Aleksandr P <davian818@gmail.com>, 2010
+# Artem Zolochevskiy <artem.zolochevskiy@gmail.com>, 2011
+# Denis Koryavov <dkoryavov@yandex.ru>, 2010
 msgid ""
 msgstr ""
-"Project-Id-Version: libxfce4ui_ru\n"
+"Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-27 20:39+0400\n"
-"PO-Revision-Date: 2013-01-27 20:39+0400\n"
-"Last-Translator: Sergey Alyoshin <alyoshin.s@gmail.com>\n"
-"Language-Team: xfce-i18n@xfce.org\n"
-"Language: ru\n"
+"POT-Creation-Date: 2013-07-02 22:33+0200\n"
+"PO-Revision-Date: 2013-11-19 11:04+0000\n"
+"Last-Translator: Nick <nick@xfce.org>\n"
+"Language-Team: Russian (http://www.transifex.com/projects/p/xfce/language/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #: ../libxfce4ui/xfce-dialogs.c:98
 msgid "Failed to open web browser for online documentation"
@@ -39,11 +39,9 @@ msgstr "Онлайн-документация"
 
 #: ../libxfce4ui/xfce-dialogs.c:221
 msgid ""
-"You will be redirected to the documentation website where the help pages are "
-"maintained and translated."
-msgstr ""
-"Вы будете перенаправлены на сайт с документацией, где страницы помощи "
-"переводятся и поддерживаются сообществом."
+"You will be redirected to the documentation website where the help pages are"
+" maintained and translated."
+msgstr "Вы будете перенаправлены на сайт с документацией, где страницы помощи переводятся и поддерживаются сообществом."
 
 #: ../libxfce4ui/xfce-dialogs.c:225
 msgid "_Read Online"
@@ -69,32 +67,32 @@ msgstr "Ошибка"
 msgid "Question"
 msgstr "Вопрос"
 
-#: ../libxfce4ui/xfce-sm-client.c:1403
+#: ../libxfce4ui/xfce-sm-client.c:1424
 msgid "Session management client ID"
 msgstr "ID клиента менеджера сессии"
 
-#: ../libxfce4ui/xfce-sm-client.c:1403
+#: ../libxfce4ui/xfce-sm-client.c:1424
 msgid "ID"
 msgstr "ID"
 
-#: ../libxfce4ui/xfce-sm-client.c:1404
+#: ../libxfce4ui/xfce-sm-client.c:1425
 msgid "Disable session management"
 msgstr "Выключить менеджер сессий"
 
-#: ../libxfce4ui/xfce-sm-client.c:1414
+#: ../libxfce4ui/xfce-sm-client.c:1435
 msgid "Session management options"
 msgstr "Опции менеджера сессий"
 
-#: ../libxfce4ui/xfce-sm-client.c:1415
+#: ../libxfce4ui/xfce-sm-client.c:1436
 msgid "Show session management options"
 msgstr "Показать опции менеджера сессий"
 
-#: ../libxfce4ui/xfce-sm-client.c:1591
+#: ../libxfce4ui/xfce-sm-client.c:1611
 #, c-format
 msgid "Failed to connect to the session manager: %s"
 msgstr "Не удалось подключиться к менеджеру сеансов: %s"
 
-#: ../libxfce4ui/xfce-sm-client.c:1598
+#: ../libxfce4ui/xfce-sm-client.c:1617
 #, c-format
 msgid "Session manager did not return a valid client id"
 msgstr "Менеджер сеансов не предоставил допустимый идентификатор клиента"
@@ -103,20 +101,16 @@ msgstr "Менеджер сеансов не предоставил допуст
 #: ../libxfce4ui/xfce-spawn.c:413
 #, c-format
 msgid ""
-"Working directory \"%s\" does not exist. It won't be used when spawning \"%s"
-"\"."
-msgstr ""
-"Рабочий каталог «%s» не существует. Он не будет использоваться для вызова "
-"«%s»."
+"Working directory \"%s\" does not exist. It won't be used when spawning "
+"\"%s\"."
+msgstr "Рабочий каталог «%s» не существует. Он не будет использоваться для вызова «%s»."
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 #, c-format
 msgid ""
-"This shortcut is already being used for the action '%s'. Which action do you "
-"want to use?"
-msgstr ""
-"Эта комбинация клавиш уже назначена команде «%s». Какое действие требуется "
-"использовать?"
+"This shortcut is already being used for the action '%s'. Which action do you"
+" want to use?"
+msgstr "Эта комбинация клавиш уже назначена команде «%s». Какое действие требуется использовать?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:54
 #: ../libxfce4kbd-private/xfce-shortcuts.c:57
@@ -140,18 +134,14 @@ msgstr "Оставить «%s»"
 msgid ""
 "This shortcut is already being used for the command '%s'. Which action do "
 "you want to use?"
-msgstr ""
-"Эта комбинация клавиш уже назначена команде «%s». Какое действие требуется "
-"использовать?"
+msgstr "Эта комбинация клавиш уже назначена команде «%s». Какое действие требуется использовать?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 #, c-format
 msgid ""
 "This shortcut is already being used by the action '%s'. Which action do you "
 "want to use?"
-msgstr ""
-"Эта комбинация клавиш уже назначена команде «%s». Какое действие требуется "
-"использовать?"
+msgstr "Эта комбинация клавиш уже назначена команде «%s». Какое действие требуется использовать?"
 
 #. This shortcut already exists in the provider, we don't want it twice
 #. Warn the user
@@ -534,10 +524,9 @@ msgstr "Панель"
 
 #: ../xfce4-about/main.c:75
 msgid ""
-"Program launchers, window buttons, applications menu, workspace switcher and "
-"more."
-msgstr ""
-"Ярлыки, кнопки окон, меню приложений, переключатель рабочих столов и другое."
+"Program launchers, window buttons, applications menu, workspace switcher and"
+" more."
+msgstr "Ярлыки, кнопки окон, меню приложений, переключатель рабочих столов и другое."
 
 #: ../xfce4-about/main.c:79
 msgid "Desktop Manager"
@@ -547,9 +536,7 @@ msgstr "Менеджер рабочего стола"
 msgid ""
 "Sets the background color or image with optional application menu or icons "
 "for minimized applications or launchers, devices and folders."
-msgstr ""
-"Устанавливает цвет фона или изображение с дополнительным меню приложения или "
-"иконки для свёрнутых приложений, ярлыков, устройств и каталогов."
+msgstr "Устанавливает цвет фона или изображение с дополнительным меню приложения или иконки для свёрнутых приложений, ярлыков, устройств и каталогов."
 
 #: ../xfce4-about/main.c:84
 msgid "File Manager "
@@ -559,9 +546,7 @@ msgstr "Диспетчер файлов"
 msgid ""
 "A modern file manager for the Unix/Linux desktop, aiming to be easy-to-use "
 "and fast."
-msgstr ""
-"Современный файл-менеджер для рабочего стола Unix/Linux, стремящийся быть "
-"быстрым и простым в использовании."
+msgstr "Современный файл-менеджер для рабочего стола Unix/Linux, стремящийся быть быстрым и простым в использовании."
 
 #: ../xfce4-about/main.c:89
 msgid "Session Manager"
@@ -571,9 +556,7 @@ msgstr "Менеджер сессий"
 msgid ""
 "Restores your session on startup and allows you to shutdown the computer "
 "from Xfce."
-msgstr ""
-"Восстанавливает ваш предыдущий сеанс работы и позволяет выключать компьютер "
-"из Xfce."
+msgstr "Восстанавливает ваш предыдущий сеанс работы и позволяет выключать компьютер из Xfce."
 
 #: ../xfce4-about/main.c:94
 msgid "Setting System"
@@ -583,9 +566,7 @@ msgstr "Поддержка настроек"
 msgid ""
 "Configuration system to control various aspects of the desktop like "
 "appearance, display, keyboard and mouse settings."
-msgstr ""
-"Конфигурация системы для контроля различных аспектов рабочего стола, "
-"например: внешнего вида, дисплея, клавиатуры и настроек мыши."
+msgstr "Конфигурация системы для контроля различных аспектов рабочего стола, например: внешнего вида, дисплея, клавиатуры и настроек мыши."
 
 #: ../xfce4-about/main.c:99
 msgid "Application Finder"
@@ -595,9 +576,7 @@ msgstr "Поиск приложений"
 msgid ""
 "Shows the applications installed on your system in categories, so you can "
 "quickly find and launch them."
-msgstr ""
-"Показывает установленные в вашей системе приложения по категориям, так, что "
-"вы можете быстро найти и установить их."
+msgstr "Показывает установленные в вашей системе приложения по категориям, так, что вы можете быстро найти и установить их."
 
 #: ../xfce4-about/main.c:104
 msgid "Settings Daemon"
@@ -611,31 +590,22 @@ msgstr "Основанная на D-Bus система хранения конф
 msgid ""
 "Xfce is a collection of programs that together provide a full-featured "
 "desktop environment. The following programs are part of the Xfce core:"
-msgstr ""
-"Xfce это набор программ, которые обеспечивают полнофункциональную рабочую "
-"среду. Следующие программы являются частью ядра Xfce:"
+msgstr "Xfce это набор программ, которые обеспечивают полнофункциональную рабочую среду. Следующие программы являются частью ядра Xfce:"
 
 #: ../xfce4-about/main.c:136
 msgid ""
 "Xfce is also a development platform providing several libraries, that help "
 "programmers create applications that fit in well with the desktop "
 "environment."
-msgstr ""
-"Xfce также является платформой, содержащей несколько библиотек, которые "
-"помогают программистам создавать приложения, которые хорошо интегрируются в "
-"окружение рабочего стола."
+msgstr "Xfce также является платформой, содержащей несколько библиотек, которые помогают программистам создавать приложения, которые хорошо интегрируются в окружение рабочего стола."
 
 #: ../xfce4-about/main.c:142
 msgid ""
-"Xfce components are licensed under free or open source licences; GPL or BSDL "
-"for applications and LGPL or BSDL for libraries. Look at the documentation, "
-"the source code or the Xfce website (http://www.xfce.org) for more "
+"Xfce components are licensed under free or open source licences; GPL or BSDL"
+" for applications and LGPL or BSDL for libraries. Look at the documentation,"
+" the source code or the Xfce website (http://www.xfce.org) for more "
 "information."
-msgstr ""
-"Компоненты Xfce распространяются под условиями свободных лицензий или "
-"лицензий открытого кода: GPL и BSDL для приложений и LGPL и BSDL для "
-"библиотек. Подробности можно найти в документации, в исходном коде и на веб-"
-"сайте Xfce (http://www.xfce.org)."
+msgstr "Компоненты Xfce распространяются под условиями свободных лицензий или лицензий открытого кода: GPL и BSDL для приложений и LGPL и BSDL для библиотек. Подробности можно найти в документации, в исходном коде и на веб-сайте Xfce (http://www.xfce.org)."
 
 #: ../xfce4-about/main.c:149
 msgid "Thank you for your interest in Xfce."
@@ -649,9 +619,7 @@ msgstr "Команда разработчиков Xfce"
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
 "on <http://bugzilla.xfce.org> ."
-msgstr ""
-"Если вы знаете того, кто должен быть включён в этот список, пожалуйста, "
-"сообщите нам на <http://bugzilla.xfce.org>"
+msgstr "Если вы знаете того, кто должен быть включён в этот список, пожалуйста, сообщите нам на <http://bugzilla.xfce.org>"
 
 #: ../xfce4-about/main.c:266
 msgid "Thanks to all who helped making this software available!"
@@ -661,9 +629,7 @@ msgstr "Спасибо всем, кто помогал создавать это
 msgid ""
 "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
-msgstr ""
-"Авторские права на Xfce 4 принадлежат Olivier Fourdan (fourdan@xfce.org). "
-"Авторские права на прочие компоненты принадлежат их авторам."
+msgstr "Авторские права на Xfce 4 принадлежат Olivier Fourdan (fourdan@xfce.org). Авторские права на прочие компоненты принадлежат их авторам."
 
 #: ../xfce4-about/main.c:288
 msgid ""
@@ -671,22 +637,16 @@ msgid ""
 "distributed under the terms of the GNU Library General Public License as "
 "published by the Free Software Foundation; either version 2 of the License, "
 "or (at your option) any later version."
-msgstr ""
-"Программное обеспечение libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs и "
-"exo распространяется под условиями GNU Library General Public License версии "
-"2 или более поздней."
+msgstr "Программное обеспечение libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs и exo распространяется под условиями GNU Library General Public License версии 2 или более поздней."
 
 #: ../xfce4-about/main.c:295
 msgid ""
-"The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-"
-"settings, xfce-utils, xfconf, xfdesktop and xfwm4 are distributed under the "
-"terms of the GNU General Public License as published by the Free Software "
-"Foundation; either version 2 of the License, or (at your option) any later "
-"version."
-msgstr ""
-"Программное обеспечение thunar, xfce4-appfinder, xfce4-panel, xfce4-session, "
-"xfce4-settings, xfce-utils, xfconf, xfdesktop и xfwm4 распространяется под "
-"условиями GNU General Public License версии 2 или более поздней."
+"The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, "
+"xfce4-settings, xfce-utils, xfconf, xfdesktop and xfwm4 are distributed "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version."
+msgstr "Программное обеспечение thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfce-utils, xfconf, xfdesktop и xfwm4 распространяется под условиями GNU General Public License версии 2 или более поздней."
 
 #: ../xfce4-about/main.c:442
 #, c-format
@@ -799,20 +759,3 @@ msgstr "Авторские права"
 #: ../xfce4-about/xfce4-about-dialog.glade.h:8
 msgid "License"
 msgstr "Лицензия"
-
-#~ msgid ""
-#~ "This shortcut is already being used for another window manager action. "
-#~ "Which action do you want to use?"
-#~ msgstr ""
-#~ "Эта комбинация клавиш уже используется для другого действия менеджера "
-#~ "окон. Какое действие требуется использовать?"
-
-#~ msgid "Keep the other one"
-#~ msgstr "Оставить использующееся"
-
-#~ msgid ""
-#~ "This shortcut is already being used by a window manager action. Which "
-#~ "action do you want to use?"
-#~ msgstr ""
-#~ "Эта комбинация клавиш уже используется для действия менеджера окон. Какое "
-#~ "действие требуется использовать?"
