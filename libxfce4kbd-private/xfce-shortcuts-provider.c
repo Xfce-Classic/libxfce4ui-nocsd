@@ -409,7 +409,7 @@ _xfce_shortcuts_provider_clone_default (const gchar           *property,
   g_return_val_if_fail (XFCE_IS_SHORTCUTS_PROVIDER (provider), TRUE);
   g_return_val_if_fail (XFCONF_IS_CHANNEL (provider->priv->channel), TRUE);
 
-  if (G_UNLIKELY (!G_IS_VALUE (value) || G_VALUE_TYPE (value) != G_TYPE_STRING))
+  if (G_UNLIKELY (!G_IS_VALUE (value)))
     return FALSE;
 
   shortcut = property + strlen (provider->priv->default_base_property) + strlen ("/");
@@ -418,7 +418,7 @@ _xfce_shortcuts_provider_clone_default (const gchar           *property,
   DBG ("shortcut = %s, command = %s", shortcut, command);
 
   custom_property = g_strconcat (provider->priv->custom_base_property, "/", shortcut, NULL);
-  xfconf_channel_set_string (provider->priv->channel, custom_property, command);
+  xfconf_channel_set_property (provider->priv->channel, custom_property, value);
   g_free (custom_property);
 
   return FALSE;
