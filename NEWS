@@ -1,3 +1,8 @@
+4.11.x
+======
+- Add xfce_dialog_show_help_with_version() so applications can send
+  their own version number and not the desktop version.
+
 4.11.0
 ======
 - Compile GTK+-3 version of libxfce4ui when possible.

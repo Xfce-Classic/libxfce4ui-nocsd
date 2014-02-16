@@ -142,6 +142,8 @@ xfce_dialog_show_help_response (GtkWidget *dialog,
  * Appart from the @component, @page and @offset the following information
  * is also send to the server: user language and the xfce_version_string().
  *
+ * See also: xfce_dialog_show_help_with_version().
+ *
  * Since 4.10
  */
 void
@@ -149,6 +151,39 @@ xfce_dialog_show_help (GtkWindow   *parent,
                        const gchar *component,
                        const gchar *page,
                        const gchar *offset)
+{
+
+}
+
+
+
+/**
+ * xfce_dialog_show_help_with_version:
+ * @parent    : transient parent of the dialog, or %NULL.
+ * @component : name of the component opening the help page or %NULL. If the
+ *              value is %NULL the target will be the main page of the
+ *              documentation website.
+ * @page      : subpage of the @component on the website or %NULL.
+ * @offset    : anchor offset in @page or %NULL.
+ * @version   : alternative version, or %NULL to use xfce_version_string().
+ *
+ * Asks the user to visit the online documentation. If confirmed, it will open
+ * the webbrowser and redirect the user to the correct location.
+ *
+ * Appart from the @component, @page and @offset the following information
+ * is also send to the server: user language and the xfce_version_string()
+ * or @version if set.
+ *
+ * See also: xfce_dialog_show_help().
+ *
+ * Since 4.12
+ */
+void
+xfce_dialog_show_help_with_version (GtkWindow   *parent,
+                                    const gchar *component,
+                                    const gchar *page,
+                                    const gchar *offset,
+                                    const gchar *version)
 {
   GtkWidget   *dialog;
   const gchar *name;
@@ -170,9 +205,13 @@ xfce_dialog_show_help (GtkWindow   *parent,
   else
     locale = g_strdup ("C");
 
+  /* use desktop version if none is set */
+  if (version == NULL)
+    version = xfce_version_string ();
+
   /* build the redirect uri */
   uri = g_string_new (MANUAL_WEBSITE);
-  g_string_append_printf (uri, "?version=%s&locale=%s", xfce_version_string (), locale);
+  g_string_append_printf (uri, "?version=%s&locale=%s", version, locale);
   g_free (locale);
 
   if (component != NULL)

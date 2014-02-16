@@ -58,6 +58,7 @@ xfce_sm_client_shutdown_hint_get_type
 #if IN_HEADER(__XFCE_DIALOGS_H__)
 #if IN_SOURCE(__XFCE_DIALOGS_C__)
 xfce_dialog_show_help
+xfce_dialog_show_help_with_version
 xfce_dialog_show_info G_GNUC_PRINTF (3, 4)
 xfce_dialog_show_warning G_GNUC_PRINTF (3, 4)
 xfce_dialog_show_error G_GNUC_PRINTF (3, 4)
