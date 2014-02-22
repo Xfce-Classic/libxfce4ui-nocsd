@@ -1,7 +1,13 @@
-4.11.x
+4.11.1
 ======
 - Add xfce_dialog_show_help_with_version() so applications can send
   their own version number and not the desktop version.
+- Translation updates: Arabic, Bulgarian, Bengali, Danish, German,
+  Greek, Finnish, Galician, Croatian, Icelandic, Japanese, Kazakh,
+  Korean, Lithuanian, Malay, Norwegian Bokmal, Norwegian Nynorsk,
+  Occitan (post 1500), Portuguese, Portuguese (Brazilian), Romanian,
+  Russian, Slovak, Slovenian, Serbian, Telugu, Ukrainian, Chinese
+  (China), Chinese (Hong Kong), Chinese (Taiwan).
 
 4.11.0
 ======
