@@ -152,7 +152,7 @@ xfce_dialog_show_help (GtkWindow   *parent,
                        const gchar *page,
                        const gchar *offset)
 {
-
+  xfce_dialog_show_help_with_version (parent, component, page, offset, NULL);
 }
 
 
