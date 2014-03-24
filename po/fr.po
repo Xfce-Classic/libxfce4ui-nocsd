@@ -4,14 +4,16 @@
 # 
 # Translators:
 # jc1 <jc1.quebecos@gmail.com>, 2013
+# jc1 <jc1.quebecos@gmail.com>, 2013
 # Maximilian Schleiss <maximilian@xfce.org>, 2008
+# Urides <urien.desterres@gmail.com>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-07-02 22:33+0200\n"
-"PO-Revision-Date: 2013-07-30 21:31+0000\n"
-"Last-Translator: jc1 <jc1.quebecos@gmail.com>\n"
+"PO-Revision-Date: 2014-03-24 11:33+0000\n"
+"Last-Translator: Urides <urien.desterres@gmail.com>\n"
 "Language-Team: French (http://www.transifex.com/projects/p/xfce/language/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,7 +23,7 @@ msgstr ""
 
 #: ../libxfce4ui/xfce-dialogs.c:98
 msgid "Failed to open web browser for online documentation"
-msgstr "Échec à l'ouverture du navigateur web pour la documentation en ligne"
+msgstr "Impossible d'ouvrir le navigateur web pour la documentation en ligne"
 
 #: ../libxfce4ui/xfce-dialogs.c:213
 #, c-format
@@ -68,7 +70,7 @@ msgstr "Question"
 
 #: ../libxfce4ui/xfce-sm-client.c:1424
 msgid "Session management client ID"
-msgstr "Gestion des ID de session client"
+msgstr "ID client du gestionnaire de session"
 
 #: ../libxfce4ui/xfce-sm-client.c:1424
 msgid "ID"
@@ -76,20 +78,20 @@ msgstr "ID"
 
 #: ../libxfce4ui/xfce-sm-client.c:1425
 msgid "Disable session management"
-msgstr "Désactiver la gestion des sessions"
+msgstr "Désactiver le gestionnaire de session"
 
 #: ../libxfce4ui/xfce-sm-client.c:1435
 msgid "Session management options"
-msgstr "Options de gestion des sessions"
+msgstr "Options du gestionnaire de session"
 
 #: ../libxfce4ui/xfce-sm-client.c:1436
 msgid "Show session management options"
-msgstr "Voir les options de gestion des sessions"
+msgstr "Afficher les options du gestionnaire de session"
 
 #: ../libxfce4ui/xfce-sm-client.c:1611
 #, c-format
 msgid "Failed to connect to the session manager: %s"
-msgstr "Échec de connexion au gestionnaire de session : %s"
+msgstr "Impossible de se connecter au gestionnaire de session : %s"
 
 #: ../libxfce4ui/xfce-sm-client.c:1617
 #, c-format
@@ -164,7 +166,7 @@ msgstr "Ce raccourci est déjà utilisé pour autre chose."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:209
 msgid "Window Manager Action Shortcut"
-msgstr "Raccourci action du gestionnaire de fenêtres"
+msgstr "Raccourci d'une action du gestionnaire de fenêtres"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
@@ -203,11 +205,11 @@ msgstr "Pas de touches enfoncées encore, continuez."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:378
 msgid "Could not grab the keyboard."
-msgstr "Impossible de récupérer le clavier."
+msgstr "Impossible d'accéder au clavier."
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:36
 msgid "Window operations menu"
-msgstr "Menu des opérations de fenêtre"
+msgstr "Menu des opérations des fenêtres"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:37
 msgid "Up"
@@ -263,7 +265,7 @@ msgstr "Maximiser la fenêtre"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:50
 msgid "Hide window"
-msgstr "Réduire la fenêtre"
+msgstr "Masquer la fenêtre"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:51
 msgid "Move window"
@@ -535,7 +537,7 @@ msgstr "Gestionnaire du bureau"
 msgid ""
 "Sets the background color or image with optional application menu or icons "
 "for minimized applications or launchers, devices and folders."
-msgstr "Définit la couleur ou l'image d'arrière-plan avec des menus ou des icônes optionnelles pour les applications minimisées ou les chargeurs, périphériques et dossiers."
+msgstr "Définit la couleur ou l'image d'arrière-plan avec des menus ou des icônes optionnelles pour les applications minimisées ou les lanceurs, périphériques et dossiers."
 
 #: ../xfce4-about/main.c:84
 msgid "File Manager "
@@ -545,7 +547,7 @@ msgstr "Gestionnaire de fichiers "
 msgid ""
 "A modern file manager for the Unix/Linux desktop, aiming to be easy-to-use "
 "and fast."
-msgstr "Un gestionnaire de fichier moderne pour les bureaux Unix/Linux,  dans le but d'être facile à utiliser et rapide."
+msgstr "Un gestionnaire de fichier moderne pour les bureaux Unix/Linux, dans le but d'être facile à utiliser et rapide."
 
 #: ../xfce4-about/main.c:89
 msgid "Session Manager"
@@ -569,7 +571,7 @@ msgstr "Système de configuration contrôlant différents aspects du bureau tels
 
 #: ../xfce4-about/main.c:99
 msgid "Application Finder"
-msgstr "Chercheur d'application"
+msgstr "Liste des applications"
 
 #: ../xfce4-about/main.c:100
 msgid ""
@@ -579,11 +581,11 @@ msgstr "Affiche les applications installées sur votre système en catégories, 
 
 #: ../xfce4-about/main.c:104
 msgid "Settings Daemon"
-msgstr "Réglages démon"
+msgstr "Paramètres démon"
 
 #: ../xfce4-about/main.c:105
 msgid "D-Bus-based configuration storage system."
-msgstr "System de stockage de configuration basé sur D-Bus"
+msgstr "Système de stockage de configuration basé sur D-Bus"
 
 #: ../xfce4-about/main.c:112
 msgid ""
@@ -650,7 +652,7 @@ msgstr "Les paquets thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-s
 #: ../xfce4-about/main.c:442
 #, c-format
 msgid "Type '%s --help' for usage information."
-msgstr "Saisissez \"%s --help\" pour les informations d'utilisation."
+msgstr "Tapez '%s --help' pour les informations d'utilisation."
 
 #: ../xfce4-about/main.c:448
 msgid "Unable to initialize GTK+."
@@ -673,7 +675,7 @@ msgstr "Liste des traducteurs depuis %s."
 
 #: ../xfce4-about/main.c:471
 msgid "Failed to load interface"
-msgstr "Échec au chargement de l'interface"
+msgstr "Impossible de charger l'interface"
 
 #. I18N: first %s will be replaced by the version, second by
 #. * the name of the distribution (--with-vendor-info=NAME)
@@ -721,7 +723,7 @@ msgstr "Précédents contributeurs"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:1
 msgid "About Xfce"
-msgstr "A propos de Xfce"
+msgstr "À propos de Xfce"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:2
 msgid "Information about the Xfce Desktop Environment"
@@ -729,11 +731,11 @@ msgstr "Information à propos de l'environnement de bureau Xfce"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:1
 msgid "About the Xfce Desktop Environment"
-msgstr "A propos de l'environnement de bureau Xfce"
+msgstr "À propos de l’environnement de bureau Xfce"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:2
 msgid "About"
-msgstr "A propos"
+msgstr "À propos"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:3
 msgid "Credits"
