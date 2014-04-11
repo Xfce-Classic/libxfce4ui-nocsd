@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-07-02 22:33+0200\n"
-"PO-Revision-Date: 2014-04-11 13:48+0000\n"
+"PO-Revision-Date: 2014-04-11 20:26+0000\n"
 "Last-Translator: Tornes Llume <l.lumex03.tornes@gmail.com>\n"
 "Language-Team: Asturian (http://www.transifex.com/projects/p/xfce/language/ast/)\n"
 "MIME-Version: 1.0\n"
@@ -39,7 +39,7 @@ msgstr "Documentación en llinia"
 msgid ""
 "You will be redirected to the documentation website where the help pages are"
 " maintained and translated."
-msgstr "Redireicionarásete al sitiu web de documentación u les páxines d'ayuda tan calteníes y tornaes."
+msgstr "Redireicionarásete al sitiu web de documentación u les páxines d'aida tan calteníes y tornaes."
 
 #: ../libxfce4ui/xfce-dialogs.c:225
 msgid "_Read Online"
@@ -47,7 +47,7 @@ msgstr "Llee_r en llinia"
 
 #: ../libxfce4ui/xfce-dialogs.c:237
 msgid "_Always go directly to the online documentation"
-msgstr "_Dir siempres direutamente a la documentación en llinia"
+msgstr "_Dir siempres a la documentación en llinia direutamente"
 
 #: ../libxfce4ui/xfce-dialogs.c:281
 msgid "Information"
@@ -150,7 +150,7 @@ msgstr "Por favor, usa otra combinación de tecles."
 #: ../libxfce4kbd-private/xfce-shortcuts.c:111
 #, c-format
 msgid "%s already triggers this action."
-msgstr ""
+msgstr "%s yá dispara esta aición."
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:116
 #, c-format
@@ -163,7 +163,7 @@ msgstr "Esti accesu direutu yá ta siendo usáu por daqué más."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:209
 msgid "Window Manager Action Shortcut"
-msgstr ""
+msgstr "Accesu direutu d'aición del alministrador de ventanes"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
@@ -174,7 +174,7 @@ msgstr "aición"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:216
 msgid "Command Shortcut"
-msgstr ""
+msgstr "Accesu direutu de comandu"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
@@ -184,25 +184,25 @@ msgstr "comandu"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:223
 msgid "Shortcut"
-msgstr "Atayu"
+msgstr "Accesu direutu"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:267
 #, c-format
 msgid "Press now the keyboard keys you want to use to trigger the %s '%s'."
-msgstr ""
+msgstr "Primi agora les tecles del tecláu que quies usar pa disparar el %s '%s'."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:291
 msgid "Shortcut:"
-msgstr ""
+msgstr "Accesu direutu:"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:296
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:475
 msgid "No keys pressed yet, proceed."
-msgstr ""
+msgstr "Entá nun se primieron tecles, procede."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:378
 msgid "Could not grab the keyboard."
-msgstr ""
+msgstr "Nun pudo coyese'l tecláu."
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:36
 msgid "Window operations menu"
@@ -218,7 +218,7 @@ msgstr "Abaxo"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:39
 msgid "Left"
-msgstr "Esquierda"
+msgstr "Izquierda"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:40
 msgid "Right"
@@ -230,19 +230,19 @@ msgstr "Encaboxar"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:42
 msgid "Cycle windows"
-msgstr "Seleicionar ventanes cíclicamente"
+msgstr "Esbillar ventanes cíclicamente"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:43
 msgid "Cycle windows (Reverse)"
-msgstr "Seleicionar ventanes cíclicamente (al revés)"
+msgstr "Esbillar ventanes cíclicamente (al revés)"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:44
 msgid "Switch window for same application"
-msgstr ""
+msgstr "Cambear ventana pa la mesma aplicación"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:45
 msgid "Switch application"
-msgstr ""
+msgstr "Cambear d'aplicación"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:46
 msgid "Close window"
@@ -290,7 +290,7 @@ msgstr "Baxar ventana"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:57
 msgid "Raise or lower window"
-msgstr ""
+msgstr "Elevar o baxar ventana"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:58
 msgid "Fill window"
@@ -386,19 +386,19 @@ msgstr "Mover ventana a la estaya de trabayu 12"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:81
 msgid "Tile window to the top"
-msgstr ""
+msgstr "Mosaicu de ventanes a arriba"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:82
 msgid "Tile window to the bottom"
-msgstr ""
+msgstr "Mosaicu de ventanes a abajo"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:83
 msgid "Tile window to the left"
-msgstr ""
+msgstr "Mosaicu de ventanes a la izquierda"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:84
 msgid "Tile window to the right"
-msgstr ""
+msgstr "Mosaicu de ventanes a la drecha"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:85
 msgid "Show desktop"
@@ -494,7 +494,7 @@ msgstr "Desaniciar estaya de trabayu activa"
 
 #: ../glade/libxfce4ui.xml.in.h:1
 msgid "Titled Dialog"
-msgstr ""
+msgstr "Diálogu tituláu"
 
 #: ../glade/libxfce4ui.xml.in.h:2
 msgid "Subtitle"
@@ -502,7 +502,7 @@ msgstr "Sotítulu"
 
 #: ../glade/libxfce4ui.xml.in.h:3
 msgid "Xfce 4 Widgets"
-msgstr ""
+msgstr "Widgets Xfce 4"
 
 #: ../xfce4-about/main.c:52
 msgid "Version information"
@@ -514,7 +514,7 @@ msgstr "Xestor de ventanes"
 
 #: ../xfce4-about/main.c:71
 msgid "Handles the placement of windows on the screen."
-msgstr ""
+msgstr "Remana l'asitiamientu de ventanes na pantalla."
 
 #: ../xfce4-about/main.c:74
 msgid "Panel"
@@ -524,7 +524,7 @@ msgstr "Panel"
 msgid ""
 "Program launchers, window buttons, applications menu, workspace switcher and"
 " more."
-msgstr ""
+msgstr "Llanzadores de programes, botones de ventana, menú d'aplicaciones, cambiador d'estayes de trabayu y más."
 
 #: ../xfce4-about/main.c:79
 msgid "Desktop Manager"
@@ -568,7 +568,7 @@ msgstr "Sistema de configuración pa controlar dellos aspeutos del to escritoriu
 
 #: ../xfce4-about/main.c:99
 msgid "Application Finder"
-msgstr ""
+msgstr "Guetador d'aplicaciones"
 
 #: ../xfce4-about/main.c:100
 msgid ""
@@ -582,7 +582,7 @@ msgstr "Degorriu d'axustes"
 
 #: ../xfce4-about/main.c:105
 msgid "D-Bus-based configuration storage system."
-msgstr ""
+msgstr "Sistema d'almacenamientu basáu na configuración D-Bus."
 
 #: ../xfce4-about/main.c:112
 msgid ""
@@ -603,7 +603,7 @@ msgid ""
 " for applications and LGPL or BSDL for libraries. Look at the documentation,"
 " the source code or the Xfce website (http://www.xfce.org) for more "
 "information."
-msgstr ""
+msgstr "Los componentes de Xfce ta llicenciaos baxo llicencies llibres o de códigu abiertu; GPL o BSDL p'aplicaciones y LGPL o BSDL pa llibreríes. Écha-y un güeyu a la documentación, el códigu fonte y el sitiu web Xfce (http://www.xfce.org) pa más información."
 
 #: ../xfce4-about/main.c:149
 msgid "Thank you for your interest in Xfce."
@@ -617,7 +617,7 @@ msgstr "L'equipu de desendolcu Xfce"
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
 "on <http://bugzilla.xfce.org> ."
-msgstr ""
+msgstr "Si sabes de daquien que nun ta nesti llistáu; nun dubies y fai un reporte en <http://bugzilla.xfce.org> ."
 
 #: ../xfce4-about/main.c:266
 msgid "Thanks to all who helped making this software available!"
@@ -627,7 +627,7 @@ msgstr "¡Gracies a tolos qu'aidaron a facer esti software disponible!"
 msgid ""
 "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
-msgstr ""
+msgstr "Xfce 4 tien copyright d'Oliver Fourdan (fourdan@xfce.org). Los distintos componentes tienen copyright de los sos respeutivos autores."
 
 #: ../xfce4-about/main.c:288
 msgid ""
@@ -635,7 +635,7 @@ msgid ""
 "distributed under the terms of the GNU Library General Public License as "
 "published by the Free Software Foundation; either version 2 of the License, "
 "or (at your option) any later version."
-msgstr ""
+msgstr "Los paquetes libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs y exo tan distribuyíos baxo los términos de la GNU General Public License asoleyaos pola Free Software Foundation; siendo la versión 2 de la llicencia, o (na to opción) cualaquier versión siguiente."
 
 #: ../xfce4-about/main.c:295
 msgid ""
@@ -644,7 +644,7 @@ msgid ""
 "under the terms of the GNU General Public License as published by the Free "
 "Software Foundation; either version 2 of the License, or (at your option) "
 "any later version."
-msgstr ""
+msgstr "Los paquetes thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfce-utils, xfconf, xfdesktop y xfwm4 tan distribuyíos baxo los términos de la GNU General Public License asoleyaos pola Free Software Foundation; siendo la versión 2 de la llicencia, o (na to opción) cualaquier versión siguiente."
 
 #: ../xfce4-about/main.c:442
 #, c-format
@@ -662,7 +662,7 @@ msgstr "L'equipu de desendolque de Xfce. Tolos drechos reservaos."
 #: ../xfce4-about/main.c:458
 #, c-format
 msgid "Please report bugs to <%s>."
-msgstr "Por favor, informe de fallos a <%s>."
+msgstr "Por favor, informa de fallos a <%s>."
 
 #. I18N: date/time the translators list was updated
 #: ../xfce4-about/main.c:461
@@ -692,11 +692,11 @@ msgstr "Versión %s"
 #. },
 #: ../xfce4-about/contributors.h:121
 msgid "Core developers"
-msgstr ""
+msgstr "Desendolcadores principales"
 
 #: ../xfce4-about/contributors.h:124
 msgid "Active contributors"
-msgstr ""
+msgstr "Collaboradores activos"
 
 #: ../xfce4-about/contributors.h:127
 msgid "Servers maintained by"
@@ -704,11 +704,11 @@ msgstr "Sirvidor calteníu por"
 
 #: ../xfce4-about/contributors.h:130
 msgid "Goodies supervision"
-msgstr ""
+msgstr "Supervisión de Goodies"
 
 #: ../xfce4-about/contributors.h:133
 msgid "Translations supervision"
-msgstr ""
+msgstr "Supervisores de traducción"
 
 #: ../xfce4-about/contributors.h:136
 msgid "Translators"
@@ -716,7 +716,7 @@ msgstr "Tronadores"
 
 #: ../xfce4-about/contributors.h:139
 msgid "Previous contributors"
-msgstr ""
+msgstr "Collaboradores anteriores"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:1
 msgid "About Xfce"
