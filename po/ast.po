@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-07-02 22:33+0200\n"
-"PO-Revision-Date: 2014-04-09 11:01+0000\n"
+"PO-Revision-Date: 2014-04-11 13:48+0000\n"
 "Last-Translator: Tornes Llume <l.lumex03.tornes@gmail.com>\n"
 "Language-Team: Asturian (http://www.transifex.com/projects/p/xfce/language/ast/)\n"
 "MIME-Version: 1.0\n"
@@ -155,7 +155,7 @@ msgstr ""
 #: ../libxfce4kbd-private/xfce-shortcuts.c:116
 #, c-format
 msgid "Conflicting actions for %s"
-msgstr ""
+msgstr "Aiciones en conflictu pa %s"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:176
 msgid "This shortcut is already being used for something else."
@@ -534,17 +534,17 @@ msgstr "Alministrador d'escritoriu"
 msgid ""
 "Sets the background color or image with optional application menu or icons "
 "for minimized applications or launchers, devices and folders."
-msgstr ""
+msgstr "Afita la color de fondu o imaxe con menús o iconos p'aplicaciones minimizaes o llanzadores, preseos y cartafueyos opcionales."
 
 #: ../xfce4-about/main.c:84
 msgid "File Manager "
-msgstr ""
+msgstr "Xestor de ficheros"
 
 #: ../xfce4-about/main.c:85
 msgid ""
 "A modern file manager for the Unix/Linux desktop, aiming to be easy-to-use "
 "and fast."
-msgstr ""
+msgstr "Un xestor de ficheros modernu pal escritoriu Unix/Linux, col oxetivu de ser fácil d'usar y rápidu."
 
 #: ../xfce4-about/main.c:89
 msgid "Session Manager"
@@ -554,17 +554,17 @@ msgstr "Alministrador de sesión"
 msgid ""
 "Restores your session on startup and allows you to shutdown the computer "
 "from Xfce."
-msgstr ""
+msgstr "Restaura la to sesión nel aniciu y permítete apagar l'ordenador dende Xfce."
 
 #: ../xfce4-about/main.c:94
 msgid "Setting System"
-msgstr ""
+msgstr "Configurando'l sistema"
 
 #: ../xfce4-about/main.c:95
 msgid ""
 "Configuration system to control various aspects of the desktop like "
 "appearance, display, keyboard and mouse settings."
-msgstr ""
+msgstr "Sistema de configuración pa controlar dellos aspeutos del to escritoriu como los axustes d'aspeutu, pantalla, tecláu y mur."
 
 #: ../xfce4-about/main.c:99
 msgid "Application Finder"
@@ -574,11 +574,11 @@ msgstr ""
 msgid ""
 "Shows the applications installed on your system in categories, so you can "
 "quickly find and launch them."
-msgstr ""
+msgstr "Amuesa les aplicaciones instalaes nel to sistema n'estayes, asina que pues alcontrales y llanzales aína"
 
 #: ../xfce4-about/main.c:104
 msgid "Settings Daemon"
-msgstr ""
+msgstr "Degorriu d'axustes"
 
 #: ../xfce4-about/main.c:105
 msgid "D-Bus-based configuration storage system."
@@ -588,14 +588,14 @@ msgstr ""
 msgid ""
 "Xfce is a collection of programs that together provide a full-featured "
 "desktop environment. The following programs are part of the Xfce core:"
-msgstr ""
+msgstr "Xfce ye una coleición de programes que xuntos apurren un entornu d'escritoriu completu dafechu. Los siguientes programes son parte del nucleu Xfce:"
 
 #: ../xfce4-about/main.c:136
 msgid ""
 "Xfce is also a development platform providing several libraries, that help "
 "programmers create applications that fit in well with the desktop "
 "environment."
-msgstr ""
+msgstr "Xfce ye tamién una plataforma de desendolcu qu'apurre abondes llibreríes, qu'aiden a los programadores a criar aplicaciones qu'encaxen nun bon entornu d'escritoriu."
 
 #: ../xfce4-about/main.c:142
 msgid ""
@@ -607,11 +607,11 @@ msgstr ""
 
 #: ../xfce4-about/main.c:149
 msgid "Thank you for your interest in Xfce."
-msgstr ""
+msgstr "Gracies pol to interés en Xfce"
 
 #: ../xfce4-about/main.c:153
 msgid "The Xfce Development Team"
-msgstr ""
+msgstr "L'equipu de desendolcu Xfce"
 
 #: ../xfce4-about/main.c:262
 msgid ""
@@ -621,7 +621,7 @@ msgstr ""
 
 #: ../xfce4-about/main.c:266
 msgid "Thanks to all who helped making this software available!"
-msgstr ""
+msgstr "¡Gracies a tolos qu'aidaron a facer esti software disponible!"
 
 #: ../xfce4-about/main.c:283
 msgid ""
@@ -649,11 +649,11 @@ msgstr ""
 #: ../xfce4-about/main.c:442
 #, c-format
 msgid "Type '%s --help' for usage information."
-msgstr ""
+msgstr "Escribi '%s --help' pa la información d'usu."
 
 #: ../xfce4-about/main.c:448
 msgid "Unable to initialize GTK+."
-msgstr ""
+msgstr "Nun pue aniciase GTK+."
 
 #: ../xfce4-about/main.c:457
 msgid "The Xfce development team. All rights reserved."
@@ -668,7 +668,7 @@ msgstr "Por favor, informe de fallos a <%s>."
 #: ../xfce4-about/main.c:461
 #, c-format
 msgid "Translators list from %s."
-msgstr ""
+msgstr "Llista de tornadores de %s"
 
 #: ../xfce4-about/main.c:471
 msgid "Failed to load interface"
@@ -679,7 +679,7 @@ msgstr "Fallu al cargar la interfaz"
 #: ../xfce4-about/main.c:485
 #, c-format
 msgid "Version %s, distributed by %s"
-msgstr ""
+msgstr "Versión %s, distribuyíu por %s"
 
 #. I18N: %s will be replaced by the Xfce version number
 #: ../xfce4-about/main.c:489
@@ -724,11 +724,11 @@ msgstr "Tocante Xfce"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:2
 msgid "Information about the Xfce Desktop Environment"
-msgstr ""
+msgstr "Información tocante al entornu d'escritoriu Xfce"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:1
 msgid "About the Xfce Desktop Environment"
-msgstr ""
+msgstr "Tocante al entornu d'escritoriu Xfce"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:2
 msgid "About"
