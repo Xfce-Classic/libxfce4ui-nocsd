@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-07-02 22:33+0200\n"
-"PO-Revision-Date: 2014-04-11 20:26+0000\n"
+"PO-Revision-Date: 2014-04-13 00:46+0000\n"
 "Last-Translator: Tornes Llume <l.lumex03.tornes@gmail.com>\n"
 "Language-Team: Asturian (http://www.transifex.com/projects/p/xfce/language/ast/)\n"
 "MIME-Version: 1.0\n"
@@ -386,11 +386,11 @@ msgstr "Mover ventana a la estaya de trabayu 12"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:81
 msgid "Tile window to the top"
-msgstr "Mosaicu de ventanes a arriba"
+msgstr "Mosaicu de ventanes hacia arriba"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:82
 msgid "Tile window to the bottom"
-msgstr "Mosaicu de ventanes a abajo"
+msgstr "Mosaicu de ventanes hacia abajo"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:83
 msgid "Tile window to the left"
@@ -486,11 +486,11 @@ msgstr "Amestar estaya de trabayu cercana"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:106
 msgid "Delete last workspace"
-msgstr "Desaniciar cabera estaya de trabayu"
+msgstr "Desaniciar la cabera estaya de trabayu"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:107
 msgid "Delete active workspace"
-msgstr "Desaniciar estaya de trabayu activa"
+msgstr "Desaniciar la estaya de trabayu activa"
 
 #: ../glade/libxfce4ui.xml.in.h:1
 msgid "Titled Dialog"
@@ -595,7 +595,7 @@ msgid ""
 "Xfce is also a development platform providing several libraries, that help "
 "programmers create applications that fit in well with the desktop "
 "environment."
-msgstr "Xfce ye tamién una plataforma de desendolcu qu'apurre abondes llibreríes, qu'aiden a los programadores a criar aplicaciones qu'encaxen nun bon entornu d'escritoriu."
+msgstr "Xfce ye tamién una plataforma de desendolcu qu'apurre abondes llibreríes, qu'aiden a los programadores a criar aplicaciones qu'encaxen bien nel entornu d'escritoriu."
 
 #: ../xfce4-about/main.c:142
 msgid ""
@@ -603,7 +603,7 @@ msgid ""
 " for applications and LGPL or BSDL for libraries. Look at the documentation,"
 " the source code or the Xfce website (http://www.xfce.org) for more "
 "information."
-msgstr "Los componentes de Xfce ta llicenciaos baxo llicencies llibres o de códigu abiertu; GPL o BSDL p'aplicaciones y LGPL o BSDL pa llibreríes. Écha-y un güeyu a la documentación, el códigu fonte y el sitiu web Xfce (http://www.xfce.org) pa más información."
+msgstr "Los componentes de Xfce tán llicenciaos baxo llicencies llibres o de códigu abiertu; GPL o BSDL p'aplicaciones y LGPL o BSDL pa llibreríes. Écha-y un güeyu a la documentación, el códigu fonte y el sitiu web Xfce (http://www.xfce.org) pa más información."
 
 #: ../xfce4-about/main.c:149
 msgid "Thank you for your interest in Xfce."
@@ -617,7 +617,7 @@ msgstr "L'equipu de desendolcu Xfce"
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
 "on <http://bugzilla.xfce.org> ."
-msgstr "Si sabes de daquien que nun ta nesti llistáu; nun dubies y fai un reporte en <http://bugzilla.xfce.org> ."
+msgstr "Si sabes de daquien que nun tea nesti llistáu; nun dubies y fai un reporte en <http://bugzilla.xfce.org> ."
 
 #: ../xfce4-about/main.c:266
 msgid "Thanks to all who helped making this software available!"
@@ -635,7 +635,7 @@ msgid ""
 "distributed under the terms of the GNU Library General Public License as "
 "published by the Free Software Foundation; either version 2 of the License, "
 "or (at your option) any later version."
-msgstr "Los paquetes libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs y exo tan distribuyíos baxo los términos de la GNU General Public License asoleyaos pola Free Software Foundation; siendo la versión 2 de la llicencia, o (na to opción) cualaquier versión siguiente."
+msgstr "Los paquetes libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs y exo tán distribuyíos baxo los términos de la GNU General Public License asoleyaos pola Free Software Foundation; siendo la versión 2 de la llicencia, o (na to opción) cualaquier versión siguiente."
 
 #: ../xfce4-about/main.c:295
 msgid ""
@@ -644,7 +644,7 @@ msgid ""
 "under the terms of the GNU General Public License as published by the Free "
 "Software Foundation; either version 2 of the License, or (at your option) "
 "any later version."
-msgstr "Los paquetes thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfce-utils, xfconf, xfdesktop y xfwm4 tan distribuyíos baxo los términos de la GNU General Public License asoleyaos pola Free Software Foundation; siendo la versión 2 de la llicencia, o (na to opción) cualaquier versión siguiente."
+msgstr "Los paquetes thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfce-utils, xfconf, xfdesktop y xfwm4 tán distribuyíos baxo los términos de la GNU General Public License asoleyaos pola Free Software Foundation; siendo la versión 2 de la llicencia, o (na to opción) cualaquier versión siguiente."
 
 #: ../xfce4-about/main.c:442
 #, c-format
@@ -700,7 +700,7 @@ msgstr "Collaboradores activos"
 
 #: ../xfce4-about/contributors.h:127
 msgid "Servers maintained by"
-msgstr "Sirvidor calteníu por"
+msgstr "Sirvidores calteníos por"
 
 #: ../xfce4-about/contributors.h:130
 msgid "Goodies supervision"
@@ -712,7 +712,7 @@ msgstr "Supervisores de traducción"
 
 #: ../xfce4-about/contributors.h:136
 msgid "Translators"
-msgstr "Tronadores"
+msgstr "Tornadores"
 
 #: ../xfce4-about/contributors.h:139
 msgid "Previous contributors"
