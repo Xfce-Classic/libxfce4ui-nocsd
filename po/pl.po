@@ -1,28 +1,26 @@
-# Polish translations for libxfce4ui package.
-# Copyright (C) 2011 The Xfce development team.
-# This file is distributed under the same license as the libxfce4ui package.
-# Piotr Sokół <psokol@jabster.pl>, 2011, 2012, 2013.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
 # 
+# Translators:
+# Piotr Sokół <psokol@jabster.pl>, 2011-2013
 msgid ""
 msgstr ""
-"Project-Id-Version: libxfce4ui\n"
+"Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-06-11 10:33+0000\n"
-"PO-Revision-Date: 2013-01-13 18:55+0100\n"
-"Last-Translator: Piotr Sokół <psokol@jabster.pl>\n"
-"Language-Team: polski <>\n"
+"POT-Creation-Date: 2013-07-02 22:33+0200\n"
+"PO-Revision-Date: 2014-06-01 17:59+0000\n"
+"Last-Translator: OSWorld <michal.olber@osworld.pl>\n"
+"Language-Team: Polish (http://www.transifex.com/projects/p/libxfce4ui/language/pl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bits\n"
+"Content-Transfer-Encoding: 8bit\n"
 "Language: pl\n"
-"Plural-Forms: nplurals=3; plural=((n==1) ? 0 : ((n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20)) ? 1 : 2));\n"
-"X-Generator: Gtranslator 2.91.5\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #: ../libxfce4ui/xfce-dialogs.c:98
 msgid "Failed to open web browser for online documentation"
-msgstr ""
-"Nie udało się uruchomić przeglądarki internetowej, w celu wyświetlenia "
-"dokumentacji sieciowej"
+msgstr "Nie udało się uruchomić przeglądarki internetowej, w celu wyświetlenia dokumentacji sieciowej"
 
 #: ../libxfce4ui/xfce-dialogs.c:213
 #, c-format
@@ -39,11 +37,9 @@ msgstr "Dokumentacja sieciowa"
 
 #: ../libxfce4ui/xfce-dialogs.c:221
 msgid ""
-"You will be redirected to the documentation website where the help pages are "
-"maintained and translated."
-msgstr ""
-"Przeglądarka otworzy stronę dokumentacji, na której tworzone są podręczniki "
-"użytkownika i gdzie następuje ich tłumaczenie."
+"You will be redirected to the documentation website where the help pages are"
+" maintained and translated."
+msgstr "Przeglądarka otworzy stronę dokumentacji, na której tworzone są podręczniki użytkownika i gdzie następuje ich tłumaczenie."
 
 #: ../libxfce4ui/xfce-dialogs.c:225
 msgid "_Read Online"
@@ -103,17 +99,15 @@ msgstr "Menadżer sesji nie zwrócił poprawnego identyfikatora klienta"
 #: ../libxfce4ui/xfce-spawn.c:413
 #, c-format
 msgid ""
-"Working directory \"%s\" does not exist. It won't be used when spawning \"%s"
-"\"."
-msgstr ""
-"Katalog roboczy „%s” nie istnieje. Nie zostanie on użyty podczas wywoływania "
-"„%s”."
+"Working directory \"%s\" does not exist. It won't be used when spawning "
+"\"%s\"."
+msgstr "Katalog roboczy „%s” nie istnieje. Nie zostanie on użyty podczas wywoływania „%s”."
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 #, c-format
 msgid ""
-"This shortcut is already being used for the action '%s'. Which action do you "
-"want to use?"
+"This shortcut is already being used for the action '%s'. Which action do you"
+" want to use?"
 msgstr "Ten skrót jest już przypisany do czynności „%s”. Co zrobić?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:54
@@ -499,12 +493,12 @@ msgid "Delete active workspace"
 msgstr "Usunięcie bieżącego obszaru roboczego"
 
 #: ../glade/libxfce4ui.xml.in.h:1
-msgid "Subtitle"
-msgstr "Podtytuł"
-
-#: ../glade/libxfce4ui.xml.in.h:2
 msgid "Titled Dialog"
 msgstr "Treść tytułowa"
+
+#: ../glade/libxfce4ui.xml.in.h:2
+msgid "Subtitle"
+msgstr "Podtytuł"
 
 #: ../glade/libxfce4ui.xml.in.h:3
 msgid "Xfce 4 Widgets"
@@ -528,11 +522,9 @@ msgstr "Panel"
 
 #: ../xfce4-about/main.c:75
 msgid ""
-"Program launchers, window buttons, applications menu, workspace switcher and "
-"more."
-msgstr ""
-"Przechowuje i wyświetla rozmaite aplety takie jak aktywatory, przyciski "
-"okien, podgląd obszarów roboczych i inne."
+"Program launchers, window buttons, applications menu, workspace switcher and"
+" more."
+msgstr "Przechowuje i wyświetla rozmaite aplety takie jak aktywatory, przyciski okien, podgląd obszarów roboczych i inne."
 
 #: ../xfce4-about/main.c:79
 msgid "Desktop Manager"
@@ -542,9 +534,7 @@ msgstr "Menedżer pulpitu"
 msgid ""
 "Sets the background color or image with optional application menu or icons "
 "for minimized applications or launchers, devices and folders."
-msgstr ""
-"Konfiguruje tło pulpitu oraz udostępnia jego zawartość taką jak ikony, menu "
-"okna głównego czy lista okien."
+msgstr "Konfiguruje tło pulpitu oraz udostępnia jego zawartość taką jak ikony, menu okna głównego czy lista okien."
 
 #: ../xfce4-about/main.c:84
 msgid "File Manager "
@@ -554,9 +544,7 @@ msgstr "Menedżer okien"
 msgid ""
 "A modern file manager for the Unix/Linux desktop, aiming to be easy-to-use "
 "and fast."
-msgstr ""
-"Zarządza zawartością sytemu plików, wyróżniając się szybkością i prostotą "
-"obsługi."
+msgstr "Zarządza zawartością sytemu plików, wyróżniając się szybkością i prostotą obsługi."
 
 #: ../xfce4-about/main.c:89
 msgid "Session Manager"
@@ -576,9 +564,7 @@ msgstr "Menedżer ustawień"
 msgid ""
 "Configuration system to control various aspects of the desktop like "
 "appearance, display, keyboard and mouse settings."
-msgstr ""
-"Konfiguruje różne cechy środowiska, takiej jak jego wygląd, ustawienia "
-"ekranu, klawiatury i myszy."
+msgstr "Konfiguruje różne cechy środowiska, takiej jak jego wygląd, ustawienia ekranu, klawiatury i myszy."
 
 #: ../xfce4-about/main.c:99
 msgid "Application Finder"
@@ -588,9 +574,7 @@ msgstr "Wyszukiwarka programów"
 msgid ""
 "Shows the applications installed on your system in categories, so you can "
 "quickly find and launch them."
-msgstr ""
-"Wyświetla programy zainstalowane w systemie rozmieszczone w kategoriach, w "
-"celu ich szybkiego odnalezienia i uruchomienia."
+msgstr "Wyświetla programy zainstalowane w systemie rozmieszczone w kategoriach, w celu ich szybkiego odnalezienia i uruchomienia."
 
 #: ../xfce4-about/main.c:104
 msgid "Settings Daemon"
@@ -598,39 +582,28 @@ msgstr "Demon ustawień"
 
 #: ../xfce4-about/main.c:105
 msgid "D-Bus-based configuration storage system."
-msgstr ""
-"Przechowuje konfiguracje programów w oparciu o system komunikacji D-Bus."
+msgstr "Przechowuje konfiguracje programów w oparciu o system komunikacji D-Bus."
 
 #: ../xfce4-about/main.c:112
 msgid ""
 "Xfce is a collection of programs that together provide a full-featured "
 "desktop environment. The following programs are part of the Xfce core:"
-msgstr ""
-"Xfce jest zestawem programów, które używane razem, oferują kompletne "
-"środowisko graficzne. Do podstawowych programów środowiska Xfce należą:"
+msgstr "Xfce jest zestawem programów, które używane razem, oferują kompletne środowisko graficzne. Do podstawowych programów środowiska Xfce należą:"
 
 #: ../xfce4-about/main.c:136
 msgid ""
 "Xfce is also a development platform providing several libraries, that help "
 "programmers create applications that fit in well with the desktop "
 "environment."
-msgstr ""
-"Xfce jest również platformą programistyczną, która dostarcza kilka bibliotek "
-"ułatwiających programistom tworzenie programów dobrze dopasowanych do "
-"środowiska graficznego."
+msgstr "Xfce jest również platformą programistyczną, która dostarcza kilka bibliotek ułatwiających programistom tworzenie programów dobrze dopasowanych do środowiska graficznego."
 
 #: ../xfce4-about/main.c:142
 msgid ""
-"Xfce components are licensed under free or open source licences; GPL or BSDL "
-"for applications and LGPL or BSDL for libraries. Look at the documentation, "
-"the source code or the Xfce website (http://www.xfce.org) for more "
+"Xfce components are licensed under free or open source licences; GPL or BSDL"
+" for applications and LGPL or BSDL for libraries. Look at the documentation,"
+" the source code or the Xfce website (http://www.xfce.org) for more "
 "information."
-msgstr ""
-"Komponenty Xfce są rozprowadzane na warunkach darmowych lub wolnych "
-"licencji; GPL lub BSDL dla programów i LGPL i BSDL dla bibliotek. Proszę "
-"zapoznać się z dokumentacją, kodem źródłowym lub zawartością strony "
-"internetowej (http://www.xfce.org) w celu uzyskania większej ilości "
-"informacji."
+msgstr "Komponenty Xfce są rozprowadzane na warunkach darmowych lub wolnych licencji; GPL lub BSDL dla programów i LGPL i BSDL dla bibliotek. Proszę zapoznać się z dokumentacją, kodem źródłowym lub zawartością strony internetowej (http://www.xfce.org) w celu uzyskania większej ilości informacji."
 
 #: ../xfce4-about/main.c:149
 msgid "Thank you for your interest in Xfce."
@@ -644,24 +617,17 @@ msgstr "Zespół twórców Xfce"
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
 "on <http://bugzilla.xfce.org> ."
-msgstr ""
-"Jeśli ktoś jeszcze powinien znaleźć się na powyższej liście, prosimy o "
-"zgłoszenie tego faktu pod adresem <http://bugzilla.xfce.org>."
+msgstr "Jeśli ktoś jeszcze powinien znaleźć się na powyższej liście, prosimy o zgłoszenie tego faktu pod adresem <http://bugzilla.xfce.org>."
 
 #: ../xfce4-about/main.c:266
 msgid "Thanks to all who helped making this software available!"
-msgstr ""
-"Dziękujemy wszystkim, którzy przyczynili się do stworzenia niniejszego "
-"oprogramowania."
+msgstr "Dziękujemy wszystkim, którzy przyczynili się do stworzenia niniejszego oprogramowania."
 
 #: ../xfce4-about/main.c:283
 msgid ""
 "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
-msgstr ""
-"Właścicielem praw autorskich Xfce4 jest Olivier Fourdan (fourdan@xfce.org). "
-"Właścicielami praw autorskich poszczególnych komponentów środowiska są ich "
-"twórcy."
+msgstr "Właścicielem praw autorskich Xfce4 jest Olivier Fourdan (fourdan@xfce.org). Właścicielami praw autorskich poszczególnych komponentów środowiska są ich twórcy."
 
 #: ../xfce4-about/main.c:288
 msgid ""
@@ -669,24 +635,16 @@ msgid ""
 "distributed under the terms of the GNU Library General Public License as "
 "published by the Free Software Foundation; either version 2 of the License, "
 "or (at your option) any later version."
-msgstr ""
-"Pakiety libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs i exo są "
-"rozprowadzane na warunkach Powszechnej Licencji Publicznej GNU Library, "
-"wydanej przez Free Software Foundation - według wersji drugiej tej licencji "
-"lub którejś z późniejszych wersji."
+msgstr "Pakiety libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs i exo są rozprowadzane na warunkach Powszechnej Licencji Publicznej GNU Library, wydanej przez Free Software Foundation - według wersji drugiej tej licencji lub którejś z późniejszych wersji."
 
 #: ../xfce4-about/main.c:295
 msgid ""
-"The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-"
-"settings, xfce-utils, xfconf, xfdesktop and xfwm4 are distributed under the "
-"terms of the GNU General Public License as published by the Free Software "
-"Foundation; either version 2 of the License, or (at your option) any later "
-"version."
-msgstr ""
-"Pakiety thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, "
-"xfce-utils, xfconf, xfdesktop i xfwm4 są rozprowadzane na warunkach "
-"Powszechnej Licencji Publicznej GNU, wydanej przez Free Software Foundation "
-"- według wersji drugiej tej licencji lub którejś z późniejszych wersji."
+"The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, "
+"xfce4-settings, xfce-utils, xfconf, xfdesktop and xfwm4 are distributed "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version."
+msgstr "Pakiety thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfce-utils, xfconf, xfdesktop i xfwm4 są rozprowadzane na warunkach Powszechnej Licencji Publicznej GNU, wydanej przez Free Software Foundation - według wersji drugiej tej licencji lub którejś z późniejszych wersji."
 
 #: ../xfce4-about/main.c:442
 #, c-format
@@ -769,32 +727,32 @@ msgid "Information about the Xfce Desktop Environment"
 msgstr "Wyświetla informacje o środowisku graficznym Xfce"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:1
-msgid "About"
-msgstr "Informacje"
-
-#: ../xfce4-about/xfce4-about-dialog.glade.h:2
 msgid "About the Xfce Desktop Environment"
 msgstr "Informacje o środowisku graficznym Xfce"
 
+#: ../xfce4-about/xfce4-about-dialog.glade.h:2
+msgid "About"
+msgstr "Informacje"
+
 #: ../xfce4-about/xfce4-about-dialog.glade.h:3
-msgid "BSD"
-msgstr "BSD"
-
-#: ../xfce4-about/xfce4-about-dialog.glade.h:4
-msgid "Copyright"
-msgstr "Prawa autorskie"
-
-#: ../xfce4-about/xfce4-about-dialog.glade.h:5
 msgid "Credits"
 msgstr "Zasługi"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:6
+#: ../xfce4-about/xfce4-about-dialog.glade.h:4
 msgid "GPL"
 msgstr "GPL"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:7
+#: ../xfce4-about/xfce4-about-dialog.glade.h:5
 msgid "LGPL"
 msgstr "LGPL"
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:6
+msgid "BSD"
+msgstr "BSD"
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:7
+msgid "Copyright"
+msgstr "Prawa autorskie"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:8
 msgid "License"
