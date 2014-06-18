@@ -6,15 +6,16 @@
 # jc1 <jc1.quebecos@gmail.com>, 2013
 # jc1 <jc1.quebecos@gmail.com>, 2013
 # Maximilian Schleiss <maximilian@xfce.org>, 2008
-# Urides <urien.desterres@gmail.com>, 2014
+# Urien Desterres <urien.desterres@gmail.com>, 2014
+# Yannick Le Guen <leguen.yannick@gmail.com>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-07-02 22:33+0200\n"
-"PO-Revision-Date: 2014-03-24 11:33+0000\n"
-"Last-Translator: Urides <urien.desterres@gmail.com>\n"
-"Language-Team: French (http://www.transifex.com/projects/p/xfce/language/fr/)\n"
+"PO-Revision-Date: 2014-06-18 16:15+0000\n"
+"Last-Translator: Yannick Le Guen <leguen.yannick@gmail.com>\n"
+"Language-Team: French (http://www.transifex.com/projects/p/libxfce4ui/language/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -142,13 +143,13 @@ msgstr "Ce raccourci est déjà utilisé pour la commande '%s'. Quelle action vo
 msgid ""
 "This shortcut is already being used by the action '%s'. Which action do you "
 "want to use?"
-msgstr "Ce raccourci est déjà attribué par la action '%s'. Quelle action voulez-vous garder ?"
+msgstr "Ce raccourci est déjà utilisé pour l'action '%s'. Quelle action voulez-vous garder ?"
 
 #. This shortcut already exists in the provider, we don't want it twice
 #. Warn the user
 #: ../libxfce4kbd-private/xfce-shortcuts.c:110
 msgid "Please use another key combination."
-msgstr "S'il vous plaît utiliser une autre combinaison de touches."
+msgstr "Veuillez utiliser une autre combinaison de touches."
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:111
 #, c-format
@@ -201,7 +202,7 @@ msgstr "Raccourci :"
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:296
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:475
 msgid "No keys pressed yet, proceed."
-msgstr "Pas de touches enfoncées encore, continuez."
+msgstr "Aucune touche enfoncée pour le moment, poursuivez."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:378
 msgid "Could not grab the keyboard."
@@ -521,7 +522,7 @@ msgstr "Gère le placement des fenêtres sur l'écran."
 
 #: ../xfce4-about/main.c:74
 msgid "Panel"
-msgstr "Panneau"
+msgstr "Tableau de bord"
 
 #: ../xfce4-about/main.c:75
 msgid ""
@@ -547,7 +548,7 @@ msgstr "Gestionnaire de fichiers "
 msgid ""
 "A modern file manager for the Unix/Linux desktop, aiming to be easy-to-use "
 "and fast."
-msgstr "Un gestionnaire de fichier moderne pour les bureaux Unix/Linux, dans le but d'être facile à utiliser et rapide."
+msgstr "Un gestionnaire de fichier moderne pour le bureau Unix/Linux, se voulant simple d'utilisation et rapide."
 
 #: ../xfce4-about/main.c:89
 msgid "Session Manager"
@@ -577,11 +578,11 @@ msgstr "Liste des applications"
 msgid ""
 "Shows the applications installed on your system in categories, so you can "
 "quickly find and launch them."
-msgstr "Affiche les applications installées sur votre système en catégories, de sorte que vous pouvez rapidement les trouver et les lancer."
+msgstr "Affiche les applications installées sur votre système en catégories, de sorte que vous puissiez rapidement les trouver et les lancer."
 
 #: ../xfce4-about/main.c:104
 msgid "Settings Daemon"
-msgstr "Paramètres démon"
+msgstr "Démon des paramètres"
 
 #: ../xfce4-about/main.c:105
 msgid "D-Bus-based configuration storage system."
@@ -606,7 +607,7 @@ msgid ""
 " for applications and LGPL or BSDL for libraries. Look at the documentation,"
 " the source code or the Xfce website (http://www.xfce.org) for more "
 "information."
-msgstr "Les composants Xfce sont licenciés sous licences gratuites ou open source; GPL ou BSDL pour les applications et LGPL ou BSDL pour les bibliothèques. Regarger la documentation, le code source ou le site web de Xfce (http://www.xfce.org) pour plus d'informations."
+msgstr "Les composants Xfce sont placés sous des licences libres ou open source ; GPL ou BSDL pour les applications et LGPL ou BSDL pour les bibliothèques. Consultez la documentation, le code source ou le site web de Xfce (http://www.xfce.org) pour plus d'informations."
 
 #: ../xfce4-about/main.c:149
 msgid "Thank you for your interest in Xfce."
@@ -620,7 +621,7 @@ msgstr "L'équipe de développement Xfce"
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
 "on <http://bugzilla.xfce.org> ."
-msgstr "Si vous connaissez quelqu'un manquant dans cette liste; n'hésitez pas et remplissez un bug sur <http://buzilla.xfce.org>."
+msgstr "Si vous connaissez quelqu'un de manquant dans cette liste, n'hésitez pas et remontez un bogue sur <http://buzilla.xfce.org>."
 
 #: ../xfce4-about/main.c:266
 msgid "Thanks to all who helped making this software available!"
@@ -719,7 +720,7 @@ msgstr "Traducteurs"
 
 #: ../xfce4-about/contributors.h:139
 msgid "Previous contributors"
-msgstr "Précédents contributeurs"
+msgstr "Contributeurs précédents"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:1
 msgid "About Xfce"
