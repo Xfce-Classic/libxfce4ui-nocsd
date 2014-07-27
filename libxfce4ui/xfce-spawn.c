@@ -389,17 +389,13 @@ xfce_spawn_on_screen_with_child_watch (GdkScreen    *screen,
               startup_id = sn_launcher_context_get_startup_id (sn_launcher);
               if (G_LIKELY (startup_id != NULL))
                 cenvp[n_cenvp++] = g_strconcat ("DESKTOP_STARTUP_ID=", startup_id, NULL);
-
-              /* we want to watch the child process */
-              flags |= G_SPAWN_DO_NOT_REAP_CHILD;
             }
         }
     }
 #endif
 
-  /* watch the child when the user supplied a closure too */
-  if (child_watch_closure != NULL)
-    flags |= G_SPAWN_DO_NOT_REAP_CHILD;
+  /* watch the child process */
+  flags |= G_SPAWN_DO_NOT_REAP_CHILD;
 
   /* test if the working directory exists */
   if (working_directory == NULL || *working_directory == '\0')
@@ -423,37 +419,34 @@ xfce_spawn_on_screen_with_child_watch (GdkScreen    *screen,
 
   if (G_LIKELY (succeed))
     {
-      if ((flags & G_SPAWN_DO_NOT_REAP_CHILD) != 0)
+      /* setup data to watch the child */
+      spawn_data = g_slice_new0 (XfceSpawnData);
+      spawn_data->pid = pid;
+      if (child_watch_closure != NULL)
         {
-          /* setup data to watch the child */
-          spawn_data = g_slice_new0 (XfceSpawnData);
-          spawn_data->pid = pid;
-          if (child_watch_closure != NULL)
-            {
-              spawn_data->closure = g_closure_ref (child_watch_closure);
-              g_closure_sink (spawn_data->closure);
-            }
+          spawn_data->closure = g_closure_ref (child_watch_closure);
+          g_closure_sink (spawn_data->closure);
+        }
 
-          spawn_data->watch_id = g_child_watch_add_full (G_PRIORITY_LOW, pid,
-                                                         xfce_spawn_startup_watch,
-                                                         spawn_data,
-                                                         xfce_spawn_startup_watch_destroy);
+      spawn_data->watch_id = g_child_watch_add_full (G_PRIORITY_LOW, pid,
+                                                     xfce_spawn_startup_watch,
+                                                     spawn_data,
+                                                     xfce_spawn_startup_watch_destroy);
 
 #ifdef HAVE_LIBSTARTUP_NOTIFICATION
-          if (G_LIKELY (sn_launcher != NULL))
-            {
-              /* start a timeout to stop the startup notification sequence after
-               * a certain about of time, to handle applications that do not
-               * properly implement startup notify */
-              spawn_data->sn_launcher = sn_launcher;
-              spawn_data->timeout_id = g_timeout_add_seconds_full (G_PRIORITY_LOW,
-                                                                   XFCE_SPAWN_STARTUP_TIMEOUT,
-                                                                   xfce_spawn_startup_timeout,
-                                                                   spawn_data,
-                                                                   xfce_spawn_startup_timeout_destroy);
-            }
-#endif
+      if (G_LIKELY (sn_launcher != NULL))
+        {
+          /* start a timeout to stop the startup notification sequence after
+           * a certain about of time, to handle applications that do not
+           * properly implement startup notify */
+          spawn_data->sn_launcher = sn_launcher;
+          spawn_data->timeout_id = g_timeout_add_seconds_full (G_PRIORITY_LOW,
+                                                               XFCE_SPAWN_STARTUP_TIMEOUT,
+                                                               xfce_spawn_startup_timeout,
+                                                               spawn_data,
+                                                               xfce_spawn_startup_timeout_destroy);
         }
+#endif
     }
   else
     {
