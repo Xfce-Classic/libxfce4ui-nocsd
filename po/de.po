@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-07-02 22:33+0200\n"
-"PO-Revision-Date: 2014-08-03 14:50+0000\n"
+"PO-Revision-Date: 2014-08-03 18:04+0000\n"
 "Last-Translator: Tobias Bannert\n"
 "Language-Team: German (http://www.transifex.com/projects/p/libxfce4ui/language/de/)\n"
 "MIME-Version: 1.0\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../libxfce4ui/xfce-dialogs.c:98
 msgid "Failed to open web browser for online documentation"
-msgstr "Der Webbrowser zum Lesen des Online-Handbuchs konnte nicht geöffnet werden"
+msgstr "Der Internetnavigator zum Lesen des Internethandbuchs konnte nicht geöffnet werden"
 
 #: ../libxfce4ui/xfce-dialogs.c:213
 #, c-format
@@ -191,7 +191,7 @@ msgstr "Tastenkürzel"
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:267
 #, c-format
 msgid "Press now the keyboard keys you want to use to trigger the %s '%s'."
-msgstr "Drücken Sie nun die Tastenkombination, die Sie benutzen möchten, um den %s »%s« auszulösen."
+msgstr "Bitte jetzt die Tastenkombination drücken, die Sie benutzen möchten, um den %s »%s« auszulösen."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:291
 msgid "Shortcut:"
@@ -216,7 +216,7 @@ msgstr "Hoch"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:38
 msgid "Down"
-msgstr "Hinunter"
+msgstr "Runter"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:39
 msgid "Left"
@@ -252,15 +252,15 @@ msgstr "Fenster schließen"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:47
 msgid "Maximize window horizontally"
-msgstr "Fenster horizontal maximieren"
+msgstr "Fenster horizontal vergrößern"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:48
 msgid "Maximize window vertically"
-msgstr "Fenster vertikal maximieren"
+msgstr "Fenster vertikal vergrößern"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:49
 msgid "Maximize window"
-msgstr "Fenster maximieren"
+msgstr "Fenster vergrößern"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:50
 msgid "Hide window"
@@ -408,11 +408,11 @@ msgstr "Schreibtisch anzeigen"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:86
 msgid "Upper workspace"
-msgstr "Arbeitsfläche darüber"
+msgstr "Obere Arbeitsfläche"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:87
 msgid "Bottom workspace"
-msgstr "Arbeitsfläche darunter"
+msgstr "Untere Arbeitsfläche"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:88
 msgid "Left workspace"
@@ -536,7 +536,7 @@ msgstr "Schreibtischverwaltung"
 msgid ""
 "Sets the background color or image with optional application menu or icons "
 "for minimized applications or launchers, devices and folders."
-msgstr "Stellt die Hintergrundfarbe oder das Hintergrundbild mit einem optionalen Anwendungsmenü oder Symbolen für minimierte Anwendungen oder Startern, Geräten und Ordnern ein."
+msgstr "Stellt die Hintergrundfarbe oder das Hintergrundbild mit einem optionalen Anwendungsmenü oder Symbolen für verkleinerte Anwendungen oder Startern, Geräten und Ordnern ein."
 
 #: ../xfce4-about/main.c:84
 msgid "File Manager "
@@ -566,7 +566,7 @@ msgstr "Systemeinstellungen"
 msgid ""
 "Configuration system to control various aspects of the desktop like "
 "appearance, display, keyboard and mouse settings."
-msgstr "Einstellungssystem zum Einstellen verschiedener Aspekte der Arbeitsfläche wie das Aussehen, die Anzeige-, Tastatur- und Mauseinstellungen."
+msgstr "Einstellungssystem zum Einstellen verschiedener Aspekte des Schreibtisches, wie das Aussehen, die Anzeige-, Tastatur- und Mauseinstellungen."
 
 #: ../xfce4-about/main.c:99
 msgid "Application Finder"
@@ -605,7 +605,7 @@ msgid ""
 " for applications and LGPL or BSDL for libraries. Look at the documentation,"
 " the source code or the Xfce website (http://www.xfce.org) for more "
 "information."
-msgstr "Xfce-Komponenten sind lizenziert unter freien Lizenzen oder Lizenzen für quelloffene Software: GPL oder BSDL für Anwendungen und LGPL oder BSDL für Bibliotheken. Weitere Informationen finden Sie in der Dokumentation, dem Quellcode oder auf der Xfce Webseite (http://www.xfce.org)."
+msgstr "Xfce-Komponenten sind lizenziert unter freien Lizenzen oder Lizenzen für quelloffene Programme: GPL oder BSDL für Anwendungen und LGPL oder BSDL für Bibliotheken. Weitere Informationen finden Sie in der Dokumentation, dem Quellcode oder auf der Xfce-Internetseite (http://www.xfce.org)."
 
 #: ../xfce4-about/main.c:149
 msgid "Thank you for your interest in Xfce."
@@ -613,7 +613,7 @@ msgstr "Danke für Ihr Interesse an Xfce."
 
 #: ../xfce4-about/main.c:153
 msgid "The Xfce Development Team"
-msgstr "Das Xfce-Entwicklerteam"
+msgstr "Die Xfce-Entwicklungsmannschaft"
 
 #: ../xfce4-about/main.c:262
 msgid ""
@@ -623,13 +623,13 @@ msgstr "Sollten Sie jemanden auf dieser Liste vermissen, zögern Sie nicht, unte
 
 #: ../xfce4-about/main.c:266
 msgid "Thanks to all who helped making this software available!"
-msgstr "Danke an alle, die geholfen haben, diese Software verfügbar zu machen!"
+msgstr "Danke an alle, die geholfen haben, diese Anwendung verfügbar zu machen!"
 
 #: ../xfce4-about/main.c:283
 msgid ""
 "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
-msgstr "Das Urheberrecht von Xfce 4 liegt bei Olivier Fourdan (fourdan@xfce.org). Die verschiedenen Komponenten sind für ihre jeweiligen Autoren urheberrechtlich geschützt."
+msgstr "Das Urheberrecht von Xfce 4 liegt bei Olivier Fourdan (fourdan@xfce.org). Die verschiedenen Komponenten sind durch ihre jeweiligen Autoren urheberrechtlich geschützt."
 
 #: ../xfce4-about/main.c:288
 msgid ""
@@ -651,7 +651,7 @@ msgstr "Die Pakete thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-se
 #: ../xfce4-about/main.c:442
 #, c-format
 msgid "Type '%s --help' for usage information."
-msgstr "Geben Sie »%s --help« ein, um weitere Informationen zu erhalten."
+msgstr "»%s --help« eingeben, um weitere Informationen zu erhalten."
 
 #: ../xfce4-about/main.c:448
 msgid "Unable to initialize GTK+."
@@ -659,12 +659,12 @@ msgstr "GTK+ konnte nicht initialisiert werden."
 
 #: ../xfce4-about/main.c:457
 msgid "The Xfce development team. All rights reserved."
-msgstr "Das Xfce-Entwicklerteam. Alle Rechte vorbehalten."
+msgstr "Die Xfce-Entwicklungsmannschaft. Alle Rechte vorbehalten."
 
 #: ../xfce4-about/main.c:458
 #, c-format
 msgid "Please report bugs to <%s>."
-msgstr "Bitte melden Sie Probleme unter <%s>."
+msgstr "Probleme bitte unter <%s> melden."
 
 #. I18N: date/time the translators list was updated
 #: ../xfce4-about/main.c:461
@@ -698,7 +698,7 @@ msgstr "Kernentwickler"
 
 #: ../xfce4-about/contributors.h:124
 msgid "Active contributors"
-msgstr "Aktive Beitragende"
+msgstr "Aktive Mitwirkende"
 
 #: ../xfce4-about/contributors.h:127
 msgid "Servers maintained by"
@@ -718,7 +718,7 @@ msgstr "Übersetzer"
 
 #: ../xfce4-about/contributors.h:139
 msgid "Previous contributors"
-msgstr "Frühere Beitragende"
+msgstr "Frühere Mitwirkende"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:1
 msgid "About Xfce"
@@ -754,7 +754,7 @@ msgstr "BSD"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:7
 msgid "Copyright"
-msgstr "Copyright"
+msgstr "Urheberrecht"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:8
 msgid "License"
