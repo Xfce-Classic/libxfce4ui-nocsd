@@ -4,14 +4,15 @@
 # 
 # Translators:
 # Jiri Grönroos <jiri.gronroos@iki.fi>, 2013
+# Pasi Lallinaho <pasi@shimmerproject.org>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-07-02 22:33+0200\n"
-"PO-Revision-Date: 2013-11-11 20:56+0000\n"
-"Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
-"Language-Team: Finnish (http://www.transifex.com/projects/p/xfce/language/fi/)\n"
+"PO-Revision-Date: 2014-08-22 17:30+0000\n"
+"Last-Translator: Pasi Lallinaho <pasi@shimmerproject.org>\n"
+"Language-Team: Finnish (http://www.transifex.com/projects/p/libxfce4ui/language/fi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -51,7 +52,7 @@ msgstr "_Avaa aina ohjesivut verkosta"
 
 #: ../libxfce4ui/xfce-dialogs.c:281
 msgid "Information"
-msgstr ""
+msgstr "Tietoja"
 
 #: ../libxfce4ui/xfce-dialogs.c:314
 msgid "Warning"
@@ -67,7 +68,7 @@ msgstr "Kysymys"
 
 #: ../libxfce4ui/xfce-sm-client.c:1424
 msgid "Session management client ID"
-msgstr ""
+msgstr "Istunnonhallinnan asiakasohjeman ID"
 
 #: ../libxfce4ui/xfce-sm-client.c:1424
 msgid "ID"
@@ -75,15 +76,15 @@ msgstr "Tunniste"
 
 #: ../libxfce4ui/xfce-sm-client.c:1425
 msgid "Disable session management"
-msgstr ""
+msgstr "Kytke istunnonhallinta pois päältä"
 
 #: ../libxfce4ui/xfce-sm-client.c:1435
 msgid "Session management options"
-msgstr ""
+msgstr "Istunnonhallinnan asetukset"
 
 #: ../libxfce4ui/xfce-sm-client.c:1436
 msgid "Show session management options"
-msgstr ""
+msgstr "Näytä istunnonhallinnan asetukset"
 
 #: ../libxfce4ui/xfce-sm-client.c:1611
 #, c-format
@@ -108,7 +109,7 @@ msgstr "Työkansiota \"%s\" ei ole olemassa. Sitä ei käytetä, kun prosessi \"
 msgid ""
 "This shortcut is already being used for the action '%s'. Which action do you"
 " want to use?"
-msgstr ""
+msgstr "Tätä pikanäppäintä käytetään jo toiminnolle '%s'. Kumpaa toimintoa haluat käyttää?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:54
 #: ../libxfce4kbd-private/xfce-shortcuts.c:57
@@ -139,18 +140,18 @@ msgstr "Pikanäppäin on jo liitetty komentoon \"%s\". Kumpaa toimintoa käytet�
 msgid ""
 "This shortcut is already being used by the action '%s'. Which action do you "
 "want to use?"
-msgstr ""
+msgstr "Toiminto '%s' käyttää jo tätä pikanäppäintä. Kumpaa toimintoa haluat käyttää?"
 
 #. This shortcut already exists in the provider, we don't want it twice
 #. Warn the user
 #: ../libxfce4kbd-private/xfce-shortcuts.c:110
 msgid "Please use another key combination."
-msgstr ""
+msgstr "Käytä toista näppäinyhdistelmää."
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:111
 #, c-format
 msgid "%s already triggers this action."
-msgstr ""
+msgstr "Pikänäppäin %s käynnistää jo tämän toiminnon."
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:116
 #, c-format
@@ -163,7 +164,7 @@ msgstr "Pikanäppäin on jo liitetty toiseen toimintoon."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:209
 msgid "Window Manager Action Shortcut"
-msgstr ""
+msgstr "Ikkunointimanagerin toimintopikanäppäin"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
@@ -174,7 +175,7 @@ msgstr "toiminto"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:216
 msgid "Command Shortcut"
-msgstr ""
+msgstr "Komennon pikanäppäin"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
@@ -189,7 +190,7 @@ msgstr "Pikanäppäin"
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:267
 #, c-format
 msgid "Press now the keyboard keys you want to use to trigger the %s '%s'."
-msgstr ""
+msgstr "Paina nyt näppäimiä joilla haluat käynnistää toiminnon %s '%s'."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:291
 msgid "Shortcut:"
@@ -198,11 +199,11 @@ msgstr "Pikanäppäin:"
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:296
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:475
 msgid "No keys pressed yet, proceed."
-msgstr ""
+msgstr "Mitään näppäimiä ei ole vielä painettu, jatka."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:378
 msgid "Could not grab the keyboard."
-msgstr ""
+msgstr "Näppäimistöä ei voitu kaapata."
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:36
 msgid "Window operations menu"
@@ -498,7 +499,7 @@ msgstr "Otsakkeellinen dialogi"
 
 #: ../glade/libxfce4ui.xml.in.h:2
 msgid "Subtitle"
-msgstr ""
+msgstr "Alaotsikko"
 
 #: ../glade/libxfce4ui.xml.in.h:3
 msgid "Xfce 4 Widgets"
@@ -578,7 +579,7 @@ msgstr "Näyttää järjestelmäsi sovellukset luokiteltuna, jotta niiden löyt�
 
 #: ../xfce4-about/main.c:104
 msgid "Settings Daemon"
-msgstr ""
+msgstr "Asetusdemoni"
 
 #: ../xfce4-about/main.c:105
 msgid "D-Bus-based configuration storage system."
@@ -649,7 +650,7 @@ msgstr "Ohjelmistot thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-s
 #: ../xfce4-about/main.c:442
 #, c-format
 msgid "Type '%s --help' for usage information."
-msgstr ""
+msgstr "Kirjoita '%s --help' nähdäksesi käyttöohjeen."
 
 #: ../xfce4-about/main.c:448
 msgid "Unable to initialize GTK+."
