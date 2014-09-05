@@ -3,15 +3,15 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# k3lt01 <keltoiboy@gmail.com>, 2013
+# Michael Findlay <keltoiboy@gmail.com>, 2013-2014
 msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-07-02 22:33+0200\n"
-"PO-Revision-Date: 2013-07-29 05:49+0000\n"
-"Last-Translator: k3lt01 <keltoiboy@gmail.com>\n"
-"Language-Team: English (Australia) (http://www.transifex.com/projects/p/xfce/language/en_AU/)\n"
+"PO-Revision-Date: 2014-09-05 03:00+0000\n"
+"Last-Translator: Michael Findlay <keltoiboy@gmail.com>\n"
+"Language-Team: English (Australia) (http://www.transifex.com/projects/p/libxfce4ui/language/en_AU/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -603,7 +603,7 @@ msgid ""
 " for applications and LGPL or BSDL for libraries. Look at the documentation,"
 " the source code or the Xfce website (http://www.xfce.org) for more "
 "information."
-msgstr "Xfce components are licenced under free or open source licences; GPL or BSDL for applications and LGPL or BSDL for libraries. Look at the documentation, the source code or the Xfce website (http://www.xfce.org) for more information."
+msgstr "Xfce components are licensed under free or open source licences; GPL or BSDL for applications and LGPL or BSDL for libraries. Look at the documentation, the source code or the Xfce website (http://www.xfce.org) for more information."
 
 #: ../xfce4-about/main.c:149
 msgid "Thank you for your interest in Xfce."
