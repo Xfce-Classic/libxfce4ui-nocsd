@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-07-02 22:33+0200\n"
-"PO-Revision-Date: 2014-06-18 16:15+0000\n"
+"PO-Revision-Date: 2014-09-13 17:12+0000\n"
 "Last-Translator: Yannick Le Guen <leguen.yannick@gmail.com>\n"
 "Language-Team: French (http://www.transifex.com/projects/p/libxfce4ui/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -112,7 +112,7 @@ msgstr "Le dossier de travail « %s » n'existe pas. Il ne sera pas utilisé à 
 msgid ""
 "This shortcut is already being used for the action '%s'. Which action do you"
 " want to use?"
-msgstr "Ce raccourci est déjà utilisé pour l'action '%s'. Quelle action voulez-vous garder ?"
+msgstr "Ce raccourci est déjà utilisé pour l’action « %s ». Quelle action voulez-vous garder ?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:54
 #: ../libxfce4kbd-private/xfce-shortcuts.c:57
@@ -120,7 +120,7 @@ msgstr "Ce raccourci est déjà utilisé pour l'action '%s'. Quelle action voule
 #: ../libxfce4kbd-private/xfce-shortcuts.c:63
 #, c-format
 msgid "Use '%s'"
-msgstr "Utiliser '%s'"
+msgstr "Utiliser « %s »"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:54
 #: ../libxfce4kbd-private/xfce-shortcuts.c:57
@@ -128,7 +128,7 @@ msgstr "Utiliser '%s'"
 #: ../libxfce4kbd-private/xfce-shortcuts.c:63
 #, c-format
 msgid "Keep '%s'"
-msgstr "Garder '%s'"
+msgstr "Garder « %s »"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
 #: ../libxfce4kbd-private/xfce-shortcuts.c:59
@@ -136,14 +136,14 @@ msgstr "Garder '%s'"
 msgid ""
 "This shortcut is already being used for the command '%s'. Which action do "
 "you want to use?"
-msgstr "Ce raccourci est déjà utilisé pour la commande '%s'. Quelle action voulez-vous garder ?"
+msgstr "Ce raccourci est déjà utilisé pour la commande « %s ». Quelle action voulez-vous garder ?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 #, c-format
 msgid ""
 "This shortcut is already being used by the action '%s'. Which action do you "
 "want to use?"
-msgstr "Ce raccourci est déjà utilisé pour l'action '%s'. Quelle action voulez-vous garder ?"
+msgstr "Ce raccourci est déjà utilisé pour l’action « %s ». Quelle action voulez-vous garder ?"
 
 #. This shortcut already exists in the provider, we don't want it twice
 #. Warn the user
@@ -174,7 +174,7 @@ msgstr "Raccourci d'une action du gestionnaire de fenêtres"
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:212
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:226
 msgid "action"
-msgstr "action"
+msgstr "l’action"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:216
 msgid "Command Shortcut"
@@ -184,7 +184,7 @@ msgstr "Raccourci commande"
 #. * the user in a following string
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:219
 msgid "command"
-msgstr "commande"
+msgstr "la commande"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:223
 msgid "Shortcut"
@@ -193,7 +193,7 @@ msgstr "Raccourci"
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:267
 #, c-format
 msgid "Press now the keyboard keys you want to use to trigger the %s '%s'."
-msgstr "Appuyez maintenant sur ​​les touches du clavier que vous voulez utiliser pour déclencher %s '%s'."
+msgstr "Appuyez à présent sur ​​les touches du clavier que vous voulez utiliser pour déclencher %s « %s »."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:291
 msgid "Shortcut:"
@@ -202,7 +202,7 @@ msgstr "Raccourci :"
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:296
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:475
 msgid "No keys pressed yet, proceed."
-msgstr "Aucune touche enfoncée pour le moment, poursuivez."
+msgstr "Aucune touche enfoncée pour le moment, veuillez poursuivre."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:378
 msgid "Could not grab the keyboard."
@@ -538,7 +538,7 @@ msgstr "Gestionnaire du bureau"
 msgid ""
 "Sets the background color or image with optional application menu or icons "
 "for minimized applications or launchers, devices and folders."
-msgstr "Définit la couleur ou l'image d'arrière-plan avec des menus ou des icônes optionnelles pour les applications minimisées ou les lanceurs, périphériques et dossiers."
+msgstr "Définit la couleur ou l’image d’arrière-plan avec un menu des applications optionnel ou des icônes pour les applications minimisées ou des lanceurs, périphériques et dossiers."
 
 #: ../xfce4-about/main.c:84
 msgid "File Manager "
@@ -578,7 +578,7 @@ msgstr "Liste des applications"
 msgid ""
 "Shows the applications installed on your system in categories, so you can "
 "quickly find and launch them."
-msgstr "Affiche les applications installées sur votre système en catégories, de sorte que vous puissiez rapidement les trouver et les lancer."
+msgstr "Affiche les applications installées sur votre système par catégories, afin que vous puissiez rapidement les trouver et les lancer."
 
 #: ../xfce4-about/main.c:104
 msgid "Settings Daemon"
@@ -586,13 +586,13 @@ msgstr "Démon des paramètres"
 
 #: ../xfce4-about/main.c:105
 msgid "D-Bus-based configuration storage system."
-msgstr "Système de stockage de configuration basé sur D-Bus"
+msgstr "Système de stockage de configuration basé sur D-Bus."
 
 #: ../xfce4-about/main.c:112
 msgid ""
 "Xfce is a collection of programs that together provide a full-featured "
 "desktop environment. The following programs are part of the Xfce core:"
-msgstr "Xfce est un ensemble de programmes qui, ensemble, fournissent un environnement de bureau complet. Les programmes suivants font partie du coeur de Xfce :"
+msgstr "Xfce est un ensemble de programmes qui, ensemble, fournissent un environnement de bureau complet. Les programmes suivants font partie du cœur de Xfce :"
 
 #: ../xfce4-about/main.c:136
 msgid ""
@@ -621,7 +621,7 @@ msgstr "L'équipe de développement Xfce"
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
 "on <http://bugzilla.xfce.org> ."
-msgstr "Si vous connaissez quelqu'un de manquant dans cette liste, n'hésitez pas et remontez un bogue sur <http://buzilla.xfce.org>."
+msgstr "Si vous connaissez quelqu'un d'absent dans cette liste, n'hésitez pas et signalez un bogue sur <http://buzilla.xfce.org>."
 
 #: ../xfce4-about/main.c:266
 msgid "Thanks to all who helped making this software available!"
@@ -653,11 +653,11 @@ msgstr "Les paquets thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-s
 #: ../xfce4-about/main.c:442
 #, c-format
 msgid "Type '%s --help' for usage information."
-msgstr "Tapez '%s --help' pour les informations d'utilisation."
+msgstr "Taper « %s --help » pour plus d'aide."
 
 #: ../xfce4-about/main.c:448
 msgid "Unable to initialize GTK+."
-msgstr "Incapable d'initialiser GTK+."
+msgstr "Impossible d'initialiser GTK+."
 
 #: ../xfce4-about/main.c:457
 msgid "The Xfce development team. All rights reserved."
@@ -666,13 +666,13 @@ msgstr "L'équipe de développement Xfce. Tous droits réservés."
 #: ../xfce4-about/main.c:458
 #, c-format
 msgid "Please report bugs to <%s>."
-msgstr "S'il vous plaît signaler les bogues à <%s>."
+msgstr "Veuillez signaler les bogues à <%s>."
 
 #. I18N: date/time the translators list was updated
 #: ../xfce4-about/main.c:461
 #, c-format
 msgid "Translators list from %s."
-msgstr "Liste des traducteurs depuis %s."
+msgstr "Liste des traducteurs en date du %s."
 
 #: ../xfce4-about/main.c:471
 msgid "Failed to load interface"
