@@ -48,6 +48,7 @@ libxfce4ui_check_version
 /* libxfce4ui-enum-types functions */
 #if IN_HEADER(__LIBXFCE4UI_ENUM_TYPES_H__)
 #if IN_SOURCE(__LIBXFCE4UI_ENUM_TYPES_C__)
+xfce_sm_client_error_enum_get_type
 xfce_sm_client_restart_style_get_type
 xfce_sm_client_shutdown_hint_get_type
 #endif
@@ -57,6 +58,7 @@ xfce_sm_client_shutdown_hint_get_type
 #if IN_HEADER(__XFCE_DIALOGS_H__)
 #if IN_SOURCE(__XFCE_DIALOGS_C__)
 xfce_dialog_show_help
+xfce_dialog_show_help_with_version
 xfce_dialog_show_info G_GNUC_PRINTF (3, 4)
 xfce_dialog_show_warning G_GNUC_PRINTF (3, 4)
 xfce_dialog_show_error G_GNUC_PRINTF (3, 4)
@@ -103,6 +105,7 @@ xfce_sm_client_get_with_argv
 xfce_sm_client_get_full
 xfce_sm_client_connect
 xfce_sm_client_disconnect
+xfce_sm_client_error_quark
 xfce_sm_client_is_connected
 xfce_sm_client_is_resumed
 xfce_sm_client_set_desktop_file

@@ -39,6 +39,7 @@ xfce_message_dialog_new
 xfce_message_dialog_new_valist
 xfce_message_dialog
 xfce_dialog_show_help
+xfce_dialog_show_help_with_version
 xfce_dialog_show_info
 xfce_dialog_show_warning
 xfce_dialog_show_error
@@ -94,6 +95,8 @@ xfce_sm_client_get_restart_command
 xfce_sm_client_set_restart_command
 xfce_sm_client_get_restart_style
 xfce_sm_client_set_restart_style
+XFCE_SM_CLIENT_ERROR
+XfceSmCLientErrorEnum
 <SUBSECTION Standard>
 XFCE_IS_SM_CLIENT
 XFCE_IS_SM_CLIENT_CLASS
@@ -107,4 +110,5 @@ XFCE_TYPE_SM_CLIENT_SHUTDOWN_HINT
 xfce_sm_client_get_type
 xfce_sm_client_restart_style_get_type
 xfce_sm_client_shutdown_hint_get_type
+xfce_sm_client_error_quark
 </SECTION>

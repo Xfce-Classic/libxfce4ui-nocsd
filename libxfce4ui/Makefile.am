@@ -1,6 +1,6 @@
 # $Id$
 
-INCLUDES = \
+AM_CPPFLAGS = \
 	-I$(top_srcdir) \
 	-DDATADIR=\"$(datadir)\" \
 	-DSN_API_NOT_YET_FROZEN \
@@ -10,8 +10,6 @@ INCLUDES = \
 	-DLIBXFCE4UI_VERSION_API=\"$(LIBXFCE4UI_VERSION_API)\" \
 	-DPACKAGE_LOCALE_DIR=\"$(localedir)\" \
 	$(PLATFORM_CPPFLAGS)
-
-lib_LTLIBRARIES = libxfce4ui-1.la
 
 libxfce4ui_enum_headers = \
 	xfce-sm-client.h
@@ -35,13 +33,7 @@ libxfce4ui_built_sources = \
 	libxfce4ui-marshal.c \
 	libxfce4ui-marshal.h
 
-libxfce4ui_includedir = \
-	$(includedir)/xfce4/libxfce4ui-$(LIBXFCE4UI_VERSION_API)/libxfce4ui
-
-libxfce4ui_include_HEADERS = \
-	$(libxfce4ui_headers)
-
-libxfce4ui_1_la_SOURCES = \
+libxfce4ui_sources = \
 	$(libxfce4ui_headers) \
 	$(libxfce4ui_built_sources) \
 	libxfce4ui-config.c \
@@ -55,9 +47,20 @@ libxfce4ui_1_la_SOURCES = \
 	xfce-spawn.c \
 	xfce-titled-dialog.c
 
+libxfce4ui_includedir = \
+	$(includedir)/xfce4/libxfce4ui-$(LIBXFCE4UI_VERSION_API)/libxfce4ui
+
+libxfce4ui_include_HEADERS = \
+	$(libxfce4ui_headers)
+
+lib_LTLIBRARIES = libxfce4ui-1.la
+
+libxfce4ui_1_la_SOURCES = \
+	$(libxfce4ui_sources)
+
 libxfce4ui_1_la_CFLAGS = \
 	$(LIBSM_CFLAGS) \
-	$(GTK_CFLAGS) \
+	$(GTK2_CFLAGS) \
 	$(LIBSTARTUP_NOTIFICATION_CFLAGS) \
 	$(LIBXFCE4UTIL_CFLAGS) \
 	$(PLATFORM_CFLAGS)
@@ -71,13 +74,52 @@ libxfce4ui_1_la_LDFLAGS = \
 
 libxfce4ui_1_la_LIBADD = \
 	$(LIBSM_LIBS) \
-	$(GTK_LIBS) \
+	$(GTK2_LIBS) \
 	$(LIBSTARTUP_NOTIFICATION_LIBS) \
 	$(LIBXFCE4UTIL_LIBS)
 
 pkgconfigdir = $(libdir)/pkgconfig
 pkgconfig_DATA = libxfce4ui-1.pc
 
+##
+## GTK+ 3 support library
+##
+if ENABLE_GTK3_LIBRARY
+
+libxfce4ui2_includedir = \
+	$(includedir)/xfce4/libxfce4ui-2/libxfce4ui
+
+libxfce4ui2_include_HEADERS = \
+	$(libxfce4ui_headers)
+
+lib_LTLIBRARIES += libxfce4ui-2.la
+
+libxfce4ui_2_la_SOURCES = \
+	$(libxfce4ui_sources)
+
+libxfce4ui_2_la_CFLAGS = \
+	$(LIBSM_CFLAGS) \
+	$(GTK3_CFLAGS) \
+	$(LIBSTARTUP_NOTIFICATION_CFLAGS) \
+	$(LIBXFCE4UTIL_CFLAGS) \
+	$(PLATFORM_CFLAGS)
+
+libxfce4ui_2_la_LDFLAGS = \
+	-version-info $(LIBXFCE4UI_VERINFO) \
+	-export-symbols-regex "^[^_].*" \
+	-no-undefined \
+	$(LIBSM_LDFLAGS) \
+	$(PLATFORM_LDFLAGS)
+
+libxfce4ui_2_la_LIBADD = \
+	$(LIBSM_LIBS) \
+	$(GTK3_LIBS) \
+	$(LIBSTARTUP_NOTIFICATION_LIBS) \
+	$(LIBXFCE4UTIL_LIBS)
+
+pkgconfig_DATA += libxfce4ui-2.pc
+
+endif
 
 ##
 ## Rules to auto-generate built sources

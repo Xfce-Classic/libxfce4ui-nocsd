@@ -56,7 +56,8 @@
 #include <X11/SM/SMlib.h>
 #endif
 
-#include <gdk/gdkwindow.h>
+#include <gdk/gdk.h>
+#include <gdk/gdkx.h>
 #include <gtk/gtk.h>
 
 #include <libxfce4util/libxfce4util.h>
@@ -643,7 +644,7 @@ xfce_sm_client_set_client_id(XfceSMClient *sm_client,
     g_free(sm_client->client_id);
     sm_client->client_id = g_strdup(client_id);
 
-    gdk_set_sm_client_id(sm_client->client_id);
+    gdk_x11_set_sm_client_id(sm_client->client_id);
 
     g_object_notify(G_OBJECT(sm_client), "client-id");
 }
@@ -1366,6 +1367,27 @@ xfce_sm_client_set_clone_restart_commands(XfceSMClient *sm_client)
 #endif
 
 
+
+/**
+ * xfce_sm_client_error_quark:
+ *
+ * Gets the XfceSmClient Error Quark.
+ *
+ * Return value: a #GQuark.
+ **/
+GQuark
+xfce_sm_client_error_quark (void)
+{
+  static GQuark q;
+
+  if G_UNLIKELY (q == 0)
+    q = g_quark_from_static_string ("xfce-sm-client-error-quark");
+
+  return q;
+}
+
+
+
 /**
  * xfce_sm_client_get_option_group:
  * @argc: The application's argument count
@@ -1585,15 +1607,13 @@ xfce_sm_client_connect(XfceSMClient *sm_client,
 
     if(!sm_client->session_connection) {
         if(error) {
-            /* FIXME: error domain/code */
-            g_set_error(error, 0, 1,
+            g_set_error(error, XFCE_SM_CLIENT_ERROR, XFCE_SM_CLIENT_ERROR_FAILED,
                         _("Failed to connect to the session manager: %s"), buf);
         }
         return FALSE;
     } else if(!given_client_id) {
         if(error) {
-            /* FIXME: error domain/code */
-            g_set_error(error, 0, 1,
+            g_set_error(error, XFCE_SM_CLIENT_ERROR, XFCE_SM_CLIENT_ERROR_INVALID_CLIENT,
                         _("Session manager did not return a valid client id"));
         }
         return FALSE;
@@ -1719,7 +1739,7 @@ xfce_sm_client_disconnect(XfceSMClient *sm_client)
 
     SmcCloseConnection(sm_client->session_connection, 0, NULL);
     sm_client->session_connection = NULL;
-    gdk_set_sm_client_id(NULL);
+    gdk_x11_set_sm_client_id(NULL);
 
     xfce_sm_client_set_state(sm_client, XFCE_SM_CLIENT_STATE_DISCONNECTED);
 #endif

@@ -1,187 +1,504 @@
-# Korean translations for libxfce4ui package.
-# Copyright (C) 2003-2011 The Xfce development team.
-# This file is distributed under the same license as the libxfce4ui package.
-# Seong-ho, Cho <darkcircle.0426@gmail.com>, 2011, 2012.
-#
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Seong-ho Cho <darkcircle.0426@gmail.com>, 2013-2014
 msgid ""
 msgstr ""
-"Project-Id-Version: libxfce4ui.master\n"
-"Report-Msgid-Bugs-To: xfce-i18n <xfce-i18n@xfce.org>\n"
-"POT-Creation-Date: 2012-02-26 02:51+0000\n"
-"PO-Revision-Date: 2012-02-26 20:16+0900\n"
-"Last-Translator: Seong-ho, Cho <darkcircle.0426@gmail.com>\n"
-"Language-Team: xfce-i18n <xfce-i18n@xfce.org>\n"
-"Language: ko\n"
+"Project-Id-Version: Libxfce4ui\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-07-02 22:33+0200\n"
+"PO-Revision-Date: 2014-08-24 09:49+0000\n"
+"Last-Translator: Seong-ho Cho <darkcircle.0426@gmail.com>\n"
+"Language-Team: Korean (http://www.transifex.com/projects/p/libxfce4ui/language/ko/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ko\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Poedit-Language: Korean\n"
-"X-Poedit-SourceCharset: utf-8\n"
-"X-Poedit-Country: KOREA, REPUBLIC OF\n"
 
-#: ../libxfce4ui/xfce-dialogs.c:80
+#: ../libxfce4ui/xfce-dialogs.c:98
 msgid "Failed to open web browser for online documentation"
-msgstr "온라인 문서를 위한 웹 브라우저를 여는데 실패했습니다"
+msgstr "온라인 문서에 대한 웹 브라우저를 여는데 실패했습니다"
 
-#: ../libxfce4ui/xfce-dialogs.c:195
+#: ../libxfce4ui/xfce-dialogs.c:213
 #, c-format
 msgid "Do you want to read the %s manual online?"
 msgstr "온라인에서 %s 도움말을 보시렵니까?"
 
-#: ../libxfce4ui/xfce-dialogs.c:197
+#: ../libxfce4ui/xfce-dialogs.c:215
 msgid "Do you want to read the manual online?"
 msgstr "온라인에서 도움말을 보시렵니까?"
 
-#: ../libxfce4ui/xfce-dialogs.c:200
+#: ../libxfce4ui/xfce-dialogs.c:218
 msgid "Online Documentation"
 msgstr "온라인 문서"
 
-#: ../libxfce4ui/xfce-dialogs.c:203
-msgid "You will be redirected to the documentation website where the help pages are maintained and translated."
-msgstr "관리, 번역된 도움멜 페이지가 있는 문서 웹사이트로 안내받을 것입니다."
+#: ../libxfce4ui/xfce-dialogs.c:221
+msgid ""
+"You will be redirected to the documentation website where the help pages are"
+" maintained and translated."
+msgstr "관리, 번역된 도움말 페이지가 있는 문서 웹사이트로 안내합니다."
 
-#: ../libxfce4ui/xfce-dialogs.c:207
+#: ../libxfce4ui/xfce-dialogs.c:225
 msgid "_Read Online"
 msgstr "온라인 문서 읽기(_R)"
 
-#: ../libxfce4ui/xfce-dialogs.c:219
+#: ../libxfce4ui/xfce-dialogs.c:237
 msgid "_Always go directly to the online documentation"
 msgstr "항상 온라인 문서로 바로 이동(_A)"
 
-#: ../libxfce4ui/xfce-dialogs.c:263
+#: ../libxfce4ui/xfce-dialogs.c:281
 msgid "Information"
 msgstr "정보"
 
-#: ../libxfce4ui/xfce-dialogs.c:296
+#: ../libxfce4ui/xfce-dialogs.c:314
 msgid "Warning"
 msgstr "경고"
 
-#: ../libxfce4ui/xfce-dialogs.c:330
+#: ../libxfce4ui/xfce-dialogs.c:348
 msgid "Error"
 msgstr "오류"
 
-#: ../libxfce4ui/xfce-dialogs.c:381
+#: ../libxfce4ui/xfce-dialogs.c:399
 msgid "Question"
 msgstr "질문"
 
-#: ../libxfce4ui/xfce-sm-client.c:1402
+#: ../libxfce4ui/xfce-sm-client.c:1424
 msgid "Session management client ID"
 msgstr "세션 관리자 클라이언트 ID"
 
-#: ../libxfce4ui/xfce-sm-client.c:1402
+#: ../libxfce4ui/xfce-sm-client.c:1424
 msgid "ID"
 msgstr "ID"
 
-#: ../libxfce4ui/xfce-sm-client.c:1403
+#: ../libxfce4ui/xfce-sm-client.c:1425
 msgid "Disable session management"
 msgstr "세션 관리자 비활성화"
 
-#: ../libxfce4ui/xfce-sm-client.c:1413
+#: ../libxfce4ui/xfce-sm-client.c:1435
 msgid "Session management options"
 msgstr "세션 관리자 옵션"
 
-#: ../libxfce4ui/xfce-sm-client.c:1414
+#: ../libxfce4ui/xfce-sm-client.c:1436
 msgid "Show session management options"
 msgstr "세션 관리자 옵션 보기"
 
-#: ../libxfce4ui/xfce-sm-client.c:1590
+#: ../libxfce4ui/xfce-sm-client.c:1611
 #, c-format
 msgid "Failed to connect to the session manager: %s"
 msgstr "세션 관리자로 연결하는데 실패했습니다: %s"
 
-#: ../libxfce4ui/xfce-sm-client.c:1597
+#: ../libxfce4ui/xfce-sm-client.c:1617
 #, c-format
 msgid "Session manager did not return a valid client id"
 msgstr "세션 관리자가 유효한 클라이언트 ID를 반환하지 않았습니다"
 
 #. print warning for user
-#: ../libxfce4ui/xfce-spawn.c:406
+#: ../libxfce4ui/xfce-spawn.c:413
 #, c-format
-msgid "Working directory \"%s\" does not exist. It won't be used when spawning \"%s\"."
-msgstr "작업 디렉터리 \"%s\"이(가) 존재하지 않습니다. \"%s\"이(가) 퍼지면 이를 사용하지 않을 것입니다."
-
-#: ../libxfce4kbd-private/xfce-shortcuts.c:52
-msgid "This shortcut is already being used for another window manager action. Which action do you want to use?"
-msgstr "이 바로 가기는 이미 다른 창 관리자 동작에서 사용하고 있습니다. 어떤 동작을 사용하시렵니까?"
+msgid ""
+"Working directory \"%s\" does not exist. It won't be used when spawning "
+"\"%s\"."
+msgstr "작업 디렉터리 \"%s\"이(가) 존재하지 않습니다. \"%s\"이(가) 퍼지면 이를 사용하지 않습니다."
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
-#: ../libxfce4kbd-private/xfce-shortcuts.c:56
-#: ../libxfce4kbd-private/xfce-shortcuts.c:59
-#: ../libxfce4kbd-private/xfce-shortcuts.c:62
+#, c-format
+msgid ""
+"This shortcut is already being used for the action '%s'. Which action do you"
+" want to use?"
+msgstr "이 바로 가기는 이미 '%s' 동작에 대해 사용하고 있습니다. 어떤 동작을 사용하시렵니까?"
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:54
+#: ../libxfce4kbd-private/xfce-shortcuts.c:57
+#: ../libxfce4kbd-private/xfce-shortcuts.c:60
+#: ../libxfce4kbd-private/xfce-shortcuts.c:63
 #, c-format
 msgid "Use '%s'"
 msgstr "'%s'을(를) 사용합니다"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:53
-msgid "Keep the other one"
-msgstr "다른 것을 유지"
-
-#: ../libxfce4kbd-private/xfce-shortcuts.c:55
-#: ../libxfce4kbd-private/xfce-shortcuts.c:58
-#, c-format
-msgid "This shortcut is already being used for the command '%s'. Which action do you want to use?"
-msgstr "이 바로 가기는 이미 명령 '%s'에서 사용하고 있습니다. 어떤 동작을 사용하시렵니까?"
-
-#: ../libxfce4kbd-private/xfce-shortcuts.c:56
-#: ../libxfce4kbd-private/xfce-shortcuts.c:59
+#: ../libxfce4kbd-private/xfce-shortcuts.c:54
+#: ../libxfce4kbd-private/xfce-shortcuts.c:57
+#: ../libxfce4kbd-private/xfce-shortcuts.c:60
+#: ../libxfce4kbd-private/xfce-shortcuts.c:63
 #, c-format
 msgid "Keep '%s'"
 msgstr "'%s'을(를) 유지합니다"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:61
-msgid "This shortcut is already being used by a window manager action. Which action do you want to use?"
-msgstr "이 바로 가기는 이미 창 관리자 동작이 사용하고 있습니다. 어떤 동작을 사용하시렵니까?"
+#: ../libxfce4kbd-private/xfce-shortcuts.c:56
+#: ../libxfce4kbd-private/xfce-shortcuts.c:59
+#, c-format
+msgid ""
+"This shortcut is already being used for the command '%s'. Which action do "
+"you want to use?"
+msgstr "이 바로 가기는 이미 명령 '%s'에서 사용하고 있습니다. 어떤 동작을 사용하시렵니까?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
-msgid "Keep the window manager action"
-msgstr "창 관리자 동작 유지"
+#, c-format
+msgid ""
+"This shortcut is already being used by the action '%s'. Which action do you "
+"want to use?"
+msgstr "이 바로 가기는 이미 '%s' 동작이 사용하고 있습니다. 어떤 동작을 사용하시렵니까?"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:95
+#. This shortcut already exists in the provider, we don't want it twice
+#. Warn the user
+#: ../libxfce4kbd-private/xfce-shortcuts.c:110
+msgid "Please use another key combination."
+msgstr "다른 키 조합을 사용하십시오."
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:111
+#, c-format
+msgid "%s already triggers this action."
+msgstr "이미 이 동작에 대해 %s 키 조합을 사용합니다."
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:116
 #, c-format
 msgid "Conflicting actions for %s"
 msgstr "%s을(를) 위한 동작이 충돌합니다"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:128
+#: ../libxfce4kbd-private/xfce-shortcuts.c:176
 msgid "This shortcut is already being used for something else."
 msgstr "이 바로 가기는 이미 다른 용도로 사용하고 있습니다."
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:204
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:209
 msgid "Window Manager Action Shortcut"
 msgstr "창 관리자 동작 바로 가기"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:205
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:215
-msgid "Action:"
-msgstr "동작:"
+#. TRANSLATORS: this string will be used to create an explanation for
+#. * the user in a following string
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:212
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:226
+msgid "action"
+msgstr "동작"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:209
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:216
 msgid "Command Shortcut"
 msgstr "명령 바로 가기"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:210
-msgid "Command:"
-msgstr "명령:"
+#. TRANSLATORS: this string will be used to create an explanation for
+#. * the user in a following string
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:219
+msgid "command"
+msgstr "명령"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:214
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:223
 msgid "Shortcut"
 msgstr "바로 가기"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:255
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:267
+#, c-format
+msgid "Press now the keyboard keys you want to use to trigger the %s '%s'."
+msgstr "이제 %s '%s'을(를) 사용할 키보드 키를 누르십시오."
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:291
 msgid "Shortcut:"
 msgstr "바로 가기:"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:300
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:296
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:475
+msgid "No keys pressed yet, proceed."
+msgstr "아직 키가 눌려지지 않았습니다. 계속 진행합니다."
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:378
 msgid "Could not grab the keyboard."
 msgstr "키보드 입력을 잡을 수 없습니다."
 
-#: ../glade/libxfce4ui.xml.in.h:1
-msgid "Subtitle"
-msgstr "부제"
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:36
+msgid "Window operations menu"
+msgstr "창 동작 메뉴"
 
-#: ../glade/libxfce4ui.xml.in.h:2
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:37
+msgid "Up"
+msgstr "위"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:38
+msgid "Down"
+msgstr "아래"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:39
+msgid "Left"
+msgstr "왼쪽"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:40
+msgid "Right"
+msgstr "오른쪽"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:41
+msgid "Cancel"
+msgstr "취소"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:42
+msgid "Cycle windows"
+msgstr "창 순환"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:43
+msgid "Cycle windows (Reverse)"
+msgstr "창 순환(역순)"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:44
+msgid "Switch window for same application"
+msgstr "동일 프로그램 창 전환"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:45
+msgid "Switch application"
+msgstr "프로그램 전환"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:46
+msgid "Close window"
+msgstr "창 닫기"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:47
+msgid "Maximize window horizontally"
+msgstr "수평 방향 창 최대화"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:48
+msgid "Maximize window vertically"
+msgstr "수직 방향 창 최대화"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:49
+msgid "Maximize window"
+msgstr "창 최대화"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:50
+msgid "Hide window"
+msgstr "창 숨기기"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:51
+msgid "Move window"
+msgstr "창 이동"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:52
+msgid "Resize window"
+msgstr "창 크기 조절"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:53
+msgid "Shade window"
+msgstr "창 가리기"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:54
+msgid "Stick window"
+msgstr "모든 작업 공간에서 창 보기"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:55
+msgid "Raise window"
+msgstr "창 앞으로 올리기"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:56
+msgid "Lower window"
+msgstr "창 뒤로 내리기"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:57
+msgid "Raise or lower window"
+msgstr "창을 앞으로 올리거나 뒤로 내리기"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:58
+msgid "Fill window"
+msgstr "창 채우기"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:59
+msgid "Fill window horizontally"
+msgstr "창 수평으로 채우기"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:60
+msgid "Fill window vertically"
+msgstr "창 수직으로 채우기"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:61
+msgid "Toggle above"
+msgstr "위로 전환"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:62
+msgid "Toggle fullscreen"
+msgstr "전체 화면 전환"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:63
+msgid "Move window to upper workspace"
+msgstr "위쪽 작업 공간으로 창 이동"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:64
+msgid "Move window to bottom workspace"
+msgstr "아래쪽 작업 공간으로 창 이동"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:65
+msgid "Move window to left workspace"
+msgstr "왼쪽 작업 공간으로 창 이동"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:66
+msgid "Move window to right workspace"
+msgstr "오른쪽 작업 공간으로 창 이동"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:67
+msgid "Move window to previous workspace"
+msgstr "이전 작업 공간으로 창 이동"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:68
+msgid "Move window to next workspace"
+msgstr "다음 작업 공간으로 창 이동"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:69
+msgid "Move window to workspace 1"
+msgstr "작업 공간 1로 창 이동"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:70
+msgid "Move window to workspace 2"
+msgstr "워크스페이스 2로 창 이동"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:71
+msgid "Move window to workspace 3"
+msgstr "워크스페이스 3으로 창 이동"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:72
+msgid "Move window to workspace 4"
+msgstr "워크스페이스 4로 창 이동"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:73
+msgid "Move window to workspace 5"
+msgstr "워크스페이스 5로 창 이동"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:74
+msgid "Move window to workspace 6"
+msgstr "워크스페이스 6으로 창 이동"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:75
+msgid "Move window to workspace 7"
+msgstr "워크스페이스 7로 창 이동"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:76
+msgid "Move window to workspace 8"
+msgstr "워크스페이스 8로 창 이동"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:77
+msgid "Move window to workspace 9"
+msgstr "워크스페이스 9로 창 이동"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:78
+msgid "Move window to workspace 10"
+msgstr "워크스페이스 10으로 창 이동"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:79
+msgid "Move window to workspace 11"
+msgstr "워크스페이스 11로 창 이동"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:80
+msgid "Move window to workspace 12"
+msgstr "워크스페이스 12로 창 이동"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:81
+msgid "Tile window to the top"
+msgstr "상단에 창 바둑판 정렬"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:82
+msgid "Tile window to the bottom"
+msgstr "하단에 창 바둑판 정렬"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:83
+msgid "Tile window to the left"
+msgstr "왼쪽에 창 바둑판 정렬"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:84
+msgid "Tile window to the right"
+msgstr "오른쪽에 창 바둑판 정렬"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:85
+msgid "Show desktop"
+msgstr "데스크톱 보이기"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:86
+msgid "Upper workspace"
+msgstr "상단 작업 공간"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:87
+msgid "Bottom workspace"
+msgstr "하단 작업 공간"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:88
+msgid "Left workspace"
+msgstr "왼쪽 작업 공간"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:89
+msgid "Right workspace"
+msgstr "오른쪽 작업 공간"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:90
+msgid "Previous workspace"
+msgstr "이전 작업 공간"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:91
+msgid "Next workspace"
+msgstr "다음 작업 공간"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:92
+msgid "Workspace 1"
+msgstr "작업 공간 1"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:93
+msgid "Workspace 2"
+msgstr "작업 공간 2"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:94
+msgid "Workspace 3"
+msgstr "작업 공간 3"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:95
+msgid "Workspace 4"
+msgstr "작업 공간 4"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:96
+msgid "Workspace 5"
+msgstr "작업 공간 5"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:97
+msgid "Workspace 6"
+msgstr "작업 공간 6"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:98
+msgid "Workspace 7"
+msgstr "작업 공간 7"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:99
+msgid "Workspace 8"
+msgstr "작업 공간 8"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:100
+msgid "Workspace 9"
+msgstr "작업 공간 9"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:101
+msgid "Workspace 10"
+msgstr "작업 공간 10"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:102
+msgid "Workspace 11"
+msgstr "작업 공간 11"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:103
+msgid "Workspace 12"
+msgstr "작업 공간 12"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:104
+msgid "Add workspace"
+msgstr "작업 공간 추가"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:105
+msgid "Add adjacent workspace"
+msgstr "인접 작업 공간 추가"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:106
+msgid "Delete last workspace"
+msgstr "마지막 작업 공간 삭제"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:107
+msgid "Delete active workspace"
+msgstr "활성 작업 공간 삭제"
+
+#: ../glade/libxfce4ui.xml.in.h:1
 msgid "Titled Dialog"
 msgstr "제목이 붙은 대화상자"
+
+#: ../glade/libxfce4ui.xml.in.h:2
+msgid "Subtitle"
+msgstr "부제"
 
 #: ../glade/libxfce4ui.xml.in.h:3
 msgid "Xfce 4 Widgets"
@@ -204,23 +521,29 @@ msgid "Panel"
 msgstr "패널"
 
 #: ../xfce4-about/main.c:75
-msgid "Program launchers, window buttons, applications menu, workspace switcher and more."
-msgstr "프로그램 실행 아이콘, 윈도우 단추, 프로그램 메뉴, 작업공간 전환기 등."
+msgid ""
+"Program launchers, window buttons, applications menu, workspace switcher and"
+" more."
+msgstr "프로그램 실행 아이콘, 창 단추, 프로그램 메뉴, 작업 공간 전환기 등이 있습니다."
 
 #: ../xfce4-about/main.c:79
 msgid "Desktop Manager"
 msgstr "데스크톱 관리자"
 
 #: ../xfce4-about/main.c:80
-msgid "Sets the background color or image with optional application menu or icons for minimized applications or launchers, devices and folders."
-msgstr "선택적 프로그램 메뉴의 배경색이나 그림 또는 최소화한 프로그램이나 실행 아이콘, 장치, 폴더에 대한 아이콘을 설정합니다."
+msgid ""
+"Sets the background color or image with optional application menu or icons "
+"for minimized applications or launchers, devices and folders."
+msgstr "추가적인 프로그램 메뉴의 배경색, 그림 또는 최소화한 프로그램 아이콘, 실행 아이콘, 장치와 폴더의 아이콘을 설정합니다."
 
 #: ../xfce4-about/main.c:84
 msgid "File Manager "
 msgstr "파일 관리자"
 
 #: ../xfce4-about/main.c:85
-msgid "A modern file manager for the Unix/Linux desktop, aiming to be easy-to-use and fast."
+msgid ""
+"A modern file manager for the Unix/Linux desktop, aiming to be easy-to-use "
+"and fast."
 msgstr "사용하기 쉽고 빠른 유닉스/리눅스 데스크톱의 최신 파일 관리자입니다."
 
 #: ../xfce4-about/main.c:89
@@ -228,24 +551,30 @@ msgid "Session Manager"
 msgstr "세션 관리자 옵션"
 
 #: ../xfce4-about/main.c:90
-msgid "Restores your session on startup and allows you to shutdown the computer from Xfce."
-msgstr "시작시 세션을 복구하고 Xfce에서 컴퓨터를 끌 수 있도록 합니다."
+msgid ""
+"Restores your session on startup and allows you to shutdown the computer "
+"from Xfce."
+msgstr "시작시 세션을 복구하고 Xfce에서 컴퓨터를 끌 수 있게 합니다."
 
 #: ../xfce4-about/main.c:94
 msgid "Setting System"
 msgstr "설정 시스템"
 
 #: ../xfce4-about/main.c:95
-msgid "Configuration system to control various aspects of the desktop like appearance, display, keyboard and mouse settings."
-msgstr "모양새, 디스플레이, 키보드, 마우스의 다양한 모습을 제어하는 설정 시스템입니다."
+msgid ""
+"Configuration system to control various aspects of the desktop like "
+"appearance, display, keyboard and mouse settings."
+msgstr "모양새, 디스플레이, 키보드, 마우스와 같은 데스크톱의 다양한 부분을 제어하는 설정 시스템입니다."
 
 #: ../xfce4-about/main.c:99
 msgid "Application Finder"
 msgstr "프로그램 찾기"
 
 #: ../xfce4-about/main.c:100
-msgid "Shows the applications installed on your system in categories, so you can quickly find and launch them."
-msgstr "시스템에 설치한 프로그램을 카테고리에 보여주어 빨리 찾고 실행할 수 있도록 해줍니다."
+msgid ""
+"Shows the applications installed on your system in categories, so you can "
+"quickly find and launch them."
+msgstr "시스템에 설치한 프로그램을 카테고리에 보여주어 빨리 찾아 실행할 수 있게 해줍니다."
 
 #: ../xfce4-about/main.c:104
 msgid "Settings Daemon"
@@ -256,16 +585,25 @@ msgid "D-Bus-based configuration storage system."
 msgstr "D-Bus 기반 설정 저장소 시스템입니다."
 
 #: ../xfce4-about/main.c:112
-msgid "Xfce is a collection of programs that together provide a full-featured desktop environment. The following programs are part of the Xfce core:"
+msgid ""
+"Xfce is a collection of programs that together provide a full-featured "
+"desktop environment. The following programs are part of the Xfce core:"
 msgstr "Xfce는 완전한 기능을 갖춘 데스크톱 환경을 함께 제공하는 프로그램의 모음입니다. 다음 프로그램은 Xfce 코어의 일부입니다:"
 
 #: ../xfce4-about/main.c:136
-msgid "Xfce is also a development platform providing several libraries, that help programmers create applications that fit in well with the desktop environment."
-msgstr "Xfce는 또한 프로그래머들이 데스크톱 환경에 맞는 프로그램을 만들 수 있도록 다양한 라이브러리를 제공하는 개발 플랫폼이기도 합니다."
+msgid ""
+"Xfce is also a development platform providing several libraries, that help "
+"programmers create applications that fit in well with the desktop "
+"environment."
+msgstr "Xfce는 프로그래머가 데스크톱 환경에 맞는 프로그램을 만들 수 있게 다양한 라이브러리를 제공하는 개발 플랫폼이기도 합니다."
 
 #: ../xfce4-about/main.c:142
-msgid "Xfce components are licensed under free or open source licences; GPL or BSDL for applications and LGPL or BSDL for libraries. Look at the documentation, the source code or the Xfce website (http://www.xfce.org) for more information."
-msgstr "Xfce 요소들은 프로그램을 위한 GPL이나 BSDL,그리고 라이브러리를 위한 LGPL이나 BSDL 인 자유 오픈소스 라이선스하에 계약되었습니다. 문서를 보시고 자세한 내용은 소스코드나 Xfce 웹 사이트(http://www.xfce.org)를 참조하시기 바랍니다."
+msgid ""
+"Xfce components are licensed under free or open source licences; GPL or BSDL"
+" for applications and LGPL or BSDL for libraries. Look at the documentation,"
+" the source code or the Xfce website (http://www.xfce.org) for more "
+"information."
+msgstr "Xfce 구성 요소는 프로그램에 대해 GPL 또는 BSDL, 라이브러리에 대해 LGPL 또는 BSDL 자유 오픈소스 라이선스에 따라 계약합니다. 자세한 내용은 문서, 소스 코드 또는 Xfce 웹 사이트(http://www.xfce.org)를 참고하십시오."
 
 #: ../xfce4-about/main.c:149
 msgid "Thank you for your interest in Xfce."
@@ -276,24 +614,37 @@ msgid "The Xfce Development Team"
 msgstr "Xfce 개발 팀"
 
 #: ../xfce4-about/main.c:262
-msgid "If you know of anyone missing from this list; don't hesitate and file a bug on <http://bugzilla.xfce.org> ."
-msgstr "이 목록에 빠진 내용이 있다면 망설이지 말고 다음으로 버그를 알려주시기 바랍니다 <http://bugzilla.xfce.org>."
+msgid ""
+"If you know of anyone missing from this list; don't hesitate and file a bug "
+"on <http://bugzilla.xfce.org> ."
+msgstr "이 목록에 빠진 내용이 있다면 망설이지 말고 다음으로 버그를 알려주십시오 <http://bugzilla.xfce.org>."
 
 #: ../xfce4-about/main.c:266
 msgid "Thanks to all who helped making this software available!"
 msgstr "이 소프트웨어를 사용할 수 있게 도와준 모든 분께 감사드립니다!"
 
 #: ../xfce4-about/main.c:283
-msgid "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different components are copyrighted by their respective authors."
-msgstr "Xfce 4는 Oliver Foundan (fourdan@xfce.org)의 지적소유물입니다. 다른 구성요소는 제각각의 저작권자가 저작권을 소유하고 있습니다."
+msgid ""
+"Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
+"components are copyrighted by their respective authors."
+msgstr "Xfce 4는 Oliver Foundan(fourdan@xfce.org)의 지적 소유물입니다. 다른 구성요소는 제각각의 저작권자가 저작권을 소유하고 있습니다."
 
 #: ../xfce4-about/main.c:288
-msgid "The libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs and exo packages are distributed under the terms of the GNU Library General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version."
-msgstr "libxfce4ui, libxfce4gui, libxfce4util, thunar-vfs 그리고 exo 패키지는 자유 소프트웨어 재단이 발표한 버전 2 또는 (여러분의 선택에 따라) 그 이후의 GNU Library General Public License의 조항에 따라 배포합니다."
+msgid ""
+"The libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs and exo packages are "
+"distributed under the terms of the GNU Library General Public License as "
+"published by the Free Software Foundation; either version 2 of the License, "
+"or (at your option) any later version."
+msgstr "libxfce4ui, libxfce4gui, libxfce4util, thunar-vfs, exo 패키지는 자유 소프트웨어 재단이 발표한 버전 2 또는(여러분의 선택에 따라) 그 이후의 GNU 라이브러리 일반 공중 사용 허가서의 조항에 따라 배포합니다."
 
 #: ../xfce4-about/main.c:295
-msgid "The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfce-utils, xfconf, xfdesktop and xfwm4 are distributed under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version."
-msgstr "thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfce-utils, xfconf, xfdesktop 그리고 xfwm4 패키지는 자유 소프트웨어 재단이 발표한 버전 2 또는(여러분의 선택에 따라)  그 이후의 GNU Library General Public License의 조항에 따라 배포합니다."
+msgid ""
+"The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, "
+"xfce4-settings, xfce-utils, xfconf, xfdesktop and xfwm4 are distributed "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version."
+msgstr "thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfce-utils, xfconf, xfdesktop, xfwm4 패키지는 자유 소프트웨어 재단이 발표한 버전 2 또는(여러분의 선택에 따라) 그 이후의 GNU 라이브러리 일반 공중 사용 허가서의 조항에 따라 배포합니다."
 
 #: ../xfce4-about/main.c:442
 #, c-format
@@ -311,7 +662,7 @@ msgstr "Xfce 개발 팀. All rights reserved."
 #: ../xfce4-about/main.c:458
 #, c-format
 msgid "Please report bugs to <%s>."
-msgstr "<%s>(으)로 버그를 알려주시기 바랍니다."
+msgstr "<%s>(으)로 버그를 알려주십시오."
 
 #. I18N: date/time the translators list was updated
 #: ../xfce4-about/main.c:461
@@ -321,7 +672,7 @@ msgstr "%s의 번역자 목록입니다."
 
 #: ../xfce4-about/main.c:471
 msgid "Failed to load interface"
-msgstr "인터페이스를 불러오는데 실패하였습니다"
+msgstr "인터페이스를 불러오는데 실패했습니다"
 
 #. I18N: first %s will be replaced by the version, second by
 #. * the name of the distribution (--with-vendor-info=NAME)
@@ -339,31 +690,31 @@ msgstr "버전 %s"
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
 #. },
-#: ../xfce4-about/contributors.h:127
+#: ../xfce4-about/contributors.h:121
 msgid "Core developers"
 msgstr "코어 개발자"
 
-#: ../xfce4-about/contributors.h:130
+#: ../xfce4-about/contributors.h:124
 msgid "Active contributors"
 msgstr "활동 개발자"
 
-#: ../xfce4-about/contributors.h:133
+#: ../xfce4-about/contributors.h:127
 msgid "Servers maintained by"
 msgstr "서버 관리자"
 
-#: ../xfce4-about/contributors.h:136
+#: ../xfce4-about/contributors.h:130
 msgid "Goodies supervision"
 msgstr "Goodies 감독자"
 
-#: ../xfce4-about/contributors.h:139
+#: ../xfce4-about/contributors.h:133
 msgid "Translations supervision"
 msgstr "번역 감독자"
 
-#: ../xfce4-about/contributors.h:142
+#: ../xfce4-about/contributors.h:136
 msgid "Translators"
 msgstr "번역자"
 
-#: ../xfce4-about/contributors.h:145
+#: ../xfce4-about/contributors.h:139
 msgid "Previous contributors"
 msgstr "이전 공헌자"
 
@@ -376,39 +727,33 @@ msgid "Information about the Xfce Desktop Environment"
 msgstr "Xfce 데스크톱 환경 정보"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:1
-msgid "About"
-msgstr "정보"
-
-#: ../xfce4-about/xfce4-about-dialog.glade.h:2
 msgid "About the Xfce Desktop Environment"
 msgstr "Xfce 데스크톱 환경 정보"
 
+#: ../xfce4-about/xfce4-about-dialog.glade.h:2
+msgid "About"
+msgstr "정보"
+
 #: ../xfce4-about/xfce4-about-dialog.glade.h:3
-msgid "BSD"
-msgstr "BSD"
-
-#: ../xfce4-about/xfce4-about-dialog.glade.h:4
-msgid "Copyright"
-msgstr "Copyright"
-
-#: ../xfce4-about/xfce4-about-dialog.glade.h:5
 msgid "Credits"
 msgstr "참여자"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:6
+#: ../xfce4-about/xfce4-about-dialog.glade.h:4
 msgid "GPL"
 msgstr "GPL"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:7
+#: ../xfce4-about/xfce4-about-dialog.glade.h:5
 msgid "LGPL"
 msgstr "LGPL"
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:6
+msgid "BSD"
+msgstr "BSD"
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:7
+msgid "Copyright"
+msgstr "Copyright"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:8
 msgid "License"
 msgstr "라이선스"
-
-#~ msgid "Utilities and Scripts"
-#~ msgstr "유틸리티와 스크립트"
-
-#~ msgid "Startup scripts, run dialog and about dialog."
-#~ msgstr "시작 스크립트, 실행 대화상자, 정보 대화상자 입니다."

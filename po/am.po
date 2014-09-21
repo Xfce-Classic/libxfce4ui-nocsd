@@ -1,22 +1,22 @@
-# Vietnamese translations of the libxfce4ui package.
-# Copyright (C) The Xfce development team.
-# This file is distributed under the same license as the
-# libxfce4ui package.
-# Vinh <kureikain@gmail.com>, 2012.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-# , fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-12-28 09:06+0100\n"
-"PO-Revision-Date: 2011-12-31 04:47+0800\n"
-"Last-Translator: Vinh Nguyen <kureikain@gmail.com>\n"
-"Language-Team: Vi (Vietnamese)\n"
-"Language: Vi (Vietnamese)\n"
+"PO-Revision-Date: 2012-09-19 09:04+0300\n"
+"Last-Translator: tefera <tefera@mekuria.com>\n"
+"Language-Team: Amharic\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Amharic\n"
+"X-Poedit-Country: ETHIOPIA\n"
 
 #: ../libxfce4ui/xfce-dialogs.c:98
 msgid "Failed to open web browser for online documentation"
@@ -51,7 +51,7 @@ msgstr ""
 
 #: ../libxfce4ui/xfce-dialogs.c:281
 msgid "Information"
-msgstr "Thông tin"
+msgstr ""
 
 #: ../libxfce4ui/xfce-dialogs.c:314
 msgid "Warning"
@@ -59,11 +59,11 @@ msgstr ""
 
 #: ../libxfce4ui/xfce-dialogs.c:348
 msgid "Error"
-msgstr "Lỗi"
+msgstr ""
 
 #: ../libxfce4ui/xfce-dialogs.c:399
 msgid "Question"
-msgstr "Câu hỏi"
+msgstr ""
 
 #: ../libxfce4ui/xfce-sm-client.c:1403
 msgid "Session management client ID"
@@ -71,29 +71,29 @@ msgstr ""
 
 #: ../libxfce4ui/xfce-sm-client.c:1403
 msgid "ID"
-msgstr "ID"
+msgstr ""
 
 #: ../libxfce4ui/xfce-sm-client.c:1404
 msgid "Disable session management"
-msgstr "Vô hiệu hóa việc quản lý session"
+msgstr ""
 
 #: ../libxfce4ui/xfce-sm-client.c:1414
 msgid "Session management options"
-msgstr "Tùy chọn quản lý session"
+msgstr ""
 
 #: ../libxfce4ui/xfce-sm-client.c:1415
 msgid "Show session management options"
-msgstr "Hiện các tùy chọn quản lý session"
+msgstr ""
 
 #: ../libxfce4ui/xfce-sm-client.c:1591
 #, c-format
 msgid "Failed to connect to the session manager: %s"
-msgstr "Không kết nối được với trình quản lý session: %s"
+msgstr ""
 
 #: ../libxfce4ui/xfce-sm-client.c:1598
 #, c-format
 msgid "Session manager did not return a valid client id"
-msgstr "Trình quản lý phiên làm việc không trả lại một định danh khách hợp lệ"
+msgstr ""
 
 #. print warning for user
 #: ../libxfce4ui/xfce-spawn.c:413
@@ -102,8 +102,6 @@ msgid ""
 "Working directory \"%s\" does not exist. It won't be used when spawning \"%s"
 "\"."
 msgstr ""
-"Thư mục làm việc \"%s\" không tồn tại. Nó sẽ không thể được dùng khi phân "
-"tách \"%s\"."
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 #, fuzzy, c-format
@@ -111,8 +109,8 @@ msgid ""
 "This shortcut is already being used for the action '%s'. Which action do you "
 "want to use?"
 msgstr ""
-"Phím tắt đã được dùng!\n"
-"Bạn chắc chắn muốn dùng nó?"
+"አቋራጩ በጥቅም ላይ ውሏል!\n"
+"ለመጠቀም እንደሚፈልጉ ርግጠኛ ነዎት?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:54
 #: ../libxfce4kbd-private/xfce-shortcuts.c:57
@@ -120,7 +118,7 @@ msgstr ""
 #: ../libxfce4kbd-private/xfce-shortcuts.c:63
 #, c-format
 msgid "Use '%s'"
-msgstr "Sử dụng '%s'"
+msgstr ""
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:54
 #: ../libxfce4kbd-private/xfce-shortcuts.c:57
@@ -128,7 +126,7 @@ msgstr "Sử dụng '%s'"
 #: ../libxfce4kbd-private/xfce-shortcuts.c:63
 #, c-format
 msgid "Keep '%s'"
-msgstr "Giữ '%s'"
+msgstr ""
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
 #: ../libxfce4kbd-private/xfce-shortcuts.c:59
@@ -137,8 +135,8 @@ msgid ""
 "This shortcut is already being used for the command '%s'. Which action do "
 "you want to use?"
 msgstr ""
-"Phím tắt đã được dùng!\n"
-"Bạn chắc chắn muốn dùng nó?"
+"አቋራጩ በጥቅም ላይ ውሏል!\n"
+"ለመጠቀም እንደሚፈልጉ ርግጠኛ ነዎት?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 #, fuzzy, c-format
@@ -146,8 +144,8 @@ msgid ""
 "This shortcut is already being used by the action '%s'. Which action do you "
 "want to use?"
 msgstr ""
-"Phím tắt đã được dùng!\n"
-"Bạn chắc chắn muốn dùng nó?"
+"አቋራጩ በጥቅም ላይ ውሏል!\n"
+"ለመጠቀም እንደሚፈልጉ ርግጠኛ ነዎት?"
 
 #. This shortcut already exists in the provider, we don't want it twice
 #. Warn the user
@@ -169,13 +167,13 @@ msgstr ""
 #, fuzzy
 msgid "This shortcut is already being used for something else."
 msgstr ""
-"Phím tắt đã được dùng!\n"
-"Bạn chắc chắn muốn dùng nó?"
+"አቋራጩ በጥቅም ላይ ውሏል!\n"
+"ለመጠቀም እንደሚፈልጉ ርግጠኛ ነዎት?"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:209
 #, fuzzy
 msgid "Window Manager Action Shortcut"
-msgstr "Thiết lập trình quản lí cửa sổ Xfce 4"
+msgstr "የሸፍሲ 4 የመስኮት አስተዳዳሪ ስየማዎች"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
@@ -183,24 +181,24 @@ msgstr "Thiết lập trình quản lí cửa sổ Xfce 4"
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:226
 #, fuzzy
 msgid "action"
-msgstr "Hoạt động"
+msgstr "በስራላይ"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:216
 #, fuzzy
 msgid "Command Shortcut"
-msgstr "Soạn phím tắt"
+msgstr "አቋራጭ ሰይም"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:219
 #, fuzzy
 msgid "command"
-msgstr "Lệnh"
+msgstr "ትዕዛዝ"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:223
 #, fuzzy
 msgid "Shortcut"
-msgstr "Không có phím nóng"
+msgstr "አቋራጭ የለም"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:267
 #, c-format
@@ -210,7 +208,7 @@ msgstr ""
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:291
 #, fuzzy
 msgid "Shortcut:"
-msgstr "Không có phím nóng"
+msgstr "አቋራጭ የለም"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:296
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:475
@@ -219,11 +217,11 @@ msgstr ""
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:378
 msgid "Could not grab the keyboard."
-msgstr "Không thể bắt tín hiệu bàn phím."
+msgstr ""
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:33
 msgid "Window operations menu"
-msgstr ""
+msgstr "የመስኮት ስራ ምናሌ"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:34
 msgid "Up"
@@ -235,100 +233,99 @@ msgstr ""
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:36
 msgid "Left"
-msgstr "Trái"
+msgstr "ግራ"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:37
 msgid "Right"
-msgstr "Phải"
+msgstr "ቀኝ"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:38
 msgid "Cancel"
-msgstr ""
+msgstr "ሰርዝ"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:39
 msgid "Cycle windows"
-msgstr "Chuyển quanh các cửa sổ"
+msgstr "መስኮትን ፈትሽ"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:40
 #, fuzzy
 msgid "Cycle windows (Reverse)"
-msgstr "Chuyển quanh các cửa sổ"
+msgstr "መስኮትን ፈትሽ"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:41
 #, fuzzy
 msgid "Switch window for same application"
-msgstr "Di chuyển cửa sổ sang vùng làm việc %d"
+msgstr "መስኮቱን ወደ%d ገበታ ውሰድ"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:42
-#, fuzzy
 msgid "Switch application"
-msgstr "Ứng dụng không rõ!"
+msgstr ""
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:43
 msgid "Close window"
-msgstr "Đóng cửa sổ"
+msgstr "መስኮት ዝጋ"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:44
 msgid "Maximize window horizontally"
-msgstr "Phóng to cửa sổ theo chiều ngang"
+msgstr "መስኮትን አግድም አተልቅ"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:45
 msgid "Maximize window vertically"
-msgstr "Phóng to cửa sổ theo chiều dọc"
+msgstr "መስኮትን ሽቅብ አተልቅ"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:46
 msgid "Maximize window"
-msgstr "Phóng to cửa sổ"
+msgstr "መስኮትን አተልቅ"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:47
 msgid "Hide window"
-msgstr "Ẩn cửa sổ"
+msgstr "መስኮትን ደብቅ"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:48
 #, fuzzy
 msgid "Move window"
-msgstr "Di chuyển cửa sổ lên"
+msgstr "መስኮትን ወደላይ ውሰድ"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:49
 #, fuzzy
 msgid "Resize window"
-msgstr "Thay đổi kích thước cửa sổ lên trên"
+msgstr "መስኮትን ወደላይ መጥን"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:50
 msgid "Shade window"
-msgstr "Che cửa sổ"
+msgstr "መስኮትን አጥላ"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:51
 msgid "Stick window"
-msgstr "Dán cửa sổ"
+msgstr "መስኮትን ሰካ"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:52
 msgid "Raise window"
-msgstr "Nâng cửa sổ"
+msgstr "መስኮትን ከፍ አድርግ"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:53
 msgid "Lower window"
-msgstr "Hạ cửa sổ"
+msgstr "መስኮትን ዝቅ አድርግ"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:54
 #, fuzzy
 msgid "Raise or lower window"
-msgstr "Nâng cửa sổ"
+msgstr "መስኮትን ከፍ አድርግ"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:55
 #, fuzzy
 msgid "Fill window"
-msgstr "Ẩn cửa sổ"
+msgstr "መስኮትን ደብቅ"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:56
 #, fuzzy
 msgid "Fill window horizontally"
-msgstr "Phóng to cửa sổ theo chiều ngang"
+msgstr "መስኮትን አግድም አተልቅ"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:57
 #, fuzzy
 msgid "Fill window vertically"
-msgstr "Phóng to cửa sổ theo chiều dọc"
+msgstr "መስኮትን ሽቅብ አተልቅ"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:58
 msgid "Toggle above"
@@ -336,233 +333,233 @@ msgstr ""
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:59
 msgid "Toggle fullscreen"
-msgstr "Tăt/bật toàn màn hình"
+msgstr "ሙሉ-ስክሪን አድርግ"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:60
 msgid "Move window to upper workspace"
-msgstr "Di chuyển cửa sổ sang vùng làm việc ở trên"
+msgstr "መስኮቱን ወደላይኛው የስራ ገበታ ውሰድ"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:61
 msgid "Move window to bottom workspace"
-msgstr "Di chuyển cửa sổ sang vùng làm việc ở dưới"
+msgstr "መስኮቱን ወደታችናው የስራ ገበታ ውሰድ"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:62
 msgid "Move window to left workspace"
-msgstr "Di chuyển cửa sổ sang vùng làm việc bên trái"
+msgstr "መስኮቱን ወደግራ የስራ ገበታ ውሰድ"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:63
 msgid "Move window to right workspace"
-msgstr "Di chuyển cửa sổ sang vùng làm việc bên phải"
+msgstr "መስኮቱን ወደቀኝ የስራ ገበታ ውሰድ"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:64
 msgid "Move window to previous workspace"
-msgstr "Di chuyển cửa sổ sang vùng làm việc trước"
+msgstr "መስኮቱን ወደቀድሞው የስራ ገበታ ውሰድ"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:65
 msgid "Move window to next workspace"
-msgstr "Di chuyển cửa sổ sang vùng làm việc kế"
+msgstr "መስኮቱን ወደሚቀጥለው የስራ ገበታ ውሰድ"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:66
 #, fuzzy
 msgid "Move window to workspace 1"
-msgstr "Di chuyển cửa sổ sang vùng làm việc %d"
+msgstr "መስኮቱን ወደ%d ገበታ ውሰድ"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:67
 #, fuzzy
 msgid "Move window to workspace 2"
-msgstr "Di chuyển cửa sổ sang vùng làm việc %d"
+msgstr "መስኮቱን ወደ%d ገበታ ውሰድ"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:68
 #, fuzzy
 msgid "Move window to workspace 3"
-msgstr "Di chuyển cửa sổ sang vùng làm việc %d"
+msgstr "መስኮቱን ወደ%d ገበታ ውሰድ"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:69
 #, fuzzy
 msgid "Move window to workspace 4"
-msgstr "Di chuyển cửa sổ sang vùng làm việc %d"
+msgstr "መስኮቱን ወደ%d ገበታ ውሰድ"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:70
 #, fuzzy
 msgid "Move window to workspace 5"
-msgstr "Di chuyển cửa sổ sang vùng làm việc %d"
+msgstr "መስኮቱን ወደ%d ገበታ ውሰድ"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:71
 #, fuzzy
 msgid "Move window to workspace 6"
-msgstr "Di chuyển cửa sổ sang vùng làm việc %d"
+msgstr "መስኮቱን ወደ%d ገበታ ውሰድ"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:72
 #, fuzzy
 msgid "Move window to workspace 7"
-msgstr "Di chuyển cửa sổ sang vùng làm việc %d"
+msgstr "መስኮቱን ወደ%d ገበታ ውሰድ"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:73
 #, fuzzy
 msgid "Move window to workspace 8"
-msgstr "Di chuyển cửa sổ sang vùng làm việc %d"
+msgstr "መስኮቱን ወደ%d ገበታ ውሰድ"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:74
 #, fuzzy
 msgid "Move window to workspace 9"
-msgstr "Di chuyển cửa sổ sang vùng làm việc %d"
+msgstr "መስኮቱን ወደ%d ገበታ ውሰድ"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:75
 #, fuzzy
 msgid "Move window to workspace 10"
-msgstr "Di chuyển cửa sổ sang vùng làm việc %d"
+msgstr "መስኮቱን ወደ%d ገበታ ውሰድ"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:76
 #, fuzzy
 msgid "Move window to workspace 11"
-msgstr "Di chuyển cửa sổ sang vùng làm việc %d"
+msgstr "መስኮቱን ወደ%d ገበታ ውሰድ"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:77
 #, fuzzy
 msgid "Move window to workspace 12"
-msgstr "Di chuyển cửa sổ sang vùng làm việc %d"
+msgstr "መስኮቱን ወደ%d ገበታ ውሰድ"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:78
 #, fuzzy
 msgid "Tile window to the top"
-msgstr "Di chuyển cửa sổ sang vùng làm việc bên trái"
+msgstr "መስኮቱን ወደግራ የስራ ገበታ ውሰድ"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:79
 #, fuzzy
 msgid "Tile window to the bottom"
-msgstr "Di chuyển cửa sổ sang vùng làm việc ở dưới"
+msgstr "መስኮቱን ወደታችናው የስራ ገበታ ውሰድ"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:80
 #, fuzzy
 msgid "Tile window to the left"
-msgstr "Thay đổi kích thước cửa sổ sang trái"
+msgstr "መስኮትን ወደግራ መጥን"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:81
 #, fuzzy
 msgid "Tile window to the right"
-msgstr "Thay đổi kích thước cửa sổ sang phải"
+msgstr "መስኮትን ወደቀኝ መጥን"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:82
 msgid "Show desktop"
-msgstr "Hiện ảnh nền"
+msgstr "ገበታን አሳይ"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:83
 msgid "Upper workspace"
-msgstr "Vùng làm việc trên"
+msgstr "የላይኛው ስራ ቦታ"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:84
 msgid "Bottom workspace"
-msgstr "Vùng làm việc dưới"
+msgstr "የታችኛው ስራ ቦታ"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:85
 msgid "Left workspace"
-msgstr "Vùng làm việc bên trái"
+msgstr "የግራ ስራ ቦታ"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:86
 msgid "Right workspace"
-msgstr "Vùng làm việc bên phải"
+msgstr "የቀኝ ስራ ቦታ"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:87
 msgid "Previous workspace"
-msgstr "Vùng làm việc trước"
+msgstr "የቀድሞው ስራ ቦታ"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:88
 msgid "Next workspace"
-msgstr "Vùng làm việc tiếp theo"
+msgstr "የሚቀጥለው ስራ ቦታ"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:89
 #, fuzzy
 msgid "Workspace 1"
-msgstr "Vùng làm việc %i"
+msgstr "የስራ ቦታ %i"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:90
 #, fuzzy
 msgid "Workspace 2"
-msgstr "Vùng làm việc %d"
+msgstr "የስራ ቦታ %i"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:91
 #, fuzzy
 msgid "Workspace 3"
-msgstr "Vùng làm việc %i"
+msgstr "የስራ ቦታ %i"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:92
 #, fuzzy
 msgid "Workspace 4"
-msgstr "Vùng làm việc %i"
+msgstr "የስራ ቦታ %i"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:93
 #, fuzzy
 msgid "Workspace 5"
-msgstr "Vùng làm việc %i"
+msgstr "የስራ ቦታ %i"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:94
 #, fuzzy
 msgid "Workspace 6"
-msgstr "Vùng làm việc %i"
+msgstr "የስራ ቦታ %i"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:95
 #, fuzzy
 msgid "Workspace 7"
-msgstr "Vùng làm việc %i"
+msgstr "የስራ ቦታ %i"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:96
 #, fuzzy
 msgid "Workspace 8"
-msgstr "Vùng làm việc %i"
+msgstr "የስራ ቦታ %i"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:97
 #, fuzzy
 msgid "Workspace 9"
-msgstr "Vùng làm việc %i"
+msgstr "የስራ ቦታ %i"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:98
 #, fuzzy
 msgid "Workspace 10"
-msgstr "Vùng làm việc %d"
+msgstr "የስራ ቦታ %i"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:99
 #, fuzzy
 msgid "Workspace 11"
-msgstr "Vùng làm việc %i"
+msgstr "የስራ ቦታ %i"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:100
 #, fuzzy
 msgid "Workspace 12"
-msgstr "Vùng làm việc %d"
+msgstr "የስራ ቦታ %i"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:101
 msgid "Add workspace"
-msgstr "Thêm vùng làm việc"
+msgstr "የስራ ቦታ ጨምር"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:102
 #, fuzzy
 msgid "Add adjacent workspace"
-msgstr "Thêm vùng làm việc"
+msgstr "የስራ ቦታ ጨምር"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:103
 #, fuzzy
 msgid "Delete last workspace"
-msgstr "Xoá vùng làm việc"
+msgstr "የስራ ቦታ ሰርዝ"
 
 #: ../libxfce4kbd-private/xfwm4-shortcut-values.h:104
 #, fuzzy
 msgid "Delete active workspace"
-msgstr "Xoá vùng làm việc"
+msgstr "የስራ ቦታ ሰርዝ"
 
 #: ../glade/libxfce4ui.xml.in.h:1
 #, fuzzy
 msgid "Titled Dialog"
-msgstr "Phông tiêu đề"
+msgstr "የአርዕስት ፊደል-ቅርጽ"
 
 #: ../glade/libxfce4ui.xml.in.h:2
 #, fuzzy
 msgid "Subtitle"
-msgstr "Tiêu đề"
+msgstr "አርዕስት"
 
 #: ../glade/libxfce4ui.xml.in.h:3
 #, fuzzy
 msgid "Xfce 4 Widgets"
-msgstr "Thiết lập trình quản lí cửa sổ Xfce 4"
+msgstr "የሸፍሲ 4 የመስኮት አስተዳዳሪ ስየማዎች"
 
 #: ../xfce4-about/main.c:52
 msgid "Version information"
@@ -570,12 +567,12 @@ msgstr ""
 
 #: ../xfce4-about/main.c:70
 msgid "Window Manager"
-msgstr "Trình quản lí cửa sổ"
+msgstr "ማስኮት አስተዳዳሪ"
 
 #: ../xfce4-about/main.c:71
 #, fuzzy
 msgid "Handles the placement of windows on the screen."
-msgstr "Hiển thị nội dung cửa sổ khi thay đổi kích thước"
+msgstr "ሲመጠን የመስኮቱ ይዘት ይታይ"
 
 #: ../xfce4-about/main.c:74
 msgid "Panel"
@@ -586,13 +583,11 @@ msgid ""
 "Program launchers, window buttons, applications menu, workspace switcher and "
 "more."
 msgstr ""
-"Trình khởi động chương trình, các nútm, trình đơn ứng dụng, thanh chuyển "
-"không gian làm việc và nhiều hơn thế nữa."
 
 #: ../xfce4-about/main.c:79
 #, fuzzy
 msgid "Desktop Manager"
-msgstr "Trình quản lí cửa sổ"
+msgstr "ማስኮት አስተዳዳሪ"
 
 #: ../xfce4-about/main.c:80
 msgid ""
@@ -603,32 +598,28 @@ msgstr ""
 #: ../xfce4-about/main.c:84
 #, fuzzy
 msgid "File Manager "
-msgstr "Trình quản lí cửa sổ"
+msgstr "ማስኮት አስተዳዳሪ"
 
 #: ../xfce4-about/main.c:85
 msgid ""
 "A modern file manager for the Unix/Linux desktop, aiming to be easy-to-use "
 "and fast."
 msgstr ""
-"Một chương trình quản lý tập tin hiện đại cho Linux/Unix, hướn đển dễ sử "
-"dụng và tốc độ"
 
 #: ../xfce4-about/main.c:89
 #, fuzzy
 msgid "Session Manager"
-msgstr "Trình quản lí cửa sổ"
+msgstr "ማስኮት አስተዳዳሪ"
 
 #: ../xfce4-about/main.c:90
 msgid ""
 "Restores your session on startup and allows you to shutdown the computer "
 "from Xfce."
 msgstr ""
-"Khôi phục phiên làm việc lúc khởi động và cho phép bạn tắt máy tính trong "
-"Xfce."
 
 #: ../xfce4-about/main.c:94
 msgid "Setting System"
-msgstr "Thiết lập hệ thống"
+msgstr ""
 
 #: ../xfce4-about/main.c:95
 msgid ""
@@ -638,7 +629,7 @@ msgstr ""
 
 #: ../xfce4-about/main.c:99
 msgid "Application Finder"
-msgstr "Trình tìm kiếm ứng dụng"
+msgstr ""
 
 #: ../xfce4-about/main.c:100
 msgid ""
@@ -677,19 +668,17 @@ msgstr ""
 
 #: ../xfce4-about/main.c:149
 msgid "Thank you for your interest in Xfce."
-msgstr "Cảm ơn cho sự ủng hộ của bạn đối với Xfce"
+msgstr ""
 
 #: ../xfce4-about/main.c:153
 msgid "The Xfce Development Team"
-msgstr "Nhóm phát triển Xfce"
+msgstr ""
 
 #: ../xfce4-about/main.c:262
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
 "on <http://bugzilla.xfce.org> ."
 msgstr ""
-"Nếu bạn biết bất cứ lỗi nào khoogn có trong danh sách này; đừng ngần ngại để "
-"báo cáo lỗi trên <http://bugzilla.xfce.org> ."
 
 #: ../xfce4-about/main.c:266
 msgid "Thanks to all who helped making this software available!"
@@ -717,23 +706,19 @@ msgid ""
 "Foundation; either version 2 of the License, or (at your option) any later "
 "version."
 msgstr ""
-"Các gói thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, "
-"xfce-utils, xfconf, xfdesktop and xfwm4 được phân phối dưới các quy định của "
-"GNU General Public License khi được xuất bản bởi Tổ chức phần mềm tự do hoặc "
-"là phiên bản 2 của giấy phép, hoặc (tùy bạn) bất cứ phiên bản nào sau này."
 
 #: ../xfce4-about/main.c:442
 #, c-format
 msgid "Type '%s --help' for usage information."
-msgstr "Gõ '%s --help' để xem hướng dẫn sử dụng"
+msgstr ""
 
 #: ../xfce4-about/main.c:448
 msgid "Unable to initialize GTK+."
-msgstr "Không thể khởi tạo GTK+"
+msgstr ""
 
 #: ../xfce4-about/main.c:457
 msgid "The Xfce development team. All rights reserved."
-msgstr "Nhóm phát triển Xfce. Tất cả các quyền được bảo lưu"
+msgstr ""
 
 #: ../xfce4-about/main.c:458
 #, c-format
@@ -748,27 +733,27 @@ msgstr ""
 
 #: ../xfce4-about/main.c:471
 msgid "Failed to load interface"
-msgstr "Thất bại nạp giao diện"
+msgstr ""
 
 #. I18N: first %s will be replaced by the version, second by
 #. * the name of the distribution (--with-vendor-info=NAME)
 #: ../xfce4-about/main.c:485
 #, c-format
 msgid "Version %s, distributed by %s"
-msgstr "Phiên bản %s, được phân phối bởi %s"
+msgstr ""
 
 #. I18N: %s will be replaced by the Xfce version number
 #: ../xfce4-about/main.c:489
 #, fuzzy, c-format
 msgid "Version %s"
-msgstr "%s (trên %s)"
+msgstr "%s ( %s)"
 
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
 #. },
 #: ../xfce4-about/contributors.h:121
 msgid "Core developers"
-msgstr "Các nhà phát triển lõi phần mềm"
+msgstr ""
 
 #: ../xfce4-about/contributors.h:124
 msgid "Active contributors"
@@ -776,7 +761,7 @@ msgstr ""
 
 #: ../xfce4-about/contributors.h:127
 msgid "Servers maintained by"
-msgstr "Máy chủ được quản lý bởi"
+msgstr ""
 
 #: ../xfce4-about/contributors.h:130
 msgid "Goodies supervision"
@@ -784,57 +769,54 @@ msgstr ""
 
 #: ../xfce4-about/contributors.h:133
 msgid "Translations supervision"
-msgstr "Quản lý dich"
+msgstr ""
 
 #: ../xfce4-about/contributors.h:136
 #, fuzzy
 msgid "Translators"
-msgstr "Trong suốt"
+msgstr "ብርሃን አሳላፊ"
 
 #: ../xfce4-about/contributors.h:139
 #, fuzzy
 msgid "Previous contributors"
-msgstr "Vùng làm việc trước"
+msgstr "የቀድሞው ስራ ቦታ"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:1
 msgid "About Xfce"
-msgstr "Thông tin về XFCE"
+msgstr ""
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:2
 msgid "Information about the Xfce Desktop Environment"
-msgstr "Thông tin về môi trường màn hình Xfce"
+msgstr ""
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:1
 msgid "About the Xfce Desktop Environment"
-msgstr "Thông tin môi trường màn hình Xfce"
+msgstr ""
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:2
 msgid "About"
-msgstr "Thông tin"
+msgstr "ስለ"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:3
 msgid "Credits"
-msgstr "Công trạng"
+msgstr ""
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:4
 msgid "GPL"
-msgstr "GPL"
+msgstr ""
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:5
 msgid "LGPL"
-msgstr "LGPL"
+msgstr ""
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:6
 msgid "BSD"
-msgstr "BSD"
+msgstr ""
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:7
 msgid "Copyright"
-msgstr "Bản quyền"
+msgstr ""
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:8
 msgid "License"
-msgstr "Giáy phép"
-
-msgid "Keep the other one"
-msgstr "Giữ lại cái kia"
+msgstr "ፈቃድ"

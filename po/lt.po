@@ -1,204 +1,504 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# Algimantas Margevičius <margevicius.algimantas@gmail.com>, 2012.
-#
+# 
+# Translators:
+# Algimantas Margevičius <margevicius.algimantas@gmail.com>, 2012
 msgid ""
 msgstr ""
-"Project-Id-Version: libxfce4ui\n"
+"Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-01-27 01:33+0000\n"
-"PO-Revision-Date: 2012-01-27 09:14+0200\n"
-"Last-Translator: Algimantas Margevičius <margevicius.algimantas@gmail.com>\n"
-"Language-Team: Lietuvių <>\n"
-"Language: \n"
+"POT-Creation-Date: 2013-07-02 22:33+0200\n"
+"PO-Revision-Date: 2013-11-19 11:04+0000\n"
+"Last-Translator: Nick <nick@xfce.org>\n"
+"Language-Team: Lithuanian (http://www.transifex.com/projects/p/xfce/language/lt/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n"
-"%100<10 || n%100>=20) ? 1 : 2)\n"
+"Language: lt\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
-#: ../libxfce4ui/xfce-dialogs.c:80
+#: ../libxfce4ui/xfce-dialogs.c:98
 msgid "Failed to open web browser for online documentation"
 msgstr "Nepavyko atverti naršyklės tinklo dokumentacijai"
 
-#: ../libxfce4ui/xfce-dialogs.c:195
+#: ../libxfce4ui/xfce-dialogs.c:213
 #, c-format
 msgid "Do you want to read the %s manual online?"
 msgstr "Ar norite skaityti %s naudotojo vadovą internete?"
 
-#: ../libxfce4ui/xfce-dialogs.c:197
+#: ../libxfce4ui/xfce-dialogs.c:215
 msgid "Do you want to read the manual online?"
 msgstr "Ar norite skaityti naudotojo vadovą internete?"
 
-#: ../libxfce4ui/xfce-dialogs.c:200
+#: ../libxfce4ui/xfce-dialogs.c:218
 msgid "Online Documentation"
 msgstr "Dokumentacija tinkle"
 
-#: ../libxfce4ui/xfce-dialogs.c:203
+#: ../libxfce4ui/xfce-dialogs.c:221
 msgid ""
-"You will be redirected to the documentation website where the help pages are "
-"maintained and translated."
-msgstr ""
-"Jūs būsite nukreipti į dokumentacijos svetainę kurioje yra verčiami ir "
-"prižiūrimi žinyno puslapiai."
+"You will be redirected to the documentation website where the help pages are"
+" maintained and translated."
+msgstr "Jūs būsite nukreipti į dokumentacijos svetainę kurioje yra verčiami ir prižiūrimi žinyno puslapiai."
 
-#: ../libxfce4ui/xfce-dialogs.c:207
+#: ../libxfce4ui/xfce-dialogs.c:225
 msgid "_Read Online"
 msgstr "_Skaityti internete"
 
-#: ../libxfce4ui/xfce-dialogs.c:219
+#: ../libxfce4ui/xfce-dialogs.c:237
 msgid "_Always go directly to the online documentation"
 msgstr "_Visada eiti tiesiai į dokumentaciją internete"
 
-#: ../libxfce4ui/xfce-dialogs.c:263
+#: ../libxfce4ui/xfce-dialogs.c:281
 msgid "Information"
-msgstr "Informacija"
+msgstr ""
 
-#: ../libxfce4ui/xfce-dialogs.c:296
+#: ../libxfce4ui/xfce-dialogs.c:314
 msgid "Warning"
 msgstr "Įspėjimas"
 
-#: ../libxfce4ui/xfce-dialogs.c:330
+#: ../libxfce4ui/xfce-dialogs.c:348
 msgid "Error"
 msgstr "Klaida"
 
-#: ../libxfce4ui/xfce-dialogs.c:381
+#: ../libxfce4ui/xfce-dialogs.c:399
 msgid "Question"
 msgstr "Klausimas"
 
-#: ../libxfce4ui/xfce-sm-client.c:1402
+#: ../libxfce4ui/xfce-sm-client.c:1424
 msgid "Session management client ID"
-msgstr "Seanso tvarkyklės kliento ID"
+msgstr ""
 
-#: ../libxfce4ui/xfce-sm-client.c:1402
+#: ../libxfce4ui/xfce-sm-client.c:1424
 msgid "ID"
 msgstr "ID"
 
-#: ../libxfce4ui/xfce-sm-client.c:1403
+#: ../libxfce4ui/xfce-sm-client.c:1425
 msgid "Disable session management"
-msgstr "Išjungti seanso tvarkymą"
+msgstr ""
 
-#: ../libxfce4ui/xfce-sm-client.c:1413
+#: ../libxfce4ui/xfce-sm-client.c:1435
 msgid "Session management options"
-msgstr "Seanso tvarkymo parinktys"
+msgstr ""
 
-#: ../libxfce4ui/xfce-sm-client.c:1414
+#: ../libxfce4ui/xfce-sm-client.c:1436
 msgid "Show session management options"
-msgstr "Rodyti seanso tvarkymo parinktis"
+msgstr ""
 
-#: ../libxfce4ui/xfce-sm-client.c:1590
+#: ../libxfce4ui/xfce-sm-client.c:1611
 #, c-format
 msgid "Failed to connect to the session manager: %s"
 msgstr "Nepavyko prisijungti prie seanso tvarkyklės: %s"
 
-#: ../libxfce4ui/xfce-sm-client.c:1597
+#: ../libxfce4ui/xfce-sm-client.c:1617
 #, c-format
 msgid "Session manager did not return a valid client id"
 msgstr "Seanso tvarkyklė negrąžino tinkamo kliento id"
 
 #. print warning for user
-#: ../libxfce4ui/xfce-spawn.c:406
+#: ../libxfce4ui/xfce-spawn.c:413
 #, c-format
 msgid ""
-"Working directory \"%s\" does not exist. It won't be used when spawning \"%s"
-"\"."
-msgstr ""
-"Darbinis aplankas „%s“ neegzistuoja. Jis nebus naudojamas atvaizduojant „%s“."
-
-#: ../libxfce4kbd-private/xfce-shortcuts.c:52
-msgid ""
-"This shortcut is already being used for another window manager action. Which "
-"action do you want to use?"
-msgstr ""
-"Šis trumpinys jau naudojamas kitam langų tvarkyklės veiksmui. Kurį veiksmą "
-"norėsite naudoti?"
+"Working directory \"%s\" does not exist. It won't be used when spawning "
+"\"%s\"."
+msgstr "Darbinis aplankas „%s“ neegzistuoja. Jis nebus naudojamas atvaizduojant „%s“."
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
-#: ../libxfce4kbd-private/xfce-shortcuts.c:56
-#: ../libxfce4kbd-private/xfce-shortcuts.c:59
-#: ../libxfce4kbd-private/xfce-shortcuts.c:62
+#, c-format
+msgid ""
+"This shortcut is already being used for the action '%s'. Which action do you"
+" want to use?"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:54
+#: ../libxfce4kbd-private/xfce-shortcuts.c:57
+#: ../libxfce4kbd-private/xfce-shortcuts.c:60
+#: ../libxfce4kbd-private/xfce-shortcuts.c:63
 #, c-format
 msgid "Use '%s'"
 msgstr "Naudoti „%s“"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:53
-msgid "Keep the other one"
-msgstr "Palikti aną"
-
-#: ../libxfce4kbd-private/xfce-shortcuts.c:55
-#: ../libxfce4kbd-private/xfce-shortcuts.c:58
-#, c-format
-msgid ""
-"This shortcut is already being used for the command '%s'. Which action do "
-"you want to use?"
-msgstr ""
-"Šis trumpinys jau naudojamas komandai „%s“. Kurį veiksmą norėsite naudoti?"
-
-#: ../libxfce4kbd-private/xfce-shortcuts.c:56
-#: ../libxfce4kbd-private/xfce-shortcuts.c:59
+#: ../libxfce4kbd-private/xfce-shortcuts.c:54
+#: ../libxfce4kbd-private/xfce-shortcuts.c:57
+#: ../libxfce4kbd-private/xfce-shortcuts.c:60
+#: ../libxfce4kbd-private/xfce-shortcuts.c:63
 #, c-format
 msgid "Keep '%s'"
 msgstr "Palikti „%s“"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:61
+#: ../libxfce4kbd-private/xfce-shortcuts.c:56
+#: ../libxfce4kbd-private/xfce-shortcuts.c:59
+#, c-format
 msgid ""
-"This shortcut is already being used by a window manager action. Which action "
-"do you want to use?"
-msgstr ""
-"Šis trumpinys jau naudojamas kitam langų tvarkyklės veiksmui. Kurį veiksmą "
-"norėsite naudoti?"
+"This shortcut is already being used for the command '%s'. Which action do "
+"you want to use?"
+msgstr "Šis trumpinys jau naudojamas komandai „%s“. Kurį veiksmą norėsite naudoti?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
-msgid "Keep the window manager action"
-msgstr "Palikti langų tvarkyklės veiksmą"
+#, c-format
+msgid ""
+"This shortcut is already being used by the action '%s'. Which action do you "
+"want to use?"
+msgstr ""
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:95
+#. This shortcut already exists in the provider, we don't want it twice
+#. Warn the user
+#: ../libxfce4kbd-private/xfce-shortcuts.c:110
+msgid "Please use another key combination."
+msgstr ""
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:111
+#, c-format
+msgid "%s already triggers this action."
+msgstr ""
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:116
 #, c-format
 msgid "Conflicting actions for %s"
 msgstr "Nesuderinami veiksmai skirti %s"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:128
+#: ../libxfce4kbd-private/xfce-shortcuts.c:176
 msgid "This shortcut is already being used for something else."
 msgstr "Šis trumpinys jau naudojamas kažkam kitam."
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:204
-msgid "Window Manager Action Shortcut"
-msgstr "Langų tvarkyklės veiksmų susiejimas"
-
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:205
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:215
-msgid "Action:"
-msgstr "Veiksmas:"
-
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:209
+msgid "Window Manager Action Shortcut"
+msgstr ""
+
+#. TRANSLATORS: this string will be used to create an explanation for
+#. * the user in a following string
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:212
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:226
+msgid "action"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:216
 msgid "Command Shortcut"
-msgstr "Komandos susiejimas"
+msgstr ""
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:210
-msgid "Command:"
-msgstr "Komanda:"
+#. TRANSLATORS: this string will be used to create an explanation for
+#. * the user in a following string
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:219
+msgid "command"
+msgstr ""
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:214
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:223
 msgid "Shortcut"
 msgstr "Susiejimas"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:255
-msgid "Shortcut:"
-msgstr "Susiejimas:"
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:267
+#, c-format
+msgid "Press now the keyboard keys you want to use to trigger the %s '%s'."
+msgstr ""
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:300
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:291
+msgid "Shortcut:"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:296
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:475
+msgid "No keys pressed yet, proceed."
+msgstr ""
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:378
 msgid "Could not grab the keyboard."
-msgstr "Nepavyko paimti klaviatūros."
+msgstr ""
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:36
+msgid "Window operations menu"
+msgstr "Lango operacijų meniu"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:37
+msgid "Up"
+msgstr "Aukštyn"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:38
+msgid "Down"
+msgstr "Žemyn"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:39
+msgid "Left"
+msgstr "Kairė"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:40
+msgid "Right"
+msgstr "Dešinė"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:41
+msgid "Cancel"
+msgstr "Atsisakyti"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:42
+msgid "Cycle windows"
+msgstr "Perjungti langus"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:43
+msgid "Cycle windows (Reverse)"
+msgstr "Perjungti langus (atvirkščiai)"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:44
+msgid "Switch window for same application"
+msgstr "Perjungti langą tai pačiai programai"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:45
+msgid "Switch application"
+msgstr "Perjungti programą"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:46
+msgid "Close window"
+msgstr "Užverti langą"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:47
+msgid "Maximize window horizontally"
+msgstr "Išskleisti langą horizontaliai"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:48
+msgid "Maximize window vertically"
+msgstr "Išskleisti langą vertikaliai"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:49
+msgid "Maximize window"
+msgstr "Išskleisti langą"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:50
+msgid "Hide window"
+msgstr "Paslėpti langą"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:51
+msgid "Move window"
+msgstr "Perkelti langą"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:52
+msgid "Resize window"
+msgstr "Keisti lango dydį"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:53
+msgid "Shade window"
+msgstr "Uždengti langą"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:54
+msgid "Stick window"
+msgstr "Priklijuoti langą"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:55
+msgid "Raise window"
+msgstr "Iškelti langą"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:56
+msgid "Lower window"
+msgstr "Nuleisti langą"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:57
+msgid "Raise or lower window"
+msgstr "Iškelti ar nuleisti langą"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:58
+msgid "Fill window"
+msgstr "Užpildyti langą"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:59
+msgid "Fill window horizontally"
+msgstr "Užpildyti langą horizontaliai"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:60
+msgid "Fill window vertically"
+msgstr "Užpildyti langą vertikaliai"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:61
+msgid "Toggle above"
+msgstr "Perjungti aukščiau"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:62
+msgid "Toggle fullscreen"
+msgstr "Perjungti viso ekrano veikseną"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:63
+msgid "Move window to upper workspace"
+msgstr "Perkelti langą į aukštesnį darbo lauką"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:64
+msgid "Move window to bottom workspace"
+msgstr "Perkelti langą į žemesnį darbo lauką"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:65
+msgid "Move window to left workspace"
+msgstr "Perkelti langą į kairį darbo lauką"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:66
+msgid "Move window to right workspace"
+msgstr "Perkelti langą į dešinį darbo lauką"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:67
+msgid "Move window to previous workspace"
+msgstr "Perkelti langą į buvusį darbo lauką"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:68
+msgid "Move window to next workspace"
+msgstr "Perkelti langą į sekantį darbo lauką"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:69
+msgid "Move window to workspace 1"
+msgstr "Perkelti langą į darbo lauką 1"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:70
+msgid "Move window to workspace 2"
+msgstr "Perkelti langą į darbo lauką 2"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:71
+msgid "Move window to workspace 3"
+msgstr "Perkelti langą į darbo lauką 3"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:72
+msgid "Move window to workspace 4"
+msgstr "Perkelti langą į darbo lauką 4"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:73
+msgid "Move window to workspace 5"
+msgstr "Perkelti langą į darbo lauką 5"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:74
+msgid "Move window to workspace 6"
+msgstr "Perkelti langą į darbo lauką 6"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:75
+msgid "Move window to workspace 7"
+msgstr "Perkelti langą į darbo lauką 7"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:76
+msgid "Move window to workspace 8"
+msgstr "Perkelti langą į darbo lauką 8"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:77
+msgid "Move window to workspace 9"
+msgstr "Perkelti langą į darbo lauką 9"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:78
+msgid "Move window to workspace 10"
+msgstr "Perkelti langą į darbo lauką 10"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:79
+msgid "Move window to workspace 11"
+msgstr "Perkelti langą į darbo lauką 11"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:80
+msgid "Move window to workspace 12"
+msgstr "Perkelti langą į darbo lauką 12"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:81
+msgid "Tile window to the top"
+msgstr "Perkelti langą į kairį darbo lauką"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:82
+msgid "Tile window to the bottom"
+msgstr "Perkelti langą į žemesnį darbo lauką"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:83
+msgid "Tile window to the left"
+msgstr "Perkelti langą į kairį darbo lauką"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:84
+msgid "Tile window to the right"
+msgstr "Perkelti langą į dešinį darbo lauką"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:85
+msgid "Show desktop"
+msgstr "Rodyti darbastalį"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:86
+msgid "Upper workspace"
+msgstr "Viršutinis darbo laukas"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:87
+msgid "Bottom workspace"
+msgstr "Žemutinis darbo laukas"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:88
+msgid "Left workspace"
+msgstr "Kairysis darbo laukas"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:89
+msgid "Right workspace"
+msgstr "Dešinysis darbo laukas"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:90
+msgid "Previous workspace"
+msgstr "Ankstesnis darbo laukas"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:91
+msgid "Next workspace"
+msgstr "Sekantis darbo laukas"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:92
+msgid "Workspace 1"
+msgstr "Darbo laukas 1"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:93
+msgid "Workspace 2"
+msgstr "Darbo laukas 2"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:94
+msgid "Workspace 3"
+msgstr "Darbo laukas 3"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:95
+msgid "Workspace 4"
+msgstr "Darbo laukas 4"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:96
+msgid "Workspace 5"
+msgstr "Darbo laukas 5"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:97
+msgid "Workspace 6"
+msgstr "Darbo laukas 6"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:98
+msgid "Workspace 7"
+msgstr "Darbo laukas 7"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:99
+msgid "Workspace 8"
+msgstr "Darbo laukas 8"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:100
+msgid "Workspace 9"
+msgstr "Darbo laukas 9"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:101
+msgid "Workspace 10"
+msgstr "Darbo laukas 10"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:102
+msgid "Workspace 11"
+msgstr "Darbo laukas 11"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:103
+msgid "Workspace 12"
+msgstr "Darbo laukas 12"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:104
+msgid "Add workspace"
+msgstr "Pridėti darbo lauką"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:105
+msgid "Add adjacent workspace"
+msgstr "Pridėti darbo lauką šalia"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:106
+msgid "Delete last workspace"
+msgstr "Pašalinti paskutinį darbo lauką"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:107
+msgid "Delete active workspace"
+msgstr "Pašalinti aktyvų darbo lauką"
 
 #: ../glade/libxfce4ui.xml.in.h:1
-msgid "Subtitle"
-msgstr "Subtitrai"
-
-#: ../glade/libxfce4ui.xml.in.h:2
 msgid "Titled Dialog"
 msgstr "Langas su antrašte"
+
+#: ../glade/libxfce4ui.xml.in.h:2
+msgid "Subtitle"
+msgstr ""
 
 #: ../glade/libxfce4ui.xml.in.h:3
 msgid "Xfce 4 Widgets"
@@ -206,7 +506,7 @@ msgstr "Xfce 4 valdikliai"
 
 #: ../xfce4-about/main.c:52
 msgid "Version information"
-msgstr "Versijos informacija"
+msgstr "Versija"
 
 #: ../xfce4-about/main.c:70
 msgid "Window Manager"
@@ -214,7 +514,7 @@ msgstr "Langų tvarkyklė"
 
 #: ../xfce4-about/main.c:71
 msgid "Handles the placement of windows on the screen."
-msgstr "Tvarkosi su langų išdėstymu ekrane."
+msgstr ""
 
 #: ../xfce4-about/main.c:74
 msgid "Panel"
@@ -222,46 +522,39 @@ msgstr "Skydelis"
 
 #: ../xfce4-about/main.c:75
 msgid ""
-"Program launchers, window buttons, applications menu, workspace switcher and "
-"more."
-msgstr ""
-"Programų leistukai, langų mygtukai, programų meniu, darbo vietos keitimas ir "
-"dar daugiau."
+"Program launchers, window buttons, applications menu, workspace switcher and"
+" more."
+msgstr "Programų leistukai, langų mygtukai, programų meniu, darbo vietos keitimas ir dar daugiau."
 
 #: ../xfce4-about/main.c:79
 msgid "Desktop Manager"
-msgstr "Darbastalio tvarkyklė"
+msgstr ""
 
 #: ../xfce4-about/main.c:80
 msgid ""
 "Sets the background color or image with optional application menu or icons "
 "for minimized applications or launchers, devices and folders."
-msgstr ""
-"Nustato darbastalio fono spalvą ar paveikslėlį su nebūtinu programų meniu ar "
-"piktogramas sumažintoms programoms ar leistukams, įrenginius ir aplankus."
+msgstr "Nustato darbastalio fono spalvą ar paveikslėlį su nebūtinu programų meniu ar piktogramas sumažintoms programoms ar leistukams, įrenginius ir aplankus."
 
 #: ../xfce4-about/main.c:84
 msgid "File Manager "
-msgstr "Failų tvarkyklė"
+msgstr ""
 
 #: ../xfce4-about/main.c:85
 msgid ""
 "A modern file manager for the Unix/Linux desktop, aiming to be easy-to-use "
 "and fast."
-msgstr ""
-"Moderni failų tvarkyklė skirta Unix/Linux darbastaliams, besistengianti būti "
-"lengvai naudojama ir greita."
+msgstr "Moderni failų tvarkyklė skirta Unix/Linux darbastaliams, besistengianti būti lengvai naudojama ir greita."
 
 #: ../xfce4-about/main.c:89
 msgid "Session Manager"
-msgstr "Seansų tvarkyklė"
+msgstr ""
 
 #: ../xfce4-about/main.c:90
 msgid ""
 "Restores your session on startup and allows you to shutdown the computer "
 "from Xfce."
-msgstr ""
-"Atstato jūsų seansą paleidžiant ir leidžia išjungti kompiuterį iš Xfce."
+msgstr "Atstato jūsų seansą paleidžiant ir leidžia išjungti kompiuterį iš Xfce."
 
 #: ../xfce4-about/main.c:94
 msgid "Setting System"
@@ -271,9 +564,7 @@ msgstr "Sistemos nustatymai"
 msgid ""
 "Configuration system to control various aspects of the desktop like "
 "appearance, display, keyboard and mouse settings."
-msgstr ""
-"Konfigūracijos sistema skirta valdyti įvairius aspektus, tokius kaip "
-"darbastalio išvaizda, ekranai, klaviatūra ir pelės nustatymai."
+msgstr "Konfigūracijos sistema skirta valdyti įvairius aspektus, tokius kaip darbastalio išvaizda, ekranai, klaviatūra ir pelės nustatymai."
 
 #: ../xfce4-about/main.c:99
 msgid "Application Finder"
@@ -283,13 +574,11 @@ msgstr "Programų paieška"
 msgid ""
 "Shows the applications installed on your system in categories, so you can "
 "quickly find and launch them."
-msgstr ""
-"Parodo įdiegtas programas kategorijose, todėl galite lengvai rasti ir "
-"paleisti reikalingą programą."
+msgstr "Parodo įdiegtas programas kategorijose, todėl galite lengvai rasti ir paleisti reikalingą programą."
 
 #: ../xfce4-about/main.c:104
 msgid "Settings Daemon"
-msgstr "Nustatymų demonas"
+msgstr ""
 
 #: ../xfce4-about/main.c:105
 msgid "D-Bus-based configuration storage system."
@@ -299,31 +588,22 @@ msgstr "D-Bus paremta konfigūracijos saugojimo sistema."
 msgid ""
 "Xfce is a collection of programs that together provide a full-featured "
 "desktop environment. The following programs are part of the Xfce core:"
-msgstr ""
-"Xfce tai yra programų rinkinys, kartu sudarantis pilną darbastalio aplinką. "
-"Šios programos įeina į Xfce branduolį:"
+msgstr "Xfce tai yra programų rinkinys, kartu sudarantis pilną darbastalio aplinką. Šios programos įeina į Xfce branduolį:"
 
 #: ../xfce4-about/main.c:136
 msgid ""
 "Xfce is also a development platform providing several libraries, that help "
 "programmers create applications that fit in well with the desktop "
 "environment."
-msgstr ""
-"Xfce taipogi yra kūrimo platforma turinti kelias bibliotekas, tai suteikia "
-"programuotojams galimybę kurti programas kurios puikiai derinsis darbastalio "
-"aplinkoje."
+msgstr "Xfce taipogi yra kūrimo platforma turinti kelias bibliotekas, tai suteikia programuotojams galimybę kurti programas kurios puikiai derinsis darbastalio aplinkoje."
 
 #: ../xfce4-about/main.c:142
 msgid ""
-"Xfce components are licensed under free or open source licences; GPL or BSDL "
-"for applications and LGPL or BSDL for libraries. Look at the documentation, "
-"the source code or the Xfce website (http://www.xfce.org) for more "
+"Xfce components are licensed under free or open source licences; GPL or BSDL"
+" for applications and LGPL or BSDL for libraries. Look at the documentation,"
+" the source code or the Xfce website (http://www.xfce.org) for more "
 "information."
-msgstr ""
-"Xfce komponentai platinami pagal nemokamas ar atviro kodo licencijas; GPL ar "
-"BSDL programoms ir LGPL ar BSDL bibliotekoms. Platesnės informacijos "
-"ieškokite dokumentacijoje, pradiniame kode ar Xfce svetainėje (http://www."
-"xfce.org)."
+msgstr "Xfce komponentai platinami pagal nemokamas ar atviro kodo licencijas; GPL ar BSDL programoms ir LGPL ar BSDL bibliotekoms. Platesnės informacijos ieškokite dokumentacijoje, pradiniame kode ar Xfce svetainėje (http://www.xfce.org)."
 
 #: ../xfce4-about/main.c:149
 msgid "Thank you for your interest in Xfce."
@@ -337,22 +617,17 @@ msgstr "Xfce kūrėjų komanda"
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
 "on <http://bugzilla.xfce.org> ."
-msgstr ""
-"Jei ko nors šiame sąraše trūksta, nesigėdykite ir užpildykite pranešimą apie "
-"klaidą <http://bugzilla.xfce.org> ."
+msgstr "Jei ko nors šiame sąraše trūksta, nesigėdykite ir užpildykite pranešimą apie klaidą <http://bugzilla.xfce.org> ."
 
 #: ../xfce4-about/main.c:266
 msgid "Thanks to all who helped making this software available!"
-msgstr ""
-"Dėkui visiems kurie prisidėjo tam jog ši programinė įranga būtų prieinama!"
+msgstr "Dėkui visiems kurie prisidėjo tam jog ši programinė įranga būtų prieinama!"
 
 #: ../xfce4-about/main.c:283
 msgid ""
 "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
-msgstr ""
-"Xfce 4 autorinės teisės priklauso Olivier Fourdan (fourdan@xfce.org). Kiti "
-"komponentai priklauso atitinkamiems autoriams."
+msgstr "Xfce 4 autorinės teisės priklauso Olivier Fourdan (fourdan@xfce.org). Kiti komponentai priklauso atitinkamiems autoriams."
 
 #: ../xfce4-about/main.c:288
 msgid ""
@@ -360,29 +635,21 @@ msgid ""
 "distributed under the terms of the GNU Library General Public License as "
 "published by the Free Software Foundation; either version 2 of the License, "
 "or (at your option) any later version."
-msgstr ""
-"Libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs ir exo paketai yra "
-"platinami pagal GNU General Public License kaip paskelbė Free Software "
-"Foundation; arba pagal licencijos versiją 2, ar (jūsų pasirinkimas) bet "
-"kurią vėlesnę versiją."
+msgstr "Libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs ir exo paketai yra platinami pagal GNU General Public License kaip paskelbė Free Software Foundation; arba pagal licencijos versiją 2, ar (jūsų pasirinkimas) bet kurią vėlesnę versiją."
 
 #: ../xfce4-about/main.c:295
 msgid ""
-"The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-"
-"settings, xfce-utils, xfconf, xfdesktop and xfwm4 are distributed under the "
-"terms of the GNU General Public License as published by the Free Software "
-"Foundation; either version 2 of the License, or (at your option) any later "
-"version."
-msgstr ""
-"Paketai thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, "
-"xfce-utils, xfconf, xfdesktop ir xfwm4 yra platinami pagal GNU General "
-"Public License kaip paskelbė Free Software Foundation; arba pagal licencijos "
-"versiją 2, ar (jūsų pasirinkimas) bet kurią vėlesnę versiją."
+"The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, "
+"xfce4-settings, xfce-utils, xfconf, xfdesktop and xfwm4 are distributed "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version."
+msgstr "Paketai thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfce-utils, xfconf, xfdesktop ir xfwm4 yra platinami pagal GNU General Public License kaip paskelbė Free Software Foundation; arba pagal licencijos versiją 2, ar (jūsų pasirinkimas) bet kurią vėlesnę versiją."
 
 #: ../xfce4-about/main.c:442
 #, c-format
 msgid "Type '%s --help' for usage information."
-msgstr "Pabandykite „%s --help“, jei norite gauti daugiau informacijos."
+msgstr ""
 
 #: ../xfce4-about/main.c:448
 msgid "Unable to initialize GTK+."
@@ -418,38 +685,38 @@ msgstr "Versija %s, sukūrė %s"
 #: ../xfce4-about/main.c:489
 #, c-format
 msgid "Version %s"
-msgstr "Versija %s"
+msgstr ""
 
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
 #. },
-#: ../xfce4-about/contributors.h:127
+#: ../xfce4-about/contributors.h:121
 msgid "Core developers"
 msgstr "Autoriai"
 
-#: ../xfce4-about/contributors.h:130
+#: ../xfce4-about/contributors.h:124
 msgid "Active contributors"
 msgstr "Dabartiniai pagalbininkai"
 
-#: ../xfce4-about/contributors.h:133
+#: ../xfce4-about/contributors.h:127
 msgid "Servers maintained by"
 msgstr "Serverius prižiūri"
 
-#: ../xfce4-about/contributors.h:136
+#: ../xfce4-about/contributors.h:130
 msgid "Goodies supervision"
 msgstr "Goodies priežiūra"
 
-#: ../xfce4-about/contributors.h:139
+#: ../xfce4-about/contributors.h:133
 msgid "Translations supervision"
 msgstr "Vertimų priežiūra"
 
-#: ../xfce4-about/contributors.h:142
+#: ../xfce4-about/contributors.h:136
 msgid "Translators"
 msgstr "Vertėjai"
 
-#: ../xfce4-about/contributors.h:145
+#: ../xfce4-about/contributors.h:139
 msgid "Previous contributors"
-msgstr "Ankstesni pagalbininkai"
+msgstr ""
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:1
 msgid "About Xfce"
@@ -460,32 +727,32 @@ msgid "Information about the Xfce Desktop Environment"
 msgstr "Informacija apie Xfce darbastalio aplinką"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:1
-msgid "About"
-msgstr "Apie"
-
-#: ../xfce4-about/xfce4-about-dialog.glade.h:2
 msgid "About the Xfce Desktop Environment"
 msgstr "Apie Xfce darbastalio aplinką"
 
+#: ../xfce4-about/xfce4-about-dialog.glade.h:2
+msgid "About"
+msgstr "Apie"
+
 #: ../xfce4-about/xfce4-about-dialog.glade.h:3
-msgid "BSD"
-msgstr "BSD"
-
-#: ../xfce4-about/xfce4-about-dialog.glade.h:4
-msgid "Copyright"
-msgstr "Autorinės teisės"
-
-#: ../xfce4-about/xfce4-about-dialog.glade.h:5
 msgid "Credits"
 msgstr "Padėkos"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:6
+#: ../xfce4-about/xfce4-about-dialog.glade.h:4
 msgid "GPL"
 msgstr "GPL"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:7
+#: ../xfce4-about/xfce4-about-dialog.glade.h:5
 msgid "LGPL"
 msgstr "LGPL"
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:6
+msgid "BSD"
+msgstr "BSD"
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:7
+msgid "Copyright"
+msgstr "Autorinės teisės"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:8
 msgid "License"

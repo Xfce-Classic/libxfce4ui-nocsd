@@ -1,196 +1,504 @@
-# Copyright (C) 2011 Xfce Telugu Team
-# This file is distributed under the same license as the libxfce4ui package.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
 # 
-# 
-# Praveen Illa <mail2ipn@gmail.com>, 2011.
-# 
+# Translators:
+# ప్రవీణ్ ఇళ్ళ <mail2ipn@gmail.com>, 2011
 msgid ""
 msgstr ""
-"Project-Id-Version: 4\n"
+"Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-03-11 16:24+0000\n"
-"PO-Revision-Date: 2011-08-23 01:22+0530\n"
-"Last-Translator: Praveen <mail2ipn@gmail.com>\n"
-"Language-Team: Telugu <indlinux-telugu@lists.sourceforge.net>\n"
+"POT-Creation-Date: 2013-07-02 22:33+0200\n"
+"PO-Revision-Date: 2013-11-19 11:04+0000\n"
+"Last-Translator: Nick <nick@xfce.org>\n"
+"Language-Team: Telugu (http://www.transifex.com/projects/p/xfce/language/te/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: te\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../libxfce4ui/xfce-dialogs.c:80
+#: ../libxfce4ui/xfce-dialogs.c:98
 msgid "Failed to open web browser for online documentation"
 msgstr ""
 
-#: ../libxfce4ui/xfce-dialogs.c:195
+#: ../libxfce4ui/xfce-dialogs.c:213
 #, c-format
 msgid "Do you want to read the %s manual online?"
 msgstr ""
 
-#: ../libxfce4ui/xfce-dialogs.c:197
+#: ../libxfce4ui/xfce-dialogs.c:215
 msgid "Do you want to read the manual online?"
 msgstr ""
 
-#: ../libxfce4ui/xfce-dialogs.c:200
+#: ../libxfce4ui/xfce-dialogs.c:218
 msgid "Online Documentation"
 msgstr "ఆన్‌లైన్ పత్రీకరణ"
 
-#: ../libxfce4ui/xfce-dialogs.c:203
+#: ../libxfce4ui/xfce-dialogs.c:221
 msgid ""
-"You will be redirected to the documentation website where the help pages are "
-"maintained and translated."
+"You will be redirected to the documentation website where the help pages are"
+" maintained and translated."
 msgstr ""
 
-#: ../libxfce4ui/xfce-dialogs.c:207
+#: ../libxfce4ui/xfce-dialogs.c:225
 msgid "_Read Online"
 msgstr "ఆన్‌లైన్లో చదవండి (_R)"
 
-#: ../libxfce4ui/xfce-dialogs.c:219
+#: ../libxfce4ui/xfce-dialogs.c:237
 msgid "_Always go directly to the online documentation"
 msgstr ""
 
-#: ../libxfce4ui/xfce-dialogs.c:263
+#: ../libxfce4ui/xfce-dialogs.c:281
 msgid "Information"
-msgstr "సమాచారం"
+msgstr ""
 
-#: ../libxfce4ui/xfce-dialogs.c:296
+#: ../libxfce4ui/xfce-dialogs.c:314
 msgid "Warning"
 msgstr "హెచ్చరిక"
 
-#: ../libxfce4ui/xfce-dialogs.c:330
+#: ../libxfce4ui/xfce-dialogs.c:348
 msgid "Error"
 msgstr "దోషం"
 
-#: ../libxfce4ui/xfce-dialogs.c:381
+#: ../libxfce4ui/xfce-dialogs.c:399
 msgid "Question"
 msgstr "ప్రశ్న"
 
-#: ../libxfce4ui/xfce-sm-client.c:1402
+#: ../libxfce4ui/xfce-sm-client.c:1424
 msgid "Session management client ID"
-msgstr "సెషన్ నిర్వహణ క్లయింటు ఐడి"
+msgstr ""
 
-#: ../libxfce4ui/xfce-sm-client.c:1402
+#: ../libxfce4ui/xfce-sm-client.c:1424
 msgid "ID"
 msgstr "ఐడి"
 
-#: ../libxfce4ui/xfce-sm-client.c:1403
+#: ../libxfce4ui/xfce-sm-client.c:1425
 msgid "Disable session management"
-msgstr "సెషన్ నిర్వహణని అచేతనపరుచు"
+msgstr ""
 
-#: ../libxfce4ui/xfce-sm-client.c:1413
+#: ../libxfce4ui/xfce-sm-client.c:1435
 msgid "Session management options"
-msgstr "సెషన్ నిర్వహణ ఐచ్ఛికాలు"
+msgstr ""
 
-#: ../libxfce4ui/xfce-sm-client.c:1414
+#: ../libxfce4ui/xfce-sm-client.c:1436
 msgid "Show session management options"
-msgstr "సెషన్ నిర్వహణ ఐచ్ఛికాలను చూపించు"
+msgstr ""
 
-#: ../libxfce4ui/xfce-sm-client.c:1590
+#: ../libxfce4ui/xfce-sm-client.c:1611
 #, c-format
 msgid "Failed to connect to the session manager: %s"
 msgstr "సెషన్ నిర్వాహకానికి అనుసంధానించుటలో విఫలమైంది: %s"
 
-#: ../libxfce4ui/xfce-sm-client.c:1597
+#: ../libxfce4ui/xfce-sm-client.c:1617
 #, c-format
 msgid "Session manager did not return a valid client id"
 msgstr "సెషన్ నిర్వాహకము ఒక సరైన క్లయింటు ఐడీని తిరిగి ఇచ్చుటలేదు"
 
 #. print warning for user
-#: ../libxfce4ui/xfce-spawn.c:406
+#: ../libxfce4ui/xfce-spawn.c:413
 #, c-format
 msgid ""
-"Working directory \"%s\" does not exist. It won't be used when spawning \"%s"
-"\"."
+"Working directory \"%s\" does not exist. It won't be used when spawning "
+"\"%s\"."
 msgstr "పనిచేస్తున్న డైరెక్టరీ \"%s\" ఉనికిలో లేదు. \"%s\" స్పానింగులో ఉన్నపుడు అది వాడబడదు."
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:52
-msgid ""
-"This shortcut is already being used for another window manager action. Which "
-"action do you want to use?"
-msgstr ""
-"ఈ షార్ట్‍కట్ ఇదివరకే వేరొక విండో నిర్వాహకము చర్యకు వాడబడింది. మీరు ఏ చర్యను వాడాలనుకుంటున్నారు?"
-
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
-#: ../libxfce4kbd-private/xfce-shortcuts.c:56
-#: ../libxfce4kbd-private/xfce-shortcuts.c:59
-#: ../libxfce4kbd-private/xfce-shortcuts.c:62
+#, c-format
+msgid ""
+"This shortcut is already being used for the action '%s'. Which action do you"
+" want to use?"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:54
+#: ../libxfce4kbd-private/xfce-shortcuts.c:57
+#: ../libxfce4kbd-private/xfce-shortcuts.c:60
+#: ../libxfce4kbd-private/xfce-shortcuts.c:63
 #, c-format
 msgid "Use '%s'"
 msgstr "'%s' వాడు"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:53
-msgid "Keep the other one"
-msgstr "మరొకదానిని ఉంచు"
+#: ../libxfce4kbd-private/xfce-shortcuts.c:54
+#: ../libxfce4kbd-private/xfce-shortcuts.c:57
+#: ../libxfce4kbd-private/xfce-shortcuts.c:60
+#: ../libxfce4kbd-private/xfce-shortcuts.c:63
+#, c-format
+msgid "Keep '%s'"
+msgstr "'%s' ఉంచు"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:55
-#: ../libxfce4kbd-private/xfce-shortcuts.c:58
+#: ../libxfce4kbd-private/xfce-shortcuts.c:56
+#: ../libxfce4kbd-private/xfce-shortcuts.c:59
 #, c-format
 msgid ""
 "This shortcut is already being used for the command '%s'. Which action do "
 "you want to use?"
 msgstr "ఈ షార్ట్‍కట్ ఇదివరకే '%s' ఆదేశము కొరకు వాడబడింది. మీరు ఏ చర్యను వాడాలనుకుంటున్నారు?"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:56
-#: ../libxfce4kbd-private/xfce-shortcuts.c:59
-#, c-format
-msgid "Keep '%s'"
-msgstr "'%s' ఉంచు"
-
-#: ../libxfce4kbd-private/xfce-shortcuts.c:61
-msgid ""
-"This shortcut is already being used by a window manager action. Which action "
-"do you want to use?"
-msgstr "ఈ షార్ట్‍కట్ ఇదివరకే ఒక విండో నిర్వాహకము చర్యకు వాడబడింది. మీరు ఏ చర్యను వాడాలనుకుంటున్నారు?"
-
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
-msgid "Keep the window manager action"
-msgstr "విండో నిర్వాహకము చర్యను ఉంచు"
+#, c-format
+msgid ""
+"This shortcut is already being used by the action '%s'. Which action do you "
+"want to use?"
+msgstr ""
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:95
+#. This shortcut already exists in the provider, we don't want it twice
+#. Warn the user
+#: ../libxfce4kbd-private/xfce-shortcuts.c:110
+msgid "Please use another key combination."
+msgstr ""
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:111
+#, c-format
+msgid "%s already triggers this action."
+msgstr ""
+
+#: ../libxfce4kbd-private/xfce-shortcuts.c:116
 #, c-format
 msgid "Conflicting actions for %s"
 msgstr "%s కొరకు సంఘర్షణ చర్యలు"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:128
+#: ../libxfce4kbd-private/xfce-shortcuts.c:176
 msgid "This shortcut is already being used for something else."
 msgstr "ఈ షార్ట్‍కట్ ఇదివరకే వేరేదానికి వాడబడుతున్నది."
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:204
-msgid "Window Manager Action Shortcut"
-msgstr "విండో నిర్వాహకము చర్య షార్ట్‍కట్"
-
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:205
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:215
-msgid "Action:"
-msgstr "చర్య:"
-
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:209
+msgid "Window Manager Action Shortcut"
+msgstr ""
+
+#. TRANSLATORS: this string will be used to create an explanation for
+#. * the user in a following string
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:212
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:226
+msgid "action"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:216
 msgid "Command Shortcut"
 msgstr "ఆదేశము షార్ట్‍కట్"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:210
-msgid "Command:"
-msgstr "ఆదేశం:"
+#. TRANSLATORS: this string will be used to create an explanation for
+#. * the user in a following string
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:219
+msgid "command"
+msgstr ""
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:214
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:223
 msgid "Shortcut"
-msgstr "షార్ట్‍కట్"
+msgstr ""
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:255
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:267
+#, c-format
+msgid "Press now the keyboard keys you want to use to trigger the %s '%s'."
+msgstr ""
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:291
 msgid "Shortcut:"
 msgstr "షార్ట్‍కట్"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:300
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:296
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:475
+msgid "No keys pressed yet, proceed."
+msgstr ""
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:378
 msgid "Could not grab the keyboard."
 msgstr "కీబోర్డును హరించలేకపోయింది."
 
-#: ../glade/libxfce4ui.xml.in.h:1
-msgid "Subtitle"
-msgstr "ఉపశీర్షిక"
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:36
+msgid "Window operations menu"
+msgstr ""
 
-#: ../glade/libxfce4ui.xml.in.h:2
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:37
+msgid "Up"
+msgstr "పైన"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:38
+msgid "Down"
+msgstr "కింద"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:39
+msgid "Left"
+msgstr "ఎడమ"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:40
+msgid "Right"
+msgstr "కుడి"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:41
+msgid "Cancel"
+msgstr "రద్దుచేయి"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:42
+msgid "Cycle windows"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:43
+msgid "Cycle windows (Reverse)"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:44
+msgid "Switch window for same application"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:45
+msgid "Switch application"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:46
+msgid "Close window"
+msgstr "విండోను మూసివేయి"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:47
+msgid "Maximize window horizontally"
+msgstr "విండోని అడ్డముగా గరిష్ఠీకరించు"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:48
+msgid "Maximize window vertically"
+msgstr "విండోని నిలువుగా గరిష్ఠీకరించు"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:49
+msgid "Maximize window"
+msgstr "విండోని గరిష్ఠీకరించు"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:50
+msgid "Hide window"
+msgstr "విండోని దాయి"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:51
+msgid "Move window"
+msgstr "విండోని కదుపు"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:52
+msgid "Resize window"
+msgstr "విండో పరిమాణం మార్చు"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:53
+msgid "Shade window"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:54
+msgid "Stick window"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:55
+msgid "Raise window"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:56
+msgid "Lower window"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:57
+msgid "Raise or lower window"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:58
+msgid "Fill window"
+msgstr "విండోని నింపు"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:59
+msgid "Fill window horizontally"
+msgstr "విండోని అడ్డముగా నింపు"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:60
+msgid "Fill window vertically"
+msgstr "విండోని నిలువుగా నింపు"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:61
+msgid "Toggle above"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:62
+msgid "Toggle fullscreen"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:63
+msgid "Move window to upper workspace"
+msgstr "విండోని ఎగువ కార్యక్షేత్రానికి తరలించు"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:64
+msgid "Move window to bottom workspace"
+msgstr "విండోని దిగువ కార్యక్షేత్రానికి తరలించు"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:65
+msgid "Move window to left workspace"
+msgstr "విండోని ఎడమవైపు కార్యక్షేత్రానికి తరలించు"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:66
+msgid "Move window to right workspace"
+msgstr "విండోని కుడివైపు కార్యక్షేత్రానికి తరలించు"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:67
+msgid "Move window to previous workspace"
+msgstr "విండోని మునుపటి కార్యక్షేత్రానికి తరలించు"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:68
+msgid "Move window to next workspace"
+msgstr "విండోని తదుపరి కార్యక్షేత్రానికి తరలించు"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:69
+msgid "Move window to workspace 1"
+msgstr "విండోని కార్యక్షేత్రం 1కి తరలించు"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:70
+msgid "Move window to workspace 2"
+msgstr "విండోని కార్యక్షేత్రం 2కి తరలించు"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:71
+msgid "Move window to workspace 3"
+msgstr "విండోని కార్యక్షేత్రం 3కి తరలించు"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:72
+msgid "Move window to workspace 4"
+msgstr "విండోని కార్యక్షేత్రం 4కి తరలించు"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:73
+msgid "Move window to workspace 5"
+msgstr "విండోని కార్యక్షేత్రం 5కి తరలించు"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:74
+msgid "Move window to workspace 6"
+msgstr "విండోని కార్యక్షేత్రం 6కి తరలించు"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:75
+msgid "Move window to workspace 7"
+msgstr "విండోని కార్యక్షేత్రం 7కి తరలించు"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:76
+msgid "Move window to workspace 8"
+msgstr "విండోని కార్యక్షేత్రం 8కి తరలించు"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:77
+msgid "Move window to workspace 9"
+msgstr "విండోని కార్యక్షేత్రం 9కి తరలించు"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:78
+msgid "Move window to workspace 10"
+msgstr "విండోని కార్యక్షేత్రం 10కి తరలించు"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:79
+msgid "Move window to workspace 11"
+msgstr "విండోని కార్యక్షేత్రం 11కి తరలించు"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:80
+msgid "Move window to workspace 12"
+msgstr "విండోని కార్యక్షేత్రం 12కి తరలించు"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:81
+msgid "Tile window to the top"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:82
+msgid "Tile window to the bottom"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:83
+msgid "Tile window to the left"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:84
+msgid "Tile window to the right"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:85
+msgid "Show desktop"
+msgstr "డెస్క్‍టాప్ చూపించు"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:86
+msgid "Upper workspace"
+msgstr "ఎగువ కార్యక్షేత్రం"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:87
+msgid "Bottom workspace"
+msgstr "దిగువ కార్యక్షేత్రం"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:88
+msgid "Left workspace"
+msgstr "ఎడమవైపు కార్యక్షేత్రం"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:89
+msgid "Right workspace"
+msgstr "కుడివైపు కార్యక్షేత్రం"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:90
+msgid "Previous workspace"
+msgstr "మునుపటి కార్యక్షేత్రం"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:91
+msgid "Next workspace"
+msgstr "తదుపరి కార్యక్షేత్రం"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:92
+msgid "Workspace 1"
+msgstr "కార్యక్షేత్రం 1"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:93
+msgid "Workspace 2"
+msgstr "కార్యక్షేత్రం 2"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:94
+msgid "Workspace 3"
+msgstr "కార్యక్షేత్రం 3"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:95
+msgid "Workspace 4"
+msgstr "కార్యక్షేత్రం 4"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:96
+msgid "Workspace 5"
+msgstr "కార్యక్షేత్రం 5"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:97
+msgid "Workspace 6"
+msgstr "కార్యక్షేత్రం 6"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:98
+msgid "Workspace 7"
+msgstr "కార్యక్షేత్రం 7"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:99
+msgid "Workspace 8"
+msgstr "కార్యక్షేత్రం 8"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:100
+msgid "Workspace 9"
+msgstr "కార్యక్షేత్రం 9"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:101
+msgid "Workspace 10"
+msgstr "కార్యక్షేత్రం 10"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:102
+msgid "Workspace 11"
+msgstr "కార్యక్షేత్రం 11"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:103
+msgid "Workspace 12"
+msgstr "కార్యక్షేత్రం 12"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:104
+msgid "Add workspace"
+msgstr "కార్యక్షేత్రాన్ని జతచేయి"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:105
+msgid "Add adjacent workspace"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:106
+msgid "Delete last workspace"
+msgstr "చివరి కార్యక్షేత్రాన్ని తొలగించు"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:107
+msgid "Delete active workspace"
+msgstr "క్రియాశీల కార్యక్షేత్రాన్ని తొలగించు"
+
+#: ../glade/libxfce4ui.xml.in.h:1
 msgid "Titled Dialog"
 msgstr "శీర్షికగల డైలాగ్"
+
+#: ../glade/libxfce4ui.xml.in.h:2
+msgid "Subtitle"
+msgstr ""
 
 #: ../glade/libxfce4ui.xml.in.h:3
 msgid "Xfce 4 Widgets"
@@ -202,7 +510,7 @@ msgstr "రూపాంతర సమాచారం"
 
 #: ../xfce4-about/main.c:70
 msgid "Window Manager"
-msgstr "కిటికీ నిర్వాహకము"
+msgstr "విండో నిర్వాహకం"
 
 #: ../xfce4-about/main.c:71
 msgid "Handles the placement of windows on the screen."
@@ -214,13 +522,13 @@ msgstr "ప్యానల్"
 
 #: ../xfce4-about/main.c:75
 msgid ""
-"Program launchers, window buttons, applications menu, workspace switcher and "
-"more."
+"Program launchers, window buttons, applications menu, workspace switcher and"
+" more."
 msgstr ""
 
 #: ../xfce4-about/main.c:79
 msgid "Desktop Manager"
-msgstr "డెస్క్‍టాప్ నిర్వాహకం"
+msgstr ""
 
 #: ../xfce4-about/main.c:80
 msgid ""
@@ -230,7 +538,7 @@ msgstr ""
 
 #: ../xfce4-about/main.c:84
 msgid "File Manager "
-msgstr "ఫైల్ నిర్వాహకం"
+msgstr ""
 
 #: ../xfce4-about/main.c:85
 msgid ""
@@ -240,7 +548,7 @@ msgstr ""
 
 #: ../xfce4-about/main.c:89
 msgid "Session Manager"
-msgstr "చర్యాకాల నిర్వహకం"
+msgstr ""
 
 #: ../xfce4-about/main.c:90
 msgid ""
@@ -270,7 +578,7 @@ msgstr ""
 
 #: ../xfce4-about/main.c:104
 msgid "Settings Daemon"
-msgstr "అమరికల సూత్రధారి"
+msgstr ""
 
 #: ../xfce4-about/main.c:105
 msgid "D-Bus-based configuration storage system."
@@ -291,9 +599,9 @@ msgstr ""
 
 #: ../xfce4-about/main.c:142
 msgid ""
-"Xfce components are licensed under free or open source licences; GPL or BSDL "
-"for applications and LGPL or BSDL for libraries. Look at the documentation, "
-"the source code or the Xfce website (http://www.xfce.org) for more "
+"Xfce components are licensed under free or open source licences; GPL or BSDL"
+" for applications and LGPL or BSDL for libraries. Look at the documentation,"
+" the source code or the Xfce website (http://www.xfce.org) for more "
 "information."
 msgstr ""
 
@@ -331,11 +639,11 @@ msgstr ""
 
 #: ../xfce4-about/main.c:295
 msgid ""
-"The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-"
-"settings, xfce-utils, xfconf, xfdesktop and xfwm4 are distributed under the "
-"terms of the GNU General Public License as published by the Free Software "
-"Foundation; either version 2 of the License, or (at your option) any later "
-"version."
+"The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, "
+"xfce4-settings, xfce-utils, xfconf, xfdesktop and xfwm4 are distributed "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version."
 msgstr ""
 
 #: ../xfce4-about/main.c:442
@@ -382,33 +690,33 @@ msgstr "రూపాంతరం %s"
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
 #. },
-#: ../xfce4-about/contributors.h:127
+#: ../xfce4-about/contributors.h:121
 msgid "Core developers"
 msgstr "అంతర్భాగ అభివృద్ధికారులు"
 
-#: ../xfce4-about/contributors.h:130
+#: ../xfce4-about/contributors.h:124
 msgid "Active contributors"
 msgstr "క్రియాశీల సహాయకులు"
 
-#: ../xfce4-about/contributors.h:133
+#: ../xfce4-about/contributors.h:127
 msgid "Servers maintained by"
 msgstr "సేవకాలు నిర్వహించువారు"
 
-#: ../xfce4-about/contributors.h:136
+#: ../xfce4-about/contributors.h:130
 msgid "Goodies supervision"
 msgstr ""
 
-#: ../xfce4-about/contributors.h:139
+#: ../xfce4-about/contributors.h:133
 msgid "Translations supervision"
 msgstr ""
 
-#: ../xfce4-about/contributors.h:142
+#: ../xfce4-about/contributors.h:136
 msgid "Translators"
 msgstr "అనువాదకలు"
 
-#: ../xfce4-about/contributors.h:145
+#: ../xfce4-about/contributors.h:139
 msgid "Previous contributors"
-msgstr "మునుపటి సహాయకులు"
+msgstr ""
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:1
 msgid "About Xfce"
@@ -419,32 +727,32 @@ msgid "Information about the Xfce Desktop Environment"
 msgstr "Xfce డెస్క్‍టాప్ పర్యావరణం గురించిన సమాచారం"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:1
-msgid "About"
-msgstr "గురించి"
-
-#: ../xfce4-about/xfce4-about-dialog.glade.h:2
 msgid "About the Xfce Desktop Environment"
 msgstr "Xfce డెస్క్‍టాప్ పర్యావరణం గురించి"
 
+#: ../xfce4-about/xfce4-about-dialog.glade.h:2
+msgid "About"
+msgstr "గురించి"
+
 #: ../xfce4-about/xfce4-about-dialog.glade.h:3
-msgid "BSD"
-msgstr "BSD"
-
-#: ../xfce4-about/xfce4-about-dialog.glade.h:4
-msgid "Copyright"
-msgstr "నకలుహక్కు"
-
-#: ../xfce4-about/xfce4-about-dialog.glade.h:5
 msgid "Credits"
 msgstr "పరపతులు"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:6
+#: ../xfce4-about/xfce4-about-dialog.glade.h:4
 msgid "GPL"
 msgstr "జిపియల్"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:7
+#: ../xfce4-about/xfce4-about-dialog.glade.h:5
 msgid "LGPL"
 msgstr "LGPL"
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:6
+msgid "BSD"
+msgstr "BSD"
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:7
+msgid "Copyright"
+msgstr "నకలుహక్కు"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:8
 msgid "License"

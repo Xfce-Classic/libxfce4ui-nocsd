@@ -1,5 +1,5 @@
 
-INCLUDES = \
+AM_CPPFLAGS = \
 	-I$(top_srcdir) \
 	-DG_LOG_DOMAIN=\"xfce4-about\" \
 	-DDATADIR=\"$(datadir)/xfce4\" \
@@ -20,13 +20,13 @@ xfce4_about_SOURCES = \
 
 xfce4_about_CFLAGS = \
 	$(LIBXFCE4UTIL_CFLAGS) \
-	$(GTK_CFLAGS) \
+	$(GTK2_CFLAGS) \
 	$(PLATFORM_CFLAGS)
 
 xfce4_about_LDADD = \
 	$(top_builddir)/libxfce4ui/libxfce4ui-$(LIBXFCE4UI_VERSION_API).la \
 	$(LIBXFCE4UTIL_LIBS) \
-	$(GTK_LIBS)
+	$(GTK2_LIBS)
 
 xfce4_about_DEPENDENCIES = \
 	$(top_builddir)/libxfce4ui/libxfce4ui-$(LIBXFCE4UI_VERSION_API).la
@@ -36,6 +36,9 @@ desktop_in_files = xfce4-about.desktop.in
 desktop_DATA = $(desktop_in_files:.desktop.in=.desktop)
 @INTLTOOL_DESKTOP_RULE@
 
+DISTCLEANFILES = \
+	$(desktop_DATA)
+
 if MAINTAINER_MODE
 
 about-dialog-ui.h: $(srcdir)/xfce4-about-dialog.glade Makefile
@@ -44,13 +47,12 @@ about-dialog-ui.h: $(srcdir)/xfce4-about-dialog.glade Makefile
 BUILT_SOURCES = \
 	$(xfce4_about_built_sources)
 
+DISTCLEANFILES += \
+	$(xfce4_about_built_sources)
+
 endif
 
 EXTRA_DIST = \
 	$(desktop_in_files) \
 	xfce4-about-dialog.glade
-
-DISTCLEANFILES = \
-	$(xfce4_about_built_sources) \
-	$(desktop_DATA)
 

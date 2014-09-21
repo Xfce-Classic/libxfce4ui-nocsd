@@ -45,16 +45,16 @@ content_files = 							\
 
 # CFLAGS and LDFLAGS for compiling scan program. Only needed
 # if $(DOC_MODULE).types is non-empty.
-INCLUDES =	 							\
+AM_CPPFLAGS =	 							\
 	-I$(top_srcdir) 						\
 	-I$(top_builddir) 						\
 	$(LIBXFCE4UTIL_CFLAGS)						\
-	$(GTK_CFLAGS)	 						\
+	$(GTK2_CFLAGS)	 						\
 	$(GTK_DOC_EXTRA_CFLAGS)
 
 GTKDOC_LIBS =  								\
 	$(LIBXFCE4UTIL_LIBS)						\
-	$(GTK_LIBS)							\
+	$(GTK2_LIBS)							\
 	$(top_builddir)/libxfce4ui/libxfce4ui-$(LIBXFCE4UI_VERSION_API).la
 
 include $(top_srcdir)/gtk-doc.make

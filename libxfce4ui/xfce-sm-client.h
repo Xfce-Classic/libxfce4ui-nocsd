@@ -34,6 +34,26 @@
 #define XFCE_IS_SM_CLIENT_CLASS(klass)  (G_TYPE_CHECK_CLASS_TYPE((klass), XFCE_TYPE_SM_CLIENT))
 #define XFCE_SM_CLIENT_GET_CLASS(obj)   (G_TYPE_INSTANCE_GET_CLASS((obj), XFCE_TYPE_SM_CLIENT, XfceSMClientClass))
 
+/**
+ * XFCE_SM_CLIENT_ERROR:
+ *
+ * Error domain for XfceSmCLient. Errors in this domain will be from the #XfceSmCLientErrorEnum enumeration.
+ * See #GError for more information on error domains.
+ **/
+#define XFCE_SM_CLIENT_ERROR xfce_sm_client_error_quark()
+
+/**
+ * XfceSmCLientErrorEnum:
+ * @G_IO_ERROR_FAILED: Failed to connect to the session manager.
+ * @XFCE_SM_CLIENT_ERROR_INVALID_CLIENT: Session does not have a valid client id.
+ *
+ * Error codes returned by XfceSmCLient functions.
+ **/
+typedef enum {
+  XFCE_SM_CLIENT_ERROR_FAILED,
+  XFCE_SM_CLIENT_ERROR_INVALID_CLIENT
+} XfceSmCLientErrorEnum;
+
 G_BEGIN_DECLS
 
 typedef enum
@@ -63,6 +83,8 @@ typedef enum
 typedef struct _XfceSMClient  XfceSMClient;
 
 GType xfce_sm_client_get_type(void) G_GNUC_CONST;
+
+GQuark xfce_sm_client_error_quark (void);
 
 GOptionGroup *xfce_sm_client_get_option_group(gint argc,
                                               gchar **argv);

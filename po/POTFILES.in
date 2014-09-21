@@ -17,6 +17,7 @@ libxfce4kbd-private/xfce-shortcuts.c
 libxfce4kbd-private/xfce-shortcut-dialog.c
 libxfce4kbd-private/xfce-shortcuts-grabber.c
 libxfce4kbd-private/xfce-shortcuts-provider.c
+libxfce4kbd-private/xfce-shortcuts-xfwm4.c
 
 #
 # Support for GtkBuilder

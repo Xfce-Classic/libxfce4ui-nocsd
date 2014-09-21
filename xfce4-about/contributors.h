@@ -33,45 +33,36 @@ typedef struct
 }
 ContributorGroup;
 
-/*
-static const ContributorInfo xfce_contributors_lead[] =
-{
-  { "Olivier Fourdan", "fourdan@xfce.org" },
-  { NULL, NULL }
-};
-*/
-
 static const ContributorInfo xfce_contributors_core[] =
 {
-  { "Brian J. Tarricone", "kelnos@xfce.org" },
   { "Jannis Pohlmann", "jannis@xfce.org" },
   { "Jérôme Guelfucci", "jeromeg@xfce.org" },
   { "Nick Schermer", "nick@xfce.org" },
   { "Olivier Fourdan", "fourdan@xfce.org" },
-  { "Stephan Arts", "stephan@xfce.org" },
   { NULL, NULL }
 };
 
 static const ContributorInfo xfce_contributors_active[] =
 {
   { "Ali Abdallah", "aliov@xfce.org" },
+  { "Andrzej Radecki", "ndrwrdck@gmail.com" },
   { "Benedikt Meurer", "benny@xfce.org" },
+  { "Brian J. Tarricone", "kelnos@xfce.org" },
   { "David Mohr", "squisher@xfce.org" },
   { "Enrico Tröger", "enrico.troeger@uvena.de" },
-  { "Jasper Huijsmans", "jasper@xfce.org" },
-  { "Jean-François Wauthy", "pollux@xfce.org" },
+  { "Eric Koegel", "eric@xfce.org" },
   { "Landry Breuil", "landry@openbsd.org" },
   { "Lionel Le Folgoc", "mrpouit@gmail.com" },
   { "Mike Massonnet", "mmassonnet@gmail.com" },
+  { "Simon Steinbeiß", "simon@xfce.org" },
+  { "Stephan Arts", "stephan@xfce.org" },
+  { "Peter de Ridder", "peter@xfce.org" },
   { "Yves-Alexis Perez", "corsac@debian.org" },
   { NULL, NULL }
 };
 
 static const ContributorInfo xfce_contributors_server[] =
 {
-  { "Auke Kok", "sofar@foo-projects.org" },
-  { "Brian J. Tarricone", "kelnos@xfce.org" },
-  { "Jannis Pohlmann", "jannis@xfce.org" },
   { "Jean-François Wauthy", "pollux@xfce.org" },
   { "Nick Schermer", "nick@xfce.org" },
   { "Samuel Verstraete", "elangelo@xfce.org" },
@@ -86,13 +77,13 @@ static const ContributorInfo xfce_contributors_goodies_supervision[] =
 
 static const ContributorInfo xfce_contributors_translators_supervision[] =
 {
-  { "Maximilian Schleiss", "maximilian@xfce.org" },
   { "Mike Massonnet", "mmassonnet@gmail.com" },
   { NULL, NULL }
 };
 
 static const ContributorInfo xfce_contributors_previous[] =
 {
+  { "Auke Kok", "sofar@foo-projects.org" },
   { "Bernhard Walle", "bernhard.walle@gmx.de" },
   { "Biju Chacko", "botsie@xfce.org" },
   { "Craig Betts", "craig.betts@dfrc.nasa.gov" },
@@ -105,11 +96,14 @@ static const ContributorInfo xfce_contributors_previous[] =
   { "Erik Touve", "etouve@earthlink.net" },
   { "Erik Harrison", "erikharrison@xfce.org" },
   { "François Le Clainche", "fleclainche@wanadoo.fr" },
+  { "Jasper Huijsmans", "jasper@xfce.org" },
+  { "Jean-François Wauthy", "pollux@xfce.org" },
   { "Jens Guballa", "j.guballa@t-online.de" },
   { "Jens Luedicke", "jens@irs-net.com" },
   { "Joakim Andreasson", "joakim.andreasson@gmx.net" },
   { "Karsten Luetkewitz", "phrep@plskthx.org" },
   { "Martin Loschwitz", "madkiss@debian.org" },
+  { "Maximilian Schleiss", "maximilian@xfce.org" },
   { "Michael Mosier", "michael@spyonit.com" },
   { "Mickaël Graf", "korbinus@xfce.org" },
   { "Pau Rul·lan Ferragut", "paurullan@bulma.net" },

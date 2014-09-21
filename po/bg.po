@@ -3,71 +3,71 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Leandro Regueiro <leandro.regueiro@gmail.com>, 2008-2010,2013
+# cybercop <cybercop_montana@abv.bg>, 2012
 msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-07-02 22:33+0200\n"
 "PO-Revision-Date: 2013-11-19 11:04+0000\n"
-"Last-Translator: Leandro Regueiro <leandro.regueiro@gmail.com>\n"
-"Language-Team: Galician (http://www.transifex.com/projects/p/xfce/language/gl/)\n"
+"Last-Translator: Nick <nick@xfce.org>\n"
+"Language-Team: Bulgarian (http://www.transifex.com/projects/p/xfce/language/bg/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: gl\n"
+"Language: bg\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../libxfce4ui/xfce-dialogs.c:98
 msgid "Failed to open web browser for online documentation"
-msgstr "Produciuse un erro ao abrir o navegador web para consultar a documentación en Internet"
+msgstr "Не може да бъде отворен браузър с който да бъде прегледана документацията онлайн"
 
 #: ../libxfce4ui/xfce-dialogs.c:213
 #, c-format
 msgid "Do you want to read the %s manual online?"
-msgstr "Desexa ler o manual de %s en Internet?"
+msgstr "Искате ли да прочетете %s ръководство онлайн?"
 
 #: ../libxfce4ui/xfce-dialogs.c:215
 msgid "Do you want to read the manual online?"
-msgstr "Desexa ler o manual en Internet?"
+msgstr "Искате ли да прочетете ръководството онлайн?"
 
 #: ../libxfce4ui/xfce-dialogs.c:218
 msgid "Online Documentation"
-msgstr "Documentación en Internet"
+msgstr "Онлайн-документация"
 
 #: ../libxfce4ui/xfce-dialogs.c:221
 msgid ""
 "You will be redirected to the documentation website where the help pages are"
 " maintained and translated."
-msgstr "Redirixiráselle ao sitio web de documentación no que se manteñen e traducen as páxinas de axuda."
+msgstr "Вие ще бъдете препратен към сайта с документацията, където помощтните страници се превеждат и поддържат."
 
 #: ../libxfce4ui/xfce-dialogs.c:225
 msgid "_Read Online"
-msgstr "Le_r en Internet"
+msgstr "Прочитане онлайн"
 
 #: ../libxfce4ui/xfce-dialogs.c:237
 msgid "_Always go directly to the online documentation"
-msgstr "Ir _sempre directamente á documentación en Internet"
+msgstr "Винаги отивай директно в онлайн докумeнтацията"
 
 #: ../libxfce4ui/xfce-dialogs.c:281
 msgid "Information"
-msgstr "Información "
+msgstr "Информация"
 
 #: ../libxfce4ui/xfce-dialogs.c:314
 msgid "Warning"
-msgstr "Advertencia"
+msgstr "Внимание"
 
 #: ../libxfce4ui/xfce-dialogs.c:348
 msgid "Error"
-msgstr "Erro"
+msgstr "Грешка"
 
 #: ../libxfce4ui/xfce-dialogs.c:399
 msgid "Question"
-msgstr "Pregunta"
+msgstr "Въпрос"
 
 #: ../libxfce4ui/xfce-sm-client.c:1424
 msgid "Session management client ID"
-msgstr ""
+msgstr "ID клиент на мениджъра на сесиите"
 
 #: ../libxfce4ui/xfce-sm-client.c:1424
 msgid "ID"
@@ -75,25 +75,25 @@ msgstr "ID"
 
 #: ../libxfce4ui/xfce-sm-client.c:1425
 msgid "Disable session management"
-msgstr ""
+msgstr "Изключване на управлението на сесиите"
 
 #: ../libxfce4ui/xfce-sm-client.c:1435
 msgid "Session management options"
-msgstr ""
+msgstr "Възможности за управление на сесиите"
 
 #: ../libxfce4ui/xfce-sm-client.c:1436
 msgid "Show session management options"
-msgstr ""
+msgstr "Показване на възможностите за управление на сесиите"
 
 #: ../libxfce4ui/xfce-sm-client.c:1611
 #, c-format
 msgid "Failed to connect to the session manager: %s"
-msgstr "Produciuse un erro ao conectar co xestor de sesións: %s"
+msgstr "Не може да се осъществи връзка с мениджъра на сесиите: %s"
 
 #: ../libxfce4ui/xfce-sm-client.c:1617
 #, c-format
 msgid "Session manager did not return a valid client id"
-msgstr "O xestor de sesións non devolveu ningún id de cliente válido"
+msgstr "Мениджърът на сесиите не е предоставил валиден id на клиента"
 
 #. print warning for user
 #: ../libxfce4ui/xfce-spawn.c:413
@@ -101,14 +101,14 @@ msgstr "O xestor de sesións non devolveu ningún id de cliente válido"
 msgid ""
 "Working directory \"%s\" does not exist. It won't be used when spawning "
 "\"%s\"."
-msgstr "O directorio de traballo \"%s\" non existe. Non se usará ao iniciar \"%s\"."
+msgstr "Работна директория \"%s\" не съществува. Тя няма да бъде използвана когато размножавате \"%s\"."
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 #, c-format
 msgid ""
 "This shortcut is already being used for the action '%s'. Which action do you"
 " want to use?"
-msgstr ""
+msgstr "Тази клавишна комбинация вече е използвана за '%s' действие. Кое действие желаете да използвате?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:54
 #: ../libxfce4kbd-private/xfce-shortcuts.c:57
@@ -116,7 +116,7 @@ msgstr ""
 #: ../libxfce4kbd-private/xfce-shortcuts.c:63
 #, c-format
 msgid "Use '%s'"
-msgstr "Usar '%s'"
+msgstr "Използване на '%s'"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:54
 #: ../libxfce4kbd-private/xfce-shortcuts.c:57
@@ -124,7 +124,7 @@ msgstr "Usar '%s'"
 #: ../libxfce4kbd-private/xfce-shortcuts.c:63
 #, c-format
 msgid "Keep '%s'"
-msgstr "Manter '%s'"
+msgstr "Запазване на '%s'"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
 #: ../libxfce4kbd-private/xfce-shortcuts.c:59
@@ -132,470 +132,470 @@ msgstr "Manter '%s'"
 msgid ""
 "This shortcut is already being used for the command '%s'. Which action do "
 "you want to use?"
-msgstr "Este atallo xa está sendo usado pola orde '%s'. Que acción desexa usar?"
+msgstr "Тази клавишна комбинация вече е използвана за командата '%s'. Кое действие желаете да използвате?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 #, c-format
 msgid ""
 "This shortcut is already being used by the action '%s'. Which action do you "
 "want to use?"
-msgstr ""
+msgstr "Тази клавишна комбинация вече е използвана за действието '%s'. Кое действие желаете да използвате?"
 
 #. This shortcut already exists in the provider, we don't want it twice
 #. Warn the user
 #: ../libxfce4kbd-private/xfce-shortcuts.c:110
 msgid "Please use another key combination."
-msgstr ""
+msgstr "Моля, използвайте друга клавишна комбинация."
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:111
 #, c-format
 msgid "%s already triggers this action."
-msgstr ""
+msgstr "%s вече се използва за това действие."
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:116
 #, c-format
 msgid "Conflicting actions for %s"
-msgstr "Accións en conflito para %s"
+msgstr "Конфликт с действие за %s"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:176
 msgid "This shortcut is already being used for something else."
-msgstr "Este atallo xa está sendo usado por algo."
+msgstr "Тази клавишна комбинация вече е зададена за друго действие."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:209
 msgid "Window Manager Action Shortcut"
-msgstr ""
+msgstr "Клавишни комбинации за действия с мениджъра на прозорците"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:212
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:226
 msgid "action"
-msgstr "acción"
+msgstr "действие"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:216
 msgid "Command Shortcut"
-msgstr "Atallo de orde"
+msgstr "Клавишна комбинация за команда"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:219
 msgid "command"
-msgstr "orde"
+msgstr "команда"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:223
 msgid "Shortcut"
-msgstr "Atallo"
+msgstr "Клавишна комбинация"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:267
 #, c-format
 msgid "Press now the keyboard keys you want to use to trigger the %s '%s'."
-msgstr ""
+msgstr "Натиснете клавишната комбинация, която искате да използвате за %s '%s'."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:291
 msgid "Shortcut:"
-msgstr "Atallo:"
+msgstr "Клавишна комбинация:"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:296
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:475
 msgid "No keys pressed yet, proceed."
-msgstr ""
+msgstr "Все още няма натиснати клавиши, продължете."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:378
 msgid "Could not grab the keyboard."
-msgstr ""
+msgstr "Не може да бъде прихваната клавиатурата."
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:36
 msgid "Window operations menu"
-msgstr "Menú de operacións da xanela"
+msgstr "Меню за действията с прозорци"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:37
 msgid "Up"
-msgstr "Arriba"
+msgstr "Нагоре"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:38
 msgid "Down"
-msgstr "Abaixo"
+msgstr "Надолу"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:39
 msgid "Left"
-msgstr "Esquerda"
+msgstr "Наляво"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:40
 msgid "Right"
-msgstr "Dereita"
+msgstr "Надясно"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:41
 msgid "Cancel"
-msgstr "Cancelar"
+msgstr "Отмяна"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:42
 msgid "Cycle windows"
-msgstr "Percorrer as xanelas"
+msgstr "Превключване на прозорците"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:43
 msgid "Cycle windows (Reverse)"
-msgstr "Percorrer as xanelas (Ao revés)"
+msgstr "Превключване на прозорците (в обратна посока)"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:44
 msgid "Switch window for same application"
-msgstr "Cambiar de xanela do mesmo aplicativo"
+msgstr "Превключване на прозорец за една и съща програма"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:45
 msgid "Switch application"
-msgstr "Cambiar de aplicativo"
+msgstr "Превключване на програма"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:46
 msgid "Close window"
-msgstr "Pechar a xanela"
+msgstr "Затваряне на прозорец"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:47
 msgid "Maximize window horizontally"
-msgstr "Maximizar a xanela horizontalmente"
+msgstr "Максимизиране на прозореца по хоризонтала"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:48
 msgid "Maximize window vertically"
-msgstr "Maximizar a xanela verticalmente"
+msgstr "Максимизиране на прозореца по вертикала"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:49
 msgid "Maximize window"
-msgstr "Maximizar a xanela"
+msgstr "Максимизиране на прозореца"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:50
 msgid "Hide window"
-msgstr "Ocultar a xanela"
+msgstr "Скриване на прозореца"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:51
 msgid "Move window"
-msgstr "Mover a xanela"
+msgstr "Преместване на прозореца"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:52
 msgid "Resize window"
-msgstr "Redimensionar a xanela"
+msgstr "Преоразмеряване на прозореца"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:53
 msgid "Shade window"
-msgstr "Ensombrecer a xanela"
+msgstr "Сянка под заглавието"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:54
 msgid "Stick window"
-msgstr "Fixar a xanela"
+msgstr "Прилепване на прозореца"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:55
 msgid "Raise window"
-msgstr "Elevar a xanela"
+msgstr "Издигане на прозореца на преден план"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:56
 msgid "Lower window"
-msgstr "Baixar a xanela"
+msgstr "Сваляне на прозореца на заден план"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:57
 msgid "Raise or lower window"
-msgstr "Elevar ou baixar a xanela"
+msgstr "Издигане и сваляне на прозорец"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:58
 msgid "Fill window"
-msgstr "Ampliar a xanela"
+msgstr "Разтягане на прозорец"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:59
 msgid "Fill window horizontally"
-msgstr "Ampliar a xanela horizontalmente"
+msgstr "Разтягане на прозореца по хоризонтала"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:60
 msgid "Fill window vertically"
-msgstr "Ampliar a xanela verticalmente"
+msgstr "Разтягане на прозореца по вертикала"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:61
 msgid "Toggle above"
-msgstr "Manter por enriba"
+msgstr "Превключвател отгоре"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:62
 msgid "Toggle fullscreen"
-msgstr "Activar a pantalla completa"
+msgstr "Режим на цял екран"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:63
 msgid "Move window to upper workspace"
-msgstr "Mover a xanela ao espazo de traballo superior"
+msgstr "Преместване на прозореца на горното работно място"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:64
 msgid "Move window to bottom workspace"
-msgstr "Mover a xanela ao espazo de traballo inferior"
+msgstr "Преместване на прозореца на долното работно място"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:65
 msgid "Move window to left workspace"
-msgstr "Mover a xanela ao espazo de traballo da esquerda"
+msgstr "Преместване на прозореца на лявото работно място"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:66
 msgid "Move window to right workspace"
-msgstr "Mover a xanela ao espazo de traballo da dereita"
+msgstr "Преместване на прозореца на дясното работно място"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:67
 msgid "Move window to previous workspace"
-msgstr "Mover a xanela ao espazo de traballo anterior"
+msgstr "Преместване на прозореца на предишното работно място"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:68
 msgid "Move window to next workspace"
-msgstr "Mover a xanela ao seguinte espazo de traballo"
+msgstr "Преместване на прозореца на следващото работно място"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:69
 msgid "Move window to workspace 1"
-msgstr "Mover a xanela ao espazo de traballo 1"
+msgstr "Преместване на прозореца на работно място 1"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:70
 msgid "Move window to workspace 2"
-msgstr "Mover a xanela ao espazo de traballo 2"
+msgstr "Преместване на прозореца на работно място 2"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:71
 msgid "Move window to workspace 3"
-msgstr "Mover a xanela ao espazo de traballo 3"
+msgstr "Преместване на прозореца на работно място 3"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:72
 msgid "Move window to workspace 4"
-msgstr "Mover a xanela ao espazo de traballo 4"
+msgstr "Преместване на прозореца на работно място 4"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:73
 msgid "Move window to workspace 5"
-msgstr "Mover a xanela ao espazo de traballo 5"
+msgstr "Преместване на прозореца на работно място 5"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:74
 msgid "Move window to workspace 6"
-msgstr "Mover a xanela ao espazo de traballo 6"
+msgstr "Преместване на прозореца на работно място 6"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:75
 msgid "Move window to workspace 7"
-msgstr "Mover a xanela ao espazo de traballo 7"
+msgstr "Преместване на прозореца на работно място 7"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:76
 msgid "Move window to workspace 8"
-msgstr "Mover a xanela ao espazo de traballo 8"
+msgstr "Преместване на прозореца на работно място 8"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:77
 msgid "Move window to workspace 9"
-msgstr "Mover a xanela ao espazo de traballo 9"
+msgstr "Преместване на прозореца на работно място 9"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:78
 msgid "Move window to workspace 10"
-msgstr "Mover a xanela ao espazo de traballo 10"
+msgstr "Преместване на прозореца на работно място 10"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:79
 msgid "Move window to workspace 11"
-msgstr "Mover a xanela ao espazo de traballo 11"
+msgstr "Преместване на прозореца на работно място 11"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:80
 msgid "Move window to workspace 12"
-msgstr "Mover a xanela ao espazo de traballo 12"
+msgstr "Преместване на прозореца на работно място 12"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:81
 msgid "Tile window to the top"
-msgstr "Situar a xanela na cima"
+msgstr "Заглавието на прозореца да е отгоре"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:82
 msgid "Tile window to the bottom"
-msgstr "Situar a xanela no fondo"
+msgstr "Заглавието на прозореца да е отдолу"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:83
 msgid "Tile window to the left"
-msgstr "Situar a xanela cara á esquerda"
+msgstr "Заглавието на прозореца да е отляво"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:84
 msgid "Tile window to the right"
-msgstr "Situar a xanela cara á dereita"
+msgstr "Заглавието на прозореца да е отдясно"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:85
 msgid "Show desktop"
-msgstr "Mostrar o escritorio"
+msgstr "Показване на работният плот"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:86
 msgid "Upper workspace"
-msgstr "Espazo de traballo superior"
+msgstr "Горно работно място"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:87
 msgid "Bottom workspace"
-msgstr "Espazo de traballo inferior"
+msgstr "Долно работно място"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:88
 msgid "Left workspace"
-msgstr "Espazo de traballo da esquerda"
+msgstr "Ляво работно място"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:89
 msgid "Right workspace"
-msgstr "Espazo de traballo da dereita"
+msgstr "Дясно работно място"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:90
 msgid "Previous workspace"
-msgstr "Espazo de traballo anterior"
+msgstr "Предишно работно място"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:91
 msgid "Next workspace"
-msgstr "Seguinte espazo de traballo"
+msgstr "Следващо работно място"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:92
 msgid "Workspace 1"
-msgstr "Espazo de traballo 1"
+msgstr "Работно място 1"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:93
 msgid "Workspace 2"
-msgstr "Espazo de traballo 2"
+msgstr "Работно място 2"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:94
 msgid "Workspace 3"
-msgstr "Espazo de traballo 3"
+msgstr "Работно място 3"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:95
 msgid "Workspace 4"
-msgstr "Espazo de traballo 4"
+msgstr "Работно място 4"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:96
 msgid "Workspace 5"
-msgstr "Espazo de traballo 5"
+msgstr "Работно място 5"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:97
 msgid "Workspace 6"
-msgstr "Espazo de traballo 6"
+msgstr "Работно място 6"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:98
 msgid "Workspace 7"
-msgstr "Espazo de traballo 7"
+msgstr "Работно място 7"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:99
 msgid "Workspace 8"
-msgstr "Espazo de traballo 8"
+msgstr "Работно място 8"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:100
 msgid "Workspace 9"
-msgstr "Espazo de traballo 9"
+msgstr "Работно място 9"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:101
 msgid "Workspace 10"
-msgstr "Espazo de traballo 10"
+msgstr "Работно място 10"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:102
 msgid "Workspace 11"
-msgstr "Espazo de traballo 11"
+msgstr "Работно място 11"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:103
 msgid "Workspace 12"
-msgstr "Espazo de traballo 12"
+msgstr "Работно място 12"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:104
 msgid "Add workspace"
-msgstr "Engadir un espazo de traballo"
+msgstr "Добавяне на работно място"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:105
 msgid "Add adjacent workspace"
-msgstr "Engadir un espazo de traballo adxacente"
+msgstr "Добавяне на съседно работно място"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:106
 msgid "Delete last workspace"
-msgstr "Eliminar o último espazo de traballo"
+msgstr "Премахване на предишното работно място"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:107
 msgid "Delete active workspace"
-msgstr "Eliminar o espazo de traballo activo"
+msgstr "Премахване на активното работно място"
 
 #: ../glade/libxfce4ui.xml.in.h:1
 msgid "Titled Dialog"
-msgstr "Diálogo con título"
+msgstr "Диалог на заглавието"
 
 #: ../glade/libxfce4ui.xml.in.h:2
 msgid "Subtitle"
-msgstr "Subtítulo"
+msgstr "Подзаглавие"
 
 #: ../glade/libxfce4ui.xml.in.h:3
 msgid "Xfce 4 Widgets"
-msgstr "Xfce 4 Widgets"
+msgstr "Джаджи за Xfce 4"
 
 #: ../xfce4-about/main.c:52
 msgid "Version information"
-msgstr "Información da versión"
+msgstr "Информация за версията"
 
 #: ../xfce4-about/main.c:70
 msgid "Window Manager"
-msgstr "Xestor de xanelas"
+msgstr "Мениджър на прозорците"
 
 #: ../xfce4-about/main.c:71
 msgid "Handles the placement of windows on the screen."
-msgstr ""
+msgstr "Управлява разположението на прозорците на екрана."
 
 #: ../xfce4-about/main.c:74
 msgid "Panel"
-msgstr "Panel"
+msgstr "Панел"
 
 #: ../xfce4-about/main.c:75
 msgid ""
 "Program launchers, window buttons, applications menu, workspace switcher and"
 " more."
-msgstr ""
+msgstr "Стартери на програми, бутони на прозорци, меню на програмите, превключвател на работните места и други."
 
 #: ../xfce4-about/main.c:79
 msgid "Desktop Manager"
-msgstr ""
+msgstr "Мениджър на работният плот"
 
 #: ../xfce4-about/main.c:80
 msgid ""
 "Sets the background color or image with optional application menu or icons "
 "for minimized applications or launchers, devices and folders."
-msgstr ""
+msgstr "Задаване на фонов цвят или изображение с допълнително меню на програмите или икони за минимизираните програми или стартери, устройства и папки."
 
 #: ../xfce4-about/main.c:84
 msgid "File Manager "
-msgstr "Xestor de ficheiros"
+msgstr "Файлов мениджър "
 
 #: ../xfce4-about/main.c:85
 msgid ""
 "A modern file manager for the Unix/Linux desktop, aiming to be easy-to-use "
 "and fast."
-msgstr "Un xestor de ficheiros moderno para escritorios Unix/Linux, que intenta ser fácil de usar e rápido."
+msgstr "Съвременен файлов мениджър за  Unix/Linux, стремящ се да бъде бърз и лесен за ползване."
 
 #: ../xfce4-about/main.c:89
 msgid "Session Manager"
-msgstr "Xestor de sesións"
+msgstr "Мениджър на сесиите"
 
 #: ../xfce4-about/main.c:90
 msgid ""
 "Restores your session on startup and allows you to shutdown the computer "
 "from Xfce."
-msgstr "Restaura a sesión durante o inicio e permítelle apagar o computador desde Xfce."
+msgstr "Възстановява вашата сесия при стартиране и позволява да изключвате компютъра от Xfce."
 
 #: ../xfce4-about/main.c:94
 msgid "Setting System"
-msgstr "Configuración do sistema"
+msgstr "Настройки на системата"
 
 #: ../xfce4-about/main.c:95
 msgid ""
 "Configuration system to control various aspects of the desktop like "
 "appearance, display, keyboard and mouse settings."
-msgstr "Sistema de configuración para controlar diversos aspectos do escritorio como a configuración da aparencia, da visualización, do teclado e do rato."
+msgstr "Конфигуриране на системата за контрол над различни аспекти на работният плот, като външен вид, екран, клавиатура и настройка на мишката."
 
 #: ../xfce4-about/main.c:99
 msgid "Application Finder"
-msgstr "Buscador de aplicativos"
+msgstr "Търсене на програми"
 
 #: ../xfce4-about/main.c:100
 msgid ""
 "Shows the applications installed on your system in categories, so you can "
 "quickly find and launch them."
-msgstr "Mostra os aplicativos instalados no sistema mediante categorías de xeito que se fáciles de atopar e de iniciar."
+msgstr "Показва инсталираните на вашата система програми по категории, така, че да можете бързо да ги откриете и стартирате."
 
 #: ../xfce4-about/main.c:104
 msgid "Settings Daemon"
-msgstr "Daemon de configuración"
+msgstr "Диспечер на настройките"
 
 #: ../xfce4-about/main.c:105
 msgid "D-Bus-based configuration storage system."
-msgstr "Sistema de almacenamento da configuración baseado en D-Bus."
+msgstr "Основана на D-Bus система за съхраняване на конфигурацията."
 
 #: ../xfce4-about/main.c:112
 msgid ""
 "Xfce is a collection of programs that together provide a full-featured "
 "desktop environment. The following programs are part of the Xfce core:"
-msgstr "Xfce é unha colección de programas que xuntos fornecen un ambiente de escritorio con moitas características. Os seguintes programas forman parte do núcleo de Xfce:"
+msgstr "Xfce е набор от програми, които осигуряват напълно функционална работна среда. Следните програми са ядрото на Xfce:"
 
 #: ../xfce4-about/main.c:136
 msgid ""
 "Xfce is also a development platform providing several libraries, that help "
 "programmers create applications that fit in well with the desktop "
 "environment."
-msgstr "Xfce tamén é unha plataforma de desenvolvemento que fornece varias bibliotecas que lle axudan aos programadores a crear aplicativos que se integren ben co ambiente de escritorio."
+msgstr "Xfce е също и платформа, съдържаща няколко библиотеки, които помагат на програмистите за създаване на програми, които са добре интегрирани в графичната среда."
 
 #: ../xfce4-about/main.c:142
 msgid ""
@@ -603,31 +603,31 @@ msgid ""
 " for applications and LGPL or BSDL for libraries. Look at the documentation,"
 " the source code or the Xfce website (http://www.xfce.org) for more "
 "information."
-msgstr ""
+msgstr "Компонентите на Xfce се разпространяват под свободен лиценз GPL за програмите LGPL или BSDL за библиотеките. Подробности, можете да намерите в документацията, в изходният код и на уеб сайт  (http://www.xfce.org) за повече информация."
 
 #: ../xfce4-about/main.c:149
 msgid "Thank you for your interest in Xfce."
-msgstr "Grazas polo seu interese en Xfce."
+msgstr "Благодарим ви за проявеният интерес към Xfce."
 
 #: ../xfce4-about/main.c:153
 msgid "The Xfce Development Team"
-msgstr "O equipo de desenvolvemento de Xfce"
+msgstr "Екипът по разработка на Xfce"
 
 #: ../xfce4-about/main.c:262
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
 "on <http://bugzilla.xfce.org> ."
-msgstr ""
+msgstr "Ако разберете за нещо, което липсва от този списък, моля, уведомете ни на <http://bugzilla.xfce.org> ."
 
 #: ../xfce4-about/main.c:266
 msgid "Thanks to all who helped making this software available!"
-msgstr "Grazas a todos os que axudaron a facer que este software estea dispoñíbel!"
+msgstr "Благодарим ви за помощта при осигуряването на програмното обезпечение!"
 
 #: ../xfce4-about/main.c:283
 msgid ""
 "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
-msgstr "Xfce 4 ten copyright de Olivier Fourdan (fourdan@xfce.org). Os diferentes compoñentes de teñen copyright dos seus respectivos autores."
+msgstr "Авторските права на Xfce 4 принадлежат на Olivier Fourdan (fourdan@xfce.org). Авторските права на другите компоненти принадлежат на техните автори."
 
 #: ../xfce4-about/main.c:288
 msgid ""
@@ -635,7 +635,7 @@ msgid ""
 "distributed under the terms of the GNU Library General Public License as "
 "published by the Free Software Foundation; either version 2 of the License, "
 "or (at your option) any later version."
-msgstr "Os paquetes libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs e exo distribúense baixo os termos da GNU Library General Public License tal como a publica a Free Software Foundation; xa sexa a versión 2 da Licenza, ou (se o desexa) calquera versión posterior."
+msgstr "Програмното обезпечение на libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs и exo се разпространяват под условията GNU Library General Public License версии 2 или по- нова."
 
 #: ../xfce4-about/main.c:295
 msgid ""
@@ -644,99 +644,99 @@ msgid ""
 "under the terms of the GNU General Public License as published by the Free "
 "Software Foundation; either version 2 of the License, or (at your option) "
 "any later version."
-msgstr "Os paquetes thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfce-utils, xfconf, xfdesktop e xfwm4 distribúense baixo os termos da GNU General Public License tal como a publica a Free Software Foundation; xa sexa a versión 2 da Licenza, ou (se o desexa) calquera versión posterior."
+msgstr "Програмното обезпечение за thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfce-utils, xfconf, xfdesktop и xfwm4 се разпространява под условията GNU General Public License версии 2 или по- нова."
 
 #: ../xfce4-about/main.c:442
 #, c-format
 msgid "Type '%s --help' for usage information."
-msgstr ""
+msgstr "Напишете '%s --help' за да получите потребителска информация."
 
 #: ../xfce4-about/main.c:448
 msgid "Unable to initialize GTK+."
-msgstr "Non foi posíbel inicializar GTK+."
+msgstr "Не може да бъде инициализирана GTK+."
 
 #: ../xfce4-about/main.c:457
 msgid "The Xfce development team. All rights reserved."
-msgstr "O equipo de desenvolvemento de Xfce. Todos os dereitos reservados."
+msgstr "Екипът по разработката на Xfce. Всички права са запазени."
 
 #: ../xfce4-about/main.c:458
 #, c-format
 msgid "Please report bugs to <%s>."
-msgstr "Por favor, comunique os fallos a <%s>."
+msgstr "Моля, докладвайте за грешки на <%s>."
 
 #. I18N: date/time the translators list was updated
 #: ../xfce4-about/main.c:461
 #, c-format
 msgid "Translators list from %s."
-msgstr "Lista de tradutores de %s."
+msgstr "Списък на преводачите от %s."
 
 #: ../xfce4-about/main.c:471
 msgid "Failed to load interface"
-msgstr "Produciuse un erro ao cargar a interface"
+msgstr "Не може да бъде зареден интерфейс"
 
 #. I18N: first %s will be replaced by the version, second by
 #. * the name of the distribution (--with-vendor-info=NAME)
 #: ../xfce4-about/main.c:485
 #, c-format
 msgid "Version %s, distributed by %s"
-msgstr "Versión %s, distribuída por %s"
+msgstr "Версия %s разпространявана от %s"
 
 #. I18N: %s will be replaced by the Xfce version number
 #: ../xfce4-about/main.c:489
 #, c-format
 msgid "Version %s"
-msgstr "Versión %s"
+msgstr "Версия %s"
 
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
 #. },
 #: ../xfce4-about/contributors.h:121
 msgid "Core developers"
-msgstr "Desenvolvedores principais"
+msgstr "Основни разработчици"
 
 #: ../xfce4-about/contributors.h:124
 msgid "Active contributors"
-msgstr "Colaboradores activos"
+msgstr "Активни участници"
 
 #: ../xfce4-about/contributors.h:127
 msgid "Servers maintained by"
-msgstr "Servidores mantidos por"
+msgstr "Поддържащи сървъри:"
 
 #: ../xfce4-about/contributors.h:130
 msgid "Goodies supervision"
-msgstr "Supervisións dos extras"
+msgstr "Надзор над екстрите"
 
 #: ../xfce4-about/contributors.h:133
 msgid "Translations supervision"
-msgstr "Supervisión da tradución"
+msgstr "Отговорници за превода"
 
 #: ../xfce4-about/contributors.h:136
 msgid "Translators"
-msgstr "Tradutores"
+msgstr "Преводачи"
 
 #: ../xfce4-about/contributors.h:139
 msgid "Previous contributors"
-msgstr "Anteriores colaboradores"
+msgstr "Предишни участници"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:1
 msgid "About Xfce"
-msgstr "Sobre Xfce"
+msgstr "Относно Xfce"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:2
 msgid "Information about the Xfce Desktop Environment"
-msgstr "Información sobre o ambiente de escritorio Xfce"
+msgstr "Информация за графична среда Xfce"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:1
 msgid "About the Xfce Desktop Environment"
-msgstr "Sobre o equipo de desenvolvemento de Xfce"
+msgstr "Относно графична среда Xfce"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:2
 msgid "About"
-msgstr "Sobre"
+msgstr "Относно"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:3
 msgid "Credits"
-msgstr "Créditos"
+msgstr "Благодарности"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:4
 msgid "GPL"
@@ -752,8 +752,8 @@ msgstr "BSD"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:7
 msgid "Copyright"
-msgstr "Copyright"
+msgstr "Авторски права"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:8
 msgid "License"
-msgstr "Licenza"
+msgstr "Лиценз"

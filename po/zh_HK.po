@@ -3,71 +3,71 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Leandro Regueiro <leandro.regueiro@gmail.com>, 2008-2010,2013
+# Cheng-Chia Tseng <pswo10680@gmail.com>, 2010
 msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-07-02 22:33+0200\n"
-"PO-Revision-Date: 2013-11-19 11:04+0000\n"
-"Last-Translator: Leandro Regueiro <leandro.regueiro@gmail.com>\n"
-"Language-Team: Galician (http://www.transifex.com/projects/p/xfce/language/gl/)\n"
+"PO-Revision-Date: 2013-12-15 09:13+0000\n"
+"Last-Translator: Walter Cheuk <wwycheuk@gmail.com>\n"
+"Language-Team: Chinese (Hong Kong) (http://www.transifex.com/projects/p/xfce/language/zh_HK/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: gl\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: zh_HK\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../libxfce4ui/xfce-dialogs.c:98
 msgid "Failed to open web browser for online documentation"
-msgstr "Produciuse un erro ao abrir o navegador web para consultar a documentación en Internet"
+msgstr "未能開啟網頁瀏覽器以供線上文件使用"
 
 #: ../libxfce4ui/xfce-dialogs.c:213
 #, c-format
 msgid "Do you want to read the %s manual online?"
-msgstr "Desexa ler o manual de %s en Internet?"
+msgstr "想要線上閱讀 %s 手冊嗎？"
 
 #: ../libxfce4ui/xfce-dialogs.c:215
 msgid "Do you want to read the manual online?"
-msgstr "Desexa ler o manual en Internet?"
+msgstr "想要線上閱讀這份手冊嗎？"
 
 #: ../libxfce4ui/xfce-dialogs.c:218
 msgid "Online Documentation"
-msgstr "Documentación en Internet"
+msgstr "線上文件"
 
 #: ../libxfce4ui/xfce-dialogs.c:221
 msgid ""
 "You will be redirected to the documentation website where the help pages are"
 " maintained and translated."
-msgstr "Redirixiráselle ao sitio web de documentación no que se manteñen e traducen as páxinas de axuda."
+msgstr "您會被重新引導至我們保存和翻譯說明文件的網站。"
 
 #: ../libxfce4ui/xfce-dialogs.c:225
 msgid "_Read Online"
-msgstr "Le_r en Internet"
+msgstr "線上閱讀(_R)"
 
 #: ../libxfce4ui/xfce-dialogs.c:237
 msgid "_Always go directly to the online documentation"
-msgstr "Ir _sempre directamente á documentación en Internet"
+msgstr "必定直接前往線上說明文件(_A)"
 
 #: ../libxfce4ui/xfce-dialogs.c:281
 msgid "Information"
-msgstr "Información "
+msgstr "資訊"
 
 #: ../libxfce4ui/xfce-dialogs.c:314
 msgid "Warning"
-msgstr "Advertencia"
+msgstr "警告"
 
 #: ../libxfce4ui/xfce-dialogs.c:348
 msgid "Error"
-msgstr "Erro"
+msgstr "錯誤"
 
 #: ../libxfce4ui/xfce-dialogs.c:399
 msgid "Question"
-msgstr "Pregunta"
+msgstr "疑問"
 
 #: ../libxfce4ui/xfce-sm-client.c:1424
 msgid "Session management client ID"
-msgstr ""
+msgstr "工作階段管理程式用戶端 ID"
 
 #: ../libxfce4ui/xfce-sm-client.c:1424
 msgid "ID"
@@ -75,25 +75,25 @@ msgstr "ID"
 
 #: ../libxfce4ui/xfce-sm-client.c:1425
 msgid "Disable session management"
-msgstr ""
+msgstr "停用工作階段管理"
 
 #: ../libxfce4ui/xfce-sm-client.c:1435
 msgid "Session management options"
-msgstr ""
+msgstr "工作階段管理選項"
 
 #: ../libxfce4ui/xfce-sm-client.c:1436
 msgid "Show session management options"
-msgstr ""
+msgstr "顯示工作階段管理選項"
 
 #: ../libxfce4ui/xfce-sm-client.c:1611
 #, c-format
 msgid "Failed to connect to the session manager: %s"
-msgstr "Produciuse un erro ao conectar co xestor de sesións: %s"
+msgstr "未能連接工作階段管理員：%s"
 
 #: ../libxfce4ui/xfce-sm-client.c:1617
 #, c-format
 msgid "Session manager did not return a valid client id"
-msgstr "O xestor de sesións non devolveu ningún id de cliente válido"
+msgstr "工作階段管理員沒有傳回有效的用戶端 ID"
 
 #. print warning for user
 #: ../libxfce4ui/xfce-spawn.c:413
@@ -101,14 +101,14 @@ msgstr "O xestor de sesións non devolveu ningún id de cliente válido"
 msgid ""
 "Working directory \"%s\" does not exist. It won't be used when spawning "
 "\"%s\"."
-msgstr "O directorio de traballo \"%s\" non existe. Non se usará ao iniciar \"%s\"."
+msgstr "工作目錄「%s」不存在。當建立「%s」時不會用。"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 #, c-format
 msgid ""
 "This shortcut is already being used for the action '%s'. Which action do you"
 " want to use?"
-msgstr ""
+msgstr "「%s」動作用了此捷徑鍵。想要使用何動作？"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:54
 #: ../libxfce4kbd-private/xfce-shortcuts.c:57
@@ -116,7 +116,7 @@ msgstr ""
 #: ../libxfce4kbd-private/xfce-shortcuts.c:63
 #, c-format
 msgid "Use '%s'"
-msgstr "Usar '%s'"
+msgstr "使用「%s」"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:54
 #: ../libxfce4kbd-private/xfce-shortcuts.c:57
@@ -124,7 +124,7 @@ msgstr "Usar '%s'"
 #: ../libxfce4kbd-private/xfce-shortcuts.c:63
 #, c-format
 msgid "Keep '%s'"
-msgstr "Manter '%s'"
+msgstr "保留「%s」"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
 #: ../libxfce4kbd-private/xfce-shortcuts.c:59
@@ -132,470 +132,470 @@ msgstr "Manter '%s'"
 msgid ""
 "This shortcut is already being used for the command '%s'. Which action do "
 "you want to use?"
-msgstr "Este atallo xa está sendo usado pola orde '%s'. Que acción desexa usar?"
+msgstr "「%s」指令已經用了此捷徑。想要使用何動作？"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 #, c-format
 msgid ""
 "This shortcut is already being used by the action '%s'. Which action do you "
 "want to use?"
-msgstr ""
+msgstr "此捷徑鍵正給動作「%s」使用。您想要使用何動作？"
 
 #. This shortcut already exists in the provider, we don't want it twice
 #. Warn the user
 #: ../libxfce4kbd-private/xfce-shortcuts.c:110
 msgid "Please use another key combination."
-msgstr ""
+msgstr "請使用另一個按鍵組合。"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:111
 #, c-format
 msgid "%s already triggers this action."
-msgstr ""
+msgstr "%s 已會觸發此動作。"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:116
 #, c-format
 msgid "Conflicting actions for %s"
-msgstr "Accións en conflito para %s"
+msgstr "%s 的動作發生衝突"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:176
 msgid "This shortcut is already being used for something else."
-msgstr "Este atallo xa está sendo usado por algo."
+msgstr "此捷徑正被其它動作使用。"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:209
 msgid "Window Manager Action Shortcut"
-msgstr ""
+msgstr "視窗管理程式動作捷徑鍵"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:212
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:226
 msgid "action"
-msgstr "acción"
+msgstr "動作"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:216
 msgid "Command Shortcut"
-msgstr "Atallo de orde"
+msgstr "指令捷徑鍵"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:219
 msgid "command"
-msgstr "orde"
+msgstr "指令"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:223
 msgid "Shortcut"
-msgstr "Atallo"
+msgstr "捷徑鍵"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:267
 #, c-format
 msgid "Press now the keyboard keys you want to use to trigger the %s '%s'."
-msgstr ""
+msgstr "請現在按下想要用來觸發 %s「%s」的鍵盤按鍵。"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:291
 msgid "Shortcut:"
-msgstr "Atallo:"
+msgstr "捷徑鍵："
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:296
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:475
 msgid "No keys pressed yet, proceed."
-msgstr ""
+msgstr "未按下任何按鍵，繼續。"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:378
 msgid "Could not grab the keyboard."
-msgstr ""
+msgstr "無法抓取鍵盤。"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:36
 msgid "Window operations menu"
-msgstr "Menú de operacións da xanela"
+msgstr "視窗操作選單"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:37
 msgid "Up"
-msgstr "Arriba"
+msgstr "上"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:38
 msgid "Down"
-msgstr "Abaixo"
+msgstr "下"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:39
 msgid "Left"
-msgstr "Esquerda"
+msgstr "左"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:40
 msgid "Right"
-msgstr "Dereita"
+msgstr "右"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:41
 msgid "Cancel"
-msgstr "Cancelar"
+msgstr "取消"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:42
 msgid "Cycle windows"
-msgstr "Percorrer as xanelas"
+msgstr "循環視窗"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:43
 msgid "Cycle windows (Reverse)"
-msgstr "Percorrer as xanelas (Ao revés)"
+msgstr "循環視窗 (反向)"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:44
 msgid "Switch window for same application"
-msgstr "Cambiar de xanela do mesmo aplicativo"
+msgstr "切換同一個應用程式的視窗"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:45
 msgid "Switch application"
-msgstr "Cambiar de aplicativo"
+msgstr "切換應用程式"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:46
 msgid "Close window"
-msgstr "Pechar a xanela"
+msgstr "關閉視窗"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:47
 msgid "Maximize window horizontally"
-msgstr "Maximizar a xanela horizontalmente"
+msgstr "水平的最大化視窗"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:48
 msgid "Maximize window vertically"
-msgstr "Maximizar a xanela verticalmente"
+msgstr "垂直的最大化視窗"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:49
 msgid "Maximize window"
-msgstr "Maximizar a xanela"
+msgstr "最大化視窗"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:50
 msgid "Hide window"
-msgstr "Ocultar a xanela"
+msgstr "隱藏視窗"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:51
 msgid "Move window"
-msgstr "Mover a xanela"
+msgstr "移動視窗"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:52
 msgid "Resize window"
-msgstr "Redimensionar a xanela"
+msgstr "重新調整視窗大小"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:53
 msgid "Shade window"
-msgstr "Ensombrecer a xanela"
+msgstr "捲起視窗"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:54
 msgid "Stick window"
-msgstr "Fixar a xanela"
+msgstr "貼連視窗"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:55
 msgid "Raise window"
-msgstr "Elevar a xanela"
+msgstr "提升視窗"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:56
 msgid "Lower window"
-msgstr "Baixar a xanela"
+msgstr "降低視窗"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:57
 msgid "Raise or lower window"
-msgstr "Elevar ou baixar a xanela"
+msgstr "提升或降低視窗"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:58
 msgid "Fill window"
-msgstr "Ampliar a xanela"
+msgstr "填滿視窗"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:59
 msgid "Fill window horizontally"
-msgstr "Ampliar a xanela horizontalmente"
+msgstr "水平方向填滿視窗"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:60
 msgid "Fill window vertically"
-msgstr "Ampliar a xanela verticalmente"
+msgstr "垂直方向填滿視窗"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:61
 msgid "Toggle above"
-msgstr "Manter por enriba"
+msgstr "切換至上方"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:62
 msgid "Toggle fullscreen"
-msgstr "Activar a pantalla completa"
+msgstr "切換全螢幕模式"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:63
 msgid "Move window to upper workspace"
-msgstr "Mover a xanela ao espazo de traballo superior"
+msgstr "將視窗移至上方工作區"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:64
 msgid "Move window to bottom workspace"
-msgstr "Mover a xanela ao espazo de traballo inferior"
+msgstr "將視窗移至下方工作區"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:65
 msgid "Move window to left workspace"
-msgstr "Mover a xanela ao espazo de traballo da esquerda"
+msgstr "將視窗移至左方工作區"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:66
 msgid "Move window to right workspace"
-msgstr "Mover a xanela ao espazo de traballo da dereita"
+msgstr "將視窗移至右方工作區"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:67
 msgid "Move window to previous workspace"
-msgstr "Mover a xanela ao espazo de traballo anterior"
+msgstr "將視窗移至上一個工作區"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:68
 msgid "Move window to next workspace"
-msgstr "Mover a xanela ao seguinte espazo de traballo"
+msgstr "將視窗移至下一個工作區"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:69
 msgid "Move window to workspace 1"
-msgstr "Mover a xanela ao espazo de traballo 1"
+msgstr "將視窗移至工作區 1"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:70
 msgid "Move window to workspace 2"
-msgstr "Mover a xanela ao espazo de traballo 2"
+msgstr "將視窗移至工作區 2"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:71
 msgid "Move window to workspace 3"
-msgstr "Mover a xanela ao espazo de traballo 3"
+msgstr "將視窗移至工作區 3"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:72
 msgid "Move window to workspace 4"
-msgstr "Mover a xanela ao espazo de traballo 4"
+msgstr "將視窗移至工作區 4"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:73
 msgid "Move window to workspace 5"
-msgstr "Mover a xanela ao espazo de traballo 5"
+msgstr "將視窗移至工作區 5"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:74
 msgid "Move window to workspace 6"
-msgstr "Mover a xanela ao espazo de traballo 6"
+msgstr "將視窗移至工作區 6"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:75
 msgid "Move window to workspace 7"
-msgstr "Mover a xanela ao espazo de traballo 7"
+msgstr "將視窗移至工作區 7"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:76
 msgid "Move window to workspace 8"
-msgstr "Mover a xanela ao espazo de traballo 8"
+msgstr "將視窗移至工作區 8"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:77
 msgid "Move window to workspace 9"
-msgstr "Mover a xanela ao espazo de traballo 9"
+msgstr "將視窗移至工作區 9"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:78
 msgid "Move window to workspace 10"
-msgstr "Mover a xanela ao espazo de traballo 10"
+msgstr "將視窗移至工作區 10"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:79
 msgid "Move window to workspace 11"
-msgstr "Mover a xanela ao espazo de traballo 11"
+msgstr "將視窗移至工作區 11"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:80
 msgid "Move window to workspace 12"
-msgstr "Mover a xanela ao espazo de traballo 12"
+msgstr "將視窗移至工作區 12"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:81
 msgid "Tile window to the top"
-msgstr "Situar a xanela na cima"
+msgstr "將視窗鋪在頂部"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:82
 msgid "Tile window to the bottom"
-msgstr "Situar a xanela no fondo"
+msgstr "將視窗鋪在底部"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:83
 msgid "Tile window to the left"
-msgstr "Situar a xanela cara á esquerda"
+msgstr "將視窗鋪在左方"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:84
 msgid "Tile window to the right"
-msgstr "Situar a xanela cara á dereita"
+msgstr "將視窗鋪在右方"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:85
 msgid "Show desktop"
-msgstr "Mostrar o escritorio"
+msgstr "顯示桌面"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:86
 msgid "Upper workspace"
-msgstr "Espazo de traballo superior"
+msgstr "上方工作區"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:87
 msgid "Bottom workspace"
-msgstr "Espazo de traballo inferior"
+msgstr "下方工作區"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:88
 msgid "Left workspace"
-msgstr "Espazo de traballo da esquerda"
+msgstr "左方工作區"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:89
 msgid "Right workspace"
-msgstr "Espazo de traballo da dereita"
+msgstr "右方工作區"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:90
 msgid "Previous workspace"
-msgstr "Espazo de traballo anterior"
+msgstr "上一個工作區"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:91
 msgid "Next workspace"
-msgstr "Seguinte espazo de traballo"
+msgstr "下一個工作區"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:92
 msgid "Workspace 1"
-msgstr "Espazo de traballo 1"
+msgstr "工作區 1"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:93
 msgid "Workspace 2"
-msgstr "Espazo de traballo 2"
+msgstr "工作區 2"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:94
 msgid "Workspace 3"
-msgstr "Espazo de traballo 3"
+msgstr "工作區 3"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:95
 msgid "Workspace 4"
-msgstr "Espazo de traballo 4"
+msgstr "工作區 4"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:96
 msgid "Workspace 5"
-msgstr "Espazo de traballo 5"
+msgstr "工作區 5"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:97
 msgid "Workspace 6"
-msgstr "Espazo de traballo 6"
+msgstr "工作區 6"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:98
 msgid "Workspace 7"
-msgstr "Espazo de traballo 7"
+msgstr "工作區 7"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:99
 msgid "Workspace 8"
-msgstr "Espazo de traballo 8"
+msgstr "工作區 8"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:100
 msgid "Workspace 9"
-msgstr "Espazo de traballo 9"
+msgstr "工作區 9"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:101
 msgid "Workspace 10"
-msgstr "Espazo de traballo 10"
+msgstr "工作區 10"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:102
 msgid "Workspace 11"
-msgstr "Espazo de traballo 11"
+msgstr "工作區 11"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:103
 msgid "Workspace 12"
-msgstr "Espazo de traballo 12"
+msgstr "工作區 12"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:104
 msgid "Add workspace"
-msgstr "Engadir un espazo de traballo"
+msgstr "新增工作區"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:105
 msgid "Add adjacent workspace"
-msgstr "Engadir un espazo de traballo adxacente"
+msgstr "加入相鄰工作區"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:106
 msgid "Delete last workspace"
-msgstr "Eliminar o último espazo de traballo"
+msgstr "刪除最後一個工作區"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:107
 msgid "Delete active workspace"
-msgstr "Eliminar o espazo de traballo activo"
+msgstr "刪除活動中的工作區"
 
 #: ../glade/libxfce4ui.xml.in.h:1
 msgid "Titled Dialog"
-msgstr "Diálogo con título"
+msgstr "有標題的對話窗"
 
 #: ../glade/libxfce4ui.xml.in.h:2
 msgid "Subtitle"
-msgstr "Subtítulo"
+msgstr "子標題"
 
 #: ../glade/libxfce4ui.xml.in.h:3
 msgid "Xfce 4 Widgets"
-msgstr "Xfce 4 Widgets"
+msgstr "Xfce 4 器件"
 
 #: ../xfce4-about/main.c:52
 msgid "Version information"
-msgstr "Información da versión"
+msgstr "版本資訊"
 
 #: ../xfce4-about/main.c:70
 msgid "Window Manager"
-msgstr "Xestor de xanelas"
+msgstr "視窗管理員"
 
 #: ../xfce4-about/main.c:71
 msgid "Handles the placement of windows on the screen."
-msgstr ""
+msgstr "處理如何於螢幕置放視窗。"
 
 #: ../xfce4-about/main.c:74
 msgid "Panel"
-msgstr "Panel"
+msgstr "面板"
 
 #: ../xfce4-about/main.c:75
 msgid ""
 "Program launchers, window buttons, applications menu, workspace switcher and"
 " more."
-msgstr ""
+msgstr "程式啟動器、視窗按鈕、應用程式選單、工作區切換與其他。"
 
 #: ../xfce4-about/main.c:79
 msgid "Desktop Manager"
-msgstr ""
+msgstr "視窗管理員"
 
 #: ../xfce4-about/main.c:80
 msgid ""
 "Sets the background color or image with optional application menu or icons "
 "for minimized applications or launchers, devices and folders."
-msgstr ""
+msgstr "設定背景色彩，或選用應用程式選單的影像，或最小化應用程式或啟動器、裝置、資料夾的圖示。"
 
 #: ../xfce4-about/main.c:84
 msgid "File Manager "
-msgstr "Xestor de ficheiros"
+msgstr "檔案管理員"
 
 #: ../xfce4-about/main.c:85
 msgid ""
 "A modern file manager for the Unix/Linux desktop, aiming to be easy-to-use "
 "and fast."
-msgstr "Un xestor de ficheiros moderno para escritorios Unix/Linux, que intenta ser fácil de usar e rápido."
+msgstr "Unix/Linux 桌面的現代化檔案管理員，旨在易用、快速。"
 
 #: ../xfce4-about/main.c:89
 msgid "Session Manager"
-msgstr "Xestor de sesións"
+msgstr "工作階段管理員"
 
 #: ../xfce4-about/main.c:90
 msgid ""
 "Restores your session on startup and allows you to shutdown the computer "
 "from Xfce."
-msgstr "Restaura a sesión durante o inicio e permítelle apagar o computador desde Xfce."
+msgstr "啟動時還原的工作階段，並讓你可以從 Xfce 關機。"
 
 #: ../xfce4-about/main.c:94
 msgid "Setting System"
-msgstr "Configuración do sistema"
+msgstr "設定系統"
 
 #: ../xfce4-about/main.c:95
 msgid ""
 "Configuration system to control various aspects of the desktop like "
 "appearance, display, keyboard and mouse settings."
-msgstr "Sistema de configuración para controlar diversos aspectos do escritorio como a configuración da aparencia, da visualización, do teclado e do rato."
+msgstr "控制多項桌面層面的設定系統，例如外觀、顯示器、鍵盤、滑鼠等設定。"
 
 #: ../xfce4-about/main.c:99
 msgid "Application Finder"
-msgstr "Buscador de aplicativos"
+msgstr "應用程式協尋器"
 
 #: ../xfce4-about/main.c:100
 msgid ""
 "Shows the applications installed on your system in categories, so you can "
 "quickly find and launch them."
-msgstr "Mostra os aplicativos instalados no sistema mediante categorías de xeito que se fáciles de atopar e de iniciar."
+msgstr "將安裝於系統的應用程式分類顯示，這樣才能快速尋找並啟動。"
 
 #: ../xfce4-about/main.c:104
 msgid "Settings Daemon"
-msgstr "Daemon de configuración"
+msgstr "設定幕後程式"
 
 #: ../xfce4-about/main.c:105
 msgid "D-Bus-based configuration storage system."
-msgstr "Sistema de almacenamento da configuración baseado en D-Bus."
+msgstr "以 D-Bus 為基礎的設定儲存系統。"
 
 #: ../xfce4-about/main.c:112
 msgid ""
 "Xfce is a collection of programs that together provide a full-featured "
 "desktop environment. The following programs are part of the Xfce core:"
-msgstr "Xfce é unha colección de programas que xuntos fornecen un ambiente de escritorio con moitas características. Os seguintes programas forman parte do núcleo de Xfce:"
+msgstr "Xfce 是程式的集合，這些程式一同提供多功能的桌面環境。以下程式為 Xfce 的核心部份："
 
 #: ../xfce4-about/main.c:136
 msgid ""
 "Xfce is also a development platform providing several libraries, that help "
 "programmers create applications that fit in well with the desktop "
 "environment."
-msgstr "Xfce tamén é unha plataforma de desenvolvemento que fornece varias bibliotecas que lle axudan aos programadores a crear aplicativos que se integren ben co ambiente de escritorio."
+msgstr "Xfce 也是提供多種函式庫的開發平台，有助程式開發者建立適用於本桌面環境的應用程式。"
 
 #: ../xfce4-about/main.c:142
 msgid ""
@@ -603,31 +603,31 @@ msgid ""
 " for applications and LGPL or BSDL for libraries. Look at the documentation,"
 " the source code or the Xfce website (http://www.xfce.org) for more "
 "information."
-msgstr ""
+msgstr "Xfce 部件是以自由或開源的授權條款提供授權；GPL 或 BSDL 適用於應用程式，而 LGPL 或 BSDL 適用於函式庫。請查看文件、源碼或 Xfce 網站 (http://www.xfce.org) 取得更多資訊。"
 
 #: ../xfce4-about/main.c:149
 msgid "Thank you for your interest in Xfce."
-msgstr "Grazas polo seu interese en Xfce."
+msgstr "感謝您對 Xfce 有興趣。"
 
 #: ../xfce4-about/main.c:153
 msgid "The Xfce Development Team"
-msgstr "O equipo de desenvolvemento de Xfce"
+msgstr "Xfce 開發團隊"
 
 #: ../xfce4-about/main.c:262
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
 "on <http://bugzilla.xfce.org> ."
-msgstr ""
+msgstr "若您發現清單中有些人沒有列出來，請不要猶豫在 <http://bugzilla.xfce.org>  提交一個臭蟲回報。"
 
 #: ../xfce4-about/main.c:266
 msgid "Thanks to all who helped making this software available!"
-msgstr "Grazas a todos os que axudaron a facer que este software estea dispoñíbel!"
+msgstr "感謝所有幫助製作出這個軟件的人！"
 
 #: ../xfce4-about/main.c:283
 msgid ""
 "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
-msgstr "Xfce 4 ten copyright de Olivier Fourdan (fourdan@xfce.org). Os diferentes compoñentes de teñen copyright dos seus respectivos autores."
+msgstr "Xfce 4 版權所有者為 Olivier Fourdan (fourdan@xfce.org)。不同的部件是由其各自的作者擁有其版權。"
 
 #: ../xfce4-about/main.c:288
 msgid ""
@@ -635,7 +635,7 @@ msgid ""
 "distributed under the terms of the GNU Library General Public License as "
 "published by the Free Software Foundation; either version 2 of the License, "
 "or (at your option) any later version."
-msgstr "Os paquetes libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs e exo distribúense baixo os termos da GNU Library General Public License tal como a publica a Free Software Foundation; xa sexa a versión 2 da Licenza, ou (se o desexa) calquera versión posterior."
+msgstr "libxfce4ui、libxfcegui4、libxfce4util、thunar-vfs 與 exo 套件是基於 Free Software Foundation 發布的 GNU Library General Public License 授權條款給予授權；不管是該授權的第 2 版，或 (根據您自己選擇) 的後續版本都可以。"
 
 #: ../xfce4-about/main.c:295
 msgid ""
@@ -644,99 +644,99 @@ msgid ""
 "under the terms of the GNU General Public License as published by the Free "
 "Software Foundation; either version 2 of the License, or (at your option) "
 "any later version."
-msgstr "Os paquetes thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfce-utils, xfconf, xfdesktop e xfwm4 distribúense baixo os termos da GNU General Public License tal como a publica a Free Software Foundation; xa sexa a versión 2 da Licenza, ou (se o desexa) calquera versión posterior."
+msgstr "thunar、xfce4-appfinder、xfce-panel、xfce4-session、xfce4-settings、xfce-utils、xfconf、xfdeskop 與 xfwm4 套件是基於 Free Software Foundation 發布的 GNU General Public License 授權條款給予授權；不管是該授權的第 2 版，或 (根據您自己選擇) 的後續版本都可以。"
 
 #: ../xfce4-about/main.c:442
 #, c-format
 msgid "Type '%s --help' for usage information."
-msgstr ""
+msgstr "請輸入「%s --help」以瞭解用法資訊。"
 
 #: ../xfce4-about/main.c:448
 msgid "Unable to initialize GTK+."
-msgstr "Non foi posíbel inicializar GTK+."
+msgstr "無法初始化 GTK+。"
 
 #: ../xfce4-about/main.c:457
 msgid "The Xfce development team. All rights reserved."
-msgstr "O equipo de desenvolvemento de Xfce. Todos os dereitos reservados."
+msgstr "Xfce 開發團隊。保留所有權利。"
 
 #: ../xfce4-about/main.c:458
 #, c-format
 msgid "Please report bugs to <%s>."
-msgstr "Por favor, comunique os fallos a <%s>."
+msgstr "請回報臭蟲至 <%s>。"
 
 #. I18N: date/time the translators list was updated
 #: ../xfce4-about/main.c:461
 #, c-format
 msgid "Translators list from %s."
-msgstr "Lista de tradutores de %s."
+msgstr "%s 的翻譯者清單。"
 
 #: ../xfce4-about/main.c:471
 msgid "Failed to load interface"
-msgstr "Produciuse un erro ao cargar a interface"
+msgstr "未能載入介面"
 
 #. I18N: first %s will be replaced by the version, second by
 #. * the name of the distribution (--with-vendor-info=NAME)
 #: ../xfce4-about/main.c:485
 #, c-format
 msgid "Version %s, distributed by %s"
-msgstr "Versión %s, distribuída por %s"
+msgstr "版本 %s，透過 %s 散布"
 
 #. I18N: %s will be replaced by the Xfce version number
 #: ../xfce4-about/main.c:489
 #, c-format
 msgid "Version %s"
-msgstr "Versión %s"
+msgstr "版本 %s"
 
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
 #. },
 #: ../xfce4-about/contributors.h:121
 msgid "Core developers"
-msgstr "Desenvolvedores principais"
+msgstr "核心開發者"
 
 #: ../xfce4-about/contributors.h:124
 msgid "Active contributors"
-msgstr "Colaboradores activos"
+msgstr "活躍的開發者"
 
 #: ../xfce4-about/contributors.h:127
 msgid "Servers maintained by"
-msgstr "Servidores mantidos por"
+msgstr "伺服器維護者："
 
 #: ../xfce4-about/contributors.h:130
 msgid "Goodies supervision"
-msgstr "Supervisións dos extras"
+msgstr "好物監督"
 
 #: ../xfce4-about/contributors.h:133
 msgid "Translations supervision"
-msgstr "Supervisión da tradución"
+msgstr "翻譯監督"
 
 #: ../xfce4-about/contributors.h:136
 msgid "Translators"
-msgstr "Tradutores"
+msgstr "翻譯者"
 
 #: ../xfce4-about/contributors.h:139
 msgid "Previous contributors"
-msgstr "Anteriores colaboradores"
+msgstr "之前的貢獻者"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:1
 msgid "About Xfce"
-msgstr "Sobre Xfce"
+msgstr "關於 Xfce"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:2
 msgid "Information about the Xfce Desktop Environment"
-msgstr "Información sobre o ambiente de escritorio Xfce"
+msgstr "有關 Xfce 桌面環境的資訊"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:1
 msgid "About the Xfce Desktop Environment"
-msgstr "Sobre o equipo de desenvolvemento de Xfce"
+msgstr "關於 Xfce 桌面環境"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:2
 msgid "About"
-msgstr "Sobre"
+msgstr "關於"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:3
 msgid "Credits"
-msgstr "Créditos"
+msgstr "鳴謝"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:4
 msgid "GPL"
@@ -752,8 +752,8 @@ msgstr "BSD"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:7
 msgid "Copyright"
-msgstr "Copyright"
+msgstr "版權所有"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:8
 msgid "License"
-msgstr "Licenza"
+msgstr "授權"

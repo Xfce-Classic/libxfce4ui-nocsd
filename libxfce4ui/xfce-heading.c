@@ -39,17 +39,29 @@
 #define XFCE_HEADING_ICON_SIZE  48
 
 
-static void         _xfce_heading_finalize       (GObject          *object);
-static void         _xfce_heading_realize        (GtkWidget        *widget);
-static void         _xfce_heading_size_request   (GtkWidget        *widget,
-                                                  GtkRequisition   *requisition);
-static void         _xfce_heading_style_set      (GtkWidget        *widget,
-                                                  GtkStyle         *previous_style);
-static gboolean     _xfce_heading_expose_event   (GtkWidget        *widget,
-                                                  GdkEventExpose   *event);
-static AtkObject   *_xfce_heading_get_accessible (GtkWidget        *widget);
-static PangoLayout *_xfce_heading_make_layout    (XfceHeading      *heading);
-static GdkPixbuf   *_xfce_heading_make_pixbuf    (XfceHeading      *heading);
+static void         _xfce_heading_finalize             (GObject          *object);
+static void         _xfce_heading_realize              (GtkWidget        *widget);
+static void         _xfce_heading_size_request         (GtkWidget        *widget,
+                                                        GtkRequisition   *requisition);
+#if GTK_CHECK_VERSION (3, 0, 0)
+static void         _xfce_heading_get_preferred_width  (GtkWidget        *widget,
+                                                        gint             *min,
+                                                        gint             *natural);
+static void         _xfce_heading_get_preferred_height (GtkWidget        *widget,
+                                                        gint             *min,
+                                                        gint             *natural);
+static gboolean     _xfce_heading_draw                 (GtkWidget        *widget,
+                                                        cairo_t          *ctx);
+#else
+static void         _xfce_heading_style_set            (GtkWidget        *widget,
+                                                        GtkStyle         *previous_style);
+static gboolean     _xfce_heading_expose_event         (GtkWidget        *widget,
+                                                        GdkEventExpose   *event);
+#endif
+static AtkObject   *_xfce_heading_get_accessible       (GtkWidget        *widget);
+static PangoLayout *_xfce_heading_make_layout          (XfceHeading      *heading);
+static GdkPixbuf   *_xfce_heading_make_pixbuf          (XfceHeading      *heading);
+
 
 
 
@@ -62,12 +74,12 @@ struct _XfceHeadingClass
 struct _XfceHeading
 {
   /*< private >*/
-  GtkWidget  __parent__;
+  GtkWidget       __parent__;
 
-  GdkPixbuf *icon;
-  gchar     *icon_name;
-  gchar     *subtitle;
-  gchar     *title;
+  GdkPixbuf       *icon;
+  gchar           *icon_name;
+  gchar           *subtitle;
+  gchar           *title;
 };
 
 
@@ -87,10 +99,16 @@ _xfce_heading_class_init (XfceHeadingClass *klass)
 
   gtkwidget_class = GTK_WIDGET_CLASS (klass);
   gtkwidget_class->realize = _xfce_heading_realize;
+  gtkwidget_class->get_accessible = _xfce_heading_get_accessible;
+#if GTK_CHECK_VERSION (3, 0, 0)
+  gtkwidget_class->get_preferred_width = _xfce_heading_get_preferred_width;
+  gtkwidget_class->get_preferred_height = _xfce_heading_get_preferred_height;
+  gtkwidget_class->draw = _xfce_heading_draw;
+#else
   gtkwidget_class->size_request = _xfce_heading_size_request;
   gtkwidget_class->style_set = _xfce_heading_style_set;
   gtkwidget_class->expose_event = _xfce_heading_expose_event;
-  gtkwidget_class->get_accessible = _xfce_heading_get_accessible;
+#endif
 }
 
 
@@ -99,7 +117,7 @@ static void
 _xfce_heading_init (XfceHeading *heading)
 {
   /* setup the widget parameters */
-  GTK_WIDGET_UNSET_FLAGS (heading, GTK_NO_WINDOW);
+  gtk_widget_set_has_window (GTK_WIDGET (heading), TRUE);
 }
 
 
@@ -125,34 +143,157 @@ _xfce_heading_finalize (GObject *object)
 static void
 _xfce_heading_realize (GtkWidget *widget)
 {
-  GdkWindowAttr attributes;
+  GdkWindowAttr  attributes;
+  GtkAllocation  allocation;
+  GdkWindow     *window;
 
   /* mark the widget as realized */
-  GTK_WIDGET_SET_FLAGS (widget, GTK_REALIZED);
+  gtk_widget_set_realized (widget, TRUE);
+  gtk_widget_get_allocation (widget, &allocation);
 
   /* setup the window attributes */
-  attributes.x = widget->allocation.x;
-  attributes.y = widget->allocation.y;
-  attributes.width = widget->allocation.width;
-  attributes.height = widget->allocation.height;
+  attributes.x = allocation.x;
+  attributes.y = allocation.y;
+  attributes.width = allocation.width;
+  attributes.height = allocation.height;
+#if !GTK_CHECK_VERSION (3, 0, 0)
+  attributes.colormap = gtk_widget_get_colormap (widget);
+#endif
   attributes.wclass = GDK_INPUT_OUTPUT;
   attributes.window_type = GDK_WINDOW_CHILD;
   attributes.visual = gtk_widget_get_visual (widget);
-  attributes.colormap = gtk_widget_get_colormap (widget);
   attributes.event_mask = gtk_widget_get_events (widget)
                         | GDK_EXPOSURE_MASK;
 
+#if GTK_CHECK_VERSION (3, 0, 0)
   /* allocate the widget window */
-  widget->window = gdk_window_new (gtk_widget_get_parent_window (widget), &attributes,
-                                   GDK_WA_X | GDK_WA_Y | GDK_WA_VISUAL | GDK_WA_COLORMAP);
-  gdk_window_set_user_data (widget->window, widget);
+  window = gdk_window_new (gtk_widget_get_parent_window (widget), &attributes,
+                           GDK_WA_X | GDK_WA_Y | GDK_WA_VISUAL);
+  gtk_widget_set_window (widget, window);
+  gdk_window_set_user_data (window, widget);
+#else
+  /* allocate the widget window */
+  window = gdk_window_new (gtk_widget_get_parent_window (widget), &attributes,
+                           GDK_WA_X | GDK_WA_Y | GDK_WA_VISUAL | GDK_WA_COLORMAP);
+  gtk_widget_set_window (widget, window);
+  gdk_window_set_user_data (window, widget);
 
   /* connect the style to the window */
-  widget->style = gtk_style_attach (widget->style, widget->window);
+  gtk_widget_style_attach (widget);
 
   /* set background color (using the base color) */
-  gdk_window_set_background (widget->window, &widget->style->base[GTK_STATE_NORMAL]);
+  gdk_window_set_background (gtk_widget_get_window (widget),
+                             &gtk_widget_get_style (widget)->base[GTK_STATE_NORMAL]);
+#endif
 }
+
+
+
+#if GTK_CHECK_VERSION (3, 0, 0)
+static void
+_xfce_heading_get_preferred_width (GtkWidget *widget,
+                                   gint      *min,
+                                   gint      *natural)
+{
+  GtkRequisition requisition;
+
+  _xfce_heading_size_request (widget, &requisition);
+
+  *min = *natural = requisition.width;
+}
+
+
+
+static void
+_xfce_heading_get_preferred_height (GtkWidget *widget,
+                                    gint      *min,
+                                    gint      *natural)
+{
+
+  GtkRequisition requisition;
+
+  _xfce_heading_size_request (widget, &requisition);
+
+  *min = *natural = requisition.height;
+}
+
+
+
+static gboolean
+_xfce_heading_draw (GtkWidget *widget,
+                    cairo_t   *ctx)
+{
+  XfceHeading     *heading = XFCE_HEADING (widget);
+  PangoLayout     *layout;
+  GdkPixbuf       *pixbuf;
+  gboolean         rtl;
+  gint             width;
+  gint             height;
+  gint             x;
+  gint             y;
+  GtkAllocation    allocation;
+  GtkStyleContext *context;
+
+  gtk_widget_get_allocation (widget, &allocation);
+
+  context = gtk_widget_get_style_context (widget);
+
+  gtk_style_context_save (context);
+  gtk_style_context_add_class (context, GTK_STYLE_CLASS_FRAME);
+
+  /* check if we should render from right to left */
+  rtl = (gtk_widget_get_direction (widget) == GTK_TEXT_DIR_RTL);
+
+  /* determine the initial horizontal position */
+  x = (rtl ? allocation.width - XFCE_HEADING_BORDER : XFCE_HEADING_BORDER);
+
+  gtk_render_background (context, ctx,
+                         allocation.x, allocation.y,
+                         allocation.x + allocation.width,
+                         allocation.y + allocation.height);
+
+  /* check if we have a pixbuf to render */
+  pixbuf = _xfce_heading_make_pixbuf (heading);
+  if (G_LIKELY (pixbuf != NULL))
+    {
+      /* determine the pixbuf dimensions */
+      width = gdk_pixbuf_get_width (pixbuf);
+      height = gdk_pixbuf_get_height (pixbuf);
+
+      /* determine the vertical position */
+      y = (allocation.height - height) / 2;
+
+      gtk_render_icon (context, ctx,
+                       pixbuf,
+                       rtl ? x - width : x,
+                       y);
+
+      /* release the pixbuf */
+      g_object_unref (G_OBJECT (pixbuf));
+
+      /* advance the horizontal position */
+      x += (rtl ? -1 : 1) * (width + XFCE_HEADING_SPACING);
+    }
+
+  /* generate the title layout */
+  layout = _xfce_heading_make_layout (heading);
+  pango_layout_get_pixel_size (layout, &width, &height);
+
+  /* determine the vertical position */
+  y = (allocation.height - height) / 2;
+
+  gtk_render_layout (context, ctx,
+                     rtl ? x - width : x, y,
+                     layout);
+
+  /* release the layout */
+  g_object_unref (G_OBJECT (layout));
+
+  gtk_style_context_restore (context);
+
+  return FALSE;
+}
+#endif
 
 
 
@@ -193,15 +334,17 @@ _xfce_heading_size_request (GtkWidget      *widget,
 
 
 
+#if !GTK_CHECK_VERSION (3, 0, 0)
 static void
 _xfce_heading_style_set (GtkWidget *widget,
                          GtkStyle  *previous_style)
 {
   /* check if we're already realized */
-  if (GTK_WIDGET_REALIZED (widget))
+  if (gtk_widget_get_realized (widget))
     {
       /* set background color (using the base color) */
-      gdk_window_set_background (widget->window, &widget->style->base[GTK_STATE_NORMAL]);
+      gdk_window_set_background (gtk_widget_get_window (widget),
+                                 &gtk_widget_get_style (widget)->base[GTK_STATE_NORMAL]);
     }
 }
 
@@ -211,20 +354,24 @@ static gboolean
 _xfce_heading_expose_event (GtkWidget      *widget,
                             GdkEventExpose *event)
 {
-  XfceHeading *heading = XFCE_HEADING (widget);
-  PangoLayout *layout;
-  GdkPixbuf   *pixbuf;
-  gboolean     rtl;
-  gint         width;
-  gint         height;
-  gint         x;
-  gint         y;
+  XfceHeading   *heading = XFCE_HEADING (widget);
+  PangoLayout   *layout;
+  GdkPixbuf     *pixbuf;
+  gboolean       rtl;
+  gint           width;
+  gint           height;
+  gint           x;
+  gint           y;
+  cairo_t       *cr;
+  GtkAllocation  allocation;
+
+  gtk_widget_get_allocation (widget, &allocation);
 
   /* check if we should render from right to left */
   rtl = (gtk_widget_get_direction (widget) == GTK_TEXT_DIR_RTL);
 
   /* determine the initial horizontal position */
-  x = (rtl ? widget->allocation.width - XFCE_HEADING_BORDER : XFCE_HEADING_BORDER);
+  x = (rtl ? allocation.width - XFCE_HEADING_BORDER : XFCE_HEADING_BORDER);
 
   /* check if we have a pixbuf to render */
   pixbuf = _xfce_heading_make_pixbuf (heading);
@@ -235,12 +382,13 @@ _xfce_heading_expose_event (GtkWidget      *widget,
       height = gdk_pixbuf_get_height (pixbuf);
 
       /* determine the vertical position */
-      y = (widget->allocation.height - height) / 2;
+      y = (allocation.height - height) / 2;
 
       /* render the pixbuf */
-      gdk_draw_pixbuf (widget->window, widget->style->black_gc, pixbuf, 0, 0,
-                       (rtl ? x - width : x), y, width, height,
-                       GDK_RGB_DITHER_NORMAL, 0, 0);
+      cr = gdk_cairo_create (GDK_DRAWABLE (gtk_widget_get_window (widget)));
+      gdk_cairo_set_source_pixbuf (cr, pixbuf, (rtl ? x - width : x), y);
+      cairo_paint (cr);
+      cairo_destroy (cr);
 
       /* release the pixbuf */
       g_object_unref (G_OBJECT (pixbuf));
@@ -254,18 +402,21 @@ _xfce_heading_expose_event (GtkWidget      *widget,
   pango_layout_get_pixel_size (layout, &width, &height);
 
   /* determine the vertical position */
-  y = (widget->allocation.height - height) / 2;
+  y = (allocation.height - height) / 2;
 
   /* render the title */
-  gtk_paint_layout (widget->style, widget->window,
-                    GTK_WIDGET_STATE (widget), TRUE, &event->area,
-                    widget, "heading", (rtl ? x - width : x), y, layout);
+  gtk_paint_layout (gtk_widget_get_style (widget),
+                    gtk_widget_get_window (widget),
+                    gtk_widget_get_state (widget),
+                    TRUE, &event->area, widget,
+                    "heading", (rtl ? x - width : x), y, layout);
 
   /* release the layout */
   g_object_unref (G_OBJECT (layout));
 
   return FALSE;
 }
+#endif
 
 
 
@@ -311,6 +462,7 @@ _xfce_heading_make_layout (XfceHeading *heading)
 
   /* allocate and setup a new layout from the widget's context */
   layout = gtk_widget_create_pango_layout (GTK_WIDGET (heading), text->str);
+
 
   /* allocate an attribute list (large bold title) */
   attr_list = pango_attr_list_new ();
