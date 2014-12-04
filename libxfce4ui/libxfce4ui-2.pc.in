@@ -4,8 +4,8 @@ libdir=@libdir@
 includedir=@includedir@
 
 glade_catalogdir=@GLADEUI_CATALOGDIR@
-glade_pixmapdir=@GLADEUI_MODULEDIR@
-glade_moduledir=@GLADEUI_PIXMAPDIR@
+glade_pixmapdir=@GLADEUI_PIXMAPDIR@
+glade_moduledir=@GLADEUI_MODULEDIR@
 
 Name: libxfce4ui
 Description: Widgets library for Xfce
