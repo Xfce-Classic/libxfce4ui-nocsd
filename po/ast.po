@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-07-02 22:33+0200\n"
-"PO-Revision-Date: 2014-10-25 19:25+0000\n"
+"PO-Revision-Date: 2014-12-13 13:48+0000\n"
 "Last-Translator: Ḷḷumex03 <tornes@opmbx.org>\n"
 "Language-Team: Asturian (http://www.transifex.com/projects/p/libxfce4ui/language/ast/)\n"
 "MIME-Version: 1.0\n"
@@ -26,7 +26,7 @@ msgstr "Fallu al abrir el restolador pa la documentación en llinia"
 #: ../libxfce4ui/xfce-dialogs.c:213
 #, c-format
 msgid "Do you want to read the %s manual online?"
-msgstr "¿Quies lleer el manual en llinia %s?"
+msgstr "¿Quies lleer el manual %s en llinia?"
 
 #: ../libxfce4ui/xfce-dialogs.c:215
 msgid "Do you want to read the manual online?"
@@ -56,11 +56,11 @@ msgstr "Información"
 
 #: ../libxfce4ui/xfce-dialogs.c:314
 msgid "Warning"
-msgstr "Atención"
+msgstr "Avisu"
 
 #: ../libxfce4ui/xfce-dialogs.c:348
 msgid "Error"
-msgstr "Erru"
+msgstr "Fallu"
 
 #: ../libxfce4ui/xfce-dialogs.c:399
 msgid "Question"
@@ -68,7 +68,7 @@ msgstr "Entruga"
 
 #: ../libxfce4ui/xfce-sm-client.c:1424
 msgid "Session management client ID"
-msgstr "ID d'alministración de sesión de veceru"
+msgstr "ID de veceru del alministrador de sesión"
 
 #: ../libxfce4ui/xfce-sm-client.c:1424
 msgid "ID"
@@ -89,12 +89,12 @@ msgstr "Amosar opciones d'alministración de sesión"
 #: ../libxfce4ui/xfce-sm-client.c:1611
 #, c-format
 msgid "Failed to connect to the session manager: %s"
-msgstr "Fallu al coneutar a l'alministración de sesión: %s"
+msgstr "Fallu al coneutar al alministrador de sesión: %s"
 
 #: ../libxfce4ui/xfce-sm-client.c:1617
 #, c-format
 msgid "Session manager did not return a valid client id"
-msgstr "L'alministración de sesión nun devolvió una ID de veceru válida"
+msgstr "L'alministrador de sesión nun devolvió una ID de veceru válida"
 
 #. print warning for user
 #: ../libxfce4ui/xfce-spawn.c:413
@@ -102,14 +102,14 @@ msgstr "L'alministración de sesión nun devolvió una ID de veceru válida"
 msgid ""
 "Working directory \"%s\" does not exist. It won't be used when spawning "
 "\"%s\"."
-msgstr "El direutoriu de trabayu \"%s\" nun esiste. Nun s'usará cuando s'intercambie \"%s\"."
+msgstr "El direutoriu de trabayu \"%s\" nun esiste. Nun s'usará cuando apaeza \"%s\"."
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 #, c-format
 msgid ""
 "This shortcut is already being used for the action '%s'. Which action do you"
 " want to use?"
-msgstr "Esti accesu direutu yá ta siendo usáu pa la aición '%s\". ¿Qué aición quies usar?"
+msgstr "Esti accesu direutu yá ta usándose pa la aición '%s\". ¿Qué aición quies usar?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:54
 #: ../libxfce4kbd-private/xfce-shortcuts.c:57
@@ -133,14 +133,14 @@ msgstr "Caltener '%s'"
 msgid ""
 "This shortcut is already being used for the command '%s'. Which action do "
 "you want to use?"
-msgstr "Esti accesu direutu yá ta siendo usáu pal comandu '%s\". ¿Qué aición quies usar?"
+msgstr "Esti accesu direutu yá ta usándose pal comandu '%s\". ¿Qué aición quies usar?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 #, c-format
 msgid ""
 "This shortcut is already being used by the action '%s'. Which action do you "
 "want to use?"
-msgstr "Esti accesu direutu yá ta siendo usáu pola aición '%s\". ¿Qué aición quies usar?"
+msgstr "Esti accesu direutu yá ta usándose pola aición '%s\". ¿Qué aición quies usar?"
 
 #. This shortcut already exists in the provider, we don't want it twice
 #. Warn the user
@@ -160,7 +160,7 @@ msgstr "Aiciones en conflictu pa %s"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:176
 msgid "This shortcut is already being used for something else."
-msgstr "Esti accesu direutu yá ta siendo usáu por daqué más."
+msgstr "Esti accesu direutu yá ta usándose por daqué más."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:209
 msgid "Window Manager Action Shortcut"
@@ -239,11 +239,11 @@ msgstr "Esbillar ventanes cíclicamente (al revés)"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:44
 msgid "Switch window for same application"
-msgstr "Cambear ventana pa la mesma aplicación"
+msgstr "Cambiar ventana pa la mesma aplicación"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:45
 msgid "Switch application"
-msgstr "Cambear d'aplicación"
+msgstr "Cambiar d'aplicación"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:46
 msgid "Close window"
@@ -279,7 +279,7 @@ msgstr "Endolcar ventana"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:54
 msgid "Stick window"
-msgstr "Apegar ventana a tolos escritorios"
+msgstr "Apegar ventana"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:55
 msgid "Raise window"
@@ -511,7 +511,7 @@ msgstr "Información de versión"
 
 #: ../xfce4-about/main.c:70
 msgid "Window Manager"
-msgstr "Xestor de ventanes"
+msgstr "Alministrador de ventanes"
 
 #: ../xfce4-about/main.c:71
 msgid "Handles the placement of windows on the screen."
@@ -539,13 +539,13 @@ msgstr "Afita la color de fondu o imaxe con menús o iconos p'aplicaciones minim
 
 #: ../xfce4-about/main.c:84
 msgid "File Manager "
-msgstr "Xestor de ficheros"
+msgstr "Alministrador de ficheros"
 
 #: ../xfce4-about/main.c:85
 msgid ""
 "A modern file manager for the Unix/Linux desktop, aiming to be easy-to-use "
 "and fast."
-msgstr "Un xestor de ficheros modernu pal escritoriu Unix/Linux, col oxetivu de ser fácil d'usar y rápidu."
+msgstr "Un alministrador de ficheros modernu pal escritoriu Unix/Linux, col oxetivu de ser fácil d'usar y rápidu."
 
 #: ../xfce4-about/main.c:89
 msgid "Session Manager"
