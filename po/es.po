@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-07-02 22:33+0200\n"
-"PO-Revision-Date: 2014-12-25 19:13+0000\n"
+"PO-Revision-Date: 2014-12-31 19:19+0000\n"
 "Last-Translator: Pablo Roberto Francisco Lezaeta Reyes <prflr88@gmail.com>\n"
 "Language-Team: Spanish (http://www.transifex.com/projects/p/libxfce4ui/language/es/)\n"
 "MIME-Version: 1.0\n"
@@ -110,7 +110,7 @@ msgstr "La carpeta de trabajo «%s» no existe. Esta no se utilizará para ejecu
 msgid ""
 "This shortcut is already being used for the action '%s'. Which action do you"
 " want to use?"
-msgstr "Este atajo ya está siendo usado para la acción. '%s'. ¿Qué acción desea usar?"
+msgstr "Este atajo ya está siendo usado para la acción. «%s». ¿Qué acción desea usar?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:54
 #: ../libxfce4kbd-private/xfce-shortcuts.c:57
@@ -504,7 +504,7 @@ msgstr "Subtítulo"
 
 #: ../glade/libxfce4ui.xml.in.h:3
 msgid "Xfce 4 Widgets"
-msgstr "Widgets de Xfce 4"
+msgstr "Miniaplicaciones de Xfce 4"
 
 #: ../xfce4-about/main.c:52
 msgid "Version information"
@@ -540,17 +540,17 @@ msgstr "Establece el color de fondo o imagen con menu de aplicacion opcional o i
 
 #: ../xfce4-about/main.c:84
 msgid "File Manager "
-msgstr "Gestor de archivos"
+msgstr "Administrador de archivos"
 
 #: ../xfce4-about/main.c:85
 msgid ""
 "A modern file manager for the Unix/Linux desktop, aiming to be easy-to-use "
 "and fast."
-msgstr "Un gestor de archivos para el escritorio Unix o Linux moderno, que aspira a ser fácil y rápido de usar."
+msgstr "Un administrador de archivos para el escritorio Unix o Linux moderno, que aspira a ser fácil y rápido de usar."
 
 #: ../xfce4-about/main.c:89
 msgid "Session Manager"
-msgstr "Gestor de sesión"
+msgstr "Administrador de sesión"
 
 #: ../xfce4-about/main.c:90
 msgid ""
