@@ -4,7 +4,7 @@
 # 
 # Translators:
 # GenghisKhan <genghiskhan@gmx.ca>, 2014
-# GenghisKhan <genghiskhan@gmx.ca>, 2014
+# GenghisKhan <genghiskhan@gmx.ca>, 2014-2015
 # Hezy Amiel <open@hezyamiel.com>, 2010
 # Yaron Shahrabani <sh.yaron@gmail.com>, 2014
 msgid ""
@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-07-02 22:33+0200\n"
-"PO-Revision-Date: 2015-01-01 01:36+0000\n"
+"PO-Revision-Date: 2015-01-01 09:16+0000\n"
 "Last-Translator: GenghisKhan <genghiskhan@gmx.ca>\n"
 "Language-Team: Hebrew (http://www.transifex.com/projects/p/libxfce4ui/language/he/)\n"
 "MIME-Version: 1.0\n"
@@ -337,7 +337,7 @@ msgstr "העבר חלון למשטח עבודה קודם"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:68
 msgid "Move window to next workspace"
-msgstr "העבר חלון למשטח עבודה הבאה"
+msgstr "העבר חלון למשטח עבודה הבא"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:69
 msgid "Move window to workspace 1"
@@ -501,7 +501,7 @@ msgstr "דו שיח בעל כותרת"
 
 #: ../glade/libxfce4ui.xml.in.h:2
 msgid "Subtitle"
-msgstr "כתובית"
+msgstr "כותרת משנה"
 
 #: ../glade/libxfce4ui.xml.in.h:3
 msgid "Xfce 4 Widgets"
@@ -624,7 +624,7 @@ msgstr "אם אתם יודעים על מישהו אשר חסר מן רשימה �
 
 #: ../xfce4-about/main.c:266
 msgid "Thanks to all who helped making this software available!"
-msgstr "תודה לכל מי אשר סייע להפוך את תכנה זו לזמניה!"
+msgstr "תודה לכל מי אשר סייע להפוך את תכנה זו לזמינה!"
 
 #: ../xfce4-about/main.c:283
 msgid ""
