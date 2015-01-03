@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-07-02 22:33+0200\n"
-"PO-Revision-Date: 2015-01-01 09:16+0000\n"
+"PO-Revision-Date: 2015-01-03 13:37+0000\n"
 "Last-Translator: GenghisKhan <genghiskhan@gmx.ca>\n"
 "Language-Team: Hebrew (http://www.transifex.com/projects/p/libxfce4ui/language/he/)\n"
 "MIME-Version: 1.0\n"
@@ -577,7 +577,7 @@ msgstr "מחפש אפליקציות"
 msgid ""
 "Shows the applications installed on your system in categories, so you can "
 "quickly find and launch them."
-msgstr "מציג את האפליקציות המותקנות במערכתך בתוך קטגוריות, כך שתוכלו לשגר אותן בזריזות."
+msgstr "מציג את האפליקציות המותקנות במערכת בתוך קטגוריות, כך שתוכלו לשגר אותן בזריזות."
 
 #: ../xfce4-about/main.c:104
 msgid "Settings Daemon"
@@ -606,7 +606,7 @@ msgid ""
 " for applications and LGPL or BSDL for libraries. Look at the documentation,"
 " the source code or the Xfce website (http://www.xfce.org) for more "
 "information."
-msgstr "רכיבי Xfce הינם רשויים תחת רשיונות חופשיים או קוד פתוח; GPL או BSDL עבור יישומים (applications) ורשיונות LGPL או BSDL עבור ספריות (libraries). ראו את התיעוד, הקוד מקור או אתר רשת Xfce (http://www.xfce.org) לשם מידע נוסף."
+msgstr "רכיבי Xfce הינם רשויים תחת רשיונות חופשיים או קוד פתוח; GPL או BSDL עבור יישומים (applications) ורשיונות LGPL או BSDL עבור ספריות (libraries). ראו את התיעוד, הקוד מקור או אתר רשת Xfce‏ (http://www.xfce.org) לשם מידע נוסף."
 
 #: ../xfce4-about/main.c:149
 msgid "Thank you for your interest in Xfce."
@@ -647,7 +647,7 @@ msgid ""
 "under the terms of the GNU General Public License as published by the Free "
 "Software Foundation; either version 2 of the License, or (at your option) "
 "any later version."
-msgstr "החבילות thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfce-utils, xfconf, xfdesktop וגם xfwm4 הינם מופצים תחת התנאים של הרשיון GNU General Public License כפי שזה פורסם ע״י Free Software Foundation; בין אם בגרסה 2 של הרשיון, או (כאופצייה השמורה לכם) בכל גרסה מאוחרת יותר."
+msgstr "החבילות thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfce-utils, xfconf, xfdesktop וגם xfwm4 הינן מופצות תחת התנאים של הרשיון GNU General Public License כפי שזה פורסם ע״י Free Software Foundation; בין אם בגרסה 2 של הרשיון, או (כאופצייה השמורה לכם) בכל גרסה מאוחרת יותר."
 
 #: ../xfce4-about/main.c:442
 #, c-format
