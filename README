@@ -2,7 +2,7 @@ What is it?
 ===========
 
 This is libxfce4ui, the replacement of the old libxfcegui4 library. It is used
-to share commonly used Xfce widgets amoung the Xfce applications.
+to share commonly used Xfce widgets among the Xfce applications.
 
 
 Required packages
@@ -10,9 +10,9 @@ Required packages
 
 Libxfce4ui depends on the following packages:
 
- - GTK+ 2.10.0 or above
- - GLib 2.12.0 or above
- - Libxfce4util 4.4.0 or above
+ - GTK+ 2.24.0 or above
+ - GLib 2.28.0 or above
+ - Libxfce4util 4.10.0 or above
 
 
 
