@@ -373,7 +373,7 @@ find_event_key (const gchar                *shortcut,
 
   TRACE ("Comparing to %s", shortcut);
 
-  if ((key->modifiers & (GDK_CONTROL_MASK | GDK_SHIFT_MASK | GDK_MOD1_MASK))
+  if ((key->modifiers & (GDK_CONTROL_MASK | GDK_SHIFT_MASK | GDK_MOD1_MASK | GDK_SUPER_MASK))
       == (context->modifiers)
       && (key->keyval == context->keyval))
     {
@@ -438,6 +438,20 @@ xfce_shortcuts_grabber_event_filter (GdkXEvent            *gdk_xevent,
    * as a modifier key (see bug #8744). */
   if ((modifiers & GDK_SHIFT_MASK) && (consumed & GDK_SHIFT_MASK))
     consumed &= ~GDK_SHIFT_MASK;
+
+  /*
+   * !!! FIX ME !!!
+   * Turn MOD4 into SUPER key press events. Although it is not clear if
+   * this is a proper solution, it fixes bug #10373 which some people
+   * experience without breaking functionality for other users.
+   */
+  if (modifiers & GDK_MOD4_MASK)
+    {
+      modifiers &= ~GDK_MOD4_MASK;
+      modifiers |= GDK_SUPER_MASK;
+      consumed &= ~GDK_MOD4_MASK;
+      consumed &= ~GDK_SUPER_MASK;
+    }
 
   modifiers &= ~consumed;
   modifiers &= mod_mask;
