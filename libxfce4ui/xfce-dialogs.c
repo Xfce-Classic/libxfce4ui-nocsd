@@ -255,13 +255,27 @@ xfce_dialog_show_help_with_version (GtkWindow   *parent,
 
   dialog = xfce_message_dialog_new (parent,
                                     _("Online Documentation"),
+#if !GTK_CHECK_VERSION (3, 10, 0)
                                     GTK_STOCK_DIALOG_QUESTION,
+#else
+                                    "dialog-question",
+#endif
                                     primary,
                                     _("You will be redirected to the documentation website "
                                       "where the help pages are maintained and translated."),
-                                    GTK_STOCK_CANCEL, GTK_RESPONSE_NO,
+#if !GTK_CHECK_VERSION (3, 10, 0)
+                                    GTK_STOCK_CANCEL,
+#else
+                                    "gtk-cancel",
+#endif
+                                    GTK_RESPONSE_NO,
                                     XFCE_BUTTON_TYPE_MIXED,
-                                        GTK_STOCK_HELP, _("_Read Online"),
+#if !GTK_CHECK_VERSION (3, 10, 0)
+                                        GTK_STOCK_HELP,
+#else
+                                        "help-browser",
+#endif
+                                        _("_Read Online"),
                                         GTK_RESPONSE_YES,
                                     NULL);
   g_free (primary);
@@ -317,9 +331,19 @@ xfce_dialog_show_info (GtkWindow   *parent,
   primary_text = g_strdup_vprintf (primary_format, args);
   va_end (args);
 
-  xfce_message_dialog (parent, _("Information"), GTK_STOCK_DIALOG_INFO,
+  xfce_message_dialog (parent, _("Information"),
+#if !GTK_CHECK_VERSION (3, 10, 0)
+                       GTK_STOCK_DIALOG_INFO,
+#else
+                       "dialog-information",
+#endif
                        primary_text, secondary_text,
-                       GTK_STOCK_CLOSE, GTK_RESPONSE_CLOSE, NULL);
+#if !GTK_CHECK_VERSION (3, 10, 0)
+                       GTK_STOCK_CLOSE,
+#else
+                       "window-close",
+#endif
+                       GTK_RESPONSE_CLOSE, NULL);
 
   g_free (primary_text);
 }
@@ -350,9 +374,19 @@ xfce_dialog_show_warning (GtkWindow   *parent,
   primary_text = g_strdup_vprintf (primary_format, args);
   va_end (args);
 
-  xfce_message_dialog (parent, _("Warning"), GTK_STOCK_DIALOG_WARNING,
+  xfce_message_dialog (parent, _("Warning"),
+#if !GTK_CHECK_VERSION (3, 10, 0)
+                       GTK_STOCK_DIALOG_WARNING,
+#else
+                       "dialog-warning",
+#endif
                        primary_text, secondary_text,
-                       GTK_STOCK_CLOSE, GTK_RESPONSE_CLOSE, NULL);
+#if !GTK_CHECK_VERSION (3, 10, 0)
+                       GTK_STOCK_CLOSE,
+#else
+                       "window-close",
+#endif
+                       GTK_RESPONSE_CLOSE, NULL);
 
   g_free (primary_text);
 }
@@ -384,9 +418,19 @@ xfce_dialog_show_error (GtkWindow    *parent,
   primary_text = g_strdup_vprintf (primary_format, args);
   va_end (args);
 
-  xfce_message_dialog (parent, _("Error"), GTK_STOCK_DIALOG_ERROR,
+  xfce_message_dialog (parent, _("Error"),
+#if !GTK_CHECK_VERSION (3, 10, 0)
+                       GTK_STOCK_DIALOG_ERROR,
+#else
+                       "dialog-error",
+#endif
                        primary_text, error ? error->message : NULL,
-                       GTK_STOCK_CLOSE, GTK_RESPONSE_CLOSE, NULL);
+#if !GTK_CHECK_VERSION (3, 10, 0)
+                       GTK_STOCK_CLOSE,
+#else
+                       "window-close",
+#endif
+                       GTK_RESPONSE_CLOSE, NULL);
 
   g_free (primary_text);
 }
@@ -430,13 +474,29 @@ xfce_dialog_confirm (GtkWindow   *parent,
   va_end (args);
 
   /* whether this will be a yes/no dialog */
-  if (stock_id != NULL && strcmp (stock_id, GTK_STOCK_YES) == 0)
-    no_stock_id = GTK_STOCK_NO;
+  if (stock_id != NULL && (strcmp (stock_id, "gtk-yes") == 0 || strcmp (stock_id, "yes")) == 0)
+    {
+#if GTK_CHECK_VERSION (3, 10, 0)
+      no_stock_id = "gtk-no";
+#else
+      no_stock_id = GTK_STOCK_NO;
+#endif
+    }
   else
-    no_stock_id = GTK_STOCK_CANCEL;
+    {
+#if GTK_CHECK_VERSION (3, 10, 0)
+      no_stock_id = "gtk-cancel";
+#else
+      no_stock_id = GTK_STOCK_CANCEL;
+#endif
+    }
 
   response_id = xfce_message_dialog (parent, _("Question"),
+#if !GTK_CHECK_VERSION (3, 10, 0)
                                      GTK_STOCK_DIALOG_QUESTION,
+#else
+                                     "dialog-question",
+#endif
                                      primary_text, secondary_text,
                                      no_stock_id, GTK_RESPONSE_NO,
                                      XFCE_BUTTON_TYPE_MIXED, stock_id,
@@ -517,8 +577,14 @@ xfce_message_dialog_new_valist (GtkWindow   *parent,
   if (icon_stock_id != NULL)
     {
       /* set dialog and window icon */
+#if GTK_CHECK_VERSION (3, 10, 0)
+      image = gtk_image_new_from_icon_name (icon_stock_id, GTK_ICON_SIZE_DIALOG);
+      gtk_container_add (GTK_CONTAINER (gtk_dialog_get_content_area (GTK_DIALOG (dialog))), image);
+#else
       image = gtk_image_new_from_stock (icon_stock_id, GTK_ICON_SIZE_DIALOG);
       gtk_message_dialog_set_image (GTK_MESSAGE_DIALOG (dialog), image);
+#endif
+
       gtk_widget_show (image);
       gtk_window_set_icon_name (GTK_WINDOW (dialog), icon_stock_id);
     }

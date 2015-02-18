@@ -233,7 +233,11 @@ xfce_shortcuts_grabber_grab (XfceShortcutsGrabber *grabber,
   g_return_if_fail (key != NULL);
 
   display = gdk_display_get_default ();
+#if GTK_CHECK_VERSION (3, 10, 0)
+  screens = 1;
+#else
   screens = gdk_display_get_n_screens (display);
+#endif
   keymap = gdk_keymap_get_default ();
 
   /* Map virtual modifiers to non-virtual modifiers */

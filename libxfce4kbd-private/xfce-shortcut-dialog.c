@@ -233,13 +233,21 @@ xfce_shortcut_dialog_create_contents (XfceShortcutDialog *dialog,
   /* Create clear button for xfwm4 */
   if (g_utf8_collate (provider, "xfwm4") == 0)
     {
+#if GTK_CHECK_VERSION (3, 10, 0)
+      button = gtk_button_new_from_icon_name ("edit-clear", GTK_ICON_SIZE_BUTTON);
+#else
       button = gtk_button_new_from_stock (GTK_STOCK_CLEAR);
+#endif
       gtk_dialog_add_action_widget (GTK_DIALOG (dialog), button, GTK_RESPONSE_REJECT);
       gtk_widget_show (button);
     }
 
   /* Create cancel button */
+#if GTK_CHECK_VERSION (3, 10, 0)
+  button = gtk_button_new_with_mnemonic (_("_Cancel"));
+#else
   button = gtk_button_new_from_stock (GTK_STOCK_CANCEL);
+#endif
   gtk_dialog_add_action_widget (GTK_DIALOG (dialog), button, GTK_RESPONSE_CANCEL);
   gtk_widget_show (button);
 
@@ -334,7 +342,7 @@ xfce_shortcut_dialog_run (XfceShortcutDialog *dialog,
       if (gdk_device_get_source (device) != GDK_SOURCE_KEYBOARD)
         continue;
 
-      if (gdk_device_grab (device, gtk_widget_get_root_window (GTK_WIDGET (dialog)),
+      if (gdk_device_grab (device, gdk_screen_get_root_window (gdk_display_get_default_screen (display)),
                            GDK_OWNERSHIP_WINDOW, TRUE,
                            GDK_KEY_PRESS_MASK | GDK_KEY_RELEASE_MASK,
                            NULL, GDK_CURRENT_TIME) == GDK_GRAB_SUCCESS)
