@@ -1,3 +1,5 @@
+ACLOCAL_AMFLAGS = -I m4 ${ACLOCAL_FLAGS}
+
 SUBDIRS = \
 	libxfce4ui \
 	libxfce4kbd-private \

@@ -34,6 +34,7 @@ dnl ***************************
 AC_COPYRIGHT([Copyright (c) 2007-2013 The Xfce development team])
 AC_INIT([libxfce4ui], [libxfce4ui_version], [http://bugzilla.xfce.org/], [libxfce4ui])
 AC_PREREQ([2.60])
+AC_CONFIG_MACRO_DIR([m4])
 AC_REVISION([libxfce4ui_version_build])
 AC_CANONICAL_TARGET()
 

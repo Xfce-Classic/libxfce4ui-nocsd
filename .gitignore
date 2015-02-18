@@ -19,6 +19,7 @@ libxfce4ui/libxfce4ui-1.pc
 libxfce4ui/libxfce4ui-2.pc
 libxfce4ui/libxfce4ui-config.h
 ltmain.sh
+m4/
 missing
 po/Makefile.in.in
 po/POTFILES
