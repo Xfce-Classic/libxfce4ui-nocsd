@@ -1,6 +1,4 @@
-# $Id$
-
-AUTOMAKE_OPTIONS = 1.8
+AUTOMAKE_OPTIONS = 1.11
 
 # The name of the module.
 DOC_MODULE=libxfce4ui
