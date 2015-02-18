@@ -249,7 +249,7 @@ if test "x$enable_visibility" != "xno"; then
   saved_CFLAGS="$CFLAGS"
   CFLAGS="$CFLAGS $xdt_vis_test_cflags"
   AC_MSG_CHECKING([whether $CC supports the GNUC visibility attribute])
-  AC_COMPILE_IFELSE(AC_LANG_SOURCE(
+  AC_COMPILE_IFELSE([AC_LANG_SOURCE(
   [
     void test_default (void);
     void test_hidden (void);
@@ -260,7 +260,7 @@ if test "x$enable_visibility" != "xno"; then
       test_hidden ();
       return 0;
     }
-  ]),
+  ])],
   [
     have_gnuc_visibility=yes
     AC_MSG_RESULT([yes])
