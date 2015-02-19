@@ -4,14 +4,16 @@
 # 
 # Translators:
 # Cheng-Chia Tseng <pswo10680@gmail.com>, 2010
+# Jeff Huang <s8321414@gmail.com>, 2015
+# Walter Cheuk <wwycheuk@gmail.com>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-07-02 22:33+0200\n"
-"PO-Revision-Date: 2013-11-19 11:04+0000\n"
-"Last-Translator: Nick <nick@xfce.org>\n"
-"Language-Team: Chinese (Taiwan) (http://www.transifex.com/projects/p/xfce/language/zh_TW/)\n"
+"POT-Creation-Date: 2015-02-18 18:30+0100\n"
+"PO-Revision-Date: 2015-02-19 06:19+0000\n"
+"Last-Translator: Jeff Huang <s8321414@gmail.com>\n"
+"Language-Team: Chinese (Taiwan) (http://www.transifex.com/projects/p/libxfce4ui/language/zh_TW/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -22,52 +24,52 @@ msgstr ""
 msgid "Failed to open web browser for online documentation"
 msgstr "無法開啟網頁瀏覽器以供線上文件使用"
 
-#: ../libxfce4ui/xfce-dialogs.c:213
+#: ../libxfce4ui/xfce-dialogs.c:252
 #, c-format
 msgid "Do you want to read the %s manual online?"
 msgstr "您想要線上閱讀 %s 手冊嗎？"
 
-#: ../libxfce4ui/xfce-dialogs.c:215
+#: ../libxfce4ui/xfce-dialogs.c:254
 msgid "Do you want to read the manual online?"
 msgstr "您想要線上閱讀這份手冊嗎？"
 
-#: ../libxfce4ui/xfce-dialogs.c:218
+#: ../libxfce4ui/xfce-dialogs.c:257
 msgid "Online Documentation"
 msgstr "線上文件"
 
-#: ../libxfce4ui/xfce-dialogs.c:221
+#: ../libxfce4ui/xfce-dialogs.c:264
 msgid ""
 "You will be redirected to the documentation website where the help pages are"
 " maintained and translated."
-msgstr "您會被重新引導至文件網站，在那裡我們維護、翻譯幫助頁面。"
+msgstr "您會被重新引導至我們保存和翻譯幫助頁面的說明文件的網站。"
 
-#: ../libxfce4ui/xfce-dialogs.c:225
+#: ../libxfce4ui/xfce-dialogs.c:278
 msgid "_Read Online"
 msgstr "線上閱讀(_R)"
 
-#: ../libxfce4ui/xfce-dialogs.c:237
+#: ../libxfce4ui/xfce-dialogs.c:290
 msgid "_Always go directly to the online documentation"
 msgstr "總是直接前往線上文件(_A)"
 
-#: ../libxfce4ui/xfce-dialogs.c:281
+#: ../libxfce4ui/xfce-dialogs.c:334
 msgid "Information"
 msgstr "資訊"
 
-#: ../libxfce4ui/xfce-dialogs.c:314
+#: ../libxfce4ui/xfce-dialogs.c:377
 msgid "Warning"
 msgstr "警告"
 
-#: ../libxfce4ui/xfce-dialogs.c:348
+#: ../libxfce4ui/xfce-dialogs.c:421
 msgid "Error"
 msgstr "錯誤"
 
-#: ../libxfce4ui/xfce-dialogs.c:399
+#: ../libxfce4ui/xfce-dialogs.c:494
 msgid "Question"
 msgstr "疑問"
 
 #: ../libxfce4ui/xfce-sm-client.c:1424
 msgid "Session management client ID"
-msgstr "工作階段管理程式客戶端 ID"
+msgstr "工作階段管理程式用戶端 ID"
 
 #: ../libxfce4ui/xfce-sm-client.c:1424
 msgid "ID"
@@ -83,7 +85,7 @@ msgstr "工作階段管理選項"
 
 #: ../libxfce4ui/xfce-sm-client.c:1436
 msgid "Show session management options"
-msgstr "工作階段管理選項"
+msgstr "顯示工作階段管理選項"
 
 #: ../libxfce4ui/xfce-sm-client.c:1611
 #, c-format
@@ -93,10 +95,10 @@ msgstr "連接到工作階段管理程式失敗：%s"
 #: ../libxfce4ui/xfce-sm-client.c:1617
 #, c-format
 msgid "Session manager did not return a valid client id"
-msgstr "工作階段管理程式沒有回傳有效的用戶端 id"
+msgstr "工作階段管理程式沒有回傳有效的用戶端 ID"
 
 #. print warning for user
-#: ../libxfce4ui/xfce-spawn.c:413
+#: ../libxfce4ui/xfce-spawn.c:409
 #, c-format
 msgid ""
 "Working directory \"%s\" does not exist. It won't be used when spawning "
@@ -108,7 +110,7 @@ msgstr "工作目錄「%s」不存在。當建立「%s」時不會被使用。"
 msgid ""
 "This shortcut is already being used for the action '%s'. Which action do you"
 " want to use?"
-msgstr "此捷徑鍵正被動作「%s」使用。您想要使用何動作？"
+msgstr "「%s」動作已經用了此捷徑鍵。您想要使用何動作？"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:54
 #: ../libxfce4kbd-private/xfce-shortcuts.c:57
@@ -132,14 +134,14 @@ msgstr "保留 '%s'"
 msgid ""
 "This shortcut is already being used for the command '%s'. Which action do "
 "you want to use?"
-msgstr "此捷徑正被指令 '%s' 使用。您想要使用何動作？"
+msgstr "「%s」指令已經用了此捷徑鍵。您想要使用何動作？"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 #, c-format
 msgid ""
 "This shortcut is already being used by the action '%s'. Which action do you "
 "want to use?"
-msgstr "此捷徑鍵正給動作「%s」使用。您想要使用何動作？"
+msgstr "「%s」動作已經用了此捷徑鍵。您想要使用何動作？"
 
 #. This shortcut already exists in the provider, we don't want it twice
 #. Warn the user
@@ -157,9 +159,9 @@ msgstr "%s 已會觸發此動作。"
 msgid "Conflicting actions for %s"
 msgstr "%s 的動作發生衝突"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:176
+#: ../libxfce4kbd-private/xfce-shortcuts.c:186
 msgid "This shortcut is already being used for something else."
-msgstr "此捷徑正被其它動作使用。"
+msgstr "此捷徑鍵已經用了。"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:209
 msgid "Window Manager Action Shortcut"
@@ -186,21 +188,25 @@ msgstr "指令"
 msgid "Shortcut"
 msgstr "捷徑鍵"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:267
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:247
+msgid "_Cancel"
+msgstr "取消(_C)"
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:275
 #, c-format
 msgid "Press now the keyboard keys you want to use to trigger the %s '%s'."
 msgstr "請現在按下您想要用來觸發 %s「%s」的鍵盤按鍵。"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:291
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:299
 msgid "Shortcut:"
 msgstr "捷徑鍵："
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:296
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:475
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:304
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:483
 msgid "No keys pressed yet, proceed."
 msgstr "未按下任何按鍵，繼續。"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:378
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:386
 msgid "Could not grab the keyboard."
 msgstr "無法抓取鍵盤。"
 
@@ -234,7 +240,7 @@ msgstr "循環視窗"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:43
 msgid "Cycle windows (Reverse)"
-msgstr "循環視窗 (遞迴)"
+msgstr "循環視窗 (反向)"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:44
 msgid "Switch window for same application"
@@ -294,7 +300,7 @@ msgstr "提升或降低視窗"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:58
 msgid "Fill window"
-msgstr "填滿視窗視窗"
+msgstr "填滿視窗"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:59
 msgid "Fill window horizontally"
@@ -502,7 +508,7 @@ msgstr "子標題"
 
 #: ../glade/libxfce4ui.xml.in.h:3
 msgid "Xfce 4 Widgets"
-msgstr "Xfce 4 小工具"
+msgstr "Xfce 4 器件"
 
 #: ../xfce4-about/main.c:52
 msgid "Version information"
@@ -514,7 +520,7 @@ msgstr "視窗管理程式"
 
 #: ../xfce4-about/main.c:71
 msgid "Handles the placement of windows on the screen."
-msgstr "處理視窗如何放置於螢幕上。"
+msgstr "處理如何於螢幕置放視窗。"
 
 #: ../xfce4-about/main.c:74
 msgid "Panel"
@@ -574,11 +580,11 @@ msgstr "應用程式協尋器"
 msgid ""
 "Shows the applications installed on your system in categories, so you can "
 "quickly find and launch them."
-msgstr "將安裝於您系統上的應用程式以類別顯示，這樣您才能快速尋找並啟動它們。"
+msgstr "將安裝於您系統上的應用程式分類顯示，這樣您才能快速尋找並啟動它們。"
 
 #: ../xfce4-about/main.c:104
 msgid "Settings Daemon"
-msgstr "設定值管幕後程式"
+msgstr "設定值幕後程式"
 
 #: ../xfce4-about/main.c:105
 msgid "D-Bus-based configuration storage system."
