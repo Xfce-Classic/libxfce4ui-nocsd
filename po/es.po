@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-02-18 18:30+0100\n"
-"PO-Revision-Date: 2015-02-20 23:25+0000\n"
+"PO-Revision-Date: 2015-02-20 23:41+0000\n"
 "Last-Translator: Manolo Díaz <diaz.manolo@gmail.com>\n"
 "Language-Team: Spanish (http://www.transifex.com/projects/p/libxfce4ui/language/es/)\n"
 "MIME-Version: 1.0\n"
@@ -541,7 +541,7 @@ msgstr "Gestor de escritorio"
 msgid ""
 "Sets the background color or image with optional application menu or icons "
 "for minimized applications or launchers, devices and folders."
-msgstr "Establece el color de fondo o imagen con menu de aplicacion opcional o iconos para aplicaciones minimizadas o lanzadores, dispositivos y carpetas."
+msgstr "Establece el color de fondo o imagen con menú de aplicación opcional o iconos para aplicaciones minimizadas o lanzadores, dispositivos y carpetas."
 
 #: ../xfce4-about/main.c:84
 msgid "File Manager "
@@ -711,7 +711,7 @@ msgstr "Servidores mantenidos por"
 
 #: ../xfce4-about/contributors.h:130
 msgid "Goodies supervision"
-msgstr "Supervision de Goodies"
+msgstr "Supervisión de Goodies"
 
 #: ../xfce4-about/contributors.h:133
 msgid "Translations supervision"
