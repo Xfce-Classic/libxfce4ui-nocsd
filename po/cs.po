@@ -4,13 +4,13 @@
 # 
 # Translators:
 # Alois Nešpor <info@aloisnespor.info>, 2013
-# Michal Várady <miko.vaji@gmail.com>, 2014
+# Michal Várady <miko.vaji@gmail.com>, 2014-2015
 msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-07-02 22:33+0200\n"
-"PO-Revision-Date: 2014-10-26 21:45+0000\n"
+"POT-Creation-Date: 2015-02-18 18:30+0100\n"
+"PO-Revision-Date: 2015-02-21 01:27+0000\n"
 "Last-Translator: Michal Várady <miko.vaji@gmail.com>\n"
 "Language-Team: Czech (http://www.transifex.com/projects/p/libxfce4ui/language/cs/)\n"
 "MIME-Version: 1.0\n"
@@ -23,46 +23,46 @@ msgstr ""
 msgid "Failed to open web browser for online documentation"
 msgstr "Otevření online dokumentace ve webovém prohlížeči se nezdařilo"
 
-#: ../libxfce4ui/xfce-dialogs.c:213
+#: ../libxfce4ui/xfce-dialogs.c:252
 #, c-format
 msgid "Do you want to read the %s manual online?"
 msgstr "Chcete si přečíst příručku pro %s online?"
 
-#: ../libxfce4ui/xfce-dialogs.c:215
+#: ../libxfce4ui/xfce-dialogs.c:254
 msgid "Do you want to read the manual online?"
 msgstr "Chcete si přečíst příručku online?"
 
-#: ../libxfce4ui/xfce-dialogs.c:218
+#: ../libxfce4ui/xfce-dialogs.c:257
 msgid "Online Documentation"
 msgstr "Dokumentace online"
 
-#: ../libxfce4ui/xfce-dialogs.c:221
+#: ../libxfce4ui/xfce-dialogs.c:264
 msgid ""
 "You will be redirected to the documentation website where the help pages are"
 " maintained and translated."
 msgstr "Budete přesměrování na webovou stránku dokumentace, kde se stránky nápovědy udržují a překládají."
 
-#: ../libxfce4ui/xfce-dialogs.c:225
+#: ../libxfce4ui/xfce-dialogs.c:278
 msgid "_Read Online"
 msgstr "Číst _online"
 
-#: ../libxfce4ui/xfce-dialogs.c:237
+#: ../libxfce4ui/xfce-dialogs.c:290
 msgid "_Always go directly to the online documentation"
 msgstr "_Vždy automaticky přejít na dokumentaci online"
 
-#: ../libxfce4ui/xfce-dialogs.c:281
+#: ../libxfce4ui/xfce-dialogs.c:334
 msgid "Information"
 msgstr "Informace"
 
-#: ../libxfce4ui/xfce-dialogs.c:314
+#: ../libxfce4ui/xfce-dialogs.c:377
 msgid "Warning"
 msgstr "Varování"
 
-#: ../libxfce4ui/xfce-dialogs.c:348
+#: ../libxfce4ui/xfce-dialogs.c:421
 msgid "Error"
 msgstr "Chyba"
 
-#: ../libxfce4ui/xfce-dialogs.c:399
+#: ../libxfce4ui/xfce-dialogs.c:494
 msgid "Question"
 msgstr "Otázka"
 
@@ -97,7 +97,7 @@ msgid "Session manager did not return a valid client id"
 msgstr "Správce relace nevrátil platný identifikátor klienta"
 
 #. print warning for user
-#: ../libxfce4ui/xfce-spawn.c:413
+#: ../libxfce4ui/xfce-spawn.c:409
 #, c-format
 msgid ""
 "Working directory \"%s\" does not exist. It won't be used when spawning "
@@ -158,7 +158,7 @@ msgstr "%s již spouští tuto akci."
 msgid "Conflicting actions for %s"
 msgstr "Konflikt mezi akcemi pro %s"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:176
+#: ../libxfce4kbd-private/xfce-shortcuts.c:186
 msgid "This shortcut is already being used for something else."
 msgstr "Tato klávesová zkratka se již používá na jiném místě."
 
@@ -187,21 +187,25 @@ msgstr "příkaz"
 msgid "Shortcut"
 msgstr "Klávesová zkratka"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:267
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:247
+msgid "_Cancel"
+msgstr "_Zrušit"
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:275
 #, c-format
 msgid "Press now the keyboard keys you want to use to trigger the %s '%s'."
 msgstr "Nyní stiskněte klávesu, kterou chcete použít ke spuštění %s '%s'."
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:291
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:299
 msgid "Shortcut:"
 msgstr "Klávesová zkratka:"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:296
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:475
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:304
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:483
 msgid "No keys pressed yet, proceed."
 msgstr "Nejsou stisknuty žádné klávesy "
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:378
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:386
 msgid "Could not grab the keyboard."
 msgstr "Nelze zachytávat vstup z klávesnice."
 
