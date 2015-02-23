@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-02-18 18:30+0100\n"
-"PO-Revision-Date: 2015-02-19 02:54+0000\n"
+"PO-Revision-Date: 2015-02-23 00:03+0000\n"
 "Last-Translator: enolp <enolp@softastur.org>\n"
 "Language-Team: Asturian (http://www.transifex.com/projects/p/libxfce4ui/language/ast/)\n"
 "MIME-Version: 1.0\n"
@@ -90,12 +90,12 @@ msgstr "Amosar opciones d'alministración de sesión"
 #: ../libxfce4ui/xfce-sm-client.c:1611
 #, c-format
 msgid "Failed to connect to the session manager: %s"
-msgstr "Fallu al coneutar al alministrador de sesión: %s"
+msgstr "Fallu al coneutar al xestor de sesión: %s"
 
 #: ../libxfce4ui/xfce-sm-client.c:1617
 #, c-format
 msgid "Session manager did not return a valid client id"
-msgstr "L'alministrador de sesión nun devolvió una ID de veceru válida"
+msgstr "El xestor de sesión nun devolvió una ID de veceru válida"
 
 #. print warning for user
 #: ../libxfce4ui/xfce-spawn.c:409
@@ -165,7 +165,7 @@ msgstr "Esti accesu direutu yá ta usándose por daqué más."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:209
 msgid "Window Manager Action Shortcut"
-msgstr "Accesu direutu d'aición del alministrador de ventanes"
+msgstr "Accesu direutu d'aición del xestor de ventanes"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
@@ -516,7 +516,7 @@ msgstr "Información de versión"
 
 #: ../xfce4-about/main.c:70
 msgid "Window Manager"
-msgstr "Alministrador de ventanes"
+msgstr "Xestor de ventanes"
 
 #: ../xfce4-about/main.c:71
 msgid "Handles the placement of windows on the screen."
@@ -534,7 +534,7 @@ msgstr "Llanzadores de programes, botones de ventana, menú d'aplicaciones, camb
 
 #: ../xfce4-about/main.c:79
 msgid "Desktop Manager"
-msgstr "Alministrador d'escritoriu"
+msgstr "Xestor d'escritoriu"
 
 #: ../xfce4-about/main.c:80
 msgid ""
@@ -544,17 +544,17 @@ msgstr "Afita la color de fondu o imaxe con menús o iconos p'aplicaciones minim
 
 #: ../xfce4-about/main.c:84
 msgid "File Manager "
-msgstr "Alministrador de ficheros"
+msgstr "Xestor de ficheros"
 
 #: ../xfce4-about/main.c:85
 msgid ""
 "A modern file manager for the Unix/Linux desktop, aiming to be easy-to-use "
 "and fast."
-msgstr "Un alministrador de ficheros modernu pal escritoriu Unix/Linux, col oxetivu de ser fácil d'usar y rápidu."
+msgstr "Un xestor de ficheros modernu pal escritoriu Unix/Linux, col oxetivu de ser fácil d'usar y rápidu."
 
 #: ../xfce4-about/main.c:89
 msgid "Session Manager"
-msgstr "Alministrador de sesión"
+msgstr "Xestor de sesión"
 
 #: ../xfce4-about/main.c:90
 msgid ""
