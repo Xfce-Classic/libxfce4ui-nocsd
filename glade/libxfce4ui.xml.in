@@ -1,4 +1,3 @@
-<!-- $Id$ -->
 <glade-catalog name="libxfce4ui" supports="gtkbuilder" library="xfce4uiglade" version="4.5.0" book="xfce4" domain="glade3" depends="gtk+">
   <glade-widget-classes>
     <glade-widget-class name="XfceTitledDialog" generic-name="xfce-titled-dialog" _title="Titled Dialog">

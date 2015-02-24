@@ -1,3 +1,18 @@
+4.11.2
+======
+- Bump dependencies versions (autotools, Xfce libraries)
+- Remove SVN $Id$ tags
+- Properly quote AC_LANG_SOURCE
+- Fix autoconf m4 directory warning
+- Fix IT_PROG_INTLTOOL warning
+- Fix build with --enable-debug=full and GTK3 (bug #11176)
+- Add .gitignore
+- Fix grabbing shortcuts with <Super> modifier (bug #10373)
+- Avoid double forking when spawning external apps (bug #9373)
+- Don't drop startup notify hint when resetting to defaults (bug #10630)
+- Add <Ctrl><Alt>l shortcut for screen locking (xflock4) (bug #10728)
+- Fix xfce_dialog_show_help()
+
 4.11.1
 ======
 - Add xfce_dialog_show_help_with_version() so applications can send

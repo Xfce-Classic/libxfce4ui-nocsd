@@ -1,6 +1,5 @@
-dnl $Id$
 dnl
-dnl Copyright (c) 2007-2013 The Xfce development team
+dnl Copyright (c) 2007-2015 The Xfce development team
 dnl
 
 dnl ***************************
@@ -10,7 +9,7 @@ m4_define([libxfce4ui_verinfo], [0:0:0])
 m4_define([libxfce4ui_version_api], [1])
 m4_define([libxfce4ui_version_major], [4])
 m4_define([libxfce4ui_version_minor], [11])
-m4_define([libxfce4ui_version_micro], [1])
+m4_define([libxfce4ui_version_micro], [2])
 m4_define([libxfce4ui_version_nano], []) dnl leave this empty to have no nano version
 m4_define([libxfce4ui_version_build], [@REVISION@])
 m4_define([libxfce4ui_version_tag], [git])
@@ -31,16 +30,17 @@ m4_define([libxfce4ui_debug_default], [ifelse(libxfce4ui_version_tag(), [git], [
 dnl ***************************
 dnl *** Initialize autoconf ***
 dnl ***************************
-AC_COPYRIGHT([Copyright (c) 2007-2013 The Xfce development team])
+AC_COPYRIGHT([Copyright (c) 2007-2015 The Xfce development team])
 AC_INIT([libxfce4ui], [libxfce4ui_version], [http://bugzilla.xfce.org/], [libxfce4ui])
 AC_PREREQ([2.60])
+AC_CONFIG_MACRO_DIR([m4])
 AC_REVISION([libxfce4ui_version_build])
 AC_CANONICAL_TARGET()
 
 dnl ***************************
 dnl *** Initialize automake ***
 dnl ***************************
-AM_INIT_AUTOMAKE([1.8 dist-bzip2 tar-ustar no-dist-gzip])
+AM_INIT_AUTOMAKE([1.11 dist-bzip2 tar-ustar no-dist-gzip])
 AC_CONFIG_HEADERS([config.h])
 AM_MAINTAINER_MODE()
 m4_ifdef([AM_SILENT_RULES], [AM_SILENT_RULES([yes])])
@@ -75,13 +75,13 @@ AC_PROG_CC()
 AC_PROG_LD()
 AM_PROG_CC_C_O()
 AC_PROG_INSTALL()
-AC_PROG_INTLTOOL()
+IT_PROG_INTLTOOL([0.35.0])
 AC_CHECK_PROGS([PERL], [perl5 perl])
 
 dnl **************************
 dnl *** Initialize libtool ***
 dnl **************************
-LT_PREREQ([2.2.6])
+LT_PREREQ([2.4])
 LT_INIT([disable-static])
 
 dnl **************************************
@@ -153,7 +153,7 @@ AC_ARG_ENABLE([keyboard-library],
                               [Do not compile the keyboard library needed by xfwm4 and xfce4-settings (default=enabled)])],
               [enable_keyboard_library=$enableval], [enable_keyboard_library=yes])
 if test "x$enable_keyboard_library" = "xyes"; then
-  XDT_CHECK_PACKAGE([XFCONF], [libxfconf-0], [4.8.0])
+  XDT_CHECK_PACKAGE([XFCONF], [libxfconf-0], [4.10.0])
 fi
 AM_CONDITIONAL([ENABLE_KEYBOARD_LIBRARY], [test "x$enable_keyboard_library" = "xyes"])
 
@@ -248,7 +248,7 @@ if test "x$enable_visibility" != "xno"; then
   saved_CFLAGS="$CFLAGS"
   CFLAGS="$CFLAGS $xdt_vis_test_cflags"
   AC_MSG_CHECKING([whether $CC supports the GNUC visibility attribute])
-  AC_COMPILE_IFELSE(AC_LANG_SOURCE(
+  AC_COMPILE_IFELSE([AC_LANG_SOURCE(
   [
     void test_default (void);
     void test_hidden (void);
@@ -259,7 +259,7 @@ if test "x$enable_visibility" != "xno"; then
       test_hidden ();
       return 0;
     }
-  ]),
+  ])],
   [
     have_gnuc_visibility=yes
     AC_MSG_RESULT([yes])

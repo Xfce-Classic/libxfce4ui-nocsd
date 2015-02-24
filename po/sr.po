@@ -3,16 +3,16 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# salepetronije <salepetronije@gmail.com>, 2012
-# salepetronije <salepetronije@gmail.com>, 2013
+# Саша Петровић <salepetronije@gmail.com>, 2012
+# Саша Петровић <salepetronije@gmail.com>, 2012-2013,2015
 msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-07-02 22:33+0200\n"
-"PO-Revision-Date: 2013-11-19 11:04+0000\n"
-"Last-Translator: Nick <nick@xfce.org>\n"
-"Language-Team: Serbian (http://www.transifex.com/projects/p/xfce/language/sr/)\n"
+"POT-Creation-Date: 2015-02-18 18:30+0100\n"
+"PO-Revision-Date: 2015-02-23 18:37+0000\n"
+"Last-Translator: Саша Петровић <salepetronije@gmail.com>\n"
+"Language-Team: Serbian (http://www.transifex.com/projects/p/libxfce4ui/language/sr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -21,58 +21,58 @@ msgstr ""
 
 #: ../libxfce4ui/xfce-dialogs.c:98
 msgid "Failed to open web browser for online documentation"
-msgstr "Не успевам да отворим у веб прегледнику документацију са мреже"
+msgstr "Нисам успео да отворим у веб прегледнику документацију са мреже"
 
-#: ../libxfce4ui/xfce-dialogs.c:213
+#: ../libxfce4ui/xfce-dialogs.c:252
 #, c-format
 msgid "Do you want to read the %s manual online?"
 msgstr "Да ли желите да читате упутство за %s са мреже?"
 
-#: ../libxfce4ui/xfce-dialogs.c:215
+#: ../libxfce4ui/xfce-dialogs.c:254
 msgid "Do you want to read the manual online?"
-msgstr "Да ли желите да читате упутства са мреже?"
+msgstr "Да ли желите да читате упутство са мреже?"
 
-#: ../libxfce4ui/xfce-dialogs.c:218
+#: ../libxfce4ui/xfce-dialogs.c:257
 msgid "Online Documentation"
 msgstr "Упутства са мреже"
 
-#: ../libxfce4ui/xfce-dialogs.c:221
+#: ../libxfce4ui/xfce-dialogs.c:264
 msgid ""
 "You will be redirected to the documentation website where the help pages are"
 " maintained and translated."
 msgstr "Бићете преусмерени на веб страницу где се одржава и преводи помоћ."
 
-#: ../libxfce4ui/xfce-dialogs.c:225
+#: ../libxfce4ui/xfce-dialogs.c:278
 msgid "_Read Online"
 msgstr "_Читај са мреже"
 
-#: ../libxfce4ui/xfce-dialogs.c:237
+#: ../libxfce4ui/xfce-dialogs.c:290
 msgid "_Always go directly to the online documentation"
 msgstr "_Увек иди непосредно на упутство са мреже"
 
-#: ../libxfce4ui/xfce-dialogs.c:281
+#: ../libxfce4ui/xfce-dialogs.c:334
 msgid "Information"
 msgstr "Обавештење"
 
-#: ../libxfce4ui/xfce-dialogs.c:314
+#: ../libxfce4ui/xfce-dialogs.c:377
 msgid "Warning"
 msgstr "Упозорење"
 
-#: ../libxfce4ui/xfce-dialogs.c:348
+#: ../libxfce4ui/xfce-dialogs.c:421
 msgid "Error"
 msgstr "Грешка"
 
-#: ../libxfce4ui/xfce-dialogs.c:399
+#: ../libxfce4ui/xfce-dialogs.c:494
 msgid "Question"
 msgstr "Питање"
 
 #: ../libxfce4ui/xfce-sm-client.c:1424
 msgid "Session management client ID"
-msgstr "ИБ клијента управљања сесије"
+msgstr "ЛБ клијента управљања сесије"
 
 #: ../libxfce4ui/xfce-sm-client.c:1424
 msgid "ID"
-msgstr "ИБ"
+msgstr "ЛБ"
 
 #: ../libxfce4ui/xfce-sm-client.c:1425
 msgid "Disable session management"
@@ -94,10 +94,10 @@ msgstr "Нисам успео да се повежем са управником
 #: ../libxfce4ui/xfce-sm-client.c:1617
 #, c-format
 msgid "Session manager did not return a valid client id"
-msgstr "Управник сесије није вратио исправни ИБ клијента"
+msgstr "Управник сесије није вратио исправни ЛБ клијента"
 
 #. print warning for user
-#: ../libxfce4ui/xfce-spawn.c:413
+#: ../libxfce4ui/xfce-spawn.c:409
 #, c-format
 msgid ""
 "Working directory \"%s\" does not exist. It won't be used when spawning "
@@ -158,7 +158,7 @@ msgstr "%s већ окида ову радњу."
 msgid "Conflicting actions for %s"
 msgstr "Сукобљавајуће појаве за %s"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:176
+#: ../libxfce4kbd-private/xfce-shortcuts.c:186
 msgid "This shortcut is already being used for something else."
 msgstr "Ова пречица се већ користи за нешто друго."
 
@@ -175,7 +175,7 @@ msgstr "радња"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:216
 msgid "Command Shortcut"
-msgstr "Пречица наредби"
+msgstr "Пречица наредбе"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
@@ -187,23 +187,27 @@ msgstr "наредба"
 msgid "Shortcut"
 msgstr "Пречица"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:267
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:247
+msgid "_Cancel"
+msgstr "_Откажи"
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:275
 #, c-format
 msgid "Press now the keyboard keys you want to use to trigger the %s '%s'."
 msgstr "Сада притисните дугмад тастатуре која желите да окида %s „%s“."
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:291
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:299
 msgid "Shortcut:"
 msgstr "Пречица:"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:296
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:475
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:304
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:483
 msgid "No keys pressed yet, proceed."
 msgstr "Нема притиснутих дугмади, наставите."
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:378
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:386
 msgid "Could not grab the keyboard."
-msgstr "Не могу да захватим тастатуру."
+msgstr "Нисам успео да захватим тастатуру."
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:36
 msgid "Window operations menu"
@@ -267,7 +271,7 @@ msgstr "Сакриј прозор"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:51
 msgid "Move window"
-msgstr "Помери прозор"
+msgstr "Премести прозор"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:52
 msgid "Resize window"
@@ -503,7 +507,7 @@ msgstr "Поднаслов"
 
 #: ../glade/libxfce4ui.xml.in.h:3
 msgid "Xfce 4 Widgets"
-msgstr "ИксФЦЕ 4 справе"
+msgstr "Иксфце-ове 4 справе"
 
 #: ../xfce4-about/main.c:52
 msgid "Version information"
@@ -545,7 +549,7 @@ msgstr "Управник датотека "
 msgid ""
 "A modern file manager for the Unix/Linux desktop, aiming to be easy-to-use "
 "and fast."
-msgstr "Саврмени управник датотека за Уникс/Линукс радну станицу, који тежи да буде лак за употребу и брз."
+msgstr "Савремени управник датотека за Уникс/Линукс радну станицу, који тежи да буде лак за употребу и брз."
 
 #: ../xfce4-about/main.c:89
 msgid "Session Manager"
@@ -555,17 +559,17 @@ msgstr "Управник сесије"
 msgid ""
 "Restores your session on startup and allows you to shutdown the computer "
 "from Xfce."
-msgstr "Враћа вашу сесију при покретању и омогућава искључивање рачунара из ИксФЦЕ-а."
+msgstr "Враћа сесију при покретању и омогућава искључивање рачунара из Иксфце-а."
 
 #: ../xfce4-about/main.c:94
 msgid "Setting System"
-msgstr "Подешавање система"
+msgstr "Поставке система"
 
 #: ../xfce4-about/main.c:95
 msgid ""
 "Configuration system to control various aspects of the desktop like "
 "appearance, display, keyboard and mouse settings."
-msgstr "Подешавања система за управљање разним областима радног окружења попут подешавања изгледа, екрана, тастатуре и миша."
+msgstr "Подешавања система за управљање разним областима радног окружења попут подешавања изгледа, приказа, тастатуре и миша."
 
 #: ../xfce4-about/main.c:99
 msgid "Application Finder"
@@ -575,11 +579,11 @@ msgstr "Проналазач програма"
 msgid ""
 "Shows the applications installed on your system in categories, so you can "
 "quickly find and launch them."
-msgstr "Приказује програме уграђене на вашем систему по врстама, тако да их лако можете наћи и покренути."
+msgstr "Приказује програме уграђене на систему по врстама, тако да их лако можете пронаћи и покренути."
 
 #: ../xfce4-about/main.c:104
 msgid "Settings Daemon"
-msgstr "Домар подешавања"
+msgstr "Домар поставки"
 
 #: ../xfce4-about/main.c:105
 msgid "D-Bus-based configuration storage system."
@@ -589,14 +593,14 @@ msgstr "Систем складиштења подешавања заснова�
 msgid ""
 "Xfce is a collection of programs that together provide a full-featured "
 "desktop environment. The following programs are part of the Xfce core:"
-msgstr "ИксФЦЕ је скуп програма који заједно обезбеђују потпуно радно окружење. Следећи програми су део ИксФЦЕ језгра:"
+msgstr "Иксфце је скуп програма који заједно обезбеђују потпуно радно окружење. Следећи програми су део језгра Иксфце-а:"
 
 #: ../xfce4-about/main.c:136
 msgid ""
 "Xfce is also a development platform providing several libraries, that help "
 "programmers create applications that fit in well with the desktop "
 "environment."
-msgstr "ИксФЦЕ је такође развојна платформа која обезбеђује библиотеке, које програмерима помаже да стварају програме који се добро уклапају у радно окружење."
+msgstr "Иксфце је такође развојна платформа која обезбеђује библиотеке које програмерима помажу да стварају програме који се добро уклапају у радно окружење."
 
 #: ../xfce4-about/main.c:142
 msgid ""
@@ -604,15 +608,15 @@ msgid ""
 " for applications and LGPL or BSDL for libraries. Look at the documentation,"
 " the source code or the Xfce website (http://www.xfce.org) for more "
 "information."
-msgstr "ИксФЦЕ делови су лиценцирани под слободним и лиценцама отвореног кода; ГПЛ или БСД за програме и ЛГПЛ или БСДЛ за библиотеке. Погледајте документацију, изворни код, или веб страницу (http://www.xfce.org) за више обавештења."
+msgstr "Иксфце-ови делови су објављени под слободним и лиценцама отвореног кода; ГПЛ или БСД за програме и ЛГПЛ или БСДЛ за библиотеке. Погледајте документацију, изворни код, или веб страницу (http://www.xfce.org) за више обавештења."
 
 #: ../xfce4-about/main.c:149
 msgid "Thank you for your interest in Xfce."
-msgstr "Хвала на занимању за ИксФЦЕ."
+msgstr "Хвала на занимању за Иксфце."
 
 #: ../xfce4-about/main.c:153
 msgid "The Xfce Development Team"
-msgstr "ИксФЦЕ развојна дружина"
+msgstr "Развојна дружина Иксфце-а"
 
 #: ../xfce4-about/main.c:262
 msgid ""
@@ -628,7 +632,7 @@ msgstr "Хвала свима који су помогли да ове меко�
 msgid ""
 "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
-msgstr "Ауторска права над ИксФЦЕ-ом 4 задржава Оливје Фурдан (fourdan@xfce.org). Ауторска права над разним деловима задржавају њихови одговарајући ствараоци."
+msgstr "Права умножавања над Иксце-ом 4 задржава Оливје Фурдан (fourdan@xfce.org). Права над разним деловима задржавају њихови одговарајући ствараоци."
 
 #: ../xfce4-about/main.c:288
 msgid ""
@@ -658,12 +662,12 @@ msgstr "Нисам успео да покренем ГТК+."
 
 #: ../xfce4-about/main.c:457
 msgid "The Xfce development team. All rights reserved."
-msgstr "ИксФЦЕ развојна дружина. Сва права су задржана."
+msgstr "Развојна дружина Иксфце-а. Сва права су задржана."
 
 #: ../xfce4-about/main.c:458
 #, c-format
 msgid "Please report bugs to <%s>."
-msgstr "Молим пријавите грешке на <%s>."
+msgstr "Молим, пријавите грешке на <%s>."
 
 #. I18N: date/time the translators list was updated
 #: ../xfce4-about/main.c:461
@@ -673,7 +677,7 @@ msgstr "Списак преводиоца из %s."
 
 #: ../xfce4-about/main.c:471
 msgid "Failed to load interface"
-msgstr "Неуспешно учитавање сучеља"
+msgstr "Нисам успео да учитам сучеља"
 
 #. I18N: first %s will be replaced by the version, second by
 #. * the name of the distribution (--with-vendor-info=NAME)
@@ -697,7 +701,7 @@ msgstr "Програмери језгра"
 
 #: ../xfce4-about/contributors.h:124
 msgid "Active contributors"
-msgstr "Активни доприносиоци"
+msgstr "Садашњи доприносиоци"
 
 #: ../xfce4-about/contributors.h:127
 msgid "Servers maintained by"
@@ -721,15 +725,15 @@ msgstr "Претходни доприносиоци"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:1
 msgid "About Xfce"
-msgstr "О ИксФЦЕ-у"
+msgstr "О Иксфце-у"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:2
 msgid "Information about the Xfce Desktop Environment"
-msgstr "Подаци о ИксФЦЕ радном окружењу"
+msgstr "Подаци о радном окружењу Иксфце-а"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:1
 msgid "About the Xfce Desktop Environment"
-msgstr "О ИксФЦЕ радном окружењу"
+msgstr "О радном окружењу Иксфце-а"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:2
 msgid "About"
@@ -757,4 +761,4 @@ msgstr "Ауторска права"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:8
 msgid "License"
-msgstr "Дозволе"
+msgstr "Дозвола"

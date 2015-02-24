@@ -65,17 +65,23 @@ xfce_gtk_button_new_mixed (const gchar *stock_id,
       if (stock_id != NULL)
         {
           /* create image widget */
+#if !GTK_CHECK_VERSION (3, 10, 0)
           if (g_str_has_prefix (stock_id, "gtk-"))
             image = gtk_image_new_from_stock (stock_id, GTK_ICON_SIZE_BUTTON);
           else
+#endif
             image = gtk_image_new_from_icon_name (stock_id, GTK_ICON_SIZE_BUTTON);
           gtk_button_set_image (GTK_BUTTON (button), image);
         }
     }
   else
     {
+#if !GTK_CHECK_VERSION (3, 10, 0)
       /* fall back to a stock button */
       button = gtk_button_new_from_stock (stock_id);
+#else
+      button = gtk_button_new_with_label (label);
+#endif
     }
 
   return button;

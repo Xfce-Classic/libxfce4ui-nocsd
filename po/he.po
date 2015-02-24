@@ -1,55 +1,60 @@
-# Hebrew translation of the libxfce4ui package.
-# This file is distributed under the same license as the libxfce4ui package.
-# Hezy Amiel <open@hezyamiel.com>, 2010.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# GenghisKhan <genghiskhan@gmx.ca>, 2014
+# GenghisKhan <genghiskhan@gmx.ca>, 2014-2015
+# Hezy Amiel <open@hezyamiel.com>, 2010
+# Yaron Shahrabani <sh.yaron@gmail.com>, 2014
 msgid ""
 msgstr ""
-"Project-Id-Version: libxfce4ui\n"
+"Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-12-28 09:06+0100\n"
-"PO-Revision-Date: \n"
-"Last-Translator: Hezy Amiel <open@hezyamiel.com>\n"
-"Language-Team: Hebrew <xfce-i18n@xfce.org>\n"
-"Language: he\n"
+"POT-Creation-Date: 2013-07-02 22:33+0200\n"
+"PO-Revision-Date: 2015-01-20 12:12+0000\n"
+"Last-Translator: GenghisKhan <genghiskhan@gmx.ca>\n"
+"Language-Team: Hebrew (http://www.transifex.com/projects/p/libxfce4ui/language/he/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Language: Hebrew\n"
+"Language: he\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../libxfce4ui/xfce-dialogs.c:98
 msgid "Failed to open web browser for online documentation"
-msgstr "פתיחת דפדפן האינטרנט להצגת תיעוד מקוון נכשלה"
+msgstr "נכשל לפתוח דפדפן רשת עבור תיעוד מקוון"
 
 #: ../libxfce4ui/xfce-dialogs.c:213
 #, c-format
 msgid "Do you want to read the %s manual online?"
-msgstr "האם ברצונך לקרוא את המדריך המקוון של %s?"
+msgstr "האם ברצונך לקרוא את מדריך %s אונליין?"
 
 #: ../libxfce4ui/xfce-dialogs.c:215
 msgid "Do you want to read the manual online?"
-msgstr "האם ברצונך לקרוא את המדריך המקוון?"
+msgstr "האם ברצונך לקרוא את המדריך אונליין?"
 
 #: ../libxfce4ui/xfce-dialogs.c:218
 msgid "Online Documentation"
-msgstr "תיעוד"
+msgstr "תיעוד מקוון"
 
 #: ../libxfce4ui/xfce-dialogs.c:221
 msgid ""
-"You will be redirected to the documentation website where the help pages are "
-"maintained and translated."
-msgstr ""
+"You will be redirected to the documentation website where the help pages are"
+" maintained and translated."
+msgstr "המערכת תפנה אותך אל אתר רשת תיעוד היכן שעמודי עזרה הינם מתוחזקים ומתורגמים."
 
 #: ../libxfce4ui/xfce-dialogs.c:225
 msgid "_Read Online"
-msgstr "ל_קרוא באינטרנט"
+msgstr "קרא _אונליין"
 
 #: ../libxfce4ui/xfce-dialogs.c:237
 msgid "_Always go directly to the online documentation"
-msgstr ""
+msgstr "_המשך ישירות תמיד אל התיעוד המקוון"
 
 #: ../libxfce4ui/xfce-dialogs.c:281
-#, fuzzy
 msgid "Information"
-msgstr "פרטי הגרסה"
+msgstr "מידע"
 
 #: ../libxfce4ui/xfce-dialogs.c:314
 msgid "Warning"
@@ -63,52 +68,50 @@ msgstr "שגיאה"
 msgid "Question"
 msgstr "שאלה"
 
-#: ../libxfce4ui/xfce-sm-client.c:1403
+#: ../libxfce4ui/xfce-sm-client.c:1424
 msgid "Session management client ID"
-msgstr ""
+msgstr "Session management client ID"
 
-#: ../libxfce4ui/xfce-sm-client.c:1403
+#: ../libxfce4ui/xfce-sm-client.c:1424
 msgid "ID"
-msgstr "זיהוי"
+msgstr "ID"
 
-#: ../libxfce4ui/xfce-sm-client.c:1404
+#: ../libxfce4ui/xfce-sm-client.c:1425
 msgid "Disable session management"
-msgstr ""
+msgstr "Disable session management"
 
-#: ../libxfce4ui/xfce-sm-client.c:1414
+#: ../libxfce4ui/xfce-sm-client.c:1435
 msgid "Session management options"
-msgstr ""
+msgstr "Session management options"
 
-#: ../libxfce4ui/xfce-sm-client.c:1415
+#: ../libxfce4ui/xfce-sm-client.c:1436
 msgid "Show session management options"
-msgstr ""
+msgstr "Show session management options"
 
-#: ../libxfce4ui/xfce-sm-client.c:1591
+#: ../libxfce4ui/xfce-sm-client.c:1611
 #, c-format
 msgid "Failed to connect to the session manager: %s"
-msgstr ""
+msgstr "Failed to connect to the session manager: %s"
 
-#: ../libxfce4ui/xfce-sm-client.c:1598
+#: ../libxfce4ui/xfce-sm-client.c:1617
 #, c-format
 msgid "Session manager did not return a valid client id"
-msgstr ""
+msgstr "Session manager did not return a valid client id"
 
 #. print warning for user
 #: ../libxfce4ui/xfce-spawn.c:413
 #, c-format
 msgid ""
-"Working directory \"%s\" does not exist. It won't be used when spawning \"%s"
-"\"."
-msgstr ""
+"Working directory \"%s\" does not exist. It won't be used when spawning "
+"\"%s\"."
+msgstr "Working directory \"%s\" does not exist. It won't be used when spawning \"%s\"."
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
-#, fuzzy, c-format
+#, c-format
 msgid ""
-"This shortcut is already being used for the action '%s'. Which action do you "
-"want to use?"
-msgstr ""
-"קיצור כבר בשימוש.\n"
-"האם ברצונך להשתמש בו בכל זאת?"
+"This shortcut is already being used for the action '%s'. Which action do you"
+" want to use?"
+msgstr "קיצור דרך זה כבר מצוי בשימוש עבור הפעולה '%s'. באיזו פעולה ברצונך להשתמש?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:54
 #: ../libxfce4kbd-private/xfce-shortcuts.c:57
@@ -116,7 +119,7 @@ msgstr ""
 #: ../libxfce4kbd-private/xfce-shortcuts.c:63
 #, c-format
 msgid "Use '%s'"
-msgstr ""
+msgstr "השתמש בקיצור '%s'"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:54
 #: ../libxfce4kbd-private/xfce-shortcuts.c:57
@@ -124,568 +127,510 @@ msgstr ""
 #: ../libxfce4kbd-private/xfce-shortcuts.c:63
 #, c-format
 msgid "Keep '%s'"
-msgstr ""
+msgstr "שמור על '%s'"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
 #: ../libxfce4kbd-private/xfce-shortcuts.c:59
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "This shortcut is already being used for the command '%s'. Which action do "
 "you want to use?"
-msgstr ""
-"קיצור כבר בשימוש.\n"
-"האם ברצונך להשתמש בו בכל זאת?"
+msgstr "קיצור דרך זה כבר מצוי בשימוש עבור הפקודה '%s'. באיזו פעולה ברצונך להשתמש?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "This shortcut is already being used by the action '%s'. Which action do you "
 "want to use?"
-msgstr ""
-"קיצור כבר בשימוש.\n"
-"האם ברצונך להשתמש בו בכל זאת?"
+msgstr "קיצור דרך זה כבר מצוי בשימוש על ידי הפעולה '%s'. באיזו פעולה ברצונך להשתמש?"
 
 #. This shortcut already exists in the provider, we don't want it twice
 #. Warn the user
 #: ../libxfce4kbd-private/xfce-shortcuts.c:110
 msgid "Please use another key combination."
-msgstr ""
+msgstr "אנא השתמש בשילוב מקשים אחר."
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:111
 #, c-format
 msgid "%s already triggers this action."
-msgstr ""
+msgstr "‏%s כבר מעוררת את פעולה זו."
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:116
 #, c-format
 msgid "Conflicting actions for %s"
-msgstr ""
+msgstr "פקודות מתנגשות עבור %s"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:189
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcuts.c:176
 msgid "This shortcut is already being used for something else."
-msgstr ""
-"קיצור כבר בשימוש.\n"
-"האם ברצונך להשתמש בו בכל זאת?"
+msgstr "קיצור דרך זה כבר מצוי בשימוש עבור משהו אחר."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:209
-#, fuzzy
 msgid "Window Manager Action Shortcut"
-msgstr "הגדרות מנהל חלונות Xfce4"
+msgstr "קיצור דרך פעולת מנהל חלונות"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:212
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:226
-#, fuzzy
 msgid "action"
-msgstr "פעיל"
+msgstr "פעולה"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:216
-#, fuzzy
 msgid "Command Shortcut"
-msgstr "צור קיצור"
+msgstr "קיצור דרך פקודה"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:219
-#, fuzzy
 msgid "command"
 msgstr "פקודה"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:223
-#, fuzzy
 msgid "Shortcut"
-msgstr "אין קיצור"
+msgstr "קיצור דרך"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:267
 #, c-format
 msgid "Press now the keyboard keys you want to use to trigger the %s '%s'."
-msgstr ""
+msgstr "לחץ עכשיו על מקשי המקלדת שברצונך להשתמש כדי לעורר את %s '%s'."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:291
 msgid "Shortcut:"
-msgstr "אין קיצור"
+msgstr "קיצור דרך:"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:296
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:475
 msgid "No keys pressed yet, proceed."
-msgstr ""
+msgstr "לא נלחצו מקשים עדיין, המשך."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:378
 msgid "Could not grab the keyboard."
-msgstr "לא ניתן לקרוא את המקלדת"
+msgstr "לא היתה אפשרות לתפוס את המקלדת."
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:33
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:36
 msgid "Window operations menu"
 msgstr "תפריט פעולות חלון"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:34
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:37
 msgid "Up"
-msgstr ""
+msgstr "מעלה"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:35
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:38
 msgid "Down"
-msgstr ""
+msgstr "מטה"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:36
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:39
 msgid "Left"
 msgstr "שמאל"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:37
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:40
 msgid "Right"
 msgstr "ימין"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:38
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:41
 msgid "Cancel"
-msgstr ""
+msgstr "ביטול"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:39
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:42
 msgid "Cycle windows"
-msgstr "עבור בין חלונות"
+msgstr "נתר בין חלונות"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:40
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:43
 msgid "Cycle windows (Reverse)"
-msgstr "עבור בין חלונות"
+msgstr "נתר בין חלונות (הפוך)"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:41
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:44
 msgid "Switch window for same application"
-msgstr "העבר חלון לסביבת עבודה %d"
+msgstr "החלף חלון עבור אותו יישום"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:42
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:45
 msgid "Switch application"
-msgstr ""
+msgstr "החלף יישום"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:43
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:46
 msgid "Close window"
 msgstr "סגור חלון"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:44
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:47
 msgid "Maximize window horizontally"
 msgstr "הגדל חלון אופקית"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:45
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:48
 msgid "Maximize window vertically"
 msgstr "הגדל חלון אנכית"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:46
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:49
 msgid "Maximize window"
 msgstr "הגדל חלון"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:47
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:50
 msgid "Hide window"
 msgstr "הסתר חלון"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:48
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:51
 msgid "Move window"
-msgstr "הזז חלון למעלה"
+msgstr "הזז חלון"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:49
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:52
 msgid "Resize window"
-msgstr "הזז קצה עליון של חלון"
+msgstr "שנה גודל חלון"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:50
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:53
 msgid "Shade window"
 msgstr "גלול חלון"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:51
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:54
 msgid "Stick window"
 msgstr "הדבק חלון"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:52
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:55
 msgid "Raise window"
-msgstr "שנה גודל של חלון"
+msgstr "הרם חלון"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:53
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:56
 msgid "Lower window"
-msgstr "העבר חלון לרקע"
+msgstr "הנמך חלון"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:54
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:57
 msgid "Raise or lower window"
-msgstr "שנה גודל של חלון"
+msgstr "הרם או הנמך חלון"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:55
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:58
 msgid "Fill window"
-msgstr "הסתר חלון"
+msgstr "מלא חלון"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:56
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:59
 msgid "Fill window horizontally"
-msgstr "הגדל חלון אופקית"
+msgstr "מלא חלון אופקית"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:57
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:60
 msgid "Fill window vertically"
-msgstr "הגדל חלון אנכית"
+msgstr "מלא חלון אנכית"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:58
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:61
 msgid "Toggle above"
-msgstr ""
+msgstr "החלף מצב מעל"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:59
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:62
 msgid "Toggle fullscreen"
-msgstr "חלון במצב מסך מלא"
+msgstr "החלף מצב מסך מלא"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:60
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:63
 msgid "Move window to upper workspace"
-msgstr "העבר חלון לסביבת העבודה העליונה"
+msgstr "העבר חלון למשטח עבודה עליון"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:61
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:64
 msgid "Move window to bottom workspace"
-msgstr "העבר חלון לסביבת העבודה התחתונה"
+msgstr "העבר חלון למשטח עבודה תחתון"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:62
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:65
 msgid "Move window to left workspace"
-msgstr "העבר חלון לסביבת העבודה השמאלית"
+msgstr "העבר חלון למשטח עבודה שמאלי"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:63
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:66
 msgid "Move window to right workspace"
-msgstr "העבר חלון לסביבת העבודה הימינית"
+msgstr "העבר חלון למשטח עבודה ימני"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:64
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:67
 msgid "Move window to previous workspace"
-msgstr "העבר חלון לסביבת העבודה הקודמת"
+msgstr "העבר חלון למשטח עבודה קודם"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:65
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:68
 msgid "Move window to next workspace"
-msgstr "העבר חלון לסביבת העבודה ההבאה"
+msgstr "העבר חלון למשטח עבודה הבא"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:66
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:69
 msgid "Move window to workspace 1"
-msgstr "העבר חלון לסביבת עבודה %d"
+msgstr "העבר חלון למשטח עבודה 1"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:67
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:70
 msgid "Move window to workspace 2"
-msgstr "העבר חלון לסביבת עבודה %d"
+msgstr "העבר חלון למשטח עבודה 2"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:68
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:71
 msgid "Move window to workspace 3"
-msgstr "העבר חלון לסביבת עבודה %d"
+msgstr "העבר חלון למשטח עבודה 3"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:69
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:72
 msgid "Move window to workspace 4"
-msgstr "העבר חלון לסביבת עבודה %d"
+msgstr "העבר חלון למשטח עבודה 4"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:70
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:73
 msgid "Move window to workspace 5"
-msgstr "העבר חלון לסביבת עבודה %d"
+msgstr "העבר חלון למשטח עבודה 5"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:71
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:74
 msgid "Move window to workspace 6"
-msgstr "העבר חלון לסביבת עבודה %d"
+msgstr "העבר חלון למשטח עבודה 6"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:72
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:75
 msgid "Move window to workspace 7"
-msgstr "העבר חלון לסביבת עבודה %d"
+msgstr "העבר חלון למשטח עבודה 7"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:73
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:76
 msgid "Move window to workspace 8"
-msgstr "העבר חלון לסביבת עבודה %d"
+msgstr "העבר חלון למשטח עבודה 8"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:74
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:77
 msgid "Move window to workspace 9"
-msgstr "העבר חלון לסביבת עבודה %d"
+msgstr "העבר חלון למשטח עבודה 9"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:75
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:78
 msgid "Move window to workspace 10"
-msgstr "העבר חלון לסביבת עבודה %d"
+msgstr "העבר חלון למשטח עבודה 10"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:76
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:79
 msgid "Move window to workspace 11"
-msgstr "העבר חלון לסביבת עבודה %d"
+msgstr "העבר חלון למשטח עבודה 11"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:77
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:80
 msgid "Move window to workspace 12"
-msgstr "העבר חלון לסביבת עבודה %d"
+msgstr "העבר חלון למשטח עבודה 12"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:78
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:81
 msgid "Tile window to the top"
-msgstr "העבר חלון לסביבת העבודה השמאלית"
+msgstr "רצף חלון לשיא"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:79
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:82
 msgid "Tile window to the bottom"
-msgstr "העבר חלון לסביבת העבודה התחתונה"
+msgstr "רצף חלון לחתית"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:80
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:83
 msgid "Tile window to the left"
-msgstr "הזז קצה שמאלי של חלון"
+msgstr "רצף חלון לשמאל"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:81
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:84
 msgid "Tile window to the right"
-msgstr "הזז קצה ימני של חלון"
+msgstr "רצף חלון לימין"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:82
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:85
 msgid "Show desktop"
 msgstr "הצג שולחן עבודה"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:83
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:86
 msgid "Upper workspace"
-msgstr "סביבת עבודה עליונה"
+msgstr "משטח עבודה עליון"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:84
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:87
 msgid "Bottom workspace"
-msgstr "סביבת עבודה תחתונה"
+msgstr "משטח עבודה תחתון"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:85
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:88
 msgid "Left workspace"
-msgstr "סביבת עבודה משמאל"
+msgstr "משטח עבודה שמאלי"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:86
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:89
 msgid "Right workspace"
-msgstr "סביבת עבודה מימין"
+msgstr "משטח עבודה ימני"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:87
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:90
 msgid "Previous workspace"
-msgstr "סביבת עבודה קודמת"
+msgstr "משטח עבודה קודם"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:88
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:91
 msgid "Next workspace"
-msgstr "סביבת עבודה הבאה"
+msgstr "משטח עבודה הבא"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:89
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:92
 msgid "Workspace 1"
-msgstr "סביבת עבודה %i"
+msgstr "משטח עבודה 1"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:90
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:93
 msgid "Workspace 2"
-msgstr "סביבת עבודה %d"
+msgstr "משטח עבודה 2"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:91
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:94
 msgid "Workspace 3"
-msgstr "סביבת עבודה %i"
+msgstr "משטח עבודה 3"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:92
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:95
 msgid "Workspace 4"
-msgstr "סביבת עבודה %i"
+msgstr "משטח עבודה 4"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:93
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:96
 msgid "Workspace 5"
-msgstr "סביבת עבודה %i"
+msgstr "משטח עבודה 5"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:94
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:97
 msgid "Workspace 6"
-msgstr "סביבת עבודה %i"
+msgstr "משטח עבודה 6"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:95
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:98
 msgid "Workspace 7"
-msgstr "סביבת עבודה %i"
+msgstr "משטח עבודה 7"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:96
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:99
 msgid "Workspace 8"
-msgstr "סביבת עבודה %i"
+msgstr "משטח עבודה 8"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:97
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:100
 msgid "Workspace 9"
-msgstr "סביבת עבודה %i"
+msgstr "משטח עבודה 9"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:98
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:101
 msgid "Workspace 10"
-msgstr "סביבת עבודה %d"
+msgstr "משטח עבודה 10"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:99
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:102
 msgid "Workspace 11"
-msgstr "סביבת עבודה %i"
+msgstr "משטח עבודה 11"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:100
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:103
 msgid "Workspace 12"
-msgstr "סביבת עבודה %d"
+msgstr "משטח עבודה 12"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:101
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:104
 msgid "Add workspace"
-msgstr "הוסף סביבת עבודה"
+msgstr "הוסף משטח עבודה"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:102
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:105
 msgid "Add adjacent workspace"
-msgstr "הוסף סביבת עבודה"
+msgstr "הוסף משטח עבודה סמוך"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:103
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:106
 msgid "Delete last workspace"
-msgstr "מחק סביבת עבודה"
+msgstr "מחק משטח עבודה אחרון"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:104
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:107
 msgid "Delete active workspace"
-msgstr "מחק סביבת עבודה"
+msgstr "מחק משטח עבודה פעיל"
 
 #: ../glade/libxfce4ui.xml.in.h:1
-#, fuzzy
 msgid "Titled Dialog"
-msgstr "גופן כותרת"
+msgstr "דו שיח בעל כותרת"
 
 #: ../glade/libxfce4ui.xml.in.h:2
-#, fuzzy
 msgid "Subtitle"
-msgstr "כותרת"
+msgstr "כותרת משנה"
 
 #: ../glade/libxfce4ui.xml.in.h:3
-#, fuzzy
 msgid "Xfce 4 Widgets"
-msgstr "הגדרות מנהל חלונות Xfce4"
+msgstr "וידג׳טים Xfce 4"
 
 #: ../xfce4-about/main.c:52
 msgid "Version information"
-msgstr "פרטי הגרסה"
+msgstr "Version information"
 
 #: ../xfce4-about/main.c:70
 msgid "Window Manager"
 msgstr "מנהל חלונות"
 
 #: ../xfce4-about/main.c:71
-#, fuzzy
 msgid "Handles the placement of windows on the screen."
-msgstr "הצג את תוכן החלון בעת שינוי גודל"
+msgstr "מטפל במיקום של חלונות על המרקע."
 
 #: ../xfce4-about/main.c:74
 msgid "Panel"
-msgstr ""
+msgstr "לוח"
 
 #: ../xfce4-about/main.c:75
 msgid ""
-"Program launchers, window buttons, applications menu, workspace switcher and "
-"more."
-msgstr ""
+"Program launchers, window buttons, applications menu, workspace switcher and"
+" more."
+msgstr "משגרי תוכניות, לחצני חלונות, תפריט אפליקציות, מחליף משטחי עבודה ועוד."
 
 #: ../xfce4-about/main.c:79
-#, fuzzy
 msgid "Desktop Manager"
-msgstr "מנהל חלונות"
+msgstr "מנהל שולחן עבודה"
 
 #: ../xfce4-about/main.c:80
 msgid ""
 "Sets the background color or image with optional application menu or icons "
 "for minimized applications or launchers, devices and folders."
-msgstr ""
+msgstr "קובע צבעי רקע או תמונות עם תפריט אפליקציות אופציונלי או סמלים עבור אפליקציות ממוזערות או משגרים, התקנים ותיקיות."
 
 #: ../xfce4-about/main.c:84
-#, fuzzy
 msgid "File Manager "
-msgstr "מנהל חלונות"
+msgstr "סייר קבצים"
 
 #: ../xfce4-about/main.c:85
 msgid ""
 "A modern file manager for the Unix/Linux desktop, aiming to be easy-to-use "
 "and fast."
-msgstr ""
+msgstr "מנהל קבצים מודרני עבור שולחן עבודה Unix/Linux, אשר שואף להיות קל לשימוש ומהיר."
 
 #: ../xfce4-about/main.c:89
-#, fuzzy
 msgid "Session Manager"
-msgstr "מנהל חלונות"
+msgstr "מנהל הפעלה"
 
 #: ../xfce4-about/main.c:90
 msgid ""
 "Restores your session on startup and allows you to shutdown the computer "
 "from Xfce."
-msgstr ""
+msgstr "משחזר את ההפעלה שלך בעת הפעלה ומתיר לך לכבות את המחשב מתוך Xfce."
 
 #: ../xfce4-about/main.c:94
 msgid "Setting System"
-msgstr ""
+msgstr "מערכת הגדרות"
 
 #: ../xfce4-about/main.c:95
 msgid ""
 "Configuration system to control various aspects of the desktop like "
 "appearance, display, keyboard and mouse settings."
-msgstr ""
+msgstr "מערכת תצורה לבקרה על היבטים שונים של שולחן עבודה כגון הגדרות מראה, תצוגה, מקלדת ועכבר."
 
 #: ../xfce4-about/main.c:99
 msgid "Application Finder"
-msgstr ""
+msgstr "מחפש אפליקציות"
 
 #: ../xfce4-about/main.c:100
 msgid ""
 "Shows the applications installed on your system in categories, so you can "
 "quickly find and launch them."
-msgstr ""
+msgstr "מציג את האפליקציות המותקנות במערכת בתוך קטגוריות, כך שתוכלו לשגר אותן בזריזות."
 
 #: ../xfce4-about/main.c:104
 msgid "Settings Daemon"
-msgstr ""
+msgstr "שדון הגדרות"
 
 #: ../xfce4-about/main.c:105
 msgid "D-Bus-based configuration storage system."
-msgstr ""
+msgstr "מערכת אחסון תצורה מבוססת D-Bus."
 
 #: ../xfce4-about/main.c:112
 msgid ""
 "Xfce is a collection of programs that together provide a full-featured "
 "desktop environment. The following programs are part of the Xfce core:"
-msgstr ""
+msgstr "‏Xfce הינו אוסף של תוכניות אשר יחדיו מספקות סביבת שולחן עבודה עשירה ורב תכליתית. התוכניות הבאות הן חלק של ליבת Xfce:"
 
 #: ../xfce4-about/main.c:136
 msgid ""
 "Xfce is also a development platform providing several libraries, that help "
 "programmers create applications that fit in well with the desktop "
 "environment."
-msgstr ""
+msgstr "‏Xfce מהווה גם סביבת פיתוח שמספקת מספר ספריות, אשר מסייעות למתכנתים ליצור אפליקציות אשר יותאמו היטב עם סביבת שולחן עבודה זו."
 
 #: ../xfce4-about/main.c:142
 msgid ""
-"Xfce components are licensed under free or open source licences; GPL or BSDL "
-"for applications and LGPL or BSDL for libraries. Look at the documentation, "
-"the source code or the Xfce website (http://www.xfce.org) for more "
+"Xfce components are licensed under free or open source licences; GPL or BSDL"
+" for applications and LGPL or BSDL for libraries. Look at the documentation,"
+" the source code or the Xfce website (http://www.xfce.org) for more "
 "information."
-msgstr ""
+msgstr "רכיבי Xfce הינם רשויים תחת רשיונות חופשיים או קוד פתוח; GPL או BSDL עבור יישומים (applications) ורשיונות LGPL או BSDL עבור ספריות (libraries). ראו את התיעוד, הקוד מקור או אתר רשת Xfce‏ (http://www.xfce.org) לשם מידע נוסף."
 
 #: ../xfce4-about/main.c:149
 msgid "Thank you for your interest in Xfce."
-msgstr ""
+msgstr "תודה לכם על התעניינותכם בפרויקט Xfce."
 
 #: ../xfce4-about/main.c:153
 msgid "The Xfce Development Team"
-msgstr ""
+msgstr "צוות הפיתוח של Xfce"
 
 #: ../xfce4-about/main.c:262
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
 "on <http://bugzilla.xfce.org> ."
-msgstr ""
+msgstr "אם אתם יודעים על מישהו אשר חסר מן רשימה זו; אל תהססו ומלאו באג באתר <http://bugzilla.xfce.org> ."
 
 #: ../xfce4-about/main.c:266
 msgid "Thanks to all who helped making this software available!"
-msgstr ""
+msgstr "תודה לכל מי אשר סייע להפוך את תכנה זו לזמינה!"
 
 #: ../xfce4-about/main.c:283
 msgid ""
 "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
-msgstr ""
+msgstr "‏Xfce 4 הינו מוגן בזכויות יוצרים לטובת Olivier Fourdan ‏(fourdan@xfce.org). הרכיבים השונים מוגנים בזכויות יוצרים לטובת המחברים שלהם בהתאמה."
 
 #: ../xfce4-about/main.c:288
 msgid ""
@@ -693,127 +638,125 @@ msgid ""
 "distributed under the terms of the GNU Library General Public License as "
 "published by the Free Software Foundation; either version 2 of the License, "
 "or (at your option) any later version."
-msgstr ""
+msgstr "החבילות libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs וגם exo הינן מופצות תחת התנאים של הרשיון GNU Library General Public License כפי שזה פורסם ע״י Free Software Foundation; בין אם בגרסה 2 של הרשיון, או (כאופציה השמורה לכם) בכל גרסה מאוחרת יותר."
 
 #: ../xfce4-about/main.c:295
 msgid ""
-"The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-"
-"settings, xfce-utils, xfconf, xfdesktop and xfwm4 are distributed under the "
-"terms of the GNU General Public License as published by the Free Software "
-"Foundation; either version 2 of the License, or (at your option) any later "
-"version."
-msgstr ""
+"The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, "
+"xfce4-settings, xfce-utils, xfconf, xfdesktop and xfwm4 are distributed "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version."
+msgstr "החבילות thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfce-utils, xfconf, xfdesktop וגם xfwm4 הינן מופצות תחת התנאים של הרשיון GNU General Public License כפי שזה פורסם ע״י Free Software Foundation; בין אם בגרסה 2 של הרשיון, או (כאופצייה השמורה לכם) בכל גרסה מאוחרת יותר."
 
 #: ../xfce4-about/main.c:442
 #, c-format
 msgid "Type '%s --help' for usage information."
-msgstr ""
+msgstr "Type '%s --help' for usage information."
 
 #: ../xfce4-about/main.c:448
 msgid "Unable to initialize GTK+."
-msgstr ""
+msgstr "Unable to initialize GTK+."
 
 #: ../xfce4-about/main.c:457
 msgid "The Xfce development team. All rights reserved."
-msgstr ""
+msgstr "The Xfce development team. All rights reserved."
 
 #: ../xfce4-about/main.c:458
 #, c-format
 msgid "Please report bugs to <%s>."
-msgstr ""
+msgstr "Please report bugs to <%s>."
 
 #. I18N: date/time the translators list was updated
 #: ../xfce4-about/main.c:461
 #, c-format
 msgid "Translators list from %s."
-msgstr ""
+msgstr "Translators list from %s."
 
 #: ../xfce4-about/main.c:471
 msgid "Failed to load interface"
-msgstr ""
+msgstr "Failed to load interface"
 
 #. I18N: first %s will be replaced by the version, second by
 #. * the name of the distribution (--with-vendor-info=NAME)
 #: ../xfce4-about/main.c:485
 #, c-format
 msgid "Version %s, distributed by %s"
-msgstr ""
+msgstr "גרסה %s, מופצת על ידי %s"
 
 #. I18N: %s will be replaced by the Xfce version number
 #: ../xfce4-about/main.c:489
-#, fuzzy, c-format
+#, c-format
 msgid "Version %s"
-msgstr "%s (על %s)"
+msgstr "גרסה %s"
 
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
 #. },
 #: ../xfce4-about/contributors.h:121
 msgid "Core developers"
-msgstr ""
+msgstr "‎מפתחי ליבה"
 
 #: ../xfce4-about/contributors.h:124
 msgid "Active contributors"
-msgstr ""
+msgstr "‎תורמים פעילים"
 
 #: ../xfce4-about/contributors.h:127
 msgid "Servers maintained by"
-msgstr ""
+msgstr "‎שרתים מתוחזקים ע״י"
 
 #: ../xfce4-about/contributors.h:130
 msgid "Goodies supervision"
-msgstr ""
+msgstr "Goodies פיקוח"
 
 #: ../xfce4-about/contributors.h:133
 msgid "Translations supervision"
-msgstr ""
+msgstr "‎פיקוח תרגומים"
 
 #: ../xfce4-about/contributors.h:136
-#, fuzzy
 msgid "Translators"
-msgstr "שקיפות"
+msgstr "‎מתרגמים"
 
 #: ../xfce4-about/contributors.h:139
-#, fuzzy
 msgid "Previous contributors"
-msgstr "סביבת עבודה קודמת"
+msgstr "‎תורמים קודמים"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:1
 msgid "About Xfce"
-msgstr ""
+msgstr "אודות Xfce"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:2
 msgid "Information about the Xfce Desktop Environment"
-msgstr ""
+msgstr "מידע אודות סביבת שולחן עבודה Xfce"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:1
 msgid "About the Xfce Desktop Environment"
-msgstr ""
+msgstr "אודות סביבת שולחן עבודה Xfce"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:2
 msgid "About"
-msgstr ""
+msgstr "אודות"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:3
 msgid "Credits"
-msgstr ""
+msgstr "תודות"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:4
 msgid "GPL"
-msgstr ""
+msgstr "GPL"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:5
 msgid "LGPL"
-msgstr ""
+msgstr "LGPL"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:6
 msgid "BSD"
-msgstr ""
+msgstr "BSD"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:7
 msgid "Copyright"
-msgstr ""
+msgstr "זכויות יוצרים"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:8
 msgid "License"
-msgstr ""
+msgstr "רשיון"
