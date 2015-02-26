@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-02-18 18:30+0100\n"
-"PO-Revision-Date: 2015-02-26 09:54+0000\n"
+"PO-Revision-Date: 2015-02-26 14:06+0000\n"
 "Last-Translator: Slavko <linux@slavino.sk>\n"
 "Language-Team: Slovak (http://www.transifex.com/projects/p/libxfce4ui/language/sk/)\n"
 "MIME-Version: 1.0\n"
@@ -500,7 +500,7 @@ msgstr "Odstrániť pracovnú plochu"
 
 #: ../glade/libxfce4ui.xml.in.h:1
 msgid "Titled Dialog"
-msgstr ""
+msgstr "Dialóg s titlkom"
 
 #: ../glade/libxfce4ui.xml.in.h:2
 msgid "Subtitle"
