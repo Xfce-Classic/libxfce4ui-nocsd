@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-07-02 22:33+0200\n"
-"PO-Revision-Date: 2015-01-20 12:12+0000\n"
+"POT-Creation-Date: 2015-02-18 18:30+0100\n"
+"PO-Revision-Date: 2015-02-26 12:10+0000\n"
 "Last-Translator: GenghisKhan <genghiskhan@gmx.ca>\n"
 "Language-Team: Hebrew (http://www.transifex.com/projects/p/libxfce4ui/language/he/)\n"
 "MIME-Version: 1.0\n"
@@ -25,46 +25,46 @@ msgstr ""
 msgid "Failed to open web browser for online documentation"
 msgstr "נכשל לפתוח דפדפן רשת עבור תיעוד מקוון"
 
-#: ../libxfce4ui/xfce-dialogs.c:213
+#: ../libxfce4ui/xfce-dialogs.c:252
 #, c-format
 msgid "Do you want to read the %s manual online?"
 msgstr "האם ברצונך לקרוא את מדריך %s אונליין?"
 
-#: ../libxfce4ui/xfce-dialogs.c:215
+#: ../libxfce4ui/xfce-dialogs.c:254
 msgid "Do you want to read the manual online?"
 msgstr "האם ברצונך לקרוא את המדריך אונליין?"
 
-#: ../libxfce4ui/xfce-dialogs.c:218
+#: ../libxfce4ui/xfce-dialogs.c:257
 msgid "Online Documentation"
 msgstr "תיעוד מקוון"
 
-#: ../libxfce4ui/xfce-dialogs.c:221
+#: ../libxfce4ui/xfce-dialogs.c:264
 msgid ""
 "You will be redirected to the documentation website where the help pages are"
 " maintained and translated."
 msgstr "המערכת תפנה אותך אל אתר רשת תיעוד היכן שעמודי עזרה הינם מתוחזקים ומתורגמים."
 
-#: ../libxfce4ui/xfce-dialogs.c:225
+#: ../libxfce4ui/xfce-dialogs.c:278
 msgid "_Read Online"
 msgstr "קרא _אונליין"
 
-#: ../libxfce4ui/xfce-dialogs.c:237
+#: ../libxfce4ui/xfce-dialogs.c:290
 msgid "_Always go directly to the online documentation"
 msgstr "_המשך ישירות תמיד אל התיעוד המקוון"
 
-#: ../libxfce4ui/xfce-dialogs.c:281
+#: ../libxfce4ui/xfce-dialogs.c:334
 msgid "Information"
 msgstr "מידע"
 
-#: ../libxfce4ui/xfce-dialogs.c:314
+#: ../libxfce4ui/xfce-dialogs.c:377
 msgid "Warning"
 msgstr "אזהרה"
 
-#: ../libxfce4ui/xfce-dialogs.c:348
+#: ../libxfce4ui/xfce-dialogs.c:421
 msgid "Error"
 msgstr "שגיאה"
 
-#: ../libxfce4ui/xfce-dialogs.c:399
+#: ../libxfce4ui/xfce-dialogs.c:494
 msgid "Question"
 msgstr "שאלה"
 
@@ -99,7 +99,7 @@ msgid "Session manager did not return a valid client id"
 msgstr "Session manager did not return a valid client id"
 
 #. print warning for user
-#: ../libxfce4ui/xfce-spawn.c:413
+#: ../libxfce4ui/xfce-spawn.c:409
 #, c-format
 msgid ""
 "Working directory \"%s\" does not exist. It won't be used when spawning "
@@ -160,7 +160,7 @@ msgstr "‏%s כבר מעוררת את פעולה זו."
 msgid "Conflicting actions for %s"
 msgstr "פקודות מתנגשות עבור %s"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:176
+#: ../libxfce4kbd-private/xfce-shortcuts.c:186
 msgid "This shortcut is already being used for something else."
 msgstr "קיצור דרך זה כבר מצוי בשימוש עבור משהו אחר."
 
@@ -189,21 +189,25 @@ msgstr "פקודה"
 msgid "Shortcut"
 msgstr "קיצור דרך"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:267
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:247
+msgid "_Cancel"
+msgstr "_ביטול"
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:275
 #, c-format
 msgid "Press now the keyboard keys you want to use to trigger the %s '%s'."
 msgstr "לחץ עכשיו על מקשי המקלדת שברצונך להשתמש כדי לעורר את %s '%s'."
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:291
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:299
 msgid "Shortcut:"
 msgstr "קיצור דרך:"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:296
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:475
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:304
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:483
 msgid "No keys pressed yet, proceed."
 msgstr "לא נלחצו מקשים עדיין, המשך."
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:378
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:386
 msgid "Could not grab the keyboard."
 msgstr "לא היתה אפשרות לתפוס את המקלדת."
 
