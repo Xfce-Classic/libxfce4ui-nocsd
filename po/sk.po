@@ -4,14 +4,14 @@
 # 
 # Translators:
 # Robert Hartl <hartl.robert@gmail.com>, 2009
-# Slavko <linux@slavino.sk>, 2014
+# Slavko <linux@slavino.sk>, 2014-2015
 # Tomáš Vadina <tomasvadina+transifex@cryptolab.net>, 2011-2012
 msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-07-02 22:33+0200\n"
-"PO-Revision-Date: 2014-11-28 17:16+0000\n"
+"POT-Creation-Date: 2015-02-18 18:30+0100\n"
+"PO-Revision-Date: 2015-02-26 09:54+0000\n"
 "Last-Translator: Slavko <linux@slavino.sk>\n"
 "Language-Team: Slovak (http://www.transifex.com/projects/p/libxfce4ui/language/sk/)\n"
 "MIME-Version: 1.0\n"
@@ -24,46 +24,46 @@ msgstr ""
 msgid "Failed to open web browser for online documentation"
 msgstr "Otvorenie online dokumentácie vo webovom prehliadači zlyhalo"
 
-#: ../libxfce4ui/xfce-dialogs.c:213
+#: ../libxfce4ui/xfce-dialogs.c:252
 #, c-format
 msgid "Do you want to read the %s manual online?"
 msgstr "Chcete si prečítať online príručku pre %s?"
 
-#: ../libxfce4ui/xfce-dialogs.c:215
+#: ../libxfce4ui/xfce-dialogs.c:254
 msgid "Do you want to read the manual online?"
 msgstr "Chcete si prečítať online príručku?"
 
-#: ../libxfce4ui/xfce-dialogs.c:218
+#: ../libxfce4ui/xfce-dialogs.c:257
 msgid "Online Documentation"
 msgstr "Online dokumentácia"
 
-#: ../libxfce4ui/xfce-dialogs.c:221
+#: ../libxfce4ui/xfce-dialogs.c:264
 msgid ""
 "You will be redirected to the documentation website where the help pages are"
 " maintained and translated."
 msgstr "Budete presmerovaní na webovú stránku dokumentácie, kde sa stránky pomocníka udržujú a prekladajú."
 
-#: ../libxfce4ui/xfce-dialogs.c:225
+#: ../libxfce4ui/xfce-dialogs.c:278
 msgid "_Read Online"
 msgstr "Čítať _online"
 
-#: ../libxfce4ui/xfce-dialogs.c:237
+#: ../libxfce4ui/xfce-dialogs.c:290
 msgid "_Always go directly to the online documentation"
 msgstr "_Vždy automaticky prejsť na online dokumentáciu"
 
-#: ../libxfce4ui/xfce-dialogs.c:281
+#: ../libxfce4ui/xfce-dialogs.c:334
 msgid "Information"
 msgstr "Informácie"
 
-#: ../libxfce4ui/xfce-dialogs.c:314
+#: ../libxfce4ui/xfce-dialogs.c:377
 msgid "Warning"
 msgstr "Varovanie"
 
-#: ../libxfce4ui/xfce-dialogs.c:348
+#: ../libxfce4ui/xfce-dialogs.c:421
 msgid "Error"
 msgstr "Chyba"
 
-#: ../libxfce4ui/xfce-dialogs.c:399
+#: ../libxfce4ui/xfce-dialogs.c:494
 msgid "Question"
 msgstr "Otázka"
 
@@ -98,7 +98,7 @@ msgid "Session manager did not return a valid client id"
 msgstr "Správca sedenia nevrátil platný identifikátor klienta"
 
 #. print warning for user
-#: ../libxfce4ui/xfce-spawn.c:413
+#: ../libxfce4ui/xfce-spawn.c:409
 #, c-format
 msgid ""
 "Working directory \"%s\" does not exist. It won't be used when spawning "
@@ -110,7 +110,7 @@ msgstr "Pracovný adresár \"%s\" neexistuje.  Pri spustení \"%s\" nebude použ
 msgid ""
 "This shortcut is already being used for the action '%s'. Which action do you"
 " want to use?"
-msgstr ""
+msgstr "Táto skratka už slúži na akciu „%s”. Ktorú akciu chcete použiť?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:54
 #: ../libxfce4kbd-private/xfce-shortcuts.c:57
@@ -134,14 +134,14 @@ msgstr "Ponechať '%s'"
 msgid ""
 "This shortcut is already being used for the command '%s'. Which action do "
 "you want to use?"
-msgstr ""
+msgstr "Táto skratka už slúži na príkaz „%s”. Ktorú akciu chcete použiť?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 #, c-format
 msgid ""
 "This shortcut is already being used by the action '%s'. Which action do you "
 "want to use?"
-msgstr ""
+msgstr "Táto skratka už slúži na akciu „%s”. Ktorú akciu chcete použiť?"
 
 #. This shortcut already exists in the provider, we don't want it twice
 #. Warn the user
@@ -159,9 +159,9 @@ msgstr "Túto akciu už spúšťa %s"
 msgid "Conflicting actions for %s"
 msgstr "Konflikt medzi akciami pre %s"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:176
+#: ../libxfce4kbd-private/xfce-shortcuts.c:186
 msgid "This shortcut is already being used for something else."
-msgstr ""
+msgstr "Táto skratka už slúži na niečo iné."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:209
 msgid "Window Manager Action Shortcut"
@@ -188,21 +188,25 @@ msgstr "príkaz"
 msgid "Shortcut"
 msgstr "Klávesová skratka"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:267
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:247
+msgid "_Cancel"
+msgstr "_Zrušiť"
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:275
 #, c-format
 msgid "Press now the keyboard keys you want to use to trigger the %s '%s'."
-msgstr ""
+msgstr "Teraz stlačte klávesy klávesnice, ktoré chcete použiť na vykonanie %s „%s”."
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:291
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:299
 msgid "Shortcut:"
 msgstr "Žiadna klávesová skratka"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:296
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:475
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:304
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:483
 msgid "No keys pressed yet, proceed."
 msgstr "Zatiaľ nebol stlačený kláves, pokračujte."
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:378
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:386
 msgid "Could not grab the keyboard."
 msgstr "Nemožno zachytiť klávesnicu"
 
@@ -516,7 +520,7 @@ msgstr "Správca okien"
 
 #: ../xfce4-about/main.c:71
 msgid "Handles the placement of windows on the screen."
-msgstr ""
+msgstr "Riadi umiestnenie okien na obrazovke."
 
 #: ../xfce4-about/main.c:74
 msgid "Panel"
@@ -651,7 +655,7 @@ msgstr "Balíčky thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-set
 #: ../xfce4-about/main.c:442
 #, c-format
 msgid "Type '%s --help' for usage information."
-msgstr ""
+msgstr "Napíšte „%s --help” na zobrazenie pomocníka."
 
 #: ../xfce4-about/main.c:448
 msgid "Unable to initialize GTK+."
@@ -718,7 +722,7 @@ msgstr "Preklady"
 
 #: ../xfce4-about/contributors.h:139
 msgid "Previous contributors"
-msgstr ""
+msgstr "Predošlí prispievatelia"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:1
 msgid "About Xfce"
