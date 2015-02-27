@@ -3,14 +3,15 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# Mișu Moldovan <dumol@xfce.org>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-07-02 22:33+0200\n"
-"PO-Revision-Date: 2013-11-19 11:04+0000\n"
-"Last-Translator: Nick <nick@xfce.org>\n"
-"Language-Team: Romanian (http://www.transifex.com/projects/p/xfce/language/ro/)\n"
+"POT-Creation-Date: 2015-02-18 18:30+0100\n"
+"PO-Revision-Date: 2015-02-27 13:32+0000\n"
+"Last-Translator: Mișu Moldovan <dumol@l10n.ro>\n"
+"Language-Team: Romanian (http://www.transifex.com/projects/p/libxfce4ui/language/ro/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -21,52 +22,52 @@ msgstr ""
 msgid "Failed to open web browser for online documentation"
 msgstr "Nu s-a putut deschide navigatorul web pentru accesarea documentației online"
 
-#: ../libxfce4ui/xfce-dialogs.c:213
+#: ../libxfce4ui/xfce-dialogs.c:252
 #, c-format
 msgid "Do you want to read the %s manual online?"
 msgstr "Doriți să accesați manualul %s online?"
 
-#: ../libxfce4ui/xfce-dialogs.c:215
+#: ../libxfce4ui/xfce-dialogs.c:254
 msgid "Do you want to read the manual online?"
 msgstr "Doriți să citiți manualul online?"
 
-#: ../libxfce4ui/xfce-dialogs.c:218
+#: ../libxfce4ui/xfce-dialogs.c:257
 msgid "Online Documentation"
 msgstr "Documentație online"
 
-#: ../libxfce4ui/xfce-dialogs.c:221
+#: ../libxfce4ui/xfce-dialogs.c:264
 msgid ""
 "You will be redirected to the documentation website where the help pages are"
 " maintained and translated."
 msgstr "Veți fi redirectat către site-ul cu documentație, unde paginile de ajutor sunt întreținute și traduse."
 
-#: ../libxfce4ui/xfce-dialogs.c:225
+#: ../libxfce4ui/xfce-dialogs.c:278
 msgid "_Read Online"
 msgstr "_Deschide online"
 
-#: ../libxfce4ui/xfce-dialogs.c:237
+#: ../libxfce4ui/xfce-dialogs.c:290
 msgid "_Always go directly to the online documentation"
 msgstr "Deschide întotdeauna documentația _online"
 
-#: ../libxfce4ui/xfce-dialogs.c:281
+#: ../libxfce4ui/xfce-dialogs.c:334
 msgid "Information"
-msgstr ""
+msgstr "Detalii"
 
-#: ../libxfce4ui/xfce-dialogs.c:314
+#: ../libxfce4ui/xfce-dialogs.c:377
 msgid "Warning"
 msgstr "Avertizare"
 
-#: ../libxfce4ui/xfce-dialogs.c:348
+#: ../libxfce4ui/xfce-dialogs.c:421
 msgid "Error"
 msgstr "Eroare"
 
-#: ../libxfce4ui/xfce-dialogs.c:399
+#: ../libxfce4ui/xfce-dialogs.c:494
 msgid "Question"
 msgstr "Întrebare"
 
 #: ../libxfce4ui/xfce-sm-client.c:1424
 msgid "Session management client ID"
-msgstr ""
+msgstr "ID-ul clientului managerului de sesiune"
 
 #: ../libxfce4ui/xfce-sm-client.c:1424
 msgid "ID"
@@ -74,15 +75,15 @@ msgstr "ID"
 
 #: ../libxfce4ui/xfce-sm-client.c:1425
 msgid "Disable session management"
-msgstr ""
+msgstr "Dezactivare management de sesiune"
 
 #: ../libxfce4ui/xfce-sm-client.c:1435
 msgid "Session management options"
-msgstr ""
+msgstr "Opțiuni pentru managementul de sesiune"
 
 #: ../libxfce4ui/xfce-sm-client.c:1436
 msgid "Show session management options"
-msgstr ""
+msgstr "Arată opțiunile managementului de sesiune"
 
 #: ../libxfce4ui/xfce-sm-client.c:1611
 #, c-format
@@ -95,7 +96,7 @@ msgid "Session manager did not return a valid client id"
 msgstr "Managerul de sesiune nu a returnat un ID valid de client"
 
 #. print warning for user
-#: ../libxfce4ui/xfce-spawn.c:413
+#: ../libxfce4ui/xfce-spawn.c:409
 #, c-format
 msgid ""
 "Working directory \"%s\" does not exist. It won't be used when spawning "
@@ -107,7 +108,7 @@ msgstr "Directorul curent „%s” nu mai există. Nu va fi utilizat la crearea 
 msgid ""
 "This shortcut is already being used for the action '%s'. Which action do you"
 " want to use?"
-msgstr ""
+msgstr "Această combinație de taste este deja folosită pentru acțiunea „%s”. Ce acțiune doriți să îi fie asociată?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:54
 #: ../libxfce4kbd-private/xfce-shortcuts.c:57
@@ -138,70 +139,74 @@ msgstr "Această combinație de taste este deja folosită pentru comanda „%s�
 msgid ""
 "This shortcut is already being used by the action '%s'. Which action do you "
 "want to use?"
-msgstr ""
+msgstr "Această combinație de taste este deja folosită pentru acțiunea „%s”. Ce acțiune doriți să îi fie asociată?"
 
 #. This shortcut already exists in the provider, we don't want it twice
 #. Warn the user
 #: ../libxfce4kbd-private/xfce-shortcuts.c:110
 msgid "Please use another key combination."
-msgstr ""
+msgstr "Încercați o altă combinație de taste."
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:111
 #, c-format
 msgid "%s already triggers this action."
-msgstr ""
+msgstr "Combinația %s este deja asociată acestei acțiuni."
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:116
 #, c-format
 msgid "Conflicting actions for %s"
 msgstr "Acțiuni diferite pentru „%s”"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:176
+#: ../libxfce4kbd-private/xfce-shortcuts.c:186
 msgid "This shortcut is already being used for something else."
 msgstr "Această combinație de taste este deja folosită pentru altceva."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:209
 msgid "Window Manager Action Shortcut"
-msgstr ""
+msgstr "Combinație de taste asociată unei acțiuni"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:212
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:226
 msgid "action"
-msgstr ""
+msgstr "acțiunea"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:216
 msgid "Command Shortcut"
-msgstr ""
+msgstr "Combinație de taste pentru comandă"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:219
 msgid "command"
-msgstr ""
+msgstr "comanda"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:223
 msgid "Shortcut"
 msgstr "Combinație de taste"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:267
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:247
+msgid "_Cancel"
+msgstr "_Renunță"
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:275
 #, c-format
 msgid "Press now the keyboard keys you want to use to trigger the %s '%s'."
-msgstr ""
+msgstr "Apăsați acum tastele ce doriți să declanșeze %s „%s”."
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:291
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:299
 msgid "Shortcut:"
-msgstr ""
+msgstr "Combinație de taste:"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:296
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:475
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:304
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:483
 msgid "No keys pressed yet, proceed."
-msgstr ""
+msgstr "Nu s-a apăsat o tastă încă…"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:378
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:386
 msgid "Could not grab the keyboard."
-msgstr ""
+msgstr "Nu s-au putut captura tastele utilizate."
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:36
 msgid "Window operations menu"
@@ -497,11 +502,11 @@ msgstr "Fereastră cu titlu"
 
 #: ../glade/libxfce4ui.xml.in.h:2
 msgid "Subtitle"
-msgstr ""
+msgstr "Subtitlu"
 
 #: ../glade/libxfce4ui.xml.in.h:3
 msgid "Xfce 4 Widgets"
-msgstr "Widgeturi Xfce 4"
+msgstr "Widget-uri Xfce 4"
 
 #: ../xfce4-about/main.c:52
 msgid "Version information"
@@ -513,7 +518,7 @@ msgstr "Manager de ferestre"
 
 #: ../xfce4-about/main.c:71
 msgid "Handles the placement of windows on the screen."
-msgstr ""
+msgstr "Gestionează plasarea ferestrelor pe ecran."
 
 #: ../xfce4-about/main.c:74
 msgid "Panel"
@@ -527,17 +532,17 @@ msgstr "Include meniul cu programe, butoanele pentru ferestre, lansatoarele de p
 
 #: ../xfce4-about/main.c:79
 msgid "Desktop Manager"
-msgstr ""
+msgstr "Managerul desktopului"
 
 #: ../xfce4-about/main.c:80
 msgid ""
 "Sets the background color or image with optional application menu or icons "
 "for minimized applications or launchers, devices and folders."
-msgstr "Definește culoarea și imaginea fundalului, având opțiuni pentru un meniu de programe, iconițe pentru ferestrele minimizate și lansatoare, dosare ori dispozitive de sistem."
+msgstr "Definește culoarea și imaginea fundalului, având opțiuni pentru un meniu de programe, iconițe pentru ferestrele minimizate, lansatoare, dosare și dispozitive de sistem."
 
 #: ../xfce4-about/main.c:84
 msgid "File Manager "
-msgstr ""
+msgstr "Manager de fișiere "
 
 #: ../xfce4-about/main.c:85
 msgid ""
@@ -547,13 +552,13 @@ msgstr "Un manager de fișiere modern pentru desktopurile Unix/Linux ce încearc
 
 #: ../xfce4-about/main.c:89
 msgid "Session Manager"
-msgstr ""
+msgstr "Managerul de sesiune"
 
 #: ../xfce4-about/main.c:90
 msgid ""
 "Restores your session on startup and allows you to shutdown the computer "
 "from Xfce."
-msgstr "Vă restaurează sesiunea la autentificare și vă permite să închideți calculatorul din Xfce."
+msgstr "Restaurează sesiunea la autentificare și permite închiderea calculatorului din Xfce."
 
 #: ../xfce4-about/main.c:94
 msgid "Setting System"
@@ -563,7 +568,7 @@ msgstr "Sistemul de configurare"
 msgid ""
 "Configuration system to control various aspects of the desktop like "
 "appearance, display, keyboard and mouse settings."
-msgstr "Un sistem de configurare pentru controlul diferitelor opțiuni ale desktopului precum aspectul, monitorul ori opțiunile pentru tastatură și maus."
+msgstr "Un sistem de configurare pentru controlul diferitelor opțiuni ale desktopului precum aspectul programelor, configurația monitoarelor ori opțiunile pentru tastatură și maus."
 
 #: ../xfce4-about/main.c:99
 msgid "Application Finder"
@@ -573,11 +578,11 @@ msgstr "Unealta pentru pornirea de programe"
 msgid ""
 "Shows the applications installed on your system in categories, so you can "
 "quickly find and launch them."
-msgstr "Arată pe categorii programele instalate în sistem astfel încât să le găsiți cu ușurință pentru a le porni."
+msgstr "Arată pe categorii programele instalate în sistem astfel încât să le găsiți cu ușurință când doriți să le porniți."
 
 #: ../xfce4-about/main.c:104
 msgid "Settings Daemon"
-msgstr ""
+msgstr "Demonul opțiunilor"
 
 #: ../xfce4-about/main.c:105
 msgid "D-Bus-based configuration storage system."
@@ -602,11 +607,11 @@ msgid ""
 " for applications and LGPL or BSDL for libraries. Look at the documentation,"
 " the source code or the Xfce website (http://www.xfce.org) for more "
 "information."
-msgstr "Componentele Xfce sunt licențiate în termenii unor licențe libere ori open-source: GPL ori BSDL pentru programe și LGPL ori BSDL pentru biblioteci. Consultați documentația, codul sursă sau site-ul Xfce (http://www.xfce.org) pentru mai multe detalii."
+msgstr "Componentele Xfce sunt licențiate în termenii unor licențe libere ori open source: GPL ori BSD pentru programe și LGPL ori BSD pentru biblioteci. Consultați documentația, codul sursă sau site-ul Xfce (http://www.xfce.org) pentru mai multe detalii."
 
 #: ../xfce4-about/main.c:149
 msgid "Thank you for your interest in Xfce."
-msgstr "Vă mulțumim pentru interesul arătat proiectului Xfce."
+msgstr "Mulțumim pentru interesul arătat proiectului Xfce!"
 
 #: ../xfce4-about/main.c:153
 msgid "The Xfce Development Team"
@@ -648,7 +653,7 @@ msgstr "Pachetele thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-set
 #: ../xfce4-about/main.c:442
 #, c-format
 msgid "Type '%s --help' for usage information."
-msgstr ""
+msgstr "Încercați „%s --help” pentru detalii despre utilizare."
 
 #: ../xfce4-about/main.c:448
 msgid "Unable to initialize GTK+."
@@ -684,7 +689,7 @@ msgstr "Versiunea %s, distribuită de %s"
 #: ../xfce4-about/main.c:489
 #, c-format
 msgid "Version %s"
-msgstr ""
+msgstr "Versiunea %s"
 
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
@@ -715,7 +720,7 @@ msgstr "Traducători"
 
 #: ../xfce4-about/contributors.h:139
 msgid "Previous contributors"
-msgstr ""
+msgstr "Contribuitori inactivi"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:1
 msgid "About Xfce"
