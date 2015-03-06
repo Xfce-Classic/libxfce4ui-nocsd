@@ -1,3 +1,12 @@
+4.12.1
+======
+- Update .gitignore
+- Increase xfce4-about default size
+- Improve formatting of translators list
+- Update translation contributors in xfce4-about
+- Fix typo in active contributors list
+- Update contributors lists
+
 4.12.0
 ======
 - Bump version
