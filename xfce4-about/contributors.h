@@ -54,7 +54,7 @@ static const ContributorInfo xfce_contributors_active[] =
   { "Silvio Knizek", "killermoehre@gmx.net" },
   { "Steve Dodier-Lazaro", "sidi@xfce.org" },
   { "Yves-Alexis Perez", "corsac@debian.org" },
-  { "Guido Berhoerster" "guido+xfce@berhoerster.name" },
+  { "Guido Berhoerster", "guido+xfce@berhoerster.name" },
   { NULL, NULL }
 };
 
