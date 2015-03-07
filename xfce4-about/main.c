@@ -168,7 +168,6 @@ xfce_about_credits_translators (GtkTextBuffer *buffer,
   const TranslatorInfo *member;
   const TranslatorTeam *team;
   gchar                *str;
-  gboolean              has_member;
   GtkTextTag           *coordinator;
 
   language = gtk_text_buffer_create_tag (buffer, "language",
@@ -187,8 +186,6 @@ xfce_about_credits_translators (GtkTextBuffer *buffer,
       gtk_text_buffer_insert_with_tags (buffer, end, str, -1, language, NULL);
       g_free (str);
 
-      has_member = FALSE;
-
       for (member = team->members; member->name != NULL; member++)
         {
           italic = member->is_coordinator ? coordinator : NULL;
@@ -199,7 +196,6 @@ xfce_about_credits_translators (GtkTextBuffer *buffer,
           gtk_text_buffer_insert_with_tags (buffer, end, member->email, -1, email, italic, NULL);
           gtk_text_buffer_insert_with_tags (buffer, end, ">\n", -1, italic, NULL);
 
-          has_member = TRUE;
         }
 
       gtk_text_buffer_insert (buffer, end, "\n", -1);
