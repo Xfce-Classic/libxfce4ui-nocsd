@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-18 18:30+0100\n"
-"PO-Revision-Date: 2015-02-26 12:10+0000\n"
+"POT-Creation-Date: 2015-03-08 00:30+0100\n"
+"PO-Revision-Date: 2015-03-08 14:09+0000\n"
 "Last-Translator: GenghisKhan <genghiskhan@gmx.ca>\n"
 "Language-Team: Hebrew (http://www.transifex.com/projects/p/libxfce4ui/language/he/)\n"
 "MIME-Version: 1.0\n"
@@ -408,94 +408,110 @@ msgid "Tile window to the right"
 msgstr "רצף חלון לימין"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:85
+msgid "Tile window to the top-left"
+msgstr "רצף חלון לשיא-שמאל"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:86
+msgid "Tile window to the top-right"
+msgstr "רצף חלון לשיא-ימין"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:87
+msgid "Tile window to the bottom-left"
+msgstr "רצף חלון לתחתית-שמאל"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:88
+msgid "Tile window to the bottom-right"
+msgstr "רצף חלון לתחתית-ימין"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:89
 msgid "Show desktop"
 msgstr "הצג שולחן עבודה"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:86
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:90
 msgid "Upper workspace"
 msgstr "משטח עבודה עליון"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:87
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:91
 msgid "Bottom workspace"
 msgstr "משטח עבודה תחתון"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:88
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:92
 msgid "Left workspace"
 msgstr "משטח עבודה שמאלי"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:89
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:93
 msgid "Right workspace"
 msgstr "משטח עבודה ימני"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:90
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:94
 msgid "Previous workspace"
 msgstr "משטח עבודה קודם"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:91
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:95
 msgid "Next workspace"
 msgstr "משטח עבודה הבא"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:92
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:96
 msgid "Workspace 1"
 msgstr "משטח עבודה 1"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:93
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:97
 msgid "Workspace 2"
 msgstr "משטח עבודה 2"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:94
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:98
 msgid "Workspace 3"
 msgstr "משטח עבודה 3"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:95
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:99
 msgid "Workspace 4"
 msgstr "משטח עבודה 4"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:96
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:100
 msgid "Workspace 5"
 msgstr "משטח עבודה 5"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:97
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:101
 msgid "Workspace 6"
 msgstr "משטח עבודה 6"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:98
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:102
 msgid "Workspace 7"
 msgstr "משטח עבודה 7"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:99
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:103
 msgid "Workspace 8"
 msgstr "משטח עבודה 8"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:100
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:104
 msgid "Workspace 9"
 msgstr "משטח עבודה 9"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:101
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:105
 msgid "Workspace 10"
 msgstr "משטח עבודה 10"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:102
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:106
 msgid "Workspace 11"
 msgstr "משטח עבודה 11"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:103
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:107
 msgid "Workspace 12"
 msgstr "משטח עבודה 12"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:104
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:108
 msgid "Add workspace"
 msgstr "הוסף משטח עבודה"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:105
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:109
 msgid "Add adjacent workspace"
 msgstr "הוסף משטח עבודה סמוך"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:106
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:110
 msgid "Delete last workspace"
 msgstr "מחק משטח עבודה אחרון"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:107
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:111
 msgid "Delete active workspace"
 msgstr "מחק משטח עבודה פעיל"
 
@@ -620,23 +636,23 @@ msgstr "תודה לכם על התעניינותכם בפרויקט Xfce."
 msgid "The Xfce Development Team"
 msgstr "צוות הפיתוח של Xfce"
 
-#: ../xfce4-about/main.c:262
+#: ../xfce4-about/main.c:261
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
 "on <http://bugzilla.xfce.org> ."
 msgstr "אם אתם יודעים על מישהו אשר חסר מן רשימה זו; אל תהססו ומלאו באג באתר <http://bugzilla.xfce.org> ."
 
-#: ../xfce4-about/main.c:266
+#: ../xfce4-about/main.c:265
 msgid "Thanks to all who helped making this software available!"
 msgstr "תודה לכל מי אשר סייע להפוך את תכנה זו לזמינה!"
 
-#: ../xfce4-about/main.c:283
+#: ../xfce4-about/main.c:282
 msgid ""
 "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
 msgstr "‏Xfce 4 הינו מוגן בזכויות יוצרים לטובת Olivier Fourdan ‏(fourdan@xfce.org). הרכיבים השונים מוגנים בזכויות יוצרים לטובת המחברים שלהם בהתאמה."
 
-#: ../xfce4-about/main.c:288
+#: ../xfce4-about/main.c:287
 msgid ""
 "The libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs and exo packages are "
 "distributed under the terms of the GNU Library General Public License as "
@@ -644,7 +660,7 @@ msgid ""
 "or (at your option) any later version."
 msgstr "החבילות libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs וגם exo הינן מופצות תחת התנאים של הרשיון GNU Library General Public License כפי שזה פורסם ע״י Free Software Foundation; בין אם בגרסה 2 של הרשיון, או (כאופציה השמורה לכם) בכל גרסה מאוחרת יותר."
 
-#: ../xfce4-about/main.c:295
+#: ../xfce4-about/main.c:294
 msgid ""
 "The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, "
 "xfce4-settings, xfce-utils, xfconf, xfdesktop and xfwm4 are distributed "
@@ -653,43 +669,43 @@ msgid ""
 "any later version."
 msgstr "החבילות thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfce-utils, xfconf, xfdesktop וגם xfwm4 הינן מופצות תחת התנאים של הרשיון GNU General Public License כפי שזה פורסם ע״י Free Software Foundation; בין אם בגרסה 2 של הרשיון, או (כאופצייה השמורה לכם) בכל גרסה מאוחרת יותר."
 
-#: ../xfce4-about/main.c:442
+#: ../xfce4-about/main.c:441
 #, c-format
 msgid "Type '%s --help' for usage information."
 msgstr "Type '%s --help' for usage information."
 
-#: ../xfce4-about/main.c:448
+#: ../xfce4-about/main.c:447
 msgid "Unable to initialize GTK+."
 msgstr "Unable to initialize GTK+."
 
-#: ../xfce4-about/main.c:457
+#: ../xfce4-about/main.c:456
 msgid "The Xfce development team. All rights reserved."
 msgstr "The Xfce development team. All rights reserved."
 
-#: ../xfce4-about/main.c:458
+#: ../xfce4-about/main.c:457
 #, c-format
 msgid "Please report bugs to <%s>."
 msgstr "Please report bugs to <%s>."
 
 #. I18N: date/time the translators list was updated
-#: ../xfce4-about/main.c:461
+#: ../xfce4-about/main.c:460
 #, c-format
 msgid "Translators list from %s."
 msgstr "Translators list from %s."
 
-#: ../xfce4-about/main.c:471
+#: ../xfce4-about/main.c:470
 msgid "Failed to load interface"
 msgstr "Failed to load interface"
 
 #. I18N: first %s will be replaced by the version, second by
 #. * the name of the distribution (--with-vendor-info=NAME)
-#: ../xfce4-about/main.c:485
+#: ../xfce4-about/main.c:484
 #, c-format
 msgid "Version %s, distributed by %s"
 msgstr "גרסה %s, מופצת על ידי %s"
 
 #. I18N: %s will be replaced by the Xfce version number
-#: ../xfce4-about/main.c:489
+#: ../xfce4-about/main.c:488
 #, c-format
 msgid "Version %s"
 msgstr "גרסה %s"
@@ -697,31 +713,31 @@ msgstr "גרסה %s"
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
 #. },
-#: ../xfce4-about/contributors.h:121
+#: ../xfce4-about/contributors.h:128
 msgid "Core developers"
 msgstr "‎מפתחי ליבה"
 
-#: ../xfce4-about/contributors.h:124
+#: ../xfce4-about/contributors.h:131
 msgid "Active contributors"
 msgstr "‎תורמים פעילים"
 
-#: ../xfce4-about/contributors.h:127
+#: ../xfce4-about/contributors.h:134
 msgid "Servers maintained by"
 msgstr "‎שרתים מתוחזקים ע״י"
 
-#: ../xfce4-about/contributors.h:130
+#: ../xfce4-about/contributors.h:137
 msgid "Goodies supervision"
 msgstr "Goodies פיקוח"
 
-#: ../xfce4-about/contributors.h:133
+#: ../xfce4-about/contributors.h:140
 msgid "Translations supervision"
 msgstr "‎פיקוח תרגומים"
 
-#: ../xfce4-about/contributors.h:136
+#: ../xfce4-about/contributors.h:143
 msgid "Translators"
 msgstr "‎מתרגמים"
 
-#: ../xfce4-about/contributors.h:139
+#: ../xfce4-about/contributors.h:146
 msgid "Previous contributors"
 msgstr "‎תורמים קודמים"
 

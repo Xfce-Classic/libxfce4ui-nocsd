@@ -10,9 +10,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-18 18:30+0100\n"
-"PO-Revision-Date: 2015-03-06 11:06+0000\n"
-"Last-Translator: Ivica  Kolić <ikoli@yahoo.com>\n"
+"POT-Creation-Date: 2015-03-08 00:30+0100\n"
+"PO-Revision-Date: 2015-03-08 12:22+0000\n"
+"Last-Translator: Edin Veskovic <edin.veskovic@openmailbox.org>\n"
 "Language-Team: Croatian (http://www.transifex.com/projects/p/libxfce4ui/language/hr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -407,94 +407,110 @@ msgid "Tile window to the right"
 msgstr "Pomakni prozor desno"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:85
+msgid "Tile window to the top-left"
+msgstr "Pomakni prozor gore-lijevo"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:86
+msgid "Tile window to the top-right"
+msgstr "Pomakni prozor gore-desno"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:87
+msgid "Tile window to the bottom-left"
+msgstr "Pomakni prozor dole-lijevo"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:88
+msgid "Tile window to the bottom-right"
+msgstr "Pomakni prozor dole-desno"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:89
 msgid "Show desktop"
 msgstr "Pokaži radnu površinu"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:86
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:90
 msgid "Upper workspace"
 msgstr "Gornji radni prostor"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:87
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:91
 msgid "Bottom workspace"
 msgstr "Donji radni prostor"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:88
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:92
 msgid "Left workspace"
 msgstr "Lijevi radni prostor"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:89
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:93
 msgid "Right workspace"
 msgstr "Desni radni prostor"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:90
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:94
 msgid "Previous workspace"
 msgstr "Prethodni radni prostor"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:91
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:95
 msgid "Next workspace"
 msgstr "Slijedeći radni prostor"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:92
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:96
 msgid "Workspace 1"
 msgstr "Radni prostor 1"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:93
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:97
 msgid "Workspace 2"
 msgstr "Radni prostor 2"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:94
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:98
 msgid "Workspace 3"
 msgstr "Radni prostor 3"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:95
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:99
 msgid "Workspace 4"
 msgstr "Radni prostor 4"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:96
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:100
 msgid "Workspace 5"
 msgstr "Radni prostor 5"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:97
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:101
 msgid "Workspace 6"
 msgstr "Radni prostor 6"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:98
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:102
 msgid "Workspace 7"
 msgstr "Radni prostor 7"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:99
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:103
 msgid "Workspace 8"
 msgstr "Radni prostor 8"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:100
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:104
 msgid "Workspace 9"
 msgstr "Radni prostor 9"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:101
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:105
 msgid "Workspace 10"
 msgstr "Radni prostor 10"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:102
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:106
 msgid "Workspace 11"
 msgstr "Radni prostor 11"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:103
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:107
 msgid "Workspace 12"
 msgstr "Radni prostor 12"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:104
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:108
 msgid "Add workspace"
 msgstr "Dodaj radni prostor"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:105
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:109
 msgid "Add adjacent workspace"
 msgstr "Dodaj susjedni radni prostor"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:106
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:110
 msgid "Delete last workspace"
 msgstr "Obriši zadnji radni prostor"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:107
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:111
 msgid "Delete active workspace"
 msgstr "Obriši aktivni radni prostor"
 
@@ -619,23 +635,23 @@ msgstr "Hvala na Vašem interesu za Xfce."
 msgid "The Xfce Development Team"
 msgstr "Xfce razvojni tim"
 
-#: ../xfce4-about/main.c:262
+#: ../xfce4-about/main.c:261
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
 "on <http://bugzilla.xfce.org> ."
 msgstr "Ako znate tko nedostaje sa ovoga popisa, ne oklijevajte i prijavite bug na <http://bugzilla.xfce.org> ."
 
-#: ../xfce4-about/main.c:266
+#: ../xfce4-about/main.c:265
 msgid "Thanks to all who helped making this software available!"
 msgstr "Hvala svima koji su pomogli učiniti ovaj software dostupnim!"
 
-#: ../xfce4-about/main.c:283
+#: ../xfce4-about/main.c:282
 msgid ""
 "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
 msgstr "Xfce 4 autorsko pravo Olivier Fourdan (fourdan@xfce.org). Različiti dijelovi su autorska prava njihovih poštovanih autora."
 
-#: ../xfce4-about/main.c:288
+#: ../xfce4-about/main.c:287
 msgid ""
 "The libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs and exo packages are "
 "distributed under the terms of the GNU Library General Public License as "
@@ -643,7 +659,7 @@ msgid ""
 "or (at your option) any later version."
 msgstr "Libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs i exo paketi distribuiraju se pod uvjetima GNU Library General Public licence objavljene od strane Free Software Foundation; verzija 2 licence ili (po vašem izboru) neka od kasnijih verzija."
 
-#: ../xfce4-about/main.c:295
+#: ../xfce4-about/main.c:294
 msgid ""
 "The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, "
 "xfce4-settings, xfce-utils, xfconf, xfdesktop and xfwm4 are distributed "
@@ -652,43 +668,43 @@ msgid ""
 "any later version."
 msgstr "Thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfce-utils, xfconf, xfdesktop i xfwm4 paketi distribuiraju se pod uvjetima GNU Library General Public licence objavljene od strane Free Software Foundation; verzija 2 licence ili (po vašem izboru) neka od kasnijih verzija."
 
-#: ../xfce4-about/main.c:442
+#: ../xfce4-about/main.c:441
 #, c-format
 msgid "Type '%s --help' for usage information."
 msgstr "Upiši '%s --help za informaciju o uporabi."
 
-#: ../xfce4-about/main.c:448
+#: ../xfce4-about/main.c:447
 msgid "Unable to initialize GTK+."
 msgstr "Nije moguće pokrenuti GTK +."
 
-#: ../xfce4-about/main.c:457
+#: ../xfce4-about/main.c:456
 msgid "The Xfce development team. All rights reserved."
 msgstr "Xfce razvojni tim. Sva prava pridržana."
 
-#: ../xfce4-about/main.c:458
+#: ../xfce4-about/main.c:457
 #, c-format
 msgid "Please report bugs to <%s>."
 msgstr "Molimo prijavite bugove na <%s>."
 
 #. I18N: date/time the translators list was updated
-#: ../xfce4-about/main.c:461
+#: ../xfce4-about/main.c:460
 #, c-format
 msgid "Translators list from %s."
 msgstr "Lista prevoditelja sa %s."
 
-#: ../xfce4-about/main.c:471
+#: ../xfce4-about/main.c:470
 msgid "Failed to load interface"
 msgstr "Nije uspjelo učitavanje sučelja"
 
 #. I18N: first %s will be replaced by the version, second by
 #. * the name of the distribution (--with-vendor-info=NAME)
-#: ../xfce4-about/main.c:485
+#: ../xfce4-about/main.c:484
 #, c-format
 msgid "Version %s, distributed by %s"
 msgstr "Verzija %s, distribuira %s"
 
 #. I18N: %s will be replaced by the Xfce version number
-#: ../xfce4-about/main.c:489
+#: ../xfce4-about/main.c:488
 #, c-format
 msgid "Version %s"
 msgstr "Verzija %s"
@@ -696,31 +712,31 @@ msgstr "Verzija %s"
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
 #. },
-#: ../xfce4-about/contributors.h:121
+#: ../xfce4-about/contributors.h:128
 msgid "Core developers"
 msgstr "Temeljni razvijatelji"
 
-#: ../xfce4-about/contributors.h:124
+#: ../xfce4-about/contributors.h:131
 msgid "Active contributors"
 msgstr "Aktivni doprinositelji"
 
-#: ../xfce4-about/contributors.h:127
+#: ../xfce4-about/contributors.h:134
 msgid "Servers maintained by"
 msgstr "Poslužitelje održava"
 
-#: ../xfce4-about/contributors.h:130
+#: ../xfce4-about/contributors.h:137
 msgid "Goodies supervision"
 msgstr "Nadzor goodies dodataka"
 
-#: ../xfce4-about/contributors.h:133
+#: ../xfce4-about/contributors.h:140
 msgid "Translations supervision"
 msgstr "Nadzor prijevoda"
 
-#: ../xfce4-about/contributors.h:136
+#: ../xfce4-about/contributors.h:143
 msgid "Translators"
 msgstr "Prevoditelji"
 
-#: ../xfce4-about/contributors.h:139
+#: ../xfce4-about/contributors.h:146
 msgid "Previous contributors"
 msgstr "Prethodni doprinositelji"
 
