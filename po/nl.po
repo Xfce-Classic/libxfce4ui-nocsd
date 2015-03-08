@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-18 18:30+0100\n"
-"PO-Revision-Date: 2015-02-19 11:32+0000\n"
+"POT-Creation-Date: 2015-03-08 00:30+0100\n"
+"PO-Revision-Date: 2015-03-08 17:12+0000\n"
 "Last-Translator: Pjotr <pjotrvertaalt@gmail.com>\n"
 "Language-Team: Dutch (http://www.transifex.com/projects/p/libxfce4ui/language/nl/)\n"
 "MIME-Version: 1.0\n"
@@ -406,94 +406,110 @@ msgid "Tile window to the right"
 msgstr "Plaats venstertegel naar rechts"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:85
+msgid "Tile window to the top-left"
+msgstr "Venster naar linksboven tegelen"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:86
+msgid "Tile window to the top-right"
+msgstr "Venster naar rechtsboven tegelen"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:87
+msgid "Tile window to the bottom-left"
+msgstr "Venster naar linksonder tegelen"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:88
+msgid "Tile window to the bottom-right"
+msgstr "Venster naar rechtsonder tegelen"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:89
 msgid "Show desktop"
 msgstr "Toon bureaublad"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:86
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:90
 msgid "Upper workspace"
 msgstr "Bovenste werkblad"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:87
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:91
 msgid "Bottom workspace"
 msgstr "Onderste werkblad"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:88
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:92
 msgid "Left workspace"
 msgstr "Linkerwerkblad"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:89
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:93
 msgid "Right workspace"
 msgstr "Rechterwerkblad"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:90
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:94
 msgid "Previous workspace"
 msgstr "Vorig werkblad"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:91
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:95
 msgid "Next workspace"
 msgstr "Volgend werkblad"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:92
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:96
 msgid "Workspace 1"
 msgstr "Werkblad 1"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:93
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:97
 msgid "Workspace 2"
 msgstr "Werkblad 2"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:94
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:98
 msgid "Workspace 3"
 msgstr "Werkblad 3"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:95
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:99
 msgid "Workspace 4"
 msgstr "Werkblad 4"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:96
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:100
 msgid "Workspace 5"
 msgstr "Werkblad 5"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:97
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:101
 msgid "Workspace 6"
 msgstr "Werkblad 6"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:98
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:102
 msgid "Workspace 7"
 msgstr "Werkblad 7"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:99
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:103
 msgid "Workspace 8"
 msgstr "Werkblad 8"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:100
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:104
 msgid "Workspace 9"
 msgstr "Werkblad 9"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:101
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:105
 msgid "Workspace 10"
 msgstr "Werkblad 10"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:102
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:106
 msgid "Workspace 11"
 msgstr "Werkblad 11"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:103
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:107
 msgid "Workspace 12"
 msgstr "Werkblad 12"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:104
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:108
 msgid "Add workspace"
 msgstr "Voeg werkblad toe"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:105
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:109
 msgid "Add adjacent workspace"
 msgstr "Voeg aangrenzend werkblad toe"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:106
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:110
 msgid "Delete last workspace"
 msgstr "Verwijder laatste werkblad"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:107
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:111
 msgid "Delete active workspace"
 msgstr "Verwijder actief werkblad"
 
@@ -618,23 +634,23 @@ msgstr "Bedankt voor uw belangstelling voor Xfce."
 msgid "The Xfce Development Team"
 msgstr "De Xfce-ontwikkelploeg"
 
-#: ../xfce4-about/main.c:262
+#: ../xfce4-about/main.c:261
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
 "on <http://bugzilla.xfce.org> ."
 msgstr "Indien u iemand weet die ontbreekt op deze lijst, aarzel dan niet en doe een foutmelding op <http://bugzilla.xfce.org> ."
 
-#: ../xfce4-about/main.c:266
+#: ../xfce4-about/main.c:265
 msgid "Thanks to all who helped making this software available!"
 msgstr "Dank aan allen die geholpen hebben om deze programmatuur beschikbaar te stellen!"
 
-#: ../xfce4-about/main.c:283
+#: ../xfce4-about/main.c:282
 msgid ""
 "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
 msgstr "Xfce 4 behoort auteursrechtelijk aan Olivier Fourdan (fourdan@xfce.org). De verschillende onderdelen behoren auteursrechtelijk aan hun respectievelijke makers."
 
-#: ../xfce4-about/main.c:288
+#: ../xfce4-about/main.c:287
 msgid ""
 "The libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs and exo packages are "
 "distributed under the terms of the GNU Library General Public License as "
@@ -642,7 +658,7 @@ msgid ""
 "or (at your option) any later version."
 msgstr "De pakketten libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs en exo worden beschikbaar gesteld onder de voorwaarden van de GNU Library General Public License zoals gepubliceerd door de Free Software Foundation; hetzij versie 2 van de License, hetzij (naar uw eigen keuze) enige nieuwere versie."
 
-#: ../xfce4-about/main.c:295
+#: ../xfce4-about/main.c:294
 msgid ""
 "The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, "
 "xfce4-settings, xfce-utils, xfconf, xfdesktop and xfwm4 are distributed "
@@ -651,43 +667,43 @@ msgid ""
 "any later version."
 msgstr "De pakketten thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfce-utils, xfconf, xfdesktop en xfwm4 worden beschikbaar gesteld onder de voorwaarden van de GNU Library General Public License zoals gepubliceerd door de Free Software Foundation; hetzij versie 2 van de License, hetzij (naar uw eigen keuze) enige nieuwere versie."
 
-#: ../xfce4-about/main.c:442
+#: ../xfce4-about/main.c:441
 #, c-format
 msgid "Type '%s --help' for usage information."
 msgstr "Tik '%s --help' voor een gebruiksaanwijzing."
 
-#: ../xfce4-about/main.c:448
+#: ../xfce4-about/main.c:447
 msgid "Unable to initialize GTK+."
 msgstr "Kon GTK+ niet initialiseren."
 
-#: ../xfce4-about/main.c:457
+#: ../xfce4-about/main.c:456
 msgid "The Xfce development team. All rights reserved."
 msgstr "De Xfce-ontwikkelploeg. Alle rechten voorbehouden."
 
-#: ../xfce4-about/main.c:458
+#: ../xfce4-about/main.c:457
 #, c-format
 msgid "Please report bugs to <%s>."
 msgstr "Meld fouten a.u.b. aan <%s>."
 
 #. I18N: date/time the translators list was updated
-#: ../xfce4-about/main.c:461
+#: ../xfce4-about/main.c:460
 #, c-format
 msgid "Translators list from %s."
 msgstr "Vertalerslijst vanuit %s."
 
-#: ../xfce4-about/main.c:471
+#: ../xfce4-about/main.c:470
 msgid "Failed to load interface"
 msgstr "Kon gebruikersschil niet laden"
 
 #. I18N: first %s will be replaced by the version, second by
 #. * the name of the distribution (--with-vendor-info=NAME)
-#: ../xfce4-about/main.c:485
+#: ../xfce4-about/main.c:484
 #, c-format
 msgid "Version %s, distributed by %s"
 msgstr "Versie %s, gedistribueerd door %s"
 
 #. I18N: %s will be replaced by the Xfce version number
-#: ../xfce4-about/main.c:489
+#: ../xfce4-about/main.c:488
 #, c-format
 msgid "Version %s"
 msgstr "Versie %s"
@@ -695,31 +711,31 @@ msgstr "Versie %s"
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
 #. },
-#: ../xfce4-about/contributors.h:121
+#: ../xfce4-about/contributors.h:128
 msgid "Core developers"
 msgstr "Kernontwikkelaars"
 
-#: ../xfce4-about/contributors.h:124
+#: ../xfce4-about/contributors.h:131
 msgid "Active contributors"
 msgstr "Actieve bijdragers"
 
-#: ../xfce4-about/contributors.h:127
+#: ../xfce4-about/contributors.h:134
 msgid "Servers maintained by"
 msgstr "Servers onderhouden door"
 
-#: ../xfce4-about/contributors.h:130
+#: ../xfce4-about/contributors.h:137
 msgid "Goodies supervision"
 msgstr "Leiding van de Goodies"
 
-#: ../xfce4-about/contributors.h:133
+#: ../xfce4-about/contributors.h:140
 msgid "Translations supervision"
 msgstr "Leiding van de vertalingen"
 
-#: ../xfce4-about/contributors.h:136
+#: ../xfce4-about/contributors.h:143
 msgid "Translators"
 msgstr "Vertalers"
 
-#: ../xfce4-about/contributors.h:139
+#: ../xfce4-about/contributors.h:146
 msgid "Previous contributors"
 msgstr "Vroegere bijdragers"
 
