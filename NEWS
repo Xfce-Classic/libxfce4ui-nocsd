@@ -1,11 +1,17 @@
 4.12.1
 ======
+- Fix glade directory information in .pc file (bug #11353)
+- Add shortcuts for xfwm4 to tile windows to corners (bug #11652)
+- Remove unused 'has_member' variable in xfce4-about (bug #11654)
 - Update .gitignore
 - Increase xfce4-about default size
 - Improve formatting of translators list
 - Update translation contributors in xfce4-about
-- Fix typo in active contributors list
 - Update contributors lists
+- Translation updates: Bulgarian, Chinese (China), Croatian, Czech, Dutch
+  (Flemish), French, German, Hebrew, Indonesian, Italian, Japanese, Kazakh,
+  Korean, Malay, Polish, Portuguese, Russian, Serbian, Slovak, Spanish, Thai,
+  Turkish, Ukrainian
 
 4.12.0
 ======
