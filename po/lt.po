@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-03-08 00:30+0100\n"
-"PO-Revision-Date: 2015-03-11 19:56+0000\n"
+"PO-Revision-Date: 2015-03-16 11:54+0000\n"
 "Last-Translator: Moo\n"
 "Language-Team: Lithuanian (http://www.transifex.com/projects/p/libxfce4ui/language/lt/)\n"
 "MIME-Version: 1.0\n"
@@ -109,7 +109,7 @@ msgstr "Darbinis aplankas „%s“ neegzistuoja. Jis nebus naudojamas atvaizduoj
 msgid ""
 "This shortcut is already being used for the action '%s'. Which action do you"
 " want to use?"
-msgstr ""
+msgstr "Šis susiejimas jau yra naudojamas veiksmui '%s'. Kurį veiksmą norėsite naudoti?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:54
 #: ../libxfce4kbd-private/xfce-shortcuts.c:57
@@ -133,14 +133,14 @@ msgstr "Palikti „%s“"
 msgid ""
 "This shortcut is already being used for the command '%s'. Which action do "
 "you want to use?"
-msgstr "Šis trumpinys jau naudojamas komandai „%s“. Kurį veiksmą norėsite naudoti?"
+msgstr "Šis susiejimas jau naudojamas komandai „%s“. Kurį veiksmą norėsite naudoti?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 #, c-format
 msgid ""
 "This shortcut is already being used by the action '%s'. Which action do you "
 "want to use?"
-msgstr ""
+msgstr "Šis susiejimas jau yra naudojamas veiksmo '%s'. Kurį veiksmą norėsite naudoti?"
 
 #. This shortcut already exists in the provider, we don't want it twice
 #. Warn the user
@@ -160,7 +160,7 @@ msgstr "Nesuderinami veiksmai skirti %s"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:186
 msgid "This shortcut is already being used for something else."
-msgstr "Šis trumpinys jau naudojamas kažkam kitam."
+msgstr "Šis susiejimas jau naudojamas kažkam kitam."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:209
 msgid "Window Manager Action Shortcut"
@@ -198,7 +198,7 @@ msgstr ""
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:299
 msgid "Shortcut:"
-msgstr ""
+msgstr "Susiejimas:"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:304
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:483
