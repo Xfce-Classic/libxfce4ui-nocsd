@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-03-08 00:30+0100\n"
-"PO-Revision-Date: 2015-03-16 11:54+0000\n"
+"PO-Revision-Date: 2015-03-20 21:21+0000\n"
 "Last-Translator: Moo\n"
 "Language-Team: Lithuanian (http://www.transifex.com/projects/p/libxfce4ui/language/lt/)\n"
 "MIME-Version: 1.0\n"
@@ -68,7 +68,7 @@ msgstr "Klausimas"
 
 #: ../libxfce4ui/xfce-sm-client.c:1424
 msgid "Session management client ID"
-msgstr ""
+msgstr "Seanso tvarkymo kliento ID"
 
 #: ../libxfce4ui/xfce-sm-client.c:1424
 msgid "ID"
@@ -76,15 +76,15 @@ msgstr "ID"
 
 #: ../libxfce4ui/xfce-sm-client.c:1425
 msgid "Disable session management"
-msgstr ""
+msgstr "Išjungti seanso tvarkymą"
 
 #: ../libxfce4ui/xfce-sm-client.c:1435
 msgid "Session management options"
-msgstr ""
+msgstr "Seanso tvarkymo parinktys"
 
 #: ../libxfce4ui/xfce-sm-client.c:1436
 msgid "Show session management options"
-msgstr ""
+msgstr "Rodyti seanso tvarkymo parinktis"
 
 #: ../libxfce4ui/xfce-sm-client.c:1611
 #, c-format
@@ -146,7 +146,7 @@ msgstr "Šis susiejimas jau yra naudojamas veiksmo '%s'. Kurį veiksmą norėsit
 #. Warn the user
 #: ../libxfce4kbd-private/xfce-shortcuts.c:110
 msgid "Please use another key combination."
-msgstr ""
+msgstr "Prašome naudoti kitokią klavišų kombinaciją."
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:111
 #, c-format
@@ -171,17 +171,17 @@ msgstr ""
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:212
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:226
 msgid "action"
-msgstr ""
+msgstr "veiksmas"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:216
 msgid "Command Shortcut"
-msgstr ""
+msgstr "Komandos Susiejimas"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:219
 msgid "command"
-msgstr ""
+msgstr "komanda"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:223
 msgid "Shortcut"
@@ -189,7 +189,7 @@ msgstr "Susiejimas"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:247
 msgid "_Cancel"
-msgstr ""
+msgstr "_Atsisakyti"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:275
 #, c-format
@@ -549,7 +549,7 @@ msgstr "Programų leistukai, langų mygtukai, programų meniu, darbo vietos keit
 
 #: ../xfce4-about/main.c:79
 msgid "Desktop Manager"
-msgstr ""
+msgstr "Darbalaukio Tvarkyklė"
 
 #: ../xfce4-about/main.c:80
 msgid ""
@@ -559,7 +559,7 @@ msgstr "Nustato darbastalio fono spalvą ar paveikslėlį su nebūtinu programų
 
 #: ../xfce4-about/main.c:84
 msgid "File Manager "
-msgstr ""
+msgstr "Failų Tvarkyklė"
 
 #: ../xfce4-about/main.c:85
 msgid ""
@@ -569,7 +569,7 @@ msgstr "Moderni failų tvarkyklė skirta Unix/Linux darbastaliams, besistengiant
 
 #: ../xfce4-about/main.c:89
 msgid "Session Manager"
-msgstr ""
+msgstr "Seansų Tvarkyklė"
 
 #: ../xfce4-about/main.c:90
 msgid ""
@@ -599,7 +599,7 @@ msgstr "Parodo įdiegtas programas kategorijose, todėl galite lengvai rasti ir 
 
 #: ../xfce4-about/main.c:104
 msgid "Settings Daemon"
-msgstr ""
+msgstr "Nustatymų Demonas"
 
 #: ../xfce4-about/main.c:105
 msgid "D-Bus-based configuration storage system."
@@ -737,7 +737,7 @@ msgstr "Vertėjai"
 
 #: ../xfce4-about/contributors.h:146
 msgid "Previous contributors"
-msgstr ""
+msgstr "Ankstesni talkininkai"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:1
 msgid "About Xfce"
