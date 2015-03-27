@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-03-08 00:30+0100\n"
-"PO-Revision-Date: 2015-03-20 21:21+0000\n"
+"PO-Revision-Date: 2015-03-27 10:54+0000\n"
 "Last-Translator: Moo\n"
 "Language-Team: Lithuanian (http://www.transifex.com/projects/p/libxfce4ui/language/lt/)\n"
 "MIME-Version: 1.0\n"
@@ -164,7 +164,7 @@ msgstr "Šis susiejimas jau naudojamas kažkam kitam."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:209
 msgid "Window Manager Action Shortcut"
-msgstr ""
+msgstr "Langų Tvarkyklės Veiksmų Susiejimas"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
@@ -319,91 +319,91 @@ msgstr "Perjungti viso ekrano veikseną"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:63
 msgid "Move window to upper workspace"
-msgstr "Perkelti langą į aukštesnį darbo lauką"
+msgstr "Perkelti langą į aukštesniąją darbo sritį"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:64
 msgid "Move window to bottom workspace"
-msgstr "Perkelti langą į žemesnį darbo lauką"
+msgstr "Perkelti langą į žemesniąją darbo sritį"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:65
 msgid "Move window to left workspace"
-msgstr "Perkelti langą į kairį darbo lauką"
+msgstr "Perkelti langą į kairiąją darbo sritį"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:66
 msgid "Move window to right workspace"
-msgstr "Perkelti langą į dešinį darbo lauką"
+msgstr "Perkelti langą į dešiniąją darbo sritį"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:67
 msgid "Move window to previous workspace"
-msgstr "Perkelti langą į buvusį darbo lauką"
+msgstr "Perkelti langą į buvusią darbo sritį"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:68
 msgid "Move window to next workspace"
-msgstr "Perkelti langą į sekantį darbo lauką"
+msgstr "Perkelti langą į kitą darbo sritį"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:69
 msgid "Move window to workspace 1"
-msgstr "Perkelti langą į darbo lauką 1"
+msgstr "Perkelti langą į darbo sritį 1"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:70
 msgid "Move window to workspace 2"
-msgstr "Perkelti langą į darbo lauką 2"
+msgstr "Perkelti langą į darbo sritį 2"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:71
 msgid "Move window to workspace 3"
-msgstr "Perkelti langą į darbo lauką 3"
+msgstr "Perkelti langą į darbo sritį 3"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:72
 msgid "Move window to workspace 4"
-msgstr "Perkelti langą į darbo lauką 4"
+msgstr "Perkelti langą į darbo sritį 4"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:73
 msgid "Move window to workspace 5"
-msgstr "Perkelti langą į darbo lauką 5"
+msgstr "Perkelti langą į darbo sritį 5"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:74
 msgid "Move window to workspace 6"
-msgstr "Perkelti langą į darbo lauką 6"
+msgstr "Perkelti langą į darbo sritį 6"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:75
 msgid "Move window to workspace 7"
-msgstr "Perkelti langą į darbo lauką 7"
+msgstr "Perkelti langą į darbo sritį 7"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:76
 msgid "Move window to workspace 8"
-msgstr "Perkelti langą į darbo lauką 8"
+msgstr "Perkelti langą į darbo sritį 8"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:77
 msgid "Move window to workspace 9"
-msgstr "Perkelti langą į darbo lauką 9"
+msgstr "Perkelti langą į darbo sritį 9"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:78
 msgid "Move window to workspace 10"
-msgstr "Perkelti langą į darbo lauką 10"
+msgstr "Perkelti langą į darbo sritį 10"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:79
 msgid "Move window to workspace 11"
-msgstr "Perkelti langą į darbo lauką 11"
+msgstr "Perkelti langą į darbo sritį 11"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:80
 msgid "Move window to workspace 12"
-msgstr "Perkelti langą į darbo lauką 12"
+msgstr "Perkelti langą į darbo sritį 12"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:81
 msgid "Tile window to the top"
-msgstr "Perkelti langą į kairį darbo lauką"
+msgstr "Perkelti langą į aukštesniąją darbo sritį"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:82
 msgid "Tile window to the bottom"
-msgstr "Perkelti langą į žemesnį darbo lauką"
+msgstr "Perkelti langą į žemesniąją darbo sritį"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:83
 msgid "Tile window to the left"
-msgstr "Perkelti langą į kairį darbo lauką"
+msgstr "Perkelti langą į kairiąją darbo sritį"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:84
 msgid "Tile window to the right"
-msgstr "Perkelti langą į dešinį darbo lauką"
+msgstr "Perkelti langą į dešinąją darbo sritį"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:85
 msgid "Tile window to the top-left"
@@ -427,91 +427,91 @@ msgstr "Rodyti darbastalį"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:90
 msgid "Upper workspace"
-msgstr "Viršutinis darbo laukas"
+msgstr "Viršutinė darbo sritis"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:91
 msgid "Bottom workspace"
-msgstr "Žemutinis darbo laukas"
+msgstr "Žemutinė darbo sritis"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:92
 msgid "Left workspace"
-msgstr "Kairysis darbo laukas"
+msgstr "Kairioji darbo sritis"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:93
 msgid "Right workspace"
-msgstr "Dešinysis darbo laukas"
+msgstr "Dešinioji darbo sritis"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:94
 msgid "Previous workspace"
-msgstr "Ankstesnis darbo laukas"
+msgstr "Ankstesnė darbo sritis"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:95
 msgid "Next workspace"
-msgstr "Sekantis darbo laukas"
+msgstr "Kita darbo sritis"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:96
 msgid "Workspace 1"
-msgstr "Darbo laukas 1"
+msgstr "Darbo sritis 1"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:97
 msgid "Workspace 2"
-msgstr "Darbo laukas 2"
+msgstr "Darbo sritis 2"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:98
 msgid "Workspace 3"
-msgstr "Darbo laukas 3"
+msgstr "Darbo sritis 3"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:99
 msgid "Workspace 4"
-msgstr "Darbo laukas 4"
+msgstr "Darbo sritis 4"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:100
 msgid "Workspace 5"
-msgstr "Darbo laukas 5"
+msgstr "Darbo sritis 5"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:101
 msgid "Workspace 6"
-msgstr "Darbo laukas 6"
+msgstr "Darbo sritis 6"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:102
 msgid "Workspace 7"
-msgstr "Darbo laukas 7"
+msgstr "Darbo sritis 7"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:103
 msgid "Workspace 8"
-msgstr "Darbo laukas 8"
+msgstr "Darbo sritis 8"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:104
 msgid "Workspace 9"
-msgstr "Darbo laukas 9"
+msgstr "Darbo sritis 9"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:105
 msgid "Workspace 10"
-msgstr "Darbo laukas 10"
+msgstr "Darbo sritis 10"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:106
 msgid "Workspace 11"
-msgstr "Darbo laukas 11"
+msgstr "Darbo sritis 11"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:107
 msgid "Workspace 12"
-msgstr "Darbo laukas 12"
+msgstr "Darbo sritis 12"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:108
 msgid "Add workspace"
-msgstr "Pridėti darbo lauką"
+msgstr "Pridėti darbo sritį"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:109
 msgid "Add adjacent workspace"
-msgstr "Pridėti darbo lauką šalia"
+msgstr "Pridėti darbo sritį šalia"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:110
 msgid "Delete last workspace"
-msgstr "Pašalinti paskutinį darbo lauką"
+msgstr "Pašalinti paskutinę darbo sritį"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:111
 msgid "Delete active workspace"
-msgstr "Pašalinti aktyvų darbo lauką"
+msgstr "Pašalinti aktyvią darbo sritį"
 
 #: ../glade/libxfce4ui.xml.in.h:1
 msgid "Titled Dialog"
@@ -670,7 +670,7 @@ msgstr "Paketai thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-setti
 #: ../xfce4-about/main.c:441
 #, c-format
 msgid "Type '%s --help' for usage information."
-msgstr ""
+msgstr "Įveskite '%s --help', jei norite gauti daugiau informacijos."
 
 #: ../xfce4-about/main.c:447
 msgid "Unable to initialize GTK+."
