@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-03-08 00:30+0100\n"
-"PO-Revision-Date: 2015-03-27 10:54+0000\n"
+"PO-Revision-Date: 2015-04-08 21:35+0000\n"
 "Last-Translator: Moo\n"
 "Language-Team: Lithuanian (http://www.transifex.com/projects/p/libxfce4ui/language/lt/)\n"
 "MIME-Version: 1.0\n"
@@ -89,12 +89,12 @@ msgstr "Rodyti seanso tvarkymo parinktis"
 #: ../libxfce4ui/xfce-sm-client.c:1611
 #, c-format
 msgid "Failed to connect to the session manager: %s"
-msgstr "Nepavyko prisijungti prie seanso tvarkyklės: %s"
+msgstr "Nepavyko prisijungti prie seanso tvarkytuvės: %s"
 
 #: ../libxfce4ui/xfce-sm-client.c:1617
 #, c-format
 msgid "Session manager did not return a valid client id"
-msgstr "Seanso tvarkyklė negrąžino tinkamo kliento id"
+msgstr "Seanso tvarkytuvė negrąžino tinkamo kliento id"
 
 #. print warning for user
 #: ../libxfce4ui/xfce-spawn.c:409
@@ -164,7 +164,7 @@ msgstr "Šis susiejimas jau naudojamas kažkam kitam."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:209
 msgid "Window Manager Action Shortcut"
-msgstr "Langų Tvarkyklės Veiksmų Susiejimas"
+msgstr "Langų Tvarkytuvės Veiksmų Susiejimas"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
@@ -531,7 +531,7 @@ msgstr "Versija"
 
 #: ../xfce4-about/main.c:70
 msgid "Window Manager"
-msgstr "Langų tvarkyklė"
+msgstr "Langų tvarkytuvė"
 
 #: ../xfce4-about/main.c:71
 msgid "Handles the placement of windows on the screen."
@@ -549,7 +549,7 @@ msgstr "Programų leistukai, langų mygtukai, programų meniu, darbo vietos keit
 
 #: ../xfce4-about/main.c:79
 msgid "Desktop Manager"
-msgstr "Darbalaukio Tvarkyklė"
+msgstr "Darbalaukio Tvarkytuvė"
 
 #: ../xfce4-about/main.c:80
 msgid ""
@@ -559,17 +559,17 @@ msgstr "Nustato darbastalio fono spalvą ar paveikslėlį su nebūtinu programų
 
 #: ../xfce4-about/main.c:84
 msgid "File Manager "
-msgstr "Failų Tvarkyklė"
+msgstr "Failų Tvarkytuvė"
 
 #: ../xfce4-about/main.c:85
 msgid ""
 "A modern file manager for the Unix/Linux desktop, aiming to be easy-to-use "
 "and fast."
-msgstr "Moderni failų tvarkyklė skirta Unix/Linux darbastaliams, besistengianti būti lengvai naudojama ir greita."
+msgstr "Moderni failų tvarkytuvė skirta Unix/Linux darbastaliams, besistengianti būti lengvai naudojama ir greita."
 
 #: ../xfce4-about/main.c:89
 msgid "Session Manager"
-msgstr "Seansų Tvarkyklė"
+msgstr "Seansų Tvarkytuvė"
 
 #: ../xfce4-about/main.c:90
 msgid ""
