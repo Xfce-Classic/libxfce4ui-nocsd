@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-03-08 00:30+0100\n"
-"PO-Revision-Date: 2015-04-08 21:35+0000\n"
+"PO-Revision-Date: 2015-04-09 21:04+0000\n"
 "Last-Translator: Moo\n"
 "Language-Team: Lithuanian (http://www.transifex.com/projects/p/libxfce4ui/language/lt/)\n"
 "MIME-Version: 1.0\n"
@@ -94,7 +94,7 @@ msgstr "Nepavyko prisijungti prie seanso tvarkytuvės: %s"
 #: ../libxfce4ui/xfce-sm-client.c:1617
 #, c-format
 msgid "Session manager did not return a valid client id"
-msgstr "Seanso tvarkytuvė negrąžino tinkamo kliento id"
+msgstr "Seansų tvarkytuvė negrąžino tinkamo kliento id"
 
 #. print warning for user
 #: ../libxfce4ui/xfce-spawn.c:409
