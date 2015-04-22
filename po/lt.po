@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-03-08 00:30+0100\n"
-"PO-Revision-Date: 2015-04-09 21:04+0000\n"
+"PO-Revision-Date: 2015-04-22 21:50+0000\n"
 "Last-Translator: Moo\n"
 "Language-Team: Lithuanian (http://www.transifex.com/projects/p/libxfce4ui/language/lt/)\n"
 "MIME-Version: 1.0\n"
@@ -40,7 +40,7 @@ msgstr "Dokumentacija tinkle"
 msgid ""
 "You will be redirected to the documentation website where the help pages are"
 " maintained and translated."
-msgstr "Jūs būsite nukreipti į dokumentacijos svetainę kurioje yra verčiami ir prižiūrimi žinyno puslapiai."
+msgstr "Jūs būsite nukreipti į dokumentacijos svetainę, kurioje yra verčiami ir prižiūrimi žinyno puslapiai."
 
 #: ../libxfce4ui/xfce-dialogs.c:278
 msgid "_Read Online"
@@ -151,7 +151,7 @@ msgstr "Prašome naudoti kitokią klavišų kombinaciją."
 #: ../libxfce4kbd-private/xfce-shortcuts.c:111
 #, c-format
 msgid "%s already triggers this action."
-msgstr ""
+msgstr "%s jau yra nustatyta, kad paleistų šį veiksmą."
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:116
 #, c-format
@@ -181,7 +181,7 @@ msgstr "Komandos Susiejimas"
 #. * the user in a following string
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:219
 msgid "command"
-msgstr "komanda"
+msgstr "komandą"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:223
 msgid "Shortcut"
@@ -194,7 +194,7 @@ msgstr "_Atsisakyti"
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:275
 #, c-format
 msgid "Press now the keyboard keys you want to use to trigger the %s '%s'."
-msgstr ""
+msgstr "Dabar nuspauskite klaviatūros klavišus, kurie paleis %s '%s'."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:299
 msgid "Shortcut:"
@@ -203,11 +203,11 @@ msgstr "Susiejimas:"
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:304
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:483
 msgid "No keys pressed yet, proceed."
-msgstr ""
+msgstr "Kol kas nenuspausta jokių klavišų, tęskite."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:386
 msgid "Could not grab the keyboard."
-msgstr ""
+msgstr "Nepavyko sučiupti klaviatūros."
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:36
 msgid "Window operations menu"
@@ -407,19 +407,19 @@ msgstr "Perkelti langą į dešinąją darbo sritį"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:85
 msgid "Tile window to the top-left"
-msgstr ""
+msgstr "Iškloti langą viršuje kairėje"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:86
 msgid "Tile window to the top-right"
-msgstr ""
+msgstr "Iškloti langą viršuje dešinėje"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:87
 msgid "Tile window to the bottom-left"
-msgstr ""
+msgstr "Iškloti langą apačioje kairėje"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:88
 msgid "Tile window to the bottom-right"
-msgstr ""
+msgstr "Iškloti langą apačioje dešinėje"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:89
 msgid "Show desktop"
@@ -519,7 +519,7 @@ msgstr "Langas su antrašte"
 
 #: ../glade/libxfce4ui.xml.in.h:2
 msgid "Subtitle"
-msgstr ""
+msgstr "Paantraštė"
 
 #: ../glade/libxfce4ui.xml.in.h:3
 msgid "Xfce 4 Widgets"
@@ -535,7 +535,7 @@ msgstr "Langų tvarkytuvė"
 
 #: ../xfce4-about/main.c:71
 msgid "Handles the placement of windows on the screen."
-msgstr ""
+msgstr "Apdoroja langų vietą ekrane."
 
 #: ../xfce4-about/main.c:74
 msgid "Panel"
