@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-03-08 00:30+0100\n"
-"PO-Revision-Date: 2015-06-03 15:22+0000\n"
+"PO-Revision-Date: 2015-06-06 14:46+0000\n"
 "Last-Translator: Påvel Nicklasson <pavelnicklasson@bahnhof.se>\n"
 "Language-Team: Swedish (http://www.transifex.com/projects/p/libxfce4ui/language/sv/)\n"
 "MIME-Version: 1.0\n"
@@ -753,7 +753,7 @@ msgstr "Om skrivbordsmiljön Xfce"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:2
 msgid "About"
-msgstr "OM"
+msgstr "Om"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:3
 msgid "Credits"
