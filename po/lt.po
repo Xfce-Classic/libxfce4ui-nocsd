@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-03-08 00:30+0100\n"
-"PO-Revision-Date: 2015-04-22 21:50+0000\n"
+"PO-Revision-Date: 2015-06-24 11:16+0000\n"
 "Last-Translator: Moo\n"
 "Language-Team: Lithuanian (http://www.transifex.com/projects/p/libxfce4ui/language/lt/)\n"
 "MIME-Version: 1.0\n"
@@ -423,7 +423,7 @@ msgstr "Iškloti langą apačioje dešinėje"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:89
 msgid "Show desktop"
-msgstr "Rodyti darbastalį"
+msgstr "Rodyti darbalaukį"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:90
 msgid "Upper workspace"
@@ -545,7 +545,7 @@ msgstr "Skydelis"
 msgid ""
 "Program launchers, window buttons, applications menu, workspace switcher and"
 " more."
-msgstr "Programų leistukai, langų mygtukai, programų meniu, darbo vietos keitimas ir dar daugiau."
+msgstr "Programų leistukai, langų mygtukai, programų meniu, darbo srities keitimas ir dar daugiau."
 
 #: ../xfce4-about/main.c:79
 msgid "Desktop Manager"
@@ -555,7 +555,7 @@ msgstr "Darbalaukio Tvarkytuvė"
 msgid ""
 "Sets the background color or image with optional application menu or icons "
 "for minimized applications or launchers, devices and folders."
-msgstr "Nustato darbastalio fono spalvą ar paveikslėlį su nebūtinu programų meniu ar piktogramas sumažintoms programoms ar leistukams, įrenginius ir aplankus."
+msgstr "Nustato darbalaukio fono spalvą ar paveikslėlį su nebūtinu programų meniu ar piktogramas sumažintoms programoms ar leistukams, įrenginius ir aplankus."
 
 #: ../xfce4-about/main.c:84
 msgid "File Manager "
@@ -565,7 +565,7 @@ msgstr "Failų Tvarkytuvė"
 msgid ""
 "A modern file manager for the Unix/Linux desktop, aiming to be easy-to-use "
 "and fast."
-msgstr "Moderni failų tvarkytuvė skirta Unix/Linux darbastaliams, besistengianti būti lengvai naudojama ir greita."
+msgstr "Moderni failų tvarkytuvė skirta Unix/Linux darbalaukiams, besistengianti būti lengvai naudojama ir greita."
 
 #: ../xfce4-about/main.c:89
 msgid "Session Manager"
@@ -585,7 +585,7 @@ msgstr "Sistemos nustatymai"
 msgid ""
 "Configuration system to control various aspects of the desktop like "
 "appearance, display, keyboard and mouse settings."
-msgstr "Konfigūracijos sistema skirta valdyti įvairius aspektus, tokius kaip darbastalio išvaizda, ekranai, klaviatūra ir pelės nustatymai."
+msgstr "Konfigūracijos sistema skirta valdyti įvairius aspektus, tokius kaip darbalaukio išvaizda, ekranai, klaviatūra ir pelės nustatymai."
 
 #: ../xfce4-about/main.c:99
 msgid "Application Finder"
@@ -609,14 +609,14 @@ msgstr "D-Bus paremta konfigūracijos saugojimo sistema."
 msgid ""
 "Xfce is a collection of programs that together provide a full-featured "
 "desktop environment. The following programs are part of the Xfce core:"
-msgstr "Xfce tai yra programų rinkinys, kartu sudarantis pilną darbastalio aplinką. Šios programos įeina į Xfce branduolį:"
+msgstr "Xfce tai yra programų rinkinys, kartu sudarantis pilną darbalaukio aplinką. Šios programos įeina į Xfce branduolį:"
 
 #: ../xfce4-about/main.c:136
 msgid ""
 "Xfce is also a development platform providing several libraries, that help "
 "programmers create applications that fit in well with the desktop "
 "environment."
-msgstr "Xfce taipogi yra kūrimo platforma turinti kelias bibliotekas, tai suteikia programuotojams galimybę kurti programas kurios puikiai derinsis darbastalio aplinkoje."
+msgstr "Xfce taipogi yra kūrimo platforma turinti kelias bibliotekas, tai suteikia programuotojams galimybę kurti programas kurios puikiai derės darbalaukio aplinkoje."
 
 #: ../xfce4-about/main.c:142
 msgid ""
@@ -745,11 +745,11 @@ msgstr "Apie Xfce"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:2
 msgid "Information about the Xfce Desktop Environment"
-msgstr "Informacija apie Xfce darbastalio aplinką"
+msgstr "Informacija apie Xfce darbalaukio aplinką"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:1
 msgid "About the Xfce Desktop Environment"
-msgstr "Apie Xfce darbastalio aplinką"
+msgstr "Apie Xfce darbalaukio aplinką"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:2
 msgid "About"
