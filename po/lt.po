@@ -10,9 +10,9 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-03-08 00:30+0100\n"
-"PO-Revision-Date: 2015-06-24 11:16+0000\n"
+"PO-Revision-Date: 2015-07-09 13:12+0000\n"
 "Last-Translator: Moo\n"
-"Language-Team: Lithuanian (http://www.transifex.com/projects/p/libxfce4ui/language/lt/)\n"
+"Language-Team: Lithuanian (http://www.transifex.com/p/libxfce4ui/language/lt/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -628,7 +628,7 @@ msgstr "Xfce komponentai platinami pagal nemokamas ar atviro kodo licencijas; GP
 
 #: ../xfce4-about/main.c:149
 msgid "Thank you for your interest in Xfce."
-msgstr "Dėkui jog domitės Xfce."
+msgstr "Dėkojame, kad domitės Xfce."
 
 #: ../xfce4-about/main.c:153
 msgid "The Xfce Development Team"
@@ -642,7 +642,7 @@ msgstr "Jei ko nors šiame sąraše trūksta, nesigėdykite ir užpildykite pran
 
 #: ../xfce4-about/main.c:265
 msgid "Thanks to all who helped making this software available!"
-msgstr "Dėkui visiems kurie prisidėjo tam jog ši programinė įranga būtų prieinama!"
+msgstr "Dėkojame visiems, kurie prisidėjo tam, kad ši programinė įranga būtų prieinama!"
 
 #: ../xfce4-about/main.c:282
 msgid ""
