@@ -10,9 +10,9 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-03-08 00:30+0100\n"
-"PO-Revision-Date: 2015-06-06 14:46+0000\n"
+"PO-Revision-Date: 2015-07-19 16:55+0000\n"
 "Last-Translator: Påvel Nicklasson <pavelnicklasson@bahnhof.se>\n"
-"Language-Team: Swedish (http://www.transifex.com/projects/p/libxfce4ui/language/sv/)\n"
+"Language-Team: Swedish (http://www.transifex.com/p/libxfce4ui/language/sv/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -207,7 +207,7 @@ msgstr "Inga tangenter tryckta än, fortsätt."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:386
 msgid "Could not grab the keyboard."
-msgstr "Kunde inte fånga tangentbordet."
+msgstr "Det gick inte att fånga tangentbordet."
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:36
 msgid "Window operations menu"
@@ -283,7 +283,7 @@ msgstr "Rulla upp fönster"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:54
 msgid "Stick window"
-msgstr "Klistra fast fönster"
+msgstr "Fäst fönster"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:55
 msgid "Raise window"
@@ -674,7 +674,7 @@ msgstr "Skriv '%s --help' för användningsinformation."
 
 #: ../xfce4-about/main.c:447
 msgid "Unable to initialize GTK+."
-msgstr "Kunde inte initiera GTK+."
+msgstr "Det gick inte att initiera GTK+."
 
 #: ../xfce4-about/main.c:456
 msgid "The Xfce development team. All rights reserved."
