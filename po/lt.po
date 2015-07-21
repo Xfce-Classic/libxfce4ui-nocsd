@@ -10,9 +10,9 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-03-08 00:30+0100\n"
-"PO-Revision-Date: 2015-07-09 13:12+0000\n"
+"PO-Revision-Date: 2015-07-21 14:38+0000\n"
 "Last-Translator: Moo\n"
-"Language-Team: Lithuanian (http://www.transifex.com/p/libxfce4ui/language/lt/)\n"
+"Language-Team: Lithuanian (http://www.transifex.com/projects/p/libxfce4ui/language/lt/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -599,7 +599,7 @@ msgstr "Parodo įdiegtas programas kategorijose, todėl galite lengvai rasti ir 
 
 #: ../xfce4-about/main.c:104
 msgid "Settings Daemon"
-msgstr "Nustatymų Demonas"
+msgstr "Nustatymų Tarnyba"
 
 #: ../xfce4-about/main.c:105
 msgid "D-Bus-based configuration storage system."
