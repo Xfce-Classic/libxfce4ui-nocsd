@@ -4,13 +4,13 @@
 # 
 # Translators:
 # Algimantas Margevičius <margevicius.algimantas@gmail.com>, 2012
-# Moo, 2015
+# Moo, 2015-2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-03-08 00:30+0100\n"
-"PO-Revision-Date: 2015-11-26 22:37+0000\n"
+"PO-Revision-Date: 2016-01-12 22:17+0000\n"
 "Last-Translator: Moo\n"
 "Language-Team: Lithuanian (http://www.transifex.com/xfce/libxfce4ui/language/lt/)\n"
 "MIME-Version: 1.0\n"
@@ -164,7 +164,7 @@ msgstr "Šis susiejimas jau naudojamas kažkam kitam."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:209
 msgid "Window Manager Action Shortcut"
-msgstr "Langų Tvarkytuvės Veiksmų Susiejimas"
+msgstr "Langų tvarkytuvės veiksmų susiejimas"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
@@ -175,7 +175,7 @@ msgstr "veiksmas"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:216
 msgid "Command Shortcut"
-msgstr "Komandos Susiejimas"
+msgstr "Komandos susiejimas"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
@@ -549,7 +549,7 @@ msgstr "Programų leistukai, langų mygtukai, programų meniu, darbo srities kei
 
 #: ../xfce4-about/main.c:79
 msgid "Desktop Manager"
-msgstr "Darbalaukio Tvarkytuvė"
+msgstr "Darbalaukio tvarkytuvė"
 
 #: ../xfce4-about/main.c:80
 msgid ""
@@ -559,7 +559,7 @@ msgstr "Nustato darbalaukio fono spalvą ar paveikslėlį su nebūtinu programų
 
 #: ../xfce4-about/main.c:84
 msgid "File Manager "
-msgstr "Failų Tvarkytuvė"
+msgstr "Failų tvarkytuvė"
 
 #: ../xfce4-about/main.c:85
 msgid ""
@@ -569,7 +569,7 @@ msgstr "Moderni failų tvarkytuvė skirta Unix/Linux darbalaukiams, besistengian
 
 #: ../xfce4-about/main.c:89
 msgid "Session Manager"
-msgstr "Seansų Tvarkytuvė"
+msgstr "Seansų tvarkytuvė"
 
 #: ../xfce4-about/main.c:90
 msgid ""
@@ -599,7 +599,7 @@ msgstr "Parodo įdiegtas programas kategorijose, todėl galite lengvai rasti ir 
 
 #: ../xfce4-about/main.c:104
 msgid "Settings Daemon"
-msgstr "Nustatymų Tarnyba"
+msgstr "Nustatymų tarnyba"
 
 #: ../xfce4-about/main.c:105
 msgid "D-Bus-based configuration storage system."
