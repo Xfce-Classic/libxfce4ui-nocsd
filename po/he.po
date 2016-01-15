@@ -3,6 +3,7 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# Elishai Eliyahu <e1907@mm.st>, 2016
 # GenghisKhan <genghiskhan@gmx.ca>, 2014
 # GenghisKhan <genghiskhan@gmx.ca>, 2014-2015
 # Hezy Amiel <open@hezyamiel.com>, 2010
@@ -12,8 +13,8 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-03-08 00:30+0100\n"
-"PO-Revision-Date: 2016-01-14 18:35+0000\n"
-"Last-Translator: GenghisKhan <genghiskhan@gmx.ca>\n"
+"PO-Revision-Date: 2016-01-15 12:29+0000\n"
+"Last-Translator: Elishai Eliyahu <e1907@mm.st>\n"
 "Language-Team: Hebrew (http://www.transifex.com/xfce/libxfce4ui/language/he/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -70,33 +71,33 @@ msgstr "שאלה"
 
 #: ../libxfce4ui/xfce-sm-client.c:1424
 msgid "Session management client ID"
-msgstr "Session management client ID"
+msgstr "זהות לקוח ניהול סשן"
 
 #: ../libxfce4ui/xfce-sm-client.c:1424
 msgid "ID"
-msgstr "ID"
+msgstr "זהות"
 
 #: ../libxfce4ui/xfce-sm-client.c:1425
 msgid "Disable session management"
-msgstr "Disable session management"
+msgstr "הפסק ניהול סשן"
 
 #: ../libxfce4ui/xfce-sm-client.c:1435
 msgid "Session management options"
-msgstr "Session management options"
+msgstr "אפשרויות ניהול סשן"
 
 #: ../libxfce4ui/xfce-sm-client.c:1436
 msgid "Show session management options"
-msgstr "Show session management options"
+msgstr "הצג אפשרויות ניהול סשן"
 
 #: ../libxfce4ui/xfce-sm-client.c:1611
 #, c-format
 msgid "Failed to connect to the session manager: %s"
-msgstr "Failed to connect to the session manager: %s"
+msgstr "נכשל להתחבר למנהל הסשן: %s"
 
 #: ../libxfce4ui/xfce-sm-client.c:1617
 #, c-format
 msgid "Session manager did not return a valid client id"
-msgstr "Session manager did not return a valid client id"
+msgstr "מנהל הסשן לא השיב זהות לקוח תקפה"
 
 #. print warning for user
 #: ../libxfce4ui/xfce-spawn.c:409
@@ -104,7 +105,7 @@ msgstr "Session manager did not return a valid client id"
 msgid ""
 "Working directory \"%s\" does not exist. It won't be used when spawning "
 "\"%s\"."
-msgstr "Working directory \"%s\" does not exist. It won't be used when spawning \"%s\"."
+msgstr "תיקיית עבודה \"%s\" לא קיימת. היא לא תהיה בשימוש כאשר תובא \"%s\"."
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 #, c-format
@@ -525,11 +526,11 @@ msgstr "כותרת משנה"
 
 #: ../glade/libxfce4ui.xml.in.h:3
 msgid "Xfce 4 Widgets"
-msgstr "וידג׳טים Xfce 4"
+msgstr "יישומונים Xfce 4"
 
 #: ../xfce4-about/main.c:52
 msgid "Version information"
-msgstr "Version information"
+msgstr "מידע גרסה"
 
 #: ../xfce4-about/main.c:70
 msgid "Window Manager"
@@ -672,11 +673,11 @@ msgstr "החבילות thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce
 #: ../xfce4-about/main.c:441
 #, c-format
 msgid "Type '%s --help' for usage information."
-msgstr "Type '%s --help' for usage information."
+msgstr "הקלד '%s --help' למידע שימוש."
 
 #: ../xfce4-about/main.c:447
 msgid "Unable to initialize GTK+."
-msgstr "Unable to initialize GTK+."
+msgstr "לא מסוגל לאתחל GTK+ "
 
 #: ../xfce4-about/main.c:456
 msgid "The Xfce development team. All rights reserved."
@@ -685,17 +686,17 @@ msgstr "The Xfce development team. All rights reserved."
 #: ../xfce4-about/main.c:457
 #, c-format
 msgid "Please report bugs to <%s>."
-msgstr "Please report bugs to <%s>."
+msgstr "אנא דווח באגים ל <%s>."
 
 #. I18N: date/time the translators list was updated
 #: ../xfce4-about/main.c:460
 #, c-format
 msgid "Translators list from %s."
-msgstr "Translators list from %s."
+msgstr "רשימת מתרגמים מ %s."
 
 #: ../xfce4-about/main.c:470
 msgid "Failed to load interface"
-msgstr "Failed to load interface"
+msgstr "נכשל להעלות ממשק"
 
 #. I18N: first %s will be replaced by the version, second by
 #. * the name of the distribution (--with-vendor-info=NAME)
