@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-03-08 00:30+0100\n"
-"PO-Revision-Date: 2016-02-04 16:06+0000\n"
+"PO-Revision-Date: 2016-02-04 22:56+0000\n"
 "Last-Translator: Apostolos Papadimitriu <apostolos.papadimitriu@gmail.com>\n"
 "Language-Team: Greek (http://www.transifex.com/xfce/libxfce4ui/language/el/)\n"
 "MIME-Version: 1.0\n"
@@ -153,7 +153,7 @@ msgstr "Παρακαλώ χρησιμοποιήστε άλλο συνδυασμ�
 #: ../libxfce4kbd-private/xfce-shortcuts.c:111
 #, c-format
 msgid "%s already triggers this action."
-msgstr ""
+msgstr "%s ήδη πυροδοτεί αυτήν την ενέργεια."
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:116
 #, c-format
@@ -196,7 +196,7 @@ msgstr "Ά_κυρο"
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:275
 #, c-format
 msgid "Press now the keyboard keys you want to use to trigger the %s '%s'."
-msgstr ""
+msgstr "Πατήστε τώρα τα πλήκτρα που θέλετε να χρησιμοποιήσετε για το %s '%s'."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:299
 msgid "Shortcut:"
@@ -205,7 +205,7 @@ msgstr "Συντόμευση:"
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:304
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:483
 msgid "No keys pressed yet, proceed."
-msgstr ""
+msgstr "Κανένα πλήκτρο δεν πατήθηκε ακόμα. Προχωρήστε."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:386
 msgid "Could not grab the keyboard."
