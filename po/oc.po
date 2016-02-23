@@ -3,14 +3,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Cédric Valmary <cvalmary@yahoo.fr>, 2015
+# Cédric Valmary <cvalmary@yahoo.fr>, 2015-2016
 # Cédric Valmary <cvalmary@yahoo.fr>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-03-08 00:30+0100\n"
-"PO-Revision-Date: 2015-11-07 15:53+0000\n"
+"PO-Revision-Date: 2016-02-23 06:53+0000\n"
 "Last-Translator: Cédric Valmary <cvalmary@yahoo.fr>\n"
 "Language-Team: Occitan (post 1500) (http://www.transifex.com/xfce/libxfce4ui/language/oc/)\n"
 "MIME-Version: 1.0\n"
@@ -407,19 +407,19 @@ msgstr "Agençar la fenèstra en mosaïca cap a drecha"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:85
 msgid "Tile window to the top-left"
-msgstr ""
+msgstr "Agençar la fenèstra en mosaïca cap amont a esquèrra"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:86
 msgid "Tile window to the top-right"
-msgstr ""
+msgstr "Agençar la fenèstra en mosaïca cap amont a drecha"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:87
 msgid "Tile window to the bottom-left"
-msgstr ""
+msgstr "Agençar la fenèstra en mosaïca cap aval a esquèrra"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:88
 msgid "Tile window to the bottom-right"
-msgstr ""
+msgstr "Agençar la fenèstra en mosaïca cap aval a drecha"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:89
 msgid "Show desktop"
