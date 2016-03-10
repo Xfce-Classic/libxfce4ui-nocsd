@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-03-08 00:30+0100\n"
-"PO-Revision-Date: 2016-03-06 16:54+0000\n"
+"PO-Revision-Date: 2016-03-10 18:48+0000\n"
 "Last-Translator: Elishai Eliyahu <e1907@mm.st>\n"
 "Language-Team: Hebrew (http://www.transifex.com/xfce/libxfce4ui/language/he/)\n"
 "MIME-Version: 1.0\n"
@@ -120,7 +120,7 @@ msgstr "קיצור דרך זה כבר מצוי בשימוש עבור הפעול�
 #: ../libxfce4kbd-private/xfce-shortcuts.c:63
 #, c-format
 msgid "Use '%s'"
-msgstr "השתמש בקיצור '%s'"
+msgstr "השתמש ב- '%s'"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:54
 #: ../libxfce4kbd-private/xfce-shortcuts.c:57
@@ -159,7 +159,7 @@ msgstr "‏%s כבר מעוררת את פעולה זו."
 #: ../libxfce4kbd-private/xfce-shortcuts.c:116
 #, c-format
 msgid "Conflicting actions for %s"
-msgstr "פקודות מתנגשות עבור %s"
+msgstr "פעולות סותרות עבור %s"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:186
 msgid "This shortcut is already being used for something else."
@@ -210,7 +210,7 @@ msgstr "לא נלחצו מקשים עדיין, המשך."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:386
 msgid "Could not grab the keyboard."
-msgstr "לא היתה אפשרות לתפוס את המקלדת."
+msgstr "לא יכול לתפוס את המקלדת."
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:36
 msgid "Window operations menu"
@@ -238,15 +238,15 @@ msgstr "ביטול"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:42
 msgid "Cycle windows"
-msgstr "נתר בין חלונות"
+msgstr "עבור במחזוריות בין חלונות"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:43
 msgid "Cycle windows (Reverse)"
-msgstr "נתר בין חלונות (הפוך)"
+msgstr "עבור במחזוריות בין חלונות (הפוך)"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:44
 msgid "Switch window for same application"
-msgstr "החלף חלון עבור אותו יישום"
+msgstr "העבר חלון עבור אותו יישום"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:45
 msgid "Switch application"
@@ -314,11 +314,11 @@ msgstr "מלא חלון אנכית"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:61
 msgid "Toggle above"
-msgstr "החלף מצב מעל"
+msgstr "החלף מעל"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:62
 msgid "Toggle fullscreen"
-msgstr "החלף מצב מסך מלא"
+msgstr "החלף מסך מלא"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:63
 msgid "Move window to upper workspace"
@@ -334,7 +334,7 @@ msgstr "העבר חלון למשטח עבודה שמאלי"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:66
 msgid "Move window to right workspace"
-msgstr "העבר חלון למשטח עבודה ימני"
+msgstr "העבר חלון למרחב עבודה ימני"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:67
 msgid "Move window to previous workspace"
@@ -394,35 +394,35 @@ msgstr "העבר חלון למשטח עבודה 12"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:81
 msgid "Tile window to the top"
-msgstr "רצף חלון לשיא"
+msgstr "הפוך חלון לאריח עליון"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:82
 msgid "Tile window to the bottom"
-msgstr "רצף חלון לחתית"
+msgstr "הפוך חלון לאריח תחתון"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:83
 msgid "Tile window to the left"
-msgstr "רצף חלון לשמאל"
+msgstr "הפוך חלון לאריח שמאלי"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:84
 msgid "Tile window to the right"
-msgstr "רצף חלון לימין"
+msgstr "הפוך חלון לאריח ימני"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:85
 msgid "Tile window to the top-left"
-msgstr "רצף חלון לשיא-שמאל"
+msgstr "הפוך חלון לאריח עליון-שמאלי"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:86
 msgid "Tile window to the top-right"
-msgstr "רצף חלון לשיא-ימין"
+msgstr "הפוך חלון לאריח עליון-ימני"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:87
 msgid "Tile window to the bottom-left"
-msgstr "רצף חלון לתחתית-שמאל"
+msgstr "הפוך חלון לאריח תחתון-שמאלי"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:88
 msgid "Tile window to the bottom-right"
-msgstr "רצף חלון לתחתית-ימין"
+msgstr "הפוך חלון לאריח תחתון-ימני"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:89
 msgid "Show desktop"
