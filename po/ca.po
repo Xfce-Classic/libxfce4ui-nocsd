@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-03-08 00:30+0100\n"
-"PO-Revision-Date: 2016-04-29 21:25+0000\n"
+"PO-Revision-Date: 2016-04-30 09:57+0000\n"
 "Last-Translator: Robert Antoni Buj i Gelonch <rbuj@fedoraproject.org>\n"
 "Language-Team: Catalan (http://www.transifex.com/xfce/libxfce4ui/language/ca/)\n"
 "MIME-Version: 1.0\n"
@@ -50,7 +50,7 @@ msgstr "_Llegir en línia"
 
 #: ../libxfce4ui/xfce-dialogs.c:290
 msgid "_Always go directly to the online documentation"
-msgstr "_Anar sempre a la documentació en línia directament"
+msgstr "_Vés sempre directament a la documentació en línia"
 
 #: ../libxfce4ui/xfce-dialogs.c:334
 msgid "Information"
@@ -119,7 +119,7 @@ msgstr "Aquesta drecera ja s'està utilitzant per a l'acció «%s». Quina acci�
 #: ../libxfce4kbd-private/xfce-shortcuts.c:63
 #, c-format
 msgid "Use '%s'"
-msgstr "Empra «%s»"
+msgstr "Utilitza «%s»"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:54
 #: ../libxfce4kbd-private/xfce-shortcuts.c:57
@@ -127,7 +127,7 @@ msgstr "Empra «%s»"
 #: ../libxfce4kbd-private/xfce-shortcuts.c:63
 #, c-format
 msgid "Keep '%s'"
-msgstr "Manté «%s»"
+msgstr "Mantén «%s»"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
 #: ../libxfce4kbd-private/xfce-shortcuts.c:59
@@ -162,11 +162,11 @@ msgstr "Conflicte d'accions per %s"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:186
 msgid "This shortcut is already being used for something else."
-msgstr "Aquesta drecera ja s'està utilitzant per alguna altra cosa."
+msgstr "Aquesta drecera ja s'està utilitzant per a alguna altra cosa."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:209
 msgid "Window Manager Action Shortcut"
-msgstr "Gestor de Dreceres"
+msgstr "Gestor de dreceres"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
@@ -177,13 +177,13 @@ msgstr "acció"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:216
 msgid "Command Shortcut"
-msgstr "Ordre de drecera"
+msgstr "Ordre de la drecera"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:219
 msgid "command"
-msgstr "drecera"
+msgstr "ordre"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:223
 msgid "Shortcut"
@@ -213,7 +213,7 @@ msgstr "No s'ha pogut obtenir el teclat."
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:36
 msgid "Window operations menu"
-msgstr "Menú d’operacions de finestra"
+msgstr "Menú d'operacions de finestra"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:37
 msgid "Up"
@@ -325,11 +325,11 @@ msgstr "Mou la finestra a l'espai de treball superior"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:64
 msgid "Move window to bottom workspace"
-msgstr "Mou la finestra a l'espai de treball esquerra inferior"
+msgstr "Mou la finestra a l'espai de treball esquerre inferior"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:65
 msgid "Move window to left workspace"
-msgstr "Mou la finestra a l'espai de treball esquerra"
+msgstr "Mou la finestra a l'espai de treball esquerre"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:66
 msgid "Move window to right workspace"
@@ -393,7 +393,7 @@ msgstr "Mou la finestra a l'espai de treball 12"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:81
 msgid "Tile window to the top"
-msgstr "Situa la finestra al centre"
+msgstr "Ajusta la finestra al centre"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:82
 msgid "Tile window to the bottom"
@@ -425,7 +425,7 @@ msgstr "Ajusta la finestra a baix a la dreta"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:89
 msgid "Show desktop"
-msgstr "Mostrar l'escriptori"
+msgstr "Mostra l'escriptori"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:90
 msgid "Upper workspace"
@@ -437,7 +437,7 @@ msgstr "Espai de treball inferior"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:92
 msgid "Left workspace"
-msgstr "Espai de treball esquerra"
+msgstr "Espai de treball esquerre"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:93
 msgid "Right workspace"
@@ -509,11 +509,11 @@ msgstr "Afegeix espai de treball adjacent"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:110
 msgid "Delete last workspace"
-msgstr "Esborra el darrer espai de treball"
+msgstr "Suprimeix l'últim espai de treball"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:111
 msgid "Delete active workspace"
-msgstr "Esborra l'espai de treball actiu"
+msgstr "Suprimeix l'espai de treball actiu"
 
 #: ../glade/libxfce4ui.xml.in.h:1
 msgid "Titled Dialog"
@@ -537,7 +537,7 @@ msgstr "Gestor de finestres"
 
 #: ../xfce4-about/main.c:71
 msgid "Handles the placement of windows on the screen."
-msgstr "Gestiona l'ubicació de finestres a la pantalla."
+msgstr "Gestiona la ubicació de les finestres a la pantalla."
 
 #: ../xfce4-about/main.c:74
 msgid "Panel"
@@ -557,7 +557,7 @@ msgstr "Gestor d'escriptori"
 msgid ""
 "Sets the background color or image with optional application menu or icons "
 "for minimized applications or launchers, devices and folders."
-msgstr "Fixa el color o la imatge de fons i opcionalment, menús d'aplicacions o icones per aplicacions minimitzades o llançadors, dispositius i carpetes."
+msgstr "Fixa el color o la imatge de fons amb els menús d'aplicacions o icones opcionals per a les aplicacions minimitzades o per als llançadors minimitzats, dispositius i carpetes."
 
 #: ../xfce4-about/main.c:84
 msgid "File Manager "
@@ -626,7 +626,7 @@ msgid ""
 " for applications and LGPL or BSDL for libraries. Look at the documentation,"
 " the source code or the Xfce website (http://www.xfce.org) for more "
 "information."
-msgstr "Els components de Xfce tenen llicències lliures o obertes; GPL o BSDL per les aplicacions i LGPL o BSDL per les llibreries. Per més informació mireu la documentació, el codi fon o la pàgina web de Xfce (http://www.xfce.org/)."
+msgstr "Els components de Xfce estan llicenciats sota llicències lliures o de codi obert; GPL o BSDL per a les aplicacions i LGPL o BSDL per a les biblioteques. Per més informació consulteu la documentació, el codi font o el lloc web de Xfce (http://www.xfce.org)."
 
 #: ../xfce4-about/main.c:149
 msgid "Thank you for your interest in Xfce."
@@ -634,7 +634,7 @@ msgstr "Gràcies pel vostre interès en Xfce."
 
 #: ../xfce4-about/main.c:153
 msgid "The Xfce Development Team"
-msgstr "L'Equip de desenvolupament de Xfce"
+msgstr "L'equip de desenvolupament de Xfce"
 
 #: ../xfce4-about/main.c:261
 msgid ""
@@ -644,13 +644,13 @@ msgstr "Si sabeu d'algú que hagi d'estar en aquesta llista; no dubteu en inform
 
 #: ../xfce4-about/main.c:265
 msgid "Thanks to all who helped making this software available!"
-msgstr "Gràcies a tots que heu ajudat a fer aquest programari una realitat."
+msgstr "Gràcies a tots aquells que heu ajudat a fer aquest programari una realitat."
 
 #: ../xfce4-about/main.c:282
 msgid ""
 "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
-msgstr "Xfce 4 és copyright d'Olivier Fourdan <fourdan@xfce.org>. Els diferents components el copyright el tenen els seus respectius autors."
+msgstr "Xfce 4 té copyright d'Olivier Fourdan (fourdan@xfce.org). Els diferents components tenen el copyright dels seus respectius autors."
 
 #: ../xfce4-about/main.c:287
 msgid ""
@@ -672,7 +672,7 @@ msgstr "Els paquets thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-s
 #: ../xfce4-about/main.c:441
 #, c-format
 msgid "Type '%s --help' for usage information."
-msgstr "Feu «%s --help» per veure l'ús."
+msgstr "Teclegeu «%s --help» per a la informació de l'ús."
 
 #: ../xfce4-about/main.c:447
 msgid "Unable to initialize GTK+."
@@ -691,7 +691,7 @@ msgstr "Envieu els errors a <%s>."
 #: ../xfce4-about/main.c:460
 #, c-format
 msgid "Translators list from %s."
-msgstr "Llista de traductors de %s."
+msgstr "Llista dels traductors de %s."
 
 #: ../xfce4-about/main.c:470
 msgid "Failed to load interface"
@@ -723,15 +723,15 @@ msgstr "Col·laboradors actius"
 
 #: ../xfce4-about/contributors.h:134
 msgid "Servers maintained by"
-msgstr "Servidor mantingut per"
+msgstr "Servidors mantinguts per"
 
 #: ../xfce4-about/contributors.h:137
 msgid "Goodies supervision"
-msgstr "Supervisors de les extensions"
+msgstr "Supervisió de les extensions"
 
 #: ../xfce4-about/contributors.h:140
 msgid "Translations supervision"
-msgstr "Supervisors de traduccions"
+msgstr "Supervisió de les traduccions"
 
 #: ../xfce4-about/contributors.h:143
 msgid "Translators"
@@ -747,7 +747,7 @@ msgstr "Quant a Xfce"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:2
 msgid "Information about the Xfce Desktop Environment"
-msgstr "Informació sobre l'entorn d'escriptori Xfce"
+msgstr "Informació quant a l'entorn d'escriptori Xfce"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:1
 msgid "About the Xfce Desktop Environment"
