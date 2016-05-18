@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-03-08 00:30+0100\n"
-"PO-Revision-Date: 2016-05-18 04:19+0000\n"
+"PO-Revision-Date: 2016-05-18 04:41+0000\n"
 "Last-Translator: Ivica  Kolić <ikoli@yahoo.com>\n"
 "Language-Team: Croatian (http://www.transifex.com/xfce/libxfce4ui/language/hr/)\n"
 "MIME-Version: 1.0\n"
@@ -103,14 +103,14 @@ msgstr "Upravitelj sesijom nije vratio valjan id klijenta"
 msgid ""
 "Working directory \"%s\" does not exist. It won't be used when spawning "
 "\"%s\"."
-msgstr "Radna mapa \"%s\" ne postoji. Neće se koristiti prilikom gnježđenja \"%s\"."
+msgstr "Radna mapa \"%s\" ne postoji. Neće se koristiti prilikom pokretanja nove instance \"%s\"."
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 #, c-format
 msgid ""
 "This shortcut is already being used for the action '%s'. Which action do you"
 " want to use?"
-msgstr "Ova radnja je već u upotrebi kod naredbe '%s'. Koju radnju želite koristiti?"
+msgstr "Radnja '%s' već koristi ovu kraticu. Koju radnju želite koristiti?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:54
 #: ../libxfce4kbd-private/xfce-shortcuts.c:57
@@ -147,7 +147,7 @@ msgstr "Ova radnja je već u upotrebi kod naredbe '%s'. Koju radnju želite kori
 #. Warn the user
 #: ../libxfce4kbd-private/xfce-shortcuts.c:110
 msgid "Please use another key combination."
-msgstr "Molim koristite drugu kmbinaciju tipki."
+msgstr "Molim koristite drugu kombinaciju tipki."
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:111
 #, c-format
@@ -157,7 +157,7 @@ msgstr "%s već pokreće ovu radnju."
 #: ../libxfce4kbd-private/xfce-shortcuts.c:116
 #, c-format
 msgid "Conflicting actions for %s"
-msgstr "Radnje u konfliktu za %s"
+msgstr "Sukobljene radnje za %s"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:186
 msgid "This shortcut is already being used for something else."
@@ -416,11 +416,11 @@ msgstr "Pomakni prozor gore-desno"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:87
 msgid "Tile window to the bottom-left"
-msgstr "Pomakni prozor dole-lijevo"
+msgstr "Pomakni prozor dolje-lijevo"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:88
 msgid "Tile window to the bottom-right"
-msgstr "Pomakni prozor dole-desno"
+msgstr "Pomakni prozor dolje-desno"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:89
 msgid "Show desktop"
@@ -617,7 +617,7 @@ msgid ""
 "Xfce is also a development platform providing several libraries, that help "
 "programmers create applications that fit in well with the desktop "
 "environment."
-msgstr "Xfce je također razvojna platforma koja pruža nekoliko knjižnica, koje pomažu programerima da stvaraju prgrame koje se dobro uklapaju u  radno okruženje."
+msgstr "Xfce je također i razvojna platforma koja programerima pruža na korištenje određeni broj biblioteka, izrađenih da pomognu u stvaranju aplikacija koje se dobro uklapaju u radno okruženje."
 
 #: ../xfce4-about/main.c:142
 msgid ""
@@ -649,7 +649,7 @@ msgstr "Hvala svima koji su pomogli učiniti ovaj software dostupnim!"
 msgid ""
 "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
-msgstr "Xfce 4 autorsko pravo Olivier Fourdan (fourdan@xfce.org). Različiti dijelovi su autorska prava njihovih poštovanih autora."
+msgstr "Nositelj autorskog prava za Xfce 4 je Olivier Fourdan (fourdan@xfce.org). Različite komponente su pod autorskim pravima dotičnih autora."
 
 #: ../xfce4-about/main.c:287
 msgid ""
@@ -714,7 +714,7 @@ msgstr "Verzija %s"
 #. },
 #: ../xfce4-about/contributors.h:128
 msgid "Core developers"
-msgstr "Temeljni razvijatelji"
+msgstr "Glavni razvijatelji"
 
 #: ../xfce4-about/contributors.h:131
 msgid "Active contributors"
