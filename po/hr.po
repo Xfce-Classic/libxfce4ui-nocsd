@@ -5,13 +5,13 @@
 # Translators:
 # Edin Veskovic <edin.veskovic@openmailbox.org>, 2015
 # Edin Veskovic <edin.veskovic@openmailbox.org>, 2014
-# Ivica  Kolić <ikoli@yahoo.com>, 2013-2015
+# Ivica  Kolić <ikoli@yahoo.com>, 2013-2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-03-08 00:30+0100\n"
-"PO-Revision-Date: 2015-12-06 09:16+0000\n"
+"PO-Revision-Date: 2016-05-18 04:19+0000\n"
 "Last-Translator: Ivica  Kolić <ikoli@yahoo.com>\n"
 "Language-Team: Croatian (http://www.transifex.com/xfce/libxfce4ui/language/hr/)\n"
 "MIME-Version: 1.0\n"
@@ -204,11 +204,11 @@ msgstr "Prečac:"
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:304
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:483
 msgid "No keys pressed yet, proceed."
-msgstr "Nijedne tipke još nisu pritisnute, nastavite."
+msgstr "Nijedna tipka još nije pritisnuta, nastavite."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:386
 msgid "Could not grab the keyboard."
-msgstr "Ne mogu se spojiti na tipkovnicu"
+msgstr "Ne mogu se spojiti na tipkovnicu."
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:36
 msgid "Window operations menu"
