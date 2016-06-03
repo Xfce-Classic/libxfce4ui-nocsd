@@ -341,7 +341,7 @@ xfce_dialog_show_info (GtkWindow   *parent,
 #if !GTK_CHECK_VERSION (3, 10, 0)
                        GTK_STOCK_CLOSE,
 #else
-                       "window-close",
+                       XFCE_BUTTON_TYPE_MIXED, "window-close", _("Close"),
 #endif
                        GTK_RESPONSE_CLOSE, NULL);
 
@@ -384,7 +384,7 @@ xfce_dialog_show_warning (GtkWindow   *parent,
 #if !GTK_CHECK_VERSION (3, 10, 0)
                        GTK_STOCK_CLOSE,
 #else
-                       "window-close",
+                       XFCE_BUTTON_TYPE_MIXED, "window-close", _("Close"),
 #endif
                        GTK_RESPONSE_CLOSE, NULL);
 
@@ -428,7 +428,7 @@ xfce_dialog_show_error (GtkWindow    *parent,
 #if !GTK_CHECK_VERSION (3, 10, 0)
                        GTK_STOCK_CLOSE,
 #else
-                       "window-close",
+                       XFCE_BUTTON_TYPE_MIXED, "window-close", _("Close"),
 #endif
                        GTK_RESPONSE_CLOSE, NULL);
 
@@ -477,7 +477,7 @@ xfce_dialog_confirm (GtkWindow   *parent,
   if (stock_id != NULL && (strcmp (stock_id, "gtk-yes") == 0 || strcmp (stock_id, "yes")) == 0)
     {
 #if GTK_CHECK_VERSION (3, 10, 0)
-      no_stock_id = "gtk-no";
+      no_stock_id = _("No");
 #else
       no_stock_id = GTK_STOCK_NO;
 #endif
@@ -485,22 +485,29 @@ xfce_dialog_confirm (GtkWindow   *parent,
   else
     {
 #if GTK_CHECK_VERSION (3, 10, 0)
-      no_stock_id = "gtk-cancel";
+      no_stock_id = _("Cancel");
 #else
       no_stock_id = GTK_STOCK_CANCEL;
 #endif
     }
 
+#if GTK_CHECK_VERSION (3, 0, 0)
   response_id = xfce_message_dialog (parent, _("Question"),
-#if !GTK_CHECK_VERSION (3, 10, 0)
-                                     GTK_STOCK_DIALOG_QUESTION,
-#else
                                      "dialog-question",
-#endif
-                                     primary_text, secondary_text,
+                                     primary_text,
+                                     secondary_text,
                                      no_stock_id, GTK_RESPONSE_NO,
-                                     XFCE_BUTTON_TYPE_MIXED, stock_id,
-                                     confirm_label, GTK_RESPONSE_YES, NULL);
+                                     XFCE_BUTTON_TYPE_MIXED, stock_id, confirm_label, GTK_RESPONSE_YES,
+                                     NULL);
+#else
+  response_id = xfce_message_dialog (parent, _("Question"),
+                                     GTK_STOCK_DIALOG_QUESTION,
+                                     primary_text,
+                                     secondary_text,
+                                     no_stock_id, GTK_RESPONSE_NO,
+                                     XFCE_BUTTON_TYPE_MIXED, stock_id, confirm_label, GTK_RESPONSE_YES,
+                                     NULL);
+#endif
 
   g_free (primary_text);
 
@@ -574,21 +581,6 @@ xfce_message_dialog_new_valist (GtkWindow   *parent,
   if (parent == NULL)
     xfce_gtk_window_center_on_active_screen (GTK_WINDOW (dialog));
 
-  if (icon_stock_id != NULL)
-    {
-      /* set dialog and window icon */
-#if GTK_CHECK_VERSION (3, 10, 0)
-      image = gtk_image_new_from_icon_name (icon_stock_id, GTK_ICON_SIZE_DIALOG);
-      gtk_container_add (GTK_CONTAINER (gtk_dialog_get_content_area (GTK_DIALOG (dialog))), image);
-#else
-      image = gtk_image_new_from_stock (icon_stock_id, GTK_ICON_SIZE_DIALOG);
-      gtk_message_dialog_set_image (GTK_MESSAGE_DIALOG (dialog), image);
-#endif
-
-      gtk_widget_show (image);
-      gtk_window_set_icon_name (GTK_WINDOW (dialog), icon_stock_id);
-    }
-
   /* add buttons */
   while (text != NULL)
     {
@@ -646,6 +638,57 @@ xfce_message_dialog_new_valist (GtkWindow   *parent,
 
       /* get the next argument */
       text = va_arg (args, const gchar *);
+    }
+
+  if (icon_stock_id != NULL)
+    {
+      /* set dialog and window icon */
+#if GTK_CHECK_VERSION (3, 10, 0)
+      /* This is fun. We want to put the image back on the left. Best way to
+       * do that is create an hbox, put the image in position 0, then pack
+       * in a vbox with all the children of the dialog.
+       */
+      GtkWidget *content = gtk_dialog_get_content_area (GTK_DIALOG (dialog));
+      GList     *children = gtk_container_get_children (GTK_CONTAINER (content));
+      GtkWidget *hbox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 12);
+      GtkWidget *vbox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 8);
+      GList     *iter;
+
+      image = gtk_image_new_from_icon_name (icon_stock_id, GTK_ICON_SIZE_DIALOG);
+
+      /* Add the image first */
+      gtk_container_add (GTK_CONTAINER (hbox), image);
+      /* next add the vbox */
+      gtk_container_add (GTK_CONTAINER (hbox), vbox);
+
+      /* move the widgets from the parent to the vbox */
+      for (iter = g_list_first (children); iter != NULL; iter = g_list_next (iter))
+        {
+          /* Skip the action area */
+          if (GTK_IS_BOX (iter->data))
+            continue;
+
+          /* keep the widget alive */
+          g_object_ref (iter->data);
+          /* remove from parent */
+          gtk_container_remove (GTK_CONTAINER (content), iter->data);
+          /* add to vbox */
+          gtk_container_add (GTK_CONTAINER (vbox), iter->data);
+          /* new container has a ref, we don't need ours anymore */
+          g_object_unref (iter->data);
+        }
+
+      /* Finally add the hbox to the parent */
+      gtk_container_add (GTK_CONTAINER (content), hbox);
+      gtk_widget_show (hbox);
+      gtk_widget_show (vbox);
+#else
+      image = gtk_image_new_from_stock (icon_stock_id, GTK_ICON_SIZE_DIALOG);
+      gtk_message_dialog_set_image (GTK_MESSAGE_DIALOG (dialog), image);
+#endif
+
+      gtk_widget_show (image);
+      gtk_window_set_icon_name (GTK_WINDOW (dialog), icon_stock_id);
     }
 
   return dialog;

@@ -338,6 +338,7 @@ libxfce4ui/libxfce4ui-config.h
 libxfce4ui/Makefile
 xfce4-about/Makefile
 po/Makefile.in
+tests/Makefile
 ])
 
 dnl ***************************

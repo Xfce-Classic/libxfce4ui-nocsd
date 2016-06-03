@@ -7,7 +7,8 @@ SUBDIRS = \
 	glade \
 	icons \
 	docs \
-	po
+	po \
+	tests
 
 distuninstallcheck_listfiles = \ 
 	find . -type f -print | grep -v ./share/icons/hicolor/icon-theme.cache
