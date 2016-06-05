@@ -160,16 +160,20 @@ xfce_about_about (GtkTextBuffer *buffer)
 static void
 xfce_about_credits_translators (GtkTextBuffer *buffer,
                                 GtkTextIter   *end,
-                                GtkTextTag    *indent,
                                 GtkTextTag    *email)
 {
   guint                 i;
   GtkTextTag           *italic;
+  GtkTextTag           *language;
   const TranslatorInfo *member;
   const TranslatorTeam *team;
   gchar                *str;
-  gboolean              has_member;
   GtkTextTag           *coordinator;
+
+  language = gtk_text_buffer_create_tag (buffer, "language",
+                                         "weight", PANGO_WEIGHT_BOLD,
+                                         "left-margin", MARGIN,
+                                         "indent", -MARGIN, NULL);
 
   coordinator = gtk_text_buffer_create_tag (buffer, "italic",
                                             "style", PANGO_STYLE_ITALIC, NULL);
@@ -178,25 +182,20 @@ xfce_about_credits_translators (GtkTextBuffer *buffer,
     {
       team = xfce_translators + i;
 
-      str = g_strdup_printf ("%s [%s]: ", team->name, team->code);
-      gtk_text_buffer_insert_with_tags (buffer, end, str, -1, indent, NULL);
+      str = g_strdup_printf ("%s [%s]:\n", team->name, team->code);
+      gtk_text_buffer_insert_with_tags (buffer, end, str, -1, language, NULL);
       g_free (str);
-
-      has_member = FALSE;
 
       for (member = team->members; member->name != NULL; member++)
         {
-          if (has_member)
-            gtk_text_buffer_insert (buffer, end, ", ", -1);
-
           italic = member->is_coordinator ? coordinator : NULL;
 
+          gtk_text_buffer_insert_with_tags (buffer, end, "\t", -1, italic, NULL);
           gtk_text_buffer_insert_with_tags (buffer, end, member->name, -1, italic, NULL);
           gtk_text_buffer_insert_with_tags (buffer, end, " <", -1, italic, NULL);
           gtk_text_buffer_insert_with_tags (buffer, end, member->email, -1, email, italic, NULL);
-          gtk_text_buffer_insert_with_tags (buffer, end, ">", -1, italic, NULL);
+          gtk_text_buffer_insert_with_tags (buffer, end, ">\n", -1, italic, NULL);
 
-          has_member = TRUE;
         }
 
       gtk_text_buffer_insert (buffer, end, "\n", -1);
@@ -252,7 +251,7 @@ xfce_about_credits (GtkTextBuffer *buffer)
       else
         {
           /* add the translators */
-          xfce_about_credits_translators (buffer, &end, indent, email);
+          xfce_about_credits_translators (buffer, &end, email);
         }
 
       gtk_text_buffer_insert (buffer, &end, "\n", -1);

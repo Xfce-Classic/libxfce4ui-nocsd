@@ -200,5 +200,69 @@ xfce_gtk_window_center_on_active_screen (GtkWindow *window)
 
 
 
+/**
+ * xfce_gtk_menu_popup_until_mapped:
+ * @menu: a #GtkMenu.
+ * @parent_menu_shell: the menu shell containing the triggering menu item, or %NULL.
+ * @parent_menu_item: the menu item whose activation triggered the popup, or %NULL.
+ * @func: a user supplied function used to position the menu, or %NULL.
+ * @data: user supplied data to be passed to func.
+ * @button: the mouse button which was pressed to initiate the event.
+ * @activate_time: the time at which the activation event occurred.
+ *
+ * Attempts to pop up a #GtkMenu for a short duration. Unlike the original
+ * gtk_menu_popup(), this function will verify that the menu has been mapped
+ * or will keep trying for up to 250ms. It will also return a value indicating
+ * whether the menu was eventually mapped or not. Following is an excerpt from
+ * the GTK+ Documentation on #GtkMenu.
+ * 
+ * Displays a menu and makes it available for selection.
+ *
+ * Applications can use this function to display context-sensitive menus, and will
+ * typically supply %NULL for the @parent_menu_shell, @parent_menu_item, @func and
+ * @data parameters. The default menu positioning function will position the menu
+ * at the current mouse cursor position.
+ *
+ * The @button parameter should be the mouse button pressed to initiate the menu
+ * popup. If the menu popup was initiated by something other than a mouse button
+ * press, such as a mouse button release or a keypress, button should be 0.
+ *
+ * The @activate_time parameter is used to conflict-resolve initiation of concurrent
+ * requests for mouse/keyboard grab requests. To function properly, this needs to
+ * be the timestamp of the user event (such as a mouse click or key press) that
+ * caused the initiation of the popup. Only if no such event is available,
+ * gtk_get_current_event_time() can be used instead.
+ *
+ * Return value: %TRUE if the menu could be mapped, %FALSE otherwise.
+ */
+gboolean
+xfce_gtk_menu_popup_until_mapped (GtkMenu *menu,
+                                  GtkWidget *parent_menu_shell,
+                                  GtkWidget *parent_menu_item,
+                                  GtkMenuPositionFunc func,
+                                  gpointer data,
+                                  guint button,
+                                  guint32 activate_time)
+{
+  gint i = 0;
+
+  g_return_val_if_fail (GTK_IS_MENU (menu), FALSE);
+
+  while ((i++ < 2500) && (!gtk_widget_get_mapped (GTK_WIDGET (menu))))
+    {
+        gtk_menu_popup (GTK_MENU (menu),
+                        parent_menu_shell,
+                        parent_menu_item,
+                        func,
+                        data,
+                        button,
+                        activate_time);
+
+        g_usleep (100);
+    }
+
+  return gtk_widget_get_mapped (GTK_WIDGET (menu));
+}
+
 #define __XFCE_GTK_EXTENSIONS_C__
 #include <libxfce4ui/libxfce4ui-aliasdef.c>

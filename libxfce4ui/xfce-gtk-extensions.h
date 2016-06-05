@@ -28,16 +28,24 @@
 
 G_BEGIN_DECLS
 
-GtkWidget *xfce_gtk_button_new_mixed               (const gchar     *stock_id,
-                                                    const gchar     *label) G_GNUC_MALLOC;
+GtkWidget *xfce_gtk_button_new_mixed               (const gchar        *stock_id,
+                                                    const gchar        *label) G_GNUC_MALLOC;
 
-GtkWidget *xfce_gtk_frame_box_new                  (const gchar     *label,
-                                                    GtkWidget      **container_return) G_GNUC_MALLOC;
+GtkWidget *xfce_gtk_frame_box_new                  (const gchar        *label,
+                                                    GtkWidget         **container_return) G_GNUC_MALLOC;
 
-GtkWidget *xfce_gtk_frame_box_new_with_content     (const gchar     *label,
-                                                    GtkWidget       *content) G_GNUC_MALLOC;
+GtkWidget *xfce_gtk_frame_box_new_with_content     (const gchar         *label,
+                                                    GtkWidget           *content) G_GNUC_MALLOC;
 
-void       xfce_gtk_window_center_on_active_screen (GtkWindow       *window);
+void       xfce_gtk_window_center_on_active_screen (GtkWindow           *window);
+
+gboolean   xfce_gtk_menu_popup_until_mapped        (GtkMenu             *menu,
+                                                    GtkWidget           *parent_menu_shell,
+                                                    GtkWidget           *parent_menu_item,
+                                                    GtkMenuPositionFunc  func,
+                                                    gpointer             data,
+                                                    guint                button,
+                                                    guint32              activate_time);
 
 G_END_DECLS
 

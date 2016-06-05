@@ -4,14 +4,15 @@
 # 
 # Translators:
 # Daniel Nylander <po@danielnylander.se>, 2008-2009
+# Påvel Nicklasson<pavel@frimix.se>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-07-02 22:33+0200\n"
-"PO-Revision-Date: 2014-02-23 17:41+0000\n"
-"Last-Translator: PavelNicklasson <pavelnicklasson@bahnhof.se>\n"
-"Language-Team: Swedish (http://www.transifex.com/projects/p/xfce/language/sv/)\n"
+"POT-Creation-Date: 2015-03-08 00:30+0100\n"
+"PO-Revision-Date: 2015-09-30 18:34+0000\n"
+"Last-Translator: Påvel Nicklasson <pavelnicklasson@bahnhof.se>\n"
+"Language-Team: Swedish (http://www.transifex.com/xfce/libxfce4ui/language/sv/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -20,48 +21,48 @@ msgstr ""
 
 #: ../libxfce4ui/xfce-dialogs.c:98
 msgid "Failed to open web browser for online documentation"
-msgstr "Misslyckades öppna webbläsaren för onlinedokumentation"
+msgstr "Misslyckades med att öppna webbläsare för online-dokumentation"
 
-#: ../libxfce4ui/xfce-dialogs.c:213
+#: ../libxfce4ui/xfce-dialogs.c:252
 #, c-format
 msgid "Do you want to read the %s manual online?"
 msgstr "Vill du läsa %s manualen online?"
 
-#: ../libxfce4ui/xfce-dialogs.c:215
+#: ../libxfce4ui/xfce-dialogs.c:254
 msgid "Do you want to read the manual online?"
 msgstr "Vill du läsa manualen online?"
 
-#: ../libxfce4ui/xfce-dialogs.c:218
+#: ../libxfce4ui/xfce-dialogs.c:257
 msgid "Online Documentation"
-msgstr "Onlinedokumentation"
+msgstr "Online-dokumentation"
 
-#: ../libxfce4ui/xfce-dialogs.c:221
+#: ../libxfce4ui/xfce-dialogs.c:264
 msgid ""
 "You will be redirected to the documentation website where the help pages are"
 " maintained and translated."
 msgstr "Du kommer att skickas vidare till hemsidan för dokumentation där hjälpsidorna finns och översätts."
 
-#: ../libxfce4ui/xfce-dialogs.c:225
+#: ../libxfce4ui/xfce-dialogs.c:278
 msgid "_Read Online"
 msgstr "_Läs online"
 
-#: ../libxfce4ui/xfce-dialogs.c:237
+#: ../libxfce4ui/xfce-dialogs.c:290
 msgid "_Always go directly to the online documentation"
-msgstr "Gå _alltid direkt till onlinedokumentationen"
+msgstr "Gå _alltid direkt till online-dokumentationen"
 
-#: ../libxfce4ui/xfce-dialogs.c:281
+#: ../libxfce4ui/xfce-dialogs.c:334
 msgid "Information"
 msgstr "Information"
 
-#: ../libxfce4ui/xfce-dialogs.c:314
+#: ../libxfce4ui/xfce-dialogs.c:377
 msgid "Warning"
 msgstr "Varning"
 
-#: ../libxfce4ui/xfce-dialogs.c:348
+#: ../libxfce4ui/xfce-dialogs.c:421
 msgid "Error"
 msgstr "Fel"
 
-#: ../libxfce4ui/xfce-dialogs.c:399
+#: ../libxfce4ui/xfce-dialogs.c:494
 msgid "Question"
 msgstr "Fråga"
 
@@ -96,7 +97,7 @@ msgid "Session manager did not return a valid client id"
 msgstr "Sessionshanteraren returnerade inte ett giltigt klient-id"
 
 #. print warning for user
-#: ../libxfce4ui/xfce-spawn.c:413
+#: ../libxfce4ui/xfce-spawn.c:409
 #, c-format
 msgid ""
 "Working directory \"%s\" does not exist. It won't be used when spawning "
@@ -157,7 +158,7 @@ msgstr "%s utlöser redan denna funktion."
 msgid "Conflicting actions for %s"
 msgstr "Åtgärder i konflikt för %s"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:176
+#: ../libxfce4kbd-private/xfce-shortcuts.c:186
 msgid "This shortcut is already being used for something else."
 msgstr "Denna genväg används redan för någonting annat."
 
@@ -186,23 +187,27 @@ msgstr "kommando"
 msgid "Shortcut"
 msgstr "Genväg"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:267
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:247
+msgid "_Cancel"
+msgstr "_Avbryt"
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:275
 #, c-format
 msgid "Press now the keyboard keys you want to use to trigger the %s '%s'."
 msgstr "Tryck nu de tangenter du vill använda för att utlösa %s '%s'."
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:291
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:299
 msgid "Shortcut:"
 msgstr "Ingen genväg"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:296
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:475
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:304
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:483
 msgid "No keys pressed yet, proceed."
 msgstr "Inga tangenter tryckta än, fortsätt."
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:378
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:386
 msgid "Could not grab the keyboard."
-msgstr "Kunde inte fånga tangentbordet."
+msgstr "Det gick inte att fånga tangentbordet."
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:36
 msgid "Window operations menu"
@@ -278,7 +283,7 @@ msgstr "Rulla upp fönster"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:54
 msgid "Stick window"
-msgstr "Klistra fast fönster"
+msgstr "Fäst fönster"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:55
 msgid "Raise window"
@@ -310,195 +315,211 @@ msgstr "Växla ovanstående"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:62
 msgid "Toggle fullscreen"
-msgstr "Växla helskärmsläge"
+msgstr "Växla fullskärmsläge"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:63
 msgid "Move window to upper workspace"
-msgstr "Flytta fönster till arbetsytan ovanför"
+msgstr "Flytta fönster till skrivbordet ovanför"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:64
 msgid "Move window to bottom workspace"
-msgstr "Flytta fönster till arbetsytan nedanför"
+msgstr "Flytta fönster till skrivbordet nedanför"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:65
 msgid "Move window to left workspace"
-msgstr "Flytta fönster till arbetsytan åt vänster"
+msgstr "Flytta fönster till skrivbordet till vänster"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:66
 msgid "Move window to right workspace"
-msgstr "Flytta fönster till arbetsytan åt höger"
+msgstr "Flytta fönster till skrivbordet till höger"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:67
 msgid "Move window to previous workspace"
-msgstr "Flytta fönster till föregående arbetsyta"
+msgstr "Flytta fönster till föregående skrivbord"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:68
 msgid "Move window to next workspace"
-msgstr "Flytta fönster till nästa arbetsyta"
+msgstr "Flytta fönster till nästa skrivbord"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:69
 msgid "Move window to workspace 1"
-msgstr "Flytta fönster till arbetsyta 1"
+msgstr "Flytta fönster till skrivbord 1"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:70
 msgid "Move window to workspace 2"
-msgstr "Flytta fönster till arbetsyta 2"
+msgstr "Flytta fönster till skrivbord 2"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:71
 msgid "Move window to workspace 3"
-msgstr "Flytta fönster till arbetsyta 3"
+msgstr "Flytta fönster till skrivbord 3"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:72
 msgid "Move window to workspace 4"
-msgstr "Flytta fönster till arbetsyta 4"
+msgstr "Flytta fönster till skrivbord 4"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:73
 msgid "Move window to workspace 5"
-msgstr "Flytta fönster till arbetsyta 5"
+msgstr "Flytta fönster till skrivbord 5"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:74
 msgid "Move window to workspace 6"
-msgstr "Flytta fönster till arbetsyta 6"
+msgstr "Flytta fönster till skrivbord 6"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:75
 msgid "Move window to workspace 7"
-msgstr "Flytta fönster till arbetsyta 7"
+msgstr "Flytta fönster till skrivbord 7"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:76
 msgid "Move window to workspace 8"
-msgstr "Flytta fönster till arbetsyta 8"
+msgstr "Flytta fönster till skrivbord 8"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:77
 msgid "Move window to workspace 9"
-msgstr "Flytta fönster till arbetsyta 9"
+msgstr "Flytta fönster till skrivbord 9"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:78
 msgid "Move window to workspace 10"
-msgstr "Flytta fönster till arbetsyta 10"
+msgstr "Flytta fönster till skrivbord 10"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:79
 msgid "Move window to workspace 11"
-msgstr "Flytta fönster till arbetsyta 11"
+msgstr "Flytta fönster till skrivbord 11"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:80
 msgid "Move window to workspace 12"
-msgstr "Flytta fönster till arbetsyta 12"
+msgstr "Flytta fönster till skrivbord 12"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:81
 msgid "Tile window to the top"
-msgstr "Fäst fönster till toppen"
+msgstr "Placera fönster överst"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:82
 msgid "Tile window to the bottom"
-msgstr "Fäst fönster till botten"
+msgstr "Placera fönster nederst"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:83
 msgid "Tile window to the left"
-msgstr "Fäst fönster till vänster"
+msgstr "Placera fönster till vänster"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:84
 msgid "Tile window to the right"
-msgstr "Fäst fönster till höger"
+msgstr "Placera fönster till höger"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:85
+msgid "Tile window to the top-left"
+msgstr "Placera fönster överst till vänster"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:86
+msgid "Tile window to the top-right"
+msgstr "Placera fönster överst till höger"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:87
+msgid "Tile window to the bottom-left"
+msgstr "Placera fönster nederst till vänster"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:88
+msgid "Tile window to the bottom-right"
+msgstr "Placera fönster nederst till höger"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:89
 msgid "Show desktop"
 msgstr "Visa skrivbordet"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:86
-msgid "Upper workspace"
-msgstr "Växla till arbetsytan ovan"
-
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:87
-msgid "Bottom workspace"
-msgstr "Växla till arbetsytan nedan"
-
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:88
-msgid "Left workspace"
-msgstr "Växla till arbetsytan till vänster"
-
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:89
-msgid "Right workspace"
-msgstr "Växla till arbetsytan till höger"
-
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:90
-msgid "Previous workspace"
-msgstr "Föregående arbetsyta"
+msgid "Upper workspace"
+msgstr "Övre skrivbordet"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:91
-msgid "Next workspace"
-msgstr "Nästa arbetsyta"
+msgid "Bottom workspace"
+msgstr "Nedre skrivbordet"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:92
-msgid "Workspace 1"
-msgstr "Arbetsyta 1"
+msgid "Left workspace"
+msgstr "Vänstra skrivbordet"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:93
-msgid "Workspace 2"
-msgstr "Arbetsyta 2"
+msgid "Right workspace"
+msgstr "Högra skrivbordet"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:94
-msgid "Workspace 3"
-msgstr "Arbetsyta 3"
+msgid "Previous workspace"
+msgstr "Föregående skrivbord"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:95
-msgid "Workspace 4"
-msgstr "Arbetsyta 4"
+msgid "Next workspace"
+msgstr "Nästa skrivbord"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:96
-msgid "Workspace 5"
-msgstr "Arbetsyta 5"
+msgid "Workspace 1"
+msgstr "Skrivbord 1"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:97
-msgid "Workspace 6"
-msgstr "Arbetsyta 6"
+msgid "Workspace 2"
+msgstr "Skrivbord 2"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:98
-msgid "Workspace 7"
-msgstr "Arbetsyta 7"
+msgid "Workspace 3"
+msgstr "Skrivbord 3"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:99
-msgid "Workspace 8"
-msgstr "Arbetsyta 8"
+msgid "Workspace 4"
+msgstr "Skrivbord 4"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:100
-msgid "Workspace 9"
-msgstr "Arbetsyta 9"
+msgid "Workspace 5"
+msgstr "Skrivbord 5"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:101
-msgid "Workspace 10"
-msgstr "Arbetsyta 10"
+msgid "Workspace 6"
+msgstr "Skrivbord 6"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:102
-msgid "Workspace 11"
-msgstr "Arbetsyta 11"
+msgid "Workspace 7"
+msgstr "Skrivbord 7"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:103
-msgid "Workspace 12"
-msgstr "Arbetsyta 12"
+msgid "Workspace 8"
+msgstr "Skrivbord 8"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:104
-msgid "Add workspace"
-msgstr "Lägg till arbetsyta"
+msgid "Workspace 9"
+msgstr "Skrivbord 9"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:105
-msgid "Add adjacent workspace"
-msgstr "Lägg till angränsande arbetsyta"
+msgid "Workspace 10"
+msgstr "Skrivbord 10"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:106
-msgid "Delete last workspace"
-msgstr "Ta bort sista arbetsytan"
+msgid "Workspace 11"
+msgstr "Skrivbord 11"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:107
+msgid "Workspace 12"
+msgstr "Skrivbord 12"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:108
+msgid "Add workspace"
+msgstr "Lägg till skrivbord"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:109
+msgid "Add adjacent workspace"
+msgstr "Lägg till angränsande skrivbord"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:110
+msgid "Delete last workspace"
+msgstr "Ta bort det sista skrivbordet"
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:111
 msgid "Delete active workspace"
-msgstr "Ta bort aktiv arbetsyta"
+msgstr "Ta bort aktivt skrivbord"
 
 #: ../glade/libxfce4ui.xml.in.h:1
 msgid "Titled Dialog"
-msgstr "Titeldialog"
+msgstr "Namndialog"
 
 #: ../glade/libxfce4ui.xml.in.h:2
 msgid "Subtitle"
-msgstr "Undertitel"
+msgstr "Undernamn"
 
 #: ../glade/libxfce4ui.xml.in.h:3
 msgid "Xfce 4 Widgets"
@@ -524,7 +545,7 @@ msgstr "Panel"
 msgid ""
 "Program launchers, window buttons, applications menu, workspace switcher and"
 " more."
-msgstr "Programstartare, fönsterknappar, programmeny, arbetsyteväxlare med mera."
+msgstr "Programstartare, fönsterknappar, programmeny, skrivbordsväxlare med mera."
 
 #: ../xfce4-about/main.c:79
 msgid "Desktop Manager"
@@ -613,23 +634,23 @@ msgstr "Tack för ditt intresse för Xfce."
 msgid "The Xfce Development Team"
 msgstr "Xfce:s utvecklingsteam"
 
-#: ../xfce4-about/main.c:262
+#: ../xfce4-about/main.c:261
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
 "on <http://bugzilla.xfce.org> ."
 msgstr "Om du känner till någon som saknas från den här listan; tveka inte att posta en felrapport på http://bugzilla.xfce.org> ."
 
-#: ../xfce4-about/main.c:266
+#: ../xfce4-about/main.c:265
 msgid "Thanks to all who helped making this software available!"
 msgstr "Tack till alla som hjälpt till att göra denna programvara tillgänglig!"
 
-#: ../xfce4-about/main.c:283
+#: ../xfce4-about/main.c:282
 msgid ""
 "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
 msgstr "Xfce 4 är copyright Olivier Fourdan (fourdan@xfce.org). De olika komponenterna är skyddade av upphovsrätt av deras respektive författare."
 
-#: ../xfce4-about/main.c:288
+#: ../xfce4-about/main.c:287
 msgid ""
 "The libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs and exo packages are "
 "distributed under the terms of the GNU Library General Public License as "
@@ -637,7 +658,7 @@ msgid ""
 "or (at your option) any later version."
 msgstr "Paketen libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs och exo distribueras under villkoren i GNU Library General Public License såsom publicerad av the Free Software Foundation; antingen version 2 av licensen, eller (om du så önskar) någon senare version."
 
-#: ../xfce4-about/main.c:295
+#: ../xfce4-about/main.c:294
 msgid ""
 "The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, "
 "xfce4-settings, xfce-utils, xfconf, xfdesktop and xfwm4 are distributed "
@@ -646,43 +667,43 @@ msgid ""
 "any later version."
 msgstr "Paketen: thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfce-utils, xfconf, xfdesktop och xfwm4 distribueras under villkoren i GNU General Public License såsom publicerade av the Free Software Foundation; antingen version 2 av licensen, eller (om du så önskar) någon senare version."
 
-#: ../xfce4-about/main.c:442
+#: ../xfce4-about/main.c:441
 #, c-format
 msgid "Type '%s --help' for usage information."
 msgstr "Skriv '%s --help' för användningsinformation."
 
-#: ../xfce4-about/main.c:448
+#: ../xfce4-about/main.c:447
 msgid "Unable to initialize GTK+."
-msgstr "Kunde inte initiera GTK+."
+msgstr "Det gick inte att initiera GTK+."
 
-#: ../xfce4-about/main.c:457
+#: ../xfce4-about/main.c:456
 msgid "The Xfce development team. All rights reserved."
 msgstr "Xfce:s utvecklingsteam. Alla rättigheter förbehållna."
 
-#: ../xfce4-about/main.c:458
+#: ../xfce4-about/main.c:457
 #, c-format
 msgid "Please report bugs to <%s>."
 msgstr "Var vänlig och rapportera fel till <%s>."
 
 #. I18N: date/time the translators list was updated
-#: ../xfce4-about/main.c:461
+#: ../xfce4-about/main.c:460
 #, c-format
 msgid "Translators list from %s."
 msgstr "Översättarlista från %s."
 
-#: ../xfce4-about/main.c:471
+#: ../xfce4-about/main.c:470
 msgid "Failed to load interface"
 msgstr "Misslyckades läsa in gränssnittet"
 
 #. I18N: first %s will be replaced by the version, second by
 #. * the name of the distribution (--with-vendor-info=NAME)
-#: ../xfce4-about/main.c:485
+#: ../xfce4-about/main.c:484
 #, c-format
 msgid "Version %s, distributed by %s"
 msgstr "Version %s, distribuerad av %s"
 
 #. I18N: %s will be replaced by the Xfce version number
-#: ../xfce4-about/main.c:489
+#: ../xfce4-about/main.c:488
 #, c-format
 msgid "Version %s"
 msgstr "Version %s"
@@ -690,31 +711,31 @@ msgstr "Version %s"
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
 #. },
-#: ../xfce4-about/contributors.h:121
+#: ../xfce4-about/contributors.h:128
 msgid "Core developers"
 msgstr "Kärnutvecklare"
 
-#: ../xfce4-about/contributors.h:124
+#: ../xfce4-about/contributors.h:131
 msgid "Active contributors"
 msgstr "Aktiva bidragsgivare"
 
-#: ../xfce4-about/contributors.h:127
+#: ../xfce4-about/contributors.h:134
 msgid "Servers maintained by"
 msgstr "Servrar tillhandahållna av"
 
-#: ../xfce4-about/contributors.h:130
+#: ../xfce4-about/contributors.h:137
 msgid "Goodies supervision"
 msgstr "Tillsyn godsaker"
 
-#: ../xfce4-about/contributors.h:133
+#: ../xfce4-about/contributors.h:140
 msgid "Translations supervision"
 msgstr "Tillsyn översättningar"
 
-#: ../xfce4-about/contributors.h:136
+#: ../xfce4-about/contributors.h:143
 msgid "Translators"
-msgstr "Översättare\nPåvel Nicklasson"
+msgstr "Översättare"
 
-#: ../xfce4-about/contributors.h:139
+#: ../xfce4-about/contributors.h:146
 msgid "Previous contributors"
 msgstr "Tidigare bidragsgivare"
 
@@ -732,7 +753,7 @@ msgstr "Om skrivbordsmiljön Xfce"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:2
 msgid "About"
-msgstr "OM"
+msgstr "Om"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:3
 msgid "Credits"

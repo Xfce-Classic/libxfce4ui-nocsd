@@ -61,4 +61,8 @@ libxfce4ui/libxfce4ui-marshal.h
 libxfce4ui/stamp-libxfce4ui-enum-types.h
 libxfce4ui/stamp-libxfce4ui-marshal.h
 xfce4-about/about-dialog-ui.h
+xfce4-about/xfce4-about
+xfce4-about/xfce4-about.desktop
+xfce4-about/xfce4_about-main.o
+glade/libxfce4ui.xml
 libxfce4ui-*.tar.bz2

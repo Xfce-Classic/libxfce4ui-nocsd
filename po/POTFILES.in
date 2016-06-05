@@ -24,7 +24,7 @@ libxfce4kbd-private/xfce-shortcuts-xfwm4.c
 #
 glade/libxfce4ui-glade.c
 glade/libxfce4ui.xml.in
-
+glade/libxfce4ui-2.xml.in
 #
 # Xfce4-about
 #

@@ -5,8 +5,8 @@
   <!-- interface-naming-policy project-wide -->
   <object class="XfceTitledDialog" id="window">
     <property name="title" translatable="yes">About the Xfce Desktop Environment</property>
-    <property name="default_width">500</property>
-    <property name="default_height">400</property>
+    <property name="default_width">550</property>
+    <property name="default_height">600</property>
     <property name="icon_name">xfce4-logo</property>
     <property name="type_hint">normal</property>
     <child internal-child="vbox">
