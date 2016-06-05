@@ -42,7 +42,9 @@
 #include <libxfce4ui/libxfce4ui-private.h>
 #include <libxfce4ui/libxfce4ui-alias.h>
 
-
+#if GTK_CHECK_VERSION (3, 0, 0)
+#include "libxfce4ui-dialog-ui.h"
+#endif
 
 static void
 xfce_dialog_show_help_auto_toggled (GtkWidget *button)
@@ -540,6 +542,142 @@ xfce_message_dialog_new_valist (GtkWindow   *parent,
                                 const gchar *first_button_text,
                                 va_list      args)
 {
+#if GTK_CHECK_VERSION (3, 0, 0)
+  GtkBuilder  *gxml;
+  GError      *error = NULL;
+  GtkWidget   *dialog;
+  GtkWidget   *dialog_image;
+  GtkWidget   *image;
+  GtkWidget   *button;
+  GtkWidget   *label_box;
+  const gchar *text = first_button_text;
+  const gchar *label;
+  const gchar *stock_id;
+  gint         response;
+  GdkPixbuf   *pixbuf, *scaled;
+  gint         w, h;
+
+  g_return_val_if_fail (primary_text != NULL || secondary_text != NULL, NULL);
+  g_return_val_if_fail (parent == NULL || GTK_IS_WINDOW (parent), NULL);
+
+  gxml = gtk_builder_new();
+  if (!gtk_builder_add_from_string (gxml, xfce4ui_dialog_ui, xfce4ui_dialog_ui_length, &error))
+    {
+      g_printerr ("Failed to parse UI description: %s\n", error->message);
+      g_clear_error (&error);
+      return NULL;
+    }
+
+  dialog = GTK_WIDGET(gtk_builder_get_object(gxml, "xfce4ui-dialog"));
+  label_box = GTK_WIDGET(gtk_builder_get_object(gxml, "label-box"));
+  dialog_image = GTK_WIDGET(gtk_builder_get_object(gxml, "icon_stock_id"));
+
+  if (parent)
+    {
+      gtk_window_set_transient_for (GTK_WINDOW (dialog), parent);
+    }
+
+  if (primary_text != NULL)
+    {
+      /* Add a top line of large bold text */
+      GtkWidget *primary_label = gtk_label_new (NULL);
+      gchar *markedup_text = g_strdup_printf ("<span weight='bold' size='large'>%s</span>", primary_text);
+
+      gtk_label_set_markup (GTK_LABEL (primary_label), markedup_text);
+
+      gtk_container_add (GTK_CONTAINER (label_box), primary_label);
+      gtk_widget_show (primary_label);
+
+      g_free (markedup_text);
+    }
+
+  if (secondary_text != NULL)
+    {
+      /* Add the secondary text, no special formatting done */
+      GtkWidget *secondary_label = gtk_label_new (secondary_text);
+      gtk_label_set_line_wrap (GTK_LABEL (secondary_label), TRUE);
+
+      gtk_container_add (GTK_CONTAINER (label_box), secondary_label);
+      gtk_widget_show (secondary_label);
+    }
+
+  if (title != NULL)
+    gtk_window_set_title (GTK_WINDOW (dialog), title);
+
+  /* put the dialog on the active screen if no parent is defined */
+  if (parent == NULL)
+    xfce_gtk_window_center_on_active_screen (GTK_WINDOW (dialog));
+
+  /* add buttons */
+  while (text != NULL)
+    {
+      if (strcmp (text, XFCE_BUTTON_TYPE_MIXED) == 0)
+        {
+          /* get arguments */
+          stock_id = va_arg (args, const gchar *);
+          label = va_arg (args, const gchar *);
+          response = va_arg (args, gint);
+
+          /* add a mixed button to the dialog */
+          button = xfce_gtk_button_new_mixed (stock_id, label);
+          gtk_widget_set_can_default (button, TRUE);
+          gtk_dialog_add_action_widget (GTK_DIALOG (dialog), button, response);
+          gtk_widget_show (button);
+        }
+      else if (strcmp (text, XFCE_BUTTON_TYPE_PIXBUF) == 0)
+        {
+          /* get arguments */
+          pixbuf = va_arg (args, GdkPixbuf *);
+          label = va_arg (args, const gchar *);
+          response = va_arg (args, gint);
+
+          /* lookup real icons size for button icons */
+          gtk_icon_size_lookup (GTK_ICON_SIZE_BUTTON, &w, &h);
+
+          /* scale the pixbuf if needed */
+          if (gdk_pixbuf_get_width (pixbuf) != w || gdk_pixbuf_get_height (pixbuf) != h)
+            scaled = gdk_pixbuf_scale_simple (pixbuf, w, h, GDK_INTERP_BILINEAR);
+          else
+            scaled = NULL;
+
+          image = gtk_image_new_from_pixbuf (scaled ? scaled : pixbuf);
+
+          /* release scaled image */
+          if (scaled != NULL)
+            g_object_unref (G_OBJECT (scaled));
+
+          /* create button and add it to the dialog */
+          button = gtk_button_new_with_label (label);
+          gtk_button_set_image (GTK_BUTTON (button), image);
+          gtk_widget_set_can_default (button, TRUE);
+          gtk_dialog_add_action_widget (GTK_DIALOG (dialog), button, response);
+          gtk_widget_show (button);
+        }
+      else /* stock button */
+        {
+          /* get arguments */
+          stock_id = text;
+          response = va_arg (args, gint);
+
+          /* add a stock button to the dialog */
+          gtk_dialog_add_button (GTK_DIALOG (dialog), stock_id, response);
+        }
+
+      /* get the next argument */
+      text = va_arg (args, const gchar *);
+    }
+
+  if (icon_stock_id != NULL)
+    {
+      /* set dialog and window icon */
+      gtk_image_set_from_icon_name (GTK_IMAGE (dialog_image), icon_stock_id, GTK_ICON_SIZE_DIALOG);
+
+      gtk_widget_show (dialog_image);
+      gtk_window_set_icon_name (GTK_WINDOW (dialog), icon_stock_id);
+    }
+
+  return dialog;
+#else /* GTK2 */
   GtkWidget   *dialog;
   GtkWidget   *image;
   GtkWidget   *button;
@@ -643,55 +781,15 @@ xfce_message_dialog_new_valist (GtkWindow   *parent,
   if (icon_stock_id != NULL)
     {
       /* set dialog and window icon */
-#if GTK_CHECK_VERSION (3, 10, 0)
-      /* This is fun. We want to put the image back on the left. Best way to
-       * do that is create an hbox, put the image in position 0, then pack
-       * in a vbox with all the children of the dialog.
-       */
-      GtkWidget *content = gtk_dialog_get_content_area (GTK_DIALOG (dialog));
-      GList     *children = gtk_container_get_children (GTK_CONTAINER (content));
-      GtkWidget *hbox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 12);
-      GtkWidget *vbox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 8);
-      GList     *iter;
-
-      image = gtk_image_new_from_icon_name (icon_stock_id, GTK_ICON_SIZE_DIALOG);
-
-      /* Add the image first */
-      gtk_container_add (GTK_CONTAINER (hbox), image);
-      /* next add the vbox */
-      gtk_container_add (GTK_CONTAINER (hbox), vbox);
-
-      /* move the widgets from the parent to the vbox */
-      for (iter = g_list_first (children); iter != NULL; iter = g_list_next (iter))
-        {
-          /* Skip the action area */
-          if (GTK_IS_BOX (iter->data))
-            continue;
-
-          /* keep the widget alive */
-          g_object_ref (iter->data);
-          /* remove from parent */
-          gtk_container_remove (GTK_CONTAINER (content), iter->data);
-          /* add to vbox */
-          gtk_container_add (GTK_CONTAINER (vbox), iter->data);
-          /* new container has a ref, we don't need ours anymore */
-          g_object_unref (iter->data);
-        }
-
-      /* Finally add the hbox to the parent */
-      gtk_container_add (GTK_CONTAINER (content), hbox);
-      gtk_widget_show (hbox);
-      gtk_widget_show (vbox);
-#else
       image = gtk_image_new_from_stock (icon_stock_id, GTK_ICON_SIZE_DIALOG);
       gtk_message_dialog_set_image (GTK_MESSAGE_DIALOG (dialog), image);
-#endif
 
       gtk_widget_show (image);
       gtk_window_set_icon_name (GTK_WINDOW (dialog), icon_stock_id);
     }
 
   return dialog;
+#endif /* GTK_CHECK_VERSION */
 }
 
 
