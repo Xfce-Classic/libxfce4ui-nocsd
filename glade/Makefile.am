@@ -41,8 +41,7 @@ libxfce4uiglade_la_LIBADD = \
 gladecatalogdir = \
 	$(GLADEUI_CATALOGDIR)
 gladecatalog_DATA = \
-	libxfce4ui.xml \
-	libxfce4ui.xml.in
+	libxfce4ui.xml
 @INTLTOOL_XML_NOMERGE_RULE@
 endif
 
@@ -81,8 +80,7 @@ libxfce4uiglade2_la_LIBADD = \
 gladecatalogdir = \
 	$(GLADEUI2_CATALOGDIR)
 gladecatalog_DATA = \
-	libxfce4ui-2.xml \
-	libxfce4ui-2.xml.in
+	libxfce4ui-2.xml
 @INTLTOOL_XML_NOMERGE_RULE@
 endif
 
