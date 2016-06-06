@@ -9,14 +9,12 @@
       <object class="GtkBox" id="dialog-vbox1">
         <property name="can_focus">False</property>
         <property name="orientation">vertical</property>
-        <property name="spacing">2</property>
         <child internal-child="action_area">
           <object class="GtkButtonBox" id="dialog-action_area">
             <property name="can_focus">False</property>
             <property name="hexpand">True</property>
             <property name="homogeneous">True</property>
             <property name="layout_style">expand</property>
-            <property name="border_width">0</property>
             <child>
               <placeholder/>
             </child>
@@ -34,6 +32,7 @@
           <object class="GtkBox" id="box1">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
+            <property name="margin_bottom">8</property>
             <child>
               <object class="GtkImage" id="icon_stock_id">
                 <property name="visible">True</property>
@@ -75,6 +74,7 @@
           <packing>
             <property name="expand">True</property>
             <property name="fill">True</property>
+            <property name="padding">4</property>
             <property name="position">1</property>
           </packing>
         </child>
