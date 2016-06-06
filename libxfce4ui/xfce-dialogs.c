@@ -273,24 +273,25 @@ xfce_dialog_show_help_with_version (GtkWindow   *parent,
                                     GTK_RESPONSE_NO,
                                     XFCE_BUTTON_TYPE_MIXED,
 #if !GTK_CHECK_VERSION (3, 10, 0)
-                                        GTK_STOCK_HELP,
+                                    GTK_STOCK_HELP,
 #else
-                                        "help-browser",
+                                    "help-browser",
 #endif
-                                        _("_Read Online"),
-                                        GTK_RESPONSE_YES,
+                                    _("_Read Online"),
+                                    GTK_RESPONSE_YES,
                                     NULL);
   g_free (primary);
 
-#if GTK_CHECK_VERSION (2, 22, 0)
-  message_box = gtk_message_dialog_get_message_area (GTK_MESSAGE_DIALOG (dialog));
-#else
-  message_box = gtk_widget_get_parent (GTK_MESSAGE_DIALOG (dialog)->label);
-  g_return_if_fail (GTK_IS_VBOX (message_box));
-#endif
+
+  message_box = gtk_dialog_get_content_area (GTK_DIALOG (dialog));
+  g_return_if_fail (GTK_IS_BOX (message_box));
 
   button = gtk_check_button_new_with_mnemonic (_("_Always go directly to the online documentation"));
   gtk_box_pack_end (GTK_BOX (message_box), button, FALSE, TRUE, 0);
+#if GTK_CHECK_VERSION (3, 0, 0)
+  g_object_set (G_OBJECT (button), "halign", GTK_ALIGN_END, "margin-start", 8, "margin-end", 8, NULL);
+  gtk_widget_set_hexpand (button, TRUE);
+#endif
   g_signal_connect (G_OBJECT (button), "toggled",
       G_CALLBACK (xfce_dialog_show_help_auto_toggled), NULL);
   gtk_widget_show (button);
