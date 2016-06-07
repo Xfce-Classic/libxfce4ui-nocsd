@@ -84,6 +84,7 @@ xfce_gtk_frame_box_new G_GNUC_MALLOC
 xfce_gtk_frame_box_new_with_content G_GNUC_MALLOC
 xfce_gtk_window_center_on_active_screen
 xfce_gtk_menu_popup_until_mapped
+xfce_widget_reparent
 #endif
 #endif
 

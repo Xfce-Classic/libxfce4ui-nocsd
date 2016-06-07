@@ -47,6 +47,9 @@ gboolean   xfce_gtk_menu_popup_until_mapped        (GtkMenu             *menu,
                                                     guint                button,
                                                     guint32              activate_time);
 
+gboolean   xfce_widget_reparent                    (GtkWidget           *widget,
+                                                    GtkWidget           *new_parent);
+
 G_END_DECLS
 
 #endif /* !__XFCE_GTK_EXTENSIONS_H__ */
