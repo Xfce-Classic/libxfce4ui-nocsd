@@ -281,6 +281,19 @@ G_GNUC_BEGIN_IGNORE_DEPRECATIONS
 G_GNUC_END_IGNORE_DEPRECATIONS
 }
 
+static void
+show_xfce_gdk_screen_get_active (GtkButton *button,
+                                 gpointer unused)
+{
+  gint       monitor_num;
+  GdkScreen *screen;
+
+  screen = xfce_gdk_screen_get_active (&monitor_num);
+
+  xfce_dialog_show_info(NULL, NULL, "monitor num: %d of %d",
+                        monitor_num, gdk_screen_get_n_monitors (screen));
+}
+
 
 
 static void
@@ -370,6 +383,12 @@ create_main_window (void)
   gtk_container_add (GTK_CONTAINER (box), button);
   gtk_widget_show (button);
   g_signal_connect (G_OBJECT (button), "clicked", G_CALLBACK (show_xfce_titled_dialog_new_with_mixed_buttons), NULL);
+
+  /* xfce_gdk_screen_get_active */
+  button = gtk_button_new_with_label ("show xfce_gdk_screen_get_active");
+  gtk_container_add (GTK_CONTAINER (box), button);
+  gtk_widget_show (button);
+  g_signal_connect (G_OBJECT (button), "clicked", G_CALLBACK (show_xfce_gdk_screen_get_active), NULL);
 }
 
 
