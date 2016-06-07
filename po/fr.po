@@ -8,14 +8,14 @@
 # Mathieu Grivois <matmutant@gmail.com>, 2016
 # Maximilian Schleiss <maximilian@xfce.org>, 2008
 # Urien Desterres <urien.desterres@gmail.com>, 2014-2015
-# Yannick Le Guen <leguen.yannick@gmail.com>, 2014-2015
+# Yannick Le Guen <leguen.yannick@gmail.com>, 2014-2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-08 00:30+0100\n"
-"PO-Revision-Date: 2016-01-08 12:41+0000\n"
-"Last-Translator: Mathieu Grivois <matmutant@gmail.com>\n"
+"POT-Creation-Date: 2016-06-06 18:30+0200\n"
+"PO-Revision-Date: 2016-06-07 06:48+0000\n"
+"Last-Translator: Yannick Le Guen <leguen.yannick@gmail.com>\n"
 "Language-Team: French (http://www.transifex.com/xfce/libxfce4ui/language/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -23,50 +23,64 @@ msgstr ""
 "Language: fr\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: ../libxfce4ui/xfce-dialogs.c:98
+#: ../libxfce4ui/xfce-dialogs.c:100
 msgid "Failed to open web browser for online documentation"
 msgstr "Impossible d'ouvrir le navigateur web pour la documentation en ligne"
 
-#: ../libxfce4ui/xfce-dialogs.c:252
+#: ../libxfce4ui/xfce-dialogs.c:254
 #, c-format
 msgid "Do you want to read the %s manual online?"
 msgstr "Souhaitez-vous consulter le manuel %s en ligne ?"
 
-#: ../libxfce4ui/xfce-dialogs.c:254
+#: ../libxfce4ui/xfce-dialogs.c:256
 msgid "Do you want to read the manual online?"
 msgstr "Souhaitez-vous consulter le manuel en ligne ?"
 
-#: ../libxfce4ui/xfce-dialogs.c:257
+#: ../libxfce4ui/xfce-dialogs.c:259
 msgid "Online Documentation"
 msgstr "Documentation en ligne"
 
-#: ../libxfce4ui/xfce-dialogs.c:264
+#: ../libxfce4ui/xfce-dialogs.c:266
 msgid ""
 "You will be redirected to the documentation website where the help pages are"
 " maintained and translated."
 msgstr "Vous allez être redirigé vers le site de documentation en ligne où les pages d'aide sont maintenues et traduites."
 
-#: ../libxfce4ui/xfce-dialogs.c:278
+#: ../libxfce4ui/xfce-dialogs.c:280
 msgid "_Read Online"
 msgstr "_Lire en ligne"
 
-#: ../libxfce4ui/xfce-dialogs.c:290
+#: ../libxfce4ui/xfce-dialogs.c:289
 msgid "_Always go directly to the online documentation"
 msgstr "_Toujours aller directement sur la documentation en ligne"
 
-#: ../libxfce4ui/xfce-dialogs.c:334
+#: ../libxfce4ui/xfce-dialogs.c:337
 msgid "Information"
 msgstr "Information"
 
-#: ../libxfce4ui/xfce-dialogs.c:377
+#: ../libxfce4ui/xfce-dialogs.c:347 ../libxfce4ui/xfce-dialogs.c:390
+#: ../libxfce4ui/xfce-dialogs.c:434
+msgid "Close"
+msgstr "Fermer"
+
+#: ../libxfce4ui/xfce-dialogs.c:380
 msgid "Warning"
 msgstr "Avertissement"
 
-#: ../libxfce4ui/xfce-dialogs.c:421
+#: ../libxfce4ui/xfce-dialogs.c:424
 msgid "Error"
 msgstr "Erreur"
 
-#: ../libxfce4ui/xfce-dialogs.c:494
+#: ../libxfce4ui/xfce-dialogs.c:483
+msgid "No"
+msgstr "Non"
+
+#: ../libxfce4ui/xfce-dialogs.c:491
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:41
+msgid "Cancel"
+msgstr "Annuler"
+
+#: ../libxfce4ui/xfce-dialogs.c:498 ../libxfce4ui/xfce-dialogs.c:506
 msgid "Question"
 msgstr "Question"
 
@@ -232,10 +246,6 @@ msgstr "Aligné à gauche"
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:40
 msgid "Right"
 msgstr "Aligné à droite"
-
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:41
-msgid "Cancel"
-msgstr "Annuler"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:42
 msgid "Cycle windows"
@@ -517,15 +527,15 @@ msgstr "Supprimer le dernier espace de travail"
 msgid "Delete active workspace"
 msgstr "Supprimer l'espace de travail actif"
 
-#: ../glade/libxfce4ui.xml.in.h:1
+#: ../glade/libxfce4ui.xml.in.h:1 ../glade/libxfce4ui-2.xml.in.h:1
 msgid "Titled Dialog"
 msgstr "Dialogue intitulé"
 
-#: ../glade/libxfce4ui.xml.in.h:2
+#: ../glade/libxfce4ui.xml.in.h:2 ../glade/libxfce4ui-2.xml.in.h:2
 msgid "Subtitle"
 msgstr "Sous-titre"
 
-#: ../glade/libxfce4ui.xml.in.h:3
+#: ../glade/libxfce4ui.xml.in.h:3 ../glade/libxfce4ui-2.xml.in.h:3
 msgid "Xfce 4 Widgets"
 msgstr "Widgets Xfce 4"
 
