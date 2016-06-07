@@ -175,6 +175,49 @@ G_GNUC_END_IGNORE_DEPRECATIONS
 }
 
 static void
+show_xfce_titled_dialog_new_with_buttons (GtkButton *button,
+                                          gpointer unused)
+{
+  GtkWidget *dialog_gtk2;
+
+#if GTK_CHECK_VERSION (3, 0, 0)
+  GtkWidget *dialog_gtk3;
+
+  dialog_gtk3 = xfce_titled_dialog_new_with_buttons ("Settings Editor", NULL,
+                                                GTK_DIALOG_DESTROY_WITH_PARENT,
+                                                "help-browser", GTK_RESPONSE_HELP,
+                                                "window-close", GTK_RESPONSE_OK,
+                                                NULL);
+
+  xfce_titled_dialog_set_subtitle (XFCE_TITLED_DIALOG (dialog_gtk3),
+                                   _("Customize settings stored by Xfconf"));
+
+  gtk_window_set_icon_name (GTK_WINDOW (dialog_gtk3), "preferences-system");
+  gtk_window_set_type_hint (GTK_WINDOW (dialog_gtk3), GDK_WINDOW_TYPE_HINT_NORMAL);
+  gtk_widget_show_all (dialog_gtk3);
+#endif
+
+/* ignore those warnings so it's easy to see what the default Gtk2 version
+ * looks like in Gtk3 with the stock icons */
+G_GNUC_BEGIN_IGNORE_DEPRECATIONS
+  dialog_gtk2 = xfce_titled_dialog_new_with_buttons ("Settings Editor", NULL,
+                                                     GTK_DIALOG_DESTROY_WITH_PARENT,
+                                                     GTK_STOCK_HELP, GTK_RESPONSE_HELP,
+                                                     GTK_STOCK_CLOSE, GTK_RESPONSE_OK,
+                                                     NULL);
+
+  xfce_titled_dialog_set_subtitle (XFCE_TITLED_DIALOG (dialog_gtk2),
+                                   _("Customize settings stored by Xfconf"));
+
+  gtk_window_set_icon_name (GTK_WINDOW (dialog_gtk2), "preferences-system");
+  gtk_window_set_type_hint (GTK_WINDOW (dialog_gtk2), GDK_WINDOW_TYPE_HINT_NORMAL);
+  gtk_widget_show_all (dialog_gtk2);
+G_GNUC_END_IGNORE_DEPRECATIONS
+}
+
+
+
+static void
 create_main_window (void)
 {
   GtkWidget *window;
@@ -249,6 +292,12 @@ create_main_window (void)
   gtk_container_add (GTK_CONTAINER (box), button);
   gtk_widget_show (button);
   g_signal_connect (G_OBJECT (button), "clicked", G_CALLBACK (show_xfce_dialog_confirm), NULL);
+
+  /* xfce_titled_dialog_new_with_buttons */
+  button = gtk_button_new_with_label ("show xfce_titled_dialog_new_with_buttons");
+  gtk_container_add (GTK_CONTAINER (box), button);
+  gtk_widget_show (button);
+  g_signal_connect (G_OBJECT (button), "clicked", G_CALLBACK (show_xfce_titled_dialog_new_with_buttons), NULL);
 }
 
 
