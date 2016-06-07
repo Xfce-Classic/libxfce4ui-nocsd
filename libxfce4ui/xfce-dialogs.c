@@ -677,6 +677,7 @@ xfce_message_dialog_new_valist (GtkWindow   *parent,
       gtk_window_set_icon_name (GTK_WINDOW (dialog), icon_stock_id);
     }
 
+  g_object_unref (gxml);
   return dialog;
 #else /* GTK2 */
   GtkWidget   *dialog;
