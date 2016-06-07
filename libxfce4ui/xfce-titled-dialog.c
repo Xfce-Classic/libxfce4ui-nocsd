@@ -31,6 +31,7 @@
 #include <libxfce4ui/xfce-titled-dialog.h>
 #include <libxfce4ui/libxfce4ui-private.h>
 #include <libxfce4ui/libxfce4ui-alias.h>
+#include <libxfce4ui/xfce-gtk-extensions.h>
 
 
 #define XFCE_TITLED_DIALOG_GET_PRIVATE(obj) (G_TYPE_INSTANCE_GET_PRIVATE ((obj), XFCE_TYPE_TITLED_DIALOG, XfceTitledDialogPrivate))
@@ -313,6 +314,81 @@ xfce_titled_dialog_new_with_buttons (const gchar    *title,
 
   return dialog;
 }
+
+
+
+/**
+ * xfce_titled_dialog_new_with_mixed_buttons:
+ * @title                  : title of the dialog, or %NULL.
+ * @parent                 : transient parent window of the dialog, or %NULL.
+ * @flags                  : from #GtkDialogFlags.
+ * @first_button_icon_name : icon name to go in first, or "" for no icon.
+ * @first_button_text      : text to go in first, or %NULL.
+ * @...                    : response ID for the first button, then additional buttons, ending with %NULL.
+ *
+ * Creates an #XfceTitledDialog using xfce_gtk_button_new_mixed. This allows
+ * the buttons to use an optional named or stock icon.
+ *
+ * Return value: the newly allocated #XfceTitledDialog.
+ **/
+GtkWidget*
+xfce_titled_dialog_new_with_mixed_buttons (const gchar    *title,
+                                           GtkWindow      *parent,
+                                           GtkDialogFlags  flags,
+                                           const gchar    *first_button_icon_name,
+                                           const gchar    *first_button_text,
+                                           ...)
+{
+  const gchar *icon_name;
+  const gchar *button_text;
+  GtkWidget   *dialog;
+  va_list      args;
+  gint         response_id;
+
+  /* allocate the dialog */
+  dialog = g_object_new (XFCE_TYPE_TITLED_DIALOG,
+                         "destroy-with-parent", ((flags & GTK_DIALOG_DESTROY_WITH_PARENT) != 0),
+                         "modal", ((flags & GTK_DIALOG_MODAL) != 0),
+                         "title", title,
+                         NULL);
+
+  /* set the transient parent (if any) */
+  if (G_LIKELY (parent != NULL))
+    gtk_window_set_transient_for (GTK_WINDOW (dialog), parent);
+
+  /* add all additional buttons */
+  icon_name = first_button_icon_name;
+  button_text = first_button_text;
+  va_start (args, first_button_text);
+
+  while (icon_name != NULL)
+    {
+      GtkWidget *button;
+
+      /* response id comes after button text */
+      response_id = va_arg (args, gint);
+
+      /* build our button and add it */
+      button = xfce_gtk_button_new_mixed (icon_name, button_text);
+      gtk_widget_set_can_default (button, TRUE);
+
+      gtk_dialog_add_action_widget (GTK_DIALOG (dialog), button, response_id);
+      gtk_widget_show (button);
+
+      /* this is to pickup for the next button.
+       * The pattern is icon_name, button text
+       */
+      icon_name = va_arg (args, const gchar *);
+      if (icon_name)
+        {
+          button_text = va_arg (args, const gchar *);
+        }
+    }
+  va_end (args);
+
+  return dialog;
+}
+
 
 
 

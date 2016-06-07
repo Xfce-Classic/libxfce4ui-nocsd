@@ -69,6 +69,13 @@ GtkWidget            *xfce_titled_dialog_new_with_buttons (const gchar      *tit
                                                            const gchar      *first_button_text,
                                                            ...) G_GNUC_MALLOC;
 
+GtkWidget            *xfce_titled_dialog_new_with_mixed_buttons (const gchar    *title,
+                                                                 GtkWindow      *parent,
+                                                                 GtkDialogFlags  flags,
+                                                                 const gchar    *first_button_icon_name,
+                                                                 const gchar    *first_button_text,
+                                                                 ...) G_GNUC_MALLOC;
+
 const gchar          *xfce_titled_dialog_get_subtitle     (XfceTitledDialog *titled_dialog);
 void                  xfce_titled_dialog_set_subtitle     (XfceTitledDialog *titled_dialog,
                                                            const gchar      *subtitle);
