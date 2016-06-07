@@ -91,6 +91,40 @@ show_xfce_dialog_show_help_with_version (GtkButton *button,
 }
 
 static void
+remove_auto_online (GtkButton *button,
+                    gpointer unused)
+{
+  XfceRc   *rc;
+  gboolean  response;
+
+#if GTK_CHECK_VERSION (3, 0, 0)
+  response = xfce_dialog_confirm (NULL, "system-run", "Execute",
+                                  "Removing this will enable the show help "
+                                  "dialogs to appear. Do you want to do this?",
+                                  "Remove auto-online in rc file? (Gtk3)");
+#endif
+
+/* ignore those warnings so it's easy to see what the default Gtk2 version
+ * looks like in Gtk3 with the stock icons */
+G_GNUC_BEGIN_IGNORE_DEPRECATIONS
+  response = xfce_dialog_confirm (NULL, GTK_STOCK_EXECUTE, "Execute",
+                                  "Removing this will enable the show help "
+                                  "dialogs to appear. Do you want to do this?",
+                                  "Remove auto-online in rc file? (Gtk2)");
+G_GNUC_END_IGNORE_DEPRECATIONS
+
+  if (response == FALSE)
+    return;
+
+  rc = xfce_rc_config_open (XFCE_RESOURCE_CONFIG, "xfce4/help.rc", FALSE);
+  if (rc != NULL)
+    {
+      xfce_rc_write_bool_entry (rc, "auto-online", FALSE);
+      xfce_rc_close (rc);
+    }
+}
+
+static void
 show_xfce_dialog_show_info (GtkButton *button,
                             gpointer unused)
 {
@@ -185,6 +219,12 @@ create_main_window (void)
   gtk_container_add (GTK_CONTAINER (box), button);
   gtk_widget_show (button);
   g_signal_connect (G_OBJECT (button), "clicked", G_CALLBACK (show_xfce_dialog_show_help_with_version), NULL);
+
+  /* remove auto-online check from rc file */
+  button = gtk_button_new_with_label ("remove auto-online check from rc file");
+  gtk_container_add (GTK_CONTAINER (box), button);
+  gtk_widget_show (button);
+  g_signal_connect (G_OBJECT (button), "clicked", G_CALLBACK (remove_auto_online), NULL);
 
   /* xfce_dialog_show_info */
   button = gtk_button_new_with_label ("show xfce_dialog_show_info");
