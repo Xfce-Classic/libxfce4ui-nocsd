@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-06-06 18:30+0200\n"
-"PO-Revision-Date: 2016-06-07 06:48+0000\n"
+"PO-Revision-Date: 2016-06-07 12:14+0000\n"
 "Last-Translator: Yannick Le Guen <leguen.yannick@gmail.com>\n"
 "Language-Team: French (http://www.transifex.com/xfce/libxfce4ui/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -727,7 +727,7 @@ msgstr "Version %s"
 #. },
 #: ../xfce4-about/contributors.h:128
 msgid "Core developers"
-msgstr "Développeurs du coeur"
+msgstr "Développeurs principaux"
 
 #: ../xfce4-about/contributors.h:131
 msgid "Active contributors"
@@ -759,7 +759,7 @@ msgstr "À propos de Xfce"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:2
 msgid "Information about the Xfce Desktop Environment"
-msgstr "Information à propos de l'environnement de bureau Xfce"
+msgstr "Informations à propos de l'environnement de bureau Xfce"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:1
 msgid "About the Xfce Desktop Environment"
