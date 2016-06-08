@@ -1,3 +1,19 @@
+﻿4.13.0
+======
+- Add xfce_widget_reparent to replace the deprecated gtk_widget_reparent
+- Add xfce_titled_dialog_new_with_mixed_buttons to allow for setting
+  icon names, button label text and response id.
+- Add xfce_gtk_menu_popup_until_mapped as a convenience function to fix
+  widespread problems with popping up menus (e.g. on keyboard shortcuts)
+- Add dialog UI tests for Gtk2 and Gtk3
+- Fix Glade Gtk3 support
+- Fix a memory leak
+- Translation updates: Asturian, Basque, Bulgarian, Catalan, Chinese
+  (Taiwan), Croatian, Danish, English (Australia), Finnish, French, Galician,
+  German, Greek, Hebrew, Hungarian, Icelandic, Korean, Lithuanian, Malay,
+  Norwegian Bokmål, Occitan, Portuguese, Russian, Slovak, Slovenian, Spanish,
+  Swedish
+
 4.12.1
 ======
 - Fix glade directory information in .pc file (bug #11353)
