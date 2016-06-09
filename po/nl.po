@@ -3,66 +3,80 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Pjotr <pjotrvertaalt@gmail.com>, 2015
+# Pjotr <pjotrvertaalt@gmail.com>, 2015-2016
 # Pjotr pjotrvertaalt@gmail.com , 2011,2013
 msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-08 00:30+0100\n"
-"PO-Revision-Date: 2015-03-08 17:12+0000\n"
+"POT-Creation-Date: 2016-06-09 00:30+0200\n"
+"PO-Revision-Date: 2016-06-09 17:14+0000\n"
 "Last-Translator: Pjotr <pjotrvertaalt@gmail.com>\n"
-"Language-Team: Dutch (http://www.transifex.com/projects/p/libxfce4ui/language/nl/)\n"
+"Language-Team: Dutch (http://www.transifex.com/xfce/libxfce4ui/language/nl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: nl\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../libxfce4ui/xfce-dialogs.c:98
+#: ../libxfce4ui/xfce-dialogs.c:100
 msgid "Failed to open web browser for online documentation"
 msgstr "Kon de webbrowser niet openen voor de internetdocumentatie"
 
-#: ../libxfce4ui/xfce-dialogs.c:252
+#: ../libxfce4ui/xfce-dialogs.c:254
 #, c-format
 msgid "Do you want to read the %s manual online?"
 msgstr "Wilt u de handleiding voor %s op het internet lezen?"
 
-#: ../libxfce4ui/xfce-dialogs.c:254
+#: ../libxfce4ui/xfce-dialogs.c:256
 msgid "Do you want to read the manual online?"
 msgstr "Wilt u de handleiding op het internet lezen?"
 
-#: ../libxfce4ui/xfce-dialogs.c:257
+#: ../libxfce4ui/xfce-dialogs.c:259
 msgid "Online Documentation"
 msgstr "Internetdocumentatie"
 
-#: ../libxfce4ui/xfce-dialogs.c:264
+#: ../libxfce4ui/xfce-dialogs.c:266
 msgid ""
 "You will be redirected to the documentation website where the help pages are"
 " maintained and translated."
 msgstr "U zult worden omgeleid naar de documentatiewebstek, waar de hulppagina's worden onderhouden en vertaald."
 
-#: ../libxfce4ui/xfce-dialogs.c:278
+#: ../libxfce4ui/xfce-dialogs.c:280
 msgid "_Read Online"
 msgstr "Lees op het internet"
 
-#: ../libxfce4ui/xfce-dialogs.c:290
+#: ../libxfce4ui/xfce-dialogs.c:289
 msgid "_Always go directly to the online documentation"
 msgstr "Ga altijd meteen naar de internetdocumentatie"
 
-#: ../libxfce4ui/xfce-dialogs.c:334
+#: ../libxfce4ui/xfce-dialogs.c:337
 msgid "Information"
 msgstr "Informatie"
 
-#: ../libxfce4ui/xfce-dialogs.c:377
+#: ../libxfce4ui/xfce-dialogs.c:347 ../libxfce4ui/xfce-dialogs.c:390
+#: ../libxfce4ui/xfce-dialogs.c:434
+msgid "Close"
+msgstr "Sluiten"
+
+#: ../libxfce4ui/xfce-dialogs.c:380
 msgid "Warning"
 msgstr "Waarschuwing"
 
-#: ../libxfce4ui/xfce-dialogs.c:421
+#: ../libxfce4ui/xfce-dialogs.c:424
 msgid "Error"
 msgstr "Fout"
 
-#: ../libxfce4ui/xfce-dialogs.c:494
+#: ../libxfce4ui/xfce-dialogs.c:483
+msgid "No"
+msgstr "Nee"
+
+#: ../libxfce4ui/xfce-dialogs.c:491
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:41
+msgid "Cancel"
+msgstr "Annuleren"
+
+#: ../libxfce4ui/xfce-dialogs.c:498 ../libxfce4ui/xfce-dialogs.c:506
 msgid "Question"
 msgstr "Vraag"
 
@@ -228,10 +242,6 @@ msgstr "Links"
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:40
 msgid "Right"
 msgstr "Rechts"
-
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:41
-msgid "Cancel"
-msgstr "Annuleren"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:42
 msgid "Cycle windows"
@@ -513,15 +523,15 @@ msgstr "Verwijder laatste werkblad"
 msgid "Delete active workspace"
 msgstr "Verwijder actief werkblad"
 
-#: ../glade/libxfce4ui.xml.in.h:1
+#: ../glade/libxfce4ui.xml.in.h:1 ../glade/libxfce4ui-2.xml.in.h:1
 msgid "Titled Dialog"
 msgstr "Getiteld dialoogvenster"
 
-#: ../glade/libxfce4ui.xml.in.h:2
+#: ../glade/libxfce4ui.xml.in.h:2 ../glade/libxfce4ui-2.xml.in.h:2
 msgid "Subtitle"
 msgstr "Ondertitel"
 
-#: ../glade/libxfce4ui.xml.in.h:3
+#: ../glade/libxfce4ui.xml.in.h:3 ../glade/libxfce4ui-2.xml.in.h:3
 msgid "Xfce 4 Widgets"
 msgstr "Xfce 4-programmaatjes"
 
@@ -778,3 +788,19 @@ msgstr "Auteursrecht"
 #: ../xfce4-about/xfce4-about-dialog.glade.h:8
 msgid "License"
 msgstr "Licentie"
+
+#: ../tests/test-ui.c:138
+#, c-format
+msgid ""
+"A file named \"%s\" already exists in this directory, the file hasn't been "
+"added."
+msgstr "Een bestand genaamd '%s' bestaat reeds in deze map: het bestand is niet toegevoegd."
+
+#: ../tests/test-ui.c:149
+msgid "Failed to migrate the old panel configuration"
+msgstr "Kon de oude werkbalkinstellingen niet overzetten"
+
+#: ../tests/test-ui.c:202 ../tests/test-ui.c:222 ../tests/test-ui.c:251
+#: ../tests/test-ui.c:273
+msgid "Customize settings stored by Xfconf"
+msgstr "Instellingen aanpassen die opgeslagen zijn door Xfconf"
