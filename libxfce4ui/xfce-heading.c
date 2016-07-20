@@ -240,6 +240,7 @@ _xfce_heading_draw (GtkWidget *widget,
 
   gtk_style_context_save (context);
   gtk_style_context_add_class (context, GTK_STYLE_CLASS_FRAME);
+  gtk_style_context_add_class (context, "XfceHeading");
 
   /* check if we should render from right to left */
   rtl = (gtk_widget_get_direction (widget) == GTK_TEXT_DIR_RTL);
