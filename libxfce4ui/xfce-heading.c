@@ -239,7 +239,8 @@ _xfce_heading_draw (GtkWidget *widget,
   context = gtk_widget_get_style_context (widget);
 
   gtk_style_context_save (context);
-  gtk_style_context_add_class (context, GTK_STYLE_CLASS_FRAME);
+  /* Add "view" as default style class as that resembles the "base color" look of Gtk2 best */
+  gtk_style_context_add_class (context, "view");
   gtk_style_context_add_class (context, "XfceHeading");
 
   /* check if we should render from right to left */
