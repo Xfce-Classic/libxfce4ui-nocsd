@@ -1,4 +1,12 @@
-﻿4.13.0
+﻿4.13.1
+======
+- Better Gtk3.20 compatibility (fix XfceHeading style, drop deprecated call)
+- Translation updates: Bulgarian, Catalan, Chinese (China), Chinese (Taiwan),
+  Croatian, Czech, Danish, Dutch (Flemish), English (Australia), French, German,
+  Hebrew, Japanese, Korean, Lithuanian, Norwegian Bokmål, Polish, Portuguese
+  (Brazilian), Russian, Slovak, Spanish, Swedish, Thai, Turkish, Ukrainian
+
+4.13.0
 ======
 - Add xfce_widget_reparent to replace the deprecated gtk_widget_reparent
 - Add xfce_titled_dialog_new_with_mixed_buttons to allow for setting
