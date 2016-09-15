@@ -22,8 +22,7 @@ AM_CPPFLAGS =								\
 	-DG_LOG_DOMAIN=\"libxfce4ui-tests\"
 
 noinst_PROGRAMS =					\
-	test-ui-gtk2					\
-	test-ui-gtk3
+	test-ui-gtk2
 
 
 # test-ui-gtk2
@@ -48,6 +47,10 @@ test_ui_gtk2_LDADD =					\
 	$(top_builddir)/libxfce4ui/libxfce4ui-1.la
 
 # test-ui-gtk3
+if ENABLE_GTK3_LIBRARY
+noinst_PROGRAMS +=					\
+	test-ui-gtk3
+
 test_ui_gtk3_SOURCES =				\
 	test-ui.c
 
@@ -67,3 +70,4 @@ test_ui_gtk3_LDADD =					\
 	$(LIBSTARTUP_NOTIFICATION_LIBS) \
 	$(LIBXFCE4UTIL_LIBS) \
 	$(top_builddir)/libxfce4ui/libxfce4ui-2.la
+endif
