@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-08 00:30+0100\n"
-"PO-Revision-Date: 2016-03-11 15:45+0000\n"
+"POT-Creation-Date: 2016-06-09 00:30+0200\n"
+"PO-Revision-Date: 2016-10-19 20:31+0000\n"
 "Last-Translator: Cédric Valmary <cvalmary@yahoo.fr>\n"
 "Language-Team: Occitan (post 1500) (http://www.transifex.com/xfce/libxfce4ui/language/oc/)\n"
 "MIME-Version: 1.0\n"
@@ -19,50 +19,64 @@ msgstr ""
 "Language: oc\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: ../libxfce4ui/xfce-dialogs.c:98
+#: ../libxfce4ui/xfce-dialogs.c:100
 msgid "Failed to open web browser for online documentation"
 msgstr "Impossible de dobrir lo navigador web per la documentacion en linha"
 
-#: ../libxfce4ui/xfce-dialogs.c:252
+#: ../libxfce4ui/xfce-dialogs.c:254
 #, c-format
 msgid "Do you want to read the %s manual online?"
 msgstr "Volètz consultar lo manual %s en linha ?"
 
-#: ../libxfce4ui/xfce-dialogs.c:254
+#: ../libxfce4ui/xfce-dialogs.c:256
 msgid "Do you want to read the manual online?"
 msgstr "Volètz consultar lo manual en linha ?"
 
-#: ../libxfce4ui/xfce-dialogs.c:257
+#: ../libxfce4ui/xfce-dialogs.c:259
 msgid "Online Documentation"
 msgstr "Documentacion en linha"
 
-#: ../libxfce4ui/xfce-dialogs.c:264
+#: ../libxfce4ui/xfce-dialogs.c:266
 msgid ""
 "You will be redirected to the documentation website where the help pages are"
 " maintained and translated."
 msgstr "Seretz redirigit cap al site de documentacion en linha ont las paginas d'ajuda son mantengudas e tradusidas."
 
-#: ../libxfce4ui/xfce-dialogs.c:278
+#: ../libxfce4ui/xfce-dialogs.c:280
 msgid "_Read Online"
 msgstr "_Legir en linha"
 
-#: ../libxfce4ui/xfce-dialogs.c:290
+#: ../libxfce4ui/xfce-dialogs.c:289
 msgid "_Always go directly to the online documentation"
 msgstr "Anar _totjorn dirèctament sus la documentacion en linha"
 
-#: ../libxfce4ui/xfce-dialogs.c:334
+#: ../libxfce4ui/xfce-dialogs.c:337
 msgid "Information"
 msgstr "Informacion"
 
-#: ../libxfce4ui/xfce-dialogs.c:377
+#: ../libxfce4ui/xfce-dialogs.c:347 ../libxfce4ui/xfce-dialogs.c:390
+#: ../libxfce4ui/xfce-dialogs.c:434
+msgid "Close"
+msgstr "Tampar"
+
+#: ../libxfce4ui/xfce-dialogs.c:380
 msgid "Warning"
 msgstr "Avertiment"
 
-#: ../libxfce4ui/xfce-dialogs.c:421
+#: ../libxfce4ui/xfce-dialogs.c:424
 msgid "Error"
 msgstr "Error"
 
-#: ../libxfce4ui/xfce-dialogs.c:494
+#: ../libxfce4ui/xfce-dialogs.c:483
+msgid "No"
+msgstr "Non"
+
+#: ../libxfce4ui/xfce-dialogs.c:491
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:41
+msgid "Cancel"
+msgstr "Anullar"
+
+#: ../libxfce4ui/xfce-dialogs.c:498 ../libxfce4ui/xfce-dialogs.c:506
 msgid "Question"
 msgstr "Question"
 
@@ -228,10 +242,6 @@ msgstr "Alinhat a esquèrra"
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:40
 msgid "Right"
 msgstr "Alinhat a drecha"
-
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:41
-msgid "Cancel"
-msgstr "Anullar"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:42
 msgid "Cycle windows"
@@ -513,15 +523,15 @@ msgstr "Suprimir lo darrièr espaci de trabalh"
 msgid "Delete active workspace"
 msgstr "Suprimir l'espaci de trabalh actiu"
 
-#: ../glade/libxfce4ui.xml.in.h:1
+#: ../glade/libxfce4ui.xml.in.h:1 ../glade/libxfce4ui-2.xml.in.h:1
 msgid "Titled Dialog"
 msgstr "Dialòg intitulat"
 
-#: ../glade/libxfce4ui.xml.in.h:2
+#: ../glade/libxfce4ui.xml.in.h:2 ../glade/libxfce4ui-2.xml.in.h:2
 msgid "Subtitle"
 msgstr "Sostítol"
 
-#: ../glade/libxfce4ui.xml.in.h:3
+#: ../glade/libxfce4ui.xml.in.h:3 ../glade/libxfce4ui-2.xml.in.h:3
 msgid "Xfce 4 Widgets"
 msgstr "Widgets Xfce 4"
 
@@ -778,3 +788,19 @@ msgstr "Copyright"
 #: ../xfce4-about/xfce4-about-dialog.glade.h:8
 msgid "License"
 msgstr "Licéncia"
+
+#: ../tests/test-ui.c:138
+#, c-format
+msgid ""
+"A file named \"%s\" already exists in this directory, the file hasn't been "
+"added."
+msgstr ""
+
+#: ../tests/test-ui.c:149
+msgid "Failed to migrate the old panel configuration"
+msgstr "Impossible de migrar l'anciana configuracion del tablèu de bòrd"
+
+#: ../tests/test-ui.c:202 ../tests/test-ui.c:222 ../tests/test-ui.c:251
+#: ../tests/test-ui.c:273
+msgid "Customize settings stored by Xfconf"
+msgstr "Personalizar los paramètres emmagazinats per Xfconf"
