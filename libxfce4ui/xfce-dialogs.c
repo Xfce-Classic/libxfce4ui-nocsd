@@ -585,6 +585,8 @@ xfce_message_dialog_new_valist (GtkWindow   *parent,
       gchar *markedup_text = g_strdup_printf ("<span weight='bold' size='large'>%s</span>", primary_text);
 
       gtk_label_set_markup (GTK_LABEL (primary_label), markedup_text);
+      gtk_label_set_xalign (GTK_LABEL (primary_label), 0);
+      gtk_widget_set_vexpand (GTK_WIDGET (primary_label), TRUE);
 
       gtk_container_add (GTK_CONTAINER (label_box), primary_label);
       gtk_widget_show (primary_label);
@@ -597,6 +599,8 @@ xfce_message_dialog_new_valist (GtkWindow   *parent,
       /* Add the secondary text, no special formatting done */
       GtkWidget *secondary_label = gtk_label_new (secondary_text);
       gtk_label_set_line_wrap (GTK_LABEL (secondary_label), TRUE);
+      gtk_label_set_xalign (GTK_LABEL (secondary_label), 0);
+      gtk_widget_set_vexpand (GTK_WIDGET (secondary_label), TRUE);
 
       gtk_container_add (GTK_CONTAINER (label_box), secondary_label);
       gtk_widget_show (secondary_label);
