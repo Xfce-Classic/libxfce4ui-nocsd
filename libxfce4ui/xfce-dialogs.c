@@ -588,6 +588,7 @@ xfce_message_dialog_new_valist (GtkWindow   *parent,
       gtk_label_set_markup (GTK_LABEL (primary_label), markedup_text);
       gtk_label_set_xalign (GTK_LABEL (primary_label), 0);
       gtk_widget_set_vexpand (GTK_WIDGET (primary_label), TRUE);
+      gtk_widget_set_valign (GTK_WIDGET (primary_label), 1.0);
 
       gtk_container_add (GTK_CONTAINER (label_box), primary_label);
       gtk_widget_show (primary_label);
@@ -600,8 +601,9 @@ xfce_message_dialog_new_valist (GtkWindow   *parent,
       /* Add the secondary text, no special formatting done */
       GtkWidget *secondary_label = gtk_label_new (secondary_text);
       gtk_label_set_line_wrap (GTK_LABEL (secondary_label), TRUE);
-      gtk_label_set_xalign (GTK_LABEL (secondary_label), 0);
+      gtk_label_set_xalign (GTK_LABEL (secondary_label), 0.0);
       gtk_widget_set_vexpand (GTK_WIDGET (secondary_label), TRUE);
+      gtk_widget_set_valign (GTK_WIDGET (secondary_label), 0.0);
 
       gtk_container_add (GTK_CONTAINER (label_box), secondary_label);
       gtk_widget_show (secondary_label);
