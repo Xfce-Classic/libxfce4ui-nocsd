@@ -572,7 +572,7 @@ xfce_message_dialog_new_valist (GtkWindow   *parent,
   dialog = GTK_WIDGET(gtk_builder_get_object(gxml, "xfce4ui-dialog"));
   label_box = GTK_WIDGET(gtk_builder_get_object(gxml, "label-box"));
   dialog_image = GTK_WIDGET(gtk_builder_get_object(gxml, "icon_stock_id"));
-  gtk_window_set_default_size (GTK_WINDOW (dialog), 400, -1);
+  gtk_window_set_default_size (GTK_WINDOW (dialog), 500, -1);
 
   if (parent)
     {
