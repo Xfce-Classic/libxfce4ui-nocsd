@@ -3,18 +3,19 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Aputsiaĸ Niels Janussen <aj@isit.gl>, 2013,2015
+# Aputsiak Niels Janussen <aj@isit.gl>, 2013,2015
 # Erik Schmidt <erischmi@gmail.com>, 2012
 # Morten Juhl-Johansen Zölde-Fejér <morten@writtenandread.net>, 2015-2016
 # Ole Guldberg <olegb@omgwtf.dk>, 2008
 # Per Kongstad <p_kongstad@op.pl>, 2009
+# scootergrisen, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-06-09 00:30+0200\n"
-"PO-Revision-Date: 2016-06-23 18:22+0000\n"
-"Last-Translator: Morten Juhl-Johansen Zölde-Fejér <morten@writtenandread.net>\n"
+"PO-Revision-Date: 2016-12-09 04:54+0000\n"
+"Last-Translator: scootergrisen\n"
 "Language-Team: Danish (http://www.transifex.com/xfce/libxfce4ui/language/da/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -224,7 +225,7 @@ msgstr "Ingen taster trykket endnu, fortsæt."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:386
 msgid "Could not grab the keyboard."
-msgstr "Kunne ikke gribe tastaturet"
+msgstr "Kunne ikke gribe tastaturet."
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:36
 msgid "Window operations menu"
