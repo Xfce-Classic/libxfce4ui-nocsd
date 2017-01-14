@@ -8,13 +8,13 @@
 # Morten Juhl-Johansen Zölde-Fejér <morten@writtenandread.net>, 2015-2016
 # Ole Guldberg <olegb@omgwtf.dk>, 2008
 # Per Kongstad <p_kongstad@op.pl>, 2009
-# scootergrisen, 2016
+# scootergrisen, 2016-2017
 msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-06-09 00:30+0200\n"
-"PO-Revision-Date: 2016-12-09 04:54+0000\n"
+"PO-Revision-Date: 2017-01-14 09:38+0000\n"
 "Last-Translator: scootergrisen\n"
 "Language-Team: Danish (http://www.transifex.com/xfce/libxfce4ui/language/da/)\n"
 "MIME-Version: 1.0\n"
@@ -573,7 +573,7 @@ msgstr "Indstiller baggrunds-farven eller -billedet med tilvalg af program-menu 
 
 #: ../xfce4-about/main.c:84
 msgid "File Manager "
-msgstr "Filhåndtering"
+msgstr "Filhåndtering "
 
 #: ../xfce4-about/main.c:85
 msgid ""
@@ -787,7 +787,7 @@ msgstr "BSD"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:7
 msgid "Copyright"
-msgstr "Copyright"
+msgstr "Ophavsret"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:8
 msgid "License"
