@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-06-09 00:30+0200\n"
-"PO-Revision-Date: 2017-01-16 13:07+0000\n"
+"PO-Revision-Date: 2017-01-17 08:08+0000\n"
 "Last-Translator: scootergrisen\n"
 "Language-Team: Danish (http://www.transifex.com/xfce/libxfce4ui/language/da/)\n"
 "MIME-Version: 1.0\n"
@@ -697,7 +697,7 @@ msgstr "Udviklingholdet Xfce. Alle rettigheder forbeholdes."
 #: ../xfce4-about/main.c:457
 #, c-format
 msgid "Please report bugs to <%s>."
-msgstr "Venligst rapportér fejl til <%s>."
+msgstr "Rapportér venligst fejl til <%s>."
 
 #. I18N: date/time the translators list was updated
 #: ../xfce4-about/main.c:460
