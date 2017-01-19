@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-06-09 00:30+0200\n"
-"PO-Revision-Date: 2017-01-17 13:03+0000\n"
+"PO-Revision-Date: 2017-01-19 10:21+0000\n"
 "Last-Translator: scootergrisen\n"
 "Language-Team: Danish (http://www.transifex.com/xfce/libxfce4ui/language/da/)\n"
 "MIME-Version: 1.0\n"
@@ -98,7 +98,7 @@ msgstr "Slå sessionshåndtering fra"
 
 #: ../libxfce4ui/xfce-sm-client.c:1435
 msgid "Session management options"
-msgstr "Tilvalg for sessionshåndtering:"
+msgstr "Tilvalg for sessionshåndtering"
 
 #: ../libxfce4ui/xfce-sm-client.c:1436
 msgid "Show session management options"
@@ -269,11 +269,11 @@ msgstr "Luk vindue"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:47
 msgid "Maximize window horizontally"
-msgstr "Maksimer vindue horisontalt"
+msgstr "Maksimer vindue vandret"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:48
 msgid "Maximize window vertically"
-msgstr "Maksimer vindue vertikalt"
+msgstr "Maksimer vindue lodret"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:49
 msgid "Maximize window"
@@ -317,11 +317,11 @@ msgstr "Udfyld vindue"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:59
 msgid "Fill window horizontally"
-msgstr "Udfyld vinduet horisontalt"
+msgstr "Udfyld vinduet vandret"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:60
 msgid "Fill window vertically"
-msgstr "Fyld vinduet vertikalt"
+msgstr "Fyld vinduet lodret"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:61
 msgid "Toggle above"
@@ -599,7 +599,7 @@ msgstr "Systemindstilling"
 msgid ""
 "Configuration system to control various aspects of the desktop like "
 "appearance, display, keyboard and mouse settings."
-msgstr "Instillingssystem for at håndtere forskellige dele af skrivebordet som fremkost-, visning-, tastatur- og museindstillinger."
+msgstr "Indstillingssystem for at håndtere forskellige dele af skrivebordet som fremkost-, visning-, tastatur- og museindstillinger."
 
 #: ../xfce4-about/main.c:99
 msgid "Application Finder"
@@ -739,7 +739,7 @@ msgstr "Servere vedligeholdes af"
 
 #: ../xfce4-about/contributors.h:137
 msgid "Goodies supervision"
-msgstr "Goodies vedledning"
+msgstr "Goodies vejledning"
 
 #: ../xfce4-about/contributors.h:140
 msgid "Translations supervision"
@@ -798,7 +798,7 @@ msgstr "Licens"
 msgid ""
 "A file named \"%s\" already exists in this directory, the file hasn't been "
 "added."
-msgstr "En fil ved navn \\\"%s\\\" findes allerede i denne mappe. Filen er ikke blevet tilføjet."
+msgstr "En fil ved navn \"%s\" findes allerede i denne mappe. Filen er ikke blevet tilføjet."
 
 #: ../tests/test-ui.c:149
 msgid "Failed to migrate the old panel configuration"
