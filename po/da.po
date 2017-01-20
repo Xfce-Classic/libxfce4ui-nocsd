@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-06-09 00:30+0200\n"
-"PO-Revision-Date: 2017-01-20 13:58+0000\n"
+"PO-Revision-Date: 2017-01-20 19:06+0000\n"
 "Last-Translator: scootergrisen\n"
 "Language-Team: Danish (http://www.transifex.com/xfce/libxfce4ui/language/da/)\n"
 "MIME-Version: 1.0\n"
@@ -656,7 +656,7 @@ msgstr "Hvis du har kendskab til nogle der mangler på denne liste, bedes du rap
 
 #: ../xfce4-about/main.c:265
 msgid "Thanks to all who helped making this software available!"
-msgstr "Vi takker alle som har hjulpet til med at gøre dette programmel tilgængeligt!"
+msgstr "Tak til alle som har hjulpet med at gøre dette software tilgængeligt!"
 
 #: ../xfce4-about/main.c:282
 msgid ""
@@ -727,7 +727,7 @@ msgstr "Version %s"
 #. },
 #: ../xfce4-about/contributors.h:128
 msgid "Core developers"
-msgstr "Kerneudviklere"
+msgstr "Primære udviklere"
 
 #: ../xfce4-about/contributors.h:131
 msgid "Active contributors"
@@ -735,15 +735,15 @@ msgstr "Aktive bidragydere"
 
 #: ../xfce4-about/contributors.h:134
 msgid "Servers maintained by"
-msgstr "Servere vedligeholdes af"
+msgstr "Vedligeholdelse af servere"
 
 #: ../xfce4-about/contributors.h:137
 msgid "Goodies supervision"
-msgstr "Goodies vejledning"
+msgstr "Tilsyn af goodies"
 
 #: ../xfce4-about/contributors.h:140
 msgid "Translations supervision"
-msgstr "Oversættelse vejledning"
+msgstr "Tilsyn af oversættelser"
 
 #: ../xfce4-about/contributors.h:143
 msgid "Translators"
