@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-06-09 00:30+0200\n"
-"PO-Revision-Date: 2017-01-19 10:21+0000\n"
+"PO-Revision-Date: 2017-01-20 13:58+0000\n"
 "Last-Translator: scootergrisen\n"
 "Language-Team: Danish (http://www.transifex.com/xfce/libxfce4ui/language/da/)\n"
 "MIME-Version: 1.0\n"
@@ -25,7 +25,7 @@ msgstr ""
 
 #: ../libxfce4ui/xfce-dialogs.c:100
 msgid "Failed to open web browser for online documentation"
-msgstr "Kunne ikke åbne webbrowser for dokumentation på nettet"
+msgstr "Kunne ikke åbne webbrowser til vises af online-dokumentation"
 
 #: ../libxfce4ui/xfce-dialogs.c:254
 #, c-format
@@ -38,7 +38,7 @@ msgstr "Vil du læse manualen på nettet?"
 
 #: ../libxfce4ui/xfce-dialogs.c:259
 msgid "Online Documentation"
-msgstr "Dokumentation på nettet"
+msgstr "Online-dokumentation"
 
 #: ../libxfce4ui/xfce-dialogs.c:266
 msgid ""
@@ -52,7 +52,7 @@ msgstr "_Læs på nettet"
 
 #: ../libxfce4ui/xfce-dialogs.c:289
 msgid "_Always go directly to the online documentation"
-msgstr "_Gå altid direkte til dokumentationen på nettet"
+msgstr "_Gå altid direkte til online-dokumentationen"
 
 #: ../libxfce4ui/xfce-dialogs.c:337
 msgid "Information"
@@ -78,7 +78,7 @@ msgstr "Nej"
 #: ../libxfce4ui/xfce-dialogs.c:491
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:41
 msgid "Cancel"
-msgstr "Annuller"
+msgstr "Annullér"
 
 #: ../libxfce4ui/xfce-dialogs.c:498 ../libxfce4ui/xfce-dialogs.c:506
 msgid "Question"
@@ -692,7 +692,7 @@ msgstr "Kunne ikke klargøre GTK+."
 
 #: ../xfce4-about/main.c:456
 msgid "The Xfce development team. All rights reserved."
-msgstr "Udviklingholdet Xfce. Alle rettigheder forbeholdes."
+msgstr "Xfce's udviklingshold. Alle rettigheder forbeholdes."
 
 #: ../xfce4-about/main.c:457
 #, c-format
@@ -731,7 +731,7 @@ msgstr "Kerneudviklere"
 
 #: ../xfce4-about/contributors.h:131
 msgid "Active contributors"
-msgstr "Aktive udviklere"
+msgstr "Aktive bidragydere"
 
 #: ../xfce4-about/contributors.h:134
 msgid "Servers maintained by"
