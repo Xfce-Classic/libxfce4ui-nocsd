@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-06-09 00:30+0200\n"
-"PO-Revision-Date: 2017-01-21 16:58+0000\n"
+"PO-Revision-Date: 2017-01-21 19:32+0000\n"
 "Last-Translator: scootergrisen\n"
 "Language-Team: Danish (http://www.transifex.com/xfce/libxfce4ui/language/da/)\n"
 "MIME-Version: 1.0\n"
@@ -30,11 +30,11 @@ msgstr "Kunne ikke åbne webbrowser til vises af online-dokumentation"
 #: ../libxfce4ui/xfce-dialogs.c:254
 #, c-format
 msgid "Do you want to read the %s manual online?"
-msgstr "Vil du læse %smanual på nettet?"
+msgstr "Vil du læse %s manualen online?"
 
 #: ../libxfce4ui/xfce-dialogs.c:256
 msgid "Do you want to read the manual online?"
-msgstr "Vil du læse manualen på nettet?"
+msgstr "Vil du læse manualen online?"
 
 #: ../libxfce4ui/xfce-dialogs.c:259
 msgid "Online Documentation"
@@ -48,7 +48,7 @@ msgstr "Du vil blive omstillet til dokumentationssiden på nettet, hvor hjælpes
 
 #: ../libxfce4ui/xfce-dialogs.c:280
 msgid "_Read Online"
-msgstr "_Læs på nettet"
+msgstr "_Læs online"
 
 #: ../libxfce4ui/xfce-dialogs.c:289
 msgid "_Always go directly to the online documentation"
