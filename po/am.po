@@ -1,116 +1,128 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
+# Translators:
+# samson <sambelet@yahoo.com>, 2016-2017
 msgid ""
 msgstr ""
-"Project-Id-Version: libxfce4ui\n"
+"Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-12-28 09:06+0100\n"
-"PO-Revision-Date: 2012-09-19 09:04+0300\n"
-"Last-Translator: tefera <tefera@mekuria.com>\n"
-"Language-Team: Amharic\n"
-"Language: \n"
+"POT-Creation-Date: 2016-06-09 00:30+0200\n"
+"PO-Revision-Date: 2017-01-23 15:43+0000\n"
+"Last-Translator: samson <sambelet@yahoo.com>\n"
+"Language-Team: Amharic (http://www.transifex.com/xfce/libxfce4ui/language/am/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Language: Amharic\n"
-"X-Poedit-Country: ETHIOPIA\n"
+"Language: am\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: ../libxfce4ui/xfce-dialogs.c:98
+#: ../libxfce4ui/xfce-dialogs.c:100
 msgid "Failed to open web browser for online documentation"
-msgstr ""
+msgstr "የ ዌብ መቃኛ መክፈት አልተቻለም ለ መስመር ላይ ሰነድ "
 
-#: ../libxfce4ui/xfce-dialogs.c:213
+#: ../libxfce4ui/xfce-dialogs.c:254
 #, c-format
 msgid "Do you want to read the %s manual online?"
-msgstr ""
+msgstr "እርስዎ ማንበብ ይፈልጋሉ %s መምሪያውን በ መስመር ላይ?"
 
-#: ../libxfce4ui/xfce-dialogs.c:215
+#: ../libxfce4ui/xfce-dialogs.c:256
 msgid "Do you want to read the manual online?"
-msgstr ""
+msgstr "እርስዎ ማንበብ ይፈልጋሉ መምሪያውን በ መስመር ላይ?"
 
-#: ../libxfce4ui/xfce-dialogs.c:218
+#: ../libxfce4ui/xfce-dialogs.c:259
 msgid "Online Documentation"
-msgstr ""
+msgstr "መምሪያ በ መስመር ላይ"
 
-#: ../libxfce4ui/xfce-dialogs.c:221
+#: ../libxfce4ui/xfce-dialogs.c:266
 msgid ""
-"You will be redirected to the documentation website where the help pages are "
-"maintained and translated."
+"You will be redirected to the documentation website where the help pages are"
+" maintained and translated."
 msgstr ""
 
-#: ../libxfce4ui/xfce-dialogs.c:225
+#: ../libxfce4ui/xfce-dialogs.c:280
 msgid "_Read Online"
-msgstr ""
+msgstr "በ መስመር ላይ _ማንበቢያ"
 
-#: ../libxfce4ui/xfce-dialogs.c:237
+#: ../libxfce4ui/xfce-dialogs.c:289
 msgid "_Always go directly to the online documentation"
 msgstr ""
 
-#: ../libxfce4ui/xfce-dialogs.c:281
+#: ../libxfce4ui/xfce-dialogs.c:337
 msgid "Information"
-msgstr ""
+msgstr "መረጃ"
 
-#: ../libxfce4ui/xfce-dialogs.c:314
+#: ../libxfce4ui/xfce-dialogs.c:347 ../libxfce4ui/xfce-dialogs.c:390
+#: ../libxfce4ui/xfce-dialogs.c:434
+msgid "Close"
+msgstr "መዝጊያ"
+
+#: ../libxfce4ui/xfce-dialogs.c:380
 msgid "Warning"
-msgstr ""
+msgstr "ማስጠንቀቂያ"
 
-#: ../libxfce4ui/xfce-dialogs.c:348
+#: ../libxfce4ui/xfce-dialogs.c:424
 msgid "Error"
-msgstr ""
+msgstr "ስህተት"
 
-#: ../libxfce4ui/xfce-dialogs.c:399
+#: ../libxfce4ui/xfce-dialogs.c:483
+msgid "No"
+msgstr "አይ"
+
+#: ../libxfce4ui/xfce-dialogs.c:491
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:41
+msgid "Cancel"
+msgstr "መሰረዣ"
+
+#: ../libxfce4ui/xfce-dialogs.c:498 ../libxfce4ui/xfce-dialogs.c:506
 msgid "Question"
-msgstr ""
+msgstr "ጥያቄ"
 
-#: ../libxfce4ui/xfce-sm-client.c:1403
+#: ../libxfce4ui/xfce-sm-client.c:1424
 msgid "Session management client ID"
 msgstr ""
 
-#: ../libxfce4ui/xfce-sm-client.c:1403
+#: ../libxfce4ui/xfce-sm-client.c:1424
 msgid "ID"
 msgstr ""
 
-#: ../libxfce4ui/xfce-sm-client.c:1404
+#: ../libxfce4ui/xfce-sm-client.c:1425
 msgid "Disable session management"
 msgstr ""
 
-#: ../libxfce4ui/xfce-sm-client.c:1414
+#: ../libxfce4ui/xfce-sm-client.c:1435
 msgid "Session management options"
 msgstr ""
 
-#: ../libxfce4ui/xfce-sm-client.c:1415
+#: ../libxfce4ui/xfce-sm-client.c:1436
 msgid "Show session management options"
 msgstr ""
 
-#: ../libxfce4ui/xfce-sm-client.c:1591
+#: ../libxfce4ui/xfce-sm-client.c:1611
 #, c-format
 msgid "Failed to connect to the session manager: %s"
 msgstr ""
 
-#: ../libxfce4ui/xfce-sm-client.c:1598
+#: ../libxfce4ui/xfce-sm-client.c:1617
 #, c-format
 msgid "Session manager did not return a valid client id"
 msgstr ""
 
 #. print warning for user
-#: ../libxfce4ui/xfce-spawn.c:413
+#: ../libxfce4ui/xfce-spawn.c:409
 #, c-format
 msgid ""
-"Working directory \"%s\" does not exist. It won't be used when spawning \"%s"
-"\"."
+"Working directory \"%s\" does not exist. It won't be used when spawning "
+"\"%s\"."
 msgstr ""
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
-#, fuzzy, c-format
+#, c-format
 msgid ""
-"This shortcut is already being used for the action '%s'. Which action do you "
-"want to use?"
+"This shortcut is already being used for the action '%s'. Which action do you"
+" want to use?"
 msgstr ""
-"አቋራጩ በጥቅም ላይ ውሏል!\n"
-"ለመጠቀም እንደሚፈልጉ ርግጠኛ ነዎት?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:54
 #: ../libxfce4kbd-private/xfce-shortcuts.c:57
@@ -118,7 +130,7 @@ msgstr ""
 #: ../libxfce4kbd-private/xfce-shortcuts.c:63
 #, c-format
 msgid "Use '%s'"
-msgstr ""
+msgstr "ይጠቀሙ '%s'"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:54
 #: ../libxfce4kbd-private/xfce-shortcuts.c:57
@@ -126,26 +138,22 @@ msgstr ""
 #: ../libxfce4kbd-private/xfce-shortcuts.c:63
 #, c-format
 msgid "Keep '%s'"
-msgstr ""
+msgstr "ያስቀምጡ '%s'"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
 #: ../libxfce4kbd-private/xfce-shortcuts.c:59
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "This shortcut is already being used for the command '%s'. Which action do "
 "you want to use?"
 msgstr ""
-"አቋራጩ በጥቅም ላይ ውሏል!\n"
-"ለመጠቀም እንደሚፈልጉ ርግጠኛ ነዎት?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "This shortcut is already being used by the action '%s'. Which action do you "
 "want to use?"
 msgstr ""
-"አቋራጩ በጥቅም ላይ ውሏል!\n"
-"ለመጠቀም እንደሚፈልጉ ርግጠኛ ነዎት?"
 
 #. This shortcut already exists in the provider, we don't want it twice
 #. Warn the user
@@ -163,431 +171,394 @@ msgstr ""
 msgid "Conflicting actions for %s"
 msgstr ""
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:189
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcuts.c:186
 msgid "This shortcut is already being used for something else."
 msgstr ""
-"አቋራጩ በጥቅም ላይ ውሏል!\n"
-"ለመጠቀም እንደሚፈልጉ ርግጠኛ ነዎት?"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:209
-#, fuzzy
 msgid "Window Manager Action Shortcut"
-msgstr "የሸፍሲ 4 የመስኮት አስተዳዳሪ ስየማዎች"
+msgstr ""
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:212
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:226
-#, fuzzy
 msgid "action"
-msgstr "በስራላይ"
+msgstr "ተግባር"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:216
-#, fuzzy
 msgid "Command Shortcut"
-msgstr "አቋራጭ ሰይም"
+msgstr "የ ትእዛዝ አቋራጭ"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:219
-#, fuzzy
 msgid "command"
-msgstr "ትዕዛዝ"
+msgstr "ትእዛዝ:"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:223
-#, fuzzy
 msgid "Shortcut"
-msgstr "አቋራጭ የለም"
+msgstr "አቋራጭ"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:267
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:247
+msgid "_Cancel"
+msgstr "_መሰረዣ"
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:275
 #, c-format
 msgid "Press now the keyboard keys you want to use to trigger the %s '%s'."
 msgstr ""
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:291
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:299
 msgid "Shortcut:"
-msgstr "አቋራጭ የለም"
+msgstr "አቋራጭ:"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:296
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:475
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:304
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:483
 msgid "No keys pressed yet, proceed."
 msgstr ""
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:378
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:386
 msgid "Could not grab the keyboard."
 msgstr ""
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:33
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:36
 msgid "Window operations menu"
 msgstr "የመስኮት ስራ ምናሌ"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:34
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:37
 msgid "Up"
-msgstr ""
+msgstr "ወደ ላይ"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:35
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:38
 msgid "Down"
-msgstr ""
+msgstr "ወደ ታች"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:36
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:39
 msgid "Left"
-msgstr "ግራ"
+msgstr "በ ግራ"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:37
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:40
 msgid "Right"
-msgstr "ቀኝ"
+msgstr "በ ቀኝ"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:38
-msgid "Cancel"
-msgstr "ሰርዝ"
-
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:39
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:42
 msgid "Cycle windows"
 msgstr "መስኮትን ፈትሽ"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:40
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:43
 msgid "Cycle windows (Reverse)"
-msgstr "መስኮትን ፈትሽ"
+msgstr ""
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:41
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:44
 msgid "Switch window for same application"
-msgstr "መስኮቱን ወደ%d ገበታ ውሰድ"
+msgstr ""
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:42
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:45
 msgid "Switch application"
 msgstr ""
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:43
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:46
 msgid "Close window"
-msgstr "መስኮት ዝጋ"
+msgstr "መስኮት መዝጊያ"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:44
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:47
 msgid "Maximize window horizontally"
-msgstr "መስኮትን አግድም አተልቅ"
+msgstr "መስኮት በ አግድም ማሳደጊያ"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:45
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:48
 msgid "Maximize window vertically"
-msgstr "መስኮትን ሽቅብ አተልቅ"
+msgstr "መስኮት በ ቁመት ማሳደጊያ"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:46
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:49
 msgid "Maximize window"
-msgstr "መስኮትን አተልቅ"
+msgstr "መስኮት ማሳደጊያ"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:47
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:50
 msgid "Hide window"
-msgstr "መስኮትን ደብቅ"
+msgstr "መስኮት መደበቂያ"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:48
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:51
 msgid "Move window"
-msgstr "መስኮትን ወደላይ ውሰድ"
+msgstr "መስኮት ማንቀሳቀሻ"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:49
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:52
 msgid "Resize window"
-msgstr "መስኮትን ወደላይ መጥን"
+msgstr "መስኮት እንደገና መመጠኛ"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:50
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:53
 msgid "Shade window"
-msgstr "መስኮትን አጥላ"
+msgstr "የ መስኮት ጥላ"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:51
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:54
 msgid "Stick window"
 msgstr "መስኮትን ሰካ"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:52
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:55
 msgid "Raise window"
 msgstr "መስኮትን ከፍ አድርግ"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:53
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:56
 msgid "Lower window"
 msgstr "መስኮትን ዝቅ አድርግ"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:54
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:57
 msgid "Raise or lower window"
-msgstr "መስኮትን ከፍ አድርግ"
+msgstr "መስኮት ከፍ ወይንም ዝቅ ማድረጊያ"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:55
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:58
 msgid "Fill window"
-msgstr "መስኮትን ደብቅ"
+msgstr "መስኮት መሙያ"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:56
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:59
 msgid "Fill window horizontally"
-msgstr "መስኮትን አግድም አተልቅ"
+msgstr "መስኮት በ አግድም መሙያ"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:57
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:60
 msgid "Fill window vertically"
-msgstr "መስኮትን ሽቅብ አተልቅ"
+msgstr "መስኮት በ ቁመት መሙያ"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:58
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:61
 msgid "Toggle above"
-msgstr ""
+msgstr "ከ ላይ መቀያየሪያ"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:59
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:62
 msgid "Toggle fullscreen"
 msgstr "ሙሉ-ስክሪን አድርግ"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:60
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:63
 msgid "Move window to upper workspace"
 msgstr "መስኮቱን ወደላይኛው የስራ ገበታ ውሰድ"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:61
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:64
 msgid "Move window to bottom workspace"
 msgstr "መስኮቱን ወደታችናው የስራ ገበታ ውሰድ"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:62
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:65
 msgid "Move window to left workspace"
 msgstr "መስኮቱን ወደግራ የስራ ገበታ ውሰድ"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:63
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:66
 msgid "Move window to right workspace"
 msgstr "መስኮቱን ወደቀኝ የስራ ገበታ ውሰድ"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:64
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:67
 msgid "Move window to previous workspace"
 msgstr "መስኮቱን ወደቀድሞው የስራ ገበታ ውሰድ"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:65
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:68
 msgid "Move window to next workspace"
 msgstr "መስኮቱን ወደሚቀጥለው የስራ ገበታ ውሰድ"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:66
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:69
 msgid "Move window to workspace 1"
-msgstr "መስኮቱን ወደ%d ገበታ ውሰድ"
+msgstr "መስኮቱን ወደ ስራ ቦታ 1 ማንቀሳቀሻ"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:67
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:70
 msgid "Move window to workspace 2"
-msgstr "መስኮቱን ወደ%d ገበታ ውሰድ"
+msgstr "መስኮቱን ወደ ስራ ቦታ 2 ማንቀሳቀሻ"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:68
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:71
 msgid "Move window to workspace 3"
-msgstr "መስኮቱን ወደ%d ገበታ ውሰድ"
+msgstr "መስኮቱን ወደ ስራ ቦታ 3 ማንቀሳቀሻ"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:69
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:72
 msgid "Move window to workspace 4"
-msgstr "መስኮቱን ወደ%d ገበታ ውሰድ"
+msgstr "መስኮቱን ወደ ስራ ቦታ 4 ማንቀሳቀሻ"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:70
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:73
 msgid "Move window to workspace 5"
-msgstr "መስኮቱን ወደ%d ገበታ ውሰድ"
+msgstr "መስኮቱን ወደ ስራ ቦታ 5 ማንቀሳቀሻ"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:71
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:74
 msgid "Move window to workspace 6"
-msgstr "መስኮቱን ወደ%d ገበታ ውሰድ"
+msgstr "መስኮቱን ወደ ስራ ቦታ 6 ማንቀሳቀሻ"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:72
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:75
 msgid "Move window to workspace 7"
-msgstr "መስኮቱን ወደ%d ገበታ ውሰድ"
+msgstr "መስኮቱን ወደ ስራ ቦታ 7 ማንቀሳቀሻ"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:73
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:76
 msgid "Move window to workspace 8"
-msgstr "መስኮቱን ወደ%d ገበታ ውሰድ"
+msgstr "መስኮቱን ወደ ስራ ቦታ 8 ማንቀሳቀሻ"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:74
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:77
 msgid "Move window to workspace 9"
-msgstr "መስኮቱን ወደ%d ገበታ ውሰድ"
+msgstr "መስኮቱን ወደ ስራ ቦታ 9 ማንቀሳቀሻ"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:75
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:78
 msgid "Move window to workspace 10"
-msgstr "መስኮቱን ወደ%d ገበታ ውሰድ"
+msgstr "መስኮቱን ወደ ስራ ቦታ 10 ማንቀሳቀሻ"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:76
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:79
 msgid "Move window to workspace 11"
-msgstr "መስኮቱን ወደ%d ገበታ ውሰድ"
+msgstr "መስኮቱን ወደ ስራ ቦታ 11 ማንቀሳቀሻ"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:77
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:80
 msgid "Move window to workspace 12"
-msgstr "መስኮቱን ወደ%d ገበታ ውሰድ"
+msgstr "መስኮቱን ወደ ስራ ቦታ 12 ማንቀሳቀሻ"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:78
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:81
 msgid "Tile window to the top"
-msgstr "መስኮቱን ወደግራ የስራ ገበታ ውሰድ"
+msgstr ""
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:79
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:82
 msgid "Tile window to the bottom"
-msgstr "መስኮቱን ወደታችናው የስራ ገበታ ውሰድ"
+msgstr ""
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:80
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:83
 msgid "Tile window to the left"
-msgstr "መስኮትን ወደግራ መጥን"
+msgstr ""
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:81
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:84
 msgid "Tile window to the right"
-msgstr "መስኮትን ወደቀኝ መጥን"
+msgstr ""
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:82
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:85
+msgid "Tile window to the top-left"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:86
+msgid "Tile window to the top-right"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:87
+msgid "Tile window to the bottom-left"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:88
+msgid "Tile window to the bottom-right"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:89
 msgid "Show desktop"
-msgstr "ገበታን አሳይ"
+msgstr "ዴስክቶፕ ማሳያ"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:83
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:90
 msgid "Upper workspace"
-msgstr "የላይኛው ስራ ቦታ"
+msgstr "የ ላይኛው የ ስራ ቦታ"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:84
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:91
 msgid "Bottom workspace"
-msgstr "የታችኛው ስራ ቦታ"
+msgstr "የ ታችኛው የ ስራ ቦታ"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:85
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:92
 msgid "Left workspace"
-msgstr "የግራ ስራ ቦታ"
+msgstr "የ ግራ የ ስራ ቦታ"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:86
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:93
 msgid "Right workspace"
-msgstr "የቀኝ ስራ ቦታ"
+msgstr "የ ቀኝ የ ስራ ቦታ"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:87
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:94
 msgid "Previous workspace"
-msgstr "የቀድሞው ስራ ቦታ"
+msgstr "ያለፈው የ ስራ ቦታ"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:88
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:95
 msgid "Next workspace"
-msgstr "የሚቀጥለው ስራ ቦታ"
+msgstr "የሚቀጥለው የ ስራ ቦታ"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:89
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:96
 msgid "Workspace 1"
-msgstr "የስራ ቦታ %i"
+msgstr "የ ስራ ቦታ 1"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:90
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:97
 msgid "Workspace 2"
-msgstr "የስራ ቦታ %i"
+msgstr "የ ስራ ቦታ 2"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:91
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:98
 msgid "Workspace 3"
-msgstr "የስራ ቦታ %i"
+msgstr "የ ስራ ቦታ 3 "
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:92
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:99
 msgid "Workspace 4"
-msgstr "የስራ ቦታ %i"
+msgstr "የ ስራ ቦታ 4 "
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:93
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:100
 msgid "Workspace 5"
-msgstr "የስራ ቦታ %i"
+msgstr "የ ስራ ቦታ 5 "
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:94
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:101
 msgid "Workspace 6"
-msgstr "የስራ ቦታ %i"
+msgstr "የ ስራ ቦታ 6 "
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:95
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:102
 msgid "Workspace 7"
-msgstr "የስራ ቦታ %i"
+msgstr "የ ስራ ቦታ 7 "
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:96
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:103
 msgid "Workspace 8"
-msgstr "የስራ ቦታ %i"
+msgstr "የ ስራ ቦታ 8 "
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:97
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:104
 msgid "Workspace 9"
-msgstr "የስራ ቦታ %i"
+msgstr "የ ስራ ቦታ 9 "
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:98
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:105
 msgid "Workspace 10"
-msgstr "የስራ ቦታ %i"
+msgstr "የ ስራ ቦታ 10 "
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:99
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:106
 msgid "Workspace 11"
-msgstr "የስራ ቦታ %i"
+msgstr "የ ስራ ቦታ 11 "
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:100
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:107
 msgid "Workspace 12"
-msgstr "የስራ ቦታ %i"
+msgstr "የ ስራ ቦታ 12 "
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:101
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:108
 msgid "Add workspace"
-msgstr "የስራ ቦታ ጨምር"
+msgstr "የ ስራ ቦታ መጨመሪያ"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:102
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:109
 msgid "Add adjacent workspace"
-msgstr "የስራ ቦታ ጨምር"
+msgstr ""
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:103
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:110
 msgid "Delete last workspace"
-msgstr "የስራ ቦታ ሰርዝ"
+msgstr ""
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:104
-#, fuzzy
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:111
 msgid "Delete active workspace"
-msgstr "የስራ ቦታ ሰርዝ"
+msgstr ""
 
-#: ../glade/libxfce4ui.xml.in.h:1
-#, fuzzy
+#: ../glade/libxfce4ui.xml.in.h:1 ../glade/libxfce4ui-2.xml.in.h:1
 msgid "Titled Dialog"
-msgstr "የአርዕስት ፊደል-ቅርጽ"
+msgstr ""
 
-#: ../glade/libxfce4ui.xml.in.h:2
-#, fuzzy
+#: ../glade/libxfce4ui.xml.in.h:2 ../glade/libxfce4ui-2.xml.in.h:2
 msgid "Subtitle"
-msgstr "አርዕስት"
+msgstr "ንዑስ አርእስት"
 
-#: ../glade/libxfce4ui.xml.in.h:3
-#, fuzzy
+#: ../glade/libxfce4ui.xml.in.h:3 ../glade/libxfce4ui-2.xml.in.h:3
 msgid "Xfce 4 Widgets"
-msgstr "የሸፍሲ 4 የመስኮት አስተዳዳሪ ስየማዎች"
+msgstr ""
 
 #: ../xfce4-about/main.c:52
 msgid "Version information"
-msgstr ""
+msgstr "የ እትም መረጃ"
 
 #: ../xfce4-about/main.c:70
 msgid "Window Manager"
 msgstr "ማስኮት አስተዳዳሪ"
 
 #: ../xfce4-about/main.c:71
-#, fuzzy
 msgid "Handles the placement of windows on the screen."
-msgstr "ሲመጠን የመስኮቱ ይዘት ይታይ"
+msgstr ""
 
 #: ../xfce4-about/main.c:74
 msgid "Panel"
-msgstr ""
+msgstr "ክፍል"
 
 #: ../xfce4-about/main.c:75
 msgid ""
-"Program launchers, window buttons, applications menu, workspace switcher and "
-"more."
+"Program launchers, window buttons, applications menu, workspace switcher and"
+" more."
 msgstr ""
 
 #: ../xfce4-about/main.c:79
-#, fuzzy
 msgid "Desktop Manager"
-msgstr "ማስኮት አስተዳዳሪ"
+msgstr "የ ዴስክቶፕ አስተዳዳሪ "
 
 #: ../xfce4-about/main.c:80
 msgid ""
@@ -596,9 +567,8 @@ msgid ""
 msgstr ""
 
 #: ../xfce4-about/main.c:84
-#, fuzzy
 msgid "File Manager "
-msgstr "ማስኮት አስተዳዳሪ"
+msgstr "የ ፋይል አስተዳዳሪ"
 
 #: ../xfce4-about/main.c:85
 msgid ""
@@ -607,9 +577,8 @@ msgid ""
 msgstr ""
 
 #: ../xfce4-about/main.c:89
-#, fuzzy
 msgid "Session Manager"
-msgstr "ማስኮት አስተዳዳሪ"
+msgstr "የ ክፍለ ጊዜ አስተዳዳሪ"
 
 #: ../xfce4-about/main.c:90
 msgid ""
@@ -619,7 +588,7 @@ msgstr ""
 
 #: ../xfce4-about/main.c:94
 msgid "Setting System"
-msgstr ""
+msgstr "ስርአት ማሰናጃ"
 
 #: ../xfce4-about/main.c:95
 msgid ""
@@ -629,7 +598,7 @@ msgstr ""
 
 #: ../xfce4-about/main.c:99
 msgid "Application Finder"
-msgstr ""
+msgstr "መተግበሪያ ፈላጊ"
 
 #: ../xfce4-about/main.c:100
 msgid ""
@@ -660,9 +629,9 @@ msgstr ""
 
 #: ../xfce4-about/main.c:142
 msgid ""
-"Xfce components are licensed under free or open source licences; GPL or BSDL "
-"for applications and LGPL or BSDL for libraries. Look at the documentation, "
-"the source code or the Xfce website (http://www.xfce.org) for more "
+"Xfce components are licensed under free or open source licences; GPL or BSDL"
+" for applications and LGPL or BSDL for libraries. Look at the documentation,"
+" the source code or the Xfce website (http://www.xfce.org) for more "
 "information."
 msgstr ""
 
@@ -674,23 +643,23 @@ msgstr ""
 msgid "The Xfce Development Team"
 msgstr ""
 
-#: ../xfce4-about/main.c:262
+#: ../xfce4-about/main.c:261
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
 "on <http://bugzilla.xfce.org> ."
 msgstr ""
 
-#: ../xfce4-about/main.c:266
+#: ../xfce4-about/main.c:265
 msgid "Thanks to all who helped making this software available!"
 msgstr ""
 
-#: ../xfce4-about/main.c:283
+#: ../xfce4-about/main.c:282
 msgid ""
 "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
 msgstr ""
 
-#: ../xfce4-about/main.c:288
+#: ../xfce4-about/main.c:287
 msgid ""
 "The libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs and exo packages are "
 "distributed under the terms of the GNU Library General Public License as "
@@ -698,88 +667,86 @@ msgid ""
 "or (at your option) any later version."
 msgstr ""
 
-#: ../xfce4-about/main.c:295
+#: ../xfce4-about/main.c:294
 msgid ""
-"The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-"
-"settings, xfce-utils, xfconf, xfdesktop and xfwm4 are distributed under the "
-"terms of the GNU General Public License as published by the Free Software "
-"Foundation; either version 2 of the License, or (at your option) any later "
-"version."
+"The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, "
+"xfce4-settings, xfce-utils, xfconf, xfdesktop and xfwm4 are distributed "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version."
 msgstr ""
 
-#: ../xfce4-about/main.c:442
+#: ../xfce4-about/main.c:441
 #, c-format
 msgid "Type '%s --help' for usage information."
 msgstr ""
 
-#: ../xfce4-about/main.c:448
+#: ../xfce4-about/main.c:447
 msgid "Unable to initialize GTK+."
 msgstr ""
 
-#: ../xfce4-about/main.c:457
+#: ../xfce4-about/main.c:456
 msgid "The Xfce development team. All rights reserved."
 msgstr ""
 
-#: ../xfce4-about/main.c:458
+#: ../xfce4-about/main.c:457
 #, c-format
 msgid "Please report bugs to <%s>."
-msgstr ""
+msgstr "እባክዎን ችግሩን ያሳውቁን ለ <%s>."
 
 #. I18N: date/time the translators list was updated
-#: ../xfce4-about/main.c:461
+#: ../xfce4-about/main.c:460
 #, c-format
 msgid "Translators list from %s."
 msgstr ""
 
-#: ../xfce4-about/main.c:471
+#: ../xfce4-about/main.c:470
 msgid "Failed to load interface"
 msgstr ""
 
 #. I18N: first %s will be replaced by the version, second by
 #. * the name of the distribution (--with-vendor-info=NAME)
-#: ../xfce4-about/main.c:485
+#: ../xfce4-about/main.c:484
 #, c-format
 msgid "Version %s, distributed by %s"
 msgstr ""
 
 #. I18N: %s will be replaced by the Xfce version number
-#: ../xfce4-about/main.c:489
-#, fuzzy, c-format
+#: ../xfce4-about/main.c:488
+#, c-format
 msgid "Version %s"
-msgstr "%s ( %s)"
+msgstr "እትም %s"
 
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
 #. },
-#: ../xfce4-about/contributors.h:121
+#: ../xfce4-about/contributors.h:128
 msgid "Core developers"
 msgstr ""
 
-#: ../xfce4-about/contributors.h:124
+#: ../xfce4-about/contributors.h:131
 msgid "Active contributors"
 msgstr ""
 
-#: ../xfce4-about/contributors.h:127
+#: ../xfce4-about/contributors.h:134
 msgid "Servers maintained by"
 msgstr ""
 
-#: ../xfce4-about/contributors.h:130
+#: ../xfce4-about/contributors.h:137
 msgid "Goodies supervision"
 msgstr ""
 
-#: ../xfce4-about/contributors.h:133
+#: ../xfce4-about/contributors.h:140
 msgid "Translations supervision"
 msgstr ""
 
-#: ../xfce4-about/contributors.h:136
-#, fuzzy
+#: ../xfce4-about/contributors.h:143
 msgid "Translators"
-msgstr "ብርሃን አሳላፊ"
+msgstr "ተርጓሚዎች"
 
-#: ../xfce4-about/contributors.h:139
-#, fuzzy
+#: ../xfce4-about/contributors.h:146
 msgid "Previous contributors"
-msgstr "የቀድሞው ስራ ቦታ"
+msgstr ""
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:1
 msgid "About Xfce"
@@ -799,24 +766,40 @@ msgstr "ስለ"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:3
 msgid "Credits"
-msgstr ""
+msgstr "ምስጋና"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:4
 msgid "GPL"
-msgstr ""
+msgstr "GPL"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:5
 msgid "LGPL"
-msgstr ""
+msgstr "LGPL"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:6
 msgid "BSD"
-msgstr ""
+msgstr "BSD"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:7
 msgid "Copyright"
-msgstr ""
+msgstr "የ ቅጂ መብት"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:8
 msgid "License"
 msgstr "ፈቃድ"
+
+#: ../tests/test-ui.c:138
+#, c-format
+msgid ""
+"A file named \"%s\" already exists in this directory, the file hasn't been "
+"added."
+msgstr ""
+
+#: ../tests/test-ui.c:149
+msgid "Failed to migrate the old panel configuration"
+msgstr ""
+
+#: ../tests/test-ui.c:202 ../tests/test-ui.c:222 ../tests/test-ui.c:251
+#: ../tests/test-ui.c:273
+msgid "Customize settings stored by Xfconf"
+msgstr ""
