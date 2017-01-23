@@ -3,13 +3,13 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Seong-ho Cho <darkcircle.0426@gmail.com>, 2013-2016
+# Seong-ho Cho <darkcircle.0426@gmail.com>, 2013-2017
 msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-06-09 00:30+0200\n"
-"PO-Revision-Date: 2016-07-02 12:45+0000\n"
+"PO-Revision-Date: 2017-01-23 00:55+0000\n"
 "Last-Translator: Seong-ho Cho <darkcircle.0426@gmail.com>\n"
 "Language-Team: Korean (http://www.transifex.com/xfce/libxfce4ui/language/ko/)\n"
 "MIME-Version: 1.0\n"
@@ -107,7 +107,7 @@ msgstr "세션 관리자로 연결하는데 실패했습니다: %s"
 #: ../libxfce4ui/xfce-sm-client.c:1617
 #, c-format
 msgid "Session manager did not return a valid client id"
-msgstr "세션 관리자가 유효한 클라이언트 ID를 반환하지 않았습니다"
+msgstr "세션 관리자에서 올바른 클라이언트 ID를 반환하지 않았습니다"
 
 #. print warning for user
 #: ../libxfce4ui/xfce-spawn.c:409
@@ -153,7 +153,7 @@ msgstr "이 바로 가기는 이미 명령 '%s'에서 사용하고 있습니다.
 msgid ""
 "This shortcut is already being used by the action '%s'. Which action do you "
 "want to use?"
-msgstr "이 바로 가기는 이미 '%s' 동작이 사용하고 있습니다. 어떤 동작을 사용하시렵니까?"
+msgstr "이 바로 가기는 이미 '%s' 동작에서 사용하고 있습니다. 어떤 동작을 사용하시렵니까?"
 
 #. This shortcut already exists in the provider, we don't want it twice
 #. Warn the user
@@ -356,47 +356,47 @@ msgstr "작업 공간 1로 창 이동"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:70
 msgid "Move window to workspace 2"
-msgstr "워크스페이스 2로 창 이동"
+msgstr "작업 공간 2로 창 이동"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:71
 msgid "Move window to workspace 3"
-msgstr "워크스페이스 3으로 창 이동"
+msgstr "작업 공간 3으로 창 이동"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:72
 msgid "Move window to workspace 4"
-msgstr "워크스페이스 4로 창 이동"
+msgstr "작업 공간 4로 창 이동"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:73
 msgid "Move window to workspace 5"
-msgstr "워크스페이스 5로 창 이동"
+msgstr "작업 공간 5로 창 이동"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:74
 msgid "Move window to workspace 6"
-msgstr "워크스페이스 6으로 창 이동"
+msgstr "작업 공간 6으로 창 이동"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:75
 msgid "Move window to workspace 7"
-msgstr "워크스페이스 7로 창 이동"
+msgstr "작업 공간 7로 창 이동"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:76
 msgid "Move window to workspace 8"
-msgstr "워크스페이스 8로 창 이동"
+msgstr "작업 공간 8로 창 이동"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:77
 msgid "Move window to workspace 9"
-msgstr "워크스페이스 9로 창 이동"
+msgstr "작업 공간 9로 창 이동"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:78
 msgid "Move window to workspace 10"
-msgstr "워크스페이스 10으로 창 이동"
+msgstr "작업 공간 10으로 창 이동"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:79
 msgid "Move window to workspace 11"
-msgstr "워크스페이스 11로 창 이동"
+msgstr "작업 공간 11로 창 이동"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:80
 msgid "Move window to workspace 12"
-msgstr "워크스페이스 12로 창 이동"
+msgstr "작업 공간 12로 창 이동"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:81
 msgid "Tile window to the top"
