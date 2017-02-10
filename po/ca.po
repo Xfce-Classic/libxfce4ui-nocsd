@@ -6,14 +6,15 @@
 # Carles Muñoz Gorriz <carlesmu@internautas.org>, 2013
 # Carles Muñoz Gorriz <carlesmu@internautas.org>, 2013
 # Davidmp <medipas@gmail.com>, 2015
-# Robert Antoni Buj i Gelonch <rbuj@fedoraproject.org>, 2016
+# Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>, 2017
+# Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-06-09 00:30+0200\n"
-"PO-Revision-Date: 2016-06-09 05:51+0000\n"
-"Last-Translator: Robert Antoni Buj i Gelonch <rbuj@fedoraproject.org>\n"
+"PO-Revision-Date: 2017-02-10 06:32+0000\n"
+"Last-Translator: Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>\n"
 "Language-Team: Catalan (http://www.transifex.com/xfce/libxfce4ui/language/ca/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -247,11 +248,11 @@ msgstr "Dreta"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:42
 msgid "Cycle windows"
-msgstr "Finestres de cercles"
+msgstr "Recorre les finestres"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:43
 msgid "Cycle windows (Reverse)"
-msgstr "Finestres de cercles (invers)"
+msgstr "Recorre les finestres (invers)"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:44
 msgid "Switch window for same application"
