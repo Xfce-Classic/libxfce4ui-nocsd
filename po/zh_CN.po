@@ -7,7 +7,8 @@
 # Chris K. Zhang <plutino@gmail.com>, 2009
 # Hunt Xu <mhuntxu@gmail.com>, 2009-2010,2012
 # Levi Zhou <congzhou821@gmail.com>, 2016
-# Mingcong Bai <jeffbai@aosc.xyz>, 2016
+# Mingcong Bai <jeffbai@aosc.xyz>, 2015-2016
+# Xiaobo Zhou <zhouxiaobo.500@gmail.com>, 2017
 # 玉堂白鹤 <yjwork@qq.com>, 2015
 # Mingcong Bai <jeffbai@aosc.xyz>, 2015
 msgid ""
@@ -15,8 +16,8 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-06-09 00:30+0200\n"
-"PO-Revision-Date: 2016-08-07 03:49+0000\n"
-"Last-Translator: Mingcong Bai <jeffbai@aosc.xyz>\n"
+"PO-Revision-Date: 2017-02-13 14:41+0000\n"
+"Last-Translator: Xiaobo Zhou <zhouxiaobo.500@gmail.com>\n"
 "Language-Team: Chinese (China) (http://www.transifex.com/xfce/libxfce4ui/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -26,7 +27,7 @@ msgstr ""
 
 #: ../libxfce4ui/xfce-dialogs.c:100
 msgid "Failed to open web browser for online documentation"
-msgstr "无法打开网络浏览器获取在线文档"
+msgstr "无法打开网络浏览器以获取在线文档"
 
 #: ../libxfce4ui/xfce-dialogs.c:254
 #, c-format
@@ -680,7 +681,7 @@ msgid ""
 "under the terms of the GNU General Public License as published by the Free "
 "Software Foundation; either version 2 of the License, or (at your option) "
 "any later version."
-msgstr "thunar、xfce4-appfinder、xfce4-panel、xfce4-session、xfce4-settings、xfce-utils、xfconf、xfdesktop 和 xfwm4 软件包以自由软件基金会发布的 GNU 通用公共许可协议的第二版或(您可以选择)更高版的方式发布。"
+msgstr "thunar、xfce4-appfinder、xfce4-panel、xfce4-session、xfce4-settings、xfce-utils、xfconf、xfdesktop 和 xfwm4 软件包以自由软件基金会发布的 GNU 通用公共许可协议的第二版或以（您可以选择的）更新版本以发布。"
 
 #: ../xfce4-about/main.c:441
 #, c-format
