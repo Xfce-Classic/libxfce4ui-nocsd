@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-06-09 00:30+0200\n"
-"PO-Revision-Date: 2017-02-13 14:41+0000\n"
+"PO-Revision-Date: 2017-02-14 07:11+0000\n"
 "Last-Translator: Xiaobo Zhou <zhouxiaobo.500@gmail.com>\n"
 "Language-Team: Chinese (China) (http://www.transifex.com/xfce/libxfce4ui/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
@@ -581,7 +581,7 @@ msgstr "文件管理器"
 msgid ""
 "A modern file manager for the Unix/Linux desktop, aiming to be easy-to-use "
 "and fast."
-msgstr "Unix/Linux 桌面的现代文件管理器，旨在易用和快速。"
+msgstr "一个 Unix/Linux 桌面平台上的现代文件管理器，旨在易用和快速。"
 
 #: ../xfce4-about/main.c:89
 msgid "Session Manager"
@@ -632,7 +632,7 @@ msgid ""
 "Xfce is also a development platform providing several libraries, that help "
 "programmers create applications that fit in well with the desktop "
 "environment."
-msgstr "Xfce 还是一个提供若干库文件，帮助程序员创建适合桌面环境的应用程序的开发平台。"
+msgstr "Xfce 还是一个提供若干库文件，帮助程序员创建适合桌面环境的应用程序之开发平台。"
 
 #: ../xfce4-about/main.c:142
 msgid ""
@@ -640,7 +640,7 @@ msgid ""
 " for applications and LGPL or BSDL for libraries. Look at the documentation,"
 " the source code or the Xfce website (http://www.xfce.org) for more "
 "information."
-msgstr "Xfce 组件以自由或开源许可协议授权；应用程序以 GPL 或 BSDL，库文件以 LGPL 或BSDL 授权。看文档、源代码或 Xfce 站点(http://www.xfce.org) 获取详情。"
+msgstr "Xfce 组件以自由或开源许可协议授权；应用程序以 GPL 或 BSDL，库文件以 LGPL 或BSDL 授权。浏览文档、源代码或 Xfce 站点(http://www.xfce.org) 以获取详情。"
 
 #: ../xfce4-about/main.c:149
 msgid "Thank you for your interest in Xfce."
@@ -658,13 +658,13 @@ msgstr "如果您知道此列表漏掉了某个人，请毫不犹豫地在 <http
 
 #: ../xfce4-about/main.c:265
 msgid "Thanks to all who helped making this software available!"
-msgstr "感谢所有帮助此软件发布的人们！"
+msgstr "感谢所有成就该软件的人们！"
 
 #: ../xfce4-about/main.c:282
 msgid ""
 "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
-msgstr "Xfce 4 版权归 Olivier Fourdan(fourdan@xfce.org)。不同组件的版权归它们各自的作者。"
+msgstr "Xfce 4 版权归 Olivier Fourdan(fourdan@xfce.org)所有。不同组件的版权归它们各自的作者所有。"
 
 #: ../xfce4-about/main.c:287
 msgid ""
@@ -672,7 +672,7 @@ msgid ""
 "distributed under the terms of the GNU Library General Public License as "
 "published by the Free Software Foundation; either version 2 of the License, "
 "or (at your option) any later version."
-msgstr "libxfce4ui、libxfcegui4、libxfce4util、thunar-vfs 和 exo 软件包以自由软件基金会发布的 GNU 宽通用公共许可协议第二版或(您可以选择)更高版的方式发布。"
+msgstr "libxfce4ui、libxfcegui4、libxfce4util、thunar-vfs 和 exo 软件包以自由软件基金会发布的 GNU 宽通用公共许可协议第二版或按（您可以选择的）更高版本发布。"
 
 #: ../xfce4-about/main.c:294
 msgid ""
@@ -681,7 +681,7 @@ msgid ""
 "under the terms of the GNU General Public License as published by the Free "
 "Software Foundation; either version 2 of the License, or (at your option) "
 "any later version."
-msgstr "thunar、xfce4-appfinder、xfce4-panel、xfce4-session、xfce4-settings、xfce-utils、xfconf、xfdesktop 和 xfwm4 软件包以自由软件基金会发布的 GNU 通用公共许可协议的第二版或以（您可以选择的）更新版本以发布。"
+msgstr "thunar、xfce4-appfinder、xfce4-panel、xfce4-session、xfce4-settings、xfce-utils、xfconf、xfdesktop 和 xfwm4 软件包以自由软件基金会发布的 GNU 通用公共许可协议的第二版或按（您可以选择的）更高版本发布。"
 
 #: ../xfce4-about/main.c:441
 #, c-format
@@ -753,7 +753,7 @@ msgstr "翻译者"
 
 #: ../xfce4-about/contributors.h:146
 msgid "Previous contributors"
-msgstr "上一贡献者"
+msgstr "先前的贡献者"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:1
 msgid "About Xfce"
@@ -804,9 +804,9 @@ msgstr "名叫%s的文件已经存在于该目录中，未能完成文件的添�
 
 #: ../tests/test-ui.c:149
 msgid "Failed to migrate the old panel configuration"
-msgstr "无法应用原面板配置"
+msgstr "无法应用至旧面板配置"
 
 #: ../tests/test-ui.c:202 ../tests/test-ui.c:222 ../tests/test-ui.c:251
 #: ../tests/test-ui.c:273
 msgid "Customize settings stored by Xfconf"
-msgstr "自定义xfconf设置"
+msgstr "自定义由xfconf所储存的设置"
