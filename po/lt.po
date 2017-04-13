@@ -4,13 +4,13 @@
 # 
 # Translators:
 # Algimantas Margevičius <margevicius.algimantas@gmail.com>, 2012
-# Moo, 2015-2016
+# Moo, 2015-2017
 msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-06-09 00:30+0200\n"
-"PO-Revision-Date: 2016-06-09 11:31+0000\n"
+"PO-Revision-Date: 2017-04-13 13:39+0000\n"
 "Last-Translator: Moo\n"
 "Language-Team: Lithuanian (http://www.transifex.com/xfce/libxfce4ui/language/lt/)\n"
 "MIME-Version: 1.0\n"
@@ -94,11 +94,11 @@ msgstr "Išjungti seanso tvarkymą"
 
 #: ../libxfce4ui/xfce-sm-client.c:1435
 msgid "Session management options"
-msgstr "Seanso tvarkymo parinktys"
+msgstr "Seanso tvarkymo parametrai"
 
 #: ../libxfce4ui/xfce-sm-client.c:1436
 msgid "Show session management options"
-msgstr "Rodyti seanso tvarkymo parinktis"
+msgstr "Rodyti seanso tvarkymo parametrus"
 
 #: ../libxfce4ui/xfce-sm-client.c:1611
 #, c-format
@@ -565,7 +565,7 @@ msgstr "Darbalaukio tvarkytuvė"
 msgid ""
 "Sets the background color or image with optional application menu or icons "
 "for minimized applications or launchers, devices and folders."
-msgstr "Nustato darbalaukio fono spalvą ar paveikslą su nebūtinu programų meniu ar piktogramomis suskleistoms programoms ar leistukais, įrenginiais ir aplankais."
+msgstr "Nustato darbalaukio fono spalvą arba paveikslą su nebūtinu programų meniu ar piktogramomis, skirtomis suskleistoms programoms, ar leistukais, įrenginiais ir aplankais."
 
 #: ../xfce4-about/main.c:84
 msgid "File Manager "
@@ -666,7 +666,7 @@ msgid ""
 "distributed under the terms of the GNU Library General Public License as "
 "published by the Free Software Foundation; either version 2 of the License, "
 "or (at your option) any later version."
-msgstr "Libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs ir exo paketai yra platinami pagal GNU General Public License kaip paskelbė Free Software Foundation; arba pagal licencijos versiją 2, ar (jūsų pasirinkimas) bet kurią vėlesnę versiją."
+msgstr "Libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs ir exo paketai yra platinami pagal GNU General Public License kaip paskelbė Free Software Foundation; arba pagal licencijos versiją 2, ar (jūsų pasirinkimu) bet kurią vėlesnę versiją."
 
 #: ../xfce4-about/main.c:294
 msgid ""
@@ -675,7 +675,7 @@ msgid ""
 "under the terms of the GNU General Public License as published by the Free "
 "Software Foundation; either version 2 of the License, or (at your option) "
 "any later version."
-msgstr "Paketai thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfce-utils, xfconf, xfdesktop ir xfwm4 yra platinami pagal GNU General Public License kaip paskelbė Free Software Foundation; arba pagal licencijos versiją 2, ar (jūsų pasirinkimas) bet kurią vėlesnę versiją."
+msgstr "Paketai thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfce-utils, xfconf, xfdesktop ir xfwm4 yra platinami pagal GNU General Public License kaip paskelbė Free Software Foundation; arba pagal licencijos versiją 2, ar (jūsų pasirinkimu) bet kurią vėlesnę versiją."
 
 #: ../xfce4-about/main.c:441
 #, c-format
