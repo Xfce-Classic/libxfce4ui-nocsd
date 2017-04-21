@@ -3,15 +3,15 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Aljoša Žagar <anthon.manix@gmail.com>, 2013
-# kernc, 2014,2016
+# Aljoša Žagar <anthon.manix@gmail.com>, 2013,2017
+# Ta Kernc, 2014,2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-08 00:30+0100\n"
-"PO-Revision-Date: 2016-02-29 18:03+0000\n"
-"Last-Translator: kernc\n"
+"POT-Creation-Date: 2016-06-09 00:30+0200\n"
+"PO-Revision-Date: 2017-04-21 12:11+0000\n"
+"Last-Translator: Aljoša Žagar <anthon.manix@gmail.com>\n"
 "Language-Team: Slovenian (http://www.transifex.com/xfce/libxfce4ui/language/sl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,50 +19,64 @@ msgstr ""
 "Language: sl\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n%100==4 ? 2 : 3);\n"
 
-#: ../libxfce4ui/xfce-dialogs.c:98
+#: ../libxfce4ui/xfce-dialogs.c:100
 msgid "Failed to open web browser for online documentation"
 msgstr "Ni bilo mogoče zagnati brskalnika za spletno dokumentacijo"
 
-#: ../libxfce4ui/xfce-dialogs.c:252
+#: ../libxfce4ui/xfce-dialogs.c:254
 #, c-format
 msgid "Do you want to read the %s manual online?"
 msgstr "Želite prebrati %s priročnik na spletu?"
 
-#: ../libxfce4ui/xfce-dialogs.c:254
+#: ../libxfce4ui/xfce-dialogs.c:256
 msgid "Do you want to read the manual online?"
 msgstr "Želite prebrati priročnik na spletu?"
 
-#: ../libxfce4ui/xfce-dialogs.c:257
+#: ../libxfce4ui/xfce-dialogs.c:259
 msgid "Online Documentation"
 msgstr "Spletna dokumentacija"
 
-#: ../libxfce4ui/xfce-dialogs.c:264
+#: ../libxfce4ui/xfce-dialogs.c:266
 msgid ""
 "You will be redirected to the documentation website where the help pages are"
 " maintained and translated."
 msgstr "Preusmerjeni boste na spletno stran dokumentacije, kjer se vzdržujejo in prevajajo strani pomoči."
 
-#: ../libxfce4ui/xfce-dialogs.c:278
+#: ../libxfce4ui/xfce-dialogs.c:280
 msgid "_Read Online"
 msgstr "P_reberi na spletu"
 
-#: ../libxfce4ui/xfce-dialogs.c:290
+#: ../libxfce4ui/xfce-dialogs.c:289
 msgid "_Always go directly to the online documentation"
 msgstr "_Vedno pojdi na spletno dokumentacijo"
 
-#: ../libxfce4ui/xfce-dialogs.c:334
+#: ../libxfce4ui/xfce-dialogs.c:337
 msgid "Information"
 msgstr "Podatki"
 
-#: ../libxfce4ui/xfce-dialogs.c:377
+#: ../libxfce4ui/xfce-dialogs.c:347 ../libxfce4ui/xfce-dialogs.c:390
+#: ../libxfce4ui/xfce-dialogs.c:434
+msgid "Close"
+msgstr "Zapri"
+
+#: ../libxfce4ui/xfce-dialogs.c:380
 msgid "Warning"
 msgstr "Opozorilo"
 
-#: ../libxfce4ui/xfce-dialogs.c:421
+#: ../libxfce4ui/xfce-dialogs.c:424
 msgid "Error"
 msgstr "Napaka"
 
-#: ../libxfce4ui/xfce-dialogs.c:494
+#: ../libxfce4ui/xfce-dialogs.c:483
+msgid "No"
+msgstr "Ne"
+
+#: ../libxfce4ui/xfce-dialogs.c:491
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:41
+msgid "Cancel"
+msgstr "Prekliči"
+
+#: ../libxfce4ui/xfce-dialogs.c:498 ../libxfce4ui/xfce-dialogs.c:506
 msgid "Question"
 msgstr "Vprašanje"
 
@@ -228,10 +242,6 @@ msgstr "Levo"
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:40
 msgid "Right"
 msgstr "Desno"
-
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:41
-msgid "Cancel"
-msgstr "Prekliči"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:42
 msgid "Cycle windows"
@@ -513,15 +523,15 @@ msgstr "Izbriši zadnjo delovno površino"
 msgid "Delete active workspace"
 msgstr "Izbriši dejavno delovno površino"
 
-#: ../glade/libxfce4ui.xml.in.h:1
+#: ../glade/libxfce4ui.xml.in.h:1 ../glade/libxfce4ui-2.xml.in.h:1
 msgid "Titled Dialog"
 msgstr "Naslovljeno pogovorno okno"
 
-#: ../glade/libxfce4ui.xml.in.h:2
+#: ../glade/libxfce4ui.xml.in.h:2 ../glade/libxfce4ui-2.xml.in.h:2
 msgid "Subtitle"
 msgstr "Podnapis"
 
-#: ../glade/libxfce4ui.xml.in.h:3
+#: ../glade/libxfce4ui.xml.in.h:3 ../glade/libxfce4ui-2.xml.in.h:3
 msgid "Xfce 4 Widgets"
 msgstr "Xfce 4 gradniki"
 
@@ -778,3 +788,19 @@ msgstr "Avtorske pravice"
 #: ../xfce4-about/xfce4-about-dialog.glade.h:8
 msgid "License"
 msgstr "Dovoljenje"
+
+#: ../tests/test-ui.c:138
+#, c-format
+msgid ""
+"A file named \"%s\" already exists in this directory, the file hasn't been "
+"added."
+msgstr "Datoteka z imenom \"%s\" že obstaja v tej mapi, datoteka ni bila dodana."
+
+#: ../tests/test-ui.c:149
+msgid "Failed to migrate the old panel configuration"
+msgstr "Ni bilo mogoče preseliti starih nastavitev pulta"
+
+#: ../tests/test-ui.c:202 ../tests/test-ui.c:222 ../tests/test-ui.c:251
+#: ../tests/test-ui.c:273
+msgid "Customize settings stored by Xfconf"
+msgstr "Prilagodi nastavitve, ki jih hrani Xfconf"
