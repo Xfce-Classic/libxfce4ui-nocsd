@@ -66,6 +66,29 @@ Useful convientent function to interact with the user using a
 @Returns: 
 
 
+<!-- ##### FUNCTION xfce_dialog_show_help ##### -->
+<para>
+
+</para>
+
+@parent:
+@component:
+@page:
+@offset:
+
+
+<!-- ##### FUNCTION xfce_dialog_show_help_with_version ##### -->
+<para>
+
+</para>
+
+@parent:
+@component:
+@page:
+@offset:
+@version:
+
+
 <!-- ##### FUNCTION xfce_dialog_show_info ##### -->
 <para>
 
