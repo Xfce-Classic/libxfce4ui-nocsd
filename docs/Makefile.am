@@ -4,7 +4,7 @@ AUTOMAKE_OPTIONS = 1.11
 DOC_MODULE=libxfce4ui
 
 # The top-level SGML file.
-DOC_MAIN_SGML_FILE=$(DOC_MODULE)-docs.sgml
+DOC_MAIN_SGML_FILE=$(DOC_MODULE)-docs.xml
 
 # Extra options to supply to gtkdoc-scan
 SCAN_OPTIONS=--deprecated-guards="XFCE_DISABLE_DEPRECATED"
