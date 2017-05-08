@@ -10,7 +10,7 @@
 <!ENTITY xfce-sm-client SYSTEM "xml/xfce-sm-client.xml">
 
 <!ENTITY version SYSTEM "version.xml">
-<!ENTITY date "Juli 2009">
+<!ENTITY date "May 2017">
 ]>
 
 <book id="index">
@@ -20,7 +20,7 @@
     <pubdate>&date;</pubdate>
 
     <copyright>
-      <year>2009</year>
+      <year>2017</year>
       <holder>The Xfce Development Team</holder>
     </copyright>
 
