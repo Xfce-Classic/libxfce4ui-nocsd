@@ -55,10 +55,23 @@ Structure for the #XfceTitledDialog.
 @title: 
 @parent: 
 @flags: 
-@first_button_text: 
+@first_button_text:
 @Varargs: 
 @Returns: 
 
+
+<!-- ##### FUNCTION xfce_titled_dialog_new_with_mixed_buttons ##### -->
+<para>
+
+</para>
+
+@title:
+@parent:
+@flags:
+@first_button_icon_name:
+@first_button_text:
+@Varargs:
+@Returns:
 
 <!-- ##### FUNCTION xfce_titled_dialog_get_subtitle ##### -->
 <para>

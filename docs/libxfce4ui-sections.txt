@@ -31,6 +31,8 @@ xfce_gtk_button_new_mixed
 xfce_gtk_frame_box_new
 xfce_gtk_frame_box_new_with_content
 xfce_gtk_window_center_on_active_screen
+xfce_widget_reparent
+xfce_gtk_menu_popup_until_mapped
 </SECTION>
 
 <SECTION>
@@ -54,6 +56,7 @@ XFCE_BUTTON_TYPE_PIXBUF
 XfceTitledDialog
 xfce_titled_dialog_new
 xfce_titled_dialog_new_with_buttons
+xfce_titled_dialog_new_with_mixed_buttons
 xfce_titled_dialog_get_subtitle
 xfce_titled_dialog_set_subtitle
 <SUBSECTION Standard>

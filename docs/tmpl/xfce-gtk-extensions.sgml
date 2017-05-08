@@ -61,3 +61,26 @@ dupplication.
 @window: 
 
 
+<!-- ##### FUNCTION xfce_widget_reparent ##### -->
+<para>
+
+</para>
+
+@widget:
+@new_parent:
+@Returns:
+
+
+<!-- ##### FUNCTION xfce_gtk_menu_popup_until_mapped ##### -->
+<para>
+
+</para>
+
+@menu:
+@parent_menu_shell:
+@parent_menu_item:
+@func:
+@data:
+@button:
+@activate_time:
+@Returns:
