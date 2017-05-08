@@ -32,7 +32,7 @@ Useful convientent function to interact with the user using a
 @primary_text: 
 @secondary_text: 
 @first_button_text: 
-@Varargs: 
+@...:
 @Returns: 
 
 
@@ -62,7 +62,7 @@ Useful convientent function to interact with the user using a
 @primary_text: 
 @secondary_text: 
 @first_button_text: 
-@Varargs: 
+@...:
 @Returns: 
 
 
@@ -74,7 +74,7 @@ Useful convientent function to interact with the user using a
 @parent: 
 @secondary_text: 
 @primary_format: 
-@Varargs: 
+@...:
 
 
 <!-- ##### FUNCTION xfce_dialog_show_warning ##### -->
@@ -85,7 +85,7 @@ Useful convientent function to interact with the user using a
 @parent: 
 @secondary_text: 
 @primary_format: 
-@Varargs: 
+@...:
 
 
 <!-- ##### FUNCTION xfce_dialog_show_error ##### -->
@@ -96,7 +96,7 @@ Useful convientent function to interact with the user using a
 @parent: 
 @error: 
 @primary_format: 
-@Varargs: 
+@...:
 
 
 <!-- ##### FUNCTION xfce_dialog_confirm ##### -->
@@ -109,7 +109,7 @@ Useful convientent function to interact with the user using a
 @confirm_label: 
 @secondary_text: 
 @primary_format: 
-@Varargs: 
+@...:
 @Returns: 
 
 
