@@ -10,7 +10,7 @@ SUBDIRS = \
 	po \
 	tests
 
-distuninstallcheck_listfiles = \ 
+distuninstallcheck_listfiles = \
 	find . -type f -print | grep -v ./share/icons/hicolor/icon-theme.cache
 
 distclean-local:
@@ -37,6 +37,7 @@ DISTCLEANFILES = \
 
 DISTCHECK_CONFIGURE_FLAGS = \
 	--enable-gtk-doc \
+	--disable-debug \
 	--disable-gladeui
 
 # vi:set ts=8 sw=8 noet ai nocindent syntax=automake:
