@@ -25,7 +25,7 @@ dnl # YOU ARE DOING.
 dnl ********************************************
 dnl *** Full debug support for GIT snapshots ***
 dnl ********************************************
-m4_define([libxfce4ui_debug_default], [ifelse(libxfce4ui_version_tag(), [git], [full], [minimum])])
+m4_define([libxfce4ui_debug_default], [ifelse(libxfce4ui_version_tag(), [git], [yes], [minimum])])
 
 dnl ***************************
 dnl *** Initialize autoconf ***
