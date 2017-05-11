@@ -20,6 +20,8 @@ libxfce4ui/libxfce4ui-2.pc
 libxfce4ui/libxfce4ui-config.h
 libxfce4ui/libxfce4ui-dialog-ui.h
 libxfce4ui/libxfce4ui-dialog-ui.ui~
+libxfce4ui/libxfce4ui-resources.c
+libxfce4ui/libxfce4ui-resources.h
 ltmain.sh
 m4/
 missing

@@ -43,8 +43,9 @@
 #include <libxfce4ui/libxfce4ui-alias.h>
 
 #if GTK_CHECK_VERSION (3, 0, 0)
-#include "libxfce4ui-dialog-ui.h"
+#include "libxfce4ui-resources.h"
 #endif
+
 
 static void
 xfce_dialog_show_help_auto_toggled (GtkWidget *button)
@@ -561,13 +562,8 @@ xfce_message_dialog_new_valist (GtkWindow   *parent,
   g_return_val_if_fail (primary_text != NULL || secondary_text != NULL, NULL);
   g_return_val_if_fail (parent == NULL || GTK_IS_WINDOW (parent), NULL);
 
-  gxml = gtk_builder_new();
-  if (!gtk_builder_add_from_string (gxml, xfce4ui_dialog_ui, xfce4ui_dialog_ui_length, &error))
-    {
-      g_printerr ("Failed to parse UI description: %s\n", error->message);
-      g_clear_error (&error);
-      return NULL;
-    }
+
+  gxml = gtk_builder_new_from_resource ("/org/xfce/libxfce4ui/libxfce4ui-dialog-ui.ui");
 
   dialog = GTK_WIDGET(gtk_builder_get_object(gxml, "xfce4ui-dialog"));
   label_box = GTK_WIDGET(gtk_builder_get_object(gxml, "label-box"));
