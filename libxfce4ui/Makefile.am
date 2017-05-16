@@ -84,10 +84,6 @@ pkgconfig_DATA = libxfce4ui-1.pc
 ##
 if ENABLE_GTK3_LIBRARY
 
-libxfce4ui_built_sources += \
-	libxfce4ui-resources.c \
-	libxfce4ui-resources.h
-
 libxfce4ui2_includedir = \
 	$(includedir)/xfce4/libxfce4ui-2/libxfce4ui
 
@@ -188,18 +184,19 @@ libxfce4ui-enum-types.c: $(libxfce4ui_enum_headers) Makefile
 	cp xgen-letc libxfce4ui-enum-types.c
 	rm -f xgen-letc
 
-if ENABLE_GTK3_LIBRARY
 LIBXFCE4UI_RESOURCE_FILES = \
 	libxfce4ui-dialog-ui.ui \
 	$(NULL)
+
+libxfce4ui_built_sources += \
+	libxfce4ui-resources.c \
+	libxfce4ui-resources.h
 
 libxfce4ui-resources.c: libxfce4ui.gresource.xml $(UI_FILES)
 	glib-compile-resources --target=$@ --sourcedir=$(srcdir) --generate-source --c-name libxfce4ui $(srcdir)/libxfce4ui.gresource.xml
 
 libxfce4ui-resources.h: libxfce4ui.gresource.xml
 	glib-compile-resources --target=$@ --sourcedir=$(srcdir) --generate-header --c-name libxfce4ui $(srcdir)/libxfce4ui.gresource.xml
-
-endif
 
 endif
 
