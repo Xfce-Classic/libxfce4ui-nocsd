@@ -1,3 +1,5 @@
+CLEANFILES =
+
 AM_CPPFLAGS = \
 	-I$(top_srcdir) \
 	-DDATADIR=\"$(datadir)\" \
@@ -117,6 +119,40 @@ libxfce4ui_2_la_LIBADD = \
 
 pkgconfig_DATA += libxfce4ui-2.pc
 
+include $(INTROSPECTION_MAKEFILE)
+INTROSPECTION_GIRS =
+INTROSPECTION_SCANNER_ENV = CC="$(CC)"
+INTROSPECTION_SCANNER_ARGS = \
+	--add-include-path=$(srcdir) \
+	--warn-all \
+	--identifier-prefix=xfce \
+	--identifier-prefix=Xfce \
+	--identifier-prefix=libxfce
+INTROSPECTION_COMPILER_ARGS = \
+	--includedir=$(srcdir) \
+	--includedir=.
+
+if HAVE_INTROSPECTION
+introspection_sources = $(filter-out %private.h %.c, $(libxfce4ui_2_la_SOURCES))
+
+libxfce4ui-2.gir: libxfce4ui-2.la Makefile
+libxfce4ui_2_gir_INCLUDES = GObject-2.0 GLib-2.0 Gtk-3.0 libxfce4util-1.0
+libxfce4ui_2_gir_CFLAGS = $(AM_CPPFLAGS)
+libxfce4ui_2_gir_LIBS = libxfce4ui-2.la
+libxfce4ui_2_gir_FILES = $(introspection_sources)
+libxfce4ui_2_gir_EXPORT_PACKAGES = libxfce4ui-2
+INTROSPECTION_GIRS += libxfce4ui-2.gir
+
+girdir = $(datadir)/gir-1.0
+gir_DATA = $(INTROSPECTION_GIRS)
+
+typelibdir = $(libdir)/girepository-1.0
+typelib_DATA = $(INTROSPECTION_GIRS:.gir=.typelib)
+
+CLEANFILES += $(gir_DATA) $(typelib_DATA)
+endif
+# endif HAVE_INTROSPECTION
+
 endif
 
 ##
@@ -129,7 +165,7 @@ endif
 ## files as part of the dist tarball.
 ##
 if MAINTAINER_MODE
-CLEANFILES = \
+CLEANFILES += \
 	actual-abi \
 	expected-abi
 

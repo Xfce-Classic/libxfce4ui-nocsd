@@ -56,6 +56,7 @@ docs/xml/
 *.la
 *.lo
 *.stamp
+tests/*.o
 libxfce4kbd-private/xfce-shortcuts-marshal.c
 libxfce4kbd-private/xfce-shortcuts-marshal.h
 libxfce4ui/libxfce4ui-alias.h
@@ -66,6 +67,8 @@ libxfce4ui/libxfce4ui-marshal.c
 libxfce4ui/libxfce4ui-marshal.h
 libxfce4ui/stamp-libxfce4ui-enum-types.h
 libxfce4ui/stamp-libxfce4ui-marshal.h
+libxfce4ui/libxfce4ui-2.gir
+libxfce4ui/libxfce4ui-2.typelib
 xfce4-about/about-dialog-ui.h
 xfce4-about/xfce4-about
 xfce4-about/xfce4-about.desktop
@@ -74,4 +77,6 @@ glade/libxfce4ui.xml
 glade/libxfce4ui-2.xml
 libxfce4ui-*.tar.bz2
 tests/test-ui-gtk2
+tests/test_ui_gtk2-test-ui.o
 tests/test-ui-gtk3
+tests/test_ui_gtk3-test-ui.o

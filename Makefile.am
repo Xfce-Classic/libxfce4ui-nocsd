@@ -1,5 +1,6 @@
 ACLOCAL_AMFLAGS = -I m4 ${ACLOCAL_FLAGS}
 
+
 SUBDIRS = \
 	libxfce4ui \
 	libxfce4kbd-private \
@@ -37,6 +38,7 @@ DISTCLEANFILES = \
 
 DISTCHECK_CONFIGURE_FLAGS = \
 	--enable-gtk-doc \
-	--disable-gladeui
+	--disable-gladeui \
+	--enable-introspection
 
 # vi:set ts=8 sw=8 noet ai nocindent syntax=automake:

@@ -138,6 +138,11 @@ XDT_CHECK_OPTIONAL_PACKAGE([GTK3],
                            [GTK+ 3 support])
 AM_CONDITIONAL([ENABLE_GTK3_LIBRARY], [test "x$GTK3_FOUND" = "xyes"])
 
+dnl ***************************************
+dnl *** Check for gobject-introspection ***
+dnl ***************************************
+GOBJECT_INTROSPECTION_CHECK([1.30.0])
+
 dnl *************************************************
 dnl *** Optional support for startup notification ***
 dnl *************************************************
