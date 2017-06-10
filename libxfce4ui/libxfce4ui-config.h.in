@@ -28,10 +28,43 @@
 
 G_BEGIN_DECLS
 
+/**
+ * LIBXFCE4UI_MAJOR_VERSION:
+ *
+ * A macro that evaluates to the major version of libxfce4ui, in a format
+ * that can be used by the C pre-processor.
+ *
+ */
 #define LIBXFCE4UI_MAJOR_VERSION (@LIBXFCE4UI_VERSION_MAJOR@)
+
+/**
+ * LIBXFCE4UI_MINOR_VERSION:
+ *
+ * A macro that evaluates to the minor version of libxfce4ui, in a format
+ * that can be used by the C pre-processor.
+ *
+ */
 #define LIBXFCE4UI_MINOR_VERSION (@LIBXFCE4UI_VERSION_MINOR@)
+
+/**
+ * LIBXFCE4UI_MICRO_VERSION:
+ *
+ * A macro that evaluates to the micro version of libxfce4ui, in a format
+ * that can be used by the C pre-processor.
+ *
+ */
 #define LIBXFCE4UI_MICRO_VERSION (@LIBXFCE4UI_VERSION_MICRO@)
 
+/**
+ * LIBXFCE4UI_CHECK_VERSION:
+ * @major : The major version of the library, i.e. @LIBXFCE4UI_VERSION_MAJOR@
+ * @minor : The minor version of the library, i.e. @LIBXFCE4UI_VERSION_MINOR@
+ * @micro : The micro release of the library, i.e. @LIBXFCE4UI_VERSION_MICRO@
+ *
+ * A macro to compare libxfce4ui versions to determine if a particular
+ * function is available.
+ *
+ */
 #define LIBXFCE4UI_CHECK_VERSION(major,minor,micro) \
   (LIBXFCE4UI_MAJOR_VERSION > (major) \
    || (LIBXFCE4UI_MAJOR_VERSION == (major) \

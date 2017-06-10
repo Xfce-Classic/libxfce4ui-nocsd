@@ -17,6 +17,17 @@
  * MA 02110-1301 USA
  */
 
+/**
+ * SECTION:xfce-titled-dialog
+ * @title: XfceTitledDialog
+ * @short_description: A titled dialog window
+ * @stability: Stable
+ * @include: libxfce4ui/libxfce4ui.h
+ *
+ * #XfceTitledDialog is a titled dialog window supporting an optional
+ * subtitle and mixed or pixbuf buttons.
+ **/
+
 #ifdef HAVE_CONFIG_H
 #include <config.h>
 #endif

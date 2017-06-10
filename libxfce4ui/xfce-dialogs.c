@@ -18,6 +18,18 @@
  * MA 02110-1301 USA
  */
 
+/**
+ * SECTION:xfce-dialogs
+ * @title: XfceDialogs
+ * @short_description: A collection of helper dialogs
+ * @stability: Stable
+ * @include: libxfce4ui/libxfce4ui.h
+ *
+ * Xfce-dialogs are a collection of helper dialogs to display
+ * the help dialog with link to the docs website, warning, info, and
+ * error dialogs and more.
+ **/
+
 #ifdef HAVE_CONFIG_H
 #include <config.h>
 #endif
@@ -533,7 +545,7 @@ xfce_dialog_confirm (GtkWindow   *parent,
  * See xfce_message_dialog_new(), this version takes a va_list for
  * language bindings to use.
  *
- * Returns: A new #GtkMessageDialog.
+ * Returns: (transfer full): A new #GtkMessageDialog.
  **/
 GtkWidget *
 xfce_message_dialog_new_valist (GtkWindow   *parent,
@@ -871,7 +883,7 @@ xfce_message_dialog_new_valist (GtkWindow   *parent,
  * </programlisting>
  * </example>
  *
- * Return value: A new #GtkMessageDialog.
+ * Return value: (transfer full): A new #GtkMessageDialog.
  **/
 GtkWidget *
 xfce_message_dialog_new (GtkWindow   *parent,

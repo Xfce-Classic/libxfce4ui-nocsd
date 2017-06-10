@@ -18,6 +18,16 @@
  * MA 02110-1301 USA
  */
 
+/**
+ * SECTION:xfce-gdk-extensions
+ * @title: Gdk Extensions
+ * @short_description: various extensions to Gdk
+ * @stability: Stable
+ * @include: libxfce4ui/libxfce4ui.h
+ *
+ * Common used functions that are not provided by the Gdk or Gdk-pixbuf library.
+ **/
+
 #ifdef HAVE_CONFIG_H
 #include <config.h>
 #endif
@@ -44,7 +54,7 @@
  * currently contains the pointer. If no active screen was found, the
  * default #GdkScreen is returned.
  *
- * Return value: the currently active #GdkScreen.
+ * Return value: (transfer full): the currently active #GdkScreen.
  **/
 GdkScreen *
 xfce_gdk_screen_get_active (gint *monitor_return)

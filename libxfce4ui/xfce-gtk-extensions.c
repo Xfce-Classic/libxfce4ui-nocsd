@@ -17,6 +17,16 @@
  * MA 02110-1301 USA
  */
 
+/**
+ * SECTION:xfce-gtk-extensions
+ * @title: Gtk Extensions
+ * @short_description: various extensions to Gtk+
+ * @stability: Stable
+ * @include: libxfce4ui/libxfce4ui.h
+ *
+ * Common used functions for GtkWidget's that are not provided by the Gtk+ library
+ **/
+
 #ifdef HAVE_CONFIG_H
 #include <config.h>
 #endif
@@ -47,7 +57,7 @@
  * when @label is %NULL a stock button will be created. This behaviour
  * is added for xfce_message_dialog_new().
  *
- * Return value: the newly created #GtkButton widget.
+ * Return value: (transfer full): the newly created #GtkButton widget.
  **/
 GtkWidget *
 xfce_gtk_button_new_mixed (const gchar *stock_id,
@@ -102,7 +112,7 @@ xfce_gtk_button_new_mixed (const gchar *stock_id,
  *
  * See also: xfce_gtk_frame_box_new_with_content().
  *
- * Return value: the newly created #GtkFrame widget.
+ * Return value: (transfer full): the newly created #GtkFrame widget.
  **/
 GtkWidget *
 xfce_gtk_frame_box_new (const gchar  *label,
@@ -152,7 +162,7 @@ xfce_gtk_frame_box_new (const gchar  *label,
  * Creates a widget with xfce_gtk_frame_box_new() and adds the
  * @content #GtkWidget to the frame.
  *
- * Return value: the newly created #GtkFrame widget.
+ * Return value: (transfer full): the newly created #GtkFrame widget.
  **/
 GtkWidget *
 xfce_gtk_frame_box_new_with_content (const gchar *label,
@@ -205,7 +215,7 @@ xfce_gtk_window_center_on_active_screen (GtkWindow *window)
  * @menu: a #GtkMenu.
  * @parent_menu_shell: the menu shell containing the triggering menu item, or %NULL.
  * @parent_menu_item: the menu item whose activation triggered the popup, or %NULL.
- * @func: a user supplied function used to position the menu, or %NULL.
+ * @func: (scope call): a user supplied function used to position the menu, or %NULL.
  * @data: user supplied data to be passed to func.
  * @button: the mouse button which was pressed to initiate the event.
  * @activate_time: the time at which the activation event occurred.

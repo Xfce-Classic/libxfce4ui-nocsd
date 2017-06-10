@@ -22,7 +22,7 @@
  * SECTION:xfce-sm-client
  * @title: XfceSMClient
  * @short_description: Session management client
- * @stability: Unstable
+ * @stability: Stable
  * @include: libxfce4ui/libxfce4ui.h
  *
  * #XfceSMClient is a session management client that speaks the X Session
@@ -1458,7 +1458,7 @@ xfce_sm_client_get_option_group(gint  argc,
  * this function or one of the xfce_sm_client_new_*() functions,
  * this will return the same instance.
  *
- * Returns: A new or existing #XfceSMClient
+ * Returns: (transfer full): A new or existing #XfceSMClient
  **/
 XfceSMClient *
 xfce_sm_client_get(void)
@@ -1488,7 +1488,7 @@ xfce_sm_client_get(void)
  * it is recommended that you use xfce_sm_client_get_option_group()
  * and xfce_sm_client_get() instead.
  *
- * Returns: A new #XfceSMClient instance
+ * Returns: (transfer full): A new #XfceSMClient instance
  **/
 XfceSMClient *
 xfce_sm_client_get_with_argv(gint argc,
@@ -1525,7 +1525,7 @@ xfce_sm_client_get_with_argv(gint argc,
  * if you are using Gtk or Glib's command-line option parser,
  * xfce_sm_client_get_option_group() and xfce_sm_client_get() instead.
  *
- * Returns: A new #XfceSMClient instance
+ * Returns: (transfer full): A new #XfceSMClient instance
  **/
 XfceSMClient *
 xfce_sm_client_get_full(XfceSMClientRestartStyle restart_style,

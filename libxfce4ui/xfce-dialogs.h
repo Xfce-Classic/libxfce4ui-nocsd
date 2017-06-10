@@ -28,7 +28,24 @@
 
 G_BEGIN_DECLS
 
+/**
+ * XFCE_BUTTON_TYPE_MIXED:
+ *
+ * This allows you to easily create mixed buttons in a dialog.
+ * param1 is used for the stock_id, param2 for the label and
+ * param3 for the response_id. See also xfce_gtk_button_new_mixed().
+ *
+ **/
 #define XFCE_BUTTON_TYPE_MIXED  "button-mixed"
+
+/**
+ * XFCE_BUTTON_TYPE_PIXBUF:
+ *
+ * Creates a button with the #GdkPixbuf as button icon.
+ * param1 is the #GdkPixuf, param2 for the label and
+ * param3 for the response_id.
+ *
+ **/
 #define XFCE_BUTTON_TYPE_PIXBUF "button-pixbuf"
 
 void       xfce_dialog_show_help              (GtkWindow    *parent,

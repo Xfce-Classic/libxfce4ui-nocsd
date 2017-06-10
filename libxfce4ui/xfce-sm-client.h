@@ -44,7 +44,7 @@
 
 /**
  * XfceSmCLientErrorEnum:
- * @G_IO_ERROR_FAILED: Failed to connect to the session manager.
+ * @XFCE_SM_CLIENT_ERROR_FAILED: Failed to connect to the session manager.
  * @XFCE_SM_CLIENT_ERROR_INVALID_CLIENT: Session does not have a valid client id.
  *
  * Error codes returned by XfceSmCLient functions.

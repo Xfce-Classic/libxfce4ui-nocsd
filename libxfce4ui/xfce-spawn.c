@@ -18,6 +18,16 @@
  * MA 02110-1301 USA
  */
 
+/**
+ * SECTION:xfce-spawn
+ * @title: Spawn
+ * @short_description: spawn a command with startup notification
+ * @stability: Stable
+ * @include: libxfce4ui/libxfce4ui.h
+ *
+ * Functions to spawn a command with startup notification support.
+ **/
+
 #ifdef HAVE_CONFIG_H
 #include <config.h>
 #endif
@@ -251,7 +261,7 @@ xfce_spawn_get_active_workspace_number (GdkScreen *screen)
 
 
 /**
- * xfce_spawn_on_screen_with_closure:
+ * xfce_spawn_on_screen_with_child_watch:
  * @screen              : a #GdkScreen or %NULL to use the active screen,
  *                        see xfce_gdk_screen_get_active().
  * @working_directory   : child's current working directory or %NULL to

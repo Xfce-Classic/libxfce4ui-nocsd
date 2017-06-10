@@ -17,6 +17,16 @@
  * MA 02110-1301 USA
  */
 
+/**
+ * SECTION:libxfce4ui-config
+ * @title: libxfce4ui config
+ * @short_description: libxfce4ui config macros
+ * @stability: Stable
+ * @include: libxfce4ui/libxfce4ui.h
+ *
+ * Variables and functions to check the Libxfce4ui version.
+ **/
+
 #ifdef HAVE_CONFIG_H
 #include <config.h>
 #endif
@@ -25,9 +35,28 @@
 #include <libxfce4ui/libxfce4ui-alias.h>
 
 
-
+/**
+ * libxfce4ui_major_version:
+ *
+ * A constat that evaluates to the major version of libxfce4ui.
+ *
+ */
 const guint libxfce4ui_major_version = LIBXFCE4UI_MAJOR_VERSION;
+
+/**
+ * libxfce4ui_minor_version:
+ *
+ * A constat that evaluates to the minor version of libxfce4ui.
+ *
+ */
 const guint libxfce4ui_minor_version = LIBXFCE4UI_MINOR_VERSION;
+
+/**
+ * libxfce4ui_micro_version:
+ *
+ * A constat that evaluates to the micro version of libxfce4ui.
+ *
+ */
 const guint libxfce4ui_micro_version = LIBXFCE4UI_MICRO_VERSION;
 
 

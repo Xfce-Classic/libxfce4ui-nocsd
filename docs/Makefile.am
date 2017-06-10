@@ -29,7 +29,12 @@ CFILE_GLOB=$(top_srcdir)/libxfce4ui/*.c
 IGNORE_HFILES=								\
 	libxfce4ui.h							\
 	libxfce4ui-private.h						\
-	xfce-heading.h
+	xfce-heading.h							\
+	libxfce4ui-enum-types.h						\
+	libxfce4ui-alias.h						\
+	stamp-libxfce4ui-marshal.h					\
+	libxfce4ui-marshal.h						\
+	libxfce4ui-resources.h
 
 # Extra files to add when scanning (relative to $srcdir)
 EXTRA_HFILES=
@@ -60,6 +65,13 @@ include $(top_srcdir)/gtk-doc.make
 # Other files to distribute
 EXTRA_DIST +=								\
 	version.xml.in
+
+if ENABLE_GTK_DOC
+TESTS_ENVIRONMENT = \
+  DOC_MODULE=$(DOC_MODULE) DOC_MAIN_SGML_FILE=$(DOC_MAIN_SGML_FILE) \
+  SRCDIR=$(abs_srcdir) BUILDDIR=$(abs_builddir)
+TESTS = $(GTKDOC_CHECK)
+endif
 
 # required for gtk-doc
 dist-hook: all

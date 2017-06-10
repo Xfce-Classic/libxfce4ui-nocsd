@@ -8,6 +8,9 @@
 <!ENTITY xfce-dialogs SYSTEM "xml/xfce-dialogs.xml">
 <!ENTITY xfce-titled-dialog SYSTEM "xml/xfce-titled-dialog.xml">
 <!ENTITY xfce-sm-client SYSTEM "xml/xfce-sm-client.xml">
+<!ENTITY api-index-full SYSTEM "xml/api-index-full.xml">
+<!ENTITY annotation-glossary SYSTEM "xml/annotation-glossary.xml">
+<!ENTITY api-index-deprecated SYSTEM "xml/api-index-deprecated.xml">
 
 <!ENTITY version SYSTEM "version.xml">
 <!ENTITY date "May 2017">
@@ -79,6 +82,9 @@
 
   <index>
     <title>Index</title>
+    &api-index-full;
+    &annotation-glossary;
+    &api-index-deprecated;
   </index>
 </book>
 

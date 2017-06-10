@@ -53,6 +53,11 @@ struct _XfceTitledDialogClass
   void (*reserved5) (void);
 };
 
+/**
+ * XfceTitledDialog:
+ *
+ * An opaque struct with only private fields.
+ **/
 struct _XfceTitledDialog
 {
   /*< private >*/
