@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-06-09 00:30+0200\n"
-"PO-Revision-Date: 2016-08-20 10:54+0000\n"
+"PO-Revision-Date: 2017-06-18 09:53+0000\n"
 "Last-Translator: Theppitak Karoonboonyanan <theppitak@gmail.com>\n"
 "Language-Team: Thai (http://www.transifex.com/xfce/libxfce4ui/language/th/)\n"
 "MIME-Version: 1.0\n"
@@ -21,7 +21,7 @@ msgstr ""
 
 #: ../libxfce4ui/xfce-dialogs.c:100
 msgid "Failed to open web browser for online documentation"
-msgstr "เปิดเว็บเบราว์เซอร์เพื่อแสดงเอกสารออนไลน์ไม่สำเร็จ"
+msgstr "เปิดโปรแกรมท่องเว็บเพื่อแสดงเอกสารออนไลน์ไม่สำเร็จ"
 
 #: ../libxfce4ui/xfce-dialogs.c:254
 #, c-format
