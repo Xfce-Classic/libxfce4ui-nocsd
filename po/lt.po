@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-06-09 00:30+0200\n"
-"PO-Revision-Date: 2017-04-13 13:39+0000\n"
+"PO-Revision-Date: 2017-06-17 23:05+0000\n"
 "Last-Translator: Moo\n"
 "Language-Team: Lithuanian (http://www.transifex.com/xfce/libxfce4ui/language/lt/)\n"
 "MIME-Version: 1.0\n"
@@ -103,7 +103,7 @@ msgstr "Rodyti seanso tvarkymo parametrus"
 #: ../libxfce4ui/xfce-sm-client.c:1611
 #, c-format
 msgid "Failed to connect to the session manager: %s"
-msgstr "Nepavyko prisijungti prie seanso tvarkytuvės: %s"
+msgstr "Nepavyko prisijungti prie seansų tvarkytuvės: %s"
 
 #: ../libxfce4ui/xfce-sm-client.c:1617
 #, c-format
@@ -116,7 +116,7 @@ msgstr "Seansų tvarkytuvė negrąžino tinkamo kliento id"
 msgid ""
 "Working directory \"%s\" does not exist. It won't be used when spawning "
 "\"%s\"."
-msgstr "Darbinis aplankas „%s“ neegzistuoja. Jis nebus naudojamas atvaizduojant „%s“."
+msgstr "Darbinio katalogo „%s“ nėra. Jis nebus naudojamas atvaizduojant „%s“."
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 #, c-format
@@ -170,7 +170,7 @@ msgstr "%s jau yra nustatyta, kad paleistų šį veiksmą."
 #: ../libxfce4kbd-private/xfce-shortcuts.c:116
 #, c-format
 msgid "Conflicting actions for %s"
-msgstr "Nesuderinami veiksmai skirti %s"
+msgstr "Nesuderinami veiksmai, skirti %s"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:186
 msgid "This shortcut is already being used for something else."
@@ -585,7 +585,7 @@ msgstr "Seansų tvarkytuvė"
 msgid ""
 "Restores your session on startup and allows you to shutdown the computer "
 "from Xfce."
-msgstr "Atstato jūsų seansą paleidžiant ir leidžia išjungti kompiuterį iš Xfce."
+msgstr "Atstato jūsų seansą paleidimo metu ir leidžia išjungti kompiuterį iš Xfce."
 
 #: ../xfce4-about/main.c:94
 msgid "Setting System"
@@ -675,7 +675,7 @@ msgid ""
 "under the terms of the GNU General Public License as published by the Free "
 "Software Foundation; either version 2 of the License, or (at your option) "
 "any later version."
-msgstr "Paketai thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfce-utils, xfconf, xfdesktop ir xfwm4 yra platinami pagal GNU General Public License kaip paskelbė Free Software Foundation; arba pagal licencijos versiją 2, ar (jūsų pasirinkimu) bet kurią vėlesnę versiją."
+msgstr "Paketai thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfce-utils, xfconf, xfdesktop ir xfwm4 yra platinami pagal GNU Bendrąją Viešąją Licenciją kaip paskelbė Free Software Foundation; arba pagal licencijos versiją 2, ar (jūsų pasirinkimu) bet kurią vėlesnę versiją."
 
 #: ../xfce4-about/main.c:441
 #, c-format
