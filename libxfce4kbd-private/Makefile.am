@@ -31,51 +31,8 @@ libxfce4kbd_sources = \
 	xfce-shortcuts.c \
 	xfce-shortcuts-xfwm4.c
 
-lib_LTLIBRARIES = libxfce4kbd-private-2.la
 
-libxfce4kbd_private_includedir = \
-	$(includedir)/xfce4/libxfce4kbd-private-$(LIBXFCE4KBD_PRIVATE_VERSION_API)/libxfce4kbd-private
-
-libxfce4kbd_private_include_HEADERS = \
-	$(libxfce4kbd_headers)
-
-libxfce4kbd_private_2_la_SOURCES = \
-	$(libxfce4kbd_sources)
-
-libxfce4kbd_private_2_la_CFLAGS = \
-	$(PLATFORM_CFLAGS) \
-	$(GLIB_CFLAGS) \
-	$(GTK2_CFLAGS) \
-	$(LIBX11_CFLAGS) \
-	$(LIBXFCE4UTIL_CFLAGS) \
-	$(XFCONF_CFLAGS) \
-	$(PLATFORM_CFLAGS)
-
-libxfce4kbd_private_2_la_LDFLAGS = \
-	-export-dynamic \
-	-version-info $(LIBXFCE4KBD_PRIVATE_VERINFO) \
-	-export-symbols-regex "^[^_].*" \
-	-no-undefined \
-	$(LIBX11_LDFLAGS) \
-	$(PLATFORM_LDFLAGS)
-
-libxfce4kbd_private_2_la_LIBADD = \
-	$(top_builddir)/libxfce4ui/libxfce4ui-$(LIBXFCE4UI_VERSION_API).la \
-	$(GLIB_LIBS) \
-	$(GTK2_LIBS) \
-	$(LIBX11_LIBS) \
-	$(LIBXFCE4UTIL_LIBS) \
-	$(XFCONF_LIBS)
-
-settingsdir = $(sysconfdir)/xdg/xfce4/xfconf/xfce-perchannel-xml
-settings_DATA = xfce4-keyboard-shortcuts.xml
-
-pkgconfigdir = $(libdir)/pkgconfig
-pkgconfig_DATA = libxfce4kbd-private-2.pc
-
-if ENABLE_GTK3_LIBRARY
-
-lib_LTLIBRARIES += libxfce4kbd-private-3.la
+lib_LTLIBRARIES = libxfce4kbd-private-3.la
 
 libxfce4kbd3_private_includedir = \
 	$(includedir)/xfce4/libxfce4kbd-private-3/libxfce4kbd-private
@@ -111,7 +68,56 @@ libxfce4kbd_private_3_la_LIBADD = \
 	$(LIBXFCE4UTIL_LIBS) \
 	$(XFCONF_LIBS)
 
-pkgconfig_DATA += libxfce4kbd-private-3.pc
+settingsdir = $(sysconfdir)/xdg/xfce4/xfconf/xfce-perchannel-xml
+settings_DATA = xfce4-keyboard-shortcuts.xml
+
+pkgconfigdir = $(libdir)/pkgconfig
+pkgconfig_DATA = libxfce4kbd-private-3.pc
+
+
+if ENABLE_GTK2_LIBRARY
+
+
+lib_LTLIBRARIES += libxfce4kbd-private-2.la
+
+libxfce4kbd_private_includedir = \
+	$(includedir)/xfce4/libxfce4kbd-private-$(LIBXFCE4KBD_PRIVATE_VERSION_API)/libxfce4kbd-private
+
+libxfce4kbd_private_include_HEADERS = \
+	$(libxfce4kbd_headers)
+
+libxfce4kbd_private_2_la_SOURCES = \
+	$(libxfce4kbd_sources)
+
+libxfce4kbd_private_2_la_CFLAGS = \
+	$(PLATFORM_CFLAGS) \
+	$(GLIB_CFLAGS) \
+	$(GTK2_CFLAGS) \
+	$(LIBX11_CFLAGS) \
+	$(LIBXFCE4UTIL_CFLAGS) \
+	$(XFCONF_CFLAGS) \
+	$(PLATFORM_CFLAGS)
+
+libxfce4kbd_private_2_la_LDFLAGS = \
+	-export-dynamic \
+	-version-info $(LIBXFCE4KBD_PRIVATE_VERINFO) \
+	-export-symbols-regex "^[^_].*" \
+	-no-undefined \
+	$(LIBX11_LDFLAGS) \
+	$(PLATFORM_LDFLAGS)
+
+libxfce4kbd_private_2_la_LIBADD = \
+	$(top_builddir)/libxfce4ui/libxfce4ui-$(LIBXFCE4UI_VERSION_API).la \
+	$(GLIB_LIBS) \
+	$(GTK2_LIBS) \
+	$(LIBX11_LIBS) \
+	$(LIBXFCE4UTIL_LIBS) \
+	$(XFCONF_LIBS)
+
+
+pkgconfig_DATA += libxfce4kbd-private-2.pc
+
+
 
 endif
 

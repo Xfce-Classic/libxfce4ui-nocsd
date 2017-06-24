@@ -19,6 +19,7 @@
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="border_width">6</property>
+            <property name="expand">TRUE</property>
             <child>
               <object class="GtkScrolledWindow" id="scrolledwindow1">
                 <property name="visible">True</property>
@@ -296,6 +297,7 @@
                 <property name="left_margin">3</property>
                 <property name="right_margin">3</property>
                 <property name="cursor_visible">False</property>
+                <property name="expand">TRUE</property>
               </object>
             </child>
           </object>

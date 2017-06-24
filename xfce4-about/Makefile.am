@@ -20,16 +20,16 @@ xfce4_about_SOURCES = \
 
 xfce4_about_CFLAGS = \
 	$(LIBXFCE4UTIL_CFLAGS) \
-	$(GTK2_CFLAGS) \
+	$(GTK3_CFLAGS) \
 	$(PLATFORM_CFLAGS)
 
 xfce4_about_LDADD = \
-	$(top_builddir)/libxfce4ui/libxfce4ui-$(LIBXFCE4UI_VERSION_API).la \
+	$(top_builddir)/libxfce4ui/libxfce4ui-2.la \
 	$(LIBXFCE4UTIL_LIBS) \
-	$(GTK2_LIBS)
+	$(GTK3_LIBS)
 
 xfce4_about_DEPENDENCIES = \
-	$(top_builddir)/libxfce4ui/libxfce4ui-$(LIBXFCE4UI_VERSION_API).la
+	$(top_builddir)/libxfce4ui/libxfce4ui-2.la
 
 desktopdir = $(datadir)/applications
 desktop_in_files = xfce4-about.desktop.in
