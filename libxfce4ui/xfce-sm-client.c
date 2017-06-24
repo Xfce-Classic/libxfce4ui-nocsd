@@ -1442,7 +1442,7 @@ xfce_sm_client_get_option_group(gint  argc,
 }
 
 /**
- * xfce_sm_client_get:
+ * xfce_sm_client_get: (constructor)
  *
  * Gets the application's SM client instance.  This is best
  * used with xfce_sm_client_get_option_group() above (and using
@@ -1471,7 +1471,7 @@ xfce_sm_client_get(void)
 }
 
 /**
- * xfce_sm_client_get_with_argv:
+ * xfce_sm_client_get_with_argv: (constructor)
  * @argc: The number of arguments passed to main()
  * @argv: The argument vector passed to main()
  * @restart_style: An #XfceSMClientRestartStyle
@@ -1505,7 +1505,7 @@ xfce_sm_client_get_with_argv(gint argc,
 }
 
 /**
- * xfce_sm_client_get_full:
+ * xfce_sm_client_get_full: (constructor)
  * @restart_style: An XfceSMClientRestartStyle
  * @priority: A restart priority
  * @resumed_client_id: The client id used in the previous session
@@ -1548,7 +1548,7 @@ xfce_sm_client_get_full(XfceSMClientRestartStyle restart_style,
 /**
  * xfce_sm_client_connect:
  * @sm_client: An #XfceSMClient
- * @error: A #GError location.
+ * @error: (out) (allow-none) (transfer full): A #GError location.
  *
  * Attempts to connect to the session manager.
  *

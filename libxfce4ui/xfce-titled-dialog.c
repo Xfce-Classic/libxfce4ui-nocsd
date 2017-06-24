@@ -279,10 +279,10 @@ xfce_titled_dialog_new (void)
 
 /**
  * xfce_titled_dialog_new_with_buttons:
- * @title             : title of the dialog, or %NULL.
- * @parent            : transient parent window of the dialog, or %NULL.
+ * @title             : (allow-none): title of the dialog, or %NULL.
+ * @parent            : (allow-none): transient parent window of the dialog, or %NULL.
  * @flags             : from #GtkDialogFlags.
- * @first_button_text : stock ID or text to go in first, or %NULL.
+ * @first_button_text : (allow-none): stock ID or text to go in first, or %NULL.
  * @...               : response ID for the first button, then additional buttons, ending with %NULL.
  *
  * See the documentation of gtk_dialog_new_with_buttons() for details about the
@@ -330,11 +330,11 @@ xfce_titled_dialog_new_with_buttons (const gchar    *title,
 
 /**
  * xfce_titled_dialog_new_with_mixed_buttons:
- * @title                  : title of the dialog, or %NULL.
- * @parent                 : transient parent window of the dialog, or %NULL.
+ * @title                  :  (allow-none):title of the dialog, or %NULL.
+ * @parent                 : (allow-none): transient parent window of the dialog, or %NULL.
  * @flags                  : from #GtkDialogFlags.
  * @first_button_icon_name : icon name to go in first, or "" for no icon.
- * @first_button_text      : text to go in first, or %NULL.
+ * @first_button_text      : (allow-none): text to go in first, or %NULL.
  * @...                    : response ID for the first button, then additional buttons, ending with %NULL.
  *
  * Creates an #XfceTitledDialog using xfce_gtk_button_new_mixed. This allows

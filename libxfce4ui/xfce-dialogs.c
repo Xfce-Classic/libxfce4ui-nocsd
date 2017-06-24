@@ -140,12 +140,12 @@ xfce_dialog_show_help_response (GtkWidget *dialog,
 
 /**
  * xfce_dialog_show_help:
- * @parent    : transient parent of the dialog, or %NULL.
- * @component : name of the component opening the help page or %NULL. If the
+ * @parent    : (allow-none): transient parent of the dialog, or %NULL.
+ * @component : (allow-none): name of the component opening the help page or %NULL. If the
  *              value is %NULL the target will be the main page of the
  *              documentation website.
- * @page      : subpage of the @component on the website or %NULL.
- * @offset    : anchor offset in @page or %NULL.
+ * @page      : (allow-none): subpage of the @component on the website or %NULL.
+ * @offset    : (allow-none): anchor offset in @page or %NULL.
  *
  * Asks the user to visit the online documentation. If confirmed, it will open
  * the webbrowser and redirect the user to the correct location.
@@ -170,13 +170,13 @@ xfce_dialog_show_help (GtkWindow   *parent,
 
 /**
  * xfce_dialog_show_help_with_version:
- * @parent    : transient parent of the dialog, or %NULL.
- * @component : name of the component opening the help page or %NULL. If the
+ * @parent    : (allow-none): transient parent of the dialog, or %NULL.
+ * @component : (allow-none): name of the component opening the help page or %NULL. If the
  *              value is %NULL the target will be the main page of the
  *              documentation website.
- * @page      : subpage of the @component on the website or %NULL.
- * @offset    : anchor offset in @page or %NULL.
- * @version   : alternative version, or %NULL to use xfce_version_string().
+ * @page      : (allow-none): subpage of the @component on the website or %NULL.
+ * @offset    : (allow-none): anchor offset in @page or %NULL.
+ * @version   : (allow-none): alternative version, or %NULL to use xfce_version_string().
  *
  * Asks the user to visit the online documentation. If confirmed, it will open
  * the webbrowser and redirect the user to the correct location.
@@ -321,8 +321,8 @@ xfce_dialog_show_help_with_version (GtkWindow   *parent,
 
 /**
  * xfce_dialog_show_info:
- * @parent         : transient parent of the dialog, or %NULL.
- * @secondary_text : secondary text of the dialog or %NULL.
+ * @parent         : (allow-none): transient parent of the dialog, or %NULL.
+ * @secondary_text : (allow-none): secondary text of the dialog or %NULL.
  * @primary_format : the printf()-style format for the primary problem description.
  * @...            : argument list for the @format.
  *
@@ -364,8 +364,8 @@ xfce_dialog_show_info (GtkWindow   *parent,
 
 /**
  * xfce_dialog_show_warning:
- * @parent         : transient parent of the dialog, or %NULL.
- * @secondary_text : secondary text of the dialog or %NULL.
+ * @parent         : (allow-none): transient parent of the dialog, or %NULL.
+ * @secondary_text : (allow-none): secondary text of the dialog or %NULL.
  * @primary_format : the printf()-style format for the primary problem description.
  * @...            : argument list for the @format.
  *
@@ -407,8 +407,8 @@ xfce_dialog_show_warning (GtkWindow   *parent,
 
 /**
  * xfce_dialog_show_error:
- * @parent         : transient parent of the dialog, or %NULL.
- * @error          : a #GError, which gives a more precise description of the problem or %NULL.
+ * @parent         : (allow-none): transient parent of the dialog, or %NULL.
+ * @error          : (allow-none): a #GError, which gives a more precise description of the problem or %NULL.
  * @primary_format : the printf()-style format for the primary problem description.
  * @...            : argument list for the @primary_format.
  *
@@ -451,12 +451,12 @@ xfce_dialog_show_error (GtkWindow    *parent,
 
 /**
  * xfce_dialog_confirm:
- * @parent         : transient parent of the dialog, or %NULL.
+ * @parent         : (allow-none): transient parent of the dialog, or %NULL.
  * @stock_id       : the stock name of the confirm button, for example #GTK_STOCK_YES or #GTK_STOCK_CLEAR.
- * @confirm_label  : if non-%NULL, this text is used on the confirm button together with the @stock_id icon.
- * @secondary_text : secondary text in the dialog.
- * @primary_format : the printf()-style format for the dialog question.
- * @...            : argument list for the @primary_format.
+ * @confirm_label  : (allow-none): if non-%NULL, this text is used on the confirm button together with the @stock_id icon.
+ * @secondary_text : (allow-none): secondary text in the dialog.
+ * @primary_format : (allow-none): the printf()-style format for the dialog question.
+ * @...            : (allow-none): argument list for the @primary_format.
  *
  * Runs a questions dialog, that has a 'Cancel' and a 'Confirm' button. The 'Confirm'
  * button text can be set by @action if given.
@@ -530,8 +530,8 @@ xfce_dialog_confirm (GtkWindow   *parent,
 
 /**
  * xfce_message_dialog_new_valist:
- * @parent            : transient parent of the dialog, or %NULL.
- * @title             : title of the dialog, or %NULL.
+ * @parent            : (allow-none): transient parent of the dialog, or %NULL.
+ * @title             : (allow-none): title of the dialog, or %NULL.
  * @icon_stock_id     : gtk stock icon name to show in the dialog.
  * @primary_text      : primary text shown in large bold font.
  * @secondary_text    : secondary text shown in normal font.
@@ -808,8 +808,8 @@ xfce_message_dialog_new_valist (GtkWindow   *parent,
 
 /**
  * xfce_message_dialog_new:
- * @parent            : transient parent of the dialog, or %NULL.
- * @title             : title of the dialog, or %NULL.
+ * @parent            : (allow-none): transient parent of the dialog, or %NULL.
+ * @title             : (allow-none): title of the dialog, or %NULL.
  * @stock_id          : gtk stock icon name to show in the dialog.
  * @primary_text      : primary text shown in large bold font.
  * @secondary_text    : secondary text shown in normal font.
@@ -906,8 +906,8 @@ xfce_message_dialog_new (GtkWindow   *parent,
 
 /**
  * xfce_message_dialog:
- * @parent            : transient parent of the dialog, or %NULL.
- * @title             : title of the dialog, or %NULL.
+ * @parent            : (allow-none): transient parent of the dialog, or %NULL.
+ * @title             : (allow-none): title of the dialog, or %NULL.
  * @stock_id          : gtk stock icon name to show in the dialog.
  * @primary_text      : primary text shown in large bold font.
  * @secondary_text    : secondary text shown in normal font.

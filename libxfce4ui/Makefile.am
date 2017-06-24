@@ -112,15 +112,15 @@ INTROSPECTION_COMPILER_ARGS = \
 	--includedir=.
 
 if HAVE_INTROSPECTION
-introspection_sources = $(filter-out %private.h %.c, $(libxfce4ui_2_la_SOURCES))
+introspection_sources = $(filter-out %private.h, $(libxfce4ui_2_la_SOURCES))
 
-libxfce4ui-2.gir: libxfce4ui-2.la Makefile
-libxfce4ui_2_gir_INCLUDES = GObject-2.0 GLib-2.0 Gtk-3.0 libxfce4util-1.0
-libxfce4ui_2_gir_CFLAGS = $(AM_CPPFLAGS)
-libxfce4ui_2_gir_LIBS = libxfce4ui-2.la
-libxfce4ui_2_gir_FILES = $(introspection_sources)
-libxfce4ui_2_gir_EXPORT_PACKAGES = libxfce4ui-2
-INTROSPECTION_GIRS += libxfce4ui-2.gir
+libxfce4ui-2.0.gir: libxfce4ui-2.la Makefile
+libxfce4ui_2_0_gir_INCLUDES = GObject-2.0 GLib-2.0 Gtk-3.0 libxfce4util-1.0
+libxfce4ui_2_0_gir_CFLAGS = $(AM_CPPFLAGS)
+libxfce4ui_2_0_gir_LIBS = libxfce4ui-2.la
+libxfce4ui_2_0_gir_FILES = $(introspection_sources)
+libxfce4ui_2_0_gir_EXPORT_PACKAGES = libxfce4ui-2
+INTROSPECTION_GIRS += libxfce4ui-2.0.gir
 
 girdir = $(datadir)/gir-1.0
 gir_DATA = $(INTROSPECTION_GIRS)

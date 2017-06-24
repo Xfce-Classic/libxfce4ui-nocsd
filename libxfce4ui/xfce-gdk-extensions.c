@@ -48,7 +48,7 @@
 
 /**
  * xfce_gdk_screen_get_active:
- * @monitor_return : Address to store the monitor number to or %NULL.
+ * @monitor_return : (out) (allow-none): Address to store the monitor number to or %NULL.
  *
  * Returns the currently active #GdkScreen, that is, the screen which
  * currently contains the pointer. If no active screen was found, the

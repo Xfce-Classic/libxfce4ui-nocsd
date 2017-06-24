@@ -66,8 +66,8 @@ libxfce4ui/libxfce4ui-marshal.c
 libxfce4ui/libxfce4ui-marshal.h
 libxfce4ui/stamp-libxfce4ui-enum-types.h
 libxfce4ui/stamp-libxfce4ui-marshal.h
-libxfce4ui/libxfce4ui-2.gir
-libxfce4ui/libxfce4ui-2.typelib
+libxfce4ui/libxfce4ui-2.0.gir
+libxfce4ui/libxfce4ui-2.0.typelib
 xfce4-about/about-dialog-ui.h
 xfce4-about/xfce4-about
 xfce4-about/xfce4-about.desktop
@@ -90,3 +90,6 @@ docs/test-suite.log
 libxfce4ui/abicheck.sh.log
 libxfce4ui/abicheck.sh.trs
 libxfce4ui/test-suite.log
+
+# example folder location
+python-example/html/

@@ -102,7 +102,7 @@ xfce_gtk_button_new_mixed (const gchar *stock_id,
 /**
  * xfce_gtk_frame_box_new:
  * @label            : the text to use as the label of the frame.
- * @container_return : return location for the frame's container.
+ * @container_return : (out) (allow-none): return location for the frame's container.
  *
  * Creates an Xfce-styled frame. The frame is a #GtkFrame, without
  * outline and an optional bolded text label.  The contents of the
@@ -221,10 +221,10 @@ xfce_gtk_window_center_on_active_screen (GtkWindow *window)
 /**
  * xfce_gtk_menu_popup_until_mapped:
  * @menu: a #GtkMenu.
- * @parent_menu_shell: the menu shell containing the triggering menu item, or %NULL.
- * @parent_menu_item: the menu item whose activation triggered the popup, or %NULL.
- * @func: (scope call): a user supplied function used to position the menu, or %NULL.
- * @data: user supplied data to be passed to func.
+ * @parent_menu_shell: (allow-none): the menu shell containing the triggering menu item, or %NULL.
+ * @parent_menu_item: (allow-none): the menu item whose activation triggered the popup, or %NULL.
+ * @func: (scope call) (allow-none): a user supplied function used to position the menu, or %NULL.
+ * @data: (allow-none): user supplied data to be passed to func.
  * @button: the mouse button which was pressed to initiate the event.
  * @activate_time: the time at which the activation event occurred.
  *
