@@ -194,7 +194,9 @@ xfce_shortcut_dialog_create_contents (XfceShortcutDialog *dialog,
                                       const gchar        *action)
 {
   GtkWidget   *content_box;
+#if !GTK_CHECK_VERSION (3, 14, 0)
   GtkWidget   *alignment;
+#endif
   GtkWidget   *box;
   GtkWidget   *button;
   GtkWidget   *label;
@@ -252,19 +254,26 @@ xfce_shortcut_dialog_create_contents (XfceShortcutDialog *dialog,
   gtk_widget_show (button);
 
   /* Main content container */
+#if !GTK_CHECK_VERSION (3, 14, 0)
   alignment = gtk_alignment_new (0, 0, 1, 1);
   gtk_alignment_set_padding (GTK_ALIGNMENT (alignment), 0, 6, 12, 0);
   gtk_container_add (GTK_CONTAINER (gtk_dialog_get_content_area (GTK_DIALOG (dialog))),
                      alignment);
   gtk_widget_show (alignment);
+#endif
 
-  #if GTK_CHECK_VERSION (3, 0, 0)
+#if GTK_CHECK_VERSION (3, 0, 0)
   content_box = gtk_box_new (GTK_ORIENTATION_VERTICAL, 6);
-  #else
+#else
   content_box = gtk_vbox_new (FALSE, 6);
-  #endif
+#endif
   gtk_container_set_border_width (GTK_CONTAINER (content_box), 6);
+#if GTK_CHECK_VERSION (3, 14, 0)
+  gtk_container_add (GTK_CONTAINER (gtk_dialog_get_content_area (GTK_DIALOG (dialog))),
+                     content_box);
+#else
   gtk_container_add (GTK_CONTAINER (alignment), content_box);
+#endif
   gtk_widget_show (content_box);
 
   /* TRANSLATORS: this creates the explanation for the user. The first %s is replaced
@@ -279,7 +288,11 @@ xfce_shortcut_dialog_create_contents (XfceShortcutDialog *dialog,
 
   label = gtk_label_new (NULL);
   gtk_label_set_markup (GTK_LABEL (label), explanation_label_markup);
+#if GTK_CHECK_VERSION (3, 14, 0)
+  gtk_label_set_yalign (GTK_LABEL (label), 0.5);
+#else
   gtk_misc_set_alignment (GTK_MISC (label), 0.0, 0.5);
+#endif
   gtk_label_set_line_wrap (GTK_LABEL (label), TRUE);
   gtk_container_add (GTK_CONTAINER (content_box), label);
   gtk_widget_show (label);
@@ -297,12 +310,20 @@ xfce_shortcut_dialog_create_contents (XfceShortcutDialog *dialog,
   gtk_widget_show (box);
 
   label = gtk_label_new (_("Shortcut:"));
+#if GTK_CHECK_VERSION (3, 14, 0)
+  gtk_label_set_yalign (GTK_LABEL (label), 0.5);
+#else
   gtk_misc_set_alignment (GTK_MISC (label), 0.0, 0.5);
+#endif
   gtk_container_add (GTK_CONTAINER (box), label);
   gtk_widget_show (label);
 
   dialog->shortcut_label = gtk_label_new (_("No keys pressed yet, proceed."));
+#if GTK_CHECK_VERSION (3, 14, 0)
+  gtk_label_set_yalign (GTK_LABEL (dialog->shortcut_label), 0.5);
+#else
   gtk_misc_set_alignment (GTK_MISC (dialog->shortcut_label), 0.0, 0.5);
+#endif
   gtk_container_add (GTK_CONTAINER (box), dialog->shortcut_label);
   gtk_widget_show (dialog->shortcut_label);
 

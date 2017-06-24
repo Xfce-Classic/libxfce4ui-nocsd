@@ -136,15 +136,23 @@ xfce_gtk_frame_box_new (const gchar  *label,
       frame_label = gtk_label_new (markup_label);
       gtk_label_set_use_markup (GTK_LABEL (frame_label), TRUE);
       g_free (markup_label);
-      gtk_misc_set_alignment (GTK_MISC (frame_label), 0.0, 0.5);
+#if GTK_CHECK_VERSION (3, 14, 0)
+  gtk_label_set_yalign (GTK_LABEL (frame_label), 0.5);
+#else
+  gtk_misc_set_alignment (GTK_MISC (frame_label), 0.0, 0.5);
+#endif
       gtk_frame_set_label_widget (GTK_FRAME (frame), frame_label);
       gtk_widget_show (frame_label);
     }
 
+/* We're ignoring this for now because we directly return the alignment
+ * and who knows if our consumers want to poke at it. */
+G_GNUC_BEGIN_IGNORE_DEPRECATIONS
   container = gtk_alignment_new (0.0, 0.0, 1.0, 1.0);
   gtk_alignment_set_padding (GTK_ALIGNMENT (container), PADDING, PADDING, PADDING * 3, PADDING);
   gtk_container_add (GTK_CONTAINER (frame), container);
   gtk_widget_show (container);
+G_GNUC_END_IGNORE_DEPRECATIONS
 
   if (G_LIKELY (container_return != NULL))
     *container_return = container;

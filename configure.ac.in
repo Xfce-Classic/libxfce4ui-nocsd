@@ -126,7 +126,7 @@ XDT_CHECK_LIBSM()
 dnl ***********************************
 dnl *** Check for required packages ***
 dnl ***********************************
-XDT_CHECK_PACKAGE([GOBJECT], [gobject-2.0], [2.30.0])
+XDT_CHECK_PACKAGE([GLIB], [glib-2.0], [2.42.0])
 XDT_CHECK_PACKAGE([GTK2], [gtk+-2.0], [2.24.0])
 XDT_CHECK_PACKAGE([LIBXFCE4UTIL], [libxfce4util-1.0], [4.12.0])
 
@@ -134,9 +134,15 @@ dnl ***********************************************************
 dnl *** Optional support for a GTK+3 version of the library ***
 dnl ***********************************************************
 XDT_CHECK_OPTIONAL_PACKAGE([GTK3],
-                           [gtk+-3.0], [3.2.0], [gtk3],
+                           [gtk+-3.0], [3.18.0], [gtk3],
                            [GTK+ 3 support])
 AM_CONDITIONAL([ENABLE_GTK3_LIBRARY], [test "x$GTK3_FOUND" = "xyes"])
+
+AC_DEFINE(GLIB_VERSION_MIN_REQUIRED, GLIB_VERSION_2_42, [Ignore post 2.42 deprecations])
+AC_DEFINE(GLIB_VERSION_MAX_ALLOWED, GLIB_VERSION_2_42, [Prevent post 2.42 APIs])
+
+AC_DEFINE(GDK_VERSION_MIN_REQUIRED, GDK_VERSION_3_18, [Ignore post 3.18 deprecations])
+AC_DEFINE(GDK_VERSION_MAX_ALLOWED, GDK_VERSION_3_18, [Prevent post 3.18 APIs])
 
 dnl ***************************************
 dnl *** Check for gobject-introspection ***

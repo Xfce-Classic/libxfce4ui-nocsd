@@ -63,7 +63,7 @@ xfce_gdk_screen_get_active (gint *monitor_return)
   gint              rootx, rooty;
   GdkScreen        *screen;
 
-#if GTK_CHECK_VERSION (3, 20, 0)
+#if 0 /* GTK_CHECK_VERSION (3, 20, 0) */
   GdkSeat *seat;
 
   display = gdk_display_get_default ();

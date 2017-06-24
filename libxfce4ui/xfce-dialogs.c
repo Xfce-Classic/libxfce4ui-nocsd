@@ -554,7 +554,6 @@ xfce_message_dialog_new_valist (GtkWindow   *parent,
 {
 #if GTK_CHECK_VERSION (3, 0, 0)
   GtkBuilder  *gxml;
-  GError      *error = NULL;
   GtkWidget   *dialog;
   GtkWidget   *dialog_image;
   GtkWidget   *image;
