@@ -54,10 +54,6 @@
 #include <libxfce4ui/libxfce4ui-private.h>
 #include <libxfce4ui/libxfce4ui-alias.h>
 
-#if GTK_CHECK_VERSION (3, 0, 0)
-#include "libxfce4ui-resources.h"
-#endif
-
 
 static void
 xfce_dialog_show_help_auto_toggled (GtkWidget *button)

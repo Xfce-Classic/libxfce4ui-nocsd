@@ -225,14 +225,10 @@ LIBXFCE4UI_RESOURCE_FILES = \
 	$(NULL)
 
 libxfce4ui_built_sources += \
-	libxfce4ui-resources.c \
-	libxfce4ui-resources.h
+	libxfce4ui-resources.c
 
 libxfce4ui-resources.c: libxfce4ui.gresource.xml
-	$(AM_V_GEN)$(GLIB_COMPILE_RESOURCES) --target=$@ --sourcedir=$(srcdir) --generate-source --c-name libxfce4ui $(srcdir)/libxfce4ui.gresource.xml
-
-libxfce4ui-resources.h: libxfce4ui.gresource.xml
-	$(AM_V_GEN)$(GLIB_COMPILE_RESOURCES) --target=$@ --sourcedir=$(srcdir) --generate-header --c-name libxfce4ui $(srcdir)/libxfce4ui.gresource.xml
+	$(AM_V_GEN)$(GLIB_COMPILE_RESOURCES) --target=$@ --sourcedir=$(srcdir) --generate-source --internal --c-name libxfce4ui $(srcdir)/libxfce4ui.gresource.xml
 
 endif
 

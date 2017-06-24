@@ -40,7 +40,6 @@
 libxfce4ui_major_version
 libxfce4ui_minor_version
 libxfce4ui_micro_version
-libxfce4ui_get_resource
 #endif
 libxfce4ui_check_version
 #endif
