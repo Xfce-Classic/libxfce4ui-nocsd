@@ -23,13 +23,11 @@ AM_CPPFLAGS =								\
 
 noinst_PROGRAMS =
 
-
 # test-ui-gtk2
-
+if ENABLE_GTK2_LIBRARY
 noinst_PROGRAMS += \
 	test-ui-gtk2
 
-if ENABLE_GTK2_LIBRARY
 test_ui_gtk2_SOURCES =				\
 	test-ui.c
 
