@@ -1,5 +1,5 @@
 dnl
-dnl Copyright (c) 2007-2015 The Xfce development team
+dnl Copyright (c) 2007-2017 The Xfce development team
 dnl
 
 dnl ***************************
@@ -9,10 +9,10 @@ m4_define([libxfce4ui_verinfo], [0:0:0])
 m4_define([libxfce4ui_version_api], [1])
 m4_define([libxfce4ui_version_major], [4])
 m4_define([libxfce4ui_version_minor], [13])
-m4_define([libxfce4ui_version_micro], [1])
+m4_define([libxfce4ui_version_micro], [2])
 m4_define([libxfce4ui_version_nano], []) dnl leave this empty to have no nano version
 m4_define([libxfce4ui_version_build], [@REVISION@])
-m4_define([libxfce4ui_version_tag], [git])
+m4_define([libxfce4ui_version_tag], [])
 m4_define([libxfce4ui_version], [libxfce4ui_version_major().libxfce4ui_version_minor().libxfce4ui_version_micro()ifelse(libxfce4ui_version_nano(), [], [], [.libxfce4ui_version_nano()])ifelse(libxfce4ui_version_tag(), [git], [libxfce4ui_version_tag()-libxfce4ui_version_build()], [libxfce4ui_version_tag()])])
 
 m4_define([libxfce4kbd_private_verinfo], [0:0:0])
@@ -30,7 +30,7 @@ m4_define([libxfce4ui_debug_default], [ifelse(libxfce4ui_version_tag(), [git], [
 dnl ***************************
 dnl *** Initialize autoconf ***
 dnl ***************************
-AC_COPYRIGHT([Copyright (c) 2007-2015 The Xfce development team])
+AC_COPYRIGHT([Copyright (c) 2007-2017 The Xfce development team])
 AC_INIT([libxfce4ui], [libxfce4ui_version], [http://bugzilla.xfce.org/], [libxfce4ui])
 AC_PREREQ([2.60])
 AC_CONFIG_MACRO_DIR([m4])

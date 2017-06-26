@@ -1,4 +1,31 @@
-﻿4.13.1
+﻿4.13.2
+======
+- Fix build error with --disable-gtk3 Bug #12648
+- Improve layout of labels in xfce dialogs
+- Set a reasonable default window width to make sure labels wrap
+- Improve vertical alignment of primary and secondary label
+- Bump the default dialog width to 500px
+- Update libxfce4ui documentation
+- Fix make docs compilation warning
+- Fix xfce_dialog_show_help(_with_version) doc
+- Remove Makefile.am space to fix autogen.sh warning
+- Better documentation processing
+- Change xfce_dialog_show_help(_with_version)
+- Default debug to yes instead of full
+- Remove exo dependancy Bug #13326
+- fix: add libxfce4ui_get_resource to abi check symbols Bug #13326
+- Let autotools find and invoke glib-compile-resources Bug #13326
+- Add support for GOBJECT-INTROSPECTION Bug #13461
+- Add GtkDoc checks
+- Add missing introspection.m4 file
+- fix: make distcheck
+- fix: remove deprecation warnings
+- feat: Switch to Gtk3 default, Gtk2 Optional
+- Rename introspection GIR to 4ui-2.0 to match util
+- Translation updates: am ast ca da el eu fi gl id it ko lt ms nn
+                       oc pl pt ro ru sl sr th zh_CN zh_TW
+
+4.13.1
 ======
 - Better Gtk3.20 compatibility (fix XfceHeading style, drop deprecated call)
 - Translation updates: Bulgarian, Catalan, Chinese (China), Chinese (Taiwan),
