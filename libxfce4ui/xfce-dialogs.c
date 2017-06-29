@@ -486,10 +486,12 @@ xfce_dialog_confirm (GtkWindow   *parent,
   va_end (args);
 
   /* whether this will be a yes/no dialog */
-  if (stock_id != NULL && (strcmp (stock_id, "gtk-yes") == 0 || strcmp (stock_id, "yes")) == 0)
+  if (stock_id != NULL && (strcmp (stock_id, "gtk-yes") == 0 || strcmp (stock_id, "yes") == 0))
     {
 #if GTK_CHECK_VERSION (3, 10, 0)
       no_stock_id = _("No");
+      if (confirm_label == NULL)
+        confirm_label = _("Yes");
 #else
       no_stock_id = GTK_STOCK_NO;
 #endif
