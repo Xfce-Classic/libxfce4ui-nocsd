@@ -1,0 +1,4 @@
+glade/libxfce4ui-2.xml.in.h
+glade/libxfce4ui.xml.in.h
+xfce4-about/xfce4-about-dialog.glade.h
+xfce4-about/xfce4-about.desktop.in.h
