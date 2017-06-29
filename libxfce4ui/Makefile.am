@@ -252,6 +252,7 @@ dist-hook: all
 
 EXTRA_DIST = \
 	abicheck.sh \
+	libxfce4ui.gresource.xml \
 	libxfce4ui.symbols \
 	libxfce4ui-alias.h \
 	libxfce4ui-aliasdef.c \
