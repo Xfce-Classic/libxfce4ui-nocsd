@@ -255,6 +255,7 @@ EXTRA_DIST = \
 	libxfce4ui.symbols \
 	libxfce4ui-alias.h \
 	libxfce4ui-aliasdef.c \
+	libxfce4ui-marshal.list \
 	make-libxfce4ui-alias.pl
 
 if HAVE_GNUC_VISIBILITY
