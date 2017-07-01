@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-06-30 06:30+0200\n"
-"PO-Revision-Date: 2017-06-30 13:48+0000\n"
+"PO-Revision-Date: 2017-07-01 11:00+0000\n"
 "Last-Translator: Moo\n"
 "Language-Team: Lithuanian (http://www.transifex.com/xfce/libxfce4ui/language/lt/)\n"
 "MIME-Version: 1.0\n"
@@ -48,7 +48,7 @@ msgstr "_Skaityti internete"
 
 #: ../libxfce4ui/xfce-dialogs.c:298
 msgid "_Always go directly to the online documentation"
-msgstr "_Visada eiti tiesiai į dokumentaciją internete"
+msgstr "_Visada pereiti tiesiai į dokumentaciją internete"
 
 #: ../libxfce4ui/xfce-dialogs.c:346
 msgid "Information"
