@@ -23,6 +23,8 @@ AM_CPPFLAGS =								\
 
 noinst_PROGRAMS =
 
+if BUILD_TESTS
+
 # test-ui-gtk2
 if ENABLE_GTK2_LIBRARY
 noinst_PROGRAMS += \
@@ -48,7 +50,7 @@ test_ui_gtk2_LDADD =					\
 	$(LIBXFCE4UTIL_LIBS) \
 	$(top_builddir)/libxfce4ui/libxfce4ui-1.la
 
-endif
+endif # ENABLE_GTK2_LIBRARY
 
 # test-ui-gtk3
 noinst_PROGRAMS +=					\
@@ -73,3 +75,5 @@ test_ui_gtk3_LDADD =					\
 	$(LIBSTARTUP_NOTIFICATION_LIBS) \
 	$(LIBXFCE4UTIL_LIBS) \
 	$(top_builddir)/libxfce4ui/libxfce4ui-2.la
+
+endif # BUILD_TESTS
