@@ -1,4 +1,18 @@
-﻿4.13.2
+﻿4.13.3
+======
+- Fix make distcheck with gladeui2 install path
+- Add an --enable-tests option
+- Remove the filterout from introspection sources
+- Move gresource building out of maintainer mode
+- Fix condition in confirm dialog
+- Add POTFILES.skip to appease gmake distcheck gods on OpenBSD
+- ship libxfce4ui.gresource.xml in the tarball too
+- Add libxfce4ui-marshal.list to EXTRA_DIST to fix
+  --enable-maintainer-mode on released tarballs
+- Fix build error with --disable-gtk2
+- Translation updates: bg, cs, fr, it, ca, hr, it, da, ru.
+
+4.13.2
 ======
 - Fix build error with --disable-gtk3 Bug #12648
 - Improve layout of labels in xfce dialogs
