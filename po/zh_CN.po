@@ -9,15 +9,15 @@
 # Levi Zhou <congzhou821@gmail.com>, 2016
 # Mingcong Bai <jeffbai@aosc.xyz>, 2015-2016
 # Xiaobo Zhou <zhouxiaobo.500@gmail.com>, 2017
-# 玉堂白鹤 <yjwork@qq.com>, 2015
+# 玉堂白鹤 <yjwork@qq.com>, 2015,2017
 # Mingcong Bai <jeffbai@aosc.xyz>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-09 00:30+0200\n"
-"PO-Revision-Date: 2017-02-14 07:11+0000\n"
-"Last-Translator: Xiaobo Zhou <zhouxiaobo.500@gmail.com>\n"
+"POT-Creation-Date: 2017-06-30 06:30+0200\n"
+"PO-Revision-Date: 2017-07-09 03:38+0000\n"
+"Last-Translator: 玉堂白鹤 <yjwork@qq.com>\n"
 "Language-Team: Chinese (China) (http://www.transifex.com/xfce/libxfce4ui/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -25,64 +25,68 @@ msgstr ""
 "Language: zh_CN\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../libxfce4ui/xfce-dialogs.c:100
+#: ../libxfce4ui/xfce-dialogs.c:109
 msgid "Failed to open web browser for online documentation"
 msgstr "无法打开网络浏览器以获取在线文档"
 
-#: ../libxfce4ui/xfce-dialogs.c:254
+#: ../libxfce4ui/xfce-dialogs.c:263
 #, c-format
 msgid "Do you want to read the %s manual online?"
 msgstr "您要在线阅读 %s 手册吗？"
 
-#: ../libxfce4ui/xfce-dialogs.c:256
+#: ../libxfce4ui/xfce-dialogs.c:265
 msgid "Do you want to read the manual online?"
 msgstr "您要在线阅读手册吗？"
 
-#: ../libxfce4ui/xfce-dialogs.c:259
+#: ../libxfce4ui/xfce-dialogs.c:268
 msgid "Online Documentation"
 msgstr "在线文档"
 
-#: ../libxfce4ui/xfce-dialogs.c:266
+#: ../libxfce4ui/xfce-dialogs.c:275
 msgid ""
 "You will be redirected to the documentation website where the help pages are"
 " maintained and translated."
 msgstr "会将您重定向至维护和翻译帮助文档的网站。"
 
-#: ../libxfce4ui/xfce-dialogs.c:280
+#: ../libxfce4ui/xfce-dialogs.c:289
 msgid "_Read Online"
 msgstr "在线阅读(_R)"
 
-#: ../libxfce4ui/xfce-dialogs.c:289
+#: ../libxfce4ui/xfce-dialogs.c:298
 msgid "_Always go directly to the online documentation"
 msgstr "总是直接进入在线文档(_A)"
 
-#: ../libxfce4ui/xfce-dialogs.c:337
+#: ../libxfce4ui/xfce-dialogs.c:346
 msgid "Information"
 msgstr "版本信息"
 
-#: ../libxfce4ui/xfce-dialogs.c:347 ../libxfce4ui/xfce-dialogs.c:390
-#: ../libxfce4ui/xfce-dialogs.c:434
+#: ../libxfce4ui/xfce-dialogs.c:356 ../libxfce4ui/xfce-dialogs.c:399
+#: ../libxfce4ui/xfce-dialogs.c:443
 msgid "Close"
 msgstr "关闭"
 
-#: ../libxfce4ui/xfce-dialogs.c:380
+#: ../libxfce4ui/xfce-dialogs.c:389
 msgid "Warning"
 msgstr "警告"
 
-#: ../libxfce4ui/xfce-dialogs.c:424
+#: ../libxfce4ui/xfce-dialogs.c:433
 msgid "Error"
 msgstr "错误"
 
-#: ../libxfce4ui/xfce-dialogs.c:483
+#: ../libxfce4ui/xfce-dialogs.c:492
 msgid "No"
 msgstr "否"
 
-#: ../libxfce4ui/xfce-dialogs.c:491
+#: ../libxfce4ui/xfce-dialogs.c:494
+msgid "Yes"
+msgstr "是的"
+
+#: ../libxfce4ui/xfce-dialogs.c:502
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:41
 msgid "Cancel"
 msgstr "取消"
 
-#: ../libxfce4ui/xfce-dialogs.c:498 ../libxfce4ui/xfce-dialogs.c:506
+#: ../libxfce4ui/xfce-dialogs.c:509 ../libxfce4ui/xfce-dialogs.c:517
 msgid "Question"
 msgstr "问题"
 
@@ -117,7 +121,7 @@ msgid "Session manager did not return a valid client id"
 msgstr "会话管理器未返回一个有效的客户端 ID"
 
 #. print warning for user
-#: ../libxfce4ui/xfce-spawn.c:409
+#: ../libxfce4ui/xfce-spawn.c:419
 #, c-format
 msgid ""
 "Working directory \"%s\" does not exist. It won't be used when spawning "
@@ -182,50 +186,50 @@ msgstr "因 %s 冲突的动作"
 msgid "This shortcut is already being used for something else."
 msgstr "其它动作在使用此快捷键。"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:209
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:211
 msgid "Window Manager Action Shortcut"
 msgstr "窗口管理器动作快捷键"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:212
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:226
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:214
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:228
 msgid "action"
 msgstr "动作"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:216
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:218
 msgid "Command Shortcut"
 msgstr "命令快捷键"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:219
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:221
 msgid "command"
 msgstr "命令"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:223
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:225
 msgid "Shortcut"
 msgstr "快捷键"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:247
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:249
 msgid "_Cancel"
 msgstr "取消 (_C)"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:275
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:284
 #, c-format
 msgid "Press now the keyboard keys you want to use to trigger the %s '%s'."
 msgstr "现在请按下您希望触发 %s '%s' 的按键。"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:299
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:312
 msgid "Shortcut:"
 msgstr "快捷键:"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:304
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:483
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:321
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:504
 msgid "No keys pressed yet, proceed."
 msgstr "未按下任何按键，请继续。"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:386
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:407
 msgid "Could not grab the keyboard."
 msgstr "未能捕获键盘输入。"
 
