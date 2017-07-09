@@ -3,66 +3,85 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Karim Oulad Chalha <herr.linux88@gmail.com>, 2013
+# كريم أولاد الشلحة <herr.linux88@gmail.com>, 2013
 # محمد الحرقان <malham1@gmail.com>, 2013
+# وجدي أبو سلطان, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-07-02 22:33+0200\n"
-"PO-Revision-Date: 2013-09-30 11:17+0000\n"
-"Last-Translator: mohammad alhargan <malham1@hotmail.com>\n"
-"Language-Team: Arabic (http://www.transifex.com/projects/p/xfce/language/ar/)\n"
+"POT-Creation-Date: 2017-06-30 06:30+0200\n"
+"PO-Revision-Date: 2017-07-09 11:57+0000\n"
+"Last-Translator: وجدي أبو سلطان\n"
+"Language-Team: Arabic (http://www.transifex.com/xfce/libxfce4ui/language/ar/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ar\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
 
-#: ../libxfce4ui/xfce-dialogs.c:98
+#: ../libxfce4ui/xfce-dialogs.c:109
 msgid "Failed to open web browser for online documentation"
 msgstr "فشل فتح متصفح الوب لقراءة وثائق عبر النت"
 
-#: ../libxfce4ui/xfce-dialogs.c:213
+#: ../libxfce4ui/xfce-dialogs.c:263
 #, c-format
 msgid "Do you want to read the %s manual online?"
 msgstr "هل تريد قراءة %s دليل المتوفر على الشبكة؟"
 
-#: ../libxfce4ui/xfce-dialogs.c:215
+#: ../libxfce4ui/xfce-dialogs.c:265
 msgid "Do you want to read the manual online?"
 msgstr "هل تريد قراءة دليل المتوفر على الشبكة؟"
 
-#: ../libxfce4ui/xfce-dialogs.c:218
+#: ../libxfce4ui/xfce-dialogs.c:268
 msgid "Online Documentation"
 msgstr "وثائق من النت"
 
-#: ../libxfce4ui/xfce-dialogs.c:221
+#: ../libxfce4ui/xfce-dialogs.c:275
 msgid ""
 "You will be redirected to the documentation website where the help pages are"
 " maintained and translated."
 msgstr "سيتم توجيهك إلى موقع الوثائق حيث يتم الحفاظ على صفحات المساعدة وترجمتها."
 
-#: ../libxfce4ui/xfce-dialogs.c:225
+#: ../libxfce4ui/xfce-dialogs.c:289
 msgid "_Read Online"
 msgstr "_قراءة عبر الشبكة"
 
-#: ../libxfce4ui/xfce-dialogs.c:237
+#: ../libxfce4ui/xfce-dialogs.c:298
 msgid "_Always go directly to the online documentation"
 msgstr "_الذهاب دائما إلى الوثائق عبر الشبكة"
 
-#: ../libxfce4ui/xfce-dialogs.c:281
+#: ../libxfce4ui/xfce-dialogs.c:346
 msgid "Information"
 msgstr "معلومات"
 
-#: ../libxfce4ui/xfce-dialogs.c:314
+#: ../libxfce4ui/xfce-dialogs.c:356 ../libxfce4ui/xfce-dialogs.c:399
+#: ../libxfce4ui/xfce-dialogs.c:443
+msgid "Close"
+msgstr "إغلاق"
+
+#: ../libxfce4ui/xfce-dialogs.c:389
 msgid "Warning"
 msgstr "تحذير"
 
-#: ../libxfce4ui/xfce-dialogs.c:348
+#: ../libxfce4ui/xfce-dialogs.c:433
 msgid "Error"
 msgstr "خطأ"
 
-#: ../libxfce4ui/xfce-dialogs.c:399
+#: ../libxfce4ui/xfce-dialogs.c:492
+msgid "No"
+msgstr "لا"
+
+#: ../libxfce4ui/xfce-dialogs.c:494
+msgid "Yes"
+msgstr "نعم"
+
+#: ../libxfce4ui/xfce-dialogs.c:502
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:41
+msgid "Cancel"
+msgstr "إلغاء"
+
+#: ../libxfce4ui/xfce-dialogs.c:509 ../libxfce4ui/xfce-dialogs.c:517
 msgid "Question"
 msgstr "السؤال"
 
@@ -97,7 +116,7 @@ msgid "Session manager did not return a valid client id"
 msgstr "مدير الجلسة لم يقم بإرجاع معرف عميل صالح"
 
 #. print warning for user
-#: ../libxfce4ui/xfce-spawn.c:413
+#: ../libxfce4ui/xfce-spawn.c:419
 #, c-format
 msgid ""
 "Working directory \"%s\" does not exist. It won't be used when spawning "
@@ -158,50 +177,54 @@ msgstr "%s تم تشغيله بالفعل."
 msgid "Conflicting actions for %s"
 msgstr "تعارض إجراءات %s"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:176
+#: ../libxfce4kbd-private/xfce-shortcuts.c:186
 msgid "This shortcut is already being used for something else."
 msgstr "هذا الإختصار تم إستعماله حاليا لشيء اخر."
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:209
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:211
 msgid "Window Manager Action Shortcut"
 msgstr "إختصار إجراء مدير النوافذ"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:212
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:226
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:214
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:228
 msgid "action"
 msgstr "إجراء"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:216
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:218
 msgid "Command Shortcut"
 msgstr "إختصار الامر"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:219
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:221
 msgid "command"
 msgstr "أمر"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:223
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:225
 msgid "Shortcut"
 msgstr "إختصار"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:267
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:249
+msgid "_Cancel"
+msgstr "_إلغاء"
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:284
 #, c-format
 msgid "Press now the keyboard keys you want to use to trigger the %s '%s'."
 msgstr "اضغط الآن على مفاتيح لوحة المفاتيح الذي تريد استخدامه لتشغيل %s '%s'."
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:291
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:312
 msgid "Shortcut:"
 msgstr "إختصار:"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:296
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:475
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:321
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:504
 msgid "No keys pressed yet, proceed."
 msgstr "لم يتم الضغط على اي مفتاح, المضي."
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:378
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:407
 msgid "Could not grab the keyboard."
 msgstr "لا يمكن مسك لوحة المفاتيح."
 
@@ -224,10 +247,6 @@ msgstr "يسار"
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:40
 msgid "Right"
 msgstr "يمين"
-
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:41
-msgid "Cancel"
-msgstr "إلغاء"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:42
 msgid "Cycle windows"
@@ -402,106 +421,122 @@ msgid "Tile window to the right"
 msgstr "بلاط النافذة إلى اليمين"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:85
+msgid "Tile window to the top-left"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:86
+msgid "Tile window to the top-right"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:87
+msgid "Tile window to the bottom-left"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:88
+msgid "Tile window to the bottom-right"
+msgstr ""
+
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:89
 msgid "Show desktop"
 msgstr "أظهر سطح المكتب"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:86
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:90
 msgid "Upper workspace"
 msgstr "مساحة العمل العليا"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:87
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:91
 msgid "Bottom workspace"
 msgstr "مساحة عمل السفلة"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:88
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:92
 msgid "Left workspace"
 msgstr "مساحة عمل اليسرى"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:89
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:93
 msgid "Right workspace"
 msgstr "مساحة عمل اليمنى"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:90
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:94
 msgid "Previous workspace"
 msgstr "مساحة عمل السابقة"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:91
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:95
 msgid "Next workspace"
 msgstr "مساحة عمل التالية"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:92
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:96
 msgid "Workspace 1"
 msgstr "مساحة عمل 1"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:93
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:97
 msgid "Workspace 2"
 msgstr "مساحة عمل 2"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:94
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:98
 msgid "Workspace 3"
 msgstr "مساحة عمل 3"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:95
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:99
 msgid "Workspace 4"
 msgstr "مساحة عمل 4"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:96
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:100
 msgid "Workspace 5"
 msgstr "مساحة عمل 5"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:97
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:101
 msgid "Workspace 6"
 msgstr "مساحة عمل 6"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:98
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:102
 msgid "Workspace 7"
 msgstr "مساحة عمل 7"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:99
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:103
 msgid "Workspace 8"
 msgstr "مساحة عمل 8"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:100
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:104
 msgid "Workspace 9"
 msgstr "مساحة عمل 9"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:101
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:105
 msgid "Workspace 10"
 msgstr "مساحة عمل 10"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:102
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:106
 msgid "Workspace 11"
 msgstr "مساحة عمل 11"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:103
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:107
 msgid "Workspace 12"
 msgstr "مساحة عمل 12"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:104
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:108
 msgid "Add workspace"
 msgstr "إضافة مساحة عمل"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:105
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:109
 msgid "Add adjacent workspace"
 msgstr "إضافة مساحة عمل متاخمة"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:106
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:110
 msgid "Delete last workspace"
 msgstr "حذف مساحة العمل الأخيرة"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:107
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:111
 msgid "Delete active workspace"
 msgstr "حذف مساحة العمل الحالية"
 
-#: ../glade/libxfce4ui.xml.in.h:1
+#: ../glade/libxfce4ui.xml.in.h:1 ../glade/libxfce4ui-2.xml.in.h:1
 msgid "Titled Dialog"
 msgstr "حوار معنون"
 
-#: ../glade/libxfce4ui.xml.in.h:2
+#: ../glade/libxfce4ui.xml.in.h:2 ../glade/libxfce4ui-2.xml.in.h:2
 msgid "Subtitle"
 msgstr "عنوان ثانوي"
 
-#: ../glade/libxfce4ui.xml.in.h:3
+#: ../glade/libxfce4ui.xml.in.h:3 ../glade/libxfce4ui-2.xml.in.h:3
 msgid "Xfce 4 Widgets"
 msgstr "قطع إكسفس 4"
 
@@ -614,23 +649,23 @@ msgstr "شكرا لإهتمامك بإكسفس."
 msgid "The Xfce Development Team"
 msgstr "فريق تطوير إكسفس"
 
-#: ../xfce4-about/main.c:262
+#: ../xfce4-about/main.c:261
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
 "on <http://bugzilla.xfce.org> ."
 msgstr "إذا كنت تعرف أي شيء مفقود في القائمة; لا تتردد و قم بالإبلاغ عنه في <http://bugzilla.xfce.org> ."
 
-#: ../xfce4-about/main.c:266
+#: ../xfce4-about/main.c:265
 msgid "Thanks to all who helped making this software available!"
 msgstr "شكرا لكل من ساهم في جعل هذا البرنامج متوفرا!"
 
-#: ../xfce4-about/main.c:283
+#: ../xfce4-about/main.c:282
 msgid ""
 "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
 msgstr "حقوق نسخ إكسفس 4 محفوظة لـ Olivier Fourdan (fourdan@xfce.org). حقوق النشر وتاليف مختلف مكونات محفوظة لمؤلفيها."
 
-#: ../xfce4-about/main.c:288
+#: ../xfce4-about/main.c:287
 msgid ""
 "The libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs and exo packages are "
 "distributed under the terms of the GNU Library General Public License as "
@@ -638,7 +673,7 @@ msgid ""
 "or (at your option) any later version."
 msgstr "حزم libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs و exo تم توزيعها تحت رخصة جنو العمومية للمكتبات كما نشرت من قبل منظمة البرمجيات الحرة; إما الإصدار 2 للرخصة, أو (حسب إختياركم) أي إصدار أحدث."
 
-#: ../xfce4-about/main.c:295
+#: ../xfce4-about/main.c:294
 msgid ""
 "The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, "
 "xfce4-settings, xfce-utils, xfconf, xfdesktop and xfwm4 are distributed "
@@ -647,43 +682,43 @@ msgid ""
 "any later version."
 msgstr "الحزم تونار, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfce-utils, xfconf, xfdesktop and xfwm4 تم توزيعها تحت رخصة جنو العمومية كما نشرت من قبل منظمة البرمجيات الحرة; إما الإصدار 2 من الرخصة, او (حسب إختياركم) أي إصدار أحدث."
 
-#: ../xfce4-about/main.c:442
+#: ../xfce4-about/main.c:441
 #, c-format
 msgid "Type '%s --help' for usage information."
 msgstr "أكتب '%s --help' لمعلومات الإستعمال."
 
-#: ../xfce4-about/main.c:448
+#: ../xfce4-about/main.c:447
 msgid "Unable to initialize GTK+."
 msgstr "غير قادر على بدء جتك+."
 
-#: ../xfce4-about/main.c:457
+#: ../xfce4-about/main.c:456
 msgid "The Xfce development team. All rights reserved."
 msgstr "فريق تطوير إكسفس. كل الحقوق محفوظة."
 
-#: ../xfce4-about/main.c:458
+#: ../xfce4-about/main.c:457
 #, c-format
 msgid "Please report bugs to <%s>."
 msgstr "لُطقًا أبلغ عن العلل إلى <%s>."
 
 #. I18N: date/time the translators list was updated
-#: ../xfce4-about/main.c:461
+#: ../xfce4-about/main.c:460
 #, c-format
 msgid "Translators list from %s."
 msgstr "لائحة المترجمون من %s."
 
-#: ../xfce4-about/main.c:471
+#: ../xfce4-about/main.c:470
 msgid "Failed to load interface"
 msgstr "tqg jpldg hg;hî,"
 
 #. I18N: first %s will be replaced by the version, second by
 #. * the name of the distribution (--with-vendor-info=NAME)
-#: ../xfce4-about/main.c:485
+#: ../xfce4-about/main.c:484
 #, c-format
 msgid "Version %s, distributed by %s"
 msgstr "إصدار %s, موزع من طرف %s"
 
 #. I18N: %s will be replaced by the Xfce version number
-#: ../xfce4-about/main.c:489
+#: ../xfce4-about/main.c:488
 #, c-format
 msgid "Version %s"
 msgstr "إصدار %s"
@@ -691,31 +726,31 @@ msgstr "إصدار %s"
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
 #. },
-#: ../xfce4-about/contributors.h:121
+#: ../xfce4-about/contributors.h:128
 msgid "Core developers"
 msgstr "مطورو اللب"
 
-#: ../xfce4-about/contributors.h:124
+#: ../xfce4-about/contributors.h:131
 msgid "Active contributors"
 msgstr "المساهمون النشطون"
 
-#: ../xfce4-about/contributors.h:127
+#: ../xfce4-about/contributors.h:134
 msgid "Servers maintained by"
 msgstr "صيانة الخوادم من طرف"
 
-#: ../xfce4-about/contributors.h:130
+#: ../xfce4-about/contributors.h:137
 msgid "Goodies supervision"
 msgstr "إشراف على الأشياء الجيدة"
 
-#: ../xfce4-about/contributors.h:133
+#: ../xfce4-about/contributors.h:140
 msgid "Translations supervision"
 msgstr "إشراف على الترجمات"
 
-#: ../xfce4-about/contributors.h:136
+#: ../xfce4-about/contributors.h:143
 msgid "Translators"
 msgstr "المترجمون"
 
-#: ../xfce4-about/contributors.h:139
+#: ../xfce4-about/contributors.h:146
 msgid "Previous contributors"
 msgstr "مساهمون سابقون"
 
@@ -758,3 +793,19 @@ msgstr "حقوق النسخ"
 #: ../xfce4-about/xfce4-about-dialog.glade.h:8
 msgid "License"
 msgstr "رخصة"
+
+#: ../tests/test-ui.c:138
+#, c-format
+msgid ""
+"A file named \"%s\" already exists in this directory, the file hasn't been "
+"added."
+msgstr ""
+
+#: ../tests/test-ui.c:149
+msgid "Failed to migrate the old panel configuration"
+msgstr "فشل ترحيل إعداد اللوحة القديمة"
+
+#: ../tests/test-ui.c:202 ../tests/test-ui.c:222 ../tests/test-ui.c:251
+#: ../tests/test-ui.c:273
+msgid "Customize settings stored by Xfconf"
+msgstr "خصص الإعدادات المخزنة من Xfconf"
