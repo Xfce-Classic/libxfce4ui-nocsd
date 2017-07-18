@@ -54,6 +54,7 @@
 #include <libxfce4ui/libxfce4ui-private.h>
 #include <libxfce4ui/libxfce4ui-alias.h>
 
+#include "libxfce4ui-resources.h"
 
 static void
 xfce_dialog_show_help_auto_toggled (GtkWidget *button)

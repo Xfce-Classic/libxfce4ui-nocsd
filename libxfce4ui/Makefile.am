@@ -33,7 +33,9 @@ libxfce4ui_built_sources = \
 	libxfce4ui-enum-types.c \
 	libxfce4ui-enum-types.h \
 	libxfce4ui-marshal.c \
-	libxfce4ui-marshal.h
+	libxfce4ui-marshal.h \
+	libxfce4ui-resources.c \
+	libxfce4ui-resources.h
 
 libxfce4ui_sources = \
 	$(libxfce4ui_headers) \
@@ -102,10 +104,6 @@ pkgconfig_DATA += \
 LIBXFCE4UI_RESOURCE_FILES = \
 	libxfce4ui-dialog-ui.ui \
 	$(NULL)
-
-libxfce4ui-resources.c: libxfce4ui.gresource.xml $(LIBXFCE4UI_RESOURCE_FILES)
-	$(AM_V_GEN)$(GLIB_COMPILE_RESOURCES) --target=$@ --sourcedir=$(srcdir) --generate-source --internal --c-name libxfce4ui libxfce4ui.gresource.xml
-
 
 include $(INTROSPECTION_MAKEFILE)
 INTROSPECTION_GIRS =
@@ -243,6 +241,12 @@ libxfce4ui-enum-types.c: $(libxfce4ui_enum_headers) Makefile
 		$(libxfce4ui_enum_headers) ) > xgen-letc
 	cp xgen-letc libxfce4ui-enum-types.c
 	rm -f xgen-letc
+
+libxfce4ui-resources.c: libxfce4ui.gresource.xml $(LIBXFCE4UI_RESOURCE_FILES)
+	$(AM_V_GEN)$(GLIB_COMPILE_RESOURCES) --target=$@ --sourcedir=$(srcdir) --generate-source --internal --c-name libxfce4ui libxfce4ui.gresource.xml
+libxfce4ui-resources.h: libxfce4ui.gresource.xml $(LIBXFCE4UI_RESOURCE_FILES)
+	$(AM_V_GEN)$(GLIB_COMPILE_RESOURCES) --target=$@ --sourcedir=$(srcdir) --generate-header --internal --c-name libxfce4ui libxfce4ui.gresource.xml
+
 endif
 
 # required for gtk-doc
