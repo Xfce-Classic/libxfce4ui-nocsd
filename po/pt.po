@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-06-30 06:30+0200\n"
-"PO-Revision-Date: 2017-07-25 10:26+0000\n"
+"PO-Revision-Date: 2017-07-25 11:15+0000\n"
 "Last-Translator: Nuno Miguel <nunomgue@gmail.com>\n"
 "Language-Team: Portuguese (http://www.transifex.com/xfce/libxfce4ui/language/pt/)\n"
 "MIME-Version: 1.0\n"
@@ -134,7 +134,7 @@ msgstr "Este atalho já está a ser utilizado pelo comando \"%s\". Que ação pr
 #: ../libxfce4kbd-private/xfce-shortcuts.c:63
 #, c-format
 msgid "Use '%s'"
-msgstr "Utilizar \"%s\""
+msgstr "Utilizar '%s'"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:54
 #: ../libxfce4kbd-private/xfce-shortcuts.c:57
@@ -142,7 +142,7 @@ msgstr "Utilizar \"%s\""
 #: ../libxfce4kbd-private/xfce-shortcuts.c:63
 #, c-format
 msgid "Keep '%s'"
-msgstr "Manter \"%s\""
+msgstr "Manter '%s'"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
 #: ../libxfce4kbd-private/xfce-shortcuts.c:59
@@ -150,14 +150,14 @@ msgstr "Manter \"%s\""
 msgid ""
 "This shortcut is already being used for the command '%s'. Which action do "
 "you want to use?"
-msgstr "Este atalho já está a ser utilizado pelo comando \"%s\". Que ação pretende utilizar?"
+msgstr "Este atalho já está a ser utilizado pelo comando '%s'. Que ação pretende utilizar?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 #, c-format
 msgid ""
 "This shortcut is already being used by the action '%s'. Which action do you "
 "want to use?"
-msgstr "Este atalho já está a ser utilizado pelo comando \"%s\". Que ação pretende utilizar?"
+msgstr "Este atalho já está a ser utilizado pela ação '%s'. Que ação pretende utilizar?"
 
 #. This shortcut already exists in the provider, we don't want it twice
 #. Warn the user
@@ -211,7 +211,7 @@ msgstr "_Cancelar"
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:284
 #, c-format
 msgid "Press now the keyboard keys you want to use to trigger the %s '%s'."
-msgstr "Prima as teclas que quer utilizar como ativar %s \"%s\"."
+msgstr "Prima as teclas que quer utilizar como ativar %s '%s'."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:312
 msgid "Shortcut:"
@@ -683,7 +683,7 @@ msgstr "Os pacotes thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-se
 #: ../xfce4-about/main.c:441
 #, c-format
 msgid "Type '%s --help' for usage information."
-msgstr "Digite \"%s --help\" para instruções de utilização."
+msgstr "Digite '%s --help' para instruções de utilização."
 
 #: ../xfce4-about/main.c:447
 msgid "Unable to initialize GTK+."
