@@ -3,13 +3,13 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Nuno Miguel <nunomgue@gmail.com>, 2015-2016
+# Nuno Miguel <nunomgue@gmail.com>, 2015-2017
 msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-09 00:30+0200\n"
-"PO-Revision-Date: 2016-10-13 11:51+0000\n"
+"POT-Creation-Date: 2017-06-30 06:30+0200\n"
+"PO-Revision-Date: 2017-07-25 10:26+0000\n"
 "Last-Translator: Nuno Miguel <nunomgue@gmail.com>\n"
 "Language-Team: Portuguese (http://www.transifex.com/xfce/libxfce4ui/language/pt/)\n"
 "MIME-Version: 1.0\n"
@@ -18,64 +18,68 @@ msgstr ""
 "Language: pt\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../libxfce4ui/xfce-dialogs.c:100
+#: ../libxfce4ui/xfce-dialogs.c:109
 msgid "Failed to open web browser for online documentation"
 msgstr "Falhou a abertura do navegador web para a documentação"
 
-#: ../libxfce4ui/xfce-dialogs.c:254
+#: ../libxfce4ui/xfce-dialogs.c:263
 #, c-format
 msgid "Do you want to read the %s manual online?"
 msgstr "Pretende ler o manual de %s na Internet?"
 
-#: ../libxfce4ui/xfce-dialogs.c:256
+#: ../libxfce4ui/xfce-dialogs.c:265
 msgid "Do you want to read the manual online?"
 msgstr "Pretende ler o manual na Internet?"
 
-#: ../libxfce4ui/xfce-dialogs.c:259
+#: ../libxfce4ui/xfce-dialogs.c:268
 msgid "Online Documentation"
 msgstr "Documentação na Internet"
 
-#: ../libxfce4ui/xfce-dialogs.c:266
+#: ../libxfce4ui/xfce-dialogs.c:275
 msgid ""
 "You will be redirected to the documentation website where the help pages are"
 " maintained and translated."
 msgstr "Será direcionado para a página de documentação na Internet, na qual as páginas de ajuda são produzidas e traduzidas."
 
-#: ../libxfce4ui/xfce-dialogs.c:280
+#: ../libxfce4ui/xfce-dialogs.c:289
 msgid "_Read Online"
 msgstr "Le_r na Internet"
 
-#: ../libxfce4ui/xfce-dialogs.c:289
+#: ../libxfce4ui/xfce-dialogs.c:298
 msgid "_Always go directly to the online documentation"
 msgstr "_Abrir sempre a documentação na Internet"
 
-#: ../libxfce4ui/xfce-dialogs.c:337
+#: ../libxfce4ui/xfce-dialogs.c:346
 msgid "Information"
 msgstr "Informações"
 
-#: ../libxfce4ui/xfce-dialogs.c:347 ../libxfce4ui/xfce-dialogs.c:390
-#: ../libxfce4ui/xfce-dialogs.c:434
+#: ../libxfce4ui/xfce-dialogs.c:356 ../libxfce4ui/xfce-dialogs.c:399
+#: ../libxfce4ui/xfce-dialogs.c:443
 msgid "Close"
 msgstr "Fechar"
 
-#: ../libxfce4ui/xfce-dialogs.c:380
+#: ../libxfce4ui/xfce-dialogs.c:389
 msgid "Warning"
 msgstr "Aviso"
 
-#: ../libxfce4ui/xfce-dialogs.c:424
+#: ../libxfce4ui/xfce-dialogs.c:433
 msgid "Error"
 msgstr "Erro"
 
-#: ../libxfce4ui/xfce-dialogs.c:483
+#: ../libxfce4ui/xfce-dialogs.c:492
 msgid "No"
 msgstr "Não"
 
-#: ../libxfce4ui/xfce-dialogs.c:491
+#: ../libxfce4ui/xfce-dialogs.c:494
+msgid "Yes"
+msgstr "Sim"
+
+#: ../libxfce4ui/xfce-dialogs.c:502
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:41
 msgid "Cancel"
 msgstr "Cancelar"
 
-#: ../libxfce4ui/xfce-dialogs.c:498 ../libxfce4ui/xfce-dialogs.c:506
+#: ../libxfce4ui/xfce-dialogs.c:509 ../libxfce4ui/xfce-dialogs.c:517
 msgid "Question"
 msgstr "Questão"
 
@@ -110,7 +114,7 @@ msgid "Session manager did not return a valid client id"
 msgstr "O gestor de sessões não devolveu uma identificação válida"
 
 #. print warning for user
-#: ../libxfce4ui/xfce-spawn.c:409
+#: ../libxfce4ui/xfce-spawn.c:419
 #, c-format
 msgid ""
 "Working directory \"%s\" does not exist. It won't be used when spawning "
@@ -175,50 +179,50 @@ msgstr "Ações em conflito para %s"
 msgid "This shortcut is already being used for something else."
 msgstr "Este atalho já está a ser utilizado para outra coisa."
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:209
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:211
 msgid "Window Manager Action Shortcut"
 msgstr "Atalho da ação do gestor de janelas"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:212
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:226
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:214
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:228
 msgid "action"
 msgstr "ação"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:216
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:218
 msgid "Command Shortcut"
 msgstr "Atalho do comando"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:219
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:221
 msgid "command"
 msgstr "comando"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:223
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:225
 msgid "Shortcut"
 msgstr "Atalho"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:247
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:249
 msgid "_Cancel"
 msgstr "_Cancelar"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:275
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:284
 #, c-format
 msgid "Press now the keyboard keys you want to use to trigger the %s '%s'."
 msgstr "Prima as teclas que quer utilizar como ativar %s \"%s\"."
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:299
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:312
 msgid "Shortcut:"
 msgstr "Atalho:"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:304
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:483
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:321
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:504
 msgid "No keys pressed yet, proceed."
 msgstr "Nenhuma tecla premida, continuar."
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:386
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:407
 msgid "Could not grab the keyboard."
 msgstr "Incapaz de capturar o teclado."
 
