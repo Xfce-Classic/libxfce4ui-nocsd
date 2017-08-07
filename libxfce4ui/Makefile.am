@@ -271,8 +271,7 @@ libxfce4ui-2.vapi: libxfce4ui-2.0.gir libxfce4ui-2.deps
 VAPIGEN_VAPIS = libxfce4ui-2.vapi
 VAPIGEN_GIRDIRS = $(prefix)/share/gir-1.0
 
-libxfce4ui_2_vapi_DEPS = libxfce4ui-2.0
-libxfce4ui_2_vapi_METADATADIRS = $(srcdir)
+libxfce4ui_2_vapi_METADATADIRS = .
 libxfce4ui_2_vapi_FILES = libxfce4ui-2.0.gir
 
 vapidir = $(datadir)/vala/vapi
