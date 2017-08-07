@@ -266,19 +266,19 @@ EXTRA_DIST = \
 if ENABLE_VAPIGEN
 -include $(VAPIGEN_MAKEFILE)
 
-libxfce4ui-2.0.vapi: libxfce4ui-2.0.gir libxfce4ui-2.0.deps
+libxfce4ui-2.vapi: libxfce4ui-2.0.gir libxfce4ui-2.deps
 
-VAPIGEN_VAPIS = libxfce4ui-2.0.vapi
+VAPIGEN_VAPIS = libxfce4ui-2.vapi
 VAPIGEN_GIRDIRS = $(prefix)/share/gir-1.0
 
-libxfce4ui_2_0_vapi_DEPS = libxfce4ui-2.0
-libxfce4ui_2_0_vapi_METADATADIRS = $(srcdir)
-libxfce4ui_2_0_vapi_FILES = libxfce4ui-2.0.gir
+libxfce4ui_2_vapi_DEPS = libxfce4ui-2.0
+libxfce4ui_2_vapi_METADATADIRS = $(srcdir)
+libxfce4ui_2_vapi_FILES = libxfce4ui-2.0.gir
 
 vapidir = $(datadir)/vala/vapi
 vapi_DATA = $(VAPIGEN_VAPIS) $(VAPIGEN_VAPIS:.vapi=.deps)
 
-EXTRA_DIST += libxfce4ui-2.0.metadata libxfce4ui-2.0.deps
+EXTRA_DIST += libxfce4ui-2.metadata libxfce4ui-2.deps
 endif
 
 if HAVE_GNUC_VISIBILITY
