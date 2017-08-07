@@ -68,6 +68,7 @@ libxfce4ui/stamp-libxfce4ui-enum-types.h
 libxfce4ui/stamp-libxfce4ui-marshal.h
 libxfce4ui/libxfce4ui-2.0.gir
 libxfce4ui/libxfce4ui-2.0.typelib
+libxfce4ui/libxfce4ui-2.0.vapi
 xfce4-about/about-dialog-ui.h
 xfce4-about/xfce4-about
 xfce4-about/xfce4-about.desktop

@@ -149,6 +149,11 @@ dnl *** Check for gobject-introspection ***
 dnl ***************************************
 GOBJECT_INTROSPECTION_CHECK([1.30.0])
 
+dnl *************************
+dnl *** Check for vapigen ***
+dnl *************************
+VAPIGEN_CHECK()
+
 dnl *************************************************
 dnl *** Optional support for startup notification ***
 dnl *************************************************
