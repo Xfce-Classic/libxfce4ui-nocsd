@@ -30,7 +30,8 @@ EXTRA_DIST = \
 	intltool-extract.in \
 	intltool-merge.in \
 	intltool-update.in \
-	m4/introspection.m4
+	m4/introspection.m4 \
+	m4/vapigen.m4
 
 DISTCLEANFILES = \
 	intltool-extract \
