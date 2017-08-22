@@ -3,14 +3,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# abuyop <abuyop@gmail.com>, 2015-2016
+# abuyop <abuyop@gmail.com>, 2015-2017
 # Puretech <terjemah.puretech@gmail.com>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-09 00:30+0200\n"
-"PO-Revision-Date: 2016-09-24 12:51+0000\n"
+"POT-Creation-Date: 2017-06-30 06:30+0200\n"
+"PO-Revision-Date: 2017-08-22 03:38+0000\n"
 "Last-Translator: abuyop <abuyop@gmail.com>\n"
 "Language-Team: Malay (http://www.transifex.com/xfce/libxfce4ui/language/ms/)\n"
 "MIME-Version: 1.0\n"
@@ -19,64 +19,68 @@ msgstr ""
 "Language: ms\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../libxfce4ui/xfce-dialogs.c:100
+#: ../libxfce4ui/xfce-dialogs.c:109
 msgid "Failed to open web browser for online documentation"
 msgstr "Gagal membuka pelayar web untuk dokumentasi dalam talian"
 
-#: ../libxfce4ui/xfce-dialogs.c:254
+#: ../libxfce4ui/xfce-dialogs.c:263
 #, c-format
 msgid "Do you want to read the %s manual online?"
 msgstr "Anda mahu membaca panduan %s dalam talian?"
 
-#: ../libxfce4ui/xfce-dialogs.c:256
+#: ../libxfce4ui/xfce-dialogs.c:265
 msgid "Do you want to read the manual online?"
 msgstr "Anda mahu membaca panduan dalam talian?"
 
-#: ../libxfce4ui/xfce-dialogs.c:259
+#: ../libxfce4ui/xfce-dialogs.c:268
 msgid "Online Documentation"
 msgstr "Dokumentasi Dalam Talian"
 
-#: ../libxfce4ui/xfce-dialogs.c:266
+#: ../libxfce4ui/xfce-dialogs.c:275
 msgid ""
 "You will be redirected to the documentation website where the help pages are"
 " maintained and translated."
 msgstr "Anda akan dihalakan ke laman web dokumentasi dimana laman bantuan diselenggara dan diterjemahkan."
 
-#: ../libxfce4ui/xfce-dialogs.c:280
+#: ../libxfce4ui/xfce-dialogs.c:289
 msgid "_Read Online"
 msgstr "Baca Dalam Talian"
 
-#: ../libxfce4ui/xfce-dialogs.c:289
+#: ../libxfce4ui/xfce-dialogs.c:298
 msgid "_Always go directly to the online documentation"
 msgstr "Sentiasa pergi terus ke dokumentasi dalam talian"
 
-#: ../libxfce4ui/xfce-dialogs.c:337
+#: ../libxfce4ui/xfce-dialogs.c:346
 msgid "Information"
 msgstr "Maklumat"
 
-#: ../libxfce4ui/xfce-dialogs.c:347 ../libxfce4ui/xfce-dialogs.c:390
-#: ../libxfce4ui/xfce-dialogs.c:434
+#: ../libxfce4ui/xfce-dialogs.c:356 ../libxfce4ui/xfce-dialogs.c:399
+#: ../libxfce4ui/xfce-dialogs.c:443
 msgid "Close"
 msgstr "Tutup"
 
-#: ../libxfce4ui/xfce-dialogs.c:380
+#: ../libxfce4ui/xfce-dialogs.c:389
 msgid "Warning"
 msgstr "Amaran"
 
-#: ../libxfce4ui/xfce-dialogs.c:424
+#: ../libxfce4ui/xfce-dialogs.c:433
 msgid "Error"
 msgstr "Ralat"
 
-#: ../libxfce4ui/xfce-dialogs.c:483
+#: ../libxfce4ui/xfce-dialogs.c:492
 msgid "No"
 msgstr "Tidak"
 
-#: ../libxfce4ui/xfce-dialogs.c:491
+#: ../libxfce4ui/xfce-dialogs.c:494
+msgid "Yes"
+msgstr "Ya"
+
+#: ../libxfce4ui/xfce-dialogs.c:502
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:41
 msgid "Cancel"
 msgstr "Batal"
 
-#: ../libxfce4ui/xfce-dialogs.c:498 ../libxfce4ui/xfce-dialogs.c:506
+#: ../libxfce4ui/xfce-dialogs.c:509 ../libxfce4ui/xfce-dialogs.c:517
 msgid "Question"
 msgstr "Soalan"
 
@@ -111,7 +115,7 @@ msgid "Session manager did not return a valid client id"
 msgstr "Pengurus sesi tidak mengembalikan id klien yang sah"
 
 #. print warning for user
-#: ../libxfce4ui/xfce-spawn.c:409
+#: ../libxfce4ui/xfce-spawn.c:419
 #, c-format
 msgid ""
 "Working directory \"%s\" does not exist. It won't be used when spawning "
@@ -176,50 +180,50 @@ msgstr "Konflik tindakan untuk %s"
 msgid "This shortcut is already being used for something else."
 msgstr "Pintasan ini telah digunakan untuk perkara lain."
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:209
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:211
 msgid "Window Manager Action Shortcut"
 msgstr "Pintasan Tindakan Pengurus Tetingkap"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:212
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:226
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:214
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:228
 msgid "action"
 msgstr "tindakan"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:216
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:218
 msgid "Command Shortcut"
 msgstr "Pintaan Arahan"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:219
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:221
 msgid "command"
 msgstr "arahan"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:223
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:225
 msgid "Shortcut"
 msgstr "Pintasan"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:247
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:249
 msgid "_Cancel"
 msgstr "_Batal"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:275
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:284
 #, c-format
 msgid "Press now the keyboard keys you want to use to trigger the %s '%s'."
 msgstr "Tekan sekarang kekunci papan kekunci yang mahu digunakan untuk mencetuskan %s '%s'."
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:299
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:312
 msgid "Shortcut:"
 msgstr "Pintasan:"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:304
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:483
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:321
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:504
 msgid "No keys pressed yet, proceed."
 msgstr "Tiada kekunci ditekan, teruskan."
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:386
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:407
 msgid "Could not grab the keyboard."
 msgstr "Tidak dapat menangkap papan kekunci."
 
