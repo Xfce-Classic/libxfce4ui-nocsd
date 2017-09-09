@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-06-30 06:30+0200\n"
-"PO-Revision-Date: 2017-07-25 11:15+0000\n"
+"PO-Revision-Date: 2017-09-09 17:16+0000\n"
 "Last-Translator: Nuno Miguel <nunomgue@gmail.com>\n"
 "Language-Team: Portuguese (http://www.transifex.com/xfce/libxfce4ui/language/pt/)\n"
 "MIME-Version: 1.0\n"
@@ -25,7 +25,7 @@ msgstr "Falhou a abertura do navegador web para a documentação"
 #: ../libxfce4ui/xfce-dialogs.c:263
 #, c-format
 msgid "Do you want to read the %s manual online?"
-msgstr "Pretende ler o manual de %s na Internet?"
+msgstr "Pretende ler o manual de %s online?"
 
 #: ../libxfce4ui/xfce-dialogs.c:265
 msgid "Do you want to read the manual online?"
@@ -33,7 +33,7 @@ msgstr "Pretende ler o manual na Internet?"
 
 #: ../libxfce4ui/xfce-dialogs.c:268
 msgid "Online Documentation"
-msgstr "Documentação na Internet"
+msgstr "Documentação online"
 
 #: ../libxfce4ui/xfce-dialogs.c:275
 msgid ""
@@ -43,11 +43,11 @@ msgstr "Será direcionado para a página de documentação na Internet, na qual 
 
 #: ../libxfce4ui/xfce-dialogs.c:289
 msgid "_Read Online"
-msgstr "Le_r na Internet"
+msgstr "Le_r na online"
 
 #: ../libxfce4ui/xfce-dialogs.c:298
 msgid "_Always go directly to the online documentation"
-msgstr "_Abrir sempre a documentação na Internet"
+msgstr "_Abrir sempre a documentação online"
 
 #: ../libxfce4ui/xfce-dialogs.c:346
 msgid "Information"
@@ -106,12 +106,12 @@ msgstr "Mostrar opções da gestão de sessões"
 #: ../libxfce4ui/xfce-sm-client.c:1611
 #, c-format
 msgid "Failed to connect to the session manager: %s"
-msgstr "Falha ao ligar ao gestor da sessões: %s"
+msgstr "Falha ao ligar ao gestor de sessão: %s"
 
 #: ../libxfce4ui/xfce-sm-client.c:1617
 #, c-format
 msgid "Session manager did not return a valid client id"
-msgstr "O gestor de sessões não devolveu uma identificação válida"
+msgstr "O gestor de sessão não devolveu uma identificação válida"
 
 #. print warning for user
 #: ../libxfce4ui/xfce-spawn.c:419
@@ -126,7 +126,7 @@ msgstr "O diretório de trabalho \"%s\" não existe. Não será usado ao criar \
 msgid ""
 "This shortcut is already being used for the action '%s'. Which action do you"
 " want to use?"
-msgstr "Este atalho já está a ser utilizado pelo comando \"%s\". Que ação pretende utilizar?"
+msgstr "Este atalho já está a ser utilizado pelo comando \"%s\". Que ação pretende usar?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:54
 #: ../libxfce4kbd-private/xfce-shortcuts.c:57
@@ -134,7 +134,7 @@ msgstr "Este atalho já está a ser utilizado pelo comando \"%s\". Que ação pr
 #: ../libxfce4kbd-private/xfce-shortcuts.c:63
 #, c-format
 msgid "Use '%s'"
-msgstr "Utilizar '%s'"
+msgstr "Usar '%s'"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:54
 #: ../libxfce4kbd-private/xfce-shortcuts.c:57
@@ -150,7 +150,7 @@ msgstr "Manter '%s'"
 msgid ""
 "This shortcut is already being used for the command '%s'. Which action do "
 "you want to use?"
-msgstr "Este atalho já está a ser utilizado pelo comando '%s'. Que ação pretende utilizar?"
+msgstr "Este atalho já está a ser usado pelo comando '%s'. Que ação pretende usar?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 #, c-format
@@ -163,12 +163,12 @@ msgstr "Este atalho já está a ser utilizado pela ação '%s'. Que ação prete
 #. Warn the user
 #: ../libxfce4kbd-private/xfce-shortcuts.c:110
 msgid "Please use another key combination."
-msgstr "Por favor escolha outra combinação de teclas."
+msgstr "Por favor use outra combinação de teclas."
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:111
 #, c-format
 msgid "%s already triggers this action."
-msgstr "Esta ação já é ativada por %s."
+msgstr "a ação já é ativada por %s."
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:116
 #, c-format
@@ -177,7 +177,7 @@ msgstr "Ações em conflito para %s"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:186
 msgid "This shortcut is already being used for something else."
-msgstr "Este atalho já está a ser utilizado para outra coisa."
+msgstr "Este atalho já está a ser usado para outra coisa."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:211
 msgid "Window Manager Action Shortcut"
@@ -211,7 +211,7 @@ msgstr "_Cancelar"
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:284
 #, c-format
 msgid "Press now the keyboard keys you want to use to trigger the %s '%s'."
-msgstr "Prima as teclas que quer utilizar como ativar %s '%s'."
+msgstr "Prima agora as teclas que quer usar para ativar %s '%s'."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:312
 msgid "Shortcut:"
@@ -578,11 +578,11 @@ msgstr "Gestor de ficheiros"
 msgid ""
 "A modern file manager for the Unix/Linux desktop, aiming to be easy-to-use "
 "and fast."
-msgstr "Um gestor de ficheiros moderno para os ambientes de trabalho Unix/Linux, criado para ser rápido e fácil de utilizar."
+msgstr "Um gestor de ficheiros moderno para os ambientes de trabalho Unix/Linux, criado para ser rápido e fácil de usar."
 
 #: ../xfce4-about/main.c:89
 msgid "Session Manager"
-msgstr "Gestor de sessões"
+msgstr "Gestor de sessão"
 
 #: ../xfce4-about/main.c:90
 msgid ""
