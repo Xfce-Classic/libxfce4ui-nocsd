@@ -3,20 +3,21 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Fitoschido, 2014
-# Fitoschido, 2015
+# Adolfo Jayme-Barrientos, 2014
+# Adolfo Jayme-Barrientos, 2015
 # Fitoschido, 2014-2015
 # Manolo Díaz <diaz.manolo@gmail.com>, 2015
 # mc <correomc2000-ing@yahoo.es>, 2013
-# Pablo Roberto “Jristz” Lezaeta Reyes <prflr88@gmail.com>, 2013-2015
-# Pablo Roberto “Jristz” Lezaeta Reyes <prflr88@gmail.com>, 2016
+# Pablo Lezaeta Reyes [pˈaβ̞lo lˌe̞θaˈeta rˈejɛ] <prflr88@gmail.com>, 2017
+# Pablo Lezaeta Reyes [pˈaβ̞lo lˌe̞θaˈeta rˈejɛ] <prflr88@gmail.com>, 2013-2015
+# Pablo Lezaeta Reyes [pˈaβ̞lo lˌe̞θaˈeta rˈejɛ] <prflr88@gmail.com>, 2016-2017
 msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-09 00:30+0200\n"
-"PO-Revision-Date: 2016-06-19 05:16+0000\n"
-"Last-Translator: Pablo Roberto “Jristz” Lezaeta Reyes <prflr88@gmail.com>\n"
+"POT-Creation-Date: 2017-06-30 06:30+0200\n"
+"PO-Revision-Date: 2017-09-09 23:55+0000\n"
+"Last-Translator: Pablo Lezaeta Reyes [pˈaβ̞lo lˌe̞θaˈeta rˈejɛ] <prflr88@gmail.com>\n"
 "Language-Team: Spanish (http://www.transifex.com/xfce/libxfce4ui/language/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -24,64 +25,68 @@ msgstr ""
 "Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../libxfce4ui/xfce-dialogs.c:100
+#: ../libxfce4ui/xfce-dialogs.c:109
 msgid "Failed to open web browser for online documentation"
 msgstr "No se pudo abrir el navegador web para la documentación en línea"
 
-#: ../libxfce4ui/xfce-dialogs.c:254
+#: ../libxfce4ui/xfce-dialogs.c:263
 #, c-format
 msgid "Do you want to read the %s manual online?"
 msgstr "¿Quiere leer el manual en línea de %s?"
 
-#: ../libxfce4ui/xfce-dialogs.c:256
+#: ../libxfce4ui/xfce-dialogs.c:265
 msgid "Do you want to read the manual online?"
 msgstr "¿Quiere leer el manual en línea?"
 
-#: ../libxfce4ui/xfce-dialogs.c:259
+#: ../libxfce4ui/xfce-dialogs.c:268
 msgid "Online Documentation"
 msgstr "Documentación en línea"
 
-#: ../libxfce4ui/xfce-dialogs.c:266
+#: ../libxfce4ui/xfce-dialogs.c:275
 msgid ""
 "You will be redirected to the documentation website where the help pages are"
 " maintained and translated."
 msgstr "Le redirigiremos al sitio web de la documentación, en el que se mantienen y traducen las páginas de ayuda."
 
-#: ../libxfce4ui/xfce-dialogs.c:280
+#: ../libxfce4ui/xfce-dialogs.c:289
 msgid "_Read Online"
 msgstr "_Leer en línea"
 
-#: ../libxfce4ui/xfce-dialogs.c:289
+#: ../libxfce4ui/xfce-dialogs.c:298
 msgid "_Always go directly to the online documentation"
 msgstr "_Siempre ir directamente a la documentación en línea"
 
-#: ../libxfce4ui/xfce-dialogs.c:337
+#: ../libxfce4ui/xfce-dialogs.c:346
 msgid "Information"
 msgstr "Información"
 
-#: ../libxfce4ui/xfce-dialogs.c:347 ../libxfce4ui/xfce-dialogs.c:390
-#: ../libxfce4ui/xfce-dialogs.c:434
+#: ../libxfce4ui/xfce-dialogs.c:356 ../libxfce4ui/xfce-dialogs.c:399
+#: ../libxfce4ui/xfce-dialogs.c:443
 msgid "Close"
 msgstr "Cerrar"
 
-#: ../libxfce4ui/xfce-dialogs.c:380
+#: ../libxfce4ui/xfce-dialogs.c:389
 msgid "Warning"
 msgstr "Atención"
 
-#: ../libxfce4ui/xfce-dialogs.c:424
+#: ../libxfce4ui/xfce-dialogs.c:433
 msgid "Error"
 msgstr "Error"
 
-#: ../libxfce4ui/xfce-dialogs.c:483
+#: ../libxfce4ui/xfce-dialogs.c:492
 msgid "No"
 msgstr "No"
 
-#: ../libxfce4ui/xfce-dialogs.c:491
+#: ../libxfce4ui/xfce-dialogs.c:494
+msgid "Yes"
+msgstr "Sí"
+
+#: ../libxfce4ui/xfce-dialogs.c:502
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:41
 msgid "Cancel"
 msgstr "Cancelar"
 
-#: ../libxfce4ui/xfce-dialogs.c:498 ../libxfce4ui/xfce-dialogs.c:506
+#: ../libxfce4ui/xfce-dialogs.c:509 ../libxfce4ui/xfce-dialogs.c:517
 msgid "Question"
 msgstr "Pregunta"
 
@@ -116,7 +121,7 @@ msgid "Session manager did not return a valid client id"
 msgstr "El gestor de sesiones no devolvió un identificador de cliente válido"
 
 #. print warning for user
-#: ../libxfce4ui/xfce-spawn.c:409
+#: ../libxfce4ui/xfce-spawn.c:419
 #, c-format
 msgid ""
 "Working directory \"%s\" does not exist. It won't be used when spawning "
@@ -181,50 +186,50 @@ msgstr "Acciones en conflicto para %s"
 msgid "This shortcut is already being used for something else."
 msgstr "Esta combinación ya está asignada a otra opción."
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:209
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:211
 msgid "Window Manager Action Shortcut"
 msgstr "Combinación de acción del gestor de ventanas"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:212
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:226
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:214
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:228
 msgid "action"
 msgstr "Acción"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:216
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:218
 msgid "Command Shortcut"
 msgstr "Órdenes de la combinación"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:219
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:221
 msgid "command"
 msgstr "orden"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:223
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:225
 msgid "Shortcut"
 msgstr "Combinación"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:247
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:249
 msgid "_Cancel"
 msgstr "_Cancelar"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:275
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:284
 #, c-format
 msgid "Press now the keyboard keys you want to use to trigger the %s '%s'."
 msgstr "Presione la/s lecla/s que desea asignar para ejecutar %s «%s»."
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:299
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:312
 msgid "Shortcut:"
 msgstr "Combinación:"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:304
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:483
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:321
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:504
 msgid "No keys pressed yet, proceed."
 msgstr "No hay teclas presionadas, proceder."
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:386
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:407
 msgid "Could not grab the keyboard."
 msgstr "No se pudo capturar el teclado."
 
@@ -330,7 +335,7 @@ msgstr "Mostrar encima"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:62
 msgid "Toggle fullscreen"
-msgstr "Pantalla completa"
+msgstr "Cambiar a pantalla completa"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:63
 msgid "Move window to upper workspace"
@@ -639,7 +644,7 @@ msgid ""
 " for applications and LGPL or BSDL for libraries. Look at the documentation,"
 " the source code or the Xfce website (http://www.xfce.org) for more "
 "information."
-msgstr "Los componentes de Xfce están licenciados bajo licencias de código abierto o libres; GPL o BSDL para las aplicaciones y LGPL o BSDL para las librerías. Mire la documentación, el código fuente o el sitio web de Xfce (http://www.xfce.org) para más información."
+msgstr "Los componentes de Xfce están licenciados bajo licencias de código abierto o libres; GPL o BSDL para las aplicaciones y LGPL o BSDL para las librerías. Mire la documentación, el código fuente o el sitio web de Xfce (https://www.xfce.org) para más información."
 
 #: ../xfce4-about/main.c:149
 msgid "Thank you for your interest in Xfce."
@@ -653,7 +658,7 @@ msgstr "El equipo de desarrollo de Xfce"
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
 "on <http://bugzilla.xfce.org> ."
-msgstr "Si sabe de alguien ausente en esta lista; no dude reportarlo en <http://bugzilla.xfce.org> ."
+msgstr "Si sabe de alguien ausente en esta lista; no dude reportarlo en <https://bugzilla.xfce.org> ."
 
 #: ../xfce4-about/main.c:265
 msgid "Thanks to all who helped making this software available!"
@@ -803,9 +808,9 @@ msgstr "Ya existe un fichero llamado «%s» en este directorio, no se ha añadid
 
 #: ../tests/test-ui.c:149
 msgid "Failed to migrate the old panel configuration"
-msgstr "Fallo al migrar la configuración antigua del panel"
+msgstr "No se pudo migrar la configuración antigua del panel"
 
 #: ../tests/test-ui.c:202 ../tests/test-ui.c:222 ../tests/test-ui.c:251
 #: ../tests/test-ui.c:273
 msgid "Customize settings stored by Xfconf"
-msgstr "Personalizar los ajustes almacenados por «Xfconf»"
+msgstr "Personalizar los ajustes almacenados por Servicio de configuración de Xfce"
