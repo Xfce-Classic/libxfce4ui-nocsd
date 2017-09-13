@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-06-30 06:30+0200\n"
-"PO-Revision-Date: 2017-09-13 15:21+0000\n"
+"PO-Revision-Date: 2017-09-13 21:49+0000\n"
 "Last-Translator: scootergrisen\n"
 "Language-Team: Danish (http://www.transifex.com/xfce/libxfce4ui/language/da/)\n"
 "MIME-Version: 1.0\n"
@@ -25,7 +25,7 @@ msgstr ""
 
 #: ../libxfce4ui/xfce-dialogs.c:109
 msgid "Failed to open web browser for online documentation"
-msgstr "Kunne ikke åbne webbrowser til vises af online-dokumentation"
+msgstr "Kunne ikke åbne webbrowser til visning af online-dokumentation"
 
 #: ../libxfce4ui/xfce-dialogs.c:263
 #, c-format
@@ -674,7 +674,7 @@ msgid ""
 "distributed under the terms of the GNU Library General Public License as "
 "published by the Free Software Foundation; either version 2 of the License, "
 "or (at your option) any later version."
-msgstr "libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs og exo pakkerne er distribueret under betingelserne i GNU Library General Public License som publiceres af Free Software Foundation; enten version 2 af licensen eller (efter dit valg) enhver senere version."
+msgstr "Pakkerne libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs og exo er distribueret under betingelserne i GNU Library General Public License som publiceres af Free Software Foundation; enten version 2 af licensen eller (efter dit valg) enhver senere version."
 
 #: ../xfce4-about/main.c:294
 msgid ""
