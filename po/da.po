@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-06-30 06:30+0200\n"
-"PO-Revision-Date: 2017-07-01 21:55+0000\n"
+"PO-Revision-Date: 2017-09-13 15:21+0000\n"
 "Last-Translator: scootergrisen\n"
 "Language-Team: Danish (http://www.transifex.com/xfce/libxfce4ui/language/da/)\n"
 "MIME-Version: 1.0\n"
@@ -329,11 +329,11 @@ msgstr "Fyld vinduet lodret"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:61
 msgid "Toggle above"
-msgstr "Aktiver over"
+msgstr "Aktivér over"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:62
 msgid "Toggle fullscreen"
-msgstr "Aktiver fuldskærm"
+msgstr "Aktivér fuldskærm"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:63
 msgid "Move window to upper workspace"
