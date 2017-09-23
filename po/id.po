@@ -4,15 +4,15 @@
 # 
 # Translators:
 # Andhika Padmawan <andhika.padmawan@gmail.com>, 2009
-# Ardjuna <Asyura.x@gmail.com>, 2015
+# Ardjuna <Asyura.x@gmail.com>, 2015,2017
 # William Thomas <littlecloudydev@gmail.com>, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-06-30 06:30+0200\n"
-"PO-Revision-Date: 2017-09-19 18:02+0000\n"
-"Last-Translator: Kukuh Syafaat <syafaatkukuh@gmail.com>\n"
+"PO-Revision-Date: 2017-09-23 08:37+0000\n"
+"Last-Translator: Ardjuna <Asyura.x@gmail.com>\n"
 "Language-Team: Indonesian (http://www.transifex.com/xfce/libxfce4ui/language/id/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -22,16 +22,16 @@ msgstr ""
 
 #: ../libxfce4ui/xfce-dialogs.c:109
 msgid "Failed to open web browser for online documentation"
-msgstr "Gagal membuka peramban web untuk dokumentasi daring"
+msgstr "Gagal membuka peramban web untuk menampilkan dokumentasi"
 
 #: ../libxfce4ui/xfce-dialogs.c:263
 #, c-format
 msgid "Do you want to read the %s manual online?"
-msgstr "Anda ingin membaca manual %s secara daring?"
+msgstr "Anda ingin membaca petunjuk %s secara daring?"
 
 #: ../libxfce4ui/xfce-dialogs.c:265
 msgid "Do you want to read the manual online?"
-msgstr "Anda ingin membaca manual secara daring?"
+msgstr "Anda ingin membaca dokumentasi secara daring?"
 
 #: ../libxfce4ui/xfce-dialogs.c:268
 msgid "Online Documentation"
@@ -49,7 +49,7 @@ msgstr "_Baca secara Daring"
 
 #: ../libxfce4ui/xfce-dialogs.c:298
 msgid "_Always go directly to the online documentation"
-msgstr "_Selalu pergi ke dokumentasi daring"
+msgstr "_Selalu buka dokumentasi daring"
 
 #: ../libxfce4ui/xfce-dialogs.c:346
 msgid "Information"
@@ -250,7 +250,7 @@ msgstr "Kanan"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:42
 msgid "Cycle windows"
-msgstr "Daur jendela"
+msgstr "Daur jendela (Maju)"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:43
 msgid "Cycle windows (Reverse)"
@@ -330,7 +330,7 @@ msgstr "Ubah atas"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:62
 msgid "Toggle fullscreen"
-msgstr "Ubah layar penuh"
+msgstr "Ubah ke layar penuh"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:63
 msgid "Move window to upper workspace"
