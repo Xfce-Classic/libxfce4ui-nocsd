@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-06-30 06:30+0200\n"
-"PO-Revision-Date: 2017-09-29 14:26+0000\n"
+"PO-Revision-Date: 2017-09-29 17:04+0000\n"
 "Last-Translator: scootergrisen\n"
 "Language-Team: Danish (http://www.transifex.com/xfce/libxfce4ui/language/da/)\n"
 "MIME-Version: 1.0\n"
@@ -98,7 +98,7 @@ msgstr "Id"
 
 #: ../libxfce4ui/xfce-sm-client.c:1425
 msgid "Disable session management"
-msgstr "Slå sessionshåndtering fra"
+msgstr "Deaktivér sessionshåndtering"
 
 #: ../libxfce4ui/xfce-sm-client.c:1435
 msgid "Session management options"
@@ -293,7 +293,7 @@ msgstr "Flyt vindue"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:52
 msgid "Resize window"
-msgstr "Ændr vinduets størrelse"
+msgstr "Tilpas vinduets størrelse"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:53
 msgid "Shade window"
@@ -763,11 +763,11 @@ msgstr "Om Xfce"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:2
 msgid "Information about the Xfce Desktop Environment"
-msgstr "Informationer omkring skrivebordsmiljøet Xfce"
+msgstr "Information om Xfce-skrivebordsmiljøet"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:1
 msgid "About the Xfce Desktop Environment"
-msgstr "Om skrivebordsmiljøet Xfce"
+msgstr "Om Xfce-skrivebordsmiljøet"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:2
 msgid "About"
