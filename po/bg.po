@@ -6,14 +6,15 @@
 # Kiril Kirilov <cybercop_montana@abv.bg>, 2012
 # Kiril Kirilov <cybercop_montana@abv.bg>, 2015-2017
 # Любомир Василев, 2015
+# Красимир Беров, 2017
 # Любомир Василев, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-06-30 06:30+0200\n"
-"PO-Revision-Date: 2017-09-19 18:02+0000\n"
-"Last-Translator: Kiril Kirilov <cybercop_montana@abv.bg>\n"
+"PO-Revision-Date: 2017-10-06 18:03+0000\n"
+"Last-Translator: Красимир Беров\n"
 "Language-Team: Bulgarian (http://www.transifex.com/xfce/libxfce4ui/language/bg/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -575,7 +576,7 @@ msgstr "Задаване на цвят или изображение за фон
 
 #: ../xfce4-about/main.c:84
 msgid "File Manager "
-msgstr "Файлов мениджър"
+msgstr "Управление на файлове"
 
 #: ../xfce4-about/main.c:85
 msgid ""
@@ -585,7 +586,7 @@ msgstr "Съвременен файлов мениджър за Юникс/Ли�
 
 #: ../xfce4-about/main.c:89
 msgid "Session Manager"
-msgstr "Управител на сесиите"
+msgstr "Управление на сесиите"
 
 #: ../xfce4-about/main.c:90
 msgid ""
@@ -716,13 +717,13 @@ msgstr "Не може да бъде зареден интерфейса"
 #: ../xfce4-about/main.c:484
 #, c-format
 msgid "Version %s, distributed by %s"
-msgstr "Версия %s, разпространявана от %s"
+msgstr "Издание %s, разпространявано от %s"
 
 #. I18N: %s will be replaced by the Xfce version number
 #: ../xfce4-about/main.c:488
 #, c-format
 msgid "Version %s"
-msgstr "Версия %s"
+msgstr "Издание %s"
 
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
@@ -761,11 +762,11 @@ msgstr "Относно Xfce"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:2
 msgid "Information about the Xfce Desktop Environment"
-msgstr "Информация за графичната среда Xfce"
+msgstr "Сведения за работната среда Xfce"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:1
 msgid "About the Xfce Desktop Environment"
-msgstr "Относно графичната среда Xfce"
+msgstr "Относно работната среда Xfce"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:2
 msgid "About"
@@ -804,9 +805,9 @@ msgstr "Файл с име \"%s\" вече съществува в тази ди
 
 #: ../tests/test-ui.c:149
 msgid "Failed to migrate the old panel configuration"
-msgstr "Неуспешно прехвърляне на старата конфигурация на панела."
+msgstr "Неуспешно прехвърляне на старите настройки на панела."
 
 #: ../tests/test-ui.c:202 ../tests/test-ui.c:222 ../tests/test-ui.c:251
 #: ../tests/test-ui.c:273
 msgid "Customize settings stored by Xfconf"
-msgstr "Персонализиране на настройките, съхранени от Xfconf"
+msgstr "Нагаждане на настройките, съхранени от Xfconf"
