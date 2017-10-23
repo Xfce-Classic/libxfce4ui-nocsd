@@ -239,6 +239,18 @@ AC_SUBST([GLADEUI_CATALOGDIR])
 AC_SUBST([GLADEUI_MODULEDIR])
 AC_SUBST([GLADEUI_PIXMAPDIR])
 
+AC_ARG_WITH([gladeui2-catalogdir],
+            [AC_HELP_STRING([--with-gladeui2-catalogdir=PATH],
+                            [Specify where to install glade 3.0 designer catalog files (default=autodetect)])],
+            [gladeui2_catalogdir="$withval"])
+AC_ARG_WITH([gladeui2-moduledir],
+            [AC_HELP_STRING([--with-gladeui2-moduledir=PATH],
+                            [Specify where to install glade 3.0 designer modules (default=autodetect)])],
+            [gladeui2_moduledir="$withval"])
+AC_ARG_WITH([gladeui2-pixmapdir],
+            [AC_HELP_STRING([--with-gladeui2-pixmapdir=PATH],
+                            [Specify where to install glade 3.0 designer pixmaps (default=autodetect)])],
+            [gladeui2_pixmapdir="$withval"])
 if test x"$GLADEUI2_FOUND" = x"yes"; then
   if test x"$gladeui2_catalogdir" = x""; then
     GLADEUI2_CATALOGDIR="${datarootdir}/glade/catalogs"
@@ -246,7 +258,7 @@ if test x"$GLADEUI2_FOUND" = x"yes"; then
     GLADEUI2_CATALOGDIR="$gladeui_catalogdir"
   fi
   if test x"$gladeui2_moduledir" = x""; then
-    GLADEUI2_MODULEDIR="${datarootdir}/glade/modules"
+    GLADEUI2_MODULEDIR="${libdir}/glade/modules"
   else
     GLADEUI2_MODULEDIR="$gladeui_moduledir"
   fi
