@@ -255,17 +255,17 @@ if test x"$GLADEUI2_FOUND" = x"yes"; then
   if test x"$gladeui2_catalogdir" = x""; then
     GLADEUI2_CATALOGDIR="${datarootdir}/glade/catalogs"
   else
-    GLADEUI2_CATALOGDIR="$gladeui_catalogdir"
+    GLADEUI2_CATALOGDIR="$gladeui2_catalogdir"
   fi
   if test x"$gladeui2_moduledir" = x""; then
     GLADEUI2_MODULEDIR="${libdir}/glade/modules"
   else
-    GLADEUI2_MODULEDIR="$gladeui_moduledir"
+    GLADEUI2_MODULEDIR="$gladeui2_moduledir"
   fi
   if test x"$gladeui2_pixmapdir" = x""; then
     GLADEUI2_PIXMAPDIR="${datarootdir}/glade/pixmaps"
   else
-    GLADEUI2_PIXMAPDIR="$gladeui_pixmapdir"
+    GLADEUI2_PIXMAPDIR="$gladeui2_pixmapdir"
   fi
 fi
 AC_SUBST([GLADEUI2_CATALOGDIR])
