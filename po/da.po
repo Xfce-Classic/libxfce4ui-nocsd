@@ -4,9 +4,10 @@
 # 
 # Translators:
 # Aputsiak Niels Janussen (Skjalden) <aj@isit.gl>, 2013,2015
+# Aputsiak Niels Janussen (Skjalden) <aj@isit.gl>, 2013,2015
 # Erik Schmidt <erischmi@gmail.com>, 2012
 # Morten Juhl-Johansen Zölde-Fejér <morten@writtenandread.net>, 2015-2016
-# Ole Guldberg <olegb@omgwtf.dk>, 2008
+# olegb <olegb@omgwtf.dk>, 2008
 # Per Kongstad <p_kongstad@op.pl>, 2009
 # scootergrisen, 2016-2017
 msgid ""
@@ -14,7 +15,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-06-30 06:30+0200\n"
-"PO-Revision-Date: 2017-11-17 16:10+0000\n"
+"PO-Revision-Date: 2017-11-27 21:28+0000\n"
 "Last-Translator: scootergrisen\n"
 "Language-Team: Danish (http://www.transifex.com/xfce/libxfce4ui/language/da/)\n"
 "MIME-Version: 1.0\n"
@@ -541,7 +542,7 @@ msgstr "Undertitel"
 
 #: ../glade/libxfce4ui.xml.in.h:3 ../glade/libxfce4ui-2.xml.in.h:3
 msgid "Xfce 4 Widgets"
-msgstr "Kontroller til Xfce 4"
+msgstr "Widgets til Xfce 4"
 
 #: ../xfce4-about/main.c:52
 msgid "Version information"
@@ -666,7 +667,7 @@ msgstr "Tak til alle som har hjulpet med at gøre dette software tilgængeligt!"
 msgid ""
 "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
-msgstr "Xfce 4 er copyright Olivier Fourdan (fourdan@xfce.org). De forskellige komponenter er copyright til de enkelte forfattere."
+msgstr "Xfce 4 er ophavsret Olivier Fourdan (fourdan@xfce.org). De forskellige komponenter har ophavsret af de enkelte forfattere."
 
 #: ../xfce4-about/main.c:287
 msgid ""
