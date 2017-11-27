@@ -41,6 +41,7 @@ DISTCLEANFILES = \
 DISTCHECK_CONFIGURE_FLAGS = \
 	--enable-gtk-doc \
 	--disable-gladeui \
-	--enable-introspection
+	--enable-introspection \
+	--enable-vala=no
 
 # vi:set ts=8 sw=8 noet ai nocindent syntax=automake:
