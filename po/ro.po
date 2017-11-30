@@ -5,13 +5,14 @@
 # Translators:
 # Alexe Moldovan, 2017
 # Mișu Moldovan <dumol@xfce.org>, 2015
+# Yupy <yupy_17y@yahoo.com>, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-06-30 06:30+0200\n"
-"PO-Revision-Date: 2017-09-19 18:02+0000\n"
-"Last-Translator: Alexe Moldovan\n"
+"PO-Revision-Date: 2017-11-30 18:13+0000\n"
+"Last-Translator: Yupy <yupy_17y@yahoo.com>\n"
 "Language-Team: Romanian (http://www.transifex.com/xfce/libxfce4ui/language/ro/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -798,13 +799,13 @@ msgstr "Licență"
 msgid ""
 "A file named \"%s\" already exists in this directory, the file hasn't been "
 "added."
-msgstr ""
+msgstr "Un fișier numit \"1 %s\" există deja în acest director, fișierul nu a fost adăugat."
 
 #: ../tests/test-ui.c:149
 msgid "Failed to migrate the old panel configuration"
-msgstr ""
+msgstr "Imposibil de migrat vechea configurație a panoului"
 
 #: ../tests/test-ui.c:202 ../tests/test-ui.c:222 ../tests/test-ui.c:251
 #: ../tests/test-ui.c:273
 msgid "Customize settings stored by Xfconf"
-msgstr ""
+msgstr "Personalizați setările stocate de Xfconf"
