@@ -587,9 +587,12 @@ xfce_message_dialog_new_valist (GtkWindow   *parent,
 
   if (primary_text != NULL)
     {
+      /* escape ampersand symbols, etc. (bug #12715) */
+      gchar *escaped_text = g_markup_escape_text (primary_text, -1);
+
       /* Add a top line of large bold text */
       GtkWidget *primary_label = gtk_label_new (NULL);
-      gchar *markedup_text = g_strdup_printf ("<span weight='bold' size='large'>%s</span>", primary_text);
+      gchar *markedup_text = g_strdup_printf ("<span weight='bold' size='large'>%s</span>", escaped_text);
 
       gtk_label_set_markup (GTK_LABEL (primary_label), markedup_text);
       gtk_label_set_xalign (GTK_LABEL (primary_label), 0);
@@ -599,6 +602,7 @@ xfce_message_dialog_new_valist (GtkWindow   *parent,
       gtk_container_add (GTK_CONTAINER (label_box), primary_label);
       gtk_widget_show (primary_label);
 
+      g_free (escaped_text);
       g_free (markedup_text);
     }
 
