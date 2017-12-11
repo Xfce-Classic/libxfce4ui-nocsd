@@ -1,23 +1,14 @@
 <?xml version="1.0"?>
-<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN"
-               "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd"[
-<!ENTITY libxfce4ui-config SYSTEM "xml/libxfce4ui-config.xml">
-<!ENTITY xfce-spawn SYSTEM "xml/xfce-spawn.xml">
-<!ENTITY xfce-gdk-extensions SYSTEM "xml/xfce-gdk-extensions.xml">
-<!ENTITY xfce-gtk-extensions SYSTEM "xml/xfce-gtk-extensions.xml">
-<!ENTITY xfce-dialogs SYSTEM "xml/xfce-dialogs.xml">
-<!ENTITY xfce-titled-dialog SYSTEM "xml/xfce-titled-dialog.xml">
-<!ENTITY xfce-sm-client SYSTEM "xml/xfce-sm-client.xml">
-
-<!ENTITY version SYSTEM "version.xml">
-<!ENTITY date "May 2017">
+<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN"
+               "http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd"[
+<!ENTITY % local.common.attrib "xmlns:xi  CDATA  #FIXED 'http://www.w3.org/2003/XInclude'">
 ]>
 
 <book id="index">
   <bookinfo>
     <title>Libxfce4ui Reference Manual</title>
-    <releaseinfo>Version &version;</releaseinfo>
-    <pubdate>&date;</pubdate>
+    <releaseinfo>Version <xi:include href="version.xml" parse="text"/></releaseinfo>
+    <pubdate>Dec 2017</pubdate>
 
     <copyright>
       <year>2017</year>
@@ -56,26 +47,28 @@
 
   <part id="libxfce4ui-fundamentals">
     <title>Xfce Fundamentals</title>
-    &libxfce4ui-config;
-    &xfce-spawn;
+    <xi:include href="xml/libxfce4ui-config.xml"/>
+    <xi:include href="xml/xfce-spawn.xml"/>
   </part>
 
   <part id="libxfce4ui-extensions">
     <title>Xfce UI Extensions</title>
-    &xfce-gdk-extensions;
-    &xfce-gtk-extensions;
+    <xi:include href="xml/xfce-gdk-extensions.xml"/>
+    <xi:include href="xml/xfce-gtk-extensions.xml"/>
   </part>
 
   <part id="libxfce4ui-widgets">
     <title>Xfce UI Widget</title>
-    &xfce-dialogs;
-    &xfce-titled-dialog;
+    <xi:include href="xml/xfce-dialogs.xml"/>
+    <xi:include href="xml/xfce-titled-dialog.xml"/>
   </part>
 
   <part id="libxfce4ui-sm">
     <title>Xfce Session Management Support</title>
-    &xfce-sm-client;
+    <xi:include href="xml/xfce-sm-client.xml"/>
   </part>
+  <xi:include href="xml/annotation-glossary.xml"><xi:fallback /></xi:include>
+
 </book>
 
 <!--
