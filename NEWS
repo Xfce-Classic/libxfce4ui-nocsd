@@ -1,4 +1,16 @@
-﻿4.13.3
+﻿4.13.4
+======
+- Fix missing gresource file in release tarball (Bug #13705)
+- Add Vala support (Vidar Haarr)
+- Fix gladeui2 path detection (Bug #13944)
+- Fix make distcheck (Bug #14039)
+- Fix incorrect use of AC_ARG_ENABLE(tests..) (Bug #13703)
+- Use BOOLEAN instead of deprecated BOOL
+- Allows to properly show some characters, such as ampersand (Bug #12715)
+- Add api indices in gtk-doc
+- Translation Updates: Amharic, Arabic, Asturian, Bulgarian, Catalan, Czech, Danish, German, Greek, English (Australia), English (United Kingdom), Spanish, Basque, Finnish, French, Galician, Hebrew, Croatian, Hungarian, Indonesian, Icelandic, Italian, Japanese, Kazakh, Korean, Lithuanian, Malay, Norwegian Bokmål, Dutch, Norwegian Nynorsk, Occitan (post 1500), Polish, Portuguese, Portuguese (Brazil), Romanian, Russian, Slovak, Slovenian, Serbian, Swedish, Telugu, Thai, Turkish, Uighur, Ukrainian, Chinese (China), Chinese (Hong Kong), Chinese (Taiwan)
+
+4.13.3
 ======
 - Fix make distcheck with gladeui2 install path
 - Add an --enable-tests option
