@@ -67,6 +67,23 @@
     <title>Xfce Session Management Support</title>
     <xi:include href="xml/xfce-sm-client.xml"/>
   </part>
+    <index id="api-index-full">
+    <title>Index of all symbols</title>
+    <xi:include href="xml/api-index-full.xml"><xi:fallback /></xi:include>
+  </index>
+  <index id="api-index-4-14">
+    <title>Index of new symbols in 4.14</title>
+    <xi:include href="xml/api-index-4.14.xml"><xi:fallback /></xi:include>
+  </index>
+  <index id="api-index-4-12">
+    <title>Index of new symbols in 4.12</title>
+    <xi:include href="xml/api-index-4.12.xml"><xi:fallback /></xi:include>
+  </index>
+  <index id="api-index-4-10">
+    <title>Index of new symbols in 4.10</title>
+    <xi:include href="xml/api-index-4.10.xml"><xi:fallback /></xi:include>
+  </index>
+
   <xi:include href="xml/annotation-glossary.xml"><xi:fallback /></xi:include>
 
 </book>

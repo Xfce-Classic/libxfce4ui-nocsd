@@ -252,6 +252,9 @@ xfce_gtk_window_center_on_active_screen (GtkWindow *window)
  * gtk_get_current_event_time() can be used instead.
  *
  * Return value: %TRUE if the menu could be mapped, %FALSE otherwise.
+ *
+ * Since: 4.14
+ *
  */
 gboolean
 xfce_gtk_menu_popup_until_mapped (GtkMenu *menu,
@@ -293,6 +296,8 @@ xfce_gtk_menu_popup_until_mapped (GtkMenu *menu,
  * count issues to avoid destroying the widget.
  *
  * Return value: %TRUE if the widget could be moved, %FALSE otherwise.
+ *
+ * Since: 4.14
  */
 gboolean
 xfce_widget_reparent (GtkWidget *widget,

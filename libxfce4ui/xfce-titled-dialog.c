@@ -341,6 +341,9 @@ xfce_titled_dialog_new_with_buttons (const gchar    *title,
  * the buttons to use an optional named or stock icon.
  *
  * Return value: the newly allocated #XfceTitledDialog.
+ *
+ * Since: 4.14
+ *
  **/
 GtkWidget*
 xfce_titled_dialog_new_with_mixed_buttons (const gchar    *title,

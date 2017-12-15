@@ -156,7 +156,7 @@ xfce_dialog_show_help_response (GtkWidget *dialog,
  *
  * See also: xfce_dialog_show_help_with_version().
  *
- * Since 4.10
+ * Since: 4.10
  */
 void
 xfce_dialog_show_help (GtkWindow   *parent,
@@ -188,7 +188,8 @@ xfce_dialog_show_help (GtkWindow   *parent,
  *
  * See also: xfce_dialog_show_help().
  *
- * Since 4.12
+ * Since: 4.12
+ *
  */
 void
 xfce_dialog_show_help_with_version (GtkWindow   *parent,
