@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-06-30 06:30+0200\n"
-"PO-Revision-Date: 2017-09-23 19:02+0000\n"
+"PO-Revision-Date: 2017-12-31 06:16+0000\n"
 "Last-Translator: Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>\n"
 "Language-Team: Catalan (http://www.transifex.com/xfce/libxfce4ui/language/ca/)\n"
 "MIME-Version: 1.0\n"
@@ -47,7 +47,7 @@ msgstr "Sereu redirigit al lloc web de la documentació on es mantenen i traduei
 
 #: ../libxfce4ui/xfce-dialogs.c:289
 msgid "_Read Online"
-msgstr "_Llegir en línia"
+msgstr "_Llegeix en línia"
 
 #: ../libxfce4ui/xfce-dialogs.c:298
 msgid "_Always go directly to the online documentation"
@@ -224,7 +224,7 @@ msgstr "Drecera:"
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:321
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:504
 msgid "No keys pressed yet, proceed."
-msgstr "No s'ha pitjat cap tecla, continua."
+msgstr "No s'ha premut cap tecla, continua."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:407
 msgid "Could not grab the keyboard."
@@ -284,7 +284,7 @@ msgstr "Maximitza la finestra"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:50
 msgid "Hide window"
-msgstr "Amaga la finestra"
+msgstr "Oculta la finestra"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:51
 msgid "Move window"
@@ -516,11 +516,11 @@ msgstr "Espai de treball 12"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:108
 msgid "Add workspace"
-msgstr "Afegeix espai de treball"
+msgstr "Afegeix un espai de treball"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:109
 msgid "Add adjacent workspace"
-msgstr "Afegeix espai de treball adjacent"
+msgstr "Afegeix un espai de treball adjacent"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:110
 msgid "Delete last workspace"
