@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-06-30 06:30+0200\n"
-"PO-Revision-Date: 2018-02-13 17:42+0000\n"
+"PO-Revision-Date: 2018-02-14 01:05+0000\n"
 "Last-Translator: samson <sambelet@yahoo.com>\n"
 "Language-Team: Amharic (http://www.transifex.com/xfce/libxfce4ui/language/am/)\n"
 "MIME-Version: 1.0\n"
@@ -260,7 +260,7 @@ msgstr ""
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:45
 msgid "Switch application"
-msgstr ""
+msgstr "መተግበሪያ መቀየሪያ"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:46
 msgid "Close window"
@@ -516,15 +516,15 @@ msgstr "የ ስራ ቦታ መጨመሪያ"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:109
 msgid "Add adjacent workspace"
-msgstr ""
+msgstr "አጓዳኝ የ ስራ ቦታ መጨመሪያ"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:110
 msgid "Delete last workspace"
-msgstr ""
+msgstr "የ መጨረሻ የ ስራ ቦታ ማጥፊያ"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:111
 msgid "Delete active workspace"
-msgstr ""
+msgstr "ንቁ የ ስራ ቦታ ማጥፊያ"
 
 #: ../glade/libxfce4ui.xml.in.h:1 ../glade/libxfce4ui-2.xml.in.h:1
 msgid "Titled Dialog"
@@ -683,7 +683,7 @@ msgstr ""
 #: ../xfce4-about/main.c:441
 #, c-format
 msgid "Type '%s --help' for usage information."
-msgstr ""
+msgstr "ይጻፉ '%s --እርዳታ' መረጃ ለ መጠቀም"
 
 #: ../xfce4-about/main.c:447
 msgid "Unable to initialize GTK+."
@@ -713,7 +713,7 @@ msgstr ""
 #: ../xfce4-about/main.c:484
 #, c-format
 msgid "Version %s, distributed by %s"
-msgstr ""
+msgstr "እትም %s, የሚሰራጨው በ %s"
 
 #. I18N: %s will be replaced by the Xfce version number
 #: ../xfce4-about/main.c:488
@@ -754,7 +754,7 @@ msgstr ""
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:1
 msgid "About Xfce"
-msgstr ""
+msgstr "ስለ Xfce"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:2
 msgid "Information about the Xfce Desktop Environment"
