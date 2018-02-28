@@ -3,12 +3,13 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# Zmicer Turok <zmicerturok@gmail.com>, 2018
 msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-06-30 06:30+0200\n"
-"PO-Revision-Date: 2018-02-28 14:54+0000\n"
+"PO-Revision-Date: 2018-02-28 19:49+0000\n"
 "Last-Translator: Zmicer Turok <zmicerturok@gmail.com>\n"
 "Language-Team: Belarusian (http://www.transifex.com/xfce/libxfce4ui/language/be/)\n"
 "MIME-Version: 1.0\n"
@@ -42,7 +43,7 @@ msgstr "Вас накіруюць на сайт дакументацыі, дзе
 
 #: ../libxfce4ui/xfce-dialogs.c:289
 msgid "_Read Online"
-msgstr "_Чытць у сеціве"
+msgstr "_Чытаць у сеціве"
 
 #: ../libxfce4ui/xfce-dialogs.c:298
 msgid "_Always go directly to the online documentation"
