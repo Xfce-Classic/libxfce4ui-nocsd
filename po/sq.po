@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-06-30 06:30+0200\n"
-"PO-Revision-Date: 2018-02-27 19:25+0000\n"
+"PO-Revision-Date: 2018-03-02 20:16+0000\n"
 "Last-Translator: Besnik <besnik@programeshqip.org>\n"
 "Language-Team: Albanian (http://www.transifex.com/xfce/libxfce4ui/language/sq/)\n"
 "MIME-Version: 1.0\n"
@@ -38,7 +38,7 @@ msgstr "Dokumentim në Internet"
 msgid ""
 "You will be redirected to the documentation website where the help pages are"
 " maintained and translated."
-msgstr ""
+msgstr "Do të ridrejtoheni te sajti i dokumentimit, ku mirëmbahen dhe përkthehen faqet e ndihmës."
 
 #: ../libxfce4ui/xfce-dialogs.c:289
 msgid "_Read Online"
@@ -46,7 +46,7 @@ msgstr "_Lexojeni Në Internet"
 
 #: ../libxfce4ui/xfce-dialogs.c:298
 msgid "_Always go directly to the online documentation"
-msgstr ""
+msgstr "Kalo _përherë drejt e te dokumentimi në internet"
 
 #: ../libxfce4ui/xfce-dialogs.c:346
 msgid "Information"
@@ -92,7 +92,7 @@ msgstr "ID"
 
 #: ../libxfce4ui/xfce-sm-client.c:1425
 msgid "Disable session management"
-msgstr "Sesion"
+msgstr "Çaktivizo administrim sesionesh"
 
 #: ../libxfce4ui/xfce-sm-client.c:1435
 msgid "Session management options"
@@ -110,7 +110,7 @@ msgstr "Dështoi të lidhet me përgjegjësin e sesioneve: %s"
 #: ../libxfce4ui/xfce-sm-client.c:1617
 #, c-format
 msgid "Session manager did not return a valid client id"
-msgstr ""
+msgstr "Përgjegjësi i sesioneve s’u përgjigj me një ID klienti të vlefshme"
 
 #. print warning for user
 #: ../libxfce4ui/xfce-spawn.c:419
@@ -118,14 +118,14 @@ msgstr ""
 msgid ""
 "Working directory \"%s\" does not exist. It won't be used when spawning "
 "\"%s\"."
-msgstr ""
+msgstr "Drejtoria e punës \"%s\" s’ekziston. S’do të përdoret, kur të pillet \"%s\"."
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 #, c-format
 msgid ""
 "This shortcut is already being used for the action '%s'. Which action do you"
 " want to use?"
-msgstr ""
+msgstr "Kjo shkurtore përdoret tashmë për veprimin '%s'. Cilin veprim doni të përdoret?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:54
 #: ../libxfce4kbd-private/xfce-shortcuts.c:57
@@ -141,7 +141,7 @@ msgstr "Përdor '%s'"
 #: ../libxfce4kbd-private/xfce-shortcuts.c:63
 #, c-format
 msgid "Keep '%s'"
-msgstr "Mbaje '%s'"
+msgstr "Mbaj '%s'"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
 #: ../libxfce4kbd-private/xfce-shortcuts.c:59
@@ -149,14 +149,14 @@ msgstr "Mbaje '%s'"
 msgid ""
 "This shortcut is already being used for the command '%s'. Which action do "
 "you want to use?"
-msgstr ""
+msgstr "Kjo shkurtore përdoret tashmë për urdhrin '%s'. Cilin veprim doni të përdoret?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 #, c-format
 msgid ""
 "This shortcut is already being used by the action '%s'. Which action do you "
 "want to use?"
-msgstr ""
+msgstr "Kjo shkurtore përdoret tashmë nga veprimi '%s'. Cilin veprim doni të përdoret?"
 
 #. This shortcut already exists in the provider, we don't want it twice
 #. Warn the user
@@ -167,7 +167,7 @@ msgstr "Ju lutemi, përdorni një tjetër kombinim tastesh."
 #: ../libxfce4kbd-private/xfce-shortcuts.c:111
 #, c-format
 msgid "%s already triggers this action."
-msgstr ""
+msgstr "%s e shkakton tashmë këtë veprim."
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:116
 #, c-format
@@ -176,7 +176,7 @@ msgstr "Veprime me përplasje për %s"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:186
 msgid "This shortcut is already being used for something else."
-msgstr ""
+msgstr "Kjo shkurtore përdoret tashmë për diçka tjetër."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:211
 msgid "Window Manager Action Shortcut"
@@ -210,7 +210,7 @@ msgstr "_Anuloje"
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:284
 #, c-format
 msgid "Press now the keyboard keys you want to use to trigger the %s '%s'."
-msgstr ""
+msgstr "Shtypni tani tastet e tastierës që doni të përdoren për të xhiruar %s '%s'."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:312
 msgid "Shortcut:"
@@ -219,7 +219,7 @@ msgstr "Shkurtore:"
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:321
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:504
 msgid "No keys pressed yet, proceed."
-msgstr ""
+msgstr "Ende pa taste të shtypur, vazhdoni."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:407
 msgid "Could not grab the keyboard."
@@ -247,11 +247,11 @@ msgstr "Djathtas"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:42
 msgid "Cycle windows"
-msgstr ""
+msgstr "Cikloji dritaret"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:43
 msgid "Cycle windows (Reverse)"
-msgstr ""
+msgstr "Cikloji dritaret (Në të kundërt)"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:44
 msgid "Switch window for same application"
@@ -295,7 +295,7 @@ msgstr ""
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:54
 msgid "Stick window"
-msgstr ""
+msgstr "Bëje dritaren ngjitëse"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:55
 msgid "Raise window"
@@ -547,7 +547,7 @@ msgstr "Përgjegjës Dritaresh"
 
 #: ../xfce4-about/main.c:71
 msgid "Handles the placement of windows on the screen."
-msgstr ""
+msgstr "Merret me vendosjen e dritareve në ekran."
 
 #: ../xfce4-about/main.c:74
 msgid "Panel"
@@ -557,7 +557,7 @@ msgstr "Panel"
 msgid ""
 "Program launchers, window buttons, applications menu, workspace switcher and"
 " more."
-msgstr ""
+msgstr "Nisës programesh, butona dritaresh, menu aplikacionesh, këmbyes hapësirash pune, etj."
 
 #: ../xfce4-about/main.c:79
 msgid "Desktop Manager"
@@ -567,7 +567,7 @@ msgstr "Përgjegjës Desktopi"
 msgid ""
 "Sets the background color or image with optional application menu or icons "
 "for minimized applications or launchers, devices and folders."
-msgstr ""
+msgstr "Cakton ngjyrën ose figurën e sfondit, tok me menu opsionale aplikacionesh ose ikona për minimizim aplikacionesh ose nisësish, pajisjesh dhe dosjesh."
 
 #: ../xfce4-about/main.c:84
 msgid "File Manager "
@@ -577,7 +577,7 @@ msgstr "Përgjegjës Kartelash "
 msgid ""
 "A modern file manager for the Unix/Linux desktop, aiming to be easy-to-use "
 "and fast."
-msgstr ""
+msgstr "Një përgjegjës modern kartelash për dekstopin Unix/Linux, që synon të jetë i lehtë për t’u përdorur dhe i shpejtë."
 
 #: ../xfce4-about/main.c:89
 msgid "Session Manager"
@@ -587,17 +587,17 @@ msgstr "Përgjegjës Sesionesh"
 msgid ""
 "Restores your session on startup and allows you to shutdown the computer "
 "from Xfce."
-msgstr ""
+msgstr "Rikthen sesionin tuaj gjatë nisjes dhe ju lejon të fikni kompjuterin që nga Xfce-ja."
 
 #: ../xfce4-about/main.c:94
 msgid "Setting System"
-msgstr ""
+msgstr "Rregullim Sistemi"
 
 #: ../xfce4-about/main.c:95
 msgid ""
 "Configuration system to control various aspects of the desktop like "
 "appearance, display, keyboard and mouse settings."
-msgstr ""
+msgstr "Sistem formësimesh, për të kontrolluar aspekte të ndryshme të dekstopit, f.v., rregullimet për dukjen, ekranin, tastierën dhe miun."
 
 #: ../xfce4-about/main.c:99
 msgid "Application Finder"
@@ -607,7 +607,7 @@ msgstr "Gjetës Aplikacionesh"
 msgid ""
 "Shows the applications installed on your system in categories, so you can "
 "quickly find and launch them."
-msgstr "I shfaq aplikacionet e instaluara në sistemin tuaj sipas kategorish, që t’i gjeni dhe t’i hapni shpejt."
+msgstr "Shfaq aplikacionet e instaluara në sistemin tuaj sipas kategorish, që t’i gjeni dhe t’i hapni shpejt."
 
 #: ../xfce4-about/main.c:104
 msgid "Settings Daemon"
@@ -615,20 +615,20 @@ msgstr "Demon Rregullimesh"
 
 #: ../xfce4-about/main.c:105
 msgid "D-Bus-based configuration storage system."
-msgstr ""
+msgstr "Sistem depozitimi me formësim bazuar në D-Bus."
 
 #: ../xfce4-about/main.c:112
 msgid ""
 "Xfce is a collection of programs that together provide a full-featured "
 "desktop environment. The following programs are part of the Xfce core:"
-msgstr ""
+msgstr "Xfce-ja është një koleksion programesh që të tërë tok furnizojnë një mjedis desktop të plotë. Programet vijuese janë pjesë e paketës bazë Xfce:"
 
 #: ../xfce4-about/main.c:136
 msgid ""
 "Xfce is also a development platform providing several libraries, that help "
 "programmers create applications that fit in well with the desktop "
 "environment."
-msgstr ""
+msgstr "Xfce-ja është gjithashtu një platformë zhvillimesh që furnizon disa librari, të cilat i ndihmojnë programuesit të krijojnë aplikacione që puqen me mjedisin desktop."
 
 #: ../xfce4-about/main.c:142
 msgid ""
@@ -636,7 +636,7 @@ msgid ""
 " for applications and LGPL or BSDL for libraries. Look at the documentation,"
 " the source code or the Xfce website (http://www.xfce.org) for more "
 "information."
-msgstr ""
+msgstr "Përbërësit e Xfce-së licencohen sipas licencash të lira ose burimi të hapur; GPL ose BSDL për aplikacionet dhe LGPL ose BSDL për libraritë. Për më tepër të dhëna shihni dokumentimin, kodin burim ose sajtin e Xfce-së (http://www.xfce.org)."
 
 #: ../xfce4-about/main.c:149
 msgid "Thank you for your interest in Xfce."
@@ -650,7 +650,7 @@ msgstr "Ekipi i Zhvillimit të Xfce-së"
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
 "on <http://bugzilla.xfce.org> ."
-msgstr ""
+msgstr "Nëse dini dikë që mungon te kjo listë, mos ngurroni të hapnit një çështje te <http://bugzilla.xfce.org> ."
 
 #: ../xfce4-about/main.c:265
 msgid "Thanks to all who helped making this software available!"
@@ -660,7 +660,7 @@ msgstr "Falënderime për të gjithë ata që ndihmuan në realizimin e këtij s
 msgid ""
 "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
-msgstr ""
+msgstr "Xfce 4 është e drejtë kopjimi e Olivier Fourdan-it (fourdan@xfce.org). Përbërësit e ndryshëm janë nën të drejta kopjimi nga autorët përkatës."
 
 #: ../xfce4-about/main.c:287
 msgid ""
@@ -668,7 +668,7 @@ msgid ""
 "distributed under the terms of the GNU Library General Public License as "
 "published by the Free Software Foundation; either version 2 of the License, "
 "or (at your option) any later version."
-msgstr ""
+msgstr "Paketat libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs dhe exo shpërndahen sipas kushteve të licencës GNU Library General Public License, siç botohet nga Free Software Foundation; versioni 2 i Licencës, ose (në zgjedhjen tuaj) çfarëdo versioni të mëvonshëm."
 
 #: ../xfce4-about/main.c:294
 msgid ""
@@ -677,7 +677,7 @@ msgid ""
 "under the terms of the GNU General Public License as published by the Free "
 "Software Foundation; either version 2 of the License, or (at your option) "
 "any later version."
-msgstr ""
+msgstr "Paketat thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfce-utils, xfconf, xfdesktop dhe xfwm4 shpërndahen sipas kushteve të licencës GNU Library General Public License, siç botohet nga Free Software Foundation; versioni 2 i Licencës, ose (në zgjedhjen tuaj) çfarëdo versioni të mëvonshëm."
 
 #: ../xfce4-about/main.c:441
 #, c-format
@@ -701,11 +701,11 @@ msgstr "Ju lutemi, njoftoni të meta te <%s>."
 #: ../xfce4-about/main.c:460
 #, c-format
 msgid "Translators list from %s."
-msgstr ""
+msgstr "Listë përkthyesish nga %s."
 
 #: ../xfce4-about/main.c:470
 msgid "Failed to load interface"
-msgstr ""
+msgstr "Dështoi në ngarkimin e ndërfaqes"
 
 #. I18N: first %s will be replaced by the version, second by
 #. * the name of the distribution (--with-vendor-info=NAME)
@@ -796,11 +796,11 @@ msgstr "Licencë"
 msgid ""
 "A file named \"%s\" already exists in this directory, the file hasn't been "
 "added."
-msgstr ""
+msgstr "Ka tashmë në këtë drejtori një kartelë të quajtur \"%s\", kartela s’është shtuar."
 
 #: ../tests/test-ui.c:149
 msgid "Failed to migrate the old panel configuration"
-msgstr ""
+msgstr "Dështoi në migrimin e formësimit të panelit të vjetër"
 
 #: ../tests/test-ui.c:202 ../tests/test-ui.c:222 ../tests/test-ui.c:251
 #: ../tests/test-ui.c:273
