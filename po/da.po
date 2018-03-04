@@ -10,14 +10,14 @@
 # Morten Juhl-Johansen Zölde-Fejér <morten@writtenandread.net>, 2015-2016
 # olegb <olegb@omgwtf.dk>, 2008
 # Per Kongstad <p_kongstad@op.pl>, 2009
-# scootergrisen, 2016-2017
+# scootergrisen, 2016-2018
 msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-06-30 06:30+0200\n"
-"PO-Revision-Date: 2018-03-03 21:21+0000\n"
-"Last-Translator: Linuxbruger <y.z@live.dk>\n"
+"PO-Revision-Date: 2018-03-04 18:24+0000\n"
+"Last-Translator: scootergrisen\n"
 "Language-Team: Danish (http://www.transifex.com/xfce/libxfce4ui/language/da/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -339,75 +339,75 @@ msgstr "veksle fuldskærm"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:63
 msgid "Move window to upper workspace"
-msgstr "Flyt vindue til øverste arbejds-område"
+msgstr "Flyt vindue til øverste arbejdsområde"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:64
 msgid "Move window to bottom workspace"
-msgstr "Flyt vindue til nederste arbejds-område"
+msgstr "Flyt vindue til nederste arbejdsområde"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:65
 msgid "Move window to left workspace"
-msgstr "Flyt vindue til venstre arbejds-område"
+msgstr "Flyt vindue til venstre arbejdsområde"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:66
 msgid "Move window to right workspace"
-msgstr "Flyt vindue til højre arbejds-område"
+msgstr "Flyt vindue til højre arbejdsområde"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:67
 msgid "Move window to previous workspace"
-msgstr "Flyt vindue til tidligere arbejds-område"
+msgstr "Flyt vindue til tidligere arbejdsområde"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:68
 msgid "Move window to next workspace"
-msgstr "Flyt vindue til næste arbejds-område"
+msgstr "Flyt vindue til næste arbejdsområde"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:69
 msgid "Move window to workspace 1"
-msgstr "Flyt vindue til arbejds-område 1"
+msgstr "Flyt vindue til arbejdsområde 1"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:70
 msgid "Move window to workspace 2"
-msgstr "Flyt vindue til arbejds-område 2"
+msgstr "Flyt vindue til arbejdsområde 2"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:71
 msgid "Move window to workspace 3"
-msgstr "Flyt vindue til arbejds-område 3"
+msgstr "Flyt vindue til arbejdsområde 3"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:72
 msgid "Move window to workspace 4"
-msgstr "Flyt vindue til arbejds-område 4"
+msgstr "Flyt vindue til arbejdsområde 4"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:73
 msgid "Move window to workspace 5"
-msgstr "Flyt vindue til arbejds-område 5"
+msgstr "Flyt vindue til arbejdsområde 5"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:74
 msgid "Move window to workspace 6"
-msgstr "Flyt vindue til arbejds-område 6"
+msgstr "Flyt vindue til arbejdsområde 6"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:75
 msgid "Move window to workspace 7"
-msgstr "Flyt vindue til arbejds-område 7"
+msgstr "Flyt vindue til arbejdsområde 7"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:76
 msgid "Move window to workspace 8"
-msgstr "Flyt vindue til arbejds-område 8"
+msgstr "Flyt vindue til arbejdsområde 8"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:77
 msgid "Move window to workspace 9"
-msgstr "Flyt vindue til arbejds-område 9"
+msgstr "Flyt vindue til arbejdsområde 9"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:78
 msgid "Move window to workspace 10"
-msgstr "Flyt vindue til arbejds-område 10"
+msgstr "Flyt vindue til arbejdsområde 10"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:79
 msgid "Move window to workspace 11"
-msgstr "Flyt vindue til arbejds-område 11"
+msgstr "Flyt vindue til arbejdsområde 11"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:80
 msgid "Move window to workspace 12"
-msgstr "Flyt vindue til arbejds-område 12"
+msgstr "Flyt vindue til arbejdsområde 12"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:81
 msgid "Tile window to the top"
@@ -447,91 +447,91 @@ msgstr "Vis skrivebord"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:90
 msgid "Upper workspace"
-msgstr "Øverste arbejds-område"
+msgstr "Øverste arbejdsområde"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:91
 msgid "Bottom workspace"
-msgstr "Nederste arbejds-område"
+msgstr "Nederste arbejdsområde"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:92
 msgid "Left workspace"
-msgstr "Venstre arbejds-område"
+msgstr "Venstre arbejdsområde"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:93
 msgid "Right workspace"
-msgstr "Højre arbejds-område"
+msgstr "Højre arbejdsområde"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:94
 msgid "Previous workspace"
-msgstr "Tidligere arbejds-område"
+msgstr "Tidligere arbejdsområde"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:95
 msgid "Next workspace"
-msgstr "Næste arbejds-område"
+msgstr "Næste arbejdsområde"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:96
 msgid "Workspace 1"
-msgstr "Arbejds-område 1"
+msgstr "Arbejdsområde 1"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:97
 msgid "Workspace 2"
-msgstr "Arbejds-område 2"
+msgstr "Arbejdsområde 2"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:98
 msgid "Workspace 3"
-msgstr "Arbejds-område 3"
+msgstr "Arbejdsområde 3"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:99
 msgid "Workspace 4"
-msgstr "Arbejds-område 4"
+msgstr "Arbejdsområde 4"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:100
 msgid "Workspace 5"
-msgstr "Arbejds-område 5"
+msgstr "Arbejdsområde 5"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:101
 msgid "Workspace 6"
-msgstr "Arbejds-område 6"
+msgstr "Arbejdsområde 6"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:102
 msgid "Workspace 7"
-msgstr "Arbejds-område 7"
+msgstr "Arbejdsområde 7"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:103
 msgid "Workspace 8"
-msgstr "Arbejds-område 8"
+msgstr "Arbejdsområde 8"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:104
 msgid "Workspace 9"
-msgstr "Arbejds-område 9"
+msgstr "Arbejdsområde 9"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:105
 msgid "Workspace 10"
-msgstr "Arbejds-område 10"
+msgstr "Arbejdsområde 10"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:106
 msgid "Workspace 11"
-msgstr "Arbejds-område 11"
+msgstr "Arbejdsområde 11"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:107
 msgid "Workspace 12"
-msgstr "Arbejds-område 12"
+msgstr "Arbejdsområde 12"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:108
 msgid "Add workspace"
-msgstr "Tilføj arbejds-område"
+msgstr "Tilføj arbejdsområde"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:109
 msgid "Add adjacent workspace"
-msgstr "Tilføj tilstødende arbejds-område"
+msgstr "Tilføj tilstødende arbejdsområde"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:110
 msgid "Delete last workspace"
-msgstr "Slet sidste arbejds-område"
+msgstr "Slet sidste arbejdsområde"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:111
 msgid "Delete active workspace"
-msgstr "Slet aktivt arbejds-område"
+msgstr "Slet aktivt arbejdsområde"
 
 #: ../glade/libxfce4ui.xml.in.h:1 ../glade/libxfce4ui-2.xml.in.h:1
 msgid "Titled Dialog"
@@ -636,7 +636,7 @@ msgid ""
 "Xfce is also a development platform providing several libraries, that help "
 "programmers create applications that fit in well with the desktop "
 "environment."
-msgstr "Xfce er også en udviklings-platform som tilbyder adskillige biblioteker, der hjælper programmører med at skabe applikationer som passer godt ind medl skrivebords-miljøet."
+msgstr "Xfce er også en udviklingsplatform som tilbyder adskillige biblioteker, der hjælper programmører med at skabe programmer som passer til skrivebordsmiljøet."
 
 #: ../xfce4-about/main.c:142
 msgid ""
