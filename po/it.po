@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-06-30 06:30+0200\n"
-"PO-Revision-Date: 2018-03-31 10:18+0000\n"
+"PO-Revision-Date: 2018-04-08 12:33+0000\n"
 "Last-Translator: Emanuele Petriglia <inbox@emanuelepetriglia.me>\n"
 "Language-Team: Italian (http://www.transifex.com/xfce/libxfce4ui/language/it/)\n"
 "MIME-Version: 1.0\n"
@@ -120,14 +120,14 @@ msgstr "Il gestore della sessione non ha restituito un client ID valido"
 msgid ""
 "Working directory \"%s\" does not exist. It won't be used when spawning "
 "\"%s\"."
-msgstr "La cartella di lavoro «%s» non esiste. Non verrà utilizzata per deporre «%s»."
+msgstr "La cartella di lavoro \"%s\" non esiste. Non verrà utilizzata per deporre \"%s\"."
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 #, c-format
 msgid ""
 "This shortcut is already being used for the action '%s'. Which action do you"
 " want to use?"
-msgstr "Questa scorciatoia è già assegnata al comando \"%s\". Quale azione utilizzare?"
+msgstr "Questa scorciatoia è già assegnata al comando '%s'. Quale azione utilizzare?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:54
 #: ../libxfce4kbd-private/xfce-shortcuts.c:57
@@ -135,7 +135,7 @@ msgstr "Questa scorciatoia è già assegnata al comando \"%s\". Quale azione uti
 #: ../libxfce4kbd-private/xfce-shortcuts.c:63
 #, c-format
 msgid "Use '%s'"
-msgstr "Usa '%s'"
+msgstr "Usare '%s'"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:54
 #: ../libxfce4kbd-private/xfce-shortcuts.c:57
@@ -143,7 +143,7 @@ msgstr "Usa '%s'"
 #: ../libxfce4kbd-private/xfce-shortcuts.c:63
 #, c-format
 msgid "Keep '%s'"
-msgstr "Mantieni '%s'"
+msgstr "Mantenere '%s'"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
 #: ../libxfce4kbd-private/xfce-shortcuts.c:59
@@ -151,14 +151,14 @@ msgstr "Mantieni '%s'"
 msgid ""
 "This shortcut is already being used for the command '%s'. Which action do "
 "you want to use?"
-msgstr "Questa scorciatoia è già assegnata al comando \"%s\". Quale azione utilizzare?"
+msgstr "Questa scorciatoia è già assegnata al comando '%s'. Quale azione utilizzare?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 #, c-format
 msgid ""
 "This shortcut is already being used by the action '%s'. Which action do you "
 "want to use?"
-msgstr "Questa scorciatoia è già assegnata all'azione \"%s\". Quale azione utilizzare?"
+msgstr "Questa scorciatoia è già assegnata all'azione '%s'. Quale azione utilizzare?"
 
 #. This shortcut already exists in the provider, we don't want it twice
 #. Warn the user
@@ -212,7 +212,7 @@ msgstr "A_nnulla"
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:284
 #, c-format
 msgid "Press now the keyboard keys you want to use to trigger the %s '%s'."
-msgstr "Premere i tasti della tastiera da utilizzare per abilitare il %s \"%s\""
+msgstr "Premere i tasti della tastiera da utilizzare per abilitare il %s '%s'"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:312
 msgid "Shortcut:"
@@ -638,11 +638,11 @@ msgid ""
 " for applications and LGPL or BSDL for libraries. Look at the documentation,"
 " the source code or the Xfce website (http://www.xfce.org) for more "
 "information."
-msgstr "I componenti di Xfce sono rilasciati con licenze a codice aperto; GPL o BSDL per le applicazioni e LGPL o BSDL per le librerie. Consultare la documentazione, il codice sorgente o il sito web di Xfce (http://www.xfce.org) per maggiori informazioni"
+msgstr "I componenti di Xfce sono rilasciati con licenze a codice aperto; GPL o BSDL per le applicazioni e LGPL o BSDL per le librerie. Consultare la documentazione, il codice sorgente o il sito web di Xfce (http://www.xfce.org) per maggiori informazioni."
 
 #: ../xfce4-about/main.c:149
 msgid "Thank you for your interest in Xfce."
-msgstr "Grazie per esservi interessati a Xfce"
+msgstr "Grazie per essersi interessati a Xfce."
 
 #: ../xfce4-about/main.c:153
 msgid "The Xfce Development Team"
@@ -684,7 +684,7 @@ msgstr "I pacchetti thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-s
 #: ../xfce4-about/main.c:441
 #, c-format
 msgid "Type '%s --help' for usage information."
-msgstr "Digitare \"%s --help\" per le informazioni di utilizzo."
+msgstr "Digitare '%s --help' per le informazioni di utilizzo."
 
 #: ../xfce4-about/main.c:447
 msgid "Unable to initialize GTK+."
@@ -798,11 +798,11 @@ msgstr "Licenza"
 msgid ""
 "A file named \"%s\" already exists in this directory, the file hasn't been "
 "added."
-msgstr "Un file di nome «%s» esiste già in questa cartella e quindi non è stato aggiunto"
+msgstr "Un file di nome \"%s\" esiste già in questa cartella e quindi non è stato aggiunto"
 
 #: ../tests/test-ui.c:149
 msgid "Failed to migrate the old panel configuration"
-msgstr "Migrazione della configurazione del vecchio pannello non riuscita"
+msgstr "Impossibile migrare la configurazione del vecchio pannello"
 
 #: ../tests/test-ui.c:202 ../tests/test-ui.c:222 ../tests/test-ui.c:251
 #: ../tests/test-ui.c:273
