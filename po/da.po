@@ -9,6 +9,7 @@
 # Linuxbruger <y.z@live.dk>, 2018
 # Morten Juhl-Johansen Zölde-Fejér <morten@writtenandread.net>, 2015-2016
 # olegb <olegb@omgwtf.dk>, 2008
+# olegb <olegb@omgwtf.dk>, 2008
 # Per Kongstad <p_kongstad@op.pl>, 2009
 # scootergrisen, 2016-2018
 msgid ""
@@ -16,7 +17,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-06-30 06:30+0200\n"
-"PO-Revision-Date: 2018-03-04 18:24+0000\n"
+"PO-Revision-Date: 2018-04-18 18:48+0000\n"
 "Last-Translator: scootergrisen\n"
 "Language-Team: Danish (http://www.transifex.com/xfce/libxfce4ui/language/da/)\n"
 "MIME-Version: 1.0\n"
@@ -27,7 +28,7 @@ msgstr ""
 
 #: ../libxfce4ui/xfce-dialogs.c:109
 msgid "Failed to open web browser for online documentation"
-msgstr "Fejl med at åbne web-browser til online-dokumentation"
+msgstr "Kunne ikke åbne webbrowser til visning af online-dokumentation"
 
 #: ../libxfce4ui/xfce-dialogs.c:263
 #, c-format
@@ -46,7 +47,7 @@ msgstr "Online-dokumentation"
 msgid ""
 "You will be redirected to the documentation website where the help pages are"
 " maintained and translated."
-msgstr "Du vil blive viderestillet til dokumentations-webstedet, hvor hjælpe-siderne bliver vedligeholdt og oversat."
+msgstr "Du vil blive viderestillet til dokumentations-webstedet, hvor hjælpesiderne bliver vedligeholdt og oversat."
 
 #: ../libxfce4ui/xfce-dialogs.c:289
 msgid "_Read Online"
@@ -92,33 +93,33 @@ msgstr "Spørgsmål"
 
 #: ../libxfce4ui/xfce-sm-client.c:1424
 msgid "Session management client ID"
-msgstr "Sessions-håndterings Klient ID"
+msgstr "Klientid fra sessionshåndtering"
 
 #: ../libxfce4ui/xfce-sm-client.c:1424
 msgid "ID"
-msgstr "ID"
+msgstr "Id"
 
 #: ../libxfce4ui/xfce-sm-client.c:1425
 msgid "Disable session management"
-msgstr "Deaktivér sessions-håndtering"
+msgstr "Deaktivér sessionshåndtering"
 
 #: ../libxfce4ui/xfce-sm-client.c:1435
 msgid "Session management options"
-msgstr "sessions-håndterings indstillinger"
+msgstr "Tilvalg for sessionshåndtering"
 
 #: ../libxfce4ui/xfce-sm-client.c:1436
 msgid "Show session management options"
-msgstr "Vis sessions-håndterings indstillinger"
+msgstr "Vis tilvalg for sessionshåndtering"
 
 #: ../libxfce4ui/xfce-sm-client.c:1611
 #, c-format
 msgid "Failed to connect to the session manager: %s"
-msgstr "Fejlede med at forbinde til sessions-håndteringen: %s"
+msgstr "Kunne ikke forbinde til sessionshåndteringen: %s"
 
 #: ../libxfce4ui/xfce-sm-client.c:1617
 #, c-format
 msgid "Session manager did not return a valid client id"
-msgstr "Sessions-håndtering returnerede ikke et gyldigt klient id"
+msgstr "Sessionshåndtering returnerede ikke et gyldigt klientid"
 
 #. print warning for user
 #: ../libxfce4ui/xfce-spawn.c:419
@@ -126,7 +127,7 @@ msgstr "Sessions-håndtering returnerede ikke et gyldigt klient id"
 msgid ""
 "Working directory \"%s\" does not exist. It won't be used when spawning "
 "\"%s\"."
-msgstr "Arbejds-mappen \"%s\" eksisterer ikke. Den vil ikke bruges ved klar-gørelsen af\"%s\"."
+msgstr "Arbejdsmappen \"%s\" findes ikke. Den vil ikke blive brugt ved klargørelsen af\"%s\"."
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 #, c-format
@@ -170,12 +171,12 @@ msgstr "Denne genvej bruges allerede til handlingen \"%s\". Hvilken handling vil
 #. Warn the user
 #: ../libxfce4kbd-private/xfce-shortcuts.c:110
 msgid "Please use another key combination."
-msgstr "Brug en anden taste-kombination."
+msgstr "Brug en anden tastekombination."
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:111
 #, c-format
 msgid "%s already triggers this action."
-msgstr "%s udløser allerede denne handling."
+msgstr "%s bruges allerede til denne handling."
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:116
 #, c-format
@@ -188,7 +189,7 @@ msgstr "Denne genvej bruges allerede til noget andet."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:211
 msgid "Window Manager Action Shortcut"
-msgstr "Vindue-håndtering-handlings Genvej"
+msgstr "Genvej til vindueshåndteringshandling"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
@@ -199,7 +200,7 @@ msgstr "handling"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:218
 msgid "Command Shortcut"
-msgstr "Kommando-genvej"
+msgstr "Kommandogenvej"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
@@ -218,7 +219,7 @@ msgstr "_Annuller"
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:284
 #, c-format
 msgid "Press now the keyboard keys you want to use to trigger the %s '%s'."
-msgstr "Tryk nu på de tastatur-taster du vil have anvendt til at udløse %s \"%s\"."
+msgstr "Tryk dernæst på de tastaturtaster du ønsker at anvende til at udløse %s \"%s\"."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:312
 msgid "Shortcut:"
@@ -235,7 +236,7 @@ msgstr "Kunne ikke gribe tastaturet."
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:36
 msgid "Window operations menu"
-msgstr "Vindue operations-menu"
+msgstr "Vindue funktionsmenu"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:37
 msgid "Up"
@@ -255,19 +256,19 @@ msgstr "Højre"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:42
 msgid "Cycle windows"
-msgstr "Gennem-gå vinduer"
+msgstr "Gennemløb vinduer"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:43
 msgid "Cycle windows (Reverse)"
-msgstr "Gennem-gå vinduer (Omvendt)"
+msgstr "Gennemløb vinduer (omvendt)"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:44
 msgid "Switch window for same application"
-msgstr "Skift vindue til samme applikation"
+msgstr "Skift vindue til samme program"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:45
 msgid "Switch application"
-msgstr "Skift applikation"
+msgstr "Skift program"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:46
 msgid "Close window"
@@ -299,7 +300,7 @@ msgstr "Tilpas vinduets størrelse"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:53
 msgid "Shade window"
-msgstr "Skyg vindue"
+msgstr "Skygge vindue"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:54
 msgid "Stick window"
@@ -307,15 +308,15 @@ msgstr "Klæb vindue"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:55
 msgid "Raise window"
-msgstr "Hæv vindue"
+msgstr "Flyt vindue frem"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:56
 msgid "Lower window"
-msgstr "Sænk vindue"
+msgstr "Flyt vindue tilbage"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:57
 msgid "Raise or lower window"
-msgstr "Hæv eller sænk vindue"
+msgstr "Rul vindue ud eller sammen"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:58
 msgid "Fill window"
@@ -331,19 +332,19 @@ msgstr "Fyld vinduet lodret"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:61
 msgid "Toggle above"
-msgstr "Veksle over"
+msgstr "Aktivér over"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:62
 msgid "Toggle fullscreen"
-msgstr "veksle fuldskærm"
+msgstr "Aktivér fuldskærm"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:63
 msgid "Move window to upper workspace"
-msgstr "Flyt vindue til øverste arbejdsområde"
+msgstr "Flyt vindue til øvre arbejdsområde"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:64
 msgid "Move window to bottom workspace"
-msgstr "Flyt vindue til nederste arbejdsområde"
+msgstr "Flyt vindue til nedre arbejdsområde"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:65
 msgid "Move window to left workspace"
@@ -355,7 +356,7 @@ msgstr "Flyt vindue til højre arbejdsområde"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:67
 msgid "Move window to previous workspace"
-msgstr "Flyt vindue til tidligere arbejdsområde"
+msgstr "Flyt vindue til foregående arbejdsområde"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:68
 msgid "Move window to next workspace"
@@ -411,35 +412,35 @@ msgstr "Flyt vindue til arbejdsområde 12"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:81
 msgid "Tile window to the top"
-msgstr "Flisér vindue til toppen"
+msgstr "Flyt vindue til toppen som flise"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:82
 msgid "Tile window to the bottom"
-msgstr "Flisér vindue til bunden"
+msgstr "Flyt vindue til bunden som flise"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:83
 msgid "Tile window to the left"
-msgstr "Flisér vindue til venstre"
+msgstr "Flyt vindue til venstre som flise"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:84
 msgid "Tile window to the right"
-msgstr "Flisér vindue til højre"
+msgstr "Flyt vindue til højre som flise"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:85
 msgid "Tile window to the top-left"
-msgstr "Flisér vindue til venstre side af toppen"
+msgstr "Flyt vindue til venstre side af toppen som flise"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:86
 msgid "Tile window to the top-right"
-msgstr "Flisér vindue til højre side af toppen"
+msgstr "Flyt vindue til højre side af toppen som flise"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:87
 msgid "Tile window to the bottom-left"
-msgstr "Flisér vindue til venstre side af bunden"
+msgstr "Flyt vindue til venstre side af bunden som flise"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:88
 msgid "Tile window to the bottom-right"
-msgstr "Flisér vindue til højre side af bunden"
+msgstr "Flyt vindue til højre side af bunden som flise"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:89
 msgid "Show desktop"
@@ -447,11 +448,11 @@ msgstr "Vis skrivebord"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:90
 msgid "Upper workspace"
-msgstr "Øverste arbejdsområde"
+msgstr "Øvre arbejdsområde"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:91
 msgid "Bottom workspace"
-msgstr "Nederste arbejdsområde"
+msgstr "Nedre arbejdområde"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:92
 msgid "Left workspace"
@@ -463,7 +464,7 @@ msgstr "Højre arbejdsområde"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:94
 msgid "Previous workspace"
-msgstr "Tidligere arbejdsområde"
+msgstr "Foregående arbejdsområde"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:95
 msgid "Next workspace"
@@ -527,7 +528,7 @@ msgstr "Tilføj tilstødende arbejdsområde"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:110
 msgid "Delete last workspace"
-msgstr "Slet sidste arbejdsområde"
+msgstr "Slet sidste arbejdområde"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:111
 msgid "Delete active workspace"
@@ -535,7 +536,7 @@ msgstr "Slet aktivt arbejdsområde"
 
 #: ../glade/libxfce4ui.xml.in.h:1 ../glade/libxfce4ui-2.xml.in.h:1
 msgid "Titled Dialog"
-msgstr "Titlet Dialog"
+msgstr "Dialogtitel"
 
 #: ../glade/libxfce4ui.xml.in.h:2 ../glade/libxfce4ui-2.xml.in.h:2
 msgid "Subtitle"
@@ -543,15 +544,15 @@ msgstr "Undertitel"
 
 #: ../glade/libxfce4ui.xml.in.h:3 ../glade/libxfce4ui-2.xml.in.h:3
 msgid "Xfce 4 Widgets"
-msgstr " Xfce 4 Widgets"
+msgstr "Widgets til Xfce 4"
 
 #: ../xfce4-about/main.c:52
 msgid "Version information"
-msgstr "Versions-information"
+msgstr "Versionsinformation"
 
 #: ../xfce4-about/main.c:70
 msgid "Window Manager"
-msgstr "Vindues-Håndtering"
+msgstr "Vindueshåndtering"
 
 #: ../xfce4-about/main.c:71
 msgid "Handles the placement of windows on the screen."
@@ -565,31 +566,31 @@ msgstr "Panel"
 msgid ""
 "Program launchers, window buttons, applications menu, workspace switcher and"
 " more."
-msgstr "Program-startere, vindues-knapper, applikations-menuer, arbejdsplads-skiftere og mere."
+msgstr "Programstartere, vinduesknapper, programmenuer, arbejdspladsskiftere og mere."
 
 #: ../xfce4-about/main.c:79
 msgid "Desktop Manager"
-msgstr "Skrivebords-Håndtering"
+msgstr "Skrivebordshåndtering"
 
 #: ../xfce4-about/main.c:80
 msgid ""
 "Sets the background color or image with optional application menu or icons "
 "for minimized applications or launchers, devices and folders."
-msgstr "Indstiller baggrundsfarven eller billede med applikations-menu tilvalg eller ikoner for minimerede applikationer eller startere, enheder og mapper."
+msgstr "Indstiller baggrundsfarven eller -billedet med tilvalg af program-menu eller -ikoner for minimerede programmer eller startere, enheder og mapper."
 
 #: ../xfce4-about/main.c:84
 msgid "File Manager "
-msgstr "Fil-Håndtering "
+msgstr "Filhåndtering "
 
 #: ../xfce4-about/main.c:85
 msgid ""
 "A modern file manager for the Unix/Linux desktop, aiming to be easy-to-use "
 "and fast."
-msgstr "En moderne fil-håndtering til Unix/Linux skrivebordet, med målet om at være brugervenligt og hurtigt."
+msgstr "En moderne filhåndtering til Unix/Linux-skrivebordet, med målet at være nemt at bruge og hurtig."
 
 #: ../xfce4-about/main.c:89
 msgid "Session Manager"
-msgstr "Sessions-Håndtering"
+msgstr "Sessionshåndtering"
 
 #: ../xfce4-about/main.c:90
 msgid ""
@@ -599,37 +600,37 @@ msgstr "Gendanner din session ved opstart og tillader dig at slukke din computer
 
 #: ../xfce4-about/main.c:94
 msgid "Setting System"
-msgstr "System-Indstilling"
+msgstr "Systemindstilling"
 
 #: ../xfce4-about/main.c:95
 msgid ""
 "Configuration system to control various aspects of the desktop like "
 "appearance, display, keyboard and mouse settings."
-msgstr "Indstillings-system for kontrol af forskellige aspekter af skrivebordet som udseende, visning, tastatur og muse-indstillinger."
+msgstr "Indstillingssystem for at håndtere forskellige dele af skrivebordet som fremkost-, visning-, tastatur- og museindstillinger."
 
 #: ../xfce4-about/main.c:99
 msgid "Application Finder"
-msgstr "Applikations-Finder"
+msgstr "Programfinder"
 
 #: ../xfce4-about/main.c:100
 msgid ""
 "Shows the applications installed on your system in categories, so you can "
 "quickly find and launch them."
-msgstr "Viser applikationerne som er installeret på dit system, i kategorier, så du hurtigt kan finde og køre dem."
+msgstr "Viser de programmer som er installeret på dit system, i kategorier, så du hurtigt kan finde og starte dem."
 
 #: ../xfce4-about/main.c:104
 msgid "Settings Daemon"
-msgstr "Indstillings-Daemon"
+msgstr "Indstillingsdæmon"
 
 #: ../xfce4-about/main.c:105
 msgid "D-Bus-based configuration storage system."
-msgstr "D-Bus-baseret konfiguration af lager-system."
+msgstr "D-Bus-baseret konfiguration af lagersystem."
 
 #: ../xfce4-about/main.c:112
 msgid ""
 "Xfce is a collection of programs that together provide a full-featured "
 "desktop environment. The following programs are part of the Xfce core:"
-msgstr "Xfce er en samling af programmer der sammen tilbyder et fuldt udstyret skrivebords-miljø. De følgende programmer er en del af Xfce kernen:"
+msgstr "Xfce er en samling af programmer der sammen tilbyder et fuldt udstyret skrivebordsmiljø. De følgende programmer er en del af kernen i Xfce:"
 
 #: ../xfce4-about/main.c:136
 msgid ""
@@ -644,21 +645,21 @@ msgid ""
 " for applications and LGPL or BSDL for libraries. Look at the documentation,"
 " the source code or the Xfce website (http://www.xfce.org) for more "
 "information."
-msgstr "Xfce komponenterne er licenseret under frie eller åbne kilde licenser; GPL eller BSDL for applikationer og LGPL eller BSDL for biblioteker. Se i dokumentationen, kildekoden eller på Xfce hjemmesiden (http://www.xfce.org) for mere information."
+msgstr "Komponenterne i Xfce er licenseret under frie eller åbne kilde licenser; GPL eller BSDL for programmer og LGPL eller BSDL for biblioteker. Se i dokumentationen, kildekoden eller på Xfce hjemmeside (http://www.xfce.org) for mere information."
 
 #: ../xfce4-about/main.c:149
 msgid "Thank you for your interest in Xfce."
-msgstr "Tak for din interesse i Xfce."
+msgstr "Tak for din interesse for Xfce."
 
 #: ../xfce4-about/main.c:153
 msgid "The Xfce Development Team"
-msgstr "Udviklings-holdet bag Xfce"
+msgstr "Udviklingsholdet bag Xfce"
 
 #: ../xfce4-about/main.c:261
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
 "on <http://bugzilla.xfce.org> ."
-msgstr "Hvis du har kendskab til nogle der mangler på denne liste, tøv ikke og indsend fejlen på <http://bugzilla.xfce.org> ."
+msgstr "Hvis du har kendskab til nogle der mangler på denne liste, bedes du rapportere en fejl på <http://bugzilla.xfce.org> ."
 
 #: ../xfce4-about/main.c:265
 msgid "Thanks to all who helped making this software available!"
@@ -668,7 +669,7 @@ msgstr "Tak til alle som har hjulpet med at gøre dette software tilgængeligt!"
 msgid ""
 "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
-msgstr "Xfce 4 ophavsret Olivier Fourdan (fourdan@xfce.org). De forskellige komponenter har ophavsret af deres respektive forfattere."
+msgstr "Xfce 4 er ophavsret Olivier Fourdan (fourdan@xfce.org). De forskellige komponenter har ophavsret af de enkelte forfattere."
 
 #: ../xfce4-about/main.c:287
 msgid ""
@@ -690,11 +691,11 @@ msgstr "Pakkerne thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-sett
 #: ../xfce4-about/main.c:441
 #, c-format
 msgid "Type '%s --help' for usage information."
-msgstr "Indtast \"%s --help\" for brugs-vejledning."
+msgstr "Indtast \"%s --help\" for brugsvejledning."
 
 #: ../xfce4-about/main.c:447
 msgid "Unable to initialize GTK+."
-msgstr "Kunne ikke initialisere GTK+."
+msgstr "Kunne ikke klargøre GTK+."
 
 #: ../xfce4-about/main.c:456
 msgid "The Xfce development team. All rights reserved."
@@ -733,7 +734,7 @@ msgstr "Version %s"
 #. },
 #: ../xfce4-about/contributors.h:128
 msgid "Core developers"
-msgstr "Kerne udviklere"
+msgstr "Primære udviklere"
 
 #: ../xfce4-about/contributors.h:131
 msgid "Active contributors"
@@ -741,11 +742,11 @@ msgstr "Aktive bidragydere"
 
 #: ../xfce4-about/contributors.h:134
 msgid "Servers maintained by"
-msgstr "Servere vedligeholdt af"
+msgstr "Vedligeholdelse af servere"
 
 #: ../xfce4-about/contributors.h:137
 msgid "Goodies supervision"
-msgstr "Tilsyn af godbidder"
+msgstr "Tilsyn af goodies"
 
 #: ../xfce4-about/contributors.h:140
 msgid "Translations supervision"
@@ -765,11 +766,11 @@ msgstr "Om Xfce"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:2
 msgid "Information about the Xfce Desktop Environment"
-msgstr "Information om Xfce skrivebords-miljøet"
+msgstr "Information om Xfce-skrivebordsmiljøet"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:1
 msgid "About the Xfce Desktop Environment"
-msgstr "Om Xfce skrivebords-miljøet"
+msgstr "Om Xfce-skrivebordsmiljøet"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:2
 msgid "About"
@@ -804,11 +805,11 @@ msgstr "Licens"
 msgid ""
 "A file named \"%s\" already exists in this directory, the file hasn't been "
 "added."
-msgstr "En fil ved navn \"%s\" eksisterer allerede i denne mappe. Filen er ikke blevet tilføjet."
+msgstr "En fil ved navn \"%s\" findes allerede i denne mappe. Filen er ikke blevet tilføjet."
 
 #: ../tests/test-ui.c:149
 msgid "Failed to migrate the old panel configuration"
-msgstr "Fejlede med at migrere den ældre panel-konfigurationen"
+msgstr "Den gamle panelopsætning kunne ikke overføres"
 
 #: ../tests/test-ui.c:202 ../tests/test-ui.c:222 ../tests/test-ui.c:251
 #: ../tests/test-ui.c:273
