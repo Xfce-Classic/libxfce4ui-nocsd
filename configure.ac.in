@@ -253,17 +253,17 @@ AC_ARG_WITH([gladeui2-pixmapdir],
             [gladeui2_pixmapdir="$withval"])
 if test x"$GLADEUI2_FOUND" = x"yes"; then
   if test x"$gladeui2_catalogdir" = x""; then
-    GLADEUI2_CATALOGDIR="${datarootdir}/glade/catalogs"
+    GLADEUI2_CATALOGDIR=`$PKG_CONFIG "--variable=catalogdir" "gladeui-2.0"`
   else
     GLADEUI2_CATALOGDIR="$gladeui2_catalogdir"
   fi
   if test x"$gladeui2_moduledir" = x""; then
-    GLADEUI2_MODULEDIR="${libdir}/glade/modules"
+    GLADEUI2_MODULEDIR=`$PKG_CONFIG "--variable=moduledir" "gladeui-2.0"`
   else
     GLADEUI2_MODULEDIR="$gladeui2_moduledir"
   fi
   if test x"$gladeui2_pixmapdir" = x""; then
-    GLADEUI2_PIXMAPDIR="${datarootdir}/glade/pixmaps"
+    GLADEUI2_PIXMAPDIR=`$PKG_CONFIG "--variable=pixmapdir" "gladeui-2.0"`
   else
     GLADEUI2_PIXMAPDIR="$gladeui2_pixmapdir"
   fi
