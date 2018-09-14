@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-06-30 06:30+0200\n"
-"PO-Revision-Date: 2017-09-19 20:16+0000\n"
+"PO-Revision-Date: 2018-09-14 00:15+0000\n"
 "Last-Translator: Xfce Bot <transifex@xfce.org>\n"
 "Language-Team: Chinese (Hong Kong) (http://www.transifex.com/xfce/libxfce4ui/language/zh_HK/)\n"
 "MIME-Version: 1.0\n"
@@ -56,7 +56,7 @@ msgstr "資訊"
 #: ../libxfce4ui/xfce-dialogs.c:356 ../libxfce4ui/xfce-dialogs.c:399
 #: ../libxfce4ui/xfce-dialogs.c:443
 msgid "Close"
-msgstr ""
+msgstr "關閉"
 
 #: ../libxfce4ui/xfce-dialogs.c:389
 msgid "Warning"
@@ -206,7 +206,7 @@ msgstr "捷徑鍵"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:249
 msgid "_Cancel"
-msgstr ""
+msgstr "取消(_C)"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:284
 #, c-format
@@ -801,9 +801,9 @@ msgstr ""
 
 #: ../tests/test-ui.c:149
 msgid "Failed to migrate the old panel configuration"
-msgstr ""
+msgstr "未能轉移舊式面板組態"
 
 #: ../tests/test-ui.c:202 ../tests/test-ui.c:222 ../tests/test-ui.c:251
 #: ../tests/test-ui.c:273
 msgid "Customize settings stored by Xfconf"
-msgstr ""
+msgstr "自訂 Xfconf 儲存的設定"
