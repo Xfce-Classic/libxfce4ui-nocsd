@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-06-30 06:30+0200\n"
-"PO-Revision-Date: 2018-02-14 01:05+0000\n"
+"PO-Revision-Date: 2018-09-14 00:15+0000\n"
 "Last-Translator: samson <sambelet@yahoo.com>\n"
 "Language-Team: Amharic (http://www.transifex.com/xfce/libxfce4ui/language/am/)\n"
 "MIME-Version: 1.0\n"
@@ -687,11 +687,11 @@ msgstr "ይጻፉ '%s --እርዳታ' መረጃ ለ መጠቀም"
 
 #: ../xfce4-about/main.c:447
 msgid "Unable to initialize GTK+."
-msgstr ""
+msgstr "ማስጀመር አልተቻለም GTK+."
 
 #: ../xfce4-about/main.c:456
 msgid "The Xfce development team. All rights reserved."
-msgstr ""
+msgstr "The Xfce development team. All rights reserved."
 
 #: ../xfce4-about/main.c:457
 #, c-format
