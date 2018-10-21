@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-06-30 06:30+0200\n"
-"PO-Revision-Date: 2018-09-29 22:21+0000\n"
+"PO-Revision-Date: 2018-10-21 08:11+0000\n"
 "Last-Translator: Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>\n"
 "Language-Team: Catalan (http://www.transifex.com/xfce/libxfce4ui/language/ca/)\n"
 "MIME-Version: 1.0\n"
@@ -556,7 +556,7 @@ msgstr "Gestiona la ubicació de les finestres a la pantalla."
 
 #: ../xfce4-about/main.c:74
 msgid "Panel"
-msgstr "Plafó"
+msgstr "Tauler"
 
 #: ../xfce4-about/main.c:75
 msgid ""
@@ -805,7 +805,7 @@ msgstr "En aquest directori ja existeix un fitxer amb el nom «%s», no s'ha afe
 
 #: ../tests/test-ui.c:149
 msgid "Failed to migrate the old panel configuration"
-msgstr "No s'ha pogut migrar la configuració antiga del plafó"
+msgstr "No s'ha pogut migrar la configuració antiga del tauler"
 
 #: ../tests/test-ui.c:202 ../tests/test-ui.c:222 ../tests/test-ui.c:251
 #: ../tests/test-ui.c:273
