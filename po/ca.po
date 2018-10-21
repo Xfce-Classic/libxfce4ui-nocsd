@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-06-30 06:30+0200\n"
-"PO-Revision-Date: 2018-10-21 08:11+0000\n"
+"PO-Revision-Date: 2018-10-21 20:16+0000\n"
 "Last-Translator: Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>\n"
 "Language-Team: Catalan (http://www.transifex.com/xfce/libxfce4ui/language/ca/)\n"
 "MIME-Version: 1.0\n"
@@ -24,7 +24,7 @@ msgstr ""
 
 #: ../libxfce4ui/xfce-dialogs.c:109
 msgid "Failed to open web browser for online documentation"
-msgstr "No s'ha pogut obrir el navegador web per veure la documentació en línia"
+msgstr "Ha fallat l'obriment del navegador web per la documentació en línia"
 
 #: ../libxfce4ui/xfce-dialogs.c:263
 #, c-format
@@ -47,7 +47,7 @@ msgstr "Sereu redirigit al lloc web de la documentació on es mantenen i traduei
 
 #: ../libxfce4ui/xfce-dialogs.c:289
 msgid "_Read Online"
-msgstr "_Llegeix en línia"
+msgstr "_Llegir en línia"
 
 #: ../libxfce4ui/xfce-dialogs.c:298
 msgid "_Always go directly to the online documentation"
@@ -110,7 +110,7 @@ msgstr "Mostra les opcions de gestió de sessió"
 #: ../libxfce4ui/xfce-sm-client.c:1611
 #, c-format
 msgid "Failed to connect to the session manager: %s"
-msgstr "No es pot connectar al gestor de sessions: %s"
+msgstr "Ha fallat la connexió al gestor de sessions: %s"
 
 #: ../libxfce4ui/xfce-sm-client.c:1617
 #, c-format
@@ -665,7 +665,7 @@ msgstr "Gràcies a tots aquells que heu ajudat a fer aquest programari una reali
 msgid ""
 "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
-msgstr "Xfce 4 té copyright d'Olivier Fourdan (fourdan@xfce.org). Els diferents components tenen el copyright dels seus respectius autors."
+msgstr "Xfce 4 té drets d'autor d'Olivier Fourdan (fourdan@xfce.org). Els diferents components tenen els drets d'autor dels seus respectius autors."
 
 #: ../xfce4-about/main.c:287
 msgid ""
@@ -687,11 +687,11 @@ msgstr "Els paquets thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-s
 #: ../xfce4-about/main.c:441
 #, c-format
 msgid "Type '%s --help' for usage information."
-msgstr "Teclegeu «%s --help» per a la informació de l'ús."
+msgstr "Teclegeu «%s --help» per obtenir la informació de l'ús."
 
 #: ../xfce4-about/main.c:447
 msgid "Unable to initialize GTK+."
-msgstr "No s'ha pogut iniciar GTK+."
+msgstr "No es pot inicialitzar GTK+."
 
 #: ../xfce4-about/main.c:456
 msgid "The Xfce development team. All rights reserved."
@@ -710,7 +710,7 @@ msgstr "Llista dels traductors de %s."
 
 #: ../xfce4-about/main.c:470
 msgid "Failed to load interface"
-msgstr "No s'ha pogut carregar la interfície"
+msgstr "Ha fallat la càrrega de la interfície"
 
 #. I18N: first %s will be replaced by the version, second by
 #. * the name of the distribution (--with-vendor-info=NAME)
@@ -754,7 +754,7 @@ msgstr "Traductors"
 
 #: ../xfce4-about/contributors.h:146
 msgid "Previous contributors"
-msgstr "Antics col·laboradors"
+msgstr "Contribuïdors anteriors"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:1
 msgid "About Xfce"
@@ -790,7 +790,7 @@ msgstr "BSD"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:7
 msgid "Copyright"
-msgstr "Copyright"
+msgstr "Drets d'autor"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:8
 msgid "License"
@@ -805,7 +805,7 @@ msgstr "En aquest directori ja existeix un fitxer amb el nom «%s», no s'ha afe
 
 #: ../tests/test-ui.c:149
 msgid "Failed to migrate the old panel configuration"
-msgstr "No s'ha pogut migrar la configuració antiga del tauler"
+msgstr "Ha fallat la migració de la configuració antiga del tauler"
 
 #: ../tests/test-ui.c:202 ../tests/test-ui.c:222 ../tests/test-ui.c:251
 #: ../tests/test-ui.c:273
