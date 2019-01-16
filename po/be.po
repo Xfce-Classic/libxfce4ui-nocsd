@@ -3,13 +3,13 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Zmicer Turok <zmicerturok@gmail.com>, 2018
+# Zmicer Turok <zmicerturok@gmail.com>, 2018-2019
 msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-06-30 06:30+0200\n"
-"PO-Revision-Date: 2018-09-14 00:15+0000\n"
+"PO-Revision-Date: 2019-01-16 09:30+0000\n"
 "Last-Translator: Zmicer Turok <zmicerturok@gmail.com>\n"
 "Language-Team: Belarusian (http://www.transifex.com/xfce/libxfce4ui/language/be/)\n"
 "MIME-Version: 1.0\n"
@@ -163,7 +163,7 @@ msgstr "Спалучэнне ўжо выкарыстоўваецца для дз
 #. Warn the user
 #: ../libxfce4kbd-private/xfce-shortcuts.c:110
 msgid "Please use another key combination."
-msgstr "Калі ласка, выкарыстоўвайце іншае спалучэнне клавішаў."
+msgstr "Калі ласка, выкарыстоўвайце іншае спалучэнне клавіш."
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:111
 #, c-format
@@ -416,7 +416,7 @@ msgstr "Размясціць акно злева"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:84
 msgid "Tile window to the right"
-msgstr "Размясціць акно зправа"
+msgstr "Размясціць акно справа"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:85
 msgid "Tile window to the top-left"
@@ -424,7 +424,7 @@ msgstr "Размясціць акно злева зверху"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:86
 msgid "Tile window to the top-right"
-msgstr "Размясціць акно зправа зверху"
+msgstr "Размясціць акно справа зверху"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:87
 msgid "Tile window to the bottom-left"
@@ -432,7 +432,7 @@ msgstr "Размясціць акно злева знізу"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:88
 msgid "Tile window to the bottom-right"
-msgstr "Размясціць акно зправа знізу"
+msgstr "Размясціць акно справа знізу"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:89
 msgid "Show desktop"
@@ -568,7 +568,7 @@ msgstr "Кіраўнік працоўнага стала"
 msgid ""
 "Sets the background color or image with optional application menu or icons "
 "for minimized applications or launchers, devices and folders."
-msgstr "Прызначае колер фону альбо выяву з дадатковым меню прагам альбо значкі згорнутых праграмаў, прыладаў і каталогаў."
+msgstr "Прызначае колер фону альбо выяву з дадатковым меню прагам альбо значкі згорнутых праграм, прылад і каталогаў."
 
 #: ../xfce4-about/main.c:84
 msgid "File Manager "
@@ -588,7 +588,7 @@ msgstr "Кіраўнік сеансу"
 msgid ""
 "Restores your session on startup and allows you to shutdown the computer "
 "from Xfce."
-msgstr "Аднаўляе ваш папярэдні працоўны сеанс і дазваляе выключыць кампутар з Xfce."
+msgstr "Аднаўляе ваш папярэдні працоўны сеанс і дазваляе выключыць камп'ютар з Xfce."
 
 #: ../xfce4-about/main.c:94
 msgid "Setting System"
@@ -770,7 +770,7 @@ msgstr "Пра праграму"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:3
 msgid "Credits"
-msgstr "Тытры"
+msgstr "Цітры"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:4
 msgid "GPL"
