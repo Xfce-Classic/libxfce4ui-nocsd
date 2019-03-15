@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# Besnik <besnik@programeshqip.org>, 2019
 msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-06-30 06:30+0200\n"
-"PO-Revision-Date: 2018-09-14 00:15+0000\n"
-"Last-Translator: Nick Schermer <nick@xfce.org>\n"
+"PO-Revision-Date: 2019-03-15 10:30+0000\n"
+"Last-Translator: Besnik <besnik@programeshqip.org>\n"
 "Language-Team: Albanian (http://www.transifex.com/xfce/libxfce4ui/language/sq/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,7 +20,7 @@ msgstr ""
 
 #: ../libxfce4ui/xfce-dialogs.c:109
 msgid "Failed to open web browser for online documentation"
-msgstr "U dështua në hapjen e shfletuesit për dokumentimin në internet"
+msgstr "S’u arrit të hapej shfletuesi për dokumentimin në internet"
 
 #: ../libxfce4ui/xfce-dialogs.c:263
 #, c-format
@@ -105,7 +106,7 @@ msgstr "Shfaq mundësi administrimi sesioni"
 #: ../libxfce4ui/xfce-sm-client.c:1611
 #, c-format
 msgid "Failed to connect to the session manager: %s"
-msgstr "Dështoi të lidhet me përgjegjësin e sesioneve: %s"
+msgstr "S’u arrit të lidhej me përgjegjësin e sesioneve: %s"
 
 #: ../libxfce4ui/xfce-sm-client.c:1617
 #, c-format
@@ -705,7 +706,7 @@ msgstr "Listë përkthyesish nga %s."
 
 #: ../xfce4-about/main.c:470
 msgid "Failed to load interface"
-msgstr "Dështoi në ngarkimin e ndërfaqes"
+msgstr "S’u arrit të ngarkohej ndërfaqe"
 
 #. I18N: first %s will be replaced by the version, second by
 #. * the name of the distribution (--with-vendor-info=NAME)
@@ -800,7 +801,7 @@ msgstr "Ka tashmë në këtë drejtori një kartelë të quajtur \"%s\", kartela
 
 #: ../tests/test-ui.c:149
 msgid "Failed to migrate the old panel configuration"
-msgstr "Dështoi në migrimin e formësimit të panelit të vjetër"
+msgstr "S’u arrit të migrohej formësimi i vjetër i panelit"
 
 #: ../tests/test-ui.c:202 ../tests/test-ui.c:222 ../tests/test-ui.c:251
 #: ../tests/test-ui.c:273
