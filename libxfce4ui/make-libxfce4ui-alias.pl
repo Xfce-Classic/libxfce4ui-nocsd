@@ -36,26 +36,6 @@ print <<EOF;
 
 EOF
 
-if ($option_def)
-  {
-    print <<EOF
-#undef IN_HEADER
-#define IN_HEADER(x) 1
-
-#undef IN_SOURCE
-#define IN_SOURCE defined
-
-EOF
-  }
-else
-  {
-    print <<EOF
-#define IN_HEADER defined
-#define IN_SOURCE(x) 1
-
-EOF
-  }
-
 my $in_comment = 0;
 my $in_skipped_section = 0;
 
@@ -107,9 +87,29 @@ while (<>)
         next;
       }
 
-    if ($_ =~ /^\#if.*(IN_SOURCE|IN_HEADER)/)
+    if ($_ =~ /^\#if.*IN_SOURCE\((.*)\)/)
       {
-        print $_;
+        if ($option_def)
+          {
+            print "#ifdef $1\n";
+          }
+        else
+          {
+            print "#if 1\n";
+          }
+        next;
+      }
+
+    if ($_ =~ /^\#if.*IN_HEADER\((.*)\)/)
+      {
+        if ($option_def)
+          {
+            print "#if 1\n";
+          }
+        else
+          {
+            print "#ifdef $1\n";
+          }
         next;
       }
 
