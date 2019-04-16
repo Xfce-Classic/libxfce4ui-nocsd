@@ -159,8 +159,7 @@ xfce_about_about (GtkTextBuffer *buffer)
 
 static void
 xfce_about_credits_translators (GtkTextBuffer *buffer,
-                                GtkTextIter   *end,
-                                GtkTextTag    *email)
+                                GtkTextIter   *end)
 {
   guint                 i;
   GtkTextTag           *italic;
@@ -193,7 +192,7 @@ xfce_about_credits_translators (GtkTextBuffer *buffer,
           gtk_text_buffer_insert_with_tags (buffer, end, "\t", -1, italic, NULL);
           gtk_text_buffer_insert_with_tags (buffer, end, member->name, -1, italic, NULL);
           gtk_text_buffer_insert_with_tags (buffer, end, " <", -1, italic, NULL);
-          gtk_text_buffer_insert_with_tags (buffer, end, member->email, -1, email, italic, NULL);
+          gtk_text_buffer_insert_with_tags (buffer, end, member->email, -1, italic, NULL);
           gtk_text_buffer_insert_with_tags (buffer, end, ">\n", -1, italic, NULL);
 
         }
@@ -208,7 +207,6 @@ static void
 xfce_about_credits (GtkTextBuffer *buffer)
 {
   guint                   i;
-  GtkTextTag             *email;
   GtkTextTag             *title;
   GtkTextTag             *indent;
   GtkTextIter             end;
@@ -216,10 +214,6 @@ xfce_about_credits (GtkTextBuffer *buffer)
   const ContributorInfo  *user;
 
   g_return_if_fail (GTK_IS_TEXT_BUFFER (buffer));
-
-  email = gtk_text_buffer_create_tag (buffer, "email",
-                                      "foreground", "blue",
-                                      "underline", PANGO_UNDERLINE_SINGLE, NULL);
 
   title = gtk_text_buffer_create_tag (buffer, "title",
                                       "scale", 1.1,
@@ -244,14 +238,14 @@ xfce_about_credits (GtkTextBuffer *buffer)
             {
               gtk_text_buffer_insert_with_tags (buffer, &end, user->name, -1, indent, NULL);
               gtk_text_buffer_insert (buffer, &end, " <", -1);
-              gtk_text_buffer_insert_with_tags (buffer, &end, user->email, -1, email, NULL);
+              gtk_text_buffer_insert (buffer, &end, user->email, -1);
               gtk_text_buffer_insert (buffer, &end, ">\n", -1);
             }
         }
       else
         {
           /* add the translators */
-          xfce_about_credits_translators (buffer, &end, email);
+          xfce_about_credits_translators (buffer, &end);
         }
 
       gtk_text_buffer_insert (buffer, &end, "\n", -1);
