@@ -137,7 +137,9 @@ xfce_spawn_startup_timeout_destroy (gpointer user_data)
     {
       pid = spawn_data->pid;
       g_source_remove (spawn_data->watch_id);
-      g_child_watch_add (pid, (GChildWatchFunc) g_spawn_close_pid, NULL);
+      g_child_watch_add (pid,
+                         (GChildWatchFunc) (void (*)(void)) g_spawn_close_pid,
+                         NULL);
     }
 }
 #endif
@@ -372,8 +374,8 @@ xfce_spawn_on_screen_with_child_watch (GdkScreen    *screen,
   if (G_LIKELY (startup_notify))
     {
       sn_display = sn_display_new (GDK_SCREEN_XDISPLAY (screen),
-                                   (SnDisplayErrorTrapPush) gdk_error_trap_push,
-                                   (SnDisplayErrorTrapPop) gdk_error_trap_pop);
+                                   (SnDisplayErrorTrapPush) (void (*)(void)) gdk_error_trap_push,
+                                   (SnDisplayErrorTrapPop) (void (*)(void)) gdk_error_trap_pop);
 
       if (G_LIKELY (sn_display != NULL))
         {

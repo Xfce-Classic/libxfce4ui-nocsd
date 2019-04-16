@@ -441,7 +441,9 @@ xfce_shortcuts_provider_clone_defaults (XfceShortcutsProvider *provider)
   if (G_LIKELY (properties != NULL))
     {
       /* Copy from /commands/default to /commands/custom property by property */
-      g_hash_table_foreach (properties, (GHFunc) _xfce_shortcuts_provider_clone_default, provider);
+      g_hash_table_foreach (properties,
+                            (GHFunc) (void (*)(void)) _xfce_shortcuts_provider_clone_default,
+                            provider);
 
       g_hash_table_destroy (properties);
     }
@@ -523,7 +525,9 @@ xfce_shortcuts_provider_get_shortcuts (XfceShortcutsProvider *provider)
   context.properties = properties;
 
   if (G_LIKELY (properties != NULL))
-    g_hash_table_foreach (properties, (GHFunc) _xfce_shortcuts_provider_get_shortcut, &context);
+    g_hash_table_foreach (properties,
+                          (GHFunc) (void (*)(void)) _xfce_shortcuts_provider_get_shortcut,
+                          &context);
 
   return context.list;
 }
@@ -706,7 +710,7 @@ xfce_shortcuts_provider_reset_shortcut (XfceShortcutsProvider *provider,
 void
 xfce_shortcuts_free (GList *shortcuts)
 {
-  g_list_foreach (shortcuts, (GFunc) xfce_shortcut_free, NULL);
+  g_list_foreach (shortcuts, (GFunc) (void (*)(void)) xfce_shortcut_free, NULL);
 }
 
 

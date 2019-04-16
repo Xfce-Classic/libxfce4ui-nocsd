@@ -188,7 +188,9 @@ static void
 xfce_shortcuts_grabber_grab_all (XfceShortcutsGrabber *grabber)
 {
   g_return_if_fail (XFCE_IS_SHORTCUTS_GRABBER (grabber));
-  g_hash_table_foreach (grabber->priv->keys, (GHFunc) grab_key, grabber);
+  g_hash_table_foreach (grabber->priv->keys,
+                        (GHFunc) (void (*)(void)) grab_key,
+                        grabber);
 }
 
 
@@ -208,7 +210,9 @@ static void
 xfce_shortcuts_grabber_ungrab_all (XfceShortcutsGrabber *grabber)
 {
   g_return_if_fail (XFCE_IS_SHORTCUTS_GRABBER (grabber));
-  g_hash_table_foreach (grabber->priv->keys, (GHFunc) ungrab_key, grabber);
+  g_hash_table_foreach (grabber->priv->keys,
+                        (GHFunc) (void (*)(void)) ungrab_key,
+                        grabber);
 }
 
 
@@ -470,7 +474,9 @@ xfce_shortcuts_grabber_event_filter (GdkXEvent            *gdk_xevent,
   TRACE ("Looking for %s", raw_shortcut_name);
   g_free (raw_shortcut_name);
 
-  g_hash_table_foreach (grabber->priv->keys, (GHFunc) find_event_key, &context);
+  g_hash_table_foreach (grabber->priv->keys,
+                        (GHFunc) (void (*)(void)) find_event_key,
+                        &context);
 
   if (G_LIKELY (context.result != NULL))
     /* We had a positive match */
