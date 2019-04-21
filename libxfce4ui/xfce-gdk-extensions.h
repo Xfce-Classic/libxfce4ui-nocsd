@@ -29,7 +29,9 @@
 
 G_BEGIN_DECLS
 
-GdkScreen *xfce_gdk_screen_get_active (gint *monitor_return);
+GdkScreen *xfce_gdk_screen_get_active   (gint *monitor_return);
+
+void       xfce_gdk_screen_get_geometry (GdkRectangle *geometry);
 
 G_END_DECLS
 

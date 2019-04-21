@@ -98,6 +98,52 @@ xfce_gdk_screen_get_active (gint *monitor_return)
 }
 
 
+/**
+ * xfce_gdk_screen_get_geometry:
+ * @geometry : (out): Address to store the monitor number to or %NULL.
+ *
+ * Sets the width and height of the default #GdkScreen into @geometry.
+ * This is a replacement for gdk_screen_width/gdk_screen_height.
+ **/
+void
+xfce_gdk_screen_get_geometry (GdkRectangle *geometry)
+{
+#if GTK_CHECK_VERSION (3, 22, 0)
+  gint x, y, w, h;
+  int num_monitors;
+  GdkDisplay *display;
+  GdkRectangle rect;
+  GdkMonitor *monitor;
+
+  g_return_if_fail (geometry != NULL);
+
+  display = gdk_display_get_default ();
+  num_monitors = gdk_display_get_n_monitors (display);
+
+  x = y = G_MAXINT;
+  w = h = G_MININT;
+
+  for (int i = 0; i < num_monitors; i++)
+    {
+      monitor = gdk_display_get_monitor (display, i);
+      gdk_monitor_get_geometry (monitor, &rect);
+
+      x = MIN (x, rect.x);
+      y = MIN (y, rect.y);
+      w = MAX (w, rect.x + rect.width);
+      h = MAX (h, rect.y + rect.height);
+    }
+
+  geometry->width = w - x;
+  geometry->height = h - y;
+#else
+  g_return_if_fail (geometry != NULL);
+
+  geometry->width = gdk_screen_width ();
+  geometry->height = gdk_screen_height ();
+#endif
+}
+
 
 #define __XFCE_GDK_EXTENSIONS_C__
 #include <libxfce4ui/libxfce4ui-aliasdef.c>

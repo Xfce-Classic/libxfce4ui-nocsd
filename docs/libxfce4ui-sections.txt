@@ -23,6 +23,7 @@ xfce_spawn_command_line_on_screen
 <SECTION>
 <FILE>xfce-gdk-extensions</FILE>
 xfce_gdk_screen_get_active
+xfce_gdk_screen_get_geometry
 </SECTION>
 
 <SECTION>
