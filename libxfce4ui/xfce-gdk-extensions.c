@@ -100,7 +100,7 @@ xfce_gdk_screen_get_active (gint *monitor_return)
 
 /**
  * xfce_gdk_screen_get_geometry:
- * @geometry : (out): Address to store the monitor number to or %NULL.
+ * @geometry: Valid GdkRectangle instance.
  *
  * Sets the width and height of the default #GdkScreen into @geometry.
  * This is a replacement for gdk_screen_width/gdk_screen_height.
