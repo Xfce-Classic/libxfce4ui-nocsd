@@ -100,14 +100,20 @@ xfce_gdk_screen_get_active (gint *monitor_return)
 
 /**
  * xfce_gdk_screen_get_geometry:
- * @geometry: Valid GdkRectangle instance.
  *
- * Sets the width and height of the default #GdkScreen into @geometry.
+ * Returns the width and height of the default #GdkScreen.
  * This is a replacement for gdk_screen_width/gdk_screen_height.
+ *
+ * Return value: (transfer full): a newly created #GdkRectangle
+ * containing the width and height of the screen.
+ *
+ * Since: 4.14
  **/
-void
-xfce_gdk_screen_get_geometry (GdkRectangle *geometry)
+GdkRectangle *
+xfce_gdk_screen_get_geometry ()
 {
+  GdkRectangle *geometry;
+
 #if GTK_CHECK_VERSION (3, 22, 0)
   gint x, y, w, h;
   int num_monitors;
@@ -115,7 +121,7 @@ xfce_gdk_screen_get_geometry (GdkRectangle *geometry)
   GdkRectangle rect;
   GdkMonitor *monitor;
 
-  g_return_if_fail (geometry != NULL);
+  geometry = g_new0 (GdkRectangle, 1);
 
   display = gdk_display_get_default ();
   num_monitors = gdk_display_get_n_monitors (display);
@@ -137,11 +143,13 @@ xfce_gdk_screen_get_geometry (GdkRectangle *geometry)
   geometry->width = w - x;
   geometry->height = h - y;
 #else
-  g_return_if_fail (geometry != NULL);
+  geometry = g_new0 (GdkRectangle, 1);
 
   geometry->width = gdk_screen_width ();
   geometry->height = gdk_screen_height ();
 #endif
+
+  return geometry;
 }
 
 
