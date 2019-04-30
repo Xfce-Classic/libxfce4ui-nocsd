@@ -110,7 +110,7 @@ xfce_gdk_screen_get_active (gint *monitor_return)
  * Since: 4.14
  **/
 GdkRectangle *
-xfce_gdk_screen_get_geometry ()
+xfce_gdk_screen_get_geometry (void)
 {
   GdkRectangle *geometry;
 
