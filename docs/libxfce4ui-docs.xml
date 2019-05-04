@@ -8,10 +8,10 @@
   <bookinfo>
     <title>Libxfce4ui Reference Manual</title>
     <releaseinfo>Version <xi:include href="version.xml" parse="text"/></releaseinfo>
-    <pubdate>Dec 2017</pubdate>
+    <pubdate>Apr 2019</pubdate>
 
     <copyright>
-      <year>2017</year>
+      <year>2019</year>
       <holder>The Xfce Development Team</holder>
     </copyright>
 
@@ -33,6 +33,12 @@
         <affiliation>
           <address><email>nick@xfce.org</email></address>
           <jobtitle>Software developer</jobtitle>
+        </affiliation>
+      </author>
+      <author>
+        <firstname>The Xfce development team</firstname>
+        <affiliation>
+          <address><email>xfce4-dev@xfce.org</email></address>
         </affiliation>
       </author>
     </authorgroup>
