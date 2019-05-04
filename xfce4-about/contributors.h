@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2010 Xfce Development Team
+ * Copyright (C) 2019 Xfce Development Team
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -35,54 +35,44 @@ ContributorGroup;
 
 static const ContributorInfo xfce_contributors_core[] =
 {
+  { "Alexander Schwinn", "alexxcons@xfce.org" },
+  { "Ali Abdallah", "ali@xfce.org" },
+  { "Andre Miranda", "andreldm@xfce.org" },
   { "Andrzej Radecki", "ndrwrdck@gmail.com" },
   { "Eric Koegel", "eric@xfce.org" },
-  { "Harald Judt", "hjudt@xfce.org" },
   { "Landry Breuil", "landry@xfce.org" },
-  { "Nick Schermer", "nick@xfce.org" },
   { "Olivier Fourdan", "fourdan@xfce.org" },
+  { "Romain Bouvier", "skunnyk@alteroot.org" },
   { "Sean Davis", "bluesabre@xfce.org" },
   { "Simon Steinbeiß", "simon@xfce.org" },
-  { "Peter de Ridder", "peter@xfce.org" },
   { NULL, NULL}
 };
 
 static const ContributorInfo xfce_contributors_active[] =
 {
-  { "Jannis Pohlmann", "jannis@xfce.org" },
-  { "Mike Massonnet", "mmassonnet@gmail.com" },
+  { "Igor", "f2404@yandex.ru" },
+  { "Olivier Duchateau", "duchateau.olivier@gmail.com" },
   { "Silvio Knizek", "killermoehre@gmx.net" },
-  { "Steve Dodier-Lazaro", "sidi@xfce.org" },
+  { "Viktor Odintsev", "ninetls@xfce.org" },
   { "Yves-Alexis Perez", "corsac@debian.org" },
-  { "Guido Berhoerster", "guido+xfce@berhoerster.name" },
   { NULL, NULL }
 };
 
 static const ContributorInfo xfce_contributors_server[] =
 {
-  { "Jean-François Wauthy", "pollux@xfce.org" },
-  { "Nick Schermer", "nick@xfce.org" },
-  { "Samuel Verstraete", "elangelo@xfce.org" },
-  { NULL, NULL }
-};
-
-static const ContributorInfo xfce_contributors_goodies_supervision[] =
-{
-  { "Harald Judt", "hjudt@xfce.org" },
-  { "Landry Breuil", "landry@xfce.org" },
+  { "Romain Bouvier", "skunnyk@alteroot.org" },
+  { "Mike Massonnet", "mmassonnet@gmail.com" },
   { NULL, NULL }
 };
 
 static const ContributorInfo xfce_contributors_translators_supervision[] =
 {
-  { "Mike Massonnet", "mmassonnet@gmail.com" },
-  { "Nick Schermer", "nick@xfce.org" },
+  { "Vinzenz Vietzke", "vinz@vinzv.de" },
   { NULL, NULL }
 };
 
 static const ContributorInfo xfce_contributors_previous[] =
 {
-  { "Ali Abdallah", "aliov@xfce.org" },
   { "Auke Kok", "sofar@foo-projects.org" },
   { "Benedikt Meurer", "benny@xfce.org" },
   { "Bernhard Walle", "bernhard.walle@gmx.de" },
@@ -100,6 +90,9 @@ static const ContributorInfo xfce_contributors_previous[] =
   { "Erik Harrison", "erikharrison@xfce.org" },
   { "Erik Touve", "etouve@earthlink.net" },
   { "François Le Clainche", "fleclainche@wanadoo.fr" },
+  { "Guido Berhoerster", "guido+xfce@berhoerster.name" },
+  { "Harald Judt", "hjudt@xfce.org" },
+  { "Jannis Pohlmann", "jannis@xfce.org" },
   { "Jasper Huijsmans", "jasper@xfce.org" },
   { "Jean-François Wauthy", "pollux@xfce.org" },
   { "Jens Guballa", "j.guballa@t-online.de" },
@@ -112,8 +105,12 @@ static const ContributorInfo xfce_contributors_previous[] =
   { "Maximilian Schleiss", "maximilian@xfce.org" },
   { "Michael Mosier", "michael@spyonit.com" },
   { "Mickaël Graf", "korbinus@xfce.org" },
+  { "Nick Schermer", "nick@xfce.org" },
   { "Pau Rul·lan Ferragut", "paurullan@bulma.net" },
+  { "Peter de Ridder", "peter@xfce.org" },
+  { "Samuel Verstraete", "elangelo@xfce.org" },
   { "Stephan Arts", "stephan@xfce.org" },
+  { "Steve Dodier-Lazaro", "sidi@xfce.org" },
   { "Thomas Leonard", "tal00r@ecs.soton.ac.uk" },
   { "Tobias Henle", "tobias@page23.de" },
   { "Xavier Maillard", "zedek@fxgsproject.org" },
@@ -133,9 +130,6 @@ static const ContributorGroup xfce_contributors[] =
   },
   { N_("Servers maintained by"),
     xfce_contributors_server
-  },
-  { N_("Goodies supervision"),
-    xfce_contributors_goodies_supervision
   },
   { N_("Translations supervision"),
     xfce_contributors_translators_supervision

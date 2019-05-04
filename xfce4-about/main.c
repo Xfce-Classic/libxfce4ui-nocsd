@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2015 Xfce Development Team
+ * Copyright (C) 2019 Xfce Development Team
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -81,9 +81,13 @@ xfce_about_about (GtkTextBuffer *buffer)
            "or icons for minimized applications or launchers, devices and folders.")
       },
       { "thunar",
-        N_("File Manager "),
+        N_("File Manager"),
         N_("A modern file manager for the Unix/Linux desktop, aiming to "
            "be easy-to-use and fast.")
+      },
+      { "thunar-volman",
+        N_("Volume manager"),
+        N_("Automatic management of removable drives and media for Thunar.")
       },
       { "xfce4-session",
         N_("Session Manager"),
@@ -103,6 +107,10 @@ xfce_about_about (GtkTextBuffer *buffer)
       { "xfconf",
         N_("Settings Daemon"),
         N_("D-Bus-based configuration storage system.")
+      },
+      { "tumbler",
+        N_("Thumbnails service"),
+        N_("Thumbnail service implementing the thumbnail management D-Bus specification.")
       }
     };
 
@@ -142,7 +150,7 @@ xfce_about_about (GtkTextBuffer *buffer)
       _("Xfce components are licensed under free or open source "
         "licences; GPL or BSDL for applications and LGPL or BSDL for "
         "libraries. Look at the documentation, the source code or the "
-        "Xfce website (http://www.xfce.org) for more information."), -1);
+        "Xfce website (https://www.xfce.org) for more information."), -1);
 
   gtk_text_buffer_insert (buffer, &end, "\n\n", -1);
   gtk_text_buffer_insert (buffer, &end,
@@ -253,7 +261,7 @@ xfce_about_credits (GtkTextBuffer *buffer)
 
   gtk_text_buffer_insert (buffer, &end,
       _("If you know of anyone missing from this list; don't hesitate and "
-        "file a bug on <http://bugzilla.xfce.org> ."), -1);
+        "file a bug on <https://bugzilla.xfce.org> ."), -1);
   gtk_text_buffer_insert (buffer, &end, "\n\n", -1);
   gtk_text_buffer_insert_with_tags (buffer, &end,
       _("Thanks to all who helped making this software available!"), -1, title, NULL);
@@ -278,7 +286,7 @@ xfce_about_copyright (GtkTextBuffer *buffer)
 
   gtk_text_buffer_insert (buffer, &end, "\n\n", -1);
   gtk_text_buffer_insert (buffer, &end,
-      _("The libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs and exo packages are "
+      _("The libxfce4ui, libxfce4util and exo packages are "
         "distributed under the terms of the GNU Library General Public License as "
         "published by the Free Software Foundation; either version 2 of the License, or "
         "(at your option) any later version."), -1);
@@ -286,7 +294,7 @@ xfce_about_copyright (GtkTextBuffer *buffer)
   gtk_text_buffer_insert (buffer, &end, "\n\n", -1);
   gtk_text_buffer_insert (buffer, &end,
       _("The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, "
-        "xfce4-settings, xfce-utils, xfconf, xfdesktop and xfwm4 are "
+        "xfce4-settings, xfconf, xfdesktop and xfwm4 are "
         "distributed under the terms of the GNU General Public License as "
         "published by the Free Software Foundation; either version 2 of the "
         "License, or (at your option) any later version."), -1);
@@ -446,12 +454,9 @@ main (gint    argc,
   if (G_UNLIKELY (opt_version))
     {
       g_print ("%s %s (Xfce %s)\n\n", G_LOG_DOMAIN, PACKAGE_VERSION, xfce_version_string ());
-      g_print ("%s\n", "Copyright (c) 2008-2015");
+      g_print ("%s\n", "Copyright (c) 2008-2019");
       g_print ("\t%s\n\n", _("The Xfce development team. All rights reserved."));
       g_print (_("Please report bugs to <%s>."), PACKAGE_BUGREPORT);
-      g_print ("\n");
-      /* I18N: date/time the translators list was updated */
-      g_print (_("Translators list from %s."), TRANSLATORS_H_STAMP);
       g_print ("\n");
 
       return EXIT_SUCCESS;
