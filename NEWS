@@ -1,4 +1,20 @@
-﻿4.13.4
+﻿4.13.5 (Unreleased)
+======
+- Add PrintScreen as shortcut for xfce4-screenshooter (Bug #14524)
+- Add Ctrl + Alt + t as default shortcut for terminal (Bug #14510)
+- Add xfce_gdk_screen_get_geometry (a replacement for gdk_screen_width/gdk_screen_height)
+- Remove useless glade_*dir variables from libxfce4ui-{1,2}.pc (Bug #13945)
+- Fix release tarball by adding libxfce4ui-dialog-ui.ui
+- Fixes for gladeui2 detection
+- Install icons when gladeui2 is set (Bug #15207)
+- Remove styling of emails in about dialog (Bug #14638)
+- Fix compiler error -Wcast-function-type (GCC 8)
+- Use https://docs.xfce.org for help url
+- Fix compilation warnings ""defined" may not be portable"
+- Update xfce4-about (core contributors, contributors, translators)
+- Translation Updates: Amharic, Arabic, Asturian, Belarusian, Bulgarian, Bengali, Catalan, Czech, Danish, German, Greek, English (Australia), English (United Kingdom), Spanish, Basque, Finnish, French, Galician, Hebrew, Croatian, Hungarian, Indonesian, Icelandic, Italian, Japanese, Kazakh, Korean, Lithuanian, Latvian, Malay, Norwegian Bokmål, Dutch, Norwegian Nynorsk, Occitan (post 1500), Polish, Portuguese, Portuguese (Brazil), Romanian, Russian, Slovak, Slovenian, Albanian, Serbian, Swedish, Telugu, Thai, Turkish, Uighur, Ukrainian, Urdu, Urdu (Pakistan), Chinese (China), Chinese (Hong Kong), Chinese (Taiwan)
+
+4.13.4
 ======
 - Fix missing gresource file in release tarball (Bug #13705)
 - Add Vala support (Vidar Haarr)
