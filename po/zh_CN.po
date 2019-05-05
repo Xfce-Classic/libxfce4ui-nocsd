@@ -8,16 +8,16 @@
 # Hunt Xu <mhuntxu@gmail.com>, 2009-2010,2012
 # Levi Zhou <congzhou821@gmail.com>, 2016
 # Mingcong Bai <jeffbai@aosc.xyz>, 2015-2016
-# xiaobo zhou <zhouxiaobo.500@gmail.com>, 2017
-# 玉堂白鹤 <yjwork@qq.com>, 2015,2017
+# Cally Mal <zhouxiaobo.500@gmail.com>, 2017
+# 玉堂白鹤 <yjwork@qq.com>, 2015,2017,2019
 # Mingcong Bai <jeffbai@aosc.xyz>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-06-30 06:30+0200\n"
-"PO-Revision-Date: 2018-09-14 00:15+0000\n"
-"Last-Translator: Xfce Bot <transifex@xfce.org>\n"
+"POT-Creation-Date: 2019-05-04 18:30+0200\n"
+"PO-Revision-Date: 2019-05-05 01:32+0000\n"
+"Last-Translator: 玉堂白鹤 <yjwork@qq.com>\n"
 "Language-Team: Chinese (China) (http://www.transifex.com/xfce/libxfce4ui/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -25,68 +25,68 @@ msgstr ""
 "Language: zh_CN\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../libxfce4ui/xfce-dialogs.c:109
+#: ../libxfce4ui/xfce-dialogs.c:110
 msgid "Failed to open web browser for online documentation"
 msgstr "无法打开网络浏览器以获取在线文档"
 
-#: ../libxfce4ui/xfce-dialogs.c:263
+#: ../libxfce4ui/xfce-dialogs.c:265
 #, c-format
 msgid "Do you want to read the %s manual online?"
 msgstr "您要在线阅读 %s 手册吗？"
 
-#: ../libxfce4ui/xfce-dialogs.c:265
+#: ../libxfce4ui/xfce-dialogs.c:267
 msgid "Do you want to read the manual online?"
 msgstr "您要在线阅读手册吗？"
 
-#: ../libxfce4ui/xfce-dialogs.c:268
+#: ../libxfce4ui/xfce-dialogs.c:270
 msgid "Online Documentation"
 msgstr "在线文档"
 
-#: ../libxfce4ui/xfce-dialogs.c:275
+#: ../libxfce4ui/xfce-dialogs.c:277
 msgid ""
 "You will be redirected to the documentation website where the help pages are"
 " maintained and translated."
 msgstr "会将您重定向至维护和翻译帮助文档的网站。"
 
-#: ../libxfce4ui/xfce-dialogs.c:289
+#: ../libxfce4ui/xfce-dialogs.c:291
 msgid "_Read Online"
 msgstr "在线阅读(_R)"
 
-#: ../libxfce4ui/xfce-dialogs.c:298
+#: ../libxfce4ui/xfce-dialogs.c:300
 msgid "_Always go directly to the online documentation"
 msgstr "总是直接进入在线文档(_A)"
 
-#: ../libxfce4ui/xfce-dialogs.c:346
+#: ../libxfce4ui/xfce-dialogs.c:348
 msgid "Information"
 msgstr "版本信息"
 
-#: ../libxfce4ui/xfce-dialogs.c:356 ../libxfce4ui/xfce-dialogs.c:399
-#: ../libxfce4ui/xfce-dialogs.c:443
+#: ../libxfce4ui/xfce-dialogs.c:358 ../libxfce4ui/xfce-dialogs.c:401
+#: ../libxfce4ui/xfce-dialogs.c:445
 msgid "Close"
 msgstr "关闭"
 
-#: ../libxfce4ui/xfce-dialogs.c:389
+#: ../libxfce4ui/xfce-dialogs.c:391
 msgid "Warning"
 msgstr "警告"
 
-#: ../libxfce4ui/xfce-dialogs.c:433
+#: ../libxfce4ui/xfce-dialogs.c:435
 msgid "Error"
 msgstr "错误"
 
-#: ../libxfce4ui/xfce-dialogs.c:492
+#: ../libxfce4ui/xfce-dialogs.c:494
 msgid "No"
 msgstr "否"
 
-#: ../libxfce4ui/xfce-dialogs.c:494
+#: ../libxfce4ui/xfce-dialogs.c:496
 msgid "Yes"
 msgstr "是的"
 
-#: ../libxfce4ui/xfce-dialogs.c:502
+#: ../libxfce4ui/xfce-dialogs.c:504
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:41
 msgid "Cancel"
 msgstr "取消"
 
-#: ../libxfce4ui/xfce-dialogs.c:509 ../libxfce4ui/xfce-dialogs.c:517
+#: ../libxfce4ui/xfce-dialogs.c:511 ../libxfce4ui/xfce-dialogs.c:519
 msgid "Question"
 msgstr "问题"
 
@@ -121,7 +121,7 @@ msgid "Session manager did not return a valid client id"
 msgstr "会话管理器未返回一个有效的客户端 ID"
 
 #. print warning for user
-#: ../libxfce4ui/xfce-spawn.c:419
+#: ../libxfce4ui/xfce-spawn.c:421
 #, c-format
 msgid ""
 "Working directory \"%s\" does not exist. It won't be used when spawning "
@@ -578,7 +578,7 @@ msgid ""
 msgstr "设置背景的颜色或图片，可选应用程序菜单或最小化应用程序、启动器、设备文件夹的图标。"
 
 #: ../xfce4-about/main.c:84
-msgid "File Manager "
+msgid "File Manager"
 msgstr "文件管理器"
 
 #: ../xfce4-about/main.c:85
@@ -588,142 +588,153 @@ msgid ""
 msgstr "一个 Unix/Linux 桌面平台上的现代文件管理器，旨在易用和快速。"
 
 #: ../xfce4-about/main.c:89
+msgid "Volume manager"
+msgstr "卷管理器"
+
+#: ../xfce4-about/main.c:90
+msgid "Automatic management of removable drives and media for Thunar."
+msgstr "Thunar 可移动驱动器和介质的自动管理"
+
+#: ../xfce4-about/main.c:93
 msgid "Session Manager"
 msgstr "会话管理器"
 
-#: ../xfce4-about/main.c:90
+#: ../xfce4-about/main.c:94
 msgid ""
 "Restores your session on startup and allows you to shutdown the computer "
 "from Xfce."
 msgstr "在桌面启动时恢复您的会话并让您从 Xfce 关闭计算机。"
 
-#: ../xfce4-about/main.c:94
+#: ../xfce4-about/main.c:98
 msgid "Setting System"
 msgstr "设置系统"
 
-#: ../xfce4-about/main.c:95
+#: ../xfce4-about/main.c:99
 msgid ""
 "Configuration system to control various aspects of the desktop like "
 "appearance, display, keyboard and mouse settings."
 msgstr "控制桌面的如外观、显示、键盘和鼠标设置各个方面的配置系统。"
 
-#: ../xfce4-about/main.c:99
+#: ../xfce4-about/main.c:103
 msgid "Application Finder"
 msgstr "应用程序查找器"
 
-#: ../xfce4-about/main.c:100
+#: ../xfce4-about/main.c:104
 msgid ""
 "Shows the applications installed on your system in categories, so you can "
 "quickly find and launch them."
 msgstr "分类显示在您系统上安装的应用程序，这样您就可以快速地查找和启动它们。"
 
-#: ../xfce4-about/main.c:104
+#: ../xfce4-about/main.c:108
 msgid "Settings Daemon"
 msgstr "设置守护进程"
 
-#: ../xfce4-about/main.c:105
+#: ../xfce4-about/main.c:109
 msgid "D-Bus-based configuration storage system."
 msgstr "基于 D-Bus 的配置存储系统。"
 
 #: ../xfce4-about/main.c:112
+msgid "Thumbnails service"
+msgstr "缩略图服务"
+
+#: ../xfce4-about/main.c:113
+msgid ""
+"Thumbnail service implementing the thumbnail management D-Bus specification."
+msgstr ""
+
+#: ../xfce4-about/main.c:120
 msgid ""
 "Xfce is a collection of programs that together provide a full-featured "
 "desktop environment. The following programs are part of the Xfce core:"
 msgstr "Xfce 是一个提供全功能桌面环境的程序集。以下程序是 Xfce 核心的部分："
 
-#: ../xfce4-about/main.c:136
+#: ../xfce4-about/main.c:144
 msgid ""
 "Xfce is also a development platform providing several libraries, that help "
 "programmers create applications that fit in well with the desktop "
 "environment."
 msgstr "Xfce 还是一个提供若干库文件，帮助程序员创建适合桌面环境的应用程序之开发平台。"
 
-#: ../xfce4-about/main.c:142
+#: ../xfce4-about/main.c:150
 msgid ""
 "Xfce components are licensed under free or open source licences; GPL or BSDL"
 " for applications and LGPL or BSDL for libraries. Look at the documentation,"
-" the source code or the Xfce website (http://www.xfce.org) for more "
+" the source code or the Xfce website (https://www.xfce.org) for more "
 "information."
-msgstr "Xfce 组件以自由或开源许可协议授权；应用程序以 GPL 或 BSDL，库文件以 LGPL 或BSDL 授权。浏览文档、源代码或 Xfce 站点(http://www.xfce.org) 以获取详情。"
+msgstr "Xfce 组件以自由或开源许可协议授权；应用程序以 GPL 或 BSDL，库文件以 LGPL 或BSDL 授权。浏览文档、源代码或 Xfce 站点(https://www.xfce.org) 以获取详情。"
 
-#: ../xfce4-about/main.c:149
+#: ../xfce4-about/main.c:157
 msgid "Thank you for your interest in Xfce."
 msgstr "感谢您对 Xfce 感兴趣。"
 
-#: ../xfce4-about/main.c:153
+#: ../xfce4-about/main.c:161
 msgid "The Xfce Development Team"
 msgstr "Xfce 开发团队"
 
-#: ../xfce4-about/main.c:261
+#: ../xfce4-about/main.c:263
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
-"on <http://bugzilla.xfce.org> ."
-msgstr "如果您知道此列表漏掉了某个人，请毫不犹豫地在 <http://bugzilla.xfce.org> 上提交缺陷。"
+"on <https://bugzilla.xfce.org> ."
+msgstr "如果您知道此列表漏掉了某个人，请毫不犹豫地在 <https://bugzilla.xfce.org> 上提交缺陷。"
 
-#: ../xfce4-about/main.c:265
+#: ../xfce4-about/main.c:267
 msgid "Thanks to all who helped making this software available!"
 msgstr "感谢所有成就该软件的人们！"
 
-#: ../xfce4-about/main.c:282
+#: ../xfce4-about/main.c:284
 msgid ""
 "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
 msgstr "Xfce 4 版权归 Olivier Fourdan(fourdan@xfce.org)所有。不同组件的版权归它们各自的作者所有。"
 
-#: ../xfce4-about/main.c:287
+#: ../xfce4-about/main.c:289
 msgid ""
-"The libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs and exo packages are "
-"distributed under the terms of the GNU Library General Public License as "
-"published by the Free Software Foundation; either version 2 of the License, "
-"or (at your option) any later version."
-msgstr "libxfce4ui、libxfcegui4、libxfce4util、thunar-vfs 和 exo 软件包以自由软件基金会发布的 GNU 宽通用公共许可协议第二版或按（您可以选择的）更高版本发布。"
-
-#: ../xfce4-about/main.c:294
-msgid ""
-"The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, "
-"xfce4-settings, xfce-utils, xfconf, xfdesktop and xfwm4 are distributed "
-"under the terms of the GNU General Public License as published by the Free "
+"The libxfce4ui, libxfce4util and exo packages are distributed under the "
+"terms of the GNU Library General Public License as published by the Free "
 "Software Foundation; either version 2 of the License, or (at your option) "
 "any later version."
-msgstr "thunar、xfce4-appfinder、xfce4-panel、xfce4-session、xfce4-settings、xfce-utils、xfconf、xfdesktop 和 xfwm4 软件包以自由软件基金会发布的 GNU 通用公共许可协议的第二版或按（您可以选择的）更高版本发布。"
+msgstr "libxfce4ui、libxfce4util 和 exo 软件包以自由软件基金会发布的 GNU 宽通用公共许可协议第 2 版或按（您可以选择的）更高版本发布。"
 
-#: ../xfce4-about/main.c:441
+#: ../xfce4-about/main.c:296
+msgid ""
+"The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, "
+"xfce4-settings, xfconf, xfdesktop and xfwm4 are distributed under the terms "
+"of the GNU General Public License as published by the Free Software "
+"Foundation; either version 2 of the License, or (at your option) any later "
+"version."
+msgstr "thunar、xfce4-appfinder、xfce4-panel、xfce4-session、xfce4-settings、xfconf、xfdesktop 和 xfwm4 软件包以自由软件基金会发布的 GNU 通用公共许可协议的第 2 版或按（您可以选择的）更高版本发布。"
+
+#: ../xfce4-about/main.c:443
 #, c-format
 msgid "Type '%s --help' for usage information."
 msgstr "输入 '%s --help' 获取用法。"
 
-#: ../xfce4-about/main.c:447
+#: ../xfce4-about/main.c:449
 msgid "Unable to initialize GTK+."
 msgstr "未能初始化 GTK+。"
 
-#: ../xfce4-about/main.c:456
+#: ../xfce4-about/main.c:458
 msgid "The Xfce development team. All rights reserved."
 msgstr "Xfce 开发团队。保留所有权利。"
 
-#: ../xfce4-about/main.c:457
+#: ../xfce4-about/main.c:459
 #, c-format
 msgid "Please report bugs to <%s>."
 msgstr "请向 <%s> 报告缺陷。"
 
-#. I18N: date/time the translators list was updated
-#: ../xfce4-about/main.c:460
-#, c-format
-msgid "Translators list from %s."
-msgstr "来自 %s 的翻译者列表。"
-
-#: ../xfce4-about/main.c:470
+#: ../xfce4-about/main.c:469
 msgid "Failed to load interface"
 msgstr "无法载入界面"
 
 #. I18N: first %s will be replaced by the version, second by
 #. * the name of the distribution (--with-vendor-info=NAME)
-#: ../xfce4-about/main.c:484
+#: ../xfce4-about/main.c:483
 #, c-format
 msgid "Version %s, distributed by %s"
 msgstr "版本 %s，由 %s 发布。"
 
 #. I18N: %s will be replaced by the Xfce version number
-#: ../xfce4-about/main.c:488
+#: ../xfce4-about/main.c:487
 #, c-format
 msgid "Version %s"
 msgstr "版本 %s"
@@ -731,31 +742,27 @@ msgstr "版本 %s"
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
 #. },
-#: ../xfce4-about/contributors.h:128
+#: ../xfce4-about/contributors.h:125
 msgid "Core developers"
 msgstr "核心开发者"
 
-#: ../xfce4-about/contributors.h:131
+#: ../xfce4-about/contributors.h:128
 msgid "Active contributors"
 msgstr "活跃贡献者"
 
-#: ../xfce4-about/contributors.h:134
+#: ../xfce4-about/contributors.h:131
 msgid "Servers maintained by"
 msgstr "服务器维护者"
 
-#: ../xfce4-about/contributors.h:137
-msgid "Goodies supervision"
-msgstr "珍品管理"
-
-#: ../xfce4-about/contributors.h:140
+#: ../xfce4-about/contributors.h:134
 msgid "Translations supervision"
 msgstr "翻译管理"
 
-#: ../xfce4-about/contributors.h:143
+#: ../xfce4-about/contributors.h:137
 msgid "Translators"
 msgstr "翻译者"
 
-#: ../xfce4-about/contributors.h:146
+#: ../xfce4-about/contributors.h:140
 msgid "Previous contributors"
 msgstr "先前的贡献者"
 
