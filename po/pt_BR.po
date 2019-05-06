@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-05-04 18:30+0200\n"
-"PO-Revision-Date: 2019-05-06 10:29+0000\n"
+"PO-Revision-Date: 2019-05-06 10:32+0000\n"
 "Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) (http://www.transifex.com/xfce/libxfce4ui/language/pt_BR/)\n"
 "MIME-Version: 1.0\n"
@@ -690,7 +690,7 @@ msgid ""
 "terms of the GNU Library General Public License as published by the Free "
 "Software Foundation; either version 2 of the License, or (at your option) "
 "any later version."
-msgstr ""
+msgstr "Os pacotes libxfce4ui, libxfce4util e exo são distribuídos sob os termos da Licença Pública Geral de Biblioteca GNU como publicado pela Free Software Foundation, assim como a versão 2 da licença ou (à sua opção) qualquer versão posterior."
 
 #: ../xfce4-about/main.c:296
 msgid ""
@@ -699,7 +699,7 @@ msgid ""
 "of the GNU General Public License as published by the Free Software "
 "Foundation; either version 2 of the License, or (at your option) any later "
 "version."
-msgstr ""
+msgstr "Os pacotes thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfce-xfconf, xfdesktop e xfwm4 são distribuídos sob os termos da Licença Pública Geral GNU como publicado pela Free Software Foundation, assim como a versão 2 da licença ou (à sua opção) qualquer versão posterior."
 
 #: ../xfce4-about/main.c:443
 #, c-format
