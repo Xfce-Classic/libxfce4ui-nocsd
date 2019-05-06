@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-05-04 18:30+0200\n"
-"PO-Revision-Date: 2019-05-05 01:32+0000\n"
+"PO-Revision-Date: 2019-05-06 05:46+0000\n"
 "Last-Translator: 玉堂白鹤 <yjwork@qq.com>\n"
 "Language-Team: Chinese (China) (http://www.transifex.com/xfce/libxfce4ui/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
@@ -640,7 +640,7 @@ msgstr "缩略图服务"
 #: ../xfce4-about/main.c:113
 msgid ""
 "Thumbnail service implementing the thumbnail management D-Bus specification."
-msgstr ""
+msgstr "缩略图服务实现缩略图管理 D-Bus 规范。"
 
 #: ../xfce4-about/main.c:120
 msgid ""
@@ -820,4 +820,4 @@ msgstr "无法应用至旧面板配置"
 #: ../tests/test-ui.c:202 ../tests/test-ui.c:222 ../tests/test-ui.c:251
 #: ../tests/test-ui.c:273
 msgid "Customize settings stored by Xfconf"
-msgstr "自定义由xfconf所储存的设置"
+msgstr "自定义 Xfconf 存储的设置"
