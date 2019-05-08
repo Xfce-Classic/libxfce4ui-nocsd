@@ -5,16 +5,16 @@
 # Translators:
 # Balázs Meskó <meskobalazs@gmail.com>, 2018
 # Gabor Kelemen <kelemeng at gnome dot hu>, 2009,2011-2012
-# Gábor P., 2017
+# Gábor P., 2017,2019
 # gyeben <gyonkibendeguz@gmail.com>, 2016
 # Sándor Zelenák <nem11nator at gmail dot com>, 2011
 msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-06-30 06:30+0200\n"
-"PO-Revision-Date: 2018-09-14 00:15+0000\n"
-"Last-Translator: Xfce Bot <transifex@xfce.org>\n"
+"POT-Creation-Date: 2019-05-04 18:30+0200\n"
+"PO-Revision-Date: 2019-05-04 21:14+0000\n"
+"Last-Translator: Gábor P.\n"
 "Language-Team: Hungarian (http://www.transifex.com/xfce/libxfce4ui/language/hu/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -22,68 +22,68 @@ msgstr ""
 "Language: hu\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../libxfce4ui/xfce-dialogs.c:109
+#: ../libxfce4ui/xfce-dialogs.c:110
 msgid "Failed to open web browser for online documentation"
 msgstr "A webböngésző megnyitása nem sikerült az online dokumentációhoz"
 
-#: ../libxfce4ui/xfce-dialogs.c:263
+#: ../libxfce4ui/xfce-dialogs.c:265
 #, c-format
 msgid "Do you want to read the %s manual online?"
 msgstr "Szeretné elolvasni a(z) %s kézikönyvét online?"
 
-#: ../libxfce4ui/xfce-dialogs.c:265
+#: ../libxfce4ui/xfce-dialogs.c:267
 msgid "Do you want to read the manual online?"
 msgstr "Szeretné elolvasni a kézikönyvet online?"
 
-#: ../libxfce4ui/xfce-dialogs.c:268
+#: ../libxfce4ui/xfce-dialogs.c:270
 msgid "Online Documentation"
 msgstr "Online dokumentáció"
 
-#: ../libxfce4ui/xfce-dialogs.c:275
+#: ../libxfce4ui/xfce-dialogs.c:277
 msgid ""
 "You will be redirected to the documentation website where the help pages are"
 " maintained and translated."
 msgstr "Átirányításra kerül a dokumentációs weboldalra, ahol a súgóoldalak karbantartása és fordítása történik."
 
-#: ../libxfce4ui/xfce-dialogs.c:289
+#: ../libxfce4ui/xfce-dialogs.c:291
 msgid "_Read Online"
 msgstr "_Online olvasás"
 
-#: ../libxfce4ui/xfce-dialogs.c:298
+#: ../libxfce4ui/xfce-dialogs.c:300
 msgid "_Always go directly to the online documentation"
 msgstr "Közvetlenül az online _dokumentáció megnyitása mindig"
 
-#: ../libxfce4ui/xfce-dialogs.c:346
+#: ../libxfce4ui/xfce-dialogs.c:348
 msgid "Information"
 msgstr "Információ"
 
-#: ../libxfce4ui/xfce-dialogs.c:356 ../libxfce4ui/xfce-dialogs.c:399
-#: ../libxfce4ui/xfce-dialogs.c:443
+#: ../libxfce4ui/xfce-dialogs.c:358 ../libxfce4ui/xfce-dialogs.c:401
+#: ../libxfce4ui/xfce-dialogs.c:445
 msgid "Close"
 msgstr "Bezárás"
 
-#: ../libxfce4ui/xfce-dialogs.c:389
+#: ../libxfce4ui/xfce-dialogs.c:391
 msgid "Warning"
 msgstr "Figyelmeztetés"
 
-#: ../libxfce4ui/xfce-dialogs.c:433
+#: ../libxfce4ui/xfce-dialogs.c:435
 msgid "Error"
 msgstr "Hiba"
 
-#: ../libxfce4ui/xfce-dialogs.c:492
+#: ../libxfce4ui/xfce-dialogs.c:494
 msgid "No"
 msgstr "Nem"
 
-#: ../libxfce4ui/xfce-dialogs.c:494
+#: ../libxfce4ui/xfce-dialogs.c:496
 msgid "Yes"
 msgstr "Igen"
 
-#: ../libxfce4ui/xfce-dialogs.c:502
+#: ../libxfce4ui/xfce-dialogs.c:504
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:41
 msgid "Cancel"
 msgstr "Mégse"
 
-#: ../libxfce4ui/xfce-dialogs.c:509 ../libxfce4ui/xfce-dialogs.c:517
+#: ../libxfce4ui/xfce-dialogs.c:511 ../libxfce4ui/xfce-dialogs.c:519
 msgid "Question"
 msgstr "Kérdés"
 
@@ -118,7 +118,7 @@ msgid "Session manager did not return a valid client id"
 msgstr "A munkamenet-kezelő nem adott vissza érvényes kliensazonosítót"
 
 #. print warning for user
-#: ../libxfce4ui/xfce-spawn.c:419
+#: ../libxfce4ui/xfce-spawn.c:421
 #, c-format
 msgid ""
 "Working directory \"%s\" does not exist. It won't be used when spawning "
@@ -575,7 +575,7 @@ msgid ""
 msgstr "Beállítja a háttérszínt vagy -képet egy elhagyható alkalmazásmenüvel vagy minimalizált alkalmazások, parancsikonok, eszközök és mappák ikonjaival."
 
 #: ../xfce4-about/main.c:84
-msgid "File Manager "
+msgid "File Manager"
 msgstr "Fájlkezelő"
 
 #: ../xfce4-about/main.c:85
@@ -585,142 +585,153 @@ msgid ""
 msgstr "Modern, egyszerűen használható és gyors fájlkezelő Unix/Linux asztali környezethez."
 
 #: ../xfce4-about/main.c:89
+msgid "Volume manager"
+msgstr "Kötetkezelő"
+
+#: ../xfce4-about/main.c:90
+msgid "Automatic management of removable drives and media for Thunar."
+msgstr "Cserélhető meghajtók és adathordozók automatikus kezelése a Thunar által"
+
+#: ../xfce4-about/main.c:93
 msgid "Session Manager"
 msgstr "Munkamenet-kezelő"
 
-#: ../xfce4-about/main.c:90
+#: ../xfce4-about/main.c:94
 msgid ""
 "Restores your session on startup and allows you to shutdown the computer "
 "from Xfce."
 msgstr "Munkamenet visszaállítása induláskor és a számítógép kikapcsolásának lehetősége Xfce környezetből."
 
-#: ../xfce4-about/main.c:94
+#: ../xfce4-about/main.c:98
 msgid "Setting System"
 msgstr "Rendszer beállítása"
 
-#: ../xfce4-about/main.c:95
+#: ../xfce4-about/main.c:99
 msgid ""
 "Configuration system to control various aspects of the desktop like "
 "appearance, display, keyboard and mouse settings."
 msgstr "Beállítórendszer az asztali környezet tulajdonságainak kezelésére, többek között: megjelenési, kijelző-, billentyűzet- és egérbeállítások."
 
-#: ../xfce4-about/main.c:99
+#: ../xfce4-about/main.c:103
 msgid "Application Finder"
 msgstr "Alkalmazáskereső"
 
-#: ../xfce4-about/main.c:100
+#: ../xfce4-about/main.c:104
 msgid ""
 "Shows the applications installed on your system in categories, so you can "
 "quickly find and launch them."
 msgstr "Telepített alkalmazások kategóriák szerinti megjelenítése a gyors keresés és futtatás érdekében."
 
-#: ../xfce4-about/main.c:104
+#: ../xfce4-about/main.c:108
 msgid "Settings Daemon"
 msgstr "Beállításkezelő"
 
-#: ../xfce4-about/main.c:105
+#: ../xfce4-about/main.c:109
 msgid "D-Bus-based configuration storage system."
 msgstr "D-Bus alapú konfigurációtároló rendszer."
 
 #: ../xfce4-about/main.c:112
+msgid "Thumbnails service"
+msgstr "Bélyegkép-készítő szolgáltatás"
+
+#: ../xfce4-about/main.c:113
+msgid ""
+"Thumbnail service implementing the thumbnail management D-Bus specification."
+msgstr ""
+
+#: ../xfce4-about/main.c:120
 msgid ""
 "Xfce is a collection of programs that together provide a full-featured "
 "desktop environment. The following programs are part of the Xfce core:"
 msgstr "Az Xfce teljes felszereltségű asztali környezetet biztosító alkalmazások gyűjteménye. Az Xfce alaprendszert a következő programok alkotják:"
 
-#: ../xfce4-about/main.c:136
+#: ../xfce4-about/main.c:144
 msgid ""
 "Xfce is also a development platform providing several libraries, that help "
 "programmers create applications that fit in well with the desktop "
 "environment."
 msgstr "Az Xfce egyben fejlesztői platform is, amely számos programkönyvtárat bocsát a programozók rendelkezésére, ezekkel segítve őket az asztali környezetbe illeszkedő alkalmazások írásában."
 
-#: ../xfce4-about/main.c:142
+#: ../xfce4-about/main.c:150
 msgid ""
 "Xfce components are licensed under free or open source licences; GPL or BSDL"
 " for applications and LGPL or BSDL for libraries. Look at the documentation,"
-" the source code or the Xfce website (http://www.xfce.org) for more "
+" the source code or the Xfce website (https://www.xfce.org) for more "
 "information."
-msgstr "Az Xfce összetevői szabad és nyílt forrású licencek alatt érhetők el; ezek a GPL vagy BSDL az alkalmazások és az LGPL vagy BSDL a programkönyvtárak esetén. További információkért lásd a dokumentációt, a forráskódot vagy az Xfce weboldalát (http://www.xfce.org)."
+msgstr "Az Xfce összetevői szabad és nyílt forrású licencek alatt érhetők el; ezek a GPL vagy BSDL az alkalmazások és az LGPL vagy BSDL a programkönyvtárak esetén. További információkért lásd a dokumentációt, a forráskódot vagy az Xfce weboldalát (https://www.xfce.org)."
 
-#: ../xfce4-about/main.c:149
+#: ../xfce4-about/main.c:157
 msgid "Thank you for your interest in Xfce."
 msgstr "Köszönjük az Xfce iránti érdeklődését."
 
-#: ../xfce4-about/main.c:153
+#: ../xfce4-about/main.c:161
 msgid "The Xfce Development Team"
 msgstr "Az Xfce fejlesztői csapata"
 
-#: ../xfce4-about/main.c:261
+#: ../xfce4-about/main.c:263
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
-"on <http://bugzilla.xfce.org> ."
-msgstr "Ha ismer valakit, aki nincs felsorolva, ne habozzon, küldjön be egy hibajelentést a <http://bugzilla.xfce.org> címen."
+"on <https://bugzilla.xfce.org> ."
+msgstr "Ha ismer valakit, aki nincs felsorolva, ne habozzon, küldjön be egy hibajelentést a <https://bugzilla.xfce.org> címen."
 
-#: ../xfce4-about/main.c:265
+#: ../xfce4-about/main.c:267
 msgid "Thanks to all who helped making this software available!"
 msgstr "Köszönet mindazoknak, akik segítségével ez az alkalmazás elérhetővé vált."
 
-#: ../xfce4-about/main.c:282
+#: ../xfce4-about/main.c:284
 msgid ""
 "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
 msgstr "Az Xfce szerzői joga Olivier Fourdant (fourdan@xfce.org) illeti. A további összetevők szerzői joga azok szerzőit illeti."
 
-#: ../xfce4-about/main.c:287
+#: ../xfce4-about/main.c:289
 msgid ""
-"The libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs and exo packages are "
-"distributed under the terms of the GNU Library General Public License as "
-"published by the Free Software Foundation; either version 2 of the License, "
-"or (at your option) any later version."
-msgstr "A libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs és exo csomagok a Free Software Foundation által kiadott GNU Library General Public License második (vagy bármely későbbi) változatában foglaltak alapján kerülnek terjesztésre."
-
-#: ../xfce4-about/main.c:294
-msgid ""
-"The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, "
-"xfce4-settings, xfce-utils, xfconf, xfdesktop and xfwm4 are distributed "
-"under the terms of the GNU General Public License as published by the Free "
+"The libxfce4ui, libxfce4util and exo packages are distributed under the "
+"terms of the GNU Library General Public License as published by the Free "
 "Software Foundation; either version 2 of the License, or (at your option) "
 "any later version."
-msgstr "A thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfce-utils, xfconf, xfdesktop és xfwm4 csomagok a Free Software Foundation által kiadott GNU General Public License második (vagy bármely későbbi) változatában foglaltak alapján kerülnek terjesztésre."
+msgstr "A libxfce4ui, libxfce4util és exo csomagok a Free Software Foundation által kiadott GNU Library General Public License második (vagy bármely későbbi) változatában foglaltak alapján kerülnek terjesztésre."
 
-#: ../xfce4-about/main.c:441
+#: ../xfce4-about/main.c:296
+msgid ""
+"The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, "
+"xfce4-settings, xfconf, xfdesktop and xfwm4 are distributed under the terms "
+"of the GNU General Public License as published by the Free Software "
+"Foundation; either version 2 of the License, or (at your option) any later "
+"version."
+msgstr "A thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfconf, xfdesktop és xfwm4 csomagok a Free Software Foundation által kiadott GNU General Public License második (vagy bármely későbbi) változatában foglaltak alapján kerülnek terjesztésre."
+
+#: ../xfce4-about/main.c:443
 #, c-format
 msgid "Type '%s --help' for usage information."
 msgstr "Segítségért adja ki a „%s --help” parancsot."
 
-#: ../xfce4-about/main.c:447
+#: ../xfce4-about/main.c:449
 msgid "Unable to initialize GTK+."
 msgstr "A GTK+ előkészítése sikertelen."
 
-#: ../xfce4-about/main.c:456
+#: ../xfce4-about/main.c:458
 msgid "The Xfce development team. All rights reserved."
 msgstr "Az Xfce fejlesztői csapata. Minden jog fenntartva."
 
-#: ../xfce4-about/main.c:457
+#: ../xfce4-about/main.c:459
 #, c-format
 msgid "Please report bugs to <%s>."
 msgstr "A programhibák itt jelenthetők be: %s"
 
-#. I18N: date/time the translators list was updated
-#: ../xfce4-about/main.c:460
-#, c-format
-msgid "Translators list from %s."
-msgstr "Fordítók listája ekkor: %s."
-
-#: ../xfce4-about/main.c:470
+#: ../xfce4-about/main.c:469
 msgid "Failed to load interface"
 msgstr "A felület betöltése sikertelen"
 
 #. I18N: first %s will be replaced by the version, second by
 #. * the name of the distribution (--with-vendor-info=NAME)
-#: ../xfce4-about/main.c:484
+#: ../xfce4-about/main.c:483
 #, c-format
 msgid "Version %s, distributed by %s"
 msgstr "%s verzió, terjesztő: %s"
 
 #. I18N: %s will be replaced by the Xfce version number
-#: ../xfce4-about/main.c:488
+#: ../xfce4-about/main.c:487
 #, c-format
 msgid "Version %s"
 msgstr "Verzió %s"
@@ -728,31 +739,27 @@ msgstr "Verzió %s"
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
 #. },
-#: ../xfce4-about/contributors.h:128
+#: ../xfce4-about/contributors.h:125
 msgid "Core developers"
 msgstr "Fő fejlesztők"
 
-#: ../xfce4-about/contributors.h:131
+#: ../xfce4-about/contributors.h:128
 msgid "Active contributors"
 msgstr "Aktív közreműködők"
 
-#: ../xfce4-about/contributors.h:134
+#: ../xfce4-about/contributors.h:131
 msgid "Servers maintained by"
 msgstr "A kiszolgálóinkat karbantartják:"
 
-#: ../xfce4-about/contributors.h:137
-msgid "Goodies supervision"
-msgstr "A Goodies csomag felügyelete"
-
-#: ../xfce4-about/contributors.h:140
+#: ../xfce4-about/contributors.h:134
 msgid "Translations supervision"
 msgstr "Fordítások felügyelet"
 
-#: ../xfce4-about/contributors.h:143
+#: ../xfce4-about/contributors.h:137
 msgid "Translators"
 msgstr "Fordítók"
 
-#: ../xfce4-about/contributors.h:146
+#: ../xfce4-about/contributors.h:140
 msgid "Previous contributors"
 msgstr "Előző munkatársak"
 
