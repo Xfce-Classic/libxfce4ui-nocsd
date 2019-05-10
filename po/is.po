@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-05-04 18:30+0200\n"
-"PO-Revision-Date: 2019-05-10 08:17+0000\n"
+"PO-Revision-Date: 2019-05-10 11:28+0000\n"
 "Last-Translator: Sveinn í Felli <sv1@fellsnet.is>\n"
 "Language-Team: Icelandic (http://www.transifex.com/xfce/libxfce4ui/language/is/)\n"
 "MIME-Version: 1.0\n"
@@ -334,11 +334,11 @@ msgstr "Víxla heilskjá"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:63
 msgid "Move window to upper workspace"
-msgstr "Flytja glugga yfir á nvinnusvæði fyrir ofan"
+msgstr "Flytja glugga yfir á vinnusvæði fyrir ofan"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:64
 msgid "Move window to bottom workspace"
-msgstr "Flytja glugga yfir á nvinnusvæði fyrir neðan"
+msgstr "Flytja glugga yfir á vinnusvæði fyrir neðan"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:65
 msgid "Move window to left workspace"
@@ -346,7 +346,7 @@ msgstr "Flytja glugga yfir á vinnusvæði til vinstri"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:66
 msgid "Move window to right workspace"
-msgstr "Flytja glugga yfir á nvinnusvæði til hægri"
+msgstr "Flytja glugga yfir á vinnusvæði til hægri"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:67
 msgid "Move window to previous workspace"
