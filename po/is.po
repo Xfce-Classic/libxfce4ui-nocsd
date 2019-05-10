@@ -3,7 +3,7 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Sveinn í Felli <sv1@fellsnet.is>, 2013-2015,2017
+# Sveinn í Felli <sv1@fellsnet.is>, 2010,2013-2015,2017,2019
 # Sveinn í Felli <sveinki@nett.is>, 2010-2013
 # Sveinn í Felli <sv1@fellsnet.is>, 2013
 msgid ""
@@ -11,8 +11,8 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-05-04 18:30+0200\n"
-"PO-Revision-Date: 2019-05-04 16:30+0000\n"
-"Last-Translator: Xfce Bot <transifex@xfce.org>\n"
+"PO-Revision-Date: 2019-05-10 08:17+0000\n"
+"Last-Translator: Sveinn í Felli <sv1@fellsnet.is>\n"
 "Language-Team: Icelandic (http://www.transifex.com/xfce/libxfce4ui/language/is/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -584,11 +584,11 @@ msgstr "Nútímalegur skráastjóri fyrir Unix/Linux skjáborð, með áherslu �
 
 #: ../xfce4-about/main.c:89
 msgid "Volume manager"
-msgstr ""
+msgstr "Diskastýring"
 
 #: ../xfce4-about/main.c:90
 msgid "Automatic management of removable drives and media for Thunar."
-msgstr ""
+msgstr "Sjálfvirk umsýsla fyrir Thunar á fjarlægjanlegum drifum og miðlum."
 
 #: ../xfce4-about/main.c:93
 msgid "Session Manager"
@@ -630,12 +630,12 @@ msgstr "Stillingageymslukerfi byggt á D-Bus."
 
 #: ../xfce4-about/main.c:112
 msgid "Thumbnails service"
-msgstr ""
+msgstr "Smámyndaþjónusta"
 
 #: ../xfce4-about/main.c:113
 msgid ""
 "Thumbnail service implementing the thumbnail management D-Bus specification."
-msgstr ""
+msgstr "Smámyndaþjónusta sem sér um umsýslu smámynd skv. D-Bus staðlinum."
 
 #: ../xfce4-about/main.c:120
 msgid ""
@@ -656,7 +656,7 @@ msgid ""
 " for applications and LGPL or BSDL for libraries. Look at the documentation,"
 " the source code or the Xfce website (https://www.xfce.org) for more "
 "information."
-msgstr ""
+msgstr "Xfce einingar eru gefnar út með frjálsum eða opnum notkunarleyfum; GPL eða BSDL fyrir forrit og LGPL eða BSDL fyrir aðgerðasöfn. Skoðaðu hjálparskjöl, upprunakóða eða leitaðu á Xfce vefnum (https://www.xfce.org) til að vita meira um þetta."
 
 #: ../xfce4-about/main.c:157
 msgid "Thank you for your interest in Xfce."
@@ -670,7 +670,7 @@ msgstr "Xfce þróunarteymið"
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
 "on <https://bugzilla.xfce.org> ."
-msgstr ""
+msgstr "Ef þú veist um einhvern sem vantar á þennan lista; ekki hika við að senda það sem villu á <https://bugzilla.xfce.org> ."
 
 #: ../xfce4-about/main.c:267
 msgid "Thanks to all who helped making this software available!"
@@ -688,7 +688,7 @@ msgid ""
 "terms of the GNU Library General Public License as published by the Free "
 "Software Foundation; either version 2 of the License, or (at your option) "
 "any later version."
-msgstr ""
+msgstr "libxfceui, libxfce4util og exo pökkunum er dreift samkvæmt skilmálum í almenna GNU GPL notkunarleyfisins eins og það er gefið út af Frjálsu hugbúnaðarstofnuninni; annaðhvort útgáfu 2 af GPL-leyfinu, eða (ef þér sýnist svo) einhverja nýrri útgáfu leyfisins."
 
 #: ../xfce4-about/main.c:296
 msgid ""
@@ -697,7 +697,7 @@ msgid ""
 "of the GNU General Public License as published by the Free Software "
 "Foundation; either version 2 of the License, or (at your option) any later "
 "version."
-msgstr ""
+msgstr "Hugbúnaðarpökkunum thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfconf, xfdesktop og xfwm4 er dreift samkvæmt skilmálum í almenna GNU GPL notkunarleyfisins eins og það er gefið út af Frjálsu hugbúnaðarstofnuninni; annaðhvort útgáfu 2 af GPL-leyfinu, eða (ef þér sýnist svo) einhverja nýrri útgáfu leyfisins."
 
 #: ../xfce4-about/main.c:443
 #, c-format
