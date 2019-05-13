@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-05-04 18:30+0200\n"
-"PO-Revision-Date: 2019-05-04 21:14+0000\n"
+"PO-Revision-Date: 2019-05-13 10:11+0000\n"
 "Last-Translator: Gábor P.\n"
 "Language-Team: Hungarian (http://www.transifex.com/xfce/libxfce4ui/language/hu/)\n"
 "MIME-Version: 1.0\n"
@@ -637,7 +637,7 @@ msgstr "Bélyegkép-készítő szolgáltatás"
 #: ../xfce4-about/main.c:113
 msgid ""
 "Thumbnail service implementing the thumbnail management D-Bus specification."
-msgstr ""
+msgstr "A bélyegkép-szolgáltatás a bélyegképek kezelését végzi a D-Bus specifikációnak megfelelően."
 
 #: ../xfce4-about/main.c:120
 msgid ""
