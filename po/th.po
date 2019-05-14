@@ -5,13 +5,14 @@
 # Translators:
 # Theppitak Karoonboonyanan <thep@linux.thai.net>, 2013
 # Theppitak Karoonboonyanan <theppitak@gmail.com>, 2015-2016
+# Theppitak Karoonboonyanan <theppitak@gmail.com>, 2019
 msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-05-04 18:30+0200\n"
-"PO-Revision-Date: 2019-05-04 16:30+0000\n"
-"Last-Translator: Xfce Bot <transifex@xfce.org>\n"
+"PO-Revision-Date: 2019-05-14 03:13+0000\n"
+"Last-Translator: Theppitak Karoonboonyanan <theppitak@gmail.com>\n"
 "Language-Team: Thai (http://www.transifex.com/xfce/libxfce4ui/language/th/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -583,11 +584,11 @@ msgstr "โปรแกรมจัดการแฟ้มสมัยใหม
 
 #: ../xfce4-about/main.c:89
 msgid "Volume manager"
-msgstr ""
+msgstr "ส่วนขยายจัดการโวลุม"
 
 #: ../xfce4-about/main.c:90
 msgid "Automatic management of removable drives and media for Thunar."
-msgstr ""
+msgstr "การจัดการอัตโนมัติสำหรับไดรว์และสื่อถอดเสียบสำหรับ Thunar"
 
 #: ../xfce4-about/main.c:93
 msgid "Session Manager"
@@ -629,12 +630,12 @@ msgstr "ระบบจัดเก็บค่าตั้ง โดยทำ�
 
 #: ../xfce4-about/main.c:112
 msgid "Thumbnails service"
-msgstr ""
+msgstr "บริการภาพย่อ"
 
 #: ../xfce4-about/main.c:113
 msgid ""
 "Thumbnail service implementing the thumbnail management D-Bus specification."
-msgstr ""
+msgstr "บริการภาพย่อซึ่งจัดการภาพย่อตามข้อกำหนดของ D-Bus"
 
 #: ../xfce4-about/main.c:120
 msgid ""
@@ -655,7 +656,7 @@ msgid ""
 " for applications and LGPL or BSDL for libraries. Look at the documentation,"
 " the source code or the Xfce website (https://www.xfce.org) for more "
 "information."
-msgstr ""
+msgstr "องค์ประกอบของ Xfce เผยแพร่ภายใต้เงื่อนไขสัญญาอนุญาตเสรีหรือโอเพนซอร์ส กล่าวคือ GPL หรือ BSDL สำหรับโปรแกรม และ LGPL หรือ BSDL สำหรับไลบรารี คุณสามารถอ่านข้อมูลเพิ่มเติมได้จากเอกสาร ซอร์สโค้ด หรือเว็บไซต์ Xfce (https://www.xfce.org)"
 
 #: ../xfce4-about/main.c:157
 msgid "Thank you for your interest in Xfce."
@@ -669,7 +670,7 @@ msgstr "ทีมพัฒนา Xfce"
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
 "on <https://bugzilla.xfce.org> ."
-msgstr ""
+msgstr "หากคุณทราบว่ามีผู้ใดตกหล่นจากรายชื่อนี้ กรุณาอย่าลังเลที่จะรายงานบั๊กที่ <https://bugzilla.xfce.org>"
 
 #: ../xfce4-about/main.c:267
 msgid "Thanks to all who helped making this software available!"
@@ -687,7 +688,7 @@ msgid ""
 "terms of the GNU Library General Public License as published by the Free "
 "Software Foundation; either version 2 of the License, or (at your option) "
 "any later version."
-msgstr ""
+msgstr "แพกเกจ libxfce4ui, libxfce4util และ exo เผยแพร่ภายใต้เงื่อนไขของสัญญาอนุญาต GNU Library General Public License ที่เผยแพร่โดยมูลนิธิซอฟต์แวร์เสรี ไม่ว่าจะเป็นสัญญาอนุญาตรุ่นที่ 2 หรือรุ่นถัดมา (ตามแต่คุณจะเลือก)"
 
 #: ../xfce4-about/main.c:296
 msgid ""
@@ -696,7 +697,7 @@ msgid ""
 "of the GNU General Public License as published by the Free Software "
 "Foundation; either version 2 of the License, or (at your option) any later "
 "version."
-msgstr ""
+msgstr "แพกเกจ thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfconf, xfdesktop และ xfwm4 เผยแพร่ภายใต้เงื่อนไขของสัญญาอนุญาต GNU General Public License ที่เผยแพร่โดยมูลนิธิซอฟต์แวร์เสรี ไม่ว่าจะเป็นสัญญาอนุญาตรุ่นที่ 2 หรือรุ่นถัดมา (ตามแต่คุณจะเลือก)"
 
 #: ../xfce4-about/main.c:443
 #, c-format
