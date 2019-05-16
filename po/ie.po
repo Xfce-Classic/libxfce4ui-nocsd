@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-05-04 18:30+0200\n"
-"PO-Revision-Date: 2019-05-15 20:58+0000\n"
+"PO-Revision-Date: 2019-05-16 14:47+0000\n"
 "Last-Translator: Ольга Смирнова\n"
 "Language-Team: Interlingue (http://www.transifex.com/xfce/libxfce4ui/language/ie/)\n"
 "MIME-Version: 1.0\n"
@@ -571,7 +571,7 @@ msgstr ""
 
 #: ../xfce4-about/main.c:84
 msgid "File Manager"
-msgstr ""
+msgstr "Gerentiator de files"
 
 #: ../xfce4-about/main.c:85
 msgid ""
