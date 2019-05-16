@@ -108,6 +108,11 @@ xfce_about_about (GtkTextBuffer *buffer)
         N_("Settings Daemon"),
         N_("D-Bus-based configuration storage system.")
       },
+      { "garcon",
+        N_("A menu library"),
+        N_("A freedesktop.org compliant menu implementation based "
+           "on GLib and GIO.")
+      },
       { "tumbler",
         N_("Thumbnails service"),
         N_("Thumbnail service implementing the thumbnail management D-Bus specification.")
