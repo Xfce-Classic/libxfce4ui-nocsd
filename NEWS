@@ -1,4 +1,4 @@
-﻿4.13.5 (Unreleased)
+﻿4.13.5
 ======
 - Add PrintScreen as shortcut for xfce4-screenshooter (Bug #14524)
 - Add Ctrl + Alt + t as default shortcut for terminal (Bug #14510)
@@ -7,6 +7,7 @@
 - Fix release tarball by adding libxfce4ui-dialog-ui.ui
 - Fixes for gladeui2 detection
 - Install icons when gladeui2 is set (Bug #15207)
+- Fix build error with --disable-gtk2 and having gladeui-1.0 installed
 - Remove styling of emails in about dialog (Bug #14638)
 - Fix compiler error -Wcast-function-type (GCC 8)
 - Use https://docs.xfce.org for help url
