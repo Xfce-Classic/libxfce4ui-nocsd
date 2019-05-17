@@ -12,8 +12,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-04 18:30+0200\n"
-"PO-Revision-Date: 2019-05-05 18:30+0000\n"
+"POT-Creation-Date: 2019-05-17 00:30+0200\n"
+"PO-Revision-Date: 2019-05-17 16:32+0000\n"
 "Last-Translator: Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>\n"
 "Language-Team: Catalan (http://www.transifex.com/xfce/libxfce4ui/language/ca/)\n"
 "MIME-Version: 1.0\n"
@@ -631,28 +631,36 @@ msgid "D-Bus-based configuration storage system."
 msgstr "Sistema d'emmagatzematge de configuracions basat en D-Bus."
 
 #: ../xfce4-about/main.c:112
+msgid "A menu library"
+msgstr "Una biblioteca de menús"
+
+#: ../xfce4-about/main.c:113
+msgid "A freedesktop.org compliant menu implementation based on GLib and GIO."
+msgstr "Una implementació de menús compatible amb freedesktop.org basada en GLib i GIO."
+
+#: ../xfce4-about/main.c:117
 msgid "Thumbnails service"
 msgstr "Servei de miniatures"
 
-#: ../xfce4-about/main.c:113
+#: ../xfce4-about/main.c:118
 msgid ""
 "Thumbnail service implementing the thumbnail management D-Bus specification."
 msgstr "Servei de miniatures que implementa l'especificació de D-Bus per a la gestió de miniatures."
 
-#: ../xfce4-about/main.c:120
+#: ../xfce4-about/main.c:125
 msgid ""
 "Xfce is a collection of programs that together provide a full-featured "
 "desktop environment. The following programs are part of the Xfce core:"
 msgstr "Xfce és una col·lecció de programes que en conjunt ofereixen un entorn d'escriptori ple de funcionalitats. Els següents programes formen part del nucli de Xfce:"
 
-#: ../xfce4-about/main.c:144
+#: ../xfce4-about/main.c:149
 msgid ""
 "Xfce is also a development platform providing several libraries, that help "
 "programmers create applications that fit in well with the desktop "
 "environment."
 msgstr "Xfce també és una plataforma de desenvolupament que proporciona diverses biblioteques que ajuden als programadors a crear aplicacions perquè s'adaptin bé amb l'entorn d'escriptori."
 
-#: ../xfce4-about/main.c:150
+#: ../xfce4-about/main.c:155
 msgid ""
 "Xfce components are licensed under free or open source licences; GPL or BSDL"
 " for applications and LGPL or BSDL for libraries. Look at the documentation,"
@@ -660,31 +668,31 @@ msgid ""
 "information."
 msgstr "Els components de Xfce estan llicenciats sota llicències lliures o de codi obert; GPL o BSDL per a les aplicacions i LGPL o BSDL per a les biblioteques. Per més informació consulteu la documentació, el codi font o el lloc web de Xfce (https://www.xfce.org)."
 
-#: ../xfce4-about/main.c:157
+#: ../xfce4-about/main.c:162
 msgid "Thank you for your interest in Xfce."
 msgstr "Gràcies pel vostre interès en Xfce."
 
-#: ../xfce4-about/main.c:161
+#: ../xfce4-about/main.c:166
 msgid "The Xfce Development Team"
 msgstr "L'equip de desenvolupament de Xfce"
 
-#: ../xfce4-about/main.c:263
+#: ../xfce4-about/main.c:268
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
 "on <https://bugzilla.xfce.org> ."
 msgstr "Si sabeu d'algú que hagi d'estar en aquesta llista; no dubteu en informar d'aquest error a <https://bugzilla.xfce.org>."
 
-#: ../xfce4-about/main.c:267
+#: ../xfce4-about/main.c:272
 msgid "Thanks to all who helped making this software available!"
 msgstr "Gràcies a tots aquells que heu ajudat a fer aquest programari una realitat."
 
-#: ../xfce4-about/main.c:284
+#: ../xfce4-about/main.c:289
 msgid ""
 "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
 msgstr "Xfce 4 té drets d'autor d'Olivier Fourdan (fourdan@xfce.org). Els diferents components tenen els drets d'autor dels seus respectius autors."
 
-#: ../xfce4-about/main.c:289
+#: ../xfce4-about/main.c:294
 msgid ""
 "The libxfce4ui, libxfce4util and exo packages are distributed under the "
 "terms of the GNU Library General Public License as published by the Free "
@@ -692,7 +700,7 @@ msgid ""
 "any later version."
 msgstr "Els paquets libxfce4ui, libxfce4util i exo es distribueixen sota els termes de la llicència GNU Library General Public License, tal com l'ha publicada la Free Software Foundation; ja sigui la versió 2 de la llicència o, segons el vostre criteri, qualsevol versió posterior."
 
-#: ../xfce4-about/main.c:296
+#: ../xfce4-about/main.c:301
 msgid ""
 "The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, "
 "xfce4-settings, xfconf, xfdesktop and xfwm4 are distributed under the terms "
@@ -701,37 +709,37 @@ msgid ""
 "version."
 msgstr "Els paquets thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfconf, xfdesktop i xfwm4 es distribueixen sota els termes de la llicència GNU General Public License, tal com l'ha publicada la Free Software Foundation; ja sigui la versió 2 de la llicència o, segons el vostre criteri, qualsevol versió posterior."
 
-#: ../xfce4-about/main.c:443
+#: ../xfce4-about/main.c:448
 #, c-format
 msgid "Type '%s --help' for usage information."
 msgstr "Teclegeu «%s --help» per obtenir la informació de l'ús."
 
-#: ../xfce4-about/main.c:449
+#: ../xfce4-about/main.c:454
 msgid "Unable to initialize GTK+."
 msgstr "No es pot inicialitzar GTK+."
 
-#: ../xfce4-about/main.c:458
+#: ../xfce4-about/main.c:463
 msgid "The Xfce development team. All rights reserved."
 msgstr "L'equip de desenvolupament de Xfce. Tots els drets reservats."
 
-#: ../xfce4-about/main.c:459
+#: ../xfce4-about/main.c:464
 #, c-format
 msgid "Please report bugs to <%s>."
 msgstr "Envieu els errors a <%s>."
 
-#: ../xfce4-about/main.c:469
+#: ../xfce4-about/main.c:474
 msgid "Failed to load interface"
 msgstr "Ha fallat la càrrega de la interfície"
 
 #. I18N: first %s will be replaced by the version, second by
 #. * the name of the distribution (--with-vendor-info=NAME)
-#: ../xfce4-about/main.c:483
+#: ../xfce4-about/main.c:488
 #, c-format
 msgid "Version %s, distributed by %s"
 msgstr "Versió %s, distribuïda per %s"
 
 #. I18N: %s will be replaced by the Xfce version number
-#: ../xfce4-about/main.c:487
+#: ../xfce4-about/main.c:492
 #, c-format
 msgid "Version %s"
 msgstr "Versió %s"
