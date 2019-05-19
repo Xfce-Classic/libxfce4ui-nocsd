@@ -3,14 +3,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Nuno Miguel <nunomgue@gmail.com>, 2015-2017
+# Nuno Miguel <nunomgue@gmail.com>, 2015-2017,2019
 msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-04 18:30+0200\n"
-"PO-Revision-Date: 2019-05-04 16:30+0000\n"
-"Last-Translator: Xfce Bot <transifex@xfce.org>\n"
+"POT-Creation-Date: 2019-05-17 00:30+0200\n"
+"PO-Revision-Date: 2019-05-19 11:53+0000\n"
+"Last-Translator: Nuno Miguel <nunomgue@gmail.com>\n"
 "Language-Team: Portuguese (http://www.transifex.com/xfce/libxfce4ui/language/pt/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -582,11 +582,11 @@ msgstr "Um gestor de ficheiros moderno para os ambientes de trabalho Unix/Linux,
 
 #: ../xfce4-about/main.c:89
 msgid "Volume manager"
-msgstr ""
+msgstr "Gestor de volume"
 
 #: ../xfce4-about/main.c:90
 msgid "Automatic management of removable drives and media for Thunar."
-msgstr ""
+msgstr "Gestão automática de unidades amovíveis e media para Thunar."
 
 #: ../xfce4-about/main.c:93
 msgid "Session Manager"
@@ -627,107 +627,115 @@ msgid "D-Bus-based configuration storage system."
 msgstr "Sistema de configurações de armazenamento D-Bus."
 
 #: ../xfce4-about/main.c:112
-msgid "Thumbnails service"
-msgstr ""
+msgid "A menu library"
+msgstr "Uma biblioteca de menu"
 
 #: ../xfce4-about/main.c:113
+msgid "A freedesktop.org compliant menu implementation based on GLib and GIO."
+msgstr "Um menu compatível com a implementação freedesktop.org basedo no GLib e GIO."
+
+#: ../xfce4-about/main.c:117
+msgid "Thumbnails service"
+msgstr "Serviço de miniaturas"
+
+#: ../xfce4-about/main.c:118
 msgid ""
 "Thumbnail service implementing the thumbnail management D-Bus specification."
-msgstr ""
+msgstr "Serviço de miniaturas implementa a especificação D-Bus de gestão de miniaturas."
 
-#: ../xfce4-about/main.c:120
+#: ../xfce4-about/main.c:125
 msgid ""
 "Xfce is a collection of programs that together provide a full-featured "
 "desktop environment. The following programs are part of the Xfce core:"
 msgstr "O Xfce é constituído por diversas aplicações que usadas em conjunto, disponibilizam um ambiente de trabalho completo. Os seguintes programas fazem parte do Xfce:"
 
-#: ../xfce4-about/main.c:144
+#: ../xfce4-about/main.c:149
 msgid ""
 "Xfce is also a development platform providing several libraries, that help "
 "programmers create applications that fit in well with the desktop "
 "environment."
 msgstr "O Xfce é também uma plataforma de desenvolvimento, disponibilizando diversas bibliotecas, ajudando os programadores a criar aplicações para o ambiente de trabalho."
 
-#: ../xfce4-about/main.c:150
+#: ../xfce4-about/main.c:155
 msgid ""
 "Xfce components are licensed under free or open source licences; GPL or BSDL"
 " for applications and LGPL or BSDL for libraries. Look at the documentation,"
 " the source code or the Xfce website (https://www.xfce.org) for more "
 "information."
-msgstr ""
+msgstr "Os componentes do Xfce são licenciados nos termos das licenças livres; GPL ou BSDL para as aplicações e LGPL ou BSDL para as bibliotecas. Consulte a documentação e o código fonte na página do Xfce (https://www.xfce.org) para mais informação."
 
-#: ../xfce4-about/main.c:157
+#: ../xfce4-about/main.c:162
 msgid "Thank you for your interest in Xfce."
 msgstr "Obrigado pelo seu interesse no Xfce."
 
-#: ../xfce4-about/main.c:161
+#: ../xfce4-about/main.c:166
 msgid "The Xfce Development Team"
 msgstr "A equipa de desenvolvimento do Xfce"
 
-#: ../xfce4-about/main.c:263
+#: ../xfce4-about/main.c:268
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
 "on <https://bugzilla.xfce.org> ."
-msgstr ""
+msgstr "Se conhece alguém que participou no desenvolvimento e não está incluído nesta lista, contacte-nos ou preencha um relatório em <https://bugzilla.xfce.org> ."
 
-#: ../xfce4-about/main.c:267
+#: ../xfce4-about/main.c:272
 msgid "Thanks to all who helped making this software available!"
 msgstr "Obrigado a todas as pessoas que ajudaram na disponibilização do Xfce!"
 
-#: ../xfce4-about/main.c:284
+#: ../xfce4-about/main.c:289
 msgid ""
 "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
 msgstr "Os direitos do Xfce 4 pertencem a Olivier Fourdan (fourdan@xfce.org). Os direitos dos restantes componentes são dos seus autores."
 
-#: ../xfce4-about/main.c:289
+#: ../xfce4-about/main.c:294
 msgid ""
 "The libxfce4ui, libxfce4util and exo packages are distributed under the "
 "terms of the GNU Library General Public License as published by the Free "
 "Software Foundation; either version 2 of the License, or (at your option) "
 "any later version."
-msgstr ""
+msgstr "Os pacotes libxfce4ui, libxfce4util e exo são distribuídos nos termos da GNU Library General Public License como publicado pela Free Software Foundation; tanto na versão 2 da licença, ou (por sua opção) qualquer versão mais recente."
 
-#: ../xfce4-about/main.c:296
+#: ../xfce4-about/main.c:301
 msgid ""
 "The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, "
 "xfce4-settings, xfconf, xfdesktop and xfwm4 are distributed under the terms "
 "of the GNU General Public License as published by the Free Software "
 "Foundation; either version 2 of the License, or (at your option) any later "
 "version."
-msgstr ""
+msgstr "Os pacotes thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfconf, xfdesktop e xfwm4 são distribuídos nos termos da GNU General Public License como publicado pela Free Software Foundation; tanto a versão 2 da licença, ou (por sua opção) qualquer versão mais recente."
 
-#: ../xfce4-about/main.c:443
+#: ../xfce4-about/main.c:448
 #, c-format
 msgid "Type '%s --help' for usage information."
 msgstr "Digite '%s --help' para instruções de utilização."
 
-#: ../xfce4-about/main.c:449
+#: ../xfce4-about/main.c:454
 msgid "Unable to initialize GTK+."
 msgstr "Incapaz de iniciar GTK+."
 
-#: ../xfce4-about/main.c:458
+#: ../xfce4-about/main.c:463
 msgid "The Xfce development team. All rights reserved."
 msgstr "A equipa de desenvolvimento do Xfce. Todos os direitos reservados."
 
-#: ../xfce4-about/main.c:459
+#: ../xfce4-about/main.c:464
 #, c-format
 msgid "Please report bugs to <%s>."
 msgstr "Por favor, reporte os erros em <%s>."
 
-#: ../xfce4-about/main.c:469
+#: ../xfce4-about/main.c:474
 msgid "Failed to load interface"
 msgstr "Falha ao carregar a interface"
 
 #. I18N: first %s will be replaced by the version, second by
 #. * the name of the distribution (--with-vendor-info=NAME)
-#: ../xfce4-about/main.c:483
+#: ../xfce4-about/main.c:488
 #, c-format
 msgid "Version %s, distributed by %s"
 msgstr "Versão %s, disponibilizada por %s"
 
 #. I18N: %s will be replaced by the Xfce version number
-#: ../xfce4-about/main.c:487
+#: ../xfce4-about/main.c:492
 #, c-format
 msgid "Version %s"
 msgstr "Versão %s"
