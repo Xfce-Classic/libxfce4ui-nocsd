@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-05-17 00:30+0200\n"
-"PO-Revision-Date: 2019-05-17 17:10+0000\n"
+"PO-Revision-Date: 2019-05-23 11:25+0000\n"
 "Last-Translator: Casper casper\n"
 "Language-Team: Spanish (http://www.transifex.com/xfce/libxfce4ui/language/es/)\n"
 "MIME-Version: 1.0\n"
@@ -636,7 +636,7 @@ msgstr "Sistema de almacenamiento de configuración basado en D-Bus."
 
 #: ../xfce4-about/main.c:112
 msgid "A menu library"
-msgstr ""
+msgstr "Un menu de bibliotecas"
 
 #: ../xfce4-about/main.c:113
 msgid "A freedesktop.org compliant menu implementation based on GLib and GIO."
