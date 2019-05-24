@@ -4,14 +4,14 @@
 # 
 # Translators:
 # Theppitak Karoonboonyanan <thep@linux.thai.net>, 2013
-# Theppitak Karoonboonyanan <theppitak@gmail.com>, 2015-2016
+# Theppitak Karoonboonyanan <theppitak@gmail.com>, 2015-2016,2019
 # Theppitak Karoonboonyanan <theppitak@gmail.com>, 2019
 msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-04 18:30+0200\n"
-"PO-Revision-Date: 2019-05-14 03:13+0000\n"
+"POT-Creation-Date: 2019-05-17 00:30+0200\n"
+"PO-Revision-Date: 2019-05-24 09:52+0000\n"
 "Last-Translator: Theppitak Karoonboonyanan <theppitak@gmail.com>\n"
 "Language-Team: Thai (http://www.transifex.com/xfce/libxfce4ui/language/th/)\n"
 "MIME-Version: 1.0\n"
@@ -629,28 +629,36 @@ msgid "D-Bus-based configuration storage system."
 msgstr "ระบบจัดเก็บค่าตั้ง โดยทำงานผ่าน D-Bus"
 
 #: ../xfce4-about/main.c:112
+msgid "A menu library"
+msgstr "ไลบรารีจัดการเมนู"
+
+#: ../xfce4-about/main.c:113
+msgid "A freedesktop.org compliant menu implementation based on GLib and GIO."
+msgstr "การรองรับเมนูตามข้อกำหนดของ freedesktop.org โดยใช้ GLib และ GIO เป็นฐาน"
+
+#: ../xfce4-about/main.c:117
 msgid "Thumbnails service"
 msgstr "บริการภาพย่อ"
 
-#: ../xfce4-about/main.c:113
+#: ../xfce4-about/main.c:118
 msgid ""
 "Thumbnail service implementing the thumbnail management D-Bus specification."
 msgstr "บริการภาพย่อซึ่งจัดการภาพย่อตามข้อกำหนดของ D-Bus"
 
-#: ../xfce4-about/main.c:120
+#: ../xfce4-about/main.c:125
 msgid ""
 "Xfce is a collection of programs that together provide a full-featured "
 "desktop environment. The following programs are part of the Xfce core:"
 msgstr "Xfce เป็นชุดของโปรแกรมซึ่งรวมกันเป็นชุดเดสก์ท็อปที่ความสามารถเพียบพร้อม ส่วนแกนหลักของ Xfce ประกอบด้วยโปรแกรมต่อไปนี้:"
 
-#: ../xfce4-about/main.c:144
+#: ../xfce4-about/main.c:149
 msgid ""
 "Xfce is also a development platform providing several libraries, that help "
 "programmers create applications that fit in well with the desktop "
 "environment."
 msgstr "นอกจากนี้ Xfce ยังเป็นแพลตฟอร์มสำหรับพัฒนาโปรแกรม โดยจัดเตรียมไลบรารีต่างๆ ให้หลายชุด ซึ่งจะช่วยโปรแกรมเมอร์ในการสร้างโปรแกรมที่เข้ากันกับตัวเดสก์ท็อป"
 
-#: ../xfce4-about/main.c:150
+#: ../xfce4-about/main.c:155
 msgid ""
 "Xfce components are licensed under free or open source licences; GPL or BSDL"
 " for applications and LGPL or BSDL for libraries. Look at the documentation,"
@@ -658,31 +666,31 @@ msgid ""
 "information."
 msgstr "องค์ประกอบของ Xfce เผยแพร่ภายใต้เงื่อนไขสัญญาอนุญาตเสรีหรือโอเพนซอร์ส กล่าวคือ GPL หรือ BSDL สำหรับโปรแกรม และ LGPL หรือ BSDL สำหรับไลบรารี คุณสามารถอ่านข้อมูลเพิ่มเติมได้จากเอกสาร ซอร์สโค้ด หรือเว็บไซต์ Xfce (https://www.xfce.org)"
 
-#: ../xfce4-about/main.c:157
+#: ../xfce4-about/main.c:162
 msgid "Thank you for your interest in Xfce."
 msgstr "ขอขอบคุณที่ให้ความสนใจ Xfce"
 
-#: ../xfce4-about/main.c:161
+#: ../xfce4-about/main.c:166
 msgid "The Xfce Development Team"
 msgstr "ทีมพัฒนา Xfce"
 
-#: ../xfce4-about/main.c:263
+#: ../xfce4-about/main.c:268
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
 "on <https://bugzilla.xfce.org> ."
 msgstr "หากคุณทราบว่ามีผู้ใดตกหล่นจากรายชื่อนี้ กรุณาอย่าลังเลที่จะรายงานบั๊กที่ <https://bugzilla.xfce.org>"
 
-#: ../xfce4-about/main.c:267
+#: ../xfce4-about/main.c:272
 msgid "Thanks to all who helped making this software available!"
 msgstr "ขอขอบคุณทุกท่านที่ช่วยทำให้ซอฟต์แวร์นี้เกิดขึ้นได้!"
 
-#: ../xfce4-about/main.c:284
+#: ../xfce4-about/main.c:289
 msgid ""
 "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
 msgstr "Xfce 4 สงวนลิขสิทธิ์โดย Olivier Fourdan (fourdan@xfce.org) ส่วนองค์ประกอบต่างๆ สงวนลิขสิทธิ์โดยผู้พัฒนาของแต่ละองค์ประกอบ"
 
-#: ../xfce4-about/main.c:289
+#: ../xfce4-about/main.c:294
 msgid ""
 "The libxfce4ui, libxfce4util and exo packages are distributed under the "
 "terms of the GNU Library General Public License as published by the Free "
@@ -690,7 +698,7 @@ msgid ""
 "any later version."
 msgstr "แพกเกจ libxfce4ui, libxfce4util และ exo เผยแพร่ภายใต้เงื่อนไขของสัญญาอนุญาต GNU Library General Public License ที่เผยแพร่โดยมูลนิธิซอฟต์แวร์เสรี ไม่ว่าจะเป็นสัญญาอนุญาตรุ่นที่ 2 หรือรุ่นถัดมา (ตามแต่คุณจะเลือก)"
 
-#: ../xfce4-about/main.c:296
+#: ../xfce4-about/main.c:301
 msgid ""
 "The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, "
 "xfce4-settings, xfconf, xfdesktop and xfwm4 are distributed under the terms "
@@ -699,37 +707,37 @@ msgid ""
 "version."
 msgstr "แพกเกจ thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfconf, xfdesktop และ xfwm4 เผยแพร่ภายใต้เงื่อนไขของสัญญาอนุญาต GNU General Public License ที่เผยแพร่โดยมูลนิธิซอฟต์แวร์เสรี ไม่ว่าจะเป็นสัญญาอนุญาตรุ่นที่ 2 หรือรุ่นถัดมา (ตามแต่คุณจะเลือก)"
 
-#: ../xfce4-about/main.c:443
+#: ../xfce4-about/main.c:448
 #, c-format
 msgid "Type '%s --help' for usage information."
 msgstr "สั่ง '%s --help' เพื่อดูข้อมูลเพิ่มเติม"
 
-#: ../xfce4-about/main.c:449
+#: ../xfce4-about/main.c:454
 msgid "Unable to initialize GTK+."
 msgstr "ไม่สามารถตั้งต้น GTK+"
 
-#: ../xfce4-about/main.c:458
+#: ../xfce4-about/main.c:463
 msgid "The Xfce development team. All rights reserved."
 msgstr "The Xfce development team. All rights reserved."
 
-#: ../xfce4-about/main.c:459
+#: ../xfce4-about/main.c:464
 #, c-format
 msgid "Please report bugs to <%s>."
 msgstr "หากพบปัญหา กรุณารายงานที่ <%s>"
 
-#: ../xfce4-about/main.c:469
+#: ../xfce4-about/main.c:474
 msgid "Failed to load interface"
 msgstr "โหลดส่วนติดต่อผู้ใช้ไม่สำเร็จ"
 
 #. I18N: first %s will be replaced by the version, second by
 #. * the name of the distribution (--with-vendor-info=NAME)
-#: ../xfce4-about/main.c:483
+#: ../xfce4-about/main.c:488
 #, c-format
 msgid "Version %s, distributed by %s"
 msgstr "รุ่น %s, แจกจ่ายโดย %s"
 
 #. I18N: %s will be replaced by the Xfce version number
-#: ../xfce4-about/main.c:487
+#: ../xfce4-about/main.c:492
 #, c-format
 msgid "Version %s"
 msgstr "รุ่น %s"
