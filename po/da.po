@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-05-17 00:30+0200\n"
-"PO-Revision-Date: 2019-05-17 15:17+0000\n"
+"PO-Revision-Date: 2019-05-29 16:29+0000\n"
 "Last-Translator: scootergrisen\n"
 "Language-Team: Danish (http://www.transifex.com/xfce/libxfce4ui/language/da/)\n"
 "MIME-Version: 1.0\n"
@@ -93,7 +93,7 @@ msgstr "Spørgsmål"
 
 #: ../libxfce4ui/xfce-sm-client.c:1424
 msgid "Session management client ID"
-msgstr "Klient-id fra sessionshåndtering"
+msgstr "Klient-id for sessionshåndtering"
 
 #: ../libxfce4ui/xfce-sm-client.c:1424
 msgid "ID"
@@ -127,14 +127,14 @@ msgstr "Sessionshåndteringen returnerede ikke et gyldigt klient-id"
 msgid ""
 "Working directory \"%s\" does not exist. It won't be used when spawning "
 "\"%s\"."
-msgstr "Arbejdsmappen \"%s\" findes ikke. Den vil ikke blive brugt ved klargørelsen af \"%s\"."
+msgstr "Arbejdsmappen \"%s\" findes ikke. Den vil ikke blive brugt ved start af \"%s\"."
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 #, c-format
 msgid ""
 "This shortcut is already being used for the action '%s'. Which action do you"
 " want to use?"
-msgstr "Genvejen bruges allerede til handlingen \"%s\". Hvilken handling vil du bruge?"
+msgstr "Genvejen bruges allerede af handlingen \"%s\". Hvilken handling vil du bruge?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:54
 #: ../libxfce4kbd-private/xfce-shortcuts.c:57
@@ -158,14 +158,14 @@ msgstr "Behold '%s'"
 msgid ""
 "This shortcut is already being used for the command '%s'. Which action do "
 "you want to use?"
-msgstr "Genvejen bruges allerede til kommandoen '%s'. Hvilken handling vil du bruge?"
+msgstr "Genvejen bruges allerede af kommandoen '%s'. Hvilken handling vil du bruge?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 #, c-format
 msgid ""
 "This shortcut is already being used by the action '%s'. Which action do you "
 "want to use?"
-msgstr "Genvejen bruges allerede til handlingen \"%s\". Hvilken handling vil du bruge?"
+msgstr "Genvejen bruges allerede af handlingen \"%s\". Hvilken handling vil du bruge?"
 
 #. This shortcut already exists in the provider, we don't want it twice
 #. Warn the user
@@ -236,7 +236,7 @@ msgstr "Kunne ikke indfange tastaturet."
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:36
 msgid "Window operations menu"
-msgstr "Handlingsmenu for vindue"
+msgstr "Vindueshandlingermenu"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:37
 msgid "Up"
@@ -324,11 +324,11 @@ msgstr "Udfyld vindue"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:59
 msgid "Fill window horizontally"
-msgstr "Udfyld vinduet vandret"
+msgstr "Udfyld vindue vandret"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:60
 msgid "Fill window vertically"
-msgstr "Udfyld vinduet lodret"
+msgstr "Udfyld vindue lodret"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:61
 msgid "Toggle above"
@@ -464,7 +464,7 @@ msgstr "Højre arbejdsområde"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:94
 msgid "Previous workspace"
-msgstr "Foregående arbejdsområde"
+msgstr "Forrige arbejdsområde"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:95
 msgid "Next workspace"
@@ -544,7 +544,7 @@ msgstr "Undertitel"
 
 #: ../glade/libxfce4ui.xml.in.h:3 ../glade/libxfce4ui-2.xml.in.h:3
 msgid "Xfce 4 Widgets"
-msgstr "Widgets til Xfce 4"
+msgstr "Xfce 4-widgets"
 
 #: ../xfce4-about/main.c:52
 msgid "Version information"
@@ -566,7 +566,7 @@ msgstr "Panel"
 msgid ""
 "Program launchers, window buttons, applications menu, workspace switcher and"
 " more."
-msgstr "Programstartere, vinduesknapper, programmenuer, arbejdsområdeskiftere og mere."
+msgstr "Programstartere, vinduesknapper, programmenu, arbejdsområdeskifter og mere."
 
 #: ../xfce4-about/main.c:79
 msgid "Desktop Manager"
@@ -590,7 +590,7 @@ msgstr "En moderne filhåndtering til Unix-/Linux-skrivebordet, der har som mål
 
 #: ../xfce4-about/main.c:89
 msgid "Volume manager"
-msgstr "Arkivhåndtering"
+msgstr "Diskområdehåndtering"
 
 #: ../xfce4-about/main.c:90
 msgid "Automatic management of removable drives and media for Thunar."
@@ -632,7 +632,7 @@ msgstr "Indstillingsdæmon"
 
 #: ../xfce4-about/main.c:109
 msgid "D-Bus-based configuration storage system."
-msgstr "D-Bus-baseret system til konfiguration af lager."
+msgstr "D-Bus-baseret konfigurationslagersystem."
 
 #: ../xfce4-about/main.c:112
 msgid "A menu library"
@@ -716,7 +716,7 @@ msgstr "Pakkerne thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-sett
 #: ../xfce4-about/main.c:448
 #, c-format
 msgid "Type '%s --help' for usage information."
-msgstr "Skriv \"%s --help\" for information om anvendelse."
+msgstr "Skriv \"%s --help\" for anvendelsesinformation."
 
 #: ../xfce4-about/main.c:454
 msgid "Unable to initialize GTK+."
@@ -829,4 +829,4 @@ msgstr "Den gamle panelopsætning kunne ikke overføres"
 #: ../tests/test-ui.c:202 ../tests/test-ui.c:222 ../tests/test-ui.c:251
 #: ../tests/test-ui.c:273
 msgid "Customize settings stored by Xfconf"
-msgstr "Tilpas indstillinger gemt af Xfconf"
+msgstr "Tilpas indstillinger som er gemt af Xfconf"
