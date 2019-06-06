@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-05-17 00:30+0200\n"
-"PO-Revision-Date: 2019-05-19 23:59+0000\n"
+"PO-Revision-Date: 2019-06-06 09:45+0000\n"
 "Last-Translator: Nobuhiro Iwamatsu <iwamatsu@nigauri.org>\n"
 "Language-Team: Japanese (http://www.transifex.com/xfce/libxfce4ui/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -586,7 +586,7 @@ msgstr "ボリュームマネージャー"
 
 #: ../xfce4-about/main.c:90
 msgid "Automatic management of removable drives and media for Thunar."
-msgstr ""
+msgstr "Thunar 用のリムーバブルドライブとメディアの自動管理。"
 
 #: ../xfce4-about/main.c:93
 msgid "Session Manager"
@@ -632,7 +632,7 @@ msgstr "メニューライブラリ"
 
 #: ../xfce4-about/main.c:113
 msgid "A freedesktop.org compliant menu implementation based on GLib and GIO."
-msgstr ""
+msgstr "GLib と GIO をベースとした freedesktop.org 準拠のメニュー実装です。"
 
 #: ../xfce4-about/main.c:117
 msgid "Thumbnails service"
@@ -641,7 +641,7 @@ msgstr "サムネイルサービス"
 #: ../xfce4-about/main.c:118
 msgid ""
 "Thumbnail service implementing the thumbnail management D-Bus specification."
-msgstr ""
+msgstr "D-Bus 仕様に基づいたサムネイル管理を実装したサムネイルサービスです。"
 
 #: ../xfce4-about/main.c:125
 msgid ""
@@ -662,7 +662,7 @@ msgid ""
 " for applications and LGPL or BSDL for libraries. Look at the documentation,"
 " the source code or the Xfce website (https://www.xfce.org) for more "
 "information."
-msgstr ""
+msgstr "Xfce を構成するプログラムはフリーまたはオープンソースライセンスの条項下での利用が認められています。各アプリケーションには GPL または BSDL が、各ライブラリには LGPL または BSDL が適用されます。詳しい情報はソースコードか Xfce ウェブサイト (https://www.xfce.org) にある文書をご覧ください。"
 
 #: ../xfce4-about/main.c:162
 msgid "Thank you for your interest in Xfce."
@@ -676,7 +676,7 @@ msgstr "Xfce 開発チーム"
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
 "on <https://bugzilla.xfce.org> ."
-msgstr ""
+msgstr "このリストに記載ミスがある場合は、<https://bugzilla.xfce.org> までバグとしてお知らせください。"
 
 #: ../xfce4-about/main.c:272
 msgid "Thanks to all who helped making this software available!"
@@ -694,7 +694,7 @@ msgid ""
 "terms of the GNU Library General Public License as published by the Free "
 "Software Foundation; either version 2 of the License, or (at your option) "
 "any later version."
-msgstr ""
+msgstr "libxfce4ui、libxfce4util、および exo の各パッケージは、フリーソフトウェア財団によって発行された GNU ライブラリ一般公衆使用許諾契約書 (バージョン2か、希望によってはそれ以降のバージョンのうちどれか) の定める条件下で配布されています。"
 
 #: ../xfce4-about/main.c:301
 msgid ""
@@ -703,7 +703,7 @@ msgid ""
 "of the GNU General Public License as published by the Free Software "
 "Foundation; either version 2 of the License, or (at your option) any later "
 "version."
-msgstr ""
+msgstr "thunar、xfce4-appfinder、xfce4-panel、xfce4-session、xfce4-settings、xfconf、xfdesktop および xfwm4 の各パッケージは、フリーソフトウェア財団によって発行された GNU ライブラリ一般公衆使用許諾契約書 (バージョン2か、希望によってはそれ以降のバージョンのうちどれか) の定める条件下で配布されています。"
 
 #: ../xfce4-about/main.c:448
 #, c-format
