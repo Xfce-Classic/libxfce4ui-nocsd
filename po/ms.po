@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-05-17 00:30+0200\n"
-"PO-Revision-Date: 2019-06-04 18:57+0000\n"
+"PO-Revision-Date: 2019-06-17 12:49+0000\n"
 "Last-Translator: abuyop <abuyop@gmail.com>\n"
 "Language-Team: Malay (http://www.transifex.com/xfce/libxfce4ui/language/ms/)\n"
 "MIME-Version: 1.0\n"
@@ -587,7 +587,7 @@ msgstr "Pengurus Volum"
 
 #: ../xfce4-about/main.c:90
 msgid "Automatic management of removable drives and media for Thunar."
-msgstr ""
+msgstr "Pengurusan berautomatik bagi peranti boleh tanggal dan media untuk Thunar."
 
 #: ../xfce4-about/main.c:93
 msgid "Session Manager"
@@ -629,20 +629,20 @@ msgstr "Konfigurasi simpanan sistem berasaskan D-Bus."
 
 #: ../xfce4-about/main.c:112
 msgid "A menu library"
-msgstr ""
+msgstr "Pustaka menu"
 
 #: ../xfce4-about/main.c:113
 msgid "A freedesktop.org compliant menu implementation based on GLib and GIO."
-msgstr ""
+msgstr "Perlaksanaan menu menuruti freedesktop.org yang berasaskan GLib dan GIO."
 
 #: ../xfce4-about/main.c:117
 msgid "Thumbnails service"
-msgstr ""
+msgstr "Perkhidmatan lakaran kenit"
 
 #: ../xfce4-about/main.c:118
 msgid ""
 "Thumbnail service implementing the thumbnail management D-Bus specification."
-msgstr ""
+msgstr "Spesifikasi D-Bus bagi pengurusan lakaran kenit untuk perlaksanaan perkhidmatan lakaran kenit."
 
 #: ../xfce4-about/main.c:125
 msgid ""
@@ -663,7 +663,7 @@ msgid ""
 " for applications and LGPL or BSDL for libraries. Look at the documentation,"
 " the source code or the Xfce website (https://www.xfce.org) for more "
 "information."
-msgstr ""
+msgstr "Komponen Xfce dilesenkan dibawah lesen bebas dan sumber terbuka; GPL atau BSDL untuk aplikasi dan LGPL atau BSDL untuk pustaka. Lihat pada dokumentasi, kod sumber atau laman sesawang Xfce (https://www.xfce.org) untuk maklumat lanjut."
 
 #: ../xfce4-about/main.c:162
 msgid "Thank you for your interest in Xfce."
@@ -677,7 +677,7 @@ msgstr "Pasukan Pembangunan Xfce"
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
 "on <https://bugzilla.xfce.org> ."
-msgstr ""
+msgstr "Jika anda menjumpai siapa yang tiada dalam senarai ini; jangan ragu dan failkan pepijat pada <https://bugzilla.xfce.org> ."
 
 #: ../xfce4-about/main.c:272
 msgid "Thanks to all who helped making this software available!"
@@ -695,7 +695,7 @@ msgid ""
 "terms of the GNU Library General Public License as published by the Free "
 "Software Foundation; either version 2 of the License, or (at your option) "
 "any later version."
-msgstr ""
+msgstr "Pakej libxfce4ui, libxfcegui4 dan exo diedarkan di bawah syarat-syarat GNU General Public License seperti yang diterbitkan oleh Free Software Foundation; sama ada Lesen versi 2, atau (atas pilihan anda) mana-mana versi selepas ini."
 
 #: ../xfce4-about/main.c:301
 msgid ""
@@ -704,7 +704,7 @@ msgid ""
 "of the GNU General Public License as published by the Free Software "
 "Foundation; either version 2 of the License, or (at your option) any later "
 "version."
-msgstr ""
+msgstr "Pakej thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfconf, xfdesktop dan xfwm4 diedarkan di bawah syarat-syarat GNU General Public License seperti yang diterbitkan oleh Free Software Foundation; sama ada Lesen versi 2, atau (atas pilihan anda) mana-mana versi selepas ini."
 
 #: ../xfce4-about/main.c:448
 #, c-format
