@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-05-17 00:30+0200\n"
-"PO-Revision-Date: 2019-06-20 10:22+0000\n"
+"PO-Revision-Date: 2019-06-20 10:38+0000\n"
 "Last-Translator: Real School <translator_students@realschool.am>\n"
 "Language-Team: Armenian (Armenia) (http://www.transifex.com/xfce/libxfce4ui/language/hy_AM/)\n"
 "MIME-Version: 1.0\n"
@@ -688,7 +688,7 @@ msgstr "Շնորհակալութիւն բոլոր նրանց, ովքեր աւգ�
 msgid ""
 "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
-msgstr "Xfce4-ի հեղինակային իրաւունքը պատկանում է Օլիվեր Ֆաունդանին (fourdan@xfce.org)։ Տարբեր բաղադրիչների հեղինակային իրաւունքները պաշտպանվում են դրանք ստեղծող հեղինակների կողմից։"
+msgstr "Xfce4-ի հեղինակային իրաւունքը պատկանում է Օլիվեր Ֆաունդանին (fourdan@xfce.org)։ Տարբեր բաղադրիչների հեղինակային իրաւունքները պաշտպանուում են դրանք ստեղծող հեղինակների կողմից։"
 
 #: ../xfce4-about/main.c:294
 msgid ""
@@ -755,7 +755,7 @@ msgstr "Գործունեայ աջակիցներ"
 
 #: ../xfce4-about/contributors.h:131
 msgid "Servers maintained by"
-msgstr "Սպասարկիչների կարգավորում"
+msgstr "Սպասարկիչների կարգաւորում"
 
 #: ../xfce4-about/contributors.h:134
 msgid "Translations supervision"
