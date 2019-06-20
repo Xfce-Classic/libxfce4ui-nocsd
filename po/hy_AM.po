@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-05-17 00:30+0200\n"
-"PO-Revision-Date: 2019-06-12 10:49+0000\n"
+"PO-Revision-Date: 2019-06-20 10:22+0000\n"
 "Last-Translator: Real School <translator_students@realschool.am>\n"
 "Language-Team: Armenian (Armenia) (http://www.transifex.com/xfce/libxfce4ui/language/hy_AM/)\n"
 "MIME-Version: 1.0\n"
@@ -430,11 +430,11 @@ msgstr "Տեղադրել պատուհանը վերեւի աջ կողմում"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:87
 msgid "Tile window to the bottom-left"
-msgstr "Տեղադրել պատուհանը ներքեւ ձախ կողմում"
+msgstr "Տեղադրել պատուհանը ներքեւի ձախ կողմում"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:88
 msgid "Tile window to the bottom-right"
-msgstr "Տեղադրել պատուհանը ներքեւ աջ կողմում"
+msgstr "Տեղադրել պատուհանը ներքեւի աջ կողմում"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:89
 msgid "Show desktop"
@@ -570,7 +570,7 @@ msgstr "Աշխատասեղանի կառավարիչ"
 msgid ""
 "Sets the background color or image with optional application menu or icons "
 "for minimized applications or launchers, devices and folders."
-msgstr "Սահմանում է յետնապատկերի գույն կամ պատկեր, ընտրանքային յաւելուածների ցանկերով կամ պատկերակներով՝ փոքրացուած յաւելուածների, գործարկիչների, սարքերի եւ պանակների համար։"
+msgstr "Սահմանում է յետնապատկերի գոյն կամ պատկեր, ընտրանքային յաւելուածների ցանկերով կամ պատկերակներով՝ փոքրացուած յաւելուածների, գործարկիչների, սարքերի եւ պանակների համար։"
 
 #: ../xfce4-about/main.c:84
 msgid "File Manager"
@@ -618,7 +618,7 @@ msgstr "Յաւելուածների որոնում"
 msgid ""
 "Shows the applications installed on your system in categories, so you can "
 "quickly find and launch them."
-msgstr "Ցոյց է տալիս համակարգում տեղակայված ծրագրերն ըստ կարգերի, որի արդիւնքում հնարաւոր է լինում արագ գտնել եւ գործարկել դրանք։"
+msgstr "Ցոյց է տալիս համակարգում տեղակայուած ծրագրերն ըստ կարգերի, որի արդիւնքում հնարաւոր է լինում արագ գտնել եւ գործարկել դրանք։"
 
 #: ../xfce4-about/main.c:108
 msgid "Settings Daemon"
