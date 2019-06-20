@@ -50,9 +50,12 @@ static const ContributorInfo xfce_contributors_core[] =
 
 static const ContributorInfo xfce_contributors_active[] =
 {
+  { "Alistair Buxton", "a.j.buxton@gmail.com" },
   { "Igor", "f2404@yandex.ru" },
   { "Olivier Duchateau", "duchateau.olivier@gmail.com" },
   { "Silvio Knizek", "killermoehre@gmx.net" },
+  { "Theo Linkspfeifer", "lastonestanding@tutanota.com" },
+  { "Tony Paulic", "tony.paulic@gmail.com" },
   { "Viktor Odintsev", "ninetls@xfce.org" },
   { "Yves-Alexis Perez", "corsac@debian.org" },
   { NULL, NULL }
