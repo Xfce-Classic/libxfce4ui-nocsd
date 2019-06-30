@@ -1,4 +1,13 @@
-﻿4.13.5
+﻿4.13.6
+======
+- Update active contributors
+- Translation Updates:
+  Albanian, Belarusian, Catalan, Danish, Dutch (Flemish), English 
+  (Australia), Finnish, Galician, Hebrew, Hungarian, Italian, Japanese, 
+  Kazakh, Malay, Portuguese, Portuguese (Brazilian), Russian, Serbian, 
+  Spanish, Thai, Turkish
+
+4.13.5
 ======
 - Add PrintScreen as shortcut for xfce4-screenshooter (Bug #14524)
 - Add Ctrl + Alt + t as default shortcut for terminal (Bug #14510)
