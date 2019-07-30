@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-05-17 00:30+0200\n"
-"PO-Revision-Date: 2019-05-18 06:14+0000\n"
+"PO-Revision-Date: 2019-07-30 09:26+0000\n"
 "Last-Translator: Daniel Muñiz Fontoira <dani@damufo.com>\n"
 "Language-Team: Galician (http://www.transifex.com/xfce/libxfce4ui/language/gl/)\n"
 "MIME-Version: 1.0\n"
@@ -634,7 +634,7 @@ msgstr "Unha biblioteca de menús"
 
 #: ../xfce4-about/main.c:113
 msgid "A freedesktop.org compliant menu implementation based on GLib and GIO."
-msgstr "Un aplicativo de menú compatible con freedesktop.org baseado en GLib e GIO."
+msgstr "Un menú compatible coa especificación freedesktop.org baseado en GLib e GIO."
 
 #: ../xfce4-about/main.c:117
 msgid "Thumbnails service"
@@ -649,14 +649,14 @@ msgstr "O servizo de miniaturas que inclue a especificación D-Bus de xestión d
 msgid ""
 "Xfce is a collection of programs that together provide a full-featured "
 "desktop environment. The following programs are part of the Xfce core:"
-msgstr "Xfce é unha colección de programas que xuntos fornecen un ambiente de escritorio con moitas características. Os seguintes programas forman parte do núcleo de Xfce:"
+msgstr "Xfce é unha colección de programas que xuntos fornecen un contorno de escritorio con moitas características. Os seguintes programas forman parte do núcleo de Xfce:"
 
 #: ../xfce4-about/main.c:149
 msgid ""
 "Xfce is also a development platform providing several libraries, that help "
 "programmers create applications that fit in well with the desktop "
 "environment."
-msgstr "Xfce tamén é unha plataforma de desenvolvemento que fornece varias bibliotecas que lle axudan aos programadores a crear aplicativos que se integren ben co ambiente de escritorio."
+msgstr "Xfce tamén é unha plataforma de desenvolvemento que fornece varias bibliotecas que lle axudan aos programadores a crear aplicativos que se integren ben co contorno de escritorio."
 
 #: ../xfce4-about/main.c:155
 msgid ""
@@ -678,7 +678,7 @@ msgstr "O equipo de desenvolvemento de Xfce"
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
 "on <https://bugzilla.xfce.org> ."
-msgstr "Se considera que falta algo nesta lista; non dubide en enviar un informe de fallo a través de <https://bugzilla.xfce.org>."
+msgstr "Se considera que falta algo nesta lista; non dubide e redacte un informe de fallos a través de <https://bugzilla.xfce.org>."
 
 #: ../xfce4-about/main.c:272
 msgid "Thanks to all who helped making this software available!"
@@ -775,11 +775,11 @@ msgstr "Sobre Xfce"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:2
 msgid "Information about the Xfce Desktop Environment"
-msgstr "Información sobre o ambiente de escritorio Xfce"
+msgstr "Información sobre o contorno de escritorio Xfce"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:1
 msgid "About the Xfce Desktop Environment"
-msgstr "Sobre o equipo de desenvolvemento de Xfce"
+msgstr "Sobre o contorno de escritorio Xfce"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:2
 msgid "About"
