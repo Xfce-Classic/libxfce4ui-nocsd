@@ -72,7 +72,7 @@ xfce_gtk_button_new_mixed (const gchar *stock_id,
     {
       button = gtk_button_new_with_mnemonic (label);
 
-      if (stock_id != NULL)
+      if (stock_id != NULL && strlen(stock_id) > 0)
         {
           /* create image widget */
 #if !GTK_CHECK_VERSION (3, 10, 0)
