@@ -320,12 +320,12 @@ xfce_shortcuts_grabber_grab (XfceShortcutsGrabber *grabber,
 #if GTK_CHECK_VERSION (3, 0, 0)
           /* Retrieve the root window of the screen */
           root_window = GDK_WINDOW_XID (gdk_screen_get_root_window (gdk_display_get_screen (display, j)));
+          gdk_x11_display_error_trap_push (display);
 #else
           /* Retrieve the root window of the screen */
           root_window = GDK_WINDOW_XWINDOW (gdk_screen_get_root_window (gdk_display_get_screen (display, j)));
-#endif
-
           gdk_error_trap_push ();
+#endif
 
           for (k = 0; k < G_N_ELEMENTS (mod_masks); k++)
             {
@@ -345,9 +345,15 @@ xfce_shortcuts_grabber_grab (XfceShortcutsGrabber *grabber,
                             root_window);
             }
 
+#if GTK_CHECK_VERSION (3, 0, 0)
+          gdk_display_flush (display);
+
+          if (gdk_x11_display_error_trap_pop (display))
+#else
           gdk_flush ();
 
           if (gdk_error_trap_pop ())
+#endif
             {
               if (grab)
                 TRACE ("Failed to grab");
@@ -404,6 +410,7 @@ xfce_shortcuts_grabber_event_filter (GdkXEvent            *gdk_xevent,
   struct EventKeyFindContext  context;
   GdkKeymap                  *keymap;
   GdkModifierType             consumed, modifiers;
+  GdkDisplay                 *display;
   XEvent                     *xevent;
   guint                       keyval, mod_mask;
   gchar                      *raw_shortcut_name;
@@ -421,7 +428,12 @@ xfce_shortcuts_grabber_event_filter (GdkXEvent            *gdk_xevent,
   timestamp = xevent->xkey.time;
 
   /* Get the keyboard state */
+  display = gdk_display_get_default ();
+#if GTK_CHECK_VERSION (3, 0, 0)
+  gdk_x11_display_error_trap_push (display);
+#else
   gdk_error_trap_push ();
+#endif
   keymap = gdk_keymap_get_default ();
   mod_mask = gtk_accelerator_get_default_mod_mask ();
   modifiers = xevent->xkey.state;
@@ -483,11 +495,11 @@ xfce_shortcuts_grabber_event_filter (GdkXEvent            *gdk_xevent,
     g_signal_emit_by_name (grabber, "shortcut-activated",
                            context.result, timestamp);
 
-  gdk_flush ();
-
 #if GTK_CHECK_VERSION (3, 0, 0)
-  gdk_error_trap_pop_ignored ();
+  gdk_display_flush (display);
+  gdk_x11_display_error_trap_pop_ignored (display);
 #else
+  gdk_flush ();
   gdk_error_trap_pop ();
 #endif
 
