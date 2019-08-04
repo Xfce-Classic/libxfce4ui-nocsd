@@ -715,7 +715,10 @@ xfce_sm_client_parse_argv(XfceSMClient *sm_client)
         for(i = 0; i < argc; ++i)
             restart_command[i] = argv[i];
         restart_command[i++] = "--display";
+G_GNUC_BEGIN_IGNORE_DEPRECATIONS
+        /* TODO: Move xfwm_make_display_name to libxfce4ui */
         restart_command[i++] = display_name = gdk_screen_make_display_name(gscreen);
+G_GNUC_END_IGNORE_DEPRECATIONS
     } else
         restart_command = argv;
 

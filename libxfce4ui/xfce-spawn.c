@@ -365,7 +365,10 @@ xfce_spawn_on_screen_with_child_watch (GdkScreen    *screen,
     }
 
   /* add the real display name for the screen */
+G_GNUC_BEGIN_IGNORE_DEPRECATIONS
+  /* TODO: Move xfwm_make_display_name to libxfce4ui */
   display_name = gdk_screen_make_display_name (screen);
+G_GNUC_END_IGNORE_DEPRECATIONS
   cenvp[n_cenvp++] = g_strconcat ("DISPLAY=", display_name, NULL);
   g_free (display_name);
 
@@ -373,9 +376,11 @@ xfce_spawn_on_screen_with_child_watch (GdkScreen    *screen,
   /* initialize the sn launcher context */
   if (G_LIKELY (startup_notify))
     {
+G_GNUC_BEGIN_IGNORE_DEPRECATIONS
       sn_display = sn_display_new (GDK_SCREEN_XDISPLAY (screen),
                                    (SnDisplayErrorTrapPush) (void (*)(void)) gdk_error_trap_push,
                                    (SnDisplayErrorTrapPop) (void (*)(void)) gdk_error_trap_pop);
+G_GNUC_END_IGNORE_DEPRECATIONS
 
       if (G_LIKELY (sn_display != NULL))
         {

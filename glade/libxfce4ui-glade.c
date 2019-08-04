@@ -70,9 +70,12 @@ glade_xfce_titled_dialog_post_create (GladeWidgetAdaptor *adaptor,
       glade_widget_remove_property (vbox, "border-width");
 
       /* create the action area */
+G_GNUC_BEGIN_IGNORE_DEPRECATIONS
+      /* TODO: Move exo_gtk_dialog_get_action_area to libxfce4ui */
       action_area = glade_widget_adaptor_create_internal (vbox,
           G_OBJECT (gtk_dialog_get_action_area (dialog)),
           "action_area", "dialog", FALSE, reason);
+G_GNUC_END_IGNORE_DEPRECATIONS
       glade_widget_remove_property (action_area, "border-width");
       glade_widget_remove_property (action_area, "spacing");
 
@@ -102,7 +105,12 @@ glade_xfce_titled_dialog_get_internal_child (GladeWidgetAdaptor *adaptor,
   if (strcmp ("vbox", name) == 0)
     child = gtk_dialog_get_content_area (dialog);
   else if (strcmp ("action_area", name) == 0)
-    child = gtk_dialog_get_action_area (dialog);
+    {
+G_GNUC_BEGIN_IGNORE_DEPRECATIONS
+      /* TODO: Move exo_gtk_dialog_get_action_area to libxfce4ui */
+      child = gtk_dialog_get_action_area (dialog);
+G_GNUC_END_IGNORE_DEPRECATIONS
+    }
 
   return child;
 }

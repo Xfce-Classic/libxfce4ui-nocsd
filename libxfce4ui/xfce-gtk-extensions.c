@@ -275,6 +275,7 @@ xfce_gtk_menu_popup_until_mapped (GtkMenu *menu,
 
   while ((i++ < 2500) && (!gtk_widget_get_mapped (GTK_WIDGET (menu))))
     {
+G_GNUC_BEGIN_IGNORE_DEPRECATIONS
         gtk_menu_popup (GTK_MENU (menu),
                         parent_menu_shell,
                         parent_menu_item,
@@ -282,6 +283,7 @@ xfce_gtk_menu_popup_until_mapped (GtkMenu *menu,
                         data,
                         button,
                         activate_time);
+G_GNUC_END_IGNORE_DEPRECATIONS
 
         g_usleep (100);
     }
