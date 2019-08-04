@@ -340,9 +340,7 @@ xfce_shortcut_dialog_run (XfceShortcutDialog *dialog,
 {
 #if GTK_CHECK_VERSION (3, 0, 0)
   GdkDisplay       *display;
-  GdkDevice        *device;
-  GdkDeviceManager *device_manager;
-  GList            *devices, *li;
+  GdkSeat          *seat;
   gboolean          succeed = FALSE;
 #endif
   gint              response = GTK_RESPONSE_CANCEL;
@@ -354,22 +352,13 @@ xfce_shortcut_dialog_run (XfceShortcutDialog *dialog,
 
 #if GTK_CHECK_VERSION (3, 0, 0)
   display = gtk_widget_get_display (GTK_WIDGET (dialog));
-  device_manager = gdk_display_get_device_manager (display);
-  devices = gdk_device_manager_list_devices (device_manager, GDK_DEVICE_TYPE_MASTER);
+  seat = gdk_display_get_default_seat (display);
 
-  for (li = devices; li != NULL; li =li->next)
+  if (gdk_seat_grab (seat,
+                 gdk_screen_get_root_window (gdk_display_get_default_screen (display)),
+                 GDK_SEAT_CAPABILITY_KEYBOARD, TRUE, NULL, NULL, NULL, NULL) == GDK_GRAB_SUCCESS)
     {
-      device = li->data;
-      if (gdk_device_get_source (device) != GDK_SOURCE_KEYBOARD)
-        continue;
-
-      if (gdk_device_grab (device, gdk_screen_get_root_window (gdk_display_get_default_screen (display)),
-                           GDK_OWNERSHIP_WINDOW, TRUE,
-                           GDK_KEY_PRESS_MASK | GDK_KEY_RELEASE_MASK,
-                           NULL, GDK_CURRENT_TIME) == GDK_GRAB_SUCCESS)
-        {
-          succeed = TRUE;
-        }
+      succeed = TRUE;
     }
 
   /* Take control on the keyboard */
@@ -391,12 +380,7 @@ xfce_shortcut_dialog_run (XfceShortcutDialog *dialog,
 
 #if GTK_CHECK_VERSION (3, 0, 0)
       /* Release keyboard */
-      for (li = devices; li != NULL; li =li->next)
-        {
-          device = li->data;
-          if (gdk_device_get_source (device) == GDK_SOURCE_KEYBOARD)
-            gdk_device_ungrab (device, GDK_CURRENT_TIME);
-        }
+      gdk_seat_ungrab (seat);
 #else
       /* Release keyboard */
       gdk_keyboard_ungrab (GDK_CURRENT_TIME);
@@ -406,10 +390,6 @@ xfce_shortcut_dialog_run (XfceShortcutDialog *dialog,
     {
       g_warning (_("Could not grab the keyboard."));
     }
-
-#if GTK_CHECK_VERSION (3, 0, 0)
-  g_list_free (devices);
-#endif
 
   /* Return the response ID */
   return response;

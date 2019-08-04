@@ -63,19 +63,12 @@ xfce_gdk_screen_get_active (gint *monitor_return)
   gint              rootx, rooty;
   GdkScreen        *screen;
 
-#if 0 /* GTK_CHECK_VERSION (3, 20, 0) */
+#if GTK_CHECK_VERSION (3, 22, 0)
   GdkSeat *seat;
 
   display = gdk_display_get_default ();
   seat = gdk_display_get_default_seat (display);
   gdk_device_get_position (gdk_seat_get_pointer (seat), &screen, &rootx, &rooty);
-#elif GTK_CHECK_VERSION (3, 0, 0)
-  GdkDeviceManager *manager;
-
-  display = gdk_display_get_default ();
-  manager = gdk_display_get_device_manager (display);
-  gdk_device_get_position (gdk_device_manager_get_client_pointer (manager),
-                           &screen, &rootx, &rooty);
 #else
   display = gdk_display_get_default ();
   gdk_display_get_pointer (display, &screen, &rootx, &rooty, NULL);
