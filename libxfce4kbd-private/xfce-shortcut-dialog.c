@@ -401,6 +401,7 @@ static gboolean
 xfce_shortcut_dialog_key_pressed (XfceShortcutDialog *dialog,
                                   GdkEventKey        *event)
 {
+  GdkDisplay      *display;
   GdkKeymap       *keymap;
   GdkModifierType  consumed, modifiers;
   guint            keyval, mod_mask;
@@ -412,7 +413,8 @@ xfce_shortcut_dialog_key_pressed (XfceShortcutDialog *dialog,
 
   /* Get the keyboard state */
   mod_mask = gtk_accelerator_get_default_mod_mask ();
-  keymap = gdk_keymap_get_default ();
+  display = gdk_display_get_default ();
+  keymap = gdk_keymap_get_for_display (display);
   modifiers = event->state;
 
   gdk_keymap_translate_keyboard_state (keymap, event->hardware_keycode,

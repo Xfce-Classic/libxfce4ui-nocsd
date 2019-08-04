@@ -110,6 +110,9 @@ xfce_shortcuts_grabber_class_init (XfceShortcutsGrabberClass *klass)
 static void
 xfce_shortcuts_grabber_init (XfceShortcutsGrabber *grabber)
 {
+  GdkDisplay      *display;
+  GdkKeymap       *keymap;
+
   grabber->priv = XFCE_SHORTCUTS_GRABBER_GET_PRIVATE (grabber);
   grabber->priv->keys = g_hash_table_new_full (g_str_hash, g_str_equal, g_free, g_free);
 
@@ -118,7 +121,9 @@ xfce_shortcuts_grabber_init (XfceShortcutsGrabber *grabber)
    * mapped because the modmap is not updated. The following function
    * updates it.
    */
-  (void) gdk_keymap_have_bidi_layouts (gdk_keymap_get_default ());
+  display = gdk_display_get_default ();
+  keymap = gdk_keymap_get_for_display (display);
+  (void) gdk_keymap_have_bidi_layouts (keymap);
 }
 
 
@@ -131,11 +136,10 @@ xfce_shortcuts_grabber_constructed (GObject *object)
 
   XfceShortcutsGrabber *grabber = XFCE_SHORTCUTS_GRABBER (object);
 
-  keymap = gdk_keymap_get_default ();
+  display = gdk_display_get_default ();
+  keymap = gdk_keymap_get_for_display (display);
   g_signal_connect (keymap, "keys-changed", G_CALLBACK (xfce_shortcuts_grabber_keys_changed),
                     grabber);
-
-  display = gdk_display_get_default ();
 
   /* Flush events before adding the event filter */
   XAllowEvents (GDK_DISPLAY_XDISPLAY (display), AsyncBoth, CurrentTime);
@@ -242,7 +246,7 @@ xfce_shortcuts_grabber_grab (XfceShortcutsGrabber *grabber,
 #else
   screens = gdk_display_get_n_screens (display);
 #endif
-  keymap = gdk_keymap_get_default ();
+  keymap = gdk_keymap_get_for_display (display);
 
   /* Map virtual modifiers to non-virtual modifiers */
   modifiers = key->modifiers;
@@ -434,7 +438,7 @@ xfce_shortcuts_grabber_event_filter (GdkXEvent            *gdk_xevent,
 #else
   gdk_error_trap_push ();
 #endif
-  keymap = gdk_keymap_get_default ();
+  keymap = gdk_keymap_get_for_display (display);
   mod_mask = gtk_accelerator_get_default_mod_mask ();
   modifiers = xevent->xkey.state;
 
