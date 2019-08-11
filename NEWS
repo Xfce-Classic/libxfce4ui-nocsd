@@ -1,9 +1,15 @@
+4.14.0
+======
+
+- Do not try to a set button' image if an empty string was used
+- Translation Updates: Galician
+
 4.13.7
 ======
 - Translation Updates:
   Norwegian Bokmål, Finnish, Portuguese (Brazil), Ukrainian
 
-﻿4.13.6
+4.13.6
 ======
 - Update active contributors
 - Translation Updates:
