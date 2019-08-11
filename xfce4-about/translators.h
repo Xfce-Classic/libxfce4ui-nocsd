@@ -150,7 +150,6 @@ static const TranslatorInfo xfce_translators_en_CA[] =
 static const TranslatorInfo xfce_translators_en_GB[] =
 {
 	{ "Andi Chandler","andi@gowling.com", FALSE },
-	{ "Andre Miranda","andre42m@gmail.com", FALSE },
 	{ "Jackson Doak","noskcaj@ubuntu.com", FALSE },
 	{ "Robert Readman","robert_readman@hotmail.com", FALSE },
 	{ NULL, NULL }
@@ -165,7 +164,6 @@ static const TranslatorInfo xfce_translators_eo[] =
 static const TranslatorInfo xfce_translators_es[] =
 {
 	{ "Alfredo Quintero","alfredomob@gmail.com", FALSE },
-	{ "Andre Miranda","andre42m@gmail.com", FALSE },
 	{ "Brian Peraza-Orozco","brian.peraza@gmail.com", FALSE },
 	{ "César Enrique García","cquike@gmail.com", FALSE },
 	{ "Christian Manuel Torres Romero","christian.mtr@gmail.com", FALSE },
