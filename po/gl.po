@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-05-17 00:30+0200\n"
-"PO-Revision-Date: 2019-07-30 09:26+0000\n"
+"PO-Revision-Date: 2019-08-16 21:16+0000\n"
 "Last-Translator: Daniel Muñiz Fontoira <dani@damufo.com>\n"
 "Language-Team: Galician (http://www.transifex.com/xfce/libxfce4ui/language/gl/)\n"
 "MIME-Version: 1.0\n"
@@ -103,7 +103,7 @@ msgstr "Opcións de xestión de sesións"
 
 #: ../libxfce4ui/xfce-sm-client.c:1436
 msgid "Show session management options"
-msgstr "Mostrar as opcións de xestión de sesión"
+msgstr "Amosar as opcións de xestión de sesión"
 
 #: ../libxfce4ui/xfce-sm-client.c:1611
 #, c-format
@@ -226,7 +226,7 @@ msgstr "Aínda non se premeu ningunha tecla, continúe."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:407
 msgid "Could not grab the keyboard."
-msgstr "Non foi posíbel obter o teclado."
+msgstr "Non se puido obter o teclado."
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:36
 msgid "Window operations menu"
@@ -438,7 +438,7 @@ msgstr "Xerar mosaico da xanela abaixo á dereita"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:89
 msgid "Show desktop"
-msgstr "Mostrar o escritorio"
+msgstr "Amosar o escritorio"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:90
 msgid "Upper workspace"
@@ -618,7 +618,7 @@ msgstr "Buscador de aplicativos"
 msgid ""
 "Shows the applications installed on your system in categories, so you can "
 "quickly find and launch them."
-msgstr "Mostra os aplicativos instalados no sistema mediante categorías de xeito que se fáciles de atopar e de iniciar."
+msgstr "Amosar os aplicativos instalados no sistema mediante categorías de xeito que se fáciles de atopar e de iniciar."
 
 #: ../xfce4-about/main.c:108
 msgid "Settings Daemon"
@@ -634,7 +634,7 @@ msgstr "Unha biblioteca de menús"
 
 #: ../xfce4-about/main.c:113
 msgid "A freedesktop.org compliant menu implementation based on GLib and GIO."
-msgstr "Un menú compatible coa especificación freedesktop.org baseado en GLib e GIO."
+msgstr "Un menú compatíbel coa especificación freedesktop.org baseado en GLib e GIO."
 
 #: ../xfce4-about/main.c:117
 msgid "Thumbnails service"
@@ -714,7 +714,7 @@ msgstr "Escriba «%s --help» para obter información sobre o modo de uso."
 
 #: ../xfce4-about/main.c:454
 msgid "Unable to initialize GTK+."
-msgstr "Non foi posíbel inicializar GTK+."
+msgstr "Non se puido inicializar GTK+."
 
 #: ../xfce4-about/main.c:463
 msgid "The Xfce development team. All rights reserved."
@@ -818,7 +818,7 @@ msgstr "Xa existe un ficheiro chamado «%s» neste directorio; non se engadiu o 
 
 #: ../tests/test-ui.c:149
 msgid "Failed to migrate the old panel configuration"
-msgstr "Non foi posíbel migrar a configuración antiga do panel"
+msgstr "Non se puido migrar a configuración antiga do panel"
 
 #: ../tests/test-ui.c:202 ../tests/test-ui.c:222 ../tests/test-ui.c:251
 #: ../tests/test-ui.c:273
