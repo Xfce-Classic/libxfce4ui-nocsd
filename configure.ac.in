@@ -138,6 +138,14 @@ XDT_CHECK_OPTIONAL_PACKAGE([GTK2],
                            [GTK+ 2 support])
 AM_CONDITIONAL([ENABLE_GTK2_LIBRARY], [test "x$GTK2_FOUND" = "xyes"])
 
+dnl ****************************************************************
+dnl *** Optional support for system information based on glibtop ***
+dnl ****************************************************************
+XDT_CHECK_OPTIONAL_PACKAGE([GLIBTOP],
+                           [libgtop-2.0], [2.24.0], [glibtop],
+                           [GLIBTOP support])
+AM_CONDITIONAL([ENABLE_GLIBTOP], [test "x$GLIBTOP_FOUND" = "xyes"])
+
 AC_DEFINE(GLIB_VERSION_MIN_REQUIRED, GLIB_VERSION_2_42, [Ignore post 2.42 deprecations])
 AC_DEFINE(GLIB_VERSION_MAX_ALLOWED, GLIB_VERSION_2_42, [Prevent post 2.42 APIs])
 
@@ -439,6 +447,11 @@ echo "Note you can put additional info about the vendor"
 echo "in this text file: \"${datarootdir}/xfce4/vendorinfo\""
 else
 echo "* Vendor:                    none"
+fi
+if test x"$GLIBTOP_FOUND" = x"yes"; then
+echo "* System Info:               yes"
+else
+echo "* System Info:               no"
 fi
 echo "* Manual website:            $with_manual_website"
 echo

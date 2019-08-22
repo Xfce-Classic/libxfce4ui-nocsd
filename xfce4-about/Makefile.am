@@ -10,22 +10,27 @@ bin_PROGRAMS = \
 	xfce4-about
 
 xfce4_about_built_sources = \
+	system-info.c \
+	system-info.h \
 	about-dialog-ui.h
 
 xfce4_about_SOURCES = \
 	$(xfce4_about_built_sources) \
 	contributors.h \
 	translators.h \
+	system-info.h \
 	main.c
 
 xfce4_about_CFLAGS = \
 	$(LIBXFCE4UTIL_CFLAGS) \
 	$(GTK3_CFLAGS) \
+	$(GLIBTOP_CFLAGS) \
 	$(PLATFORM_CFLAGS)
 
 xfce4_about_LDADD = \
 	$(top_builddir)/libxfce4ui/libxfce4ui-2.la \
 	$(LIBXFCE4UTIL_LIBS) \
+	$(GLIBTOP_LIBS) \
 	$(GTK3_LIBS)
 
 xfce4_about_DEPENDENCIES = \
@@ -55,4 +60,3 @@ endif
 EXTRA_DIST = \
 	$(desktop_in_files) \
 	xfce4-about-dialog.glade
-

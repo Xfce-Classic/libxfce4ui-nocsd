@@ -30,6 +30,7 @@
 
 #include "contributors.h"
 #include "translators.h"
+#include "system-info.h"
 #include "about-dialog-ui.h"
 
 #define MARGIN 20
@@ -52,6 +53,48 @@ static GOptionEntry opt_entries[] =
   { "version", 'V', G_OPTION_FLAG_IN_MAIN, G_OPTION_ARG_NONE, &opt_version, N_("Version information"), NULL },
   { NULL }
 };
+
+
+
+static void
+xfce_about_system (GtkBuilder *builder)
+{
+  GObject *label;
+  glibtop_mem mem;
+  const glibtop_sysinfo *info;
+  g_autofree char *device_text = NULL;
+  g_autofree char *cpu_text = NULL;
+  g_autofree char *memory_text = NULL;
+  g_autofree char *os_name_text = NULL;
+  g_autofree char *os_type_text = NULL;
+
+
+  label = gtk_builder_get_object (builder, "device");
+  device_text = get_system_info (DEVICE_NAME);
+  gtk_label_set_text (GTK_LABEL (label), device_text ? device_text : "");
+
+  label = gtk_builder_get_object (builder, "cpu");
+  info = glibtop_get_sysinfo ();
+  cpu_text = get_cpu_info (info);
+  gtk_label_set_markup (GTK_LABEL (label), cpu_text ? cpu_text : "");
+
+  label = gtk_builder_get_object (builder, "memory");
+  glibtop_get_mem (&mem);
+  memory_text = g_format_size_full (mem.total, G_FORMAT_SIZE_IEC_UNITS);
+  gtk_label_set_text (GTK_LABEL (label), memory_text ? memory_text : "");
+
+  label = gtk_builder_get_object (builder, "graphics");
+
+  label = gtk_builder_get_object (builder, "disk");
+
+  label = gtk_builder_get_object (builder, "osname");
+  os_name_text = get_os_name ();
+  gtk_label_set_text (GTK_LABEL (label), os_name_text ? os_name_text : "");
+
+  label = gtk_builder_get_object (builder, "ostype");
+  os_type_text = get_system_info (ARCH);
+  gtk_label_set_text (GTK_LABEL (label), os_type_text ? os_type_text : "");
+}
 
 
 
@@ -493,6 +536,8 @@ main (gint    argc,
 #endif
   xfce_titled_dialog_set_subtitle (XFCE_TITLED_DIALOG (dialog), version);
   g_free (version);
+
+  xfce_about_system (builder);
 
   object = gtk_builder_get_object (builder, "about-buffer");
   xfce_about_about (GTK_TEXT_BUFFER (object));
