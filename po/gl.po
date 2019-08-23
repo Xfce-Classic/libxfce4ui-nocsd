@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-05-17 00:30+0200\n"
-"PO-Revision-Date: 2019-08-16 21:16+0000\n"
+"PO-Revision-Date: 2019-08-23 10:50+0000\n"
 "Last-Translator: Daniel Muñiz Fontoira <dani@damufo.com>\n"
 "Language-Team: Galician (http://www.transifex.com/xfce/libxfce4ui/language/gl/)\n"
 "MIME-Version: 1.0\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../libxfce4ui/xfce-dialogs.c:110
 msgid "Failed to open web browser for online documentation"
-msgstr "Produciuse un erro ao abrir o navegador web para consultar a documentación en liña"
+msgstr "Produciuse un fallo ao abrir o navegador web para consultar a documentación en liña"
 
 #: ../libxfce4ui/xfce-dialogs.c:265
 #, c-format
@@ -62,11 +62,11 @@ msgstr "Pechar"
 
 #: ../libxfce4ui/xfce-dialogs.c:391
 msgid "Warning"
-msgstr "Advertencia"
+msgstr "Aviso"
 
 #: ../libxfce4ui/xfce-dialogs.c:435
 msgid "Error"
-msgstr "Erro"
+msgstr "Fallo"
 
 #: ../libxfce4ui/xfce-dialogs.c:494
 msgid "No"
@@ -108,12 +108,12 @@ msgstr "Amosar as opcións de xestión de sesión"
 #: ../libxfce4ui/xfce-sm-client.c:1611
 #, c-format
 msgid "Failed to connect to the session manager: %s"
-msgstr "Produciuse un erro ao conectar co xestor de sesións: %s"
+msgstr "Produciuse un fallo ao conectar co xestor de sesións: %s"
 
 #: ../libxfce4ui/xfce-sm-client.c:1617
 #, c-format
 msgid "Session manager did not return a valid client id"
-msgstr "O xestor de sesións non devolveu ningún identificador de cliente válido"
+msgstr "O xestor de sesións non devolveu ningún identificador de cliente correcto"
 
 #. print warning for user
 #: ../libxfce4ui/xfce-spawn.c:421
@@ -258,11 +258,11 @@ msgstr "Percorrer as xanelas (Ao revés)"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:44
 msgid "Switch window for same application"
-msgstr "Cambiar de xanela do mesmo aplicativo"
+msgstr "Cambiar de xanela da mesma aplicación"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:45
 msgid "Switch application"
-msgstr "Cambiar de aplicativo"
+msgstr "Cambiar de aplicación"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:46
 msgid "Close window"
@@ -282,7 +282,7 @@ msgstr "Maximizar a xanela"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:50
 msgid "Hide window"
-msgstr "Ocultar a xanela"
+msgstr "Agochar a xanela"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:51
 msgid "Move window"
@@ -538,7 +538,7 @@ msgstr "Subtítulo"
 
 #: ../glade/libxfce4ui.xml.in.h:3 ../glade/libxfce4ui-2.xml.in.h:3
 msgid "Xfce 4 Widgets"
-msgstr "Trebellos de Xfce 4"
+msgstr "Trebellos do Xfce 4"
 
 #: ../xfce4-about/main.c:52
 msgid "Version information"
@@ -560,7 +560,7 @@ msgstr "Panel"
 msgid ""
 "Program launchers, window buttons, applications menu, workspace switcher and"
 " more."
-msgstr "Iniciadores de programas, botóns de xanelas, menú de aplicativos, intercambiador de espazos de traballo e máis."
+msgstr "Iniciadores de programas, botóns de xanelas, menú de aplicacións, intercambiador de espazos de traballo e máis."
 
 #: ../xfce4-about/main.c:79
 msgid "Desktop Manager"
@@ -570,7 +570,7 @@ msgstr "Xestor de xanelas"
 msgid ""
 "Sets the background color or image with optional application menu or icons "
 "for minimized applications or launchers, devices and folders."
-msgstr "Configura a cor ou imaxe de fondo con menús ou iconas de aplicativos para os aplicativos ou iniciadores minimizados, os dispositivos e os cartafoles."
+msgstr "Configura a cor ou imaxe de fondo con menús ou iconas de aplicacións para as aplicacións ou iniciadores minimizados, os dispositivos e os cartafoles."
 
 #: ../xfce4-about/main.c:84
 msgid "File Manager"
@@ -612,13 +612,13 @@ msgstr "Sistema de configuración para controlar diversos aspectos do escritorio
 
 #: ../xfce4-about/main.c:103
 msgid "Application Finder"
-msgstr "Buscador de aplicativos"
+msgstr "Buscador de aplicacións"
 
 #: ../xfce4-about/main.c:104
 msgid ""
 "Shows the applications installed on your system in categories, so you can "
 "quickly find and launch them."
-msgstr "Amosar os aplicativos instalados no sistema mediante categorías de xeito que se fáciles de atopar e de iniciar."
+msgstr "Amosar as aplicacións instaladas no sistema mediante categorías de xeito que sexan doadas de atopar e de iniciar."
 
 #: ../xfce4-about/main.c:108
 msgid "Settings Daemon"
@@ -649,14 +649,14 @@ msgstr "O servizo de miniaturas que inclue a especificación D-Bus de xestión d
 msgid ""
 "Xfce is a collection of programs that together provide a full-featured "
 "desktop environment. The following programs are part of the Xfce core:"
-msgstr "Xfce é unha colección de programas que xuntos fornecen un contorno de escritorio con moitas características. Os seguintes programas forman parte do núcleo de Xfce:"
+msgstr "O Xfce é unha colección de programas que xuntos fornecen un contorno de escritorio con moitas características. Os seguintes programas forman parte do núcleo de Xfce:"
 
 #: ../xfce4-about/main.c:149
 msgid ""
 "Xfce is also a development platform providing several libraries, that help "
 "programmers create applications that fit in well with the desktop "
 "environment."
-msgstr "Xfce tamén é unha plataforma de desenvolvemento que fornece varias bibliotecas que lle axudan aos programadores a crear aplicativos que se integren ben co contorno de escritorio."
+msgstr "O Xfce tamén é unha plataforma de desenvolvemento que fornece varias bibliotecas que lle axudan aos programadores a crear aplicacións que se integren ben co contorno de escritorio."
 
 #: ../xfce4-about/main.c:155
 msgid ""
@@ -727,7 +727,7 @@ msgstr "Por favor, comunique os fallos a <%s>."
 
 #: ../xfce4-about/main.c:474
 msgid "Failed to load interface"
-msgstr "Produciuse un erro ao cargar a interface"
+msgstr "Produciuse un fallo ao cargar a interface"
 
 #. I18N: first %s will be replaced by the version, second by
 #. * the name of the distribution (--with-vendor-info=NAME)
