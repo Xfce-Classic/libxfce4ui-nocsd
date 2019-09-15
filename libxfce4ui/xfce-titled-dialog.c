@@ -38,7 +38,6 @@
 
 #include <gdk/gdkkeysyms.h>
 
-#include <libxfce4ui/xfce-heading.h>
 #include <libxfce4ui/xfce-titled-dialog.h>
 #include <libxfce4ui/libxfce4ui-private.h>
 #include <libxfce4ui/libxfce4ui-alias.h>
@@ -57,24 +56,27 @@ enum
 };
 
 
-
-static void xfce_titled_dialog_finalize       (GObject                *object);
-static void xfce_titled_dialog_get_property   (GObject                *object,
-                                               guint                   prop_id,
-                                               GValue                 *value,
-                                               GParamSpec             *pspec);
-static void xfce_titled_dialog_set_property   (GObject                *object,
-                                               guint                   prop_id,
-                                               const GValue           *value,
-                                               GParamSpec             *pspec);
-static void xfce_titled_dialog_close          (GtkDialog              *dialog);
-static void xfce_titled_dialog_update_heading (XfceTitledDialog       *titled_dialog);
+static GObject *xfce_titled_dialog_constructor    (GType                   type,
+                                                   guint                   n_construct_params,
+                                                   GObjectConstructParam  *construct_params);
+static void     xfce_titled_dialog_finalize       (GObject                *object);
+static void     xfce_titled_dialog_get_property   (GObject                *object,
+                                                   guint                   prop_id,
+                                                   GValue                 *value,
+                                                   GParamSpec             *pspec);
+static void     xfce_titled_dialog_set_property   (GObject                *object,
+                                                   guint                   prop_id,
+                                                   const GValue           *value,
+                                                   GParamSpec             *pspec);
+static void     xfce_titled_dialog_close          (GtkDialog              *dialog);
+static void     xfce_titled_dialog_update_icon    (XfceTitledDialog       *titled_dialog);
 
 
 
 struct _XfceTitledDialogPrivate
 {
-  GtkWidget *heading;
+  GtkWidget *headerbar;
+  GtkWidget *icon;
   gchar     *subtitle;
 };
 
@@ -98,6 +100,7 @@ xfce_titled_dialog_class_init (XfceTitledDialogClass *klass)
   gobject_class->finalize = xfce_titled_dialog_finalize;
   gobject_class->get_property = xfce_titled_dialog_get_property;
   gobject_class->set_property = xfce_titled_dialog_set_property;
+  gobject_class->constructor = xfce_titled_dialog_constructor;
 
   gtkdialog_class = GTK_DIALOG_CLASS (klass);
   gtkdialog_class->close = xfce_titled_dialog_close;
@@ -123,47 +126,41 @@ xfce_titled_dialog_class_init (XfceTitledDialogClass *klass)
 }
 
 
+static GObject *
+xfce_titled_dialog_constructor (GType                  type,
+                                guint                  n_construct_params,
+                                GObjectConstructParam *construct_params)
+{
+  GObject *object;
+
+  object = G_OBJECT_CLASS (xfce_titled_dialog_parent_class)->constructor (type,
+                                                           n_construct_params,
+                                                           construct_params);
+  g_object_set (G_OBJECT (object), "use-header-bar", TRUE, NULL);
+
+  return object;
+}
 
 static void
 xfce_titled_dialog_init (XfceTitledDialog *titled_dialog)
 {
-  GtkWidget *line;
-  GtkWidget *vbox;
-  GtkWidget *content_area;
-
   /* connect the private data */
   titled_dialog->priv = XFCE_TITLED_DIALOG_GET_PRIVATE (titled_dialog);
 
-  /* remove the main dialog box from the window */
-  content_area = gtk_dialog_get_content_area (GTK_DIALOG (titled_dialog));
-  g_object_ref (G_OBJECT (content_area));
-  gtk_container_remove (GTK_CONTAINER (titled_dialog), content_area);
+  /* Get the headerbar of the dialog */
+  titled_dialog->priv->headerbar = gtk_dialog_get_header_bar (GTK_DIALOG (titled_dialog));
+  g_return_if_fail (GTK_IS_HEADER_BAR (titled_dialog->priv->headerbar));
 
-  /* add a new vbox w/o border to the main window */
-  vbox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
-  gtk_container_add (GTK_CONTAINER (titled_dialog), vbox);
-  gtk_widget_show (vbox);
+  /* Pack the window icon into the headerbar */
+  titled_dialog->priv->icon = gtk_image_new ();
+  gtk_header_bar_pack_start (GTK_HEADER_BAR (titled_dialog->priv->headerbar), titled_dialog->priv->icon);
+  gtk_header_bar_set_show_close_button (GTK_HEADER_BAR (titled_dialog->priv->headerbar), TRUE);
+  gtk_widget_show (titled_dialog->priv->icon);
 
-  /* add the heading to the window */
-  titled_dialog->priv->heading = g_object_new (XFCE_TYPE_HEADING, NULL);
-  gtk_box_pack_start (GTK_BOX (vbox), titled_dialog->priv->heading, FALSE, FALSE, 0);
-  gtk_widget_show (titled_dialog->priv->heading);
-
-  /* add the separator between header and content */
-  line = gtk_separator_new (GTK_ORIENTATION_HORIZONTAL);
-  gtk_box_pack_start (GTK_BOX (vbox), line, FALSE, FALSE, 0);
-  gtk_widget_show (line);
-
-  /* add the main dialog box to the new vbox */
-  gtk_box_pack_start (GTK_BOX (vbox), content_area, TRUE, TRUE, 0);
-  g_object_unref (G_OBJECT(content_area));
-
-  /* make sure to update the heading whenever one of the relevant window properties changes */
-  g_signal_connect (G_OBJECT (titled_dialog), "notify::icon", G_CALLBACK (xfce_titled_dialog_update_heading), NULL);
-  g_signal_connect (G_OBJECT (titled_dialog), "notify::icon-name", G_CALLBACK (xfce_titled_dialog_update_heading), NULL);
-  g_signal_connect (G_OBJECT (titled_dialog), "notify::title", G_CALLBACK (xfce_titled_dialog_update_heading), NULL);
+  /* make sure to update the icon whenever one of the relevant window properties changes */
+  g_signal_connect (G_OBJECT (titled_dialog), "notify::icon", G_CALLBACK (xfce_titled_dialog_update_icon), NULL);
+  g_signal_connect (G_OBJECT (titled_dialog), "notify::icon-name", G_CALLBACK (xfce_titled_dialog_update_icon), NULL);
 }
-
 
 
 
@@ -244,12 +241,15 @@ xfce_titled_dialog_close (GtkDialog *dialog)
 
 
 static void
-xfce_titled_dialog_update_heading (XfceTitledDialog *titled_dialog)
+xfce_titled_dialog_update_icon (XfceTitledDialog *titled_dialog)
 {
-  /* update the heading properties using the window property values */
-  _xfce_heading_set_icon (XFCE_HEADING (titled_dialog->priv->heading), gtk_window_get_icon (GTK_WINDOW (titled_dialog)));
-  _xfce_heading_set_icon_name (XFCE_HEADING (titled_dialog->priv->heading), gtk_window_get_icon_name (GTK_WINDOW (titled_dialog)));
-  _xfce_heading_set_title (XFCE_HEADING (titled_dialog->priv->heading), gtk_window_get_title (GTK_WINDOW (titled_dialog)));
+  const gchar *icon_name = gtk_window_get_icon_name (GTK_WINDOW (titled_dialog));
+
+  g_return_if_fail (GTK_IS_HEADER_BAR (titled_dialog->priv->headerbar));
+  _libxfce4ui_return_if_fail (icon_name == NULL);
+
+  gtk_image_set_from_icon_name (GTK_IMAGE (titled_dialog->priv->icon), icon_name, GTK_ICON_SIZE_LARGE_TOOLBAR);
+  gtk_image_set_pixel_size (GTK_IMAGE (titled_dialog->priv->icon), 24);
 }
 
 
@@ -437,8 +437,9 @@ xfce_titled_dialog_set_subtitle (XfceTitledDialog *titled_dialog,
   /* activate the new subtitle */
   titled_dialog->priv->subtitle = g_strdup (subtitle);
 
-  /* update the subtitle for the heading */
-  _xfce_heading_set_subtitle (XFCE_HEADING (titled_dialog->priv->heading), subtitle);
+  /* update the subtitle of the headerbar */
+  gtk_header_bar_set_subtitle (GTK_HEADER_BAR (titled_dialog->priv->headerbar),
+                               titled_dialog->priv->subtitle);
 
   /* notify listeners */
   g_object_notify (G_OBJECT (titled_dialog), "subtitle");
