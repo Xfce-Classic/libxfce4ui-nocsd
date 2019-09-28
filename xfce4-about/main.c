@@ -60,6 +60,7 @@ static void
 xfce_about_system (GtkBuilder *builder)
 {
   GObject *label;
+  GObject *vendor_info;
   glibtop_mem mem;
   const glibtop_sysinfo *info;
   g_autofree char *device_text = NULL;
@@ -67,7 +68,6 @@ xfce_about_system (GtkBuilder *builder)
   g_autofree char *memory_text = NULL;
   g_autofree char *os_name_text = NULL;
   g_autofree char *os_type_text = NULL;
-
 
   label = gtk_builder_get_object (builder, "device");
   device_text = get_system_info (DEVICE_NAME);
@@ -86,6 +86,18 @@ xfce_about_system (GtkBuilder *builder)
   label = gtk_builder_get_object (builder, "graphics");
 
   label = gtk_builder_get_object (builder, "disk");
+
+  label = gtk_builder_get_object (builder, "xfce-version");
+  gtk_label_set_text (GTK_LABEL (label), xfce_version_string ());
+
+  label = gtk_builder_get_object (builder, "vendor-info");
+  vendor_info = gtk_builder_get_object (builder, "vendor-info-label");
+#ifdef VENDOR_INFO
+  gtk_label_set_text (GTK_LABEL (label), VENDOR_INFO);
+#else
+  gtk_widget_hide (GTK_WIDGET (vendor_info));
+  gtk_widget_hide (GTK_WIDGET (label));
+#endif
 
   label = gtk_builder_get_object (builder, "osname");
   os_name_text = get_os_name ();
