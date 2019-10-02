@@ -533,6 +533,89 @@ xfce_dialog_confirm (GtkWindow   *parent,
 
 
 /**
+ * xfce_dialog_confirm_close_tabs:
+ * @parent              : (allow-none): transient parent of the dialog, or %NULL.
+ * @num_tabs            : the number of open tabs for display to user
+ * @show_confirm_box    : whether to ask user if they want this confirmation in future
+ * @confirm_box_checked : (allow-none): state of confirmation checkbox
+ *
+ * Runs a dialog to ask the user whether they want to close the whole window,
+ * close the current tab, or cancel.
+ *
+ * If @num_tabs is non-negative, the message to the user will state that there
+ * are @num_tabs open tabs. If @num_tabs is negative, then the message to the
+ * user will state simply that there are "multiple open tabs".
+ *
+ * If @show_confirm_box is %TRUE, then a checkbox is added to the dialog to allow
+ * the user to set whether they wish to see this dialog in future. The initial
+ * state of the checkbox is determined by the value stored at @confirm_box_checked,
+ * and the value at @confirm_box_checked after returning records the state of the
+ * checkbox. If @show_confirm_box is %FALSE, @confirm_box_checked is ignored, and
+ * may be %NULL.
+ *
+ * Return value: #GTK_RESPONSE_CANCEL if cancelled, #GTK_RESPONSE_YES if the user
+ * wants to close the window, #GTK_RESPONSE_CLOSE if the user wants to close the tab,
+ * and #GTK_RESPONSE_NONE for an error.
+ */
+gint
+xfce_dialog_confirm_close_tabs (GtkWindow *parent,
+                                gint       num_tabs,
+                                gboolean   show_confirm_box,
+                                gboolean  *confirm_box_checked)
+{
+  GtkWidget *dialog, *checkbutton, *vbox;
+  const gchar *primary_text, *warning_icon;
+  gchar *secondary_text;
+  gint response;
+
+  g_return_val_if_fail (parent == NULL || GTK_IS_WINDOW (parent), GTK_RESPONSE_NONE);
+  g_return_val_if_fail (!show_confirm_box || confirm_box_checked != NULL, GTK_RESPONSE_NONE);
+
+  primary_text = _("Close all tabs?");
+  if (num_tabs < 0)
+    secondary_text = g_strdup (_("This window has multiple tabs open. Closing this window\n"
+                                "will also close all its tabs."));
+  else
+    secondary_text = g_strdup_printf (_("This window has %d tabs open. Closing this window\n"
+                               "will also close all its tabs."), num_tabs);
+
+#if GTK_CHECK_VERSION (3, 0, 0)
+  warning_icon = "dialog-warning";
+#else
+  warning_icon =  GTK_STOCK_DIALOG_WARNING;
+#endif
+
+  dialog = xfce_message_dialog_new (parent, _("Warning"),
+                                    warning_icon,
+                                    primary_text,
+                                    secondary_text,
+                                    XFCE_BUTTON_TYPE_MIXED, "gtk-cancel", _("_Cancel"), GTK_RESPONSE_CANCEL,
+                                    XFCE_BUTTON_TYPE_MIXED, "application-exit", _("Close _Window"), GTK_RESPONSE_YES,
+                                    XFCE_BUTTON_TYPE_MIXED, "window-close", _("Close T_ab"), GTK_RESPONSE_CLOSE,
+                                    NULL);
+
+  if (show_confirm_box)
+    {
+      checkbutton = gtk_check_button_new_with_mnemonic (_("Do _not ask me again"));
+      gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (checkbutton), *confirm_box_checked);
+      vbox = gtk_dialog_get_content_area (GTK_DIALOG (dialog));
+      gtk_box_pack_start (GTK_BOX (vbox), checkbutton, FALSE, FALSE, 5);
+    }
+
+  gtk_widget_show_all (dialog);
+  response = gtk_dialog_run (GTK_DIALOG (dialog));
+
+  if (show_confirm_box)
+    *confirm_box_checked = gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (checkbutton));
+
+  gtk_widget_destroy (dialog);
+  g_free (secondary_text);
+  return response;
+}
+
+
+
+/**
  * xfce_message_dialog_new_valist:
  * @parent            : (allow-none): transient parent of the dialog, or %NULL.
  * @title             : (allow-none): title of the dialog, or %NULL.

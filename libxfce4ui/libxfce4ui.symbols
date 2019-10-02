@@ -63,6 +63,7 @@ xfce_dialog_show_info G_GNUC_PRINTF (3, 4)
 xfce_dialog_show_warning G_GNUC_PRINTF (3, 4)
 xfce_dialog_show_error G_GNUC_PRINTF (3, 4)
 xfce_dialog_confirm G_GNUC_PRINTF (5, 6)
+xfce_dialog_confirm_close_tabs
 xfce_message_dialog_new G_GNUC_NULL_TERMINATED G_GNUC_MALLOC
 xfce_message_dialog_new_valist G_GNUC_MALLOC
 xfce_message_dialog G_GNUC_NULL_TERMINATED

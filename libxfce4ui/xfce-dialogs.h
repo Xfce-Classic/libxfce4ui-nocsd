@@ -81,6 +81,11 @@ gboolean   xfce_dialog_confirm                (GtkWindow    *parent,
                                                const gchar  *primary_format,
                                                ...) G_GNUC_PRINTF (5, 6);
 
+gint       xfce_dialog_confirm_close_tabs     (GtkWindow   *parent,
+                                               gint         num_tabs,
+                                               gboolean     show_confirm_box,
+                                               gboolean    *confirm_box_checked);
+
 GtkWidget *xfce_message_dialog_new_valist     (GtkWindow   *parent,
                                                const gchar *title,
                                                const gchar *icon_stock_id,
