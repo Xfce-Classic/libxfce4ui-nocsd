@@ -3,8 +3,8 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Aputsiak Niels Janussen (Skjalden) <aj@isit.gl>, 2013,2015
-# Aputsiak Niels Janussen (Skjalden) <aj@isit.gl>, 2013,2015
+# Aputsiak Niels Janussen <aj@isit.gl>, 2013,2015
+# Aputsiak Niels Janussen <aj@isit.gl>, 2013,2015
 # Erik Schmidt <erischmi@gmail.com>, 2012
 # Linuxbruger <y.z@live.dk>, 2018
 # Morten Juhl-Johansen Zölde-Fejér <morten@writtenandread.net>, 2015-2016
@@ -16,8 +16,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-17 00:30+0200\n"
-"PO-Revision-Date: 2019-06-17 11:31+0000\n"
+"POT-Creation-Date: 2019-10-12 18:30+0200\n"
+"PO-Revision-Date: 2019-10-14 15:56+0000\n"
 "Last-Translator: scootergrisen\n"
 "Language-Team: Danish (http://www.transifex.com/xfce/libxfce4ui/language/da/)\n"
 "MIME-Version: 1.0\n"
@@ -66,7 +66,7 @@ msgstr "Information"
 msgid "Close"
 msgstr "Luk"
 
-#: ../libxfce4ui/xfce-dialogs.c:391
+#: ../libxfce4ui/xfce-dialogs.c:391 ../libxfce4ui/xfce-dialogs.c:588
 msgid "Warning"
 msgstr "Advarsel"
 
@@ -90,6 +90,40 @@ msgstr "Annuller"
 #: ../libxfce4ui/xfce-dialogs.c:511 ../libxfce4ui/xfce-dialogs.c:519
 msgid "Question"
 msgstr "Spørgsmål"
+
+#: ../libxfce4ui/xfce-dialogs.c:574
+msgid "Close all tabs?"
+msgstr "Luk alle faneblade?"
+
+#: ../libxfce4ui/xfce-dialogs.c:576
+msgid ""
+"This window has multiple tabs open. Closing this window\n"
+"will also close all its tabs."
+msgstr "Vinduet har flere åbne faneblade. Hvis vinduet\nlukkes, så lukkes alle dets faneblade også."
+
+#: ../libxfce4ui/xfce-dialogs.c:579
+#, c-format
+msgid ""
+"This window has %d tabs open. Closing this window\n"
+"will also close all its tabs."
+msgstr "Vinduet har %d åbne faneblade. Hvis vinduet\nlukkes, så lukkes alle dets faneblade også."
+
+#: ../libxfce4ui/xfce-dialogs.c:592
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:249
+msgid "_Cancel"
+msgstr "_Annuller"
+
+#: ../libxfce4ui/xfce-dialogs.c:593
+msgid "Close _Window"
+msgstr "Luk _vindue"
+
+#: ../libxfce4ui/xfce-dialogs.c:594
+msgid "Close T_ab"
+msgstr "Luk _faneblad"
+
+#: ../libxfce4ui/xfce-dialogs.c:599
+msgid "Do _not ask me again"
+msgstr "Spørg mig _ikke igen"
 
 #: ../libxfce4ui/xfce-sm-client.c:1424
 msgid "Session management client ID"
@@ -211,10 +245,6 @@ msgstr "kommando"
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:225
 msgid "Shortcut"
 msgstr "Genvej"
-
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:249
-msgid "_Cancel"
-msgstr "_Annuller"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:284
 #, c-format
@@ -751,27 +781,27 @@ msgstr "Version %s"
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
 #. },
-#: ../xfce4-about/contributors.h:125
+#: ../xfce4-about/contributors.h:128
 msgid "Core developers"
 msgstr "Primære udviklere"
 
-#: ../xfce4-about/contributors.h:128
+#: ../xfce4-about/contributors.h:131
 msgid "Active contributors"
 msgstr "Aktive bidragydere"
 
-#: ../xfce4-about/contributors.h:131
+#: ../xfce4-about/contributors.h:134
 msgid "Servers maintained by"
 msgstr "Vedligeholdelse af servere"
 
-#: ../xfce4-about/contributors.h:134
+#: ../xfce4-about/contributors.h:137
 msgid "Translations supervision"
 msgstr "Tilsyn af oversættelser"
 
-#: ../xfce4-about/contributors.h:137
+#: ../xfce4-about/contributors.h:140
 msgid "Translators"
 msgstr "Oversættere"
 
-#: ../xfce4-about/contributors.h:140
+#: ../xfce4-about/contributors.h:143
 msgid "Previous contributors"
 msgstr "Tidligere bidragydere"
 
