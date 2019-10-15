@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-17 00:30+0200\n"
-"PO-Revision-Date: 2019-08-23 10:50+0000\n"
+"POT-Creation-Date: 2019-10-12 18:30+0200\n"
+"PO-Revision-Date: 2019-10-15 16:40+0000\n"
 "Last-Translator: Daniel Muñiz Fontoira <dani@damufo.com>\n"
 "Language-Team: Galician (http://www.transifex.com/xfce/libxfce4ui/language/gl/)\n"
 "MIME-Version: 1.0\n"
@@ -60,7 +60,7 @@ msgstr "Información "
 msgid "Close"
 msgstr "Pechar"
 
-#: ../libxfce4ui/xfce-dialogs.c:391
+#: ../libxfce4ui/xfce-dialogs.c:391 ../libxfce4ui/xfce-dialogs.c:588
 msgid "Warning"
 msgstr "Aviso"
 
@@ -84,6 +84,40 @@ msgstr "Cancelar"
 #: ../libxfce4ui/xfce-dialogs.c:511 ../libxfce4ui/xfce-dialogs.c:519
 msgid "Question"
 msgstr "Pregunta"
+
+#: ../libxfce4ui/xfce-dialogs.c:574
+msgid "Close all tabs?"
+msgstr "Quere pechar todas as lapelas?"
+
+#: ../libxfce4ui/xfce-dialogs.c:576
+msgid ""
+"This window has multiple tabs open. Closing this window\n"
+"will also close all its tabs."
+msgstr "Esta xanela ten varias lapelas abertas. Pechando esta xanela\ntamén pechará todas as súas lapelas."
+
+#: ../libxfce4ui/xfce-dialogs.c:579
+#, c-format
+msgid ""
+"This window has %d tabs open. Closing this window\n"
+"will also close all its tabs."
+msgstr "Esta xanela ten %d lapelas abertas. Pechando esta xanela\ntamén pechará todas estas lapelas."
+
+#: ../libxfce4ui/xfce-dialogs.c:592
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:249
+msgid "_Cancel"
+msgstr "_Cancelar"
+
+#: ../libxfce4ui/xfce-dialogs.c:593
+msgid "Close _Window"
+msgstr "Pechar a _Xanela"
+
+#: ../libxfce4ui/xfce-dialogs.c:594
+msgid "Close T_ab"
+msgstr "Pechar _a lapela"
+
+#: ../libxfce4ui/xfce-dialogs.c:599
+msgid "Do _not ask me again"
+msgstr "_Non preguntar de novo"
 
 #: ../libxfce4ui/xfce-sm-client.c:1424
 msgid "Session management client ID"
@@ -205,10 +239,6 @@ msgstr "orde"
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:225
 msgid "Shortcut"
 msgstr "Atallo"
-
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:249
-msgid "_Cancel"
-msgstr "_Cancelar"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:284
 #, c-format
@@ -745,27 +775,27 @@ msgstr "Versión %s"
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
 #. },
-#: ../xfce4-about/contributors.h:125
+#: ../xfce4-about/contributors.h:128
 msgid "Core developers"
 msgstr "Desenvolvedores principais"
 
-#: ../xfce4-about/contributors.h:128
+#: ../xfce4-about/contributors.h:131
 msgid "Active contributors"
 msgstr "Colaboradores activos"
 
-#: ../xfce4-about/contributors.h:131
+#: ../xfce4-about/contributors.h:134
 msgid "Servers maintained by"
 msgstr "Servidores mantidos por"
 
-#: ../xfce4-about/contributors.h:134
+#: ../xfce4-about/contributors.h:137
 msgid "Translations supervision"
 msgstr "Supervisión da tradución"
 
-#: ../xfce4-about/contributors.h:137
+#: ../xfce4-about/contributors.h:140
 msgid "Translators"
 msgstr "Tradutores"
 
-#: ../xfce4-about/contributors.h:140
+#: ../xfce4-about/contributors.h:143
 msgid "Previous contributors"
 msgstr "Anteriores colaboradores"
 
