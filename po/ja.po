@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-17 00:30+0200\n"
-"PO-Revision-Date: 2019-06-06 09:45+0000\n"
+"POT-Creation-Date: 2019-10-12 18:30+0200\n"
+"PO-Revision-Date: 2019-10-15 14:01+0000\n"
 "Last-Translator: Nobuhiro Iwamatsu <iwamatsu@nigauri.org>\n"
 "Language-Team: Japanese (http://www.transifex.com/xfce/libxfce4ui/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -58,7 +58,7 @@ msgstr "情報"
 msgid "Close"
 msgstr "閉じる"
 
-#: ../libxfce4ui/xfce-dialogs.c:391
+#: ../libxfce4ui/xfce-dialogs.c:391 ../libxfce4ui/xfce-dialogs.c:588
 msgid "Warning"
 msgstr "警告"
 
@@ -82,6 +82,40 @@ msgstr "キャンセル"
 #: ../libxfce4ui/xfce-dialogs.c:511 ../libxfce4ui/xfce-dialogs.c:519
 msgid "Question"
 msgstr "確認"
+
+#: ../libxfce4ui/xfce-dialogs.c:574
+msgid "Close all tabs?"
+msgstr "すべてのタブを閉じますか?"
+
+#: ../libxfce4ui/xfce-dialogs.c:576
+msgid ""
+"This window has multiple tabs open. Closing this window\n"
+"will also close all its tabs."
+msgstr "このウィンドウには複数のタブが開かれています。このウィンドウを\n閉じるとすべてのタブも閉じられます。"
+
+#: ../libxfce4ui/xfce-dialogs.c:579
+#, c-format
+msgid ""
+"This window has %d tabs open. Closing this window\n"
+"will also close all its tabs."
+msgstr "このウィンドウには %d 個のタブが開かれています。このウィンドウを閉じるとすべてのタブも閉じます。"
+
+#: ../libxfce4ui/xfce-dialogs.c:592
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:249
+msgid "_Cancel"
+msgstr "キャンセル(_C)"
+
+#: ../libxfce4ui/xfce-dialogs.c:593
+msgid "Close _Window"
+msgstr "ウィンドウを閉じる(_W)"
+
+#: ../libxfce4ui/xfce-dialogs.c:594
+msgid "Close T_ab"
+msgstr "タブを閉じる(_T)"
+
+#: ../libxfce4ui/xfce-dialogs.c:599
+msgid "Do _not ask me again"
+msgstr "次回から確認しない(_N)"
 
 #: ../libxfce4ui/xfce-sm-client.c:1424
 msgid "Session management client ID"
@@ -203,10 +237,6 @@ msgstr "コマンド"
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:225
 msgid "Shortcut"
 msgstr "ショートカットキー"
-
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:249
-msgid "_Cancel"
-msgstr "キャンセル(_C)"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:284
 #, c-format
@@ -743,27 +773,27 @@ msgstr "バージョン %s"
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
 #. },
-#: ../xfce4-about/contributors.h:125
+#: ../xfce4-about/contributors.h:128
 msgid "Core developers"
 msgstr "中心開発者"
 
-#: ../xfce4-about/contributors.h:128
+#: ../xfce4-about/contributors.h:131
 msgid "Active contributors"
 msgstr "現在の協力者"
 
-#: ../xfce4-about/contributors.h:131
+#: ../xfce4-about/contributors.h:134
 msgid "Servers maintained by"
 msgstr "サーバーの管理"
 
-#: ../xfce4-about/contributors.h:134
+#: ../xfce4-about/contributors.h:137
 msgid "Translations supervision"
 msgstr "翻訳の監修"
 
-#: ../xfce4-about/contributors.h:137
+#: ../xfce4-about/contributors.h:140
 msgid "Translators"
 msgstr "翻訳者"
 
-#: ../xfce4-about/contributors.h:140
+#: ../xfce4-about/contributors.h:143
 msgid "Previous contributors"
 msgstr "以前の協力者"
 
