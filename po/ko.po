@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-17 00:30+0200\n"
-"PO-Revision-Date: 2019-09-09 07:55+0000\n"
+"POT-Creation-Date: 2019-10-12 18:30+0200\n"
+"PO-Revision-Date: 2019-10-17 03:30+0000\n"
 "Last-Translator: Seong-ho Cho <darkcircle.0426@gmail.com>\n"
 "Language-Team: Korean (http://www.transifex.com/xfce/libxfce4ui/language/ko/)\n"
 "MIME-Version: 1.0\n"
@@ -59,7 +59,7 @@ msgstr "정보"
 msgid "Close"
 msgstr "닫기"
 
-#: ../libxfce4ui/xfce-dialogs.c:391
+#: ../libxfce4ui/xfce-dialogs.c:391 ../libxfce4ui/xfce-dialogs.c:588
 msgid "Warning"
 msgstr "경고"
 
@@ -83,6 +83,40 @@ msgstr "취소"
 #: ../libxfce4ui/xfce-dialogs.c:511 ../libxfce4ui/xfce-dialogs.c:519
 msgid "Question"
 msgstr "질문"
+
+#: ../libxfce4ui/xfce-dialogs.c:574
+msgid "Close all tabs?"
+msgstr "모든 탭을 닫으시렵니까?"
+
+#: ../libxfce4ui/xfce-dialogs.c:576
+msgid ""
+"This window has multiple tabs open. Closing this window\n"
+"will also close all its tabs."
+msgstr "이 창에 여러 탭이 열려있습니다. 이 창을 닫으면\n모든 탭이 닫힙니다."
+
+#: ../libxfce4ui/xfce-dialogs.c:579
+#, c-format
+msgid ""
+"This window has %d tabs open. Closing this window\n"
+"will also close all its tabs."
+msgstr "이 창에 탭 %d개가 열려있습니다. 이 창을 닫으면\n모든 탭이 닫힙니다."
+
+#: ../libxfce4ui/xfce-dialogs.c:592
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:249
+msgid "_Cancel"
+msgstr "취소(_C)"
+
+#: ../libxfce4ui/xfce-dialogs.c:593
+msgid "Close _Window"
+msgstr "창 닫기(_W)"
+
+#: ../libxfce4ui/xfce-dialogs.c:594
+msgid "Close T_ab"
+msgstr "탭 닫기(_A)"
+
+#: ../libxfce4ui/xfce-dialogs.c:599
+msgid "Do _not ask me again"
+msgstr "다시 묻지 않습니다(_N)"
 
 #: ../libxfce4ui/xfce-sm-client.c:1424
 msgid "Session management client ID"
@@ -204,10 +238,6 @@ msgstr "명령"
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:225
 msgid "Shortcut"
 msgstr "바로 가기"
-
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:249
-msgid "_Cancel"
-msgstr "취소(_C)"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:284
 #, c-format
@@ -744,27 +774,27 @@ msgstr "버전 %s"
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
 #. },
-#: ../xfce4-about/contributors.h:125
+#: ../xfce4-about/contributors.h:128
 msgid "Core developers"
 msgstr "코어 개발자"
 
-#: ../xfce4-about/contributors.h:128
+#: ../xfce4-about/contributors.h:131
 msgid "Active contributors"
 msgstr "활동 개발자"
 
-#: ../xfce4-about/contributors.h:131
+#: ../xfce4-about/contributors.h:134
 msgid "Servers maintained by"
 msgstr "서버 관리자"
 
-#: ../xfce4-about/contributors.h:134
+#: ../xfce4-about/contributors.h:137
 msgid "Translations supervision"
 msgstr "번역 감독자"
 
-#: ../xfce4-about/contributors.h:137
+#: ../xfce4-about/contributors.h:140
 msgid "Translators"
 msgstr "번역자"
 
-#: ../xfce4-about/contributors.h:140
+#: ../xfce4-about/contributors.h:143
 msgid "Previous contributors"
 msgstr "이전 공헌자"
 
