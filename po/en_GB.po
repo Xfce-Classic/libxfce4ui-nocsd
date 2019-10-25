@@ -10,9 +10,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-04 18:30+0200\n"
-"PO-Revision-Date: 2019-05-04 16:30+0000\n"
-"Last-Translator: Xfce Bot <transifex@xfce.org>\n"
+"POT-Creation-Date: 2019-10-12 18:30+0200\n"
+"PO-Revision-Date: 2019-10-25 14:48+0000\n"
+"Last-Translator: Jason Collins <JasonPCollins@protonmail.com>\n"
 "Language-Team: English (United Kingdom) (http://www.transifex.com/xfce/libxfce4ui/language/en_GB/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -60,7 +60,7 @@ msgstr "Information"
 msgid "Close"
 msgstr "Close"
 
-#: ../libxfce4ui/xfce-dialogs.c:391
+#: ../libxfce4ui/xfce-dialogs.c:391 ../libxfce4ui/xfce-dialogs.c:588
 msgid "Warning"
 msgstr "Warning"
 
@@ -84,6 +84,40 @@ msgstr "Cancel"
 #: ../libxfce4ui/xfce-dialogs.c:511 ../libxfce4ui/xfce-dialogs.c:519
 msgid "Question"
 msgstr "Question"
+
+#: ../libxfce4ui/xfce-dialogs.c:574
+msgid "Close all tabs?"
+msgstr "Close all tabs?"
+
+#: ../libxfce4ui/xfce-dialogs.c:576
+msgid ""
+"This window has multiple tabs open. Closing this window\n"
+"will also close all its tabs."
+msgstr ""
+
+#: ../libxfce4ui/xfce-dialogs.c:579
+#, c-format
+msgid ""
+"This window has %d tabs open. Closing this window\n"
+"will also close all its tabs."
+msgstr "This window has %d tabs open. Closing this window\nwill also close all its tabs."
+
+#: ../libxfce4ui/xfce-dialogs.c:592
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:249
+msgid "_Cancel"
+msgstr "_Cancel"
+
+#: ../libxfce4ui/xfce-dialogs.c:593
+msgid "Close _Window"
+msgstr "Close _Window"
+
+#: ../libxfce4ui/xfce-dialogs.c:594
+msgid "Close T_ab"
+msgstr "Close T_ab"
+
+#: ../libxfce4ui/xfce-dialogs.c:599
+msgid "Do _not ask me again"
+msgstr "Do _not ask me again"
 
 #: ../libxfce4ui/xfce-sm-client.c:1424
 msgid "Session management client ID"
@@ -205,10 +239,6 @@ msgstr "command"
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:225
 msgid "Shortcut"
 msgstr "Shortcut"
-
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:249
-msgid "_Cancel"
-msgstr "_Cancel"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:284
 #, c-format
@@ -629,28 +659,36 @@ msgid "D-Bus-based configuration storage system."
 msgstr "D-Bus-based configuration storage system."
 
 #: ../xfce4-about/main.c:112
-msgid "Thumbnails service"
+msgid "A menu library"
 msgstr ""
 
 #: ../xfce4-about/main.c:113
+msgid "A freedesktop.org compliant menu implementation based on GLib and GIO."
+msgstr ""
+
+#: ../xfce4-about/main.c:117
+msgid "Thumbnails service"
+msgstr ""
+
+#: ../xfce4-about/main.c:118
 msgid ""
 "Thumbnail service implementing the thumbnail management D-Bus specification."
 msgstr ""
 
-#: ../xfce4-about/main.c:120
+#: ../xfce4-about/main.c:125
 msgid ""
 "Xfce is a collection of programs that together provide a full-featured "
 "desktop environment. The following programs are part of the Xfce core:"
 msgstr "Xfce is a collection of programs that together provide a full-featured desktop environment. The following programs are part of the Xfce core:"
 
-#: ../xfce4-about/main.c:144
+#: ../xfce4-about/main.c:149
 msgid ""
 "Xfce is also a development platform providing several libraries, that help "
 "programmers create applications that fit in well with the desktop "
 "environment."
 msgstr "Xfce is also a development platform providing several libraries, that help programmers create applications that fit in well with the desktop environment."
 
-#: ../xfce4-about/main.c:150
+#: ../xfce4-about/main.c:155
 msgid ""
 "Xfce components are licensed under free or open source licences; GPL or BSDL"
 " for applications and LGPL or BSDL for libraries. Look at the documentation,"
@@ -658,31 +696,31 @@ msgid ""
 "information."
 msgstr ""
 
-#: ../xfce4-about/main.c:157
+#: ../xfce4-about/main.c:162
 msgid "Thank you for your interest in Xfce."
 msgstr "Thank you for your interest in Xfce."
 
-#: ../xfce4-about/main.c:161
+#: ../xfce4-about/main.c:166
 msgid "The Xfce Development Team"
 msgstr "The Xfce Development Team"
 
-#: ../xfce4-about/main.c:263
+#: ../xfce4-about/main.c:268
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
 "on <https://bugzilla.xfce.org> ."
 msgstr ""
 
-#: ../xfce4-about/main.c:267
+#: ../xfce4-about/main.c:272
 msgid "Thanks to all who helped making this software available!"
 msgstr "Thanks to all who helped making this software available!"
 
-#: ../xfce4-about/main.c:284
+#: ../xfce4-about/main.c:289
 msgid ""
 "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
 msgstr "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different components are copyrighted by their respective authors."
 
-#: ../xfce4-about/main.c:289
+#: ../xfce4-about/main.c:294
 msgid ""
 "The libxfce4ui, libxfce4util and exo packages are distributed under the "
 "terms of the GNU Library General Public License as published by the Free "
@@ -690,7 +728,7 @@ msgid ""
 "any later version."
 msgstr ""
 
-#: ../xfce4-about/main.c:296
+#: ../xfce4-about/main.c:301
 msgid ""
 "The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, "
 "xfce4-settings, xfconf, xfdesktop and xfwm4 are distributed under the terms "
@@ -699,37 +737,37 @@ msgid ""
 "version."
 msgstr ""
 
-#: ../xfce4-about/main.c:443
+#: ../xfce4-about/main.c:448
 #, c-format
 msgid "Type '%s --help' for usage information."
 msgstr "Type '%s --help' for usage information."
 
-#: ../xfce4-about/main.c:449
+#: ../xfce4-about/main.c:454
 msgid "Unable to initialize GTK+."
 msgstr "Unable to initialise GTK+."
 
-#: ../xfce4-about/main.c:458
+#: ../xfce4-about/main.c:463
 msgid "The Xfce development team. All rights reserved."
 msgstr "The Xfce development team. All rights reserved."
 
-#: ../xfce4-about/main.c:459
+#: ../xfce4-about/main.c:464
 #, c-format
 msgid "Please report bugs to <%s>."
 msgstr "Please report bugs to <%s>."
 
-#: ../xfce4-about/main.c:469
+#: ../xfce4-about/main.c:474
 msgid "Failed to load interface"
 msgstr "Failed to load interface"
 
 #. I18N: first %s will be replaced by the version, second by
 #. * the name of the distribution (--with-vendor-info=NAME)
-#: ../xfce4-about/main.c:483
+#: ../xfce4-about/main.c:488
 #, c-format
 msgid "Version %s, distributed by %s"
 msgstr "Version %s, distributed by %s"
 
 #. I18N: %s will be replaced by the Xfce version number
-#: ../xfce4-about/main.c:487
+#: ../xfce4-about/main.c:492
 #, c-format
 msgid "Version %s"
 msgstr "Version %s"
@@ -737,27 +775,27 @@ msgstr "Version %s"
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
 #. },
-#: ../xfce4-about/contributors.h:125
+#: ../xfce4-about/contributors.h:128
 msgid "Core developers"
 msgstr "Core developers"
 
-#: ../xfce4-about/contributors.h:128
+#: ../xfce4-about/contributors.h:131
 msgid "Active contributors"
 msgstr "Active contributors"
 
-#: ../xfce4-about/contributors.h:131
+#: ../xfce4-about/contributors.h:134
 msgid "Servers maintained by"
 msgstr "Servers maintained by"
 
-#: ../xfce4-about/contributors.h:134
+#: ../xfce4-about/contributors.h:137
 msgid "Translations supervision"
 msgstr "Translations supervision"
 
-#: ../xfce4-about/contributors.h:137
+#: ../xfce4-about/contributors.h:140
 msgid "Translators"
 msgstr "Translators"
 
-#: ../xfce4-about/contributors.h:140
+#: ../xfce4-about/contributors.h:143
 msgid "Previous contributors"
 msgstr "Previous contributors"
 
