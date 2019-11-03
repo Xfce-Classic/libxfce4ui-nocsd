@@ -44,6 +44,11 @@ static gboolean xfce_shortcut_dialog_key_pressed      (XfceShortcutDialog      *
 static gboolean xfce_shortcut_dialog_key_released     (XfceShortcutDialog      *dialog,
                                                        GdkEventKey             *event);
 
+#if GTK_CHECK_VERSION (3, 0, 0)
+static void     xfce_shortcut_dialog_prepare_grab     (GdkSeat                 *seat,
+                                                       GdkWindow               *window,
+                                                       gpointer                 user_data);
+#endif
 
 
 struct _XfceShortcutDialogClass
@@ -333,7 +338,6 @@ xfce_shortcut_dialog_create_contents (XfceShortcutDialog *dialog,
 }
 
 
-
 gint
 xfce_shortcut_dialog_run (XfceShortcutDialog *dialog,
                           GtkWidget          *parent)
@@ -341,7 +345,6 @@ xfce_shortcut_dialog_run (XfceShortcutDialog *dialog,
 #if GTK_CHECK_VERSION (3, 0, 0)
   GdkDisplay       *display;
   GdkSeat          *seat;
-  gboolean          succeed = FALSE;
 #endif
   gint              response = GTK_RESPONSE_CANCEL;
 
@@ -354,15 +357,11 @@ xfce_shortcut_dialog_run (XfceShortcutDialog *dialog,
   display = gtk_widget_get_display (GTK_WIDGET (dialog));
   seat = gdk_display_get_default_seat (display);
 
+  /* Take control on the keyboard */
   if (gdk_seat_grab (seat,
                  gdk_screen_get_root_window (gdk_display_get_default_screen (display)),
-                 GDK_SEAT_CAPABILITY_KEYBOARD, TRUE, NULL, NULL, NULL, NULL) == GDK_GRAB_SUCCESS)
-    {
-      succeed = TRUE;
-    }
-
-  /* Take control on the keyboard */
-  if (succeed)
+                 GDK_SEAT_CAPABILITY_ALL, TRUE, NULL, NULL,
+                 xfce_shortcut_dialog_prepare_grab, NULL) == GDK_GRAB_SUCCESS)
 #else
   /* Take control on the keyboard */
   if (G_LIKELY (gdk_keyboard_grab (gtk_widget_get_root_window (GTK_WIDGET (dialog)), TRUE, GDK_CURRENT_TIME) == GDK_GRAB_SUCCESS))
@@ -515,3 +514,15 @@ xfce_shortcut_dialog_get_action_name (XfceShortcutDialog *dialog)
   g_return_val_if_fail (XFCE_IS_SHORTCUT_DIALOG (dialog), NULL);
   return dialog->action_name;
 }
+
+
+
+#if GTK_CHECK_VERSION (3, 0, 0)
+static void
+xfce_shortcut_dialog_prepare_grab (GdkSeat   *seat,
+                                   GdkWindow *window,
+                                   gpointer   user_data)
+{
+  gdk_window_show_unraised (window);
+}
+#endif
