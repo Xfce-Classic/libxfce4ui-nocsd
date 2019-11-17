@@ -18,7 +18,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-10-12 18:30+0200\n"
-"PO-Revision-Date: 2019-11-16 23:33+0000\n"
+"PO-Revision-Date: 2019-11-17 11:22+0000\n"
 "Last-Translator: Toni Estévez <toni.estevez@gmail.com>\n"
 "Language-Team: Spanish (http://www.transifex.com/xfce/libxfce4ui/language/es/)\n"
 "MIME-Version: 1.0\n"
@@ -29,7 +29,7 @@ msgstr ""
 
 #: ../libxfce4ui/xfce-dialogs.c:110
 msgid "Failed to open web browser for online documentation"
-msgstr "No se pudo abrir el navegador web para la documentación en línea"
+msgstr "No se pudo abrir el navegador web para acceder a la documentación en línea"
 
 #: ../libxfce4ui/xfce-dialogs.c:265
 #, c-format
@@ -100,14 +100,14 @@ msgstr "¿Cerrar todas las pestañas?"
 msgid ""
 "This window has multiple tabs open. Closing this window\n"
 "will also close all its tabs."
-msgstr "Esta ventana tiene múltiples pestañas abiertas. Cerrar esta ventana\ntambién cerrará todas sus pestañas."
+msgstr "Esta ventana tiene múltiples pestañas abiertas. Cerrar esta\nventana también cerrará todas sus pestañas."
 
 #: ../libxfce4ui/xfce-dialogs.c:579
 #, c-format
 msgid ""
 "This window has %d tabs open. Closing this window\n"
 "will also close all its tabs."
-msgstr "Esta ventana tiene %d pestañas abiertas. Cerrar esta ventana\ntambién cerrará todas sus pestañas."
+msgstr "Esta ventana tiene %d pestañas abiertas. Cerrar esta\nventana también cerrará todas sus pestañas."
 
 #: ../libxfce4ui/xfce-dialogs.c:592
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:249
@@ -116,11 +116,11 @@ msgstr "_Cancelar"
 
 #: ../libxfce4ui/xfce-dialogs.c:593
 msgid "Close _Window"
-msgstr "Cerrar  la v_entana"
+msgstr "Cerrar  la _ventana"
 
 #: ../libxfce4ui/xfce-dialogs.c:594
 msgid "Close T_ab"
-msgstr "Cerrar la p_estaña"
+msgstr "Cerrar la _pestaña"
 
 #: ../libxfce4ui/xfce-dialogs.c:599
 msgid "Do _not ask me again"
@@ -128,7 +128,7 @@ msgstr "_No preguntar de nuevo"
 
 #: ../libxfce4ui/xfce-sm-client.c:1424
 msgid "Session management client ID"
-msgstr "Identificador del cliente de gestión de la sesión"
+msgstr "Identificador del cliente de gestión de sesiones"
 
 #: ../libxfce4ui/xfce-sm-client.c:1424
 msgid "ID"
@@ -136,15 +136,15 @@ msgstr "Id."
 
 #: ../libxfce4ui/xfce-sm-client.c:1425
 msgid "Disable session management"
-msgstr "Desactivar la gestión de la sesión"
+msgstr "Desactivar la gestión de sesiones"
 
 #: ../libxfce4ui/xfce-sm-client.c:1435
 msgid "Session management options"
-msgstr "Opciones del gestor de sesiones"
+msgstr "Opciones de la gestión de sesiones"
 
 #: ../libxfce4ui/xfce-sm-client.c:1436
 msgid "Show session management options"
-msgstr "Mostrar las opciones del gestor de sesiones"
+msgstr "Mostrar las opciones de la gestión de sesiones"
 
 #: ../libxfce4ui/xfce-sm-client.c:1611
 #, c-format
@@ -162,14 +162,14 @@ msgstr "El gestor de sesiones no devolvió un identificador de cliente válido"
 msgid ""
 "Working directory \"%s\" does not exist. It won't be used when spawning "
 "\"%s\"."
-msgstr "La carpeta de trabajo «%s» no existe. Esta no se utilizará para ejecutar «%s»."
+msgstr "La carpeta de trabajo «%s» no existe. No se utilizará para ejecutar «%s»."
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 #, c-format
 msgid ""
 "This shortcut is already being used for the action '%s'. Which action do you"
 " want to use?"
-msgstr "Esta combinación ya está siendo usado para la acción. «%s». ¿Qué acción desea usar?"
+msgstr "Ese atajo ya está asignado a la acción «%s». ¿Qué acción quiere usar?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:54
 #: ../libxfce4kbd-private/xfce-shortcuts.c:57
@@ -193,20 +193,20 @@ msgstr "Mantener «%s»"
 msgid ""
 "This shortcut is already being used for the command '%s'. Which action do "
 "you want to use?"
-msgstr "Esta combinación ya está asignada a la orden «%s». ¿Qué acción quiere usar?"
+msgstr "Este atajo ya está asignado a la orden «%s». ¿Qué acción quiere usar?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 #, c-format
 msgid ""
 "This shortcut is already being used by the action '%s'. Which action do you "
 "want to use?"
-msgstr "Esta combinación ya está asignada a la acción «%s». ¿Qué acción quiere usar?"
+msgstr "Este atajo ya está asignado a la acción «%s». ¿Qué acción quiere usar?"
 
 #. This shortcut already exists in the provider, we don't want it twice
 #. Warn the user
 #: ../libxfce4kbd-private/xfce-shortcuts.c:110
 msgid "Please use another key combination."
-msgstr "Utilice otra combinación de teclas."
+msgstr "Use otra combinación de teclas."
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:111
 #, c-format
@@ -220,22 +220,22 @@ msgstr "Acciones en conflicto para %s"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:186
 msgid "This shortcut is already being used for something else."
-msgstr "Esta combinación ya está asignada a otra opción."
+msgstr "Este atajo ya está asignada a otra acción."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:211
 msgid "Window Manager Action Shortcut"
-msgstr "Combinación de acción del gestor de ventanas"
+msgstr "Atajo del gestor de ventanas"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:214
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:228
 msgid "action"
-msgstr "Acción"
+msgstr "acción"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:218
 msgid "Command Shortcut"
-msgstr "Órdenes de la combinación"
+msgstr "Atajo de la orden"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
@@ -245,21 +245,21 @@ msgstr "orden"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:225
 msgid "Shortcut"
-msgstr "Combinación"
+msgstr "Atajo"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:284
 #, c-format
 msgid "Press now the keyboard keys you want to use to trigger the %s '%s'."
-msgstr "Presione la/s lecla/s que desea asignar para ejecutar %s «%s»."
+msgstr "Pulse las teclas que quiere usar para ejecutar la %s «%s»."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:312
 msgid "Shortcut:"
-msgstr "Combinación:"
+msgstr "Atajo:"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:321
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:504
 msgid "No keys pressed yet, proceed."
-msgstr "No hay teclas presionadas, proceder."
+msgstr "No se ha pulsado ninguna tecla, proceda."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:407
 msgid "Could not grab the keyboard."
@@ -267,7 +267,7 @@ msgstr "No se pudo capturar el teclado."
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:36
 msgid "Window operations menu"
-msgstr "Menú de operaciones de ventana"
+msgstr "Menú de operaciones de la ventana"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:37
 msgid "Up"
@@ -287,159 +287,159 @@ msgstr "Derecha"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:42
 msgid "Cycle windows"
-msgstr "Seleccionar ventanas cíclicamente"
+msgstr "Seleccionar la ventana siguiente"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:43
 msgid "Cycle windows (Reverse)"
-msgstr "Seleccionar ventanas cíclicamente (inversamente)"
+msgstr "Seleccionar la ventana anterior"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:44
 msgid "Switch window for same application"
-msgstr "Cambiar la ventana para la misma aplicación"
+msgstr "Cambiar de ventana para la misma aplicación"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:45
 msgid "Switch application"
-msgstr "Cambiar aplicación"
+msgstr "Cambiar de aplicación"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:46
 msgid "Close window"
-msgstr "Cerrar ventana"
+msgstr "Cerrar la ventana"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:47
 msgid "Maximize window horizontally"
-msgstr "Maximizar ventana horizontalmente"
+msgstr "Maximizar la ventana horizontalmente"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:48
 msgid "Maximize window vertically"
-msgstr "Maximizar ventana verticalmente"
+msgstr "Maximizar la ventana verticalmente"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:49
 msgid "Maximize window"
-msgstr "Maximizar ventana"
+msgstr "Maximizar la ventana"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:50
 msgid "Hide window"
-msgstr "Ocultar ventana"
+msgstr "Ocultar la ventana"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:51
 msgid "Move window"
-msgstr "Mover ventana"
+msgstr "Mover la ventana"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:52
 msgid "Resize window"
-msgstr "Redimensionar ventana"
+msgstr "Redimensionar la ventana"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:53
 msgid "Shade window"
-msgstr "Enrollar ventana"
+msgstr "Enrollar la ventana"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:54
 msgid "Stick window"
-msgstr "Pegar ventana a todos los escritorios"
+msgstr "Fijar la ventana"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:55
 msgid "Raise window"
-msgstr "Elevar ventana"
+msgstr "Elevar la ventana"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:56
 msgid "Lower window"
-msgstr "Bajar ventana"
+msgstr "Bajar la ventana"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:57
 msgid "Raise or lower window"
-msgstr "Elevar o bajar  ventana"
+msgstr "Elevar o bajar la ventana"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:58
 msgid "Fill window"
-msgstr "Ocupar toda la ventana"
+msgstr "Maximizar la ventana"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:59
 msgid "Fill window horizontally"
-msgstr "Ocupar la ventana horizontalmente"
+msgstr "Maximizar la ventana horizontalmente"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:60
 msgid "Fill window vertically"
-msgstr "Ocupar la ventana verticalmente"
+msgstr "Maximizar la ventana verticalmente"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:61
 msgid "Toggle above"
-msgstr "Mostrar encima"
+msgstr "Activar o desactivar siempre encima"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:62
 msgid "Toggle fullscreen"
-msgstr "Cambiar a pantalla completa"
+msgstr "Activar o desactivar a pantalla completa"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:63
 msgid "Move window to upper workspace"
-msgstr "Mover ventana al área de trabajo superior"
+msgstr "Mover la ventana al área de trabajo superior"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:64
 msgid "Move window to bottom workspace"
-msgstr "Mover ventana al área de trabajo inferior"
+msgstr "Mover la ventana al área de trabajo inferior"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:65
 msgid "Move window to left workspace"
-msgstr "Mover ventana al área de trabajo izquierda"
+msgstr "Mover la ventana al área de trabajo de la izquierda"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:66
 msgid "Move window to right workspace"
-msgstr "Mover ventana al área de trabajo derecha"
+msgstr "Mover ventana al área de trabajo de la derecha"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:67
 msgid "Move window to previous workspace"
-msgstr "Mover ventana al área de trabajo anterior"
+msgstr "Mover la ventana al área de trabajo anterior"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:68
 msgid "Move window to next workspace"
-msgstr "Mover ventana al área de trabajo siguiente"
+msgstr "Mover la ventana al área de trabajo siguiente"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:69
 msgid "Move window to workspace 1"
-msgstr "Mover ventana al área de trabajo 1"
+msgstr "Mover la ventana al área de trabajo 1"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:70
 msgid "Move window to workspace 2"
-msgstr "Mover ventana al área de trabajo 2"
+msgstr "Mover la ventana al área de trabajo 2"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:71
 msgid "Move window to workspace 3"
-msgstr "Mover ventana al área de trabajo 3"
+msgstr "Mover la ventana al área de trabajo 3"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:72
 msgid "Move window to workspace 4"
-msgstr "Mover ventana al área de trabajo 4"
+msgstr "Mover la ventana al área de trabajo 4"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:73
 msgid "Move window to workspace 5"
-msgstr "Mover ventana al área de trabajo 5"
+msgstr "Mover la ventana al área de trabajo 5"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:74
 msgid "Move window to workspace 6"
-msgstr "Mover ventana al área de trabajo 6"
+msgstr "Mover la ventana al área de trabajo 6"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:75
 msgid "Move window to workspace 7"
-msgstr "Mover ventana al área de trabajo 7"
+msgstr "Mover la ventana al área de trabajo 7"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:76
 msgid "Move window to workspace 8"
-msgstr "Mover ventana al área de trabajo 8"
+msgstr "Mover la ventana al área de trabajo 8"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:77
 msgid "Move window to workspace 9"
-msgstr "Mover ventana al área de trabajo 9"
+msgstr "Mover la ventana al área de trabajo 9"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:78
 msgid "Move window to workspace 10"
-msgstr "Mover ventana al área de trabajo 10"
+msgstr "Mover la ventana al área de trabajo 10"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:79
 msgid "Move window to workspace 11"
-msgstr "Mover ventana al área de trabajo 11"
+msgstr "Mover la ventana al área de trabajo 11"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:80
 msgid "Move window to workspace 12"
-msgstr "Mover ventana al área de trabajo 12"
+msgstr "Mover la ventana al área de trabajo 12"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:81
 msgid "Tile window to the top"
