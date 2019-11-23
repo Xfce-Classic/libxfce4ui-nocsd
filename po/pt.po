@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-10-12 18:30+0200\n"
-"PO-Revision-Date: 2019-11-22 22:24+0000\n"
+"PO-Revision-Date: 2019-11-22 23:38+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese (http://www.transifex.com/xfce/libxfce4ui/language/pt/)\n"
 "MIME-Version: 1.0\n"
@@ -92,7 +92,7 @@ msgstr "Fechar todos os separadores?"
 msgid ""
 "This window has multiple tabs open. Closing this window\n"
 "will also close all its tabs."
-msgstr "Esta janela tem vários separadores abertos. Fechando esta janela\ntambém fechará todos os seus separadores."
+msgstr "Esta janela tem vários separadores abertos. Ao fechar esta janela\ntambém fechará todos os seus separadores."
 
 #: ../libxfce4ui/xfce-dialogs.c:579
 #, c-format
@@ -108,11 +108,11 @@ msgstr "_Cancelar"
 
 #: ../libxfce4ui/xfce-dialogs.c:593
 msgid "Close _Window"
-msgstr "Fechar ja_nela"
+msgstr "Fechar _Janela"
 
 #: ../libxfce4ui/xfce-dialogs.c:594
 msgid "Close T_ab"
-msgstr "Fechar sep_arador"
+msgstr "Fechar Sep_arador"
 
 #: ../libxfce4ui/xfce-dialogs.c:599
 msgid "Do _not ask me again"
