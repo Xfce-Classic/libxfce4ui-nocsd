@@ -30,8 +30,11 @@
 
 #include "contributors.h"
 #include "translators.h"
-#include "system-info.h"
 #include "about-dialog-ui.h"
+
+#ifdef HAVE_GLIBTOP
+#include "system-info.h"
+#endif
 
 #define MARGIN 20
 
@@ -55,7 +58,7 @@ static GOptionEntry opt_entries[] =
 };
 
 
-
+#ifdef HAVE_GLIBTOP
 static void
 xfce_about_system (GtkBuilder *builder)
 {
@@ -103,6 +106,7 @@ xfce_about_system (GtkBuilder *builder)
   memory_text = g_format_size_full (mem.total, G_FORMAT_SIZE_IEC_UNITS);
   gtk_label_set_text (GTK_LABEL (label), memory_text ? memory_text : "");
 }
+#endif
 
 
 
@@ -545,7 +549,9 @@ main (gint    argc,
   xfce_titled_dialog_set_subtitle (XFCE_TITLED_DIALOG (dialog), version);
   g_free (version);
 
+#ifdef HAVE_GLIBTOP
   xfce_about_system (builder);
+#endif
 
   object = gtk_builder_get_object (builder, "about-buffer");
   xfce_about_about (GTK_TEXT_BUFFER (object));

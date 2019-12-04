@@ -10,16 +10,24 @@ bin_PROGRAMS = \
 	xfce4-about
 
 xfce4_about_built_sources = \
-	system-info.c \
-	system-info.h \
 	about-dialog-ui.h
 
 xfce4_about_SOURCES = \
 	$(xfce4_about_built_sources) \
 	contributors.h \
 	translators.h \
-	system-info.h \
 	main.c
+
+if ENABLE_GLIBTOP
+
+xfce4_about_built_sources += \
+	system-info.c \
+	system-info.h
+
+xfce4_about_SOURCES += \
+	system-info.h
+
+endif
 
 xfce4_about_CFLAGS = \
 	$(LIBXFCE4UTIL_CFLAGS) \
