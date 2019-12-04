@@ -242,7 +242,7 @@ show_xfce_titled_dialog_new_with_mixed_buttons (GtkButton *button,
   dialog_gtk3 = xfce_titled_dialog_new_with_mixed_buttons ("Settings Editor (Gtk3)", NULL,
                                                            GTK_DIALOG_DESTROY_WITH_PARENT,
                                                            "help-browser", "Help", GTK_RESPONSE_HELP,
-                                                           "window-close", "Close", GTK_RESPONSE_OK,
+                                                           "window-close-symbolic", "Close", GTK_RESPONSE_OK,
                                                            "weather-snow", "Snow!", GTK_RESPONSE_APPLY,
                                                            "", "no icon", GTK_RESPONSE_CANCEL,
                                                            NULL);

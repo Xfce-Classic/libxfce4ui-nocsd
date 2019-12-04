@@ -359,7 +359,7 @@ xfce_dialog_show_info (GtkWindow   *parent,
 #if !GTK_CHECK_VERSION (3, 10, 0)
                        GTK_STOCK_CLOSE,
 #else
-                       XFCE_BUTTON_TYPE_MIXED, "window-close", _("Close"),
+                       XFCE_BUTTON_TYPE_MIXED, "window-close-symbolic", _("Close"),
 #endif
                        GTK_RESPONSE_CLOSE, NULL);
 
@@ -402,7 +402,7 @@ xfce_dialog_show_warning (GtkWindow   *parent,
 #if !GTK_CHECK_VERSION (3, 10, 0)
                        GTK_STOCK_CLOSE,
 #else
-                       XFCE_BUTTON_TYPE_MIXED, "window-close", _("Close"),
+                       XFCE_BUTTON_TYPE_MIXED, "window-close-symbolic", _("Close"),
 #endif
                        GTK_RESPONSE_CLOSE, NULL);
 
@@ -446,7 +446,7 @@ xfce_dialog_show_error (GtkWindow    *parent,
 #if !GTK_CHECK_VERSION (3, 10, 0)
                        GTK_STOCK_CLOSE,
 #else
-                       XFCE_BUTTON_TYPE_MIXED, "window-close", _("Close"),
+                       XFCE_BUTTON_TYPE_MIXED, "window-close-symbolic", _("Close"),
 #endif
                        GTK_RESPONSE_CLOSE, NULL);
 
@@ -595,7 +595,7 @@ xfce_dialog_confirm_close_tabs (GtkWindow *parent,
                                     secondary_text,
                                     XFCE_BUTTON_TYPE_MIXED, "gtk-cancel", _("_Cancel"), GTK_RESPONSE_CANCEL,
                                     XFCE_BUTTON_TYPE_MIXED, "application-exit", _("Close _Window"), GTK_RESPONSE_YES,
-                                    XFCE_BUTTON_TYPE_MIXED, "window-close", _("Close T_ab"), GTK_RESPONSE_CLOSE,
+                                    XFCE_BUTTON_TYPE_MIXED, "window-close-symbolic", _("Close T_ab"), GTK_RESPONSE_CLOSE,
                                     NULL);
 
   if (show_confirm_box)
