@@ -73,19 +73,13 @@ xfce_about_system (GtkBuilder *builder)
   device_text = get_system_info (DEVICE_NAME);
   gtk_label_set_text (GTK_LABEL (label), device_text ? device_text : "");
 
-  label = gtk_builder_get_object (builder, "cpu");
-  info = glibtop_get_sysinfo ();
-  cpu_text = get_cpu_info (info);
-  gtk_label_set_markup (GTK_LABEL (label), cpu_text ? cpu_text : "");
+  label = gtk_builder_get_object (builder, "osname");
+  os_name_text = get_os_name ();
+  gtk_label_set_text (GTK_LABEL (label), os_name_text ? os_name_text : "");
 
-  label = gtk_builder_get_object (builder, "memory");
-  glibtop_get_mem (&mem);
-  memory_text = g_format_size_full (mem.total, G_FORMAT_SIZE_IEC_UNITS);
-  gtk_label_set_text (GTK_LABEL (label), memory_text ? memory_text : "");
-
-  label = gtk_builder_get_object (builder, "graphics");
-
-  label = gtk_builder_get_object (builder, "disk");
+  label = gtk_builder_get_object (builder, "ostype");
+  os_type_text = get_system_info (ARCH);
+  gtk_label_set_text (GTK_LABEL (label), os_type_text ? os_type_text : "");
 
   label = gtk_builder_get_object (builder, "xfce-version");
   gtk_label_set_text (GTK_LABEL (label), xfce_version_string ());
@@ -99,13 +93,15 @@ xfce_about_system (GtkBuilder *builder)
   gtk_widget_hide (GTK_WIDGET (label));
 #endif
 
-  label = gtk_builder_get_object (builder, "osname");
-  os_name_text = get_os_name ();
-  gtk_label_set_text (GTK_LABEL (label), os_name_text ? os_name_text : "");
+  label = gtk_builder_get_object (builder, "cpu");
+  info = glibtop_get_sysinfo ();
+  cpu_text = get_cpu_info (info);
+  gtk_label_set_markup (GTK_LABEL (label), cpu_text ? cpu_text : "");
 
-  label = gtk_builder_get_object (builder, "ostype");
-  os_type_text = get_system_info (ARCH);
-  gtk_label_set_text (GTK_LABEL (label), os_type_text ? os_type_text : "");
+  label = gtk_builder_get_object (builder, "memory");
+  glibtop_get_mem (&mem);
+  memory_text = g_format_size_full (mem.total, G_FORMAT_SIZE_IEC_UNITS);
+  gtk_label_set_text (GTK_LABEL (label), memory_text ? memory_text : "");
 }
 
 
