@@ -140,11 +140,7 @@ xfce_titled_dialog_init (XfceTitledDialog *titled_dialog)
   gtk_container_remove (GTK_CONTAINER (titled_dialog), content_area);
 
   /* add a new vbox w/o border to the main window */
-#if GTK_CHECK_VERSION (3, 0, 0)
   vbox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
-#else
-  vbox = gtk_vbox_new (FALSE, 0);
-#endif
   gtk_container_add (GTK_CONTAINER (titled_dialog), vbox);
   gtk_widget_show (vbox);
 
@@ -154,11 +150,7 @@ xfce_titled_dialog_init (XfceTitledDialog *titled_dialog)
   gtk_widget_show (titled_dialog->priv->heading);
 
   /* add the separator between header and content */
-#if GTK_CHECK_VERSION (3, 0, 0)
   line = gtk_separator_new (GTK_ORIENTATION_HORIZONTAL);
-#else
-  line = gtk_hseparator_new ();
-#endif
   gtk_box_pack_start (GTK_BOX (vbox), line, FALSE, FALSE, 0);
   gtk_widget_show (line);
 

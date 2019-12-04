@@ -214,13 +214,9 @@ xfce_spawn_get_active_workspace_number (GdkScreen *screen)
   gint       format_ret;
   gint       ws_num = 0;
 
-#if GTK_CHECK_VERSION (3, 0, 0)
   GdkDisplay *display;
   display = gdk_screen_get_display (screen);
   gdk_x11_display_error_trap_push (display);
-#else
-  gdk_error_trap_push ();
-#endif
 
   root = gdk_screen_get_root_window (screen);
 
@@ -255,12 +251,7 @@ xfce_spawn_get_active_workspace_number (GdkScreen *screen)
       XFree (prop_ret);
     }
 
-#if GTK_CHECK_VERSION (3, 0, 0)
   gdk_x11_display_error_trap_pop_ignored (display);
-#else
-  if (gdk_error_trap_pop () != 0)
-    return 0;
-#endif
 
   return ws_num;
 }

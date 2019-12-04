@@ -6,7 +6,7 @@ dnl ***************************
 dnl *** Version information ***
 dnl ***************************
 m4_define([libxfce4ui_verinfo], [0:0:0])
-m4_define([libxfce4ui_version_api], [1])
+m4_define([libxfce4ui_version_api], [2])
 m4_define([libxfce4ui_version_major], [4])
 m4_define([libxfce4ui_version_minor], [14])
 m4_define([libxfce4ui_version_micro], [1])
@@ -16,7 +16,7 @@ m4_define([libxfce4ui_version_tag], [git])
 m4_define([libxfce4ui_version], [libxfce4ui_version_major().libxfce4ui_version_minor().libxfce4ui_version_micro()ifelse(libxfce4ui_version_nano(), [], [], [.libxfce4ui_version_nano()])ifelse(libxfce4ui_version_tag(), [git], [libxfce4ui_version_tag()-libxfce4ui_version_build()], [libxfce4ui_version_tag()])])
 
 m4_define([libxfce4kbd_private_verinfo], [0:0:0])
-m4_define([libxfce4kbd_private_version_api], [2])
+m4_define([libxfce4kbd_private_version_api], [3])
 
 dnl # DO NOT MODIFY ANYTHING BELOW THIS LINE, UNLESS YOU KNOW WHAT
 dnl # YOU ARE DOING.
@@ -130,14 +130,6 @@ XDT_CHECK_PACKAGE([GLIB], [glib-2.0], [2.42.0])
 XDT_CHECK_PACKAGE([GTK3], [gtk+-3.0], [3.22.0])
 XDT_CHECK_PACKAGE([LIBXFCE4UTIL], [libxfce4util-1.0], [4.12.0])
 
-dnl ***********************************************************
-dnl *** Optional support for a GTK+2 version of the library ***
-dnl ***********************************************************
-XDT_CHECK_OPTIONAL_PACKAGE([GTK2],
-                           [gtk+-2.0], [2.24.0], [gtk2],
-                           [GTK+ 2 support])
-AM_CONDITIONAL([ENABLE_GTK2_LIBRARY], [test "x$GTK2_FOUND" = "xyes"])
-
 dnl ****************************************************************
 dnl *** Optional support for system information based on glibtop ***
 dnl ****************************************************************
@@ -210,46 +202,6 @@ AC_MSG_RESULT([$with_manual_website])
 dnl *********************************************************
 dnl *** Optional support for the Glade Interface Designer ***
 dnl *********************************************************
-dnl Do not try to build gladeui when gtk2 is disabled
-if test "x$GTK2_FOUND" = "xyes"; then
-    XDT_CHECK_OPTIONAL_PACKAGE([GLADEUI], [gladeui-1.0],
-                            [3.5.0], [gladeui], [glade interface designer])
-    AC_ARG_WITH([gladeui-catalogdir],
-                [AC_HELP_STRING([--with-gladeui-catalogdir=PATH],
-                                [Specify where to install glade designer catalog files (default=autodetect)])],
-                [gladeui_catalogdir="$withval"])
-    AC_ARG_WITH([gladeui-moduledir],
-                [AC_HELP_STRING([--with-gladeui-moduledir=PATH],
-                                [Specify where to install glade designer modules (default=autodetect)])],
-                [gladeui_moduledir="$withval"])
-    AC_ARG_WITH([gladeui-pixmapdir],
-                [AC_HELP_STRING([--with-gladeui-pixmapdir=PATH],
-                                [Specify where to install glade designer pixmaps (default=autodetect)])],
-                [gladeui_pixmapdir="$withval"])
-    if test x"$GLADEUI_FOUND" = x"yes"; then
-    if test x"$gladeui_catalogdir" = x""; then
-        GLADEUI_CATALOGDIR=`$PKG_CONFIG "--variable=catalogdir" "gladeui-1.0"`
-    else
-        GLADEUI_CATALOGDIR="$gladeui_catalogdir"
-    fi
-    if test x"$gladeui_moduledir" = x""; then
-        GLADEUI_MODULEDIR=`$PKG_CONFIG "--variable=moduledir" "gladeui-1.0"`
-    else
-        GLADEUI_MODULEDIR="$gladeui_moduledir"
-    fi
-    if test x"$gladeui_pixmapdir" = x""; then
-        GLADEUI_PIXMAPDIR=`$PKG_CONFIG "--variable=pixmapdir" "gladeui-1.0"`
-    else
-        GLADEUI_PIXMAPDIR="$gladeui_pixmapdir"
-    fi
-    fi
-    AC_SUBST([GLADEUI_CATALOGDIR])
-    AC_SUBST([GLADEUI_MODULEDIR])
-    AC_SUBST([GLADEUI_PIXMAPDIR])
-else
-    dnl Hacky way to declare HAVE_GLADEUI false with --disable-gtk2
-    AM_CONDITIONAL([HAVE_GLADEUI], false)
-fi
 
 XDT_CHECK_OPTIONAL_PACKAGE([GLADEUI2], [gladeui-2.0],
                            [3.5.0], [gladeui2], [glade interface designer])
@@ -383,10 +335,8 @@ glade/icons/16x16/Makefile
 glade/icons/22x22/Makefile
 icons/Makefile
 icons/48x48/Makefile
-libxfce4kbd-private/libxfce4kbd-private-2.pc
 libxfce4kbd-private/libxfce4kbd-private-3.pc
 libxfce4kbd-private/Makefile
-libxfce4ui/libxfce4ui-1.pc
 libxfce4ui/libxfce4ui-2.pc
 libxfce4ui/libxfce4ui-config.h
 libxfce4ui/Makefile
@@ -401,19 +351,6 @@ dnl ***************************
 echo
 echo "Build Configuration:"
 echo
-if test x"$GTK2_FOUND" = x"yes"; then
-echo "* GTK2 support:  yes"
-else
-echo "* GTK2 support:  no"
-fi
-if test x"$GLADEUI_FOUND" = x"yes"; then
-echo "* Glade Interface Designer:  yes"
-echo "  - Catalog directory:       $GLADEUI_CATALOGDIR"
-echo "  - Module directory:        $GLADEUI_MODULEDIR"
-echo "  - Pixmap directory:        $GLADEUI_PIXMAPDIR"
-else
-echo "* Glade Interface Designer:  no"
-fi
 if test x"$GLADEUI2_FOUND" = x"yes"; then
 echo "* Glade 3.0 Interface Designer:  yes"
 echo "  - Catalog directory:       $GLADEUI2_CATALOGDIR"

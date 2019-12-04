@@ -44,7 +44,6 @@ show_xfce_message_dialog (GtkButton *button,
 {
   GdkPixbuf *pixbuf = gdk_pixbuf_new_from_file_at_size ("../icons/48x48/xfce4-logo.png", 24, 24, NULL);
 
-#if GTK_CHECK_VERSION (3, 0, 0)
   xfce_message_dialog (NULL, "Question - Gtk3 version with no deprecated symbols",
                        "dialog-question",
                        "There are unsaved modifications",
@@ -53,22 +52,7 @@ show_xfce_message_dialog (GtkButton *button,
                        XFCE_BUTTON_TYPE_MIXED, "edit-delete", "Forget modifications", GTK_RESPONSE_APPLY,
                        XFCE_BUTTON_TYPE_PIXBUF, pixbuf, "Quit", GTK_RESPONSE_NO,
                        XFCE_BUTTON_TYPE_MIXED, "process-stop", "Cancel", GTK_RESPONSE_CANCEL,
-                       NULL);
-#endif
-
-/* ignore those warnings so it's easy to see what the default Gtk2 version
- * looks like in Gtk3 with the stock icons */
-G_GNUC_BEGIN_IGNORE_DEPRECATIONS
-  xfce_message_dialog (NULL, "Question - Gtk2 version",
-                       GTK_STOCK_DIALOG_QUESTION,
-                       "There are unsaved modifications",
-                       "The menu has been modified, do you want to save it before quitting?",
-                       GTK_STOCK_SAVE, GTK_RESPONSE_YES,
-                       XFCE_BUTTON_TYPE_MIXED, GTK_STOCK_DELETE, "Forget modifications", GTK_RESPONSE_APPLY,
-                       XFCE_BUTTON_TYPE_PIXBUF, pixbuf, "Quit", GTK_RESPONSE_NO,
-                       GTK_STOCK_CANCEL, GTK_RESPONSE_CANCEL,
-                       NULL);
-G_GNUC_END_IGNORE_DEPRECATIONS
+                       NULL);f
 
   if (pixbuf != NULL)
     {
@@ -97,21 +81,10 @@ remove_auto_online (GtkButton *button,
   XfceRc   *rc;
   gboolean  response;
 
-#if GTK_CHECK_VERSION (3, 0, 0)
   response = xfce_dialog_confirm (NULL, "system-run", "Execute",
                                   "Removing this will enable the show help "
                                   "dialogs to appear. Do you want to do this?",
                                   "Remove auto-online in rc file? (Gtk3)");
-#endif
-
-/* ignore those warnings so it's easy to see what the default Gtk2 version
- * looks like in Gtk3 with the stock icons */
-G_GNUC_BEGIN_IGNORE_DEPRECATIONS
-  response = xfce_dialog_confirm (NULL, GTK_STOCK_EXECUTE, "Execute",
-                                  "Removing this will enable the show help "
-                                  "dialogs to appear. Do you want to do this?",
-                                  "Remove auto-online in rc file? (Gtk2)");
-G_GNUC_END_IGNORE_DEPRECATIONS
 
   if (response == FALSE)
     return;
@@ -155,23 +128,11 @@ static void
 show_xfce_dialog_confirm (GtkButton *button,
                           gpointer unused)
 {
-#if GTK_CHECK_VERSION (3, 0, 0)
   xfce_dialog_confirm (NULL, "system-run", "Execute",
                        "Do you want to start the panel? If you do, make sure "
                        "you save the session on logout, so the panel is "
                        "automatically started the next time you login.",
                        "No running instance of %s was found", G_LOG_DOMAIN);
-#endif
-
-/* ignore those warnings so it's easy to see what the default Gtk2 version
- * looks like in Gtk3 with the stock icons */
-G_GNUC_BEGIN_IGNORE_DEPRECATIONS
-  xfce_dialog_confirm (NULL, GTK_STOCK_EXECUTE, "Execute",
-                       "Do you want to start the panel? If you do, make sure "
-                       "you save the session on logout, so the panel is "
-                       "automatically started the next time you login.",
-                       "No running instance of %s was found", G_LOG_DOMAIN);
-G_GNUC_END_IGNORE_DEPRECATIONS
 }
 
 
@@ -187,9 +148,6 @@ static void
 show_xfce_titled_dialog_new_with_buttons (GtkButton *button,
                                           gpointer unused)
 {
-  GtkWidget *dialog_gtk2;
-
-#if GTK_CHECK_VERSION (3, 0, 0)
   GtkWidget *dialog_gtk3;
 
   dialog_gtk3 = xfce_titled_dialog_new_with_buttons ("Settings Editor (Gtk3)", NULL,
@@ -207,36 +165,12 @@ show_xfce_titled_dialog_new_with_buttons (GtkButton *button,
   g_signal_connect (dialog_gtk3, "response", G_CALLBACK (close_window), NULL);
 
   gtk_widget_show_all (dialog_gtk3);
-#endif
-
-/* ignore those warnings so it's easy to see what the default Gtk2 version
- * looks like in Gtk3 with the stock icons */
-G_GNUC_BEGIN_IGNORE_DEPRECATIONS
-  dialog_gtk2 = xfce_titled_dialog_new_with_buttons ("Settings Editor (Gtk2)", NULL,
-                                                     GTK_DIALOG_DESTROY_WITH_PARENT,
-                                                     GTK_STOCK_HELP, GTK_RESPONSE_HELP,
-                                                     GTK_STOCK_CLOSE, GTK_RESPONSE_OK,
-                                                     NULL);
-
-  xfce_titled_dialog_set_subtitle (XFCE_TITLED_DIALOG (dialog_gtk2),
-                                   _("Customize settings stored by Xfconf"));
-
-  gtk_window_set_icon_name (GTK_WINDOW (dialog_gtk2), "preferences-system");
-  gtk_window_set_type_hint (GTK_WINDOW (dialog_gtk2), GDK_WINDOW_TYPE_HINT_NORMAL);
-
-  g_signal_connect (dialog_gtk2, "response", G_CALLBACK (close_window), NULL);
-
-  gtk_widget_show_all (dialog_gtk2);
-G_GNUC_END_IGNORE_DEPRECATIONS
 }
 
 static void
 show_xfce_titled_dialog_new_with_mixed_buttons (GtkButton *button,
                                                 gpointer unused)
 {
-  GtkWidget *dialog_gtk2;
-
-#if GTK_CHECK_VERSION (3, 0, 0)
   GtkWidget *dialog_gtk3;
 
   dialog_gtk3 = xfce_titled_dialog_new_with_mixed_buttons ("Settings Editor (Gtk3)", NULL,
@@ -256,29 +190,7 @@ show_xfce_titled_dialog_new_with_mixed_buttons (GtkButton *button,
   g_signal_connect (dialog_gtk3, "response", G_CALLBACK (close_window), NULL);
 
   gtk_widget_show_all (dialog_gtk3);
-#endif
 
-/* ignore those warnings so it's easy to see what the default Gtk2 version
- * looks like in Gtk3 with the stock icons */
-G_GNUC_BEGIN_IGNORE_DEPRECATIONS
-  dialog_gtk2 = xfce_titled_dialog_new_with_mixed_buttons ("Settings Editor (Gtk2)", NULL,
-                                                           GTK_DIALOG_DESTROY_WITH_PARENT,
-                                                           GTK_STOCK_HELP, "Help", GTK_RESPONSE_HELP,
-                                                           GTK_STOCK_CLOSE, "Close", GTK_RESPONSE_OK,
-                                                           "weather-snow", "Snow?", GTK_RESPONSE_APPLY,
-                                                           "", "no icon", GTK_RESPONSE_CANCEL,
-                                                           NULL);
-
-  xfce_titled_dialog_set_subtitle (XFCE_TITLED_DIALOG (dialog_gtk2),
-                                   _("Customize settings stored by Xfconf"));
-
-  gtk_window_set_icon_name (GTK_WINDOW (dialog_gtk2), "preferences-system");
-  gtk_window_set_type_hint (GTK_WINDOW (dialog_gtk2), GDK_WINDOW_TYPE_HINT_NORMAL);
-
-  g_signal_connect (dialog_gtk2, "response", G_CALLBACK (close_window), NULL);
-
-  gtk_widget_show_all (dialog_gtk2);
-G_GNUC_END_IGNORE_DEPRECATIONS
 }
 
 static void
@@ -290,8 +202,8 @@ show_xfce_gdk_screen_get_active (GtkButton *button,
 
   screen = xfce_gdk_screen_get_active (&monitor_num);
 
-  xfce_dialog_show_info(NULL, NULL, "monitor num: %d of %d",
-                        monitor_num, gdk_screen_get_n_monitors (screen));
+  xfce_dialog_show_info (NULL, NULL, "monitor num: %d of %d",
+                         monitor_num, gdk_screen_get_n_monitors (screen));
 }
 
 
@@ -314,11 +226,7 @@ create_main_window (void)
   g_signal_connect (G_OBJECT (window), "destroy", G_CALLBACK (main_window_destroy), NULL);
 
   /* Create the box to hold all the stuff */
-#if GTK_CHECK_VERSION (3, 0, 0)
   box = gtk_box_new (GTK_ORIENTATION_VERTICAL, 12);
-#else
-  box = gtk_vbox_new (FALSE, 0);
-#endif
   gtk_container_add (GTK_CONTAINER (window), box);
   gtk_widget_show (box);
 

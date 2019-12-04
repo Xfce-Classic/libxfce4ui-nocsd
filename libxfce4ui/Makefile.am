@@ -143,42 +143,6 @@ endif
 # endif HAVE_INTROSPECTION
 
 
-##
-## GTK+ 2 support library
-##
-if ENABLE_GTK2_LIBRARY
-
-lib_LTLIBRARIES += \
-	libxfce4ui-1.la
-
-libxfce4ui_1_la_SOURCES = \
-	$(libxfce4ui_sources)
-
-libxfce4ui_1_la_CFLAGS = \
-	$(LIBSM_CFLAGS) \
-	$(GTK2_CFLAGS) \
-	$(LIBSTARTUP_NOTIFICATION_CFLAGS) \
-	$(LIBXFCE4UTIL_CFLAGS) \
-	$(PLATFORM_CFLAGS)
-
-libxfce4ui_1_la_LDFLAGS = \
-	-version-info $(LIBXFCE4UI_VERINFO) \
-	-export-symbols-regex "^[^_].*" \
-	-no-undefined \
-	$(LIBSM_LDFLAGS) \
-	$(PLATFORM_LDFLAGS)
-
-libxfce4ui_1_la_LIBADD = \
-	$(LIBSM_LIBS) \
-	$(GTK2_LIBS) \
-	$(LIBSTARTUP_NOTIFICATION_LIBS) \
-	$(LIBXFCE4UTIL_LIBS)
-
-pkgconfig_DATA += \
-	libxfce4ui-1.pc
-
-
-endif
 
 ##
 ## Rules to auto-generate built sources

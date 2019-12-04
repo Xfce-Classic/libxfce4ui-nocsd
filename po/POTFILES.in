@@ -23,7 +23,6 @@ libxfce4kbd-private/xfce-shortcuts-xfwm4.c
 # Support for GtkBuilder
 #
 glade/libxfce4ui-glade.c
-glade/libxfce4ui.xml.in
 glade/libxfce4ui-2.xml.in
 
 #
@@ -33,6 +32,7 @@ xfce4-about/main.c
 xfce4-about/contributors.h
 xfce4-about/xfce4-about.desktop.in
 xfce4-about/xfce4-about-dialog.glade
+xfce4-about/system-info.c
 
 #
 # UI tests

@@ -154,11 +154,7 @@ xfce_shortcut_conflict_dialog (GtkWindow   *parent,
         other_button_text = g_strdup_printf (_(conflict_messages[i].other_button_text), other_action_name);
 
         response = xfce_message_dialog (parent, title,
-#if !GTK_CHECK_VERSION (3, 10, 0)
-                                        GTK_STOCK_DIALOG_QUESTION,
-#else
                                         "dialog-question",
-#endif
                                         title, secondary_text,
                                         XFCE_BUTTON_TYPE_MIXED, NULL, owner_button_text, GTK_RESPONSE_ACCEPT,
                                         XFCE_BUTTON_TYPE_MIXED, NULL, other_button_text, GTK_RESPONSE_REJECT,
@@ -178,17 +174,9 @@ xfce_shortcut_conflict_dialog (GtkWindow   *parent,
   if (G_UNLIKELY (!handled))
     {
       xfce_message_dialog (parent, title,
-#if !GTK_CHECK_VERSION (3, 10, 0)
-                           GTK_STOCK_DIALOG_ERROR,
-#else
                            "dialog-error",
-#endif
                            title, _("This shortcut is already being used for something else."),
-#if !GTK_CHECK_VERSION (3, 10, 0)
-                           GTK_STOCK_CLOSE,
-#else
-                           "window-close",
-#endif
+                           "window-close-symbolic",
                            GTK_RESPONSE_CLOSE, NULL);
       response = GTK_RESPONSE_REJECT;
     }

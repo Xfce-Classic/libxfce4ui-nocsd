@@ -64,16 +64,11 @@ xfce_gdk_screen_get_active (gint *monitor_return)
   gint              rootx, rooty;
   GdkScreen        *screen;
 
-#if GTK_CHECK_VERSION (3, 22, 0)
   GdkSeat *seat;
 
   display = gdk_display_get_default ();
   seat = gdk_display_get_default_seat (display);
   gdk_device_get_position (gdk_seat_get_pointer (seat), &screen, &rootx, &rooty);
-#else
-  display = gdk_display_get_default ();
-  gdk_display_get_pointer (display, &screen, &rootx, &rooty, NULL);
-#endif
 
   if (G_UNLIKELY (screen == NULL))
     {
@@ -85,11 +80,7 @@ xfce_gdk_screen_get_active (gint *monitor_return)
     {
       /* return the monitor number */
       if (monitor_return != NULL)
-#if GTK_CHECK_VERSION (3, 22, 0)
         *monitor_return = 0;
-#else
-        *monitor_return = gdk_screen_get_monitor_at_point (screen, rootx, rooty);
-#endif
     }
 
   return screen;
@@ -111,8 +102,6 @@ GdkRectangle *
 xfce_gdk_screen_get_geometry (void)
 {
   GdkRectangle *geometry;
-
-#if GTK_CHECK_VERSION (3, 22, 0)
   gint x, y, w, h;
   int num_monitors;
   GdkDisplay *display;
@@ -140,12 +129,6 @@ xfce_gdk_screen_get_geometry (void)
 
   geometry->width = w - x;
   geometry->height = h - y;
-#else
-  geometry = g_new0 (GdkRectangle, 1);
-
-  geometry->width = gdk_screen_width ();
-  geometry->height = gdk_screen_height ();
-#endif
 
   return geometry;
 }

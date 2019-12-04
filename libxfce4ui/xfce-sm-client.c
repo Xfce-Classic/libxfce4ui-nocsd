@@ -1855,10 +1855,8 @@ xfce_sm_client_set_desktop_file(XfceSMClient *sm_client,
             g_set_application_name(name);
     }
 
-#if GTK_CHECK_VERSION(2, 16, 0)
     if(gtk_window_get_default_icon_name())
         has_default_icon = TRUE;
-#endif
 
     icon_list = gtk_window_get_default_icon_list();
     if(icon_list) {

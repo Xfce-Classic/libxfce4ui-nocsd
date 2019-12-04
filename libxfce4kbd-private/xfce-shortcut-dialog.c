@@ -43,12 +43,9 @@ static gboolean xfce_shortcut_dialog_key_pressed      (XfceShortcutDialog      *
                                                        GdkEventKey             *event);
 static gboolean xfce_shortcut_dialog_key_released     (XfceShortcutDialog      *dialog,
                                                        GdkEventKey             *event);
-
-#if GTK_CHECK_VERSION (3, 0, 0)
 static void     xfce_shortcut_dialog_prepare_grab     (GdkSeat                 *seat,
                                                        GdkWindow               *window,
                                                        gpointer                 user_data);
-#endif
 
 
 struct _XfceShortcutDialogClass
@@ -199,9 +196,6 @@ xfce_shortcut_dialog_create_contents (XfceShortcutDialog *dialog,
                                       const gchar        *action)
 {
   GtkWidget   *content_box;
-#if !GTK_CHECK_VERSION (3, 14, 0)
-  GtkWidget   *alignment;
-#endif
   GtkWidget   *box;
   GtkWidget   *button;
   GtkWidget   *label;
@@ -240,46 +234,21 @@ xfce_shortcut_dialog_create_contents (XfceShortcutDialog *dialog,
   /* Create clear button for xfwm4 */
   if (g_utf8_collate (provider, "xfwm4") == 0)
     {
-#if GTK_CHECK_VERSION (3, 10, 0)
       button = gtk_button_new_from_icon_name ("edit-clear", GTK_ICON_SIZE_BUTTON);
-#else
-      button = gtk_button_new_from_stock (GTK_STOCK_CLEAR);
-#endif
       gtk_dialog_add_action_widget (GTK_DIALOG (dialog), button, GTK_RESPONSE_REJECT);
       gtk_widget_show (button);
     }
 
   /* Create cancel button */
-#if GTK_CHECK_VERSION (3, 10, 0)
   button = gtk_button_new_with_mnemonic (_("_Cancel"));
-#else
-  button = gtk_button_new_from_stock (GTK_STOCK_CANCEL);
-#endif
   gtk_dialog_add_action_widget (GTK_DIALOG (dialog), button, GTK_RESPONSE_CANCEL);
   gtk_widget_show (button);
 
-  /* Main content container */
-#if !GTK_CHECK_VERSION (3, 14, 0)
-  alignment = gtk_alignment_new (0, 0, 1, 1);
-  gtk_alignment_set_padding (GTK_ALIGNMENT (alignment), 0, 6, 12, 0);
-  gtk_container_add (GTK_CONTAINER (gtk_dialog_get_content_area (GTK_DIALOG (dialog))),
-                     alignment);
-  gtk_widget_show (alignment);
-#endif
-
-#if GTK_CHECK_VERSION (3, 0, 0)
   content_box = gtk_box_new (GTK_ORIENTATION_VERTICAL, 6);
-#else
-  content_box = gtk_vbox_new (FALSE, 6);
-#endif
+
   gtk_container_set_border_width (GTK_CONTAINER (content_box), 6);
-#if GTK_CHECK_VERSION (3, 14, 0)
   gtk_container_add (GTK_CONTAINER (gtk_dialog_get_content_area (GTK_DIALOG (dialog))),
                      content_box);
-#else
-  gtk_container_add (GTK_CONTAINER (alignment), content_box);
-#endif
-  gtk_widget_show (content_box);
 
   /* TRANSLATORS: this creates the explanation for the user. The first %s is replaced
    * by the action type which you translated earlier, the second %s is replaced by the
@@ -293,11 +262,7 @@ xfce_shortcut_dialog_create_contents (XfceShortcutDialog *dialog,
 
   label = gtk_label_new (NULL);
   gtk_label_set_markup (GTK_LABEL (label), explanation_label_markup);
-#if GTK_CHECK_VERSION (3, 14, 0)
   gtk_label_set_yalign (GTK_LABEL (label), 0.5);
-#else
-  gtk_misc_set_alignment (GTK_MISC (label), 0.0, 0.5);
-#endif
   gtk_label_set_line_wrap (GTK_LABEL (label), TRUE);
   gtk_container_add (GTK_CONTAINER (content_box), label);
   gtk_widget_show (label);
@@ -306,29 +271,17 @@ xfce_shortcut_dialog_create_contents (XfceShortcutDialog *dialog,
 
   /* Box and labels to display the shortcut currently being grabbed.
    * It will be updated to key-press events. */
-  #if GTK_CHECK_VERSION (3, 0, 0)
   box = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 12);
-  #else
-  box = gtk_hbox_new (FALSE, 12);
-  #endif
   gtk_container_add (GTK_CONTAINER (content_box), box);
   gtk_widget_show (box);
 
   label = gtk_label_new (_("Shortcut:"));
-#if GTK_CHECK_VERSION (3, 14, 0)
   gtk_label_set_yalign (GTK_LABEL (label), 0.5);
-#else
-  gtk_misc_set_alignment (GTK_MISC (label), 0.0, 0.5);
-#endif
   gtk_container_add (GTK_CONTAINER (box), label);
   gtk_widget_show (label);
 
   dialog->shortcut_label = gtk_label_new (_("No keys pressed yet, proceed."));
-#if GTK_CHECK_VERSION (3, 14, 0)
   gtk_label_set_yalign (GTK_LABEL (dialog->shortcut_label), 0.5);
-#else
-  gtk_misc_set_alignment (GTK_MISC (dialog->shortcut_label), 0.0, 0.5);
-#endif
   gtk_container_add (GTK_CONTAINER (box), dialog->shortcut_label);
   gtk_widget_show (dialog->shortcut_label);
 
@@ -342,10 +295,8 @@ gint
 xfce_shortcut_dialog_run (XfceShortcutDialog *dialog,
                           GtkWidget          *parent)
 {
-#if GTK_CHECK_VERSION (3, 0, 0)
   GdkDisplay       *display;
   GdkSeat          *seat;
-#endif
   gint              response = GTK_RESPONSE_CANCEL;
 
   g_return_val_if_fail (XFCE_IS_SHORTCUT_DIALOG (dialog), GTK_RESPONSE_CANCEL);
@@ -353,7 +304,6 @@ xfce_shortcut_dialog_run (XfceShortcutDialog *dialog,
   gtk_window_set_transient_for (GTK_WINDOW (dialog), GTK_WINDOW (parent));
   gtk_window_set_destroy_with_parent (GTK_WINDOW (dialog), TRUE);
 
-#if GTK_CHECK_VERSION (3, 0, 0)
   display = gtk_widget_get_display (GTK_WIDGET (dialog));
   seat = gdk_display_get_default_seat (display);
 
@@ -362,10 +312,6 @@ xfce_shortcut_dialog_run (XfceShortcutDialog *dialog,
                  gdk_screen_get_root_window (gdk_display_get_default_screen (display)),
                  GDK_SEAT_CAPABILITY_ALL, TRUE, NULL, NULL,
                  xfce_shortcut_dialog_prepare_grab, NULL) == GDK_GRAB_SUCCESS)
-#else
-  /* Take control on the keyboard */
-  if (G_LIKELY (gdk_keyboard_grab (gtk_widget_get_root_window (GTK_WIDGET (dialog)), TRUE, GDK_CURRENT_TIME) == GDK_GRAB_SUCCESS))
-#endif
     {
       /* Run the dialog and wait for the user to enter a valid shortcut */
       response = gtk_dialog_run (GTK_DIALOG (dialog));
@@ -377,13 +323,8 @@ xfce_shortcut_dialog_run (XfceShortcutDialog *dialog,
           dialog->shortcut = g_strdup ("");
         }
 
-#if GTK_CHECK_VERSION (3, 0, 0)
       /* Release keyboard */
       gdk_seat_ungrab (seat);
-#else
-      /* Release keyboard */
-      gdk_keyboard_ungrab (GDK_CURRENT_TIME);
-#endif
     }
   else
     {
@@ -470,10 +411,8 @@ xfce_shortcut_dialog_key_released (XfceShortcutDialog *dialog,
   /* Check if the shortcut was accepted */
   if (G_LIKELY (shortcut_accepted))
     {
-#if !GTK_CHECK_VERSION (3, 0, 0)
       /* Release keyboard */
       gdk_keyboard_ungrab (GDK_CURRENT_TIME);
-#endif
 
       /* Exit dialog with positive response */
       gtk_dialog_response (GTK_DIALOG (dialog), GTK_RESPONSE_OK);
@@ -517,7 +456,6 @@ xfce_shortcut_dialog_get_action_name (XfceShortcutDialog *dialog)
 
 
 
-#if GTK_CHECK_VERSION (3, 0, 0)
 static void
 xfce_shortcut_dialog_prepare_grab (GdkSeat   *seat,
                                    GdkWindow *window,
@@ -525,4 +463,3 @@ xfce_shortcut_dialog_prepare_grab (GdkSeat   *seat,
 {
   gdk_window_show_unraised (window);
 }
-#endif

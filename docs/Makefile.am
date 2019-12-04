@@ -52,12 +52,12 @@ AM_CPPFLAGS =	 							\
 	-I$(top_srcdir) 						\
 	-I$(top_builddir) 						\
 	$(LIBXFCE4UTIL_CFLAGS)						\
-	$(GTK2_CFLAGS)	 						\
+	$(GTK3_CFLAGS)	 						\
 	$(GTK_DOC_EXTRA_CFLAGS)
 
 GTKDOC_LIBS =  								\
 	$(LIBXFCE4UTIL_LIBS)						\
-	$(GTK2_LIBS)							\
+	$(GTK3_LIBS)							\
 	$(top_builddir)/libxfce4ui/libxfce4ui-$(LIBXFCE4UI_VERSION_API).la
 
 include $(top_srcdir)/gtk-doc.make

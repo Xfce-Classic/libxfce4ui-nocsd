@@ -79,23 +79,13 @@ xfce_gtk_button_new_mixed (const gchar *stock_id,
       if (stock_id != NULL && strlen(stock_id) > 0)
         {
           /* create image widget */
-#if !GTK_CHECK_VERSION (3, 10, 0)
-          if (g_str_has_prefix (stock_id, "gtk-"))
-            image = gtk_image_new_from_stock (stock_id, GTK_ICON_SIZE_BUTTON);
-          else
-#endif
-            image = gtk_image_new_from_icon_name (stock_id, GTK_ICON_SIZE_BUTTON);
+          image = gtk_image_new_from_icon_name (stock_id, GTK_ICON_SIZE_BUTTON);
           gtk_button_set_image (GTK_BUTTON (button), image);
         }
     }
   else
     {
-#if !GTK_CHECK_VERSION (3, 10, 0)
-      /* fall back to a stock button */
-      button = gtk_button_new_from_stock (stock_id);
-#else
       button = gtk_button_new_with_label (label);
-#endif
     }
 
   return button;
@@ -140,11 +130,7 @@ xfce_gtk_frame_box_new (const gchar  *label,
       frame_label = gtk_label_new (markup_label);
       gtk_label_set_use_markup (GTK_LABEL (frame_label), TRUE);
       g_free (markup_label);
-#if GTK_CHECK_VERSION (3, 14, 0)
-  gtk_label_set_yalign (GTK_LABEL (frame_label), 0.5);
-#else
-  gtk_misc_set_alignment (GTK_MISC (frame_label), 0.0, 0.5);
-#endif
+      gtk_label_set_yalign (GTK_LABEL (frame_label), 0.5);
       gtk_frame_set_label_widget (GTK_FRAME (frame), frame_label);
       gtk_widget_show (frame_label);
     }
@@ -237,7 +223,7 @@ xfce_gtk_window_center_on_active_screen (GtkWindow *window)
  * or will keep trying for up to 250ms. It will also return a value indicating
  * whether the menu was eventually mapped or not. Following is an excerpt from
  * the GTK+ Documentation on #GtkMenu.
- * 
+ *
  * Displays a menu and makes it available for selection.
  *
  * Applications can use this function to display context-sensitive menus, and will

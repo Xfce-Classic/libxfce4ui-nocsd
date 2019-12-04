@@ -101,11 +101,7 @@ xfce_dialog_show_help_uri (GdkScreen *screen,
   else
     {
       /* not very likely to happen, but it is possible exo is not installed */
-#if GTK_CHECK_VERSION (3, 22, 0)
       result = gtk_show_uri_on_window (parent, uri->str, gtk_get_current_event_time (), &error);
-#else
-      result = gtk_show_uri (screen, uri->str, gtk_get_current_event_time (), &error);
-#endif
     }
 
   if (!result)
@@ -272,26 +268,14 @@ xfce_dialog_show_help_with_version (GtkWindow   *parent,
 
   dialog = xfce_message_dialog_new (parent,
                                     _("Online Documentation"),
-#if !GTK_CHECK_VERSION (3, 10, 0)
-                                    GTK_STOCK_DIALOG_QUESTION,
-#else
                                     "dialog-question",
-#endif
                                     primary,
                                     _("You will be redirected to the documentation website "
                                       "where the help pages are maintained and translated."),
-#if !GTK_CHECK_VERSION (3, 10, 0)
-                                    GTK_STOCK_CANCEL,
-#else
                                     "gtk-cancel",
-#endif
                                     GTK_RESPONSE_NO,
                                     XFCE_BUTTON_TYPE_MIXED,
-#if !GTK_CHECK_VERSION (3, 10, 0)
-                                    GTK_STOCK_HELP,
-#else
                                     "help-browser",
-#endif
                                     _("_Read Online"),
                                     GTK_RESPONSE_YES,
                                     NULL);
@@ -303,10 +287,8 @@ xfce_dialog_show_help_with_version (GtkWindow   *parent,
 
   button = gtk_check_button_new_with_mnemonic (_("_Always go directly to the online documentation"));
   gtk_box_pack_end (GTK_BOX (message_box), button, FALSE, TRUE, 0);
-#if GTK_CHECK_VERSION (3, 0, 0)
   g_object_set (G_OBJECT (button), "halign", GTK_ALIGN_END, "margin-start", 8, "margin-end", 8, NULL);
   gtk_widget_set_hexpand (button, TRUE);
-#endif
   g_signal_connect (G_OBJECT (button), "toggled",
       G_CALLBACK (xfce_dialog_show_help_auto_toggled), NULL);
   gtk_widget_show (button);
@@ -350,17 +332,9 @@ xfce_dialog_show_info (GtkWindow   *parent,
   va_end (args);
 
   xfce_message_dialog (parent, _("Information"),
-#if !GTK_CHECK_VERSION (3, 10, 0)
-                       GTK_STOCK_DIALOG_INFO,
-#else
                        "dialog-information",
-#endif
                        primary_text, secondary_text,
-#if !GTK_CHECK_VERSION (3, 10, 0)
-                       GTK_STOCK_CLOSE,
-#else
                        XFCE_BUTTON_TYPE_MIXED, "window-close-symbolic", _("Close"),
-#endif
                        GTK_RESPONSE_CLOSE, NULL);
 
   g_free (primary_text);
@@ -393,17 +367,9 @@ xfce_dialog_show_warning (GtkWindow   *parent,
   va_end (args);
 
   xfce_message_dialog (parent, _("Warning"),
-#if !GTK_CHECK_VERSION (3, 10, 0)
-                       GTK_STOCK_DIALOG_WARNING,
-#else
                        "dialog-warning",
-#endif
                        primary_text, secondary_text,
-#if !GTK_CHECK_VERSION (3, 10, 0)
-                       GTK_STOCK_CLOSE,
-#else
                        XFCE_BUTTON_TYPE_MIXED, "window-close-symbolic", _("Close"),
-#endif
                        GTK_RESPONSE_CLOSE, NULL);
 
   g_free (primary_text);
@@ -437,17 +403,9 @@ xfce_dialog_show_error (GtkWindow    *parent,
   va_end (args);
 
   xfce_message_dialog (parent, _("Error"),
-#if !GTK_CHECK_VERSION (3, 10, 0)
-                       GTK_STOCK_DIALOG_ERROR,
-#else
                        "dialog-error",
-#endif
                        primary_text, error ? error->message : NULL,
-#if !GTK_CHECK_VERSION (3, 10, 0)
-                       GTK_STOCK_CLOSE,
-#else
                        XFCE_BUTTON_TYPE_MIXED, "window-close-symbolic", _("Close"),
-#endif
                        GTK_RESPONSE_CLOSE, NULL);
 
   g_free (primary_text);
@@ -494,24 +452,15 @@ xfce_dialog_confirm (GtkWindow   *parent,
   /* whether this will be a yes/no dialog */
   if (stock_id != NULL && (strcmp (stock_id, "gtk-yes") == 0 || strcmp (stock_id, "yes") == 0))
     {
-#if GTK_CHECK_VERSION (3, 10, 0)
       no_stock_id = _("No");
       if (confirm_label == NULL)
         confirm_label = _("Yes");
-#else
-      no_stock_id = GTK_STOCK_NO;
-#endif
     }
   else
     {
-#if GTK_CHECK_VERSION (3, 10, 0)
       no_stock_id = _("Cancel");
-#else
-      no_stock_id = GTK_STOCK_CANCEL;
-#endif
     }
 
-#if GTK_CHECK_VERSION (3, 0, 0)
   response_id = xfce_message_dialog (parent, _("Question"),
                                      "dialog-question",
                                      primary_text,
@@ -519,15 +468,6 @@ xfce_dialog_confirm (GtkWindow   *parent,
                                      no_stock_id, GTK_RESPONSE_NO,
                                      XFCE_BUTTON_TYPE_MIXED, stock_id, confirm_label, GTK_RESPONSE_YES,
                                      NULL);
-#else
-  response_id = xfce_message_dialog (parent, _("Question"),
-                                     GTK_STOCK_DIALOG_QUESTION,
-                                     primary_text,
-                                     secondary_text,
-                                     no_stock_id, GTK_RESPONSE_NO,
-                                     XFCE_BUTTON_TYPE_MIXED, stock_id, confirm_label, GTK_RESPONSE_YES,
-                                     NULL);
-#endif
 
   g_free (primary_text);
 
@@ -583,11 +523,7 @@ xfce_dialog_confirm_close_tabs (GtkWindow *parent,
     secondary_text = g_strdup_printf (_("This window has %d tabs open. Closing this window\n"
                                "will also close all its tabs."), num_tabs);
 
-#if GTK_CHECK_VERSION (3, 0, 0)
   warning_icon = "dialog-warning";
-#else
-  warning_icon =  GTK_STOCK_DIALOG_WARNING;
-#endif
 
   dialog = xfce_message_dialog_new (parent, _("Warning"),
                                     warning_icon,
@@ -643,7 +579,6 @@ xfce_message_dialog_new_valist (GtkWindow   *parent,
                                 const gchar *first_button_text,
                                 va_list      args)
 {
-#if GTK_CHECK_VERSION (3, 0, 0)
   GtkBuilder  *gxml;
   GtkWidget   *dialog;
   GtkWidget   *dialog_image;
@@ -783,120 +718,8 @@ xfce_message_dialog_new_valist (GtkWindow   *parent,
     }
 
   g_object_unref (gxml);
-  return dialog;
-#else /* GTK2 */
-  GtkWidget   *dialog;
-  GtkWidget   *image;
-  GtkWidget   *button;
-  const gchar *text = first_button_text;
-  const gchar *label;
-  const gchar *stock_id;
-  gint         response;
-  GdkPixbuf   *pixbuf, *scaled;
-  gint         w, h;
-
-  g_return_val_if_fail (primary_text != NULL || secondary_text != NULL, NULL);
-  g_return_val_if_fail (parent == NULL || GTK_IS_WINDOW (parent), NULL);
-
-  if (G_LIKELY (primary_text != NULL))
-    {
-      /* create dialog with large bold text */
-      dialog = gtk_message_dialog_new_with_markup (parent,
-                                                   GTK_DIALOG_DESTROY_WITH_PARENT | GTK_DIALOG_MODAL,
-                                                   GTK_MESSAGE_OTHER, GTK_BUTTONS_NONE,
-                                                   "<span weight='bold' size='large'>%s</span>",
-                                                   primary_text);
-
-      if (secondary_text != NULL)
-        gtk_message_dialog_format_secondary_text (GTK_MESSAGE_DIALOG (dialog), "%s", secondary_text);
-    }
-  else
-    {
-      /* create dialog with normal seconday text */
-      dialog = gtk_message_dialog_new (parent,
-                                       GTK_DIALOG_DESTROY_WITH_PARENT | GTK_DIALOG_MODAL,
-                                       GTK_MESSAGE_OTHER, GTK_BUTTONS_NONE,
-                                       "%s", secondary_text);
-    }
-
-  if (title != NULL)
-    gtk_window_set_title (GTK_WINDOW (dialog), title);
-
-  /* put the dialog on the active screen if no parent is defined */
-  if (parent == NULL)
-    xfce_gtk_window_center_on_active_screen (GTK_WINDOW (dialog));
-
-  /* add buttons */
-  while (text != NULL)
-    {
-      if (strcmp (text, XFCE_BUTTON_TYPE_MIXED) == 0)
-        {
-          /* get arguments */
-          stock_id = va_arg (args, const gchar *);
-          label = va_arg (args, const gchar *);
-          response = va_arg (args, gint);
-
-          /* add a mixed button to the dialog */
-          button = xfce_gtk_button_new_mixed (stock_id, label);
-          gtk_widget_set_can_default (button, TRUE);
-          gtk_dialog_add_action_widget (GTK_DIALOG (dialog), button, response);
-          gtk_widget_show (button);
-        }
-      else if (strcmp (text, XFCE_BUTTON_TYPE_PIXBUF) == 0)
-        {
-          /* get arguments */
-          pixbuf = va_arg (args, GdkPixbuf *);
-          label = va_arg (args, const gchar *);
-          response = va_arg (args, gint);
-
-          /* lookup real icons size for button icons */
-          gtk_icon_size_lookup (GTK_ICON_SIZE_BUTTON, &w, &h);
-
-          /* scale the pixbuf if needed */
-          if (gdk_pixbuf_get_width (pixbuf) != w || gdk_pixbuf_get_height (pixbuf) != h)
-            scaled = gdk_pixbuf_scale_simple (pixbuf, w, h, GDK_INTERP_BILINEAR);
-          else
-            scaled = NULL;
-
-          image = gtk_image_new_from_pixbuf (scaled ? scaled : pixbuf);
-
-          /* release scaled image */
-          if (scaled != NULL)
-            g_object_unref (G_OBJECT (scaled));
-
-          /* create button and add it to the dialog */
-          button = gtk_button_new_with_label (label);
-          gtk_button_set_image (GTK_BUTTON (button), image);
-          gtk_widget_set_can_default (button, TRUE);
-          gtk_dialog_add_action_widget (GTK_DIALOG (dialog), button, response);
-          gtk_widget_show (button);
-        }
-      else /* stock button */
-        {
-          /* get arguments */
-          stock_id = text;
-          response = va_arg (args, gint);
-
-          /* add a stock button to the dialog */
-          gtk_dialog_add_button (GTK_DIALOG (dialog), stock_id, response);
-        }
-
-      /* get the next argument */
-      text = va_arg (args, const gchar *);
-    }
-
-  if (icon_stock_id != NULL)
-    {
-      /* set dialog and window icon */
-      image = gtk_image_new_from_stock (icon_stock_id, GTK_ICON_SIZE_DIALOG);
-      gtk_message_dialog_set_image (GTK_MESSAGE_DIALOG (dialog), image);
-
-      gtk_widget_show (image);
-      gtk_window_set_icon_name (GTK_WINDOW (dialog), icon_stock_id);
-    }
 
   return dialog;
-#endif /* GTK_CHECK_VERSION */
 }
 
 

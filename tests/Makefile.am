@@ -25,33 +25,6 @@ noinst_PROGRAMS =
 
 if BUILD_TESTS
 
-# test-ui-gtk2
-if ENABLE_GTK2_LIBRARY
-noinst_PROGRAMS += \
-	test-ui-gtk2
-
-test_ui_gtk2_SOURCES =				\
-	test-ui.c
-
-test_ui_gtk2_CFLAGS =					\
-	$(LIBSM_CFLAGS) \
-	$(GTK2_CFLAGS) \
-	$(LIBSTARTUP_NOTIFICATION_CFLAGS) \
-	$(LIBXFCE4UTIL_CFLAGS) \
-	$(PLATFORM_CFLAGS)
-
-test_ui_gtk2_DEPENDENCIES =				\
-	$(top_builddir)/libxfce4ui/libxfce4ui-1.la
-
-test_ui_gtk2_LDADD =					\
-	$(LIBSM_LIBS) \
-	$(GTK2_LIBS) \
-	$(LIBSTARTUP_NOTIFICATION_LIBS) \
-	$(LIBXFCE4UTIL_LIBS) \
-	$(top_builddir)/libxfce4ui/libxfce4ui-1.la
-
-endif # ENABLE_GTK2_LIBRARY
-
 # test-ui-gtk3
 noinst_PROGRAMS +=					\
 	test-ui-gtk3
