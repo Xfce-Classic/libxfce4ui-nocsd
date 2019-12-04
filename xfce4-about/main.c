@@ -551,6 +551,9 @@ main (gint    argc,
 
 #ifdef HAVE_GLIBTOP
   xfce_about_system (builder);
+#else
+  // Hide system tab
+  gtk_notebook_remove_page (GTK_NOTEBOOK (gtk_builder_get_object (builder, "notebook")), 0);
 #endif
 
   object = gtk_builder_get_object (builder, "about-buffer");
