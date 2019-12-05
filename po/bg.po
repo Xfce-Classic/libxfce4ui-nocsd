@@ -12,8 +12,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-04 12:30+0100\n"
-"PO-Revision-Date: 2019-12-04 18:47+0000\n"
+"POT-Creation-Date: 2019-12-05 00:30+0100\n"
+"PO-Revision-Date: 2019-12-05 08:15+0000\n"
 "Last-Translator: Kiril Kirilov <cybercop_montana@abv.bg>\n"
 "Language-Team: Bulgarian (http://www.transifex.com/xfce/libxfce4ui/language/bg/)\n"
 "MIME-Version: 1.0\n"
@@ -22,102 +22,103 @@ msgstr ""
 "Language: bg\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../libxfce4ui/xfce-dialogs.c:114
+#: ../libxfce4ui/xfce-dialogs.c:110
 msgid "Failed to open web browser for online documentation"
 msgstr "Не може да бъде отворен уеб четец, с който да бъде прегледана документацията в Интернет"
 
-#: ../libxfce4ui/xfce-dialogs.c:269
+#: ../libxfce4ui/xfce-dialogs.c:265
 #, c-format
 msgid "Do you want to read the %s manual online?"
 msgstr "Искате ли да прочетете ръководството за %s в Интернет?"
 
-#: ../libxfce4ui/xfce-dialogs.c:271
+#: ../libxfce4ui/xfce-dialogs.c:267
 msgid "Do you want to read the manual online?"
 msgstr "Искате ли да прочетете ръководството в Интернет?"
 
-#: ../libxfce4ui/xfce-dialogs.c:274
+#: ../libxfce4ui/xfce-dialogs.c:270
 msgid "Online Documentation"
 msgstr "Документация в Интернет"
 
-#: ../libxfce4ui/xfce-dialogs.c:281
+#: ../libxfce4ui/xfce-dialogs.c:273
 msgid ""
 "You will be redirected to the documentation website where the help pages are"
 " maintained and translated."
 msgstr "Вие ще бъдете препратен(а) към уеб сайта с документацията, където се превеждат и поддържат помощните страници."
 
-#: ../libxfce4ui/xfce-dialogs.c:295
+#: ../libxfce4ui/xfce-dialogs.c:279
 msgid "_Read Online"
 msgstr "_Прочитане в Интернет"
 
-#: ../libxfce4ui/xfce-dialogs.c:304
+#: ../libxfce4ui/xfce-dialogs.c:288
 msgid "_Always go directly to the online documentation"
 msgstr "_Винаги отиване направо в документацията в Интернет"
 
-#: ../libxfce4ui/xfce-dialogs.c:352
+#: ../libxfce4ui/xfce-dialogs.c:334
 msgid "Information"
-msgstr "Сведения"
+msgstr "Информация"
 
-#: ../libxfce4ui/xfce-dialogs.c:362 ../libxfce4ui/xfce-dialogs.c:405
-#: ../libxfce4ui/xfce-dialogs.c:449
+#: ../libxfce4ui/xfce-dialogs.c:337 ../libxfce4ui/xfce-dialogs.c:372
+#: ../libxfce4ui/xfce-dialogs.c:408
 msgid "Close"
 msgstr "Затваряне"
 
-#: ../libxfce4ui/xfce-dialogs.c:395 ../libxfce4ui/xfce-dialogs.c:592
+#: ../libxfce4ui/xfce-dialogs.c:369 ../libxfce4ui/xfce-dialogs.c:528
 msgid "Warning"
 msgstr "Внимание"
 
-#: ../libxfce4ui/xfce-dialogs.c:439
+#: ../libxfce4ui/xfce-dialogs.c:405
 msgid "Error"
 msgstr "Грешка"
 
-#: ../libxfce4ui/xfce-dialogs.c:498
+#: ../libxfce4ui/xfce-dialogs.c:455
 msgid "No"
 msgstr "Не"
 
-#: ../libxfce4ui/xfce-dialogs.c:500
+#: ../libxfce4ui/xfce-dialogs.c:457
 msgid "Yes"
 msgstr "Да"
 
-#: ../libxfce4ui/xfce-dialogs.c:508
+#: ../libxfce4ui/xfce-dialogs.c:461
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:41
 msgid "Cancel"
 msgstr "Отмяна"
 
-#: ../libxfce4ui/xfce-dialogs.c:515 ../libxfce4ui/xfce-dialogs.c:523
+#: ../libxfce4ui/xfce-dialogs.c:464
 msgid "Question"
 msgstr "Въпрос"
 
-#: ../libxfce4ui/xfce-dialogs.c:578
+#: ../libxfce4ui/xfce-dialogs.c:518
 msgid "Close all tabs?"
 msgstr "Затваряне на всички раздели?"
 
-#: ../libxfce4ui/xfce-dialogs.c:580
+#: ../libxfce4ui/xfce-dialogs.c:520
 msgid ""
 "This window has multiple tabs open. Closing this window\n"
 "will also close all its tabs."
 msgstr "В този прозорец има множество отворени раздели. Ако затворите този прозорец,\nвие ще затворите и всички негови раздели."
 
-#: ../libxfce4ui/xfce-dialogs.c:583
+#: ../libxfce4ui/xfce-dialogs.c:523
 #, c-format
 msgid ""
 "This window has %d tabs open. Closing this window\n"
 "will also close all its tabs."
 msgstr "В този прозорец има отворени %d раздела. Затваряйки този прозорец, \nвие ще затворите и всички раздели в него."
 
-#: ../libxfce4ui/xfce-dialogs.c:596
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:254
+#. Create cancel button
+#: ../libxfce4ui/xfce-dialogs.c:532
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:243
 msgid "_Cancel"
 msgstr "_Отказ"
 
-#: ../libxfce4ui/xfce-dialogs.c:597
+#: ../libxfce4ui/xfce-dialogs.c:533
 msgid "Close _Window"
 msgstr "Затваряне на _прозореца"
 
-#: ../libxfce4ui/xfce-dialogs.c:598
+#: ../libxfce4ui/xfce-dialogs.c:534
 msgid "Close T_ab"
 msgstr "Затваряне на _раздела"
 
-#: ../libxfce4ui/xfce-dialogs.c:603
+#: ../libxfce4ui/xfce-dialogs.c:539
 msgid "Do _not ask me again"
 msgstr "Повече не ме питай"
 
@@ -127,7 +128,7 @@ msgstr "Клиентски идентификатор на управителя 
 
 #: ../libxfce4ui/xfce-sm-client.c:1427
 msgid "ID"
-msgstr "Ид."
+msgstr "Идентификатор"
 
 #: ../libxfce4ui/xfce-sm-client.c:1428
 msgid "Disable session management"
@@ -152,7 +153,7 @@ msgid "Session manager did not return a valid client id"
 msgstr "Управителят на сесиите не е върна правилен идентификатор на клиента"
 
 #. print warning for user
-#: ../libxfce4ui/xfce-spawn.c:432
+#: ../libxfce4ui/xfce-spawn.c:423
 #, c-format
 msgid ""
 "Working directory \"%s\" does not exist. It won't be used when spawning "
@@ -213,50 +214,50 @@ msgstr "%s вече се използва за това действие."
 msgid "Conflicting actions for %s"
 msgstr "Конфликт с действие за %s"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:186
+#: ../libxfce4kbd-private/xfce-shortcuts.c:178
 msgid "This shortcut is already being used for something else."
 msgstr "Тази клавишна комбинация вече е зададена за друго действие."
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:216
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:210
 msgid "Window Manager Action Shortcut"
 msgstr "Клавишни комбинации за действия с управителя на прозорците"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:219
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:233
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:213
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:227
 msgid "action"
 msgstr "действие"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:223
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:217
 msgid "Command Shortcut"
 msgstr "Клавишна комбинация за команда"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:226
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:220
 msgid "command"
 msgstr "команда"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:230
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:224
 msgid "Shortcut"
 msgstr "Клавишна комбинация"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:289
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:258
 #, c-format
 msgid "Press now the keyboard keys you want to use to trigger the %s '%s'."
 msgstr "Натиснете клавишната комбинация, която искате да използвате за %s „%s“."
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:317
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:278
 msgid "Shortcut:"
 msgstr "Клавишна комбинация:"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:326
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:485
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:283
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:424
 msgid "No keys pressed yet, proceed."
 msgstr "Все още няма натиснати клавиши; продължете."
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:390
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:331
 msgid "Could not grab the keyboard."
 msgstr "Не може да бъде прихваната клавиатурата."
 
@@ -560,15 +561,15 @@ msgstr "Премахване на предишното работно място
 msgid "Delete active workspace"
 msgstr "Премахване на текущото работно място"
 
-#: ../glade/libxfce4ui.xml.in.h:1 ../glade/libxfce4ui-2.xml.in.h:1
+#: ../glade/libxfce4ui-2.xml.in.h:1
 msgid "Titled Dialog"
 msgstr "Прозорец със заглавие"
 
-#: ../glade/libxfce4ui.xml.in.h:2 ../glade/libxfce4ui-2.xml.in.h:2
+#: ../glade/libxfce4ui-2.xml.in.h:2
 msgid "Subtitle"
 msgstr "Подзаглавие"
 
-#: ../glade/libxfce4ui.xml.in.h:3 ../glade/libxfce4ui-2.xml.in.h:3
+#: ../glade/libxfce4ui-2.xml.in.h:3
 msgid "Xfce 4 Widgets"
 msgstr "Джаджи за Xfce 4"
 
@@ -877,18 +878,30 @@ msgstr "BSD"
 msgid "Copyright"
 msgstr "Авторски права"
 
-#: ../tests/test-ui.c:138
+#: ../xfce4-about/system-info.c:274 ../xfce4-about/system-info.c:322
+msgid "Unknown"
+msgstr "Неизвестен"
+
+#. translators: This is the name of the OS, followed by the build ID, for
+#. * example:
+#. * "Fedora 25 (Workstation Edition); Build ID: xyz" or
+#. * "Ubuntu 16.04 LTS; Build ID: jki"
+#: ../xfce4-about/system-info.c:330
+#, c-format
+msgid "%s; Build ID: %s"
+msgstr "%s; Изграждане на ID : %s"
+
+#: ../tests/test-ui.c:111
 #, c-format
 msgid ""
 "A file named \"%s\" already exists in this directory, the file hasn't been "
 "added."
 msgstr "Файл с име \"%s\" вече съществува в тази директория, файлът не беше добавен."
 
-#: ../tests/test-ui.c:149
+#: ../tests/test-ui.c:122
 msgid "Failed to migrate the old panel configuration"
 msgstr "Неуспешно прехвърляне на старите настройки на панела."
 
-#: ../tests/test-ui.c:202 ../tests/test-ui.c:222 ../tests/test-ui.c:251
-#: ../tests/test-ui.c:273
+#: ../tests/test-ui.c:160 ../tests/test-ui.c:185
 msgid "Customize settings stored by Xfconf"
-msgstr "Нагаждане на настройките, съхранени от Xfconf"
+msgstr "Персонализиране на настройките, съхранени от Xfconf"
