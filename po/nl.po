@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-04 12:30+0100\n"
-"PO-Revision-Date: 2019-12-04 21:31+0000\n"
+"POT-Creation-Date: 2019-12-05 00:30+0100\n"
+"PO-Revision-Date: 2019-12-05 17:31+0000\n"
 "Last-Translator: Pjotr <pjotrvertaalt@gmail.com>\n"
 "Language-Team: Dutch (http://www.transifex.com/xfce/libxfce4ui/language/nl/)\n"
 "MIME-Version: 1.0\n"
@@ -19,102 +19,103 @@ msgstr ""
 "Language: nl\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../libxfce4ui/xfce-dialogs.c:114
+#: ../libxfce4ui/xfce-dialogs.c:110
 msgid "Failed to open web browser for online documentation"
 msgstr "Kon de webbrowser niet openen voor de internetdocumentatie"
 
-#: ../libxfce4ui/xfce-dialogs.c:269
+#: ../libxfce4ui/xfce-dialogs.c:265
 #, c-format
 msgid "Do you want to read the %s manual online?"
 msgstr "Wilt u de handleiding voor %s op het internet lezen?"
 
-#: ../libxfce4ui/xfce-dialogs.c:271
+#: ../libxfce4ui/xfce-dialogs.c:267
 msgid "Do you want to read the manual online?"
 msgstr "Wilt u de handleiding op het internet lezen?"
 
-#: ../libxfce4ui/xfce-dialogs.c:274
+#: ../libxfce4ui/xfce-dialogs.c:270
 msgid "Online Documentation"
 msgstr "Internetdocumentatie"
 
-#: ../libxfce4ui/xfce-dialogs.c:281
+#: ../libxfce4ui/xfce-dialogs.c:273
 msgid ""
 "You will be redirected to the documentation website where the help pages are"
 " maintained and translated."
 msgstr "U zult worden omgeleid naar de documentatiewebstek, waar de hulppagina's worden onderhouden en vertaald."
 
-#: ../libxfce4ui/xfce-dialogs.c:295
+#: ../libxfce4ui/xfce-dialogs.c:279
 msgid "_Read Online"
 msgstr "Lees op het internet"
 
-#: ../libxfce4ui/xfce-dialogs.c:304
+#: ../libxfce4ui/xfce-dialogs.c:288
 msgid "_Always go directly to the online documentation"
 msgstr "Ga altijd meteen naar de internetdocumentatie"
 
-#: ../libxfce4ui/xfce-dialogs.c:352
+#: ../libxfce4ui/xfce-dialogs.c:334
 msgid "Information"
 msgstr "Informatie"
 
-#: ../libxfce4ui/xfce-dialogs.c:362 ../libxfce4ui/xfce-dialogs.c:405
-#: ../libxfce4ui/xfce-dialogs.c:449
+#: ../libxfce4ui/xfce-dialogs.c:337 ../libxfce4ui/xfce-dialogs.c:372
+#: ../libxfce4ui/xfce-dialogs.c:408
 msgid "Close"
 msgstr "Sluiten"
 
-#: ../libxfce4ui/xfce-dialogs.c:395 ../libxfce4ui/xfce-dialogs.c:592
+#: ../libxfce4ui/xfce-dialogs.c:369 ../libxfce4ui/xfce-dialogs.c:528
 msgid "Warning"
 msgstr "Waarschuwing"
 
-#: ../libxfce4ui/xfce-dialogs.c:439
+#: ../libxfce4ui/xfce-dialogs.c:405
 msgid "Error"
 msgstr "Fout"
 
-#: ../libxfce4ui/xfce-dialogs.c:498
+#: ../libxfce4ui/xfce-dialogs.c:455
 msgid "No"
 msgstr "Nee"
 
-#: ../libxfce4ui/xfce-dialogs.c:500
+#: ../libxfce4ui/xfce-dialogs.c:457
 msgid "Yes"
 msgstr "Ja"
 
-#: ../libxfce4ui/xfce-dialogs.c:508
+#: ../libxfce4ui/xfce-dialogs.c:461
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:41
 msgid "Cancel"
 msgstr "Annuleren"
 
-#: ../libxfce4ui/xfce-dialogs.c:515 ../libxfce4ui/xfce-dialogs.c:523
+#: ../libxfce4ui/xfce-dialogs.c:464
 msgid "Question"
 msgstr "Vraag"
 
-#: ../libxfce4ui/xfce-dialogs.c:578
+#: ../libxfce4ui/xfce-dialogs.c:518
 msgid "Close all tabs?"
 msgstr "Alle tabbladen sluiten?"
 
-#: ../libxfce4ui/xfce-dialogs.c:580
+#: ../libxfce4ui/xfce-dialogs.c:520
 msgid ""
 "This window has multiple tabs open. Closing this window\n"
 "will also close all its tabs."
 msgstr "Dit venster heeft meerdere geopende tabbladen. Het\nsluiten van dit venster zal tevens al zijn tabbladen sluiten."
 
-#: ../libxfce4ui/xfce-dialogs.c:583
+#: ../libxfce4ui/xfce-dialogs.c:523
 #, c-format
 msgid ""
 "This window has %d tabs open. Closing this window\n"
 "will also close all its tabs."
 msgstr "Dit venster heeft %d geopende tabbladen. Sluiten\nvan dit venster zal ook al zijn tabbladen sluiten."
 
-#: ../libxfce4ui/xfce-dialogs.c:596
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:254
+#. Create cancel button
+#: ../libxfce4ui/xfce-dialogs.c:532
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:243
 msgid "_Cancel"
 msgstr "_Annuleren"
 
-#: ../libxfce4ui/xfce-dialogs.c:597
+#: ../libxfce4ui/xfce-dialogs.c:533
 msgid "Close _Window"
 msgstr "_Venster sluiten"
 
-#: ../libxfce4ui/xfce-dialogs.c:598
+#: ../libxfce4ui/xfce-dialogs.c:534
 msgid "Close T_ab"
 msgstr "_Tabblad sluiten"
 
-#: ../libxfce4ui/xfce-dialogs.c:603
+#: ../libxfce4ui/xfce-dialogs.c:539
 msgid "Do _not ask me again"
 msgstr "Vraag me dit _niet opnieuw"
 
@@ -149,7 +150,7 @@ msgid "Session manager did not return a valid client id"
 msgstr "Geen geldige client-ID van de sessiebeheerder ontvangen"
 
 #. print warning for user
-#: ../libxfce4ui/xfce-spawn.c:432
+#: ../libxfce4ui/xfce-spawn.c:423
 #, c-format
 msgid ""
 "Working directory \"%s\" does not exist. It won't be used when spawning "
@@ -210,50 +211,50 @@ msgstr "Deze actie wordt al opgeroepen door %s."
 msgid "Conflicting actions for %s"
 msgstr "Tegenstrijdige acties voor %s"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:186
+#: ../libxfce4kbd-private/xfce-shortcuts.c:178
 msgid "This shortcut is already being used for something else."
 msgstr "De sneltoets wordt al gebruikt voor iets anders."
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:216
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:210
 msgid "Window Manager Action Shortcut"
 msgstr "Sneltoets voor actie van vensterbeheerder"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:219
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:233
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:213
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:227
 msgid "action"
 msgstr "actie"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:223
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:217
 msgid "Command Shortcut"
 msgstr "Sneltoets voor opdracht"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:226
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:220
 msgid "command"
 msgstr "opdracht"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:230
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:224
 msgid "Shortcut"
 msgstr "Sneltoets"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:289
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:258
 #, c-format
 msgid "Press now the keyboard keys you want to use to trigger the %s '%s'."
 msgstr "Druk nu op de toetsenbordtoetsen die u wil gebruiken om de %s '%s' uit te voeren."
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:317
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:278
 msgid "Shortcut:"
 msgstr "Sneltoets:"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:326
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:485
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:283
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:424
 msgid "No keys pressed yet, proceed."
 msgstr "Nog geen toetsen ingedrukt, ga door."
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:390
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:331
 msgid "Could not grab the keyboard."
 msgstr "Kon het toetsenbord niet bemachtigen."
 
@@ -557,15 +558,15 @@ msgstr "Verwijder laatste werkblad"
 msgid "Delete active workspace"
 msgstr "Verwijder actief werkblad"
 
-#: ../glade/libxfce4ui.xml.in.h:1 ../glade/libxfce4ui-2.xml.in.h:1
+#: ../glade/libxfce4ui-2.xml.in.h:1
 msgid "Titled Dialog"
 msgstr "Getiteld dialoogvenster"
 
-#: ../glade/libxfce4ui.xml.in.h:2 ../glade/libxfce4ui-2.xml.in.h:2
+#: ../glade/libxfce4ui-2.xml.in.h:2
 msgid "Subtitle"
 msgstr "Ondertitel"
 
-#: ../glade/libxfce4ui.xml.in.h:3 ../glade/libxfce4ui-2.xml.in.h:3
+#: ../glade/libxfce4ui-2.xml.in.h:3
 msgid "Xfce 4 Widgets"
 msgstr "Xfce 4-programmaatjes"
 
@@ -874,18 +875,30 @@ msgstr "BSD"
 msgid "Copyright"
 msgstr "Auteursrecht"
 
-#: ../tests/test-ui.c:138
+#: ../xfce4-about/system-info.c:274 ../xfce4-about/system-info.c:322
+msgid "Unknown"
+msgstr "Onbekend"
+
+#. translators: This is the name of the OS, followed by the build ID, for
+#. * example:
+#. * "Fedora 25 (Workstation Edition); Build ID: xyz" or
+#. * "Ubuntu 16.04 LTS; Build ID: jki"
+#: ../xfce4-about/system-info.c:330
+#, c-format
+msgid "%s; Build ID: %s"
+msgstr "%s; Bouwsel-ID: %s"
+
+#: ../tests/test-ui.c:111
 #, c-format
 msgid ""
 "A file named \"%s\" already exists in this directory, the file hasn't been "
 "added."
 msgstr "Een bestand genaamd '%s' bestaat reeds in deze map: het bestand is niet toegevoegd."
 
-#: ../tests/test-ui.c:149
+#: ../tests/test-ui.c:122
 msgid "Failed to migrate the old panel configuration"
 msgstr "Kon de oude werkbalkinstellingen niet overzetten"
 
-#: ../tests/test-ui.c:202 ../tests/test-ui.c:222 ../tests/test-ui.c:251
-#: ../tests/test-ui.c:273
+#: ../tests/test-ui.c:160 ../tests/test-ui.c:185
 msgid "Customize settings stored by Xfconf"
 msgstr "Instellingen aanpassen die opgeslagen zijn door Xfconf"
