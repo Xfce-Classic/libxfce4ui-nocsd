@@ -1,3 +1,27 @@
+4.15.0
+======
+- Drop support for Gtk2
+- Make glibtop an optional dependency ("About System" tab)
+- about: Add system info tab
+- about: Hide system tab conditionally
+- dialogs: Use symbolic window-close icon
+- Fix Window has not been made visible when grabbing keyboard (Bug #16054)
+- Do not use gdk_screen_get_monitor_at_point (Bug #15781)
+- Replace gtk_show_uri (Bug #15781)
+- Replace gdk_display_get_screen (Bug #15781)
+- Replace gdk_keymap_get_default (Bug #15781)
+- Replace deprecated device functions (Bug #15781)
+- Replace gdk_error_trap_* and gdk_flush (Bug #15781)
+- Ignore what is hard to replace (Bug #15781)
+- Bump gtk to 3.22 (Bug #15781)
+- Add a dialog to confirm closure of multiple tabs (bug #15873)
+- Translation Updates:
+  Bulgarian, Chinese (China), Chinese (Taiwan), Croatian, Czech, Danish,
+  Dutch, English (United Kingdom), Finnish, French, Galician, German,
+  Hungarian, Interlingue, Italian, Japanese, Korean, Norwegian Bokmål,
+  Norwegian Nynorsk, Polish, Portuguese, Portuguese (Brazil), Russian,
+  Serbian, Slovak, Slovenian, Spanish, Turkish
+
 4.14.1
 ======
 
@@ -18,9 +42,9 @@
 ======
 - Update active contributors
 - Translation Updates:
-  Albanian, Belarusian, Catalan, Danish, Dutch (Flemish), English 
-  (Australia), Finnish, Galician, Hebrew, Hungarian, Italian, Japanese, 
-  Kazakh, Malay, Portuguese, Portuguese (Brazilian), Russian, Serbian, 
+  Albanian, Belarusian, Catalan, Danish, Dutch (Flemish), English
+  (Australia), Finnish, Galician, Hebrew, Hungarian, Italian, Japanese,
+  Kazakh, Malay, Portuguese, Portuguese (Brazilian), Russian, Serbian,
   Spanish, Thai, Turkish
 
 4.13.5
