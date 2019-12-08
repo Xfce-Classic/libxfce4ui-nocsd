@@ -52,7 +52,7 @@ show_xfce_message_dialog (GtkButton *button,
                        XFCE_BUTTON_TYPE_MIXED, "edit-delete", "Forget modifications", GTK_RESPONSE_APPLY,
                        XFCE_BUTTON_TYPE_PIXBUF, pixbuf, "Quit", GTK_RESPONSE_NO,
                        XFCE_BUTTON_TYPE_MIXED, "process-stop", "Cancel", GTK_RESPONSE_CANCEL,
-                       NULL);f
+                       NULL);
 
   if (pixbuf != NULL)
     {
