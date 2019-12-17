@@ -357,7 +357,7 @@ echo "  - Catalog directory:       $GLADEUI2_CATALOGDIR"
 echo "  - Module directory:        $GLADEUI2_MODULEDIR"
 echo "  - Pixmap directory:        $GLADEUI2_PIXMAPDIR"
 else
-echo "* Glade 3.0 Interface Designer:  no"
+echo "* Glade 3.0 UI Designer:  no"
 fi
 if test x"$enable_keyboard_library" = x"yes"; then
 echo "* Keyboard library support:  yes"
