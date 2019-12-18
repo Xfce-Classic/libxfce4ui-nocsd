@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-12-05 00:30+0100\n"
-"PO-Revision-Date: 2019-12-08 20:53+0000\n"
+"PO-Revision-Date: 2019-12-18 21:36+0000\n"
 "Last-Translator: Michael Martins <michaelfm21@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) (http://www.transifex.com/xfce/libxfce4ui/language/pt_BR/)\n"
 "MIME-Version: 1.0\n"
@@ -845,7 +845,7 @@ msgstr ""
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:9
 msgid "Xfce Version"
-msgstr ""
+msgstr "Versão do Xfce"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:10
 msgid "Distributor"
@@ -890,7 +890,7 @@ msgstr "Desconhecido"
 #: ../xfce4-about/system-info.c:330
 #, c-format
 msgid "%s; Build ID: %s"
-msgstr ""
+msgstr "%s; Build ID: %s"
 
 #: ../tests/test-ui.c:111
 #, c-format
