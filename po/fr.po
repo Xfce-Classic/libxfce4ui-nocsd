@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-12-05 00:30+0100\n"
-"PO-Revision-Date: 2019-12-05 12:42+0000\n"
+"PO-Revision-Date: 2019-12-22 09:35+0000\n"
 "Last-Translator: Yannick Le Guen <leguen.yannick@gmail.com>\n"
 "Language-Team: French (http://www.transifex.com/xfce/libxfce4ui/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -892,7 +892,7 @@ msgstr "Inconnu"
 #: ../xfce4-about/system-info.c:330
 #, c-format
 msgid "%s; Build ID: %s"
-msgstr ""
+msgstr "%s ; ID de compilation : %s"
 
 #: ../tests/test-ui.c:111
 #, c-format
