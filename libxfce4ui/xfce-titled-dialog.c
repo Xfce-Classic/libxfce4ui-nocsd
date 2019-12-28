@@ -97,10 +97,10 @@ xfce_titled_dialog_class_init (XfceTitledDialogClass *klass)
   g_type_class_add_private (klass, sizeof (XfceTitledDialogPrivate));
 
   gobject_class = G_OBJECT_CLASS (klass);
-  gobject_class->finalize = xfce_titled_dialog_finalize;
+  gobject_class->constructor = xfce_titled_dialog_constructor;
   gobject_class->get_property = xfce_titled_dialog_get_property;
   gobject_class->set_property = xfce_titled_dialog_set_property;
-  gobject_class->constructor = xfce_titled_dialog_constructor;
+  gobject_class->finalize = xfce_titled_dialog_finalize;
 
   gtkdialog_class = GTK_DIALOG_CLASS (klass);
   gtkdialog_class->close = xfce_titled_dialog_close;
@@ -126,6 +126,7 @@ xfce_titled_dialog_class_init (XfceTitledDialogClass *klass)
 }
 
 
+
 static GObject *
 xfce_titled_dialog_constructor (GType                  type,
                                 guint                  n_construct_params,
@@ -140,6 +141,8 @@ xfce_titled_dialog_constructor (GType                  type,
 
   return object;
 }
+
+
 
 static void
 xfce_titled_dialog_init (XfceTitledDialog *titled_dialog)
@@ -348,6 +351,8 @@ xfce_titled_dialog_new_with_mixed_buttons (const gchar    *title,
   const gchar *icon_name;
   const gchar *button_text;
   GtkWidget   *dialog;
+  GtkWidget   *headerbar;
+  GtkWidget   *action_area;
   va_list      args;
   gint         response_id;
 
@@ -361,6 +366,11 @@ xfce_titled_dialog_new_with_mixed_buttons (const gchar    *title,
   /* set the transient parent (if any) */
   if (G_LIKELY (parent != NULL))
     gtk_window_set_transient_for (GTK_WINDOW (dialog), parent);
+
+G_GNUC_BEGIN_IGNORE_DEPRECATIONS
+  action_area = gtk_dialog_get_action_area (GTK_DIALOG (dialog));
+G_GNUC_END_IGNORE_DEPRECATIONS
+  headerbar = gtk_dialog_get_header_bar (GTK_DIALOG (dialog));
 
   /* add all additional buttons */
   icon_name = first_button_icon_name;
@@ -378,7 +388,15 @@ xfce_titled_dialog_new_with_mixed_buttons (const gchar    *title,
       button = xfce_gtk_button_new_mixed (icon_name, button_text);
       gtk_widget_set_can_default (button, TRUE);
 
+      /* repack the buttons that would normally end up in the headerbar to the action area */
       gtk_dialog_add_action_widget (GTK_DIALOG (dialog), button, response_id);
+      g_object_ref (G_OBJECT (button));
+      gtk_container_remove (GTK_CONTAINER (headerbar), button);
+      gtk_container_add (GTK_CONTAINER (action_area), button);
+      g_object_unref (G_OBJECT (button));
+      /* always add help buttons as secondary */
+      if (response_id == GTK_RESPONSE_HELP)
+        gtk_button_box_set_child_secondary (GTK_BUTTON_BOX (action_area), button, TRUE);
       gtk_widget_show (button);
 
       /* this is to pickup for the next button.
@@ -391,6 +409,9 @@ xfce_titled_dialog_new_with_mixed_buttons (const gchar    *title,
         }
     }
   va_end (args);
+
+  /* since we just removed all buttons from the headerbar we have to show the close button again explicitly */
+  gtk_header_bar_set_show_close_button (GTK_HEADER_BAR (headerbar), TRUE);
 
   return dialog;
 }
