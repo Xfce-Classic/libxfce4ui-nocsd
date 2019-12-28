@@ -81,9 +81,11 @@ GtkWidget            *xfce_titled_dialog_new_with_mixed_buttons (const gchar    
                                                                  const gchar    *first_button_text,
                                                                  ...) G_GNUC_MALLOC;
 
-const gchar          *xfce_titled_dialog_get_subtitle     (XfceTitledDialog *titled_dialog);
-void                  xfce_titled_dialog_set_subtitle     (XfceTitledDialog *titled_dialog,
-                                                           const gchar      *subtitle);
+void                  xfce_titled_dialog_set_default_response (XfceTitledDialog *titled_dialog,
+                                                               gint              response_id);
+const gchar          *xfce_titled_dialog_get_subtitle         (XfceTitledDialog *titled_dialog);
+void                  xfce_titled_dialog_set_subtitle         (XfceTitledDialog *titled_dialog,
+                                                               const gchar      *subtitle);
 
 G_END_DECLS
 

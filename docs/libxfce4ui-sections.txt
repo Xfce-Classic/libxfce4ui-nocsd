@@ -58,6 +58,7 @@ XfceTitledDialog
 xfce_titled_dialog_new
 xfce_titled_dialog_new_with_buttons
 xfce_titled_dialog_new_with_mixed_buttons
+xfce_titled_dialog_set_default_response
 xfce_titled_dialog_get_subtitle
 xfce_titled_dialog_set_subtitle
 <SUBSECTION Standard>

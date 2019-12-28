@@ -80,6 +80,13 @@ struct _XfceTitledDialogPrivate
   gchar     *subtitle;
 };
 
+typedef struct _ResponseData ResponseData;
+
+struct _ResponseData
+{
+  gint response_id;
+};
+
 
 
 G_DEFINE_TYPE (XfceTitledDialog, xfce_titled_dialog, GTK_TYPE_DIALOG)
@@ -257,6 +264,36 @@ xfce_titled_dialog_update_icon (XfceTitledDialog *titled_dialog)
 
 
 
+static void
+response_data_free (gpointer data)
+{
+  g_slice_free (ResponseData, data);
+}
+
+
+
+static ResponseData *
+get_response_data (GtkWidget *widget,
+                   gboolean   create)
+{
+  ResponseData *ad = g_object_get_data (G_OBJECT (widget),
+                                        "gtk-dialog-response-data");
+
+  if (ad == NULL && create)
+    {
+      ad = g_slice_new (ResponseData);
+
+      g_object_set_data_full (G_OBJECT (widget),
+                              I_("gtk-dialog-response-data"),
+                              ad,
+      response_data_free);
+    }
+
+  return ad;
+}
+
+
+
 /**
  * xfce_titled_dialog_new:
  *
@@ -416,6 +453,52 @@ G_GNUC_END_IGNORE_DEPRECATIONS
   return dialog;
 }
 
+
+
+/**
+ * xfce_titled_dialog_set_default_response:
+ * @titled_dialog : a #XfceTitledDialog.
+ * @response_id: a response ID
+ *
+ * Sets the last widget in the dialog’s action area with the given @response_id
+ * as the default widget for the dialog. Pressing “Enter” normally activates
+ * the default widget.
+ *
+ * This function is a replacement for #gtk_dialog_set_default_response, which does
+ * not work with #XfceTitledDialog.
+ *
+ * Since: 4.16
+ *
+ **/
+void
+xfce_titled_dialog_set_default_response (XfceTitledDialog *titled_dialog,
+                                         gint              response_id)
+{
+  GtkWidget *action_area;
+  GList     *children;
+  GList     *tmp_list;
+
+  g_return_if_fail (XFCE_IS_TITLED_DIALOG (titled_dialog));
+
+G_GNUC_BEGIN_IGNORE_DEPRECATIONS
+  action_area = gtk_dialog_get_action_area (GTK_DIALOG (titled_dialog));
+G_GNUC_END_IGNORE_DEPRECATIONS
+
+  children = gtk_container_get_children (GTK_CONTAINER (action_area));
+  tmp_list = children;
+  while (tmp_list != NULL)
+    {
+      GtkWidget *widget = tmp_list->data;
+      ResponseData *rd = get_response_data (widget, FALSE);
+
+      if (rd && rd->response_id == response_id)
+        gtk_window_set_default (GTK_WINDOW (titled_dialog), widget);
+
+      tmp_list = tmp_list->next;
+    }
+
+  g_list_free (children);
+}
 
 
 
