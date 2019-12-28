@@ -425,6 +425,7 @@ G_GNUC_END_IGNORE_DEPRECATIONS
  *
  * Returns the subtitle of the @titled_dialog, or %NULL
  * if no subtitle is displayed in the @titled_dialog.
+ * This is just a convenience function around #gtk_header_bar_get_subtitle.
  *
  * Return value: the subtitle of @titled_dialog, or %NULL.
  **/
@@ -444,6 +445,7 @@ xfce_titled_dialog_get_subtitle (XfceTitledDialog *titled_dialog)
  *
  * Sets the subtitle displayed by @titled_dialog to @subtitle; if
  * @subtitle is %NULL no subtitle will be displayed by the @titled_dialog.
+ * This is just a convenience function around #gtk_header_bar_set_subtitle.
  **/
 void
 xfce_titled_dialog_set_subtitle (XfceTitledDialog *titled_dialog,
