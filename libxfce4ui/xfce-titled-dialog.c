@@ -294,6 +294,24 @@ get_response_data (GtkWidget *widget,
 
 
 
+/* Repack all the buttons that would normally end up in the headerbar to the action area */
+static void
+xfce_titled_dialog_repack_dialog (GtkWidget *action_area,
+                                  GtkWidget *headerbar,
+                                  GtkWidget *button,
+                                  gint       response_id)
+{
+  g_object_ref (G_OBJECT (button));
+  gtk_container_remove (GTK_CONTAINER (headerbar), button);
+  gtk_container_add (GTK_CONTAINER (action_area), button);
+  g_object_unref (G_OBJECT (button));
+  /* always add help buttons as secondary */
+  if (response_id == GTK_RESPONSE_HELP)
+    gtk_button_box_set_child_secondary (GTK_BUTTON_BOX (action_area), button, TRUE);
+}
+
+
+
 /**
  * xfce_titled_dialog_new:
  *
@@ -331,6 +349,9 @@ xfce_titled_dialog_new_with_buttons (const gchar    *title,
 {
   const gchar *button_text;
   GtkWidget   *dialog;
+  GtkWidget   *button;
+  GtkWidget   *headerbar;
+  GtkWidget   *action_area;
   va_list      args;
   gint         response_id;
 
@@ -345,12 +366,21 @@ xfce_titled_dialog_new_with_buttons (const gchar    *title,
   if (G_LIKELY (parent != NULL))
     gtk_window_set_transient_for (GTK_WINDOW (dialog), parent);
 
+G_GNUC_BEGIN_IGNORE_DEPRECATIONS
+  action_area = gtk_dialog_get_action_area (GTK_DIALOG (dialog));
+G_GNUC_END_IGNORE_DEPRECATIONS
+  headerbar = gtk_dialog_get_header_bar (GTK_DIALOG (dialog));
+
   /* add all additional buttons */
   va_start (args, first_button_text);
   for (button_text = first_button_text; button_text != NULL; )
     {
       response_id = va_arg (args, gint);
-      gtk_dialog_add_button (GTK_DIALOG (dialog), button_text, response_id);
+G_GNUC_BEGIN_IGNORE_DEPRECATIONS
+      button = gtk_button_new_from_stock (button_text);
+G_GNUC_END_IGNORE_DEPRECATIONS
+      gtk_dialog_add_action_widget (GTK_DIALOG (dialog), button, response_id);
+      xfce_titled_dialog_repack_dialog (action_area, headerbar, button, response_id);
       button_text = va_arg (args, const gchar *);
     }
   va_end (args);
@@ -425,15 +455,8 @@ G_GNUC_END_IGNORE_DEPRECATIONS
       button = xfce_gtk_button_new_mixed (icon_name, button_text);
       gtk_widget_set_can_default (button, TRUE);
 
-      /* repack the buttons that would normally end up in the headerbar to the action area */
       gtk_dialog_add_action_widget (GTK_DIALOG (dialog), button, response_id);
-      g_object_ref (G_OBJECT (button));
-      gtk_container_remove (GTK_CONTAINER (headerbar), button);
-      gtk_container_add (GTK_CONTAINER (action_area), button);
-      g_object_unref (G_OBJECT (button));
-      /* always add help buttons as secondary */
-      if (response_id == GTK_RESPONSE_HELP)
-        gtk_button_box_set_child_secondary (GTK_BUTTON_BOX (action_area), button, TRUE);
+      xfce_titled_dialog_repack_dialog (action_area, headerbar, button, response_id);
       gtk_widget_show (button);
 
       /* this is to pickup for the next button.
