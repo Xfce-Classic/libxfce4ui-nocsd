@@ -27,22 +27,22 @@ if BUILD_TESTS
 
 # test-ui-gtk3
 noinst_PROGRAMS +=					\
-	test-ui-gtk3
+	test-ui
 
-test_ui_gtk3_SOURCES =				\
+test_ui_SOURCES =				\
 	test-ui.c
 
-test_ui_gtk3_CFLAGS =					\
+test_ui_CFLAGS =					\
 	$(LIBSM_CFLAGS) \
 	$(GTK3_CFLAGS) \
 	$(LIBSTARTUP_NOTIFICATION_CFLAGS) \
 	$(LIBXFCE4UTIL_CFLAGS) \
 	$(PLATFORM_CFLAGS)
 
-test_ui_gtk3_DEPENDENCIES =				\
+test_ui_DEPENDENCIES =				\
 	$(top_builddir)/libxfce4ui/libxfce4ui-2.la
 
-test_ui_gtk3_LDADD =					\
+test_ui_LDADD =					\
 	$(LIBSM_LIBS) \
 	$(GTK3_LIBS) \
 	$(LIBSTARTUP_NOTIFICATION_LIBS) \
