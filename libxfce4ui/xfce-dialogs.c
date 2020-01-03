@@ -1,6 +1,6 @@
 /*
  * Copyright (c) 2006-2007 Benedikt Meurer <benny@xfce.org>
- * Copyright (c) 2007      The Xfce Development Team
+ * Copyright (c) 2019      The Xfce Development Team
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Library General Public
@@ -584,6 +584,7 @@ xfce_message_dialog_new_valist (GtkWindow   *parent,
   GtkWidget   *dialog_image;
   GtkWidget   *image;
   GtkWidget   *button;
+  GtkWidget   *content_area;
   GtkWidget   *label_box;
   const gchar *text = first_button_text;
   const gchar *label;
@@ -591,6 +592,7 @@ xfce_message_dialog_new_valist (GtkWindow   *parent,
   gint         response;
   GdkPixbuf   *pixbuf, *scaled;
   gint         w, h;
+  GList       *children;
 
   g_return_val_if_fail (primary_text != NULL || secondary_text != NULL, NULL);
   g_return_val_if_fail (parent == NULL || GTK_IS_WINDOW (parent), NULL);
@@ -602,6 +604,11 @@ xfce_message_dialog_new_valist (GtkWindow   *parent,
   label_box = GTK_WIDGET(gtk_builder_get_object(gxml, "label-box"));
   dialog_image = GTK_WIDGET(gtk_builder_get_object(gxml, "icon_stock_id"));
   gtk_window_set_default_size (GTK_WINDOW (dialog), 500, -1);
+
+  /* Remove the original message area of the GtkMessageDialog as we add our own */
+  content_area = GTK_WIDGET (gtk_dialog_get_content_area (GTK_DIALOG (dialog)));
+  children = gtk_container_get_children (GTK_CONTAINER (content_area));
+  gtk_container_remove (GTK_CONTAINER (content_area), GTK_WIDGET ((g_list_nth (children, 1))->data));
 
   if (parent)
     {
