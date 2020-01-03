@@ -182,8 +182,8 @@ xfce_dialog_show_help (GtkWindow   *parent,
  * Asks the user to visit the online documentation. If confirmed, it will open
  * the webbrowser and redirect the user to the correct location.
  *
- * Appart from the @component, @page and @offset the following information
- * is also send to the server: user language and the xfce_version_string()
+ * Apart from the @component, @page and @offset the following information
+ * is also sent to the server: user language and the xfce_version_string()
  * or @version if set.
  *
  * See also: xfce_dialog_show_help().
