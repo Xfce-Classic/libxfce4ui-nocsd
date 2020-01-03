@@ -287,7 +287,7 @@ xfce_dialog_show_help_with_version (GtkWindow   *parent,
 
   button = gtk_check_button_new_with_mnemonic (_("_Always go directly to the online documentation"));
   gtk_box_pack_end (GTK_BOX (message_box), button, FALSE, TRUE, 0);
-  g_object_set (G_OBJECT (button), "halign", GTK_ALIGN_END, "margin-start", 8, "margin-end", 8, NULL);
+  g_object_set (G_OBJECT (button), "halign", GTK_ALIGN_END, "margin-start", 6, "margin-end", 6, NULL);
   gtk_widget_set_hexpand (button, TRUE);
   g_signal_connect (G_OBJECT (button), "toggled",
       G_CALLBACK (xfce_dialog_show_help_auto_toggled), NULL);
@@ -642,6 +642,7 @@ xfce_message_dialog_new_valist (GtkWindow   *parent,
       GtkWidget *secondary_label = gtk_label_new (secondary_text);
       gtk_label_set_line_wrap (GTK_LABEL (secondary_label), TRUE);
       gtk_label_set_xalign (GTK_LABEL (secondary_label), 0.0);
+      gtk_label_set_max_width_chars (GTK_LABEL (secondary_label), 80);
       gtk_widget_set_vexpand (GTK_WIDGET (secondary_label), TRUE);
       gtk_widget_set_valign (GTK_WIDGET (secondary_label), 0.0);
 
