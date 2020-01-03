@@ -215,20 +215,17 @@ create_main_window (void)
   GtkWidget *grid;
   GtkWidget *button;
   GtkWidget *label;
-  GtkWidget *image;
-  GtkWidget *headerbar;
 
   /* Create main window */
-  window = gtk_window_new (GTK_WINDOW_TOPLEVEL);
+  window = xfce_titled_dialog_new_with_mixed_buttons (APP_NAME, NULL,
+                                                      GTK_DIALOG_DESTROY_WITH_PARENT,
+                                                      "window-close-symbolic", "Close", GTK_RESPONSE_CLOSE,
+                                                      NULL);
+
+
+  gtk_window_set_icon_name (GTK_WINDOW (window), "xfce4-logo");
   gtk_window_set_position (GTK_WINDOW (window), GTK_WIN_POS_CENTER);
   gtk_container_set_border_width (GTK_CONTAINER (window), 12);
-  headerbar = gtk_header_bar_new ();
-  gtk_header_bar_set_show_close_button (GTK_HEADER_BAR (headerbar), TRUE);
-  gtk_header_bar_set_title (GTK_HEADER_BAR (headerbar), APP_NAME);
-  image = gtk_image_new_from_icon_name ("xfce4-logo", GTK_ICON_SIZE_LARGE_TOOLBAR);
-  gtk_image_set_pixel_size (GTK_IMAGE (image), 24);
-  gtk_header_bar_pack_start (GTK_HEADER_BAR (headerbar), image);
-  gtk_window_set_titlebar (GTK_WINDOW (window), headerbar);
 
   /* Exit main loop when when the window is closed */
   g_signal_connect (G_OBJECT (window), "destroy", G_CALLBACK (main_window_destroy), NULL);
@@ -237,7 +234,7 @@ create_main_window (void)
   grid = gtk_grid_new ();
   gtk_grid_set_row_spacing (GTK_GRID (grid), 6);
   gtk_grid_set_column_spacing (GTK_GRID (grid), 12);
-  gtk_container_add (GTK_CONTAINER (window), grid);
+  gtk_container_add (GTK_CONTAINER (gtk_dialog_get_content_area (GTK_DIALOG (window))), grid);
 
   /* Create buttons */
   /* Xfce Dialogs */
