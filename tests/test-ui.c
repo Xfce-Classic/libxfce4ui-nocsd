@@ -229,6 +229,7 @@ create_main_window (void)
 
   /* Exit main loop when when the window is closed */
   g_signal_connect (G_OBJECT (window), "destroy", G_CALLBACK (main_window_destroy), NULL);
+  g_signal_connect (G_OBJECT (window), "response", G_CALLBACK (main_window_destroy), NULL);
 
   /* Create the grid to hold all the stuff */
   grid = gtk_grid_new ();
@@ -247,17 +248,17 @@ create_main_window (void)
   g_signal_connect (G_OBJECT (button), "clicked", G_CALLBACK (show_xfce_message_dialog), NULL);
 
   /* xfce_dialog_show_info */
-  button = gtk_button_new_with_label ("xfce_dialog_show_info");
+  button = xfce_gtk_button_new_mixed ("dialog-information", "xfce_dialog_show_info");
   gtk_grid_attach (GTK_GRID (grid), button, 0, 2, 1, 1);
   g_signal_connect (G_OBJECT (button), "clicked", G_CALLBACK (show_xfce_dialog_show_info), NULL);
 
   /* xfce_dialog_show_warning */
-  button = gtk_button_new_with_label ("xfce_dialog_show_warning");
+  button = xfce_gtk_button_new_mixed ("dialog-warning", "xfce_dialog_show_warning");
   gtk_grid_attach (GTK_GRID (grid), button, 0, 3, 1, 1);
   g_signal_connect (G_OBJECT (button), "clicked", G_CALLBACK (show_xfce_dialog_show_warning), NULL);
 
   /* xfce_dialog_show_error */
-  button = gtk_button_new_with_label ("xfce_dialog_show_error");
+  button = xfce_gtk_button_new_mixed ("dialog-error", "xfce_dialog_show_error");
   gtk_grid_attach (GTK_GRID (grid), button, 0, 4, 1, 1);
   g_signal_connect (G_OBJECT (button), "clicked", G_CALLBACK (show_xfce_dialog_show_error), NULL);
 
@@ -271,12 +272,12 @@ create_main_window (void)
   gtk_grid_attach (GTK_GRID (grid), label, 1, 0, 1, 1);
 
   /* xfce_dialog_show_help */
-  button = gtk_button_new_with_label ("xfce_dialog_show_help");
+  button = xfce_gtk_button_new_mixed ("help-browser", "xfce_dialog_show_help");
   gtk_grid_attach (GTK_GRID (grid), button, 1, 1, 1, 1);
   g_signal_connect (G_OBJECT (button), "clicked", G_CALLBACK (show_xfce_dialog_show_help), NULL);
 
   /* xfce_dialog_show_help_with_version */
-  button = gtk_button_new_with_label ("xfce_dialog_show_help_with_version");
+  button = xfce_gtk_button_new_mixed ("help-browser", "xfce_dialog_show_help_with_version");
   gtk_grid_attach (GTK_GRID (grid), button, 1, 2, 1, 1);
   g_signal_connect (G_OBJECT (button), "clicked", G_CALLBACK (show_xfce_dialog_show_help_with_version), NULL);
 
