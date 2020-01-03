@@ -267,15 +267,13 @@ xfce_dialog_show_help_with_version (GtkWindow   *parent,
     primary = g_strdup (_("Do you want to read the manual online?"));
 
   dialog = xfce_message_dialog_new (parent,
-                                    _("Online Documentation"),
+                                    NULL,
                                     "dialog-question",
                                     primary,
                                     _("You will be redirected to the documentation website "
                                       "where the help pages are maintained and translated."),
-                                    "gtk-cancel",
+                                    _("_Cancel"),
                                     GTK_RESPONSE_NO,
-                                    XFCE_BUTTON_TYPE_MIXED,
-                                    "help-browser",
                                     _("_Read Online"),
                                     GTK_RESPONSE_YES,
                                     NULL);
@@ -331,7 +329,7 @@ xfce_dialog_show_info (GtkWindow   *parent,
   primary_text = g_strdup_vprintf (primary_format, args);
   va_end (args);
 
-  xfce_message_dialog (parent, _("Information"),
+  xfce_message_dialog (parent, NULL,
                        "dialog-information",
                        primary_text, secondary_text,
                        XFCE_BUTTON_TYPE_MIXED, "window-close-symbolic", _("Close"),
@@ -366,7 +364,7 @@ xfce_dialog_show_warning (GtkWindow   *parent,
   primary_text = g_strdup_vprintf (primary_format, args);
   va_end (args);
 
-  xfce_message_dialog (parent, _("Warning"),
+  xfce_message_dialog (parent, NULL,
                        "dialog-warning",
                        primary_text, secondary_text,
                        XFCE_BUTTON_TYPE_MIXED, "window-close-symbolic", _("Close"),
@@ -402,7 +400,7 @@ xfce_dialog_show_error (GtkWindow    *parent,
   primary_text = g_strdup_vprintf (primary_format, args);
   va_end (args);
 
-  xfce_message_dialog (parent, _("Error"),
+  xfce_message_dialog (parent, NULL,
                        "dialog-error",
                        primary_text, error ? error->message : NULL,
                        XFCE_BUTTON_TYPE_MIXED, "window-close-symbolic", _("Close"),
@@ -461,7 +459,7 @@ xfce_dialog_confirm (GtkWindow   *parent,
       no_stock_id = _("Cancel");
     }
 
-  response_id = xfce_message_dialog (parent, _("Question"),
+  response_id = xfce_message_dialog (parent, NULL,
                                      "dialog-question",
                                      primary_text,
                                      secondary_text,
