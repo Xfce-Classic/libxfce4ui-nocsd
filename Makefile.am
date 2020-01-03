@@ -40,7 +40,6 @@ DISTCLEANFILES = \
 
 DISTCHECK_CONFIGURE_FLAGS = \
 	--enable-gtk-doc \
-	--disable-gladeui \
 	--disable-gladeui2 \
 	--enable-introspection \
 	--disable-vala
