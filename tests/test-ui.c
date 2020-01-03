@@ -71,7 +71,7 @@ static void
 show_xfce_dialog_show_help_with_version (GtkButton *button,
                                          gpointer unused)
 {
-  xfce_dialog_show_help_with_version (NULL, "xfce4-power-manager", "start", NULL, "4.12");
+  xfce_dialog_show_help_with_version (NULL, "xfce4-power-manager", "start", NULL, "4.14");
 }
 
 static void
@@ -212,91 +212,106 @@ static void
 create_main_window (void)
 {
   GtkWidget *window;
-  GtkWidget *box;
+  GtkWidget *grid;
   GtkWidget *button;
+  GtkWidget *label;
+  GtkWidget *image;
+  GtkWidget *headerbar;
 
   /* Create main window */
   window = gtk_window_new (GTK_WINDOW_TOPLEVEL);
-  gtk_window_set_title (GTK_WINDOW (window), APP_NAME);
   gtk_window_set_position (GTK_WINDOW (window), GTK_WIN_POS_CENTER);
   gtk_container_set_border_width (GTK_CONTAINER (window), 12);
-  gtk_widget_show (window);
+  headerbar = gtk_header_bar_new ();
+  gtk_header_bar_set_show_close_button (GTK_HEADER_BAR (headerbar), TRUE);
+  gtk_header_bar_set_title (GTK_HEADER_BAR (headerbar), APP_NAME);
+  image = gtk_image_new_from_icon_name ("xfce4-logo", GTK_ICON_SIZE_LARGE_TOOLBAR);
+  gtk_image_set_pixel_size (GTK_IMAGE (image), 24);
+  gtk_header_bar_pack_start (GTK_HEADER_BAR (headerbar), image);
+  gtk_window_set_titlebar (GTK_WINDOW (window), headerbar);
 
   /* Exit main loop when when the window is closed */
   g_signal_connect (G_OBJECT (window), "destroy", G_CALLBACK (main_window_destroy), NULL);
 
-  /* Create the box to hold all the stuff */
-  box = gtk_box_new (GTK_ORIENTATION_VERTICAL, 12);
-  gtk_container_add (GTK_CONTAINER (window), box);
-  gtk_widget_show (box);
+  /* Create the grid to hold all the stuff */
+  grid = gtk_grid_new ();
+  gtk_grid_set_row_spacing (GTK_GRID (grid), 6);
+  gtk_grid_set_column_spacing (GTK_GRID (grid), 12);
+  gtk_container_add (GTK_CONTAINER (window), grid);
 
   /* Create buttons */
+  /* Xfce Dialogs */
+  label = gtk_label_new ("Xfce Dialogs");
+  gtk_grid_attach (GTK_GRID (grid), label, 0, 0, 1, 1);
 
   /* xfce_message_dialog */
-  button = gtk_button_new_with_label ("show xfce_message_dialog");
-  gtk_container_add (GTK_CONTAINER (box), button);
-  gtk_widget_show (button);
+  button = gtk_button_new_with_label ("xfce_message_dialog");
+  gtk_grid_attach (GTK_GRID (grid), button, 0, 1, 1, 1);
   g_signal_connect (G_OBJECT (button), "clicked", G_CALLBACK (show_xfce_message_dialog), NULL);
 
+  /* xfce_dialog_show_info */
+  button = gtk_button_new_with_label ("xfce_dialog_show_info");
+  gtk_grid_attach (GTK_GRID (grid), button, 0, 2, 1, 1);
+  g_signal_connect (G_OBJECT (button), "clicked", G_CALLBACK (show_xfce_dialog_show_info), NULL);
+
+  /* xfce_dialog_show_warning */
+  button = gtk_button_new_with_label ("xfce_dialog_show_warning");
+  gtk_grid_attach (GTK_GRID (grid), button, 0, 3, 1, 1);
+  g_signal_connect (G_OBJECT (button), "clicked", G_CALLBACK (show_xfce_dialog_show_warning), NULL);
+
+  /* xfce_dialog_show_error */
+  button = gtk_button_new_with_label ("xfce_dialog_show_error");
+  gtk_grid_attach (GTK_GRID (grid), button, 0, 4, 1, 1);
+  g_signal_connect (G_OBJECT (button), "clicked", G_CALLBACK (show_xfce_dialog_show_error), NULL);
+
+  /* xfce_dialog_confirm */
+  button = gtk_button_new_with_label ("xfce_dialog_confirm");
+  gtk_grid_attach (GTK_GRID (grid), button, 0, 5, 1, 1);
+  g_signal_connect (G_OBJECT (button), "clicked", G_CALLBACK (show_xfce_dialog_confirm), NULL);
+
+  /* Online Help Dialogs */
+  label = gtk_label_new ("Online Help Dialogs");
+  gtk_grid_attach (GTK_GRID (grid), label, 1, 0, 1, 1);
+
   /* xfce_dialog_show_help */
-  button = gtk_button_new_with_label ("show xfce_dialog_show_help");
-  gtk_container_add (GTK_CONTAINER (box), button);
-  gtk_widget_show (button);
+  button = gtk_button_new_with_label ("xfce_dialog_show_help");
+  gtk_grid_attach (GTK_GRID (grid), button, 1, 1, 1, 1);
   g_signal_connect (G_OBJECT (button), "clicked", G_CALLBACK (show_xfce_dialog_show_help), NULL);
 
   /* xfce_dialog_show_help_with_version */
-  button = gtk_button_new_with_label ("show xfce_dialog_show_help_with_version");
-  gtk_container_add (GTK_CONTAINER (box), button);
-  gtk_widget_show (button);
+  button = gtk_button_new_with_label ("xfce_dialog_show_help_with_version");
+  gtk_grid_attach (GTK_GRID (grid), button, 1, 2, 1, 1);
   g_signal_connect (G_OBJECT (button), "clicked", G_CALLBACK (show_xfce_dialog_show_help_with_version), NULL);
 
   /* remove auto-online check from rc file */
   button = gtk_button_new_with_label ("remove auto-online check from rc file");
-  gtk_container_add (GTK_CONTAINER (box), button);
-  gtk_widget_show (button);
+  gtk_grid_attach (GTK_GRID (grid), button, 1, 3, 1, 1);
   g_signal_connect (G_OBJECT (button), "clicked", G_CALLBACK (remove_auto_online), NULL);
 
-  /* xfce_dialog_show_info */
-  button = gtk_button_new_with_label ("show xfce_dialog_show_info");
-  gtk_container_add (GTK_CONTAINER (box), button);
-  gtk_widget_show (button);
-  g_signal_connect (G_OBJECT (button), "clicked", G_CALLBACK (show_xfce_dialog_show_info), NULL);
-
-  /* xfce_dialog_show_warning */
-  button = gtk_button_new_with_label ("show xfce_dialog_show_warning");
-  gtk_container_add (GTK_CONTAINER (box), button);
-  gtk_widget_show (button);
-  g_signal_connect (G_OBJECT (button), "clicked", G_CALLBACK (show_xfce_dialog_show_warning), NULL);
-
-  /* xfce_dialog_show_error */
-  button = gtk_button_new_with_label ("show xfce_dialog_show_error");
-  gtk_container_add (GTK_CONTAINER (box), button);
-  gtk_widget_show (button);
-  g_signal_connect (G_OBJECT (button), "clicked", G_CALLBACK (show_xfce_dialog_show_error), NULL);
-
-  /* xfce_dialog_confirm */
-  button = gtk_button_new_with_label ("show xfce_dialog_confirm");
-  gtk_container_add (GTK_CONTAINER (box), button);
-  gtk_widget_show (button);
-  g_signal_connect (G_OBJECT (button), "clicked", G_CALLBACK (show_xfce_dialog_confirm), NULL);
+  /* Xfce Titled Dialogs */
+  label = gtk_label_new ("Xfce Titled Dialog");
+  gtk_grid_attach (GTK_GRID (grid), label, 2, 0, 1, 1);
 
   /* xfce_titled_dialog_new_with_buttons */
-  button = gtk_button_new_with_label ("show xfce_titled_dialog_new_with_buttons");
-  gtk_container_add (GTK_CONTAINER (box), button);
-  gtk_widget_show (button);
+  button = gtk_button_new_with_label ("xfce_titled_dialog_new_with_buttons");
+  gtk_grid_attach (GTK_GRID (grid), button, 2, 1, 1, 1);
   g_signal_connect (G_OBJECT (button), "clicked", G_CALLBACK (show_xfce_titled_dialog_new_with_buttons), NULL);
 
   /* xfce_titled_dialog_new_with_mixed_buttons */
-  button = gtk_button_new_with_label ("show xfce_titled_dialog_new_with_mixed_buttons");
-  gtk_container_add (GTK_CONTAINER (box), button);
-  gtk_widget_show (button);
+  button = gtk_button_new_with_label ("xfce_titled_dialog_new_with_mixed_buttons");
+  gtk_grid_attach (GTK_GRID (grid), button, 2, 2, 1, 1);
   g_signal_connect (G_OBJECT (button), "clicked", G_CALLBACK (show_xfce_titled_dialog_new_with_mixed_buttons), NULL);
 
+  /* Other Dialogs */
+  label = gtk_label_new ("Other Dialogs");
+  gtk_grid_attach (GTK_GRID (grid), label, 3, 0, 1, 1);
+
   /* xfce_gdk_screen_get_active */
-  button = gtk_button_new_with_label ("show xfce_gdk_screen_get_active");
-  gtk_container_add (GTK_CONTAINER (box), button);
-  gtk_widget_show (button);
+  button = gtk_button_new_with_label ("xfce_gdk_screen_get_active");
+  gtk_grid_attach (GTK_GRID (grid), button, 3, 1, 1, 1);
   g_signal_connect (G_OBJECT (button), "clicked", G_CALLBACK (show_xfce_gdk_screen_get_active), NULL);
+
+  gtk_widget_show_all (window);
 }
 
 
