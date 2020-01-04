@@ -47,6 +47,7 @@ xfce_dialog_show_info
 xfce_dialog_show_warning
 xfce_dialog_show_error
 xfce_dialog_confirm
+xfce_dialog_confirm_close_tabs
 <SUBSECTION>
 XFCE_BUTTON_TYPE_MIXED
 XFCE_BUTTON_TYPE_PIXBUF
