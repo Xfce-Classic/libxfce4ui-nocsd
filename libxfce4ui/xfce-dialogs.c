@@ -488,11 +488,11 @@ xfce_dialog_confirm (GtkWindow   *parent,
  * are @num_tabs open tabs. If @num_tabs is negative, then the message to the
  * user will state simply that there are "multiple open tabs".
  *
- * If @show_confirm_box is %TRUE, then a checkbox is added to the dialog to allow
+ * If @show_confirm_box is %TRUE a checkbox is added to the dialog to allow
  * the user to set whether they wish to see this dialog in future. The initial
- * state of the checkbox is determined by the value stored at @confirm_box_checked,
+ * state of the checkbox is determined by the value stored at @confirm_box_checked
  * and the value at @confirm_box_checked after returning records the state of the
- * checkbox. If @show_confirm_box is %FALSE, @confirm_box_checked is ignored, and
+ * checkbox. If @show_confirm_box is %FALSE, @confirm_box_checked is ignored and
  * may be %NULL.
  *
  * Return value: #GTK_RESPONSE_CANCEL if cancelled, #GTK_RESPONSE_YES if the user
