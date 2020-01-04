@@ -135,6 +135,16 @@ show_xfce_dialog_confirm (GtkButton *button,
                        "No running instance of %s was found", G_LOG_DOMAIN);
 }
 
+static void
+show_xfce_dialog_confirm_close_tabs (GtkButton *button,
+                                     gpointer unused)
+{
+  gboolean checked = TRUE;
+  xfce_dialog_confirm_close_tabs (NULL,
+                                  3,
+                                  TRUE,
+                                  &checked);
+}
 
 static void
 close_window (GtkDialog *dialog,
@@ -266,6 +276,11 @@ create_main_window (void)
   button = gtk_button_new_with_label ("xfce_dialog_confirm");
   gtk_grid_attach (GTK_GRID (grid), button, 0, 5, 1, 1);
   g_signal_connect (G_OBJECT (button), "clicked", G_CALLBACK (show_xfce_dialog_confirm), NULL);
+
+  /* xfce_dialog_confirm_close_tabs */
+  button = gtk_button_new_with_label ("xfce_dialog_confirm_close_tabs");
+  gtk_grid_attach (GTK_GRID (grid), button, 0, 6, 1, 1);
+  g_signal_connect (G_OBJECT (button), "clicked", G_CALLBACK (show_xfce_dialog_confirm_close_tabs), NULL);
 
   /* Online Help Dialogs */
   label = gtk_label_new ("Online Help Dialogs");
