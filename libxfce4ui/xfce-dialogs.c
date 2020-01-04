@@ -515,31 +515,33 @@ xfce_dialog_confirm_close_tabs (GtkWindow *parent,
   g_return_val_if_fail (parent == NULL || GTK_IS_WINDOW (parent), GTK_RESPONSE_NONE);
   g_return_val_if_fail (!show_confirm_box || confirm_box_checked != NULL, GTK_RESPONSE_NONE);
 
-  primary_text = _("Close all tabs?");
+  primary_text = _("Close window with multiple tabs?");
   if (num_tabs < 0)
-    secondary_text = g_strdup (_("This window has multiple tabs open. Closing this window\n"
+    secondary_text = g_strdup (_("This window has multiple tabs open. Closing this window "
                                 "will also close all its tabs."));
   else
-    secondary_text = g_strdup_printf (_("This window has %d tabs open. Closing this window\n"
+    secondary_text = g_strdup_printf (_("This window has %d tabs open. Closing this window "
                                "will also close all its tabs."), num_tabs);
 
   warning_icon = "dialog-warning";
 
-  dialog = xfce_message_dialog_new (parent, _("Warning"),
+  dialog = xfce_message_dialog_new (parent, NULL,
                                     warning_icon,
                                     primary_text,
                                     secondary_text,
-                                    XFCE_BUTTON_TYPE_MIXED, "gtk-cancel", _("_Cancel"), GTK_RESPONSE_CANCEL,
-                                    XFCE_BUTTON_TYPE_MIXED, "application-exit", _("Close _Window"), GTK_RESPONSE_YES,
-                                    XFCE_BUTTON_TYPE_MIXED, "window-close-symbolic", _("Close T_ab"), GTK_RESPONSE_CLOSE,
+                                    XFCE_BUTTON_TYPE_MIXED, NULL, _("_Cancel"), GTK_RESPONSE_CANCEL,
+                                    XFCE_BUTTON_TYPE_MIXED, NULL, _("Close T_ab"), GTK_RESPONSE_CLOSE,
+                                    XFCE_BUTTON_TYPE_MIXED, NULL, _("Close _Window"), GTK_RESPONSE_YES,
                                     NULL);
 
   if (show_confirm_box)
     {
       checkbutton = gtk_check_button_new_with_mnemonic (_("Do _not ask me again"));
-      gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (checkbutton), *confirm_box_checked);
       vbox = gtk_dialog_get_content_area (GTK_DIALOG (dialog));
-      gtk_box_pack_start (GTK_BOX (vbox), checkbutton, FALSE, FALSE, 5);
+      gtk_box_pack_end (GTK_BOX (vbox), checkbutton, FALSE, FALSE, 5);
+      g_object_set (G_OBJECT (checkbutton), "halign", GTK_ALIGN_END, "margin-start", 6, "margin-end", 6, NULL);
+      gtk_widget_set_hexpand (checkbutton, TRUE);
+      gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (checkbutton), *confirm_box_checked);
     }
 
   gtk_widget_show_all (dialog);
