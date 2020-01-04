@@ -59,6 +59,7 @@ enum
 static GObject *xfce_titled_dialog_constructor    (GType                   type,
                                                    guint                   n_construct_params,
                                                    GObjectConstructParam  *construct_params);
+static void     xfce_titled_dialog_constructed    (GObject                *object);
 static void     xfce_titled_dialog_finalize       (GObject                *object);
 static void     xfce_titled_dialog_get_property   (GObject                *object,
                                                    guint                   prop_id,
@@ -105,6 +106,7 @@ xfce_titled_dialog_class_init (XfceTitledDialogClass *klass)
 
   gobject_class = G_OBJECT_CLASS (klass);
   gobject_class->constructor = xfce_titled_dialog_constructor;
+  gobject_class->constructed = xfce_titled_dialog_constructed;
   gobject_class->get_property = xfce_titled_dialog_get_property;
   gobject_class->set_property = xfce_titled_dialog_set_property;
   gobject_class->finalize = xfce_titled_dialog_finalize;
@@ -147,6 +149,17 @@ xfce_titled_dialog_constructor (GType                  type,
   g_object_set (G_OBJECT (object), "use-header-bar", TRUE, NULL);
 
   return object;
+}
+
+
+
+/*
+ * Block GtkDialog's constructed function which only repacks all items
+ * from the dialog's action area to its headerbar if use-header-bar is TRUE.
+ */
+static void
+xfce_titled_dialog_constructed (GObject *object)
+{
 }
 
 
