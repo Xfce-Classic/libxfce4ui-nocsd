@@ -314,6 +314,10 @@ xfce_titled_dialog_repack_dialog (GtkWidget *action_area,
                                   GtkWidget *button,
                                   gint       response_id)
 {
+  g_return_if_fail (GTK_IS_WIDGET (action_area));
+  g_return_if_fail (GTK_IS_WIDGET (headerbar));
+  g_return_if_fail (GTK_IS_WIDGET (button));
+
   g_object_ref (G_OBJECT (button));
   gtk_container_remove (GTK_CONTAINER (headerbar), button);
   gtk_container_add (GTK_CONTAINER (action_area), button);
