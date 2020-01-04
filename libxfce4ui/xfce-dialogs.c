@@ -420,7 +420,7 @@ xfce_dialog_show_error (GtkWindow    *parent,
  * @primary_format : (allow-none): the printf()-style format for the dialog question.
  * @...            : (allow-none): argument list for the @primary_format.
  *
- * Runs a questions dialog, that has a 'Cancel' and a 'Confirm' button. The 'Confirm'
+ * Runs a questions dialog that has a 'Cancel' and a 'Confirm' button. The 'Confirm'
  * button text can be set by @action if given.
  *
  * If @stock_id is equal to #GTK_STOCK_YES, the 'Cancel' button becomes a 'No' button.
@@ -478,7 +478,7 @@ xfce_dialog_confirm (GtkWindow   *parent,
  * xfce_dialog_confirm_close_tabs:
  * @parent              : (allow-none): transient parent of the dialog, or %NULL.
  * @num_tabs            : the number of open tabs for display to user
- * @show_confirm_box    : whether to ask user if they want this confirmation in future
+ * @show_confirm_box    : whether to ask the user if this confirmation shall be shown in the future
  * @confirm_box_checked : (allow-none): state of confirmation checkbox
  *
  * Runs a dialog to ask the user whether they want to close the whole window,
@@ -741,7 +741,7 @@ xfce_message_dialog_new_valist (GtkWindow   *parent,
  * @...               : %NULL terminated list of parameters.
  *
  * xfce_message_dialog_new() allows you to easily create Gtk+ message dialogs.
- * It accepts GTK+ stock buttons, mixed buttons (using XFCE_BUTTON_TYPE_MIXED)
+ * It accepts GTK+ stock buttons (deprecated), mixed buttons (using XFCE_BUTTON_TYPE_MIXED)
  * or buttons with a #GdkPixbuf (using XFCE_BUTTON_TYPE_PIXBUF).
  *
  * The buttons are defined by @first_button_text and the next arguments in the
@@ -753,7 +753,7 @@ xfce_message_dialog_new_valist (GtkWindow   *parent,
  *     <listitem>
  *       <para>
  *         This allows you to easily create mixed buttons in a dialog.
- *         @param1 is used for the stock_id, @param2 for the label and
+ *         @param1 is used for the icon name, @param2 for the label and
  *         @param3 for the response_id. See also xfce_gtk_button_new_mixed().
  *       </para>
  *     </listitem>
@@ -793,7 +793,7 @@ xfce_message_dialog_new_valist (GtkWindow   *parent,
  *                                          "There are unsaved modifications",
  *                                          "The menu has been modified, do you want to save it before quitting?",
  *                                          GTK_STOCK_SAVE, GTK_RESPONSE_YES,
- *                                          XFCE_BUTTON_TYPE_MIXED, GTK_STOCK_DELETE, "Forget modifications", GTK_RESPONSE_APPLY,
+ *                                          XFCE_BUTTON_TYPE_MIXED, "edit-delete", _("Forget modifications"), GTK_RESPONSE_APPLY,
  *                                          XFCE_BUTTON_TYPE_PIXBUF, pixbuf, "Quit", GTK_RESPONSE_NO,
  *                                          GTK_STOCK_CANCEL, GTK_RESPONSE_CANCEL,
  *                                          NULL);
