@@ -356,6 +356,8 @@ xfce_titled_dialog_new (void)
  * parameters and the returned dialog.
  *
  * Return value: the newly allocated #XfceTitledDialog.
+ *
+ * Deprecated: 4.16: Use #xfce_titled_dialog_new_with_mixed_buttons instead.
  **/
 GtkWidget*
 xfce_titled_dialog_new_with_buttons (const gchar    *title,
