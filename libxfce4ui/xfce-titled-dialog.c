@@ -160,6 +160,7 @@ xfce_titled_dialog_constructor (GType                  type,
 static void
 xfce_titled_dialog_constructed (GObject *object)
 {
+  G_OBJECT_CLASS (xfce_titled_dialog_parent_class)->constructed (object);
 }
 
 
