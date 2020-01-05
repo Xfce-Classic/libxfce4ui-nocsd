@@ -245,10 +245,10 @@ xfce_shortcut_dialog_create_contents (XfceShortcutDialog *dialog,
   gtk_widget_show (button);
 
   content_box = gtk_box_new (GTK_ORIENTATION_VERTICAL, 6);
-
   gtk_container_set_border_width (GTK_CONTAINER (content_box), 6);
   gtk_container_add (GTK_CONTAINER (gtk_dialog_get_content_area (GTK_DIALOG (dialog))),
                      content_box);
+  gtk_widget_show (content_box);
 
   /* TRANSLATORS: this creates the explanation for the user. The first %s is replaced
    * by the action type which you translated earlier, the second %s is replaced by the
