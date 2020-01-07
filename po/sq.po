@@ -3,13 +3,13 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Besnik <besnik@programeshqip.org>, 2019
+# Besnik <besnik@programeshqip.org>, 2019-2020
 msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-12-05 00:30+0100\n"
-"PO-Revision-Date: 2019-12-05 08:42+0000\n"
+"PO-Revision-Date: 2020-01-07 18:37+0000\n"
 "Last-Translator: Besnik <besnik@programeshqip.org>\n"
 "Language-Team: Albanian (http://www.transifex.com/xfce/libxfce4ui/language/sq/)\n"
 "MIME-Version: 1.0\n"
@@ -355,11 +355,11 @@ msgstr "Mbushe dritaren vertikalisht"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:61
 msgid "Toggle above"
-msgstr "Këmbe gjendjen sipër"
+msgstr "Aktivizo/Çaktivizo gjendjen sipër"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:62
 msgid "Toggle fullscreen"
-msgstr "Këmbe mënyrën ekran i plotë"
+msgstr "Aktivizo/çaktivizo mënyrën ekran i plotë"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:63
 msgid "Move window to upper workspace"
@@ -637,7 +637,7 @@ msgstr "Rregullim Sistemi"
 msgid ""
 "Configuration system to control various aspects of the desktop like "
 "appearance, display, keyboard and mouse settings."
-msgstr "Sistem formësimesh, për të kontrolluar aspekte të ndryshme të dekstopit, f.v., rregullimet për dukjen, ekranin, tastierën dhe miun."
+msgstr "Sistem formësimesh, për të kontrolluar aspekte të ndryshme të desktopit, f.v., rregullimet për dukjen, ekranin, tastierën dhe miun."
 
 #: ../xfce4-about/main.c:158
 msgid "Application Finder"
@@ -711,7 +711,7 @@ msgstr "Nëse dini dikë që mungon në këtë listë, mos ngurroni të hapni nj
 
 #: ../xfce4-about/main.c:327
 msgid "Thanks to all who helped making this software available!"
-msgstr "Falënderime për të gjithë ata që ndihmuan në realizimin e këtij software-i!"
+msgstr "Falënderime për krejt ata që ndihmuan në realizimin e këtij software-i!"
 
 #: ../xfce4-about/main.c:344
 msgid ""
