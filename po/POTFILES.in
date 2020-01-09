@@ -6,7 +6,6 @@ libxfce4ui/xfce-dialogs.c
 libxfce4ui/xfce-gdk-extensions.c
 libxfce4ui/xfce-gtk-extensions.c
 libxfce4ui/xfce-sm-client.c
-libxfce4ui/xfce-heading.c
 libxfce4ui/xfce-spawn.c
 libxfce4ui/xfce-titled-dialog.c
 
