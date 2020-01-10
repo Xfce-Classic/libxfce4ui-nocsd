@@ -4,7 +4,7 @@
 # 
 # Translators:
 # Dominik Wojnar <dominik.wojnar@gmail.com>, 2017
-# No Ne, 2019
+# No Ne, 2019-2020
 # Piotr Sokół <psokol.l10n@gmail.com>, 2011-2013
 # Piotr Sokół <psokol.l10n@gmail.com>, 2017
 # Piotr Strębski <strebski@gmail.com>, 2015-2016
@@ -12,8 +12,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-05 00:30+0100\n"
-"PO-Revision-Date: 2019-12-08 10:17+0000\n"
+"POT-Creation-Date: 2020-01-10 00:30+0100\n"
+"PO-Revision-Date: 2020-01-10 06:45+0000\n"
 "Last-Translator: No Ne\n"
 "Language-Team: Polish (http://www.transifex.com/xfce/libxfce4ui/language/pl/)\n"
 "MIME-Version: 1.0\n"
@@ -35,90 +35,70 @@ msgstr "Wyświetlić podręcznik sieciowy programu %s?"
 msgid "Do you want to read the manual online?"
 msgstr "Wyświetlić podręcznik sieciowy?"
 
-#: ../libxfce4ui/xfce-dialogs.c:270
-msgid "Online Documentation"
-msgstr "Dokumentacja sieciowa"
-
 #: ../libxfce4ui/xfce-dialogs.c:273
 msgid ""
 "You will be redirected to the documentation website where the help pages are"
 " maintained and translated."
 msgstr "Przeglądarka otworzy stronę dokumentacji, na której tworzone są podręczniki użytkownika i gdzie następuje ich tłumaczenie."
 
-#: ../libxfce4ui/xfce-dialogs.c:279
-msgid "_Read Online"
-msgstr "_Wyświetl podręcznik"
-
-#: ../libxfce4ui/xfce-dialogs.c:288
-msgid "_Always go directly to the online documentation"
-msgstr "_Pomijanie tego pytania w przyszłości"
-
-#: ../libxfce4ui/xfce-dialogs.c:334
-msgid "Information"
-msgstr "Informacja"
-
-#: ../libxfce4ui/xfce-dialogs.c:337 ../libxfce4ui/xfce-dialogs.c:372
-#: ../libxfce4ui/xfce-dialogs.c:408
-msgid "Close"
-msgstr "Zamknij"
-
-#: ../libxfce4ui/xfce-dialogs.c:369 ../libxfce4ui/xfce-dialogs.c:528
-msgid "Warning"
-msgstr "Ostrzeżenie"
-
-#: ../libxfce4ui/xfce-dialogs.c:405
-msgid "Error"
-msgstr "Błąd"
-
-#: ../libxfce4ui/xfce-dialogs.c:455
-msgid "No"
-msgstr "Nie"
-
-#: ../libxfce4ui/xfce-dialogs.c:457
-msgid "Yes"
-msgstr "Tak"
-
-#: ../libxfce4ui/xfce-dialogs.c:461
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:41
-msgid "Cancel"
-msgstr "Anulowanie"
-
-#: ../libxfce4ui/xfce-dialogs.c:464
-msgid "Question"
-msgstr "Pytanie"
-
-#: ../libxfce4ui/xfce-dialogs.c:518
-msgid "Close all tabs?"
-msgstr "Zamknąć wszystkie karty?"
-
-#: ../libxfce4ui/xfce-dialogs.c:520
-msgid ""
-"This window has multiple tabs open. Closing this window\n"
-"will also close all its tabs."
-msgstr "W tym oknie otwartych jest wiele kart. Zamknięcie tego okna spowoduje również zamknięcie wszystkich jego kart."
-
-#: ../libxfce4ui/xfce-dialogs.c:523
-#, c-format
-msgid ""
-"This window has %d tabs open. Closing this window\n"
-"will also close all its tabs."
-msgstr "To okno ma %d otwarte karty. Zamknięcie tego okna\nzamknie również wszystkie karty."
-
 #. Create cancel button
-#: ../libxfce4ui/xfce-dialogs.c:532
+#: ../libxfce4ui/xfce-dialogs.c:275 ../libxfce4ui/xfce-dialogs.c:530
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:243
 msgid "_Cancel"
 msgstr "_Anuluj"
 
-#: ../libxfce4ui/xfce-dialogs.c:533
-msgid "Close _Window"
-msgstr "Zamknij _okno"
+#: ../libxfce4ui/xfce-dialogs.c:277
+msgid "_Read Online"
+msgstr "_Wyświetl podręcznik"
 
-#: ../libxfce4ui/xfce-dialogs.c:534
+#: ../libxfce4ui/xfce-dialogs.c:286
+msgid "_Always go directly to the online documentation"
+msgstr "_Pomijanie tego pytania w przyszłości"
+
+#: ../libxfce4ui/xfce-dialogs.c:335 ../libxfce4ui/xfce-dialogs.c:370
+#: ../libxfce4ui/xfce-dialogs.c:406
+msgid "Close"
+msgstr "Zamknij"
+
+#: ../libxfce4ui/xfce-dialogs.c:453
+msgid "No"
+msgstr "Nie"
+
+#: ../libxfce4ui/xfce-dialogs.c:455
+msgid "Yes"
+msgstr "Tak"
+
+#: ../libxfce4ui/xfce-dialogs.c:459
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:41
+msgid "Cancel"
+msgstr "Anulowanie"
+
+#: ../libxfce4ui/xfce-dialogs.c:516
+msgid "Close window with multiple tabs?"
+msgstr "Zamknąć okno z wieloma kartami?"
+
+#: ../libxfce4ui/xfce-dialogs.c:518
+msgid ""
+"This window has multiple tabs open. Closing this window will also close all "
+"its tabs."
+msgstr "W tym oknie jest otwartych wiele kart. Zamknięcie tego okna zamknie również wszystkie jego karty."
+
+#: ../libxfce4ui/xfce-dialogs.c:521
+#, c-format
+msgid ""
+"This window has %d tabs open. Closing this window will also close all its "
+"tabs."
+msgstr "W tym oknie jest otwartych %d kart. Zamknięcie tego okna zamknie również wszystkie jego karty."
+
+#: ../libxfce4ui/xfce-dialogs.c:531
 msgid "Close T_ab"
 msgstr "Zamknij k_artę"
 
-#: ../libxfce4ui/xfce-dialogs.c:539
+#: ../libxfce4ui/xfce-dialogs.c:532
+msgid "Close _Window"
+msgstr "Zamknij _okno"
+
+#: ../libxfce4ui/xfce-dialogs.c:537
 msgid "Do _not ask me again"
 msgstr "_Ukrywanie tego okna w przyszłości"
 
@@ -902,6 +882,6 @@ msgstr "Plik o nazwie „%s” już istnieje w tym katalogu. Nie dodano pliku."
 msgid "Failed to migrate the old panel configuration"
 msgstr "Nie udało się zaimportować starej konfiguracji panelu."
 
-#: ../tests/test-ui.c:160 ../tests/test-ui.c:185
+#: ../tests/test-ui.c:170 ../tests/test-ui.c:195
 msgid "Customize settings stored by Xfconf"
 msgstr "Konfiguruje ustawienia przechowywane przez Xfconf"
