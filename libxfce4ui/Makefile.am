@@ -225,7 +225,10 @@ EXTRA_DIST = \
 	libxfce4ui-alias.h \
 	libxfce4ui-aliasdef.c \
 	libxfce4ui-marshal.list \
-	make-libxfce4ui-alias.pl
+	make-libxfce4ui-alias.pl \
+	libxfce4ui-2.0.metadata \
+	libxfce4ui-2.deps
+	
 
 if ENABLE_VAPIGEN
 -include $(VAPIGEN_MAKEFILE)
@@ -241,7 +244,6 @@ libxfce4ui_2_vapi_FILES = libxfce4ui-2.0.gir
 vapidir = $(datadir)/vala/vapi
 vapi_DATA = $(VAPIGEN_VAPIS) $(VAPIGEN_VAPIS:.vapi=.deps)
 
-EXTRA_DIST += libxfce4ui-2.0.metadata libxfce4ui-2.deps
 endif
 
 if HAVE_GNUC_VISIBILITY
