@@ -228,7 +228,7 @@ EXTRA_DIST = \
 	make-libxfce4ui-alias.pl \
 	libxfce4ui-2.0.metadata \
 	libxfce4ui-2.deps
-	
+
 
 if ENABLE_VAPIGEN
 -include $(VAPIGEN_MAKEFILE)
