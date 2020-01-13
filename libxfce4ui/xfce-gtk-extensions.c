@@ -324,12 +324,11 @@ xfce_widget_reparent (GtkWidget *widget,
  * xfce_icon_name_from_desktop_id:
  * @desktop_id : Name of the desktop file.
  *
- * Return value: %NULL on error, else the string, which should be freed using
- *               g_free() when no longer needed.
+ * Return value: %NULL on error, else the string value of the "Icon" property.
  *
  * Since: 4.16
  **/
-gchar *
+const gchar *
 xfce_icon_name_from_desktop_id (const gchar *desktop_id)
 {
     const gchar *icon_file;
@@ -372,7 +371,7 @@ xfce_icon_name_from_desktop_id (const gchar *desktop_id)
 GIcon *
 xfce_gicon_from_name (const gchar *name)
 {
-    gchar *icon_name = NULL;
+    const gchar *icon_name;
     GIcon *gicon;
     GtkIconInfo *icon_info;
 
@@ -380,7 +379,6 @@ xfce_gicon_from_name (const gchar *name)
     icon_name = xfce_icon_name_from_desktop_id (name);
     if (icon_name) {
         gicon = g_themed_icon_new_with_default_fallbacks (icon_name);
-        g_free (icon_name);
     }
     else {
         gicon = g_themed_icon_new_with_default_fallbacks (name);
