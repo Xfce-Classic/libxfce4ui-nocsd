@@ -50,6 +50,10 @@ gboolean   xfce_gtk_menu_popup_until_mapped        (GtkMenu             *menu,
 gboolean   xfce_widget_reparent                    (GtkWidget           *widget,
                                                     GtkWidget           *new_parent);
 
+gchar     *xfce_icon_name_from_desktop_id          (const gchar         *desktop_id);
+
+GIcon     *xfce_gicon_from_name                    (const gchar         *name);
+
 G_END_DECLS
 
 #endif /* !__XFCE_GTK_EXTENSIONS_H__ */

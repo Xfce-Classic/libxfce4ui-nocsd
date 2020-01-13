@@ -32,8 +32,10 @@ xfce_gtk_button_new_mixed
 xfce_gtk_frame_box_new
 xfce_gtk_frame_box_new_with_content
 xfce_gtk_window_center_on_active_screen
-xfce_widget_reparent
 xfce_gtk_menu_popup_until_mapped
+xfce_widget_reparent
+xfce_icon_name_from_desktop_id
+xfce_gicon_from_name
 </SECTION>
 
 <SECTION>

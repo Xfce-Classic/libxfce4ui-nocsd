@@ -42,6 +42,7 @@
 #include <libxfce4ui/xfce-gdk-extensions.h>
 #include <libxfce4ui/libxfce4ui-private.h>
 #include <libxfce4ui/libxfce4ui-alias.h>
+#include <libxfce4util/libxfce4util.h>
 
 /* Xfce frame padding */
 #define PADDING (6)
@@ -316,6 +317,89 @@ xfce_widget_reparent (GtkWidget *widget,
 
   return FALSE;
 }
+
+
+
+/**
+ * xfce_icon_name_from_desktop_id:
+ * @desktop_id : Name of the desktop file.
+ *
+ * Return value: %NULL on error, else the string, which should be freed using
+ *               g_free() when no longer needed.
+ *
+ * Since: 4.16
+ **/
+gchar *
+xfce_icon_name_from_desktop_id (const gchar *desktop_id)
+{
+    const gchar *icon_file;
+    gchar *resource;
+    XfceRc *rcfile;
+
+    resource = g_strdup_printf ("applications%c%s.desktop",
+                                G_DIR_SEPARATOR,
+                                desktop_id);
+    rcfile = xfce_rc_config_open (XFCE_RESOURCE_DATA,
+                                  resource, TRUE);
+    g_free (resource);
+
+    if (rcfile && xfce_rc_has_group (rcfile, "Desktop Entry")) {
+        xfce_rc_set_group (rcfile, "Desktop Entry");
+        icon_file = xfce_rc_read_entry (rcfile, "Icon", NULL);
+        xfce_rc_close (rcfile);
+        return icon_file;
+    }
+    else
+        return NULL;
+}
+
+
+
+/**
+ * xfce_gicon_from_name:
+ * @name : Name of the application.
+ *
+ * This function will first look for a desktop file of @name and if successful
+ * use the value of the "Icon" property to return a #GIcon.
+ * If no desktop file of @name is found it will fallback to returning a #GIcon
+ * based on #g_themed_icon_new_with_default_fallbacks and
+ * #gtk_icon_theme_lookup_by_gicon.
+ *
+ * Return value: a new #GThemedIcon.
+ *
+ * Since: 4.16
+ **/
+GIcon *
+xfce_gicon_from_name (const gchar *name)
+{
+    gchar *icon_name = NULL;
+    GIcon *gicon;
+    GtkIconInfo *icon_info;
+
+    /* Check if there is a desktop file of 'name' */
+    icon_name = xfce_icon_name_from_desktop_id (name);
+    if (icon_name) {
+        gicon = g_themed_icon_new_with_default_fallbacks (icon_name);
+        g_free (icon_name);
+    }
+    else {
+        gicon = g_themed_icon_new_with_default_fallbacks (name);
+    }
+
+    /* As g_themed_icon_new_with_default_fallbacks always returns 'something'
+       check if there's anything that matches in the icon theme */
+    icon_info = gtk_icon_theme_lookup_by_gicon (gtk_icon_theme_get_default (),
+                                                gicon,
+                                                GTK_ICON_SIZE_BUTTON,
+                                                GTK_ICON_LOOKUP_FORCE_REGULAR);
+
+    if (icon_info)
+        return gicon;
+    else
+        return NULL;
+}
+
+
 
 #define __XFCE_GTK_EXTENSIONS_C__
 #include <libxfce4ui/libxfce4ui-aliasdef.c>
