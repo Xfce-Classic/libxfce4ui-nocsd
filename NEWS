@@ -1,3 +1,48 @@
+4.15.1
+======
+- Switch XfceTitledDialog to headerbar layout
+- XfceTitledDialog: Keep buttons in the action area
+- XfceTitledDialog: Also repack xfce_titled_dialog_new
+- XfceTitledDialog: Make sure windows can be dragged
+- XfceTitledDialog: Add _create_action_area, _add_button
+  and _add_action_widget
+- Introduce xfce_titled_dialog_set_default_response
+- Mark xfce_titled_dialog_new_with_buttons as deprecated
+- Add two new functions to search for app icons
+- xfce-about: Fix Makefile
+- shortcut-dialog: Show dialog content (Bug #16338)
+- xfce-dialogs: Use GtkMessageDialog as base class
+- xfce-dialogs: Improve layout of confirm_close_tabs
+- xfce-dialogs: Improve alignment and layout of dialogs
+- xfce-dialogs: Add right margin back to labels
+- xfce-dialogs: Drop default window titles
+- docs: Add xfce_dialog_confirm_close_tabs
+- tests: Add xfce_dialog_confirm_close_tabs
+- tests: Improve UI
+- tests: Add icons to dialog buttons
+- tests: Simplify code by using XfceTitledDialog
+- tests: Re-order buttons
+- tests: Fix typo in test-ui.c (Bug #16253)
+- Rename test-ui-gtk3 to test-ui
+- Improve docstrings
+- Fix typos
+- Drop gladeui Gtk2 from distcheck options
+- Drop unused declaration
+- Fix compiler warnings
+- Remove trailing whitespace
+- Always provides needed files for vala binding in dist tarball
+- Add recents functions to libxfce4ui.symbols
+- Drop xfce-header from pot files
+- Update docstrings
+- Fix license text box too small (Bug #16259)
+- .gitignore: ignore all .o files
+- Make autogen output friendlier
+- Translation Updates:
+  Albanian, Bulgarian, Catalan, Chinese (China), Croatian, Danish, Dutch,
+  French, Galician, German, Hungarian, Italian, Japanese, Lithuanian,
+  Norwegian Bokmål, Polish, Portuguese, Portuguese (Brazil), Russian,
+  Serbian, Slovak, Slovenian, Spanish, Swedish, Turkish, Ukrainian
+
 4.15.0
 ======
 - Drop support for Gtk2
