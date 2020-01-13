@@ -59,7 +59,6 @@ enum
 static GObject *xfce_titled_dialog_constructor    (GType                   type,
                                                    guint                   n_construct_params,
                                                    GObjectConstructParam  *construct_params);
-static void     xfce_titled_dialog_constructed    (GObject                *object);
 static void     xfce_titled_dialog_finalize       (GObject                *object);
 static void     xfce_titled_dialog_get_property   (GObject                *object,
                                                    guint                   prop_id,
