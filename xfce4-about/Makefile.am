@@ -20,11 +20,8 @@ xfce4_about_SOURCES = \
 
 if ENABLE_GLIBTOP
 
-xfce4_about_built_sources += \
-	system-info.c \
-	system-info.h
-
 xfce4_about_SOURCES += \
+	system-info.c \
 	system-info.h
 
 endif
