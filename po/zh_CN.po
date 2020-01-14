@@ -10,14 +10,14 @@
 # Levi Zhou <congzhou821@gmail.com>, 2016
 # Mingcong Bai <jeffbai@aosc.xyz>, 2015-2016
 # Cally Mal <zhouxiaobo.500@gmail.com>, 2017
-# 玉堂白鹤 <yjwork@qq.com>, 2015,2017,2019
+# 玉堂白鹤 <yjwork@qq.com>, 2015,2017,2019-2020
 # Mingcong Bai <jeffbai@aosc.xyz>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-05 00:30+0100\n"
-"PO-Revision-Date: 2019-12-06 04:33+0000\n"
+"POT-Creation-Date: 2020-01-10 00:30+0100\n"
+"PO-Revision-Date: 2020-01-14 04:59+0000\n"
 "Last-Translator: 玉堂白鹤 <yjwork@qq.com>\n"
 "Language-Team: Chinese (China) (http://www.transifex.com/xfce/libxfce4ui/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
@@ -39,90 +39,70 @@ msgstr "您要在线阅读 %s 手册吗？"
 msgid "Do you want to read the manual online?"
 msgstr "您要在线阅读手册吗？"
 
-#: ../libxfce4ui/xfce-dialogs.c:270
-msgid "Online Documentation"
-msgstr "在线文档"
-
 #: ../libxfce4ui/xfce-dialogs.c:273
 msgid ""
 "You will be redirected to the documentation website where the help pages are"
 " maintained and translated."
 msgstr "您将被重定向至维护和翻译帮助文档的网站。"
 
-#: ../libxfce4ui/xfce-dialogs.c:279
-msgid "_Read Online"
-msgstr "在线阅读(_R)"
-
-#: ../libxfce4ui/xfce-dialogs.c:288
-msgid "_Always go directly to the online documentation"
-msgstr "总是直接进入在线文档(_A)"
-
-#: ../libxfce4ui/xfce-dialogs.c:334
-msgid "Information"
-msgstr "版本信息"
-
-#: ../libxfce4ui/xfce-dialogs.c:337 ../libxfce4ui/xfce-dialogs.c:372
-#: ../libxfce4ui/xfce-dialogs.c:408
-msgid "Close"
-msgstr "关闭"
-
-#: ../libxfce4ui/xfce-dialogs.c:369 ../libxfce4ui/xfce-dialogs.c:528
-msgid "Warning"
-msgstr "警告"
-
-#: ../libxfce4ui/xfce-dialogs.c:405
-msgid "Error"
-msgstr "错误"
-
-#: ../libxfce4ui/xfce-dialogs.c:455
-msgid "No"
-msgstr "否"
-
-#: ../libxfce4ui/xfce-dialogs.c:457
-msgid "Yes"
-msgstr "是的"
-
-#: ../libxfce4ui/xfce-dialogs.c:461
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:41
-msgid "Cancel"
-msgstr "取消"
-
-#: ../libxfce4ui/xfce-dialogs.c:464
-msgid "Question"
-msgstr "问题"
-
-#: ../libxfce4ui/xfce-dialogs.c:518
-msgid "Close all tabs?"
-msgstr "是否关闭所有标签？"
-
-#: ../libxfce4ui/xfce-dialogs.c:520
-msgid ""
-"This window has multiple tabs open. Closing this window\n"
-"will also close all its tabs."
-msgstr "此窗口打开了多个标签。 关闭此窗口\n将会关闭所有标签。"
-
-#: ../libxfce4ui/xfce-dialogs.c:523
-#, c-format
-msgid ""
-"This window has %d tabs open. Closing this window\n"
-"will also close all its tabs."
-msgstr "此窗口打开了%d 个标签。 关闭此窗口\n还将关闭所有标签。"
-
 #. Create cancel button
-#: ../libxfce4ui/xfce-dialogs.c:532
+#: ../libxfce4ui/xfce-dialogs.c:275 ../libxfce4ui/xfce-dialogs.c:530
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:243
 msgid "_Cancel"
 msgstr "取消 (_C)"
 
-#: ../libxfce4ui/xfce-dialogs.c:533
-msgid "Close _Window"
-msgstr "关闭窗口(_W)"
+#: ../libxfce4ui/xfce-dialogs.c:277
+msgid "_Read Online"
+msgstr "在线阅读(_R)"
 
-#: ../libxfce4ui/xfce-dialogs.c:534
+#: ../libxfce4ui/xfce-dialogs.c:286
+msgid "_Always go directly to the online documentation"
+msgstr "总是直接进入在线文档(_A)"
+
+#: ../libxfce4ui/xfce-dialogs.c:335 ../libxfce4ui/xfce-dialogs.c:370
+#: ../libxfce4ui/xfce-dialogs.c:406
+msgid "Close"
+msgstr "关闭"
+
+#: ../libxfce4ui/xfce-dialogs.c:453
+msgid "No"
+msgstr "否"
+
+#: ../libxfce4ui/xfce-dialogs.c:455
+msgid "Yes"
+msgstr "是的"
+
+#: ../libxfce4ui/xfce-dialogs.c:459
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:41
+msgid "Cancel"
+msgstr "取消"
+
+#: ../libxfce4ui/xfce-dialogs.c:516
+msgid "Close window with multiple tabs?"
+msgstr "关闭带有多个标签的窗口？"
+
+#: ../libxfce4ui/xfce-dialogs.c:518
+msgid ""
+"This window has multiple tabs open. Closing this window will also close all "
+"its tabs."
+msgstr "此窗口打开了多个标签。 关闭此窗口将会关闭所有标签。"
+
+#: ../libxfce4ui/xfce-dialogs.c:521
+#, c-format
+msgid ""
+"This window has %d tabs open. Closing this window will also close all its "
+"tabs."
+msgstr "此窗口打开了%d 个标签。 关闭此窗口也将关闭所有标签。"
+
+#: ../libxfce4ui/xfce-dialogs.c:531
 msgid "Close T_ab"
 msgstr "关闭标签(_A)"
 
-#: ../libxfce4ui/xfce-dialogs.c:539
+#: ../libxfce4ui/xfce-dialogs.c:532
+msgid "Close _Window"
+msgstr "关闭窗口(_W)"
+
+#: ../libxfce4ui/xfce-dialogs.c:537
 msgid "Do _not ask me again"
 msgstr "不再询问(_N)"
 
@@ -906,6 +886,6 @@ msgstr "名叫%s的文件已经存在于该目录中，未能完成文件的添�
 msgid "Failed to migrate the old panel configuration"
 msgstr "无法应用至旧面板配置"
 
-#: ../tests/test-ui.c:160 ../tests/test-ui.c:185
+#: ../tests/test-ui.c:170 ../tests/test-ui.c:195
 msgid "Customize settings stored by Xfconf"
 msgstr "自定义 Xfconf 存储的设置"
