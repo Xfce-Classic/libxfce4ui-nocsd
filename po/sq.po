@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-05 00:30+0100\n"
-"PO-Revision-Date: 2020-01-07 18:37+0000\n"
+"POT-Creation-Date: 2020-01-10 00:30+0100\n"
+"PO-Revision-Date: 2020-01-28 10:26+0000\n"
 "Last-Translator: Besnik <besnik@programeshqip.org>\n"
 "Language-Team: Albanian (http://www.transifex.com/xfce/libxfce4ui/language/sq/)\n"
 "MIME-Version: 1.0\n"
@@ -31,90 +31,70 @@ msgstr "Doni ta lexoni doracakun e %s në internet?"
 msgid "Do you want to read the manual online?"
 msgstr "Doni ta lexoni doracakun në internet?"
 
-#: ../libxfce4ui/xfce-dialogs.c:270
-msgid "Online Documentation"
-msgstr "Dokumentim në Internet"
-
 #: ../libxfce4ui/xfce-dialogs.c:273
 msgid ""
 "You will be redirected to the documentation website where the help pages are"
 " maintained and translated."
 msgstr "Do të ridrejtoheni te sajti i dokumentimit, ku mirëmbahen dhe përkthehen faqet e ndihmës."
 
-#: ../libxfce4ui/xfce-dialogs.c:279
-msgid "_Read Online"
-msgstr "_Lexojeni Në Internet"
-
-#: ../libxfce4ui/xfce-dialogs.c:288
-msgid "_Always go directly to the online documentation"
-msgstr "Kalo _përherë drejt e te dokumentimi në internet"
-
-#: ../libxfce4ui/xfce-dialogs.c:334
-msgid "Information"
-msgstr "Të dhëna"
-
-#: ../libxfce4ui/xfce-dialogs.c:337 ../libxfce4ui/xfce-dialogs.c:372
-#: ../libxfce4ui/xfce-dialogs.c:408
-msgid "Close"
-msgstr "Mbylle"
-
-#: ../libxfce4ui/xfce-dialogs.c:369 ../libxfce4ui/xfce-dialogs.c:528
-msgid "Warning"
-msgstr "Kujdes"
-
-#: ../libxfce4ui/xfce-dialogs.c:405
-msgid "Error"
-msgstr "Gabim"
-
-#: ../libxfce4ui/xfce-dialogs.c:455
-msgid "No"
-msgstr "Jo"
-
-#: ../libxfce4ui/xfce-dialogs.c:457
-msgid "Yes"
-msgstr "Po"
-
-#: ../libxfce4ui/xfce-dialogs.c:461
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:41
-msgid "Cancel"
-msgstr "Anuloje"
-
-#: ../libxfce4ui/xfce-dialogs.c:464
-msgid "Question"
-msgstr "Pyetje"
-
-#: ../libxfce4ui/xfce-dialogs.c:518
-msgid "Close all tabs?"
-msgstr "Të mbyllen krejt skedat?"
-
-#: ../libxfce4ui/xfce-dialogs.c:520
-msgid ""
-"This window has multiple tabs open. Closing this window\n"
-"will also close all its tabs."
-msgstr "Kjo dritare ka skeda të shumta të hapura. Mbyllja e kësaj dritareje\ndo të sjellë mbylljen edhe të krejt skedave të saj."
-
-#: ../libxfce4ui/xfce-dialogs.c:523
-#, c-format
-msgid ""
-"This window has %d tabs open. Closing this window\n"
-"will also close all its tabs."
-msgstr "Kjo dritare ka %d skeda të hapura. Mbyllja e kësaj dritareje\ndo të sjellë mbylljen edhe të krejt skedave të saj."
-
 #. Create cancel button
-#: ../libxfce4ui/xfce-dialogs.c:532
+#: ../libxfce4ui/xfce-dialogs.c:275 ../libxfce4ui/xfce-dialogs.c:530
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:243
 msgid "_Cancel"
 msgstr "_Anuloje"
 
-#: ../libxfce4ui/xfce-dialogs.c:533
-msgid "Close _Window"
-msgstr "Mbylle _Dritaren"
+#: ../libxfce4ui/xfce-dialogs.c:277
+msgid "_Read Online"
+msgstr "_Lexojeni Në Internet"
 
-#: ../libxfce4ui/xfce-dialogs.c:534
+#: ../libxfce4ui/xfce-dialogs.c:286
+msgid "_Always go directly to the online documentation"
+msgstr "Kalo _përherë drejt e te dokumentimi në internet"
+
+#: ../libxfce4ui/xfce-dialogs.c:335 ../libxfce4ui/xfce-dialogs.c:370
+#: ../libxfce4ui/xfce-dialogs.c:406
+msgid "Close"
+msgstr "Mbylle"
+
+#: ../libxfce4ui/xfce-dialogs.c:453
+msgid "No"
+msgstr "Jo"
+
+#: ../libxfce4ui/xfce-dialogs.c:455
+msgid "Yes"
+msgstr "Po"
+
+#: ../libxfce4ui/xfce-dialogs.c:459
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:41
+msgid "Cancel"
+msgstr "Anuloje"
+
+#: ../libxfce4ui/xfce-dialogs.c:516
+msgid "Close window with multiple tabs?"
+msgstr ""
+
+#: ../libxfce4ui/xfce-dialogs.c:518
+msgid ""
+"This window has multiple tabs open. Closing this window will also close all "
+"its tabs."
+msgstr ""
+
+#: ../libxfce4ui/xfce-dialogs.c:521
+#, c-format
+msgid ""
+"This window has %d tabs open. Closing this window will also close all its "
+"tabs."
+msgstr ""
+
+#: ../libxfce4ui/xfce-dialogs.c:531
 msgid "Close T_ab"
 msgstr "Mbylle _Skedën"
 
-#: ../libxfce4ui/xfce-dialogs.c:539
+#: ../libxfce4ui/xfce-dialogs.c:532
+msgid "Close _Window"
+msgstr "Mbylle _Dritaren"
+
+#: ../libxfce4ui/xfce-dialogs.c:537
 msgid "Do _not ask me again"
 msgstr "Mos _më pyet më"
 
@@ -287,7 +267,7 @@ msgstr "Cikloji dritaret (Në të kundërt)"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:44
 msgid "Switch window for same application"
-msgstr "Këmbe dritare për të njëjtin aplikacion"
+msgstr "Këmbeni dritare për të njëjtin aplikacion"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:45
 msgid "Switch application"
@@ -323,7 +303,7 @@ msgstr "Ripërmasojeni dritaren"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:53
 msgid "Shade window"
-msgstr "Hijezo dritare"
+msgstr "Hijezoje dritaren"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:54
 msgid "Stick window"
@@ -359,7 +339,7 @@ msgstr "Aktivizo/Çaktivizo gjendjen sipër"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:62
 msgid "Toggle fullscreen"
-msgstr "Aktivizo/çaktivizo mënyrën ekran i plotë"
+msgstr "Hyr/dil nga mënyra sa krejt ekrani"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:63
 msgid "Move window to upper workspace"
@@ -463,7 +443,7 @@ msgstr "Tjegullzoje dritaren poshtë majtas"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:88
 msgid "Tile window to the bottom-right"
-msgstr "Tjegullzoje dritaren poshtë djathtas"
+msgstr "Tjegullzoje dritaren poshtë majtas"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:89
 msgid "Show desktop"
@@ -609,7 +589,7 @@ msgstr "Përgjegjës Kartelash"
 msgid ""
 "A modern file manager for the Unix/Linux desktop, aiming to be easy-to-use "
 "and fast."
-msgstr "Një përgjegjës modern kartelash për dekstopin Unix/Linux, që synon të jetë i lehtë për t’u përdorur dhe i shpejtë."
+msgstr "Një përgjegjës modern kartelash për desktopin Unix/Linux, që synon të jetë i lehtë për t’u përdorur dhe i shpejtë."
 
 #: ../xfce4-about/main.c:144
 msgid "Volume manager"
@@ -711,7 +691,7 @@ msgstr "Nëse dini dikë që mungon në këtë listë, mos ngurroni të hapni nj
 
 #: ../xfce4-about/main.c:327
 msgid "Thanks to all who helped making this software available!"
-msgstr "Falënderime për krejt ata që ndihmuan në realizimin e këtij software-i!"
+msgstr "Falënderime për të gjithë ata që ndihmuan në realizimin e këtij software-i!"
 
 #: ../xfce4-about/main.c:344
 msgid ""
@@ -896,8 +876,8 @@ msgstr "Ka tashmë në këtë drejtori një kartelë të quajtur \"%s\", kartela
 
 #: ../tests/test-ui.c:122
 msgid "Failed to migrate the old panel configuration"
-msgstr "S’u arrit të migrohej formësimi i vjetër i panelit"
+msgstr "S’u arrit të migrohej formësimi i panelit të vjetër"
 
-#: ../tests/test-ui.c:160 ../tests/test-ui.c:185
+#: ../tests/test-ui.c:170 ../tests/test-ui.c:195
 msgid "Customize settings stored by Xfconf"
 msgstr "Përshtatni rregullimet e depozituara nga Xfconf-i"
