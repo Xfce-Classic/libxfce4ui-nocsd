@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-10 00:30+0100\n"
-"PO-Revision-Date: 2020-01-28 10:26+0000\n"
+"PO-Revision-Date: 2020-01-28 15:58+0000\n"
 "Last-Translator: Besnik <besnik@programeshqip.org>\n"
 "Language-Team: Albanian (http://www.transifex.com/xfce/libxfce4ui/language/sq/)\n"
 "MIME-Version: 1.0\n"
@@ -71,20 +71,20 @@ msgstr "Anuloje"
 
 #: ../libxfce4ui/xfce-dialogs.c:516
 msgid "Close window with multiple tabs?"
-msgstr ""
+msgstr "Të mbyllet dritarja me shumë skeda?"
 
 #: ../libxfce4ui/xfce-dialogs.c:518
 msgid ""
 "This window has multiple tabs open. Closing this window will also close all "
 "its tabs."
-msgstr ""
+msgstr "Kjo dritare ka shumë skeda të hapura. Mbyllja e kësaj dritareje do të sjellë mbylljen e krejt skedave të saj."
 
 #: ../libxfce4ui/xfce-dialogs.c:521
 #, c-format
 msgid ""
 "This window has %d tabs open. Closing this window will also close all its "
 "tabs."
-msgstr ""
+msgstr "Kjo dritare ka %d skeda të hapura. Mbyllja e kësaj dritareje do të sjellë mbylljen e krejt skedave të saj."
 
 #: ../libxfce4ui/xfce-dialogs.c:531
 msgid "Close T_ab"
