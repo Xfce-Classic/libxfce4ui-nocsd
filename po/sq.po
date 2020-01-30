@@ -4,12 +4,13 @@
 # 
 # Translators:
 # Besnik <besnik@programeshqip.org>, 2019-2020
+# Besnik <besnik@programeshqip.org>, 2019-2020
 msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-10 00:30+0100\n"
-"PO-Revision-Date: 2020-01-28 15:58+0000\n"
+"PO-Revision-Date: 2020-01-30 11:11+0000\n"
 "Last-Translator: Besnik <besnik@programeshqip.org>\n"
 "Language-Team: Albanian (http://www.transifex.com/xfce/libxfce4ui/language/sq/)\n"
 "MIME-Version: 1.0\n"
@@ -727,7 +728,7 @@ msgstr "S’arrihet të gatitet dot GTK+."
 
 #: ../xfce4-about/main.c:518
 msgid "The Xfce development team. All rights reserved."
-msgstr "Ekipi zhvillues i Xfce-së. Tërë të drejtat të rezervuara."
+msgstr "Ekipi i zhvillimit të Xfce-së. Tërë të drejtat të rezervuara."
 
 #: ../xfce4-about/main.c:519
 #, c-format
