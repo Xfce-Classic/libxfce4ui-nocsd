@@ -4,15 +4,15 @@
 # 
 # Translators:
 # Aljoša Žagar <anthon.manix@gmail.com>, 2013,2017
-# Arnold Marko <arnold.marko@gmail.com>, 2019
+# Arnold Marko <arnold.marko@gmail.com>, 2019-2020
 # Kernc, 2014,2016
 # Kernc, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-05 00:30+0100\n"
-"PO-Revision-Date: 2019-12-07 19:27+0000\n"
+"POT-Creation-Date: 2020-01-10 00:30+0100\n"
+"PO-Revision-Date: 2020-01-30 09:58+0000\n"
 "Last-Translator: Arnold Marko <arnold.marko@gmail.com>\n"
 "Language-Team: Slovenian (http://www.transifex.com/xfce/libxfce4ui/language/sl/)\n"
 "MIME-Version: 1.0\n"
@@ -34,90 +34,70 @@ msgstr "Želite prebrati %s priročnik na spletu?"
 msgid "Do you want to read the manual online?"
 msgstr "Želite prebrati priročnik na spletu?"
 
-#: ../libxfce4ui/xfce-dialogs.c:270
-msgid "Online Documentation"
-msgstr "Spletna dokumentacija"
-
 #: ../libxfce4ui/xfce-dialogs.c:273
 msgid ""
 "You will be redirected to the documentation website where the help pages are"
 " maintained and translated."
 msgstr "Preusmerjeni boste na spletno stran dokumentacije, kjer se vzdržujejo in prevajajo strani pomoči."
 
-#: ../libxfce4ui/xfce-dialogs.c:279
-msgid "_Read Online"
-msgstr "P_reberi na spletu"
-
-#: ../libxfce4ui/xfce-dialogs.c:288
-msgid "_Always go directly to the online documentation"
-msgstr "_Vedno pojdi na spletno dokumentacijo"
-
-#: ../libxfce4ui/xfce-dialogs.c:334
-msgid "Information"
-msgstr "Podatki"
-
-#: ../libxfce4ui/xfce-dialogs.c:337 ../libxfce4ui/xfce-dialogs.c:372
-#: ../libxfce4ui/xfce-dialogs.c:408
-msgid "Close"
-msgstr "Zapri"
-
-#: ../libxfce4ui/xfce-dialogs.c:369 ../libxfce4ui/xfce-dialogs.c:528
-msgid "Warning"
-msgstr "Opozorilo"
-
-#: ../libxfce4ui/xfce-dialogs.c:405
-msgid "Error"
-msgstr "Napaka"
-
-#: ../libxfce4ui/xfce-dialogs.c:455
-msgid "No"
-msgstr "Ne"
-
-#: ../libxfce4ui/xfce-dialogs.c:457
-msgid "Yes"
-msgstr "Da"
-
-#: ../libxfce4ui/xfce-dialogs.c:461
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:41
-msgid "Cancel"
-msgstr "Prekliči"
-
-#: ../libxfce4ui/xfce-dialogs.c:464
-msgid "Question"
-msgstr "Vprašanje"
-
-#: ../libxfce4ui/xfce-dialogs.c:518
-msgid "Close all tabs?"
-msgstr "Zaprem vse zavihke?"
-
-#: ../libxfce4ui/xfce-dialogs.c:520
-msgid ""
-"This window has multiple tabs open. Closing this window\n"
-"will also close all its tabs."
-msgstr "To okno ima odprtih več zavihkov. Ob zaprtju tega okna\nse bodo zaprli tudi vsi zavihki."
-
-#: ../libxfce4ui/xfce-dialogs.c:523
-#, c-format
-msgid ""
-"This window has %d tabs open. Closing this window\n"
-"will also close all its tabs."
-msgstr "To okno ima odprtih %d zavihkov. Zaprtje tega okna\nbo zaprlo tudi vse zavihke."
-
 #. Create cancel button
-#: ../libxfce4ui/xfce-dialogs.c:532
+#: ../libxfce4ui/xfce-dialogs.c:275 ../libxfce4ui/xfce-dialogs.c:530
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:243
 msgid "_Cancel"
 msgstr "_Prekliči"
 
-#: ../libxfce4ui/xfce-dialogs.c:533
-msgid "Close _Window"
-msgstr "Zapri _okno"
+#: ../libxfce4ui/xfce-dialogs.c:277
+msgid "_Read Online"
+msgstr "P_reberi na spletu"
 
-#: ../libxfce4ui/xfce-dialogs.c:534
+#: ../libxfce4ui/xfce-dialogs.c:286
+msgid "_Always go directly to the online documentation"
+msgstr "_Vedno pojdi na spletno dokumentacijo"
+
+#: ../libxfce4ui/xfce-dialogs.c:335 ../libxfce4ui/xfce-dialogs.c:370
+#: ../libxfce4ui/xfce-dialogs.c:406
+msgid "Close"
+msgstr "Zapri"
+
+#: ../libxfce4ui/xfce-dialogs.c:453
+msgid "No"
+msgstr "Ne"
+
+#: ../libxfce4ui/xfce-dialogs.c:455
+msgid "Yes"
+msgstr "Da"
+
+#: ../libxfce4ui/xfce-dialogs.c:459
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:41
+msgid "Cancel"
+msgstr "Prekliči"
+
+#: ../libxfce4ui/xfce-dialogs.c:516
+msgid "Close window with multiple tabs?"
+msgstr "Zaprem okno z več zavihki?"
+
+#: ../libxfce4ui/xfce-dialogs.c:518
+msgid ""
+"This window has multiple tabs open. Closing this window will also close all "
+"its tabs."
+msgstr "To okno ima odprto več zavihkov. Zaprtje tega okna bo zaprlo tudi te zavihke."
+
+#: ../libxfce4ui/xfce-dialogs.c:521
+#, c-format
+msgid ""
+"This window has %d tabs open. Closing this window will also close all its "
+"tabs."
+msgstr "To okno ima odprto %d zavihkov. Zaprtje tega okna bo zaprlo tudi ze zavihke."
+
+#: ../libxfce4ui/xfce-dialogs.c:531
 msgid "Close T_ab"
 msgstr "_Zapri zavihek"
 
-#: ../libxfce4ui/xfce-dialogs.c:539
+#: ../libxfce4ui/xfce-dialogs.c:532
+msgid "Close _Window"
+msgstr "Zapri _okno"
+
+#: ../libxfce4ui/xfce-dialogs.c:537
 msgid "Do _not ask me again"
 msgstr "_Ne sprašuj me več"
 
@@ -901,6 +881,6 @@ msgstr "Datoteka z imenom \"%s\" že obstaja v tej mapi, datoteka ni bila dodana
 msgid "Failed to migrate the old panel configuration"
 msgstr "Ni bilo mogoče preseliti starih nastavitev pulta"
 
-#: ../tests/test-ui.c:160 ../tests/test-ui.c:185
+#: ../tests/test-ui.c:170 ../tests/test-ui.c:195
 msgid "Customize settings stored by Xfconf"
 msgstr "Prilagodi nastavitve, ki jih hrani Xfconf"
