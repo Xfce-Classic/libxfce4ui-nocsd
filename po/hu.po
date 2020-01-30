@@ -12,8 +12,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-05 00:30+0100\n"
-"PO-Revision-Date: 2020-01-09 13:31+0000\n"
+"POT-Creation-Date: 2020-01-10 00:30+0100\n"
+"PO-Revision-Date: 2020-01-30 14:20+0000\n"
 "Last-Translator: Gábor P.\n"
 "Language-Team: Hungarian (http://www.transifex.com/xfce/libxfce4ui/language/hu/)\n"
 "MIME-Version: 1.0\n"
@@ -35,90 +35,70 @@ msgstr "Szeretné elolvasni a(z) %s kézikönyvét online?"
 msgid "Do you want to read the manual online?"
 msgstr "Szeretné elolvasni a kézikönyvet online?"
 
-#: ../libxfce4ui/xfce-dialogs.c:270
-msgid "Online Documentation"
-msgstr "Online dokumentáció"
-
 #: ../libxfce4ui/xfce-dialogs.c:273
 msgid ""
 "You will be redirected to the documentation website where the help pages are"
 " maintained and translated."
 msgstr "Átirányításra kerül a dokumentációs weboldalra, ahol a súgóoldalak karbantartása és fordítása történik."
 
-#: ../libxfce4ui/xfce-dialogs.c:279
-msgid "_Read Online"
-msgstr "_Online olvasás"
-
-#: ../libxfce4ui/xfce-dialogs.c:288
-msgid "_Always go directly to the online documentation"
-msgstr "Közvetlenül az online _dokumentáció megnyitása mindig"
-
-#: ../libxfce4ui/xfce-dialogs.c:334
-msgid "Information"
-msgstr "Információ"
-
-#: ../libxfce4ui/xfce-dialogs.c:337 ../libxfce4ui/xfce-dialogs.c:372
-#: ../libxfce4ui/xfce-dialogs.c:408
-msgid "Close"
-msgstr "Bezárás"
-
-#: ../libxfce4ui/xfce-dialogs.c:369 ../libxfce4ui/xfce-dialogs.c:528
-msgid "Warning"
-msgstr "Figyelmeztetés"
-
-#: ../libxfce4ui/xfce-dialogs.c:405
-msgid "Error"
-msgstr "Hiba"
-
-#: ../libxfce4ui/xfce-dialogs.c:455
-msgid "No"
-msgstr "Nem"
-
-#: ../libxfce4ui/xfce-dialogs.c:457
-msgid "Yes"
-msgstr "Igen"
-
-#: ../libxfce4ui/xfce-dialogs.c:461
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:41
-msgid "Cancel"
-msgstr "Mégse"
-
-#: ../libxfce4ui/xfce-dialogs.c:464
-msgid "Question"
-msgstr "Kérdés"
-
-#: ../libxfce4ui/xfce-dialogs.c:518
-msgid "Close all tabs?"
-msgstr "Az összes lap be legyen zárva?"
-
-#: ../libxfce4ui/xfce-dialogs.c:520
-msgid ""
-"This window has multiple tabs open. Closing this window\n"
-"will also close all its tabs."
-msgstr "Ez az ablak több nyitott lapot tartalmaz.\nAz ablak bezárásával a nyitott lapok is bezárásra kerülnek."
-
-#: ../libxfce4ui/xfce-dialogs.c:523
-#, c-format
-msgid ""
-"This window has %d tabs open. Closing this window\n"
-"will also close all its tabs."
-msgstr "Ez az ablak  %d nyitott lapot tartalmaz.\nAz ablak bezárásával a nyitott lapok is bezárásra kerülnek."
-
 #. Create cancel button
-#: ../libxfce4ui/xfce-dialogs.c:532
+#: ../libxfce4ui/xfce-dialogs.c:275 ../libxfce4ui/xfce-dialogs.c:530
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:243
 msgid "_Cancel"
 msgstr "Mé_gse"
 
-#: ../libxfce4ui/xfce-dialogs.c:533
-msgid "Close _Window"
-msgstr "_Ablak bezárása"
+#: ../libxfce4ui/xfce-dialogs.c:277
+msgid "_Read Online"
+msgstr "_Online olvasás"
 
-#: ../libxfce4ui/xfce-dialogs.c:534
+#: ../libxfce4ui/xfce-dialogs.c:286
+msgid "_Always go directly to the online documentation"
+msgstr "Közvetlenül az online _dokumentáció megnyitása mindig"
+
+#: ../libxfce4ui/xfce-dialogs.c:335 ../libxfce4ui/xfce-dialogs.c:370
+#: ../libxfce4ui/xfce-dialogs.c:406
+msgid "Close"
+msgstr "Bezárás"
+
+#: ../libxfce4ui/xfce-dialogs.c:453
+msgid "No"
+msgstr "Nem"
+
+#: ../libxfce4ui/xfce-dialogs.c:455
+msgid "Yes"
+msgstr "Igen"
+
+#: ../libxfce4ui/xfce-dialogs.c:459
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:41
+msgid "Cancel"
+msgstr "Mégse"
+
+#: ../libxfce4ui/xfce-dialogs.c:516
+msgid "Close window with multiple tabs?"
+msgstr "Több lapot tartalmazó ablak bezárása?"
+
+#: ../libxfce4ui/xfce-dialogs.c:518
+msgid ""
+"This window has multiple tabs open. Closing this window will also close all "
+"its tabs."
+msgstr "Ez az ablak több nyitott lapot tartalmaz. Az ablak bezárásával a nyitott lapok is bezárásra kerülnek."
+
+#: ../libxfce4ui/xfce-dialogs.c:521
+#, c-format
+msgid ""
+"This window has %d tabs open. Closing this window will also close all its "
+"tabs."
+msgstr "Ez az ablak  %d nyitott lapot tartalmaz. Az ablak bezárásával a nyitott lapok is bezárásra kerülnek."
+
+#: ../libxfce4ui/xfce-dialogs.c:531
 msgid "Close T_ab"
 msgstr "_Lap bezárása"
 
-#: ../libxfce4ui/xfce-dialogs.c:539
+#: ../libxfce4ui/xfce-dialogs.c:532
+msgid "Close _Window"
+msgstr "_Ablak bezárása"
+
+#: ../libxfce4ui/xfce-dialogs.c:537
 msgid "Do _not ask me again"
 msgstr "_Ne kérdezze újra"
 
@@ -902,6 +882,6 @@ msgstr "A(z) „%s” fájl már létezik a könyvtárban, a fájl nem került h
 msgid "Failed to migrate the old panel configuration"
 msgstr "A panel régi beállításainak átköltöztetése meghiúsult"
 
-#: ../tests/test-ui.c:160 ../tests/test-ui.c:185
+#: ../tests/test-ui.c:170 ../tests/test-ui.c:195
 msgid "Customize settings stored by Xfconf"
 msgstr "Az Xfconf által tárolt beállítások személyre szabása"
