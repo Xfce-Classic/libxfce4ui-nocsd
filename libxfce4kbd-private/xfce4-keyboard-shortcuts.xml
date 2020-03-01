@@ -19,6 +19,14 @@
       <property name="XF86WWW" type="string" value="exo-open --launch WebBrowser"/>
       <property name="XF86Mail" type="string" value="exo-open --launch MailReader"/>
       <property name="Print" type="string" value="xfce4-screenshooter"/>
+      <property name="&lt;Alt&gt;Print" type="string" value="xfce4-screenshooter -w"/>
+      <property name="&lt;Shift&gt;Print" type="string" value="xfce4-screenshooter -r"/>
+      <property name="Calculator" type="string" value="gnome-calculator"/>
+      <property name="&lt;Super&gt;e" type="string" value="thunar"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;f" type="string" value="thunar"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;Escape" type="string" value="xkill"/>
+      <property name="&lt;Primary&gt;&lt;Shift&gt;Escape" type="string" value="xfce4-taskmanager"/>
+      <property name="&lt;Super&gt;r" type="string" value="xfrun4"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
