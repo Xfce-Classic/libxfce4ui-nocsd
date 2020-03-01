@@ -4,15 +4,16 @@
 # 
 # Translators:
 # Daniel Nylander <po@danielnylander.se>, 2008-2009
+# Luna Jernberg <bittin@cafe8bitar.se>, 2020
 # Påvel Nicklasson <pavel2@frimix.se>, 2015,2018
 # Påvel Nicklasson<pavel@frimix.se>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-05 00:30+0100\n"
-"PO-Revision-Date: 2020-01-05 12:47+0000\n"
-"Last-Translator: Arve Eriksson <031299870@telia.com>\n"
+"POT-Creation-Date: 2020-01-10 00:30+0100\n"
+"PO-Revision-Date: 2020-03-01 22:47+0000\n"
+"Last-Translator: Luna Jernberg <bittin@cafe8bitar.se>\n"
 "Language-Team: Swedish (http://www.transifex.com/xfce/libxfce4ui/language/sv/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -33,90 +34,70 @@ msgstr "Vill du läsa %s manualen online?"
 msgid "Do you want to read the manual online?"
 msgstr "Vill du läsa manualen online?"
 
-#: ../libxfce4ui/xfce-dialogs.c:270
-msgid "Online Documentation"
-msgstr "Online-dokumentation"
-
 #: ../libxfce4ui/xfce-dialogs.c:273
 msgid ""
 "You will be redirected to the documentation website where the help pages are"
 " maintained and translated."
 msgstr "Du kommer att skickas vidare till hemsidan för dokumentation där hjälpsidorna finns och översätts."
 
-#: ../libxfce4ui/xfce-dialogs.c:279
-msgid "_Read Online"
-msgstr "_Läs online"
-
-#: ../libxfce4ui/xfce-dialogs.c:288
-msgid "_Always go directly to the online documentation"
-msgstr "Gå _alltid direkt till online-dokumentationen"
-
-#: ../libxfce4ui/xfce-dialogs.c:334
-msgid "Information"
-msgstr "Information"
-
-#: ../libxfce4ui/xfce-dialogs.c:337 ../libxfce4ui/xfce-dialogs.c:372
-#: ../libxfce4ui/xfce-dialogs.c:408
-msgid "Close"
-msgstr "Stäng"
-
-#: ../libxfce4ui/xfce-dialogs.c:369 ../libxfce4ui/xfce-dialogs.c:528
-msgid "Warning"
-msgstr "Varning"
-
-#: ../libxfce4ui/xfce-dialogs.c:405
-msgid "Error"
-msgstr "Fel"
-
-#: ../libxfce4ui/xfce-dialogs.c:455
-msgid "No"
-msgstr "Nej"
-
-#: ../libxfce4ui/xfce-dialogs.c:457
-msgid "Yes"
-msgstr "Ja"
-
-#: ../libxfce4ui/xfce-dialogs.c:461
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:41
-msgid "Cancel"
-msgstr "Avbryt"
-
-#: ../libxfce4ui/xfce-dialogs.c:464
-msgid "Question"
-msgstr "Fråga"
-
-#: ../libxfce4ui/xfce-dialogs.c:518
-msgid "Close all tabs?"
-msgstr "Stäng alla flikar?"
-
-#: ../libxfce4ui/xfce-dialogs.c:520
-msgid ""
-"This window has multiple tabs open. Closing this window\n"
-"will also close all its tabs."
-msgstr ""
-
-#: ../libxfce4ui/xfce-dialogs.c:523
-#, c-format
-msgid ""
-"This window has %d tabs open. Closing this window\n"
-"will also close all its tabs."
-msgstr "Detta fönster har %d flikar öppna. Att stänga fönstret\nkommer också att stänga alla dess flikar."
-
 #. Create cancel button
-#: ../libxfce4ui/xfce-dialogs.c:532
+#: ../libxfce4ui/xfce-dialogs.c:275 ../libxfce4ui/xfce-dialogs.c:530
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:243
 msgid "_Cancel"
 msgstr "_Avbryt"
 
-#: ../libxfce4ui/xfce-dialogs.c:533
-msgid "Close _Window"
-msgstr "Stäng f_önster"
+#: ../libxfce4ui/xfce-dialogs.c:277
+msgid "_Read Online"
+msgstr "_Läs online"
 
-#: ../libxfce4ui/xfce-dialogs.c:534
+#: ../libxfce4ui/xfce-dialogs.c:286
+msgid "_Always go directly to the online documentation"
+msgstr "Gå _alltid direkt till online-dokumentationen"
+
+#: ../libxfce4ui/xfce-dialogs.c:335 ../libxfce4ui/xfce-dialogs.c:370
+#: ../libxfce4ui/xfce-dialogs.c:406
+msgid "Close"
+msgstr "Stäng"
+
+#: ../libxfce4ui/xfce-dialogs.c:453
+msgid "No"
+msgstr "Nej"
+
+#: ../libxfce4ui/xfce-dialogs.c:455
+msgid "Yes"
+msgstr "Ja"
+
+#: ../libxfce4ui/xfce-dialogs.c:459
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:41
+msgid "Cancel"
+msgstr "Avbryt"
+
+#: ../libxfce4ui/xfce-dialogs.c:516
+msgid "Close window with multiple tabs?"
+msgstr ""
+
+#: ../libxfce4ui/xfce-dialogs.c:518
+msgid ""
+"This window has multiple tabs open. Closing this window will also close all "
+"its tabs."
+msgstr ""
+
+#: ../libxfce4ui/xfce-dialogs.c:521
+#, c-format
+msgid ""
+"This window has %d tabs open. Closing this window will also close all its "
+"tabs."
+msgstr ""
+
+#: ../libxfce4ui/xfce-dialogs.c:531
 msgid "Close T_ab"
 msgstr "Stäng fl_ik"
 
-#: ../libxfce4ui/xfce-dialogs.c:539
+#: ../libxfce4ui/xfce-dialogs.c:532
+msgid "Close _Window"
+msgstr "Stäng f_önster"
+
+#: ../libxfce4ui/xfce-dialogs.c:537
 msgid "Do _not ask me again"
 msgstr "Fråga mig i_nte igen"
 
@@ -615,7 +596,7 @@ msgstr "En modern filhanterare för Unix/Linux skrivbordet, med mål att vara en
 
 #: ../xfce4-about/main.c:144
 msgid "Volume manager"
-msgstr ""
+msgstr "Volymhanterare"
 
 #: ../xfce4-about/main.c:145
 msgid "Automatic management of removable drives and media for Thunar."
@@ -822,7 +803,7 @@ msgstr "etikett"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:4
 msgid "OS Name"
-msgstr ""
+msgstr "OS Namn"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:5
 msgid "Device"
@@ -830,19 +811,19 @@ msgstr "Enhet"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:6
 msgid "Memory"
-msgstr ""
+msgstr "Minne"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:7
 msgid "CPU"
-msgstr ""
+msgstr "CPU"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:8
 msgid "OS Type"
-msgstr ""
+msgstr "OS typ"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:9
 msgid "Xfce Version"
-msgstr ""
+msgstr "Xfce Version"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:10
 msgid "Distributor"
@@ -900,6 +881,6 @@ msgstr "En fil med namnet \"%s\" finns redan i den här katalogen, filen har int
 msgid "Failed to migrate the old panel configuration"
 msgstr "Misslyckades med att flytta den gamla panelkonfigurationen"
 
-#: ../tests/test-ui.c:160 ../tests/test-ui.c:185
+#: ../tests/test-ui.c:170 ../tests/test-ui.c:195
 msgid "Customize settings stored by Xfconf"
 msgstr "Anpassa inställningar lagrade av Xfconf"
