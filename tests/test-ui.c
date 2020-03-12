@@ -206,6 +206,39 @@ show_xfce_gdk_screen_get_active (GtkButton *button,
                          monitor_num, gdk_screen_get_n_monitors (screen));
 }
 
+static void
+show_xfce_filename_input_dialog (GtkButton *button,
+                                 gpointer   unused)
+{
+  GtkWidget         *dialog;
+  XfceFilenameInput *filename_input;
+
+  dialog = gtk_dialog_new_with_buttons ("Enter file name",
+                                        NULL,
+                                        GTK_DIALOG_MODAL
+                                        | GTK_DIALOG_DESTROY_WITH_PARENT,
+                                        "Cancel", GTK_RESPONSE_CANCEL,
+                                        "Submit", GTK_RESPONSE_OK,
+                                        NULL);
+  gtk_dialog_set_default_response (GTK_DIALOG (dialog), GTK_RESPONSE_OK);
+  gtk_window_set_default_size (GTK_WINDOW (dialog), 250, -1);
+
+  filename_input = g_object_new (XFCE_TYPE_FILENAME_INPUT,
+                                 "original-filename", "example.txt", "max-text-length", 30, NULL);
+  gtk_container_add (GTK_CONTAINER (gtk_dialog_get_content_area (GTK_DIALOG (dialog))),
+                     GTK_WIDGET (filename_input));
+  gtk_widget_show_all (GTK_WIDGET (filename_input));
+
+  g_signal_connect_swapped (filename_input, "text-invalid", G_CALLBACK (xfce_filename_input_desensitise_widget),
+                            gtk_dialog_get_widget_for_response (GTK_DIALOG (dialog), GTK_RESPONSE_OK));
+  g_signal_connect_swapped (filename_input, "text-valid", G_CALLBACK (xfce_filename_input_sensitise_widget),
+                            gtk_dialog_get_widget_for_response (GTK_DIALOG (dialog), GTK_RESPONSE_OK));
+  xfce_filename_input_check (filename_input); /* this call ensures that the "Submit" button has its
+                                                sensitivity set correctly */
+  gtk_dialog_run (GTK_DIALOG (dialog));
+  gtk_widget_destroy (dialog);
+}
+
 
 
 static void
@@ -297,6 +330,16 @@ create_main_window (void)
   gtk_container_add (GTK_CONTAINER (box), button);
   gtk_widget_show (button);
   g_signal_connect (G_OBJECT (button), "clicked", G_CALLBACK (show_xfce_gdk_screen_get_active), NULL);
+<<<<<<< HEAD
+=======
+
+  /* xfce_filename_input */
+  button = gtk_button_new_with_label ("XfceFilenameInput");
+  gtk_grid_attach (GTK_GRID (grid), button, 3, 2, 1, 1);
+  g_signal_connect (G_OBJECT (button), "clicked", G_CALLBACK (show_xfce_filename_input_dialog), NULL);
+
+  gtk_widget_show_all (window);
+>>>>>>> 8f0ad0c... Add a widget for filename input (Bug #16542)
 }
 
 
