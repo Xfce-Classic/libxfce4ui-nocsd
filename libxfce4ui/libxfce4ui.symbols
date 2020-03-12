@@ -101,6 +101,18 @@ xfce_spawn_command_line_on_screen
 #endif
 #endif
 
+/* xfce-filename-input functions */
+#if IN_HEADER(__XFCE_FILENAME_INPUT_H__)
+#if IN_SOURCE(__XFCE_FILENAME_INPUT_C__)
+xfce_filename_input_get_type
+xfce_filename_input_get_text
+xfce_filename_input_check
+xfce_filename_input_get_entry
+xfce_filename_input_sensitise_widget
+xfce_filename_input_desensitise_widget
+#endif
+#endif
+
 /* xfce-sm-client functions */
 #if IN_HEADER(__XFCE_SM_CLIENT_H__)
 #if IN_SOURCE(__XFCE_SM_CLIENT_C__)

@@ -24,6 +24,7 @@ libxfce4ui_headers = \
 	xfce-gdk-extensions.h \
 	xfce-gtk-extensions.h \
 	xfce-spawn.h \
+	xfce-filename-input.h \
 	xfce-titled-dialog.h \
 	$(libxfce4ui_enum_headers)
 
@@ -47,6 +48,7 @@ libxfce4ui_sources = \
 	xfce-gtk-extensions.c \
 	xfce-sm-client.c \
 	xfce-spawn.c \
+	xfce-filename-input.c \
 	xfce-titled-dialog.c
 
 libxfce4ui_includedir = \
