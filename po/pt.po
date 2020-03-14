@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-10 00:30+0100\n"
-"PO-Revision-Date: 2020-01-11 22:45+0000\n"
+"PO-Revision-Date: 2020-03-14 15:04+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese (http://www.transifex.com/xfce/libxfce4ui/language/pt/)\n"
 "MIME-Version: 1.0\n"
@@ -46,7 +46,7 @@ msgstr "_Cancelar"
 
 #: ../libxfce4ui/xfce-dialogs.c:277
 msgid "_Read Online"
-msgstr "Le_r na online"
+msgstr "Le_r Online"
 
 #: ../libxfce4ui/xfce-dialogs.c:286
 msgid "_Always go directly to the online documentation"
@@ -179,7 +179,7 @@ msgstr "Este atalho já está a ser utilizado pela ação '%s'. Que ação prete
 #. Warn the user
 #: ../libxfce4kbd-private/xfce-shortcuts.c:110
 msgid "Please use another key combination."
-msgstr "Por favor use outra combinação de teclas."
+msgstr "Use outra combinação de teclas."
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:111
 #, c-format
@@ -340,7 +340,7 @@ msgstr "Colocar por cima"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:62
 msgid "Toggle fullscreen"
-msgstr "Trocar para ecrã completo"
+msgstr "Trocar para ecrã inteiro"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:63
 msgid "Move window to upper workspace"
