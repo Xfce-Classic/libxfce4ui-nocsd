@@ -12,8 +12,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-10 00:30+0100\n"
-"PO-Revision-Date: 2020-01-10 21:06+0000\n"
+"POT-Creation-Date: 2020-03-17 12:30+0100\n"
+"PO-Revision-Date: 2020-03-17 20:27+0000\n"
 "Last-Translator: Andreas Eitel <github-aneitel@online.de>\n"
 "Language-Team: German (http://www.transifex.com/xfce/libxfce4ui/language/de/)\n"
 "MIME-Version: 1.0\n"
@@ -139,6 +139,22 @@ msgid ""
 "Working directory \"%s\" does not exist. It won't be used when spawning "
 "\"%s\"."
 msgstr "Das Arbeitsverzeichnis »%s« ist nicht vorhanden: Es wird beim Starten von »%s« nicht verwendet."
+
+#. the string contains a directory separator
+#: ../libxfce4ui/xfce-filename-input.c:414
+msgid "Directory separator illegal in file name"
+msgstr "Verzeichnis-Trennzeichen im Dateinamen sind unzulässig"
+
+#. the string is too long
+#: ../libxfce4ui/xfce-filename-input.c:422
+msgid "Filename is too long"
+msgstr "Der Dateiname ist zu lang"
+
+#. the string starts or ends with whitespace
+#. * this does not make the filename invalid, but we warn the user about it
+#: ../libxfce4ui/xfce-filename-input.c:430
+msgid "Filenames should not start or end with a space"
+msgstr "Dateinamen sollten nicht mit einem Leerzeichen beginnen oder enden"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 #, c-format
