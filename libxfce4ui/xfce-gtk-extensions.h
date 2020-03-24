@@ -40,16 +40,19 @@ typedef enum
   XFCE_GTK_RADIO_MENU_ITEM,
 } XfceGtkMenuItem;
 
-/*
- * Replacement for the deprecated GtkActionEntry
- * The idea is to provide a fixed list of XfceGtkActionEntrys
- * - use 'xfce_gtk_translate_action_entries' once to translate the list
- * - use 'xfce_gtk_accel_group_append' once to register the provided accelerators
- * - use 'xfce_gtk_get_action_entry_by_id' to find a single entry, e.g. by using a enumeration
- * - use 'xfce_gtk_***_new_from_action_entry' to create the specific menu- or tool-items from the entry
-*/
-typedef struct
+
+
+struct _XfceGtkActionEntry
 {
+  /*
+   * Replacement for the deprecated GtkActionEntry
+   * The idea is to provide a fixed list of XfceGtkActionEntrys
+   * - use 'xfce_gtk_translate_action_entries' once to translate the list
+   * - use 'xfce_gtk_accel_group_append' once to register the provided accelerators
+   * - use 'xfce_gtk_get_action_entry_by_id' to find a single entry, e.g. by using a enumeration
+   * - use 'xfce_gtk_***_new_from_action_entry' to create the specific menu- or tool-items from the entry
+  */
+
   guint            id;                     /* unique identifier for instances of this structure (you might want to use a enum) */
   const gchar     *accel_path;             /* The unique path, used to identify the accelerator */
   const gchar     *default_accelerator;    /* The default key and modifier to trigger the callback linked to the entry */
@@ -61,8 +64,8 @@ typedef struct
   const gchar     *menu_item_icon_name;    /* optional icon name which will be used to find a image for the item */
 
   GCallback        callback;               /* The callback which will be triggered on activation */
-
-} XfceGtkActionEntry;
+};
+typedef struct _XfceGtkActionEntry XfceGtkActionEntry;
 
 
 
