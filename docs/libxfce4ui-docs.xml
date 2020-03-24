@@ -66,6 +66,7 @@
   <part id="libxfce4ui-widgets">
     <title>Xfce UI Widget</title>
     <xi:include href="xml/xfce-dialogs.xml"/>
+    <xi:include href="xml/xfce-filename-input.xml"/>
     <xi:include href="xml/xfce-titled-dialog.xml"/>
   </part>
 

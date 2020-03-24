@@ -123,3 +123,23 @@ xfce_sm_client_restart_style_get_type
 xfce_sm_client_shutdown_hint_get_type
 xfce_sm_client_error_quark
 </SECTION>
+
+<SECTION>
+<FILE>xfce-filename-input</FILE>
+XfceFilenameInput
+xfce_filename_input_get_text
+xfce_filename_input_check
+xfce_filename_input_get_entry
+xfce_filename_input_sensitise_widget
+xfce_filename_input_desensitise_widget
+<SUBSECTION Standard>
+XfceFilenameInputClass
+XFCE_TYPE_FILENAME_INPUT
+XFCE_FILENAME_INPUT
+XFCE_IS_FILENAME_INPUT
+XFCE_FILENAME_INPUT_CLASS
+XFCE_IS_FILENAME_INPUT_CLASS
+XFCE_FILENAME_INPUT_GET_CLASS
+<SUBSECTION Private>
+xfce_filename_input_get_type
+</SECTION>
