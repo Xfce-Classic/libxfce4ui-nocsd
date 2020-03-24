@@ -807,7 +807,7 @@ xfce_icon_name_from_desktop_id (const gchar *desktop_id)
  * based on #g_themed_icon_new_with_default_fallbacks and
  * #gtk_icon_theme_lookup_by_gicon.
  *
- * Return value: a new #GThemedIcon.
+ * Return value: (transfer full): a new #GThemedIcon.
  *
  * Since: 4.16
  **/

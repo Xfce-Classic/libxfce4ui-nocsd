@@ -575,6 +575,8 @@ xfce_titled_dialog_create_action_area (XfceTitledDialog *titled_dialog)
  * Buttons with #GTK_RESPONSE_HELP will be added to the secondary group of children
  * (see #gtk_button_box_set_child_secondary for reference).
  *
+ * Return value: (transfer none): the GtkButton widget that was added.
+ *
  * Since: 4.16
  *
  **/
