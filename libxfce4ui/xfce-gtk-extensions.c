@@ -79,7 +79,6 @@ xfce_gtk_menu_item_fill_base (GtkWidget    *item,
     g_signal_connect_swapped (G_OBJECT (item), "activate", callback, callback_param);
   if (menu_to_append_item != NULL)
     gtk_menu_shell_append (menu_to_append_item, item);
-  gtk_widget_show (item);
 }
 
 
@@ -371,8 +370,6 @@ xfce_gtk_tool_button_new_from_action_entry (const XfceGtkActionEntry *action_ent
   tool_item = gtk_tool_button_new (image, action_entry->menu_item_label_text);
   g_signal_connect_swapped (G_OBJECT (tool_item), "clicked", action_entry->callback, callback_param);
   gtk_widget_set_tooltip_text (GTK_WIDGET (tool_item), action_entry->menu_item_tooltip_text);
-  gtk_widget_show (GTK_WIDGET (tool_item));
-  gtk_widget_show (image);
   gtk_toolbar_insert (toolbar_to_append_item, tool_item, -1);
   return GTK_WIDGET (tool_item);
 }
@@ -396,7 +393,6 @@ xfce_gtk_menu_append_seperator (GtkMenuShell *menu)
 
   item = gtk_separator_menu_item_new ();
   gtk_menu_shell_append (menu, item);
-  gtk_widget_show (item);
 }
 
 
