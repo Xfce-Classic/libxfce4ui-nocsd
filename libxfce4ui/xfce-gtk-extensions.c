@@ -287,6 +287,8 @@ xfce_gtk_menu_item_new_from_action_entry (const XfceGtkActionEntry *action_entry
                                           GObject                  *callback_param,
                                           GtkMenuShell             *menu_to_append_item)
 {
+  g_return_val_if_fail (action_entry != NULL, NULL);
+
   if (action_entry->menu_item_type == XFCE_GTK_IMAGE_MENU_ITEM)
     {
       return xfce_gtk_image_menu_item_new_from_icon_name (action_entry->menu_item_label_text, action_entry->menu_item_tooltip_text,
@@ -323,6 +325,8 @@ xfce_gtk_toggle_menu_item_new_from_action_entry (const XfceGtkActionEntry *actio
                                                  gboolean                  active,
                                                  GtkMenuShell             *menu_to_append_item)
 {
+  g_return_val_if_fail (action_entry != NULL, NULL);
+
   if (action_entry->menu_item_type == XFCE_GTK_CHECK_MENU_ITEM)
     {
       return xfce_gtk_check_menu_item_new (action_entry->menu_item_label_text, action_entry->menu_item_tooltip_text,
@@ -360,6 +364,8 @@ xfce_gtk_tool_button_new_from_action_entry (const XfceGtkActionEntry *action_ent
 {
   GtkToolItem *tool_item;
   GtkWidget   *image;
+
+  g_return_val_if_fail (action_entry != NULL, NULL);
 
   image = gtk_image_new_from_icon_name (action_entry->menu_item_icon_name, GTK_ICON_SIZE_LARGE_TOOLBAR);
   tool_item = gtk_tool_button_new (image, action_entry->menu_item_label_text);
@@ -464,7 +470,7 @@ xfce_gtk_get_action_entry_by_id (const XfceGtkActionEntry *action_entries,
       if( action_entries[i].id == id )
           return &(action_entries[i]);
     }
-  g_error ("There is no action with the id '%i'.", id);
+  g_warning ("There is no action with the id '%i'.", id);
   return NULL;
 }
 
