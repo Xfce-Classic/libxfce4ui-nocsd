@@ -26,7 +26,7 @@
       <property name="&lt;Primary&gt;&lt;Alt&gt;f" type="string" value="thunar"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;Escape" type="string" value="xkill"/>
       <property name="&lt;Primary&gt;&lt;Shift&gt;Escape" type="string" value="xfce4-taskmanager"/>
-      <property name="&lt;Super&gt;r" type="string" value="xfrun4"/>
+      <property name="&lt;Super&gt;r" type="string" value="xfce4-appfinder -c"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
