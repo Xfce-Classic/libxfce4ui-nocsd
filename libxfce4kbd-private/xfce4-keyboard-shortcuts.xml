@@ -21,7 +21,6 @@
       <property name="Print" type="string" value="xfce4-screenshooter"/>
       <property name="&lt;Alt&gt;Print" type="string" value="xfce4-screenshooter -w"/>
       <property name="&lt;Shift&gt;Print" type="string" value="xfce4-screenshooter -r"/>
-      <property name="Calculator" type="string" value="gnome-calculator"/>
       <property name="&lt;Super&gt;e" type="string" value="thunar"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;f" type="string" value="thunar"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;Escape" type="string" value="xkill"/>
