@@ -1,8 +1,14 @@
 4.15.2
 ======
-- Added methods to replace deprecated GtkAction, GtkActionEntry and 
-  GtkUiManager in order to keep simple menu creation
-  (xfce_gtk_menu_item*, etc.)
+- Introduced 'XfceGtkActionEntry' as replacement for the deprecated 'GtkAction',
+  'GtkActionEntry' in order to keep simple menu creation. This includes various
+  support methods, like:
+  'xfce_gtk_translate_action_entries' to to translate a list of XfceGtkActionEntrys
+  'xfce_gtk_accel_group_append' to register the provided accelerators of the entries
+  'xfce_gtk_get_action_entry_by_id' to find a single XfceGtkActionEntry, e.g. by
+   using a enumeration
+  'xfce_gtk_***_new_from_action_entry' to create the specific menu- or
+   tool-items from an XfceGtkActionEntry
 - Add a widget for filename input (Bug #16542)
 - Enabled doc generation for XfceGtkActionEntry and related methods
 - Enabled doc generation for new widget 'xfce-filename-input'
