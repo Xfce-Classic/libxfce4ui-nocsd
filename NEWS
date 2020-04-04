@@ -1,3 +1,23 @@
+4.15.2
+======
+- Added methods to replace deprecated GtkAction, GtkActionEntry and 
+  GtkUiManager in order to keep simple menu creation
+  (xfce_gtk_menu_item*, etc.)
+- Add a widget for filename input (Bug #16542)
+- Enabled doc generation for XfceGtkActionEntry and related methods
+- Enabled doc generation for new widget 'xfce-filename-input'
+- Switch Ctrl+Alt+Del to xfce4-session-logout (Bug #11979)
+- Add more default keyboard shortcuts (Bug #16470)
+- shortcuts: Replace xfrun4 by xfce4-appfinder
+- shortcuts: Also map Homepage to browser
+- shortcuts: Remove calculator shortcut
+- Update gitignore
+- Translation Updates:
+  Albanian, Basque, Belarusian, Chinese (China), Chinese (Taiwan),
+  Croatian, Danish, Dutch, French, Galician, German, Hebrew, Hungarian,
+  Kazakh, Malay, Norwegian Bokmål, Portuguese, Portuguese (Brazil),
+  Russian, Serbian, Slovenian, Swedish, Ukrainian
+
 4.15.1
 ======
 - Switch XfceTitledDialog to headerbar layout
