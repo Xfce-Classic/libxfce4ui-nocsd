@@ -498,6 +498,8 @@ xfce_dialog_confirm (GtkWindow   *parent,
  * Return value: #GTK_RESPONSE_CANCEL if cancelled, #GTK_RESPONSE_YES if the user
  * wants to close the window, #GTK_RESPONSE_CLOSE if the user wants to close the tab,
  * and #GTK_RESPONSE_NONE for an error.
+ *
+ * Since: 4.16
  */
 gint
 xfce_dialog_confirm_close_tabs (GtkWindow *parent,
@@ -523,7 +525,8 @@ xfce_dialog_confirm_close_tabs (GtkWindow *parent,
 
   warning_icon = "dialog-warning";
 
-  dialog = xfce_message_dialog_new (parent, NULL,
+  dialog = xfce_message_dialog_new (parent,
+                                    _("Warning"),
                                     warning_icon,
                                     primary_text,
                                     secondary_text,
