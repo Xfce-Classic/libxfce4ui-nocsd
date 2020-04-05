@@ -23,6 +23,7 @@
 #endif
 
 #include <gdk/gdkkeysyms.h>
+#include <gdk/gdk.h>
 #include <gdk/gdkx.h>
 #include <gtk/gtk.h>
 
@@ -403,7 +404,13 @@ static gboolean
 xfce_shortcut_dialog_key_released (XfceShortcutDialog *dialog,
                                    GdkEventKey        *event)
 {
-  gboolean shortcut_accepted = FALSE;
+  gboolean    shortcut_accepted = FALSE;
+  GdkWindow  *window = event->window;
+  GdkDisplay *display;
+  GdkSeat    *seat;
+
+  display = gdk_window_get_display (window);
+  seat = gdk_display_get_default_seat (display);
 
   /* Let 'validate-shortcut' listeners decide whether this shortcut is ok or not */
   g_signal_emit_by_name (dialog, "validate-shortcut", dialog->shortcut, &shortcut_accepted);
@@ -412,10 +419,15 @@ xfce_shortcut_dialog_key_released (XfceShortcutDialog *dialog,
   if (G_LIKELY (shortcut_accepted))
     {
       /* Release keyboard */
-      gdk_keyboard_ungrab (GDK_CURRENT_TIME);
+      if (gdk_seat_grab (seat, window,
+                         GDK_SEAT_CAPABILITY_KEYBOARD,
+                         TRUE, NULL, NULL, NULL, NULL))
+        {
+          gdk_seat_ungrab (seat);
 
-      /* Exit dialog with positive response */
-      gtk_dialog_response (GTK_DIALOG (dialog), GTK_RESPONSE_OK);
+          /* Exit dialog with positive response */
+          gtk_dialog_response (GTK_DIALOG (dialog), GTK_RESPONSE_OK);
+        }
     }
   else
     {
