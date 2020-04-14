@@ -15,9 +15,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-17 12:30+0100\n"
-"PO-Revision-Date: 2020-03-26 12:15+0000\n"
-"Last-Translator: Yannick Le Guen <leguen.yannick@gmail.com>\n"
+"POT-Creation-Date: 2020-04-06 00:30+0200\n"
+"PO-Revision-Date: 2020-04-05 22:30+0000\n"
+"Last-Translator: Xfce Bot <transifex@xfce.org>\n"
 "Language-Team: French (http://www.transifex.com/xfce/libxfce4ui/language/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -45,7 +45,7 @@ msgid ""
 msgstr "Vous allez être redirigé vers le site de documentation en ligne où les pages d’aide sont maintenues et traduites."
 
 #. Create cancel button
-#: ../libxfce4ui/xfce-dialogs.c:275 ../libxfce4ui/xfce-dialogs.c:530
+#: ../libxfce4ui/xfce-dialogs.c:275 ../libxfce4ui/xfce-dialogs.c:533
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:243
 msgid "_Cancel"
 msgstr "_Annuler"
@@ -76,32 +76,36 @@ msgstr "Oui"
 msgid "Cancel"
 msgstr "Annuler"
 
-#: ../libxfce4ui/xfce-dialogs.c:516
+#: ../libxfce4ui/xfce-dialogs.c:518
 msgid "Close window with multiple tabs?"
 msgstr "Fermer la fenêtre avec plusieurs onglets ?"
 
-#: ../libxfce4ui/xfce-dialogs.c:518
+#: ../libxfce4ui/xfce-dialogs.c:520
 msgid ""
 "This window has multiple tabs open. Closing this window will also close all "
 "its tabs."
 msgstr "Cette fenêtre a plusieurs onglets ouverts. Fermer cette fenêtre fermera également tous ses onglets."
 
-#: ../libxfce4ui/xfce-dialogs.c:521
+#: ../libxfce4ui/xfce-dialogs.c:523
 #, c-format
 msgid ""
 "This window has %d tabs open. Closing this window will also close all its "
 "tabs."
 msgstr "Cette fenêtre a %d onglets ouverts. Fermer cette fenêtre fermera aussi tous ses onglets."
 
-#: ../libxfce4ui/xfce-dialogs.c:531
+#: ../libxfce4ui/xfce-dialogs.c:529
+msgid "Warning"
+msgstr "Avertissement"
+
+#: ../libxfce4ui/xfce-dialogs.c:534
 msgid "Close T_ab"
 msgstr "Fermer l’_onglet"
 
-#: ../libxfce4ui/xfce-dialogs.c:532
+#: ../libxfce4ui/xfce-dialogs.c:535
 msgid "Close _Window"
 msgstr "Fermer la _fenêtre"
 
-#: ../libxfce4ui/xfce-dialogs.c:537
+#: ../libxfce4ui/xfce-dialogs.c:540
 msgid "Do _not ask me again"
 msgstr "Ne plus poser la _question"
 
