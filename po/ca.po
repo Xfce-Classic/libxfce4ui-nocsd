@@ -6,15 +6,15 @@
 # Carles Muñoz Gorriz <carlesmu@internautas.org>, 2013
 # Carles Muñoz Gorriz <carlesmu@internautas.org>, 2013
 # Davidmp <medipas@gmail.com>, 2015
-# Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>, 2017-2019
+# Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>, 2017-2020
 # Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-05 00:30+0100\n"
-"PO-Revision-Date: 2019-12-05 09:16+0000\n"
-"Last-Translator: Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>\n"
+"POT-Creation-Date: 2020-04-06 00:30+0200\n"
+"PO-Revision-Date: 2020-04-05 22:30+0000\n"
+"Last-Translator: Xfce Bot <transifex@xfce.org>\n"
 "Language-Team: Catalan (http://www.transifex.com/xfce/libxfce4ui/language/ca/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -35,90 +35,74 @@ msgstr "Voleu llegir el manual %s en línia?"
 msgid "Do you want to read the manual online?"
 msgstr "Voleu llegir el manual en línia?"
 
-#: ../libxfce4ui/xfce-dialogs.c:270
-msgid "Online Documentation"
-msgstr "Documentació en línia"
-
 #: ../libxfce4ui/xfce-dialogs.c:273
 msgid ""
 "You will be redirected to the documentation website where the help pages are"
 " maintained and translated."
 msgstr "Sereu redirigit al lloc web de la documentació on es mantenen i tradueixen les pàgines d'ajuda."
 
-#: ../libxfce4ui/xfce-dialogs.c:279
-msgid "_Read Online"
-msgstr "_Llegir en línia"
-
-#: ../libxfce4ui/xfce-dialogs.c:288
-msgid "_Always go directly to the online documentation"
-msgstr "_Vés sempre directament a la documentació en línia"
-
-#: ../libxfce4ui/xfce-dialogs.c:334
-msgid "Information"
-msgstr "Informació"
-
-#: ../libxfce4ui/xfce-dialogs.c:337 ../libxfce4ui/xfce-dialogs.c:372
-#: ../libxfce4ui/xfce-dialogs.c:408
-msgid "Close"
-msgstr "Tanca"
-
-#: ../libxfce4ui/xfce-dialogs.c:369 ../libxfce4ui/xfce-dialogs.c:528
-msgid "Warning"
-msgstr "Advertència"
-
-#: ../libxfce4ui/xfce-dialogs.c:405
-msgid "Error"
-msgstr "Error"
-
-#: ../libxfce4ui/xfce-dialogs.c:455
-msgid "No"
-msgstr "No"
-
-#: ../libxfce4ui/xfce-dialogs.c:457
-msgid "Yes"
-msgstr "Sí"
-
-#: ../libxfce4ui/xfce-dialogs.c:461
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:41
-msgid "Cancel"
-msgstr "Cancel·la"
-
-#: ../libxfce4ui/xfce-dialogs.c:464
-msgid "Question"
-msgstr "Pregunta"
-
-#: ../libxfce4ui/xfce-dialogs.c:518
-msgid "Close all tabs?"
-msgstr "Voleu tancar totes les pestanyes?"
-
-#: ../libxfce4ui/xfce-dialogs.c:520
-msgid ""
-"This window has multiple tabs open. Closing this window\n"
-"will also close all its tabs."
-msgstr "Aquesta finestra té diverses pestanyes obertes. Si es tanca aquesta\nfinestra, també es tancaran totes les seves pestanyes."
-
-#: ../libxfce4ui/xfce-dialogs.c:523
-#, c-format
-msgid ""
-"This window has %d tabs open. Closing this window\n"
-"will also close all its tabs."
-msgstr "Aquesta finestra té %d pestanyes obertes. Si es tanca aquesta\nfinestra, també es tancaran totes les seves pestanyes."
-
 #. Create cancel button
-#: ../libxfce4ui/xfce-dialogs.c:532
+#: ../libxfce4ui/xfce-dialogs.c:275 ../libxfce4ui/xfce-dialogs.c:533
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:243
 msgid "_Cancel"
 msgstr "_Cancel·la"
 
-#: ../libxfce4ui/xfce-dialogs.c:533
-msgid "Close _Window"
-msgstr "Tanca la _finestra"
+#: ../libxfce4ui/xfce-dialogs.c:277
+msgid "_Read Online"
+msgstr "_Llegir en línia"
+
+#: ../libxfce4ui/xfce-dialogs.c:286
+msgid "_Always go directly to the online documentation"
+msgstr "_Vés sempre directament a la documentació en línia"
+
+#: ../libxfce4ui/xfce-dialogs.c:335 ../libxfce4ui/xfce-dialogs.c:370
+#: ../libxfce4ui/xfce-dialogs.c:406
+msgid "Close"
+msgstr "Tanca"
+
+#: ../libxfce4ui/xfce-dialogs.c:453
+msgid "No"
+msgstr "No"
+
+#: ../libxfce4ui/xfce-dialogs.c:455
+msgid "Yes"
+msgstr "Sí"
+
+#: ../libxfce4ui/xfce-dialogs.c:459
+#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:41
+msgid "Cancel"
+msgstr "Cancel·la"
+
+#: ../libxfce4ui/xfce-dialogs.c:518
+msgid "Close window with multiple tabs?"
+msgstr "Tancar una finestra amb diverses pestanyes?"
+
+#: ../libxfce4ui/xfce-dialogs.c:520
+msgid ""
+"This window has multiple tabs open. Closing this window will also close all "
+"its tabs."
+msgstr "Aquesta finestra té diverses pestanyes obertes. Si es tanca aquesta finestra, també es tancaran totes les seves pestanyes."
+
+#: ../libxfce4ui/xfce-dialogs.c:523
+#, c-format
+msgid ""
+"This window has %d tabs open. Closing this window will also close all its "
+"tabs."
+msgstr "Aquesta finestra té %d pestanyes obertes. Si es tanca aquesta finestra, també es tancaran totes les seves pestanyes."
+
+#: ../libxfce4ui/xfce-dialogs.c:529
+msgid "Warning"
+msgstr "Advertència"
 
 #: ../libxfce4ui/xfce-dialogs.c:534
 msgid "Close T_ab"
 msgstr "Tanca la pest_anya"
 
-#: ../libxfce4ui/xfce-dialogs.c:539
+#: ../libxfce4ui/xfce-dialogs.c:535
+msgid "Close _Window"
+msgstr "Tanca la _finestra"
+
+#: ../libxfce4ui/xfce-dialogs.c:540
 msgid "Do _not ask me again"
 msgstr "_No m'ho tornis a preguntar"
 
@@ -159,6 +143,22 @@ msgid ""
 "Working directory \"%s\" does not exist. It won't be used when spawning "
 "\"%s\"."
 msgstr "El directori de treball «%s» no existeix. No s'utilitzarà per generar «%s»."
+
+#. the string contains a directory separator
+#: ../libxfce4ui/xfce-filename-input.c:414
+msgid "Directory separator illegal in file name"
+msgstr "Separador de directoris no permès al nom del fitxer"
+
+#. the string is too long
+#: ../libxfce4ui/xfce-filename-input.c:422
+msgid "Filename is too long"
+msgstr "El nom de fitxer és massa llarg"
+
+#. the string starts or ends with whitespace
+#. * this does not make the filename invalid, but we warn the user about it
+#: ../libxfce4ui/xfce-filename-input.c:430
+msgid "Filenames should not start or end with a space"
+msgstr "Els noms dels fitxers no han de començar ni acabar amb un espai"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 #, c-format
@@ -902,6 +902,6 @@ msgstr "En aquest directori ja existeix un fitxer amb el nom «%s», no s'ha afe
 msgid "Failed to migrate the old panel configuration"
 msgstr "Ha fallat la migració de la configuració antiga del tauler"
 
-#: ../tests/test-ui.c:160 ../tests/test-ui.c:185
+#: ../tests/test-ui.c:170 ../tests/test-ui.c:195
 msgid "Customize settings stored by Xfconf"
 msgstr "Personalitzeu els ajusts emmagatzemats per Xfconf"
