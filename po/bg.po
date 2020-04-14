@@ -12,9 +12,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-10 00:30+0100\n"
-"PO-Revision-Date: 2020-01-10 15:01+0000\n"
-"Last-Translator: Kiril Kirilov <cybercop_montana@abv.bg>\n"
+"POT-Creation-Date: 2020-04-06 00:30+0200\n"
+"PO-Revision-Date: 2020-04-05 22:30+0000\n"
+"Last-Translator: Xfce Bot <transifex@xfce.org>\n"
 "Language-Team: Bulgarian (http://www.transifex.com/xfce/libxfce4ui/language/bg/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -42,7 +42,7 @@ msgid ""
 msgstr "Вие ще бъдете препратен(а) към уеб сайта с документацията, където се превеждат и поддържат помощните страници."
 
 #. Create cancel button
-#: ../libxfce4ui/xfce-dialogs.c:275 ../libxfce4ui/xfce-dialogs.c:530
+#: ../libxfce4ui/xfce-dialogs.c:275 ../libxfce4ui/xfce-dialogs.c:533
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:243
 msgid "_Cancel"
 msgstr "_Отказ"
@@ -73,32 +73,36 @@ msgstr "Да"
 msgid "Cancel"
 msgstr "Отмяна"
 
-#: ../libxfce4ui/xfce-dialogs.c:516
+#: ../libxfce4ui/xfce-dialogs.c:518
 msgid "Close window with multiple tabs?"
 msgstr "Затваряне на прозореца с множество раздели?"
 
-#: ../libxfce4ui/xfce-dialogs.c:518
+#: ../libxfce4ui/xfce-dialogs.c:520
 msgid ""
 "This window has multiple tabs open. Closing this window will also close all "
 "its tabs."
 msgstr "Този прозорец има много отворени раздели. Затваряйки прозореца, вие ще затворите и всичките му раздели."
 
-#: ../libxfce4ui/xfce-dialogs.c:521
+#: ../libxfce4ui/xfce-dialogs.c:523
 #, c-format
 msgid ""
 "This window has %d tabs open. Closing this window will also close all its "
 "tabs."
 msgstr "Този прозорец има %d отворени раздели. Затваряйки този прозорец, вие ще затворите и всичките му раздели."
 
-#: ../libxfce4ui/xfce-dialogs.c:531
+#: ../libxfce4ui/xfce-dialogs.c:529
+msgid "Warning"
+msgstr "Внимание"
+
+#: ../libxfce4ui/xfce-dialogs.c:534
 msgid "Close T_ab"
 msgstr "Затваряне на _раздела"
 
-#: ../libxfce4ui/xfce-dialogs.c:532
+#: ../libxfce4ui/xfce-dialogs.c:535
 msgid "Close _Window"
 msgstr "Затваряне на _прозореца"
 
-#: ../libxfce4ui/xfce-dialogs.c:537
+#: ../libxfce4ui/xfce-dialogs.c:540
 msgid "Do _not ask me again"
 msgstr "Повече не ме питай"
 
@@ -139,6 +143,22 @@ msgid ""
 "Working directory \"%s\" does not exist. It won't be used when spawning "
 "\"%s\"."
 msgstr "Работната директория „%s“ не съществува. Тя няма да бъде използвана когато размножавате „%s“."
+
+#. the string contains a directory separator
+#: ../libxfce4ui/xfce-filename-input.c:414
+msgid "Directory separator illegal in file name"
+msgstr "Разделителят на директория е недопустим в името на файла"
+
+#. the string is too long
+#: ../libxfce4ui/xfce-filename-input.c:422
+msgid "Filename is too long"
+msgstr "Името на файла е прекалено дълго"
+
+#. the string starts or ends with whitespace
+#. * this does not make the filename invalid, but we warn the user about it
+#: ../libxfce4ui/xfce-filename-input.c:430
+msgid "Filenames should not start or end with a space"
+msgstr "Имената на файловете на трябва да започват и да завършват с интервал"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 #, c-format
