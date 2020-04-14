@@ -11,9 +11,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-04 12:30+0100\n"
-"PO-Revision-Date: 2019-12-04 19:00+0000\n"
-"Last-Translator: Michal Várady <miko.vaji@gmail.com>\n"
+"POT-Creation-Date: 2020-04-06 00:30+0200\n"
+"PO-Revision-Date: 2020-04-05 22:30+0000\n"
+"Last-Translator: Xfce Bot <transifex@xfce.org>\n"
 "Language-Team: Czech (http://www.transifex.com/xfce/libxfce4ui/language/cs/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,102 +21,87 @@ msgstr ""
 "Language: cs\n"
 "Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n >= 2 && n <= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;\n"
 
-#: ../libxfce4ui/xfce-dialogs.c:114
+#: ../libxfce4ui/xfce-dialogs.c:110
 msgid "Failed to open web browser for online documentation"
 msgstr "Nepodařilo se otevřít webový prohlížeč a v něm dokumentaci z Internetu"
 
-#: ../libxfce4ui/xfce-dialogs.c:269
+#: ../libxfce4ui/xfce-dialogs.c:265
 #, c-format
 msgid "Do you want to read the %s manual online?"
 msgstr "Chcete si přečíst příručku pro %s online?"
 
-#: ../libxfce4ui/xfce-dialogs.c:271
+#: ../libxfce4ui/xfce-dialogs.c:267
 msgid "Do you want to read the manual online?"
 msgstr "Chcete si přečíst příručku online?"
 
-#: ../libxfce4ui/xfce-dialogs.c:274
-msgid "Online Documentation"
-msgstr "Dokumentace online"
-
-#: ../libxfce4ui/xfce-dialogs.c:281
+#: ../libxfce4ui/xfce-dialogs.c:273
 msgid ""
 "You will be redirected to the documentation website where the help pages are"
 " maintained and translated."
 msgstr "Budete přesměrování na webovou stránku dokumentace, s aktuálními a překládanými stránkami nápovědy."
 
-#: ../libxfce4ui/xfce-dialogs.c:295
+#. Create cancel button
+#: ../libxfce4ui/xfce-dialogs.c:275 ../libxfce4ui/xfce-dialogs.c:533
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:243
+msgid "_Cancel"
+msgstr "_Storno"
+
+#: ../libxfce4ui/xfce-dialogs.c:277
 msgid "_Read Online"
 msgstr "Číst _online"
 
-#: ../libxfce4ui/xfce-dialogs.c:304
+#: ../libxfce4ui/xfce-dialogs.c:286
 msgid "_Always go directly to the online documentation"
 msgstr "Vždy _automaticky přejít na dokumentaci online"
 
-#: ../libxfce4ui/xfce-dialogs.c:352
-msgid "Information"
-msgstr "Informace"
-
-#: ../libxfce4ui/xfce-dialogs.c:362 ../libxfce4ui/xfce-dialogs.c:405
-#: ../libxfce4ui/xfce-dialogs.c:449
+#: ../libxfce4ui/xfce-dialogs.c:335 ../libxfce4ui/xfce-dialogs.c:370
+#: ../libxfce4ui/xfce-dialogs.c:406
 msgid "Close"
 msgstr "Zavřít"
 
-#: ../libxfce4ui/xfce-dialogs.c:395 ../libxfce4ui/xfce-dialogs.c:592
-msgid "Warning"
-msgstr "Varování"
-
-#: ../libxfce4ui/xfce-dialogs.c:439
-msgid "Error"
-msgstr "Chyba"
-
-#: ../libxfce4ui/xfce-dialogs.c:498
+#: ../libxfce4ui/xfce-dialogs.c:453
 msgid "No"
 msgstr "Ne"
 
-#: ../libxfce4ui/xfce-dialogs.c:500
+#: ../libxfce4ui/xfce-dialogs.c:455
 msgid "Yes"
 msgstr "Ano"
 
-#: ../libxfce4ui/xfce-dialogs.c:508
+#: ../libxfce4ui/xfce-dialogs.c:459
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:41
 msgid "Cancel"
 msgstr "Storno"
 
-#: ../libxfce4ui/xfce-dialogs.c:515 ../libxfce4ui/xfce-dialogs.c:523
-msgid "Question"
-msgstr "Dotaz"
+#: ../libxfce4ui/xfce-dialogs.c:518
+msgid "Close window with multiple tabs?"
+msgstr ""
 
-#: ../libxfce4ui/xfce-dialogs.c:578
-msgid "Close all tabs?"
-msgstr "Zavřít všechny karty?"
-
-#: ../libxfce4ui/xfce-dialogs.c:580
+#: ../libxfce4ui/xfce-dialogs.c:520
 msgid ""
-"This window has multiple tabs open. Closing this window\n"
-"will also close all its tabs."
-msgstr "Toto okno má otevřeno %d karet.\nOpravdu jej chcete zavřít?"
+"This window has multiple tabs open. Closing this window will also close all "
+"its tabs."
+msgstr ""
 
-#: ../libxfce4ui/xfce-dialogs.c:583
+#: ../libxfce4ui/xfce-dialogs.c:523
 #, c-format
 msgid ""
-"This window has %d tabs open. Closing this window\n"
-"will also close all its tabs."
-msgstr "Toto okno má otevřeno %d karet.\nOpravdu jej chcete zavřít?"
+"This window has %d tabs open. Closing this window will also close all its "
+"tabs."
+msgstr ""
 
-#: ../libxfce4ui/xfce-dialogs.c:596
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:254
-msgid "_Cancel"
-msgstr "_Storno"
+#: ../libxfce4ui/xfce-dialogs.c:529
+msgid "Warning"
+msgstr "Varování"
 
-#: ../libxfce4ui/xfce-dialogs.c:597
-msgid "Close _Window"
-msgstr "Zavřít _okno"
-
-#: ../libxfce4ui/xfce-dialogs.c:598
+#: ../libxfce4ui/xfce-dialogs.c:534
 msgid "Close T_ab"
 msgstr "Zavřít k_artu"
 
-#: ../libxfce4ui/xfce-dialogs.c:603
+#: ../libxfce4ui/xfce-dialogs.c:535
+msgid "Close _Window"
+msgstr "Zavřít _okno"
+
+#: ../libxfce4ui/xfce-dialogs.c:540
 msgid "Do _not ask me again"
 msgstr "Příště se již _nedotazovat"
 
@@ -151,12 +136,28 @@ msgid "Session manager did not return a valid client id"
 msgstr "Správce relace nevrátil platný identifikátor klienta"
 
 #. print warning for user
-#: ../libxfce4ui/xfce-spawn.c:432
+#: ../libxfce4ui/xfce-spawn.c:423
 #, c-format
 msgid ""
 "Working directory \"%s\" does not exist. It won't be used when spawning "
 "\"%s\"."
 msgstr "Pracovní složka „%s“ neexistuje. Při spuštění „%s“ nebude použita."
+
+#. the string contains a directory separator
+#: ../libxfce4ui/xfce-filename-input.c:414
+msgid "Directory separator illegal in file name"
+msgstr ""
+
+#. the string is too long
+#: ../libxfce4ui/xfce-filename-input.c:422
+msgid "Filename is too long"
+msgstr ""
+
+#. the string starts or ends with whitespace
+#. * this does not make the filename invalid, but we warn the user about it
+#: ../libxfce4ui/xfce-filename-input.c:430
+msgid "Filenames should not start or end with a space"
+msgstr ""
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 #, c-format
@@ -212,50 +213,50 @@ msgstr "%s už spouští tuto akci."
 msgid "Conflicting actions for %s"
 msgstr "Konflikt mezi akcemi pro %s"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:186
+#: ../libxfce4kbd-private/xfce-shortcuts.c:178
 msgid "This shortcut is already being used for something else."
 msgstr "Tato klávesová zkratka se už používá na jiném místě."
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:216
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:210
 msgid "Window Manager Action Shortcut"
 msgstr "Klávesová zkratka akce správce oken"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:219
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:233
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:213
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:227
 msgid "action"
 msgstr "akce"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:223
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:217
 msgid "Command Shortcut"
 msgstr "Klávesová zkratka příkazu"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:226
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:220
 msgid "command"
 msgstr "příkaz"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:230
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:224
 msgid "Shortcut"
 msgstr "Klávesová zkratka"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:289
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:258
 #, c-format
 msgid "Press now the keyboard keys you want to use to trigger the %s '%s'."
 msgstr "Nyní stiskněte klávesu, kterou chcete použít ke spuštění %s „%s“."
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:317
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:278
 msgid "Shortcut:"
 msgstr "Klávesová zkratka:"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:326
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:485
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:283
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:424
 msgid "No keys pressed yet, proceed."
 msgstr "Nejsou stisknuty žádné klávesy "
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:390
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:331
 msgid "Could not grab the keyboard."
 msgstr "Nelze zachytávat vstup z klávesnice."
 
@@ -559,15 +560,15 @@ msgstr "Smazat poslední pracovní plochu"
 msgid "Delete active workspace"
 msgstr "Smazat aktivní pracovní plochu"
 
-#: ../glade/libxfce4ui.xml.in.h:1 ../glade/libxfce4ui-2.xml.in.h:1
+#: ../glade/libxfce4ui-2.xml.in.h:1
 msgid "Titled Dialog"
 msgstr "Dialogové okno s titulkem"
 
-#: ../glade/libxfce4ui.xml.in.h:2 ../glade/libxfce4ui-2.xml.in.h:2
+#: ../glade/libxfce4ui-2.xml.in.h:2
 msgid "Subtitle"
 msgstr "Podtitulek"
 
-#: ../glade/libxfce4ui.xml.in.h:3 ../glade/libxfce4ui-2.xml.in.h:3
+#: ../glade/libxfce4ui-2.xml.in.h:3
 msgid "Xfce 4 Widgets"
 msgstr "Xfce4 widgety"
 
@@ -876,18 +877,30 @@ msgstr "BSD"
 msgid "Copyright"
 msgstr "Autorská práva"
 
-#: ../tests/test-ui.c:138
+#: ../xfce4-about/system-info.c:274 ../xfce4-about/system-info.c:322
+msgid "Unknown"
+msgstr "Neznámý"
+
+#. translators: This is the name of the OS, followed by the build ID, for
+#. * example:
+#. * "Fedora 25 (Workstation Edition); Build ID: xyz" or
+#. * "Ubuntu 16.04 LTS; Build ID: jki"
+#: ../xfce4-about/system-info.c:330
+#, c-format
+msgid "%s; Build ID: %s"
+msgstr ""
+
+#: ../tests/test-ui.c:111
 #, c-format
 msgid ""
 "A file named \"%s\" already exists in this directory, the file hasn't been "
 "added."
 msgstr "Soubor %s v této složce už existuje, proto nebyl přidán."
 
-#: ../tests/test-ui.c:149
+#: ../tests/test-ui.c:122
 msgid "Failed to migrate the old panel configuration"
 msgstr "Přenesení původního nastavení panelu se nezdařilo"
 
-#: ../tests/test-ui.c:202 ../tests/test-ui.c:222 ../tests/test-ui.c:251
-#: ../tests/test-ui.c:273
+#: ../tests/test-ui.c:170 ../tests/test-ui.c:195
 msgid "Customize settings stored by Xfconf"
 msgstr "Přizpůsobení nastavení uloženého službou Xfconf"
