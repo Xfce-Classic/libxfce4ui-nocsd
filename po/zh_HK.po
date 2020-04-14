@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-04 18:30+0200\n"
-"PO-Revision-Date: 2019-05-04 16:30+0000\n"
+"POT-Creation-Date: 2020-04-06 00:30+0200\n"
+"PO-Revision-Date: 2020-04-05 22:30+0000\n"
 "Last-Translator: Xfce Bot <transifex@xfce.org>\n"
 "Language-Team: Chinese (Hong Kong) (http://www.transifex.com/xfce/libxfce4ui/language/zh_HK/)\n"
 "MIME-Version: 1.0\n"
@@ -31,95 +31,130 @@ msgstr "想要線上閱讀 %s 手冊嗎？"
 msgid "Do you want to read the manual online?"
 msgstr "想要線上閱讀這份手冊嗎？"
 
-#: ../libxfce4ui/xfce-dialogs.c:270
-msgid "Online Documentation"
-msgstr "線上文件"
-
-#: ../libxfce4ui/xfce-dialogs.c:277
+#: ../libxfce4ui/xfce-dialogs.c:273
 msgid ""
 "You will be redirected to the documentation website where the help pages are"
 " maintained and translated."
 msgstr "您會被重新引導至我們保存和翻譯說明文件的網站。"
 
-#: ../libxfce4ui/xfce-dialogs.c:291
+#. Create cancel button
+#: ../libxfce4ui/xfce-dialogs.c:275 ../libxfce4ui/xfce-dialogs.c:533
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:243
+msgid "_Cancel"
+msgstr "取消(_C)"
+
+#: ../libxfce4ui/xfce-dialogs.c:277
 msgid "_Read Online"
 msgstr "線上閱讀(_R)"
 
-#: ../libxfce4ui/xfce-dialogs.c:300
+#: ../libxfce4ui/xfce-dialogs.c:286
 msgid "_Always go directly to the online documentation"
 msgstr "必定直接前往線上說明文件(_A)"
 
-#: ../libxfce4ui/xfce-dialogs.c:348
-msgid "Information"
-msgstr "資訊"
-
-#: ../libxfce4ui/xfce-dialogs.c:358 ../libxfce4ui/xfce-dialogs.c:401
-#: ../libxfce4ui/xfce-dialogs.c:445
+#: ../libxfce4ui/xfce-dialogs.c:335 ../libxfce4ui/xfce-dialogs.c:370
+#: ../libxfce4ui/xfce-dialogs.c:406
 msgid "Close"
 msgstr "關閉"
 
-#: ../libxfce4ui/xfce-dialogs.c:391
-msgid "Warning"
-msgstr "警告"
-
-#: ../libxfce4ui/xfce-dialogs.c:435
-msgid "Error"
-msgstr "錯誤"
-
-#: ../libxfce4ui/xfce-dialogs.c:494
+#: ../libxfce4ui/xfce-dialogs.c:453
 msgid "No"
 msgstr ""
 
-#: ../libxfce4ui/xfce-dialogs.c:496
+#: ../libxfce4ui/xfce-dialogs.c:455
 msgid "Yes"
 msgstr ""
 
-#: ../libxfce4ui/xfce-dialogs.c:504
+#: ../libxfce4ui/xfce-dialogs.c:459
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:41
 msgid "Cancel"
 msgstr "取消"
 
-#: ../libxfce4ui/xfce-dialogs.c:511 ../libxfce4ui/xfce-dialogs.c:519
-msgid "Question"
-msgstr "疑問"
+#: ../libxfce4ui/xfce-dialogs.c:518
+msgid "Close window with multiple tabs?"
+msgstr ""
 
-#: ../libxfce4ui/xfce-sm-client.c:1424
+#: ../libxfce4ui/xfce-dialogs.c:520
+msgid ""
+"This window has multiple tabs open. Closing this window will also close all "
+"its tabs."
+msgstr ""
+
+#: ../libxfce4ui/xfce-dialogs.c:523
+#, c-format
+msgid ""
+"This window has %d tabs open. Closing this window will also close all its "
+"tabs."
+msgstr ""
+
+#: ../libxfce4ui/xfce-dialogs.c:529
+msgid "Warning"
+msgstr "警告"
+
+#: ../libxfce4ui/xfce-dialogs.c:534
+msgid "Close T_ab"
+msgstr ""
+
+#: ../libxfce4ui/xfce-dialogs.c:535
+msgid "Close _Window"
+msgstr ""
+
+#: ../libxfce4ui/xfce-dialogs.c:540
+msgid "Do _not ask me again"
+msgstr "不用再問我(_N)"
+
+#: ../libxfce4ui/xfce-sm-client.c:1427
 msgid "Session management client ID"
 msgstr "工作階段管理程式用戶端 ID"
 
-#: ../libxfce4ui/xfce-sm-client.c:1424
+#: ../libxfce4ui/xfce-sm-client.c:1427
 msgid "ID"
 msgstr "ID"
 
-#: ../libxfce4ui/xfce-sm-client.c:1425
+#: ../libxfce4ui/xfce-sm-client.c:1428
 msgid "Disable session management"
 msgstr "停用工作階段管理"
 
-#: ../libxfce4ui/xfce-sm-client.c:1435
+#: ../libxfce4ui/xfce-sm-client.c:1438
 msgid "Session management options"
 msgstr "工作階段管理選項"
 
-#: ../libxfce4ui/xfce-sm-client.c:1436
+#: ../libxfce4ui/xfce-sm-client.c:1439
 msgid "Show session management options"
 msgstr "顯示工作階段管理選項"
 
-#: ../libxfce4ui/xfce-sm-client.c:1611
+#: ../libxfce4ui/xfce-sm-client.c:1614
 #, c-format
 msgid "Failed to connect to the session manager: %s"
 msgstr "未能連接工作階段管理員：%s"
 
-#: ../libxfce4ui/xfce-sm-client.c:1617
+#: ../libxfce4ui/xfce-sm-client.c:1620
 #, c-format
 msgid "Session manager did not return a valid client id"
 msgstr "工作階段管理員沒有傳回有效的用戶端 ID"
 
 #. print warning for user
-#: ../libxfce4ui/xfce-spawn.c:421
+#: ../libxfce4ui/xfce-spawn.c:423
 #, c-format
 msgid ""
 "Working directory \"%s\" does not exist. It won't be used when spawning "
 "\"%s\"."
 msgstr "工作目錄「%s」不存在。當建立「%s」時不會用。"
+
+#. the string contains a directory separator
+#: ../libxfce4ui/xfce-filename-input.c:414
+msgid "Directory separator illegal in file name"
+msgstr ""
+
+#. the string is too long
+#: ../libxfce4ui/xfce-filename-input.c:422
+msgid "Filename is too long"
+msgstr ""
+
+#. the string starts or ends with whitespace
+#. * this does not make the filename invalid, but we warn the user about it
+#: ../libxfce4ui/xfce-filename-input.c:430
+msgid "Filenames should not start or end with a space"
+msgstr ""
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 #, c-format
@@ -175,54 +210,50 @@ msgstr "%s 已會觸發此動作。"
 msgid "Conflicting actions for %s"
 msgstr "%s 的動作發生衝突"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:186
+#: ../libxfce4kbd-private/xfce-shortcuts.c:178
 msgid "This shortcut is already being used for something else."
 msgstr "此捷徑正被其它動作使用。"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:211
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:210
 msgid "Window Manager Action Shortcut"
 msgstr "視窗管理程式動作捷徑鍵"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:214
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:228
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:213
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:227
 msgid "action"
 msgstr "動作"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:218
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:217
 msgid "Command Shortcut"
 msgstr "指令捷徑鍵"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:221
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:220
 msgid "command"
 msgstr "指令"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:225
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:224
 msgid "Shortcut"
 msgstr "捷徑鍵"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:249
-msgid "_Cancel"
-msgstr "取消(_C)"
-
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:284
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:258
 #, c-format
 msgid "Press now the keyboard keys you want to use to trigger the %s '%s'."
 msgstr "請現在按下想要用來觸發 %s「%s」的鍵盤按鍵。"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:312
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:278
 msgid "Shortcut:"
 msgstr "捷徑鍵："
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:321
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:504
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:283
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:424
 msgid "No keys pressed yet, proceed."
 msgstr "未按下任何按鍵，繼續。"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:407
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:331
 msgid "Could not grab the keyboard."
 msgstr "無法抓取鍵盤。"
 
@@ -526,129 +557,137 @@ msgstr "刪除最後一個工作區"
 msgid "Delete active workspace"
 msgstr "刪除活動中的工作區"
 
-#: ../glade/libxfce4ui.xml.in.h:1 ../glade/libxfce4ui-2.xml.in.h:1
+#: ../glade/libxfce4ui-2.xml.in.h:1
 msgid "Titled Dialog"
 msgstr "有標題的對話窗"
 
-#: ../glade/libxfce4ui.xml.in.h:2 ../glade/libxfce4ui-2.xml.in.h:2
+#: ../glade/libxfce4ui-2.xml.in.h:2
 msgid "Subtitle"
 msgstr "子標題"
 
-#: ../glade/libxfce4ui.xml.in.h:3 ../glade/libxfce4ui-2.xml.in.h:3
+#: ../glade/libxfce4ui-2.xml.in.h:3
 msgid "Xfce 4 Widgets"
 msgstr "Xfce 4 器件"
 
-#: ../xfce4-about/main.c:52
+#: ../xfce4-about/main.c:56
 msgid "Version information"
 msgstr "版本資訊"
 
-#: ../xfce4-about/main.c:70
+#: ../xfce4-about/main.c:125
 msgid "Window Manager"
 msgstr "視窗管理員"
 
-#: ../xfce4-about/main.c:71
+#: ../xfce4-about/main.c:126
 msgid "Handles the placement of windows on the screen."
 msgstr "處理如何於螢幕置放視窗。"
 
-#: ../xfce4-about/main.c:74
+#: ../xfce4-about/main.c:129
 msgid "Panel"
 msgstr "面板"
 
-#: ../xfce4-about/main.c:75
+#: ../xfce4-about/main.c:130
 msgid ""
 "Program launchers, window buttons, applications menu, workspace switcher and"
 " more."
 msgstr "程式啟動器、視窗按鈕、應用程式選單、工作區切換與其他。"
 
-#: ../xfce4-about/main.c:79
+#: ../xfce4-about/main.c:134
 msgid "Desktop Manager"
 msgstr "視窗管理員"
 
-#: ../xfce4-about/main.c:80
+#: ../xfce4-about/main.c:135
 msgid ""
 "Sets the background color or image with optional application menu or icons "
 "for minimized applications or launchers, devices and folders."
 msgstr "設定背景色彩，或選用應用程式選單的影像，或最小化應用程式或啟動器、裝置、資料夾的圖示。"
 
-#: ../xfce4-about/main.c:84
+#: ../xfce4-about/main.c:139
 msgid "File Manager"
 msgstr "檔案管理員"
 
-#: ../xfce4-about/main.c:85
+#: ../xfce4-about/main.c:140
 msgid ""
 "A modern file manager for the Unix/Linux desktop, aiming to be easy-to-use "
 "and fast."
 msgstr "Unix/Linux 桌面的現代化檔案管理員，旨在易用、快速。"
 
-#: ../xfce4-about/main.c:89
+#: ../xfce4-about/main.c:144
 msgid "Volume manager"
 msgstr ""
 
-#: ../xfce4-about/main.c:90
+#: ../xfce4-about/main.c:145
 msgid "Automatic management of removable drives and media for Thunar."
 msgstr ""
 
-#: ../xfce4-about/main.c:93
+#: ../xfce4-about/main.c:148
 msgid "Session Manager"
 msgstr "工作階段管理員"
 
-#: ../xfce4-about/main.c:94
+#: ../xfce4-about/main.c:149
 msgid ""
 "Restores your session on startup and allows you to shutdown the computer "
 "from Xfce."
 msgstr "啟動時還原的工作階段，並讓你可以從 Xfce 關機。"
 
-#: ../xfce4-about/main.c:98
+#: ../xfce4-about/main.c:153
 msgid "Setting System"
 msgstr "設定系統"
 
-#: ../xfce4-about/main.c:99
+#: ../xfce4-about/main.c:154
 msgid ""
 "Configuration system to control various aspects of the desktop like "
 "appearance, display, keyboard and mouse settings."
 msgstr "控制多項桌面層面的設定系統，例如外觀、顯示器、鍵盤、滑鼠等設定。"
 
-#: ../xfce4-about/main.c:103
+#: ../xfce4-about/main.c:158
 msgid "Application Finder"
 msgstr "應用程式協尋器"
 
-#: ../xfce4-about/main.c:104
+#: ../xfce4-about/main.c:159
 msgid ""
 "Shows the applications installed on your system in categories, so you can "
 "quickly find and launch them."
 msgstr "將安裝於系統的應用程式分類顯示，這樣才能快速尋找並啟動。"
 
-#: ../xfce4-about/main.c:108
+#: ../xfce4-about/main.c:163
 msgid "Settings Daemon"
 msgstr "設定幕後程式"
 
-#: ../xfce4-about/main.c:109
+#: ../xfce4-about/main.c:164
 msgid "D-Bus-based configuration storage system."
 msgstr "以 D-Bus 為基礎的設定儲存系統。"
 
-#: ../xfce4-about/main.c:112
+#: ../xfce4-about/main.c:167
+msgid "A menu library"
+msgstr ""
+
+#: ../xfce4-about/main.c:168
+msgid "A freedesktop.org compliant menu implementation based on GLib and GIO."
+msgstr ""
+
+#: ../xfce4-about/main.c:172
 msgid "Thumbnails service"
 msgstr ""
 
-#: ../xfce4-about/main.c:113
+#: ../xfce4-about/main.c:173
 msgid ""
 "Thumbnail service implementing the thumbnail management D-Bus specification."
 msgstr ""
 
-#: ../xfce4-about/main.c:120
+#: ../xfce4-about/main.c:180
 msgid ""
 "Xfce is a collection of programs that together provide a full-featured "
 "desktop environment. The following programs are part of the Xfce core:"
 msgstr "Xfce 是程式的集合，這些程式一同提供多功能的桌面環境。以下程式為 Xfce 的核心部份："
 
-#: ../xfce4-about/main.c:144
+#: ../xfce4-about/main.c:204
 msgid ""
 "Xfce is also a development platform providing several libraries, that help "
 "programmers create applications that fit in well with the desktop "
 "environment."
 msgstr "Xfce 也是提供多種函式庫的開發平台，有助程式開發者建立適用於本桌面環境的應用程式。"
 
-#: ../xfce4-about/main.c:150
+#: ../xfce4-about/main.c:210
 msgid ""
 "Xfce components are licensed under free or open source licences; GPL or BSDL"
 " for applications and LGPL or BSDL for libraries. Look at the documentation,"
@@ -656,31 +695,31 @@ msgid ""
 "information."
 msgstr ""
 
-#: ../xfce4-about/main.c:157
+#: ../xfce4-about/main.c:217
 msgid "Thank you for your interest in Xfce."
 msgstr "感謝您對 Xfce 有興趣。"
 
-#: ../xfce4-about/main.c:161
+#: ../xfce4-about/main.c:221
 msgid "The Xfce Development Team"
 msgstr "Xfce 開發團隊"
 
-#: ../xfce4-about/main.c:263
+#: ../xfce4-about/main.c:323
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
 "on <https://bugzilla.xfce.org> ."
 msgstr ""
 
-#: ../xfce4-about/main.c:267
+#: ../xfce4-about/main.c:327
 msgid "Thanks to all who helped making this software available!"
 msgstr "感謝所有幫助製作出這個軟件的人！"
 
-#: ../xfce4-about/main.c:284
+#: ../xfce4-about/main.c:344
 msgid ""
 "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
 msgstr "Xfce 4 版權所有者為 Olivier Fourdan (fourdan@xfce.org)。不同的部件是由其各自的作者擁有其版權。"
 
-#: ../xfce4-about/main.c:289
+#: ../xfce4-about/main.c:349
 msgid ""
 "The libxfce4ui, libxfce4util and exo packages are distributed under the "
 "terms of the GNU Library General Public License as published by the Free "
@@ -688,7 +727,7 @@ msgid ""
 "any later version."
 msgstr ""
 
-#: ../xfce4-about/main.c:296
+#: ../xfce4-about/main.c:356
 msgid ""
 "The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, "
 "xfce4-settings, xfconf, xfdesktop and xfwm4 are distributed under the terms "
@@ -697,37 +736,37 @@ msgid ""
 "version."
 msgstr ""
 
-#: ../xfce4-about/main.c:443
+#: ../xfce4-about/main.c:503
 #, c-format
 msgid "Type '%s --help' for usage information."
 msgstr "請輸入「%s --help」以瞭解用法資訊。"
 
-#: ../xfce4-about/main.c:449
+#: ../xfce4-about/main.c:509
 msgid "Unable to initialize GTK+."
 msgstr "無法初始化 GTK+。"
 
-#: ../xfce4-about/main.c:458
+#: ../xfce4-about/main.c:518
 msgid "The Xfce development team. All rights reserved."
 msgstr "Xfce 開發團隊。保留所有權利。"
 
-#: ../xfce4-about/main.c:459
+#: ../xfce4-about/main.c:519
 #, c-format
 msgid "Please report bugs to <%s>."
 msgstr "請回報臭蟲至 <%s>。"
 
-#: ../xfce4-about/main.c:469
+#: ../xfce4-about/main.c:529
 msgid "Failed to load interface"
 msgstr "未能載入介面"
 
 #. I18N: first %s will be replaced by the version, second by
 #. * the name of the distribution (--with-vendor-info=NAME)
-#: ../xfce4-about/main.c:483
+#: ../xfce4-about/main.c:543
 #, c-format
 msgid "Version %s, distributed by %s"
 msgstr "版本 %s，透過 %s 散布"
 
 #. I18N: %s will be replaced by the Xfce version number
-#: ../xfce4-about/main.c:487
+#: ../xfce4-about/main.c:547
 #, c-format
 msgid "Version %s"
 msgstr "版本 %s"
@@ -735,27 +774,27 @@ msgstr "版本 %s"
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
 #. },
-#: ../xfce4-about/contributors.h:125
+#: ../xfce4-about/contributors.h:128
 msgid "Core developers"
 msgstr "核心開發者"
 
-#: ../xfce4-about/contributors.h:128
+#: ../xfce4-about/contributors.h:131
 msgid "Active contributors"
 msgstr "活躍的開發者"
 
-#: ../xfce4-about/contributors.h:131
+#: ../xfce4-about/contributors.h:134
 msgid "Servers maintained by"
 msgstr "伺服器維護者："
 
-#: ../xfce4-about/contributors.h:134
+#: ../xfce4-about/contributors.h:137
 msgid "Translations supervision"
 msgstr "翻譯監督"
 
-#: ../xfce4-about/contributors.h:137
+#: ../xfce4-about/contributors.h:140
 msgid "Translators"
 msgstr "翻譯者"
 
-#: ../xfce4-about/contributors.h:140
+#: ../xfce4-about/contributors.h:143
 msgid "Previous contributors"
 msgstr "之前的貢獻者"
 
@@ -768,49 +807,97 @@ msgid "Information about the Xfce Desktop Environment"
 msgstr "有關 Xfce 桌面環境的資訊"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:1
-msgid "About the Xfce Desktop Environment"
-msgstr "關於 Xfce 桌面環境"
-
-#: ../xfce4-about/xfce4-about-dialog.glade.h:2
-msgid "About"
-msgstr "關於"
-
-#: ../xfce4-about/xfce4-about-dialog.glade.h:3
-msgid "Credits"
-msgstr "鳴謝"
-
-#: ../xfce4-about/xfce4-about-dialog.glade.h:4
-msgid "GPL"
-msgstr "GPL"
-
-#: ../xfce4-about/xfce4-about-dialog.glade.h:5
-msgid "LGPL"
-msgstr "LGPL"
-
-#: ../xfce4-about/xfce4-about-dialog.glade.h:6
-msgid "BSD"
-msgstr "BSD"
-
-#: ../xfce4-about/xfce4-about-dialog.glade.h:7
-msgid "Copyright"
-msgstr "版權所有"
-
-#: ../xfce4-about/xfce4-about-dialog.glade.h:8
 msgid "License"
 msgstr "授權"
 
-#: ../tests/test-ui.c:138
+#: ../xfce4-about/xfce4-about-dialog.glade.h:2
+msgid "About the Xfce Desktop Environment"
+msgstr "關於 Xfce 桌面環境"
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:3
+msgid "label"
+msgstr "標籤"
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:4
+msgid "OS Name"
+msgstr ""
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:5
+msgid "Device"
+msgstr "裝置"
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:6
+msgid "Memory"
+msgstr ""
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:7
+msgid "CPU"
+msgstr ""
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:8
+msgid "OS Type"
+msgstr ""
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:9
+msgid "Xfce Version"
+msgstr ""
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:10
+msgid "Distributor"
+msgstr ""
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:11
+msgid "System"
+msgstr "系統"
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:12
+msgid "About"
+msgstr "關於"
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:13
+msgid "Credits"
+msgstr "鳴謝"
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:14
+msgid "GPL"
+msgstr "GPL"
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:15
+msgid "LGPL"
+msgstr "LGPL"
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:16
+msgid "BSD"
+msgstr "BSD"
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:17
+msgid "Copyright"
+msgstr "版權所有"
+
+#: ../xfce4-about/system-info.c:274 ../xfce4-about/system-info.c:322
+msgid "Unknown"
+msgstr "不詳"
+
+#. translators: This is the name of the OS, followed by the build ID, for
+#. * example:
+#. * "Fedora 25 (Workstation Edition); Build ID: xyz" or
+#. * "Ubuntu 16.04 LTS; Build ID: jki"
+#: ../xfce4-about/system-info.c:330
+#, c-format
+msgid "%s; Build ID: %s"
+msgstr ""
+
+#: ../tests/test-ui.c:111
 #, c-format
 msgid ""
 "A file named \"%s\" already exists in this directory, the file hasn't been "
 "added."
 msgstr ""
 
-#: ../tests/test-ui.c:149
+#: ../tests/test-ui.c:122
 msgid "Failed to migrate the old panel configuration"
 msgstr "未能轉移舊式面板組態"
 
-#: ../tests/test-ui.c:202 ../tests/test-ui.c:222 ../tests/test-ui.c:251
-#: ../tests/test-ui.c:273
+#: ../tests/test-ui.c:170 ../tests/test-ui.c:195
 msgid "Customize settings stored by Xfconf"
 msgstr "自訂 Xfconf 儲存的設定"
