@@ -3,7 +3,7 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Balázs Meskó <meskobalazs@gmail.com>, 2018
+# Balázs Meskó <mesko.balazs@fsf.hu>, 2018
 # Gabor Kelemen <kelemeng at gnome dot hu>, 2009,2011-2012
 # Gábor P., 2017,2019-2020
 # gyeben <gyonkibendeguz@gmail.com>, 2016
@@ -12,9 +12,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-10 00:30+0100\n"
-"PO-Revision-Date: 2020-01-30 14:20+0000\n"
-"Last-Translator: Gábor P.\n"
+"POT-Creation-Date: 2020-04-06 00:30+0200\n"
+"PO-Revision-Date: 2020-04-05 22:30+0000\n"
+"Last-Translator: Xfce Bot <transifex@xfce.org>\n"
 "Language-Team: Hungarian (http://www.transifex.com/xfce/libxfce4ui/language/hu/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -42,7 +42,7 @@ msgid ""
 msgstr "Átirányításra kerül a dokumentációs weboldalra, ahol a súgóoldalak karbantartása és fordítása történik."
 
 #. Create cancel button
-#: ../libxfce4ui/xfce-dialogs.c:275 ../libxfce4ui/xfce-dialogs.c:530
+#: ../libxfce4ui/xfce-dialogs.c:275 ../libxfce4ui/xfce-dialogs.c:533
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:243
 msgid "_Cancel"
 msgstr "Mé_gse"
@@ -73,32 +73,36 @@ msgstr "Igen"
 msgid "Cancel"
 msgstr "Mégse"
 
-#: ../libxfce4ui/xfce-dialogs.c:516
+#: ../libxfce4ui/xfce-dialogs.c:518
 msgid "Close window with multiple tabs?"
 msgstr "Több lapot tartalmazó ablak bezárása?"
 
-#: ../libxfce4ui/xfce-dialogs.c:518
+#: ../libxfce4ui/xfce-dialogs.c:520
 msgid ""
 "This window has multiple tabs open. Closing this window will also close all "
 "its tabs."
 msgstr "Ez az ablak több nyitott lapot tartalmaz. Az ablak bezárásával a nyitott lapok is bezárásra kerülnek."
 
-#: ../libxfce4ui/xfce-dialogs.c:521
+#: ../libxfce4ui/xfce-dialogs.c:523
 #, c-format
 msgid ""
 "This window has %d tabs open. Closing this window will also close all its "
 "tabs."
 msgstr "Ez az ablak  %d nyitott lapot tartalmaz. Az ablak bezárásával a nyitott lapok is bezárásra kerülnek."
 
-#: ../libxfce4ui/xfce-dialogs.c:531
+#: ../libxfce4ui/xfce-dialogs.c:529
+msgid "Warning"
+msgstr "Figyelmeztetés"
+
+#: ../libxfce4ui/xfce-dialogs.c:534
 msgid "Close T_ab"
 msgstr "_Lap bezárása"
 
-#: ../libxfce4ui/xfce-dialogs.c:532
+#: ../libxfce4ui/xfce-dialogs.c:535
 msgid "Close _Window"
 msgstr "_Ablak bezárása"
 
-#: ../libxfce4ui/xfce-dialogs.c:537
+#: ../libxfce4ui/xfce-dialogs.c:540
 msgid "Do _not ask me again"
 msgstr "_Ne kérdezze újra"
 
@@ -139,6 +143,22 @@ msgid ""
 "Working directory \"%s\" does not exist. It won't be used when spawning "
 "\"%s\"."
 msgstr "A munkakönyvtár („%s”) nem létezik. Nem kerül felhasználásra „%s” indításakor."
+
+#. the string contains a directory separator
+#: ../libxfce4ui/xfce-filename-input.c:414
+msgid "Directory separator illegal in file name"
+msgstr ""
+
+#. the string is too long
+#: ../libxfce4ui/xfce-filename-input.c:422
+msgid "Filename is too long"
+msgstr ""
+
+#. the string starts or ends with whitespace
+#. * this does not make the filename invalid, but we warn the user about it
+#: ../libxfce4ui/xfce-filename-input.c:430
+msgid "Filenames should not start or end with a space"
+msgstr ""
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 #, c-format
