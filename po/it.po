@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-10 00:30+0100\n"
-"PO-Revision-Date: 2020-01-10 13:57+0000\n"
+"POT-Creation-Date: 2020-04-06 00:30+0200\n"
+"PO-Revision-Date: 2020-04-14 12:35+0000\n"
 "Last-Translator: Emanuele Petriglia <transifex@emanuelepetriglia.com>\n"
 "Language-Team: Italian (http://www.transifex.com/xfce/libxfce4ui/language/it/)\n"
 "MIME-Version: 1.0\n"
@@ -40,7 +40,7 @@ msgid ""
 msgstr "Si verrà reindirizzati al sito web della documentazione dove le pagine d'aiuto sono mantenute e tradotte."
 
 #. Create cancel button
-#: ../libxfce4ui/xfce-dialogs.c:275 ../libxfce4ui/xfce-dialogs.c:530
+#: ../libxfce4ui/xfce-dialogs.c:275 ../libxfce4ui/xfce-dialogs.c:533
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:243
 msgid "_Cancel"
 msgstr "A_nnulla"
@@ -71,32 +71,36 @@ msgstr "Sì"
 msgid "Cancel"
 msgstr "Annulla"
 
-#: ../libxfce4ui/xfce-dialogs.c:516
+#: ../libxfce4ui/xfce-dialogs.c:518
 msgid "Close window with multiple tabs?"
 msgstr "Chiudere la finestra con più schede?"
 
-#: ../libxfce4ui/xfce-dialogs.c:518
+#: ../libxfce4ui/xfce-dialogs.c:520
 msgid ""
 "This window has multiple tabs open. Closing this window will also close all "
 "its tabs."
 msgstr "Questa finestre ha più schede aperte. Chiudendo questa finestra verranno chiuse tutte le schede."
 
-#: ../libxfce4ui/xfce-dialogs.c:521
+#: ../libxfce4ui/xfce-dialogs.c:523
 #, c-format
 msgid ""
 "This window has %d tabs open. Closing this window will also close all its "
 "tabs."
 msgstr "Questa finestra ha %d schede aperte. Chiudendo questa finestra verranno chiuse tutte le schede."
 
-#: ../libxfce4ui/xfce-dialogs.c:531
+#: ../libxfce4ui/xfce-dialogs.c:529
+msgid "Warning"
+msgstr "Avviso"
+
+#: ../libxfce4ui/xfce-dialogs.c:534
 msgid "Close T_ab"
 msgstr "Chiudi S_cheda"
 
-#: ../libxfce4ui/xfce-dialogs.c:532
+#: ../libxfce4ui/xfce-dialogs.c:535
 msgid "Close _Window"
 msgstr "Chiudi _Finestra"
 
-#: ../libxfce4ui/xfce-dialogs.c:537
+#: ../libxfce4ui/xfce-dialogs.c:540
 msgid "Do _not ask me again"
 msgstr "_Non chiedere di nuovo"
 
@@ -137,6 +141,22 @@ msgid ""
 "Working directory \"%s\" does not exist. It won't be used when spawning "
 "\"%s\"."
 msgstr "La cartella di lavoro \"%s\" non esiste. Non verrà utilizzata per deporre \"%s\"."
+
+#. the string contains a directory separator
+#: ../libxfce4ui/xfce-filename-input.c:414
+msgid "Directory separator illegal in file name"
+msgstr "Il separatore di cartelle è vietato nel nome del file"
+
+#. the string is too long
+#: ../libxfce4ui/xfce-filename-input.c:422
+msgid "Filename is too long"
+msgstr "Il nome del file è troppo lungo"
+
+#. the string starts or ends with whitespace
+#. * this does not make the filename invalid, but we warn the user about it
+#: ../libxfce4ui/xfce-filename-input.c:430
+msgid "Filenames should not start or end with a space"
+msgstr "Il nome del file non dovrebbe iniziare o finire con uno spazio"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 #, c-format
