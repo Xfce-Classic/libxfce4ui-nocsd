@@ -16,9 +16,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-17 12:30+0100\n"
-"PO-Revision-Date: 2020-03-18 09:44+0000\n"
-"Last-Translator: scootergrisen\n"
+"POT-Creation-Date: 2020-04-06 00:30+0200\n"
+"PO-Revision-Date: 2020-04-05 22:30+0000\n"
+"Last-Translator: Xfce Bot <transifex@xfce.org>\n"
 "Language-Team: Danish (http://www.transifex.com/xfce/libxfce4ui/language/da/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -46,7 +46,7 @@ msgid ""
 msgstr "Du viderestilles til dokumentationswebstedet, hvor hjælpesiderne vedligeholdes og oversættes."
 
 #. Create cancel button
-#: ../libxfce4ui/xfce-dialogs.c:275 ../libxfce4ui/xfce-dialogs.c:530
+#: ../libxfce4ui/xfce-dialogs.c:275 ../libxfce4ui/xfce-dialogs.c:533
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:243
 msgid "_Cancel"
 msgstr "_Annuller"
@@ -77,32 +77,36 @@ msgstr "Ja"
 msgid "Cancel"
 msgstr "Annuller"
 
-#: ../libxfce4ui/xfce-dialogs.c:516
+#: ../libxfce4ui/xfce-dialogs.c:518
 msgid "Close window with multiple tabs?"
 msgstr "Luk vindue med flere faneblade?"
 
-#: ../libxfce4ui/xfce-dialogs.c:518
+#: ../libxfce4ui/xfce-dialogs.c:520
 msgid ""
 "This window has multiple tabs open. Closing this window will also close all "
 "its tabs."
 msgstr "Vinduet har flere åbne faneblade. Hvis vinduet lukkes, så lukkes alle dets faneblade også."
 
-#: ../libxfce4ui/xfce-dialogs.c:521
+#: ../libxfce4ui/xfce-dialogs.c:523
 #, c-format
 msgid ""
 "This window has %d tabs open. Closing this window will also close all its "
 "tabs."
 msgstr "Vinduet har %d åbne faneblade. Hvis vinduet lukkes, så lukkes alle dets faneblade også."
 
-#: ../libxfce4ui/xfce-dialogs.c:531
+#: ../libxfce4ui/xfce-dialogs.c:529
+msgid "Warning"
+msgstr "Advarsel"
+
+#: ../libxfce4ui/xfce-dialogs.c:534
 msgid "Close T_ab"
 msgstr "Luk _faneblad"
 
-#: ../libxfce4ui/xfce-dialogs.c:532
+#: ../libxfce4ui/xfce-dialogs.c:535
 msgid "Close _Window"
 msgstr "Luk _vindue"
 
-#: ../libxfce4ui/xfce-dialogs.c:537
+#: ../libxfce4ui/xfce-dialogs.c:540
 msgid "Do _not ask me again"
 msgstr "Spørg mig _ikke igen"
 
