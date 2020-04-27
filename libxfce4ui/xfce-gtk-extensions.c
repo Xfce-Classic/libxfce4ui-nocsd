@@ -398,29 +398,19 @@ xfce_gtk_menu_append_seperator (GtkMenuShell *menu)
 
 
 /**
- * xfce_gtk_accel_group_append:
- * @accel_group : The #GtkAccelGroup to which the passed action_entries should be appended
+ * xfce_gtk_accel_map_add_entries:
  * @action_entries : array of action_entries to be added
  * @n_action_entries : size of the action_entries array
- * @callback_data : callback data which should be passed if the accelerator is activated
  *
- * Connects the accel_pathes of the passed action_entries to the accel_group
- * and adds the default key of each ActionEntry to the accel_map, if no key was defined for the related accel_path so far.
- *
- * Return value: (transfer none): The #GtkAccelGroup to which the passed action_entries were appended
+ * Adds the default key of each ActionEntry to the accel_map, if no key was defined for the related accel_path so far.
  *
  * Since: 4.16
  **/
-GtkAccelGroup*
-xfce_gtk_accel_group_append (GtkAccelGroup            *accel_group,
-                             const XfceGtkActionEntry *action_entries,
-                             guint                     n_action_entries,
-                             gpointer                  callback_data)
+void
+xfce_gtk_accel_map_add_entries (const XfceGtkActionEntry *action_entries,
+                                guint                     n_action_entries)
 {
   GtkAccelKey key;
-  GClosure   *closure = NULL;
-
-  g_return_val_if_fail (GTK_IS_ACCEL_GROUP (accel_group), NULL);
 
   for (size_t i = 0; i < n_action_entries; i++)
     {
@@ -433,13 +423,7 @@ xfce_gtk_accel_group_append (GtkAccelGroup            *accel_group,
           gtk_accelerator_parse (action_entries[i].default_accelerator, &key.accel_key, &key.accel_mods);
           gtk_accel_map_add_entry (action_entries[i].accel_path, key.accel_key, key.accel_mods);
         }
-      if (action_entries[i].callback != NULL)
-        {
-          closure = g_cclosure_new_swap (action_entries[i].callback, callback_data, NULL);
-          gtk_accel_group_connect_by_path (accel_group, action_entries[i].accel_path, closure);
-        }
     }
-  return accel_group;
 }
 
 
