@@ -50,6 +50,15 @@ typedef enum
 */
 typedef struct
 {
+  /*
+   * Replacement for the deprecated GtkActionEntry
+   * The idea is to provide a fixed list of XfceGtkActionEntrys
+   * - use 'xfce_gtk_translate_action_entries' once to translate the list
+   * - use 'xfce_gtk_accel_map_add_entries' once to register the provided accelerators
+   * - use 'xfce_gtk_get_action_entry_by_id' to find a single entry, e.g. by using a enumeration
+   * - use 'xfce_gtk_***_new_from_action_entry' to create the specific menu- or tool-items from the entry
+  */
+
   guint            id;                     /* unique identifier for instances of this structure (you might want to use a enum) */
   const gchar     *accel_path;             /* The unique path, used to identify the accelerator */
   const gchar     *default_accelerator;    /* The default key and modifier to trigger the callback linked to the entry */
@@ -110,10 +119,8 @@ GtkWidget                *xfce_gtk_toggle_menu_item_new_from_action_entry (const
 GtkWidget                *xfce_gtk_tool_button_new_from_action_entry      (const XfceGtkActionEntry *action_entry,
                                                                            GObject                  *callback_param,
                                                                            GtkToolbar               *toolbar_to_append_item);
-GtkAccelGroup            *xfce_gtk_accel_group_append                     (GtkAccelGroup            *accel_group,
-                                                                           const XfceGtkActionEntry *action_entries,
-                                                                           guint                     n_action_entries,
-                                                                           gpointer                  callback_data);
+void                      xfce_gtk_accel_map_add_entries                  (const XfceGtkActionEntry *action_entries,
+                                                                           guint                     n_action_entries);
 const XfceGtkActionEntry *xfce_gtk_get_action_entry_by_id                 (const XfceGtkActionEntry *action_entries,
                                                                            guint                     n_action_entries,
                                                                            guint                     id);
