@@ -468,6 +468,39 @@ xfce_gtk_accel_group_connect_action_entries (GtkAccelGroup            *accel_gro
 
 
 /**
+ * xfce_gtk_accel_group_disconnect_action_entries:
+ * @accel_group   : the #GtkAccelGroup to connect to
+ * @action_entries : array of action_entries to be added
+ * @n_action_entries : size of the action_entries array
+ *
+ * This method will disconnect each accel_path from the #XfceGtkActionEntry in action_entries.
+ *
+ * Since: 4.16
+ **/
+void
+xfce_gtk_accel_group_disconnect_action_entries (GtkAccelGroup            *accel_group,
+                                                const XfceGtkActionEntry *action_entries,
+                                                guint                     n_action_entries)
+{
+  GtkAccelKey key;
+
+  g_return_if_fail (GTK_IS_ACCEL_GROUP (accel_group));
+
+  for (size_t i = 0; i < n_action_entries; i++)
+    {
+      if (action_entries[i].accel_path == NULL || g_strcmp0 (action_entries[i].accel_path, "") == 0)
+        continue;
+      if (action_entries[i].callback != NULL)
+        {
+          if (gtk_accel_map_lookup_entry (action_entries[i].accel_path, &key) == TRUE)
+            gtk_accel_group_disconnect_key (accel_group, key.accel_key, key.accel_mods);
+        }
+    }
+ }
+
+
+
+/**
  * xfce_gtk_get_action_entry_by_id:
  * @action_entries : array of action_entries to be searched
  * @n_action_entries : size of the action_entries array

@@ -119,6 +119,9 @@ void                      xfce_gtk_accel_group_connect_action_entries     (GtkAc
                                                                            const XfceGtkActionEntry *action_entries,
                                                                            guint                     n_action_entries,
                                                                            gpointer                  callback_data);
+void                      xfce_gtk_accel_group_disconnect_action_entries  (GtkAccelGroup            *accel_group,
+                                                                           const XfceGtkActionEntry *action_entries,
+                                                                           guint                     n_action_entries);
 const XfceGtkActionEntry *xfce_gtk_get_action_entry_by_id                 (const XfceGtkActionEntry *action_entries,
                                                                            guint                     n_action_entries,
                                                                            guint                     id);
