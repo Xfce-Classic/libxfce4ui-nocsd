@@ -121,6 +121,10 @@ GtkWidget                *xfce_gtk_tool_button_new_from_action_entry      (const
                                                                            GtkToolbar               *toolbar_to_append_item);
 void                      xfce_gtk_accel_map_add_entries                  (const XfceGtkActionEntry *action_entries,
                                                                            guint                     n_action_entries);
+void                      xfce_gtk_accel_group_connect_action_entries     (GtkAccelGroup            *accel_group,
+                                                                           const XfceGtkActionEntry *action_entries,
+                                                                           guint                     n_action_entries,
+                                                                           gpointer                  callback_data);
 const XfceGtkActionEntry *xfce_gtk_get_action_entry_by_id                 (const XfceGtkActionEntry *action_entries,
                                                                            guint                     n_action_entries,
                                                                            guint                     id);
@@ -153,6 +157,8 @@ gboolean                  xfce_widget_reparent                            (GtkWi
 const gchar              *xfce_icon_name_from_desktop_id                  (const gchar               *desktop_id);
 
 GIcon                    *xfce_gicon_from_name                            (const gchar               *name);
+void                      xfce_gtk_menu_item_set_accel_label              (GtkMenuItem               *menu_item,
+                                                                           const gchar               *accel_path);
 
 G_END_DECLS
 
