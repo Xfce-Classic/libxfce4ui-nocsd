@@ -73,8 +73,10 @@ xfce_gtk_menu_item_fill_base (GtkWidget    *item,
 
   if (tooltip_text != NULL)
     gtk_widget_set_tooltip_text (item, tooltip_text);
-  if (accel_path != NULL)
-    gtk_menu_item_set_accel_path (GTK_MENU_ITEM (item), accel_path);
+
+  /* Explicitly dont use 'gtk_menu_item_set_accel_path'
+   * in order to give more control over accelerator management for non-permanent menu items */
+  xfce_gtk_menu_item_set_accel_label (GTK_MENU_ITEM (item), accel_path);
   if (callback != NULL)
     g_signal_connect_swapped (G_OBJECT (item), "activate", callback, callback_param);
   if (menu_to_append_item != NULL)
@@ -425,6 +427,43 @@ xfce_gtk_accel_map_add_entries (const XfceGtkActionEntry *action_entries,
         }
     }
 }
+
+
+
+/**
+ * xfce_gtk_accel_group_connect_action_entries:
+ * @accel_group   : the #GtkAccelGroup to connect to
+ * @action_entries : array of action_entries to be added
+ * @n_action_entries : size of the action_entries array
+ * @callback_data : data which should be passed to the callback of each #XfceGtkActionEntry
+ *
+ * This method will connect each accel_path from the #XfceGtkActionEntry in action_entries
+ * to its related callback. If the accelerator is pressed, the related callback will be called.
+ *
+ * Since: 4.16
+ **/
+void
+xfce_gtk_accel_group_connect_action_entries (GtkAccelGroup            *accel_group,
+                                             const XfceGtkActionEntry *action_entries,
+                                             guint                     n_action_entries,
+                                             gpointer                  callback_data)
+{
+  GClosure   *closure = NULL;
+
+  g_return_if_fail (GTK_IS_ACCEL_GROUP (accel_group));
+
+  for (size_t i = 0; i < n_action_entries; i++)
+    {
+      if (action_entries[i].accel_path == NULL || g_strcmp0 (action_entries[i].accel_path, "") == 0)
+        continue;
+
+      if (action_entries[i].callback != NULL)
+        {
+          closure = g_cclosure_new_swap (action_entries[i].callback, callback_data, NULL);
+          gtk_accel_group_connect_by_path (accel_group, action_entries[i].accel_path, closure);
+        }
+    }
+ }
 
 
 
@@ -824,6 +863,43 @@ xfce_gicon_from_name (const gchar *name)
         return gicon;
     else
         return NULL;
+}
+
+
+
+/**
+ * xfce_gtk_menu_item_set_accel_label:
+ * @menu_item : #GtkMenuItem on which the accel label is to set
+ * @accel_path : Unique path, used to identify the accelerator, or NULL to show no accelerator
+*
+ * Use the passed accel_path show the related #GtkAccelLabel with the correct accelerator on the item.
+ *
+ * Since: 4.16
+ **/
+void
+xfce_gtk_menu_item_set_accel_label (GtkMenuItem *menu_item,
+                                    const gchar *accel_path)
+{
+  GtkAccelKey key;
+  gboolean    found = FALSE;
+
+  g_return_if_fail (GTK_IS_MENU_ITEM (menu_item));
+
+  if (accel_path != NULL)
+    found = gtk_accel_map_lookup_entry (accel_path, &key);
+
+  /* Only show the relevant accelerator, do not automatically connect to the callback */
+  for (GList* lp = gtk_container_get_children (GTK_CONTAINER (menu_item)); lp != NULL; lp = lp->next)
+    {
+      if (GTK_IS_ACCEL_LABEL (lp->data))
+        {
+          if (found)
+            gtk_accel_label_set_accel (lp->data, key.accel_key, key.accel_mods);
+          else
+            gtk_accel_label_set_accel (lp->data, 0, 0);
+        }
+
+    }
 }
 
 
