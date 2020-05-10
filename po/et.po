@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-06 00:30+0200\n"
-"PO-Revision-Date: 2020-05-09 07:54+0000\n"
+"PO-Revision-Date: 2020-05-10 08:19+0000\n"
 "Last-Translator: Priit Jõerüüt <transifex@joeruut.com>\n"
 "Language-Team: Estonian (http://www.transifex.com/xfce/libxfce4ui/language/et/)\n"
 "MIME-Version: 1.0\n"
@@ -169,7 +169,7 @@ msgstr ""
 #: ../libxfce4kbd-private/xfce-shortcuts.c:63
 #, c-format
 msgid "Use '%s'"
-msgstr ""
+msgstr "Kasuta '%s'"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:54
 #: ../libxfce4kbd-private/xfce-shortcuts.c:57
@@ -177,7 +177,7 @@ msgstr ""
 #: ../libxfce4kbd-private/xfce-shortcuts.c:63
 #, c-format
 msgid "Keep '%s'"
-msgstr ""
+msgstr "Hoia '%s'"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:56
 #: ../libxfce4kbd-private/xfce-shortcuts.c:59
@@ -246,7 +246,7 @@ msgstr ""
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:278
 msgid "Shortcut:"
-msgstr ""
+msgstr "Otsetee:"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:283
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:424
