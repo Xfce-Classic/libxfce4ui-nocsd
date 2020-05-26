@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-06 00:30+0200\n"
-"PO-Revision-Date: 2020-05-25 14:30+0000\n"
+"PO-Revision-Date: 2020-05-26 05:06+0000\n"
 "Last-Translator: Ivan <personal@live.hk>\n"
 "Language-Team: Chinese (Hong Kong) (http://www.transifex.com/xfce/libxfce4ui/language/zh_HK/)\n"
 "MIME-Version: 1.0\n"
@@ -144,7 +144,7 @@ msgstr "工作目錄「%s」不存在。當建立「%s」時不會用。"
 #. the string contains a directory separator
 #: ../libxfce4ui/xfce-filename-input.c:414
 msgid "Directory separator illegal in file name"
-msgstr ""
+msgstr "非法目錄分隔符在文件名"
 
 #. the string is too long
 #: ../libxfce4ui/xfce-filename-input.c:422
@@ -155,7 +155,7 @@ msgstr "文件名太長"
 #. * this does not make the filename invalid, but we warn the user about it
 #: ../libxfce4ui/xfce-filename-input.c:430
 msgid "Filenames should not start or end with a space"
-msgstr ""
+msgstr "文件名不應以空格開頭或結尾"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 #, c-format
@@ -452,19 +452,19 @@ msgstr "將視窗鋪在右方"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:85
 msgid "Tile window to the top-left"
-msgstr ""
+msgstr "平鋪視窗至左上角"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:86
 msgid "Tile window to the top-right"
-msgstr ""
+msgstr "平鋪視窗至右上方"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:87
 msgid "Tile window to the bottom-left"
-msgstr ""
+msgstr "平鋪視窗至左下角"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:88
 msgid "Tile window to the bottom-right"
-msgstr ""
+msgstr "平鋪視窗至右下方"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:89
 msgid "Show desktop"
@@ -614,11 +614,11 @@ msgstr "Unix/Linux 桌面的現代化檔案管理員，旨在易用、快速。"
 
 #: ../xfce4-about/main.c:144
 msgid "Volume manager"
-msgstr ""
+msgstr "儲存裝置管理"
 
 #: ../xfce4-about/main.c:145
 msgid "Automatic management of removable drives and media for Thunar."
-msgstr ""
+msgstr "自動管理Thunar的移除式裝置和媒體。"
 
 #: ../xfce4-about/main.c:148
 msgid "Session Manager"
@@ -660,20 +660,20 @@ msgstr "以 D-Bus 為基礎的設定儲存系統。"
 
 #: ../xfce4-about/main.c:167
 msgid "A menu library"
-msgstr ""
+msgstr "選單庫"
 
 #: ../xfce4-about/main.c:168
 msgid "A freedesktop.org compliant menu implementation based on GLib and GIO."
-msgstr ""
+msgstr "基於GLib和GIO的與freedesktop.org兼容的菜單實現。"
 
 #: ../xfce4-about/main.c:172
 msgid "Thumbnails service"
-msgstr ""
+msgstr "縮圖服務"
 
 #: ../xfce4-about/main.c:173
 msgid ""
 "Thumbnail service implementing the thumbnail management D-Bus specification."
-msgstr ""
+msgstr "實現縮略圖管理D-Bus規範的縮略圖服務。"
 
 #: ../xfce4-about/main.c:180
 msgid ""
@@ -694,7 +694,7 @@ msgid ""
 " for applications and LGPL or BSDL for libraries. Look at the documentation,"
 " the source code or the Xfce website (https://www.xfce.org) for more "
 "information."
-msgstr ""
+msgstr "Xfce組件已獲得免費或開放源代碼許可；應用程序使用GPL或BSDL，庫使用LGPL或BSDL。請參閱文檔，源代碼或Xfce網站（https://www.xfce.org），以獲取更多信息。"
 
 #: ../xfce4-about/main.c:217
 msgid "Thank you for your interest in Xfce."
@@ -708,7 +708,7 @@ msgstr "Xfce 開發團隊"
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
 "on <https://bugzilla.xfce.org> ."
-msgstr ""
+msgstr "如果您知道此列表中缺少任何人；不要猶豫，並在<https://bugzilla.xfce.org>上提交錯誤。"
 
 #: ../xfce4-about/main.c:327
 msgid "Thanks to all who helped making this software available!"
@@ -726,7 +726,7 @@ msgid ""
 "terms of the GNU Library General Public License as published by the Free "
 "Software Foundation; either version 2 of the License, or (at your option) "
 "any later version."
-msgstr ""
+msgstr "libxfce4ui，libxfce4util和exo軟件包根據自由軟件基金會發布的GNU庫通用公共許可證的條款分發；許可的版本2，或（由您選擇）任何更高的版本。"
 
 #: ../xfce4-about/main.c:356
 msgid ""
@@ -735,7 +735,7 @@ msgid ""
 "of the GNU General Public License as published by the Free Software "
 "Foundation; either version 2 of the License, or (at your option) any later "
 "version."
-msgstr ""
+msgstr "thunar，xfce4-appfinder，xfce4-panel，xfce4-session，xfce4-settings，xfconf，xfdesktop和xfwm4軟件包是根據自由軟件基金會發布的GNU通用公共許可證的條款分發的； 許可的版本2，或（由您選擇）任何更高的版本。"
 
 #: ../xfce4-about/main.c:503
 #, c-format
@@ -821,7 +821,7 @@ msgstr "標籤"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:4
 msgid "OS Name"
-msgstr ""
+msgstr "操作系統名稱"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:5
 msgid "Device"
@@ -829,23 +829,23 @@ msgstr "裝置"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:6
 msgid "Memory"
-msgstr ""
+msgstr "記憶"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:7
 msgid "CPU"
-msgstr ""
+msgstr "CPU"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:8
 msgid "OS Type"
-msgstr ""
+msgstr "操作系統類型"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:9
 msgid "Xfce Version"
-msgstr ""
+msgstr "Xfce版本"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:10
 msgid "Distributor"
-msgstr ""
+msgstr "發行人"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:11
 msgid "System"
@@ -886,14 +886,14 @@ msgstr "不詳"
 #: ../xfce4-about/system-info.c:330
 #, c-format
 msgid "%s; Build ID: %s"
-msgstr ""
+msgstr "%s;內部版本號： %s"
 
 #: ../tests/test-ui.c:111
 #, c-format
 msgid ""
 "A file named \"%s\" already exists in this directory, the file hasn't been "
 "added."
-msgstr ""
+msgstr "名為 「%s」的文件在此目錄中已經存在，尚未添加文件。"
 
 #: ../tests/test-ui.c:122
 msgid "Failed to migrate the old panel configuration"
