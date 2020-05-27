@@ -387,6 +387,7 @@ static const TranslatorInfo xfce_translators_pt[] =
 	{ "Nuno Miguel","nunomgue@gmail.com", FALSE },
 	{ "Rui","xymarior@yandex.com", FALSE },
 	{ "Sérgio Marques","smarquespt@gmail.com", FALSE },
+	{ "Hugo Carvalho","hugokarvalho@hotmail.com", FALSE },
 	{ NULL, NULL }
 };
 static const TranslatorInfo xfce_translators_pt_BR[] =
