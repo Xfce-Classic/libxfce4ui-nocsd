@@ -5,14 +5,15 @@
 # Translators:
 # Andhika Padmawan <andhika.padmawan@gmail.com>, 2009
 # Ardjuna <Asyura.x@gmail.com>, 2015,2017
+# Triyan W. Nugroho <triyan.wn@gmail.com>, 2020
 # William Thomas <littlecloudydev@gmail.com>, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-06 00:30+0200\n"
-"PO-Revision-Date: 2020-04-05 22:30+0000\n"
-"Last-Translator: Xfce Bot <transifex@xfce.org>\n"
+"PO-Revision-Date: 2020-05-28 06:44+0000\n"
+"Last-Translator: Triyan W. Nugroho <triyan.wn@gmail.com>\n"
 "Language-Team: Indonesian (http://www.transifex.com/xfce/libxfce4ui/language/id/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -73,13 +74,13 @@ msgstr "Batal"
 
 #: ../libxfce4ui/xfce-dialogs.c:518
 msgid "Close window with multiple tabs?"
-msgstr ""
+msgstr "Tutup jendela dengan banyak tab?"
 
 #: ../libxfce4ui/xfce-dialogs.c:520
 msgid ""
 "This window has multiple tabs open. Closing this window will also close all "
 "its tabs."
-msgstr ""
+msgstr "Jendela ini memiliki banyak tab terbuka. Menutup jendela juga akan menutup semua tab."
 
 #: ../libxfce4ui/xfce-dialogs.c:523
 #, c-format
