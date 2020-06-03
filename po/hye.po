@@ -6,13 +6,14 @@
 # E-Hayq LLC <www.ehayq.am>, 2018
 # Hayk Andreasyan <hayk.andreasyan@realschool.am>, 2019
 # Real School <localization@ehayq.am>, 2019
+# Վահրամ Չալաբեան <vahram.chalabyan@realschool.am>, 2020
 msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-06 00:30+0200\n"
-"PO-Revision-Date: 2020-05-25 07:11+0000\n"
-"Last-Translator: Real School <localization@ehayq.am>\n"
+"PO-Revision-Date: 2020-06-03 09:19+0000\n"
+"Last-Translator: Վահրամ Չալաբեան <vahram.chalabyan@realschool.am>\n"
 "Language-Team: Eastern Armenian (http://www.transifex.com/xfce/libxfce4ui/language/hye/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -73,20 +74,20 @@ msgstr "Չեղարկել"
 
 #: ../libxfce4ui/xfce-dialogs.c:518
 msgid "Close window with multiple tabs?"
-msgstr ""
+msgstr "Փակե՞լ պատուհանի բոլոր ներդիրները"
 
 #: ../libxfce4ui/xfce-dialogs.c:520
 msgid ""
 "This window has multiple tabs open. Closing this window will also close all "
 "its tabs."
-msgstr ""
+msgstr "Այս պատուհանը ունի բացուած բազմակի ներդիրներ։ Փակելով այս պատուհանը դուք կը փակեք նաեւ բոլոր ներդիրները։"
 
 #: ../libxfce4ui/xfce-dialogs.c:523
 #, c-format
 msgid ""
 "This window has %d tabs open. Closing this window will also close all its "
 "tabs."
-msgstr ""
+msgstr "Այս պատուհանը ունի %d բացուած ներդիրներ։ Փակելով այս պատուհանը դուք կը փակեք նաեւ բոլոր ներդիրները։"
 
 #: ../libxfce4ui/xfce-dialogs.c:529
 msgid "Warning"
@@ -94,11 +95,11 @@ msgstr "Զգուշացում"
 
 #: ../libxfce4ui/xfce-dialogs.c:534
 msgid "Close T_ab"
-msgstr ""
+msgstr "Փակել Ն_երդիրները"
 
 #: ../libxfce4ui/xfce-dialogs.c:535
 msgid "Close _Window"
-msgstr ""
+msgstr "Փակել _Պատուհանները"
 
 #: ../libxfce4ui/xfce-dialogs.c:540
 msgid "Do _not ask me again"
@@ -132,7 +133,7 @@ msgstr "Չյաջողուեց կապակցուել նիստի կառավարչի�
 #: ../libxfce4ui/xfce-sm-client.c:1620
 #, c-format
 msgid "Session manager did not return a valid client id"
-msgstr "Նիստի կառավարիչը չի վերադարձրել սպասառուի վավեր ID"
+msgstr "Նիստի կառավարիչը չի վերադարձրել սպասառուի վաւեր ID"
 
 #. print warning for user
 #: ../libxfce4ui/xfce-spawn.c:423
@@ -145,18 +146,18 @@ msgstr "«%s» նշարանը գոյութիւն չունի։ Այն չի աւգ
 #. the string contains a directory separator
 #: ../libxfce4ui/xfce-filename-input.c:414
 msgid "Directory separator illegal in file name"
-msgstr ""
+msgstr "Նշարանի բաժանիչը անաւրինական է նիշքի անուան մեջ  "
 
 #. the string is too long
 #: ../libxfce4ui/xfce-filename-input.c:422
 msgid "Filename is too long"
-msgstr ""
+msgstr "Նշանունը չափազանց երկար է"
 
 #. the string starts or ends with whitespace
 #. * this does not make the filename invalid, but we warn the user about it
 #: ../libxfce4ui/xfce-filename-input.c:430
 msgid "Filenames should not start or end with a space"
-msgstr ""
+msgstr "Նշանուները չեն կարող սկսուել կամ վերջանալ բացատով։"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 #, c-format
@@ -200,12 +201,12 @@ msgstr "Այս դիւրանցումն արդէն գործածուում է «%s�
 #. Warn the user
 #: ../libxfce4kbd-private/xfce-shortcuts.c:110
 msgid "Please use another key combination."
-msgstr "Օգտագործել ստեղնների այլ զուգակցութիւն։"
+msgstr "Աւգտագործել ստեղնների այլ զուգակցութիւն։"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:111
 #, c-format
 msgid "%s already triggers this action."
-msgstr "%s֊ն արդէն աւգտագործում է այս գործողութիւնը։"
+msgstr "%s-ն արդէն աւգտագործում է այս գործողութիւնը։"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:116
 #, c-format
@@ -305,7 +306,7 @@ msgstr "Մեծացնել պատուհանը հորիզոնական ձեւով"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:48
 msgid "Maximize window vertically"
-msgstr "Մեծացնել պատուհանը ուղղահայաց ձեւով"
+msgstr "Մեծացնել պատուհանը ուղղահայեաց ձեւով"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:49
 msgid "Maximize window"
@@ -353,7 +354,7 @@ msgstr "Լցնել պատուհանը հորիզոնական ձեւով"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:60
 msgid "Fill window vertically"
-msgstr "Լցնել պատուհանն ուղղահայաց ձեւով"
+msgstr "Լցնել պատուհանն ուղղահայեաց ձեւով"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:61
 msgid "Toggle above"
@@ -389,51 +390,51 @@ msgstr "Տեղափոխել պատուհանը յաջորդ աշխատատարա�
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:69
 msgid "Move window to workspace 1"
-msgstr "Տեղափոխել պատուհանն առաջին աշխատատարածք"
+msgstr "Տեղափոխել պատուհանն դէպի աշխատատարածք 1"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:70
 msgid "Move window to workspace 2"
-msgstr "Տեղափոխել պատուհանն երկրորդ աշխատատարածք"
+msgstr "Տեղափոխել պատուհանն դէպի աշխատատարածք 2"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:71
 msgid "Move window to workspace 3"
-msgstr "Տեղափոխել պատուհանն երրորդ աշխատատարածք"
+msgstr "Տեղափոխել պատուհանն դէպի աշխատատարածք 3"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:72
 msgid "Move window to workspace 4"
-msgstr "Տեղափոխել պատուհանը չորրորդ աշխատատարածք"
+msgstr "Տեղափոխել պատուհանն դէպի աշխատատարածք 4"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:73
 msgid "Move window to workspace 5"
-msgstr "Տեղափոխել պատուհանը հինգերորդ աշխատատարածք"
+msgstr "Տեղափոխել պատուհանն դէպի աշխատատարածք 5"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:74
 msgid "Move window to workspace 6"
-msgstr "Տեղափոխել պատուհանը վեցերրորդ աշխատատարածք"
+msgstr "Տեղափոխել պատուհանն դէպի աշխատատարածք 6"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:75
 msgid "Move window to workspace 7"
-msgstr "Տեղափոխել պատուհանը եաւթերրորդ աշխատատարածք"
+msgstr "Տեղափոխել պատուհանդէպի աշխատատարածք 7"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:76
 msgid "Move window to workspace 8"
-msgstr "Տեղափոխել պատուհանն ութներրորդ աշխատատարածք"
+msgstr "Տեղափոխել պատուհանն դէպի աշխատատարածք 8"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:77
 msgid "Move window to workspace 9"
-msgstr "Տեղափոխել պատուհանն իններորդ աշխատատարածք"
+msgstr "Տեղափոխել պատուհանն դէպի աշխատատարածք 9"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:78
 msgid "Move window to workspace 10"
-msgstr "Տեղափոխել պատուհանը տասերրորդ աշխատատարածք"
+msgstr "Տեղափոխել պատուհանն դէպի աշխատատարածք 10"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:79
 msgid "Move window to workspace 11"
-msgstr "Տեղափոխել պատուհանը տասնմեկերրորդ աշխատատարածք"
+msgstr "Տեղափոխել պատուհանն դէպի աշխատատարածք 11"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:80
 msgid "Move window to workspace 12"
-msgstr "Տեղափոխել պատուհանը տասներկուերրորդ աշխատատարածք"
+msgstr "Տեղափոխել պատուհանն դէպի աշխատատարածք 12"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:81
 msgid "Tile window to the top"
@@ -569,7 +570,7 @@ msgstr "Ենթանուն"
 
 #: ../glade/libxfce4ui-2.xml.in.h:3
 msgid "Xfce 4 Widgets"
-msgstr "Xfce 4֊ի հարմարանքներ "
+msgstr "Xfce 4-ի հարմարանքներ "
 
 #: ../xfce4-about/main.c:56
 msgid "Version information"
@@ -591,7 +592,7 @@ msgstr "Վահանակ"
 msgid ""
 "Program launchers, window buttons, applications menu, workspace switcher and"
 " more."
-msgstr "Ծրագրերի գործարկիչներ, պատուհանների կոճակներ, յաւելուածների ցանկեր, աշխատասեղանների փոխանջատիչ եւ այլն։"
+msgstr "Ծրագրերի գործարկիչներ, պատուհանների կոճակներ, յաւելուածների ցանկ, աշխատասեղանների փոխանջատիչ եւ այլն։"
 
 #: ../xfce4-about/main.c:134
 msgid "Desktop Manager"
@@ -605,21 +606,21 @@ msgstr "Սահմանում է յետնապատկերի գոյն կամ պատկ�
 
 #: ../xfce4-about/main.c:139
 msgid "File Manager"
-msgstr "Նիշք"
+msgstr "Նիշային կառավարիչ"
 
 #: ../xfce4-about/main.c:140
 msgid ""
 "A modern file manager for the Unix/Linux desktop, aiming to be easy-to-use "
 "and fast."
-msgstr "Ժամանակակից Նիշային կառավարիչ Unix/Linux ՕՀ֊ների համար, նպատակաուղղուած է լինել հեշտ եւ արագ գործածելի։"
+msgstr "Ժամանակակից Նիշային կառավարիչ Unix/Linux ԱւՀ֊ների համար, նպատակաուղղուած է լինել հեշտ եւ արագ գործածելի։"
 
 #: ../xfce4-about/main.c:144
 msgid "Volume manager"
-msgstr "Ծաւալի կառավարիչ"
+msgstr "Ձայնային կառավարիչ"
 
 #: ../xfce4-about/main.c:145
 msgid "Automatic management of removable drives and media for Thunar."
-msgstr "Հեռացուելի յիշասարքերի եւ կրիչների ինքնաշխատ կառավարիչ Thunar֊ի համար"
+msgstr "Հեռացուելիք յիշասարքերի եւ կրիչների ինքնաշխատ կառավարիչ Thunar֊ի համար"
 
 #: ../xfce4-about/main.c:148
 msgid "Session Manager"
@@ -653,11 +654,11 @@ msgstr "Ցոյց է տալիս համակարգում տեղակայուած ծ�
 
 #: ../xfce4-about/main.c:163
 msgid "Settings Daemon"
-msgstr "Կարգաւորումների աւժանդակ ծրագիր"
+msgstr "Կարգաւորումների ոժանդակ ծրագիր"
 
 #: ../xfce4-about/main.c:164
 msgid "D-Bus-based configuration storage system."
-msgstr "D-Bus֊ի վրայ յիմնուած կազմաձեւման պահեստաւորման համակարգ"
+msgstr "D-Bus-ի վրայ հիմնուած կազմաձեւման պահեստաւորման համակարգ"
 
 #: ../xfce4-about/main.c:167
 msgid "A menu library"
@@ -665,7 +666,7 @@ msgstr "Ցանկի գրադարան"
 
 #: ../xfce4-about/main.c:168
 msgid "A freedesktop.org compliant menu implementation based on GLib and GIO."
-msgstr "GLib֊ի եւ GIO֊ի վրայ հիմնուած, freedesktop.org֊ի չափորոշիչներին համաձայն ցանկերի ստեղծում"
+msgstr "GLib-ի եւ GIO-ի վրայ հիմնուած, freedesktop.org֊ի չափորոշիչներին համաձայն ցանկերի ստեղծում"
 
 #: ../xfce4-about/main.c:172
 msgid "Thumbnails service"
@@ -674,20 +675,20 @@ msgstr "Փոքրապատկերների ծառայութիւն"
 #: ../xfce4-about/main.c:173
 msgid ""
 "Thumbnail service implementing the thumbnail management D-Bus specification."
-msgstr "Փոքրապատկերների կառավարման ծառայութիւն D-Bus֊ի մասնագրով։"
+msgstr "Փոքրապատկերների կառավարման ծառայութիւն D-Bus-ի մասնագրով։"
 
 #: ../xfce4-about/main.c:180
 msgid ""
 "Xfce is a collection of programs that together provide a full-featured "
 "desktop environment. The following programs are part of the Xfce core:"
-msgstr "Xfce-ին՝ ամբողջովին֊ապահովուած աշխատասեղանի միջավայր է։ Հետեւեալ ծրագրերը կազմում են Xfce֊ի հիմնական մասը՝"
+msgstr "Xfce-ին՝ ամբողջովին֊ապահովուած աշխատասեղանի միջավայր է։ Հետեւեալ ծրագրերը կազմում են Xfce֊ի միջուկը․"
 
 #: ../xfce4-about/main.c:204
 msgid ""
 "Xfce is also a development platform providing several libraries, that help "
 "programmers create applications that fit in well with the desktop "
 "environment."
-msgstr "Xfce-ը նաեւ որոշ գրադարաններ տրամադրող մշակման հարթակ է, որոնք աւգնում են ծրագրաւորողներին ստեղծել աշխատասեղանին համապատասխան ծրագրեր։"
+msgstr "Xfce-ին նաեւ որոշ գրադարաններ տրամադրող մշակման հարթակ է, որոնք աւգնում են ծրագրաւորողներին ստեղծել աշխատասեղանին համապատասխան ծրագրեր։"
 
 #: ../xfce4-about/main.c:210
 msgid ""
@@ -695,7 +696,7 @@ msgid ""
 " for applications and LGPL or BSDL for libraries. Look at the documentation,"
 " the source code or the Xfce website (https://www.xfce.org) for more "
 "information."
-msgstr "Xfce բաղադրիչները արտաւնագրուած են, ըստ անվճար կամ բաց այլագրով արտաւնագրերի պայմանների։ GPL կամ BSDL՝ ծրագրերի, LGPL կամ BSDL՝ գրադարանների համար։ Լրացուցիչ տեղեկոյթի համար՝ ուսումնասիրէք նկարագրութիւնը, ելակէտային այլագիրը կամ այցլելէք Xfce֊ի կայք էջ (http://www.xfce.org)։"
+msgstr "Xfce բաղադրիչները արտաւնագրուած են, ըստ անվճար կամ բաց այլագրով արտաւնագրերի պայմանների։ GPL կամ BSDL՝ ծրագրերի, LGPL կամ BSDL՝ գրադարանների համար։ Լրացուցիչ տեղեկոյթի համար՝ ուսումնասիրէք նկարագրութիւնը, ելակէտային այլագիրը կամ այցլելէք Xfce֊ի կայքէջ (http://www.xfce.org)։"
 
 #: ../xfce4-about/main.c:217
 msgid "Thank you for your interest in Xfce."
@@ -719,7 +720,7 @@ msgstr "Շնորհակալութիւն բոլոր նրանց, ովքեր աւգ�
 msgid ""
 "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
-msgstr "Xfce4-ի հեղինակային իրաւունքը պատկանում է Օլիվեր Ֆաունդանին (fourdan@xfce.org)։ Տարբեր բաղադրիչների հեղինակային իրաւունքները պաշտպանուում են դրանք ստեղծող հեղինակների կողմից։"
+msgstr "Xfce4-ի հեղինակային իրաւունքը պատկանում է Ոլիւեր Ֆաունդանին (fourdan@xfce.org)։ Տարբեր բաղադրիչների հեղինակային իրաւունքները պաշտպանուում են դրանք ստեղծող հեղինակների կողմից։"
 
 #: ../xfce4-about/main.c:349
 msgid ""
@@ -727,7 +728,7 @@ msgid ""
 "terms of the GNU Library General Public License as published by the Free "
 "Software Foundation; either version 2 of the License, or (at your option) "
 "any later version."
-msgstr "libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs եւ exo փաթեթները մշակուում են ըստ Free Software Foundation֊ի թողարկած, GNU գրադարանների հանրային արտաւնագրի երկրորդ կամ (կամընտրական) աւելի նոր տարբերակի կաննոների համաձայն։"
+msgstr "libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs եւ exo փաթեթները մշակուում են ըստ Free Software Foundation-ի թողարկած, GNU գրադարանների հանրային արտաւնագրի երկրորդ կամ (կամ ընտրական) աւելի նոր տարբերակի կաննոների համաձայն։"
 
 #: ../xfce4-about/main.c:356
 msgid ""
@@ -736,7 +737,7 @@ msgid ""
 "of the GNU General Public License as published by the Free Software "
 "Foundation; either version 2 of the License, or (at your option) any later "
 "version."
-msgstr " Thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfconf, xfdesktop եւ xfwm4 փաթեթները մշակուած են ըստ GNU հանրային արտաւնագրի երկրորդ կամ (կամընտրական) աւելի նոր տարբերակի կանոնների համաձայն։"
+msgstr " Thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfconf, xfdesktop եւ xfwm4 փաթեթները մշակուած են ըստ GNU հանրային արտաւնագրի երկրորդ կամ (կամ ընտրական) աւելի նոր տարբերակի կանոնների համաձայն։"
 
 #: ../xfce4-about/main.c:503
 #, c-format
@@ -745,7 +746,7 @@ msgstr "Մուտքագրէք «%s --help» աջակցութեան համար։"
 
 #: ../xfce4-about/main.c:509
 msgid "Unable to initialize GTK+."
-msgstr "Անհնար է գործարկել GTK+֊ը։"
+msgstr "Անհնար է գործարկել GTK+-ը։"
 
 #: ../xfce4-about/main.c:518
 msgid "The Xfce development team. All rights reserved."
@@ -754,7 +755,7 @@ msgstr "Xfce֊ի մշակման խումբ։ Բոլոր իրաւունքները
 #: ../xfce4-about/main.c:519
 #, c-format
 msgid "Please report bugs to <%s>."
-msgstr "Սխալների մասին  <%s> հասցէով։"
+msgstr "Սխալների մասին հաղորդէք  <%s> հասցէով։"
 
 #: ../xfce4-about/main.c:529
 msgid "Failed to load interface"
@@ -818,11 +819,11 @@ msgstr "Xfce աշխատասեղանի միջավայրի մասին"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:3
 msgid "label"
-msgstr ""
+msgstr "Պիտակ"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:4
 msgid "OS Name"
-msgstr ""
+msgstr "ԱւՀ-ի անունը ՝"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:5
 msgid "Device"
@@ -830,23 +831,23 @@ msgstr "Սարք"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:6
 msgid "Memory"
-msgstr ""
+msgstr "Յիշողութիւն"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:7
 msgid "CPU"
-msgstr ""
+msgstr "ԿՄՍ"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:8
 msgid "OS Type"
-msgstr ""
+msgstr "ԱւՀ-ի Տիպար"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:9
 msgid "Xfce Version"
-msgstr ""
+msgstr "Xfce-ի տարբերակ"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:10
 msgid "Distributor"
-msgstr ""
+msgstr "Մշակող ՝"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:11
 msgid "System"
@@ -858,7 +859,7 @@ msgstr "Ծրագրի մասին"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:13
 msgid "Credits"
-msgstr "Շնորհակալութիւն"
+msgstr "Հեղինակներ"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:14
 msgid "GPL"
@@ -887,7 +888,7 @@ msgstr "Անյայտ"
 #: ../xfce4-about/system-info.c:330
 #, c-format
 msgid "%s; Build ID: %s"
-msgstr ""
+msgstr "%s;Ստեղծման ID.%s"
 
 #: ../tests/test-ui.c:111
 #, c-format
