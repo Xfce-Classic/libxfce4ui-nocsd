@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-06 00:30+0200\n"
-"PO-Revision-Date: 2020-06-02 09:16+0000\n"
+"PO-Revision-Date: 2020-06-06 22:17+0000\n"
 "Last-Translator: Priit Jõerüüt <transifex@joeruut.com>\n"
 "Language-Team: Estonian (http://www.transifex.com/xfce/libxfce4ui/language/et/)\n"
 "MIME-Version: 1.0\n"
@@ -251,11 +251,11 @@ msgstr "Otsetee:"
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:283
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:424
 msgid "No keys pressed yet, proceed."
-msgstr ""
+msgstr "Sa pole veel ühtegi klahvi vajutanud, aga tee seda nüüd."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:331
 msgid "Could not grab the keyboard."
-msgstr ""
+msgstr "Ei õnnestunud klahvivajutust fikseerida."
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:36
 msgid "Window operations menu"
