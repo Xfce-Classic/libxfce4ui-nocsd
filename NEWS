@@ -1,3 +1,38 @@
+4.15.3
+======
+- Update bug URLs to point to gitlab.xfce
+- xfce-about: Hide empty email address tags (Fixes #12)
+- Remove translator email address as per request (Fixes #11)
+- Add missing translator "Hugo Carvalho" to xfce4-about (issue #18)
+- Replace deprecated 'gdk_keyboard_ungrab' function (Fixes #15)
+- shortcuts-grabber: Correctly ungrab keys on updating shortcuts (Fixes
+  #16)
+- Add basic GitLab pipeline
+- Allow more granular control over menu item accelerators.
+  - No automatic accelerator activation formenu items
+  - Added 'gtk_menu_item_set_accel_label'
+  - Added 'xfce_gtk_accel_group_connect_action_entries'
+- renamed 'xfce_gtk_accel_group_append' to
+  'xfce_gtk_accel_map_add_entries' and modified internals accordingly.
+  No automatic add to an accel_group any more, since this may lead to
+  double-activation in some cases.
+- Add "xfce_gtk_accel_group_disconnect_action_entries" to be able to
+  revert "xfce_gtk_accel_group_connect_action_entries"
+- Add title to xfce_dialog_confirm_close_tabs
+- Add new methods to libxfce4ui.symbols. Followup of
+  231e57daccb5946379f413ed440629c32025f6f3
+- Translation Updates:
+  Albanian, Amharic, Arabic, Armenian, Armenian (Armenia), Basque,
+  Belarusian, Bengali, Bulgarian, Catalan, Chinese (China), Chinese (Hong
+  Kong), Chinese (Taiwan), Croatian, Czech, Danish, Dutch, Eastern
+  Armenian, English (Australia), English (United Kingdom), Estonian,
+  Finnish, French, Galician, German, Greek, Hebrew, Hungarian, Icelandic,
+  Indonesian, Interlingue, Italian, Japanese, Kazakh, Korean, Latvian,
+  Lithuanian, Malay, Norwegian Bokmål, Norwegian Nynorsk, Occitan (post
+  1500), Polish, Portuguese, Portuguese (Brazil), Romanian, Russian,
+  Serbian, Slovak, Slovenian, Spanish, Swedish, Telugu, Thai, Turkish,
+  Uighur, Ukrainian, Welsh
+
 4.15.2
 ======
 - Introduced 'XfceGtkActionEntry' as replacement for the deprecated 'GtkAction',
