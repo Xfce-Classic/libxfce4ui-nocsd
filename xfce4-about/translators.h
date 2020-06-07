@@ -99,8 +99,8 @@ static const TranslatorInfo xfce_translators_cs[] =
 };
 static const TranslatorInfo xfce_translators_cy[] =
 {
-    { "Geraint Rowlands","ansbaradigeidfran@gmail.com", FALSE },
-    { NULL, NULL }
+	{ "Geraint Rowlands","ansbaradigeidfran@gmail.com", FALSE },
+	{ NULL, NULL }
 };
 static const TranslatorInfo xfce_translators_da[] =
 {
@@ -108,7 +108,7 @@ static const TranslatorInfo xfce_translators_da[] =
 	{ "Chris Darnell","chris@cedeel.com", FALSE },
 	{ "Linuxbruger","y.z@live.dk", FALSE },
 	{ "Morten Juhl-Johansen Zölde-Fejér","morten@writtenandread.net", FALSE },
-	{ "scootergrisen","scootergrisen@gmail.com", FALSE },
+	{ "scootergrisen","", FALSE },
 	{ NULL, NULL }
 };
 static const TranslatorInfo xfce_translators_de[] =
