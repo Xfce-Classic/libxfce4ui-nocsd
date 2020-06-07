@@ -48,7 +48,7 @@ How to report bugs?
 ===================
 
 Bugs should be reported to the Xfce bug tracking system
-(http://bugzilla.xfce.org, product Libxfce4ui). You will need to
+(http://gitlab.xfce.org/xfce/libxfce4ui/-/issues). You will need to
 create an account for yourself.
 
 Please read the HACKING file for information on where to send

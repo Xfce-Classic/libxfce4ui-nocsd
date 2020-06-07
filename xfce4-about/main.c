@@ -330,7 +330,7 @@ xfce_about_credits (GtkTextBuffer *buffer)
 
   gtk_text_buffer_insert (buffer, &end,
       _("If you know of anyone missing from this list; don't hesitate and "
-        "file a bug on <https://bugzilla.xfce.org> ."), -1);
+        "file a bug on <https://gitlab.xfce.org/xfce/libxfce4ui/-/issues> ."), -1);
   gtk_text_buffer_insert (buffer, &end, "\n\n", -1);
   gtk_text_buffer_insert_with_tags (buffer, &end,
       _("Thanks to all who helped making this software available!"), -1, title, NULL);
