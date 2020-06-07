@@ -259,10 +259,14 @@ xfce_about_credits_translators (GtkTextBuffer *buffer,
 
           gtk_text_buffer_insert_with_tags (buffer, end, "\t", -1, italic, NULL);
           gtk_text_buffer_insert_with_tags (buffer, end, member->name, -1, italic, NULL);
-          gtk_text_buffer_insert_with_tags (buffer, end, " <", -1, italic, NULL);
-          gtk_text_buffer_insert_with_tags (buffer, end, member->email, -1, italic, NULL);
-          gtk_text_buffer_insert_with_tags (buffer, end, ">\n", -1, italic, NULL);
-
+          if (g_strcmp0 (member->email, "") != 0)
+            {
+              gtk_text_buffer_insert_with_tags (buffer, end, " <", -1, italic, NULL);
+              gtk_text_buffer_insert_with_tags (buffer, end, member->email, -1, italic, NULL);
+              gtk_text_buffer_insert_with_tags (buffer, end, ">\n", -1, italic, NULL);
+            }
+          else
+            gtk_text_buffer_insert_with_tags (buffer, end, "\n", -1, italic, NULL);
         }
 
       gtk_text_buffer_insert (buffer, end, "\n", -1);
@@ -305,9 +309,14 @@ xfce_about_credits (GtkTextBuffer *buffer)
           for (user = group->contributors; user->name != NULL; user++)
             {
               gtk_text_buffer_insert_with_tags (buffer, &end, user->name, -1, indent, NULL);
-              gtk_text_buffer_insert (buffer, &end, " <", -1);
-              gtk_text_buffer_insert (buffer, &end, user->email, -1);
-              gtk_text_buffer_insert (buffer, &end, ">\n", -1);
+              if (g_strcmp0 (user->email, "") != 0)
+                {
+                  gtk_text_buffer_insert (buffer, &end, " <", -1);
+                  gtk_text_buffer_insert (buffer, &end, user->email, -1);
+                  gtk_text_buffer_insert (buffer, &end, ">\n", -1);
+                }
+              else
+                gtk_text_buffer_insert (buffer, &end, "\n", -1);
             }
         }
       else
