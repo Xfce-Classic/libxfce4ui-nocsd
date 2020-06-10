@@ -4,7 +4,7 @@
 # 
 # Translators:
 # Ammuu5, 2017,2019
-# Jiri Grönroos <jiri.gronroos@iki.fi>, 2013,2019
+# Jiri Grönroos <jiri.gronroos@iki.fi>, 2013,2019-2020
 # Juhani Numminen <juhaninumminen0@gmail.com>, 2019
 # Lasse Liehu <larso@gmx.com>, 2015
 # Pasi Lallinaho <pasi@shimmerproject.org>, 2014-2015,2017
@@ -12,9 +12,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-06 00:30+0200\n"
-"PO-Revision-Date: 2020-04-05 22:30+0000\n"
-"Last-Translator: Xfce Bot <transifex@xfce.org>\n"
+"POT-Creation-Date: 2020-06-08 00:45+0200\n"
+"PO-Revision-Date: 2020-06-10 21:01+0000\n"
+"Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish (http://www.transifex.com/xfce/libxfce4ui/language/fi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -43,7 +43,7 @@ msgstr "Sinut ohjataan verkkosivuille, joilla ylläpidetään käyttöohjeita ja
 
 #. Create cancel button
 #: ../libxfce4ui/xfce-dialogs.c:275 ../libxfce4ui/xfce-dialogs.c:533
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:243
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:244
 msgid "_Cancel"
 msgstr "_Peru"
 
@@ -75,20 +75,20 @@ msgstr "Peru"
 
 #: ../libxfce4ui/xfce-dialogs.c:518
 msgid "Close window with multiple tabs?"
-msgstr ""
+msgstr "Suljetaanko ikkuna, jossa on useita välilehtiä?"
 
 #: ../libxfce4ui/xfce-dialogs.c:520
 msgid ""
 "This window has multiple tabs open. Closing this window will also close all "
 "its tabs."
-msgstr ""
+msgstr "Tässä ikkunassa on useita avoinna olevia välilehtiä. Ikkunan sulkeminen sulkee kaikki ikkunassa olevat välilehdet."
 
 #: ../libxfce4ui/xfce-dialogs.c:523
 #, c-format
 msgid ""
 "This window has %d tabs open. Closing this window will also close all its "
 "tabs."
-msgstr ""
+msgstr "Tässä ikkunassa on %d avoinna olevaa välilehteä. Ikkunan sulkeminen sulkee kaikki ikkunassa olevat välilehdet."
 
 #: ../libxfce4ui/xfce-dialogs.c:529
 msgid "Warning"
@@ -152,13 +152,13 @@ msgstr ""
 #. the string is too long
 #: ../libxfce4ui/xfce-filename-input.c:422
 msgid "Filename is too long"
-msgstr ""
+msgstr "Tiedostonimi on liian pitkä"
 
 #. the string starts or ends with whitespace
 #. * this does not make the filename invalid, but we warn the user about it
 #: ../libxfce4ui/xfce-filename-input.c:430
 msgid "Filenames should not start or end with a space"
-msgstr ""
+msgstr "Tiedostonimien ei tule alkaa tai päättyä välilyöntiin"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 #, c-format
@@ -218,46 +218,46 @@ msgstr "Ristiriita pikanäppäimellä %s"
 msgid "This shortcut is already being used for something else."
 msgstr "Pikanäppäin on jo liitetty toiseen toimintoon."
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:210
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:211
 msgid "Window Manager Action Shortcut"
 msgstr "Ikkunointiohjelman toimintopikanäppäin"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:213
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:227
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:214
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:228
 msgid "action"
 msgstr "toiminto"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:217
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:218
 msgid "Command Shortcut"
 msgstr "Komennon pikanäppäin"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:220
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:221
 msgid "command"
 msgstr "komento"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:224
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:225
 msgid "Shortcut"
 msgstr "Pikanäppäin"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:258
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:259
 #, c-format
 msgid "Press now the keyboard keys you want to use to trigger the %s '%s'."
 msgstr "Paina nyt näppäimiä joilla haluat käynnistää toiminnon %s '%s'."
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:278
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:279
 msgid "Shortcut:"
 msgstr "Pikanäppäin:"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:283
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:424
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:284
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:436
 msgid "No keys pressed yet, proceed."
 msgstr "Mitään näppäimiä ei ole vielä painettu, jatka."
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:331
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:332
 msgid "Could not grab the keyboard."
 msgstr "Näppäimistöä ei voitu kaapata."
 
@@ -707,23 +707,23 @@ msgstr "Kiitos kiinnostuksestasi Xfce:tä kohtaan."
 msgid "The Xfce Development Team"
 msgstr "Xfce:n kehitystiimi"
 
-#: ../xfce4-about/main.c:323
+#: ../xfce4-about/main.c:332
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
-"on <https://bugzilla.xfce.org> ."
-msgstr "Jos tiedät jonkun puuttuvan listalta, älä epäröi tehdä vikaraporttia osoitteessa https://bugzilla.xfce.org."
+"on <https://gitlab.xfce.org/xfce/libxfce4ui/-/issues> ."
+msgstr ""
 
-#: ../xfce4-about/main.c:327
+#: ../xfce4-about/main.c:336
 msgid "Thanks to all who helped making this software available!"
 msgstr "Kiitos kaikille, jotka auttoivat näiden ohjelmistojen kehitystyössä."
 
-#: ../xfce4-about/main.c:344
+#: ../xfce4-about/main.c:353
 msgid ""
 "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
 msgstr "Xfce 4:n tekijänoikeuden omistaa Olivier Fourdan (fourdan@xfce.org). Sen osien tekijänoikeudet kuuluvat niiden kehittäjille."
 
-#: ../xfce4-about/main.c:349
+#: ../xfce4-about/main.c:358
 msgid ""
 "The libxfce4ui, libxfce4util and exo packages are distributed under the "
 "terms of the GNU Library General Public License as published by the Free "
@@ -731,7 +731,7 @@ msgid ""
 "any later version."
 msgstr "Ohjelmistot libxfce4ui, libxfce4util ja exo on julkaistu Free Software Foundationin julkaiseman GNU LGPL -lisenssin version 2 tai halutessasi uudemman ehdoilla."
 
-#: ../xfce4-about/main.c:356
+#: ../xfce4-about/main.c:365
 msgid ""
 "The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, "
 "xfce4-settings, xfconf, xfdesktop and xfwm4 are distributed under the terms "
@@ -740,37 +740,37 @@ msgid ""
 "version."
 msgstr "Ohjelmistot thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfconf, xfdesktop ja xfwm4 on julkaistu Free Software Foundationin julkaiseman GNU GPL -lisenssin version 2 tai halutessasi uudemman ehdoilla."
 
-#: ../xfce4-about/main.c:503
+#: ../xfce4-about/main.c:512
 #, c-format
 msgid "Type '%s --help' for usage information."
 msgstr "Kirjoita '%s --help' nähdäksesi käyttöohjeen."
 
-#: ../xfce4-about/main.c:509
+#: ../xfce4-about/main.c:518
 msgid "Unable to initialize GTK+."
 msgstr "GTK+:n alustus epäonnistui."
 
-#: ../xfce4-about/main.c:518
+#: ../xfce4-about/main.c:527
 msgid "The Xfce development team. All rights reserved."
 msgstr "Xfce:n kehitystiimi. Kaikki oikeudet pidätetään."
 
-#: ../xfce4-about/main.c:519
+#: ../xfce4-about/main.c:528
 #, c-format
 msgid "Please report bugs to <%s>."
 msgstr "Ilmoita vioista osoitteessa %s."
 
-#: ../xfce4-about/main.c:529
+#: ../xfce4-about/main.c:538
 msgid "Failed to load interface"
 msgstr "Käyttöliittymän lataus epäonnistui."
 
 #. I18N: first %s will be replaced by the version, second by
 #. * the name of the distribution (--with-vendor-info=NAME)
-#: ../xfce4-about/main.c:543
+#: ../xfce4-about/main.c:552
 #, c-format
 msgid "Version %s, distributed by %s"
 msgstr "Versio %s, jakelu %s"
 
 #. I18N: %s will be replaced by the Xfce version number
-#: ../xfce4-about/main.c:547
+#: ../xfce4-about/main.c:556
 #, c-format
 msgid "Version %s"
 msgstr "Versio %s"
@@ -824,7 +824,7 @@ msgstr "nimike"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:4
 msgid "OS Name"
-msgstr ""
+msgstr "Käyttöjärjestelmän nimi"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:5
 msgid "Device"
@@ -832,23 +832,23 @@ msgstr "Laite"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:6
 msgid "Memory"
-msgstr ""
+msgstr "Muisti"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:7
 msgid "CPU"
-msgstr ""
+msgstr "Suoritin"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:8
 msgid "OS Type"
-msgstr ""
+msgstr "Käyttöjärjestelmän tyyppi"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:9
 msgid "Xfce Version"
-msgstr ""
+msgstr "Xfce:n versio"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:10
 msgid "Distributor"
-msgstr ""
+msgstr "Jakelija"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:11
 msgid "System"
@@ -889,7 +889,7 @@ msgstr "Tuntematon"
 #: ../xfce4-about/system-info.c:330
 #, c-format
 msgid "%s; Build ID: %s"
-msgstr ""
+msgstr "%s; Koostustunniste: %s"
 
 #: ../tests/test-ui.c:111
 #, c-format
