@@ -10,9 +10,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-06 00:30+0200\n"
-"PO-Revision-Date: 2020-04-05 22:30+0000\n"
-"Last-Translator: Xfce Bot <transifex@xfce.org>\n"
+"POT-Creation-Date: 2020-06-08 00:45+0200\n"
+"PO-Revision-Date: 2020-06-19 05:37+0000\n"
+"Last-Translator: Daniel Muñiz Fontoira <dani@damufo.com>\n"
 "Language-Team: Galician (http://www.transifex.com/xfce/libxfce4ui/language/gl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -41,7 +41,7 @@ msgstr "Redirixiráselle ao sitio web de documentación no que se manteñen e tr
 
 #. Create cancel button
 #: ../libxfce4ui/xfce-dialogs.c:275 ../libxfce4ui/xfce-dialogs.c:533
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:243
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:244
 msgid "_Cancel"
 msgstr "_Cancelar"
 
@@ -216,46 +216,46 @@ msgstr "Accións en conflito para %s"
 msgid "This shortcut is already being used for something else."
 msgstr "Este atallo xa está sendo usado por algo."
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:210
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:211
 msgid "Window Manager Action Shortcut"
 msgstr "Atallo de acción do xestor de xanelas"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:213
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:227
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:214
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:228
 msgid "action"
 msgstr "acción"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:217
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:218
 msgid "Command Shortcut"
 msgstr "Atallo de orde"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:220
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:221
 msgid "command"
 msgstr "orde"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:224
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:225
 msgid "Shortcut"
 msgstr "Atallo"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:258
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:259
 #, c-format
 msgid "Press now the keyboard keys you want to use to trigger the %s '%s'."
 msgstr "Agora prema as teclas de teclado que desexa usar para activar a %s «%s»."
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:278
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:279
 msgid "Shortcut:"
 msgstr "Atallo:"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:283
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:424
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:284
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:436
 msgid "No keys pressed yet, proceed."
 msgstr "Aínda non se premeu ningunha tecla, continúe."
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:331
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:332
 msgid "Could not grab the keyboard."
 msgstr "Non se puido obter o teclado."
 
@@ -705,23 +705,23 @@ msgstr "Grazas polo seu interese en Xfce."
 msgid "The Xfce Development Team"
 msgstr "O equipo de desenvolvemento de Xfce"
 
-#: ../xfce4-about/main.c:323
+#: ../xfce4-about/main.c:332
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
-"on <https://bugzilla.xfce.org> ."
-msgstr "Se considera que falta algo nesta lista; non dubide e redacte un informe de fallos a través de <https://bugzilla.xfce.org>."
+"on <https://gitlab.xfce.org/xfce/libxfce4ui/-/issues> ."
+msgstr "Se considera que falta algo nesta lista; non dubide e redacte un informe de fallos a través de  <https://gitlab.xfce.org/xfce/libxfce4ui/-/issues>."
 
-#: ../xfce4-about/main.c:327
+#: ../xfce4-about/main.c:336
 msgid "Thanks to all who helped making this software available!"
 msgstr "Grazas a todas as persoas que axudaron a facer que este software estea dispoñíbel!"
 
-#: ../xfce4-about/main.c:344
+#: ../xfce4-about/main.c:353
 msgid ""
 "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
 msgstr "Xfce 4 ten copyright de Olivier Fourdan (fourdan@xfce.org). Os diferentes compoñentes de teñen copyright dos seus respectivos autores."
 
-#: ../xfce4-about/main.c:349
+#: ../xfce4-about/main.c:358
 msgid ""
 "The libxfce4ui, libxfce4util and exo packages are distributed under the "
 "terms of the GNU Library General Public License as published by the Free "
@@ -729,7 +729,7 @@ msgid ""
 "any later version."
 msgstr "Os paquetes libxfce4ui, libxfce4util e exo distribúense baixo os termos da Licenza pública xeral da biblioteca GNU tal e como a publica a Free Software Foundation; xa sexa a versión 2 da licenza, ou (segundo a súa elección) calquera versión posterior."
 
-#: ../xfce4-about/main.c:356
+#: ../xfce4-about/main.c:365
 msgid ""
 "The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, "
 "xfce4-settings, xfconf, xfdesktop and xfwm4 are distributed under the terms "
@@ -738,37 +738,37 @@ msgid ""
 "version."
 msgstr "Os paquetes thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfconf, xfdesktop e xfwm4 distribúense baixo os termos da licenza pública xeral GNU tal como foi publicada pola Free Software Foundation; xa sexa a versión 2 da licenza, ou (segundo a súa elección) calquera versión posterior."
 
-#: ../xfce4-about/main.c:503
+#: ../xfce4-about/main.c:512
 #, c-format
 msgid "Type '%s --help' for usage information."
 msgstr "Escriba «%s --help» para obter información sobre o modo de uso."
 
-#: ../xfce4-about/main.c:509
+#: ../xfce4-about/main.c:518
 msgid "Unable to initialize GTK+."
 msgstr "Non se puido inicializar GTK+."
 
-#: ../xfce4-about/main.c:518
+#: ../xfce4-about/main.c:527
 msgid "The Xfce development team. All rights reserved."
 msgstr "O equipo de desenvolvemento de Xfce. Todos os dereitos reservados."
 
-#: ../xfce4-about/main.c:519
+#: ../xfce4-about/main.c:528
 #, c-format
 msgid "Please report bugs to <%s>."
 msgstr "Por favor, comunique os fallos a <%s>."
 
-#: ../xfce4-about/main.c:529
+#: ../xfce4-about/main.c:538
 msgid "Failed to load interface"
 msgstr "Produciuse un fallo ao cargar a interface"
 
 #. I18N: first %s will be replaced by the version, second by
 #. * the name of the distribution (--with-vendor-info=NAME)
-#: ../xfce4-about/main.c:543
+#: ../xfce4-about/main.c:552
 #, c-format
 msgid "Version %s, distributed by %s"
 msgstr "Versión %s, distribuída por %s"
 
 #. I18N: %s will be replaced by the Xfce version number
-#: ../xfce4-about/main.c:547
+#: ../xfce4-about/main.c:556
 #, c-format
 msgid "Version %s"
 msgstr "Versión %s"
