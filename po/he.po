@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-06-08 00:45+0200\n"
-"PO-Revision-Date: 2020-06-22 20:03+0000\n"
+"PO-Revision-Date: 2020-06-23 08:43+0000\n"
 "Last-Translator: Omer\n"
 "Language-Team: Hebrew (http://www.transifex.com/xfce/libxfce4ui/language/he/)\n"
 "MIME-Version: 1.0\n"
@@ -618,7 +618,7 @@ msgstr "מנהל קבצים מודרני עבור שולחן עבודה Unix/Lin
 
 #: ../xfce4-about/main.c:144
 msgid "Volume manager"
-msgstr "מנהל ווליום"
+msgstr "מנהל עוצמה"
 
 #: ../xfce4-about/main.c:145
 msgid "Automatic management of removable drives and media for Thunar."
@@ -668,11 +668,11 @@ msgstr "ספריית תפריט"
 
 #: ../xfce4-about/main.c:168
 msgid "A freedesktop.org compliant menu implementation based on GLib and GIO."
-msgstr "יישום תפריט תואם freedesktop.org מבוסס על GLib ו-GIO."
+msgstr "יישום תפריט תואם freedesktop.org המבוסס על GLib ועל GIO."
 
 #: ../xfce4-about/main.c:172
 msgid "Thumbnails service"
-msgstr "שירות תמונות מוקטנות"
+msgstr "שירות תמונות ממוזערות"
 
 #: ../xfce4-about/main.c:173
 msgid ""
@@ -730,7 +730,7 @@ msgid ""
 "terms of the GNU Library General Public License as published by the Free "
 "Software Foundation; either version 2 of the License, or (at your option) "
 "any later version."
-msgstr "החבילות libxfce4ui, libxfce4util ו-exo מופצות תחת התנאים של ספריית GNU רישיון ציבורי כללי כפי שפורסם על ידי קרן תוכנה חופשית: מהדורה 2 של הרישיון, או (לאפשרותך) כל מהדורה מאוחרת יותר."
+msgstr "החבילות libxfce4ui, libxfce4util וגם exo מופצות תחת התנאים של ספריית GNU רישיון ציבורי כללי כפי שפורסם על ידי קרן תוכנה חופשית: מהדורה 2 של הרישיון, או (לבחירתך) כל מהדורה מאוחרת יותר."
 
 #: ../xfce4-about/main.c:365
 msgid ""
@@ -739,16 +739,16 @@ msgid ""
 "of the GNU General Public License as published by the Free Software "
 "Foundation; either version 2 of the License, or (at your option) any later "
 "version."
-msgstr "החבילות thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfconf, xfdesktop ו-xfwm4 מופצות תחת התנאים של GNU רישיון ציבורי כללי כפי שפורסם על ידי קרן תוכנה חופשית: מהדורה 2 של הרישיון, או (לאפשרותך) כל מהדורה מאוחרת יותר."
+msgstr "החבילות thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfconf, xfdesktop וגם xfwm4 מופצות תחת התנאים של GNU רישיון ציבורי כללי כפי שפורסם על ידי קרן תוכנה חופשית: מהדורה 2 של הרישיון, או (לבחירתך) כל מהדורה מאוחרת יותר."
 
 #: ../xfce4-about/main.c:512
 #, c-format
 msgid "Type '%s --help' for usage information."
-msgstr "הקלד '%s --help' למידע שימוש."
+msgstr "הקלד \"%s --help\" למידע שימוש."
 
 #: ../xfce4-about/main.c:518
 msgid "Unable to initialize GTK+."
-msgstr "לא מסוגל לאתחל GTK+ "
+msgstr "לא מסוגל לאתחל את GTK+ "
 
 #: ../xfce4-about/main.c:527
 msgid "The Xfce development team. All rights reserved."
@@ -757,11 +757,11 @@ msgstr "The Xfce development team. All rights reserved."
 #: ../xfce4-about/main.c:528
 #, c-format
 msgid "Please report bugs to <%s>."
-msgstr "אנא דווח באגים ל <%s>."
+msgstr "אנא דווח על באגים ל־ <%s>."
 
 #: ../xfce4-about/main.c:538
 msgid "Failed to load interface"
-msgstr "נכשל להעלות ממשק"
+msgstr "נכשלה טעינת הממשק"
 
 #. I18N: first %s will be replaced by the version, second by
 #. * the name of the distribution (--with-vendor-info=NAME)
@@ -890,7 +890,7 @@ msgstr "לא ידוע"
 #: ../xfce4-about/system-info.c:330
 #, c-format
 msgid "%s; Build ID: %s"
-msgstr "%s; Build ID: %s"
+msgstr "%s; זהות Build: %s"
 
 #: ../tests/test-ui.c:111
 #, c-format
@@ -901,7 +901,7 @@ msgstr "קובץ בשם \"%s\" כבר קיים בספרייה זו, הקובץ �
 
 #: ../tests/test-ui.c:122
 msgid "Failed to migrate the old panel configuration"
-msgstr "נכשלל לייבא תצורת לוח ישנה"
+msgstr "נכשל ייבוא תצורת לוח ישנה"
 
 #: ../tests/test-ui.c:170 ../tests/test-ui.c:195
 msgid "Customize settings stored by Xfconf"
