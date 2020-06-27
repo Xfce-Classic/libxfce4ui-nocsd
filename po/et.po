@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-06 00:30+0200\n"
-"PO-Revision-Date: 2020-06-06 22:17+0000\n"
+"POT-Creation-Date: 2020-06-08 00:45+0200\n"
+"PO-Revision-Date: 2020-06-27 12:09+0000\n"
 "Last-Translator: Priit Jõerüüt <transifex@joeruut.com>\n"
 "Language-Team: Estonian (http://www.transifex.com/xfce/libxfce4ui/language/et/)\n"
 "MIME-Version: 1.0\n"
@@ -39,7 +39,7 @@ msgstr "Sind suunatakse edasi meie dokumentatsiooni veebisaiti, kus juhendeid ja
 
 #. Create cancel button
 #: ../libxfce4ui/xfce-dialogs.c:275 ../libxfce4ui/xfce-dialogs.c:533
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:243
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:244
 msgid "_Cancel"
 msgstr "_Loobu"
 
@@ -138,7 +138,7 @@ msgstr "Sessioonihaldur ei leidnud kehtivat klienditunnust"
 msgid ""
 "Working directory \"%s\" does not exist. It won't be used when spawning "
 "\"%s\"."
-msgstr ""
+msgstr "Töökausta \"%s\" pole olemas. Seega teda ei kasutata \"%s\" käivitamisel."
 
 #. the string contains a directory separator
 #: ../libxfce4ui/xfce-filename-input.c:414
@@ -198,7 +198,7 @@ msgstr "Seda kiirklahvi juba kasutatakse '%s' tegevuse poolt. Mis tegevuse jaoks
 #. Warn the user
 #: ../libxfce4kbd-private/xfce-shortcuts.c:110
 msgid "Please use another key combination."
-msgstr "Palun kasuta teistsugust klahvikombiatsiooni"
+msgstr "Palun kasuta teistsugust klahvikombiatsiooni."
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:111
 #, c-format
@@ -214,52 +214,52 @@ msgstr "Vastuolulised tegevused %s jaoks"
 msgid "This shortcut is already being used for something else."
 msgstr "Seda kiirklahvi juba kasutatakse millegi muu jaoks."
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:210
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:211
 msgid "Window Manager Action Shortcut"
 msgstr "Aknahalduri tegevuste kiirklahv"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:213
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:227
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:214
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:228
 msgid "action"
 msgstr "tegevus"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:217
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:218
 msgid "Command Shortcut"
 msgstr "Käskude kiirklahv"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:220
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:221
 msgid "command"
 msgstr "käsk"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:224
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:225
 msgid "Shortcut"
 msgstr "Kiirklahv"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:258
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:259
 #, c-format
 msgid "Press now the keyboard keys you want to use to trigger the %s '%s'."
-msgstr ""
+msgstr "Vajuta nüüd neid klaviatuuriklahve, millega soovid käivitada %s '%s'."
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:278
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:279
 msgid "Shortcut:"
 msgstr "Otsetee:"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:283
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:424
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:284
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:436
 msgid "No keys pressed yet, proceed."
 msgstr "Sa pole veel ühtegi klahvi vajutanud, aga tee seda nüüd."
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:331
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:332
 msgid "Could not grab the keyboard."
 msgstr "Ei õnnestunud klahvivajutust fikseerida."
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:36
 msgid "Window operations menu"
-msgstr ""
+msgstr "Aknatoimingute menüü"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:37
 msgid "Up"
@@ -279,19 +279,19 @@ msgstr "Parem"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:42
 msgid "Cycle windows"
-msgstr ""
+msgstr "Lappa aknaid läbi"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:43
 msgid "Cycle windows (Reverse)"
-msgstr ""
+msgstr "Lappa aknaid läbi (tagurpidi)"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:44
 msgid "Switch window for same application"
-msgstr ""
+msgstr "Vaheta ühe rakenduse aknaid"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:45
 msgid "Switch application"
-msgstr ""
+msgstr "Vaheta rakendust"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:46
 msgid "Close window"
@@ -347,15 +347,15 @@ msgstr "Täida aken"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:59
 msgid "Fill window horizontally"
-msgstr ""
+msgstr "Täida aken horisontaalselt"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:60
 msgid "Fill window vertically"
-msgstr ""
+msgstr "Täida aken vertikaalselt"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:61
 msgid "Toggle above"
-msgstr ""
+msgstr "Klõpsi üles"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:62
 msgid "Toggle fullscreen"
@@ -435,35 +435,35 @@ msgstr "Saada aken tööruumi 12"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:81
 msgid "Tile window to the top"
-msgstr ""
+msgstr "Paani aken üles"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:82
 msgid "Tile window to the bottom"
-msgstr ""
+msgstr "Paani aken alla"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:83
 msgid "Tile window to the left"
-msgstr ""
+msgstr "Paani aken vasakule"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:84
 msgid "Tile window to the right"
-msgstr ""
+msgstr "Paani aken paremale"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:85
 msgid "Tile window to the top-left"
-msgstr ""
+msgstr "Paani aken üles vasakule"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:86
 msgid "Tile window to the top-right"
-msgstr ""
+msgstr "Paani aken üles paremale"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:87
 msgid "Tile window to the bottom-left"
-msgstr ""
+msgstr "Paani aken alla vasakule"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:88
 msgid "Tile window to the bottom-right"
-msgstr ""
+msgstr "Paani aken alla paremale"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:89
 msgid "Show desktop"
@@ -589,7 +589,7 @@ msgstr "Riba"
 msgid ""
 "Program launchers, window buttons, applications menu, workspace switcher and"
 " more."
-msgstr ""
+msgstr "Rakenduste käivitajad, akende nupud, rakenduste menüüd, tööala vahetaja ja palju muud."
 
 #: ../xfce4-about/main.c:134
 msgid "Desktop Manager"
@@ -599,7 +599,7 @@ msgstr "Töölaua haldur"
 msgid ""
 "Sets the background color or image with optional application menu or icons "
 "for minimized applications or launchers, devices and folders."
-msgstr ""
+msgstr "Määrab taustavärvi või taustapildi ning samasse saad soovi korral lisada rakenduste menüü või rakenduste, käivitajate ja kaustade vähendatud ikoonid."
 
 #: ../xfce4-about/main.c:139
 msgid "File Manager"
@@ -703,23 +703,23 @@ msgstr "Täname, et sind huvitab Xfce töölauakeskkond.."
 msgid "The Xfce Development Team"
 msgstr "Xfce arendusmeeskond"
 
-#: ../xfce4-about/main.c:323
+#: ../xfce4-about/main.c:332
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
-"on <https://bugzilla.xfce.org> ."
-msgstr "Kui sa tead kedagi, kes on siit loendist puudu, siis ära kõhkle ja esita vastav veateade <https://bugzilla.xfce.org> saidis."
+"on <https://gitlab.xfce.org/xfce/libxfce4ui/-/issues> ."
+msgstr "Kui sa tead kedagi, kes on siit loendist puudu, siis ära kõhkle esitamast veateadet meie arendussaidis <https://gitlab.xfce.org/xfce/libxfce4ui/-/issues> ."
 
-#: ../xfce4-about/main.c:327
+#: ../xfce4-about/main.c:336
 msgid "Thanks to all who helped making this software available!"
-msgstr "Suur tänu kõigile, kes on selle tarkvara loonud ning meile saadavaks teinud."
+msgstr "Suur tänu kõigile, kes on selle tarkvara loonud ning meile kasutatavaks teinud!"
 
-#: ../xfce4-about/main.c:344
+#: ../xfce4-about/main.c:353
 msgid ""
 "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
 msgstr "Xfce 4 autoriõigused kuuluvad Olivier Fourdan'ile (fourdan@xfce.org). Erinevate komponentide autoriõigused kuuluvad nende vastavatele autoritele."
 
-#: ../xfce4-about/main.c:349
+#: ../xfce4-about/main.c:358
 msgid ""
 "The libxfce4ui, libxfce4util and exo packages are distributed under the "
 "terms of the GNU Library General Public License as published by the Free "
@@ -727,7 +727,7 @@ msgid ""
 "any later version."
 msgstr "Libxfce4ui, libxfce4util ja exo teegid on levitatud Vaba Tarkvara Fondi poolt avaldatud GNU Vähem Üldise Avaliku Litsentsi alusel (Free Software Foundation GNU LGPL). Litsentsi versiooniks võib olla 2 või sinu soovil ka mõni hilisem versioon."
 
-#: ../xfce4-about/main.c:356
+#: ../xfce4-about/main.c:365
 msgid ""
 "The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, "
 "xfce4-settings, xfconf, xfdesktop and xfwm4 are distributed under the terms "
@@ -736,37 +736,37 @@ msgid ""
 "version."
 msgstr "Rakendused thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfconf, xfdesktop ja xfwm4 on levitatud Vaba Tarkvara Fondi poolt avaldatud GNU Üldise Avaliku Litsentsi alusel (Free Software Foundation GNU GPL). Litsentsi versiooniks võib olla 2 või sinu soovil ka mõni hilisem versioon."
 
-#: ../xfce4-about/main.c:503
+#: ../xfce4-about/main.c:512
 #, c-format
 msgid "Type '%s --help' for usage information."
-msgstr "Trüki „%s --help” kasutusjuhise saamiseks"
+msgstr "Trüki „%s --help” kasutusjuhise saamiseks."
 
-#: ../xfce4-about/main.c:509
+#: ../xfce4-about/main.c:518
 msgid "Unable to initialize GTK+."
 msgstr "GTK+ initsialiseerimine ei õnnestunud."
 
-#: ../xfce4-about/main.c:518
+#: ../xfce4-about/main.c:527
 msgid "The Xfce development team. All rights reserved."
 msgstr "Xfce arendusmeeskond. Kõik õigused kaitstud."
 
-#: ../xfce4-about/main.c:519
+#: ../xfce4-about/main.c:528
 #, c-format
 msgid "Please report bugs to <%s>."
 msgstr "Palun teata vigadest aadressil <%s>."
 
-#: ../xfce4-about/main.c:529
+#: ../xfce4-about/main.c:538
 msgid "Failed to load interface"
 msgstr "Liidese laadimine ebaõnnestus"
 
 #. I18N: first %s will be replaced by the version, second by
 #. * the name of the distribution (--with-vendor-info=NAME)
-#: ../xfce4-about/main.c:543
+#: ../xfce4-about/main.c:552
 #, c-format
 msgid "Version %s, distributed by %s"
 msgstr "Versioon %s %s'i distribitsioonis"
 
 #. I18N: %s will be replaced by the Xfce version number
-#: ../xfce4-about/main.c:547
+#: ../xfce4-about/main.c:556
 #, c-format
 msgid "Version %s"
 msgstr "Versioon %s"
@@ -816,7 +816,7 @@ msgstr "Teave Xfce töölauakeskkonna kohta"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:3
 msgid "label"
-msgstr "Silt"
+msgstr "silt"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:4
 msgid "OS Name"
