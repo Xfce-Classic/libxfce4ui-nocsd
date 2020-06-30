@@ -6,14 +6,14 @@
 # Edin Veskovic <edin.lockedin@gmail.com>, 2019-2020
 # Edin Veskovic <edin.lockedin@gmail.com>, 2015,2017
 # Edin Veskovic <edin.lockedin@gmail.com>, 2014
-# Ivica  Kolić <ikoli@yahoo.com>, 2013-2016,2019
+# Ivica  Kolić <ikoli@yahoo.com>, 2013-2016,2019-2020
 msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-06 00:30+0200\n"
-"PO-Revision-Date: 2020-04-05 22:30+0000\n"
-"Last-Translator: Xfce Bot <transifex@xfce.org>\n"
+"POT-Creation-Date: 2020-06-08 00:45+0200\n"
+"PO-Revision-Date: 2020-06-30 16:13+0000\n"
+"Last-Translator: Ivica  Kolić <ikoli@yahoo.com>\n"
 "Language-Team: Croatian (http://www.transifex.com/xfce/libxfce4ui/language/hr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -42,7 +42,7 @@ msgstr "Biti ćete preusmjereni na web stranicu dokumentacije gdje se stranice p
 
 #. Create cancel button
 #: ../libxfce4ui/xfce-dialogs.c:275 ../libxfce4ui/xfce-dialogs.c:533
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:243
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:244
 msgid "_Cancel"
 msgstr "_Otkaži"
 
@@ -151,13 +151,13 @@ msgstr ""
 #. the string is too long
 #: ../libxfce4ui/xfce-filename-input.c:422
 msgid "Filename is too long"
-msgstr ""
+msgstr "Datotečno ime je predugo"
 
 #. the string starts or ends with whitespace
 #. * this does not make the filename invalid, but we warn the user about it
 #: ../libxfce4ui/xfce-filename-input.c:430
 msgid "Filenames should not start or end with a space"
-msgstr ""
+msgstr "Datotečna imena ne bi trebala započinjati ili završavati razmakom"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 #, c-format
@@ -217,46 +217,46 @@ msgstr "Sukobljene radnje za %s"
 msgid "This shortcut is already being used for something else."
 msgstr "Ovaj prečac je već u upotrebi za nešto drugo."
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:210
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:211
 msgid "Window Manager Action Shortcut"
 msgstr "Prečac radnje upravitelja prozora"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:213
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:227
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:214
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:228
 msgid "action"
 msgstr "radnja"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:217
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:218
 msgid "Command Shortcut"
 msgstr "Prečac naredbe"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:220
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:221
 msgid "command"
 msgstr "naredba"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:224
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:225
 msgid "Shortcut"
 msgstr "Prečac"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:258
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:259
 #, c-format
 msgid "Press now the keyboard keys you want to use to trigger the %s '%s'."
 msgstr "Sada pritisnite tipke tipkovnice koje želite koristiti za pokretanje %s '%s'."
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:278
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:279
 msgid "Shortcut:"
 msgstr "Prečac:"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:283
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:424
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:284
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:436
 msgid "No keys pressed yet, proceed."
 msgstr "Nijedna tipka još nije pritisnuta, nastavite."
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:331
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:332
 msgid "Could not grab the keyboard."
 msgstr "Ne mogu se spojiti na tipkovnicu."
 
@@ -706,23 +706,23 @@ msgstr "Hvala na Vašem interesu za Xfce."
 msgid "The Xfce Development Team"
 msgstr "Xfce razvojni tim"
 
-#: ../xfce4-about/main.c:323
+#: ../xfce4-about/main.c:332
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
-"on <https://bugzilla.xfce.org> ."
-msgstr "Ako znate tko nedostaje sa ovoga popisa, ne oklijevajte i prijavite bug na <https://bugzilla.xfce.org> ."
+"on <https://gitlab.xfce.org/xfce/libxfce4ui/-/issues> ."
+msgstr ""
 
-#: ../xfce4-about/main.c:327
+#: ../xfce4-about/main.c:336
 msgid "Thanks to all who helped making this software available!"
 msgstr "Hvala svima koji su pomogli učiniti ovaj software dostupnim!"
 
-#: ../xfce4-about/main.c:344
+#: ../xfce4-about/main.c:353
 msgid ""
 "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
 msgstr "Nositelj autorskog prava za Xfce 4 je Olivier Fourdan (fourdan@xfce.org). Različite komponente su pod autorskim pravima dotičnih autora."
 
-#: ../xfce4-about/main.c:349
+#: ../xfce4-about/main.c:358
 msgid ""
 "The libxfce4ui, libxfce4util and exo packages are distributed under the "
 "terms of the GNU Library General Public License as published by the Free "
@@ -730,7 +730,7 @@ msgid ""
 "any later version."
 msgstr "Libxfce4ui, libxfce4util i exo paketi distribuiraju se pod uvjetima GNU Library General Public licence objavljene od strane Free Software Foundation; verzija 2 licence ili (po vašem izboru) neka od kasnijih verzija."
 
-#: ../xfce4-about/main.c:356
+#: ../xfce4-about/main.c:365
 msgid ""
 "The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, "
 "xfce4-settings, xfconf, xfdesktop and xfwm4 are distributed under the terms "
@@ -739,37 +739,37 @@ msgid ""
 "version."
 msgstr "Thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfconf, xfdesktop i xfwm4 paketi distribuiraju se pod uvjetima GNU Library General Public licence objavljene od strane Free Software Foundation; verzija 2 licence ili (po vašem izboru) neka od kasnijih verzija."
 
-#: ../xfce4-about/main.c:503
+#: ../xfce4-about/main.c:512
 #, c-format
 msgid "Type '%s --help' for usage information."
 msgstr "Upiši '%s --help za informaciju o uporabi."
 
-#: ../xfce4-about/main.c:509
+#: ../xfce4-about/main.c:518
 msgid "Unable to initialize GTK+."
 msgstr "Nije moguće pokrenuti GTK +."
 
-#: ../xfce4-about/main.c:518
+#: ../xfce4-about/main.c:527
 msgid "The Xfce development team. All rights reserved."
 msgstr "Xfce razvojni tim. Sva prava pridržana."
 
-#: ../xfce4-about/main.c:519
+#: ../xfce4-about/main.c:528
 #, c-format
 msgid "Please report bugs to <%s>."
 msgstr "Molimo prijavite bugove na <%s>."
 
-#: ../xfce4-about/main.c:529
+#: ../xfce4-about/main.c:538
 msgid "Failed to load interface"
 msgstr "Nije uspjelo učitavanje sučelja"
 
 #. I18N: first %s will be replaced by the version, second by
 #. * the name of the distribution (--with-vendor-info=NAME)
-#: ../xfce4-about/main.c:543
+#: ../xfce4-about/main.c:552
 #, c-format
 msgid "Version %s, distributed by %s"
 msgstr "Verzija %s, distribuira %s"
 
 #. I18N: %s will be replaced by the Xfce version number
-#: ../xfce4-about/main.c:547
+#: ../xfce4-about/main.c:556
 #, c-format
 msgid "Version %s"
 msgstr "Verzija %s"
