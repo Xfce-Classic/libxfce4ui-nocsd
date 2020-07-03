@@ -232,17 +232,19 @@ xfce_shortcut_dialog_create_contents (XfceShortcutDialog *dialog,
   gtk_window_set_title (GTK_WINDOW (dialog), title);
   gtk_window_set_icon_name (GTK_WINDOW (dialog), "input-keyboard");
 
+  xfce_titled_dialog_create_action_area (XFCE_TITLED_DIALOG (dialog));
+
   /* Create clear button for xfwm4 */
   if (g_utf8_collate (provider, "xfwm4") == 0)
     {
       button = gtk_button_new_from_icon_name ("edit-clear", GTK_ICON_SIZE_BUTTON);
-      gtk_dialog_add_action_widget (GTK_DIALOG (dialog), button, GTK_RESPONSE_REJECT);
+      xfce_titled_dialog_add_action_widget (XFCE_TITLED_DIALOG (dialog), button, GTK_RESPONSE_REJECT);
       gtk_widget_show (button);
     }
 
   /* Create cancel button */
   button = gtk_button_new_with_mnemonic (_("_Cancel"));
-  gtk_dialog_add_action_widget (GTK_DIALOG (dialog), button, GTK_RESPONSE_CANCEL);
+  xfce_titled_dialog_add_action_widget (XFCE_TITLED_DIALOG (dialog), button, GTK_RESPONSE_CANCEL);
   gtk_widget_show (button);
 
   content_box = gtk_box_new (GTK_ORIENTATION_VERTICAL, 6);
