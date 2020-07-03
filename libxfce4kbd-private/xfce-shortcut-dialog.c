@@ -237,7 +237,8 @@ xfce_shortcut_dialog_create_contents (XfceShortcutDialog *dialog,
   /* Create clear button for xfwm4 */
   if (g_utf8_collate (provider, "xfwm4") == 0)
     {
-      button = gtk_button_new_from_icon_name ("edit-clear", GTK_ICON_SIZE_BUTTON);
+      button = gtk_button_new_from_icon_name ("edit-clear-symbolic", GTK_ICON_SIZE_BUTTON);
+      gtk_button_set_label (GTK_BUTTON (button), _("Clear"));
       xfce_titled_dialog_add_action_widget (XFCE_TITLED_DIALOG (dialog), button, GTK_RESPONSE_REJECT);
       gtk_widget_show (button);
     }
