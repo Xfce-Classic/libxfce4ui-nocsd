@@ -424,10 +424,10 @@ xfce_shortcut_dialog_key_released (XfceShortcutDialog *dialog,
                          TRUE, NULL, NULL, NULL, NULL))
         {
           gdk_seat_ungrab (seat);
-
-          /* Exit dialog with positive response */
-          gtk_dialog_response (GTK_DIALOG (dialog), GTK_RESPONSE_OK);
         }
+
+      /* Exit dialog with positive response */
+      gtk_dialog_response (GTK_DIALOG (dialog), GTK_RESPONSE_OK);
     }
   else
     {
