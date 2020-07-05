@@ -65,6 +65,7 @@ struct _XfceShortcutDialog
   XfceTitledDialog __parent__;
 
   GtkWidget *shortcut_label;
+  GtkWidget *key_box;
 
   gchar     *action_name;
   gchar     *action;
@@ -202,9 +203,11 @@ xfce_shortcut_dialog_create_contents (XfceShortcutDialog *dialog,
   GtkWidget   *label;
   const gchar *action_type;
   const gchar *title;
+  const gchar *icon_name;
   const gchar *explanation_label;
-  gchar       *explanation_label_escaped;
-  gchar       *explanation_label_markup;
+  const gchar *text;
+  const gchar *format;
+  gchar       *markup;
 
   if (g_utf8_collate (provider, "xfwm4") == 0)
     {
@@ -212,6 +215,7 @@ xfce_shortcut_dialog_create_contents (XfceShortcutDialog *dialog,
       /* TRANSLATORS: this string will be used to create an explanation for
        * the user in a following string */
       action_type = _("action");
+      icon_name = "org.xfce.xfwm4";
     }
   else if (g_utf8_collate (provider, "commands") == 0)
     {
@@ -219,6 +223,7 @@ xfce_shortcut_dialog_create_contents (XfceShortcutDialog *dialog,
       /* TRANSLATORS: this string will be used to create an explanation for
        * the user in a following string */
       action_type = _("command");
+      icon_name = "org.xfce.settings.keyboard";
     }
   else
     {
@@ -226,11 +231,12 @@ xfce_shortcut_dialog_create_contents (XfceShortcutDialog *dialog,
       /* TRANSLATORS: this string will be used to create an explanation for
        * the user in a following string */
       action_type = _("action");
+      icon_name = "input-keyboard";
     }
 
   /* Set dialog title */
   gtk_window_set_title (GTK_WINDOW (dialog), title);
-  gtk_window_set_icon_name (GTK_WINDOW (dialog), "input-keyboard");
+  gtk_window_set_icon_name (GTK_WINDOW (dialog), icon_name);
 
   xfce_titled_dialog_create_action_area (XFCE_TITLED_DIALOG (dialog));
 
@@ -248,7 +254,9 @@ xfce_shortcut_dialog_create_contents (XfceShortcutDialog *dialog,
   xfce_titled_dialog_add_action_widget (XFCE_TITLED_DIALOG (dialog), button, GTK_RESPONSE_CANCEL);
   gtk_widget_show (button);
 
-  content_box = gtk_box_new (GTK_ORIENTATION_VERTICAL, 6);
+  content_box = gtk_box_new (GTK_ORIENTATION_VERTICAL, 18);
+  gtk_widget_set_valign (content_box, GTK_ALIGN_CENTER);
+  gtk_widget_set_vexpand (content_box, TRUE);
   gtk_container_set_border_width (GTK_CONTAINER (content_box), 6);
   gtk_container_add (GTK_CONTAINER (gtk_dialog_get_content_area (GTK_DIALOG (dialog))),
                      content_box);
@@ -259,19 +267,14 @@ xfce_shortcut_dialog_create_contents (XfceShortcutDialog *dialog,
    * action name which comes from somewhere else.
    * THE ORDER MUSTN'T BE REVERSED! */
   explanation_label =
-    g_strdup_printf (_("Press now the keyboard keys you want to use to trigger the %s '%s'."),
+    g_strdup_printf (_("Press keyboard keys to trigger the %s '%s'."),
                      action_type, action_name);
-  explanation_label_escaped = g_markup_escape_text (explanation_label, -1);
-  explanation_label_markup = g_strdup_printf ("<i>%s</i>", explanation_label_escaped);
 
-  label = gtk_label_new (NULL);
-  gtk_label_set_markup (GTK_LABEL (label), explanation_label_markup);
+  label = gtk_label_new (explanation_label);
   gtk_label_set_yalign (GTK_LABEL (label), 0.5);
   gtk_label_set_line_wrap (GTK_LABEL (label), TRUE);
   gtk_container_add (GTK_CONTAINER (content_box), label);
   gtk_widget_show (label);
-  g_free (explanation_label_escaped);
-  g_free (explanation_label_markup);
 
   /* Box and labels to display the shortcut currently being grabbed.
    * It will be updated to key-press events. */
@@ -279,15 +282,22 @@ xfce_shortcut_dialog_create_contents (XfceShortcutDialog *dialog,
   gtk_container_add (GTK_CONTAINER (content_box), box);
   gtk_widget_show (box);
 
-  label = gtk_label_new (_("Shortcut:"));
-  gtk_label_set_yalign (GTK_LABEL (label), 0.5);
-  gtk_container_add (GTK_CONTAINER (box), label);
-  gtk_widget_show (label);
+  dialog->key_box = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 12);
+  gtk_widget_set_halign (dialog->key_box, GTK_ALIGN_CENTER);
+  gtk_widget_set_hexpand (dialog->key_box, TRUE);
+  gtk_container_add (GTK_CONTAINER (box), dialog->key_box);
 
-  dialog->shortcut_label = gtk_label_new (_("No keys pressed yet, proceed."));
+  dialog->shortcut_label = gtk_label_new (NULL);
+  text = _("Please press a key");
+  format = "<span size='x-large'><b>%s</b></span>";
+  markup = g_markup_printf_escaped (format, text);
+  gtk_label_set_markup (GTK_LABEL (dialog->shortcut_label), markup);
+  gtk_label_set_xalign (GTK_LABEL (dialog->shortcut_label), 0.5);
   gtk_label_set_yalign (GTK_LABEL (dialog->shortcut_label), 0.5);
+  gtk_widget_set_hexpand (dialog->shortcut_label, TRUE);
   gtk_container_add (GTK_CONTAINER (box), dialog->shortcut_label);
   gtk_widget_show (dialog->shortcut_label);
+  g_free (markup);
 
   /* Connect to key release signal for determining the new shortcut */
   g_signal_connect_swapped (dialog, "key-press-event", G_CALLBACK (xfce_shortcut_dialog_key_pressed), dialog);
@@ -352,8 +362,17 @@ xfce_shortcut_dialog_key_pressed (XfceShortcutDialog *dialog,
   gchar           *text;
   gchar           *escaped_label;
   gchar           *label;
+  gchar          **keys;
+  GtkWidget       *key_label;
+  GtkStyleContext *context;
+  gint             i;
 
+  /* Clean up */
   g_free (dialog->shortcut);
+  gtk_container_foreach (GTK_CONTAINER (dialog->key_box),
+      (GtkCallback) (void (*)(void)) gtk_widget_destroy, NULL);
+  gtk_widget_hide (dialog->shortcut_label);
+  gtk_widget_show (dialog->key_box);
 
   /* Get the keyboard state */
   mod_mask = gtk_accelerator_get_default_mod_mask ();
@@ -389,14 +408,25 @@ xfce_shortcut_dialog_key_pressed (XfceShortcutDialog *dialog,
 
   label = gtk_accelerator_get_label (keyval, modifiers);
   escaped_label = g_markup_escape_text (label, -1);
-  text = g_strdup_printf ("<span size='large'><b>%s</b></span>",
-                          escaped_label);
+  keys = g_strsplit (escaped_label, "+", -1);
 
-  gtk_label_set_markup (GTK_LABEL (dialog->shortcut_label), text);
+  /* Show each key as individual label with the .keycap style class */
+  for (i = 0; i < g_strv_length (keys); i++)
+  {
+    text = g_strdup_printf ("<span size='large'>%s</span>",
+                            keys[i]);
+    key_label = gtk_label_new (NULL);
+    gtk_label_set_markup (GTK_LABEL (key_label), text);
+    context = gtk_widget_get_style_context (key_label);
+    gtk_style_context_add_class (context, "keycap");
+    gtk_widget_show (key_label);
+    gtk_container_add (GTK_CONTAINER (dialog->key_box), key_label);
+    g_free (text);
+  }
 
   g_free (label);
   g_free (escaped_label);
-  g_free (text);
+  g_strfreev (keys);
 
   return FALSE;
 }
@@ -434,9 +464,9 @@ xfce_shortcut_dialog_key_released (XfceShortcutDialog *dialog,
     }
   else
     {
-      /* Clear label */
-      gtk_label_set_markup (GTK_LABEL (dialog->shortcut_label),
-                            _("No keys pressed yet, proceed."));
+      /* Hide keys, show info label */
+      gtk_widget_show (dialog->shortcut_label);
+      gtk_widget_hide (dialog->key_box);
     }
 
   return FALSE;
