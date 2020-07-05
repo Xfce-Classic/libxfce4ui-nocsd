@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-08 00:45+0200\n"
-"PO-Revision-Date: 2020-06-08 11:54+0000\n"
+"POT-Creation-Date: 2020-07-04 12:45+0200\n"
+"PO-Revision-Date: 2020-07-05 10:41+0000\n"
 "Last-Translator: Emanuele Petriglia <transifex@emanuelepetriglia.com>\n"
 "Language-Team: Italian (http://www.transifex.com/xfce/libxfce4ui/language/it/)\n"
 "MIME-Version: 1.0\n"
@@ -42,7 +42,7 @@ msgstr "Si verrà reindirizzati al sito web della documentazione dove le pagine 
 
 #. Create cancel button
 #: ../libxfce4ui/xfce-dialogs.c:275 ../libxfce4ui/xfce-dialogs.c:533
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:244
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:247
 msgid "_Cancel"
 msgstr "A_nnulla"
 
@@ -242,21 +242,25 @@ msgstr "comando"
 msgid "Shortcut"
 msgstr "Scorciatoia"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:259
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:241
+msgid "Clear"
+msgstr "Pulisci"
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:262
 #, c-format
 msgid "Press now the keyboard keys you want to use to trigger the %s '%s'."
 msgstr "Premere i tasti della tastiera da utilizzare per abilitare il %s '%s'"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:279
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:282
 msgid "Shortcut:"
 msgstr "Scorciatoia:"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:284
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:436
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:287
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:439
 msgid "No keys pressed yet, proceed."
 msgstr "Non è stato ancora premuto alcun tasto, procedere."
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:332
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:335
 msgid "Could not grab the keyboard."
 msgstr "Impossibile prendere il controllo della tastiera"
 
