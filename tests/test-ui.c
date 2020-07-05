@@ -162,8 +162,8 @@ show_xfce_titled_dialog_new_with_buttons (GtkButton *button,
 
   dialog_gtk3 = xfce_titled_dialog_new_with_buttons ("Settings Editor (Gtk3)", NULL,
                                                 GTK_DIALOG_DESTROY_WITH_PARENT,
-                                                "gtk-help", GTK_RESPONSE_HELP,
-                                                "gtk-close", GTK_RESPONSE_OK,
+                                                "help-browser", GTK_RESPONSE_HELP,
+                                                "window-close-symbolic", GTK_RESPONSE_OK,
                                                 NULL);
 
   xfce_titled_dialog_set_subtitle (XFCE_TITLED_DIALOG (dialog_gtk3),

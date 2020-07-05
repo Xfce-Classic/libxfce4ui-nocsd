@@ -267,7 +267,7 @@ NO WARRANTY
             <property name="layout_style">end</property>
             <child>
               <object class="GtkButton" id="license-close-button">
-                <property name="label">gtk-close</property>
+                <property name="label">window-close-symbolic</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -354,7 +354,7 @@ NO WARRANTY
             </child>
             <child>
               <object class="GtkButton" id="close-button">
-                <property name="label">gtk-close</property>
+                <property name="label">window-close-symbolic</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
