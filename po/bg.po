@@ -12,9 +12,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-06 00:30+0200\n"
-"PO-Revision-Date: 2020-04-05 22:30+0000\n"
-"Last-Translator: Xfce Bot <transifex@xfce.org>\n"
+"POT-Creation-Date: 2020-07-06 00:45+0200\n"
+"PO-Revision-Date: 2020-07-06 15:51+0000\n"
+"Last-Translator: Kiril Kirilov <cybercop_montana@abv.bg>\n"
 "Language-Team: Bulgarian (http://www.transifex.com/xfce/libxfce4ui/language/bg/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -43,7 +43,7 @@ msgstr "Вие ще бъдете препратен(а) към уеб сайта
 
 #. Create cancel button
 #: ../libxfce4ui/xfce-dialogs.c:275 ../libxfce4ui/xfce-dialogs.c:533
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:243
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:253
 msgid "_Cancel"
 msgstr "_Отказ"
 
@@ -218,46 +218,45 @@ msgstr "Конфликт с действие за %s"
 msgid "This shortcut is already being used for something else."
 msgstr "Тази клавишна комбинация вече е зададена за друго действие."
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:210
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:214
 msgid "Window Manager Action Shortcut"
 msgstr "Клавишни комбинации за действия с управителя на прозорците"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:213
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:227
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:217
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:233
 msgid "action"
 msgstr "действие"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:217
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:222
 msgid "Command Shortcut"
 msgstr "Клавишна комбинация за команда"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:220
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:225
 msgid "command"
 msgstr "команда"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:224
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:230
 msgid "Shortcut"
 msgstr "Клавишна комбинация"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:258
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:247
+msgid "Clear"
+msgstr "Изчистване"
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:270
 #, c-format
-msgid "Press now the keyboard keys you want to use to trigger the %s '%s'."
-msgstr "Натиснете клавишната комбинация, която искате да използвате за %s „%s“."
+msgid "Press keyboard keys to trigger the %s '%s'."
+msgstr "Натиснете клавишите на клавиатурата за да задействате %s \"%s\"."
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:278
-msgid "Shortcut:"
-msgstr "Клавишна комбинация:"
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:291
+msgid "Please press a key"
+msgstr "Моля, натиснете клавиша"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:283
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:424
-msgid "No keys pressed yet, proceed."
-msgstr "Все още няма натиснати клавиши; продължете."
-
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:331
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:345
 msgid "Could not grab the keyboard."
 msgstr "Не може да бъде прихваната клавиатурата."
 
@@ -707,23 +706,23 @@ msgstr "Благодарим за интереса Ви към Xfce."
 msgid "The Xfce Development Team"
 msgstr "Екипът по разработка на Xfce"
 
-#: ../xfce4-about/main.c:323
+#: ../xfce4-about/main.c:332
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
-"on <https://bugzilla.xfce.org> ."
-msgstr "Ако разберете за нещо, което липсва в този списък; не се колебайте и докладвайте грешката на <https://bugzilla.xfce.org>."
+"on <https://gitlab.xfce.org/xfce/libxfce4ui/-/issues> ."
+msgstr "Ако установите нещо, което липсва от този списък, не се колебайте и докладвайте грешка на <https://gitlab.xfce.org/xfce/libxfce4ui/-/issues> ."
 
-#: ../xfce4-about/main.c:327
+#: ../xfce4-about/main.c:336
 msgid "Thanks to all who helped making this software available!"
 msgstr "Благодарим на всички, които помогнаха за съществуването на този софтуер!"
 
-#: ../xfce4-about/main.c:344
+#: ../xfce4-about/main.c:353
 msgid ""
 "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
 msgstr "Авторските права на Xfce 4 принадлежат на Оливие Фордан (fourdan@xfce.org). Авторските права на другите компоненти принадлежат на съответните им автори."
 
-#: ../xfce4-about/main.c:349
+#: ../xfce4-about/main.c:358
 msgid ""
 "The libxfce4ui, libxfce4util and exo packages are distributed under the "
 "terms of the GNU Library General Public License as published by the Free "
@@ -731,7 +730,7 @@ msgid ""
 "any later version."
 msgstr "Пакетите libxfce4ui, libxfce4util и exo се разпространяват съгласно условията на Общия публичен лиценз на библиотеката GNU, публикуван от Фондацията за свободен софтуер; или версия 2 на лиценза, или (по ваш избор) по-късна версия."
 
-#: ../xfce4-about/main.c:356
+#: ../xfce4-about/main.c:365
 msgid ""
 "The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, "
 "xfce4-settings, xfconf, xfdesktop and xfwm4 are distributed under the terms "
@@ -740,37 +739,37 @@ msgid ""
 "version."
 msgstr "Пакетите thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfconf, xfdesktop и xfwm4 се разпространяват съгласно условията на GNU General Public License, публикуван от Фондацията за свободен софтуер; или версия 2 на лиценза, или (по ваш избор) по-късна версия."
 
-#: ../xfce4-about/main.c:503
+#: ../xfce4-about/main.c:512
 #, c-format
 msgid "Type '%s --help' for usage information."
 msgstr "Напишете „%s --help“, за да получите информация за употребата."
 
-#: ../xfce4-about/main.c:509
+#: ../xfce4-about/main.c:518
 msgid "Unable to initialize GTK+."
 msgstr "Не може да бъде инициализирана GTK+."
 
-#: ../xfce4-about/main.c:518
+#: ../xfce4-about/main.c:527
 msgid "The Xfce development team. All rights reserved."
 msgstr "Екипът по разработката на Xfce. Всички права запазени."
 
-#: ../xfce4-about/main.c:519
+#: ../xfce4-about/main.c:528
 #, c-format
 msgid "Please report bugs to <%s>."
 msgstr "Моля, докладвайте грешките на <%s>."
 
-#: ../xfce4-about/main.c:529
+#: ../xfce4-about/main.c:538
 msgid "Failed to load interface"
 msgstr "Не може да бъде зареден интерфейса"
 
 #. I18N: first %s will be replaced by the version, second by
 #. * the name of the distribution (--with-vendor-info=NAME)
-#: ../xfce4-about/main.c:543
+#: ../xfce4-about/main.c:552
 #, c-format
 msgid "Version %s, distributed by %s"
 msgstr "Издание %s, разпространявано от %s"
 
 #. I18N: %s will be replaced by the Xfce version number
-#: ../xfce4-about/main.c:547
+#: ../xfce4-about/main.c:556
 #, c-format
 msgid "Version %s"
 msgstr "Издание %s"
