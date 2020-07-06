@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 16 16"
+   style="display:inline;enable-background:new"
+   version="1.0"
+   id="svg11300"
+   height="16"
+   width="16"
+   sodipodi:docname="org.xfce.about.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1019"
+     id="namedview35"
+     showgrid="true"
+     inkscape:zoom="5.6568542"
+     inkscape:cx="62.348741"
+     inkscape:cy="8.595836"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg11300"
+     showguides="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid858"
+       empspacing="4" />
+  </sodipodi:namedview>
+  <title
+     id="title4162">Adwaita Icon Template</title>
+  <defs
+     id="defs3">
+    <linearGradient
+       id="linearGradient969">
+      <stop
+         id="stop957"
+         offset="0"
+         style="stop-color:#d2d8dc;stop-opacity:1" />
+      <stop
+         style="stop-color:#f1f3f5;stop-opacity:1"
+         offset="0.04166667"
+         id="stop959" />
+      <stop
+         id="stop961"
+         offset="0.08333334"
+         style="stop-color:#d2d8dc;stop-opacity:1" />
+      <stop
+         style="stop-color:#d2d8dc;stop-opacity:1"
+         offset="0.91666669"
+         id="stop963" />
+      <stop
+         id="stop965"
+         offset="0.95833331"
+         style="stop-color:#f1f3f5;stop-opacity:1" />
+      <stop
+         id="stop967"
+         offset="1"
+         style="stop-color:#bcc5ca;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient901">
+      <stop
+         id="stop889"
+         offset="0"
+         style="stop-color:#a7b0b7;stop-opacity:1" />
+      <stop
+         style="stop-color:#f1f3f5;stop-opacity:1"
+         offset="0.04166667"
+         id="stop891" />
+      <stop
+         id="stop893"
+         offset="0.08333334"
+         style="stop-color:#d2d8dc;stop-opacity:1" />
+      <stop
+         style="stop-color:#d2d8dc;stop-opacity:1"
+         offset="0.91666669"
+         id="stop895" />
+      <stop
+         id="stop897"
+         offset="0.95833331"
+         style="stop-color:#f1f3f5;stop-opacity:1" />
+      <stop
+         id="stop899"
+         offset="1"
+         style="stop-color:#a7b0b7;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <metadata
+     id="metadata4">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>GNOME Design Team</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:source />
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/" />
+        <dc:title>Adwaita Icon Template</dc:title>
+        <dc:subject>
+          <rdf:Bag />
+        </dc:subject>
+        <dc:date />
+        <dc:rights>
+          <cc:Agent>
+            <dc:title />
+          </cc:Agent>
+        </dc:rights>
+        <dc:publisher>
+          <cc:Agent>
+            <dc:title />
+          </cc:Agent>
+        </dc:publisher>
+        <dc:identifier />
+        <dc:relation />
+        <dc:language />
+        <dc:coverage />
+        <dc:description />
+        <dc:contributor>
+          <cc:Agent>
+            <dc:title />
+          </cc:Agent>
+        </dc:contributor>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by-sa/4.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <path
+     inkscape:connector-curvature="0"
+     d="m 8.0037124,0.19511441 c 0.526688,0 2.2247176,4.45540899 2.6508176,4.78059699 0.4261,0.325196 4.984817,0.644718 5.147573,1.170878 0.162756,0.526161 -3.346521,3.599285 -3.509276,4.1254466 -0.162756,0.526162 0.956654,5.17905 0.530555,5.504239 -0.4261,0.325195 -4.2929816,-2.23093 -4.8196706,-2.23093 -0.526686,0 -4.3935687,2.556113 -4.8196683,2.23093 C 2.7579439,15.451078 3.8773538,10.798198 3.7145991,10.272036 3.5518436,9.7458744 0.04256772,6.6727474 0.20532312,6.1465894 0.36807872,5.6204294 4.9267958,5.3008954 5.3528946,4.9757114 5.7789946,4.6505234 7.4770264,0.19511441 8.0037124,0.19511441 Z"
+     id="path1307"
+     style="display:inline;overflow:visible;visibility:visible;fill:#f9da02;fill-opacity:1;fill-rule:nonzero;stroke:#ad7702;stroke-width:0.39021698;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none" />
+</svg>

@@ -324,7 +324,7 @@ NO WARRANTY
     <property name="title" translatable="yes">About the Xfce Desktop Environment</property>
     <property name="default_width">550</property>
     <property name="default_height">600</property>
-    <property name="icon_name">xfce4-logo</property>
+    <property name="icon_name">org.xfce.about</property>
     <property name="type_hint">normal</property>
     <child internal-child="vbox">
       <object class="GtkBox" id="dialog-vbox1">
