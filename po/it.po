@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-04 12:45+0200\n"
-"PO-Revision-Date: 2020-07-05 10:41+0000\n"
+"POT-Creation-Date: 2020-07-06 00:45+0200\n"
+"PO-Revision-Date: 2020-07-06 11:27+0000\n"
 "Last-Translator: Emanuele Petriglia <transifex@emanuelepetriglia.com>\n"
 "Language-Team: Italian (http://www.transifex.com/xfce/libxfce4ui/language/it/)\n"
 "MIME-Version: 1.0\n"
@@ -42,7 +42,7 @@ msgstr "Si verrà reindirizzati al sito web della documentazione dove le pagine 
 
 #. Create cancel button
 #: ../libxfce4ui/xfce-dialogs.c:275 ../libxfce4ui/xfce-dialogs.c:533
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:247
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:253
 msgid "_Cancel"
 msgstr "A_nnulla"
 
@@ -217,50 +217,45 @@ msgstr "Azioni in conflitto per %s"
 msgid "This shortcut is already being used for something else."
 msgstr "Questa scorciatoia è già utilizzata per altro."
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:211
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:214
 msgid "Window Manager Action Shortcut"
 msgstr "Scorciatoia dell'azione del gestore della finestra"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:214
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:228
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:217
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:233
 msgid "action"
 msgstr "azione"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:218
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:222
 msgid "Command Shortcut"
 msgstr "Scorciatoia del comando"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:221
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:225
 msgid "command"
 msgstr "comando"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:225
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:230
 msgid "Shortcut"
 msgstr "Scorciatoia"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:241
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:247
 msgid "Clear"
 msgstr "Pulisci"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:262
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:270
 #, c-format
-msgid "Press now the keyboard keys you want to use to trigger the %s '%s'."
-msgstr "Premere i tasti della tastiera da utilizzare per abilitare il %s '%s'"
+msgid "Press keyboard keys to trigger the %s '%s'."
+msgstr "Premere i tasti sulla testiera per abilitare il %s '%s'."
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:282
-msgid "Shortcut:"
-msgstr "Scorciatoia:"
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:291
+msgid "Please press a key"
+msgstr "Premere un tasto"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:287
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:439
-msgid "No keys pressed yet, proceed."
-msgstr "Non è stato ancora premuto alcun tasto, procedere."
-
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:335
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:345
 msgid "Could not grab the keyboard."
 msgstr "Impossibile prendere il controllo della tastiera"
 
