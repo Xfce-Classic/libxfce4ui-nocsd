@@ -10,4 +10,4 @@ this fork exists to allow users to disable CSD in any applications that use libx
 
 We implement all CSD-specific functionality as ABI-compatible shims that
 simply forward to the relevant GtkDialog methods. This allows upstream applications
-built against libxfce4ui to function with no modifications.
+built against upstream libxfce4ui to function with no modifications.
