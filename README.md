@@ -11,3 +11,11 @@ this fork exists to allow users to disable CSD in any applications that use libx
 We implement all CSD-specific functionality as ABI-compatible shims that
 simply forward to the relevant GtkDialog methods. This allows upstream applications
 built against upstream libxfce4ui to function with no modifications.
+
+Examples
+--------
+Below is an example of a dialog in xfce4-panel with upstream libxfce4ui (left) and
+libxfce4ui-nocsd (right).
+
+![upstream libxfce4ui](https://github.com/Xfce-Classic/libxfce4ui-nocsd/blob/master/images/csd.png) 
+![libxfce4ui-nocsd](https://github.com/Xfce-Classic/libxfce4ui-nocsd/blob/master/images/nocsd.png)
