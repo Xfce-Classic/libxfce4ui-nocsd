@@ -1,5 +1,6 @@
 /*
  * Copyright (c) 2006 Benedikt Meurer <benny@xfce.org>.
+ * Copyright (c) 2020 Shawn Anastasio <shawn@anastas.io>.
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Library General Public
@@ -444,6 +445,38 @@ xfce_titled_dialog_set_subtitle (XfceTitledDialog *titled_dialog,
   g_object_notify (G_OBJECT (titled_dialog), "subtitle");
 }
 
+//
+// libxfce4ui 4.15.1 no-CSD shims
+//
+
+void
+xfce_titled_dialog_create_action_area (XfceTitledDialog *titled_dialog)
+{
+    (void)titled_dialog;
+}
+
+void
+xfce_titled_dialog_add_action_widget (XfceTitledDialog *titled_dialog,
+                                      GtkWidget        *child,
+                                      gint              response_id)
+{
+    gtk_dialog_add_action_widget (GTK_DIALOG (titled_dialog), child, response_id);
+}
+
+void
+xfce_titled_dialog_set_default_response (XfceTitledDialog *titled_dialog,
+                                         gint              response_id)
+{
+    gtk_dialog_set_default_response (GTK_DIALOG (titled_dialog), response_id);
+}
+
+GtkWidget *
+xfce_titled_dialog_add_button (XfceTitledDialog *titled_dialog,
+                               const gchar      *button_text,
+                               gint              response_id)
+{
+    return gtk_dialog_add_button (GTK_DIALOG (titled_dialog), button_text, response_id);
+}
 
 
 #define __XFCE_TITLED_DIALOG_C__

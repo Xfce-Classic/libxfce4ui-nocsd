@@ -85,6 +85,27 @@ const gchar          *xfce_titled_dialog_get_subtitle     (XfceTitledDialog *tit
 void                  xfce_titled_dialog_set_subtitle     (XfceTitledDialog *titled_dialog,
                                                            const gchar      *subtitle);
 
+//
+// libxfce4ui 4.15.1 no-CSD shims
+//
+
+void
+xfce_titled_dialog_create_action_area (XfceTitledDialog *titled_dialog);
+
+void
+xfce_titled_dialog_add_action_widget (XfceTitledDialog *titled_dialog,
+                                      GtkWidget        *child,
+                                      gint              response_id);
+void
+xfce_titled_dialog_set_default_response (XfceTitledDialog *titled_dialog,
+                                         gint              response_id);
+
+GtkWidget *
+xfce_titled_dialog_add_button (XfceTitledDialog *titled_dialog,
+                               const gchar      *button_text,
+                               gint              response_id);
+
+
 G_END_DECLS
 
 #endif /* !__XFCE_TITLED_DIALOG_H__ */
