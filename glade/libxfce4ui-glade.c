@@ -63,7 +63,7 @@ glade_xfce_titled_dialog_post_create (GladeWidgetAdaptor *adaptor,
 
   if (XFCE_IS_TITLED_DIALOG (dialog))
     {
-      /* create the dialog vbox */
+      /* create the dialog vbxo */
       vbox = glade_widget_adaptor_create_internal (widget,
           G_OBJECT (gtk_dialog_get_content_area (dialog)),
           "vbox", "dialog", FALSE, reason);

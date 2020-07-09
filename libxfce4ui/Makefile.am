@@ -46,6 +46,8 @@ libxfce4ui_sources = \
 	xfce-dialogs.c \
 	xfce-gdk-extensions.c \
 	xfce-gtk-extensions.c \
+	xfce-heading.c \
+	xfce-heading.h \
 	xfce-sm-client.c \
 	xfce-spawn.c \
 	xfce-filename-input.c \

@@ -1,5 +1,6 @@
 /*
  * Copyright (c) 2006 Benedikt Meurer <benny@xfce.org>.
+ * Copyright (c) 2020 Shawn Anastasio <shawn@anastas.io>.
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Library General Public
@@ -38,6 +39,7 @@
 
 #include <gdk/gdkkeysyms.h>
 
+#include <libxfce4ui/xfce-heading.h>
 #include <libxfce4ui/xfce-titled-dialog.h>
 #include <libxfce4ui/libxfce4ui-private.h>
 #include <libxfce4ui/libxfce4ui-alias.h>
@@ -56,36 +58,25 @@ enum
 };
 
 
-static GObject *xfce_titled_dialog_constructor    (GType                   type,
-                                                   guint                   n_construct_params,
-                                                   GObjectConstructParam  *construct_params);
-static void     xfce_titled_dialog_finalize       (GObject                *object);
-static void     xfce_titled_dialog_get_property   (GObject                *object,
-                                                   guint                   prop_id,
-                                                   GValue                 *value,
-                                                   GParamSpec             *pspec);
-static void     xfce_titled_dialog_set_property   (GObject                *object,
-                                                   guint                   prop_id,
-                                                   const GValue           *value,
-                                                   GParamSpec             *pspec);
-static void     xfce_titled_dialog_close          (GtkDialog              *dialog);
-static void     xfce_titled_dialog_update_icon    (XfceTitledDialog       *titled_dialog);
+
+static void xfce_titled_dialog_finalize       (GObject                *object);
+static void xfce_titled_dialog_get_property   (GObject                *object,
+                                               guint                   prop_id,
+                                               GValue                 *value,
+                                               GParamSpec             *pspec);
+static void xfce_titled_dialog_set_property   (GObject                *object,
+                                               guint                   prop_id,
+                                               const GValue           *value,
+                                               GParamSpec             *pspec);
+static void xfce_titled_dialog_close          (GtkDialog              *dialog);
+static void xfce_titled_dialog_update_heading (XfceTitledDialog       *titled_dialog);
 
 
 
 struct _XfceTitledDialogPrivate
 {
-  GtkWidget *headerbar;
-  GtkWidget *icon;
-  GtkWidget *action_area;
+  GtkWidget *heading;
   gchar     *subtitle;
-};
-
-typedef struct _ResponseData ResponseData;
-
-struct _ResponseData
-{
-  gint response_id;
 };
 
 
@@ -105,10 +96,9 @@ xfce_titled_dialog_class_init (XfceTitledDialogClass *klass)
   g_type_class_add_private (klass, sizeof (XfceTitledDialogPrivate));
 
   gobject_class = G_OBJECT_CLASS (klass);
-  gobject_class->constructor = xfce_titled_dialog_constructor;
+  gobject_class->finalize = xfce_titled_dialog_finalize;
   gobject_class->get_property = xfce_titled_dialog_get_property;
   gobject_class->set_property = xfce_titled_dialog_set_property;
-  gobject_class->finalize = xfce_titled_dialog_finalize;
 
   gtkdialog_class = GTK_DIALOG_CLASS (klass);
   gtkdialog_class->close = xfce_titled_dialog_close;
@@ -135,43 +125,46 @@ xfce_titled_dialog_class_init (XfceTitledDialogClass *klass)
 
 
 
-static GObject *
-xfce_titled_dialog_constructor (GType                  type,
-                                guint                  n_construct_params,
-                                GObjectConstructParam *construct_params)
-{
-  GObject *object;
-
-  object = G_OBJECT_CLASS (xfce_titled_dialog_parent_class)->constructor (type,
-                                                           n_construct_params,
-                                                           construct_params);
-  g_object_set (G_OBJECT (object), "use-header-bar", TRUE, NULL);
-
-  return object;
-}
-
-
-
 static void
 xfce_titled_dialog_init (XfceTitledDialog *titled_dialog)
 {
+  GtkWidget *line;
+  GtkWidget *vbox;
+  GtkWidget *content_area;
+
   /* connect the private data */
   titled_dialog->priv = XFCE_TITLED_DIALOG_GET_PRIVATE (titled_dialog);
 
-  /* Get the headerbar of the dialog */
-  titled_dialog->priv->headerbar = gtk_dialog_get_header_bar (GTK_DIALOG (titled_dialog));
-  g_return_if_fail (GTK_IS_HEADER_BAR (titled_dialog->priv->headerbar));
+  /* remove the main dialog box from the window */
+  content_area = gtk_dialog_get_content_area (GTK_DIALOG (titled_dialog));
+  g_object_ref (G_OBJECT (content_area));
+  gtk_container_remove (GTK_CONTAINER (titled_dialog), content_area);
 
-  /* Pack the window icon into the headerbar */
-  titled_dialog->priv->icon = gtk_image_new ();
-  gtk_header_bar_pack_start (GTK_HEADER_BAR (titled_dialog->priv->headerbar), titled_dialog->priv->icon);
-  gtk_header_bar_set_show_close_button (GTK_HEADER_BAR (titled_dialog->priv->headerbar), TRUE);
-  gtk_widget_show (titled_dialog->priv->icon);
+  /* add a new vbox w/o border to the main window */
+  vbox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
+  gtk_container_add (GTK_CONTAINER (titled_dialog), vbox);
+  gtk_widget_show (vbox);
 
-  /* make sure to update the icon whenever one of the relevant window properties changes */
-  g_signal_connect (G_OBJECT (titled_dialog), "notify::icon", G_CALLBACK (xfce_titled_dialog_update_icon), NULL);
-  g_signal_connect (G_OBJECT (titled_dialog), "notify::icon-name", G_CALLBACK (xfce_titled_dialog_update_icon), NULL);
+  /* add the heading to the window */
+  titled_dialog->priv->heading = g_object_new (XFCE_TYPE_HEADING, NULL);
+  gtk_box_pack_start (GTK_BOX (vbox), titled_dialog->priv->heading, FALSE, FALSE, 0);
+  gtk_widget_show (titled_dialog->priv->heading);
+
+  /* add the separator between header and content */
+  line = gtk_separator_new (GTK_ORIENTATION_HORIZONTAL);
+  gtk_box_pack_start (GTK_BOX (vbox), line, FALSE, FALSE, 0);
+  gtk_widget_show (line);
+
+  /* add the main dialog box to the new vbox */
+  gtk_box_pack_start (GTK_BOX (vbox), content_area, TRUE, TRUE, 0);
+  g_object_unref (G_OBJECT(content_area));
+
+  /* make sure to update the heading whenever one of the relevant window properties changes */
+  g_signal_connect (G_OBJECT (titled_dialog), "notify::icon", G_CALLBACK (xfce_titled_dialog_update_heading), NULL);
+  g_signal_connect (G_OBJECT (titled_dialog), "notify::icon-name", G_CALLBACK (xfce_titled_dialog_update_heading), NULL);
+  g_signal_connect (G_OBJECT (titled_dialog), "notify::title", G_CALLBACK (xfce_titled_dialog_update_heading), NULL);
 }
+
 
 
 
@@ -252,110 +245,12 @@ xfce_titled_dialog_close (GtkDialog *dialog)
 
 
 static void
-xfce_titled_dialog_update_icon (XfceTitledDialog *titled_dialog)
+xfce_titled_dialog_update_heading (XfceTitledDialog *titled_dialog)
 {
-  const gchar *icon_name = gtk_window_get_icon_name (GTK_WINDOW (titled_dialog));
-
-  g_return_if_fail (GTK_IS_HEADER_BAR (titled_dialog->priv->headerbar));
-  _libxfce4ui_return_if_fail (icon_name == NULL);
-
-  gtk_image_set_from_icon_name (GTK_IMAGE (titled_dialog->priv->icon), icon_name, GTK_ICON_SIZE_LARGE_TOOLBAR);
-  gtk_image_set_pixel_size (GTK_IMAGE (titled_dialog->priv->icon), 24);
-}
-
-
-/* Borrowed from gtkdialog.c */
-static void
-response_data_free (gpointer data)
-{
-  g_slice_free (ResponseData, data);
-}
-
-
-
-static ResponseData *
-get_response_data (GtkWidget *widget,
-                   gboolean   create)
-{
-  ResponseData *ad = g_object_get_data (G_OBJECT (widget),
-                                        "gtk-dialog-response-data");
-
-  if (ad == NULL && create)
-    {
-      ad = g_slice_new (ResponseData);
-
-      g_object_set_data_full (G_OBJECT (widget),
-                              I_("gtk-dialog-response-data"),
-                              ad,
-                              response_data_free);
-    }
-
-  return ad;
-}
-
-
-
-static void
-action_widget_activated (GtkWidget *widget, GtkDialog *dialog)
-{
-  gint response_id;
-
-  response_id = gtk_dialog_get_response_for_widget (dialog, widget);
-
-  gtk_dialog_response (dialog, response_id);
-}
-
-
-
-static void
-add_response_data (GtkDialog *dialog,
-                   GtkWidget *child,
-                   gint       response_id)
-{
-  ResponseData *ad;
-  guint signal_id;
-
-  ad = get_response_data (child, TRUE);
-  ad->response_id = response_id;
-
-  if (GTK_IS_BUTTON (child))
-    signal_id = g_signal_lookup ("clicked", GTK_TYPE_BUTTON);
-  else
-    signal_id = GTK_WIDGET_GET_CLASS (child)->activate_signal;
-
-  if (signal_id)
-    {
-      GClosure *closure;
-
-      closure = g_cclosure_new_object (G_CALLBACK (action_widget_activated),
-                                       G_OBJECT (dialog));
-      g_signal_connect_closure_by_id (child, signal_id, 0, closure, FALSE);
-    }
-  else
-    g_warning ("Only 'activatable' widgets can be packed into the action area of a GtkDialog");
-}
-/* End: Borrowed from gtkdialog.c */
-
-
-
-/* Repack all the buttons that would normally end up in the headerbar to the action area */
-static void
-xfce_titled_dialog_repack_dialog (GtkWidget *action_area,
-                                  GtkWidget *headerbar,
-                                  GtkWidget *button,
-                                  gint       response_id)
-{
-  g_return_if_fail (GTK_IS_WIDGET (action_area));
-  g_return_if_fail (GTK_IS_WIDGET (headerbar));
-  g_return_if_fail (GTK_IS_WIDGET (button));
-
-  g_object_ref (G_OBJECT (button));
-  gtk_container_remove (GTK_CONTAINER (headerbar), button);
-  gtk_container_add (GTK_CONTAINER (action_area), button);
-  g_object_unref (G_OBJECT (button));
-  /* always add help buttons as secondary */
-  if (response_id == GTK_RESPONSE_HELP)
-    gtk_button_box_set_child_secondary (GTK_BUTTON_BOX (action_area), button, TRUE);
+  /* update the heading properties using the window property values */
+  _xfce_heading_set_icon (XFCE_HEADING (titled_dialog->priv->heading), gtk_window_get_icon (GTK_WINDOW (titled_dialog)));
+  _xfce_heading_set_icon_name (XFCE_HEADING (titled_dialog->priv->heading), gtk_window_get_icon_name (GTK_WINDOW (titled_dialog)));
+  _xfce_heading_set_title (XFCE_HEADING (titled_dialog->priv->heading), gtk_window_get_title (GTK_WINDOW (titled_dialog)));
 }
 
 
@@ -387,8 +282,6 @@ xfce_titled_dialog_new (void)
  * parameters and the returned dialog.
  *
  * Return value: the newly allocated #XfceTitledDialog.
- *
- * Deprecated: 4.16: Use #xfce_titled_dialog_new_with_mixed_buttons instead.
  **/
 GtkWidget*
 xfce_titled_dialog_new_with_buttons (const gchar    *title,
@@ -399,9 +292,6 @@ xfce_titled_dialog_new_with_buttons (const gchar    *title,
 {
   const gchar *button_text;
   GtkWidget   *dialog;
-  GtkWidget   *button;
-  GtkWidget   *headerbar;
-  GtkWidget   *action_area;
   va_list      args;
   gint         response_id;
 
@@ -416,21 +306,12 @@ xfce_titled_dialog_new_with_buttons (const gchar    *title,
   if (G_LIKELY (parent != NULL))
     gtk_window_set_transient_for (GTK_WINDOW (dialog), parent);
 
-G_GNUC_BEGIN_IGNORE_DEPRECATIONS
-  action_area = gtk_dialog_get_action_area (GTK_DIALOG (dialog));
-G_GNUC_END_IGNORE_DEPRECATIONS
-  headerbar = gtk_dialog_get_header_bar (GTK_DIALOG (dialog));
-
   /* add all additional buttons */
   va_start (args, first_button_text);
   for (button_text = first_button_text; button_text != NULL; )
     {
       response_id = va_arg (args, gint);
-G_GNUC_BEGIN_IGNORE_DEPRECATIONS
-      button = gtk_button_new_from_stock (button_text);
-G_GNUC_END_IGNORE_DEPRECATIONS
-      gtk_dialog_add_action_widget (GTK_DIALOG (dialog), button, response_id);
-      xfce_titled_dialog_repack_dialog (action_area, headerbar, button, response_id);
+      gtk_dialog_add_button (GTK_DIALOG (dialog), button_text, response_id);
       button_text = va_arg (args, const gchar *);
     }
   va_end (args);
@@ -468,8 +349,6 @@ xfce_titled_dialog_new_with_mixed_buttons (const gchar    *title,
   const gchar *icon_name;
   const gchar *button_text;
   GtkWidget   *dialog;
-  GtkWidget   *headerbar;
-  GtkWidget   *action_area;
   va_list      args;
   gint         response_id;
 
@@ -483,11 +362,6 @@ xfce_titled_dialog_new_with_mixed_buttons (const gchar    *title,
   /* set the transient parent (if any) */
   if (G_LIKELY (parent != NULL))
     gtk_window_set_transient_for (GTK_WINDOW (dialog), parent);
-
-G_GNUC_BEGIN_IGNORE_DEPRECATIONS
-  action_area = gtk_dialog_get_action_area (GTK_DIALOG (dialog));
-G_GNUC_END_IGNORE_DEPRECATIONS
-  headerbar = gtk_dialog_get_header_bar (GTK_DIALOG (dialog));
 
   /* add all additional buttons */
   icon_name = first_button_icon_name;
@@ -506,7 +380,6 @@ G_GNUC_END_IGNORE_DEPRECATIONS
       gtk_widget_set_can_default (button, TRUE);
 
       gtk_dialog_add_action_widget (GTK_DIALOG (dialog), button, response_id);
-      xfce_titled_dialog_repack_dialog (action_area, headerbar, button, response_id);
       gtk_widget_show (button);
 
       /* this is to pickup for the next button.
@@ -520,166 +393,9 @@ G_GNUC_END_IGNORE_DEPRECATIONS
     }
   va_end (args);
 
-  /* since we just removed all buttons from the headerbar we have to show the close button again explicitly */
-  gtk_header_bar_set_show_close_button (GTK_HEADER_BAR (headerbar), TRUE);
-
   return dialog;
 }
 
-
-
-/**
- * xfce_titled_dialog_create_action_area:
- * @titled_dialog : a #XfceTitledDialog.
- *
- * This function creates a custom action area (of type #GtkButtonBox) and has to
- * be used in combination with #xfce_titled_dialog_add_action_widget.
- *
- * When using the XfceTitledDialogClass directly to create dialogs this function is
- * useful to keep action widgets out of the #GtkHeaderBar in which they would
- * normally end up by calling #gtk_dialog_add_action_widget.
- *
- * Since: 4.16
- *
- **/
-void
-xfce_titled_dialog_create_action_area (XfceTitledDialog *titled_dialog)
-{
-  GtkWidget *dialog_vbox;
-
-  g_return_if_fail (XFCE_IS_TITLED_DIALOG (titled_dialog));
-
-  /* Create new buttonbox to act as custom action area for the dialog */
-  titled_dialog->priv->action_area = gtk_button_box_new (GTK_ORIENTATION_HORIZONTAL);
-  gtk_button_box_set_layout (GTK_BUTTON_BOX (titled_dialog->priv->action_area), GTK_BUTTONBOX_END);
-  gtk_box_set_spacing (GTK_BOX (titled_dialog->priv->action_area), 6);
-
-  /* Pack the buttonbox in the dialog's main vbox */
-  dialog_vbox = gtk_bin_get_child (GTK_BIN (titled_dialog));
-  gtk_box_pack_end (GTK_BOX (dialog_vbox), titled_dialog->priv->action_area, FALSE, TRUE, 0);
-  gtk_box_reorder_child (GTK_BOX (dialog_vbox), titled_dialog->priv->action_area, 0);
-  gtk_widget_show (titled_dialog->priv->action_area);
-}
-
-
-
-/**
- * xfce_titled_dialog_add_button:
- * @titled_dialog : a #XfceTitledDialog.
- * @button_text   : text of button.
- * @response_id   : response ID for @child.
- *
- * This function is a replacement for #gtk_dialog_add_button and assumes that
- * you have called #xfce_titled_dialog_create_action_area before.
- *
- * Buttons with #GTK_RESPONSE_HELP will be added to the secondary group of children
- * (see #gtk_button_box_set_child_secondary for reference).
- *
- * Return value: (transfer none): the GtkButton widget that was added.
- *
- * Since: 4.16
- *
- **/
-GtkWidget *
-xfce_titled_dialog_add_button (XfceTitledDialog *titled_dialog,
-                               const gchar      *button_text,
-                               gint              response_id)
-{
-  GtkWidget *button;
-
-  g_return_val_if_fail (XFCE_IS_TITLED_DIALOG (titled_dialog), NULL);
-  g_return_val_if_fail (GTK_IS_WIDGET (titled_dialog->priv->action_area), NULL);
-  g_return_val_if_fail (button_text != NULL, NULL);
-
-  button = gtk_button_new_with_label (button_text);
-  gtk_button_set_use_underline (GTK_BUTTON (button), TRUE);
-
-  xfce_titled_dialog_add_action_widget (titled_dialog, button, response_id);
-
-  return button;
-}
-
-
-
-/**
- * xfce_titled_dialog_add_action_widget:
- * @titled_dialog : a #XfceTitledDialog.
- * @child         : an activatable widget.
- * @response_id   : response ID for @child.
- *
- * This function is a replacement for #gtk_dialog_add_action_widget and assumes that
- * you have called #xfce_titled_dialog_create_action_area before.
- *
- * Children with #GTK_RESPONSE_HELP will be added to the secondary group of children
- * (see #gtk_button_box_set_child_secondary for reference).
- *
- * Since: 4.16
- *
- **/
-void
-xfce_titled_dialog_add_action_widget (XfceTitledDialog *titled_dialog,
-                                      GtkWidget        *child,
-                                      gint              response_id)
-{
-  g_return_if_fail (XFCE_IS_TITLED_DIALOG (titled_dialog));
-  g_return_if_fail (GTK_IS_WIDGET (titled_dialog->priv->action_area));
-  g_return_if_fail (GTK_IS_WIDGET (child));
-
-  add_response_data (GTK_DIALOG (titled_dialog), child, response_id);
-
-  gtk_box_pack_start (GTK_BOX (titled_dialog->priv->action_area), child, FALSE, TRUE, 0);
-  gtk_widget_show (child);
-
-  if (response_id == GTK_RESPONSE_HELP)
-    gtk_button_box_set_child_secondary (GTK_BUTTON_BOX (titled_dialog->priv->action_area), child, TRUE);
-}
-
-
-
-/**
- * xfce_titled_dialog_set_default_response:
- * @titled_dialog : a #XfceTitledDialog.
- * @response_id   : a response ID
- *
- * Sets the last widget in the dialog’s action area with the given @response_id
- * as the default widget for the dialog. Pressing “Enter” normally activates
- * the default widget.
- *
- * This function is a replacement for #gtk_dialog_set_default_response, which does
- * not work with #XfceTitledDialog.
- *
- * Since: 4.16
- *
- **/
-void
-xfce_titled_dialog_set_default_response (XfceTitledDialog *titled_dialog,
-                                         gint              response_id)
-{
-  GtkWidget *action_area;
-  GList     *children;
-  GList     *tmp_list;
-
-  g_return_if_fail (XFCE_IS_TITLED_DIALOG (titled_dialog));
-
-G_GNUC_BEGIN_IGNORE_DEPRECATIONS
-  action_area = gtk_dialog_get_action_area (GTK_DIALOG (titled_dialog));
-G_GNUC_END_IGNORE_DEPRECATIONS
-
-  children = gtk_container_get_children (GTK_CONTAINER (action_area));
-  tmp_list = children;
-  while (tmp_list != NULL)
-    {
-      GtkWidget *widget = tmp_list->data;
-      ResponseData *rd = get_response_data (widget, FALSE);
-
-      if (rd && rd->response_id == response_id)
-        gtk_window_set_default (GTK_WINDOW (titled_dialog), widget);
-
-      tmp_list = tmp_list->next;
-    }
-
-  g_list_free (children);
-}
 
 
 
@@ -689,7 +405,6 @@ G_GNUC_END_IGNORE_DEPRECATIONS
  *
  * Returns the subtitle of the @titled_dialog, or %NULL
  * if no subtitle is displayed in the @titled_dialog.
- * This is just a convenience function around #gtk_header_bar_get_subtitle.
  *
  * Return value: the subtitle of @titled_dialog, or %NULL.
  **/
@@ -709,7 +424,6 @@ xfce_titled_dialog_get_subtitle (XfceTitledDialog *titled_dialog)
  *
  * Sets the subtitle displayed by @titled_dialog to @subtitle; if
  * @subtitle is %NULL no subtitle will be displayed by the @titled_dialog.
- * This is just a convenience function around #gtk_header_bar_set_subtitle.
  **/
 void
 xfce_titled_dialog_set_subtitle (XfceTitledDialog *titled_dialog,
@@ -724,14 +438,45 @@ xfce_titled_dialog_set_subtitle (XfceTitledDialog *titled_dialog,
   /* activate the new subtitle */
   titled_dialog->priv->subtitle = g_strdup (subtitle);
 
-  /* update the subtitle of the headerbar */
-  gtk_header_bar_set_subtitle (GTK_HEADER_BAR (titled_dialog->priv->headerbar),
-                               titled_dialog->priv->subtitle);
+  /* update the subtitle for the heading */
+  _xfce_heading_set_subtitle (XFCE_HEADING (titled_dialog->priv->heading), subtitle);
 
   /* notify listeners */
   g_object_notify (G_OBJECT (titled_dialog), "subtitle");
 }
 
+//
+// libxfce4ui 4.15.1 no-CSD shims
+//
+
+void
+xfce_titled_dialog_create_action_area (XfceTitledDialog *titled_dialog)
+{
+    (void)titled_dialog;
+}
+
+void
+xfce_titled_dialog_add_action_widget (XfceTitledDialog *titled_dialog,
+                                      GtkWidget        *child,
+                                      gint              response_id)
+{
+    gtk_dialog_add_action_widget (GTK_DIALOG (titled_dialog), child, response_id);
+}
+
+void
+xfce_titled_dialog_set_default_response (XfceTitledDialog *titled_dialog,
+                                         gint              response_id)
+{
+    gtk_dialog_set_default_response (GTK_DIALOG (titled_dialog), response_id);
+}
+
+GtkWidget *
+xfce_titled_dialog_add_button (XfceTitledDialog *titled_dialog,
+                               const gchar      *button_text,
+                               gint              response_id)
+{
+    return gtk_dialog_add_button (GTK_DIALOG (titled_dialog), button_text, response_id);
+}
 
 
 #define __XFCE_TITLED_DIALOG_C__
