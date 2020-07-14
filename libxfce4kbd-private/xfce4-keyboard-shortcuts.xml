@@ -85,6 +85,14 @@
       <property name="&lt;Primary&gt;F10" type="string" value="workspace_10_key"/>
       <property name="&lt;Primary&gt;F11" type="string" value="workspace_11_key"/>
       <property name="&lt;Primary&gt;F12" type="string" value="workspace_12_key"/>
+      <property name="<Super>KP_Left" type="string" value="tile_left_key"/>
+      <property name="<Super>KP_Right" type="string" value="tile_right_key"/>
+      <property name="<Super>KP_Up" type="string" value="tile_down_key"/>
+      <property name="<Super>KP_Down" type="string" value="tile_up_key"/>
+      <property name="<Super>KP_Page_Up" type="string" value="tile_up_right_key"/>
+      <property name="<Super>KP_Home" type="string" value="tile_up_left_key"/>
+      <property name="<Super>KP_End" type="string" value="tile_down_left_key"/>
+      <property name="<Super>KP_Next" type="string" value="tile_down_right_key"/>
     </property>
   </property>
 </channel>
