@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-07-07 12:45+0200\n"
-"PO-Revision-Date: 2020-07-12 09:36+0000\n"
+"PO-Revision-Date: 2020-07-15 16:53+0000\n"
 "Last-Translator: Yannick Le Guen <leguen.yannick@gmail.com>\n"
 "Language-Team: French (http://www.transifex.com/xfce/libxfce4ui/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -254,11 +254,11 @@ msgstr "Effacer"
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:270
 #, c-format
 msgid "Press keyboard keys to trigger the %s '%s'."
-msgstr ""
+msgstr "Appuyer sur les touches du clavier pour déclencher %s « %s »."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:291
 msgid "Please press a key"
-msgstr ""
+msgstr "Veuillez appuyer sur une touche"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:345
 msgid "Could not grab the keyboard."
@@ -594,7 +594,7 @@ msgstr "Tableau de bord"
 
 #: ../xfce4-about/main.c:131
 msgid "Provides a home for window buttons, launchers, app menu and more."
-msgstr ""
+msgstr "Fournit une zone pour les boutons de fenêtres, les lanceurs, le menu des applications et plus encore."
 
 #: ../xfce4-about/main.c:135
 msgid "Desktop Manager"
@@ -651,7 +651,7 @@ msgstr "Service des paramètres"
 
 #: ../xfce4-about/main.c:166
 msgid "Stores your settings in a D-Bus-based configuration system."
-msgstr ""
+msgstr "Stocke vos paramètres dans un système de configuration basé sur D-Bus."
 
 #: ../xfce4-about/main.c:170
 msgid "A menu library"
@@ -831,7 +831,7 @@ msgid ""
 "Thank you for your interest in Xfce.\n"
 "\n"
 "\t- The Xfce Development Team"
-msgstr ""
+msgstr "Xfce est aussi une plateforme de développement fournissant plusieurs bibliothèques qui aident les programmeurs à créer des applications qui s’intègrent bien à l’environnement de bureau.\n\nLes composants Xfce sont placés sous des licences libres ou open source ; GPL ou BSDL pour les applications et LGPL ou BSDL pour les bibliothèques. Consultez la documentation, le code source ou le site web de Xfce (<a href=\"https://www.xfce.org\">https://www.xfce.org</a>) pour plus d’informations.\n\nMerci de votre intérêt pour Xfce.\n\n\t- L’équipe de développement Xfce"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:21
 msgid "About"
