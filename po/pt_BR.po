@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-07-07 12:45+0200\n"
-"PO-Revision-Date: 2020-07-15 05:12+0000\n"
+"PO-Revision-Date: 2020-07-16 13:41+0000\n"
 "Last-Translator: Lucas Wilm <lucaswilm@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) (http://www.transifex.com/xfce/libxfce4ui/language/pt_BR/)\n"
 "MIME-Version: 1.0\n"
@@ -253,7 +253,7 @@ msgstr "Limpar"
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:270
 #, c-format
 msgid "Press keyboard keys to trigger the %s '%s'."
-msgstr ""
+msgstr "Pressione as teclas para executar %s'%s'."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:291
 msgid "Please press a key"
@@ -617,7 +617,7 @@ msgstr "Gerenciador de volume"
 
 #: ../xfce4-about/main.c:146
 msgid "Manages removable drives and media for Thunar."
-msgstr ""
+msgstr "Gerencia unidades e mídias removíveis para o Thunar."
 
 #: ../xfce4-about/main.c:150
 msgid "Session Manager"
@@ -650,7 +650,7 @@ msgstr "Daemon de configurações"
 
 #: ../xfce4-about/main.c:166
 msgid "Stores your settings in a D-Bus-based configuration system."
-msgstr ""
+msgstr "Armazena suas configurações em um sistema de configuração baseado em D-Bus."
 
 #: ../xfce4-about/main.c:170
 msgid "A menu library"
@@ -658,7 +658,7 @@ msgstr "Uma biblioteca de menus"
 
 #: ../xfce4-about/main.c:171
 msgid "Implements a freedesktop.org compliant menu based on GLib and GIO."
-msgstr ""
+msgstr "Implementa um menu compatível com freedesktop.org baseado em GLib e GIO."
 
 #: ../xfce4-about/main.c:175
 msgid "Thumbnails service"
@@ -666,7 +666,7 @@ msgstr "Serviço de miniaturas"
 
 #: ../xfce4-about/main.c:176
 msgid "Implements the thumbnail management D-Bus specification."
-msgstr ""
+msgstr "Implementa a especificação D-Bus de gerenciamento de miniaturas."
 
 #: ../xfce4-about/main.c:329
 msgid ""
@@ -819,7 +819,7 @@ msgstr "Sistema"
 msgid ""
 "Xfce is a collection of programs that together provide a full-featured desktop environment.\n"
 "The following programs are part of the Xfce core:"
-msgstr ""
+msgstr "O Xfce é uma coleção de programas que juntos fornecem um ambiente de desktop completo.\nOs programas seguintes fazem parte do núcleo do Xfce:"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:14
 msgid ""
@@ -830,7 +830,7 @@ msgid ""
 "Thank you for your interest in Xfce.\n"
 "\n"
 "\t- The Xfce Development Team"
-msgstr ""
+msgstr "O Xfce também é uma plataforma de desenvolvimento que fornece várias bibliotecas que ajudam os programadores a criar aplicativos que se encaixam bem no ambiente de desktop.\n\nOs componentes do Xfce são licenciados sob licenças gratuitas ou de código aberto; GPL ou BSDL para aplicativos e LGPL ou BSDL para bibliotecas. Veja a documentação, o código fonte ou o site do Xfce (<a href=\"https://www.xfce.org\">https://www.xfce.org</a>) para mais informação.\n\nAgradecemos seu interesse pelo Xfce.\n\n\t- A equipe de desenvolvimento do Xfce"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:21
 msgid "About"
