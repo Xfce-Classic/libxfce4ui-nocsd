@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-07-07 12:45+0200\n"
-"PO-Revision-Date: 2020-07-21 21:49+0000\n"
+"PO-Revision-Date: 2020-07-22 09:57+0000\n"
 "Last-Translator: scootergrisen\n"
 "Language-Team: Danish (http://www.transifex.com/xfce/libxfce4ui/language/da/)\n"
 "MIME-Version: 1.0\n"
@@ -602,7 +602,7 @@ msgstr "Skrivebordshåndtering"
 
 #: ../xfce4-about/main.c:136
 msgid "Sets desktop backgrounds, handles icons and more."
-msgstr ""
+msgstr "Indstiller skrivebordsbaggrunde, håndterer ikoner mm."
 
 #: ../xfce4-about/main.c:140
 msgid "File Manager"
@@ -610,7 +610,7 @@ msgstr "Filhåndtering"
 
 #: ../xfce4-about/main.c:141
 msgid "Manages your files in a modern, easy-to-use and fast way."
-msgstr ""
+msgstr "Håndterer dine filer på en moderne, letanvendelig og hurtig måde."
 
 #: ../xfce4-about/main.c:145
 msgid "Volume manager"
@@ -618,7 +618,7 @@ msgstr "Diskområdehåndtering"
 
 #: ../xfce4-about/main.c:146
 msgid "Manages removable drives and media for Thunar."
-msgstr ""
+msgstr "Håndterer flytbare drev og medier for Thunar."
 
 #: ../xfce4-about/main.c:150
 msgid "Session Manager"
@@ -627,7 +627,7 @@ msgstr "Sessionshåndtering"
 #: ../xfce4-about/main.c:151
 msgid ""
 "Saves and restores your session, handles startup, autostart and shutdown."
-msgstr ""
+msgstr "Gemmer og gendanner din session, håndterer opstart, automatisk start og nedlukning."
 
 #: ../xfce4-about/main.c:155
 msgid "Setting System"
@@ -635,7 +635,7 @@ msgstr "Systemindstilling"
 
 #: ../xfce4-about/main.c:156
 msgid "Configures appearance, display, keyboard and mouse settings."
-msgstr ""
+msgstr "Konfigurerer udseende-, skærm-, tastatur- og museindstillinger."
 
 #: ../xfce4-about/main.c:160
 msgid "Application Finder"
@@ -643,7 +643,7 @@ msgstr "Programfinder"
 
 #: ../xfce4-about/main.c:161
 msgid "Quickly finds and launches applications installed on your system."
-msgstr ""
+msgstr "Finder og starter programmer som er installeret på dit system, hurtigt."
 
 #: ../xfce4-about/main.c:165
 msgid "Settings Daemon"
@@ -651,7 +651,7 @@ msgstr "Indstillingsdæmon"
 
 #: ../xfce4-about/main.c:166
 msgid "Stores your settings in a D-Bus-based configuration system."
-msgstr ""
+msgstr "Gemmer dine indstillinger i et D-Bus-baseret konfigurationssystem."
 
 #: ../xfce4-about/main.c:170
 msgid "A menu library"
@@ -659,7 +659,7 @@ msgstr "Et menubibliotek"
 
 #: ../xfce4-about/main.c:171
 msgid "Implements a freedesktop.org compliant menu based on GLib and GIO."
-msgstr ""
+msgstr "Implementerer en freedesktop.org-overholdende menu baseret på GLib og GIO."
 
 #: ../xfce4-about/main.c:175
 msgid "Thumbnails service"
@@ -667,7 +667,7 @@ msgstr "Miniaturetjeneste"
 
 #: ../xfce4-about/main.c:176
 msgid "Implements the thumbnail management D-Bus specification."
-msgstr ""
+msgstr "Implementerer D-Bus-specifikationen til miniaturehåndtering."
 
 #: ../xfce4-about/main.c:329
 msgid ""
@@ -820,7 +820,7 @@ msgstr "System"
 msgid ""
 "Xfce is a collection of programs that together provide a full-featured desktop environment.\n"
 "The following programs are part of the Xfce core:"
-msgstr ""
+msgstr "Xfce er en samling af programmer der tilsammen leverer et fuldt funktionsdygtigt skrivebordsmiljø. Følgende programmer er en del af kernen i Xfce:"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:14
 msgid ""
@@ -831,7 +831,7 @@ msgid ""
 "Thank you for your interest in Xfce.\n"
 "\n"
 "\t- The Xfce Development Team"
-msgstr ""
+msgstr "Xfce er også en udviklingsplatform med adskillige biblioteker der hjælper programmører med at oprette programmer som passer godt ind i med skrivebordsmiljøet.\n\nKomponenterne i Xfce er licenseret under frie eller open source-licenser; GPL eller BSDL til programmer, og LGPL eller BSDL til biblioteker. Kig i dokumentationen, kildekoden eller på Xfce-webstedet (<a href=\"https://www.xfce.org\">https://www.xfce.org</a>) for mere information.\n\nTak for din interesse i Xfce.\n\n\t- Xfce's udviklingshold"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:21
 msgid "About"
