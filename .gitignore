@@ -25,7 +25,7 @@ missing
 po/Makefile.in.in
 po/POTFILES
 po/stamp-it
-po/.intltool-merge-cache
+po/.intltool-merge-cache*
 stamp-h1
 test-driver
 .deps/
