@@ -257,10 +257,17 @@ xfce_spawn_get_active_workspace_number (GdkScreen *screen)
 }
 #endif
 
-
+// Called by g_spawn_async before execv() is run in the new child process
+// Used if background_process is set to TRUE in xfce_spawn_impl
+static void background_process_call (gpointer _unused)
+{
+  // 1 = leave current working directory unchanged (we already set this)
+  // 0 = redirect /dev/{stdin, stdout, stderr} to /dev/null
+  daemon (1, 0);
+}
 
 /**
- * xfce_spawn_on_screen_with_child_watch:
+ * xfce_spawn_impl
  * @screen              : (allow-none): a #GdkScreen or %NULL to use the active screen,
  *                        see xfce_gdk_screen_get_active().
  * @working_directory   : (allow-none): child's current working directory or %NULL to
@@ -282,6 +289,7 @@ xfce_spawn_get_active_workspace_number (GdkScreen *screen)
  * @child_watch_closure : (allow-none): closure that is triggered when the child exists
  *                        or %NULL.
  * @error               : (out) (allow-none) (transfer full): return location for errors or %NULL.
+ * @background_process  : whether this process should be re-parented to init
  *
  * Like xfce_spawn_on_screen(), but allows to attach a closure to watch the
  * child's exit status. This because only one g_child_watch_add() is allowed on
@@ -314,17 +322,18 @@ xfce_spawn_get_active_workspace_number (GdkScreen *screen)
  *
  * Return value: %TRUE on success, %FALSE if @error is set.
  **/
-gboolean
-xfce_spawn_on_screen_with_child_watch (GdkScreen    *screen,
-                                       const gchar  *working_directory,
-                                       gchar       **argv,
-                                       gchar       **envp,
-                                       GSpawnFlags   flags,
-                                       gboolean      startup_notify,
-                                       guint32       startup_timestamp,
-                                       const gchar  *startup_icon_name,
-                                       GClosure     *child_watch_closure,
-                                       GError      **error)
+static gboolean
+xfce_spawn_impl (GdkScreen    *screen,
+                 const gchar  *working_directory,
+                 gchar       **argv,
+                 gchar       **envp,
+                 GSpawnFlags   flags,
+                 gboolean      startup_notify,
+                 guint32       startup_timestamp,
+                 const gchar  *startup_icon_name,
+                 GClosure     *child_watch_closure,
+                 GError      **error,
+                 gboolean      background_process)
 {
   gboolean            succeed;
   gchar             **cenvp;
@@ -435,7 +444,8 @@ G_GNUC_END_IGNORE_DEPRECATIONS
     }
 
   /* try to spawn the new process */
-  succeed = g_spawn_async (working_directory, argv, cenvp, flags, NULL,
+  succeed = g_spawn_async (working_directory, argv, cenvp, flags,
+                           background_process ? background_process_call : NULL,
                            NULL, &pid, error);
 
   g_strfreev (cenvp);
@@ -492,6 +502,24 @@ G_GNUC_END_IGNORE_DEPRECATIONS
   return succeed;
 }
 
+gboolean
+xfce_spawn_on_screen_with_child_watch (GdkScreen    *screen,
+                                       const gchar  *working_directory,
+                                       gchar       **argv,
+                                       gchar       **envp,
+                                       GSpawnFlags   flags,
+                                       gboolean      startup_notify,
+                                       guint32       startup_timestamp,
+                                       const gchar  *startup_icon_name,
+                                       GClosure     *child_watch_closure,
+                                       GError      **error)
+{
+  return xfce_spawn_impl(screen, working_directory, argv,
+                         envp, flags, startup_notify,
+                         startup_timestamp, startup_icon_name,
+                         child_watch_closure, error, FALSE);
+}
+
 
 
 /**
@@ -532,10 +560,10 @@ xfce_spawn_on_screen (GdkScreen    *screen,
                       const gchar  *startup_icon_name,
                       GError      **error)
 {
-  return xfce_spawn_on_screen_with_child_watch (screen, working_directory, argv,
-                                                envp, flags, startup_notify,
-                                                startup_timestamp, startup_icon_name,
-                                                NULL, error);
+  return xfce_spawn_impl(screen, working_directory, argv,
+                        envp, flags, startup_notify,
+                        startup_timestamp, startup_icon_name,
+                        NULL, error, TRUE);
 }
 
 
