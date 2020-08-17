@@ -234,7 +234,8 @@ xfce_shortcuts_grabber_grab (XfceShortcutsGrabber *grabber,
   gchar           *shortcut_name;
   guint            modifiers;
   guint            k;
-  gint             i, j;
+  gint             i;
+  gint             j;
   gint             n_keys;
   gint             screens;
 
@@ -335,7 +336,7 @@ xfce_shortcuts_grabber_grab (XfceShortcutsGrabber *grabber,
                           GrabModeAsync);
               else
                 {
-                  if (i >= key->keycodes->len)
+                  if (i >= (gint) key->keycodes->len)
                     break;
                   XUngrabKey (GDK_DISPLAY_XDISPLAY (display),
                               g_array_index (key->keycodes, guint, i),

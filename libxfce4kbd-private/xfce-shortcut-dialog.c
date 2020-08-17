@@ -365,7 +365,7 @@ xfce_shortcut_dialog_key_pressed (XfceShortcutDialog *dialog,
   gchar          **keys;
   GtkWidget       *key_label;
   GtkStyleContext *context;
-  gint             i;
+  guint            i;
 
   /* Clean up */
   g_free (dialog->shortcut);
