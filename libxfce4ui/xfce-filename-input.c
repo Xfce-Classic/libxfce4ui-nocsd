@@ -68,16 +68,18 @@ enum
 
 
 
-static void     xfce_filename_input_set_property  (GObject      *object,
-                                                   guint         prop_id,
-                                                   const GValue *value,
-                                                   GParamSpec   *pspec);
-static void     xfce_filename_input_finalize      (GObject      *object);
-static void     xfce_filename_input_entry_changed (GtkEditable  *editable,
-                                                   gpointer      data);
-static gboolean xfce_filename_input_entry_undo    (GtkWidget    *widget,
-                                                   GdkEvent     *event,
-                                                   gpointer      data);
+static void     xfce_filename_input_set_property                     (GObject      *object,
+                                                                      guint         prop_id,
+                                                                      const GValue *value,
+                                                                      GParamSpec   *pspec);
+static void     xfce_filename_input_finalize                         (GObject      *object);
+static void     xfce_filename_input_entry_changed                    (GtkEditable  *editable,
+                                                                      gpointer      data);
+static gboolean xfce_filename_input_entry_undo                       (GtkWidget    *widget,
+                                                                      GdkEvent     *event,
+                                                                      gpointer      data);
+static gboolean xfce_filename_input_whitespace_warning_timer         (gpointer      data);
+static void     xfce_filename_input_whitespace_warning_timer_destroy (gpointer      data);
 
 
 
@@ -100,8 +102,10 @@ struct _XfceFilenameInput
   GRegex   *whitespace_regex;
   GRegex   *dir_sep_regex;
 
-  gint     max_text_length;
+  gint      max_text_length;
   gchar    *original_filename;
+
+  guint     whitespace_warning_timer_id;
 };
 
 static guint signals[N_SIGS];
@@ -264,6 +268,10 @@ xfce_filename_input_finalize (GObject *object)
 {
   XfceFilenameInput *filename_input = XFCE_FILENAME_INPUT (object);
 
+  /* cancel any pending timer */
+  if (filename_input->whitespace_warning_timer_id != 0)
+    g_source_remove (filename_input->whitespace_warning_timer_id);
+
   g_regex_unref (filename_input->whitespace_regex);
   g_regex_unref (filename_input->dir_sep_regex);
 
@@ -389,6 +397,10 @@ xfce_filename_input_entry_changed (GtkEditable *editable,
   filename_input = XFCE_FILENAME_INPUT (data);
   label = filename_input->label;
 
+  /* cancel any pending timer to display a warning about the text starting or ending with whitespace */
+  if (filename_input->whitespace_warning_timer_id != 0)
+    g_source_remove (filename_input->whitespace_warning_timer_id);
+
   /* get the string representing the current text of the GtkEntry */
   text_length = gtk_entry_get_text_length (entry);
   text = gtk_entry_get_text (entry); /* NB this string must not be modified or freed,
@@ -426,9 +438,14 @@ xfce_filename_input_entry_changed (GtkEditable *editable,
   else if (match_ws)
     {
       /* the string starts or ends with whitespace
-       * this does not make the filename invalid, but we warn the user about it */
-      label_text = _("Filenames should not start or end with a space");
-      icon_name = "dialog-warning";
+       * this does not make the filename invalid, but we set a timer so that the user will be warned about this if
+         the input remains unchanged for a time */
+      filename_input->whitespace_warning_timer_id = g_timeout_add_full (G_PRIORITY_DEFAULT, 1000,
+                                                                        xfce_filename_input_whitespace_warning_timer,
+                                                                        filename_input,
+                                                                        xfce_filename_input_whitespace_warning_timer_destroy);
+      icon_name = NULL;
+      label_text = "";
       new_text_valid = TRUE;
     }
 
@@ -476,6 +493,31 @@ xfce_filename_input_entry_undo (GtkWidget  *widget,
     }
 
   return GDK_EVENT_PROPAGATE;
+}
+
+static gboolean
+xfce_filename_input_whitespace_warning_timer (gpointer data)
+{
+  XfceFilenameInput *filename_input;
+
+  g_return_val_if_fail (XFCE_IS_FILENAME_INPUT (data), FALSE);
+  filename_input = XFCE_FILENAME_INPUT (data);
+
+  /* update the icon in the GtkEntry and the message in the GtkLabel */
+  gtk_entry_set_icon_from_icon_name (filename_input->entry,
+                                     GTK_ENTRY_ICON_SECONDARY,
+                                     "dialog-warning");
+  gtk_label_set_text (filename_input->label, _("Filenames should not start or end with a space"));
+
+  return FALSE;
+}
+
+static void
+xfce_filename_input_whitespace_warning_timer_destroy (gpointer data)
+{
+  g_return_if_fail (XFCE_IS_FILENAME_INPUT (data));
+
+  XFCE_FILENAME_INPUT (data)->whitespace_warning_timer_id = 0;
 }
 
 #define __XFCE_FILENAME_INPUT_C__
