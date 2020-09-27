@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-07-07 12:45+0200\n"
-"PO-Revision-Date: 2020-07-09 10:22+0000\n"
+"PO-Revision-Date: 2020-09-27 14:08+0000\n"
 "Last-Translator: Luna Jernberg <bittin@cafe8bitar.se>\n"
 "Language-Team: Swedish (http://www.transifex.com/xfce/libxfce4ui/language/sv/)\n"
 "MIME-Version: 1.0\n"
@@ -74,7 +74,7 @@ msgstr "Avbryt"
 
 #: ../libxfce4ui/xfce-dialogs.c:518
 msgid "Close window with multiple tabs?"
-msgstr ""
+msgstr "Stäng fönster med flera flikar?"
 
 #: ../libxfce4ui/xfce-dialogs.c:520
 msgid ""
@@ -151,13 +151,13 @@ msgstr ""
 #. the string is too long
 #: ../libxfce4ui/xfce-filename-input.c:422
 msgid "Filename is too long"
-msgstr ""
+msgstr "Filnamnet är för långt"
 
 #. the string starts or ends with whitespace
 #. * this does not make the filename invalid, but we warn the user about it
 #: ../libxfce4ui/xfce-filename-input.c:430
 msgid "Filenames should not start or end with a space"
-msgstr ""
+msgstr "Filnamn ska inte börja eller sluta med ett mellanslag"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 #, c-format
