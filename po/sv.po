@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-07-07 12:45+0200\n"
-"PO-Revision-Date: 2020-09-27 14:08+0000\n"
+"PO-Revision-Date: 2020-10-09 10:17+0000\n"
 "Last-Translator: Luna Jernberg <bittin@cafe8bitar.se>\n"
 "Language-Team: Swedish (http://www.transifex.com/xfce/libxfce4ui/language/sv/)\n"
 "MIME-Version: 1.0\n"
@@ -80,14 +80,14 @@ msgstr "Stäng fönster med flera flikar?"
 msgid ""
 "This window has multiple tabs open. Closing this window will also close all "
 "its tabs."
-msgstr ""
+msgstr "Detta fönster har flera flikar öppna. Att stänga fönstret kommer också att stänga alla dess flikar."
 
 #: ../libxfce4ui/xfce-dialogs.c:523
 #, c-format
 msgid ""
 "This window has %d tabs open. Closing this window will also close all its "
 "tabs."
-msgstr ""
+msgstr "Detta fönster har %d flikar öppna.  Att stänga detta fönster kommer också att stänga alla dess flikar."
 
 #: ../libxfce4ui/xfce-dialogs.c:529
 msgid "Warning"
@@ -253,7 +253,7 @@ msgstr ""
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:291
 msgid "Please press a key"
-msgstr ""
+msgstr "Tryck på en tangent"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:345
 msgid "Could not grab the keyboard."
@@ -597,7 +597,7 @@ msgstr "Skrivbordshanterare"
 
 #: ../xfce4-about/main.c:136
 msgid "Sets desktop backgrounds, handles icons and more."
-msgstr ""
+msgstr "Ställer in skrivbordsbakgrunder, hanterar ikoner och mer."
 
 #: ../xfce4-about/main.c:140
 msgid "File Manager"
@@ -605,7 +605,7 @@ msgstr "Filhanterare"
 
 #: ../xfce4-about/main.c:141
 msgid "Manages your files in a modern, easy-to-use and fast way."
-msgstr ""
+msgstr "Hanterar dina filer på ett modernt, lättanvänt och snabbt sätt."
 
 #: ../xfce4-about/main.c:145
 msgid "Volume manager"
@@ -613,7 +613,7 @@ msgstr "Volymhanterare"
 
 #: ../xfce4-about/main.c:146
 msgid "Manages removable drives and media for Thunar."
-msgstr ""
+msgstr "Hanterar flyttbara enheter och media för Thunar."
 
 #: ../xfce4-about/main.c:150
 msgid "Session Manager"
@@ -622,7 +622,7 @@ msgstr "Sessionshanterare"
 #: ../xfce4-about/main.c:151
 msgid ""
 "Saves and restores your session, handles startup, autostart and shutdown."
-msgstr ""
+msgstr "Sparar och återställer din session, hanterar start, autostart och avstängning."
 
 #: ../xfce4-about/main.c:155
 msgid "Setting System"
@@ -630,7 +630,7 @@ msgstr "Inställningssystem"
 
 #: ../xfce4-about/main.c:156
 msgid "Configures appearance, display, keyboard and mouse settings."
-msgstr ""
+msgstr "Konfigurerar utseende, skärm, tangentbord och mus inställningar."
 
 #: ../xfce4-about/main.c:160
 msgid "Application Finder"
@@ -638,7 +638,7 @@ msgstr "Programsökare"
 
 #: ../xfce4-about/main.c:161
 msgid "Quickly finds and launches applications installed on your system."
-msgstr ""
+msgstr "Hittar snabbt och startar program som är installerade på ditt system."
 
 #: ../xfce4-about/main.c:165
 msgid "Settings Daemon"
@@ -646,7 +646,7 @@ msgstr "Inställningsdaemon"
 
 #: ../xfce4-about/main.c:166
 msgid "Stores your settings in a D-Bus-based configuration system."
-msgstr ""
+msgstr "Lagrar dina inställningar i ett D-Bus-baserat konfigurationssystem."
 
 #: ../xfce4-about/main.c:170
 msgid "A menu library"
@@ -654,11 +654,11 @@ msgstr "Ett meny bibliotek"
 
 #: ../xfce4-about/main.c:171
 msgid "Implements a freedesktop.org compliant menu based on GLib and GIO."
-msgstr ""
+msgstr "Implementerar en freedesktop.org-kompatibel meny baserad på GLib och GIO."
 
 #: ../xfce4-about/main.c:175
 msgid "Thumbnails service"
-msgstr ""
+msgstr "Miniatyrbildstjänst"
 
 #: ../xfce4-about/main.c:176
 msgid "Implements the thumbnail management D-Bus specification."
