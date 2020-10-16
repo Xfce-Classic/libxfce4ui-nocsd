@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-06 00:30+0200\n"
-"PO-Revision-Date: 2020-04-05 22:30+0000\n"
+"POT-Creation-Date: 2020-07-07 12:45+0200\n"
+"PO-Revision-Date: 2020-07-07 10:45+0000\n"
 "Last-Translator: Xfce Bot <transifex@xfce.org>\n"
 "Language-Team: Bengali (http://www.transifex.com/xfce/libxfce4ui/language/bn/)\n"
 "MIME-Version: 1.0\n"
@@ -40,7 +40,7 @@ msgstr ""
 
 #. Create cancel button
 #: ../libxfce4ui/xfce-dialogs.c:275 ../libxfce4ui/xfce-dialogs.c:533
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:243
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:253
 msgid "_Cancel"
 msgstr "বাতিল (_C)"
 
@@ -215,46 +215,45 @@ msgstr "%s এর জন্য অ্যাকশনের মাঝে দ্�
 msgid "This shortcut is already being used for something else."
 msgstr "এই শর্টকাটটি ইতোমধ্যেই অন্যকিছুর জন্য ব্যবহার করা হয়েছে।"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:210
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:214
 msgid "Window Manager Action Shortcut"
 msgstr "উইন্ডো ম্যানেজার অ্যাকশন শর্টকাট"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:213
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:227
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:217
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:233
 msgid "action"
 msgstr ""
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:217
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:222
 msgid "Command Shortcut"
 msgstr "কমান্ড শর্টকাট"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:220
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:225
 msgid "command"
 msgstr ""
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:224
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:230
 msgid "Shortcut"
 msgstr "শর্টকাট"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:258
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:247
+msgid "Clear"
+msgstr "অপসারণ করা"
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:270
 #, c-format
-msgid "Press now the keyboard keys you want to use to trigger the %s '%s'."
+msgid "Press keyboard keys to trigger the %s '%s'."
 msgstr ""
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:278
-msgid "Shortcut:"
-msgstr "শর্টকাট:"
-
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:283
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:424
-msgid "No keys pressed yet, proceed."
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:291
+msgid "Please press a key"
 msgstr ""
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:331
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:345
 msgid "Could not grab the keyboard."
 msgstr "কীবোর্ড টেনে আনতে পারেনি।"
 
@@ -570,7 +569,7 @@ msgstr "উপশিরোনাম"
 msgid "Xfce 4 Widgets"
 msgstr "Xfce ৪ উইজেডটস"
 
-#: ../xfce4-about/main.c:56
+#: ../xfce4-about/main.c:59
 msgid "Version information"
 msgstr "সংস্করণ তথ্যাবলী"
 
@@ -582,145 +581,104 @@ msgstr "উইন্ডো ব্যবস্থাপক"
 msgid "Handles the placement of windows on the screen."
 msgstr ""
 
-#: ../xfce4-about/main.c:129
+#: ../xfce4-about/main.c:130
 msgid "Panel"
 msgstr ""
 
-#: ../xfce4-about/main.c:130
-msgid ""
-"Program launchers, window buttons, applications menu, workspace switcher and"
-" more."
-msgstr ""
-
-#: ../xfce4-about/main.c:134
-msgid "Desktop Manager"
+#: ../xfce4-about/main.c:131
+msgid "Provides a home for window buttons, launchers, app menu and more."
 msgstr ""
 
 #: ../xfce4-about/main.c:135
-msgid ""
-"Sets the background color or image with optional application menu or icons "
-"for minimized applications or launchers, devices and folders."
+msgid "Desktop Manager"
 msgstr ""
 
-#: ../xfce4-about/main.c:139
+#: ../xfce4-about/main.c:136
+msgid "Sets desktop backgrounds, handles icons and more."
+msgstr ""
+
+#: ../xfce4-about/main.c:140
 msgid "File Manager"
 msgstr "ফাইল ব্যবস্থাপক"
 
-#: ../xfce4-about/main.c:140
-msgid ""
-"A modern file manager for the Unix/Linux desktop, aiming to be easy-to-use "
-"and fast."
-msgstr ""
-
-#: ../xfce4-about/main.c:144
-msgid "Volume manager"
+#: ../xfce4-about/main.c:141
+msgid "Manages your files in a modern, easy-to-use and fast way."
 msgstr ""
 
 #: ../xfce4-about/main.c:145
-msgid "Automatic management of removable drives and media for Thunar."
+msgid "Volume manager"
 msgstr ""
 
-#: ../xfce4-about/main.c:148
+#: ../xfce4-about/main.c:146
+msgid "Manages removable drives and media for Thunar."
+msgstr ""
+
+#: ../xfce4-about/main.c:150
 msgid "Session Manager"
 msgstr ""
 
-#: ../xfce4-about/main.c:149
+#: ../xfce4-about/main.c:151
 msgid ""
-"Restores your session on startup and allows you to shutdown the computer "
-"from Xfce."
+"Saves and restores your session, handles startup, autostart and shutdown."
 msgstr ""
 
-#: ../xfce4-about/main.c:153
+#: ../xfce4-about/main.c:155
 msgid "Setting System"
 msgstr ""
 
-#: ../xfce4-about/main.c:154
-msgid ""
-"Configuration system to control various aspects of the desktop like "
-"appearance, display, keyboard and mouse settings."
+#: ../xfce4-about/main.c:156
+msgid "Configures appearance, display, keyboard and mouse settings."
 msgstr ""
 
-#: ../xfce4-about/main.c:158
+#: ../xfce4-about/main.c:160
 msgid "Application Finder"
 msgstr "অ্যাপ্লিকেশন অনুসন্ধানকারী"
 
-#: ../xfce4-about/main.c:159
-msgid ""
-"Shows the applications installed on your system in categories, so you can "
-"quickly find and launch them."
+#: ../xfce4-about/main.c:161
+msgid "Quickly finds and launches applications installed on your system."
 msgstr ""
 
-#: ../xfce4-about/main.c:163
+#: ../xfce4-about/main.c:165
 msgid "Settings Daemon"
 msgstr ""
 
-#: ../xfce4-about/main.c:164
-msgid "D-Bus-based configuration storage system."
+#: ../xfce4-about/main.c:166
+msgid "Stores your settings in a D-Bus-based configuration system."
 msgstr ""
 
-#: ../xfce4-about/main.c:167
+#: ../xfce4-about/main.c:170
 msgid "A menu library"
 msgstr ""
 
-#: ../xfce4-about/main.c:168
-msgid "A freedesktop.org compliant menu implementation based on GLib and GIO."
+#: ../xfce4-about/main.c:171
+msgid "Implements a freedesktop.org compliant menu based on GLib and GIO."
 msgstr ""
 
-#: ../xfce4-about/main.c:172
+#: ../xfce4-about/main.c:175
 msgid "Thumbnails service"
 msgstr ""
 
-#: ../xfce4-about/main.c:173
-msgid ""
-"Thumbnail service implementing the thumbnail management D-Bus specification."
+#: ../xfce4-about/main.c:176
+msgid "Implements the thumbnail management D-Bus specification."
 msgstr ""
 
-#: ../xfce4-about/main.c:180
-msgid ""
-"Xfce is a collection of programs that together provide a full-featured "
-"desktop environment. The following programs are part of the Xfce core:"
-msgstr ""
-
-#: ../xfce4-about/main.c:204
-msgid ""
-"Xfce is also a development platform providing several libraries, that help "
-"programmers create applications that fit in well with the desktop "
-"environment."
-msgstr ""
-
-#: ../xfce4-about/main.c:210
-msgid ""
-"Xfce components are licensed under free or open source licences; GPL or BSDL"
-" for applications and LGPL or BSDL for libraries. Look at the documentation,"
-" the source code or the Xfce website (https://www.xfce.org) for more "
-"information."
-msgstr ""
-
-#: ../xfce4-about/main.c:217
-msgid "Thank you for your interest in Xfce."
-msgstr ""
-
-#: ../xfce4-about/main.c:221
-msgid "The Xfce Development Team"
-msgstr ""
-
-#: ../xfce4-about/main.c:323
+#: ../xfce4-about/main.c:329
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
-"on <https://bugzilla.xfce.org> ."
+"on <https://gitlab.xfce.org/xfce/libxfce4ui/-/issues> ."
 msgstr ""
 
-#: ../xfce4-about/main.c:327
+#: ../xfce4-about/main.c:333
 msgid "Thanks to all who helped making this software available!"
 msgstr ""
 
-#: ../xfce4-about/main.c:344
+#: ../xfce4-about/main.c:350
 msgid ""
 "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
 msgstr ""
 
-#: ../xfce4-about/main.c:349
+#: ../xfce4-about/main.c:355
 msgid ""
 "The libxfce4ui, libxfce4util and exo packages are distributed under the "
 "terms of the GNU Library General Public License as published by the Free "
@@ -728,7 +686,7 @@ msgid ""
 "any later version."
 msgstr ""
 
-#: ../xfce4-about/main.c:356
+#: ../xfce4-about/main.c:362
 msgid ""
 "The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, "
 "xfce4-settings, xfconf, xfdesktop and xfwm4 are distributed under the terms "
@@ -737,37 +695,37 @@ msgid ""
 "version."
 msgstr ""
 
-#: ../xfce4-about/main.c:503
+#: ../xfce4-about/main.c:509
 #, c-format
 msgid "Type '%s --help' for usage information."
 msgstr ""
 
-#: ../xfce4-about/main.c:509
+#: ../xfce4-about/main.c:515
 msgid "Unable to initialize GTK+."
 msgstr "GTK+ আরম্ভ করতে ব্যর্থ।"
 
-#: ../xfce4-about/main.c:518
+#: ../xfce4-about/main.c:524
 msgid "The Xfce development team. All rights reserved."
 msgstr "Xfce ডেভেলপমেন্ট টিম। সকল অধিকার সংরক্ষিত।"
 
-#: ../xfce4-about/main.c:519
+#: ../xfce4-about/main.c:525
 #, c-format
 msgid "Please report bugs to <%s>."
 msgstr "অনুগ্রহ করে <%s> এখানে বাগ প্রতিবেদন পাঠান।"
 
-#: ../xfce4-about/main.c:529
+#: ../xfce4-about/main.c:535
 msgid "Failed to load interface"
 msgstr ""
 
 #. I18N: first %s will be replaced by the version, second by
 #. * the name of the distribution (--with-vendor-info=NAME)
-#: ../xfce4-about/main.c:543
+#: ../xfce4-about/main.c:549
 #, c-format
 msgid "Version %s, distributed by %s"
 msgstr ""
 
 #. I18N: %s will be replaced by the Xfce version number
-#: ../xfce4-about/main.c:547
+#: ../xfce4-about/main.c:553
 #, c-format
 msgid "Version %s"
 msgstr ""
@@ -852,26 +810,43 @@ msgid "System"
 msgstr "সিস্টেম"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:12
-msgid "About"
-msgstr ""
-
-#: ../xfce4-about/xfce4-about-dialog.glade.h:13
-msgid "Credits"
+msgid ""
+"Xfce is a collection of programs that together provide a full-featured desktop environment.\n"
+"The following programs are part of the Xfce core:"
 msgstr ""
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:14
+msgid ""
+"Xfce is also a development platform providing several libraries that help programmers create applications that fit in well with the desktop environment.\n"
+"\n"
+"Xfce components are licensed under free or open source licences; GPL or BSDL for applications and LGPL or BSDL for libraries. Look at the documentation, the source code or the Xfce website (<a href=\"https://www.xfce.org\">https://www.xfce.org</a>) for more information.\n"
+"\n"
+"Thank you for your interest in Xfce.\n"
+"\n"
+"\t- The Xfce Development Team"
+msgstr ""
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:21
+msgid "About"
+msgstr ""
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:22
+msgid "Credits"
+msgstr ""
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:23
 msgid "GPL"
 msgstr ""
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:15
+#: ../xfce4-about/xfce4-about-dialog.glade.h:24
 msgid "LGPL"
 msgstr ""
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:16
+#: ../xfce4-about/xfce4-about-dialog.glade.h:25
 msgid "BSD"
 msgstr ""
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:17
+#: ../xfce4-about/xfce4-about-dialog.glade.h:26
 msgid "Copyright"
 msgstr ""
 
