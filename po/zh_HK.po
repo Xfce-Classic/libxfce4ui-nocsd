@@ -9,9 +9,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-06 00:30+0200\n"
-"PO-Revision-Date: 2020-05-26 05:06+0000\n"
-"Last-Translator: Ivan <personal@live.hk>\n"
+"POT-Creation-Date: 2020-07-07 12:45+0200\n"
+"PO-Revision-Date: 2020-07-07 10:45+0000\n"
+"Last-Translator: Xfce Bot <transifex@xfce.org>\n"
 "Language-Team: Chinese (Hong Kong) (http://www.transifex.com/xfce/libxfce4ui/language/zh_HK/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -40,7 +40,7 @@ msgstr "您會被重新引導至我們保存和翻譯說明文件的網站。"
 
 #. Create cancel button
 #: ../libxfce4ui/xfce-dialogs.c:275 ../libxfce4ui/xfce-dialogs.c:533
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:243
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:253
 msgid "_Cancel"
 msgstr "取消(_C)"
 
@@ -215,46 +215,45 @@ msgstr "%s 的動作發生衝突"
 msgid "This shortcut is already being used for something else."
 msgstr "此捷徑正被其它動作使用。"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:210
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:214
 msgid "Window Manager Action Shortcut"
 msgstr "視窗管理程式動作捷徑鍵"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:213
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:227
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:217
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:233
 msgid "action"
 msgstr "動作"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:217
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:222
 msgid "Command Shortcut"
 msgstr "指令捷徑鍵"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:220
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:225
 msgid "command"
 msgstr "指令"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:224
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:230
 msgid "Shortcut"
 msgstr "捷徑鍵"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:258
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:247
+msgid "Clear"
+msgstr "清除"
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:270
 #, c-format
-msgid "Press now the keyboard keys you want to use to trigger the %s '%s'."
-msgstr "請現在按下想要用來觸發 %s「%s」的鍵盤按鍵。"
+msgid "Press keyboard keys to trigger the %s '%s'."
+msgstr ""
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:278
-msgid "Shortcut:"
-msgstr "捷徑鍵："
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:291
+msgid "Please press a key"
+msgstr ""
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:283
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:424
-msgid "No keys pressed yet, proceed."
-msgstr "未按下任何按鍵，繼續。"
-
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:331
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:345
 msgid "Could not grab the keyboard."
 msgstr "無法抓取鍵盤。"
 
@@ -570,7 +569,7 @@ msgstr "子標題"
 msgid "Xfce 4 Widgets"
 msgstr "Xfce 4 器件"
 
-#: ../xfce4-about/main.c:56
+#: ../xfce4-about/main.c:59
 msgid "Version information"
 msgstr "版本資訊"
 
@@ -582,145 +581,104 @@ msgstr "視窗管理員"
 msgid "Handles the placement of windows on the screen."
 msgstr "處理如何於螢幕置放視窗。"
 
-#: ../xfce4-about/main.c:129
+#: ../xfce4-about/main.c:130
 msgid "Panel"
 msgstr "面板"
 
-#: ../xfce4-about/main.c:130
-msgid ""
-"Program launchers, window buttons, applications menu, workspace switcher and"
-" more."
-msgstr "程式啟動器、視窗按鈕、應用程式選單、工作區切換與其他。"
+#: ../xfce4-about/main.c:131
+msgid "Provides a home for window buttons, launchers, app menu and more."
+msgstr ""
 
-#: ../xfce4-about/main.c:134
+#: ../xfce4-about/main.c:135
 msgid "Desktop Manager"
 msgstr "視窗管理員"
 
-#: ../xfce4-about/main.c:135
-msgid ""
-"Sets the background color or image with optional application menu or icons "
-"for minimized applications or launchers, devices and folders."
-msgstr "設定背景色彩，或選用應用程式選單的影像，或最小化應用程式或啟動器、裝置、資料夾的圖示。"
+#: ../xfce4-about/main.c:136
+msgid "Sets desktop backgrounds, handles icons and more."
+msgstr ""
 
-#: ../xfce4-about/main.c:139
+#: ../xfce4-about/main.c:140
 msgid "File Manager"
 msgstr "檔案管理員"
 
-#: ../xfce4-about/main.c:140
-msgid ""
-"A modern file manager for the Unix/Linux desktop, aiming to be easy-to-use "
-"and fast."
-msgstr "Unix/Linux 桌面的現代化檔案管理員，旨在易用、快速。"
+#: ../xfce4-about/main.c:141
+msgid "Manages your files in a modern, easy-to-use and fast way."
+msgstr ""
 
-#: ../xfce4-about/main.c:144
+#: ../xfce4-about/main.c:145
 msgid "Volume manager"
 msgstr "儲存裝置管理"
 
-#: ../xfce4-about/main.c:145
-msgid "Automatic management of removable drives and media for Thunar."
-msgstr "自動管理Thunar的移除式裝置和媒體。"
+#: ../xfce4-about/main.c:146
+msgid "Manages removable drives and media for Thunar."
+msgstr ""
 
-#: ../xfce4-about/main.c:148
+#: ../xfce4-about/main.c:150
 msgid "Session Manager"
 msgstr "工作階段管理員"
 
-#: ../xfce4-about/main.c:149
+#: ../xfce4-about/main.c:151
 msgid ""
-"Restores your session on startup and allows you to shutdown the computer "
-"from Xfce."
-msgstr "啟動時還原的工作階段，並讓你可以從 Xfce 關機。"
+"Saves and restores your session, handles startup, autostart and shutdown."
+msgstr ""
 
-#: ../xfce4-about/main.c:153
+#: ../xfce4-about/main.c:155
 msgid "Setting System"
 msgstr "設定系統"
 
-#: ../xfce4-about/main.c:154
-msgid ""
-"Configuration system to control various aspects of the desktop like "
-"appearance, display, keyboard and mouse settings."
-msgstr "控制多項桌面層面的設定系統，例如外觀、顯示器、鍵盤、滑鼠等設定。"
+#: ../xfce4-about/main.c:156
+msgid "Configures appearance, display, keyboard and mouse settings."
+msgstr ""
 
-#: ../xfce4-about/main.c:158
+#: ../xfce4-about/main.c:160
 msgid "Application Finder"
 msgstr "應用程式協尋器"
 
-#: ../xfce4-about/main.c:159
-msgid ""
-"Shows the applications installed on your system in categories, so you can "
-"quickly find and launch them."
-msgstr "將安裝於系統的應用程式分類顯示，這樣才能快速尋找並啟動。"
+#: ../xfce4-about/main.c:161
+msgid "Quickly finds and launches applications installed on your system."
+msgstr ""
 
-#: ../xfce4-about/main.c:163
+#: ../xfce4-about/main.c:165
 msgid "Settings Daemon"
 msgstr "設定幕後程式"
 
-#: ../xfce4-about/main.c:164
-msgid "D-Bus-based configuration storage system."
-msgstr "以 D-Bus 為基礎的設定儲存系統。"
+#: ../xfce4-about/main.c:166
+msgid "Stores your settings in a D-Bus-based configuration system."
+msgstr ""
 
-#: ../xfce4-about/main.c:167
+#: ../xfce4-about/main.c:170
 msgid "A menu library"
 msgstr "選單庫"
 
-#: ../xfce4-about/main.c:168
-msgid "A freedesktop.org compliant menu implementation based on GLib and GIO."
-msgstr "基於GLib和GIO的與freedesktop.org兼容的菜單實現。"
+#: ../xfce4-about/main.c:171
+msgid "Implements a freedesktop.org compliant menu based on GLib and GIO."
+msgstr ""
 
-#: ../xfce4-about/main.c:172
+#: ../xfce4-about/main.c:175
 msgid "Thumbnails service"
 msgstr "縮圖服務"
 
-#: ../xfce4-about/main.c:173
-msgid ""
-"Thumbnail service implementing the thumbnail management D-Bus specification."
-msgstr "實現縮略圖管理D-Bus規範的縮略圖服務。"
+#: ../xfce4-about/main.c:176
+msgid "Implements the thumbnail management D-Bus specification."
+msgstr ""
 
-#: ../xfce4-about/main.c:180
-msgid ""
-"Xfce is a collection of programs that together provide a full-featured "
-"desktop environment. The following programs are part of the Xfce core:"
-msgstr "Xfce 是程式的集合，這些程式一同提供多功能的桌面環境。以下程式為 Xfce 的核心部份："
-
-#: ../xfce4-about/main.c:204
-msgid ""
-"Xfce is also a development platform providing several libraries, that help "
-"programmers create applications that fit in well with the desktop "
-"environment."
-msgstr "Xfce 也是提供多種函式庫的開發平台，有助程式開發者建立適用於本桌面環境的應用程式。"
-
-#: ../xfce4-about/main.c:210
-msgid ""
-"Xfce components are licensed under free or open source licences; GPL or BSDL"
-" for applications and LGPL or BSDL for libraries. Look at the documentation,"
-" the source code or the Xfce website (https://www.xfce.org) for more "
-"information."
-msgstr "Xfce組件已獲得免費或開放源代碼許可；應用程序使用GPL或BSDL，庫使用LGPL或BSDL。請參閱文檔，源代碼或Xfce網站（https://www.xfce.org），以獲取更多信息。"
-
-#: ../xfce4-about/main.c:217
-msgid "Thank you for your interest in Xfce."
-msgstr "感謝您對 Xfce 有興趣。"
-
-#: ../xfce4-about/main.c:221
-msgid "The Xfce Development Team"
-msgstr "Xfce 開發團隊"
-
-#: ../xfce4-about/main.c:323
+#: ../xfce4-about/main.c:329
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
-"on <https://bugzilla.xfce.org> ."
-msgstr "如果您知道此列表中缺少任何人；不要猶豫，並在<https://bugzilla.xfce.org>上提交錯誤。"
+"on <https://gitlab.xfce.org/xfce/libxfce4ui/-/issues> ."
+msgstr ""
 
-#: ../xfce4-about/main.c:327
+#: ../xfce4-about/main.c:333
 msgid "Thanks to all who helped making this software available!"
 msgstr "感謝所有幫助製作出這個軟件的人！"
 
-#: ../xfce4-about/main.c:344
+#: ../xfce4-about/main.c:350
 msgid ""
 "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
 msgstr "Xfce 4 版權所有者為 Olivier Fourdan (fourdan@xfce.org)。不同的部件是由其各自的作者擁有其版權。"
 
-#: ../xfce4-about/main.c:349
+#: ../xfce4-about/main.c:355
 msgid ""
 "The libxfce4ui, libxfce4util and exo packages are distributed under the "
 "terms of the GNU Library General Public License as published by the Free "
@@ -728,7 +686,7 @@ msgid ""
 "any later version."
 msgstr "libxfce4ui，libxfce4util和exo軟件包根據自由軟件基金會發布的GNU庫通用公共許可證的條款分發；許可的版本2，或（由您選擇）任何更高的版本。"
 
-#: ../xfce4-about/main.c:356
+#: ../xfce4-about/main.c:362
 msgid ""
 "The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, "
 "xfce4-settings, xfconf, xfdesktop and xfwm4 are distributed under the terms "
@@ -737,37 +695,37 @@ msgid ""
 "version."
 msgstr "thunar，xfce4-appfinder，xfce4-panel，xfce4-session，xfce4-settings，xfconf，xfdesktop和xfwm4軟件包是根據自由軟件基金會發布的GNU通用公共許可證的條款分發的； 許可的版本2，或（由您選擇）任何更高的版本。"
 
-#: ../xfce4-about/main.c:503
+#: ../xfce4-about/main.c:509
 #, c-format
 msgid "Type '%s --help' for usage information."
 msgstr "請輸入「%s --help」以瞭解用法資訊。"
 
-#: ../xfce4-about/main.c:509
+#: ../xfce4-about/main.c:515
 msgid "Unable to initialize GTK+."
 msgstr "無法初始化 GTK+。"
 
-#: ../xfce4-about/main.c:518
+#: ../xfce4-about/main.c:524
 msgid "The Xfce development team. All rights reserved."
 msgstr "Xfce 開發團隊。保留所有權利。"
 
-#: ../xfce4-about/main.c:519
+#: ../xfce4-about/main.c:525
 #, c-format
 msgid "Please report bugs to <%s>."
 msgstr "請回報臭蟲至 <%s>。"
 
-#: ../xfce4-about/main.c:529
+#: ../xfce4-about/main.c:535
 msgid "Failed to load interface"
 msgstr "未能載入介面"
 
 #. I18N: first %s will be replaced by the version, second by
 #. * the name of the distribution (--with-vendor-info=NAME)
-#: ../xfce4-about/main.c:543
+#: ../xfce4-about/main.c:549
 #, c-format
 msgid "Version %s, distributed by %s"
 msgstr "版本 %s，透過 %s 散布"
 
 #. I18N: %s will be replaced by the Xfce version number
-#: ../xfce4-about/main.c:547
+#: ../xfce4-about/main.c:553
 #, c-format
 msgid "Version %s"
 msgstr "版本 %s"
@@ -852,26 +810,43 @@ msgid "System"
 msgstr "系統"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:12
+msgid ""
+"Xfce is a collection of programs that together provide a full-featured desktop environment.\n"
+"The following programs are part of the Xfce core:"
+msgstr ""
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:14
+msgid ""
+"Xfce is also a development platform providing several libraries that help programmers create applications that fit in well with the desktop environment.\n"
+"\n"
+"Xfce components are licensed under free or open source licences; GPL or BSDL for applications and LGPL or BSDL for libraries. Look at the documentation, the source code or the Xfce website (<a href=\"https://www.xfce.org\">https://www.xfce.org</a>) for more information.\n"
+"\n"
+"Thank you for your interest in Xfce.\n"
+"\n"
+"\t- The Xfce Development Team"
+msgstr ""
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:21
 msgid "About"
 msgstr "關於"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:13
+#: ../xfce4-about/xfce4-about-dialog.glade.h:22
 msgid "Credits"
 msgstr "鳴謝"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:14
+#: ../xfce4-about/xfce4-about-dialog.glade.h:23
 msgid "GPL"
 msgstr "GPL"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:15
+#: ../xfce4-about/xfce4-about-dialog.glade.h:24
 msgid "LGPL"
 msgstr "LGPL"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:16
+#: ../xfce4-about/xfce4-about-dialog.glade.h:25
 msgid "BSD"
 msgstr "BSD"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:17
+#: ../xfce4-about/xfce4-about-dialog.glade.h:26
 msgid "Copyright"
 msgstr "版權所有"
 
