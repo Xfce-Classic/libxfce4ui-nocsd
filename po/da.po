@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-07-07 12:45+0200\n"
-"PO-Revision-Date: 2020-07-22 09:57+0000\n"
+"PO-Revision-Date: 2020-08-03 16:44+0000\n"
 "Last-Translator: scootergrisen\n"
 "Language-Team: Danish (http://www.transifex.com/xfce/libxfce4ui/language/da/)\n"
 "MIME-Version: 1.0\n"
@@ -53,11 +53,11 @@ msgstr "_Annuller"
 
 #: ../libxfce4ui/xfce-dialogs.c:277
 msgid "_Read Online"
-msgstr "_Læs online"
+msgstr "Læs _online"
 
 #: ../libxfce4ui/xfce-dialogs.c:286
 msgid "_Always go directly to the online documentation"
-msgstr "Gå _altid direkte til onlinedokumentationen"
+msgstr "Gå altid _direkte til onlinedokumentationen"
 
 #: ../libxfce4ui/xfce-dialogs.c:335 ../libxfce4ui/xfce-dialogs.c:370
 #: ../libxfce4ui/xfce-dialogs.c:406
