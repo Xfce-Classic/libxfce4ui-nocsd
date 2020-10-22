@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-07-07 12:45+0200\n"
-"PO-Revision-Date: 2020-10-09 10:17+0000\n"
+"PO-Revision-Date: 2020-10-22 20:59+0000\n"
 "Last-Translator: Luna Jernberg <bittin@cafe8bitar.se>\n"
 "Language-Team: Swedish (http://www.transifex.com/xfce/libxfce4ui/language/sv/)\n"
 "MIME-Version: 1.0\n"
@@ -668,7 +668,7 @@ msgstr ""
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
 "on <https://gitlab.xfce.org/xfce/libxfce4ui/-/issues> ."
-msgstr ""
+msgstr "Om du känner till någon som saknas från den här listan; tveka inte att posta en felrapport på <https://gitlab.xfce.org/xfce/libxfce4ui/-/issues> ."
 
 #: ../xfce4-about/main.c:333
 msgid "Thanks to all who helped making this software available!"
@@ -686,7 +686,7 @@ msgid ""
 "terms of the GNU Library General Public License as published by the Free "
 "Software Foundation; either version 2 of the License, or (at your option) "
 "any later version."
-msgstr ""
+msgstr "libxfce4ui, libxfce4util och exo paketen distribueras under villkoren i GNU Library General Public License såsom publicerad av the Free Software Foundation; antingen version 2 av licensen, eller (om du så önskar) någon senare version."
 
 #: ../xfce4-about/main.c:362
 msgid ""
@@ -695,7 +695,7 @@ msgid ""
 "of the GNU General Public License as published by the Free Software "
 "Foundation; either version 2 of the License, or (at your option) any later "
 "version."
-msgstr ""
+msgstr "Paketen: thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfconf, xfdesktop och xfwm4 distribueras under villkoren i GNU General Public License såsom publicerade av the Free Software Foundation; antingen version 2 av licensen, eller (om du så önskar) någon senare version."
 
 #: ../xfce4-about/main.c:509
 #, c-format
@@ -815,7 +815,7 @@ msgstr "System"
 msgid ""
 "Xfce is a collection of programs that together provide a full-featured desktop environment.\n"
 "The following programs are part of the Xfce core:"
-msgstr ""
+msgstr "Xfce är en samling av program som tillsammans tillhandahåller en komplett skrivbordsmiljö. Följande program är delar av Xfce:s kärna:"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:14
 msgid ""
