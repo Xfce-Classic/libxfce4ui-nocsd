@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-07-07 12:45+0200\n"
-"PO-Revision-Date: 2020-10-22 20:59+0000\n"
+"PO-Revision-Date: 2020-10-30 09:55+0000\n"
 "Last-Translator: Luna Jernberg <bittin@cafe8bitar.se>\n"
 "Language-Team: Swedish (http://www.transifex.com/xfce/libxfce4ui/language/sv/)\n"
 "MIME-Version: 1.0\n"
@@ -146,7 +146,7 @@ msgstr "Arbetskatalogen \"%s\" finns inte. Den kommer inte att användas när \"
 #. the string contains a directory separator
 #: ../libxfce4ui/xfce-filename-input.c:414
 msgid "Directory separator illegal in file name"
-msgstr ""
+msgstr "Katalogavgränsare olagligt i filnamn"
 
 #. the string is too long
 #: ../libxfce4ui/xfce-filename-input.c:422
