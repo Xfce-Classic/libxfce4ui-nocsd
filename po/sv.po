@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-07-07 12:45+0200\n"
-"PO-Revision-Date: 2020-10-30 09:55+0000\n"
+"PO-Revision-Date: 2020-10-31 16:36+0000\n"
 "Last-Translator: Luna Jernberg <bittin@cafe8bitar.se>\n"
 "Language-Team: Swedish (http://www.transifex.com/xfce/libxfce4ui/language/sv/)\n"
 "MIME-Version: 1.0\n"
@@ -662,7 +662,7 @@ msgstr "Miniatyrbildstjänst"
 
 #: ../xfce4-about/main.c:176
 msgid "Implements the thumbnail management D-Bus specification."
-msgstr ""
+msgstr "Implementerar D-Bus-specifikationen för miniatyrbildhantering."
 
 #: ../xfce4-about/main.c:329
 msgid ""
@@ -826,7 +826,7 @@ msgid ""
 "Thank you for your interest in Xfce.\n"
 "\n"
 "\t- The Xfce Development Team"
-msgstr ""
+msgstr "Xfce är också en utvecklingsplattform med flera bibliotek som hjälper programmerare att ska program som passar bra in i skrivbordsmiljön.\n\nXfce-komponenter är licensierade under fria öppenkällkodslicenser GPL eller BSDL för program och LGPL eller BSDL för bibliotek. Titta i dokumentationen, källkoden eller på Xfce:s hemsida (<a href=\"https://www.xfce.org\">https://www.xfce.org</a>) för mer information.\n\nTack för du visar intresse för Xfce.\n\n\t-Xfce-utvecklingsteamet"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:21
 msgid "About"
