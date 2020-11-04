@@ -17,8 +17,8 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-07-07 12:45+0200\n"
-"PO-Revision-Date: 2020-07-20 21:26+0000\n"
-"Last-Translator: Demiray Muhterem <mdemiray@msn.com>\n"
+"PO-Revision-Date: 2020-11-04 22:38+0000\n"
+"Last-Translator: Emin Tufan <etcetin@gmail.com>\n"
 "Language-Team: Turkish (http://www.transifex.com/xfce/libxfce4ui/language/tr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -28,22 +28,22 @@ msgstr ""
 
 #: ../libxfce4ui/xfce-dialogs.c:110
 msgid "Failed to open web browser for online documentation"
-msgstr "Çevrimiçi belgelendirme için tarayıcı açılamadı"
+msgstr "Çevrim içi belgelendirme için tarayıcı açılamadı"
 
 #: ../libxfce4ui/xfce-dialogs.c:265
 #, c-format
 msgid "Do you want to read the %s manual online?"
-msgstr "%s kılavuzunu çevrimiçi okumak ister misiniz?"
+msgstr "%s kılavuzunu çevrim içi okumak ister misiniz?"
 
 #: ../libxfce4ui/xfce-dialogs.c:267
 msgid "Do you want to read the manual online?"
-msgstr "Kılavuzu çevrimiçi okumak ister misiniz?"
+msgstr "Kılavuzu çevrim içi okumak ister misiniz?"
 
 #: ../libxfce4ui/xfce-dialogs.c:273
 msgid ""
 "You will be redirected to the documentation website where the help pages are"
 " maintained and translated."
-msgstr "Yardım sayfalarının güncellendiği ve çevrildiği dökümantasyon sayfasına yönlendirileceksiniz."
+msgstr "Yardım sayfalarının güncellendiği ve çevrildiği belgelendirme sayfasına yönlendirileceksiniz."
 
 #. Create cancel button
 #: ../libxfce4ui/xfce-dialogs.c:275 ../libxfce4ui/xfce-dialogs.c:533
@@ -53,11 +53,11 @@ msgstr "_İptal"
 
 #: ../libxfce4ui/xfce-dialogs.c:277
 msgid "_Read Online"
-msgstr "_Çevrimiçi Oku"
+msgstr "_Çevrim İçi Oku"
 
 #: ../libxfce4ui/xfce-dialogs.c:286
 msgid "_Always go directly to the online documentation"
-msgstr "_Her zaman doğrudan çevrimiçi belgelendirmeye git"
+msgstr "_Her zaman doğrudan çevrim içi belgelendirmeye git"
 
 #: ../libxfce4ui/xfce-dialogs.c:335 ../libxfce4ui/xfce-dialogs.c:370
 #: ../libxfce4ui/xfce-dialogs.c:406
@@ -286,11 +286,11 @@ msgstr "Sağ"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:42
 msgid "Cycle windows"
-msgstr "Pencereleri çevir"
+msgstr "Pencereleri devir"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:43
 msgid "Cycle windows (Reverse)"
-msgstr "Pencereleri çevir (Ters)"
+msgstr "Pencereleri devir (Ters)"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:44
 msgid "Switch window for same application"
@@ -458,19 +458,19 @@ msgstr "Pencere sağı kaplasın"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:85
 msgid "Tile window to the top-left"
-msgstr "Pencer sol-üst kısmı kaplasın"
+msgstr "Pencer sol üst bölümü kaplasın"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:86
 msgid "Tile window to the top-right"
-msgstr "Pencere sağ-üst kısmı kaplasın"
+msgstr "Pencere sağ üst bölümü kaplasın"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:87
 msgid "Tile window to the bottom-left"
-msgstr "Pencere sol-alt kısmı kaplasın"
+msgstr "Pencere sol alt bölümü kaplasın"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:88
 msgid "Tile window to the bottom-right"
-msgstr "Pencere sağ-alt kısmı kaplasın"
+msgstr "Pencere sağ alt bölümü kaplasın"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:89
 msgid "Show desktop"
@@ -602,7 +602,7 @@ msgstr "Masaüstü Yöneticisi"
 
 #: ../xfce4-about/main.c:136
 msgid "Sets desktop backgrounds, handles icons and more."
-msgstr "Masaüstü arka planlarını, simgeleri ve daha fazlasını işler."
+msgstr "Masaüstü arka planlarını, simgeleri ve daha çoğunu işler."
 
 #: ../xfce4-about/main.c:140
 msgid "File Manager"
@@ -610,7 +610,7 @@ msgstr "Dosya Yöneticisi"
 
 #: ../xfce4-about/main.c:141
 msgid "Manages your files in a modern, easy-to-use and fast way."
-msgstr "Dosyalarınızı modern, kullanımı kolay ve hızlı bir şekilde yönetir."
+msgstr "Dosyalarınızı çağdaş, kullanımı kolay ve hızlıca yönetir."
 
 #: ../xfce4-about/main.c:145
 msgid "Volume manager"
@@ -627,7 +627,7 @@ msgstr "Oturum Yöneticisi"
 #: ../xfce4-about/main.c:151
 msgid ""
 "Saves and restores your session, handles startup, autostart and shutdown."
-msgstr "Oturumunuzu kaydeder ve geri yükler, başlatma, otomatik başlatma ve kapatma işlemlerini gerçekleştirir."
+msgstr "Oturumunuzu kaydeder ve geri yükler, başlatma, kendiliğinden başlatma ve kapatma işlemlerini gerçekleştirir."
 
 #: ../xfce4-about/main.c:155
 msgid "Setting System"
@@ -643,7 +643,7 @@ msgstr "Uygulama Bulucu"
 
 #: ../xfce4-about/main.c:161
 msgid "Quickly finds and launches applications installed on your system."
-msgstr "Sisteminizde yüklü uygulamaları hızla bulur ve başlatır."
+msgstr "Sisteminizde kurulu uygulamaları hızla bulur ve başlatır."
 
 #: ../xfce4-about/main.c:165
 msgid "Settings Daemon"
@@ -651,7 +651,7 @@ msgstr "Ayar Yardımcısı"
 
 #: ../xfce4-about/main.c:166
 msgid "Stores your settings in a D-Bus-based configuration system."
-msgstr "Ayarlarınızı D-Bus tabanlı bir yapılandırma sisteminde saklar."
+msgstr "Ayarlarınızı D-Bus tabanlı yapılandırma sisteminde saklar."
 
 #: ../xfce4-about/main.c:170
 msgid "A menu library"
@@ -659,7 +659,7 @@ msgstr "Menü kitaplığı"
 
 #: ../xfce4-about/main.c:171
 msgid "Implements a freedesktop.org compliant menu based on GLib and GIO."
-msgstr "GLib ve GIO tabanlı freedesktop.org uyumlu bir menü uygular."
+msgstr "GLib ve GIO tabanlı freedesktop.org uyumlu menü uygular."
 
 #: ../xfce4-about/main.c:175
 msgid "Thumbnails service"
@@ -786,7 +786,7 @@ msgstr "etiket"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:4
 msgid "OS Name"
-msgstr "OS Adı"
+msgstr "İS Adı"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:5
 msgid "Device"
@@ -802,7 +802,7 @@ msgstr "İşlemci"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:8
 msgid "OS Type"
-msgstr "OS Tipi"
+msgstr "İS Türü"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:9
 msgid "Xfce Version"
@@ -810,7 +810,7 @@ msgstr "Xfce Sürümü"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:10
 msgid "Distributor"
-msgstr "Dağıtımcı"
+msgstr "Dağıtıcı"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:11
 msgid "System"
@@ -820,7 +820,7 @@ msgstr "Sistem"
 msgid ""
 "Xfce is a collection of programs that together provide a full-featured desktop environment.\n"
 "The following programs are part of the Xfce core:"
-msgstr "Xfce, birlikte tam özellikli bir masaüstü ortamı sağlayan bir program koleksiyonudur.\nAşağıdaki programlar Xfce çekirdeğinin bir parçasıdır:"
+msgstr "Xfce, birlikte tam özellikli masaüstü ortamı sağlayan programlar derlemidir.\nAşağıdaki programlar Xfce çekirdeğinin parçasıdır:"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:14
 msgid ""
@@ -831,7 +831,7 @@ msgid ""
 "Thank you for your interest in Xfce.\n"
 "\n"
 "\t- The Xfce Development Team"
-msgstr "Xfce, programcıların masaüstü ortamına iyi uyan uygulamalar oluşturmasına yardımcı olan çeşitli kütüphaneler sağlayan bir geliştirme platformudur.\n\nXfce bileşenleri ücretsiz veya açık kaynak lisansları altında lisanslanır; Uygulamalar için GPL veya BSDL ve kütüphaneler için LGPL veya BSDL. Daha fazla bilgi için belgelere, kaynak koduna veya Xfce web sitesine (<a href=\"https://www.xfce.org\"> (https://www.xfce.org </a>) bakın.\n\nXfce'ye gösterdiğiniz ilgi için teşekkür ederiz.\n\n\t- Xfce Geliştirme Ekibi"
+msgstr "Xfce, ayrıca, programcıların masaüstü ortamına iyi uyan uygulamalar oluşturmasına yardımcı olan çeşitli kütüphaneler sağlayan geliştirme platformudur.\n\nXfce bileşenleri özgür veya açık kaynak lisansları altında lisanslanır; Uygulamalar için GPL veya BSDL ve kütüphaneler için LGPL veya BSDL. Daha çok bilgi için belgelere, kaynak koduna veya Xfce web sitesine (<a href=\"https://www.xfce.org\">https://www.xfce.org</a>) bakın.\n\nXfce'ye gösterdiğiniz ilgiye teşekkür ederiz.\n\n\t- Xfce Geliştirme Takımı"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:21
 msgid "About"
@@ -868,14 +868,14 @@ msgstr "Bilinmeyen"
 #: ../xfce4-about/system-info.c:330
 #, c-format
 msgid "%s; Build ID: %s"
-msgstr "%s; İnşa ID: %s"
+msgstr "%s; İnşa Kimliği: %s"
 
 #: ../tests/test-ui.c:111
 #, c-format
 msgid ""
 "A file named \"%s\" already exists in this directory, the file hasn't been "
 "added."
-msgstr "\"%s\" isimli bir dosya bu dizinde zaten olduğundan dosya eklenmedi."
+msgstr "\"%s\" adlı dosya bu dizinde var olduğundan dosya eklenmedi."
 
 #: ../tests/test-ui.c:122
 msgid "Failed to migrate the old panel configuration"
