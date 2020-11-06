@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-08 00:45+0200\n"
-"PO-Revision-Date: 2020-06-25 13:35+0000\n"
+"POT-Creation-Date: 2020-07-07 12:45+0200\n"
+"PO-Revision-Date: 2020-07-28 10:53+0000\n"
 "Last-Translator: Саша Петровић <salepetronije@gmail.com>\n"
 "Language-Team: Serbian (http://www.transifex.com/xfce/libxfce4ui/language/sr/)\n"
 "MIME-Version: 1.0\n"
@@ -41,7 +41,7 @@ msgstr "Бићете преусмерени на страницу веба гд�
 
 #. Create cancel button
 #: ../libxfce4ui/xfce-dialogs.c:275 ../libxfce4ui/xfce-dialogs.c:533
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:244
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:253
 msgid "_Cancel"
 msgstr "_Откажи"
 
@@ -216,46 +216,45 @@ msgstr "Сукобљавајуће појаве за %s"
 msgid "This shortcut is already being used for something else."
 msgstr "Ова пречица се већ користи за нешто друго."
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:211
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:214
 msgid "Window Manager Action Shortcut"
 msgstr "Пречица радње управника прозора"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:214
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:228
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:217
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:233
 msgid "action"
 msgstr "радња"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:218
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:222
 msgid "Command Shortcut"
 msgstr "Пречица наредбе"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:221
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:225
 msgid "command"
 msgstr "наредба"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:225
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:230
 msgid "Shortcut"
 msgstr "Пречица"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:259
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:247
+msgid "Clear"
+msgstr "Очисти"
+
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:270
 #, c-format
-msgid "Press now the keyboard keys you want to use to trigger the %s '%s'."
-msgstr "Сада притисните дугмад тастатуре коју желите да окида %s „%s“."
+msgid "Press keyboard keys to trigger the %s '%s'."
+msgstr "Притисните низ дугмади ради окидања %s „%s“."
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:279
-msgid "Shortcut:"
-msgstr "Пречица:"
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:291
+msgid "Please press a key"
+msgstr "Молим, притисните дугме"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:284
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:436
-msgid "No keys pressed yet, proceed."
-msgstr "Нема притиснутих дугмади, настави."
-
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:332
+#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:345
 msgid "Could not grab the keyboard."
 msgstr "Нисам успео да захватим тастатуру."
 
@@ -569,9 +568,9 @@ msgstr "Поднаслов"
 
 #: ../glade/libxfce4ui-2.xml.in.h:3
 msgid "Xfce 4 Widgets"
-msgstr "Иксфце-ове 4 справе"
+msgstr "Справице ИксФЦЕ-а 4"
 
-#: ../xfce4-about/main.c:56
+#: ../xfce4-about/main.c:59
 msgid "Version information"
 msgstr "Подаци о издању"
 
@@ -583,145 +582,104 @@ msgstr "Управник прозора"
 msgid "Handles the placement of windows on the screen."
 msgstr "Управља смештајем прозора на приказу."
 
-#: ../xfce4-about/main.c:129
+#: ../xfce4-about/main.c:130
 msgid "Panel"
 msgstr "Полица"
 
-#: ../xfce4-about/main.c:130
-msgid ""
-"Program launchers, window buttons, applications menu, workspace switcher and"
-" more."
-msgstr "Покретачи програма, дугмад прозора, програмски изборник, измењивач радних површи и друго."
+#: ../xfce4-about/main.c:131
+msgid "Provides a home for window buttons, launchers, app menu and more."
+msgstr "Обезбеђује матицу за дугмад прозора, покретаче, изборник програма и још тога."
 
-#: ../xfce4-about/main.c:134
+#: ../xfce4-about/main.c:135
 msgid "Desktop Manager"
 msgstr "Управник радне површи"
 
-#: ../xfce4-about/main.c:135
-msgid ""
-"Sets the background color or image with optional application menu or icons "
-"for minimized applications or launchers, devices and folders."
-msgstr "Подешава позадинску боју, или слику са могућношћу коришћења изборника програма, или сличица програма са покретачима, уређајима и фасциклама."
+#: ../xfce4-about/main.c:136
+msgid "Sets desktop backgrounds, handles icons and more."
+msgstr "Поставља позадине радне површи, управља сличицама и још тога."
 
-#: ../xfce4-about/main.c:139
+#: ../xfce4-about/main.c:140
 msgid "File Manager"
 msgstr "Управник датотека"
 
-#: ../xfce4-about/main.c:140
-msgid ""
-"A modern file manager for the Unix/Linux desktop, aiming to be easy-to-use "
-"and fast."
-msgstr "Савремени управник датотека за радну станицу Уникса/Линукса, који тежи да буде лак за употребу и брз."
+#: ../xfce4-about/main.c:141
+msgid "Manages your files in a modern, easy-to-use and fast way."
+msgstr "Управља датотекама на савремен, лак за употребу и брз начин."
 
-#: ../xfce4-about/main.c:144
+#: ../xfce4-about/main.c:145
 msgid "Volume manager"
 msgstr "Управник носача датотека"
 
-#: ../xfce4-about/main.c:145
-msgid "Automatic management of removable drives and media for Thunar."
-msgstr "Самостално управљање уклоњивим уређајима и носачима датотека Тунара."
+#: ../xfce4-about/main.c:146
+msgid "Manages removable drives and media for Thunar."
+msgstr "Управља уклоњивим уређајима и посредницима за Тунара."
 
-#: ../xfce4-about/main.c:148
+#: ../xfce4-about/main.c:150
 msgid "Session Manager"
 msgstr "Управник седнице"
 
-#: ../xfce4-about/main.c:149
+#: ../xfce4-about/main.c:151
 msgid ""
-"Restores your session on startup and allows you to shutdown the computer "
-"from Xfce."
-msgstr "Враћа седницу при покретању и омогућава искључивање рачунара из Иксфце-а."
+"Saves and restores your session, handles startup, autostart and shutdown."
+msgstr "Чува и враћа Ваше седнице, управља почетним, самопокрећућим и завршним програмима."
 
-#: ../xfce4-about/main.c:153
+#: ../xfce4-about/main.c:155
 msgid "Setting System"
 msgstr "Поставке система"
 
-#: ../xfce4-about/main.c:154
-msgid ""
-"Configuration system to control various aspects of the desktop like "
-"appearance, display, keyboard and mouse settings."
-msgstr "Подешавања система за управљање разним областима радног окружења попут подешавања изгледа, приказа, тастатуре и миша."
+#: ../xfce4-about/main.c:156
+msgid "Configures appearance, display, keyboard and mouse settings."
+msgstr "Подешава изглед, приказ, поставке тастатуре и миша."
 
-#: ../xfce4-about/main.c:158
+#: ../xfce4-about/main.c:160
 msgid "Application Finder"
 msgstr "Проналазач програма"
 
-#: ../xfce4-about/main.c:159
-msgid ""
-"Shows the applications installed on your system in categories, so you can "
-"quickly find and launch them."
-msgstr "Приказује програме уграђене на систему по врстама, тако да их лако можете пронаћи и покренути."
+#: ../xfce4-about/main.c:161
+msgid "Quickly finds and launches applications installed on your system."
+msgstr "Брзо налази и покреће уграђене програме на систему."
 
-#: ../xfce4-about/main.c:163
+#: ../xfce4-about/main.c:165
 msgid "Settings Daemon"
 msgstr "Домар поставки"
 
-#: ../xfce4-about/main.c:164
-msgid "D-Bus-based configuration storage system."
-msgstr "Систем складиштења подешавања заснован на Д-сабирници."
+#: ../xfce4-about/main.c:166
+msgid "Stores your settings in a D-Bus-based configuration system."
+msgstr "Храни поставке на систему заснованим на поставкама Д-сабирнице."
 
-#: ../xfce4-about/main.c:167
+#: ../xfce4-about/main.c:170
 msgid "A menu library"
 msgstr "Књижница изборника"
 
-#: ../xfce4-about/main.c:168
-msgid "A freedesktop.org compliant menu implementation based on GLib and GIO."
-msgstr "Изборник сагласан са фридесктоп.орг заснован на Глиб и Гио."
+#: ../xfce4-about/main.c:171
+msgid "Implements a freedesktop.org compliant menu based on GLib and GIO."
+msgstr "Спроводи изборник сагласан са freedesktop.org-ом заснован на Глиб и ГИО."
 
-#: ../xfce4-about/main.c:172
+#: ../xfce4-about/main.c:175
 msgid "Thumbnails service"
 msgstr "Служба сличичара"
 
-#: ../xfce4-about/main.c:173
-msgid ""
-"Thumbnail service implementing the thumbnail management D-Bus specification."
-msgstr "Служба сличичара која примењује управљање умањеним сличицама по мерилима Д-сабирнице."
+#: ../xfce4-about/main.c:176
+msgid "Implements the thumbnail management D-Bus specification."
+msgstr "Спроводи одредбе Д-сабирнице управљањем умањеним сличицама."
 
-#: ../xfce4-about/main.c:180
-msgid ""
-"Xfce is a collection of programs that together provide a full-featured "
-"desktop environment. The following programs are part of the Xfce core:"
-msgstr "Иксфце је скуп програма који заједно обезбеђују потпуно радно окружење. Следећи програми су део језгра Иксфце-а:"
-
-#: ../xfce4-about/main.c:204
-msgid ""
-"Xfce is also a development platform providing several libraries, that help "
-"programmers create applications that fit in well with the desktop "
-"environment."
-msgstr "Иксфце је такође развојна платформа која обезбеђује библиотеке које програмерима помажу да стварају програме који се добро уклапају у радно окружење."
-
-#: ../xfce4-about/main.c:210
-msgid ""
-"Xfce components are licensed under free or open source licences; GPL or BSDL"
-" for applications and LGPL or BSDL for libraries. Look at the documentation,"
-" the source code or the Xfce website (https://www.xfce.org) for more "
-"information."
-msgstr "Саставни делови ИксФЦЕ-а су под дозволама слободног и отвореног кода; ОЈД или БСД за програме и КОЈД или КБСД за књижнице. Погледајте документа, изворни код или странице ИксФЦЕ-а (https://www.xfce.org) за више података."
-
-#: ../xfce4-about/main.c:217
-msgid "Thank you for your interest in Xfce."
-msgstr "Хвала на занимању за Иксфце."
-
-#: ../xfce4-about/main.c:221
-msgid "The Xfce Development Team"
-msgstr "Развојна дружина Иксфце-а"
-
-#: ../xfce4-about/main.c:332
+#: ../xfce4-about/main.c:329
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
 "on <https://gitlab.xfce.org/xfce/libxfce4ui/-/issues> ."
 msgstr "Уколико знате било кога ко недостаје на списку, не оклевајте да пријавите бубу на <https://gitlab.xfce.org/xfce/libxfce4ui/-/issues> ."
 
-#: ../xfce4-about/main.c:336
+#: ../xfce4-about/main.c:333
 msgid "Thanks to all who helped making this software available!"
 msgstr "Хвала свима који су помогли да ове мекотворине буду доступне!"
 
-#: ../xfce4-about/main.c:353
+#: ../xfce4-about/main.c:350
 msgid ""
 "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
 msgstr "Права умножавања над Иксце-ом 4 задржава Оливје Фурдан (fourdan@xfce.org). Права над разним деловима задржавају њихови одговарајући творци."
 
-#: ../xfce4-about/main.c:358
+#: ../xfce4-about/main.c:355
 msgid ""
 "The libxfce4ui, libxfce4util and exo packages are distributed under the "
 "terms of the GNU Library General Public License as published by the Free "
@@ -729,7 +687,7 @@ msgid ""
 "any later version."
 msgstr "Пакети libxfce4ui, libxfce4util и exo се раздељују под условима књижница ГНУ-а и објављени су од стране Задужбине слободног софтвера; или издања 2 дозволе, или (по вашем нахођењу) неког наредног издања."
 
-#: ../xfce4-about/main.c:365
+#: ../xfce4-about/main.c:362
 msgid ""
 "The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, "
 "xfce4-settings, xfconf, xfdesktop and xfwm4 are distributed under the terms "
@@ -738,37 +696,37 @@ msgid ""
 "version."
 msgstr "Пакети thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfconf, xfdesktop и xfwm4 се расподељују под условима опште јавне дозволе ГНУ објављеној од стране Задужбине слободног софтвера: или издања 2 дозволе, или (по вашем нахођењу) неког наредног издања."
 
-#: ../xfce4-about/main.c:512
+#: ../xfce4-about/main.c:509
 #, c-format
 msgid "Type '%s --help' for usage information."
 msgstr "Упишите „%s --help“ за упутство за употребу."
 
-#: ../xfce4-about/main.c:518
+#: ../xfce4-about/main.c:515
 msgid "Unable to initialize GTK+."
 msgstr "Нисам успео да покренем ГТК+."
 
-#: ../xfce4-about/main.c:527
+#: ../xfce4-about/main.c:524
 msgid "The Xfce development team. All rights reserved."
 msgstr "Развојна дружина Иксфце-а. Сва права су задржана."
 
-#: ../xfce4-about/main.c:528
+#: ../xfce4-about/main.c:525
 #, c-format
 msgid "Please report bugs to <%s>."
 msgstr "Молим, пријавите грешке на <%s>."
 
-#: ../xfce4-about/main.c:538
+#: ../xfce4-about/main.c:535
 msgid "Failed to load interface"
 msgstr "Нисам успео да учитам сучеље"
 
 #. I18N: first %s will be replaced by the version, second by
 #. * the name of the distribution (--with-vendor-info=NAME)
-#: ../xfce4-about/main.c:552
+#: ../xfce4-about/main.c:549
 #, c-format
 msgid "Version %s, distributed by %s"
 msgstr "Издање %s, расподељује %s"
 
 #. I18N: %s will be replaced by the Xfce version number
-#: ../xfce4-about/main.c:556
+#: ../xfce4-about/main.c:553
 #, c-format
 msgid "Version %s"
 msgstr "Издање %s"
@@ -853,26 +811,43 @@ msgid "System"
 msgstr "Систем"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:12
+msgid ""
+"Xfce is a collection of programs that together provide a full-featured desktop environment.\n"
+"The following programs are part of the Xfce core:"
+msgstr "ИксФЦЕ је збирка програма које заједно обезбеђују потпуно радно окружење.\nСледећи програми су део језгра ИксФЦЕ-а:"
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:14
+msgid ""
+"Xfce is also a development platform providing several libraries that help programmers create applications that fit in well with the desktop environment.\n"
+"\n"
+"Xfce components are licensed under free or open source licences; GPL or BSDL for applications and LGPL or BSDL for libraries. Look at the documentation, the source code or the Xfce website (<a href=\"https://www.xfce.org\">https://www.xfce.org</a>) for more information.\n"
+"\n"
+"Thank you for your interest in Xfce.\n"
+"\n"
+"\t- The Xfce Development Team"
+msgstr "ИксФЦЕ је такође и развојна платформа која пружа неколико библиотека помажућих програмерима да их лепо ускладе у радно окружење.\n\nЈединице ИксФЦЕ-а су објављене под слободним и отворненог кода дозволама: ОЈЛ или БСДЛ за програме и ЛОЈЛ или БСДЛ за библиотеке. Погледајте упутства, изворни код и странице ИксФЦЕ-а (<a href=\"https://www.xfce.org\">https://www.xfce.org</a>) ради више података.\n\nХвала Вам на занимању за ИксФЦЕ.\n\nt- Развојна дружина ИксФЦЕ-а"
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:21
 msgid "About"
 msgstr "О програму"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:13
+#: ../xfce4-about/xfce4-about-dialog.glade.h:22
 msgid "Credits"
 msgstr "Заслуге"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:14
+#: ../xfce4-about/xfce4-about-dialog.glade.h:23
 msgid "GPL"
 msgstr "ОЈД"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:15
+#: ../xfce4-about/xfce4-about-dialog.glade.h:24
 msgid "LGPL"
 msgstr "КОЈД"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:16
+#: ../xfce4-about/xfce4-about-dialog.glade.h:25
 msgid "BSD"
 msgstr "БСД"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:17
+#: ../xfce4-about/xfce4-about-dialog.glade.h:26
 msgid "Copyright"
 msgstr "Права умножавања"
 

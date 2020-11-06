@@ -9,7 +9,7 @@ m4_define([libxfce4ui_verinfo], [0:0:0])
 m4_define([libxfce4ui_version_api], [2])
 m4_define([libxfce4ui_version_major], [4])
 m4_define([libxfce4ui_version_minor], [15])
-m4_define([libxfce4ui_version_micro], [3])
+m4_define([libxfce4ui_version_micro], [4])
 m4_define([libxfce4ui_version_nano], []) dnl leave this empty to have no nano version
 m4_define([libxfce4ui_version_build], [@REVISION@])
 m4_define([libxfce4ui_version_tag], [git])
@@ -33,14 +33,14 @@ dnl ***************************
 AC_COPYRIGHT([Copyright (c) 2007-2019 The Xfce development team])
 AC_INIT([libxfce4ui], [libxfce4ui_version], [https://gitlab.xfce.org/xfce/libxfce4ui/-/issues], [libxfce4ui])
 AC_PREREQ([2.60])
-AC_CONFIG_MACRO_DIR([m4])
+AC_CONFIG_MACRO_DIRS([m4])
 AC_REVISION([libxfce4ui_version_build])
 AC_CANONICAL_TARGET()
 
 dnl ***************************
 dnl *** Initialize automake ***
 dnl ***************************
-AM_INIT_AUTOMAKE([1.11 dist-bzip2 tar-ustar no-dist-gzip])
+AM_INIT_AUTOMAKE([1.11 dist-bzip2 tar-ustar no-dist-gzip foreign])
 AC_CONFIG_HEADERS([config.h])
 AM_MAINTAINER_MODE()
 AM_SILENT_RULES([yes])

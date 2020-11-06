@@ -345,6 +345,15 @@ xfce_spawn_on_screen_with_child_watch (GdkScreen    *screen,
   g_return_val_if_fail ((flags & G_SPAWN_DO_NOT_REAP_CHILD) == 0, FALSE);
   g_return_val_if_fail (error == NULL || *error == NULL, FALSE);
 
+#ifdef GDK_WINDOWING_WAYLAND
+  if (startup_notify == TRUE)
+    {
+      /* 'sn_display_new' crashes when used via wayland, so no startup notification support here */
+      g_warning ("startup notification not supported for wayland sessions");
+      startup_notify = FALSE;
+    }
+#endif
+
   /* lookup the screen with the pointer */
   if (screen == NULL)
     screen = xfce_gdk_screen_get_active (NULL);
