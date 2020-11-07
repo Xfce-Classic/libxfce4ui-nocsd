@@ -566,6 +566,52 @@ xfce_spawn_on_screen (GdkScreen    *screen,
   return xfce_spawn_impl(screen, working_directory, argv,
                         envp, flags, startup_notify,
                         startup_timestamp, startup_icon_name,
+                        NULL, error, FALSE);
+}
+
+/**
+ * xfce_spawn_reparented
+ * Like xfce_spawn_on_screen but the process spawned is reparented to init
+ *
+ * @screen            : (allow-none): a #GdkScreen or %NULL to use the active screen,
+ *                      see xfce_gdk_screen_get_active().
+ * @working_directory : (allow-none): child's current working directory or %NULL to
+ *                      inherit parent's.
+ * @argv              : child's argument vector.
+ * @envp              : (allow-none): child's environment vector or %NULL to inherit
+ *                      parent's.
+ * @flags             : flags from #GSpawnFlags. #G_SPAWN_DO_NOT_REAP_CHILD
+ *                      is not allowed, use xfce_spawn_on_screen_with_child_watch()
+ *                      if you want a child watch.
+ * @startup_notify    : whether to use startup notification.
+ * @startup_timestamp : the timestamp to pass to startup notification, use
+ *                      the event time here if possible to make focus
+ *                      stealing prevention work property. If you don't
+ *                      have direct access to the event time you could use
+ *                      gtk_get_current_event_time() or if nothing is
+ *                      available 0 is valid too.
+ * @startup_icon_name : (allow-none): application icon or %NULL.
+ * @error             : (out) (allow-none) (transfer full): return location for errors or %NULL.
+ *
+ * Like gdk_spawn_on_screen(), but also supports startup notification
+ * (if Libxfce4ui was built with startup notification support).
+ *
+ * Return value: %TRUE on success, %FALSE if @error is set.
+ **/
+gboolean
+xfce_spawn_reparented (GdkScreen    *screen,
+                      const gchar  *working_directory,
+                      gchar       **argv,
+                      gchar       **envp,
+                      GSpawnFlags   flags,
+                      gboolean      startup_notify,
+                      guint32       startup_timestamp,
+                      const gchar  *startup_icon_name,
+                      GError      **error)
+{
+  return xfce_spawn_impl(screen, working_directory, argv,
+                        envp, flags, startup_notify,
+                        startup_timestamp, startup_icon_name,
                         NULL, error, TRUE);
 }
 
