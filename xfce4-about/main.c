@@ -141,7 +141,7 @@ xfce_about_about (GtkWidget *vbox)
         N_("Manages your files in a modern, easy-to-use and fast way.")
       },
       { "thunar-volman",
-        "org.xfce.thunar-volman",
+        "org.xfce.volman",
         N_("Volume manager"),
         N_("Manages removable drives and media for Thunar.")
       },
@@ -151,7 +151,7 @@ xfce_about_about (GtkWidget *vbox)
         N_("Saves and restores your session, handles startup, autostart and shutdown.")
       },
       { "xfce4-settings",
-        "org.xfce.settings",
+        "org.xfce.settings.manager",
         N_("Setting System"),
         N_("Configures appearance, display, keyboard and mouse settings.")
       },
