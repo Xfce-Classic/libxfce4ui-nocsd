@@ -105,6 +105,10 @@ struct _XfceFilenameInput
   gint      max_text_length;
   gchar    *original_filename;
 
+  gchar    *too_long_mssg;
+  gchar    *sep_illegal_mssg;
+  gchar    *whitespace_mssg;
+
   guint     whitespace_warning_timer_id;
 };
 
@@ -200,6 +204,7 @@ static void
 xfce_filename_input_init (XfceFilenameInput *filename_input)
 {
   GError *err = NULL;
+  gint    width_needed;
 
   /* by default there is no maximum length for the filename and no original filename */
   filename_input->max_text_length = -1;
@@ -219,10 +224,21 @@ xfce_filename_input_init (XfceFilenameInput *filename_input)
   gtk_widget_set_valign (GTK_WIDGET (filename_input->entry), GTK_ALIGN_CENTER);
   gtk_box_pack_start (GTK_BOX (filename_input), GTK_WIDGET (filename_input->entry), FALSE, FALSE, 0);
 
+  /* retrieve the error and warning messages */
+  filename_input->too_long_mssg = _("Filename is too long");
+  filename_input->sep_illegal_mssg = _("Directory separator illegal in file name");
+  filename_input->whitespace_mssg = _("Filenames should not start or end with a space");
+
+  /* caluclate the maximum length of message that the widget might need to display */
+  width_needed = MAX (strlen (filename_input->too_long_mssg),
+                      strlen (filename_input->sep_illegal_mssg));
+  width_needed = MAX (width_needed, strlen (filename_input->whitespace_mssg));
+
   /* set up the GtkLabel to display any error or warning messages */
   filename_input->label = GTK_LABEL (gtk_label_new(""));
   gtk_label_set_xalign (filename_input->label, 0.0f);
   gtk_widget_set_hexpand (GTK_WIDGET (filename_input->label), TRUE);
+  gtk_label_set_width_chars (filename_input->label, width_needed);
   gtk_box_pack_start (GTK_BOX (filename_input), GTK_WIDGET (filename_input->label), FALSE, FALSE, 0);
 
   /* allow reverting the filename with ctrl + z */
@@ -423,7 +439,7 @@ xfce_filename_input_entry_changed (GtkEditable *editable,
   else if (match_ds)
     {
       /* the string contains a directory separator */
-      label_text = _("Directory separator illegal in file name");
+      label_text = filename_input->sep_illegal_mssg;
       icon_name = "dialog-error";
       new_text_valid = FALSE;
     }
@@ -431,7 +447,7 @@ xfce_filename_input_entry_changed (GtkEditable *editable,
           text_length > filename_input->max_text_length)
     {
       /* the string is too long */
-      label_text = _("Filename is too long");
+      label_text = filename_input->too_long_mssg;
       icon_name = "dialog-error";
       new_text_valid = FALSE;
     }
@@ -507,7 +523,7 @@ xfce_filename_input_whitespace_warning_timer (gpointer data)
   gtk_entry_set_icon_from_icon_name (filename_input->entry,
                                      GTK_ENTRY_ICON_SECONDARY,
                                      "dialog-warning");
-  gtk_label_set_text (filename_input->label, _("Filenames should not start or end with a space"));
+  gtk_label_set_text (filename_input->label, filename_input->whitespace_mssg);
 
   return FALSE;
 }
