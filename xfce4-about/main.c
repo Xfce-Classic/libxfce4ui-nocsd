@@ -84,7 +84,7 @@ xfce_about_system (GtkBuilder *builder)
   gtk_label_set_text (GTK_LABEL (label), os_name_text ? os_name_text : "");
 
   label = gtk_builder_get_object (builder, "ostype");
-  os_type_text = get_system_info (ARCH);
+  os_type_text = get_os_type ();
   gtk_label_set_text (GTK_LABEL (label), os_type_text ? os_type_text : "");
 
   label = gtk_builder_get_object (builder, "xfce-version");

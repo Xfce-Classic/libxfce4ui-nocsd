@@ -265,6 +265,19 @@ get_os_info (void)
 
 
 char *
+get_os_type (void)
+{
+  if (GLIB_SIZEOF_VOID_P == 8)
+    /* translators: This is the type of architecture for the OS */
+    return g_strdup_printf (_("64-bit"));
+  else
+    /* translators: This is the type of architecture for the OS */
+    return g_strdup_printf (_("32-bit"));
+}
+
+
+
+char *
 get_system_info (guint infotype)
 {
   gchar *result = NULL;
@@ -279,9 +292,6 @@ get_system_info (guint infotype)
     {
       case OS_NAME:
         result = g_strdup_printf ("%s %s", buffer.sysname, buffer.release);
-        break;
-      case ARCH:
-        result = g_strdup (buffer.machine);
         break;
       case DEVICE_NAME:
         result = g_strdup (buffer.nodename);
