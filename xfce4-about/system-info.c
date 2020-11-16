@@ -51,6 +51,20 @@ typedef struct
 
 
 
+/* A list of some 64-bit CPU architectures.
+ * Source: http://en.wikipedia.org/wiki/Uname */
+static const gchar *const arch_64[] = {
+  "aarch64",
+  "amd64",
+  "ia64",
+  "ppc64",
+  "sparc64",
+  "x86_64",
+  NULL
+};
+
+
+
 static char *
 prettify_info (const char *info)
 {
@@ -364,12 +378,29 @@ get_os_info (void)
 char *
 get_os_type (void)
 {
-  if (GLIB_SIZEOF_VOID_P == 8)
+  const guint userspace_num_bits = 8 * GLIB_SIZEOF_VOID_P;
+  guint kernel_num_bits = userspace_num_bits;
+  struct utsname buffer;
+
+  if (uname (&buffer) == 0)
+  {
+    const gchar *const *a64;
+    for (a64 = arch_64; *a64; a64++)
+    {
+      if (strcmp (buffer.machine, *a64) == 0)
+      {
+        kernel_num_bits = 64;
+        break;
+      }
+    }
+  }
+
+  if (kernel_num_bits == 64 && userspace_num_bits == 32)
     /* translators: This is the type of architecture for the OS */
-    return g_strdup_printf (_("64-bit"));
+    return g_strdup (_("64-bit (32-bit userspace)"));
   else
     /* translators: This is the type of architecture for the OS */
-    return g_strdup_printf (_("32-bit"));
+    return g_strdup ((userspace_num_bits == 64) ? _("64-bit") : _("32-bit"));
 }
 
 
