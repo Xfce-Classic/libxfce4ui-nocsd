@@ -111,7 +111,7 @@ xfce_gtk_menu_item_set_accel_label
 #if IN_HEADER(__XFCE_SPAWN_H__)
 #if IN_SOURCE(__XFCE_SPAWN_C__)
 xfce_spawn_on_screen_with_child_watch
-xfce_spawn_reparented
+xfce_spawn_no_child
 xfce_spawn_on_screen
 xfce_spawn_command_line_on_screen
 #endif

@@ -257,17 +257,22 @@ xfce_spawn_get_active_workspace_number (GdkScreen *screen)
 }
 #endif
 
-// Called by g_spawn_async before execv() is run in the new child process
-// Used if background_process is set to TRUE in xfce_spawn_impl
-static void background_process_call (gpointer _unused)
+
+
+/* Called by g_spawn_async before execv() is run in the new child process
+ * Used if background_process is set to TRUE in xfce_spawn_impl */
+static void
+background_process_call (gpointer _unused)
 {
-  // 1 = leave current working directory unchanged (we already set this)
-  // 0 = redirect /dev/{stdin, stdout, stderr} to /dev/null
+  /* 1 = leave current working directory unchanged (we already set this)
+   * 0 = redirect /dev/{stdin, stdout, stderr} to /dev/null */
   if (G_UNLIKELY(daemon (1, 0) == -1))
   {
     perror("xfce_spawn: daemon() failed");
   }
 }
+
+
 
 /**
  * xfce_spawn_impl
@@ -517,10 +522,10 @@ xfce_spawn_on_screen_with_child_watch (GdkScreen    *screen,
                                        GClosure     *child_watch_closure,
                                        GError      **error)
 {
-  return xfce_spawn_impl(screen, working_directory, argv,
-                         envp, flags, startup_notify,
-                         startup_timestamp, startup_icon_name,
-                         child_watch_closure, error, FALSE);
+  return xfce_spawn_impl (screen, working_directory, argv,
+                          envp, flags, startup_notify,
+                          startup_timestamp, startup_icon_name,
+                          child_watch_closure, error, FALSE);
 }
 
 
@@ -563,15 +568,16 @@ xfce_spawn_on_screen (GdkScreen    *screen,
                       const gchar  *startup_icon_name,
                       GError      **error)
 {
-  return xfce_spawn_impl(screen, working_directory, argv,
-                        envp, flags, startup_notify,
-                        startup_timestamp, startup_icon_name,
-                        NULL, error, FALSE);
+  return xfce_spawn_impl (screen, working_directory, argv,
+                          envp, flags, startup_notify,
+                          startup_timestamp, startup_icon_name,
+                          NULL, error, FALSE);
 }
 
 /**
- * xfce_spawn_reparented
- * Like xfce_spawn_on_screen but the process spawned is reparented to init
+ * xfce_spawn_no_child
+ * Like xfce_spawn_on_screen but the process is not spawned as a child but is
+ * is instead reparented to init
  *
  * @screen            : (allow-none): a #GdkScreen or %NULL to use the active screen,
  *                      see xfce_gdk_screen_get_active().
@@ -599,20 +605,20 @@ xfce_spawn_on_screen (GdkScreen    *screen,
  * Return value: %TRUE on success, %FALSE if @error is set.
  **/
 gboolean
-xfce_spawn_reparented (GdkScreen    *screen,
-                      const gchar  *working_directory,
-                      gchar       **argv,
-                      gchar       **envp,
-                      GSpawnFlags   flags,
-                      gboolean      startup_notify,
-                      guint32       startup_timestamp,
-                      const gchar  *startup_icon_name,
-                      GError      **error)
+xfce_spawn_no_child (GdkScreen    *screen,
+                     const gchar  *working_directory,
+                     gchar       **argv,
+                     gchar       **envp,
+                     GSpawnFlags   flags,
+                     gboolean      startup_notify,
+                     guint32       startup_timestamp,
+                     const gchar  *startup_icon_name,
+                     GError      **error)
 {
-  return xfce_spawn_impl(screen, working_directory, argv,
-                        envp, flags, startup_notify,
-                        startup_timestamp, startup_icon_name,
-                        NULL, error, TRUE);
+  return xfce_spawn_impl (screen, working_directory, argv,
+                          envp, flags, startup_notify,
+                          startup_timestamp, startup_icon_name,
+                          NULL, error, TRUE);
 }
 
 

@@ -49,7 +49,7 @@ gboolean xfce_spawn_on_screen                  (GdkScreen    *screen,
                                                 const gchar  *startup_icon_name,
                                                 GError      **error);
 
-gboolean xfce_spawn_reparented                  (GdkScreen    *screen,
+gboolean xfce_spawn_no_child                   (GdkScreen    *screen,
                                                 const gchar  *working_directory,
                                                 gchar       **argv,
                                                 gchar       **envp,
