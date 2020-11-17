@@ -829,10 +829,10 @@ xfce_widget_reparent (GtkWidget *widget,
  *
  * Since: 4.16
  **/
-const gchar *
+gchar *
 xfce_icon_name_from_desktop_id (const gchar *desktop_id)
 {
-    const gchar *icon_file;
+    gchar *icon_file;
     gchar *resource;
     XfceRc *rcfile;
 
@@ -845,8 +845,10 @@ xfce_icon_name_from_desktop_id (const gchar *desktop_id)
 
     if (rcfile && xfce_rc_has_group (rcfile, "Desktop Entry")) {
         xfce_rc_set_group (rcfile, "Desktop Entry");
-        icon_file = xfce_rc_read_entry (rcfile, "Icon", NULL);
+        icon_file = g_strdup (xfce_rc_read_entry (rcfile, "Icon", NULL));
+
         xfce_rc_close (rcfile);
+
         return icon_file;
     }
     else
@@ -872,14 +874,29 @@ xfce_icon_name_from_desktop_id (const gchar *desktop_id)
 GIcon *
 xfce_gicon_from_name (const gchar *name)
 {
-    const gchar *icon_name;
-    GIcon *gicon;
+    gchar *icon_name;
+    GIcon *gicon = NULL;
     GtkIconInfo *icon_info;
+    GFile *path = NULL;
 
     /* Check if there is a desktop file of 'name' */
     icon_name = xfce_icon_name_from_desktop_id (name);
     if (icon_name) {
-        gicon = g_themed_icon_new_with_default_fallbacks (icon_name);
+        if (g_path_is_absolute (icon_name)) {
+            path = g_file_new_for_path (icon_name);
+        }
+        else if (g_str_has_prefix (icon_name, "file://")) {
+            path = g_file_new_for_uri (icon_name);
+        }
+        else {
+            gicon = g_themed_icon_new_with_default_fallbacks (icon_name);
+        }
+
+        if (path) {
+            gicon = g_file_icon_new (path);
+            g_object_unref (path);
+        }
+        g_free (icon_name);
     }
     else {
         gicon = g_themed_icon_new_with_default_fallbacks (name);
@@ -887,15 +904,17 @@ xfce_gicon_from_name (const gchar *name)
 
     /* As g_themed_icon_new_with_default_fallbacks always returns 'something'
        check if there's anything that matches in the icon theme */
-    icon_info = gtk_icon_theme_lookup_by_gicon (gtk_icon_theme_get_default (),
-                                                gicon,
-                                                GTK_ICON_SIZE_BUTTON,
-                                                GTK_ICON_LOOKUP_FORCE_REGULAR);
+    if (gicon) {
+        icon_info = gtk_icon_theme_lookup_by_gicon (gtk_icon_theme_get_default (),
+                                                    gicon,
+                                                    GTK_ICON_SIZE_BUTTON,
+                                                    GTK_ICON_LOOKUP_FORCE_REGULAR);
 
-    if (icon_info)
-        return gicon;
-    else
-        return NULL;
+        if (icon_info)
+            return gicon;
+    }
+
+    return NULL;
 }
 
 
