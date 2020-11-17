@@ -274,62 +274,6 @@ background_process_call (gpointer _unused)
 
 
 
-/**
- * xfce_spawn_impl
- * @screen              : (allow-none): a #GdkScreen or %NULL to use the active screen,
- *                        see xfce_gdk_screen_get_active().
- * @working_directory   : (allow-none): child's current working directory or %NULL to
- *                        inherit parent's.
- * @argv                : child's argument vector.
- * @envp                : (allow-none): child's environment vector or %NULL to inherit
- *                        parent's.
- * @flags               : flags from #GSpawnFlags. #G_SPAWN_DO_NOT_REAP_CHILD
- *                        is not allowed, you should use the
- *                        @child_watch_closure for this.
- * @startup_notify      : whether to use startup notification.
- * @startup_timestamp   : the timestamp to pass to startup notification, use
- *                        the event time here if possible to make focus
- *                        stealing prevention work property. If you don't
- *                        have direct access to the event time you could use
- *                        gtk_get_current_event_time() or if nothing is
- *                        available 0 is valid too.
- * @startup_icon_name   : (allow-none): application icon or %NULL.
- * @child_watch_closure : (allow-none): closure that is triggered when the child exists
- *                        or %NULL.
- * @error               : (out) (allow-none) (transfer full): return location for errors or %NULL.
- * @background_process  : whether this process should be re-parented to init
- *
- * Like xfce_spawn_on_screen(), but allows to attach a closure to watch the
- * child's exit status. This because only one g_child_watch_add() is allowed on
- * Unix (per PID) and this is already internally needed for a proper
- * startup notification implementation.
- *
- * <example>
- * <title>Spawning with a child watch</title>
- * <programlisting>
- * static void
- * child_watch_callback (GObject *object,
- *                       gint     status)
- * {
- *   g_message ("Child exit status is %d", status);
- * }
- *
- * static void
- * spawn_something (void)
- * {
- *   GClosure *child_watch;
- *
- *   child_watch = g_cclosure_new_swap (G_CALLBACK (child_watch_callback),
- *                                      object, NULL);
- *   xfce_spawn_on_screen_with_child_watch (...,
- *                                          child_watch,
- *                                          ...);
- * }
- * </programlisting>
- * </example>
- *
- * Return value: %TRUE on success, %FALSE if @error is set.
- **/
 static gboolean
 xfce_spawn_impl (GdkScreen    *screen,
                  const gchar  *working_directory,
@@ -510,6 +454,63 @@ G_GNUC_END_IGNORE_DEPRECATIONS
   return succeed;
 }
 
+
+
+/**
+ * xfce_spawn_on_screen_with_child_watch
+ * @screen              : (allow-none): a #GdkScreen or %NULL to use the active screen,
+ *                        see xfce_gdk_screen_get_active().
+ * @working_directory   : (allow-none): child's current working directory or %NULL to
+ *                        inherit parent's.
+ * @argv                : child's argument vector.
+ * @envp                : (allow-none): child's environment vector or %NULL to inherit
+ *                        parent's.
+ * @flags               : flags from #GSpawnFlags. #G_SPAWN_DO_NOT_REAP_CHILD
+ *                        is not allowed, you should use the
+ *                        @child_watch_closure for this.
+ * @startup_notify      : whether to use startup notification.
+ * @startup_timestamp   : the timestamp to pass to startup notification, use
+ *                        the event time here if possible to make focus
+ *                        stealing prevention work property. If you don't
+ *                        have direct access to the event time you could use
+ *                        gtk_get_current_event_time() or if nothing is
+ *                        available 0 is valid too.
+ * @startup_icon_name   : (allow-none): application icon or %NULL.
+ * @child_watch_closure : (allow-none): closure that is triggered when the child exists
+ *                        or %NULL.
+ * @error               : (out) (allow-none) (transfer full): return location for errors or %NULL.
+ *
+ * Like xfce_spawn_on_screen(), but allows to attach a closure to watch the
+ * child's exit status. This because only one g_child_watch_add() is allowed on
+ * Unix (per PID) and this is already internally needed for a proper
+ * startup notification implementation.
+ *
+ * <example>
+ * <title>Spawning with a child watch</title>
+ * <programlisting>
+ * static void
+ * child_watch_callback (GObject *object,
+ *                       gint     status)
+ * {
+ *   g_message ("Child exit status is %d", status);
+ * }
+ *
+ * static void
+ * spawn_something (void)
+ * {
+ *   GClosure *child_watch;
+ *
+ *   child_watch = g_cclosure_new_swap (G_CALLBACK (child_watch_callback),
+ *                                      object, NULL);
+ *   xfce_spawn_on_screen_with_child_watch (...,
+ *                                          child_watch,
+ *                                          ...);
+ * }
+ * </programlisting>
+ * </example>
+ *
+ * Return value: %TRUE on success, %FALSE if @error is set.
+ **/
 gboolean
 xfce_spawn_on_screen_with_child_watch (GdkScreen    *screen,
                                        const gchar  *working_directory,
@@ -603,6 +604,8 @@ xfce_spawn_on_screen (GdkScreen    *screen,
  * (if Libxfce4ui was built with startup notification support).
  *
  * Return value: %TRUE on success, %FALSE if @error is set.
+ *
+ * Since: 4.16
  **/
 gboolean
 xfce_spawn_no_child (GdkScreen    *screen,
