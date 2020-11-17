@@ -312,6 +312,7 @@ xfce_gtk_menu_item_new_from_action_entry (const XfceGtkActionEntry *action_entry
  * xfce_gtk_toggle_menu_item_new_from_action_entry:
  * @action_entry : Label to use for the #GtkCheckMenuItem
  * @callback_param : optional callback parameter, or NULL.
+ * @active : boolean value indicating whether the check box is active.
  * @menu_to_append_item : #GtkMenuShell on which the item should be appended, or NULL
  *
  * Method to create a toggle menu item from the passed action entry
