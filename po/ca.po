@@ -12,9 +12,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-07 12:45+0200\n"
-"PO-Revision-Date: 2020-07-07 10:45+0000\n"
-"Last-Translator: Xfce Bot <transifex@xfce.org>\n"
+"POT-Creation-Date: 2020-11-17 00:45+0100\n"
+"PO-Revision-Date: 2020-11-17 17:09+0000\n"
+"Last-Translator: Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>\n"
 "Language-Team: Catalan (http://www.transifex.com/xfce/libxfce4ui/language/ca/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -137,7 +137,7 @@ msgid "Session manager did not return a valid client id"
 msgstr "El gestor de sessions no ha retornat un id. vàlid de client"
 
 #. print warning for user
-#: ../libxfce4ui/xfce-spawn.c:423
+#: ../libxfce4ui/xfce-spawn.c:432
 #, c-format
 msgid ""
 "Working directory \"%s\" does not exist. It won't be used when spawning "
@@ -853,7 +853,19 @@ msgstr "BSD"
 msgid "Copyright"
 msgstr "Drets d'autor"
 
-#: ../xfce4-about/system-info.c:274 ../xfce4-about/system-info.c:322
+#. translators: This is the type of architecture for the OS
+#: ../xfce4-about/system-info.c:272
+#, c-format
+msgid "64-bit"
+msgstr "64 bits"
+
+#. translators: This is the type of architecture for the OS
+#: ../xfce4-about/system-info.c:275
+#, c-format
+msgid "32-bit"
+msgstr "32 bits"
+
+#: ../xfce4-about/system-info.c:287 ../xfce4-about/system-info.c:332
 msgid "Unknown"
 msgstr "Desconegut"
 
@@ -861,7 +873,7 @@ msgstr "Desconegut"
 #. * example:
 #. * "Fedora 25 (Workstation Edition); Build ID: xyz" or
 #. * "Ubuntu 16.04 LTS; Build ID: jki"
-#: ../xfce4-about/system-info.c:330
+#: ../xfce4-about/system-info.c:340
 #, c-format
 msgid "%s; Build ID: %s"
 msgstr "%s; Id. construcció: %s"
