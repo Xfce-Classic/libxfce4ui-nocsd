@@ -12,8 +12,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-07 12:45+0200\n"
-"PO-Revision-Date: 2020-07-07 17:55+0000\n"
+"POT-Creation-Date: 2020-11-17 00:45+0100\n"
+"PO-Revision-Date: 2020-11-17 16:43+0000\n"
 "Last-Translator: Andreas Eitel <github-aneitel@online.de>\n"
 "Language-Team: German (http://www.transifex.com/xfce/libxfce4ui/language/de/)\n"
 "MIME-Version: 1.0\n"
@@ -137,7 +137,7 @@ msgid "Session manager did not return a valid client id"
 msgstr "Die Sitzungsverwaltung hat keine gültige Kennung geliefert"
 
 #. print warning for user
-#: ../libxfce4ui/xfce-spawn.c:423
+#: ../libxfce4ui/xfce-spawn.c:432
 #, c-format
 msgid ""
 "Working directory \"%s\" does not exist. It won't be used when spawning "
@@ -853,7 +853,19 @@ msgstr "BSD"
 msgid "Copyright"
 msgstr "Urheberrecht"
 
-#: ../xfce4-about/system-info.c:274 ../xfce4-about/system-info.c:322
+#. translators: This is the type of architecture for the OS
+#: ../xfce4-about/system-info.c:272
+#, c-format
+msgid "64-bit"
+msgstr "64-Bit"
+
+#. translators: This is the type of architecture for the OS
+#: ../xfce4-about/system-info.c:275
+#, c-format
+msgid "32-bit"
+msgstr "32-Bit"
+
+#: ../xfce4-about/system-info.c:287 ../xfce4-about/system-info.c:332
 msgid "Unknown"
 msgstr "(unbekannt)"
 
@@ -861,7 +873,7 @@ msgstr "(unbekannt)"
 #. * example:
 #. * "Fedora 25 (Workstation Edition); Build ID: xyz" or
 #. * "Ubuntu 16.04 LTS; Build ID: jki"
-#: ../xfce4-about/system-info.c:330
+#: ../xfce4-about/system-info.c:340
 #, c-format
 msgid "%s; Build ID: %s"
 msgstr "%s; Build Kennung: %s"
