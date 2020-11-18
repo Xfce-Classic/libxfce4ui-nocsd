@@ -33,6 +33,12 @@
 #include <glibtop/sysinfo.h>
 #include <sys/utsname.h>
 
+#ifdef HAVE_EPOXY
+#include <epoxy/gl.h>
+#include <epoxy/glx.h>
+#include <X11/Xlib.h>
+#endif
+
 #include "system-info.h"
 
 
@@ -203,6 +209,97 @@ get_cpu_info (const glibtop_sysinfo *info)
     }
 
   return g_strdup (cpu->str);
+}
+
+
+
+char*
+get_gpu_info (void)
+{
+  gchar *result = NULL;
+  Display *dpy;
+
+#ifdef HAVE_EPOXY
+  dpy = XOpenDisplay (NULL);
+  if (dpy)
+  {
+    XVisualInfo *visual_info;
+
+    int attrib[] = {
+      GLX_RGBA,
+      GLX_RED_SIZE, 1,
+      GLX_GREEN_SIZE, 1,
+      GLX_BLUE_SIZE, 1,
+      None
+    };
+
+    visual_info = glXChooseVisual (dpy, DefaultScreen (dpy), attrib);
+    if (visual_info)
+    {
+      const int screen = DefaultScreen (dpy);
+      const Window root_win = RootWindow (dpy, screen);
+      XSetWindowAttributes win_attr = {};
+      Window win;
+      GLXContext ctx;
+
+      win_attr.colormap = XCreateColormap (dpy, root_win, visual_info->visual, AllocNone);
+      win = XCreateWindow (dpy, root_win,
+                           0, 0, /* x, y */
+                           1, 1, /* width, height */
+                           0, visual_info->depth, InputOutput,
+                           visual_info->visual, CWColormap, &win_attr);
+
+      ctx = glXCreateContext (dpy, visual_info, NULL, True);
+      XFree (visual_info);
+      visual_info = NULL;
+
+      if (ctx)
+      {
+	if (glXMakeCurrent (dpy, win, ctx))
+        {
+          const gchar *const renderer = (const gchar*) glGetString (GL_RENDERER);
+          if (renderer) {
+            gsize length = strlen (renderer);
+            gchar *renderer_lc = g_ascii_strdown (renderer, length);
+            gboolean strip = true;
+
+            /* Return full renderer string in the following cases: */
+            strip = strip && !g_str_has_prefix (renderer_lc, "llvmpipe");
+            strip = strip && !g_str_has_prefix (renderer_lc, "softpipe");
+            strip = strip && !g_str_has_prefix (renderer_lc, "swr");
+            strip = strip && !g_str_has_prefix (renderer_lc, "zink");
+            g_free (renderer_lc);
+            renderer_lc = NULL;
+
+            if (strip)
+            {
+              /* End the renderer string before the first parenthesis */
+              const gchar *bracket = strchr (renderer, '(');
+              if (bracket > renderer)
+              {
+                length = (gsize) (bracket-renderer);
+                for(; length > 0 && g_ascii_isspace (renderer[length-1]); length--);
+              }
+            }
+
+            result = g_strndup (renderer, length);
+          }
+          glXMakeCurrent (dpy, None, NULL);
+        }
+        glXDestroyContext (dpy, ctx);
+      }
+
+      XDestroyWindow (dpy, win);
+    }
+
+    XCloseDisplay (dpy);
+  }
+#endif
+
+  if (!result) {
+    result = g_strdup (_("Unknown"));
+  }
+  return result;
 }
 
 
