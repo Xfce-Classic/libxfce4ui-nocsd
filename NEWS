@@ -1,3 +1,20 @@
+4.15.5
+======
+- Add new API xfce_spawn_no_child (!8):
+  Launch processes re-parenting them to init vs. as children
+- about: Fix icon names
+- about: Display userspace bitness if it differs from OS kernel bitness
+- about: Print GPU name in system info
+- about: Use more understandable arch labels (Issue #27)
+- Improve xfce_icon_name API
+- No startup notification in wayland to prevent crash (Issue #17)
+- Add missing docstring
+- Fix typos
+- Add README.md to EXTRA_DIST
+- Translation Updates:
+  Catalan, Chinese (China), Danish, Galician, German, Italian,
+  Lithuanian, Turkish
+
 4.15.4
 ======
 - Avoid redundant key re-grabbing
