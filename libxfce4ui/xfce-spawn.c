@@ -577,9 +577,6 @@ xfce_spawn_on_screen (GdkScreen    *screen,
 
 /**
  * xfce_spawn_no_child
- * Like xfce_spawn_on_screen but the process is not spawned as a child but is
- * is instead reparented to init
- *
  * @screen            : (allow-none): a #GdkScreen or %NULL to use the active screen,
  *                      see xfce_gdk_screen_get_active().
  * @working_directory : (allow-none): child's current working directory or %NULL to
@@ -600,8 +597,8 @@ xfce_spawn_on_screen (GdkScreen    *screen,
  * @startup_icon_name : (allow-none): application icon or %NULL.
  * @error             : (out) (allow-none) (transfer full): return location for errors or %NULL.
  *
- * Like gdk_spawn_on_screen(), but also supports startup notification
- * (if Libxfce4ui was built with startup notification support).
+ * Like #xfce_spawn_on_screen but the process is not spawned as a child but is
+ * is instead reparented to init.
  *
  * Return value: %TRUE on success, %FALSE if @error is set.
  *
