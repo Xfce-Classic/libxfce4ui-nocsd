@@ -39,9 +39,21 @@
 #include <X11/Xlib.h>
 #endif
 
+#ifdef HAVE_GUDEV
+#include <gudev/gudev.h>
+#endif
+
 #include "system-info.h"
 
 
+
+typedef struct
+{
+  gboolean is_default;
+  gint memory_size_mib;  /* Unit: mebibyte (MiB), zero if unknown */
+  char *name;            /* NULL if unknown */
+  char *pci_id;          /* "VID:DID", lowercase, VID (DID) is vendor (device) ID, NULL if unknown */
+} GPUInfo;
 
 typedef struct
 {
@@ -80,6 +92,10 @@ prettify_info (const char *info)
     { "(AMD .*) [(].*", "\\1"},
     { "(AMD [A-Z])(.*)", "\\1\\L\\2\\E"},
     { "AMD", "AMD<sup>\302\256</sup>"},
+    { "GeForce ", "GeForce<sup>\302\256</sup> "},
+    { "GeForce[(]R[)]", "GeForce<sup>\302\256</sup>"},
+    { "Radeon ", "Radeon<sup>\342\204\242</sup> "},
+    { "Radeon[(]TM[)]", "Radeon<sup>\342\204\242</sup>"},
     { "Graphics Controller", "Graphics"},
   };
 
@@ -227,11 +243,162 @@ get_cpu_info (const glibtop_sysinfo *info)
 
 
 
-char*
-get_gpu_info (void)
+
+static void
+free_gpu_info (gpointer p)
 {
+  GPUInfo *i = p;
+  g_free (i->name);
+  g_free (i->pci_id);
+  g_free (i);
+}
+
+static GList*
+append_gpu_info (GList *gpus, GPUInfo *gpu)
+{
+  gboolean merged = FALSE;
+
+  if (gpu->pci_id)
+    {
+      GList *l;
+
+      /* Merge the GPU info with GPUs already present in the list */
+      for (l = gpus; l;)
+        {
+          GPUInfo *i = l->data;
+          gboolean remove = FALSE;
+
+          if (!i->pci_id)
+            {
+              /* Remove all GPUs without a PCI ID */
+              remove = TRUE;
+            }
+          else if (strcmp (i->pci_id, gpu->pci_id) == 0)
+            {
+              i->is_default |= gpu->is_default;
+              if (i->memory_size_mib == 0 && gpu->memory_size_mib != 0)
+                i->memory_size_mib = gpu->memory_size_mib;
+              if (!i->name && gpu->name)
+                i->name = g_strdup (gpu->name);
+              merged = TRUE;
+            }
+
+          if (remove)
+            {
+              GList *next = l->next;
+              gpus = g_list_remove_link (gpus, l);
+              g_list_free_1 (l);
+              free_gpu_info (i);
+              l = next;
+            }
+          else
+            l = l->next;
+        }
+    }
+
+  if (!merged)
+    gpus = g_list_append (gpus, gpu);
+  else
+    free_gpu_info (gpu);
+
+  return gpus;
+}
+
+
+
+#ifdef HAVE_GUDEV
+
+static GList*
+get_drm_cards (GList *gpus)
+{
+  const gchar *const subsystems[] = { "drm", NULL };
+  GUdevClient *client;
+  GList *devices, *l;
+
+  client = g_udev_client_new (subsystems);
+  devices = g_udev_client_query_by_subsystem (client, "drm");
+  for (l = devices; l != NULL; l = l->next)
+    {
+      GUdevDevice *d = l->data;
+      const char *path = g_udev_device_get_device_file (d);
+
+      if (path && g_str_has_prefix (path, "/dev/dri/render"))
+        {
+          GUdevDevice *parent;
+          const char *property;
+
+          parent = g_udev_device_get_parent (d);
+
+          property = g_udev_device_get_property (parent, "ID_MODEL_FROM_DATABASE");
+          if (property)
+            {
+              GPUInfo *const gpu = g_new0 (GPUInfo, 1);
+
+              gpu->name = info_cleanup (property);
+              g_strstrip (gpu->name);
+
+              /* Example GPU names before cleanup:
+               *   GM107 [GeForce GTX 750]
+               *   Navi 14 [Radeon RX 5500/5500M / Pro 5500M]
+               * After cleanup:
+               *   GeForce GTX 750
+               *   Radeon RX 5500/5500M / Pro 5500M
+               */
+              if (g_regex_match_simple ("^[^\\[]+\\[[^\\]]{4,}\\]$", gpu->name, 0, 0))
+                {
+                  char *s;
+                  gpu->name[strlen (gpu->name) - 1] = '\0';  /* Remove trailing ] */
+                  if (G_LIKELY ((s = strrchr (gpu->name, '[')) != NULL))
+                    {
+                      s = g_strdup (s+1);
+                      g_free (gpu->name);
+                      gpu->name = s;
+                    }
+                }
+
+              property = g_udev_device_get_property (parent, "PCI_ID");
+              if (property)
+                {
+                   gpu->pci_id = g_ascii_strdown (property, -1);
+                   g_strstrip (gpu->pci_id);
+                }
+
+              gpus = append_gpu_info (gpus, gpu);
+          }
+
+          g_object_unref (parent);
+        }
+
+      g_object_unref (d);
+    }
+
+  g_list_free (devices);
+  g_object_unref (client);
+
+  return gpus;
+}
+
+#endif
+
+
+
+/**
+ * Returns a string containing all detected GPUs.
+ * If the machine has multiple GPUs, they are separated by the newline '\n' character.
+ *
+ * @num_gpus: where to store the number of detected GPUs, or %NULL.
+ */
+char*
+get_gpu_info (guint *num_gpus)
+{
+  GList *gpus = NULL;
   gchar *result = NULL;
+#ifdef HAVE_EPOXY
   Display *dpy;
+#endif
+
+  if (num_gpus)
+    *num_gpus = 0;
 
 #ifdef HAVE_EPOXY
   dpy = XOpenDisplay (NULL);
@@ -271,11 +438,21 @@ get_gpu_info (void)
       {
 	if (glXMakeCurrent (dpy, win, ctx))
         {
-          const gchar *const renderer = (const gchar*) glGetString (GL_RENDERER);
+          GPUInfo *gpu = g_new0 (GPUInfo, 1);
+          gchar *renderer;
+
+          gpu->is_default = TRUE;
+
+          renderer = g_strdup ((const gchar*) glGetString (GL_RENDERER));
           if (renderer) {
             gsize length = strlen (renderer);
             gchar *renderer_lc = g_ascii_strdown (renderer, length);
+            gchar *s;
             gboolean strip = true;
+
+            s = info_cleanup (renderer);
+            g_free (renderer);
+            renderer = s;
 
             /* Return full renderer string in the following cases: */
             strip = strip && !g_str_has_prefix (renderer_lc, "llvmpipe");
@@ -296,9 +473,33 @@ get_gpu_info (void)
               }
             }
 
-            result = g_strndup (renderer, length);
+            gpu->name = g_strndup (renderer, length);
+            g_free (renderer);
           }
+
+          if (epoxy_has_glx_extension (dpy, 0, "GLX_MESA_query_renderer"))
+          {
+            unsigned mem_mib = 0, vendor = 0, device = 0;
+            if (glXQueryCurrentRendererIntegerMESA (GLX_RENDERER_VIDEO_MEMORY_MESA, &mem_mib) && mem_mib > 0)
+                gpu->memory_size_mib = mem_mib;
+
+            if (glXQueryCurrentRendererIntegerMESA (GLX_RENDERER_VENDOR_ID_MESA, &vendor) &&
+                glXQueryCurrentRendererIntegerMESA (GLX_RENDERER_DEVICE_ID_MESA, &device))
+              gpu->pci_id = g_strdup_printf ("%04x:%04x", vendor, device);
+          }
+
+          if (gpu->memory_size_mib == 0 && epoxy_has_gl_extension ("GL_NVX_gpu_memory_info"))
+          {
+            GLint mem_kib = 0;
+            glGetIntegerv (GL_GPU_MEMORY_INFO_DEDICATED_VIDMEM_NVX, &mem_kib);
+            if (mem_kib > 0)
+                gpu->memory_size_mib = mem_kib >> 10;
+          }
+
+          /* Deallocate ctx immediately when calling glXDestroyContext() */
           glXMakeCurrent (dpy, None, NULL);
+
+          gpus = append_gpu_info (gpus, gpu);
         }
         glXDestroyContext (dpy, ctx);
       }
@@ -310,9 +511,49 @@ get_gpu_info (void)
   }
 #endif
 
-  if (!result) {
+#ifdef HAVE_GUDEV
+  gpus = get_drm_cards (gpus);
+#endif
+
+  if (gpus)
+    {
+      GList *gpu;
+      for (gpu = gpus; gpu; gpu = gpu->next)
+        {
+          GPUInfo *info = (GPUInfo*) gpu->data;
+          char *s;
+
+          if (result)
+            {
+              s = g_strconcat (result, "\n", NULL);
+              g_free (result);
+              result = s;
+            }
+
+          s = g_strconcat (result ? result : "", info->name ? info->name : _("Unknown"), NULL);
+          g_free (result);
+          result = s;
+
+          if (info->memory_size_mib != 0)
+            {
+              char *mem = g_format_size_full ((guint64) info->memory_size_mib << 20, G_FORMAT_SIZE_IEC_UNITS);
+              s = g_strconcat (result, " (", mem, ")", NULL);
+              g_free (mem);
+              g_free (result);
+              result = s;
+            }
+        }
+
+      if (num_gpus)
+        *num_gpus = g_list_length (gpus);
+
+      g_list_free_full (gpus, free_gpu_info);
+      gpus = NULL;
+    }
+
+  if (!result)
     result = g_strdup (_("Unknown"));
-  }
+
   return result;
 }
 

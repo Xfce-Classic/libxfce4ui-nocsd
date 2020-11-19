@@ -157,6 +157,17 @@ else
   AM_CONDITIONAL([HAVE_EPOXY], [false])
 fi
 
+dnl **********************************
+dnl *** Optional support for GUdev ***
+dnl **********************************
+GUDEV_FOUND="no"
+if test x"$GLIBTOP_FOUND" = x"yes"; then
+  XDT_CHECK_OPTIONAL_PACKAGE([GUDEV], [gudev-1.0], [232], [gudev],
+                             [GObject bindings for libudev], [yes])
+else
+  AM_CONDITIONAL([HAVE_GUDEV], [false])
+fi
+
 dnl ***************************************
 dnl *** Check for gobject-introspection ***
 dnl ***************************************
@@ -404,9 +415,11 @@ fi
 if test x"$GLIBTOP_FOUND" = x"yes"; then
 echo "* System Info (libgtop):     yes"
 echo "* System Info (epoxy):       $EPOXY_FOUND"
+echo "* System Info (gudev):       $GUDEV_FOUND"
 else
 echo "* System Info (libgtop):     no"
 echo "* System Info (epoxy):       no (assumes libgtop)"
+echo "* System Info (gudev):       no (assumes libgtop)"
 fi
 echo "* Manual website:            $with_manual_website"
 echo

@@ -423,7 +423,6 @@ NO WARRANTY
                     <property name="valign">center</property>
                     <property name="row_spacing">6</property>
                     <property name="column_spacing">12</property>
-                    <property name="row_homogeneous">True</property>
                     <child>
                       <object class="GtkLabel" id="ostype">
                         <property name="visible">True</property>
@@ -601,11 +600,12 @@ NO WARRANTY
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkLabel">
+                      <object class="GtkLabel" id="gpu-label">
                         <property name="visible">True</property>
                         <property name="sensitive">False</property>
                         <property name="can_focus">False</property>
                         <property name="has_tooltip">True</property>
+                        <property name="valign">baseline</property>
                         <property name="label" translatable="yes">GPU</property>
                         <property name="xalign">1</property>
                       </object>
@@ -618,6 +618,7 @@ NO WARRANTY
                       <object class="GtkLabel" id="gpu">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
+                        <property name="valign">baseline</property>
                         <property name="label" translatable="yes">label</property>
                         <property name="xalign">0</property>
                       </object>
