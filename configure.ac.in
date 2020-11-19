@@ -148,10 +148,14 @@ dnl **************************************************************
 dnl *** Optional support for system information based on epoxy ***
 dnl **************************************************************
 EPOXY_FOUND="no"
-XDT_CHECK_OPTIONAL_PACKAGE([EPOXY],
-                           [epoxy],
-                           [1.0], [epoxy],
-                           [library for handling OpenGL function pointer management], [yes])
+if test x"$GLIBTOP_FOUND" = x"yes"; then
+  XDT_CHECK_OPTIONAL_PACKAGE([EPOXY],
+                             [epoxy],
+                             [1.0], [epoxy],
+                             [library for handling OpenGL function pointer management], [yes])
+else
+  AM_CONDITIONAL([HAVE_EPOXY], [false])
+fi
 
 dnl ***************************************
 dnl *** Check for gobject-introspection ***
@@ -398,10 +402,11 @@ else
 echo "* Vendor:                    none"
 fi
 if test x"$GLIBTOP_FOUND" = x"yes"; then
-echo "* System Info (glibtop):     yes"
-else
-echo "* System Info (glibtop):     no"
-fi
+echo "* System Info (libgtop):     yes"
 echo "* System Info (epoxy):       $EPOXY_FOUND"
+else
+echo "* System Info (libgtop):     no"
+echo "* System Info (epoxy):       no (assumes libgtop)"
+fi
 echo "* Manual website:            $with_manual_website"
 echo
