@@ -37,7 +37,9 @@ enum
   DEVICE_NAME
 };
 
+char *get_os_type (void);
 char *get_system_info (guint infotype);
 char *get_cpu_info (const glibtop_sysinfo *info);
+char *get_gpu_info (void);
 char *get_os_name (void);
 char *get_renderer (void);

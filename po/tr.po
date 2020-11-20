@@ -4,6 +4,7 @@
 # 
 # Translators:
 # Ayhan YALÇINSOY <ayhanyalcinsoy@gmail.com>, 2010
+# Butterfly <gokhanlnx@gmail.com>, 2020
 # 0d1bdb3b9a0d4e8f77bc854af8bf3dfc_e6913f4, 2019
 # Demiray Muhterem <mdemiray@msn.com>, 2019-2020
 # Emin Tufan <etcetin@gmail.com>, 2020
@@ -17,7 +18,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-07-07 12:45+0200\n"
-"PO-Revision-Date: 2020-11-04 22:38+0000\n"
+"PO-Revision-Date: 2020-11-16 20:49+0000\n"
 "Last-Translator: Emin Tufan <etcetin@gmail.com>\n"
 "Language-Team: Turkish (http://www.transifex.com/xfce/libxfce4ui/language/tr/)\n"
 "MIME-Version: 1.0\n"
@@ -286,11 +287,11 @@ msgstr "Sağ"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:42
 msgid "Cycle windows"
-msgstr "Pencereleri devir"
+msgstr "Pencereler arasında geçiş"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:43
 msgid "Cycle windows (Reverse)"
-msgstr "Pencereleri devir (Ters)"
+msgstr "Pencereler arasında geçiş (Tersine)"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:44
 msgid "Switch window for same application"
@@ -458,19 +459,19 @@ msgstr "Pencere sağı kaplasın"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:85
 msgid "Tile window to the top-left"
-msgstr "Pencer sol üst bölümü kaplasın"
+msgstr "Pencereyi sol üste döşe"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:86
 msgid "Tile window to the top-right"
-msgstr "Pencere sağ üst bölümü kaplasın"
+msgstr "Pencereyi sağ üste döşe"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:87
 msgid "Tile window to the bottom-left"
-msgstr "Pencere sol alt bölümü kaplasın"
+msgstr "Pencereyi sol alta döşe"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:88
 msgid "Tile window to the bottom-right"
-msgstr "Pencere sağ alt bölümü kaplasın"
+msgstr "Pencereyi sağ alta döşe"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:89
 msgid "Show desktop"
@@ -594,7 +595,7 @@ msgstr "Panel"
 
 #: ../xfce4-about/main.c:131
 msgid "Provides a home for window buttons, launchers, app menu and more."
-msgstr "Pencere düğmeleri, başlatıcılar, uygulama menüsü ve daha fazlası için bir ev sağlar."
+msgstr "Pencere düğmeleri, başlatıcılar, uygulama menüsü ve daha fazlası için bir yuva sağlar."
 
 #: ../xfce4-about/main.c:135
 msgid "Desktop Manager"
@@ -602,7 +603,7 @@ msgstr "Masaüstü Yöneticisi"
 
 #: ../xfce4-about/main.c:136
 msgid "Sets desktop backgrounds, handles icons and more."
-msgstr "Masaüstü arka planlarını, simgeleri ve daha çoğunu işler."
+msgstr "Masaüstü arka planlarını, simgeleri ve daha çoğunu ayarlar."
 
 #: ../xfce4-about/main.c:140
 msgid "File Manager"

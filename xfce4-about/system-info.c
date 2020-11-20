@@ -33,6 +33,12 @@
 #include <glibtop/sysinfo.h>
 #include <sys/utsname.h>
 
+#ifdef HAVE_EPOXY
+#include <epoxy/gl.h>
+#include <epoxy/glx.h>
+#include <X11/Xlib.h>
+#endif
+
 #include "system-info.h"
 
 
@@ -42,6 +48,20 @@ typedef struct
   char *regex;
   char *replacement;
 } ReplaceStrings;
+
+
+
+/* A list of some 64-bit CPU architectures.
+ * Source: http://en.wikipedia.org/wiki/Uname */
+static const gchar *const arch_64[] = {
+  "aarch64",
+  "amd64",
+  "ia64",
+  "ppc64",
+  "sparc64",
+  "x86_64",
+  NULL
+};
 
 
 
@@ -207,6 +227,97 @@ get_cpu_info (const glibtop_sysinfo *info)
 
 
 
+char*
+get_gpu_info (void)
+{
+  gchar *result = NULL;
+  Display *dpy;
+
+#ifdef HAVE_EPOXY
+  dpy = XOpenDisplay (NULL);
+  if (dpy)
+  {
+    XVisualInfo *visual_info;
+
+    int attrib[] = {
+      GLX_RGBA,
+      GLX_RED_SIZE, 1,
+      GLX_GREEN_SIZE, 1,
+      GLX_BLUE_SIZE, 1,
+      None
+    };
+
+    visual_info = glXChooseVisual (dpy, DefaultScreen (dpy), attrib);
+    if (visual_info)
+    {
+      const int screen = DefaultScreen (dpy);
+      const Window root_win = RootWindow (dpy, screen);
+      XSetWindowAttributes win_attr = {};
+      Window win;
+      GLXContext ctx;
+
+      win_attr.colormap = XCreateColormap (dpy, root_win, visual_info->visual, AllocNone);
+      win = XCreateWindow (dpy, root_win,
+                           0, 0, /* x, y */
+                           1, 1, /* width, height */
+                           0, visual_info->depth, InputOutput,
+                           visual_info->visual, CWColormap, &win_attr);
+
+      ctx = glXCreateContext (dpy, visual_info, NULL, True);
+      XFree (visual_info);
+      visual_info = NULL;
+
+      if (ctx)
+      {
+	if (glXMakeCurrent (dpy, win, ctx))
+        {
+          const gchar *const renderer = (const gchar*) glGetString (GL_RENDERER);
+          if (renderer) {
+            gsize length = strlen (renderer);
+            gchar *renderer_lc = g_ascii_strdown (renderer, length);
+            gboolean strip = true;
+
+            /* Return full renderer string in the following cases: */
+            strip = strip && !g_str_has_prefix (renderer_lc, "llvmpipe");
+            strip = strip && !g_str_has_prefix (renderer_lc, "softpipe");
+            strip = strip && !g_str_has_prefix (renderer_lc, "swr");
+            strip = strip && !g_str_has_prefix (renderer_lc, "zink");
+            g_free (renderer_lc);
+            renderer_lc = NULL;
+
+            if (strip)
+            {
+              /* End the renderer string before the first parenthesis */
+              const gchar *bracket = strchr (renderer, '(');
+              if (bracket > renderer)
+              {
+                length = (gsize) (bracket-renderer);
+                for(; length > 0 && g_ascii_isspace (renderer[length-1]); length--);
+              }
+            }
+
+            result = g_strndup (renderer, length);
+          }
+          glXMakeCurrent (dpy, None, NULL);
+        }
+        glXDestroyContext (dpy, ctx);
+      }
+
+      XDestroyWindow (dpy, win);
+    }
+
+    XCloseDisplay (dpy);
+  }
+#endif
+
+  if (!result) {
+    result = g_strdup (_("Unknown"));
+  }
+  return result;
+}
+
+
+
 static GHashTable*
 get_os_info (void)
 {
@@ -265,6 +376,36 @@ get_os_info (void)
 
 
 char *
+get_os_type (void)
+{
+  const guint userspace_num_bits = 8 * GLIB_SIZEOF_VOID_P;
+  guint kernel_num_bits = userspace_num_bits;
+  struct utsname buffer;
+
+  if (uname (&buffer) == 0)
+  {
+    const gchar *const *a64;
+    for (a64 = arch_64; *a64; a64++)
+    {
+      if (strcmp (buffer.machine, *a64) == 0)
+      {
+        kernel_num_bits = 64;
+        break;
+      }
+    }
+  }
+
+  if (kernel_num_bits == 64 && userspace_num_bits == 32)
+    /* translators: This is the type of architecture for the OS */
+    return g_strdup (_("64-bit (32-bit userspace)"));
+  else
+    /* translators: This is the type of architecture for the OS */
+    return g_strdup ((userspace_num_bits == 64) ? _("64-bit") : _("32-bit"));
+}
+
+
+
+char *
 get_system_info (guint infotype)
 {
   gchar *result = NULL;
@@ -279,9 +420,6 @@ get_system_info (guint infotype)
     {
       case OS_NAME:
         result = g_strdup_printf ("%s %s", buffer.sysname, buffer.release);
-        break;
-      case ARCH:
-        result = g_strdup (buffer.machine);
         break;
       case DEVICE_NAME:
         result = g_strdup (buffer.nodename);

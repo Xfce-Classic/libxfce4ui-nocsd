@@ -71,6 +71,7 @@ xfce_about_system (GtkBuilder *builder)
   const glibtop_sysinfo *info;
   g_autofree char *device_text = NULL;
   g_autofree char *cpu_text = NULL;
+  g_autofree char *gpu_text = NULL;
   g_autofree char *memory_text = NULL;
   g_autofree char *os_name_text = NULL;
   g_autofree char *os_type_text = NULL;
@@ -84,7 +85,7 @@ xfce_about_system (GtkBuilder *builder)
   gtk_label_set_text (GTK_LABEL (label), os_name_text ? os_name_text : "");
 
   label = gtk_builder_get_object (builder, "ostype");
-  os_type_text = get_system_info (ARCH);
+  os_type_text = get_os_type ();
   gtk_label_set_text (GTK_LABEL (label), os_type_text ? os_type_text : "");
 
   label = gtk_builder_get_object (builder, "xfce-version");
@@ -108,6 +109,10 @@ xfce_about_system (GtkBuilder *builder)
   glibtop_get_mem (&mem);
   memory_text = g_format_size_full (mem.total, G_FORMAT_SIZE_IEC_UNITS);
   gtk_label_set_text (GTK_LABEL (label), memory_text ? memory_text : "");
+
+  gpu_text = get_gpu_info ();
+  label = gtk_builder_get_object (builder, "gpu");
+  gtk_label_set_text (GTK_LABEL (label), gpu_text ? gpu_text : "");
 }
 #endif
 
@@ -141,7 +146,7 @@ xfce_about_about (GtkWidget *vbox)
         N_("Manages your files in a modern, easy-to-use and fast way.")
       },
       { "thunar-volman",
-        "org.xfce.thunar-volman",
+        "org.xfce.volman",
         N_("Volume manager"),
         N_("Manages removable drives and media for Thunar.")
       },
@@ -151,7 +156,7 @@ xfce_about_about (GtkWidget *vbox)
         N_("Saves and restores your session, handles startup, autostart and shutdown.")
       },
       { "xfce4-settings",
-        "org.xfce.settings",
+        "org.xfce.settings.manager",
         N_("Setting System"),
         N_("Configures appearance, display, keyboard and mouse settings.")
       },

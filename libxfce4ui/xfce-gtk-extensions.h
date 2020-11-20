@@ -151,7 +151,7 @@ gboolean                  xfce_gtk_menu_popup_until_mapped                (GtkMe
 gboolean                  xfce_widget_reparent                            (GtkWidget                 *widget,
                                                                            GtkWidget                 *new_parent);
 
-const gchar              *xfce_icon_name_from_desktop_id                  (const gchar               *desktop_id);
+gchar                    *xfce_icon_name_from_desktop_id                  (const gchar               *desktop_id);
 
 GIcon                    *xfce_gicon_from_name                            (const gchar               *name);
 void                      xfce_gtk_menu_item_set_accel_label              (GtkMenuItem               *menu_item,

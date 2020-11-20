@@ -42,7 +42,7 @@ G_BEGIN_DECLS
  * XFCE_BUTTON_TYPE_PIXBUF:
  *
  * Creates a button with the #GdkPixbuf as button icon.
- * param1 is the #GdkPixuf, param2 for the label and
+ * param1 is the #GdkPixbuf, param2 for the label and
  * param3 for the response_id.
  *
  **/

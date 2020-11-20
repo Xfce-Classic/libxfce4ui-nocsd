@@ -761,7 +761,7 @@ xfce_message_dialog_new_valist (GtkWindow   *parent,
  *     <listitem>
  *       <para>
  *         Creates a button with the #GdkPixbuf as button icon.
- *         @param1 is the #GdkPixuf, @param2 for the label and
+ *         @param1 is the #GdkPixbuf, @param2 for the label and
  *         @param3 for the response_id.
  *       </para>
  *     </listitem>
