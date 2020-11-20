@@ -52,6 +52,10 @@
 #undef HAVE_LIBSTARTUP_NOTIFICATION
 #endif
 
+#ifdef GDK_WINDOWING_WAYLAND
+#include <gdk/gdkwayland.h>
+#endif
+
 #ifdef HAVE_LIBSTARTUP_NOTIFICATION
 #include <libsn/sn.h>
 #endif
@@ -307,11 +311,14 @@ xfce_spawn_process (GdkScreen    *screen,
   g_return_val_if_fail (error == NULL || *error == NULL, FALSE);
 
 #ifdef GDK_WINDOWING_WAYLAND
-  if (startup_notify == TRUE)
+  if (GDK_IS_WAYLAND_DISPLAY (gdk_display_get_default ()))
     {
-      /* 'sn_display_new' crashes when used via wayland, so no startup notification support here */
-      g_warning ("startup notification not supported for wayland sessions");
-      startup_notify = FALSE;
+      if (startup_notify == TRUE)
+        {
+          /* 'sn_display_new' crashes when used via wayland, so no startup notification support here */
+          g_warning ("startup notification not supported for wayland sessions");
+          startup_notify = FALSE;
+        }
     }
 #endif
 
