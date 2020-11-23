@@ -257,7 +257,7 @@ xfce_titled_dialog_update_icon (XfceTitledDialog *titled_dialog)
   const gchar *icon_name = gtk_window_get_icon_name (GTK_WINDOW (titled_dialog));
 
   g_return_if_fail (GTK_IS_HEADER_BAR (titled_dialog->priv->headerbar));
-  _libxfce4ui_return_if_fail (icon_name == NULL);
+  _libxfce4ui_return_if_fail (icon_name != NULL);
 
   gtk_image_set_from_icon_name (GTK_IMAGE (titled_dialog->priv->icon), icon_name, GTK_ICON_SIZE_LARGE_TOOLBAR);
   gtk_image_set_pixel_size (GTK_IMAGE (titled_dialog->priv->icon), 24);
