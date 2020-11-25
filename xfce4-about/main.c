@@ -502,7 +502,6 @@ main (gint    argc,
   GError     *error = NULL;
   GObject    *dialog;
   GObject    *object;
-  gchar      *version;
 
   xfce_textdomain (GETTEXT_PACKAGE, PACKAGE_LOCALE_DIR, "UTF-8");
 
@@ -547,18 +546,6 @@ main (gint    argc,
   dialog = gtk_builder_get_object (builder, "window");
   g_signal_connect_swapped (G_OBJECT (dialog), "delete-event",
       G_CALLBACK (gtk_main_quit), NULL);
-
-#ifdef VENDOR_INFO
-  /* I18N: first %s will be replaced by the version, second by
-   * the name of the distribution (--with-vendor-info=NAME) */
-  version = g_strdup_printf (_("Version %s, distributed by %s"),
-                             xfce_version_string (), VENDOR_INFO);
-#else
-  /* I18N: %s will be replaced by the Xfce version number */
-  version = g_strdup_printf (_("Version %s"), xfce_version_string ());
-#endif
-  xfce_titled_dialog_set_subtitle (XFCE_TITLED_DIALOG (dialog), version);
-  g_free (version);
 
 #ifdef HAVE_GLIBTOP
   xfce_about_system (builder);
