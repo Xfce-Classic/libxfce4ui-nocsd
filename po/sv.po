@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-11-26 12:45+0100\n"
-"PO-Revision-Date: 2020-11-27 08:00+0000\n"
+"PO-Revision-Date: 2020-12-01 16:17+0000\n"
 "Last-Translator: Luna Jernberg <bittin@cafe8bitar.se>\n"
 "Language-Team: Swedish (http://www.transifex.com/xfce/libxfce4ui/language/sv/)\n"
 "MIME-Version: 1.0\n"
@@ -593,7 +593,7 @@ msgstr "Panel"
 
 #: ../xfce4-about/main.c:142
 msgid "Provides a home for window buttons, launchers, app menu and more."
-msgstr ""
+msgstr "Ger ett hem för fönsterknappar, startprogram, app-meny och mer."
 
 #: ../xfce4-about/main.c:146
 msgid "Desktop Manager"
