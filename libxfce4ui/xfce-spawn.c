@@ -463,6 +463,54 @@ G_GNUC_END_IGNORE_DEPRECATIONS
 
 
 
+static gboolean
+xfce_spawn_command_line (GdkScreen    *screen,
+                         const gchar  *command_line,
+                         gboolean      in_terminal,
+                         gboolean      startup_notify,
+                         GError      **error,
+                         gboolean      background_process)
+{
+
+  gchar    **argv;
+  gboolean   succeed;
+
+  g_return_val_if_fail (screen == NULL || GDK_IS_SCREEN (screen), FALSE);
+  g_return_val_if_fail (error == NULL || *error == NULL, FALSE);
+  g_return_val_if_fail (command_line != NULL, FALSE);
+
+  if (in_terminal == FALSE)
+    {
+      /* parse the command, retrun false with error when this fails */
+      if (G_UNLIKELY (!g_shell_parse_argv (command_line, NULL, &argv, error)))
+        return FALSE;
+    }
+  else
+    {
+      /* create an argv to run the command in a terminal */
+      argv = g_new0 (gchar *, 5);
+      argv[0] = g_strdup ("exo-open");
+      argv[1] = g_strdup ("--launch");
+      argv[2] = g_strdup ("TerminalEmulator");
+      argv[3] = g_strdup (command_line);
+      argv[4] = NULL;
+
+      /* FIXME: startup notification does not work when
+       * launching with exo-open */
+      startup_notify = FALSE;
+    }
+
+  succeed = xfce_spawn_process (screen, NULL, argv, NULL, G_SPAWN_SEARCH_PATH,
+                                startup_notify, gtk_get_current_event_time (),
+                                NULL, NULL, error, background_process);
+
+  g_strfreev (argv);
+
+  return succeed;
+}
+
+
+
 /**
  * xfce_spawn_on_screen_with_child_watch
  * @screen              : (allow-none): a #GdkScreen or %NULL to use the active screen,
@@ -652,42 +700,8 @@ xfce_spawn_command_line_on_screen (GdkScreen    *screen,
                                    gboolean      startup_notify,
                                    GError      **error)
 {
-  gchar    **argv;
-  gboolean   succeed;
-
-  g_return_val_if_fail (screen == NULL || GDK_IS_SCREEN (screen), FALSE);
-  g_return_val_if_fail (error == NULL || *error == NULL, FALSE);
-  g_return_val_if_fail (command_line != NULL, FALSE);
-
-  if (in_terminal == FALSE)
-    {
-      /* parse the command, retrun false with error when this fails */
-      if (G_UNLIKELY (!g_shell_parse_argv (command_line, NULL, &argv, error)))
-        return FALSE;
-    }
-  else
-    {
-      /* create an argv to run the command in a terminal */
-      argv = g_new0 (gchar *, 5);
-      argv[0] = g_strdup ("exo-open");
-      argv[1] = g_strdup ("--launch");
-      argv[2] = g_strdup ("TerminalEmulator");
-      argv[3] = g_strdup (command_line);
-      argv[4] = NULL;
-
-      /* FIXME: startup notification does not work when
-       * launching with exo-open */
-      startup_notify = FALSE;
-    }
-
-  succeed = xfce_spawn_on_screen_with_child_watch (screen, NULL, argv, NULL,
-                                                   G_SPAWN_SEARCH_PATH, startup_notify,
-                                                   gtk_get_current_event_time (),
-                                                   NULL, NULL, error);
-
-  g_strfreev (argv);
-
-  return succeed;
+  return xfce_spawn_command_line (screen, command_line, in_terminal,
+                                  startup_notify, error, FALSE);
 }
 
 
