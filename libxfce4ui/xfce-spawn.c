@@ -653,7 +653,7 @@ xfce_spawn_on_screen (GdkScreen    *screen,
  * @error             : (out) (allow-none) (transfer full): return location for errors or %NULL.
  *
  * Like #xfce_spawn_on_screen but the process is not spawned as a child but is
- * is instead reparented to init.
+ * instead reparented to init.
  *
  * Return value: %TRUE on success, %FALSE if @error is set.
  *
