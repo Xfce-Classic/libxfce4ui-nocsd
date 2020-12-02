@@ -706,5 +706,34 @@ xfce_spawn_command_line_on_screen (GdkScreen    *screen,
 
 
 
+/**
+ * xfce_spawn_command_line_no_child:
+ * @screen            : (allow-none): a #GdkScreen or %NULL to use the active screen, see xfce_gdk_screen_get_active().
+ * @command_line      : command line to run.
+ * @in_terminal       : whether to run @command_line in a terminal.
+ * @startup_notify    : whether to use startup notification.
+ * @error             : (out) (allow-none) (transfer full): location for a #GError or %NULL.
+ *
+ * Like #xfce_spawn_command_line_on_screen but the process is not spawned as a
+ * child but is instead reparented to init.
+ *
+ * Returns: %TRUE if the @command_line was executed
+ *          successfully, %FALSE if @error is set.
+ *
+ * Since: 4.16
+ */
+gboolean
+xfce_spawn_command_line_no_child (GdkScreen    *screen,
+                                  const gchar  *command_line,
+                                  gboolean      in_terminal,
+                                  gboolean      startup_notify,
+                                  GError      **error)
+{
+  return xfce_spawn_command_line (screen, command_line, in_terminal,
+                                  startup_notify, error, TRUE);
+}
+
+
+
 #define __XFCE_SPAWN_C__
 #include <libxfce4ui/libxfce4ui-aliasdef.c>

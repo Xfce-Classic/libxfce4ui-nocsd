@@ -114,6 +114,7 @@ xfce_spawn_on_screen_with_child_watch
 xfce_spawn_on_screen
 xfce_spawn_no_child
 xfce_spawn_command_line_on_screen
+xfce_spawn_command_line_no_child
 #endif
 #endif
 

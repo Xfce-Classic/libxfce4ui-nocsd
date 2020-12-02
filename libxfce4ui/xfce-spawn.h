@@ -65,6 +65,12 @@ gboolean xfce_spawn_command_line_on_screen     (GdkScreen    *screen,
                                                 gboolean      startup_notify,
                                                 GError      **error);
 
+gboolean xfce_spawn_command_line_no_child      (GdkScreen    *screen,
+                                                const gchar  *command_line,
+                                                gboolean      in_terminal,
+                                                gboolean      startup_notify,
+                                                GError      **error);
+
 G_END_DECLS
 
 #endif /* !__XFCE_SPAWN_H__ */
