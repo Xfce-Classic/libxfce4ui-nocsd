@@ -49,7 +49,7 @@ gboolean xfce_spawn_on_screen                  (GdkScreen    *screen,
                                                 const gchar  *startup_icon_name,
                                                 GError      **error);
 
-gboolean xfce_spawn_no_child                   (GdkScreen    *screen,
+gboolean xfce_spawn                            (GdkScreen    *screen,
                                                 const gchar  *working_directory,
                                                 gchar       **argv,
                                                 gchar       **envp,
@@ -57,6 +57,7 @@ gboolean xfce_spawn_no_child                   (GdkScreen    *screen,
                                                 gboolean      startup_notify,
                                                 guint32       startup_timestamp,
                                                 const gchar  *startup_icon_name,
+                                                gboolean      child_process,
                                                 GError      **error);
 
 gboolean xfce_spawn_command_line_on_screen     (GdkScreen    *screen,
@@ -65,10 +66,11 @@ gboolean xfce_spawn_command_line_on_screen     (GdkScreen    *screen,
                                                 gboolean      startup_notify,
                                                 GError      **error);
 
-gboolean xfce_spawn_command_line_no_child      (GdkScreen    *screen,
+gboolean xfce_spawn_command_line               (GdkScreen    *screen,
                                                 const gchar  *command_line,
                                                 gboolean      in_terminal,
                                                 gboolean      startup_notify,
+                                                gboolean      child_process,
                                                 GError      **error);
 
 G_END_DECLS
