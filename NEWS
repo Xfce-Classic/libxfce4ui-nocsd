@@ -1,3 +1,20 @@
+4.15.6
+======
+- Introduce xfce_spawn and xfce_spawn_command_line
+  in favor and instead of xfce_spawn_no_child
+- Bump GLib (and gio, gthread, etc) minimum to 2.50.0
+- about: Support multiple GPUs and print GPU memory size
+- about: Drop window subtitle
+- Always perform sanity check
+- Avoid checking for epoxy if libgtop is disabled
+- XfceTitledDialog: Fix erroneous check (Fixes #30)
+- No startup notification in Wayland to prevent crash (Issue #17)
+- Translation Updates:
+  Chinese (China), Chinese (Taiwan), Estonian, French, German, Hebrew,
+  Indonesian, Italian, Japanese, Lithuanian, Norwegian Bokmål,
+  Portuguese, Portuguese (Brazil), Russian, Serbian, Spanish, Swedish,
+  Turkish
+
 4.15.5
 ======
 - Add new API xfce_spawn_no_child (!8):
