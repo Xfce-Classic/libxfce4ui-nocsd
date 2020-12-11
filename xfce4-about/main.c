@@ -75,6 +75,7 @@ xfce_about_system (GtkBuilder *builder)
   g_autofree char *memory_text = NULL;
   g_autofree char *os_name_text = NULL;
   g_autofree char *os_type_text = NULL;
+  guint num_gpus = 0;
 
   label = gtk_builder_get_object (builder, "device");
   device_text = get_system_info (DEVICE_NAME);
@@ -110,9 +111,14 @@ xfce_about_system (GtkBuilder *builder)
   memory_text = g_format_size_full (mem.total, G_FORMAT_SIZE_IEC_UNITS);
   gtk_label_set_text (GTK_LABEL (label), memory_text ? memory_text : "");
 
-  gpu_text = get_gpu_info ();
+  gpu_text = get_gpu_info (&num_gpus);
+  if (num_gpus > 1)
+    {
+      label = gtk_builder_get_object (builder, "gpu-label");
+      gtk_label_set_text (GTK_LABEL (label), _("GPUs"));
+    }
   label = gtk_builder_get_object (builder, "gpu");
-  gtk_label_set_text (GTK_LABEL (label), gpu_text ? gpu_text : "");
+  gtk_label_set_markup (GTK_LABEL (label), gpu_text ? gpu_text : "");
 }
 #endif
 
@@ -502,7 +508,6 @@ main (gint    argc,
   GError     *error = NULL;
   GObject    *dialog;
   GObject    *object;
-  gchar      *version;
 
   xfce_textdomain (GETTEXT_PACKAGE, PACKAGE_LOCALE_DIR, "UTF-8");
 
@@ -547,18 +552,6 @@ main (gint    argc,
   dialog = gtk_builder_get_object (builder, "window");
   g_signal_connect_swapped (G_OBJECT (dialog), "delete-event",
       G_CALLBACK (gtk_main_quit), NULL);
-
-#ifdef VENDOR_INFO
-  /* I18N: first %s will be replaced by the version, second by
-   * the name of the distribution (--with-vendor-info=NAME) */
-  version = g_strdup_printf (_("Version %s, distributed by %s"),
-                             xfce_version_string (), VENDOR_INFO);
-#else
-  /* I18N: %s will be replaced by the Xfce version number */
-  version = g_strdup_printf (_("Version %s"), xfce_version_string ());
-#endif
-  xfce_titled_dialog_set_subtitle (XFCE_TITLED_DIALOG (dialog), version);
-  g_free (version);
 
 #ifdef HAVE_GLIBTOP
   xfce_about_system (builder);

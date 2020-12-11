@@ -52,6 +52,10 @@
 #undef HAVE_LIBSTARTUP_NOTIFICATION
 #endif
 
+#ifdef GDK_WINDOWING_WAYLAND
+#include <gdk/gdkwayland.h>
+#endif
+
 #ifdef HAVE_LIBSTARTUP_NOTIFICATION
 #include <libsn/sn.h>
 #endif
@@ -260,7 +264,7 @@ xfce_spawn_get_active_workspace_number (GdkScreen *screen)
 
 
 /* Called by g_spawn_async before execv() is run in the new child process
- * Used if background_process is set to TRUE in xfce_spawn_process */
+ * Used if child_process is set to FALSE in xfce_spawn_process */
 static void
 background_process_call (gpointer _unused)
 {
@@ -285,7 +289,7 @@ xfce_spawn_process (GdkScreen    *screen,
                     const gchar  *startup_icon_name,
                     GClosure     *child_watch_closure,
                     GError      **error,
-                    gboolean      background_process)
+                    gboolean      child_process)
 {
   gboolean            succeed;
   gchar             **cenvp;
@@ -307,11 +311,14 @@ xfce_spawn_process (GdkScreen    *screen,
   g_return_val_if_fail (error == NULL || *error == NULL, FALSE);
 
 #ifdef GDK_WINDOWING_WAYLAND
-  if (startup_notify == TRUE)
+  if (GDK_IS_WAYLAND_DISPLAY (gdk_display_get_default ()))
     {
-      /* 'sn_display_new' crashes when used via wayland, so no startup notification support here */
-      g_warning ("startup notification not supported for wayland sessions");
-      startup_notify = FALSE;
+      if (startup_notify == TRUE)
+        {
+          /* 'sn_display_new' crashes when used via wayland, so no startup notification support here */
+          g_warning ("startup notification not supported for wayland sessions");
+          startup_notify = FALSE;
+        }
     }
 #endif
 
@@ -397,7 +404,7 @@ G_GNUC_END_IGNORE_DEPRECATIONS
 
   /* try to spawn the new process */
   succeed = g_spawn_async (working_directory, argv, cenvp, flags,
-                           background_process ? background_process_call : NULL,
+                           child_process ? NULL : background_process_call,
                            NULL, &pid, error);
 
   g_strfreev (cenvp);
@@ -450,6 +457,54 @@ G_GNUC_END_IGNORE_DEPRECATIONS
   if (G_LIKELY (sn_display != NULL))
     sn_display_unref (sn_display);
 #endif
+
+  return succeed;
+}
+
+
+
+static gboolean
+_xfce_spawn_command_line (GdkScreen    *screen,
+                          const gchar  *command_line,
+                          gboolean      in_terminal,
+                          gboolean      startup_notify,
+                          GError      **error,
+                          gboolean      child_process)
+{
+
+  gchar    **argv;
+  gboolean   succeed;
+
+  g_return_val_if_fail (screen == NULL || GDK_IS_SCREEN (screen), FALSE);
+  g_return_val_if_fail (error == NULL || *error == NULL, FALSE);
+  g_return_val_if_fail (command_line != NULL, FALSE);
+
+  if (in_terminal == FALSE)
+    {
+      /* parse the command, retrun false with error when this fails */
+      if (G_UNLIKELY (!g_shell_parse_argv (command_line, NULL, &argv, error)))
+        return FALSE;
+    }
+  else
+    {
+      /* create an argv to run the command in a terminal */
+      argv = g_new0 (gchar *, 5);
+      argv[0] = g_strdup ("exo-open");
+      argv[1] = g_strdup ("--launch");
+      argv[2] = g_strdup ("TerminalEmulator");
+      argv[3] = g_strdup (command_line);
+      argv[4] = NULL;
+
+      /* FIXME: startup notification does not work when
+       * launching with exo-open */
+      startup_notify = FALSE;
+    }
+
+  succeed = xfce_spawn_process (screen, NULL, argv, NULL, G_SPAWN_SEARCH_PATH,
+                                startup_notify, gtk_get_current_event_time (),
+                                NULL, NULL, error, child_process);
+
+  g_strfreev (argv);
 
   return succeed;
 }
@@ -526,7 +581,7 @@ xfce_spawn_on_screen_with_child_watch (GdkScreen    *screen,
   return xfce_spawn_process (screen, working_directory, argv,
                              envp, flags, startup_notify,
                              startup_timestamp, startup_icon_name,
-                             child_watch_closure, error, FALSE);
+                             child_watch_closure, error, TRUE);
 }
 
 
@@ -557,6 +612,8 @@ xfce_spawn_on_screen_with_child_watch (GdkScreen    *screen,
  * (if Libxfce4ui was built with startup notification support).
  *
  * Return value: %TRUE on success, %FALSE if @error is set.
+ * 
+ * Deprecated: 4.16: Use #xfce_spawn instead.
  **/
 gboolean
 xfce_spawn_on_screen (GdkScreen    *screen,
@@ -572,11 +629,11 @@ xfce_spawn_on_screen (GdkScreen    *screen,
   return xfce_spawn_process (screen, working_directory, argv,
                              envp, flags, startup_notify,
                              startup_timestamp, startup_icon_name,
-                             NULL, error, FALSE);
+                             NULL, error, TRUE);
 }
 
 /**
- * xfce_spawn_no_child
+ * xfce_spawn
  * @screen            : (allow-none): a #GdkScreen or %NULL to use the active screen,
  *                      see xfce_gdk_screen_get_active().
  * @working_directory : (allow-none): child's current working directory or %NULL to
@@ -595,30 +652,33 @@ xfce_spawn_on_screen (GdkScreen    *screen,
  *                      gtk_get_current_event_time() or if nothing is
  *                      available 0 is valid too.
  * @startup_icon_name : (allow-none): application icon or %NULL.
+ * @child_process     : %TRUE if the process should be a child process,
+ *                      %FALSE if it should be reparented to init.
  * @error             : (out) (allow-none) (transfer full): return location for errors or %NULL.
  *
- * Like #xfce_spawn_on_screen but the process is not spawned as a child but is
- * is instead reparented to init.
+ * Like gdk_spawn_on_screen(), but also supports startup notification
+ * (if Libxfce4ui was built with startup notification support).
  *
  * Return value: %TRUE on success, %FALSE if @error is set.
  *
  * Since: 4.16
  **/
 gboolean
-xfce_spawn_no_child (GdkScreen    *screen,
-                     const gchar  *working_directory,
-                     gchar       **argv,
-                     gchar       **envp,
-                     GSpawnFlags   flags,
-                     gboolean      startup_notify,
-                     guint32       startup_timestamp,
-                     const gchar  *startup_icon_name,
-                     GError      **error)
+xfce_spawn (GdkScreen    *screen,
+            const gchar  *working_directory,
+            gchar       **argv,
+            gchar       **envp,
+            GSpawnFlags   flags,
+            gboolean      startup_notify,
+            guint32       startup_timestamp,
+            const gchar  *startup_icon_name,
+            gboolean      child_process,
+            GError      **error)
 {
   return xfce_spawn_process (screen, working_directory, argv,
                              envp, flags, startup_notify,
                              startup_timestamp, startup_icon_name,
-                             NULL, error, TRUE);
+                             NULL, error, child_process);
 }
 
 
@@ -637,6 +697,8 @@ xfce_spawn_no_child (GdkScreen    *screen,
  *
  * Returns: %TRUE if the @command_line was executed
  *          successfully, %FALSE if @error is set.
+ * 
+ * Deprecated: 4.16: Use #xfce_spawn_command_line instead.
  */
 gboolean
 xfce_spawn_command_line_on_screen (GdkScreen    *screen,
@@ -645,42 +707,40 @@ xfce_spawn_command_line_on_screen (GdkScreen    *screen,
                                    gboolean      startup_notify,
                                    GError      **error)
 {
-  gchar    **argv;
-  gboolean   succeed;
+  return _xfce_spawn_command_line (screen, command_line, in_terminal,
+                                   startup_notify, error, TRUE);
+}
 
-  g_return_val_if_fail (screen == NULL || GDK_IS_SCREEN (screen), FALSE);
-  g_return_val_if_fail (error == NULL || *error == NULL, FALSE);
-  g_return_val_if_fail (command_line != NULL, FALSE);
 
-  if (in_terminal == FALSE)
-    {
-      /* parse the command, retrun false with error when this fails */
-      if (G_UNLIKELY (!g_shell_parse_argv (command_line, NULL, &argv, error)))
-        return FALSE;
-    }
-  else
-    {
-      /* create an argv to run the command in a terminal */
-      argv = g_new0 (gchar *, 5);
-      argv[0] = g_strdup ("exo-open");
-      argv[1] = g_strdup ("--launch");
-      argv[2] = g_strdup ("TerminalEmulator");
-      argv[3] = g_strdup (command_line);
-      argv[4] = NULL;
 
-      /* FIXME: startup notification does not work when
-       * launching with exo-open */
-      startup_notify = FALSE;
-    }
-
-  succeed = xfce_spawn_on_screen_with_child_watch (screen, NULL, argv, NULL,
-                                                   G_SPAWN_SEARCH_PATH, startup_notify,
-                                                   gtk_get_current_event_time (),
-                                                   NULL, NULL, error);
-
-  g_strfreev (argv);
-
-  return succeed;
+/**
+ * xfce_spawn_command_line:
+ * @screen            : (allow-none): a #GdkScreen or %NULL to use the active screen, see xfce_gdk_screen_get_active().
+ * @command_line      : command line to run.
+ * @in_terminal       : whether to run @command_line in a terminal.
+ * @startup_notify    : whether to use startup notification.
+ * @child_process     : %TRUE if the process should be a child process, %FALSE if it should be reparented to init.
+ * @error             : (out) (allow-none) (transfer full): location for a #GError or %NULL.
+ *
+ * Executes the given @command_line and returns %TRUE if the
+ * command terminated successfully. Else, the @error is set
+ * to the standard error output.
+ *
+ * Returns: %TRUE if the @command_line was executed
+ *          successfully, %FALSE if @error is set.
+ *
+ * Since: 4.16
+ */
+gboolean
+xfce_spawn_command_line (GdkScreen    *screen,
+                         const gchar  *command_line,
+                         gboolean      in_terminal,
+                         gboolean      startup_notify,
+                         gboolean      child_process,
+                         GError      **error)
+{
+  return _xfce_spawn_command_line (screen, command_line, in_terminal,
+                                   startup_notify, error, child_process);
 }
 
 
