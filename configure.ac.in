@@ -151,7 +151,7 @@ EPOXY_FOUND="no"
 if test x"$GLIBTOP_FOUND" = x"yes"; then
   XDT_CHECK_OPTIONAL_PACKAGE([EPOXY],
                              [epoxy],
-                             [1.0], [epoxy],
+                             [1.2], [epoxy],
                              [library for handling OpenGL function pointer management], [yes])
 else
   AM_CONDITIONAL([HAVE_EPOXY], [false])
