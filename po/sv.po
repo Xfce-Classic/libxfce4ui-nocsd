@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-11-26 12:45+0100\n"
-"PO-Revision-Date: 2020-12-01 16:17+0000\n"
+"PO-Revision-Date: 2020-12-13 03:54+0000\n"
 "Last-Translator: Luna Jernberg <bittin@cafe8bitar.se>\n"
 "Language-Team: Swedish (http://www.transifex.com/xfce/libxfce4ui/language/sv/)\n"
 "MIME-Version: 1.0\n"
@@ -249,7 +249,7 @@ msgstr "Rensa"
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:270
 #, c-format
 msgid "Press keyboard keys to trigger the %s '%s'."
-msgstr ""
+msgstr "Tryck på tangentbordstangenterna för att utlösa %s '%s'."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:291
 msgid "Please press a key"
