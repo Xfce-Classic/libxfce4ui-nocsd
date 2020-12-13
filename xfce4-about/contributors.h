@@ -138,7 +138,7 @@ static const ContributorGroup xfce_contributors[] =
     xfce_contributors_translators_supervision
   },
   { N_("Translators"),
-    NULL /* data from translators.h will be used here */
+    NULL
   },
   { N_("Previous contributors"),
     xfce_contributors_previous

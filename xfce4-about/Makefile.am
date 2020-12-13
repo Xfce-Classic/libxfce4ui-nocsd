@@ -15,7 +15,6 @@ xfce4_about_built_sources = \
 xfce4_about_SOURCES = \
 	$(xfce4_about_built_sources) \
 	contributors.h \
-	translators.h \
 	main.c
 
 if ENABLE_GLIBTOP

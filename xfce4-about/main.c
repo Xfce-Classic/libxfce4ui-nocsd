@@ -29,7 +29,6 @@
 #include <libxfce4ui/libxfce4ui.h>
 
 #include "contributors.h"
-#include "translators.h"
 #include "about-dialog-ui.h"
 
 #ifdef HAVE_GLIBTOP
@@ -234,51 +233,12 @@ xfce_about_about (GtkWidget *vbox)
 
 
 static void
-xfce_about_credits_translators (GtkTextBuffer *buffer,
-                                GtkTextIter   *end)
+xfce_about_credits_translators (GtkTextBuffer *buffer, GtkTextIter *end)
 {
-  guint                 i;
-  GtkTextTag           *italic;
-  GtkTextTag           *language;
-  const TranslatorInfo *member;
-  const TranslatorTeam *team;
-  gchar                *str;
-  GtkTextTag           *coordinator;
-
-  language = gtk_text_buffer_create_tag (buffer, "language",
-                                         "weight", PANGO_WEIGHT_BOLD,
-                                         "left-margin", MARGIN,
-                                         "indent", -MARGIN, NULL);
-
-  coordinator = gtk_text_buffer_create_tag (buffer, "italic",
-                                            "style", PANGO_STYLE_ITALIC, NULL);
-
-  for (i = 0; i < G_N_ELEMENTS (xfce_translators); i++)
-    {
-      team = xfce_translators + i;
-
-      str = g_strdup_printf ("%s [%s]:\n", team->name, team->code);
-      gtk_text_buffer_insert_with_tags (buffer, end, str, -1, language, NULL);
-      g_free (str);
-
-      for (member = team->members; member->name != NULL; member++)
-        {
-          italic = member->is_coordinator ? coordinator : NULL;
-
-          gtk_text_buffer_insert_with_tags (buffer, end, "\t", -1, italic, NULL);
-          gtk_text_buffer_insert_with_tags (buffer, end, member->name, -1, italic, NULL);
-          if (g_strcmp0 (member->email, "") != 0)
-            {
-              gtk_text_buffer_insert_with_tags (buffer, end, " <", -1, italic, NULL);
-              gtk_text_buffer_insert_with_tags (buffer, end, member->email, -1, italic, NULL);
-              gtk_text_buffer_insert_with_tags (buffer, end, ">\n", -1, italic, NULL);
-            }
-          else
-            gtk_text_buffer_insert_with_tags (buffer, end, "\n", -1, italic, NULL);
-        }
-
-      gtk_text_buffer_insert (buffer, end, "\n", -1);
-    }
+  gtk_text_buffer_get_end_iter (buffer, end);
+  gtk_text_buffer_insert (buffer, end,
+      _("Please see <https://www.xfce.org/about/credits>"), -1);
+  gtk_text_buffer_insert (buffer, end, "\n\n", -1);
 }
 
 
