@@ -20,7 +20,9 @@ libxfce4ui/libxfce4ui-dialog-ui.ui~
 libxfce4ui/libxfce4ui-resources.c
 libxfce4ui/libxfce4ui-resources.h
 ltmain.sh
-m4/
+m4/*
+!m4/introspection.m4
+!m4/vapigen.m4
 missing
 po/Makefile.in.in
 po/POTFILES

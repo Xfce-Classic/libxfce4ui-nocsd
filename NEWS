@@ -1,3 +1,13 @@
+4.15.7
+======
+- libxfce4ui now needs libxfce4util >= 4.15.6
+- Update configure.ac.in syntax
+- Namespace of the gir needs capital first letter
+- Remove hardcoded translators list
+- Bump libepoxy version to 1.2
+- Translation Updates:
+  Portuguese (Brazil), Slovenian, Swedish
+
 4.15.6
 ======
 - Introduce xfce_spawn and xfce_spawn_command_line

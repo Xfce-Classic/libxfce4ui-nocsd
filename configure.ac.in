@@ -1,5 +1,5 @@
 dnl
-dnl Copyright (c) 2007-2019 The Xfce development team
+dnl Copyright (c) 2007-2020 The Xfce development team
 dnl
 
 dnl ***************************
@@ -9,7 +9,7 @@ m4_define([libxfce4ui_verinfo], [0:0:0])
 m4_define([libxfce4ui_version_api], [2])
 m4_define([libxfce4ui_version_major], [4])
 m4_define([libxfce4ui_version_minor], [15])
-m4_define([libxfce4ui_version_micro], [6])
+m4_define([libxfce4ui_version_micro], [7])
 m4_define([libxfce4ui_version_nano], []) dnl leave this empty to have no nano version
 m4_define([libxfce4ui_version_build], [@REVISION@])
 m4_define([libxfce4ui_version_tag], [])
@@ -32,7 +32,7 @@ dnl *** Initialize autoconf ***
 dnl ***************************
 AC_COPYRIGHT([Copyright (c) 2007-2019 The Xfce development team])
 AC_INIT([libxfce4ui], [libxfce4ui_version], [https://gitlab.xfce.org/xfce/libxfce4ui/-/issues], [libxfce4ui])
-AC_PREREQ([2.60])
+AC_PREREQ([2.69])
 AC_CONFIG_MACRO_DIRS([m4])
 AC_REVISION([libxfce4ui_version_build])
 AC_CANONICAL_TARGET()
@@ -48,8 +48,7 @@ AM_SILENT_RULES([yes])
 dnl *******************************
 dnl *** Check for UNIX variants ***
 dnl *******************************
-AC_AIX()
-AC_ISC_POSIX()
+AC_USE_SYSTEM_EXTENSIONS
 
 AC_MSG_CHECKING([platform])
 case "$host" in
@@ -72,7 +71,7 @@ dnl ********************************
 dnl *** Check for basic programs ***
 dnl ********************************
 AC_PROG_CC()
-AC_PROG_LD()
+LT_PATH_LD([])
 AM_PROG_CC_C_O()
 AC_PROG_INSTALL()
 IT_PROG_INTLTOOL([0.35.0])
@@ -128,7 +127,7 @@ dnl *** Check for required packages ***
 dnl ***********************************
 XDT_CHECK_PACKAGE([GLIB], [glib-2.0], [2.50.0])
 XDT_CHECK_PACKAGE([GTK3], [gtk+-3.0], [3.22.0])
-XDT_CHECK_PACKAGE([LIBXFCE4UTIL], [libxfce4util-1.0], [4.12.0])
+XDT_CHECK_PACKAGE([LIBXFCE4UTIL], [libxfce4util-1.0], [4.15.6])
 
 dnl ****************************************************************
 dnl *** Optional support for system information based on glibtop ***
@@ -151,7 +150,7 @@ EPOXY_FOUND="no"
 if test x"$GLIBTOP_FOUND" = x"yes"; then
   XDT_CHECK_OPTIONAL_PACKAGE([EPOXY],
                              [epoxy],
-                             [1.0], [epoxy],
+                             [1.2], [epoxy],
                              [library for handling OpenGL function pointer management], [yes])
 else
   AM_CONDITIONAL([HAVE_EPOXY], [false])
@@ -349,7 +348,7 @@ AC_SUBST([PLATFORM_LDFLAGS])
 dnl *****************************
 dnl *** Generate output files ***
 dnl *****************************
-AC_OUTPUT([
+AC_CONFIG_FILES([
 Makefile
 docs/Makefile
 docs/version.xml
@@ -371,6 +370,7 @@ xfce4-about/Makefile
 po/Makefile.in
 tests/Makefile
 ])
+AC_OUTPUT
 
 dnl ***************************
 dnl *** Print configuration ***

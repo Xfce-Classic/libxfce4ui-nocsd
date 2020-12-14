@@ -107,7 +107,7 @@ LIBXFCE4UI_RESOURCE_FILES = \
 	libxfce4ui-dialog-ui.ui \
 	$(NULL)
 
-include $(INTROSPECTION_MAKEFILE)
+-include $(INTROSPECTION_MAKEFILE)
 INTROSPECTION_GIRS =
 INTROSPECTION_SCANNER_ENV = CC="$(CC)"
 INTROSPECTION_SCANNER_ARGS = \
@@ -126,13 +126,13 @@ INTROSPECTION_COMPILER_ARGS = \
 if HAVE_INTROSPECTION
 introspection_sources = $(libxfce4ui_2_la_SOURCES)
 
-libxfce4ui-2.0.gir: libxfce4ui-2.la Makefile
-libxfce4ui_2_0_gir_INCLUDES = GObject-2.0 GLib-2.0 Gtk-3.0 libxfce4util-1.0
-libxfce4ui_2_0_gir_CFLAGS = $(AM_CPPFLAGS)
-libxfce4ui_2_0_gir_LIBS = libxfce4ui-2.la
-libxfce4ui_2_0_gir_FILES = $(introspection_sources)
-libxfce4ui_2_0_gir_EXPORT_PACKAGES = libxfce4ui-2
-INTROSPECTION_GIRS += libxfce4ui-2.0.gir
+Libxfce4ui-2.0.gir: libxfce4ui-2.la Makefile
+Libxfce4ui_2_0_gir_INCLUDES = GObject-2.0 GLib-2.0 Gtk-3.0 Libxfce4util-1.0
+Libxfce4ui_2_0_gir_CFLAGS = $(AM_CPPFLAGS)
+Libxfce4ui_2_0_gir_LIBS = libxfce4ui-2.la
+Libxfce4ui_2_0_gir_FILES = $(introspection_sources)
+Libxfce4ui_2_0_gir_EXPORT_PACKAGES = libxfce4ui-2
+INTROSPECTION_GIRS += Libxfce4ui-2.0.gir
 
 girdir = $(datadir)/gir-1.0
 gir_DATA = $(INTROSPECTION_GIRS)
@@ -142,8 +142,6 @@ typelib_DATA = $(INTROSPECTION_GIRS:.gir=.typelib)
 
 CLEANFILES += $(gir_DATA) $(typelib_DATA)
 endif
-# endif HAVE_INTROSPECTION
-
 
 
 ##
@@ -230,20 +228,19 @@ EXTRA_DIST = \
 	libxfce4ui-aliasdef.c \
 	libxfce4ui-marshal.list \
 	make-libxfce4ui-alias.pl \
-	libxfce4ui-2.0.metadata \
 	libxfce4ui-2.deps
 
 
 if ENABLE_VAPIGEN
 -include $(VAPIGEN_MAKEFILE)
 
-libxfce4ui-2.vapi: libxfce4ui-2.0.gir libxfce4ui-2.deps
+libxfce4ui-2.vapi: Libxfce4ui-2.0.gir libxfce4ui-2.deps
 
 VAPIGEN_VAPIS = libxfce4ui-2.vapi
 VAPIGEN_GIRDIRS = $(prefix)/share/gir-1.0
 
 libxfce4ui_2_vapi_METADATADIRS = .
-libxfce4ui_2_vapi_FILES = libxfce4ui-2.0.gir
+libxfce4ui_2_vapi_FILES = Libxfce4ui-2.0.gir
 
 vapidir = $(datadir)/vala/vapi
 vapi_DATA = $(VAPIGEN_VAPIS) $(VAPIGEN_VAPIS:.vapi=.deps)
