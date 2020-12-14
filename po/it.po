@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-26 12:45+0100\n"
-"PO-Revision-Date: 2020-11-27 12:06+0000\n"
+"POT-Creation-Date: 2020-12-14 00:45+0100\n"
+"PO-Revision-Date: 2020-12-14 16:31+0000\n"
 "Last-Translator: Emanuele Petriglia <transifex@emanuelepetriglia.com>\n"
 "Language-Team: Italian (http://www.transifex.com/xfce/libxfce4ui/language/it/)\n"
 "MIME-Version: 1.0\n"
@@ -571,120 +571,124 @@ msgstr "Sottotitolo"
 msgid "Xfce 4 Widgets"
 msgstr "Xfce 4 Widget"
 
-#: ../xfce4-about/main.c:59
+#: ../xfce4-about/main.c:58
 msgid "Version information"
 msgstr "Informazioni di versione"
 
-#: ../xfce4-about/main.c:118
+#: ../xfce4-about/main.c:117
 msgid "GPUs"
 msgstr "GPU"
 
-#: ../xfce4-about/main.c:136
+#: ../xfce4-about/main.c:135
 msgid "Window Manager"
 msgstr "Gestore delle finestre"
 
-#: ../xfce4-about/main.c:137
+#: ../xfce4-about/main.c:136
 msgid "Handles the placement of windows on the screen."
 msgstr "Gestisce il posizionamento delle finestre sullo schermo."
 
-#: ../xfce4-about/main.c:141
+#: ../xfce4-about/main.c:140
 msgid "Panel"
 msgstr "Pannello"
 
-#: ../xfce4-about/main.c:142
+#: ../xfce4-about/main.c:141
 msgid "Provides a home for window buttons, launchers, app menu and more."
 msgstr "Fornisce un posto per lanciatori, menu delle applicazioni, pulsanti per le finestre e altro."
 
-#: ../xfce4-about/main.c:146
+#: ../xfce4-about/main.c:145
 msgid "Desktop Manager"
 msgstr "Gestore della scrivania"
 
-#: ../xfce4-about/main.c:147
+#: ../xfce4-about/main.c:146
 msgid "Sets desktop backgrounds, handles icons and more."
 msgstr "Imposta lo sfondo della scrivania, gestisce le icone e altro."
 
-#: ../xfce4-about/main.c:151
+#: ../xfce4-about/main.c:150
 msgid "File Manager"
 msgstr "Gestore dei file"
 
-#: ../xfce4-about/main.c:152
+#: ../xfce4-about/main.c:151
 msgid "Manages your files in a modern, easy-to-use and fast way."
 msgstr "Gestisce i file con un'interfaccia moderna, rapida e facile da utilizzare."
 
-#: ../xfce4-about/main.c:156
+#: ../xfce4-about/main.c:155
 msgid "Volume manager"
 msgstr "Gestore dei volumi"
 
-#: ../xfce4-about/main.c:157
+#: ../xfce4-about/main.c:156
 msgid "Manages removable drives and media for Thunar."
 msgstr "Gestisce i dispositivi rimovibili e dischi per Thunar."
 
-#: ../xfce4-about/main.c:161
+#: ../xfce4-about/main.c:160
 msgid "Session Manager"
 msgstr "Gestore della sessione"
 
-#: ../xfce4-about/main.c:162
+#: ../xfce4-about/main.c:161
 msgid ""
 "Saves and restores your session, handles startup, autostart and shutdown."
 msgstr "Salva e ripristina le sessioni, gestisce l'avvio, l'avvio automatico di applicazioni e lo spegnimento."
 
-#: ../xfce4-about/main.c:166
+#: ../xfce4-about/main.c:165
 msgid "Setting System"
 msgstr "Impostazioni del sistema"
 
-#: ../xfce4-about/main.c:167
+#: ../xfce4-about/main.c:166
 msgid "Configures appearance, display, keyboard and mouse settings."
 msgstr "Configura l'aspetto e le impostazioni di schermo, tastiera e mouse."
 
-#: ../xfce4-about/main.c:171
+#: ../xfce4-about/main.c:170
 msgid "Application Finder"
 msgstr "Trova applicazioni"
 
-#: ../xfce4-about/main.c:172
+#: ../xfce4-about/main.c:171
 msgid "Quickly finds and launches applications installed on your system."
 msgstr "Trova e avvia velocemente applicazioni installate sul sistema."
 
-#: ../xfce4-about/main.c:176
+#: ../xfce4-about/main.c:175
 msgid "Settings Daemon"
 msgstr "Demone delle impostazioni"
 
-#: ../xfce4-about/main.c:177
+#: ../xfce4-about/main.c:176
 msgid "Stores your settings in a D-Bus-based configuration system."
 msgstr "Salva le impostazioni in un sistema di configurazione basato su D-Bus."
 
-#: ../xfce4-about/main.c:181
+#: ../xfce4-about/main.c:180
 msgid "A menu library"
 msgstr "Un menu a libreria"
 
-#: ../xfce4-about/main.c:182
+#: ../xfce4-about/main.c:181
 msgid "Implements a freedesktop.org compliant menu based on GLib and GIO."
 msgstr "Implementa un menu basato su GLib e GIO conforme a freedesktop.org."
 
-#: ../xfce4-about/main.c:186
+#: ../xfce4-about/main.c:185
 msgid "Thumbnails service"
 msgstr "Servizio delle miniature"
 
-#: ../xfce4-about/main.c:187
+#: ../xfce4-about/main.c:186
 msgid "Implements the thumbnail management D-Bus specification."
 msgstr "Implementa la specifica di gestione delle miniature basato su D-Bus."
 
-#: ../xfce4-about/main.c:340
+#: ../xfce4-about/main.c:240
+msgid "Please see <https://www.xfce.org/about/credits>"
+msgstr "Consultare <https://www.xfce.org/about/credits>"
+
+#: ../xfce4-about/main.c:300
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
 "on <https://gitlab.xfce.org/xfce/libxfce4ui/-/issues> ."
 msgstr "Se manca qualcuno su questa lista, si può seganalare su <https://gitlab.xfce.org/xfce/libxfce4ui/-/issues>."
 
-#: ../xfce4-about/main.c:344
+#: ../xfce4-about/main.c:304
 msgid "Thanks to all who helped making this software available!"
 msgstr "Si ringraziano tutti quelli che hanno contribuito a rendere questo programma disponibile!"
 
-#: ../xfce4-about/main.c:361
+#: ../xfce4-about/main.c:321
 msgid ""
 "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
 msgstr "Xfce4 è copyright di Olivier Fourdan (fourdan@xfce.org). I vari componenti sono copyright dei rispettivi autori."
 
-#: ../xfce4-about/main.c:366
+#: ../xfce4-about/main.c:326
 msgid ""
 "The libxfce4ui, libxfce4util and exo packages are distributed under the "
 "terms of the GNU Library General Public License as published by the Free "
@@ -692,7 +696,7 @@ msgid ""
 "any later version."
 msgstr "I pacchetti libxfce4ui, libxfce4util e exo sono distribuiti sotto i termini della GNU Library General Public License pubblicata dalla Free Software Foundation; nella versione 2 della Licenza o (a propria scelta) una delle versioni successive."
 
-#: ../xfce4-about/main.c:373
+#: ../xfce4-about/main.c:333
 msgid ""
 "The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, "
 "xfce4-settings, xfconf, xfdesktop and xfwm4 are distributed under the terms "
@@ -701,25 +705,25 @@ msgid ""
 "version."
 msgstr "I pacchetti thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfconf, xfdesktop e xfwm4 sono distribuiti sotto i termini della GNU General Public License pubblicata dalla Free Software Foundation; nella versione 2 della Licenza o (a propria scelta) una delle versioni successive."
 
-#: ../xfce4-about/main.c:519
+#: ../xfce4-about/main.c:479
 #, c-format
 msgid "Type '%s --help' for usage information."
 msgstr "Digitare '%s --help' per le informazioni di utilizzo."
 
-#: ../xfce4-about/main.c:525
+#: ../xfce4-about/main.c:485
 msgid "Unable to initialize GTK+."
 msgstr "Impossibile inizializzare GTK+."
 
-#: ../xfce4-about/main.c:534
+#: ../xfce4-about/main.c:494
 msgid "The Xfce development team. All rights reserved."
 msgstr "Il team di sviluppo di Xfce. Tutti i diritti riservati."
 
-#: ../xfce4-about/main.c:535
+#: ../xfce4-about/main.c:495
 #, c-format
 msgid "Please report bugs to <%s>."
 msgstr "Segnalare i problemi a <%s>."
 
-#: ../xfce4-about/main.c:545
+#: ../xfce4-about/main.c:505
 msgid "Failed to load interface"
 msgstr "Impossibile caricare l'interfaccia"
 
