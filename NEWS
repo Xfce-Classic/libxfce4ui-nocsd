@@ -1,3 +1,10 @@
+4.15.8
+======
+- Add xfce_has_gtk_frame_extents to better handle CSD
+- Translation Updates:
+  Catalan, French, German, Italian, Japanese, Portuguese, Serbian,
+  Spanish, Swedish, Turkish
+
 4.15.7
 ======
 - libxfce4ui now needs libxfce4util >= 4.15.6
