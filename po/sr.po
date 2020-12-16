@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-26 12:45+0100\n"
-"PO-Revision-Date: 2020-12-06 06:55+0000\n"
+"POT-Creation-Date: 2020-12-14 00:45+0100\n"
+"PO-Revision-Date: 2020-12-16 09:29+0000\n"
 "Last-Translator: Саша Петровић <salepetronije@gmail.com>\n"
 "Language-Team: Serbian (http://www.transifex.com/xfce/libxfce4ui/language/sr/)\n"
 "MIME-Version: 1.0\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../libxfce4ui/xfce-dialogs.c:110
 msgid "Failed to open web browser for online documentation"
-msgstr "Нисам успео да отворим у прегледнику веба помоћ са мреже"
+msgstr "Нисам успео да отворим помоћ са мреже у прегледнику веба"
 
 #: ../libxfce4ui/xfce-dialogs.c:265
 #, c-format
@@ -145,7 +145,7 @@ msgstr "Радна фасцикла „%s“ не постоји. Неће би�
 #. the string contains a directory separator
 #: ../libxfce4ui/xfce-filename-input.c:414
 msgid "Directory separator illegal in file name"
-msgstr "Разделник путање неправилан у датотеци имена"
+msgstr "Разделник путање је неправилан у датотеци имена"
 
 #. the string is too long
 #: ../libxfce4ui/xfce-filename-input.c:422
@@ -210,7 +210,7 @@ msgstr "%s већ окида ову радњу."
 #: ../libxfce4kbd-private/xfce-shortcuts.c:116
 #, c-format
 msgid "Conflicting actions for %s"
-msgstr "Сукобљавајуће појаве за %s"
+msgstr "Сукобљавајућа дејства за %s"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:178
 msgid "This shortcut is already being used for something else."
@@ -570,120 +570,124 @@ msgstr "Поднаслов"
 msgid "Xfce 4 Widgets"
 msgstr "Справице ИксФЦЕ-а 4"
 
-#: ../xfce4-about/main.c:59
+#: ../xfce4-about/main.c:58
 msgid "Version information"
 msgstr "Подаци о издању"
 
-#: ../xfce4-about/main.c:118
+#: ../xfce4-about/main.c:117
 msgid "GPUs"
 msgstr "ГПУ-ови"
 
-#: ../xfce4-about/main.c:136
+#: ../xfce4-about/main.c:135
 msgid "Window Manager"
 msgstr "Управник прозора"
 
-#: ../xfce4-about/main.c:137
+#: ../xfce4-about/main.c:136
 msgid "Handles the placement of windows on the screen."
 msgstr "Управља смештајем прозора на приказу."
 
-#: ../xfce4-about/main.c:141
+#: ../xfce4-about/main.c:140
 msgid "Panel"
 msgstr "Полица"
 
-#: ../xfce4-about/main.c:142
+#: ../xfce4-about/main.c:141
 msgid "Provides a home for window buttons, launchers, app menu and more."
 msgstr "Обезбеђује матицу за дугмад прозора, покретаче, изборник програма и још тога."
 
-#: ../xfce4-about/main.c:146
+#: ../xfce4-about/main.c:145
 msgid "Desktop Manager"
 msgstr "Управник радне површи"
 
-#: ../xfce4-about/main.c:147
+#: ../xfce4-about/main.c:146
 msgid "Sets desktop backgrounds, handles icons and more."
 msgstr "Поставља позадине радне површи, управља сличицама и још тога."
 
-#: ../xfce4-about/main.c:151
+#: ../xfce4-about/main.c:150
 msgid "File Manager"
 msgstr "Управник датотека"
 
-#: ../xfce4-about/main.c:152
+#: ../xfce4-about/main.c:151
 msgid "Manages your files in a modern, easy-to-use and fast way."
 msgstr "Управља датотекама на савремен, лак за употребу и брз начин."
 
-#: ../xfce4-about/main.c:156
+#: ../xfce4-about/main.c:155
 msgid "Volume manager"
 msgstr "Управник носача датотека"
 
-#: ../xfce4-about/main.c:157
+#: ../xfce4-about/main.c:156
 msgid "Manages removable drives and media for Thunar."
 msgstr "Управља уклоњивим уређајима и посредницима за Тунара."
 
-#: ../xfce4-about/main.c:161
+#: ../xfce4-about/main.c:160
 msgid "Session Manager"
 msgstr "Управник седнице"
 
-#: ../xfce4-about/main.c:162
+#: ../xfce4-about/main.c:161
 msgid ""
 "Saves and restores your session, handles startup, autostart and shutdown."
 msgstr "Чува и враћа Ваше седнице, управља почетним, самопокрећућим и завршним програмима."
 
-#: ../xfce4-about/main.c:166
+#: ../xfce4-about/main.c:165
 msgid "Setting System"
 msgstr "Поставке система"
 
-#: ../xfce4-about/main.c:167
+#: ../xfce4-about/main.c:166
 msgid "Configures appearance, display, keyboard and mouse settings."
 msgstr "Подешава изглед, приказ, поставке тастатуре и миша."
 
-#: ../xfce4-about/main.c:171
+#: ../xfce4-about/main.c:170
 msgid "Application Finder"
 msgstr "Проналазач програма"
 
-#: ../xfce4-about/main.c:172
+#: ../xfce4-about/main.c:171
 msgid "Quickly finds and launches applications installed on your system."
 msgstr "Брзо налази и покреће уграђене програме на систему."
 
-#: ../xfce4-about/main.c:176
+#: ../xfce4-about/main.c:175
 msgid "Settings Daemon"
 msgstr "Домар поставки"
 
-#: ../xfce4-about/main.c:177
+#: ../xfce4-about/main.c:176
 msgid "Stores your settings in a D-Bus-based configuration system."
 msgstr "Храни поставке на систему заснованим на поставкама Д-сабирнице."
 
-#: ../xfce4-about/main.c:181
+#: ../xfce4-about/main.c:180
 msgid "A menu library"
 msgstr "Књижница изборника"
 
-#: ../xfce4-about/main.c:182
+#: ../xfce4-about/main.c:181
 msgid "Implements a freedesktop.org compliant menu based on GLib and GIO."
 msgstr "Спроводи изборник сагласан са freedesktop.org-ом заснован на Глиб и ГИО."
 
-#: ../xfce4-about/main.c:186
+#: ../xfce4-about/main.c:185
 msgid "Thumbnails service"
 msgstr "Служба сличичара"
 
-#: ../xfce4-about/main.c:187
+#: ../xfce4-about/main.c:186
 msgid "Implements the thumbnail management D-Bus specification."
 msgstr "Спроводи одредбе Д-сабирнице управљањем умањеним сличицама."
 
-#: ../xfce4-about/main.c:340
+#: ../xfce4-about/main.c:240
+msgid "Please see <https://www.xfce.org/about/credits>"
+msgstr "Молим, погледајте <https://www.xfce.org/about/credits>"
+
+#: ../xfce4-about/main.c:300
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
 "on <https://gitlab.xfce.org/xfce/libxfce4ui/-/issues> ."
 msgstr "Уколико знате било кога ко недостаје на списку, не оклевајте да пријавите бубу на <https://gitlab.xfce.org/xfce/libxfce4ui/-/issues> ."
 
-#: ../xfce4-about/main.c:344
+#: ../xfce4-about/main.c:304
 msgid "Thanks to all who helped making this software available!"
 msgstr "Хвала свима који су помогли да ове мекотворине буду доступне!"
 
-#: ../xfce4-about/main.c:361
+#: ../xfce4-about/main.c:321
 msgid ""
 "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
 msgstr "Права умножавања над Иксце-ом 4 задржава Оливје Фурдан (fourdan@xfce.org). Права над разним деловима задржавају њихови одговарајући творци."
 
-#: ../xfce4-about/main.c:366
+#: ../xfce4-about/main.c:326
 msgid ""
 "The libxfce4ui, libxfce4util and exo packages are distributed under the "
 "terms of the GNU Library General Public License as published by the Free "
@@ -691,7 +695,7 @@ msgid ""
 "any later version."
 msgstr "Пакети libxfce4ui, libxfce4util и exo се раздељују под условима књижница ГНУ-а и објављени су од стране Задужбине слободног софтвера; или издања 2 дозволе, или (по вашем нахођењу) неког наредног издања."
 
-#: ../xfce4-about/main.c:373
+#: ../xfce4-about/main.c:333
 msgid ""
 "The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, "
 "xfce4-settings, xfconf, xfdesktop and xfwm4 are distributed under the terms "
@@ -700,25 +704,25 @@ msgid ""
 "version."
 msgstr "Пакети thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfconf, xfdesktop и xfwm4 се расподељују под условима опште јавне дозволе ГНУ објављеној од стране Задужбине слободног софтвера: или издања 2 дозволе, или (по вашем нахођењу) неког наредног издања."
 
-#: ../xfce4-about/main.c:519
+#: ../xfce4-about/main.c:479
 #, c-format
 msgid "Type '%s --help' for usage information."
 msgstr "Упишите „%s --help“ за упутство за употребу."
 
-#: ../xfce4-about/main.c:525
+#: ../xfce4-about/main.c:485
 msgid "Unable to initialize GTK+."
 msgstr "Нисам успео да покренем ГТК+."
 
-#: ../xfce4-about/main.c:534
+#: ../xfce4-about/main.c:494
 msgid "The Xfce development team. All rights reserved."
 msgstr "Развојна дружина Иксфце-а. Сва права су задржана."
 
-#: ../xfce4-about/main.c:535
+#: ../xfce4-about/main.c:495
 #, c-format
 msgid "Please report bugs to <%s>."
 msgstr "Молим, пријавите грешке на <%s>."
 
-#: ../xfce4-about/main.c:545
+#: ../xfce4-about/main.c:505
 msgid "Failed to load interface"
 msgstr "Нисам успео да учитам сучеље"
 
@@ -854,7 +858,7 @@ msgstr "Непознато"
 #. translators: This is the type of architecture for the OS
 #: ../xfce4-about/system-info.c:641
 msgid "64-bit (32-bit userspace)"
-msgstr "64-бита (32-битно корисничко оркружење)"
+msgstr "64-бита (32-битно корисничко окружење)"
 
 #. translators: This is the type of architecture for the OS
 #: ../xfce4-about/system-info.c:644
