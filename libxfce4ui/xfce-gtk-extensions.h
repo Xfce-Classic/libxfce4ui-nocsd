@@ -157,6 +157,9 @@ GIcon                    *xfce_gicon_from_name                            (const
 void                      xfce_gtk_menu_item_set_accel_label              (GtkMenuItem               *menu_item,
                                                                            const gchar               *accel_path);
 
+gboolean                  xfce_has_gtk_frame_extents                      (GdkWindow                 *window,
+                                                                           GtkBorder                 *extents);
+
 G_END_DECLS
 
 #endif /* !__XFCE_GTK_EXTENSIONS_H__ */

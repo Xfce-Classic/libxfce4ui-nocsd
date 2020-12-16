@@ -35,6 +35,10 @@
 #include <string.h>
 #endif
 
+#include <X11/Xlib.h>
+#include <X11/Xatom.h>
+#include <gdk/gdkx.h>
+
 #include <gtk/gtk.h>
 #include <pango/pango.h>
 
@@ -953,6 +957,73 @@ xfce_gtk_menu_item_set_accel_label (GtkMenuItem *menu_item,
         }
 
     }
+}
+
+
+
+/**
+ * xfce_has_gtk_frame_extents:
+ * @window : A #GdkWindow
+ * @extents : A pointer to a #GtkBorder to copy to.
+ *
+ * This function can be called to determine if a #GdkWindow is using client-side decorations
+ * which is indicated by the _GTK_FRAME_EXTENTS X11 atom. It furthermore sets a pointer
+ * of type #GtkBorder to the actual extents.
+ *
+ * Return value: TRUE if a #GdkWindow has the _GTK_FRAME_EXTENTS atom set.
+ *
+ * Since: 4.16
+ **/
+gboolean
+xfce_has_gtk_frame_extents (GdkWindow *window,
+                            GtkBorder *extents)
+{
+  /* Code adapted from gnome-flashback:
+   * Copyright (C) 2015-2017 Alberts Muktupāvels
+   * https://gitlab.gnome.org/GNOME/gnome-flashback/-/commit/f884127
+   */
+
+  GdkDisplay *display;
+  Display *xdisplay;
+  Window xwindow;
+  Atom gtk_frame_extents;
+  Atom type;
+  gint format;
+  gulong n_items;
+  gulong bytes_after;
+  guchar *data;
+  gint result;
+  gulong *borders;
+
+  display = gdk_display_get_default ();
+  xdisplay = gdk_x11_display_get_xdisplay (display);
+  xwindow = gdk_x11_window_get_xid (window);
+  gtk_frame_extents = XInternAtom (xdisplay, "_GTK_FRAME_EXTENTS", False);
+
+  gdk_x11_display_error_trap_push (display);
+  result = XGetWindowProperty (xdisplay, xwindow, gtk_frame_extents,
+                               0, G_MAXLONG, False, XA_CARDINAL,
+                               &type, &format, &n_items, &bytes_after, &data);
+  gdk_x11_display_error_trap_pop_ignored (display);
+
+  if (data == NULL)
+    return FALSE;
+
+  if (result != Success || type != XA_CARDINAL || format != 32 || n_items != 4)
+    {
+      XFree (data);
+      return FALSE;
+    }
+
+  borders = (gulong *) data;
+
+  extents->left = borders[0];
+  extents->right = borders[1];
+  extents->top = borders[2];
+  extents->bottom = borders[3];
+
+  XFree (data);
+  return TRUE;
 }
 
 

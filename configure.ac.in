@@ -9,7 +9,7 @@ m4_define([libxfce4ui_verinfo], [0:0:0])
 m4_define([libxfce4ui_version_api], [2])
 m4_define([libxfce4ui_version_major], [4])
 m4_define([libxfce4ui_version_minor], [15])
-m4_define([libxfce4ui_version_micro], [7])
+m4_define([libxfce4ui_version_micro], [8])
 m4_define([libxfce4ui_version_nano], []) dnl leave this empty to have no nano version
 m4_define([libxfce4ui_version_build], [@REVISION@])
 m4_define([libxfce4ui_version_tag], [])

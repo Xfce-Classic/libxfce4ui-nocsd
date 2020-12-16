@@ -55,6 +55,7 @@ xfce_widget_reparent
 xfce_icon_name_from_desktop_id
 xfce_gicon_from_name
 xfce_gtk_menu_item_set_accel_label
+xfce_has_gtk_frame_extents
 </SECTION>
 
 <SECTION>

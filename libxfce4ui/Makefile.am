@@ -80,7 +80,9 @@ libxfce4ui_2_la_SOURCES = \
 
 libxfce4ui_2_la_CFLAGS = \
 	$(LIBSM_CFLAGS) \
+	$(GDK_CFLAGS) \
 	$(GTK3_CFLAGS) \
+	$(LIBX11_CFLAGS) \
 	$(LIBSTARTUP_NOTIFICATION_CFLAGS) \
 	$(LIBXFCE4UTIL_CFLAGS) \
 	$(PLATFORM_CFLAGS)
@@ -90,11 +92,14 @@ libxfce4ui_2_la_LDFLAGS = \
 	-export-symbols-regex "^[^_].*" \
 	-no-undefined \
 	$(LIBSM_LDFLAGS) \
+	$(LIBX11_LDFLAGS) \
 	$(PLATFORM_LDFLAGS)
 
 libxfce4ui_2_la_LIBADD = \
 	$(LIBSM_LIBS) \
+	$(GDK_LIBS) \
 	$(GTK3_LIBS) \
+	$(LIBX11_LIBS) \
 	$(LIBSTARTUP_NOTIFICATION_LIBS) \
 	$(LIBXFCE4UTIL_LIBS)
 
