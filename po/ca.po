@@ -12,8 +12,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-14 00:45+0100\n"
-"PO-Revision-Date: 2020-12-15 04:37+0000\n"
+"POT-Creation-Date: 2020-12-20 00:45+0100\n"
+"PO-Revision-Date: 2020-12-20 15:02+0000\n"
 "Last-Translator: Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>\n"
 "Language-Team: Catalan (http://www.transifex.com/xfce/libxfce4ui/language/ca/)\n"
 "MIME-Version: 1.0\n"
@@ -731,27 +731,31 @@ msgstr "Ha fallat la càrrega de la interfície"
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
 #. },
-#: ../xfce4-about/contributors.h:128
+#: ../xfce4-about/contributors.h:136
 msgid "Core developers"
 msgstr "Desenvolupadors principals"
 
-#: ../xfce4-about/contributors.h:131
+#: ../xfce4-about/contributors.h:139
 msgid "Active contributors"
 msgstr "Contribuïdors actius"
 
-#: ../xfce4-about/contributors.h:134
+#: ../xfce4-about/contributors.h:142
 msgid "Servers maintained by"
 msgstr "Servidors mantinguts per"
 
-#: ../xfce4-about/contributors.h:137
+#: ../xfce4-about/contributors.h:145
 msgid "Translations supervision"
 msgstr "Supervisió de les traduccions"
 
-#: ../xfce4-about/contributors.h:140
+#: ../xfce4-about/contributors.h:148
+msgid "Documentation supervision"
+msgstr "Supervisió de la documentació"
+
+#: ../xfce4-about/contributors.h:151
 msgid "Translators"
 msgstr "Traductors"
 
-#: ../xfce4-about/contributors.h:143
+#: ../xfce4-about/contributors.h:154
 msgid "Previous contributors"
 msgstr "Contribuïdors anteriors"
 
