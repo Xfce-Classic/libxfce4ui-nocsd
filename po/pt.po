@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-20 00:45+0100\n"
-"PO-Revision-Date: 2020-12-21 16:08+0000\n"
+"POT-Creation-Date: 2020-12-22 00:45+0100\n"
+"PO-Revision-Date: 2020-12-22 16:38+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese (http://www.transifex.com/xfce/libxfce4ui/language/pt/)\n"
 "MIME-Version: 1.0\n"
@@ -610,7 +610,7 @@ msgid "Manages your files in a modern, easy-to-use and fast way."
 msgstr "Gere os seus ficheiros de uma forma moderna, fácil de usar e rápida."
 
 #: ../xfce4-about/main.c:155
-msgid "Volume manager"
+msgid "Volume Manager"
 msgstr "Gestor de volume"
 
 #: ../xfce4-about/main.c:156
@@ -651,7 +651,7 @@ msgid "Stores your settings in a D-Bus-based configuration system."
 msgstr "Armazena as suas definições num sistema de configuração baseado em D-Bus."
 
 #: ../xfce4-about/main.c:180
-msgid "A menu library"
+msgid "A Menu Library"
 msgstr "Uma biblioteca de menu"
 
 #: ../xfce4-about/main.c:181
@@ -659,7 +659,7 @@ msgid "Implements a freedesktop.org compliant menu based on GLib and GIO."
 msgstr "Implementa um menu compatível com freedesktop.org baseado em GLib e GIO."
 
 #: ../xfce4-about/main.c:185
-msgid "Thumbnails service"
+msgid "Thumbnails Service"
 msgstr "Serviço de miniaturas"
 
 #: ../xfce4-about/main.c:186
