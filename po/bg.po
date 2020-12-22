@@ -12,8 +12,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-20 00:45+0100\n"
-"PO-Revision-Date: 2020-12-20 13:28+0000\n"
+"POT-Creation-Date: 2020-12-22 00:45+0100\n"
+"PO-Revision-Date: 2020-12-22 12:34+0000\n"
 "Last-Translator: Kiril Kirilov <cybercop_montana@abv.bg>\n"
 "Language-Team: Bulgarian (http://www.transifex.com/xfce/libxfce4ui/language/bg/)\n"
 "MIME-Version: 1.0\n"
@@ -613,8 +613,8 @@ msgid "Manages your files in a modern, easy-to-use and fast way."
 msgstr "Управлява вашите файлове по модерен, бърз и лесен за ползване начин."
 
 #: ../xfce4-about/main.c:155
-msgid "Volume manager"
-msgstr "Управление на носителите"
+msgid "Volume Manager"
+msgstr "Управление на устройствата"
 
 #: ../xfce4-about/main.c:156
 msgid "Manages removable drives and media for Thunar."
@@ -654,15 +654,15 @@ msgid "Stores your settings in a D-Bus-based configuration system."
 msgstr "Съхранява вашите настройки в D-Bus базираните системни конфигурации."
 
 #: ../xfce4-about/main.c:180
-msgid "A menu library"
-msgstr "Библиотека на менюто"
+msgid "A Menu Library"
+msgstr "Библиотека на меню"
 
 #: ../xfce4-about/main.c:181
 msgid "Implements a freedesktop.org compliant menu based on GLib and GIO."
 msgstr "Съвместимо с freedesktop.org меню на базата на GLib и GIO."
 
 #: ../xfce4-about/main.c:185
-msgid "Thumbnails service"
+msgid "Thumbnails Service"
 msgstr "Услуга за миниатюри"
 
 #: ../xfce4-about/main.c:186
