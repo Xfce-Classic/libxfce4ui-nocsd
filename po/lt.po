@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-20 00:45+0100\n"
-"PO-Revision-Date: 2020-12-21 12:26+0000\n"
+"POT-Creation-Date: 2020-12-22 00:45+0100\n"
+"PO-Revision-Date: 2020-12-22 13:08+0000\n"
 "Last-Translator: Moo\n"
 "Language-Team: Lithuanian (http://www.transifex.com/xfce/libxfce4ui/language/lt/)\n"
 "MIME-Version: 1.0\n"
@@ -610,7 +610,7 @@ msgid "Manages your files in a modern, easy-to-use and fast way."
 msgstr "Šiuolaikišku, lengvu ir greitu būdu tvarko jūsų failus."
 
 #: ../xfce4-about/main.c:155
-msgid "Volume manager"
+msgid "Volume Manager"
 msgstr "Tomų tvarkytuvė"
 
 #: ../xfce4-about/main.c:156
@@ -651,7 +651,7 @@ msgid "Stores your settings in a D-Bus-based configuration system."
 msgstr "Saugo jūsų nustatymus D-Bus paremtoje konfigūracijos sistemoje."
 
 #: ../xfce4-about/main.c:180
-msgid "A menu library"
+msgid "A Menu Library"
 msgstr "Meniu biblioteka"
 
 #: ../xfce4-about/main.c:181
@@ -659,7 +659,7 @@ msgid "Implements a freedesktop.org compliant menu based on GLib and GIO."
 msgstr "Įgyvendina su freedesktop.org suderinamą meniu, pagrįstą GLib ir GIO."
 
 #: ../xfce4-about/main.c:185
-msgid "Thumbnails service"
+msgid "Thumbnails Service"
 msgstr "Miniatiūrų tarnyba"
 
 #: ../xfce4-about/main.c:186
