@@ -1,3 +1,12 @@
+4.16.0
+======
+- about: Harmonize capitalisation
+- Update credits for Xfce 4.16
+- Translation Updates:
+  Basque, Bulgarian, Catalan, Chinese (Taiwan), Dutch, Galician,
+  Japanese, Lithuanian, Norwegian Bokmål, Portuguese, Portuguese
+  (Brazil), Serbian
+
 4.15.8
 ======
 - Add xfce_has_gtk_frame_extents to better handle CSD
