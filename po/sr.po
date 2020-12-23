@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-20 00:45+0100\n"
-"PO-Revision-Date: 2020-12-21 07:42+0000\n"
+"POT-Creation-Date: 2020-12-22 00:45+0100\n"
+"PO-Revision-Date: 2020-12-23 13:33+0000\n"
 "Last-Translator: Саша Петровић <salepetronije@gmail.com>\n"
 "Language-Team: Serbian (http://www.transifex.com/xfce/libxfce4ui/language/sr/)\n"
 "MIME-Version: 1.0\n"
@@ -611,8 +611,8 @@ msgid "Manages your files in a modern, easy-to-use and fast way."
 msgstr "Управља датотекама на савремен, лак за употребу и брз начин."
 
 #: ../xfce4-about/main.c:155
-msgid "Volume manager"
-msgstr "Управник носача датотека"
+msgid "Volume Manager"
+msgstr "Управник меморија"
 
 #: ../xfce4-about/main.c:156
 msgid "Manages removable drives and media for Thunar."
@@ -652,7 +652,7 @@ msgid "Stores your settings in a D-Bus-based configuration system."
 msgstr "Храни поставке на систему заснованим на поставкама Д-сабирнице."
 
 #: ../xfce4-about/main.c:180
-msgid "A menu library"
+msgid "A Menu Library"
 msgstr "Књижница изборника"
 
 #: ../xfce4-about/main.c:181
@@ -660,8 +660,8 @@ msgid "Implements a freedesktop.org compliant menu based on GLib and GIO."
 msgstr "Спроводи изборник сагласан са freedesktop.org-ом заснован на Глиб и ГИО."
 
 #: ../xfce4-about/main.c:185
-msgid "Thumbnails service"
-msgstr "Служба сличичара"
+msgid "Thumbnails Service"
+msgstr "Служитељ умањених сличица"
 
 #: ../xfce4-about/main.c:186
 msgid "Implements the thumbnail management D-Bus specification."
