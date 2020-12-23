@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-14 00:45+0100\n"
-"PO-Revision-Date: 2020-12-14 20:59+0000\n"
+"POT-Creation-Date: 2020-12-22 00:45+0100\n"
+"PO-Revision-Date: 2020-12-23 00:45+0000\n"
 "Last-Translator: Luna Jernberg <bittin@cafe8bitar.se>\n"
 "Language-Team: Swedish (http://www.transifex.com/xfce/libxfce4ui/language/sv/)\n"
 "MIME-Version: 1.0\n"
@@ -612,7 +612,7 @@ msgid "Manages your files in a modern, easy-to-use and fast way."
 msgstr "Hanterar dina filer på ett modernt, lättanvänt och snabbt sätt."
 
 #: ../xfce4-about/main.c:155
-msgid "Volume manager"
+msgid "Volume Manager"
 msgstr "Volymhanterare"
 
 #: ../xfce4-about/main.c:156
@@ -653,7 +653,7 @@ msgid "Stores your settings in a D-Bus-based configuration system."
 msgstr "Lagrar dina inställningar i ett D-Bus-baserat konfigurationssystem."
 
 #: ../xfce4-about/main.c:180
-msgid "A menu library"
+msgid "A Menu Library"
 msgstr "Ett meny bibliotek"
 
 #: ../xfce4-about/main.c:181
@@ -661,7 +661,7 @@ msgid "Implements a freedesktop.org compliant menu based on GLib and GIO."
 msgstr "Implementerar en freedesktop.org-kompatibel meny baserad på GLib och GIO."
 
 #: ../xfce4-about/main.c:185
-msgid "Thumbnails service"
+msgid "Thumbnails Service"
 msgstr "Miniatyrbildstjänst"
 
 #: ../xfce4-about/main.c:186
@@ -730,27 +730,31 @@ msgstr "Misslyckades läsa in gränssnittet"
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
 #. },
-#: ../xfce4-about/contributors.h:128
+#: ../xfce4-about/contributors.h:136
 msgid "Core developers"
 msgstr "Kärnutvecklare"
 
-#: ../xfce4-about/contributors.h:131
+#: ../xfce4-about/contributors.h:139
 msgid "Active contributors"
 msgstr "Aktiva bidragsgivare"
 
-#: ../xfce4-about/contributors.h:134
+#: ../xfce4-about/contributors.h:142
 msgid "Servers maintained by"
 msgstr "Servrar tillhandahållna av"
 
-#: ../xfce4-about/contributors.h:137
+#: ../xfce4-about/contributors.h:145
 msgid "Translations supervision"
 msgstr "Tillsyn översättningar"
 
-#: ../xfce4-about/contributors.h:140
+#: ../xfce4-about/contributors.h:148
+msgid "Documentation supervision"
+msgstr "Tillsyn Dokumentation"
+
+#: ../xfce4-about/contributors.h:151
 msgid "Translators"
 msgstr "Översättare"
 
-#: ../xfce4-about/contributors.h:143
+#: ../xfce4-about/contributors.h:154
 msgid "Previous contributors"
 msgstr "Tidigare bidragsgivare"
 
