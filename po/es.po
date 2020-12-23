@@ -18,8 +18,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-14 00:45+0100\n"
-"PO-Revision-Date: 2020-12-15 14:40+0000\n"
+"POT-Creation-Date: 2020-12-22 00:45+0100\n"
+"PO-Revision-Date: 2020-12-23 08:40+0000\n"
 "Last-Translator: Casper casper\n"
 "Language-Team: Spanish (http://www.transifex.com/xfce/libxfce4ui/language/es/)\n"
 "MIME-Version: 1.0\n"
@@ -619,8 +619,8 @@ msgid "Manages your files in a modern, easy-to-use and fast way."
 msgstr "Gestiona sus archivos de una forma moderna, fácil de usar y rápida."
 
 #: ../xfce4-about/main.c:155
-msgid "Volume manager"
-msgstr "Gestor de volúmenes"
+msgid "Volume Manager"
+msgstr "Gestor de Volumen"
 
 #: ../xfce4-about/main.c:156
 msgid "Manages removable drives and media for Thunar."
@@ -660,16 +660,16 @@ msgid "Stores your settings in a D-Bus-based configuration system."
 msgstr "Almacene su configuración en un sistema de configuración basado en D-Bus."
 
 #: ../xfce4-about/main.c:180
-msgid "A menu library"
-msgstr "Una biblioteca de menús"
+msgid "A Menu Library"
+msgstr "Una Biblioteca de Menús"
 
 #: ../xfce4-about/main.c:181
 msgid "Implements a freedesktop.org compliant menu based on GLib and GIO."
 msgstr "Implementa un menú compatible con freedesktop.org basado en GLib y GIO."
 
 #: ../xfce4-about/main.c:185
-msgid "Thumbnails service"
-msgstr "Servicio de miniaturas"
+msgid "Thumbnails Service"
+msgstr "Servicio de Miniaturas"
 
 #: ../xfce4-about/main.c:186
 msgid "Implements the thumbnail management D-Bus specification."
@@ -737,27 +737,31 @@ msgstr "No se pudo cargar la interfaz"
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
 #. },
-#: ../xfce4-about/contributors.h:128
+#: ../xfce4-about/contributors.h:136
 msgid "Core developers"
 msgstr "Desarrolladores principales"
 
-#: ../xfce4-about/contributors.h:131
+#: ../xfce4-about/contributors.h:139
 msgid "Active contributors"
 msgstr "Colaboradores activos"
 
-#: ../xfce4-about/contributors.h:134
+#: ../xfce4-about/contributors.h:142
 msgid "Servers maintained by"
 msgstr "Servidores mantenidos por"
 
-#: ../xfce4-about/contributors.h:137
+#: ../xfce4-about/contributors.h:145
 msgid "Translations supervision"
 msgstr "Supervisión de traducciones"
 
-#: ../xfce4-about/contributors.h:140
+#: ../xfce4-about/contributors.h:148
+msgid "Documentation supervision"
+msgstr "Supervisión de documentación"
+
+#: ../xfce4-about/contributors.h:151
 msgid "Translators"
 msgstr "Traductores"
 
-#: ../xfce4-about/contributors.h:143
+#: ../xfce4-about/contributors.h:154
 msgid "Previous contributors"
 msgstr "Colaboradores anteriores"
 
