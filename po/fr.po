@@ -16,8 +16,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-14 00:45+0100\n"
-"PO-Revision-Date: 2020-12-15 17:59+0000\n"
+"POT-Creation-Date: 2020-12-22 00:45+0100\n"
+"PO-Revision-Date: 2020-12-23 18:42+0000\n"
 "Last-Translator: Yannick Le Guen <leguen.yannick@gmail.com>\n"
 "Language-Team: French (http://www.transifex.com/xfce/libxfce4ui/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -617,7 +617,7 @@ msgid "Manages your files in a modern, easy-to-use and fast way."
 msgstr "Gère vos fichiers de façon moderne, rapide et simple d’utilisation."
 
 #: ../xfce4-about/main.c:155
-msgid "Volume manager"
+msgid "Volume Manager"
 msgstr "Gestionnaire de volumes"
 
 #: ../xfce4-about/main.c:156
@@ -658,7 +658,7 @@ msgid "Stores your settings in a D-Bus-based configuration system."
 msgstr "Stocke vos paramètres dans un système de configuration basé sur D-Bus."
 
 #: ../xfce4-about/main.c:180
-msgid "A menu library"
+msgid "A Menu Library"
 msgstr "Une bibliothèque de menus"
 
 #: ../xfce4-about/main.c:181
@@ -666,7 +666,7 @@ msgid "Implements a freedesktop.org compliant menu based on GLib and GIO."
 msgstr "Implémente un menu conforme freedesktop.org basé sur GLib et GIO."
 
 #: ../xfce4-about/main.c:185
-msgid "Thumbnails service"
+msgid "Thumbnails Service"
 msgstr "Service de miniatures"
 
 #: ../xfce4-about/main.c:186
@@ -735,27 +735,31 @@ msgstr "Impossible de charger l’interface"
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
 #. },
-#: ../xfce4-about/contributors.h:128
+#: ../xfce4-about/contributors.h:136
 msgid "Core developers"
 msgstr "Développeurs principaux"
 
-#: ../xfce4-about/contributors.h:131
+#: ../xfce4-about/contributors.h:139
 msgid "Active contributors"
 msgstr "Contributeurs actifs"
 
-#: ../xfce4-about/contributors.h:134
+#: ../xfce4-about/contributors.h:142
 msgid "Servers maintained by"
 msgstr "Serveurs maintenus par"
 
-#: ../xfce4-about/contributors.h:137
+#: ../xfce4-about/contributors.h:145
 msgid "Translations supervision"
 msgstr "Supervision des traductions"
 
-#: ../xfce4-about/contributors.h:140
+#: ../xfce4-about/contributors.h:148
+msgid "Documentation supervision"
+msgstr "Supervision de la documentation"
+
+#: ../xfce4-about/contributors.h:151
 msgid "Translators"
 msgstr "Traducteurs"
 
-#: ../xfce4-about/contributors.h:143
+#: ../xfce4-about/contributors.h:154
 msgid "Previous contributors"
 msgstr "Contributeurs précédents"
 
