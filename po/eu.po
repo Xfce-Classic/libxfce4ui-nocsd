@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-14 00:45+0100\n"
-"PO-Revision-Date: 2020-12-16 18:13+0000\n"
+"POT-Creation-Date: 2020-12-22 00:45+0100\n"
+"PO-Revision-Date: 2020-12-25 18:32+0000\n"
 "Last-Translator: beriain\n"
 "Language-Team: Basque (http://www.transifex.com/xfce/libxfce4ui/language/eu/)\n"
 "MIME-Version: 1.0\n"
@@ -611,8 +611,8 @@ msgid "Manages your files in a modern, easy-to-use and fast way."
 msgstr "Kudeatu zure fitxategiak modu moderno, erabilerraz eta azkarrean."
 
 #: ../xfce4-about/main.c:155
-msgid "Volume manager"
-msgstr "Bolumen kudatzailea"
+msgid "Volume Manager"
+msgstr "Bolumen kudeatzailea"
 
 #: ../xfce4-about/main.c:156
 msgid "Manages removable drives and media for Thunar."
@@ -652,7 +652,7 @@ msgid "Stores your settings in a D-Bus-based configuration system."
 msgstr "Zure ezarpenak D-Bus-en oinarritutako konfigurazio sistema baten gordetzen ditu."
 
 #: ../xfce4-about/main.c:180
-msgid "A menu library"
+msgid "A Menu Library"
 msgstr "Liburutegi menu bat"
 
 #: ../xfce4-about/main.c:181
@@ -660,7 +660,7 @@ msgid "Implements a freedesktop.org compliant menu based on GLib and GIO."
 msgstr "freedesktop.org-ekin konplitzen duen menu inplementazio bat inplementatzen du, GLib eta GIOn oinarritutakoa."
 
 #: ../xfce4-about/main.c:185
-msgid "Thumbnails service"
+msgid "Thumbnails Service"
 msgstr "Argazkitxoen zerbitzua"
 
 #: ../xfce4-about/main.c:186
@@ -729,27 +729,31 @@ msgstr "Huts interfazea kargatzean."
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
 #. },
-#: ../xfce4-about/contributors.h:128
+#: ../xfce4-about/contributors.h:136
 msgid "Core developers"
 msgstr "Muin garatzaileak"
 
-#: ../xfce4-about/contributors.h:131
+#: ../xfce4-about/contributors.h:139
 msgid "Active contributors"
 msgstr "Laguntzaile aktiboak"
 
-#: ../xfce4-about/contributors.h:134
+#: ../xfce4-about/contributors.h:142
 msgid "Servers maintained by"
 msgstr "Zerbitzari mantenua: "
 
-#: ../xfce4-about/contributors.h:137
+#: ../xfce4-about/contributors.h:145
 msgid "Translations supervision"
 msgstr "Itzulpen gainbegiratzea"
 
-#: ../xfce4-about/contributors.h:140
+#: ../xfce4-about/contributors.h:148
+msgid "Documentation supervision"
+msgstr "Dokumentazio gainbegiratzea"
+
+#: ../xfce4-about/contributors.h:151
 msgid "Translators"
 msgstr "Piarres Beobide <pi@beobide.net>"
 
-#: ../xfce4-about/contributors.h:143
+#: ../xfce4-about/contributors.h:154
 msgid "Previous contributors"
 msgstr "Aurreko idazmahaia"
 
