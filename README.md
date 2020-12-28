@@ -29,7 +29,9 @@ If packages aren't available for your distribution, skip to the Manual Installat
 
 **Gentoo**: [Xfce Classic Overlay](https://github.com/Xfce-Classic/gentoo-overlay)
 
-**Arch / Manjaro**: [AUR](https://aur.archlinux.org/packages/libxfce4ui-nocsd/)
+**Manjaro**: In official repository as `libxfce4ui-nocsd`
+
+**Arch**: [AUR](https://aur.archlinux.org/packages/libxfce4ui-nocsd/)
 
 **Ubuntu**: [Xubuntu QA Experimental PPA](https://launchpad.net/~xubuntu-dev/+archive/ubuntu/experimental/+packages)
 It's now in 
