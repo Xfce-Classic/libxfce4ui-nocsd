@@ -12,6 +12,15 @@ We implement all CSD-specific functionality as ABI-compatible shims that
 simply forward to the relevant GtkDialog methods. This allows upstream applications
 built against upstream libxfce4ui to function with no modifications.
 
+**IMPORTANT**: libxfce4ui-nocsd will only remove CSDs for applications that use the XfceTitledDialog class. To remove CSDs from
+any applications that use GTK3 Dialogs, you need to set the `DialogsUseHeader` option to `false`:
+
+```
+$ xfconf-query -c xsettings -p /Gtk/DialogsUseHeader -s false
+```
+
+This can also be done via the GUI under `Settings Editor>xsettings>Gtk`.
+
 Installing
 ----------
 ### Repositories
