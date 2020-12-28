@@ -152,7 +152,7 @@ xfce_about_about (GtkWidget *vbox)
       },
       { "thunar-volman",
         "org.xfce.volman",
-        N_("Volume manager"),
+        N_("Volume Manager"),
         N_("Manages removable drives and media for Thunar.")
       },
       { "xfce4-session",
@@ -177,12 +177,12 @@ xfce_about_about (GtkWidget *vbox)
       },
       { "garcon",
         "org.xfce.garcon",
-        N_("A menu library"),
+        N_("A Menu Library"),
         N_("Implements a freedesktop.org compliant menu based on GLib and GIO.")
       },
       { "tumbler",
         "org.xfce.tumbler",
-        N_("Thumbnails service"),
+        N_("Thumbnails Service"),
         N_("Implements the thumbnail management D-Bus specification.")
       }
     };
