@@ -61,13 +61,14 @@ static void            xfce_shortcuts_grabber_grab             (XfceShortcutsGra
                                                                 gboolean                   grab);
 static GdkFilterReturn xfce_shortcuts_grabber_event_filter     (GdkXEvent                 *gdk_xevent,
                                                                 GdkEvent                  *event,
-                                                                XfceShortcutsGrabber      *grabber);
+                                                                gpointer                   data);
 
 
 
 struct _XfceShortcutsGrabberPrivate
 {
   GHashTable *keys;
+  gint        xkbEventType, xkbStateGroup;
 };
 
 typedef enum
@@ -141,20 +142,26 @@ static void
 xfce_shortcuts_grabber_constructed (GObject *object)
 {
   GdkDisplay *display;
+  Display    *xdisplay;
   GdkKeymap  *keymap;
 
   XfceShortcutsGrabber *grabber = XFCE_SHORTCUTS_GRABBER (object);
 
   display = gdk_display_get_default ();
+  xdisplay = GDK_DISPLAY_XDISPLAY (display);
   keymap = gdk_keymap_get_for_display (display);
   g_signal_connect (keymap, "keys-changed", G_CALLBACK (xfce_shortcuts_grabber_keys_changed),
                     grabber);
 
+  if (G_UNLIKELY (!XkbQueryExtension (xdisplay, 0, &grabber->priv->xkbEventType, 0, 0, 0)))
+    grabber->priv->xkbEventType = -1;
+  grabber->priv->xkbStateGroup = -1;
+
   /* Flush events before adding the event filter */
-  XAllowEvents (GDK_DISPLAY_XDISPLAY (display), AsyncBoth, CurrentTime);
+  XAllowEvents (xdisplay, AsyncBoth, CurrentTime);
 
   /* Add event filter */
-  gdk_window_add_filter (NULL, (GdkFilterFunc) xfce_shortcuts_grabber_event_filter, grabber);
+  gdk_window_add_filter (NULL, xfce_shortcuts_grabber_event_filter, grabber);
 }
 
 
@@ -417,10 +424,11 @@ find_event_key (const gchar                *shortcut,
 
 
 static GdkFilterReturn
-xfce_shortcuts_grabber_event_filter (GdkXEvent            *gdk_xevent,
-                                     GdkEvent             *event,
-                                     XfceShortcutsGrabber *grabber)
+xfce_shortcuts_grabber_event_filter (GdkXEvent *gdk_xevent,
+                                     GdkEvent  *event,
+                                     gpointer   data)
 {
+  XfceShortcutsGrabber       *const grabber = data;
   struct EventKeyFindContext  context;
   GdkKeymap                  *keymap;
   GdkModifierType             consumed, modifiers;
@@ -433,6 +441,22 @@ xfce_shortcuts_grabber_event_filter (GdkXEvent            *gdk_xevent,
   g_return_val_if_fail (XFCE_IS_SHORTCUTS_GRABBER (grabber), GDK_FILTER_CONTINUE);
 
   xevent = (XEvent *) gdk_xevent;
+
+  if (xevent->type == grabber->priv->xkbEventType)
+    {
+      const XkbEvent *e = (const XkbEvent*) xevent;
+      TRACE ("xkb event: any.xkb_type=%d", e->any.xkb_type);
+      if (e->any.xkb_type == XkbStateNotify)
+        {
+          TRACE ("xkb event: any.xkb_type=XkbStateNotify, state.group=%d", e->state.group);
+          if (grabber->priv->xkbStateGroup != e->state.group)
+            {
+              grabber->priv->xkbStateGroup = e->state.group;
+              xfce_shortcuts_grabber_ungrab_all (grabber);
+              xfce_shortcuts_grabber_grab_all (grabber);
+            }
+        }
+    }
 
   if (xevent->type != KeyPress)
     return GDK_FILTER_CONTINUE;
@@ -450,7 +474,7 @@ xfce_shortcuts_grabber_event_filter (GdkXEvent            *gdk_xevent,
 
   gdk_keymap_translate_keyboard_state (keymap, xevent->xkey.keycode,
                                        modifiers,
-                                       XkbGroupForCoreState (xevent->xkey.state),
+                                       grabber->priv->xkbStateGroup,
                                        &keyval, NULL, NULL, &consumed);
 
   /* We want Alt + Print to be Alt + Print not SysReq. See bug #7897 */
