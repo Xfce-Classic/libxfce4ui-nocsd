@@ -19,7 +19,7 @@ any applications that use GTK3 Dialogs, you need to set the `DialogsUseHeader` o
 $ xfconf-query -c xsettings -p /Gtk/DialogsUseHeader -s false
 ```
 
-This can also be done via the GUI under `Settings Editor>xsettings>Gtk`.
+This can also be done via the GUI under `Settings Editor > xsettings > Gtk`.
 
 Installing
 ----------
@@ -33,9 +33,8 @@ If packages aren't available for your distribution, skip to the Manual Installat
 
 **Arch**: [AUR](https://aur.archlinux.org/packages/libxfce4ui-nocsd/)
 
-**Ubuntu**: [Xubuntu QA Experimental PPA](https://launchpad.net/~xubuntu-dev/+archive/ubuntu/experimental/+packages)
-It's now in 
-*Note: The Xubuntu QA Experimental PPA currently contains builds of libxfce4ui-nocsd with the package name
+**Ubuntu**: [Xubuntu QA Experimental PPA](https://launchpad.net/~xubuntu-dev/+archive/ubuntu/experimental/+packages)  
+*Note: The PPA currently contains builds of libxfce4ui-nocsd with the package name
 libxfce4ui-nocsd-2-0. The package name and availability on this PPA is subject to change in the future.*
 
 ### Manual Installation
