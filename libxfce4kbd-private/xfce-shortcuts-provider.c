@@ -160,10 +160,10 @@ xfce_shortcuts_provider_constructed (GObject *object)
 {
   XfceShortcutsProvider *provider = XFCE_SHORTCUTS_PROVIDER (object);
 
-  xfce_shortcuts_provider_register (provider);
-
   provider->priv->default_base_property = g_strdup_printf ("/%s/default", provider->priv->name);
   provider->priv->custom_base_property = g_strdup_printf ("/%s/custom", provider->priv->name);
+
+  xfce_shortcuts_provider_register (provider);
 
   if (!xfce_shortcuts_provider_is_custom (provider))
     xfce_shortcuts_provider_reset_to_defaults (provider);
