@@ -3,13 +3,13 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Priit Jõerüüt <transifex@joeruut.com>, 2020
+# Priit Jõerüüt <transifex@joeruut.com>, 2020-2021
 msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-12-22 00:45+0100\n"
-"PO-Revision-Date: 2020-12-28 11:25+0000\n"
+"PO-Revision-Date: 2021-01-08 11:23+0000\n"
 "Last-Translator: Priit Jõerüüt <transifex@joeruut.com>\n"
 "Language-Team: Estonian (http://www.transifex.com/xfce/libxfce4ui/language/et/)\n"
 "MIME-Version: 1.0\n"
@@ -691,7 +691,7 @@ msgid ""
 "terms of the GNU Library General Public License as published by the Free "
 "Software Foundation; either version 2 of the License, or (at your option) "
 "any later version."
-msgstr "Libxfce4ui, libxfce4util ja exo teegid on levitatud Vaba Tarkvara Fondi poolt avaldatud GNU Vähem Üldise Avaliku Litsentsi alusel (Free Software Foundation GNU LGPL). Litsentsi versiooniks võib olla 2 või sinu soovil ka mõni hilisem versioon."
+msgstr "Libxfce4ui, libxfce4util ja exo teegid on avaldatud Vaba Tarkvara Fondi GNU Vähem Üldise Avaliku Litsentsi alusel (Free Software Foundation GNU LGPL). Litsentsi versiooniks võib olla 2 või sinu soovil ka mõni hilisem versioon."
 
 #: ../xfce4-about/main.c:333
 msgid ""
@@ -830,7 +830,7 @@ msgstr "Lisaks on Xfce ka arenduskeskkond, mille pakutavad mitmed teegid aitavad
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:22
 msgid "About"
-msgstr "Te_ave"
+msgstr "Teave"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:23
 msgid "Credits"
