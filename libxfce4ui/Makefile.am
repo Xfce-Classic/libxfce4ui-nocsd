@@ -51,15 +51,6 @@ libxfce4ui_sources = \
 	xfce-filename-input.c \
 	xfce-titled-dialog.c
 
-libxfce4ui_includedir = \
-	$(includedir)/xfce4/libxfce4ui-$(LIBXFCE4UI_VERSION_API)/libxfce4ui
-
-libxfce4ui_include_HEADERS = \
-	$(libxfce4ui_headers)
-
-
-
-
 ##
 ## GTK+ 3 support library
 ##
