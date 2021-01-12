@@ -3,7 +3,7 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# beriain, 2020
+# beriain, 2020-2021
 # Dabid Martinez <dabid@laborategia.eus>, 2020
 # Piarres Beobide <pi@beobide.net>, 2008-2009,2013,2015-2017
 msgid ""
@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-12-22 00:45+0100\n"
-"PO-Revision-Date: 2020-12-25 18:32+0000\n"
+"PO-Revision-Date: 2021-01-12 15:34+0000\n"
 "Last-Translator: beriain\n"
 "Language-Team: Basque (http://www.transifex.com/xfce/libxfce4ui/language/eu/)\n"
 "MIME-Version: 1.0\n"
@@ -771,7 +771,7 @@ msgstr "Lizentzia"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:2
 msgid "About the Xfce Desktop Environment"
-msgstr "Xfce mahaigain ingururenari buruz"
+msgstr "Xfce mahaigain inguruneari buruz"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:3
 msgid "label"
