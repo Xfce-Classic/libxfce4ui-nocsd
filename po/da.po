@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-12-22 00:45+0100\n"
-"PO-Revision-Date: 2021-01-11 18:07+0000\n"
+"PO-Revision-Date: 2021-01-12 05:41+0000\n"
 "Last-Translator: scootergrisen\n"
 "Language-Team: Danish (http://www.transifex.com/xfce/libxfce4ui/language/da/)\n"
 "MIME-Version: 1.0\n"
@@ -618,7 +618,7 @@ msgstr "Håndterer dine filer på en moderne, letanvendelig og hurtig måde."
 
 #: ../xfce4-about/main.c:155
 msgid "Volume Manager"
-msgstr ""
+msgstr "Diskområdehåndtering"
 
 #: ../xfce4-about/main.c:156
 msgid "Manages removable drives and media for Thunar."
@@ -659,7 +659,7 @@ msgstr "Gemmer dine indstillinger i et D-Bus-baseret konfigurationssystem."
 
 #: ../xfce4-about/main.c:180
 msgid "A Menu Library"
-msgstr ""
+msgstr "Et menubibliotek"
 
 #: ../xfce4-about/main.c:181
 msgid "Implements a freedesktop.org compliant menu based on GLib and GIO."
@@ -667,7 +667,7 @@ msgstr "Implementerer en freedesktop.org-overholdende menu baseret på GLib og G
 
 #: ../xfce4-about/main.c:185
 msgid "Thumbnails Service"
-msgstr ""
+msgstr "Miniaturetjeneste"
 
 #: ../xfce4-about/main.c:186
 msgid "Implements the thumbnail management D-Bus specification."
@@ -753,7 +753,7 @@ msgstr "Tilsyn af oversættelser"
 
 #: ../xfce4-about/contributors.h:148
 msgid "Documentation supervision"
-msgstr ""
+msgstr "Tilsyn af dokumentation"
 
 #: ../xfce4-about/contributors.h:151
 msgid "Translators"
@@ -868,7 +868,7 @@ msgstr "Ukendt"
 #. translators: This is the type of architecture for the OS
 #: ../xfce4-about/system-info.c:641
 msgid "64-bit (32-bit userspace)"
-msgstr ""
+msgstr "64-bit (32-bit brugerrum)"
 
 #. translators: This is the type of architecture for the OS
 #: ../xfce4-about/system-info.c:644
