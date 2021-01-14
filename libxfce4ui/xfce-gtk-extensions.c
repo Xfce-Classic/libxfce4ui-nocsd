@@ -991,9 +991,8 @@ xfce_has_gtk_frame_extents (GdkWindow *window,
   gint format;
   gulong n_items;
   gulong bytes_after;
-  guchar *data;
+  gulong *data;
   gint result;
-  gulong *borders;
 
   display = gdk_display_get_default ();
   xdisplay = gdk_x11_display_get_xdisplay (display);
@@ -1003,7 +1002,7 @@ xfce_has_gtk_frame_extents (GdkWindow *window,
   gdk_x11_display_error_trap_push (display);
   result = XGetWindowProperty (xdisplay, xwindow, gtk_frame_extents,
                                0, G_MAXLONG, False, XA_CARDINAL,
-                               &type, &format, &n_items, &bytes_after, &data);
+                               &type, &format, &n_items, &bytes_after, (guchar **)&data);
   gdk_x11_display_error_trap_pop_ignored (display);
 
   if (data == NULL)
@@ -1015,12 +1014,10 @@ xfce_has_gtk_frame_extents (GdkWindow *window,
       return FALSE;
     }
 
-  borders = (gulong *) data;
-
-  extents->left = borders[0];
-  extents->right = borders[1];
-  extents->top = borders[2];
-  extents->bottom = borders[3];
+  extents->left = data[0];
+  extents->right = data[1];
+  extents->top = data[2];
+  extents->bottom = data[3];
 
   XFree (data);
   return TRUE;
