@@ -12,8 +12,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-20 00:45+0100\n"
-"PO-Revision-Date: 2020-12-20 15:02+0000\n"
+"POT-Creation-Date: 2020-12-22 00:45+0100\n"
+"PO-Revision-Date: 2020-12-22 10:29+0000\n"
 "Last-Translator: Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>\n"
 "Language-Team: Catalan (http://www.transifex.com/xfce/libxfce4ui/language/ca/)\n"
 "MIME-Version: 1.0\n"
@@ -613,7 +613,7 @@ msgid "Manages your files in a modern, easy-to-use and fast way."
 msgstr "Gestiona els fitxers d'una manera moderna, fàcil i ràpida."
 
 #: ../xfce4-about/main.c:155
-msgid "Volume manager"
+msgid "Volume Manager"
 msgstr "Gestor de volums"
 
 #: ../xfce4-about/main.c:156
@@ -654,7 +654,7 @@ msgid "Stores your settings in a D-Bus-based configuration system."
 msgstr "Emmagatzema els vostres ajusts en un sistema de configuració basat en D-Bus."
 
 #: ../xfce4-about/main.c:180
-msgid "A menu library"
+msgid "A Menu Library"
 msgstr "Una biblioteca de menús"
 
 #: ../xfce4-about/main.c:181
@@ -662,7 +662,7 @@ msgid "Implements a freedesktop.org compliant menu based on GLib and GIO."
 msgstr "Implementa un menú compatible amb freedesktop.org basat en GLib i GIO."
 
 #: ../xfce4-about/main.c:185
-msgid "Thumbnails service"
+msgid "Thumbnails Service"
 msgstr "Servei de miniatures"
 
 #: ../xfce4-about/main.c:186
