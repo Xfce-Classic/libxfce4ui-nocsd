@@ -6,7 +6,7 @@
 # Alois Nešpor <info@aloisnespor.info>, 2013
 # Michal Várady <miko.vaji@gmail.com>, 2014-2017,2019-2020
 # Pavel Borecki <pavel.borecki@gmail.com>, 2018
-# Programy1 Programy1 <programy1.borec.cz@gmail.com>, 2019
+# Pavel Pernička <pernicka.pa@gmail.com>, 2019
 msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
