@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-20 00:45+0100\n"
-"PO-Revision-Date: 2020-12-21 04:56+0000\n"
+"POT-Creation-Date: 2020-12-22 00:45+0100\n"
+"PO-Revision-Date: 2020-12-22 04:27+0000\n"
 "Last-Translator: Daniel Muñiz Fontoira <dani@damufo.com>\n"
 "Language-Team: Galician (http://www.transifex.com/xfce/libxfce4ui/language/gl/)\n"
 "MIME-Version: 1.0\n"
@@ -611,8 +611,8 @@ msgid "Manages your files in a modern, easy-to-use and fast way."
 msgstr "Manexa os seus ficheiros de xeito moderno, doado de usar e rápido."
 
 #: ../xfce4-about/main.c:155
-msgid "Volume manager"
-msgstr "Xestor de volume"
+msgid "Volume Manager"
+msgstr "Xestor do volume"
 
 #: ../xfce4-about/main.c:156
 msgid "Manages removable drives and media for Thunar."
@@ -652,7 +652,7 @@ msgid "Stores your settings in a D-Bus-based configuration system."
 msgstr "Almacena as súas opcións nun sistema de configuración baseado en D-Bus."
 
 #: ../xfce4-about/main.c:180
-msgid "A menu library"
+msgid "A Menu Library"
 msgstr "Unha biblioteca de menús"
 
 #: ../xfce4-about/main.c:181
@@ -660,7 +660,7 @@ msgid "Implements a freedesktop.org compliant menu based on GLib and GIO."
 msgstr "Incorpora un menú compatíbel coa especificación freedesktop.org baseado en GLib e GIO."
 
 #: ../xfce4-about/main.c:185
-msgid "Thumbnails service"
+msgid "Thumbnails Service"
 msgstr "Servizo de miniaturas"
 
 #: ../xfce4-about/main.c:186
