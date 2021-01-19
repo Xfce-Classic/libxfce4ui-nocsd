@@ -12,8 +12,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-14 00:45+0100\n"
-"PO-Revision-Date: 2020-12-14 14:42+0000\n"
+"POT-Creation-Date: 2020-12-22 00:45+0100\n"
+"PO-Revision-Date: 2020-12-22 09:30+0000\n"
 "Last-Translator: Andreas Eitel <github-aneitel@online.de>\n"
 "Language-Team: German (http://www.transifex.com/xfce/libxfce4ui/language/de/)\n"
 "MIME-Version: 1.0\n"
@@ -613,7 +613,7 @@ msgid "Manages your files in a modern, easy-to-use and fast way."
 msgstr "Verwaltet Ihre Dateien auf moderne, benutzerfreundliche und schnelle Weise"
 
 #: ../xfce4-about/main.c:155
-msgid "Volume manager"
+msgid "Volume Manager"
 msgstr "Datenträgerverwaltung"
 
 #: ../xfce4-about/main.c:156
@@ -654,7 +654,7 @@ msgid "Stores your settings in a D-Bus-based configuration system."
 msgstr "Speichert Ihre Einstellungen in einem D-Bus-basierten Konfigurationssystem."
 
 #: ../xfce4-about/main.c:180
-msgid "A menu library"
+msgid "A Menu Library"
 msgstr "Eine Menübibliothek"
 
 #: ../xfce4-about/main.c:181
@@ -662,7 +662,7 @@ msgid "Implements a freedesktop.org compliant menu based on GLib and GIO."
 msgstr "Erstellt ein freedesktop.org-kompatibles Menü, das auf GLib und GIO basiert."
 
 #: ../xfce4-about/main.c:185
-msgid "Thumbnails service"
+msgid "Thumbnails Service"
 msgstr "Miniaturansichtendienst"
 
 #: ../xfce4-about/main.c:186
@@ -731,27 +731,31 @@ msgstr "Schnittstelle konnte nicht geladen werden"
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
 #. },
-#: ../xfce4-about/contributors.h:128
+#: ../xfce4-about/contributors.h:136
 msgid "Core developers"
 msgstr "Kernentwickler"
 
-#: ../xfce4-about/contributors.h:131
+#: ../xfce4-about/contributors.h:139
 msgid "Active contributors"
 msgstr "Aktive Mitwirkende"
 
-#: ../xfce4-about/contributors.h:134
+#: ../xfce4-about/contributors.h:142
 msgid "Servers maintained by"
 msgstr "Server gewartet von"
 
-#: ../xfce4-about/contributors.h:137
+#: ../xfce4-about/contributors.h:145
 msgid "Translations supervision"
 msgstr "Koordination der Übersetzungen"
 
-#: ../xfce4-about/contributors.h:140
+#: ../xfce4-about/contributors.h:148
+msgid "Documentation supervision"
+msgstr "Koordination der Dokumentation"
+
+#: ../xfce4-about/contributors.h:151
 msgid "Translators"
 msgstr "Übersetzer"
 
-#: ../xfce4-about/contributors.h:143
+#: ../xfce4-about/contributors.h:154
 msgid "Previous contributors"
 msgstr "Frühere Mitwirkende"
 
