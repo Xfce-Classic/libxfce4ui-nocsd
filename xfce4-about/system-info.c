@@ -27,10 +27,7 @@
 #include <libxfce4util/libxfce4util.h>
 #include <libxfce4ui/libxfce4ui.h>
 
-#include <gtk/gtk.h>
 #include <gdk/gdkx.h>
-#include <glibtop/mem.h>
-#include <glibtop/sysinfo.h>
 #include <sys/utsname.h>
 
 #ifdef HAVE_EPOXY

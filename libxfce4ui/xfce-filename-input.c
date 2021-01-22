@@ -204,7 +204,7 @@ static void
 xfce_filename_input_init (XfceFilenameInput *filename_input)
 {
   GError *err = NULL;
-  gint    width_needed;
+  gsize   width_needed;
 
   /* by default there is no maximum length for the filename and no original filename */
   filename_input->max_text_length = -1;
