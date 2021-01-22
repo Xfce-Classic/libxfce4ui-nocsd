@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-12-22 00:45+0100\n"
-"PO-Revision-Date: 2021-01-10 20:08+0000\n"
+"PO-Revision-Date: 2021-01-22 05:04+0000\n"
 "Last-Translator: ivmazurenko <ivmazurenko@yandex.ru>\n"
 "Language-Team: Russian (http://www.transifex.com/xfce/libxfce4ui/language/ru/)\n"
 "MIME-Version: 1.0\n"
@@ -582,7 +582,7 @@ msgstr "Информация о версии"
 
 #: ../xfce4-about/main.c:117
 msgid "GPUs"
-msgstr ""
+msgstr "Графические процессоры"
 
 #: ../xfce4-about/main.c:135
 msgid "Window Manager"
@@ -813,7 +813,7 @@ msgstr "Дистрибьютор"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:11
 msgid "GPU"
-msgstr ""
+msgstr "Графический процессор"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:12
 msgid "System"
