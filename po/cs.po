@@ -4,7 +4,7 @@
 # 
 # Translators:
 # Alois Nešpor <info@aloisnespor.info>, 2013
-# Michal Várady <miko.vaji@gmail.com>, 2014-2017,2019-2020
+# Michal Várady <miko.vaji@gmail.com>, 2014-2017,2019-2021
 # Pavel Borecki <pavel.borecki@gmail.com>, 2018
 # Pavel Pernička <pernicka.pa@gmail.com>, 2019
 msgid ""
@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-12-22 00:45+0100\n"
-"PO-Revision-Date: 2020-12-23 19:51+0000\n"
+"PO-Revision-Date: 2021-01-28 23:14+0000\n"
 "Last-Translator: Michal Várady <miko.vaji@gmail.com>\n"
 "Language-Team: Czech (http://www.transifex.com/xfce/libxfce4ui/language/cs/)\n"
 "MIME-Version: 1.0\n"
@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../libxfce4ui/xfce-dialogs.c:110
 msgid "Failed to open web browser for online documentation"
-msgstr "Nepodařilo se otevřít webový prohlížeč a v něm dokumentaci z Internetu"
+msgstr "Otevření online dokumentace ve webovém prohlížeči se nezdařilo"
 
 #: ../libxfce4ui/xfce-dialogs.c:265
 #, c-format
@@ -38,13 +38,13 @@ msgstr "Chcete si přečíst příručku online?"
 msgid ""
 "You will be redirected to the documentation website where the help pages are"
 " maintained and translated."
-msgstr "Budete přesměrování na webovou stránku dokumentace, s aktuálními a překládanými stránkami nápovědy."
+msgstr "Budete přesměrováni na webovou stránku dokumentace s aktuálními a přeloženými stránkami nápovědy."
 
 #. Create cancel button
 #: ../libxfce4ui/xfce-dialogs.c:275 ../libxfce4ui/xfce-dialogs.c:533
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:253
 msgid "_Cancel"
-msgstr "_Storno"
+msgstr "_Zrušit"
 
 #: ../libxfce4ui/xfce-dialogs.c:277
 msgid "_Read Online"
@@ -70,7 +70,7 @@ msgstr "Ano"
 #: ../libxfce4ui/xfce-dialogs.c:459
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:41
 msgid "Cancel"
-msgstr "Storno"
+msgstr "Zrušit"
 
 #: ../libxfce4ui/xfce-dialogs.c:518
 msgid "Close window with multiple tabs?"
@@ -107,15 +107,15 @@ msgstr "Příště se již _nedotazovat"
 
 #: ../libxfce4ui/xfce-sm-client.c:1427
 msgid "Session management client ID"
-msgstr "Identif. klienta správy relace"
+msgstr "Identifikátor klienta správy relace"
 
 #: ../libxfce4ui/xfce-sm-client.c:1427
 msgid "ID"
-msgstr "Identif."
+msgstr "ID"
 
 #: ../libxfce4ui/xfce-sm-client.c:1428
 msgid "Disable session management"
-msgstr "Vypnout správu relací"
+msgstr "Zakázat správu relací"
 
 #: ../libxfce4ui/xfce-sm-client.c:1438
 msgid "Session management options"
@@ -141,7 +141,7 @@ msgstr "Správce relace nevrátil platný identifikátor klienta"
 msgid ""
 "Working directory \"%s\" does not exist. It won't be used when spawning "
 "\"%s\"."
-msgstr "Pracovní složka „%s“ neexistuje. Při spuštění „%s“ nebude použita."
+msgstr "Pracovní adresář „%s“ neexistuje. Při spuštění „%s“ nebude použit."
 
 #. the string contains a directory separator
 #: ../libxfce4ui/xfce-filename-input.c:414
@@ -164,7 +164,7 @@ msgstr "Názvy souborů by neměly začínat ani končit mezerou"
 msgid ""
 "This shortcut is already being used for the action '%s'. Which action do you"
 " want to use?"
-msgstr "Tuto klávesovou zkratku už používá akce %s. Kterou akci chcete použít?"
+msgstr "Tuto klávesovou zkratku již používá akce %s. Kterou akci chcete použít?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:54
 #: ../libxfce4kbd-private/xfce-shortcuts.c:57
@@ -188,14 +188,14 @@ msgstr "Ponechat „%s“"
 msgid ""
 "This shortcut is already being used for the command '%s'. Which action do "
 "you want to use?"
-msgstr "Tuto klávesovou zkratku už používá příkaz %s. Kterou akci chcete použít?"
+msgstr "Tuto klávesovou zkratku již používá příkaz %s. Kterou akci chcete použít?"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:62
 #, c-format
 msgid ""
 "This shortcut is already being used by the action '%s'. Which action do you "
 "want to use?"
-msgstr "Tuto klávesovou zkratku už používá akce %s. Kterou akci chcete použít?"
+msgstr "Tuto klávesovou zkratku již používá akce %s. Kterou akci chcete použít?"
 
 #. This shortcut already exists in the provider, we don't want it twice
 #. Warn the user
@@ -206,7 +206,7 @@ msgstr "Použijte jinou kombinaci kláves"
 #: ../libxfce4kbd-private/xfce-shortcuts.c:111
 #, c-format
 msgid "%s already triggers this action."
-msgstr "%s už spouští tuto akci."
+msgstr "%s již spouští tuto akci."
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:116
 #, c-format
@@ -215,7 +215,7 @@ msgstr "Konflikt mezi akcemi pro %s"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:178
 msgid "This shortcut is already being used for something else."
-msgstr "Tato klávesová zkratka se už používá na jiném místě."
+msgstr "Tato klávesová zkratka se již používá na jiném místě."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:214
 msgid "Window Manager Action Shortcut"
@@ -721,7 +721,7 @@ msgstr "Vývojářský tým prostředí Xfce. Všechna práva vyhrazena."
 #: ../xfce4-about/main.c:495
 #, c-format
 msgid "Please report bugs to <%s>."
-msgstr "Chyby prosíme hlaste na <%s>."
+msgstr "Prosíme, abyste chyby nahlásili na adresu <%s>."
 
 #: ../xfce4-about/main.c:505
 msgid "Failed to load interface"
@@ -888,11 +888,11 @@ msgstr "%s; ID sestavení: %s"
 msgid ""
 "A file named \"%s\" already exists in this directory, the file hasn't been "
 "added."
-msgstr "Soubor %s v této složce už existuje, proto nebyl přidán."
+msgstr "Soubor %s v tomto adresáři již existuje, proto nebyl přidán."
 
 #: ../tests/test-ui.c:122
 msgid "Failed to migrate the old panel configuration"
-msgstr "Přenesení původního nastavení panelu se nezdařilo"
+msgstr "Migrace starého nastavení panelu se nezdařila"
 
 #: ../tests/test-ui.c:170 ../tests/test-ui.c:195
 msgid "Customize settings stored by Xfconf"
