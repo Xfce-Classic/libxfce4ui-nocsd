@@ -78,6 +78,7 @@ struct _XfceTitledDialogPrivate
   GtkWidget *headerbar;
   GtkWidget *icon;
   GtkWidget *action_area;
+  GdkPixbuf *pixbuf;
   gchar     *subtitle;
 };
 
@@ -170,6 +171,7 @@ xfce_titled_dialog_init (XfceTitledDialog *titled_dialog)
   gtk_header_bar_pack_start (GTK_HEADER_BAR (titled_dialog->priv->headerbar), titled_dialog->priv->icon);
   gtk_header_bar_set_show_close_button (GTK_HEADER_BAR (titled_dialog->priv->headerbar), TRUE);
   gtk_widget_show (titled_dialog->priv->icon);
+  titled_dialog->priv->pixbuf = NULL;
 
   /* make sure to update the icon whenever one of the relevant window properties changes */
   g_signal_connect (G_OBJECT (titled_dialog), "notify::icon", G_CALLBACK (xfce_titled_dialog_update_icon), NULL);
@@ -185,6 +187,9 @@ xfce_titled_dialog_finalize (GObject *object)
 
   /* release the subtitle */
   g_free (titled_dialog->priv->subtitle);
+
+  /* release the pixbuf */
+  g_object_unref (titled_dialog->priv->pixbuf);
 
   (*G_OBJECT_CLASS (xfce_titled_dialog_parent_class)->finalize) (object);
 }
@@ -268,10 +273,10 @@ xfce_titled_dialog_update_icon (XfceTitledDialog *titled_dialog)
     }
   else
     {
-      GdkPixbuf *pixbuf;
-      pixbuf = gtk_window_get_icon (GTK_WINDOW (titled_dialog));
-      if (pixbuf)
-          gtk_image_set_from_pixbuf (GTK_IMAGE (titled_dialog->priv->icon), pixbuf);
+      if (titled_dialog->priv->pixbuf)
+          g_object_unref (titled_dialog->priv->pixbuf);
+      titled_dialog->priv->pixbuf = gtk_window_get_icon (GTK_WINDOW (titled_dialog));
+      gtk_image_set_from_pixbuf (GTK_IMAGE (titled_dialog->priv->icon), titled_dialog->priv->pixbuf);
     }
 }
 
