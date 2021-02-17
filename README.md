@@ -33,7 +33,7 @@ If packages aren't available for your distribution, skip to the Manual Installat
 
 **Arch**: [AUR](https://aur.archlinux.org/packages/libxfce4ui-nocsd/)
 
-**Ubuntu**: [Xubuntu QA Experimental PPA](https://launchpad.net/~xubuntu-dev/+archive/ubuntu/experimental/+packages)  
+**Ubuntu**: [Xubuntu QA Experimental PPA](https://launchpad.net/~xubuntu-dev/+archive/ubuntu/experimental/)  
 *Note: The PPA currently contains builds of libxfce4ui-nocsd with the package name
 libxfce4ui-nocsd-2-0. The package name and availability on this PPA is subject to change in the future.*
 
