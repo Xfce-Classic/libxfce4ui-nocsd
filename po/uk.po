@@ -3,6 +3,7 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# Andrij Mizyk <andmizyk@gmail.com>, 2021
 # Dmitry Nikitin <luckas_fb@mail.ru>, 2008
 # Vasyl Khrystiuk <h6.msangel@gmail.com>, 2020
 # Yarema aka Knedlyk <yupadmin@gmail.com>, 2015-2017,2019
@@ -11,8 +12,8 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-12-22 00:45+0100\n"
-"PO-Revision-Date: 2020-12-21 23:45+0000\n"
-"Last-Translator: Xfce Bot <transifex@xfce.org>\n"
+"PO-Revision-Date: 2021-02-17 22:14+0000\n"
+"Last-Translator: Andrij Mizyk <andmizyk@gmail.com>\n"
 "Language-Team: Ukrainian (http://www.transifex.com/xfce/libxfce4ui/language/uk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -27,7 +28,7 @@ msgstr "Не можу відкрити переглядач для докуме�
 #: ../libxfce4ui/xfce-dialogs.c:265
 #, c-format
 msgid "Do you want to read the %s manual online?"
-msgstr "Ви бажаєте переглянути документацію по %s онлайн?"
+msgstr "Ви бажаєте переглянути документацію з %s онлайн?"
 
 #: ../libxfce4ui/xfce-dialogs.c:267
 msgid "Do you want to read the manual online?"
@@ -37,7 +38,7 @@ msgstr "Ви бажаєте переглянути документацію он
 msgid ""
 "You will be redirected to the documentation website where the help pages are"
 " maintained and translated."
-msgstr "Вас буде скеровано до веб-сторінки з документацією, що містить допомогу і її переклади."
+msgstr "Вас буде скеровано на вебсторінку документації, що містить довідку і її переклади."
 
 #. Create cancel button
 #: ../libxfce4ui/xfce-dialogs.c:275 ../libxfce4ui/xfce-dialogs.c:533
@@ -73,7 +74,7 @@ msgstr "Скасувати"
 
 #: ../libxfce4ui/xfce-dialogs.c:518
 msgid "Close window with multiple tabs?"
-msgstr "Закрити вікно з декількома вкладками?"
+msgstr "Закрити вікно з кількома вкладками?"
 
 #: ../libxfce4ui/xfce-dialogs.c:520
 msgid ""
@@ -106,7 +107,7 @@ msgstr "_Не питати надалі"
 
 #: ../libxfce4ui/xfce-sm-client.c:1427
 msgid "Session management client ID"
-msgstr "ID клієнта менеджера сесії"
+msgstr "ID клієнта керівника сеансу"
 
 #: ../libxfce4ui/xfce-sm-client.c:1427
 msgid "ID"
@@ -114,25 +115,25 @@ msgstr "ІН"
 
 #: ../libxfce4ui/xfce-sm-client.c:1428
 msgid "Disable session management"
-msgstr "Відключення менеджера сесії"
+msgstr "Відключення керівника сеансів"
 
 #: ../libxfce4ui/xfce-sm-client.c:1438
 msgid "Session management options"
-msgstr "Властивості менеджера сесії"
+msgstr "Параметри керівника сеансів"
 
 #: ../libxfce4ui/xfce-sm-client.c:1439
 msgid "Show session management options"
-msgstr "Показати властивості менеджера сесії"
+msgstr "Показати параметри керівника сеансів"
 
 #: ../libxfce4ui/xfce-sm-client.c:1614
 #, c-format
 msgid "Failed to connect to the session manager: %s"
-msgstr "Не вдалось з'єднатись з менеджером сеансів: %s"
+msgstr "Не вдалося зʼєднатись з керівником сеансів: %s"
 
 #: ../libxfce4ui/xfce-sm-client.c:1620
 #, c-format
 msgid "Session manager did not return a valid client id"
-msgstr "Менеджер сеансів не повернув правильного ІН клієнта"
+msgstr "Керівник сеансів не повернув правильного ІН клієнта"
 
 #. print warning for user
 #: ../libxfce4ui/xfce-spawn.c:400
@@ -140,7 +141,7 @@ msgstr "Менеджер сеансів не повернув правильно
 msgid ""
 "Working directory \"%s\" does not exist. It won't be used when spawning "
 "\"%s\"."
-msgstr "Робоча тека \"%s\" не існує. Вона не буде використовуватися, поки створюється \"%s\"."
+msgstr "Робоча тека \"%s\" не існує. Вона не використовуватиметься, поки створюється \"%s\"."
 
 #. the string contains a directory separator
 #: ../libxfce4ui/xfce-filename-input.c:414
@@ -156,7 +157,7 @@ msgstr "Ім'я файлу занадто довге"
 #. * this does not make the filename invalid, but we warn the user about it
 #: ../libxfce4ui/xfce-filename-input.c:430
 msgid "Filenames should not start or end with a space"
-msgstr "Ім'я файлу не повинно починатись і закінчуватись пробілами"
+msgstr "Ім'я файлу не має починатися і закінчуватися пропусками"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 #, c-format
@@ -218,7 +219,7 @@ msgstr "Цей запускач вже використовується для �
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:214
 msgid "Window Manager Action Shortcut"
-msgstr "Комбінації клавіш дій віконного менеджера"
+msgstr "Комбінації клавіш дій керівника вікон"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
@@ -248,11 +249,11 @@ msgstr "Очистити"
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:270
 #, c-format
 msgid "Press keyboard keys to trigger the %s '%s'."
-msgstr ""
+msgstr "Натисніть клавіші клавіатури, щоб перемкнути %s '%s'."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:291
 msgid "Please press a key"
-msgstr ""
+msgstr "Натисніть клавішу"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:345
 msgid "Could not grab the keyboard."
@@ -576,15 +577,15 @@ msgstr "Інформація про версію"
 
 #: ../xfce4-about/main.c:117
 msgid "GPUs"
-msgstr ""
+msgstr "ГП"
 
 #: ../xfce4-about/main.c:135
 msgid "Window Manager"
-msgstr "Менеджер вікон"
+msgstr "Керівник вікон"
 
 #: ../xfce4-about/main.c:136
 msgid "Handles the placement of windows on the screen."
-msgstr "Управляє розміщення вікон на екрані."
+msgstr "Управляє розміщенням вікон на екрані."
 
 #: ../xfce4-about/main.c:140
 msgid "Panel"
@@ -592,40 +593,40 @@ msgstr "Панель"
 
 #: ../xfce4-about/main.c:141
 msgid "Provides a home for window buttons, launchers, app menu and more."
-msgstr ""
+msgstr "Забезпечує місце для кнопок вікон, запускачів, меню програм та іншого."
 
 #: ../xfce4-about/main.c:145
 msgid "Desktop Manager"
-msgstr "Менеджер стільниці"
+msgstr "Керівник стільниці"
 
 #: ../xfce4-about/main.c:146
 msgid "Sets desktop backgrounds, handles icons and more."
-msgstr ""
+msgstr "Налаштовує зображення стільниці, відображення значків тощо."
 
 #: ../xfce4-about/main.c:150
 msgid "File Manager"
-msgstr "Файловий менеджер"
+msgstr "Керівник файлів"
 
 #: ../xfce4-about/main.c:151
 msgid "Manages your files in a modern, easy-to-use and fast way."
-msgstr ""
+msgstr "Керує вашими файлами в сучасний, легкий і швидкий спосіб."
 
 #: ../xfce4-about/main.c:155
 msgid "Volume Manager"
-msgstr ""
+msgstr "Керівник накопичувачів"
 
 #: ../xfce4-about/main.c:156
 msgid "Manages removable drives and media for Thunar."
-msgstr ""
+msgstr "Керує портативними пристроями і медія для Thunar."
 
 #: ../xfce4-about/main.c:160
 msgid "Session Manager"
-msgstr "Менеджер сесії"
+msgstr "Керівник сеансів"
 
 #: ../xfce4-about/main.c:161
 msgid ""
 "Saves and restores your session, handles startup, autostart and shutdown."
-msgstr ""
+msgstr "Зберігає і відновлює ваші сеанси, керує запуском, автозавантаженням і вимкненням."
 
 #: ../xfce4-about/main.c:165
 msgid "Setting System"
@@ -633,7 +634,7 @@ msgstr "Налаштування системи"
 
 #: ../xfce4-about/main.c:166
 msgid "Configures appearance, display, keyboard and mouse settings."
-msgstr ""
+msgstr "Налаштовує вигляд, дисплей, клавіятуру і налаштування мишки."
 
 #: ../xfce4-about/main.c:170
 msgid "Application Finder"
@@ -641,7 +642,7 @@ msgstr "Пошук програм"
 
 #: ../xfce4-about/main.c:171
 msgid "Quickly finds and launches applications installed on your system."
-msgstr ""
+msgstr "Швидкий пошук і запуск застосунків, що встановлені у вашій системі."
 
 #: ../xfce4-about/main.c:175
 msgid "Settings Daemon"
@@ -649,33 +650,33 @@ msgstr "Демон властивостей"
 
 #: ../xfce4-about/main.c:176
 msgid "Stores your settings in a D-Bus-based configuration system."
-msgstr ""
+msgstr "Зберігає ваші налаштування в конфіґураційній системі на основі D-Bus."
 
 #: ../xfce4-about/main.c:180
 msgid "A Menu Library"
-msgstr ""
+msgstr "Бібліотека меню"
 
 #: ../xfce4-about/main.c:181
 msgid "Implements a freedesktop.org compliant menu based on GLib and GIO."
-msgstr ""
+msgstr "Реалізує сумісне з freedesktop.org меню на основі GLib та GIO."
 
 #: ../xfce4-about/main.c:185
 msgid "Thumbnails Service"
-msgstr ""
+msgstr "Сервіс ескізів"
 
 #: ../xfce4-about/main.c:186
 msgid "Implements the thumbnail management D-Bus specification."
-msgstr ""
+msgstr "Реалізує специфікацію D-Bus керування ескізами."
 
 #: ../xfce4-about/main.c:240
 msgid "Please see <https://www.xfce.org/about/credits>"
-msgstr ""
+msgstr "Дивіться <https://www.xfce.org/about/credits>"
 
 #: ../xfce4-about/main.c:300
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
 "on <https://gitlab.xfce.org/xfce/libxfce4ui/-/issues> ."
-msgstr ""
+msgstr "Якщо ви знаєте когось, кого немає в цьому списку; не соромтеся і подайте помилку на <https://gitlab.xfce.org/xfce/libxfce4ui/-/issues> ."
 
 #: ../xfce4-about/main.c:304
 msgid "Thanks to all who helped making this software available!"
@@ -685,7 +686,7 @@ msgstr "Дякуємо усім, хто допоміг появитися цій
 msgid ""
 "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
-msgstr "Всі права на Xfce 4 належать до Olivier Fourdan (fourdan@xfce.org). Права на різні компоненти належать до відповідних авторам."
+msgstr "Всі права на Xfce 4 належать Olivier Fourdan (fourdan@xfce.org). Права на різні компоненти належать відповідним авторам."
 
 #: ../xfce4-about/main.c:326
 msgid ""
@@ -707,7 +708,7 @@ msgstr "Пакунки thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce
 #: ../xfce4-about/main.c:479
 #, c-format
 msgid "Type '%s --help' for usage information."
-msgstr "Введіть \"%s --help\" для допомоги по використанню."
+msgstr "Введіть \"%s --help\" для довідки з використання."
 
 #: ../xfce4-about/main.c:485
 msgid "Unable to initialize GTK+."
@@ -735,11 +736,11 @@ msgstr "Основні розробники"
 
 #: ../xfce4-about/contributors.h:139
 msgid "Active contributors"
-msgstr "Активний внесок через"
+msgstr "Активний внесок від"
 
 #: ../xfce4-about/contributors.h:142
 msgid "Servers maintained by"
-msgstr "Сервери під наглядом через"
+msgstr "Сервери підтримуються"
 
 #: ../xfce4-about/contributors.h:145
 msgid "Translations supervision"
@@ -747,7 +748,7 @@ msgstr "Керівник перекладачів"
 
 #: ../xfce4-about/contributors.h:148
 msgid "Documentation supervision"
-msgstr ""
+msgstr "Завідувач документацією"
 
 #: ../xfce4-about/contributors.h:151
 msgid "Translators"
@@ -763,7 +764,7 @@ msgstr "Про Xfce"
 
 #: ../xfce4-about/xfce4-about.desktop.in.h:2
 msgid "Information about the Xfce Desktop Environment"
-msgstr "Інформація про середовище робочого столу Xfce"
+msgstr "Інформація про середовище стільниці Xfce"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:1
 msgid "License"
@@ -771,7 +772,7 @@ msgstr "Ліцензія"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:2
 msgid "About the Xfce Desktop Environment"
-msgstr "Про середовище робочого столу Xfce"
+msgstr "Про середовище стільниці Xfce"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:3
 msgid "label"
@@ -779,7 +780,7 @@ msgstr "мітка"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:4
 msgid "OS Name"
-msgstr "Ім'я системи"
+msgstr "Назва системи"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:5
 msgid "Device"
@@ -803,11 +804,11 @@ msgstr "Версія Xfce"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:10
 msgid "Distributor"
-msgstr "Дистриб'ютор"
+msgstr "Дистрибʼютор"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:11
 msgid "GPU"
-msgstr ""
+msgstr "Графічний процесор"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:12
 msgid "System"
@@ -817,7 +818,7 @@ msgstr "Система"
 msgid ""
 "Xfce is a collection of programs that together provide a full-featured desktop environment.\n"
 "The following programs are part of the Xfce core:"
-msgstr ""
+msgstr "Xfce це колекція програм, що разом створюють багатофункціональне стільничне\nсередовище. Наступні програми є частиною ядра Xfce:"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:15
 msgid ""
@@ -828,7 +829,7 @@ msgid ""
 "Thank you for your interest in Xfce.\n"
 "\n"
 "\t- The Xfce Development Team"
-msgstr ""
+msgstr "Xfce це також платформа розробки, що надає багато бібліотек, які допомагають програмістам створювати застосунки, які добре вписуються в середовище стільниці.\n\nКомпоненти Xfce ліцензуються вільними і відкритими (open source) ліцензіями; GPL або BSDL для застосунків і LGPL або BSDL для бібліотек. Перегляньте документацію, вихідний код або вебсайт Xfce (<a href=\"https://www.xfce.org\">https://www.xfce.org</a>), щоб дізнатися більше.\n\nДякуємо за вашу цікавість до Xfce.\n\n\t- Команда розробників Xfce"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:22
 msgid "About"
@@ -862,16 +863,16 @@ msgstr "Невідомий"
 #. translators: This is the type of architecture for the OS
 #: ../xfce4-about/system-info.c:641
 msgid "64-bit (32-bit userspace)"
-msgstr ""
+msgstr "64-бітна (32-бітний користувацький простір)"
 
 #. translators: This is the type of architecture for the OS
 #: ../xfce4-about/system-info.c:644
 msgid "64-bit"
-msgstr ""
+msgstr "64-бітна"
 
 #: ../xfce4-about/system-info.c:644
 msgid "32-bit"
-msgstr ""
+msgstr "32-бітна"
 
 #. translators: This is the name of the OS, followed by the build ID, for
 #. * example:
@@ -880,7 +881,7 @@ msgstr ""
 #: ../xfce4-about/system-info.c:709
 #, c-format
 msgid "%s; Build ID: %s"
-msgstr "%s; IH зборки: %s"
+msgstr "%s; IH збірки: %s"
 
 #: ../tests/test-ui.c:111
 #, c-format
@@ -895,4 +896,4 @@ msgstr "Не вдалось провести міграцію старої ко�
 
 #: ../tests/test-ui.c:170 ../tests/test-ui.c:195
 msgid "Customize settings stored by Xfconf"
-msgstr "Змінити налаштування, збережені за допомогою Xfconf"
+msgstr "Пристосувати налаштування, збережені через Xfconf"
