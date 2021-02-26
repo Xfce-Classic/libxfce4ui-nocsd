@@ -391,10 +391,9 @@ xfce_shortcuts_grabber_grab (XfceShortcutsGrabber *grabber,
 
 struct EventKeyFindContext
 {
-  XfceShortcutsGrabber *grabber;
-  GdkModifierType       modifiers;
-  guint                 keyval;
-  const gchar          *result;
+  GdkModifierType modifiers;
+  guint           keyval;
+  const gchar    *result;
 };
 
 
@@ -461,7 +460,6 @@ xfce_shortcuts_grabber_event_filter (GdkXEvent *gdk_xevent,
   if (xevent->type != KeyPress)
     return GDK_FILTER_CONTINUE;
 
-  context.grabber = grabber;
   context.result = NULL;
   timestamp = xevent->xkey.time;
 
@@ -520,9 +518,9 @@ xfce_shortcuts_grabber_event_filter (GdkXEvent *gdk_xevent,
   TRACE ("Looking for %s", raw_shortcut_name);
   g_free (raw_shortcut_name);
 
-  g_hash_table_foreach (grabber->priv->keys,
-                        (GHFunc) (void (*)(void)) find_event_key,
-                        &context);
+  g_hash_table_find (grabber->priv->keys,
+                     (GHRFunc) (void (*)(void)) find_event_key,
+                     &context);
 
   if (G_LIKELY (context.result != NULL))
     /* We had a positive match */
