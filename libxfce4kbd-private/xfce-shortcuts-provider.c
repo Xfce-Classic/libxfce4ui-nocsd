@@ -711,6 +711,7 @@ void
 xfce_shortcuts_free (GList *shortcuts)
 {
   g_list_foreach (shortcuts, (GFunc) (void (*)(void)) xfce_shortcut_free, NULL);
+  g_list_free (shortcuts);
 }
 
 
