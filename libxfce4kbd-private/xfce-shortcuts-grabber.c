@@ -59,8 +59,7 @@ static void            xfce_shortcuts_grabber_ungrab_all       (XfceShortcutsGra
 static void            xfce_shortcuts_grabber_grab             (XfceShortcutsGrabber      *grabber,
                                                                 XfceKey                   *key);
 static void            xfce_shortcuts_grabber_ungrab           (XfceShortcutsGrabber      *grabber,
-                                                                XfceKey                   *key,
-                                                                gboolean                   trace);
+                                                                XfceKey                   *key);
 static GdkFilterReturn xfce_shortcuts_grabber_event_filter     (GdkXEvent                 *gdk_xevent,
                                                                 GdkEvent                  *event,
                                                                 gpointer                   data);
@@ -318,7 +317,7 @@ ungrab_key (const gchar          *shortcut,
             XfceKey              *key,
             XfceShortcutsGrabber *grabber)
 {
-  xfce_shortcuts_grabber_ungrab (grabber, key, TRUE);
+  xfce_shortcuts_grabber_ungrab (grabber, key);
   return FALSE;
 }
 
@@ -337,23 +336,67 @@ xfce_shortcuts_grabber_ungrab_all (XfceShortcutsGrabber *grabber)
 
 static gboolean
 get_entries_for_keyval (GdkKeymap     *keymap,
+                        gint           group,
                         guint          keyval,
                         GdkKeymapKey **keys,
-                        gint          *n_keys)
+                        guint         *n_keys)
 {
-  /* Get all keys generating keyval */
-  if (!gdk_keymap_get_entries_for_keyval (keymap, keyval, keys, n_keys))
+  GdkKeymapKey *keys1;
+  gint n_keys1;
+
+  *keys = NULL;
+  *n_keys = 0;
+
+   /* Get all keys generating keyval */
+  if (!gdk_keymap_get_entries_for_keyval (keymap, keyval, &keys1, &n_keys1))
     {
       TRACE ("Got no keys for keyval");
       return FALSE;
     }
 
-  if (G_UNLIKELY (*n_keys <= 0))
+  if (G_UNLIKELY (n_keys1 <= 0))
     {
-      g_free (*keys);
+      g_free (keys1);
       return FALSE;
     }
 
+  /* Filter keys by group */
+  {
+    gboolean group0_only;
+    gint i, n_matches;
+
+    /* For keys such as F12:
+     *   keys1[i].group is always 0 (even if n_keys1 >= 2)
+     *   and thus n_matches will be zero if group != 0 */
+
+    group0_only = TRUE;
+    n_matches = 0;
+    for (i = 0; i < n_keys1; i++)
+      {
+        group0_only &= (keys1[i].group == 0) ? TRUE : FALSE;
+        if (keys1[i].group == group)
+          n_matches++;
+      }
+
+    if (!group0_only || n_matches != 0)
+      {
+        /* Remove keys that do not match the group*/
+        for (i = 0; i < n_keys1;)
+          if (keys1[i].group == group)
+            i++;
+          else
+            keys1[i] = keys1[--n_keys1];
+      }
+  }
+
+  if (G_UNLIKELY (n_keys1 == 0))
+    {
+      g_free (keys1);
+      keys1 = NULL;
+    }
+
+  *keys = keys1;
+  *n_keys = n_keys1;
   return TRUE;
 }
 
@@ -397,6 +440,7 @@ xfce_shortcuts_grabber_regrab_all (XfceShortcutsGrabber *grabber)
   guint           n_regrab = 0;
   XfceKey       **regrab; /* list of keys to re-grab */
   guint           i;
+  gint            group;
 
   g_return_if_fail (XFCE_IS_SHORTCUTS_GRABBER (grabber));
 
@@ -405,6 +449,9 @@ xfce_shortcuts_grabber_regrab_all (XfceShortcutsGrabber *grabber)
   keymap = gdk_keymap_get_for_display (display);
   numlock_modifier = XkbKeysymToModifiers (xdisplay, GDK_KEY_Num_Lock);
   grabbed_keycodes = grabber->priv->grabbed_keycodes;
+  group = grabber->priv->xkbStateGroup;
+  if (G_UNLIKELY (group == -1))
+    group = 0;
 
   regrab = g_malloc (g_hash_table_size (grabber->priv->keys) * sizeof (*regrab));
 
@@ -416,20 +463,20 @@ xfce_shortcuts_grabber_regrab_all (XfceShortcutsGrabber *grabber)
     XfceKey         *const key = hash_value;
     GdkKeymapKey    *keys;
     GdkModifierType  non_virtual_modifiers;
-    gint             n_keys;
+    guint            n_keys;
     gboolean         already_grabbed;
 
     if (!map_virtual_modifiers (keymap, key->modifiers, &non_virtual_modifiers))
       continue;
-    if (!get_entries_for_keyval (keymap, key->keyval, &keys, &n_keys))
+    if (!get_entries_for_keyval (keymap, group, key->keyval, &keys, &n_keys))
       continue;
 
     already_grabbed = TRUE;
-    if (key->n_keys == (guint) n_keys &&
+    if (key->n_keys == n_keys &&
         key->non_virtual_modifiers == non_virtual_modifiers &&
         key->numlock_modifier == numlock_modifier)
       {
-        gint j;
+        guint j;
         for (j = 0; j < n_keys; j++)
           if (memcmp (&key->keys[j], &keys[j], sizeof(*keys)) != 0)
             {
@@ -448,7 +495,8 @@ xfce_shortcuts_grabber_regrab_all (XfceShortcutsGrabber *grabber)
     else
       {
         /* Undo current X11 grabs of the key */
-        xfce_shortcuts_grabber_ungrab (grabber, key, FALSE);
+        if (key->n_keys != 0)
+          xfce_shortcuts_grabber_ungrab (grabber, key);
 
         /* Set key->keys to the keycodes that need to be grabbed in phase 2 */
         if (G_UNLIKELY (key->keys))
@@ -465,7 +513,8 @@ xfce_shortcuts_grabber_regrab_all (XfceShortcutsGrabber *grabber)
         key->numlock_modifier = numlock_modifier;
 
         /* Remember to grab the key in phase 2 */
-        regrab[n_regrab++] = key;
+        if (n_keys != 0)
+          regrab[n_regrab++] = key;
       }
   }
 
@@ -478,14 +527,15 @@ xfce_shortcuts_grabber_regrab_all (XfceShortcutsGrabber *grabber)
     guint    j;
 
 #ifdef DEBUG_TRACE
-    gchar *shortcut_name = gtk_accelerator_name (key->keyval, key->non_virtual_modifiers);
-    TRACE (key->n_keys==0 ? "Grabbing %s" : "Regrabbing %s", shortcut_name);
-    TRACE ("  key->keyval: %d", key->keyval);
-    TRACE ("  key->modifiers: 0x%x", key->modifiers);
-    TRACE ("  key->non_virtual_modifiers: 0x%x", key->non_virtual_modifiers);
-    TRACE ("  key->n_keys: %d", key->n_keys);
-    g_free (shortcut_name);
-    shortcut_name = NULL;
+    {
+      gchar *shortcut_name = gtk_accelerator_name (key->keyval, key->non_virtual_modifiers);
+      TRACE (key->n_keys==0 ? "Grabbing %s" : "Regrabbing %s", shortcut_name);
+      TRACE ("  key->keyval: %d", key->keyval);
+      TRACE ("  key->modifiers: 0x%x", key->modifiers);
+      TRACE ("  key->non_virtual_modifiers: 0x%x", key->non_virtual_modifiers);
+      TRACE ("  key->n_keys: %u", key->n_keys);
+      g_free (shortcut_name);
+    }
 #endif
 
     /* Grab all hardware keys generating keyval */
@@ -545,38 +595,40 @@ xfce_shortcuts_grabber_grab (XfceShortcutsGrabber *grabber, XfceKey *key)
   GHashTable      *grabbed_keycodes;
   GdkKeymapKey    *keys;
   GdkModifierType  non_virtual_modifiers;
-  gint             i, n_keys;
-#ifdef DEBUG_TRACE
-  gchar           *shortcut_name;
-#endif
+  guint            i, n_keys;
+  gint             group;
 
   display = gdk_display_get_default ();
   xdisplay = GDK_DISPLAY_XDISPLAY (display);
   keymap = gdk_keymap_get_for_display (display);
   numlock_modifier = XkbKeysymToModifiers (xdisplay, GDK_KEY_Num_Lock);
   grabbed_keycodes = grabber->priv->grabbed_keycodes;
+  group = grabber->priv->xkbStateGroup;
+  if (G_UNLIKELY (group == -1))
+    group = 0;
 
   if (!map_virtual_modifiers (keymap, key->modifiers, &non_virtual_modifiers))
     return;
-  if (!get_entries_for_keyval (keymap, key->keyval, &keys, &n_keys))
+  if (!get_entries_for_keyval (keymap, group, key->keyval, &keys, &n_keys))
     return;
 
 #ifdef DEBUG_TRACE
-  shortcut_name = gtk_accelerator_name (key->keyval, non_virtual_modifiers);
-  TRACE (key->n_keys==0 ? "Grabbing %s" : "Regrabbing %s", shortcut_name);
-  TRACE ("  key->keyval: %d", key->keyval);
-  TRACE ("  key->modifiers: 0x%x", key->modifiers);
-  TRACE ("  non_virtual_modifiers: 0x%x", non_virtual_modifiers);
-  TRACE ("  n_keys: %d", n_keys);
-  g_free (shortcut_name);
-  shortcut_name = NULL;
+  {
+    char *shortcut_name = gtk_accelerator_name (key->keyval, non_virtual_modifiers);
+    TRACE (key->n_keys==0 ? "Grabbing %s" : "Regrabbing %s", shortcut_name);
+    TRACE ("  key->keyval: %d", key->keyval);
+    TRACE ("  key->modifiers: 0x%x", key->modifiers);
+    TRACE ("  non_virtual_modifiers: 0x%x", non_virtual_modifiers);
+    TRACE ("  n_keys: %u", n_keys);
+    g_free (shortcut_name);
+  }
 #endif
 
   /* Undo old grabs (just in case there are some old grabs) */
   if (G_UNLIKELY (key->n_keys != 0))
     {
       g_warning ("keyval %u already grabbed", key->keyval);
-      xfce_shortcuts_grabber_ungrab (grabber, key, TRUE);
+      xfce_shortcuts_grabber_ungrab (grabber, key);
     }
 
   /* Grab all hardware keys generating keyval */
@@ -597,7 +649,7 @@ xfce_shortcuts_grabber_grab (XfceShortcutsGrabber *grabber, XfceKey *key)
               *g1 = g;
               *refcount1 = 1;
               g_hash_table_insert (grabbed_keycodes, g1, refcount1);
-              TRACE ("[group %d] keycode %u, non_virtual_modifiers 0x%x: refcount := %u",
+              TRACE ("group %d, keycode %u, non_virtual_modifiers 0x%x: refcount := %u",
                      keys[i].group, g.keycode, g.non_virtual_modifiers, *refcount1);
               i++;
             }
@@ -610,7 +662,7 @@ xfce_shortcuts_grabber_grab (XfceShortcutsGrabber *grabber, XfceKey *key)
           // 'g' has already been grabbed, increment its refcount only
           XfceXGrabRefcount *refcount1 = refcount;
           (*refcount1)++;
-          TRACE ("[group %d] keycode %u, non_virtual_modifiers 0x%x: ++refcount = %u",
+          TRACE ("group %d, keycode %u, non_virtual_modifiers 0x%x: ++refcount = %u",
                  keys[i].group, g.keycode, g.non_virtual_modifiers, *refcount1);
           i++;
         }
@@ -629,24 +681,24 @@ xfce_shortcuts_grabber_grab (XfceShortcutsGrabber *grabber, XfceKey *key)
 }
 
 static void
-xfce_shortcuts_grabber_ungrab (XfceShortcutsGrabber *grabber, XfceKey *key,
-                               gboolean trace)
+xfce_shortcuts_grabber_ungrab (XfceShortcutsGrabber *grabber, XfceKey *key)
 {
   GHashTable *grabbed_keycodes;
   guint       i;
 
   grabbed_keycodes = grabber->priv->grabbed_keycodes;
 
-  if (trace)
-    {
-      gchar *shortcut_name = gtk_accelerator_name (key->keyval, key->non_virtual_modifiers);
-      TRACE ("Ungrabbing %s", shortcut_name);
-      TRACE ("  key->keyval: %d", key->keyval);
-      TRACE ("  key->modifiers: 0x%x", key->modifiers);
-      TRACE ("  key->non_virtual_modifiers: 0x%x", key->non_virtual_modifiers);
-      TRACE ("  key->n_keys: %u", key->n_keys);
-      g_free (shortcut_name);
-    }
+#ifdef DEBUG_TRACE
+  {
+    gchar *shortcut_name = gtk_accelerator_name (key->keyval, key->non_virtual_modifiers);
+    TRACE ("Ungrabbing %s", shortcut_name);
+    TRACE ("  key->keyval: %d", key->keyval);
+    TRACE ("  key->modifiers: 0x%x", key->modifiers);
+    TRACE ("  key->non_virtual_modifiers: 0x%x", key->non_virtual_modifiers);
+    TRACE ("  key->n_keys: %u", key->n_keys);
+    g_free (shortcut_name);
+  }
+#endif
 
   for (i = 0; i < key->n_keys; i++)
     {
@@ -662,9 +714,8 @@ xfce_shortcuts_grabber_ungrab (XfceShortcutsGrabber *grabber, XfceKey *key,
           if (G_LIKELY (*refcount1 != 0))
             {
               (*refcount1)--;
-              if (trace)
-                TRACE ("[group %d] keycode %u, non_virtual_modifiers 0x%x: --refcount = %u",
-                       key->keys[i].group, g.keycode, g.non_virtual_modifiers, *refcount1);
+              TRACE ("group %d, keycode %u, non_virtual_modifiers 0x%x: --refcount = %u",
+                     key->keys[i].group, g.keycode, g.non_virtual_modifiers, *refcount1);
               if(*refcount1 == 0)
                 {
                   xfce_shortcuts_grabber_xgrab (g, FALSE);
@@ -746,12 +797,11 @@ xfce_shortcuts_grabber_event_filter (GdkXEvent *gdk_xevent,
   if (xevent->type == grabber->priv->xkbEventType)
     {
       const XkbEvent *e = (const XkbEvent*) xevent;
-      TRACE ("xkb event: any.xkb_type=%d", e->any.xkb_type);
       if (e->any.xkb_type == XkbStateNotify)
         {
-          TRACE ("xkb event: any.xkb_type=XkbStateNotify, state.group=%d", e->state.group);
           if (grabber->priv->xkbStateGroup != e->state.group)
             {
+              TRACE ("xkb event: any.xkb_type=XkbStateNotify, state.group=%d", e->state.group);
               grabber->priv->xkbStateGroup = e->state.group;
               xfce_shortcuts_grabber_regrab_all (grabber);
             }
@@ -884,7 +934,7 @@ xfce_shortcuts_grabber_remove (XfceShortcutsGrabber *grabber,
 
   if (G_LIKELY (key != NULL))
     {
-      xfce_shortcuts_grabber_ungrab (grabber, key, TRUE);
+      xfce_shortcuts_grabber_ungrab (grabber, key);
       g_hash_table_remove (grabber->priv->keys, shortcut);
     }
 }
