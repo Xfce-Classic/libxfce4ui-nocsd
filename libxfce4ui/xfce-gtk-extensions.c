@@ -191,6 +191,7 @@ xfce_gtk_image_menu_item_new (const gchar  *label_text,
     {
       G_GNUC_BEGIN_IGNORE_DEPRECATIONS
       gtk_image_menu_item_set_image (GTK_IMAGE_MENU_ITEM (item), image);
+      gtk_image_menu_item_set_always_show_image (GTK_IMAGE_MENU_ITEM (item), TRUE);
       G_GNUC_END_IGNORE_DEPRECATIONS
     }
   return item;
