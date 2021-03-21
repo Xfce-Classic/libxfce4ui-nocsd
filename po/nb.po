@@ -6,14 +6,14 @@
 # Allan Nordhøy <epost@anotheragency.no>, 2014-2015
 # Allan Nordhøy <epost@anotheragency.no>, 2015-2016
 # Harald H. <haarektrans@gmail.com>, 2014
-# Kjell Cato Heskjestad <cato@heskjestad.xyz>, 2019-2020
+# Kjell Cato Heskjestad <cato@heskjestad.xyz>, 2019-2021
 # Terje Uriansrud <terje@uriansrud.net>, 2010
 msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-12-22 00:45+0100\n"
-"PO-Revision-Date: 2020-12-23 11:36+0000\n"
+"PO-Revision-Date: 2021-03-21 07:18+0000\n"
 "Last-Translator: Kjell Cato Heskjestad <cato@heskjestad.xyz>\n"
 "Language-Team: Norwegian Bokmål (http://www.transifex.com/xfce/libxfce4ui/language/nb/)\n"
 "MIME-Version: 1.0\n"
@@ -39,7 +39,7 @@ msgstr "Ønsker du å lese bruksanvisningen på nettet?"
 msgid ""
 "You will be redirected to the documentation website where the help pages are"
 " maintained and translated."
-msgstr "Du vil bli omdirigert til dokumentasjonsnettstedet der hjelpesidene blir vedlikeholdt og oversatt."
+msgstr "Du vil bli videresendt til dokumentasjonsnettstedet der hjelpesidene blir vedlikeholdt og oversatt."
 
 #. Create cancel button
 #: ../libxfce4ui/xfce-dialogs.c:275 ../libxfce4ui/xfce-dialogs.c:533
@@ -262,7 +262,7 @@ msgstr "Klarte ikke å ta tak i tastaturet."
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:36
 msgid "Window operations menu"
-msgstr "Vindu handlingsmeny"
+msgstr "Handlingsmeny til vindu"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:37
 msgid "Up"
@@ -282,19 +282,19 @@ msgstr "Høyre"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:42
 msgid "Cycle windows"
-msgstr "Roter vinduer"
+msgstr "Bla gjennom vinduer"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:43
 msgid "Cycle windows (Reverse)"
-msgstr "Roter vinduer (baklengs)"
+msgstr "Bla gjennom vinduer (baklengs)"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:44
 msgid "Switch window for same application"
-msgstr "Bytt vindu for samme applikasjon"
+msgstr "Bytt vindu for samme program"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:45
 msgid "Switch application"
-msgstr "Bytt applikasjon"
+msgstr "Bytt program"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:46
 msgid "Close window"
@@ -586,7 +586,7 @@ msgstr "Vindusbehandler"
 
 #: ../xfce4-about/main.c:136
 msgid "Handles the placement of windows on the screen."
-msgstr "Håndterer plassering av vinduer på skjermen."
+msgstr "Behandle plassering av vinduer på skjermen."
 
 #: ../xfce4-about/main.c:140
 msgid "Panel"
@@ -687,7 +687,7 @@ msgstr "Takk til alle som har hjulpet til med å gjøre denne programvaren mulig
 msgid ""
 "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
-msgstr "Xfce 4 er kopirettsbeskyttet Olivier Fourdan (fourdan@xfce.org) De forskjellige komponentene er kopirettsbeskyttet av sine respektive forfattere."
+msgstr "Olivier Fourdan (fourdan@xfce.org) har opphavsretten til Xfce 4. De respektive opphavspersonene har opphavsrett til de forskjellige komponentene."
 
 #: ../xfce4-about/main.c:326
 msgid ""
@@ -713,7 +713,7 @@ msgstr "Skriv '%s --help' for bruksinformasjon."
 
 #: ../xfce4-about/main.c:485
 msgid "Unable to initialize GTK+."
-msgstr "Kunne ikke klargjøre GTK+."
+msgstr "Klarte ikke klargjøre GTK+."
 
 #: ../xfce4-about/main.c:494
 msgid "The Xfce development team. All rights reserved."
@@ -726,7 +726,7 @@ msgstr "Rapporter feil til <%s>"
 
 #: ../xfce4-about/main.c:505
 msgid "Failed to load interface"
-msgstr "Kunne ikke laste inn grensesnitt"
+msgstr "Klarte ikke laste inn grensesnitt"
 
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
@@ -889,7 +889,7 @@ msgstr "%s; Bygg-ID: %s"
 msgid ""
 "A file named \"%s\" already exists in this directory, the file hasn't been "
 "added."
-msgstr "En fil ved navn \"%s\" finnes allerede i denne mappen, filen har ikke blitt lagt til."
+msgstr "En fil ved navn «%s» finnes allerede i denne mappen. Filen har ikke blitt lagt til."
 
 #: ../tests/test-ui.c:122
 msgid "Failed to migrate the old panel configuration"
