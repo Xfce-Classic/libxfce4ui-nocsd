@@ -937,16 +937,18 @@ void
 xfce_gtk_menu_item_set_accel_label (GtkMenuItem *menu_item,
                                     const gchar *accel_path)
 {
-  GtkAccelKey key;
-  gboolean    found = FALSE;
+  GtkAccelKey  key;
+  GList       *list, *lp;
+  gboolean     found = FALSE;
 
   g_return_if_fail (GTK_IS_MENU_ITEM (menu_item));
 
+  list = gtk_container_get_children (GTK_CONTAINER (menu_item));
   if (accel_path != NULL)
     found = gtk_accel_map_lookup_entry (accel_path, &key);
 
   /* Only show the relevant accelerator, do not automatically connect to the callback */
-  for (GList* lp = gtk_container_get_children (GTK_CONTAINER (menu_item)); lp != NULL; lp = lp->next)
+  for (lp = list; lp != NULL; lp = lp->next)
     {
       if (GTK_IS_ACCEL_LABEL (lp->data))
         {
@@ -955,8 +957,9 @@ xfce_gtk_menu_item_set_accel_label (GtkMenuItem *menu_item,
           else
             gtk_accel_label_set_accel (lp->data, 0, 0);
         }
-
     }
+
+  g_list_free (list);
 }
 
 
