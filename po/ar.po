@@ -4,6 +4,7 @@
 # 
 # Translators:
 # كريم أولاد الشلحة <herr.linux88@gmail.com>, 2013
+# Salem Yaslem <xlmnxp@outlook.sa>, 2021
 # محمد الحرقان <malham1@gmail.com>, 2013
 # وجدي أبو سلطان, 2017
 msgid ""
@@ -11,8 +12,8 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-12-22 00:45+0100\n"
-"PO-Revision-Date: 2020-12-21 23:45+0000\n"
-"Last-Translator: Xfce Bot <transifex@xfce.org>\n"
+"PO-Revision-Date: 2021-04-07 19:24+0000\n"
+"Last-Translator: Salem Yaslem <xlmnxp@outlook.sa>\n"
 "Language-Team: Arabic (http://www.transifex.com/xfce/libxfce4ui/language/ar/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -73,20 +74,20 @@ msgstr "إلغاء"
 
 #: ../libxfce4ui/xfce-dialogs.c:518
 msgid "Close window with multiple tabs?"
-msgstr ""
+msgstr "هل تريد إغلاق النافذة بعلامات تبويب متعددة؟"
 
 #: ../libxfce4ui/xfce-dialogs.c:520
 msgid ""
 "This window has multiple tabs open. Closing this window will also close all "
 "its tabs."
-msgstr ""
+msgstr "هذه النافذة بها عدة علامات تبويب مفتوحة. سيؤدي إغلاق هذه النافذة أيضًا إلى إغلاق جميع علامات التبويب الخاصة بها."
 
 #: ../libxfce4ui/xfce-dialogs.c:523
 #, c-format
 msgid ""
 "This window has %d tabs open. Closing this window will also close all its "
 "tabs."
-msgstr ""
+msgstr "هذه النافذة بها %d علامات تبويب مفتوحة. سيؤدي إغلاق هذه النافذة أيضًا إلى إغلاق جميع علامات التبويب الخاصة بها."
 
 #: ../libxfce4ui/xfce-dialogs.c:529
 msgid "Warning"
@@ -145,18 +146,18 @@ msgstr "مسار العمل \"%s\" غير موجود. ولن يستخدم عند
 #. the string contains a directory separator
 #: ../libxfce4ui/xfce-filename-input.c:414
 msgid "Directory separator illegal in file name"
-msgstr ""
+msgstr "فاصل المجلد في اسم الملف غير مسموح به"
 
 #. the string is too long
 #: ../libxfce4ui/xfce-filename-input.c:422
 msgid "Filename is too long"
-msgstr ""
+msgstr "اسم الملف طويل جدًا"
 
 #. the string starts or ends with whitespace
 #. * this does not make the filename invalid, but we warn the user about it
 #: ../libxfce4ui/xfce-filename-input.c:430
 msgid "Filenames should not start or end with a space"
-msgstr ""
+msgstr "يجب ألا تبدأ أسماء الملفات أو تنتهي بمسافة"
 
 #: ../libxfce4kbd-private/xfce-shortcuts.c:53
 #, c-format
@@ -248,11 +249,11 @@ msgstr "مسح"
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:270
 #, c-format
 msgid "Press keyboard keys to trigger the %s '%s'."
-msgstr ""
+msgstr "اضغط على مفاتيح لوحة المفاتيح لتشغيل %s '%s'."
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:291
 msgid "Please press a key"
-msgstr ""
+msgstr "الرجاء الضغط على مفتاح"
 
 #: ../libxfce4kbd-private/xfce-shortcut-dialog.c:345
 msgid "Could not grab the keyboard."
@@ -452,19 +453,19 @@ msgstr "بلاط النافذة إلى اليمين"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:85
 msgid "Tile window to the top-left"
-msgstr ""
+msgstr "بلاط النافذة إلى الأعلى-يسار"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:86
 msgid "Tile window to the top-right"
-msgstr ""
+msgstr "بلاط النافذة إلى الأعلى-يمين"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:87
 msgid "Tile window to the bottom-left"
-msgstr ""
+msgstr "بلاط النافذة إلى الأسفل-يسار"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:88
 msgid "Tile window to the bottom-right"
-msgstr ""
+msgstr "بلاط النافذة إلى الأسفل-يمين"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:89
 msgid "Show desktop"
@@ -576,7 +577,7 @@ msgstr "معلومات الإصدار"
 
 #: ../xfce4-about/main.c:117
 msgid "GPUs"
-msgstr ""
+msgstr "معالجات الرسوميات"
 
 #: ../xfce4-about/main.c:135
 msgid "Window Manager"
@@ -592,7 +593,7 @@ msgstr "شريط"
 
 #: ../xfce4-about/main.c:141
 msgid "Provides a home for window buttons, launchers, app menu and more."
-msgstr ""
+msgstr "يوفر موقعًا رئيسيًا لأزرار النوافذ والمشغلات وقائمة التطبيقات والمزيد."
 
 #: ../xfce4-about/main.c:145
 msgid "Desktop Manager"
@@ -600,7 +601,7 @@ msgstr "مدير سطح المكتب"
 
 #: ../xfce4-about/main.c:146
 msgid "Sets desktop backgrounds, handles icons and more."
-msgstr ""
+msgstr "يضبط خلفيات سطح المكتب ، ويتعامل مع الايقونات والمزيد."
 
 #: ../xfce4-about/main.c:150
 msgid "File Manager"
@@ -608,7 +609,7 @@ msgstr "مدير الملفات"
 
 #: ../xfce4-about/main.c:151
 msgid "Manages your files in a modern, easy-to-use and fast way."
-msgstr ""
+msgstr "يدير ملفاتك بطريقة حديثة وسهلة الاستخدام وسريعة."
 
 #: ../xfce4-about/main.c:155
 msgid "Volume Manager"
@@ -616,7 +617,7 @@ msgstr ""
 
 #: ../xfce4-about/main.c:156
 msgid "Manages removable drives and media for Thunar."
-msgstr ""
+msgstr "يدير محركات الأقراص والوسائط القابلة للإزالة لـ Thunar."
 
 #: ../xfce4-about/main.c:160
 msgid "Session Manager"
@@ -625,7 +626,7 @@ msgstr "مدير الجلسة"
 #: ../xfce4-about/main.c:161
 msgid ""
 "Saves and restores your session, handles startup, autostart and shutdown."
-msgstr ""
+msgstr "يحفظ ويستعيد جلستك ويتعامل مع بدء التشغيل والتشغيل التلقائي والإيقاف."
 
 #: ../xfce4-about/main.c:165
 msgid "Setting System"
@@ -633,7 +634,7 @@ msgstr "إعدادات النظام"
 
 #: ../xfce4-about/main.c:166
 msgid "Configures appearance, display, keyboard and mouse settings."
-msgstr ""
+msgstr "يعمل على إعداد المظهر والعرض ولوحة المفاتيح والفأرة."
 
 #: ../xfce4-about/main.c:170
 msgid "Application Finder"
@@ -641,7 +642,7 @@ msgstr "مكتشف التطبيقات"
 
 #: ../xfce4-about/main.c:171
 msgid "Quickly finds and launches applications installed on your system."
-msgstr ""
+msgstr "يبحث بسرعة عن التطبيقات المثبتة على نظامك ويقوم بتشغيلها."
 
 #: ../xfce4-about/main.c:175
 msgid "Settings Daemon"
@@ -649,7 +650,7 @@ msgstr "إعدادات خفية"
 
 #: ../xfce4-about/main.c:176
 msgid "Stores your settings in a D-Bus-based configuration system."
-msgstr ""
+msgstr "يخزن إعداداتك في نظام إعداد قائم على D-Bus."
 
 #: ../xfce4-about/main.c:180
 msgid "A Menu Library"
@@ -657,25 +658,25 @@ msgstr ""
 
 #: ../xfce4-about/main.c:181
 msgid "Implements a freedesktop.org compliant menu based on GLib and GIO."
-msgstr ""
+msgstr "تنفذ قائمة متوافقة مع freedesktop.org بناءً على GLib و GIO."
 
 #: ../xfce4-about/main.c:185
 msgid "Thumbnails Service"
-msgstr ""
+msgstr "خدمة الصور المصغرة"
 
 #: ../xfce4-about/main.c:186
 msgid "Implements the thumbnail management D-Bus specification."
-msgstr ""
+msgstr "تنفذ مواصفات D-Bus لإدارة الصور المصغرة."
 
 #: ../xfce4-about/main.c:240
 msgid "Please see <https://www.xfce.org/about/credits>"
-msgstr ""
+msgstr "الرجاء شاهد <https://www.xfce.org/about/credits>"
 
 #: ../xfce4-about/main.c:300
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
 "on <https://gitlab.xfce.org/xfce/libxfce4ui/-/issues> ."
-msgstr ""
+msgstr "إذا كنت تعرف أي شخص مفقود من هذه القائمة ؛ لا تتردد وأبلغ عن الخطأ على <https://gitlab.xfce.org/xfce/libxfce4ui/-/issues>."
 
 #: ../xfce4-about/main.c:304
 msgid "Thanks to all who helped making this software available!"
@@ -693,7 +694,7 @@ msgid ""
 "terms of the GNU Library General Public License as published by the Free "
 "Software Foundation; either version 2 of the License, or (at your option) "
 "any later version."
-msgstr ""
+msgstr "يتم توزيع حزم libxfce4ui و libxfce4util و exo وفقًا لشروط رخصة مكتبة جنو العامة كما نشرتها مؤسسة البرمجيات الحرة ؛ إما الإصدار 2 من الترخيص ، أو (حسب اختيارك) أي إصدار لاحق."
 
 #: ../xfce4-about/main.c:333
 msgid ""
@@ -702,7 +703,7 @@ msgid ""
 "of the GNU General Public License as published by the Free Software "
 "Foundation; either version 2 of the License, or (at your option) any later "
 "version."
-msgstr ""
+msgstr "يتم توزيع الحزم thunar و xfce4-appfinder و xfce4-panel و xfce4-session و xfce4-settings و xfconf و xfdesktop و xfwm4 وفقًا لشروط رخصة جنو العمومية كما نشرتها مؤسسة البرمجيات الحرة ؛ إما الإصدار 2 من الترخيص ، أو (حسب اختيارك) أي إصدار لاحق."
 
 #: ../xfce4-about/main.c:479
 #, c-format
@@ -747,7 +748,7 @@ msgstr "إشراف على الترجمات"
 
 #: ../xfce4-about/contributors.h:148
 msgid "Documentation supervision"
-msgstr ""
+msgstr "الإشراف على التوثيق"
 
 #: ../xfce4-about/contributors.h:151
 msgid "Translators"
@@ -779,7 +780,7 @@ msgstr "وسم"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:4
 msgid "OS Name"
-msgstr ""
+msgstr "اسم نظام التشغيل"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:5
 msgid "Device"
@@ -787,27 +788,27 @@ msgstr "جهاز"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:6
 msgid "Memory"
-msgstr ""
+msgstr "الذاكرة"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:7
 msgid "CPU"
-msgstr ""
+msgstr "المعالج المركزي"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:8
 msgid "OS Type"
-msgstr ""
+msgstr "نوع نظام التشغيل"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:9
 msgid "Xfce Version"
-msgstr ""
+msgstr "اصدار Xfce"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:10
 msgid "Distributor"
-msgstr ""
+msgstr "الموزع"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:11
 msgid "GPU"
-msgstr ""
+msgstr "معالج الرسوميات"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:12
 msgid "System"
@@ -817,7 +818,7 @@ msgstr "نظام"
 msgid ""
 "Xfce is a collection of programs that together provide a full-featured desktop environment.\n"
 "The following programs are part of the Xfce core:"
-msgstr ""
+msgstr "Xfce عبارة عن مجموعة من البرامج التي توفر معًا بيئة سطح مكتب كاملة الميزات.\nالبرامج التالية هي جزء من نواة Xfce:"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:15
 msgid ""
@@ -828,7 +829,7 @@ msgid ""
 "Thank you for your interest in Xfce.\n"
 "\n"
 "\t- The Xfce Development Team"
-msgstr ""
+msgstr "Xfce هو أيضًا نظام أساسي للتطوير يوفر العديد من المكتبات التي تساعد المبرمجين على إنشاء تطبيقات تتلاءم جيدًا مع بيئة سطح المكتب.\n\nمكونات الإكسفس تحت رخص مجانية أو حرة; رخصة جنو العمومية أو BSDL لتطبيقات و LGPL أو BSDL للمكتبات. أنظر في الثوتيق, شيفرة المصدر أو موقع إكسفس (<a href=\"https://www.xfce.org\">https://www.xfce.org</a>) للمزيد من المعلومات.\n\nشكرًا لك على اهتمامك بـ Xfce.\n\n\t- فريق تطوير Xfce"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:22
 msgid "About"
@@ -862,16 +863,16 @@ msgstr "مجهول"
 #. translators: This is the type of architecture for the OS
 #: ../xfce4-about/system-info.c:641
 msgid "64-bit (32-bit userspace)"
-msgstr ""
+msgstr "64-bit (32-bit مساحة المستخدمين)"
 
 #. translators: This is the type of architecture for the OS
 #: ../xfce4-about/system-info.c:644
 msgid "64-bit"
-msgstr ""
+msgstr "64-bit"
 
 #: ../xfce4-about/system-info.c:644
 msgid "32-bit"
-msgstr ""
+msgstr "32-bit"
 
 #. translators: This is the name of the OS, followed by the build ID, for
 #. * example:
@@ -880,14 +881,14 @@ msgstr ""
 #: ../xfce4-about/system-info.c:709
 #, c-format
 msgid "%s; Build ID: %s"
-msgstr ""
+msgstr "%s; معرف البناء: %s"
 
 #: ../tests/test-ui.c:111
 #, c-format
 msgid ""
 "A file named \"%s\" already exists in this directory, the file hasn't been "
 "added."
-msgstr ""
+msgstr "الملف المسمى \"%s\" موجود مسبقًا في المجلد, الملف لم يضاف."
 
 #: ../tests/test-ui.c:122
 msgid "Failed to migrate the old panel configuration"
