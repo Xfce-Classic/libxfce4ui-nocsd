@@ -365,7 +365,7 @@ NO WARRANTY
             </child>
             <child>
               <object class="GtkButton" id="close-button">
-                <property name="label">_Close</property>
+                <property name="label" translateable="yes">_Close</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
