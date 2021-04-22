@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-12-22 00:45+0100\n"
-"PO-Revision-Date: 2021-03-07 16:06+0000\n"
+"PO-Revision-Date: 2021-04-22 18:35+0000\n"
 "Last-Translator: Toni Estévez <toni.estevez@gmail.com>\n"
 "Language-Team: Spanish (http://www.transifex.com/xfce/libxfce4ui/language/es/)\n"
 "MIME-Version: 1.0\n"
@@ -715,7 +715,7 @@ msgstr "Los paquetes thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-
 #: ../xfce4-about/main.c:479
 #, c-format
 msgid "Type '%s --help' for usage information."
-msgstr "Escriba «%s --help» para obtener información del uso."
+msgstr "Escriba «%s --help» para su uso."
 
 #: ../xfce4-about/main.c:485
 msgid "Unable to initialize GTK+."
