@@ -4,7 +4,7 @@
 # 
 # Translators:
 # كريم أولاد الشلحة <herr.linux88@gmail.com>, 2013
-# Osama Chibani <ma5356868@gmail.com>, 2021
+# e11374d2c4c13fb7b6526712036ef095_2465a65, 2021
 # Salem Yaslem <xlmnxp@outlook.sa>, 2021
 # محمد الحرقان <malham1@gmail.com>, 2013
 # وجدي أبو سلطان, 2017
@@ -14,7 +14,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-12-22 00:45+0100\n"
 "PO-Revision-Date: 2021-04-12 01:31+0000\n"
-"Last-Translator: Osama Chibani <ma5356868@gmail.com>\n"
+"Last-Translator: e11374d2c4c13fb7b6526712036ef095_2465a65\n"
 "Language-Team: Arabic (http://www.transifex.com/xfce/libxfce4ui/language/ar/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
