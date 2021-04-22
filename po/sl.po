@@ -3,7 +3,7 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Aljoša Žagar <anthon.manix@gmail.com>, 2013,2017
+# 8b03701f910565d01acaec9ce3f558ab_e9f0fee <b5b06e8f85fb8288fe43ad0bc2422d94_32848>, 2013,2017
 # Arnold Marko <arnold.marko@gmail.com>, 2019-2020
 # Kernc, 2014,2016
 # Kernc, 2017
