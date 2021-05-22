@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-23 00:46+0200\n"
-"PO-Revision-Date: 2021-05-13 18:51+0000\n"
+"PO-Revision-Date: 2021-05-22 14:24+0000\n"
 "Last-Translator: Toni Estévez <toni.estevez@gmail.com>\n"
 "Language-Team: Spanish (http://www.transifex.com/xfce/libxfce4ui/language/es/)\n"
 "MIME-Version: 1.0\n"
@@ -337,11 +337,11 @@ msgstr "Fijar la ventana"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:55
 msgid "Raise window"
-msgstr "Traer al frente la ventana"
+msgstr "Ventana delante"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:56
 msgid "Lower window"
-msgstr "Enviar al fondo la ventana"
+msgstr "Ventana detrás"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:57
 msgid "Raise or lower window"
