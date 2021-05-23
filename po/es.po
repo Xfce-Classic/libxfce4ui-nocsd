@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-23 00:46+0200\n"
-"PO-Revision-Date: 2021-05-22 14:24+0000\n"
+"PO-Revision-Date: 2021-05-23 12:58+0000\n"
 "Last-Translator: Toni Estévez <toni.estevez@gmail.com>\n"
 "Language-Team: Spanish (http://www.transifex.com/xfce/libxfce4ui/language/es/)\n"
 "MIME-Version: 1.0\n"
@@ -87,14 +87,14 @@ msgstr "¿Cerrar una ventana con múltiples pestañas?"
 msgid ""
 "This window has multiple tabs open. Closing this window will also close all "
 "its tabs."
-msgstr "Esta ventana tiene múltiples pestañas abiertas. Cerrar esta ventana también cerrará todas sus pestañas. "
+msgstr "Esta ventana tiene múltiples pestañas abiertas. Cerrar esta ventana también cerrará todas sus pestañas."
 
 #: ../libxfce4ui/xfce-dialogs.c:523
 #, c-format
 msgid ""
 "This window has %d tabs open. Closing this window will also close all its "
 "tabs."
-msgstr "Esta ventana tiene %d pestañas abiertas. Cerrar esta ventana también cerrará todas sus pestañas. "
+msgstr "Esta ventana tiene %d pestañas abiertas. Cerrar esta ventana también cerrará todas sus pestañas."
 
 #: ../libxfce4ui/xfce-dialogs.c:529
 msgid "Warning"
