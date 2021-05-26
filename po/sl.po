@@ -4,7 +4,7 @@
 # 
 # Translators:
 # 8b03701f910565d01acaec9ce3f558ab_e9f0fee <b5b06e8f85fb8288fe43ad0bc2422d94_32848>, 2013,2017
-# Arnold Marko <arnold.marko@gmail.com>, 2019-2020
+# Arnold Marko <arnold.marko@gmail.com>, 2019-2021
 # Kernc, 2014,2016
 # Kernc, 2017
 msgid ""
@@ -12,8 +12,8 @@ msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-23 00:46+0200\n"
-"PO-Revision-Date: 2021-04-22 22:47+0000\n"
-"Last-Translator: Xfce Bot <transifex@xfce.org>\n"
+"PO-Revision-Date: 2021-05-26 07:27+0000\n"
+"Last-Translator: Arnold Marko <arnold.marko@gmail.com>\n"
 "Language-Team: Slovenian (http://www.transifex.com/xfce/libxfce4ui/language/sl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -586,7 +586,7 @@ msgstr "Ureja postavitev oken na zaslonu."
 
 #: ../xfce4-about/main.c:140
 msgid "Panel"
-msgstr "Pult"
+msgstr "Pano"
 
 #: ../xfce4-about/main.c:141
 msgid "Provides a home for window buttons, launchers, app menu and more."
@@ -700,7 +700,7 @@ msgid ""
 "of the GNU General Public License as published by the Free Software "
 "Foundation; either version 2 of the License, or (at your option) any later "
 "version."
-msgstr "Paketi thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfconf, xfdesktop in xfwm4 so distribuirani pod pogoji licence GNU General Public License as published, kot je objavljena s strani organizacije Free Software Foundation; bodisi različice 2 licence ali (kot možnost) katerekoli poznejše različice."
+msgstr "Paketi thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfconf, xfdesktop in xfwm4 so distribuirani pod pogoji licence GNU General Public License, kot je objavljena s strani organizacije Free Software Foundation; bodisi različice 2 licence ali (kot možnost) katerekoli poznejše različice."
 
 #: ../xfce4-about/main.c:479
 #, c-format
@@ -897,7 +897,7 @@ msgstr "Datoteka z imenom \"%s\" že obstaja v tej mapi, datoteka ni bila dodana
 
 #: ../tests/test-ui.c:122
 msgid "Failed to migrate the old panel configuration"
-msgstr "Ni bilo mogoče preseliti starih nastavitev pulta"
+msgstr "Ni bilo mogoče preseliti starih nastavitev panoja"
 
 #: ../tests/test-ui.c:170 ../tests/test-ui.c:195
 msgid "Customize settings stored by Xfconf"
