@@ -4,14 +4,14 @@
 # 
 # Translators:
 # 박정규(Jung-Kyu Park) <bagjunggyu@gmail.com>, 2017
-# Seong-ho Cho <darkcircle.0426@gmail.com>, 2013-2017,2019-2020
+# Seong-ho Cho <darkcircle.0426@gmail.com>, 2013-2017,2019-2021
 msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-23 00:46+0200\n"
-"PO-Revision-Date: 2021-04-22 22:47+0000\n"
-"Last-Translator: Xfce Bot <transifex@xfce.org>\n"
+"PO-Revision-Date: 2021-06-03 08:48+0000\n"
+"Last-Translator: Seong-ho Cho <darkcircle.0426@gmail.com>\n"
 "Language-Team: Korean (http://www.transifex.com/xfce/libxfce4ui/language/ko/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -572,7 +572,7 @@ msgstr "버전 정보"
 
 #: ../xfce4-about/main.c:117
 msgid "GPUs"
-msgstr ""
+msgstr "GPU"
 
 #: ../xfce4-about/main.c:135
 msgid "Window Manager"
@@ -608,7 +608,7 @@ msgstr "최신의, 간단하고 빠른 방식으로 파일을 관리합니다."
 
 #: ../xfce4-about/main.c:155
 msgid "Volume Manager"
-msgstr ""
+msgstr "볼륨 관리자"
 
 #: ../xfce4-about/main.c:156
 msgid "Manages removable drives and media for Thunar."
@@ -649,7 +649,7 @@ msgstr "D-Bus 기반 설정 시스템에 설정 내용을 저장합니다."
 
 #: ../xfce4-about/main.c:180
 msgid "A Menu Library"
-msgstr ""
+msgstr "메뉴 라이브러리"
 
 #: ../xfce4-about/main.c:181
 msgid "Implements a freedesktop.org compliant menu based on GLib and GIO."
@@ -657,7 +657,7 @@ msgstr "Glib, GIO 기반 freedesktop.org 규정 준수 메뉴를 구현합니다
 
 #: ../xfce4-about/main.c:185
 msgid "Thumbnails Service"
-msgstr ""
+msgstr "섬네일 서비스"
 
 #: ../xfce4-about/main.c:186
 msgid "Implements the thumbnail management D-Bus specification."
@@ -665,7 +665,7 @@ msgstr "D-Bus 미리 보기 그림 관리 명세를 구현합니다."
 
 #: ../xfce4-about/main.c:240
 msgid "Please see <https://www.xfce.org/about/credits>"
-msgstr ""
+msgstr "다음을 참고하십시오:"
 
 #: ../xfce4-about/main.c:300
 msgid ""
@@ -743,7 +743,7 @@ msgstr "번역 감독자"
 
 #: ../xfce4-about/contributors.h:148
 msgid "Documentation supervision"
-msgstr ""
+msgstr "문서 제작 감독"
 
 #: ../xfce4-about/contributors.h:151
 msgid "Translators"
@@ -811,7 +811,7 @@ msgstr "제공자"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:13
 msgid "GPU"
-msgstr ""
+msgstr "GPU"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:14
 msgid "System"
@@ -866,16 +866,16 @@ msgstr "알 수 없음"
 #. translators: This is the type of architecture for the OS
 #: ../xfce4-about/system-info.c:639
 msgid "64-bit (32-bit userspace)"
-msgstr ""
+msgstr "64비트(32비트 사용자영역)"
 
 #. translators: This is the type of architecture for the OS
 #: ../xfce4-about/system-info.c:642
 msgid "64-bit"
-msgstr ""
+msgstr "64비트"
 
 #: ../xfce4-about/system-info.c:642
 msgid "32-bit"
-msgstr ""
+msgstr "32비트"
 
 #. translators: This is the name of the OS, followed by the build ID, for
 #. * example:
