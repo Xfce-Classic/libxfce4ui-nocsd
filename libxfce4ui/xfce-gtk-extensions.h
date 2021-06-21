@@ -160,6 +160,9 @@ void                      xfce_gtk_menu_item_set_accel_label              (GtkMe
 gboolean                  xfce_has_gtk_frame_extents                      (GdkWindow                 *window,
                                                                            GtkBorder                 *extents);
 
+void                      xfce_gtk_label_set_a11y_relation                (GtkLabel                  *label,
+                                                                           GtkWidget                 *widget);
+
 G_END_DECLS
 
 #endif /* !__XFCE_GTK_EXTENSIONS_H__ */
