@@ -1,3 +1,37 @@
+4.17.0
+======
+- added xfce_gtk_label_set_a11y_relation to be used by various components
+- initialize base_property prior xfce_shortcuts_provider_register
+- about: Replace stock with regular button
+- about: Make Close button translateable (Fixes #41)
+- Check if pixbuf is valid before unref
+- shortcuts: Add Alt+Super+s for orca (Fixes #39)
+- shortcuts-grabber: Filter grabbing by key group
+- shortcuts-grabber: Redesign shortcut regrabbing (Bug #33)
+- shortcuts-grabber: Stop search when the first match is found
+- shortcuts: Fix a memory leak
+- shortcuts-grabber: Record xkb state group (Bug #33)
+- about: Fix invalid length and Zink renderer string
+- Don't leak pixbuf
+- XfceTitledDialog: Add pixbuf support as fallback
+- Revamp the documentation to uniformize accross components
+- Prevent resizing on message display with XfceFilenameInput
+- Delay whitespace warning in XfceFilenameInput
+- Fix cast alignment warning
+- Remove Gtk2 leftovers
+- Don't reserve vertical space for subtitles in headerbars
+- Translation Updates:
+  Albanian, Amharic, Arabic, Armenian, Armenian (Armenia), Basque,
+  Belarusian, Bengali, Bulgarian, Catalan, Chinese (China), Chinese
+  (Hong Kong), Chinese (Taiwan), Croatian, Czech, Danish, Dutch,
+  Eastern Armenian, English (Australia), English (United Kingdom),
+  Estonian, Finnish, French, Galician, German, Greek, Hebrew,
+  Hungarian, Icelandic, Indonesian, Interlingue, Italian, Japanese,
+  Kazakh, Korean, Latvian, Lithuanian, Malay, Norwegian Bokmål,
+  Norwegian Nynorsk, Occitan (post 1500), Polish, Portuguese,
+  Portuguese (Brazil), Romanian, Russian, Serbian, Slovak, Slovenian,
+  Spanish, Swedish, Telugu, Thai, Turkish, Ukrainian, Uyghur, Welsh
+
 4.16.0
 ======
 - about: Harmonize capitalisation
