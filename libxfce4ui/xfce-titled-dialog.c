@@ -176,6 +176,13 @@ xfce_titled_dialog_finalize (GObject *object)
   /* release the subtitle */
   g_free (titled_dialog->priv->subtitle);
 
+  /* release the pixbuf */
+  if (titled_dialog->priv->pixbuf)
+    {
+      g_object_unref (titled_dialog->priv->pixbuf);
+      titled_dialog->priv->pixbuf = NULL;
+    }
+
   (*G_OBJECT_CLASS (xfce_titled_dialog_parent_class)->finalize) (object);
 }
 

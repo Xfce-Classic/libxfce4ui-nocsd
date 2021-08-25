@@ -25,7 +25,16 @@
 #endif
 
 #include <gtk/gtk.h>
+
+#if G_GNUC_CHECK_VERSION (4, 6)
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wundef"
+#endif
 #include <glibtop/mem.h>
+#if G_GNUC_CHECK_VERSION (4, 6)
+#pragma GCC diagnostic pop
+#endif
+
 #include <glibtop/sysinfo.h>
 
 

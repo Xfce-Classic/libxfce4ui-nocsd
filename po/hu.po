@@ -12,8 +12,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-07 12:45+0200\n"
-"PO-Revision-Date: 2020-07-07 10:45+0000\n"
+"POT-Creation-Date: 2021-04-23 00:46+0200\n"
+"PO-Revision-Date: 2021-04-22 22:47+0000\n"
 "Last-Translator: Xfce Bot <transifex@xfce.org>\n"
 "Language-Team: Hungarian (http://www.transifex.com/xfce/libxfce4ui/language/hu/)\n"
 "MIME-Version: 1.0\n"
@@ -137,26 +137,23 @@ msgid "Session manager did not return a valid client id"
 msgstr "A munkamenet-kezelő nem adott vissza érvényes kliensazonosítót"
 
 #. print warning for user
-#: ../libxfce4ui/xfce-spawn.c:423
+#: ../libxfce4ui/xfce-spawn.c:400
 #, c-format
 msgid ""
 "Working directory \"%s\" does not exist. It won't be used when spawning "
 "\"%s\"."
 msgstr "A munkakönyvtár („%s”) nem létezik. Nem kerül felhasználásra „%s” indításakor."
 
-#. the string contains a directory separator
-#: ../libxfce4ui/xfce-filename-input.c:414
-msgid "Directory separator illegal in file name"
-msgstr ""
-
-#. the string is too long
-#: ../libxfce4ui/xfce-filename-input.c:422
+#. retrieve the error and warning messages
+#: ../libxfce4ui/xfce-filename-input.c:228
 msgid "Filename is too long"
 msgstr ""
 
-#. the string starts or ends with whitespace
-#. * this does not make the filename invalid, but we warn the user about it
-#: ../libxfce4ui/xfce-filename-input.c:430
+#: ../libxfce4ui/xfce-filename-input.c:229
+msgid "Directory separator illegal in file name"
+msgstr ""
+
+#: ../libxfce4ui/xfce-filename-input.c:230
 msgid "Filenames should not start or end with a space"
 msgstr ""
 
@@ -572,116 +569,124 @@ msgstr "Felirat"
 msgid "Xfce 4 Widgets"
 msgstr "Xfce 4 felületi elemek"
 
-#: ../xfce4-about/main.c:59
+#: ../xfce4-about/main.c:58
 msgid "Version information"
 msgstr "Verzióinformációk"
 
-#: ../xfce4-about/main.c:125
-msgid "Window Manager"
-msgstr "Ablakkezelő"
-
-#: ../xfce4-about/main.c:126
-msgid "Handles the placement of windows on the screen."
-msgstr "Az ablakok elhelyezésének kezelése a képernyőn."
-
-#: ../xfce4-about/main.c:130
-msgid "Panel"
-msgstr "Panel"
-
-#: ../xfce4-about/main.c:131
-msgid "Provides a home for window buttons, launchers, app menu and more."
+#: ../xfce4-about/main.c:117
+msgid "GPUs"
 msgstr ""
 
 #: ../xfce4-about/main.c:135
-msgid "Desktop Manager"
-msgstr "Asztalkezelő"
+msgid "Window Manager"
+msgstr "Ablakkezelő"
 
 #: ../xfce4-about/main.c:136
-msgid "Sets desktop backgrounds, handles icons and more."
-msgstr ""
+msgid "Handles the placement of windows on the screen."
+msgstr "Az ablakok elhelyezésének kezelése a képernyőn."
 
 #: ../xfce4-about/main.c:140
-msgid "File Manager"
-msgstr "Fájlkezelő"
+msgid "Panel"
+msgstr "Panel"
 
 #: ../xfce4-about/main.c:141
-msgid "Manages your files in a modern, easy-to-use and fast way."
+msgid "Provides a home for window buttons, launchers, app menu and more."
 msgstr ""
 
 #: ../xfce4-about/main.c:145
-msgid "Volume manager"
-msgstr "Kötetkezelő"
+msgid "Desktop Manager"
+msgstr "Asztalkezelő"
 
 #: ../xfce4-about/main.c:146
-msgid "Manages removable drives and media for Thunar."
+msgid "Sets desktop backgrounds, handles icons and more."
 msgstr ""
 
 #: ../xfce4-about/main.c:150
+msgid "File Manager"
+msgstr "Fájlkezelő"
+
+#: ../xfce4-about/main.c:151
+msgid "Manages your files in a modern, easy-to-use and fast way."
+msgstr ""
+
+#: ../xfce4-about/main.c:155
+msgid "Volume Manager"
+msgstr ""
+
+#: ../xfce4-about/main.c:156
+msgid "Manages removable drives and media for Thunar."
+msgstr ""
+
+#: ../xfce4-about/main.c:160
 msgid "Session Manager"
 msgstr "Munkamenet-kezelő"
 
-#: ../xfce4-about/main.c:151
+#: ../xfce4-about/main.c:161
 msgid ""
 "Saves and restores your session, handles startup, autostart and shutdown."
 msgstr ""
 
-#: ../xfce4-about/main.c:155
+#: ../xfce4-about/main.c:165
 msgid "Setting System"
 msgstr "Rendszer beállítása"
 
-#: ../xfce4-about/main.c:156
+#: ../xfce4-about/main.c:166
 msgid "Configures appearance, display, keyboard and mouse settings."
 msgstr ""
 
-#: ../xfce4-about/main.c:160
+#: ../xfce4-about/main.c:170
 msgid "Application Finder"
 msgstr "Alkalmazáskereső"
 
-#: ../xfce4-about/main.c:161
+#: ../xfce4-about/main.c:171
 msgid "Quickly finds and launches applications installed on your system."
 msgstr ""
 
-#: ../xfce4-about/main.c:165
+#: ../xfce4-about/main.c:175
 msgid "Settings Daemon"
 msgstr "Beállításkezelő"
 
-#: ../xfce4-about/main.c:166
+#: ../xfce4-about/main.c:176
 msgid "Stores your settings in a D-Bus-based configuration system."
 msgstr ""
 
-#: ../xfce4-about/main.c:170
-msgid "A menu library"
-msgstr "Egy menürendszer"
+#: ../xfce4-about/main.c:180
+msgid "A Menu Library"
+msgstr ""
 
-#: ../xfce4-about/main.c:171
+#: ../xfce4-about/main.c:181
 msgid "Implements a freedesktop.org compliant menu based on GLib and GIO."
 msgstr ""
 
-#: ../xfce4-about/main.c:175
-msgid "Thumbnails service"
-msgstr "Bélyegkép-készítő szolgáltatás"
+#: ../xfce4-about/main.c:185
+msgid "Thumbnails Service"
+msgstr ""
 
-#: ../xfce4-about/main.c:176
+#: ../xfce4-about/main.c:186
 msgid "Implements the thumbnail management D-Bus specification."
 msgstr ""
 
-#: ../xfce4-about/main.c:329
+#: ../xfce4-about/main.c:240
+msgid "Please see <https://www.xfce.org/about/credits>"
+msgstr ""
+
+#: ../xfce4-about/main.c:300
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
 "on <https://gitlab.xfce.org/xfce/libxfce4ui/-/issues> ."
 msgstr ""
 
-#: ../xfce4-about/main.c:333
+#: ../xfce4-about/main.c:304
 msgid "Thanks to all who helped making this software available!"
 msgstr "Köszönet mindazoknak, akik segítségével ez az alkalmazás elérhetővé vált."
 
-#: ../xfce4-about/main.c:350
+#: ../xfce4-about/main.c:321
 msgid ""
 "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
 msgstr "Az Xfce szerzői joga Olivier Fourdant (fourdan@xfce.org) illeti. A további összetevők szerzői joga azok szerzőit illeti."
 
-#: ../xfce4-about/main.c:355
+#: ../xfce4-about/main.c:326
 msgid ""
 "The libxfce4ui, libxfce4util and exo packages are distributed under the "
 "terms of the GNU Library General Public License as published by the Free "
@@ -689,7 +694,7 @@ msgid ""
 "any later version."
 msgstr "A libxfce4ui, libxfce4util és exo csomagok a Free Software Foundation által kiadott GNU Library General Public License második (vagy bármely későbbi) változatában foglaltak alapján kerülnek terjesztésre."
 
-#: ../xfce4-about/main.c:362
+#: ../xfce4-about/main.c:333
 msgid ""
 "The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, "
 "xfce4-settings, xfconf, xfdesktop and xfwm4 are distributed under the terms "
@@ -698,65 +703,56 @@ msgid ""
 "version."
 msgstr "A thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfconf, xfdesktop és xfwm4 csomagok a Free Software Foundation által kiadott GNU General Public License második (vagy bármely későbbi) változatában foglaltak alapján kerülnek terjesztésre."
 
-#: ../xfce4-about/main.c:509
+#: ../xfce4-about/main.c:479
 #, c-format
 msgid "Type '%s --help' for usage information."
 msgstr "Segítségért adja ki a „%s --help” parancsot."
 
-#: ../xfce4-about/main.c:515
+#: ../xfce4-about/main.c:485
 msgid "Unable to initialize GTK+."
 msgstr "A GTK+ előkészítése sikertelen."
 
-#: ../xfce4-about/main.c:524
+#: ../xfce4-about/main.c:494
 msgid "The Xfce development team. All rights reserved."
 msgstr "Az Xfce fejlesztői csapata. Minden jog fenntartva."
 
-#: ../xfce4-about/main.c:525
+#: ../xfce4-about/main.c:495
 #, c-format
 msgid "Please report bugs to <%s>."
 msgstr "A programhibák itt jelenthetők be: %s"
 
-#: ../xfce4-about/main.c:535
+#: ../xfce4-about/main.c:505
 msgid "Failed to load interface"
 msgstr "A felület betöltése sikertelen"
-
-#. I18N: first %s will be replaced by the version, second by
-#. * the name of the distribution (--with-vendor-info=NAME)
-#: ../xfce4-about/main.c:549
-#, c-format
-msgid "Version %s, distributed by %s"
-msgstr "%s verzió, terjesztő: %s"
-
-#. I18N: %s will be replaced by the Xfce version number
-#: ../xfce4-about/main.c:553
-#, c-format
-msgid "Version %s"
-msgstr "Verzió %s"
 
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
 #. },
-#: ../xfce4-about/contributors.h:128
+#: ../xfce4-about/contributors.h:136
 msgid "Core developers"
 msgstr "Fő fejlesztők"
 
-#: ../xfce4-about/contributors.h:131
+#: ../xfce4-about/contributors.h:139
 msgid "Active contributors"
 msgstr "Aktív közreműködők"
 
-#: ../xfce4-about/contributors.h:134
+#: ../xfce4-about/contributors.h:142
 msgid "Servers maintained by"
 msgstr "A kiszolgálóinkat karbantartják:"
 
-#: ../xfce4-about/contributors.h:137
+#: ../xfce4-about/contributors.h:145
 msgid "Translations supervision"
 msgstr "Fordítások felügyelet"
 
-#: ../xfce4-about/contributors.h:140
+#: ../xfce4-about/contributors.h:148
+msgid "Documentation supervision"
+msgstr ""
+
+#: ../xfce4-about/contributors.h:151
 msgid "Translators"
 msgstr "Fordítók"
 
-#: ../xfce4-about/contributors.h:143
+#: ../xfce4-about/contributors.h:154
 msgid "Previous contributors"
 msgstr "Előző munkatársak"
 
@@ -777,48 +773,60 @@ msgid "About the Xfce Desktop Environment"
 msgstr "Az Xfce asztali környezet névjegye"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:3
+msgid "_Help"
+msgstr "_Súgó"
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:4
+msgid "_Close"
+msgstr "_Bezárás"
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:5
 msgid "label"
 msgstr "címke"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:4
+#: ../xfce4-about/xfce4-about-dialog.glade.h:6
 msgid "OS Name"
 msgstr "Operációs rendszer neve"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:5
+#: ../xfce4-about/xfce4-about-dialog.glade.h:7
 msgid "Device"
 msgstr "Eszköz"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:6
+#: ../xfce4-about/xfce4-about-dialog.glade.h:8
 msgid "Memory"
 msgstr "Memória"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:7
+#: ../xfce4-about/xfce4-about-dialog.glade.h:9
 msgid "CPU"
 msgstr "CPU"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:8
+#: ../xfce4-about/xfce4-about-dialog.glade.h:10
 msgid "OS Type"
 msgstr "Operációs rendszer típusa"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:9
+#: ../xfce4-about/xfce4-about-dialog.glade.h:11
 msgid "Xfce Version"
 msgstr "Xfce változat"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:10
+#: ../xfce4-about/xfce4-about-dialog.glade.h:12
 msgid "Distributor"
 msgstr "Forgalmazó"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:11
+#: ../xfce4-about/xfce4-about-dialog.glade.h:13
+msgid "GPU"
+msgstr ""
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:14
 msgid "System"
 msgstr "Rendszer"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:12
+#: ../xfce4-about/xfce4-about-dialog.glade.h:15
 msgid ""
 "Xfce is a collection of programs that together provide a full-featured desktop environment.\n"
 "The following programs are part of the Xfce core:"
 msgstr ""
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:14
+#: ../xfce4-about/xfce4-about-dialog.glade.h:17
 msgid ""
 "Xfce is also a development platform providing several libraries that help programmers create applications that fit in well with the desktop environment.\n"
 "\n"
@@ -829,39 +837,54 @@ msgid ""
 "\t- The Xfce Development Team"
 msgstr ""
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:21
+#: ../xfce4-about/xfce4-about-dialog.glade.h:24
 msgid "About"
 msgstr "Névjegy"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:22
+#: ../xfce4-about/xfce4-about-dialog.glade.h:25
 msgid "Credits"
 msgstr "Köszönet"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:23
+#: ../xfce4-about/xfce4-about-dialog.glade.h:26
 msgid "GPL"
 msgstr "GPL"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:24
+#: ../xfce4-about/xfce4-about-dialog.glade.h:27
 msgid "LGPL"
 msgstr "LGPL"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:25
+#: ../xfce4-about/xfce4-about-dialog.glade.h:28
 msgid "BSD"
 msgstr "BSD"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:26
+#: ../xfce4-about/xfce4-about-dialog.glade.h:29
 msgid "Copyright"
 msgstr "Copyright"
 
-#: ../xfce4-about/system-info.c:274 ../xfce4-about/system-info.c:322
+#: ../xfce4-about/system-info.c:531 ../xfce4-about/system-info.c:553
+#: ../xfce4-about/system-info.c:654 ../xfce4-about/system-info.c:699
 msgid "Unknown"
 msgstr "Ismeretlen"
+
+#. translators: This is the type of architecture for the OS
+#: ../xfce4-about/system-info.c:639
+msgid "64-bit (32-bit userspace)"
+msgstr ""
+
+#. translators: This is the type of architecture for the OS
+#: ../xfce4-about/system-info.c:642
+msgid "64-bit"
+msgstr ""
+
+#: ../xfce4-about/system-info.c:642
+msgid "32-bit"
+msgstr ""
 
 #. translators: This is the name of the OS, followed by the build ID, for
 #. * example:
 #. * "Fedora 25 (Workstation Edition); Build ID: xyz" or
 #. * "Ubuntu 16.04 LTS; Build ID: jki"
-#: ../xfce4-about/system-info.c:330
+#: ../xfce4-about/system-info.c:707
 #, c-format
 msgid "%s; Build ID: %s"
 msgstr "%s; Összeállítás azonosítója: %s"

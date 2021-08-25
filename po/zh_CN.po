@@ -16,9 +16,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-26 12:45+0100\n"
-"PO-Revision-Date: 2020-11-29 23:45+0000\n"
-"Last-Translator: 玉堂白鹤 <yjwork@qq.com>\n"
+"POT-Creation-Date: 2021-04-23 00:46+0200\n"
+"PO-Revision-Date: 2021-04-22 22:47+0000\n"
+"Last-Translator: Xfce Bot <transifex@xfce.org>\n"
 "Language-Team: Chinese (China) (http://www.transifex.com/xfce/libxfce4ui/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -148,19 +148,16 @@ msgid ""
 "\"%s\"."
 msgstr "工作目录 \"%s\" 不存在。启动 \"%s\" 时不会使用它。"
 
-#. the string contains a directory separator
-#: ../libxfce4ui/xfce-filename-input.c:414
-msgid "Directory separator illegal in file name"
-msgstr "文件名中的目录分隔符非法"
-
-#. the string is too long
-#: ../libxfce4ui/xfce-filename-input.c:422
+#. retrieve the error and warning messages
+#: ../libxfce4ui/xfce-filename-input.c:228
 msgid "Filename is too long"
 msgstr "文件名太长"
 
-#. the string starts or ends with whitespace
-#. * this does not make the filename invalid, but we warn the user about it
-#: ../libxfce4ui/xfce-filename-input.c:430
+#: ../libxfce4ui/xfce-filename-input.c:229
+msgid "Directory separator illegal in file name"
+msgstr "文件名中的目录分隔符非法"
+
+#: ../libxfce4ui/xfce-filename-input.c:230
 msgid "Filenames should not start or end with a space"
 msgstr "文件名不应以空格开头或结尾"
 
@@ -576,120 +573,124 @@ msgstr "子标题"
 msgid "Xfce 4 Widgets"
 msgstr "Xfce 4 控件"
 
-#: ../xfce4-about/main.c:59
+#: ../xfce4-about/main.c:58
 msgid "Version information"
 msgstr "版本信息"
 
-#: ../xfce4-about/main.c:118
+#: ../xfce4-about/main.c:117
 msgid "GPUs"
 msgstr "GPUs"
 
-#: ../xfce4-about/main.c:136
+#: ../xfce4-about/main.c:135
 msgid "Window Manager"
 msgstr "窗口管理器"
 
-#: ../xfce4-about/main.c:137
+#: ../xfce4-about/main.c:136
 msgid "Handles the placement of windows on the screen."
 msgstr "处理窗口在屏幕上的位置摆放"
 
-#: ../xfce4-about/main.c:141
+#: ../xfce4-about/main.c:140
 msgid "Panel"
 msgstr "面板"
 
-#: ../xfce4-about/main.c:142
+#: ../xfce4-about/main.c:141
 msgid "Provides a home for window buttons, launchers, app menu and more."
 msgstr "为窗口按钮，启动器，应用程序菜单等提供了一个家。"
 
-#: ../xfce4-about/main.c:146
+#: ../xfce4-about/main.c:145
 msgid "Desktop Manager"
 msgstr "桌面管理器"
 
-#: ../xfce4-about/main.c:147
+#: ../xfce4-about/main.c:146
 msgid "Sets desktop backgrounds, handles icons and more."
 msgstr "设置桌面背景，处理图标等。"
 
-#: ../xfce4-about/main.c:151
+#: ../xfce4-about/main.c:150
 msgid "File Manager"
 msgstr "文件管理器"
 
-#: ../xfce4-about/main.c:152
+#: ../xfce4-about/main.c:151
 msgid "Manages your files in a modern, easy-to-use and fast way."
 msgstr "以现代，易用和快速的方式管理文件。"
 
-#: ../xfce4-about/main.c:156
-msgid "Volume manager"
+#: ../xfce4-about/main.c:155
+msgid "Volume Manager"
 msgstr "卷管理器"
 
-#: ../xfce4-about/main.c:157
+#: ../xfce4-about/main.c:156
 msgid "Manages removable drives and media for Thunar."
 msgstr "Thunar 可移动驱动器和介质管理"
 
-#: ../xfce4-about/main.c:161
+#: ../xfce4-about/main.c:160
 msgid "Session Manager"
 msgstr "会话管理器"
 
-#: ../xfce4-about/main.c:162
+#: ../xfce4-about/main.c:161
 msgid ""
 "Saves and restores your session, handles startup, autostart and shutdown."
 msgstr "保存和恢复会话，处理启动、自动启动和关闭。"
 
-#: ../xfce4-about/main.c:166
+#: ../xfce4-about/main.c:165
 msgid "Setting System"
 msgstr "设置系统"
 
-#: ../xfce4-about/main.c:167
+#: ../xfce4-about/main.c:166
 msgid "Configures appearance, display, keyboard and mouse settings."
 msgstr "配置外观、显示、键盘和鼠标设置。"
 
-#: ../xfce4-about/main.c:171
+#: ../xfce4-about/main.c:170
 msgid "Application Finder"
 msgstr "应用程序查找器"
 
-#: ../xfce4-about/main.c:172
+#: ../xfce4-about/main.c:171
 msgid "Quickly finds and launches applications installed on your system."
 msgstr "快速查找和启动在您系统上安装的应用程序"
 
-#: ../xfce4-about/main.c:176
+#: ../xfce4-about/main.c:175
 msgid "Settings Daemon"
 msgstr "设置守护进程"
 
-#: ../xfce4-about/main.c:177
+#: ../xfce4-about/main.c:176
 msgid "Stores your settings in a D-Bus-based configuration system."
 msgstr "将您的设置存储在基于 D-Bus 的配置系统中。"
 
-#: ../xfce4-about/main.c:181
-msgid "A menu library"
+#: ../xfce4-about/main.c:180
+msgid "A Menu Library"
 msgstr "菜单库"
 
-#: ../xfce4-about/main.c:182
+#: ../xfce4-about/main.c:181
 msgid "Implements a freedesktop.org compliant menu based on GLib and GIO."
 msgstr "实现基于 GLib 和 GIO 的 freedesktop.org 兼容菜单。"
 
-#: ../xfce4-about/main.c:186
-msgid "Thumbnails service"
+#: ../xfce4-about/main.c:185
+msgid "Thumbnails Service"
 msgstr "缩略图服务"
 
-#: ../xfce4-about/main.c:187
+#: ../xfce4-about/main.c:186
 msgid "Implements the thumbnail management D-Bus specification."
 msgstr "实现缩略图管理 D-Bus 规范。"
 
-#: ../xfce4-about/main.c:340
+#: ../xfce4-about/main.c:240
+msgid "Please see <https://www.xfce.org/about/credits>"
+msgstr "请参阅 <https://www.xfce.org/about/credits>"
+
+#: ../xfce4-about/main.c:300
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
 "on <https://gitlab.xfce.org/xfce/libxfce4ui/-/issues> ."
 msgstr "如果您知道此列表漏掉了某个人，请毫不犹豫地在 <https://gitlab.xfce.org/xfce/libxfce4ui/-/issues> 上提交缺陷。"
 
-#: ../xfce4-about/main.c:344
+#: ../xfce4-about/main.c:304
 msgid "Thanks to all who helped making this software available!"
 msgstr "感谢所有成就该软件的人们！"
 
-#: ../xfce4-about/main.c:361
+#: ../xfce4-about/main.c:321
 msgid ""
 "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
 msgstr "Xfce 4 版权归 Olivier Fourdan(fourdan@xfce.org)所有。不同组件的版权归它们各自的作者所有。"
 
-#: ../xfce4-about/main.c:366
+#: ../xfce4-about/main.c:326
 msgid ""
 "The libxfce4ui, libxfce4util and exo packages are distributed under the "
 "terms of the GNU Library General Public License as published by the Free "
@@ -697,7 +698,7 @@ msgid ""
 "any later version."
 msgstr "libxfce4ui、libxfce4util 和 exo 软件包以自由软件基金会发布的 GNU 宽通用公共许可协议第 2 版或按（您可以选择的）更高版本发布。"
 
-#: ../xfce4-about/main.c:373
+#: ../xfce4-about/main.c:333
 msgid ""
 "The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, "
 "xfce4-settings, xfconf, xfdesktop and xfwm4 are distributed under the terms "
@@ -706,52 +707,56 @@ msgid ""
 "version."
 msgstr "thunar、xfce4-appfinder、xfce4-panel、xfce4-session、xfce4-settings、xfconf、xfdesktop 和 xfwm4 软件包以自由软件基金会发布的 GNU 通用公共许可协议的第 2 版或按（您可以选择的）更高版本发布。"
 
-#: ../xfce4-about/main.c:519
+#: ../xfce4-about/main.c:479
 #, c-format
 msgid "Type '%s --help' for usage information."
 msgstr "输入 '%s --help' 获取用法。"
 
-#: ../xfce4-about/main.c:525
+#: ../xfce4-about/main.c:485
 msgid "Unable to initialize GTK+."
 msgstr "未能初始化 GTK+。"
 
-#: ../xfce4-about/main.c:534
+#: ../xfce4-about/main.c:494
 msgid "The Xfce development team. All rights reserved."
 msgstr "Xfce 开发团队。保留所有权利。"
 
-#: ../xfce4-about/main.c:535
+#: ../xfce4-about/main.c:495
 #, c-format
 msgid "Please report bugs to <%s>."
 msgstr "请向 <%s> 报告缺陷。"
 
-#: ../xfce4-about/main.c:545
+#: ../xfce4-about/main.c:505
 msgid "Failed to load interface"
 msgstr "无法载入界面"
 
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
 #. },
-#: ../xfce4-about/contributors.h:128
+#: ../xfce4-about/contributors.h:136
 msgid "Core developers"
 msgstr "核心开发者"
 
-#: ../xfce4-about/contributors.h:131
+#: ../xfce4-about/contributors.h:139
 msgid "Active contributors"
 msgstr "活跃贡献者"
 
-#: ../xfce4-about/contributors.h:134
+#: ../xfce4-about/contributors.h:142
 msgid "Servers maintained by"
 msgstr "服务器维护者"
 
-#: ../xfce4-about/contributors.h:137
+#: ../xfce4-about/contributors.h:145
 msgid "Translations supervision"
 msgstr "翻译管理"
 
-#: ../xfce4-about/contributors.h:140
+#: ../xfce4-about/contributors.h:148
+msgid "Documentation supervision"
+msgstr "文档管理"
+
+#: ../xfce4-about/contributors.h:151
 msgid "Translators"
 msgstr "翻译者"
 
-#: ../xfce4-about/contributors.h:143
+#: ../xfce4-about/contributors.h:154
 msgid "Previous contributors"
 msgstr "先前的贡献者"
 
@@ -772,52 +777,60 @@ msgid "About the Xfce Desktop Environment"
 msgstr "关于 Xfce 桌面环境"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:3
+msgid "_Help"
+msgstr "帮助(_H)"
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:4
+msgid "_Close"
+msgstr "关闭(_C)"
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:5
 msgid "label"
 msgstr "标签"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:4
+#: ../xfce4-about/xfce4-about-dialog.glade.h:6
 msgid "OS Name"
 msgstr "操作系统名称"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:5
+#: ../xfce4-about/xfce4-about-dialog.glade.h:7
 msgid "Device"
 msgstr "设备"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:6
+#: ../xfce4-about/xfce4-about-dialog.glade.h:8
 msgid "Memory"
 msgstr "内存"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:7
+#: ../xfce4-about/xfce4-about-dialog.glade.h:9
 msgid "CPU"
 msgstr "CPU"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:8
+#: ../xfce4-about/xfce4-about-dialog.glade.h:10
 msgid "OS Type"
 msgstr "操作系统类型"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:9
+#: ../xfce4-about/xfce4-about-dialog.glade.h:11
 msgid "Xfce Version"
 msgstr "Xfce 版本"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:10
+#: ../xfce4-about/xfce4-about-dialog.glade.h:12
 msgid "Distributor"
 msgstr "发行版"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:11
+#: ../xfce4-about/xfce4-about-dialog.glade.h:13
 msgid "GPU"
 msgstr "GPU"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:12
+#: ../xfce4-about/xfce4-about-dialog.glade.h:14
 msgid "System"
 msgstr "系统"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:13
+#: ../xfce4-about/xfce4-about-dialog.glade.h:15
 msgid ""
 "Xfce is a collection of programs that together provide a full-featured desktop environment.\n"
 "The following programs are part of the Xfce core:"
 msgstr "Xfce 是一个提供全功能桌面环境的程序集。\n以下程序是 Xfce 核心的部分："
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:15
+#: ../xfce4-about/xfce4-about-dialog.glade.h:17
 msgid ""
 "Xfce is also a development platform providing several libraries that help programmers create applications that fit in well with the desktop environment.\n"
 "\n"
@@ -828,46 +841,46 @@ msgid ""
 "\t- The Xfce Development Team"
 msgstr "Xfce 还是一个开发平台，提供了多个库，可帮助程序员创建与桌面环境相适应的应用程序。\n\nXfce 组件以自由或开源许可协议授权；应用程序以 GPL 或 BSDL，库文件以 LGPL 或BSDL 授权。浏览文档、源代码或 Xfce 站点 (<a href=\"https://www.xfce.org\">https://www.xfce.org</a>) 以获取详情。\n\n感谢您对 Xfce 的关注。\n\n\t- Xfce 开发团队"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:22
+#: ../xfce4-about/xfce4-about-dialog.glade.h:24
 msgid "About"
 msgstr "关于"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:23
+#: ../xfce4-about/xfce4-about-dialog.glade.h:25
 msgid "Credits"
 msgstr "鸣谢"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:24
+#: ../xfce4-about/xfce4-about-dialog.glade.h:26
 msgid "GPL"
 msgstr "GPL"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:25
+#: ../xfce4-about/xfce4-about-dialog.glade.h:27
 msgid "LGPL"
 msgstr "LGPL"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:26
+#: ../xfce4-about/xfce4-about-dialog.glade.h:28
 msgid "BSD"
 msgstr "BSD"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:27
+#: ../xfce4-about/xfce4-about-dialog.glade.h:29
 msgid "Copyright"
 msgstr "版权"
 
-#: ../xfce4-about/system-info.c:533 ../xfce4-about/system-info.c:555
-#: ../xfce4-about/system-info.c:656 ../xfce4-about/system-info.c:701
+#: ../xfce4-about/system-info.c:531 ../xfce4-about/system-info.c:553
+#: ../xfce4-about/system-info.c:654 ../xfce4-about/system-info.c:699
 msgid "Unknown"
 msgstr "未知"
 
 #. translators: This is the type of architecture for the OS
-#: ../xfce4-about/system-info.c:641
+#: ../xfce4-about/system-info.c:639
 msgid "64-bit (32-bit userspace)"
 msgstr "64 位 (32 位用户空间)"
 
 #. translators: This is the type of architecture for the OS
-#: ../xfce4-about/system-info.c:644
+#: ../xfce4-about/system-info.c:642
 msgid "64-bit"
 msgstr "64 位"
 
-#: ../xfce4-about/system-info.c:644
+#: ../xfce4-about/system-info.c:642
 msgid "32-bit"
 msgstr "32 位"
 
@@ -875,7 +888,7 @@ msgstr "32 位"
 #. * example:
 #. * "Fedora 25 (Workstation Edition); Build ID: xyz" or
 #. * "Ubuntu 16.04 LTS; Build ID: jki"
-#: ../xfce4-about/system-info.c:709
+#: ../xfce4-about/system-info.c:707
 #, c-format
 msgid "%s; Build ID: %s"
 msgstr "%s; 内部版本 ID : %s"

@@ -4,16 +4,16 @@
 # 
 # Translators:
 # Andhika Padmawan <andhika.padmawan@gmail.com>, 2009
-# Ardjuna <Asyura.x@gmail.com>, 2015,2017
+# Ardjuna <Asyura.x@gmail.com>, 2015,2017,2021
 # Triyan W. Nugroho <triyan.wn@gmail.com>, 2020
 # William Thomas <littlecloudydev@gmail.com>, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-26 12:45+0100\n"
-"PO-Revision-Date: 2020-11-28 12:10+0000\n"
-"Last-Translator: Triyan W. Nugroho <triyan.wn@gmail.com>\n"
+"POT-Creation-Date: 2021-04-23 00:46+0200\n"
+"PO-Revision-Date: 2021-04-22 22:47+0000\n"
+"Last-Translator: Xfce Bot <transifex@xfce.org>\n"
 "Language-Team: Indonesian (http://www.transifex.com/xfce/libxfce4ui/language/id/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -28,7 +28,7 @@ msgstr "Gagal membuka peramban web untuk menampilkan dokumentasi"
 #: ../libxfce4ui/xfce-dialogs.c:265
 #, c-format
 msgid "Do you want to read the %s manual online?"
-msgstr "Anda ingin membaca petunjuk %s secara daring?"
+msgstr "Anda ingin membaca dokumentasi %s secara daring?"
 
 #: ../libxfce4ui/xfce-dialogs.c:267
 msgid "Do you want to read the manual online?"
@@ -143,19 +143,16 @@ msgid ""
 "\"%s\"."
 msgstr "Direktori kerja \"%s\" tidak ada. Direktori tidak akan digunakan ketika memijahkan \"%s\"."
 
-#. the string contains a directory separator
-#: ../libxfce4ui/xfce-filename-input.c:414
-msgid "Directory separator illegal in file name"
-msgstr "Nama berkas tidak boleh menggunakan pemisah direktori"
-
-#. the string is too long
-#: ../libxfce4ui/xfce-filename-input.c:422
+#. retrieve the error and warning messages
+#: ../libxfce4ui/xfce-filename-input.c:228
 msgid "Filename is too long"
 msgstr "Nama berkas terlalu panjang"
 
-#. the string starts or ends with whitespace
-#. * this does not make the filename invalid, but we warn the user about it
-#: ../libxfce4ui/xfce-filename-input.c:430
+#: ../libxfce4ui/xfce-filename-input.c:229
+msgid "Directory separator illegal in file name"
+msgstr "Nama berkas tidak boleh menggunakan pemisah direktori"
+
+#: ../libxfce4ui/xfce-filename-input.c:230
 msgid "Filenames should not start or end with a space"
 msgstr "Nama berkas tidak boleh dimulai atau diakhiri dengan spasi"
 
@@ -571,120 +568,124 @@ msgstr "Subjudul"
 msgid "Xfce 4 Widgets"
 msgstr "Peralatan Xfce 4"
 
-#: ../xfce4-about/main.c:59
+#: ../xfce4-about/main.c:58
 msgid "Version information"
 msgstr "Informasi versi"
 
-#: ../xfce4-about/main.c:118
+#: ../xfce4-about/main.c:117
 msgid "GPUs"
 msgstr "GPU"
 
-#: ../xfce4-about/main.c:136
+#: ../xfce4-about/main.c:135
 msgid "Window Manager"
 msgstr "Manajer Jendela"
 
-#: ../xfce4-about/main.c:137
+#: ../xfce4-about/main.c:136
 msgid "Handles the placement of windows on the screen."
 msgstr "Menangani penempatan jendela di layar."
 
-#: ../xfce4-about/main.c:141
+#: ../xfce4-about/main.c:140
 msgid "Panel"
 msgstr "Panel"
 
-#: ../xfce4-about/main.c:142
+#: ../xfce4-about/main.c:141
 msgid "Provides a home for window buttons, launchers, app menu and more."
 msgstr "Menyediakan tempat untuk tombol jendela, peluncur, menu aplikasi dan lebih banyak lagi."
 
-#: ../xfce4-about/main.c:146
+#: ../xfce4-about/main.c:145
 msgid "Desktop Manager"
 msgstr "Manajer Destop"
 
-#: ../xfce4-about/main.c:147
+#: ../xfce4-about/main.c:146
 msgid "Sets desktop backgrounds, handles icons and more."
 msgstr "Menyetel gambar latar belakang desktop, menangani ikon dan lebih banyak lagi."
 
-#: ../xfce4-about/main.c:151
+#: ../xfce4-about/main.c:150
 msgid "File Manager"
 msgstr "Manajer Berkas"
 
-#: ../xfce4-about/main.c:152
+#: ../xfce4-about/main.c:151
 msgid "Manages your files in a modern, easy-to-use and fast way."
 msgstr "Mengelola berkas Anda dengan cara yang modern, mudah digunakan dan cepat."
 
-#: ../xfce4-about/main.c:156
-msgid "Volume manager"
-msgstr "Pengelola volume"
+#: ../xfce4-about/main.c:155
+msgid "Volume Manager"
+msgstr "Manajemen Volume"
 
-#: ../xfce4-about/main.c:157
+#: ../xfce4-about/main.c:156
 msgid "Manages removable drives and media for Thunar."
 msgstr "Mengelola penggerak dan media yang dapat dilepas untuk Thunar."
 
-#: ../xfce4-about/main.c:161
+#: ../xfce4-about/main.c:160
 msgid "Session Manager"
 msgstr "Manajer Sesi"
 
-#: ../xfce4-about/main.c:162
+#: ../xfce4-about/main.c:161
 msgid ""
 "Saves and restores your session, handles startup, autostart and shutdown."
 msgstr "Menyimpan dan mengembalikan sesi Anda, menangani saat hidupkan, mulai otomatis, dan matikan."
 
-#: ../xfce4-about/main.c:166
+#: ../xfce4-about/main.c:165
 msgid "Setting System"
 msgstr "Sistem Pengaturan"
 
-#: ../xfce4-about/main.c:167
+#: ../xfce4-about/main.c:166
 msgid "Configures appearance, display, keyboard and mouse settings."
 msgstr "Konfigurasi penampilan, tampilan layar, papan tik dan tetikus."
 
-#: ../xfce4-about/main.c:171
+#: ../xfce4-about/main.c:170
 msgid "Application Finder"
 msgstr "Pencari Aplikasi"
 
-#: ../xfce4-about/main.c:172
+#: ../xfce4-about/main.c:171
 msgid "Quickly finds and launches applications installed on your system."
 msgstr "Mencari dan meluncurkan aplikasi yang terpasang pada komputer Anda dengan cepat."
 
-#: ../xfce4-about/main.c:176
+#: ../xfce4-about/main.c:175
 msgid "Settings Daemon"
 msgstr "Daemon Pengaturan"
 
-#: ../xfce4-about/main.c:177
+#: ../xfce4-about/main.c:176
 msgid "Stores your settings in a D-Bus-based configuration system."
 msgstr "Menyimpan pengaturan pada sistem konfigurasi berbasis D-Bus."
 
-#: ../xfce4-about/main.c:181
-msgid "A menu library"
-msgstr "Pustaka menu"
+#: ../xfce4-about/main.c:180
+msgid "A Menu Library"
+msgstr "Pustaka Menu"
 
-#: ../xfce4-about/main.c:182
+#: ../xfce4-about/main.c:181
 msgid "Implements a freedesktop.org compliant menu based on GLib and GIO."
 msgstr "Mengimplementasikan menu freedesktop.org berbasis GLib dan GIO."
 
-#: ../xfce4-about/main.c:186
-msgid "Thumbnails service"
-msgstr "Layanan gambar miniatur"
+#: ../xfce4-about/main.c:185
+msgid "Thumbnails Service"
+msgstr "Layanan Citra Miniatur"
 
-#: ../xfce4-about/main.c:187
+#: ../xfce4-about/main.c:186
 msgid "Implements the thumbnail management D-Bus specification."
 msgstr "Mengimplementasikan spesifikasi D-Bus untuk manajemen gambar miniatur."
 
-#: ../xfce4-about/main.c:340
+#: ../xfce4-about/main.c:240
+msgid "Please see <https://www.xfce.org/about/credits>"
+msgstr "Silahkan kunjungi <https://www.xfce.org/about/credits>"
+
+#: ../xfce4-about/main.c:300
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
 "on <https://gitlab.xfce.org/xfce/libxfce4ui/-/issues> ."
 msgstr "Jika Anda merasa ada yang terlewat pada daftar ini, jangan ragu untuk mengirimkan laporan kutu ke <https://gitlab.xfce.org/xfce/libxfce4ui/-/issues> ."
 
-#: ../xfce4-about/main.c:344
+#: ../xfce4-about/main.c:304
 msgid "Thanks to all who helped making this software available!"
 msgstr "Terima kasih pada semua pihak yang terlibat sehingga peranti lunak ini tersedia."
 
-#: ../xfce4-about/main.c:361
+#: ../xfce4-about/main.c:321
 msgid ""
 "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
 msgstr "Xfce 4 adalah hak cipta Olivier Fourdan (fourdan@xfce.org). Komponen berbeda merupakan hak cipta masing-masing pembuatnya."
 
-#: ../xfce4-about/main.c:366
+#: ../xfce4-about/main.c:326
 msgid ""
 "The libxfce4ui, libxfce4util and exo packages are distributed under the "
 "terms of the GNU Library General Public License as published by the Free "
@@ -692,7 +693,7 @@ msgid ""
 "any later version."
 msgstr "Paket libxfce4ui, libxfce4util dan exo didistribusikan di bawah ketentuan GNU Library General Public License yang dipublikasikan oleh Free Software Foundation; baik versi 2 maupun (sesuai pilihan Anda) versi berikutnya."
 
-#: ../xfce4-about/main.c:373
+#: ../xfce4-about/main.c:333
 msgid ""
 "The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, "
 "xfce4-settings, xfconf, xfdesktop and xfwm4 are distributed under the terms "
@@ -701,52 +702,56 @@ msgid ""
 "version."
 msgstr "Paket thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfconf, xfdesktop dan xfwm4 didistribusikan di bawah ketentuan GNU General Public License yang dipublikasikan oleh Free Software Foundation; baik versi 2 maupun (sesuai pilihan Anda) versi berikutnya."
 
-#: ../xfce4-about/main.c:519
+#: ../xfce4-about/main.c:479
 #, c-format
 msgid "Type '%s --help' for usage information."
 msgstr "Ketik '%s --help' untuk informasi penggunaan."
 
-#: ../xfce4-about/main.c:525
+#: ../xfce4-about/main.c:485
 msgid "Unable to initialize GTK+."
 msgstr "Tak dapat menginisialisasi GTK+."
 
-#: ../xfce4-about/main.c:534
+#: ../xfce4-about/main.c:494
 msgid "The Xfce development team. All rights reserved."
 msgstr "Tim pengembang Xfce. Hak cipta dilindungi undang-undang."
 
-#: ../xfce4-about/main.c:535
+#: ../xfce4-about/main.c:495
 #, c-format
 msgid "Please report bugs to <%s>."
 msgstr "Silakan laporkan awakutu ke <%s>."
 
-#: ../xfce4-about/main.c:545
+#: ../xfce4-about/main.c:505
 msgid "Failed to load interface"
 msgstr "Gagal memuat antar muka"
 
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
 #. },
-#: ../xfce4-about/contributors.h:128
+#: ../xfce4-about/contributors.h:136
 msgid "Core developers"
 msgstr "Pengembang inti"
 
-#: ../xfce4-about/contributors.h:131
+#: ../xfce4-about/contributors.h:139
 msgid "Active contributors"
 msgstr "Kontributor aktif"
 
-#: ../xfce4-about/contributors.h:134
+#: ../xfce4-about/contributors.h:142
 msgid "Servers maintained by"
 msgstr "Server dikelola oleh"
 
-#: ../xfce4-about/contributors.h:137
+#: ../xfce4-about/contributors.h:145
 msgid "Translations supervision"
 msgstr "Pengawas terjemahan"
 
-#: ../xfce4-about/contributors.h:140
+#: ../xfce4-about/contributors.h:148
+msgid "Documentation supervision"
+msgstr "Pengawasan dokumentasi"
+
+#: ../xfce4-about/contributors.h:151
 msgid "Translators"
 msgstr "Penerjemah"
 
-#: ../xfce4-about/contributors.h:143
+#: ../xfce4-about/contributors.h:154
 msgid "Previous contributors"
 msgstr "Kontributor terdahulu"
 
@@ -767,52 +772,60 @@ msgid "About the Xfce Desktop Environment"
 msgstr "Tentang Lingkungan Destop Xfce"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:3
+msgid "_Help"
+msgstr "_Bantuan"
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:4
+msgid "_Close"
+msgstr "_Tutup"
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:5
 msgid "label"
 msgstr "label"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:4
+#: ../xfce4-about/xfce4-about-dialog.glade.h:6
 msgid "OS Name"
 msgstr "Nama Sistem Operasi"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:5
+#: ../xfce4-about/xfce4-about-dialog.glade.h:7
 msgid "Device"
 msgstr "Perangkat"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:6
+#: ../xfce4-about/xfce4-about-dialog.glade.h:8
 msgid "Memory"
 msgstr "Memori"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:7
+#: ../xfce4-about/xfce4-about-dialog.glade.h:9
 msgid "CPU"
 msgstr "CPU"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:8
+#: ../xfce4-about/xfce4-about-dialog.glade.h:10
 msgid "OS Type"
 msgstr "Tipe Sistem Operasi"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:9
+#: ../xfce4-about/xfce4-about-dialog.glade.h:11
 msgid "Xfce Version"
 msgstr "Versi Xfce"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:10
+#: ../xfce4-about/xfce4-about-dialog.glade.h:12
 msgid "Distributor"
 msgstr "Distributor"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:11
+#: ../xfce4-about/xfce4-about-dialog.glade.h:13
 msgid "GPU"
 msgstr "GPU"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:12
+#: ../xfce4-about/xfce4-about-dialog.glade.h:14
 msgid "System"
 msgstr "Sistem"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:13
+#: ../xfce4-about/xfce4-about-dialog.glade.h:15
 msgid ""
 "Xfce is a collection of programs that together provide a full-featured desktop environment.\n"
 "The following programs are part of the Xfce core:"
 msgstr "Xfce adalah sekumpulan program yang secara bersama-sama menyediakan sebuah lingkungan desktop dengan fitur yang lengkap.\nProgram-program berikut adalah bagian dari inti Xfce:"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:15
+#: ../xfce4-about/xfce4-about-dialog.glade.h:17
 msgid ""
 "Xfce is also a development platform providing several libraries that help programmers create applications that fit in well with the desktop environment.\n"
 "\n"
@@ -823,46 +836,46 @@ msgid ""
 "\t- The Xfce Development Team"
 msgstr "Xfce juga menjadi sebuah platform pengembangan yang menyediakan beberapa pustaka yang membantu pemrogram membuat aplikasi yang pas dengan lingkungan desktop.\n\nKomponen-komponen Xfce dilisensikan di bawah lisensi bebas atau sumber-terbuka; GPL atau BSDL untuk aplikasi dan LGPL atau BSDL untuk pustaka. Lihat pada dokumentasi, kode sumber atau situs web Xfce (<a href=\"https://www.xfce.org\">https://www.xfce.org</a>) untuk informasi lebih lanjut.\n\nTerimakasih atas ketertarikan Anda pada Xfce.\n\n\t- Tim Pengembang Xfce"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:22
+#: ../xfce4-about/xfce4-about-dialog.glade.h:24
 msgid "About"
 msgstr "Info Aplikasi"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:23
+#: ../xfce4-about/xfce4-about-dialog.glade.h:25
 msgid "Credits"
 msgstr "Kredit"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:24
+#: ../xfce4-about/xfce4-about-dialog.glade.h:26
 msgid "GPL"
 msgstr "GPL"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:25
+#: ../xfce4-about/xfce4-about-dialog.glade.h:27
 msgid "LGPL"
 msgstr "LGPL"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:26
+#: ../xfce4-about/xfce4-about-dialog.glade.h:28
 msgid "BSD"
 msgstr "BSD"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:27
+#: ../xfce4-about/xfce4-about-dialog.glade.h:29
 msgid "Copyright"
 msgstr "Hak Cipta"
 
-#: ../xfce4-about/system-info.c:533 ../xfce4-about/system-info.c:555
-#: ../xfce4-about/system-info.c:656 ../xfce4-about/system-info.c:701
+#: ../xfce4-about/system-info.c:531 ../xfce4-about/system-info.c:553
+#: ../xfce4-about/system-info.c:654 ../xfce4-about/system-info.c:699
 msgid "Unknown"
 msgstr "Tak diketahui"
 
 #. translators: This is the type of architecture for the OS
-#: ../xfce4-about/system-info.c:641
+#: ../xfce4-about/system-info.c:639
 msgid "64-bit (32-bit userspace)"
 msgstr "64-bit (32-bit ruang pengguna)"
 
 #. translators: This is the type of architecture for the OS
-#: ../xfce4-about/system-info.c:644
+#: ../xfce4-about/system-info.c:642
 msgid "64-bit"
 msgstr "64-bit"
 
-#: ../xfce4-about/system-info.c:644
+#: ../xfce4-about/system-info.c:642
 msgid "32-bit"
 msgstr "32-bit"
 
@@ -870,7 +883,7 @@ msgstr "32-bit"
 #. * example:
 #. * "Fedora 25 (Workstation Edition); Build ID: xyz" or
 #. * "Ubuntu 16.04 LTS; Build ID: jki"
-#: ../xfce4-about/system-info.c:709
+#: ../xfce4-about/system-info.c:707
 #, c-format
 msgid "%s; Build ID: %s"
 msgstr "%s; Build ID: %s"

@@ -937,16 +937,18 @@ void
 xfce_gtk_menu_item_set_accel_label (GtkMenuItem *menu_item,
                                     const gchar *accel_path)
 {
-  GtkAccelKey key;
-  gboolean    found = FALSE;
+  GtkAccelKey  key;
+  GList       *list, *lp;
+  gboolean     found = FALSE;
 
   g_return_if_fail (GTK_IS_MENU_ITEM (menu_item));
 
+  list = gtk_container_get_children (GTK_CONTAINER (menu_item));
   if (accel_path != NULL)
     found = gtk_accel_map_lookup_entry (accel_path, &key);
 
   /* Only show the relevant accelerator, do not automatically connect to the callback */
-  for (GList* lp = gtk_container_get_children (GTK_CONTAINER (menu_item)); lp != NULL; lp = lp->next)
+  for (lp = list; lp != NULL; lp = lp->next)
     {
       if (GTK_IS_ACCEL_LABEL (lp->data))
         {
@@ -955,8 +957,9 @@ xfce_gtk_menu_item_set_accel_label (GtkMenuItem *menu_item,
           else
             gtk_accel_label_set_accel (lp->data, 0, 0);
         }
-
     }
+
+  g_list_free (list);
 }
 
 
@@ -991,9 +994,8 @@ xfce_has_gtk_frame_extents (GdkWindow *window,
   gint format;
   gulong n_items;
   gulong bytes_after;
-  guchar *data;
+  gulong *data;
   gint result;
-  gulong *borders;
 
   display = gdk_display_get_default ();
   xdisplay = gdk_x11_display_get_xdisplay (display);
@@ -1003,7 +1005,7 @@ xfce_has_gtk_frame_extents (GdkWindow *window,
   gdk_x11_display_error_trap_push (display);
   result = XGetWindowProperty (xdisplay, xwindow, gtk_frame_extents,
                                0, G_MAXLONG, False, XA_CARDINAL,
-                               &type, &format, &n_items, &bytes_after, &data);
+                               &type, &format, &n_items, &bytes_after, (guchar **)&data);
   gdk_x11_display_error_trap_pop_ignored (display);
 
   if (data == NULL)
@@ -1015,15 +1017,42 @@ xfce_has_gtk_frame_extents (GdkWindow *window,
       return FALSE;
     }
 
-  borders = (gulong *) data;
-
-  extents->left = borders[0];
-  extents->right = borders[1];
-  extents->top = borders[2];
-  extents->bottom = borders[3];
+  extents->left = data[0];
+  extents->right = data[1];
+  extents->top = data[2];
+  extents->bottom = data[3];
 
   XFree (data);
   return TRUE;
+}
+
+
+
+/**
+ * xfce_gtk_label_set_a11y_relation:
+ * @label  : a #GtkLabel.
+ * @widget : a #GtkWidget.
+ *
+ * Sets the %ATK_RELATION_LABEL_FOR relation on @label for @widget, which means
+ * accessiblity tools will identify @label as descriptive item for the specified
+ * @widget.
+ **/
+void
+xfce_gtk_label_set_a11y_relation (GtkLabel  *label,
+                                  GtkWidget *widget)
+{
+  AtkRelationSet *relations;
+  AtkRelation    *relation;
+  AtkObject      *object;
+
+  g_return_if_fail (GTK_IS_WIDGET (widget));
+  g_return_if_fail (GTK_IS_LABEL (label));
+
+  object = gtk_widget_get_accessible (widget);
+  relations = atk_object_ref_relation_set (gtk_widget_get_accessible (GTK_WIDGET (label)));
+  relation = atk_relation_new (&object, 1, ATK_RELATION_LABEL_FOR);
+  atk_relation_set_add (relations, relation);
+  g_object_unref (G_OBJECT (relation));
 }
 
 

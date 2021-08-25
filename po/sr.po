@@ -10,9 +10,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-20 00:45+0100\n"
-"PO-Revision-Date: 2020-12-21 07:42+0000\n"
-"Last-Translator: Саша Петровић <salepetronije@gmail.com>\n"
+"POT-Creation-Date: 2021-04-23 00:46+0200\n"
+"PO-Revision-Date: 2021-04-22 22:47+0000\n"
+"Last-Translator: Xfce Bot <transifex@xfce.org>\n"
 "Language-Team: Serbian (http://www.transifex.com/xfce/libxfce4ui/language/sr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -142,19 +142,16 @@ msgid ""
 "\"%s\"."
 msgstr "Радна фасцикла „%s“ не постоји. Неће бити коришћена приликом израђања „%s“."
 
-#. the string contains a directory separator
-#: ../libxfce4ui/xfce-filename-input.c:414
-msgid "Directory separator illegal in file name"
-msgstr "Разделник путање је неправилан у датотеци имена"
-
-#. the string is too long
-#: ../libxfce4ui/xfce-filename-input.c:422
+#. retrieve the error and warning messages
+#: ../libxfce4ui/xfce-filename-input.c:228
 msgid "Filename is too long"
 msgstr "Име датотеке је предугачно"
 
-#. the string starts or ends with whitespace
-#. * this does not make the filename invalid, but we warn the user about it
-#: ../libxfce4ui/xfce-filename-input.c:430
+#: ../libxfce4ui/xfce-filename-input.c:229
+msgid "Directory separator illegal in file name"
+msgstr "Разделник путање је неправилан у датотеци имена"
+
+#: ../libxfce4ui/xfce-filename-input.c:230
 msgid "Filenames should not start or end with a space"
 msgstr "Имена датотека не би требала почињати размаком"
 
@@ -611,8 +608,8 @@ msgid "Manages your files in a modern, easy-to-use and fast way."
 msgstr "Управља датотекама на савремен, лак за употребу и брз начин."
 
 #: ../xfce4-about/main.c:155
-msgid "Volume manager"
-msgstr "Управник носача датотека"
+msgid "Volume Manager"
+msgstr "Управник меморија"
 
 #: ../xfce4-about/main.c:156
 msgid "Manages removable drives and media for Thunar."
@@ -652,7 +649,7 @@ msgid "Stores your settings in a D-Bus-based configuration system."
 msgstr "Храни поставке на систему заснованим на поставкама Д-сабирнице."
 
 #: ../xfce4-about/main.c:180
-msgid "A menu library"
+msgid "A Menu Library"
 msgstr "Књижница изборника"
 
 #: ../xfce4-about/main.c:181
@@ -660,8 +657,8 @@ msgid "Implements a freedesktop.org compliant menu based on GLib and GIO."
 msgstr "Спроводи изборник сагласан са freedesktop.org-ом заснован на Глиб и ГИО."
 
 #: ../xfce4-about/main.c:185
-msgid "Thumbnails service"
-msgstr "Служба сличичара"
+msgid "Thumbnails Service"
+msgstr "Служитељ умањених сличица"
 
 #: ../xfce4-about/main.c:186
 msgid "Implements the thumbnail management D-Bus specification."
@@ -774,52 +771,60 @@ msgid "About the Xfce Desktop Environment"
 msgstr "О радном окружењу Иксфце-а"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:3
+msgid "_Help"
+msgstr "_Помоћи"
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:4
+msgid "_Close"
+msgstr "_Затвори"
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:5
 msgid "label"
 msgstr "натпис"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:4
+#: ../xfce4-about/xfce4-about-dialog.glade.h:6
 msgid "OS Name"
 msgstr "Име оперативног система"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:5
+#: ../xfce4-about/xfce4-about-dialog.glade.h:7
 msgid "Device"
 msgstr "Уређај"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:6
+#: ../xfce4-about/xfce4-about-dialog.glade.h:8
 msgid "Memory"
 msgstr "Меморија"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:7
+#: ../xfce4-about/xfce4-about-dialog.glade.h:9
 msgid "CPU"
 msgstr "ЦПУ"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:8
+#: ../xfce4-about/xfce4-about-dialog.glade.h:10
 msgid "OS Type"
 msgstr "Врста оперативног система"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:9
+#: ../xfce4-about/xfce4-about-dialog.glade.h:11
 msgid "Xfce Version"
 msgstr "Издање ИксФЦЕ-а"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:10
+#: ../xfce4-about/xfce4-about-dialog.glade.h:12
 msgid "Distributor"
 msgstr "Раздељивач"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:11
+#: ../xfce4-about/xfce4-about-dialog.glade.h:13
 msgid "GPU"
 msgstr "ГПУ"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:12
+#: ../xfce4-about/xfce4-about-dialog.glade.h:14
 msgid "System"
 msgstr "Систем"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:13
+#: ../xfce4-about/xfce4-about-dialog.glade.h:15
 msgid ""
 "Xfce is a collection of programs that together provide a full-featured desktop environment.\n"
 "The following programs are part of the Xfce core:"
 msgstr "ИксФЦЕ је збирка програма које заједно обезбеђују потпуно радно окружење.\nСледећи програми су део језгра ИксФЦЕ-а:"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:15
+#: ../xfce4-about/xfce4-about-dialog.glade.h:17
 msgid ""
 "Xfce is also a development platform providing several libraries that help programmers create applications that fit in well with the desktop environment.\n"
 "\n"
@@ -830,46 +835,46 @@ msgid ""
 "\t- The Xfce Development Team"
 msgstr "ИксФЦЕ је такође и развојна платформа која пружа неколико библиотека помажућих програмерима да их лепо ускладе у радно окружење.\n\nЈединице ИксФЦЕ-а су објављене под слободним и отворненог кода дозволама: ОЈЛ или БСДЛ за програме и ЛОЈЛ или БСДЛ за библиотеке. Погледајте упутства, изворни код и странице ИксФЦЕ-а (<a href=\"https://www.xfce.org\">https://www.xfce.org</a>) ради више података.\n\nХвала Вам на занимању за ИксФЦЕ.\n\nt- Развојна дружина ИксФЦЕ-а"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:22
+#: ../xfce4-about/xfce4-about-dialog.glade.h:24
 msgid "About"
 msgstr "О програму"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:23
+#: ../xfce4-about/xfce4-about-dialog.glade.h:25
 msgid "Credits"
 msgstr "Заслуге"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:24
+#: ../xfce4-about/xfce4-about-dialog.glade.h:26
 msgid "GPL"
 msgstr "ОЈД"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:25
+#: ../xfce4-about/xfce4-about-dialog.glade.h:27
 msgid "LGPL"
 msgstr "КОЈД"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:26
+#: ../xfce4-about/xfce4-about-dialog.glade.h:28
 msgid "BSD"
 msgstr "БСД"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:27
+#: ../xfce4-about/xfce4-about-dialog.glade.h:29
 msgid "Copyright"
 msgstr "Права умножавања"
 
-#: ../xfce4-about/system-info.c:533 ../xfce4-about/system-info.c:555
-#: ../xfce4-about/system-info.c:656 ../xfce4-about/system-info.c:701
+#: ../xfce4-about/system-info.c:531 ../xfce4-about/system-info.c:553
+#: ../xfce4-about/system-info.c:654 ../xfce4-about/system-info.c:699
 msgid "Unknown"
 msgstr "Непознато"
 
 #. translators: This is the type of architecture for the OS
-#: ../xfce4-about/system-info.c:641
+#: ../xfce4-about/system-info.c:639
 msgid "64-bit (32-bit userspace)"
 msgstr "64-бита (32-битно корисничко окружење)"
 
 #. translators: This is the type of architecture for the OS
-#: ../xfce4-about/system-info.c:644
+#: ../xfce4-about/system-info.c:642
 msgid "64-bit"
 msgstr "64-бита"
 
-#: ../xfce4-about/system-info.c:644
+#: ../xfce4-about/system-info.c:642
 msgid "32-bit"
 msgstr "32-бита"
 
@@ -877,7 +882,7 @@ msgstr "32-бита"
 #. * example:
 #. * "Fedora 25 (Workstation Edition); Build ID: xyz" or
 #. * "Ubuntu 16.04 LTS; Build ID: jki"
-#: ../xfce4-about/system-info.c:709
+#: ../xfce4-about/system-info.c:707
 #, c-format
 msgid "%s; Build ID: %s"
 msgstr "%s; ЛБ изградње: %s"

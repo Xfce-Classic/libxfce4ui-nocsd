@@ -8,7 +8,7 @@ dnl ***************************
 m4_define([libxfce4ui_verinfo], [0:0:0])
 m4_define([libxfce4ui_version_api], [2])
 m4_define([libxfce4ui_version_major], [4])
-m4_define([libxfce4ui_version_minor], [16])
+m4_define([libxfce4ui_version_minor], [17])
 m4_define([libxfce4ui_version_micro], [0])
 m4_define([libxfce4ui_version_nano], []) dnl leave this empty to have no nano version
 m4_define([libxfce4ui_version_build], [@REVISION@])
@@ -105,7 +105,6 @@ AC_SUBST([LIBXFCE4KBD_PRIVATE_VERSION_API])
 dnl ***************************************
 dnl *** Check for standard header files ***
 dnl ***************************************
-AC_HEADER_STDC()
 AC_CHECK_HEADERS([crt_externs.h errno.h fcntl.h limits.h locale.h math.h \
                   memory.h signal.h stdarg.h stdlib.h string.h unistd.h])
 AC_CHECK_DECLS([environ])
@@ -114,7 +113,7 @@ AC_CHECK_FUNCS([_NSGetEnviron])
 dnl ******************************
 dnl *** Check for i18n support ***
 dnl ******************************
-XDT_I18N([@LINGUAS@])
+XDT_I18N()
 
 dnl *******************************************
 dnl *** Check for X Window System installed ***
@@ -189,7 +188,7 @@ dnl **************************************************
 dnl *** Check whether to build the keyboard libary ***
 dnl **************************************************
 AC_ARG_ENABLE([keyboard-library],
-              [AC_HELP_STRING([--disable-keyboard-library],
+              [AS_HELP_STRING([--disable-keyboard-library],
                               [Do not compile the keyboard library needed by xfwm4 and xfce4-settings (default=enabled)])],
               [enable_keyboard_library=$enableval], [enable_keyboard_library=yes])
 if test "x$enable_keyboard_library" = "xyes"; then
@@ -202,7 +201,7 @@ dnl *** Check for vendor specific information ***
 dnl *********************************************
 AC_MSG_CHECKING([for additional vendor name and/or info])
 AC_ARG_WITH([vendor-info],
-AC_HELP_STRING([--with-vendor-info=NAME], [Specify an additional vendor name, optionally with a file in $prefix/share/xfce4/venderinfo]),
+AS_HELP_STRING([--with-vendor-info=NAME], [Specify an additional vendor name, optionally with a file in $prefix/share/xfce4/venderinfo]),
     [with_vendor_info="$withval"], [with_vendor_info=""])
 if test x"$with_vendor_info" != x""; then
     AC_DEFINE_UNQUOTED([VENDOR_INFO], ["$with_vendor_info"], [Additional vendor name and/or info])
@@ -216,7 +215,7 @@ dnl *** Check for vendor specific information ***
 dnl *********************************************
 AC_MSG_CHECKING([for a custom manual website location])
 AC_ARG_WITH([manual-website],
-AC_HELP_STRING([--with-manual-website=URI], [Specify an optional manual website, defaults to https://docs.xfce.org.]),
+AS_HELP_STRING([--with-manual-website=URI], [Specify an optional manual website, defaults to https://docs.xfce.org.]),
     [with_manual_website="$withval"],
     [with_manual_website="https://docs.xfce.org/help.php"])
 AC_DEFINE_UNQUOTED([MANUAL_WEBSITE], ["$with_manual_website"], [Documentation website])
@@ -230,15 +229,15 @@ XDT_CHECK_OPTIONAL_PACKAGE([GLADEUI2], [gladeui-2.0],
                            [3.5.0], [gladeui2], [glade interface designer])
 
 AC_ARG_WITH([gladeui2-catalogdir],
-            [AC_HELP_STRING([--with-gladeui2-catalogdir=PATH],
+            [AS_HELP_STRING([--with-gladeui2-catalogdir=PATH],
                             [Specify where to install glade 3.0 designer catalog files (default=autodetect)])],
             [gladeui2_catalogdir="$withval"])
 AC_ARG_WITH([gladeui2-moduledir],
-            [AC_HELP_STRING([--with-gladeui2-moduledir=PATH],
+            [AS_HELP_STRING([--with-gladeui2-moduledir=PATH],
                             [Specify where to install glade 3.0 designer modules (default=autodetect)])],
             [gladeui2_moduledir="$withval"])
 AC_ARG_WITH([gladeui2-pixmapdir],
-            [AC_HELP_STRING([--with-gladeui2-pixmapdir=PATH],
+            [AS_HELP_STRING([--with-gladeui2-pixmapdir=PATH],
                             [Specify where to install glade 3.0 designer pixmaps (default=autodetect)])],
             [gladeui2_pixmapdir="$withval"])
 if test x"$GLADEUI2_FOUND" = x"yes"; then
@@ -281,7 +280,7 @@ dnl ****************************************
 dnl *** Check for ELF visibility support ***
 dnl ****************************************
 AC_ARG_ENABLE([visibility],
-              AC_HELP_STRING([--disable-visibility],
+              AS_HELP_STRING([--disable-visibility],
                              [Do not use ELF visibility attributes]),
               [enable_visibility=$enableval], [enable_visibility=yes])
 have_gnuc_visibility=no
@@ -351,7 +350,7 @@ dnl *****************************
 AC_CONFIG_FILES([
 Makefile
 docs/Makefile
-docs/version.xml
+docs/reference/Makefile
 glade/Makefile
 glade/icons/Makefile
 glade/icons/16x16/Makefile

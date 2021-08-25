@@ -12,9 +12,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-14 00:45+0100\n"
-"PO-Revision-Date: 2020-12-14 14:42+0000\n"
-"Last-Translator: Andreas Eitel <github-aneitel@online.de>\n"
+"POT-Creation-Date: 2021-04-23 00:46+0200\n"
+"PO-Revision-Date: 2021-04-22 22:47+0000\n"
+"Last-Translator: Xfce Bot <transifex@xfce.org>\n"
 "Language-Team: German (http://www.transifex.com/xfce/libxfce4ui/language/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -144,19 +144,16 @@ msgid ""
 "\"%s\"."
 msgstr "Das Arbeitsverzeichnis »%s« ist nicht vorhanden: Es wird beim Starten von »%s« nicht verwendet."
 
-#. the string contains a directory separator
-#: ../libxfce4ui/xfce-filename-input.c:414
-msgid "Directory separator illegal in file name"
-msgstr "Verzeichnis-Trennzeichen im Dateinamen sind unzulässig"
-
-#. the string is too long
-#: ../libxfce4ui/xfce-filename-input.c:422
+#. retrieve the error and warning messages
+#: ../libxfce4ui/xfce-filename-input.c:228
 msgid "Filename is too long"
 msgstr "Der Dateiname ist zu lang"
 
-#. the string starts or ends with whitespace
-#. * this does not make the filename invalid, but we warn the user about it
-#: ../libxfce4ui/xfce-filename-input.c:430
+#: ../libxfce4ui/xfce-filename-input.c:229
+msgid "Directory separator illegal in file name"
+msgstr "Verzeichnis-Trennzeichen im Dateinamen sind unzulässig"
+
+#: ../libxfce4ui/xfce-filename-input.c:230
 msgid "Filenames should not start or end with a space"
 msgstr "Dateinamen sollten nicht mit einem Leerzeichen beginnen oder enden"
 
@@ -613,7 +610,7 @@ msgid "Manages your files in a modern, easy-to-use and fast way."
 msgstr "Verwaltet Ihre Dateien auf moderne, benutzerfreundliche und schnelle Weise"
 
 #: ../xfce4-about/main.c:155
-msgid "Volume manager"
+msgid "Volume Manager"
 msgstr "Datenträgerverwaltung"
 
 #: ../xfce4-about/main.c:156
@@ -654,7 +651,7 @@ msgid "Stores your settings in a D-Bus-based configuration system."
 msgstr "Speichert Ihre Einstellungen in einem D-Bus-basierten Konfigurationssystem."
 
 #: ../xfce4-about/main.c:180
-msgid "A menu library"
+msgid "A Menu Library"
 msgstr "Eine Menübibliothek"
 
 #: ../xfce4-about/main.c:181
@@ -662,7 +659,7 @@ msgid "Implements a freedesktop.org compliant menu based on GLib and GIO."
 msgstr "Erstellt ein freedesktop.org-kompatibles Menü, das auf GLib und GIO basiert."
 
 #: ../xfce4-about/main.c:185
-msgid "Thumbnails service"
+msgid "Thumbnails Service"
 msgstr "Miniaturansichtendienst"
 
 #: ../xfce4-about/main.c:186
@@ -731,27 +728,31 @@ msgstr "Schnittstelle konnte nicht geladen werden"
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
 #. },
-#: ../xfce4-about/contributors.h:128
+#: ../xfce4-about/contributors.h:136
 msgid "Core developers"
 msgstr "Kernentwickler"
 
-#: ../xfce4-about/contributors.h:131
+#: ../xfce4-about/contributors.h:139
 msgid "Active contributors"
 msgstr "Aktive Mitwirkende"
 
-#: ../xfce4-about/contributors.h:134
+#: ../xfce4-about/contributors.h:142
 msgid "Servers maintained by"
 msgstr "Server gewartet von"
 
-#: ../xfce4-about/contributors.h:137
+#: ../xfce4-about/contributors.h:145
 msgid "Translations supervision"
 msgstr "Koordination der Übersetzungen"
 
-#: ../xfce4-about/contributors.h:140
+#: ../xfce4-about/contributors.h:148
+msgid "Documentation supervision"
+msgstr "Koordination der Dokumentation"
+
+#: ../xfce4-about/contributors.h:151
 msgid "Translators"
 msgstr "Übersetzer"
 
-#: ../xfce4-about/contributors.h:143
+#: ../xfce4-about/contributors.h:154
 msgid "Previous contributors"
 msgstr "Frühere Mitwirkende"
 
@@ -772,52 +773,60 @@ msgid "About the Xfce Desktop Environment"
 msgstr "Über die Xfce-Arbeitsumgebung"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:3
+msgid "_Help"
+msgstr "_Hilfe"
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:4
+msgid "_Close"
+msgstr "_Schließen"
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:5
 msgid "label"
 msgstr "label"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:4
+#: ../xfce4-about/xfce4-about-dialog.glade.h:6
 msgid "OS Name"
 msgstr "BS Name"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:5
+#: ../xfce4-about/xfce4-about-dialog.glade.h:7
 msgid "Device"
 msgstr "Gerät"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:6
+#: ../xfce4-about/xfce4-about-dialog.glade.h:8
 msgid "Memory"
 msgstr "Arbeitsspeicher"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:7
+#: ../xfce4-about/xfce4-about-dialog.glade.h:9
 msgid "CPU"
 msgstr "CPU"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:8
+#: ../xfce4-about/xfce4-about-dialog.glade.h:10
 msgid "OS Type"
 msgstr "BS Typ"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:9
+#: ../xfce4-about/xfce4-about-dialog.glade.h:11
 msgid "Xfce Version"
 msgstr "Xfce Version"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:10
+#: ../xfce4-about/xfce4-about-dialog.glade.h:12
 msgid "Distributor"
 msgstr "Distributor"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:11
+#: ../xfce4-about/xfce4-about-dialog.glade.h:13
 msgid "GPU"
 msgstr "GPU"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:12
+#: ../xfce4-about/xfce4-about-dialog.glade.h:14
 msgid "System"
 msgstr "System"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:13
+#: ../xfce4-about/xfce4-about-dialog.glade.h:15
 msgid ""
 "Xfce is a collection of programs that together provide a full-featured desktop environment.\n"
 "The following programs are part of the Xfce core:"
 msgstr "Xfce ist eine Sammlung von Programmen, die zusammen eine voll funktionsfähige Arbeitsumgebung zur Verfügung stellen. Die folgenden Programme sind Teil des Xfce-Kerns:"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:15
+#: ../xfce4-about/xfce4-about-dialog.glade.h:17
 msgid ""
 "Xfce is also a development platform providing several libraries that help programmers create applications that fit in well with the desktop environment.\n"
 "\n"
@@ -828,46 +837,46 @@ msgid ""
 "\t- The Xfce Development Team"
 msgstr "Xfce ist auch eine Entwicklungsplattform, die mehrere Bibliotheken bereitstellt, die Programmierern helfen, Anwendungen zu erstellen, die sich gut in die Arbeitsumgebung einfügen.\n\nXfce-Komponenten sind unter freien oder Open-Source-Lizenzen lizenziert; GPL oder BSDL für Anwendungen und LGPL oder BSDL für Bibliotheken. Weitere Informationen finden Sie in der Dokumentation, im Quellcode oder auf der Xfce-Website (<a href=\"https://www.xfce.org\">https://www.xfce.org</a>).\n\nVielen Dank für Ihr Interesse an Xfce.\n\n\t- Das Xfce-Entwicklungsteam"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:22
+#: ../xfce4-about/xfce4-about-dialog.glade.h:24
 msgid "About"
 msgstr "Über"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:23
+#: ../xfce4-about/xfce4-about-dialog.glade.h:25
 msgid "Credits"
 msgstr "Mitwirkende"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:24
+#: ../xfce4-about/xfce4-about-dialog.glade.h:26
 msgid "GPL"
 msgstr "GPL"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:25
+#: ../xfce4-about/xfce4-about-dialog.glade.h:27
 msgid "LGPL"
 msgstr "LGPL"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:26
+#: ../xfce4-about/xfce4-about-dialog.glade.h:28
 msgid "BSD"
 msgstr "BSD"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:27
+#: ../xfce4-about/xfce4-about-dialog.glade.h:29
 msgid "Copyright"
 msgstr "Urheberrecht"
 
-#: ../xfce4-about/system-info.c:533 ../xfce4-about/system-info.c:555
-#: ../xfce4-about/system-info.c:656 ../xfce4-about/system-info.c:701
+#: ../xfce4-about/system-info.c:531 ../xfce4-about/system-info.c:553
+#: ../xfce4-about/system-info.c:654 ../xfce4-about/system-info.c:699
 msgid "Unknown"
 msgstr "(unbekannt)"
 
 #. translators: This is the type of architecture for the OS
-#: ../xfce4-about/system-info.c:641
+#: ../xfce4-about/system-info.c:639
 msgid "64-bit (32-bit userspace)"
 msgstr "64-Bit (32-Bit Userspace)"
 
 #. translators: This is the type of architecture for the OS
-#: ../xfce4-about/system-info.c:644
+#: ../xfce4-about/system-info.c:642
 msgid "64-bit"
 msgstr "64-Bit"
 
-#: ../xfce4-about/system-info.c:644
+#: ../xfce4-about/system-info.c:642
 msgid "32-bit"
 msgstr "32-Bit"
 
@@ -875,7 +884,7 @@ msgstr "32-Bit"
 #. * example:
 #. * "Fedora 25 (Workstation Edition); Build ID: xyz" or
 #. * "Ubuntu 16.04 LTS; Build ID: jki"
-#: ../xfce4-about/system-info.c:709
+#: ../xfce4-about/system-info.c:707
 #, c-format
 msgid "%s; Build ID: %s"
 msgstr "%s; Build Kennung: %s"

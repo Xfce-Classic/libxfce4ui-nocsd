@@ -29,6 +29,7 @@
       <property name="&lt;Super&gt;r" type="string" value="xfce4-appfinder -c">
         <property name="startup-notify" type="bool" value="true"/>
       </property>
+      <property name="&lt;Alt&gt;&lt;Super&gt;s" type="string" value="orca"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">

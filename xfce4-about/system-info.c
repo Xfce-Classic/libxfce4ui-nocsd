@@ -27,10 +27,7 @@
 #include <libxfce4util/libxfce4util.h>
 #include <libxfce4ui/libxfce4ui.h>
 
-#include <gtk/gtk.h>
 #include <gdk/gdkx.h>
-#include <glibtop/mem.h>
-#include <glibtop/sysinfo.h>
 #include <sys/utsname.h>
 
 #ifdef HAVE_EPOXY
@@ -89,7 +86,7 @@ prettify_info (const char *info)
     { "Core[(]TM[)]", "Core<sup>\342\204\242</sup>"},
     { "Atom[(]TM[)]", "Atom<sup>\342\204\242</sup>"},
     { "Gallium .* on (AMD .*)", "\\1"},
-    { "(AMD .*) [(].*", "\\1"},
+    { "(AMD .*) [(][^)]*[)]", "\\1"},
     { "(AMD [A-Z])(.*)", "\\1\\L\\2\\E"},
     { "AMD", "AMD<sup>\302\256</sup>"},
     { "GeForce ", "GeForce<sup>\302\256</sup> "},
@@ -453,6 +450,7 @@ get_gpu_info (guint *num_gpus)
             s = info_cleanup (renderer);
             g_free (renderer);
             renderer = s;
+            length = strlen (renderer);
 
             /* Return full renderer string in the following cases: */
             strip = strip && !g_str_has_prefix (renderer_lc, "llvmpipe");

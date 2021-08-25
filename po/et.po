@@ -3,14 +3,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Priit Jõerüüt <transifex@joeruut.com>, 2020
+# Priit Jõerüüt <transifex@joeruut.com>, 2020-2021
 msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-17 00:45+0100\n"
-"PO-Revision-Date: 2020-11-19 21:31+0000\n"
-"Last-Translator: Priit Jõerüüt <transifex@joeruut.com>\n"
+"POT-Creation-Date: 2021-04-23 00:46+0200\n"
+"PO-Revision-Date: 2021-04-22 22:47+0000\n"
+"Last-Translator: Xfce Bot <transifex@xfce.org>\n"
 "Language-Team: Estonian (http://www.transifex.com/xfce/libxfce4ui/language/et/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -133,26 +133,23 @@ msgid "Session manager did not return a valid client id"
 msgstr "Sessioonihaldur ei leidnud kehtivat klienditunnust"
 
 #. print warning for user
-#: ../libxfce4ui/xfce-spawn.c:432
+#: ../libxfce4ui/xfce-spawn.c:400
 #, c-format
 msgid ""
 "Working directory \"%s\" does not exist. It won't be used when spawning "
 "\"%s\"."
 msgstr "Töökausta \"%s\" pole olemas. Seega teda ei kasutata \"%s\" käivitamisel."
 
-#. the string contains a directory separator
-#: ../libxfce4ui/xfce-filename-input.c:414
-msgid "Directory separator illegal in file name"
-msgstr "Kaustade eraldaja ei tohi sisalduda faili nimes"
-
-#. the string is too long
-#: ../libxfce4ui/xfce-filename-input.c:422
+#. retrieve the error and warning messages
+#: ../libxfce4ui/xfce-filename-input.c:228
 msgid "Filename is too long"
 msgstr "Faili nimi on liiga pikk"
 
-#. the string starts or ends with whitespace
-#. * this does not make the filename invalid, but we warn the user about it
-#: ../libxfce4ui/xfce-filename-input.c:430
+#: ../libxfce4ui/xfce-filename-input.c:229
+msgid "Directory separator illegal in file name"
+msgstr "Kaustade eraldaja ei tohi sisalduda faili nimes"
+
+#: ../libxfce4ui/xfce-filename-input.c:230
 msgid "Filenames should not start or end with a space"
 msgstr "Faili nimi ei tohi alata ega lõppeda tühikuga"
 
@@ -568,124 +565,132 @@ msgstr "Subtiiter"
 msgid "Xfce 4 Widgets"
 msgstr "Xfce 4 vidinad"
 
-#: ../xfce4-about/main.c:59
+#: ../xfce4-about/main.c:58
 msgid "Version information"
 msgstr "Versiooniteave"
 
-#: ../xfce4-about/main.c:125
+#: ../xfce4-about/main.c:117
+msgid "GPUs"
+msgstr "Graafikaprotsessorid"
+
+#: ../xfce4-about/main.c:135
 msgid "Window Manager"
 msgstr "Aknahaldur"
 
-#: ../xfce4-about/main.c:126
+#: ../xfce4-about/main.c:136
 msgid "Handles the placement of windows on the screen."
 msgstr "Haldab akende paigutust ekraanil."
 
-#: ../xfce4-about/main.c:130
+#: ../xfce4-about/main.c:140
 msgid "Panel"
 msgstr "Riba"
 
-#: ../xfce4-about/main.c:131
+#: ../xfce4-about/main.c:141
 msgid "Provides a home for window buttons, launchers, app menu and more."
 msgstr "Pakub kodu aknanuppudele, käivitajatele, rakenduste menüüle ning paljule muulegi."
 
-#: ../xfce4-about/main.c:135
+#: ../xfce4-about/main.c:145
 msgid "Desktop Manager"
 msgstr "Töölaua haldur"
 
-#: ../xfce4-about/main.c:136
+#: ../xfce4-about/main.c:146
 msgid "Sets desktop backgrounds, handles icons and more."
 msgstr "Seadistab töölaua tausta, haldab ikoone ja teeb palju muudki."
 
-#: ../xfce4-about/main.c:140
+#: ../xfce4-about/main.c:150
 msgid "File Manager"
 msgstr "Failihaldur"
 
-#: ../xfce4-about/main.c:141
+#: ../xfce4-about/main.c:151
 msgid "Manages your files in a modern, easy-to-use and fast way."
 msgstr "Haldab sinu faile tänapäevasel, lihtsaltkasutataval ning kiirel moel."
 
-#: ../xfce4-about/main.c:145
-msgid "Volume manager"
+#: ../xfce4-about/main.c:155
+msgid "Volume Manager"
 msgstr "Andmekandjate haldur"
 
-#: ../xfce4-about/main.c:146
+#: ../xfce4-about/main.c:156
 msgid "Manages removable drives and media for Thunar."
 msgstr "Haldab eemaldatavaid andmekandjaid ja meediat Thunari jaoks."
 
-#: ../xfce4-about/main.c:150
+#: ../xfce4-about/main.c:160
 msgid "Session Manager"
 msgstr "Sessioonihaldur"
 
-#: ../xfce4-about/main.c:151
+#: ../xfce4-about/main.c:161
 msgid ""
 "Saves and restores your session, handles startup, autostart and shutdown."
 msgstr "Salvestab ja taastab sinu sessioone, haldab süsteemi käivitamist ja sulgemist."
 
-#: ../xfce4-about/main.c:155
+#: ../xfce4-about/main.c:165
 msgid "Setting System"
 msgstr "Seadete haldus"
 
-#: ../xfce4-about/main.c:156
+#: ../xfce4-about/main.c:166
 msgid "Configures appearance, display, keyboard and mouse settings."
 msgstr "Seadistab välimust, monitori, klaviatuuri ning hiirt."
 
-#: ../xfce4-about/main.c:160
+#: ../xfce4-about/main.c:170
 msgid "Application Finder"
 msgstr "Rakenduste leidja"
 
-#: ../xfce4-about/main.c:161
+#: ../xfce4-about/main.c:171
 msgid "Quickly finds and launches applications installed on your system."
 msgstr "Kiiresti leiab ja käivitab süsteemi paigaldatud rakendusi."
 
-#: ../xfce4-about/main.c:165
+#: ../xfce4-about/main.c:175
 msgid "Settings Daemon"
 msgstr "Seadete taustaprotsess"
 
-#: ../xfce4-about/main.c:166
+#: ../xfce4-about/main.c:176
 msgid "Stores your settings in a D-Bus-based configuration system."
 msgstr "Salvestab sinu seadistused D-Bus'il põhinevasse seadistuste süsteemi."
 
-#: ../xfce4-about/main.c:170
-msgid "A menu library"
+#: ../xfce4-about/main.c:180
+msgid "A Menu Library"
 msgstr "Teek menüü jaoks"
 
-#: ../xfce4-about/main.c:171
+#: ../xfce4-about/main.c:181
 msgid "Implements a freedesktop.org compliant menu based on GLib and GIO."
 msgstr "Võimaldab kasutada Freedesktop.org spetsifikatsioonidele vastavat ning GLib ja GIO teekidel põhinevat menüülahendust."
 
-#: ../xfce4-about/main.c:175
-msgid "Thumbnails service"
+#: ../xfce4-about/main.c:185
+msgid "Thumbnails Service"
 msgstr "Teenus pisipiltide loomiseks"
 
-#: ../xfce4-about/main.c:176
+#: ../xfce4-about/main.c:186
 msgid "Implements the thumbnail management D-Bus specification."
 msgstr "Võimaldab kasutada pisipiltide haldusloogikat, mis põhineb D-Bus'i spetsifikatsioonile."
 
-#: ../xfce4-about/main.c:329
+#: ../xfce4-about/main.c:240
+msgid "Please see <https://www.xfce.org/about/credits>"
+msgstr "Lisateavet leiad <https://www.xfce.org/about/credits>"
+
+#: ../xfce4-about/main.c:300
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
 "on <https://gitlab.xfce.org/xfce/libxfce4ui/-/issues> ."
 msgstr "Kui sa tead kedagi, kes on siit loendist puudu, siis ära kõhkle esitamast veateadet meie arendussaidis <https://gitlab.xfce.org/xfce/libxfce4ui/-/issues> ."
 
-#: ../xfce4-about/main.c:333
+#: ../xfce4-about/main.c:304
 msgid "Thanks to all who helped making this software available!"
 msgstr "Suur tänu kõigile, kes on selle tarkvara loonud ning meile kasutatavaks teinud!"
 
-#: ../xfce4-about/main.c:350
+#: ../xfce4-about/main.c:321
 msgid ""
 "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
 msgstr "Xfce 4 autoriõigused kuuluvad Olivier Fourdan'ile (fourdan@xfce.org). Erinevate komponentide autoriõigused kuuluvad nende vastavatele autoritele."
 
-#: ../xfce4-about/main.c:355
+#: ../xfce4-about/main.c:326
 msgid ""
 "The libxfce4ui, libxfce4util and exo packages are distributed under the "
 "terms of the GNU Library General Public License as published by the Free "
 "Software Foundation; either version 2 of the License, or (at your option) "
 "any later version."
-msgstr "Libxfce4ui, libxfce4util ja exo teegid on levitatud Vaba Tarkvara Fondi poolt avaldatud GNU Vähem Üldise Avaliku Litsentsi alusel (Free Software Foundation GNU LGPL). Litsentsi versiooniks võib olla 2 või sinu soovil ka mõni hilisem versioon."
+msgstr "Libxfce4ui, libxfce4util ja exo teegid on avaldatud Vaba Tarkvara Fondi GNU Vähem Üldise Avaliku Litsentsi alusel (Free Software Foundation GNU LGPL). Litsentsi versiooniks võib olla 2 või sinu soovil ka mõni hilisem versioon."
 
-#: ../xfce4-about/main.c:362
+#: ../xfce4-about/main.c:333
 msgid ""
 "The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, "
 "xfce4-settings, xfconf, xfdesktop and xfwm4 are distributed under the terms "
@@ -694,65 +699,56 @@ msgid ""
 "version."
 msgstr "Rakendused thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfconf, xfdesktop ja xfwm4 on levitatud Vaba Tarkvara Fondi poolt avaldatud GNU Üldise Avaliku Litsentsi alusel (Free Software Foundation GNU GPL). Litsentsi versiooniks võib olla 2 või sinu soovil ka mõni hilisem versioon."
 
-#: ../xfce4-about/main.c:509
+#: ../xfce4-about/main.c:479
 #, c-format
 msgid "Type '%s --help' for usage information."
 msgstr "Trüki „%s --help” kasutusjuhise saamiseks."
 
-#: ../xfce4-about/main.c:515
+#: ../xfce4-about/main.c:485
 msgid "Unable to initialize GTK+."
 msgstr "GTK+ initsialiseerimine ei õnnestunud."
 
-#: ../xfce4-about/main.c:524
+#: ../xfce4-about/main.c:494
 msgid "The Xfce development team. All rights reserved."
 msgstr "Xfce arendusmeeskond. Kõik õigused kaitstud."
 
-#: ../xfce4-about/main.c:525
+#: ../xfce4-about/main.c:495
 #, c-format
 msgid "Please report bugs to <%s>."
 msgstr "Palun teata vigadest aadressil <%s>."
 
-#: ../xfce4-about/main.c:535
+#: ../xfce4-about/main.c:505
 msgid "Failed to load interface"
 msgstr "Liidese laadimine ebaõnnestus"
-
-#. I18N: first %s will be replaced by the version, second by
-#. * the name of the distribution (--with-vendor-info=NAME)
-#: ../xfce4-about/main.c:549
-#, c-format
-msgid "Version %s, distributed by %s"
-msgstr "Versioon %s %s'i distribitsioonis"
-
-#. I18N: %s will be replaced by the Xfce version number
-#: ../xfce4-about/main.c:553
-#, c-format
-msgid "Version %s"
-msgstr "Versioon %s"
 
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
 #. },
-#: ../xfce4-about/contributors.h:128
+#: ../xfce4-about/contributors.h:136
 msgid "Core developers"
 msgstr "Tuumikarendajad"
 
-#: ../xfce4-about/contributors.h:131
+#: ../xfce4-about/contributors.h:139
 msgid "Active contributors"
 msgstr "Aktiivsed kaastöötajad"
 
-#: ../xfce4-about/contributors.h:134
+#: ../xfce4-about/contributors.h:142
 msgid "Servers maintained by"
 msgstr "Serverite haldus"
 
-#: ../xfce4-about/contributors.h:137
+#: ../xfce4-about/contributors.h:145
 msgid "Translations supervision"
 msgstr "Tõlgete järelvalve"
 
-#: ../xfce4-about/contributors.h:140
+#: ../xfce4-about/contributors.h:148
+msgid "Documentation supervision"
+msgstr "Dokumentatsiooni järelvalve"
+
+#: ../xfce4-about/contributors.h:151
 msgid "Translators"
 msgstr "Tõlkijad"
 
-#: ../xfce4-about/contributors.h:143
+#: ../xfce4-about/contributors.h:154
 msgid "Previous contributors"
 msgstr "Varasemad kaastöötajad"
 
@@ -773,48 +769,60 @@ msgid "About the Xfce Desktop Environment"
 msgstr "Teave Xfce töölauakeskkonna kohta"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:3
+msgid "_Help"
+msgstr "A_bi"
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:4
+msgid "_Close"
+msgstr "_Sulge"
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:5
 msgid "label"
 msgstr "silt"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:4
+#: ../xfce4-about/xfce4-about-dialog.glade.h:6
 msgid "OS Name"
 msgstr "Operatsioonisüsteem"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:5
+#: ../xfce4-about/xfce4-about-dialog.glade.h:7
 msgid "Device"
 msgstr "Seade"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:6
+#: ../xfce4-about/xfce4-about-dialog.glade.h:8
 msgid "Memory"
 msgstr "Mälu"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:7
+#: ../xfce4-about/xfce4-about-dialog.glade.h:9
 msgid "CPU"
 msgstr "Protsessor"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:8
+#: ../xfce4-about/xfce4-about-dialog.glade.h:10
 msgid "OS Type"
 msgstr "Operatsioonisüsteemi tüüp"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:9
+#: ../xfce4-about/xfce4-about-dialog.glade.h:11
 msgid "Xfce Version"
 msgstr "Xfce versioon"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:10
+#: ../xfce4-about/xfce4-about-dialog.glade.h:12
 msgid "Distributor"
 msgstr "Distributsioon"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:11
+#: ../xfce4-about/xfce4-about-dialog.glade.h:13
+msgid "GPU"
+msgstr "Graafikaprotsessor"
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:14
 msgid "System"
 msgstr "Süsteem"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:12
+#: ../xfce4-about/xfce4-about-dialog.glade.h:15
 msgid ""
 "Xfce is a collection of programs that together provide a full-featured desktop environment.\n"
 "The following programs are part of the Xfce core:"
 msgstr "Xfce on tarkvarakogum, mis üheskoos tagab tervikliku töölauakeskkonna.\nXfce tuumikrakendused on:"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:14
+#: ../xfce4-about/xfce4-about-dialog.glade.h:17
 msgid ""
 "Xfce is also a development platform providing several libraries that help programmers create applications that fit in well with the desktop environment.\n"
 "\n"
@@ -825,51 +833,54 @@ msgid ""
 "\t- The Xfce Development Team"
 msgstr "Lisaks on Xfce ka arenduskeskkond, mille pakutavad mitmed teegid aitavad programmeerijatel luua rakendusi, mis sobivad kogu töölauakeskkonnaga.\n\nXfce komponendid on litsenseeritud vaba tarkvara litsentside alusel - rakenduste jaoks GPL või BSDL ning teekide jaoks LGPL või BSDL. Lisateavet leiad dokumentatsioonist, lähtekoodist või Xfce veebisaidist (<a href=\"https://www.xfce.org\">https://www.xfce.org</a>).\n\nTäname, et sind huvitab Xfce.\n\n\t- Xfce arendusmeeskond"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:21
+#: ../xfce4-about/xfce4-about-dialog.glade.h:24
 msgid "About"
-msgstr "Te_ave"
+msgstr "Teave"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:22
+#: ../xfce4-about/xfce4-about-dialog.glade.h:25
 msgid "Credits"
 msgstr "Autorid"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:23
+#: ../xfce4-about/xfce4-about-dialog.glade.h:26
 msgid "GPL"
 msgstr "GPL"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:24
+#: ../xfce4-about/xfce4-about-dialog.glade.h:27
 msgid "LGPL"
 msgstr "LGPL"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:25
+#: ../xfce4-about/xfce4-about-dialog.glade.h:28
 msgid "BSD"
 msgstr "BSD"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:26
+#: ../xfce4-about/xfce4-about-dialog.glade.h:29
 msgid "Copyright"
 msgstr "Autoriõigused"
 
+#: ../xfce4-about/system-info.c:531 ../xfce4-about/system-info.c:553
+#: ../xfce4-about/system-info.c:654 ../xfce4-about/system-info.c:699
+msgid "Unknown"
+msgstr "Tundmatu"
+
 #. translators: This is the type of architecture for the OS
-#: ../xfce4-about/system-info.c:272
-#, c-format
+#: ../xfce4-about/system-info.c:639
+msgid "64-bit (32-bit userspace)"
+msgstr "64-bitine (32-bitise kasutajakeskkonnaga)"
+
+#. translators: This is the type of architecture for the OS
+#: ../xfce4-about/system-info.c:642
 msgid "64-bit"
 msgstr "64-bitine"
 
-#. translators: This is the type of architecture for the OS
-#: ../xfce4-about/system-info.c:275
-#, c-format
+#: ../xfce4-about/system-info.c:642
 msgid "32-bit"
 msgstr "32-bitine"
-
-#: ../xfce4-about/system-info.c:287 ../xfce4-about/system-info.c:332
-msgid "Unknown"
-msgstr "Tundmatu"
 
 #. translators: This is the name of the OS, followed by the build ID, for
 #. * example:
 #. * "Fedora 25 (Workstation Edition); Build ID: xyz" or
 #. * "Ubuntu 16.04 LTS; Build ID: jki"
-#: ../xfce4-about/system-info.c:340
+#: ../xfce4-about/system-info.c:707
 #, c-format
 msgid "%s; Build ID: %s"
 msgstr "%s; Järgu tunnus: %s"

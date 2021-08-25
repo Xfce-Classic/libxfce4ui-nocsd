@@ -53,15 +53,6 @@ libxfce4ui_sources = \
 	xfce-filename-input.c \
 	xfce-titled-dialog.c
 
-libxfce4ui_includedir = \
-	$(includedir)/xfce4/libxfce4ui-$(LIBXFCE4UI_VERSION_API)/libxfce4ui
-
-libxfce4ui_include_HEADERS = \
-	$(libxfce4ui_headers)
-
-
-
-
 ##
 ## GTK+ 3 support library
 ##
@@ -129,7 +120,7 @@ INTROSPECTION_COMPILER_ARGS = \
 	--includedir=.
 
 if HAVE_INTROSPECTION
-introspection_sources = $(libxfce4ui_2_la_SOURCES)
+introspection_sources = $(filter-out %private.h, $(libxfce4ui_2_la_SOURCES))
 
 Libxfce4ui-2.0.gir: libxfce4ui-2.la Makefile
 Libxfce4ui_2_0_gir_INCLUDES = GObject-2.0 GLib-2.0 Gtk-3.0 Libxfce4util-1.0

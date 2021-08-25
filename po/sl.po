@@ -3,16 +3,16 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Aljoša Žagar <anthon.manix@gmail.com>, 2013,2017
-# Arnold Marko <arnold.marko@gmail.com>, 2019-2020
+# 8b03701f910565d01acaec9ce3f558ab_e9f0fee <b5b06e8f85fb8288fe43ad0bc2422d94_32848>, 2013,2017
+# Arnold Marko <arnold.marko@gmail.com>, 2019-2021
 # Kernc, 2014,2016
 # Kernc, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-26 12:45+0100\n"
-"PO-Revision-Date: 2020-12-12 17:33+0000\n"
+"POT-Creation-Date: 2021-04-23 00:46+0200\n"
+"PO-Revision-Date: 2021-05-26 07:27+0000\n"
 "Last-Translator: Arnold Marko <arnold.marko@gmail.com>\n"
 "Language-Team: Slovenian (http://www.transifex.com/xfce/libxfce4ui/language/sl/)\n"
 "MIME-Version: 1.0\n"
@@ -143,19 +143,16 @@ msgid ""
 "\"%s\"."
 msgstr "Imenik \"%s\" ne obstaja in ne bo uporabljen ob zagonu \"%s\"."
 
-#. the string contains a directory separator
-#: ../libxfce4ui/xfce-filename-input.c:414
-msgid "Directory separator illegal in file name"
-msgstr "Ločilnik imenika v imenu datoteke ni pravilen"
-
-#. the string is too long
-#: ../libxfce4ui/xfce-filename-input.c:422
+#. retrieve the error and warning messages
+#: ../libxfce4ui/xfce-filename-input.c:228
 msgid "Filename is too long"
 msgstr "Ime datoteke je predolgo"
 
-#. the string starts or ends with whitespace
-#. * this does not make the filename invalid, but we warn the user about it
-#: ../libxfce4ui/xfce-filename-input.c:430
+#: ../libxfce4ui/xfce-filename-input.c:229
+msgid "Directory separator illegal in file name"
+msgstr "Ločilnik imenika v imenu datoteke ni pravilen"
+
+#: ../libxfce4ui/xfce-filename-input.c:230
 msgid "Filenames should not start or end with a space"
 msgstr "Imena datotek se naj ne bi začela ali končala s presledkom"
 
@@ -571,120 +568,124 @@ msgstr "Podnapis"
 msgid "Xfce 4 Widgets"
 msgstr "Xfce 4 gradniki"
 
-#: ../xfce4-about/main.c:59
+#: ../xfce4-about/main.c:58
 msgid "Version information"
 msgstr "Podatki o različici"
 
-#: ../xfce4-about/main.c:118
+#: ../xfce4-about/main.c:117
 msgid "GPUs"
 msgstr "Grafični procesorji"
 
-#: ../xfce4-about/main.c:136
+#: ../xfce4-about/main.c:135
 msgid "Window Manager"
 msgstr "Upravljalnik oken"
 
-#: ../xfce4-about/main.c:137
+#: ../xfce4-about/main.c:136
 msgid "Handles the placement of windows on the screen."
 msgstr "Ureja postavitev oken na zaslonu."
 
-#: ../xfce4-about/main.c:141
+#: ../xfce4-about/main.c:140
 msgid "Panel"
-msgstr "Pult"
+msgstr "Pano"
 
-#: ../xfce4-about/main.c:142
+#: ../xfce4-about/main.c:141
 msgid "Provides a home for window buttons, launchers, app menu and more."
 msgstr "Predstavlja dom za gumbe oken, zaganjalnike, menike apliakcij in več."
 
-#: ../xfce4-about/main.c:146
+#: ../xfce4-about/main.c:145
 msgid "Desktop Manager"
 msgstr "Upravljalnik namizja"
 
-#: ../xfce4-about/main.c:147
+#: ../xfce4-about/main.c:146
 msgid "Sets desktop backgrounds, handles icons and more."
 msgstr "Nastavi ozadja namizja, rokuje z ikonami in več."
 
-#: ../xfce4-about/main.c:151
+#: ../xfce4-about/main.c:150
 msgid "File Manager"
 msgstr "Upravljalnik datotek"
 
-#: ../xfce4-about/main.c:152
+#: ../xfce4-about/main.c:151
 msgid "Manages your files in a modern, easy-to-use and fast way."
 msgstr "Upravljanje z datotkami na moderen, enostaven in hiter način."
 
-#: ../xfce4-about/main.c:156
-msgid "Volume manager"
-msgstr "Upravljalnik pogonov"
+#: ../xfce4-about/main.c:155
+msgid "Volume Manager"
+msgstr "Upravljalnik pogona"
 
-#: ../xfce4-about/main.c:157
+#: ../xfce4-about/main.c:156
 msgid "Manages removable drives and media for Thunar."
 msgstr "Upravlja odstranljive nosilce in medije v Thunarju."
 
-#: ../xfce4-about/main.c:161
+#: ../xfce4-about/main.c:160
 msgid "Session Manager"
 msgstr "Upravljalnik seje"
 
-#: ../xfce4-about/main.c:162
+#: ../xfce4-about/main.c:161
 msgid ""
 "Saves and restores your session, handles startup, autostart and shutdown."
 msgstr "Shrani in obnovi seanso, skrbi za zagon, samodejni zagon in ustavljanje sistema."
 
-#: ../xfce4-about/main.c:166
+#: ../xfce4-about/main.c:165
 msgid "Setting System"
 msgstr "Nastavitve sistema"
 
-#: ../xfce4-about/main.c:167
+#: ../xfce4-about/main.c:166
 msgid "Configures appearance, display, keyboard and mouse settings."
 msgstr "Nastavljanje videza, zaslona, tipkovnice in in miške."
 
-#: ../xfce4-about/main.c:171
+#: ../xfce4-about/main.c:170
 msgid "Application Finder"
 msgstr "Iskalnik aplikacije"
 
-#: ../xfce4-about/main.c:172
+#: ../xfce4-about/main.c:171
 msgid "Quickly finds and launches applications installed on your system."
 msgstr "Hitro najde in zažene aplikacije, ki so nameščene na sistemu."
 
-#: ../xfce4-about/main.c:176
+#: ../xfce4-about/main.c:175
 msgid "Settings Daemon"
 msgstr "Nadzornik nastavitev"
 
-#: ../xfce4-about/main.c:177
+#: ../xfce4-about/main.c:176
 msgid "Stores your settings in a D-Bus-based configuration system."
 msgstr "Shrani nastavitve v konfiguracijski sistem, ki temelji na D-Bus-u"
 
-#: ../xfce4-about/main.c:181
-msgid "A menu library"
-msgstr "Knjižnica menujev"
+#: ../xfce4-about/main.c:180
+msgid "A Menu Library"
+msgstr "Knjižnica menijev"
 
-#: ../xfce4-about/main.c:182
+#: ../xfce4-about/main.c:181
 msgid "Implements a freedesktop.org compliant menu based on GLib and GIO."
 msgstr "Implementria freedesktop.org skladen meni, ki temelji na GLib in GIO."
 
-#: ../xfce4-about/main.c:186
-msgid "Thumbnails service"
-msgstr "Storitev za predogledne sličice"
+#: ../xfce4-about/main.c:185
+msgid "Thumbnails Service"
+msgstr "Storitev sličic za predogled"
 
-#: ../xfce4-about/main.c:187
+#: ../xfce4-about/main.c:186
 msgid "Implements the thumbnail management D-Bus specification."
 msgstr "Implementira D-Bus specifikacijo za upravljanje sličic."
 
-#: ../xfce4-about/main.c:340
+#: ../xfce4-about/main.c:240
+msgid "Please see <https://www.xfce.org/about/credits>"
+msgstr "Preberite <https://www.xfce.org/about/credits>"
+
+#: ../xfce4-about/main.c:300
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
 "on <https://gitlab.xfce.org/xfce/libxfce4ui/-/issues> ."
 msgstr "Če poznate koga, ki na tem seznamu manjka, to prijavite na <https://gitlab.xfce.org/xfce/libxfce4ui/-/issues> ."
 
-#: ../xfce4-about/main.c:344
+#: ../xfce4-about/main.c:304
 msgid "Thanks to all who helped making this software available!"
 msgstr "Hvala vsem, ki so omogočili izdelavo te programske opreme!"
 
-#: ../xfce4-about/main.c:361
+#: ../xfce4-about/main.c:321
 msgid ""
 "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
 msgstr "Avtorske pravice nad Xfce 4 ima Olivier Fourdan (fourdan@xfce.org). Avtorske pravice nad posameznimi komponentami imajo njihovi avtorji."
 
-#: ../xfce4-about/main.c:366
+#: ../xfce4-about/main.c:326
 msgid ""
 "The libxfce4ui, libxfce4util and exo packages are distributed under the "
 "terms of the GNU Library General Public License as published by the Free "
@@ -692,61 +693,65 @@ msgid ""
 "any later version."
 msgstr "libxfce4ui, libxfce4util in exo paketi so distribuirani pod licenco GNU Library General Public License, kot je objavljena s strani organizacije Free Software Foundation; bodisi različice 2 licence ali (kot možnost) katerekoli poznejše različice."
 
-#: ../xfce4-about/main.c:373
+#: ../xfce4-about/main.c:333
 msgid ""
 "The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, "
 "xfce4-settings, xfconf, xfdesktop and xfwm4 are distributed under the terms "
 "of the GNU General Public License as published by the Free Software "
 "Foundation; either version 2 of the License, or (at your option) any later "
 "version."
-msgstr "Paketi thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfconf, xfdesktop in xfwm4 so distribuirani pod pogoji licence GNU General Public License as published, kot je objavljena s strani organizacije Free Software Foundation; bodisi različice 2 licence ali (kot možnost) katerekoli poznejše različice."
+msgstr "Paketi thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfconf, xfdesktop in xfwm4 so distribuirani pod pogoji licence GNU General Public License, kot je objavljena s strani organizacije Free Software Foundation; bodisi različice 2 licence ali (kot možnost) katerekoli poznejše različice."
 
-#: ../xfce4-about/main.c:519
+#: ../xfce4-about/main.c:479
 #, c-format
 msgid "Type '%s --help' for usage information."
 msgstr "Za navodila o uporabi zaženite ukaz \"%s --help\"."
 
-#: ../xfce4-about/main.c:525
+#: ../xfce4-about/main.c:485
 msgid "Unable to initialize GTK+."
 msgstr "GTK+ ni mogoče začeti."
 
-#: ../xfce4-about/main.c:534
+#: ../xfce4-about/main.c:494
 msgid "The Xfce development team. All rights reserved."
 msgstr "Xfce razvojna ekipa. Vse pravice pridržane."
 
-#: ../xfce4-about/main.c:535
+#: ../xfce4-about/main.c:495
 #, c-format
 msgid "Please report bugs to <%s>."
 msgstr "Hrošče prijavite na <%s>."
 
-#: ../xfce4-about/main.c:545
+#: ../xfce4-about/main.c:505
 msgid "Failed to load interface"
 msgstr "Nalaganje vmesnika ni uspelo"
 
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
 #. },
-#: ../xfce4-about/contributors.h:128
+#: ../xfce4-about/contributors.h:136
 msgid "Core developers"
 msgstr "Glavni razvijalci"
 
-#: ../xfce4-about/contributors.h:131
+#: ../xfce4-about/contributors.h:139
 msgid "Active contributors"
 msgstr "Aktivni sodelavci"
 
-#: ../xfce4-about/contributors.h:134
+#: ../xfce4-about/contributors.h:142
 msgid "Servers maintained by"
 msgstr "Strežnike vzdržuje"
 
-#: ../xfce4-about/contributors.h:137
+#: ../xfce4-about/contributors.h:145
 msgid "Translations supervision"
 msgstr "Nadzor nad prevajalci"
 
-#: ../xfce4-about/contributors.h:140
+#: ../xfce4-about/contributors.h:148
+msgid "Documentation supervision"
+msgstr "Nadzor nad dokumentacijo"
+
+#: ../xfce4-about/contributors.h:151
 msgid "Translators"
 msgstr "Prevajalci"
 
-#: ../xfce4-about/contributors.h:143
+#: ../xfce4-about/contributors.h:154
 msgid "Previous contributors"
 msgstr "Predhodni sodelavci"
 
@@ -767,52 +772,60 @@ msgid "About the Xfce Desktop Environment"
 msgstr "O Xfce namiznem okolju"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:3
+msgid "_Help"
+msgstr "_Pomoč"
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:4
+msgid "_Close"
+msgstr "_Zapri"
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:5
 msgid "label"
 msgstr "oznaka"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:4
+#: ../xfce4-about/xfce4-about-dialog.glade.h:6
 msgid "OS Name"
 msgstr "Ime OS"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:5
+#: ../xfce4-about/xfce4-about-dialog.glade.h:7
 msgid "Device"
 msgstr "Naprava"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:6
+#: ../xfce4-about/xfce4-about-dialog.glade.h:8
 msgid "Memory"
 msgstr "Pomnilnik"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:7
+#: ../xfce4-about/xfce4-about-dialog.glade.h:9
 msgid "CPU"
 msgstr "Procesor"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:8
+#: ../xfce4-about/xfce4-about-dialog.glade.h:10
 msgid "OS Type"
 msgstr "Vrsta OS"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:9
+#: ../xfce4-about/xfce4-about-dialog.glade.h:11
 msgid "Xfce Version"
 msgstr "Xfce različica"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:10
+#: ../xfce4-about/xfce4-about-dialog.glade.h:12
 msgid "Distributor"
 msgstr "Distributer"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:11
+#: ../xfce4-about/xfce4-about-dialog.glade.h:13
 msgid "GPU"
 msgstr "Grafični procesor"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:12
+#: ../xfce4-about/xfce4-about-dialog.glade.h:14
 msgid "System"
 msgstr "Sistem"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:13
+#: ../xfce4-about/xfce4-about-dialog.glade.h:15
 msgid ""
 "Xfce is a collection of programs that together provide a full-featured desktop environment.\n"
 "The following programs are part of the Xfce core:"
 msgstr "Xfce je zbirka programov, ki skupaj sestavljajo polno-zmogljivo namizno okolje.\nNaslednji programi so del Xfce jedra:"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:15
+#: ../xfce4-about/xfce4-about-dialog.glade.h:17
 msgid ""
 "Xfce is also a development platform providing several libraries that help programmers create applications that fit in well with the desktop environment.\n"
 "\n"
@@ -823,46 +836,46 @@ msgid ""
 "\t- The Xfce Development Team"
 msgstr "Xfce je tudi razvojna platforma, ki ponuja številne knjižnice, ki so v pomoč programerjem pri razvoju aplikaciji, ki se dobro zlivajo z namiznim okoljem.\n\nXfce komponenete so licencirane pod prostokodne ali odprtokodne licence; GPL ali BSDL za aplikacije in LGPL ali BSDL za knjižnice. Za če podatkov si oglejte dokumentacijo, izvorno kodo ali Xfce spletno stran (<a href=\"https://www.xfce.org\">https://www.xfce.org</a>).\n\nHvala za vaše zanimanje za Xfce.\n\n\t-Xfce razvojna skupina"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:22
+#: ../xfce4-about/xfce4-about-dialog.glade.h:24
 msgid "About"
 msgstr "O programu"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:23
+#: ../xfce4-about/xfce4-about-dialog.glade.h:25
 msgid "Credits"
 msgstr "Zasluge"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:24
+#: ../xfce4-about/xfce4-about-dialog.glade.h:26
 msgid "GPL"
 msgstr "GPL"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:25
+#: ../xfce4-about/xfce4-about-dialog.glade.h:27
 msgid "LGPL"
 msgstr "LGPL"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:26
+#: ../xfce4-about/xfce4-about-dialog.glade.h:28
 msgid "BSD"
 msgstr "BSD"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:27
+#: ../xfce4-about/xfce4-about-dialog.glade.h:29
 msgid "Copyright"
 msgstr "Avtorske pravice"
 
-#: ../xfce4-about/system-info.c:533 ../xfce4-about/system-info.c:555
-#: ../xfce4-about/system-info.c:656 ../xfce4-about/system-info.c:701
+#: ../xfce4-about/system-info.c:531 ../xfce4-about/system-info.c:553
+#: ../xfce4-about/system-info.c:654 ../xfce4-about/system-info.c:699
 msgid "Unknown"
 msgstr "Neznano"
 
 #. translators: This is the type of architecture for the OS
-#: ../xfce4-about/system-info.c:641
+#: ../xfce4-about/system-info.c:639
 msgid "64-bit (32-bit userspace)"
 msgstr "64 bitni (32 bitni uporabniški prostor)"
 
 #. translators: This is the type of architecture for the OS
-#: ../xfce4-about/system-info.c:644
+#: ../xfce4-about/system-info.c:642
 msgid "64-bit"
 msgstr "64 bitni"
 
-#: ../xfce4-about/system-info.c:644
+#: ../xfce4-about/system-info.c:642
 msgid "32-bit"
 msgstr "32 bitni"
 
@@ -870,7 +883,7 @@ msgstr "32 bitni"
 #. * example:
 #. * "Fedora 25 (Workstation Edition); Build ID: xyz" or
 #. * "Ubuntu 16.04 LTS; Build ID: jki"
-#: ../xfce4-about/system-info.c:709
+#: ../xfce4-about/system-info.c:707
 #, c-format
 msgid "%s; Build ID: %s"
 msgstr "%s; ID gradnje: %s"
@@ -884,7 +897,7 @@ msgstr "Datoteka z imenom \"%s\" že obstaja v tej mapi, datoteka ni bila dodana
 
 #: ../tests/test-ui.c:122
 msgid "Failed to migrate the old panel configuration"
-msgstr "Ni bilo mogoče preseliti starih nastavitev pulta"
+msgstr "Ni bilo mogoče preseliti starih nastavitev panoja"
 
 #: ../tests/test-ui.c:170 ../tests/test-ui.c:195
 msgid "Customize settings stored by Xfconf"

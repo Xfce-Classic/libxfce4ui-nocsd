@@ -6,15 +6,15 @@
 # Allan Nordhøy <epost@anotheragency.no>, 2014-2015
 # Allan Nordhøy <epost@anotheragency.no>, 2015-2016
 # Harald H. <haarektrans@gmail.com>, 2014
-# Kjell Cato Heskjestad <cato@heskjestad.xyz>, 2019-2020
+# heskjestad <cato@heskjestad.xyz>, 2019-2021
 # Terje Uriansrud <terje@uriansrud.net>, 2010
 msgid ""
 msgstr ""
 "Project-Id-Version: Libxfce4ui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-14 00:45+0100\n"
-"PO-Revision-Date: 2020-12-18 04:14+0000\n"
-"Last-Translator: Kjell Cato Heskjestad <cato@heskjestad.xyz>\n"
+"POT-Creation-Date: 2021-04-23 00:46+0200\n"
+"PO-Revision-Date: 2021-04-22 22:47+0000\n"
+"Last-Translator: Xfce Bot <transifex@xfce.org>\n"
 "Language-Team: Norwegian Bokmål (http://www.transifex.com/xfce/libxfce4ui/language/nb/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -39,7 +39,7 @@ msgstr "Ønsker du å lese bruksanvisningen på nettet?"
 msgid ""
 "You will be redirected to the documentation website where the help pages are"
 " maintained and translated."
-msgstr "Du vil bli omdirigert til dokumentasjonsnettstedet der hjelpesidene blir vedlikeholdt og oversatt."
+msgstr "Du vil bli videresendt til dokumentasjonsnettstedet der hjelpesidene blir vedlikeholdt og oversatt."
 
 #. Create cancel button
 #: ../libxfce4ui/xfce-dialogs.c:275 ../libxfce4ui/xfce-dialogs.c:533
@@ -144,19 +144,16 @@ msgid ""
 "\"%s\"."
 msgstr "Arbeidsmappen «%s» finnes ikke. Den vil ikke brukes ved klargjøring av «%s»."
 
-#. the string contains a directory separator
-#: ../libxfce4ui/xfce-filename-input.c:414
-msgid "Directory separator illegal in file name"
-msgstr "Filnavnet kan ikke inneholde skilletegn for mapper"
-
-#. the string is too long
-#: ../libxfce4ui/xfce-filename-input.c:422
+#. retrieve the error and warning messages
+#: ../libxfce4ui/xfce-filename-input.c:228
 msgid "Filename is too long"
 msgstr "Filnavnet er for langt"
 
-#. the string starts or ends with whitespace
-#. * this does not make the filename invalid, but we warn the user about it
-#: ../libxfce4ui/xfce-filename-input.c:430
+#: ../libxfce4ui/xfce-filename-input.c:229
+msgid "Directory separator illegal in file name"
+msgstr "Filnavnet kan ikke inneholde skilletegn for mapper"
+
+#: ../libxfce4ui/xfce-filename-input.c:230
 msgid "Filenames should not start or end with a space"
 msgstr "Filnavnet bør ikke starte eller slutte med mellomrom"
 
@@ -262,7 +259,7 @@ msgstr "Klarte ikke å ta tak i tastaturet."
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:36
 msgid "Window operations menu"
-msgstr "Vindu handlingsmeny"
+msgstr "Handlingsmeny til vindu"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:37
 msgid "Up"
@@ -282,19 +279,19 @@ msgstr "Høyre"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:42
 msgid "Cycle windows"
-msgstr "Roter vinduer"
+msgstr "Bla gjennom vinduer"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:43
 msgid "Cycle windows (Reverse)"
-msgstr "Roter vinduer (baklengs)"
+msgstr "Bla gjennom vinduer (baklengs)"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:44
 msgid "Switch window for same application"
-msgstr "Bytt vindu for samme applikasjon"
+msgstr "Bytt vindu for samme program"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:45
 msgid "Switch application"
-msgstr "Bytt applikasjon"
+msgstr "Bytt program"
 
 #: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:46
 msgid "Close window"
@@ -586,7 +583,7 @@ msgstr "Vindusbehandler"
 
 #: ../xfce4-about/main.c:136
 msgid "Handles the placement of windows on the screen."
-msgstr "Håndterer plassering av vinduer på skjermen."
+msgstr "Behandle plassering av vinduer på skjermen."
 
 #: ../xfce4-about/main.c:140
 msgid "Panel"
@@ -613,7 +610,7 @@ msgid "Manages your files in a modern, easy-to-use and fast way."
 msgstr "Behandler filer raskt og enkelt på en moderne måte."
 
 #: ../xfce4-about/main.c:155
-msgid "Volume manager"
+msgid "Volume Manager"
 msgstr "Behandle flyttbare media"
 
 #: ../xfce4-about/main.c:156
@@ -654,7 +651,7 @@ msgid "Stores your settings in a D-Bus-based configuration system."
 msgstr "Lagrer innstillinger i et D-Bus-basert oppsettssystem."
 
 #: ../xfce4-about/main.c:180
-msgid "A menu library"
+msgid "A Menu Library"
 msgstr "Et menybibliotek"
 
 #: ../xfce4-about/main.c:181
@@ -662,7 +659,7 @@ msgid "Implements a freedesktop.org compliant menu based on GLib and GIO."
 msgstr "Implementerer en freedesktop.org-kompatibel meny basert på GLib og GIO."
 
 #: ../xfce4-about/main.c:185
-msgid "Thumbnails service"
+msgid "Thumbnails Service"
 msgstr "Tjeneste for miniatyrbilder"
 
 #: ../xfce4-about/main.c:186
@@ -687,7 +684,7 @@ msgstr "Takk til alle som har hjulpet til med å gjøre denne programvaren mulig
 msgid ""
 "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
-msgstr "Xfce 4 er kopirettsbeskyttet Olivier Fourdan (fourdan@xfce.org) De forskjellige komponentene er kopirettsbeskyttet av sine respektive forfattere."
+msgstr "Olivier Fourdan (fourdan@xfce.org) har opphavsretten til Xfce 4. De respektive opphavspersonene har opphavsrett til de forskjellige komponentene."
 
 #: ../xfce4-about/main.c:326
 msgid ""
@@ -713,7 +710,7 @@ msgstr "Skriv '%s --help' for bruksinformasjon."
 
 #: ../xfce4-about/main.c:485
 msgid "Unable to initialize GTK+."
-msgstr "Kunne ikke klargjøre GTK+."
+msgstr "Klarte ikke klargjøre GTK+."
 
 #: ../xfce4-about/main.c:494
 msgid "The Xfce development team. All rights reserved."
@@ -726,32 +723,36 @@ msgstr "Rapporter feil til <%s>"
 
 #: ../xfce4-about/main.c:505
 msgid "Failed to load interface"
-msgstr "Kunne ikke laste inn grensesnitt"
+msgstr "Klarte ikke laste inn grensesnitt"
 
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
 #. },
-#: ../xfce4-about/contributors.h:128
+#: ../xfce4-about/contributors.h:136
 msgid "Core developers"
 msgstr "Utviklere av sentrale komponenter"
 
-#: ../xfce4-about/contributors.h:131
+#: ../xfce4-about/contributors.h:139
 msgid "Active contributors"
 msgstr "Aktive bidragsytere"
 
-#: ../xfce4-about/contributors.h:134
+#: ../xfce4-about/contributors.h:142
 msgid "Servers maintained by"
 msgstr "Tjenere vedlikeholdt av"
 
-#: ../xfce4-about/contributors.h:137
+#: ../xfce4-about/contributors.h:145
 msgid "Translations supervision"
 msgstr "Oversettelsesveiledning"
 
-#: ../xfce4-about/contributors.h:140
+#: ../xfce4-about/contributors.h:148
+msgid "Documentation supervision"
+msgstr "Hjelpetekstveiledning"
+
+#: ../xfce4-about/contributors.h:151
 msgid "Translators"
 msgstr "Oversettere"
 
-#: ../xfce4-about/contributors.h:143
+#: ../xfce4-about/contributors.h:154
 msgid "Previous contributors"
 msgstr "Tidligere bidragsytere"
 
@@ -772,52 +773,60 @@ msgid "About the Xfce Desktop Environment"
 msgstr "Om Xfce skrivebordsmiljø"
 
 #: ../xfce4-about/xfce4-about-dialog.glade.h:3
+msgid "_Help"
+msgstr "_Hjelp"
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:4
+msgid "_Close"
+msgstr "_Lukk"
+
+#: ../xfce4-about/xfce4-about-dialog.glade.h:5
 msgid "label"
 msgstr "Etikett"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:4
+#: ../xfce4-about/xfce4-about-dialog.glade.h:6
 msgid "OS Name"
 msgstr "OS-navn"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:5
+#: ../xfce4-about/xfce4-about-dialog.glade.h:7
 msgid "Device"
 msgstr "Enhet"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:6
+#: ../xfce4-about/xfce4-about-dialog.glade.h:8
 msgid "Memory"
 msgstr "Minne"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:7
+#: ../xfce4-about/xfce4-about-dialog.glade.h:9
 msgid "CPU"
 msgstr "CPU"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:8
+#: ../xfce4-about/xfce4-about-dialog.glade.h:10
 msgid "OS Type"
 msgstr "OS-type"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:9
+#: ../xfce4-about/xfce4-about-dialog.glade.h:11
 msgid "Xfce Version"
 msgstr "Xfce-versjon"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:10
+#: ../xfce4-about/xfce4-about-dialog.glade.h:12
 msgid "Distributor"
 msgstr "Distributør"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:11
+#: ../xfce4-about/xfce4-about-dialog.glade.h:13
 msgid "GPU"
 msgstr "GPU"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:12
+#: ../xfce4-about/xfce4-about-dialog.glade.h:14
 msgid "System"
 msgstr "System"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:13
+#: ../xfce4-about/xfce4-about-dialog.glade.h:15
 msgid ""
 "Xfce is a collection of programs that together provide a full-featured desktop environment.\n"
 "The following programs are part of the Xfce core:"
 msgstr "Xfce er en samling programmer som tilsammen utgjør et fullt skrivebordsmiljø. \nFølgende programmer er sentrale i Xfce:"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:15
+#: ../xfce4-about/xfce4-about-dialog.glade.h:17
 msgid ""
 "Xfce is also a development platform providing several libraries that help programmers create applications that fit in well with the desktop environment.\n"
 "\n"
@@ -828,46 +837,46 @@ msgid ""
 "\t- The Xfce Development Team"
 msgstr "Xfce er også en utviklingsplattform som gir tilgang til biblioteker som lar utviklere lage programmer som passer inn i skrivebordsmiljøet.\n\nXfce-komponentene er lisensierte under frie eller åpne kildekode-lisenser; programmene under GPL eller BSD, og bibliotekene under LGPL eller BSDL. For mer informasjon se hjelpedokumentasjonen, kildekoden eller nettsiden til Xfce (<a href=\"https://www.xfce.org\">https://www.xfce.org</a>).\n\nTakk for din interesse.\n\n\t– Utviklingslaget til Xfce"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:22
+#: ../xfce4-about/xfce4-about-dialog.glade.h:24
 msgid "About"
 msgstr "Om"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:23
+#: ../xfce4-about/xfce4-about-dialog.glade.h:25
 msgid "Credits"
 msgstr "haarek - Harald <https://www.transifex.com/accounts/profile/haarek/>\nkingu - Allan Nordhøy <https://www.transifex.com/accounts/profile/kingu/>\npapparonny - Ronny K. M. Olufsen <https://www.transifex.com/accounts/profile/papparonny/>"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:24
+#: ../xfce4-about/xfce4-about-dialog.glade.h:26
 msgid "GPL"
 msgstr "GPL"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:25
+#: ../xfce4-about/xfce4-about-dialog.glade.h:27
 msgid "LGPL"
 msgstr "LGPL"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:26
+#: ../xfce4-about/xfce4-about-dialog.glade.h:28
 msgid "BSD"
 msgstr "BSD"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:27
+#: ../xfce4-about/xfce4-about-dialog.glade.h:29
 msgid "Copyright"
 msgstr "Kopirett"
 
-#: ../xfce4-about/system-info.c:533 ../xfce4-about/system-info.c:555
-#: ../xfce4-about/system-info.c:656 ../xfce4-about/system-info.c:701
+#: ../xfce4-about/system-info.c:531 ../xfce4-about/system-info.c:553
+#: ../xfce4-about/system-info.c:654 ../xfce4-about/system-info.c:699
 msgid "Unknown"
 msgstr "Ukjent"
 
 #. translators: This is the type of architecture for the OS
-#: ../xfce4-about/system-info.c:641
+#: ../xfce4-about/system-info.c:639
 msgid "64-bit (32-bit userspace)"
 msgstr "64-biters (32-biters brukermiljø)"
 
 #. translators: This is the type of architecture for the OS
-#: ../xfce4-about/system-info.c:644
+#: ../xfce4-about/system-info.c:642
 msgid "64-bit"
 msgstr "64-biters"
 
-#: ../xfce4-about/system-info.c:644
+#: ../xfce4-about/system-info.c:642
 msgid "32-bit"
 msgstr "32-biters"
 
@@ -875,7 +884,7 @@ msgstr "32-biters"
 #. * example:
 #. * "Fedora 25 (Workstation Edition); Build ID: xyz" or
 #. * "Ubuntu 16.04 LTS; Build ID: jki"
-#: ../xfce4-about/system-info.c:709
+#: ../xfce4-about/system-info.c:707
 #, c-format
 msgid "%s; Build ID: %s"
 msgstr "%s; Bygg-ID: %s"
@@ -885,7 +894,7 @@ msgstr "%s; Bygg-ID: %s"
 msgid ""
 "A file named \"%s\" already exists in this directory, the file hasn't been "
 "added."
-msgstr "En fil ved navn \"%s\" finnes allerede i denne mappen, filen har ikke blitt lagt til."
+msgstr "En fil ved navn «%s» finnes allerede i denne mappen. Filen har ikke blitt lagt til."
 
 #: ../tests/test-ui.c:122
 msgid "Failed to migrate the old panel configuration"

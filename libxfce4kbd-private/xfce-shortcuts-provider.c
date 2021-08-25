@@ -160,10 +160,10 @@ xfce_shortcuts_provider_constructed (GObject *object)
 {
   XfceShortcutsProvider *provider = XFCE_SHORTCUTS_PROVIDER (object);
 
-  xfce_shortcuts_provider_register (provider);
-
   provider->priv->default_base_property = g_strdup_printf ("/%s/default", provider->priv->name);
   provider->priv->custom_base_property = g_strdup_printf ("/%s/custom", provider->priv->name);
+
+  xfce_shortcuts_provider_register (provider);
 
   if (!xfce_shortcuts_provider_is_custom (provider))
     xfce_shortcuts_provider_reset_to_defaults (provider);
@@ -403,7 +403,6 @@ _xfce_shortcuts_provider_clone_default (const gchar           *property,
                                         XfceShortcutsProvider *provider)
 {
   const gchar *shortcut;
-  const gchar *command;
   gchar       *custom_property;
 
   g_return_val_if_fail (XFCE_IS_SHORTCUTS_PROVIDER (provider), TRUE);
@@ -413,9 +412,8 @@ _xfce_shortcuts_provider_clone_default (const gchar           *property,
     return FALSE;
 
   shortcut = property + strlen (provider->priv->default_base_property) + strlen ("/");
-  command = g_value_get_string (value);
 
-  DBG ("shortcut = %s, command = %s", shortcut, command);
+  DBG ("shortcut = %s, command = %s", shortcut, g_value_get_string (value));
 
   custom_property = g_strconcat (provider->priv->custom_base_property, "/", shortcut, NULL);
   xfconf_channel_set_property (provider->priv->channel, custom_property, value);
@@ -711,6 +709,7 @@ void
 xfce_shortcuts_free (GList *shortcuts)
 {
   g_list_foreach (shortcuts, (GFunc) (void (*)(void)) xfce_shortcut_free, NULL);
+  g_list_free (shortcuts);
 }
 
 
