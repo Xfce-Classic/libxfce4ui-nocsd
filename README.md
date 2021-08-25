@@ -29,6 +29,8 @@ If packages aren't available for your distribution, skip to the Manual Installat
 
 **Gentoo**: [Xfce Classic Overlay](https://github.com/Xfce-Classic/gentoo-overlay)
 
+**Fedora**: [libxfce4ui-nocsd copr](https://copr.fedorainfracloud.org/coprs/shawnanastasio/libxfce4ui-nocsd/)
+
 **Manjaro**: In official repository as `libxfce4ui-nocsd`
 
 **Arch**: [AUR](https://aur.archlinux.org/packages/libxfce4ui-nocsd/)
